@@ -3,7 +3,7 @@
   "locale": "vi",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "1b03c9adee47bf66ea0475d6965577cc1c3c8df3f6deb8528f86fe0c97c6aebf",
-  "effective_dictionary_sha256": "2d8c83c1dea33c83afc68d7f3ef7b37a23e53bf7b6714f5fda830b6f3b20181b",
+  "effective_dictionary_sha256": "63c89ccbb8b869c4b6c1e92b5f800f9ebba01ab54a7abe02df7f177c8acf1b33",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -44,7 +44,7 @@
       "source": "If one seller quotes in yuan and another amount already appears in your home currency, define a single comparison column. Convert each source amount into that column once. A simple note next to the source amount should give its unit and the conversion direction. Enter 150 CNY and 7.50 CNY per home unit as separate fields. Check that the converted result times 7.50 returns the source amount before any fees.",
       "source_sha256": "4bb2c9449ba1cb6aac59545b33a886dbce2ef89cf575933f4ed475cada7220dd",
       "raw_target_sha256": "704a625501792a4bd7bca6064d637b90bd06dc52e79fc79f9bdf4fe57640d7c2",
-      "translation": "Nếu một người bán báo giá bằng nhân dân tệ còn giá khác đã được hiển thị bằng đồng tiền của bạn, hãy chọn một cột chung để so sánh. Mỗi giá gốc chỉ được quy đổi sang cột đó một lần. Ghi rõ đồng tiền và chiều quy đổi bên cạnh số tiền gốc. Chẳng hạn, nhập 150 CNY và tỷ giá 7,50 CNY cho một đơn vị tiền của bạn vào hai ô riêng. Nhân kết quả quy đổi với 7,50 phải thu lại số tiền gốc trước phí."
+      "translation": "Khi một báo giá bằng tệ và báo giá khác đã dùng tiền của bạn, dùng một cột chung để so sánh. Chuyển mỗi số gốc sang cột này đúng một lần. Ghi riêng 150 CNY và tỷ giá 7,50 CNY trên một đơn vị tiền của bạn. Kiểm tra bằng cách nhân kết quả quy đổi với 7,50 để thu lại số gốc trước phí."
     },
     {
       "source": "A hypothetical box measuring 40 by 30 by 20 centimetres has an outer rectangular volume of 24,000 cubic centimetres. A second box measuring 40 by 30 by 15 has 18,000. The reduced height removes a quarter of that geometric volume. Whether it changes freight depends on the chosen route's limits and billing rules, which must be checked on the actual offer. Avoid assigning a general dimensional divisor to every route.",
@@ -152,49 +152,49 @@
       "source": "Keep the old quote and add a revised quote under it. If the larger amount was already paid, track the credit process separately from the recalculated cost. Do not enter 202 as the only payment when the account shows 274 collected and a credit still pending. The two records answer different questions: what the retained merchandise should cost, and which funds have actually moved. Keep the same line names so that a friend reviewing the change can tell which item became unavailable.",
       "source_sha256": "d934b1be832ea7a829823f1f235cb216308d04f4d58e293696e5f10aa1b5a6b9",
       "raw_target_sha256": "46d92abf11de30c100bc23fbdb0fa8b8031f39218e4bef152a62d4c23475b200",
-      "translation": "Giữ báo giá cũ và thêm báo giá sửa đổi bên dưới nó. Nếu số tiền lớn hơn đã được thanh toán, theo dõi quá trình tín dụng riêng biệt với chi phí được tính toán lại. Đừng nhập 202 như là khoản thanh toán duy nhất khi tài khoản cho thấy 274 đã thu được và một khoản tín dụng vẫn đang chờ. Hai hồ sơ trả lời các câu hỏi khác nhau: giá trị của hàng hóa được giữ lại, và các quỹ nào đã thực sự di chuyển. Giữ tên dòng như nhau để một người bạn xem xét sự thay đổi có thể biết mục nào đã không còn sẵn sàng."
+      "translation": "Giữ báo giá cũ và thêm báo giá điều chỉnh phía dưới. Nếu đã thu 274 và khoản hoàn còn chờ, không ghi 202 như thể đó là khoản thanh toán duy nhất. Một số là giá trị hàng giữ lại; số kia là dòng tiền đã phát sinh. Giữ tên dòng cũ để mọi người thấy món nào hết hàng."
     },
     {
       "source": "Imagine a teaching example in which one home-currency unit buys 7.20 yuan. A 360-yuan quote corresponds to 50 units before fees because 360 is divided by 7.20. If you instead record the rate as home units per yuan, multiply by that number. Write out both currency codes with the rate. A single bare value such as 7.20 is especially easy to use backwards when a sheet mixes several quotations.",
       "source_sha256": "670c82e94d3b8b3e94b14ada36ed532920913817bc2e6e2ca975eae7f7ae0edb",
       "raw_target_sha256": "ffc90f5f2e0168ac7be9b094128dd8f85ac37687bb9f7fe32134b48172102725",
-      "translation": "Tưởng tượng một ví dụ giảng dạy trong đó một đơn vị tiền tệ nội địa mua 7,20 nhân dân tệ. Một 360-yuan quote tương ứng với 50 đơn vị trước phí vì 360 được chia cho 7.20. Nếu thay vào đó bạn ghi tỉ lệ như đơn vị nhà trên một nhân dân tệ, nhân với con số đó. Viết ra cả hai mã tiền tệ với tỷ giá. Một giá trị trống duy nhất như 7.20 đặc biệt dễ sử dụng ngược lại khi một tờ giấy trộn lẫn một số báo giá."
+      "translation": "Ví dụ một đơn vị tiền của bạn mua được 7,20 tệ. Báo giá 360 tệ tương đương 50 đơn vị trước phí vì lấy 360 chia 7,20. Nếu lưu tỷ giá theo số đơn vị tiền của bạn trên một tệ thì dùng phép nhân. Ghi cả hai mã tiền cạnh tỷ giá; số 7,20 đứng riêng rất dễ bị dùng ngược."
     },
     {
       "source": "Suppose quote A covers the same merchandise and domestic delivery as quote B, but only A includes protective packing. Compare the contents before worrying about exchange-rate rounding. Either add the confirmed packing amount to B or label the quotes as different offers. If a missing charge has no confirmed amount, leave a gap instead of filling it with an attractive guess. A conversion cannot repair two quotes that describe different services.",
       "source_sha256": "33bb436a69ded2e9ee3771159ed02b69551edba9744747c51ac8ee084fcc54fa",
       "raw_target_sha256": "12a2c826f50bb0a0f5ec2d7733ffdbaaae569e31588ad51610a8f827a5e693e2",
-      "translation": "Giả sử lời đề cập A bao gồm cùng một hàng hóa và giao hàng nội địa như lời đề cập B, nhưng chỉ A bao gồm bao bì bảo vệ. So sánh nội dung trước khi lo lắng về tỷ giá hối đoái tròn. Hoặc thêm số lượng đóng gói xác nhận vào B hoặc dán nhãn các câu hỏi như các đề nghị khác nhau. Nếu một phí thiếu không có số tiền xác nhận, để lại một khoảng trống thay vì lấp đầy nó với một suy đoán hấp dẫn. Một chuyển đổi không thể sửa chữa hai báo giá mô tả các dịch vụ khác nhau."
+      "translation": "Giả sử A và B có cùng hàng và cước nội địa, nhưng chỉ A có đóng gói bảo vệ. Trước khi so sai số tỷ giá, thêm phí bảo vệ đã xác nhận vào B hoặc ghi rõ hai đề nghị khác phạm vi. Nếu chưa có giá cho khoản thiếu, giữ nó là thông tin cần hỏi thay vì tự điền."
     },
     {
       "source": "A card might show one all-in home-currency debit, or separate conversion and service entries. Record what the statement actually shows. If the statement amount is already converted and includes a fee, treating that total as a new source amount and applying another conversion repeats the adjustment. When comparing a live quote with a posted charge, document the quote time and posting date. A later rate can differ even when the merchandise price is identical.",
       "source_sha256": "aa280a057cbda53a0e7cfd1bdb063010f7cbd44a16be23276779ebd260caf2ea",
       "raw_target_sha256": "47a95c29417661f7054e485b42a6095131e932058095ffd98a659ded78a54a0b",
-      "translation": "Một thẻ có thể hiển thị một thẻ ghi nợ tiền tệ trong nước, hoặc các mục chuyển đổi và dịch vụ riêng biệt. Ghi lại những gì bản báo cáo thực sự cho thấy. Nếu số tiền báo cáo đã được chuyển đổi và bao gồm một khoản phí, xử lý tổng số đó như một số lượng nguồn mới và áp dụng một chuyển đổi khác lặp lại điều chỉnh. Khi so sánh một báo giá trực tiếp với một khoản phí đăng, ghi chép thời gian báo giá và ngày đăng. Một tỷ lệ sau đó có thể khác nhau ngay cả khi giá hàng hóa là giống nhau."
+      "translation": "Thẻ có thể ghi một khoản trừ tổng bằng đồng tiền của bạn hoặc tách dòng đổi tiền và dịch vụ. Ghi đúng sao kê. Lấy số đã quy đổi và đã gồm phí làm số gốc để đổi thêm lần nữa sẽ lặp điều chỉnh. Khi so báo giá với giao dịch thực, ghi giờ báo giá và ngày hạch toán. Tỷ giá có thể đổi dù tiền hàng không đổi."
     },
     {
       "source": "Take a fictional payment in which the base amount is 300 yuan and the comparison rate is 7.50 yuan per home-currency unit. The base conversion gives 40.00. One hypothetical payment method adds a fixed fee of 1.30 home units. Another has no fixed fee but quotes a conversion that results in 41.00. For this amount, the second method would cost 0.30 less, provided both figures are final and cover the same goods and services. The lower quoted exchange figure alone does not determine the result.",
       "source_sha256": "0c3db5328050fabbc9b5052a42801e535861af27e07a7b916137cdc9e792ed84",
       "raw_target_sha256": "dcaccfea2758364af06fbd3d7229ca733c88acd1a27d2f5b0997766a897cc565",
-      "translation": "Lấy một khoản thanh toán hư cấu trong đó số tiền cơ sở là 300 nhân dân tệ và tỷ lệ so sánh là 7,50 nhân dân tệ mỗi đơn vị tiền tệ trong nước. Số tiền chuyển đổi là 40.00. Một phương pháp trả tiền giả định thêm một khoản phí cố định là 1,30 đơn vị nhà. Một số khác không có phí cố định nhưng áp dụng tỷ giá có kết quả là 41.00. Đối với số tiền này, phương pháp thứ hai sẽ tốn ít hơn 0,30, miễn là cả hai con số là cuối cùng và bao gồm cùng một hàng hóa và dịch vụ. Chỉ có con số trao đổi thấp hơn không quyết định kết quả."
+      "translation": "Ví dụ tiền gốc 300 tệ với tỷ giá 7,50 tệ cho một đơn vị tiền của bạn, nên số quy đổi gốc là 40,00. Cách thứ nhất thu phí cố định 1,30 đơn vị. Cách thứ hai không thu phí cố định nhưng tỷ giá làm tổng thành 41,00. Với giao dịch này, cách hai rẻ hơn 0,30 nếu cả hai số đều cuối cùng và bao gồm cùng hàng, dịch vụ. Chỉ nhìn tỷ giá chưa đủ."
     },
     {
       "source": "Before accepting a number from a screenshot, identify the currency code and whether the price covers one unit, the selected quantity or the entire parcel. Save any quoted conversion alongside the original amount. Someone reviewing the purchase later should be able to reproduce the converted value using those saved inputs, even after the currency selector displays a different rate.",
       "source_sha256": "423e0cf302192f1b93d8247a3d7a30edf2c3b6f841c8e50c494acd9696851ff5",
       "raw_target_sha256": "9e39f903f39f85e033d96f887b3c5517a53c52d6ab308057a597a309e8a43147",
-      "translation": "Trước khi chấp nhận một con số từ một màn hình hiển thị, xác định mã tiền tệ và liệu giá bao gồm một đơn vị, số lượng được chọn hoặc toàn bộ gói. Lưu bất kỳ chuyển đổi nào được báo giá bên cạnh số tiền gốc. Ai đó xem xét việc mua sau đó nên có thể tái tạo giá trị được chuyển đổi bằng cách sử dụng các đầu vào được lưu trữ, ngay cả sau khi bộ chọn tiền tệ hiển thị một tỷ lệ khác."
+      "translation": "Trước khi dùng con số từ ảnh chụp, xác định mã tiền và giá áp cho một đơn vị, toàn bộ số lượng đã chọn hay cả kiện. Lưu mức quy đổi cạnh số gốc. Người xem sau phải tính lại được từ dữ liệu đó dù công cụ chọn tiền tệ đã hiển thị tỷ giá khác."
     },
     {
       "source": "In a teaching example, option A uses an existing carton and simple padding. Option B adds an inner protective shell. Write the cost of each quoted service, then measure or request the external weight and dimensions of the finished parcel under each arrangement. The shell may change the size available to a route, even if it adds little weight. Enter the same destination and product category for both estimates.",
       "source_sha256": "6da576fcb0a7235baf38dc2ed0405705168582f5db95b54c441787ab58f23df7",
       "raw_target_sha256": "75408a727835aeba0eb01c3b1aac2e085a3290ed5955cf560e371dfbeffc919e",
-      "translation": "Trong một ví dụ giảng dạy, lựa chọn A sử dụng một hộp giấy có sẵn và bọc đơn giản. Phương án B thêm một lớp vỏ bảo vệ bên trong. Viết chi phí của mỗi dịch vụ được báo giá, sau đó đo hoặc yêu cầu trọng lượng và kích thước bên ngoài của gói hoàn thành theo mỗi sắp xếp. Vỏ có thể thay đổi kích thước có sẵn cho một tuyến đường, ngay cả khi nó thêm một chút trọng lượng. Nhập cùng một mục đích và loại sản phẩm cho cả hai ước tính."
+      "translation": "Ví dụ A dùng thùng hiện có và lót đơn giản; B thêm vỏ bảo vệ trong. Ghi phí dịch vụ từng phương án rồi đo hoặc xin khối lượng và kích thước ngoài của kiện hoàn chỉnh theo từng cách. Lớp bảo vệ có thể đổi khả năng dùng tuyến dù gần như không tăng cân. Dùng cùng đích đến và loại hàng cho hai ước tính."
     },
     {
       "source": "Suppose a hypothetical quote rises from 150 to 166 after a service is selected. If the service itself is listed at 10 and the packing changes the freight line by 6, record both changes. If the quote shows only an all-in increase of 16, report that observed difference and leave its composition unresolved. Do not present the whole 16 as the service fee or add the visible 10 on top of the already updated total.",
       "source_sha256": "68d8bad3107f5a52d9eb1c9de2dd4cc24e04d841758b08975d4c56726f9d30a7",
       "raw_target_sha256": "96acbe0fdce5c0da3b9f9e79e08537bd5522ac94b43d00d459a0354294a49bd4",
-      "translation": "Giả sử một câu hỏi giả định tăng từ 150 lên 166 sau khi một dịch vụ được chọn. Nếu bản thân dịch vụ được liệt kê tại 10 và gói thay đổi dòng hàng hóa bằng 6, ghi lại cả hai thay đổi. Nếu báo giá chỉ cho thấy sự gia tăng tất cả 16, báo cáo rằng sự khác biệt được quan sát và để thành phần của nó không được giải quyết. Đừng trình bày toàn bộ số 16 như phí dịch vụ hoặc thêm số 10 hiển thị lên trên tổng số đã cập nhật."
+      "translation": "Giả sử báo giá tăng từ 150 lên 166 sau khi chọn dịch vụ. Nếu phí dịch vụ ghi 10 còn cước tăng 6 do kiện đổi, hãy ghi cả hai. Nếu chỉ thấy tổng tăng 16, nêu đúng phần quan sát được và để cấu thành chờ xác nhận. Đừng xem cả 16 là phí dịch vụ hoặc cộng thêm 10 vào tổng đã đổi."
     },
     {
       "source": "A soft parcel can change dimensions depending on how it rests. Measure the maximum outer span as it would travel, including a thick pocket of material or protective padding. If it is later enclosed in a rigid carton, use the carton dimensions instead. Avoid pressing a soft measurement flat to obtain an attractive number unless the actual packing method keeps it that way. A parcel that expands after measuring no longer corresponds to the estimate.",
@@ -266,13 +266,13 @@
       "source": "A catalogue conversion helps with browsing. A merchant quotation shows an amount offered in a particular currency. A card statement shows what was actually posted. Write which of those three you have beside every number. Do not replace the source currency when you translate a quote into your home currency. Keep the original information available so you can recalculate later without relying on a rounded display.",
       "source_sha256": "db352828918454dfdaef6d19fe36e7227f04f4c8d896efbdd387c93fd87b9c0e",
       "raw_target_sha256": "55c2b83528af8656f105e3f535c6bd0ccd411e4ea12e684a9ff90cff043cead5",
-      "translation": "Một chuyển đổi danh mục giúp với việc lướt web. Một báo giá thương nhân cho thấy một số tiền được cung cấp trong một loại tiền tệ nhất định. Một báo cáo thẻ cho thấy những gì thực sự đã được đăng. Hãy viết tên của 3 người đó bên cạnh mỗi con số. Đừng thay thế tiền tệ nguồn khi bạn dịch một báo giá sang tiền tệ của bạn. Giữ thông tin gốc sẵn sàng để bạn có thể tính toán lại sau này mà không cần phụ thuộc vào màn hình tròn."
+      "translation": "Giá quy đổi trong danh mục giúp tham khảo khi xem hàng, báo giá của người bán ghi số tiền được chào trong một đồng tiền, còn sao kê thẻ ghi số thực tế đã hạch toán. Ghi rõ loại chứng từ bên mỗi con số. Khi đổi sang đồng tiền của bạn, giữ nguyên giá gốc để còn tính lại mà không phụ thuộc giá hiển thị làm tròn."
     },
     {
       "source": "Keep the final parcel statement next to your selected services and measured outer dimensions. If the outbound charge changes, compare the final dimensions with the size assumed earlier. If the invoice shows an additional service, identify which piece and which instruction it corresponds to. If there is no clear match, ask support to explain the line and supply the quote you were comparing.",
       "source_sha256": "1724744fec3bd6f6c43deadcc8353df61b8b03091e65d292b9d04250ca2ca386",
       "raw_target_sha256": "55898a92dbefba197fc1ee31eda24809809a9bd6e5467bfc0a3fb0f52fdcf91d",
-      "translation": "Giữ bản báo cáo cuối cùng bên cạnh các dịch vụ đã chọn và đo kích thước bên ngoài. Nếu điện tích ra thay đổi, so sánh kích thước cuối cùng với kích thước giả định trước đó. Nếu hóa đơn cho thấy một dịch vụ bổ sung, xác định mảnh nào và hướng dẫn nào nó tương ứng. Nếu không có sự trùng khớp rõ ràng, hãy yêu cầu hỗ trợ giải thích dòng và cung cấp báo giá mà bạn đang so sánh."
+      "translation": "Đặt bảng kê kiện cuối cạnh dịch vụ đã chọn và kích thước ngoài đo được. Nếu cước đổi, so với kích thước đã giả định. Nếu hóa đơn có dịch vụ thêm, tìm món và chỉ dẫn tương ứng. Không khớp được thì gửi báo giá đang dùng để so và nhờ hỗ trợ giải thích đúng dòng."
     },
     {
       "source": "A good final check takes less time than investigating a mistaken quote. Read the three dimensions and their unit aloud, read the weight and its unit, confirm the destination, then confirm that every measurement describes the same physical box. Only at that point is the estimator result useful for comparing an offered service. If one measurement is still missing, state that explicitly when you share the result and keep the next decision conditional on obtaining it.",
@@ -885,6 +885,546 @@
       "source_sha256": "9ce58a9c023de868738ad732765a02c074877ee80b6aa6865e77e4b522325f3b",
       "raw_target_sha256": "79b4679a891c1e84e17d56d29fbb2902c4eaa1627bd50c60c46f684e3cbe77d6",
       "translation": "Bắt đầu bằng mã kiện, đồng tiền và tên dịch vụ. Ví dụ: “Hai lần bọc, mỗi lần ba, cộng chín tiền thùng là mười lăm. Mục dịch vụ lại là mười tám. Phần ba còn lại thuộc khoản nào?” Đính kèm ngày báo giá và ảnh cắt đúng dòng nếu cần; không gửi thông tin thẻ hay đơn không liên quan."
+    },
+    {
+      "source": "Multiple choices on one marketplace listing can mean different units, quantities and prices. Build the estimate from confirmed options before applying delivery or discounts.",
+      "source_sha256": "bf19ebd5a93821a8db0044997102efc8a88811985010a7635c5b3610f9f9f8b0",
+      "raw_target_sha256": "8e127f0f5ffb4f3262b1f68c19ddf175f0a3f27956a0d928040f667ce4e41bfc",
+      "translation": "Một trang bán có thể gồm nhiều đơn vị, số lượng và mức giá. Hãy xác định đúng phân loại trước khi tính thêm cước hoặc trừ chiết khấu."
+    },
+    {
+      "source": "Make the seller's selling unit explicit",
+      "source_sha256": "b9d22755e40f809bc7fd7ad19576782f241329cb95cc8a3b060315470fbf944d",
+      "raw_target_sha256": "8f02f0249ba9a1172b28e235e1660e1ff8261427fbdfdfb6d7d97aa90df43f66",
+      "translation": "Ghi rõ đơn vị người bán dùng"
+    },
+    {
+      "source": "Read each option before copying the lowest displayed price. A listing can offer a complete set, a single piece, a replacement part or more than one pack size. Save the seller's option text in its original language as well as your translation. If you are buying two shirts in one colour and another in a different size, give them separate lines. An entry saying only three shirts gives you no way to check which line changed when the seller confirms part of the order.",
+      "source_sha256": "bb73e0fac1e00161c31bd0f7f7e539a5b33494af246067ef24a8219922eda100",
+      "raw_target_sha256": "d381e46e7280ba905b3b2bfb7353e78eb0975298d91fc232344aa60f21dc57b2",
+      "translation": "Trước khi chép giá thấp nhất, đọc từng tùy chọn: bộ đầy đủ, món rời, linh kiện hoặc gói nhiều quy cách. Lưu bản gốc lẫn bản dịch. Mua hai áo cùng màu và một áo cỡ khác thì ghi thành các dòng riêng. Chỉ viết “ba áo” sẽ khó xác định dòng nào đổi khi người bán xác nhận được một phần."
+    },
+    {
+      "source": "Build the merchandise subtotal first",
+      "source_sha256": "54717411ad08c8a7c32948f0d2b19a06be3ba5f2555b7793866eaf6ead4b63e4",
+      "raw_target_sha256": "3153fcf72cdc0a03b4aaf876fe7d3ef1625af97d16faca858c2b1e084cd5b41e",
+      "translation": "Tính tiền hàng trước"
+    },
+    {
+      "source": "For example, assume the selected medium shirt costs 72 yuan, the large costs 76 and the two-piece set costs 130. Selecting two medium shirts and one set costs 274 before delivery. Accidentally using the 72-yuan shirt price for the set gives 216. The 58-yuan difference comes from selecting the wrong unit, not from a hidden freight charge. Keeping pack type, option, unit price and quantity in separate columns makes the error visible.",
+      "source_sha256": "e693a04247cb69da69145d2095f6229501229efe4c4a154929e716ea691d8378",
+      "raw_target_sha256": "15987a37c6c2b813265369e692cf8b25d02e92e629c151a23584ef977cac5546",
+      "translation": "Ví dụ áo M giá 72 tệ, áo L giá 76, còn bộ hai món giá 130. Chọn hai áo M với một bộ thì tiền hàng trước cước là 274. Nếu nhầm dùng giá áo 72 cho bộ, tổng chỉ còn 216. Chênh 58 tệ vì nhầm đơn vị bán. Tách loại gói, phân loại, đơn giá và số lượng thành các cột riêng."
+    },
+    {
+      "source": "Check minimums and tiers against the selected mix",
+      "source_sha256": "e5485bdbf64bf2782f1dd61781895e70fa6cd44e84e88b298d2d5bae33ffda20",
+      "raw_target_sha256": "79eabd802221e83038cb02510f91b122673d76c3dee531fe8cf26935be6a2096",
+      "translation": "Kiểm tra số lượng tối thiểu và bậc giá cho đúng tổ hợp"
+    },
+    {
+      "source": "A seller may display several quantity tiers. Read whether quantities can be mixed across colours and whether the minimum is per style or total. For a hypothetical offer priced at 55 per piece for four or more, a basket of three may still use the lower-volume price. Count complete selling units. Two pairs in a two-pair pack can be one selling unit even though the warehouse receives four individual articles.",
+      "source_sha256": "0d2d86499fcaf39c2e03ff9f733772c1273f24b7d1804f5dbc7b07cde7d52db0",
+      "raw_target_sha256": "e54c6137ca9b7e3dfbd4f58580dbbd5d558e7062a963509ed0d35e0b3c575e46",
+      "translation": "Xem người bán có cho cộng nhiều màu hay tính tối thiểu riêng từng mẫu. Nếu giá 55 một đơn vị chỉ áp dụng từ bốn đơn vị, mua ba có thể vẫn tính theo bậc thấp hơn về số lượng. Đếm đúng đơn vị bán: gói hai đôi có thể chỉ là một đơn vị, dù kho nhận bốn món riêng."
+    },
+    {
+      "source": "Split a discount using the rule printed on the order",
+      "source_sha256": "cad037304293c308ee2ebfb7e7dff405b72639f16d9abf30365c9165310f7887",
+      "raw_target_sha256": "ef73b8e5221d21bda4100160c469b87dc85b4307e6632605e6d658ebcf3be4bd",
+      "translation": "Phân bổ giảm giá theo điều kiện trên đơn"
+    },
+    {
+      "source": "Look at the seller summary before allocating the saving. A promotion may apply only to certain items or may change when a unit is cancelled. Keep the eligibility conditions with the order. When you simply need to share a bill, state your allocation method separately from the seller's calculation. For example, proportional distribution among eligible items may be fair among friends but does not describe which refund the seller will approve later.",
+      "source_sha256": "7cb3b049b2b0eb5106fa2e69dc079f3142cfc8dd6da7da144a9b847f6fc55ad4",
+      "raw_target_sha256": "b1a001924608145b5f339d363052691905e58b5a702794567b178bb7ea2145f6",
+      "translation": "Đọc tóm tắt đơn trước khi chia phần tiết kiệm. Ưu đãi có thể chỉ áp dụng cho vài món hoặc thay đổi nếu hủy một món. Giữ điều kiện khuyến mãi cùng đơn. Cách bạn bè chia theo giá trị các món đủ điều kiện là thỏa thuận riêng, không quyết định số tiền người bán sẽ hoàn."
+    },
+    {
+      "source": "Carry item identities into the warehouse",
+      "source_sha256": "ae1a80f5af7e651d6097fa54c8a0ced4617a2cd54875ae4c75837a831405a19e",
+      "raw_target_sha256": "457d06c050bc11841aadb1e471c196e1ebc6b7d807c15ee9cc90913ba6ff4815",
+      "translation": "Giữ dấu nhận diện từng món khi nhập kho"
+    },
+    {
+      "source": "Give each line a stable name, such as navy shirt medium or blue set large. When two deliveries appear, match warehouse entries to those names and counts. Keep one cancelled line in the ledger as cancelled rather than reusing its identifier for another piece. Before submitting a parcel, compare the count of completed entries against what you paid for. A total that balances financially can still conceal a missing colour or an incomplete set.",
+      "source_sha256": "9150f3dd5695c41777ce2e7027972927b71a5cf2c9447dfef09f2203a5a9936e",
+      "raw_target_sha256": "e4b34e544691359d667d473f5bb64ee86afdeaaf4632fbf747a62a91cd5daae3",
+      "translation": "Đặt tên cố định như “áo xanh than M” hoặc “bộ xanh L”. Khi hai chuyến tới, khớp từng dòng với số lượng nhập. Giữ dòng bị hủy với trạng thái riêng, không tái dùng mã đó cho món khác. Trước khi gửi kiện, so số món đã đủ với số đã trả. Tổng tiền khớp vẫn có thể thiếu màu hoặc thiếu phần trong bộ."
+    },
+    {
+      "source": "Buying for three people from one option grid",
+      "source_sha256": "d0239f170664023a33e05e743d2915e2084e89a30eb72da8bec7df19440078a4",
+      "raw_target_sha256": "56cd3d5188b0a7ccc34887927a09e8daad79b014747e1c2a97078d1297027070",
+      "translation": "Ba người cùng chọn từ một trang phân loại"
+    },
+    {
+      "source": "Imagine three friends choosing trousers from one listing. One selects the unlined version in size medium, another selects the lined version in medium and the third selects the unlined version in large. The listing title and seller number are identical on all three records. The information that distinguishes them lives in the option columns. Write one complete selection per line and name the recipient in your private sheet. If the seller option names are translated alike, keep the original wording and thumbnail beside the selections.",
+      "source_sha256": "b6195535c1b6d1f8909444dac3ebdce40b2f17eebf3ff4ff85561c73bb911eb4",
+      "raw_target_sha256": "6335c6122e6f73feacc1c373aecd957356d573a192a6b210e07d4d2768caf2bd",
+      "translation": "Giả sử ba người chọn quần trong một tin. Người thứ nhất chọn mẫu không lót cỡ M, người thứ hai chọn có lót cỡ M, người thứ ba chọn không lót cỡ L. Tên tin và mã người bán giống nhau nên phải dùng cột phân loại để tách. Mỗi tổ hợp một dòng kèm người nhận trong bảng riêng. Nếu tên dịch giống nhau, giữ nguyên văn và ảnh thu nhỏ."
+    },
+    {
+      "source": "Suppose the confirmed unit prices are 80, 94 and 80 yuan and the order has one 9-yuan domestic charge. The merchandise total is 254 and the order total is 263. If the payment request shows 269, inspect its components before calling the extra six a service charge. The seller may have changed the price of one variant, added an explicit charge or applied a different quantity. Compare each option, quantity and line subtotal in order. A three-line purchase is small enough to reconcile without guessing which part changed.",
+      "source_sha256": "879e2b7ba4be9a7c213ab9df34a1d3abede9aded719a2068d319e29df0372041",
+      "raw_target_sha256": "152eccfe6666a6292c6d4a0e4a124986d6245f31b501bb705693fc3fda8ee420",
+      "translation": "Giả sử giá đã xác nhận là 80, 94 và 80 tệ, cước nội địa 9 tệ một lần. Tiền hàng 254, cả đơn 263. Nếu yêu cầu thanh toán là 269, hãy kiểm tra từng phần trước khi cho rằng sáu chênh lệch là phí dịch vụ. Có thể thay đổi giá của một phiên bản, thêm một khoản ghi rõ hoặc đổi số lượng. Đối chiếu từng tùy chọn và tạm tính."
+    },
+    {
+      "source": "Checking a multi-pack against single units",
+      "source_sha256": "17affab70e67217c2d82d365b3fe78708364d730301be9c3fe8194cf1d5d3786",
+      "raw_target_sha256": "9237d1569268bbeaf370b9b670e91f8e8f83c38fd19e2bee5944e412be108f94",
+      "translation": "So gói nhiều với mua từng đôi"
+    },
+    {
+      "source": "A second shop offers a pair of plain socks individually or as a five-pair pack. Four single pairs at 12 each cost 48. A five-pair pack at 55 costs 11 per pair, yet requires a larger outlay and leaves an extra pair. The cheaper per-pair price does not automatically answer which option suits a buyer who needs exactly four. Compare both the total cash required and the number of useful units that will actually be used.",
+      "source_sha256": "64fe169f330e752544c2c965b0d946d64a48a9d496b10b67f2e7d6ab46eddbd6",
+      "raw_target_sha256": "af78b51cca06a57a0bebb14814cd2ca84d6a37cfc15aab0cd98c6e331c109e56",
+      "translation": "Cửa hàng khác bán tất trơn theo đôi hoặc theo gói năm đôi. Bốn đôi lẻ giá 12 mỗi đôi hết 48. Gói năm đôi giá 55, tức 11 mỗi đôi, nhưng phải chi nhiều hơn và dư một đôi. Người chỉ cần bốn đôi nên so cả tổng tiền phải trả lẫn số đôi thực sự dùng."
+    },
+    {
+      "source": "Read the size and colour assortment on the pack. A five-pack may contain an assortment chosen by the seller rather than five duplicates of a selected colour. If only two pairs match the need, dividing by five is a misleading measure of value to that buyer. Before paying, write a sentence describing exactly what should arrive: five wearable pairs in size X, with the colours distributed as stated in option Y. This sentence becomes a usable warehouse count instead of a number with no physical meaning.",
+      "source_sha256": "659d2708aed2ca1d3b1aaa2ebb9630f632ce45792596566408dff924f148962f",
+      "raw_target_sha256": "630f09343be7c5d3bcce2764febbc00b20c57c3ef1b666698d04200eb2f9d365",
+      "translation": "Đọc cỡ và cơ cấu màu của gói. Năm đôi có thể là màu do cửa hàng phối sẵn, không phải năm đôi giống nhau. Nếu chỉ có hai đôi dùng được thì lấy giá chia năm không phản ánh giá trị thực. Trước khi trả, ghi rõ “năm đôi cỡ X, phối màu theo phân loại Y” để khi nhập kho có cơ sở đếm."
+    },
+    {
+      "source": "Take the example of two medium shirts and a set. If the seller confirms only one medium shirt, the original 274 no longer describes the goods available. One shirt at 72 plus the set at 130 gives a merchandise total of 202. Check whether a quantity threshold, domestic delivery condition or discount has changed as well. A cancellation can affect more than the removed unit if the promotion depended on the original basket.",
+      "source_sha256": "3494235e91bdc6cd07e43652ea5d572b4d6a899a65c0773c1026ba361e7c36b0",
+      "raw_target_sha256": "a5f15da70e85844c023bc85f65b14e5fe84f05aaf6a95a040e38e4f6b55917d7",
+      "translation": "Trở lại hai áo M và một bộ. Nếu chỉ còn một áo M, 274 không còn là giá hàng có thể giao. Một áo 72 cộng bộ 130 thành 202. Kiểm tra điều kiện số lượng, phí nội địa hoặc giảm giá có đổi không, vì ưu đãi của cả đơn có thể phụ thuộc giỏ ban đầu."
+    },
+    {
+      "source": "Identifying a quantity mistake before it travels",
+      "source_sha256": "e5e96f0a394458d8d064dc4c3ff7d0ff0deaee03d187b89230197270fa967f32",
+      "raw_target_sha256": "4f53161543875295f2f9905eab0cbef386582b4fbf1fa78fecacefa31672bb0a",
+      "translation": "Phát hiện sai số lượng trước khi hàng đi tiếp"
+    },
+    {
+      "source": "A photograph of three unopened packets can confirm that three packets are present. It may not confirm the number of units inside each. For a set with different contents per package, ask for a view or label that distinguishes the package versions without damaging packaging the seller may require. For separate garment sizes, match each readable size tag to a line on the paid order, especially when two colours differ only slightly under warehouse lighting.",
+      "source_sha256": "840e6b972c99347c2a0ae150a95b7b52ee14750b759757412aa832e62663563e",
+      "raw_target_sha256": "eac39f88e25e0cc5f391099a69aa71cdabd641ccf845e1f6154c7d4287bdc5c5",
+      "translation": "Ảnh ba gói niêm phong xác nhận có ba gói, chưa chắc cho thấy số món trong từng gói. Nếu mỗi bộ có thành phần khác nhau, xin ảnh hoặc nhãn phân biệt mà không làm hỏng bao bì người bán có thể yêu cầu giữ nguyên. Với đồ nhiều cỡ, khớp nhãn từng chiếc với dòng đã thanh toán, nhất là khi ánh sáng kho khiến hai màu trông gần nhau."
+    },
+    {
+      "source": "Keeping product mathematics separate from outbound freight",
+      "source_sha256": "7c8890fd16fcf419d225256248706176f898e8a4724bf3c17f3ec77db9470465",
+      "raw_target_sha256": "d30d36404149b5cc597118200d4ea9ff79850add7c97e020905e7d0508dd738c",
+      "translation": "Tách phép tính tiền hàng khỏi cước gửi quốc tế"
+    },
+    {
+      "source": "The price per usable item can be useful before purchase, but do not silently add a future international fee to each seller line and treat the result as confirmed. Once the goods arrive, a shared parcel may contain items from several purchases and use packing that was unknown earlier. Retain the confirmed seller costs and add a separate outbound comparison when measured figures become available. If you later allocate freight among recipients, document that policy separately.",
+      "source_sha256": "d04fb0dec019f09eabeecc5f1251b12807962689aeb293be54012553528eb888",
+      "raw_target_sha256": "43cbbbd2862967536f57fabd1520c8eb25fc2abd3a3d7edaa0ad67d66ca4481b",
+      "translation": "Đơn giá hữu dụng trước khi mua, nhưng chưa nên cộng cước quốc tế tương lai vào từng dòng rồi coi là đã xác nhận. Khi vào kho, hàng có thể đi chung với đơn khác và dùng cách đóng chưa biết trước. Giữ chi phí người bán đã chốt; lập phần so cước riêng khi có số đo. Ghi cách chia cước cho người nhận thành quy tắc riêng."
+    },
+    {
+      "source": "A complete record lets you answer three questions without recalculating from memory. Which version and quantity did the seller agree to supply? How much was actually collected or returned on the purchase? Which items are ready for international submission? A purchase line can be financially complete while one piece is still waiting for identification, so close each line only when its contents and its payment history are both clear.",
+      "source_sha256": "68a3468359044a5e26abfda966207f326649659dd8d42d33b3ecd37b282cee25",
+      "raw_target_sha256": "82ece06c86f7aa3e19a5c7942436ae47bf682d641ce0741ee60f39e150be27a8",
+      "translation": "Hồ sơ đầy đủ cho biết cửa hàng đồng ý giao phiên bản nào và bao nhiêu, tiền thực thu hoặc hoàn bao nhiêu, và món nào sẵn sàng gửi quốc tế. Một dòng có thể xong về tiền nhưng món hàng vẫn chờ nhận diện. Chỉ đóng dòng khi rõ cả nội dung lẫn lịch sử thanh toán."
+    },
+    {
+      "source": "A multi-shop shortlist can look like one cart, while costs and delivery events still originate with different sellers. Organize the purchase by shop first and the international shipment by parcel later.",
+      "source_sha256": "f97eaf1e81454d8f51fe0cbf00fae7d6447d2866fe0af64cdef551c0d1dbc361",
+      "raw_target_sha256": "1ff5324af75da81a80890c4300d073ae8e4ab1ba36e4d535a88e7d54b93f19c3",
+      "translation": "Danh sách mua nhiều cửa hàng có thể trông như một giỏ, nhưng phí và các lần giao phát sinh theo từng người bán. Tổ chức đơn mua theo cửa hàng trước rồi tổ chức gửi quốc tế theo kiện sau."
+    },
+    {
+      "source": "Create a small register for each seller",
+      "source_sha256": "f68f726587f807f9c2fc0a39b5739a99422de9ed512a323b17002bc8c1c8b2c4",
+      "raw_target_sha256": "1be38c5fe822f0baa967339bd0fa09ca6d7b20dcbf7d34cdd32d3be952416c5e",
+      "translation": "Tạo bảng theo dõi cho từng người bán"
+    },
+    {
+      "source": "Save the original listing, chosen option, quantity, product amount and domestic delivery shown for that particular purchase. Put discounts under the shop where they apply. Two listings sharing the same studio photo can still be offered by different sellers. Use the shop identity and the marketplace listing number to distinguish them, and give the lines names you will recognize even if the seller edits the title.",
+      "source_sha256": "ef47bf2754d504526e0df933100a1bdf34e0c9b97d507842474d3d4468f2c73f",
+      "raw_target_sha256": "1ef152b411efc794ca2132ed0ef947976abf2908eb8316cebd1955ca13866eda",
+      "translation": "Lưu tin gốc, phân loại, số lượng, tiền hàng và phí nội địa của từng đơn. Đặt giảm giá vào đúng cửa hàng. Hai người bán có thể dùng chung ảnh studio; phân biệt bằng thông tin cửa hàng và mã tin, rồi đặt tên dòng vẫn hiểu được nếu tiêu đề bị sửa."
+    },
+    {
+      "source": "Keep committed costs separate from intentions",
+      "source_sha256": "7e642cdca349f2e12a1052f1d01f89b2097f543f5392b74ba3b237aa8bbe2679",
+      "raw_target_sha256": "a400c7dc3a2e3d08f44d7b6a7291fccf8ab88f21a80040d130dc6b842320f5fe",
+      "translation": "Tách khoản đã chốt khỏi dự định"
+    },
+    {
+      "source": "Suppose shop A has confirmed a 90-yuan jacket and 8 yuan delivery. Shop B still shows a 54-yuan scarf with domestic delivery unknown. Shop C has cancelled a 30-yuan accessory and its refund has not arrived. Show 98 as the confirmed purchase cost for A, 54 plus an unresolved amount as the estimate for B and 30 as a pending credit if it was actually paid. Adding everything into one definite subtotal would hide three different states.",
+      "source_sha256": "37f5222e9db2b2bf15e89543147df12df5c923a18373e7ba4e9032b85a64c179",
+      "raw_target_sha256": "ae00cb4fd61d30c025105437b1ae07c9e84644db5540995d85e38ac6afb9c41a",
+      "translation": "Cửa hàng A đã xác nhận áo khoác 90 tệ và cước 8. Khăn 54 ở B chưa rõ phí nội địa, còn C đã hủy phụ kiện 30 nhưng chưa hoàn tiền. Ghi 98 là chi phí chắc chắn của A; 54 cộng khoản chưa rõ là dự tính B; nếu đã thanh toán thì 30 là khoản hoàn chờ từ C. Cộng thành một tạm tính xác định sẽ che mất ba trạng thái."
+    },
+    {
+      "source": "Track arrivals without changing the accounting basis",
+      "source_sha256": "021ab5c0697b2ad4b273cc8e66a52a87e647a47d2b78f87de338198a16000acf",
+      "raw_target_sha256": "e19f57779bca26fa704341b6c7971b0b6364b9c42c0625e3f59764231b24ea14",
+      "translation": "Theo dõi hàng đến mà vẫn giữ nguyên cơ sở ghi tiền"
+    },
+    {
+      "source": "The parcel that reaches the warehouse first may belong to the last shop you ordered from. An arrival changes what you can inspect or submit for shipping, but does not automatically create an additional seller charge. Record the domestic tracking reference against the purchase and the warehouse reference against the received unit. If two tracking numbers arrive for one seller order, confirm the contents of each before treating either shipment as complete.",
+      "source_sha256": "585ad28963b7a25777a4ee1105243d61da2d12da743143a9cf224a3b8e3ea5f7",
+      "raw_target_sha256": "c1c26f04339bcc7adfd8bb14c22233817c322d30760d2ad2cd864cd275014309",
+      "translation": "Kiện đến đầu tiên có thể của cửa hàng bạn đặt sau cùng. Hàng đến ảnh hưởng khả năng kiểm hoặc gửi đi chứ không tự tạo phí mới của người bán. Liên kết mã vận đơn nội địa với đơn mua, mã nhập kho với món nhận được. Nếu một đơn có hai mã vận đơn, kiểm tra nội dung từng kiện trước khi đánh dấu đủ."
+    },
+    {
+      "source": "Decide what waiting for the last item costs",
+      "source_sha256": "04652bc8096065146e19945d63e4cfcd70c3be6f6f601332517e922fa5f1fb59",
+      "raw_target_sha256": "84187498259eaa9af8c32822e40307c80eb12910efefcd0eaf6a7ec2a6bf8947",
+      "translation": "Xem việc chờ món cuối cùng ảnh hưởng thế nào"
+    },
+    {
+      "source": "Write down the warehouse deadlines for the items already stored and the latest confirmed information for the missing piece. Compare a combined parcel when all items arrive with sending the ready items now. Do not assign an invented cost to waiting. If a storage charge or packing service could matter, check the current account information. If the item has a firm use date, represent that constraint separately from the freight comparison.",
+      "source_sha256": "74cf45bac0fbb7c75262c1b0a0b5fb9c715437325c190acacc3550ee94c0cda3",
+      "raw_target_sha256": "be1b40f532ac0a708c0ed5a4d19e9e9180b4113e49d4f3b28066f84b8650205f",
+      "translation": "Ghi hạn lưu kho của hàng đã đến và thông tin xác nhận mới nhất về món còn thiếu. So gửi đồ sẵn ngay với chờ đủ để gom. Đừng tự đặt một khoản chi phí cho thời gian chờ. Nếu phí lưu kho hoặc đóng gói quan trọng, xem thông tin hiện có trong tài khoản. Hạn cần dùng hàng là ràng buộc riêng, tách khỏi so cước."
+    },
+    {
+      "source": "Rebuild the final total from its records",
+      "source_sha256": "07f7dd3240d9f20e50ebe8c86e66693dc6f3c495f1c8b012fd29fb9e344c1cb1",
+      "raw_target_sha256": "3a334b07c548c556782a6651675bb6cea682c3df50c5621d0c8e82b3ed0f7c0c",
+      "translation": "Tính lại tổng cuối cùng từ chứng từ"
+    },
+    {
+      "source": "Start with net merchandise across sellers. Add the domestic amounts actually charged once each, then add outbound parcel payments and any separately shown services. Subtract refunds only when you can match them to the correct purchase, currency and destination. A refund returned to an account balance may affect your usable balance differently from a credit to your original payment method. Keep both the economic cost and the payment history visible.",
+      "source_sha256": "f7c9ee3c7ea5e76b5c681c4ce312a76b6cbe7092aae501f0a40549310e7f6293",
+      "raw_target_sha256": "80a5e18094a1399a51ad317bcfee34a2f517404d5162e543844a187552208907",
+      "translation": "Bắt đầu từ tiền hàng ròng của các cửa hàng. Cộng đúng một lần mỗi khoản cước nội địa thực thu, sau đó thêm phí kiện xuất và dịch vụ tính riêng. Chỉ trừ tiền hoàn khi đã khớp với đơn mua, đồng tiền và nơi nhận khoản hoàn. Hoàn vào số dư tài khoản có ảnh hưởng khác đến số dư dùng được so với hoàn về phương thức thanh toán ban đầu. Giữ cả chi phí ròng lẫn lịch sử dòng tiền."
+    },
+    {
+      "source": "A basket that changes while the first item is in storage",
+      "source_sha256": "38b41bfcafdb2e3e445cfff1b702f284fd55a1eeb5ff58a25f8ee0b063d3da52",
+      "raw_target_sha256": "14e323ff12c53290a877c084fd308dd2612a604d0e634447f96cf6a0b47c3b4c",
+      "translation": "Khi món đầu tiên đã vào kho nhưng giỏ hàng thay đổi"
+    },
+    {
+      "source": "Imagine you have chosen a coat from one shop, a scarf from another and two bags from a third. The coat is received first. The scarf seller confirms the original colour is unavailable, and the bag seller sends two domestic tracking numbers. On your sheet you now have one ready item, one unresolved purchase and two shipments linked to one purchase. Listing all four items as ready would result in a parcel plan the warehouse cannot yet fulfill.",
+      "source_sha256": "ec2c76dbf50bff3666e70e40f637b3fc7a828f35c13dbea1483b5a7c5b7a019f",
+      "raw_target_sha256": "549614240896dea68cac156744d513a1d37a2f606cb5ec811a8ecb8b98afed26",
+      "translation": "Giả sử áo khoác đến trước, người bán khăn báo hết màu ban đầu, còn cửa hàng túi cung cấp hai vận đơn cho hai chiếc. Bạn có một món sẵn, một giao dịch chưa ngã ngũ và hai chuyến gắn với một đơn mua. Đánh dấu cả bốn món sẵn sàng sẽ tạo một kế hoạch kho chưa thể thực hiện."
+    },
+    {
+      "source": "Work out two possible shopping baskets. In the first, the scarf is cancelled and the coat and both bags are retained. In the second, you accept a different scarf and wait for its arrival. Show confirmed costs shared by both scenarios once and note the costs and risks that differ. The first option may change freight by removing an item; the second may change warehouse timing. Neither estimate is complete until you have the measurements and services for the parcel you actually intend to submit.",
+      "source_sha256": "29bcff69400db3f03598c6e8b936514a30fd09d3b5b544ede96cfe480aeb4c0a",
+      "raw_target_sha256": "1f4a66dee1ddf56b11f8bb5f8e8fc18e23bbecf171b822845341dddded469aac",
+      "translation": "So hai giỏ: hủy khăn rồi giữ áo và hai túi, hoặc chấp nhận khăn màu khác và chờ hàng. Ghi một lần các chi phí đã chốt chung cho cả hai rồi nêu phần khác. Bỏ khăn có thể đổi cước; đợi khăn có thể đổi thời gian lưu kho. Cả hai dự tính vẫn cần kích thước và dịch vụ cho kiện thực tế."
+    },
+    {
+      "source": "Deciding who owes what in a shared basket",
+      "source_sha256": "1fefa08cff11aa78c65e5f72997f611167444f4184522c35c4bd07972be47b3b",
+      "raw_target_sha256": "20573ab4218f045e9d28f3a46adb9310c234c1bf200390051bf83fb7ed142301",
+      "translation": "Xác định phần mỗi người trong giỏ mua chung"
+    },
+    {
+      "source": "Suppose one friend buys from shop A only and another friend buys from shops B and C. Individual seller charges belong to the appropriate purchase first. The friends might then agree to divide the international shipping equally, by weight or according to another rule. Keep that private agreement separate from the charges the sellers or HubBuy applied. A buyer's contribution can change when the packing plan changes even if no seller has altered its own amount.",
+      "source_sha256": "265b9fe1db59015eac328c404442c99cf9edd3fdd48811a3af257aebbdf19358",
+      "raw_target_sha256": "0497a7d8b313fb7abc008f16ff994d90d0947bf07aa8e2c88df354f53c7a1cc2",
+      "translation": "Nếu người thứ nhất chỉ mua ở A và người thứ hai mua ở B với C, trước hết gắn phí từng cửa hàng cho đúng đơn. Sau đó mới chia cước quốc tế theo đầu người, khối lượng hoặc quy tắc đã thống nhất. Tách thỏa thuận này khỏi phí người bán và HubBuy. Phần góp có thể đổi khi cách đóng kiện đổi dù giá của các cửa hàng giữ nguyên."
+    },
+    {
+      "source": "For example, three purchases might have net totals of 106, 64 and 180 yuan. Their combined purchase cost is 350. If one purchase later gets a 20-yuan credit, the new cost is 330. Assign that credit to the purchase it belongs to before splitting anything else. Subtracting it from the international parcel total would make it harder to explain either the net seller cost or the eventual outbound charge. Show a pending credit separately until it actually appears.",
+      "source_sha256": "ab342c0afda44335355e4e5e7a855ff40e5422befbe40fe8f44f0b58629114e8",
+      "raw_target_sha256": "8ecf83a038decbc67acaafeccc9cdde9313f29397695ce08433a5c4afb3e8480",
+      "translation": "Ví dụ ba đơn có tiền ròng 106, 64 và 180 tệ, cộng 350. Nếu một đơn được hoàn 20 tệ thì chi phí ròng còn 330. Ghi khoản hoàn vào đúng đơn trước khi chia. Trừ nó khỏi cước quốc tế sẽ khiến cả tiền hàng ròng lẫn cước cuối khó giải thích. Nếu tiền chưa về, để riêng ở phần chờ hoàn."
+    },
+    {
+      "source": "Inventory matching across deliveries",
+      "source_sha256": "2fbeb030411731a369612a453a21fd5254a15a5587924d17f3508fdff545895e",
+      "raw_target_sha256": "92d03c02ac3fbacddde0fcb55e4721c19aeb29bd9057a5764245191d8a099101",
+      "translation": "Khớp hàng giữa nhiều chuyến giao"
+    },
+    {
+      "source": "Use a unique row identifier for each chosen option. A short name such as coat-A-small is enough in a personal worksheet if it also points to the underlying order reference. When an intake notification arrives, match the item to a row using the seller, domestic tracking and identifying details. If two similar bags came from different shops, a studio picture shared by both shops is weaker evidence than the corresponding delivery record.",
+      "source_sha256": "659dd75865e850482d5c1bf696b472c1371d457d905c195243074c18aba56aba",
+      "raw_target_sha256": "b83826cdd74739cafed7e4caca3062f1dda5a1ceab0fc5d34d05739e56e9cd10",
+      "translation": "Mỗi tùy chọn dùng một mã dòng riêng, như coat-A-small, miễn là truy về được mã đơn. Khi có thông báo nhập kho, khớp theo người bán, vận đơn nội địa và đặc điểm món hàng. Hai túi giống nhau từ hai cửa hàng dùng chung ảnh quảng cáo thì chứng từ giao tương ứng đáng tin hơn ảnh đó."
+    },
+    {
+      "source": "If a delivery appears without an obvious match, do not immediately reassign it to whichever row is still blank. Check how many pieces each seller was expected to send, the last known tracking events and any note about a split delivery. Contact support with the specific unresolved record and the candidate orders. A clear inquiry might say that two domestic numbers were expected from shop C, one has an identifiable bag in stock, and you need help matching the second number to its intake.",
+      "source_sha256": "4841d13ea7b2fb0302bd935bd67a6828518530cec14e5acdf1cbb71823c7dd6c",
+      "raw_target_sha256": "209d033749caabb9d0f94bab0bdde33d8df064ca4cb0f6b8e196b65dd529428f",
+      "translation": "Khi kiện đến mà chưa biết thuộc dòng nào, đừng gán ngay cho ô còn trống. Kiểm tra lượng mỗi người bán dự kiến gửi, mốc quét mới nhất và ghi chú tách chuyến. Hỏi cụ thể, chẳng hạn cửa hàng C có hai vận đơn, một mã đã khớp với túi trong kho, cần hỗ trợ đối chiếu mã còn lại."
+    },
+    {
+      "source": "Planning the outbound comparison with unresolved costs",
+      "source_sha256": "e7dfee6be33be5ba847c17730d92d5115bbbdc8c72368e0974c8d411f938a642",
+      "raw_target_sha256": "8c7bbf448f08777ebe7771cfcf85ae0b0fe6e3c257adedb62b913869a1594785",
+      "translation": "Lập phương án xuất kiện khi vẫn thiếu một khoản"
+    },
+    {
+      "source": "Keep unknown amounts visibly unknown. A blank field frequently gets treated as zero when a spreadsheet sums a column. Add a status such as awaiting domestic quote to flag a missing charge. If the seller confirms a range instead of a final amount, preserve both endpoints for planning and mark the calculation as conditional. Use the exact amount on the confirmed payment record when it becomes available.",
+      "source_sha256": "f67d0f02b785405902e45c3949788c0803465744a05e066453832b9305b4e070",
+      "raw_target_sha256": "f9a5899af0ee1e2894033da066dc116526999cb3be0f10310d1af0beeb3771f5",
+      "translation": "Giữ khoản chưa biết ở trạng thái dễ thấy vì bảng tính thường coi ô trống như số không. Thêm nhãn “chờ báo giá cước nội địa”. Nếu cửa hàng báo một khoảng, lưu cả giới hạn dưới lẫn trên và ghi kết quả có điều kiện. Khi có chứng từ thanh toán, dùng số chính xác."
+    },
+    {
+      "source": "You can still make a useful decision with one missing number. Assume the confirmed items total 250 yuan and the preferred basket has a hard merchandise budget of 300. There is 50 left for the unresolved item plus any remaining seller charges. If the item's selected price alone exceeds 50, you already know this plan will exceed that budget, even before international freight. If the selected item costs 40, the decision turns on the remaining conditions. The calculation identifies what you need to ask next.",
+      "source_sha256": "b9328892921c2f0b25868d0f4ecf22ab90dcfe2c80423050d47ba1c8c873abdf",
+      "raw_target_sha256": "fb01aa85b38d3c01bc3af46875aa1d1414cfd8346d00807ad5a9d040afc8ecf1",
+      "translation": "Thiếu một con số vẫn có thể ra quyết định. Nếu hàng đã xác nhận là 250 tệ và trần ngân sách mua hàng là 300, còn 50 cho món cuối và phí từ người bán. Giá món đó riêng đã trên 50 thì chắc chắn vượt trần ngay cả trước cước quốc tế. Nếu món giá 40, cần hỏi thêm khoản còn lại."
+    },
+    {
+      "source": "Closing the basket without losing its history",
+      "source_sha256": "81fb1c9516dcdc8451ecede3e4508ace422bfedab2ed2a684bde26662c269b38",
+      "raw_target_sha256": "3f74b301a324bf591814f59ff20f772503ae5d2677c6e8e52e92ce47f42c3669",
+      "translation": "Chốt giỏ hàng và giữ lại lịch sử"
+    },
+    {
+      "source": "After delivery, keep a final list of which purchases ended up in which parcel. Some may be returned, sent later or accepted as replacements. If you sent the coat earlier and the two bags later, the original one-box estimate is useful historical information, not the final transport bill. Enter two outbound references and their confirmed amounts. Where an amount is in another currency, retain its original value and the actual converted payment entry.",
+      "source_sha256": "ad019ffc062501eadc4c70c50a31bbfe5e33044099d585329f54e4b9974be4db",
+      "raw_target_sha256": "0707c6bbede379c4b9a2926ec533f1bab7413ff00c480348727ef185984d3c2b",
+      "translation": "Sau khi giao, lưu danh sách đơn nào nằm trong kiện nào. Một số món có thể trả lại, gửi sau hoặc nhận hàng thay thế. Nếu áo đi trước rồi hai túi đi sau, báo giá một thùng ban đầu chỉ còn là dữ liệu lịch sử. Ghi hai mã xuất cùng tiền đã chốt. Khi khác tiền tệ, giữ giá trị gốc và số thực trả sau quy đổi."
+    },
+    {
+      "source": "Finish by checking arithmetic in stages. Sum retained merchandise by shop. Add domestic delivery shown on the relevant purchases. Apply confirmed seller credits. Add final parcel payments and separately billed services only once. Reconcile any friend-to-friend allocation to the result. The resulting total can then be traced to records the people involved can inspect, including the reason the final basket differs from the first shortlist.",
+      "source_sha256": "1d9e3df29cc43d20091966013a7c0a98a085b9968b225f5c87d60105d639dbf8",
+      "raw_target_sha256": "48f55528b9cd177ba454c606eba08cf4db505a18aa1249866e9cdc779a214cd2",
+      "translation": "Cộng hàng giữ lại theo cửa hàng, thêm cước nội địa trên đơn liên quan, trừ khoản hoàn đã xác nhận, rồi cộng phí kiện cuối và dịch vụ tính riêng đúng một lần. Kiểm tra tổng phần bạn bè đóng góp bằng kết quả. Mọi người có thể truy lại chứng từ và hiểu vì sao giỏ cuối khác danh sách ban đầu."
+    },
+    {
+      "source": "Two screenshots can show different numbers for the same purchase without showing a different underlying price. Work from a common currency, a stated conversion direction and an identical set of included charges.",
+      "source_sha256": "6bf28f42334c0e7b34f483760d5104fd7c5b05ed922c6e733e6e1ce02b4db573",
+      "raw_target_sha256": "704d182ac369ab925c6f8a19e08fcb3e0c66295b38afa8f7100081fedf37249c",
+      "translation": "Hai ảnh có thể hiện số khác nhau dù giá gốc của cùng giao dịch không đổi. Chọn một đồng tiền so sánh, ghi chiều quy đổi và dùng cùng tập hợp chi phí."
+    },
+    {
+      "source": "Decide what you are comparing",
+      "source_sha256": "a08b7fb5edcbd61099d08e9e65b631b12da71a079d9165c14c43a0d4bd023c72",
+      "raw_target_sha256": "6f6ea70cb7b9733e55113dc37fe8420a9fe954aa5869101a3ab8763ab6ea9e99",
+      "translation": "Xác định bạn đang so loại số tiền nào"
+    },
+    {
+      "source": "Include payment fees exactly once",
+      "source_sha256": "98683f4e7520fd644357d39598d9b861f9af700da3a749c0ca6593198131d7b3",
+      "raw_target_sha256": "097a11e394fee2c7314db76dde51cc5dff04c0a6f9a36bf7c70617c2ef4a9702",
+      "translation": "Chỉ tính phí thanh toán một lần"
+    },
+    {
+      "source": "Round at the point where payment rounds",
+      "source_sha256": "e6c4dc2923c5d7106126101284b046fddd8614bf7140e37bc798324a87828292",
+      "raw_target_sha256": "640cf98bb6c23428641856b3c32f2fab49347b51cc7c70a21c118275beab36fc",
+      "translation": "Làm tròn ở cùng bước với giao dịch thật"
+    },
+    {
+      "source": "When a seller summary collects several lines into one payment, convert the original-currency subtotal for your comparison. Rounding every small item first can create a few cents of difference from converting the order once. For a reimbursement sheet you may still need per-person figures. State which line absorbs the rounding remainder so that the sum of the allocations matches the amount actually paid.",
+      "source_sha256": "c59cf691180c32d61209d8865a0a86d2a39e916fc71178bcdf50c87f55e10d76",
+      "raw_target_sha256": "43663b238a271dca00201e6baf5bdc0772e97ba1eb5d51fb63e82f98d4a84adb",
+      "translation": "Nếu người bán gộp nhiều dòng vào một lần thanh toán, hãy quy đổi từ tổng phụ bằng tiền gốc. Làm tròn từng món trước có thể lệch vài đơn vị nhỏ so với quy đổi cả đơn một lần. Khi cần chia theo người, ghi dòng nào nhận phần dư làm tròn để cộng lại bằng số thực trả."
+    },
+    {
+      "source": "Worked example with a fixed fee",
+      "source_sha256": "4d49b34d0fec809f05d0d2aee85a66cb402f5e3e8a83572c22074f5f83056ffd",
+      "raw_target_sha256": "1e65d5b99de6a4688db6f4a614526b9c81f893420ccf596e13416826365cc77a",
+      "translation": "Ví dụ so phí cố định"
+    },
+    {
+      "source": "Now change the purchase to 75 yuan using the same illustrative conditions. The first method gives 10.00 plus 1.30, while an equally sized percentage difference on the second method might have a very different effect in absolute terms. Recalculate instead of assuming the method that won on the first purchase also wins here. Fixed fees matter proportionally more on small payments. These invented numbers explain comparison mechanics only and make no claim about the methods, rates or fees offered to any HubBuy account.",
+      "source_sha256": "8dd32c88b37adfdc43fb41d2844babc87a700d5c9c56733200ac5b534391ab68",
+      "raw_target_sha256": "0fc545922d84679d71afa08837b941f7e280936d5c7a371d116115f008d9ae24",
+      "translation": "Nếu đổi giá mua thành 75 tệ theo cùng giả định, cách thứ nhất ra 10,00 cộng 1,30. Chênh lệch tỷ lệ tương tự ở cách thứ hai có thể tạo ra chênh lệch tiền rất khác. Hãy tính lại vì phí cố định chiếm tỷ trọng lớn hơn trong giao dịch nhỏ. Đây là số giả định để minh họa, không phải phương thức, phí hay tỷ giá được hứa cho tài khoản HubBuy."
+    },
+    {
+      "source": "Keep a consistent direction in a mixed-currency worksheet",
+      "source_sha256": "718304e88caca3d4ac1e63da41042e9174b8ff37903c992a09773499a2ad8aff",
+      "raw_target_sha256": "d417b1f20c8edc336cda11fedc616e0420b6de2327f4ea2bc3f0f0a8f738327e",
+      "translation": "Giữ một chiều quy đổi trong bảng nhiều loại tiền"
+    },
+    {
+      "source": "A common mistake occurs when a friend pastes a displayed conversion into a column that ordinarily contains original yuan amounts. The sheet then converts an amount that has already been converted, creating an implausibly low total. Use clear column names and keep screenshots or payment references close to the corresponding row. If you cannot tell which currency a pasted number uses, leave it out of the combined total until you can identify its unit.",
+      "source_sha256": "4347ad0f8751f966fb8d3e5b956089dabb9a6b8cea582e2595dd518d6f90d103",
+      "raw_target_sha256": "fcffacd71dcaf961369349f3797645081ee566fdb9b2ca696004f8911171bba3",
+      "translation": "Một lỗi phổ biến là dán giá hiển thị đã đổi vào cột vốn dành cho tiền gốc CNY. Bảng đổi thêm lần nữa và cho tổng thấp bất thường. Đặt tên cột rõ đơn vị, giữ ảnh hay mã thanh toán cạnh dòng tương ứng. Nếu không xác định được đồng tiền của số vừa dán, tạm loại nó khỏi tổng."
+    },
+    {
+      "source": "Compare estimates at the same point in the transaction",
+      "source_sha256": "c37bc766a5a7a39cb7fe1324f12fe8ebf5d217b655d249cf41c54bfdbfccd5ce",
+      "raw_target_sha256": "56d01791b3ca7c1621343974a1fb46c4bad3e87479f02e85f5a5939f2ba75390",
+      "translation": "So ở cùng giai đoạn giao dịch"
+    },
+    {
+      "source": "A product card viewed in the morning and a payment statement issued days later are different observations. Changes in selected variant, quantity, discounts or payment method can alter the result before exchange rates are considered. Begin by reconstructing the original-currency merchandise subtotal. Add domestic shipping and any services the relevant screen includes. Only once both source subtotals describe the same purchase should you compare conversion rates.",
+      "source_sha256": "2de528059d188a69c46e10b9456f3baebd7f010c578f63d2f8be3b6902c14751",
+      "raw_target_sha256": "2bfd8c4e775b515ba779bc433bb4fd50dfda3a9e752e493a406299bb96f6b925",
+      "translation": "Ảnh sản phẩm buổi sáng và sao kê vài ngày sau là hai thời điểm khác nhau. Phân loại, số lượng, giảm giá hoặc cách trả có thể đổi trước khi xét đến tỷ giá. Dựng lại tiền hàng bằng đồng gốc, thêm cước nội địa và dịch vụ có trên màn hình tương ứng. Chỉ so tỷ giá khi hai tổng gốc nói về cùng giao dịch."
+    },
+    {
+      "source": "For a parcel, keep packed measurements and route consistent as well. If the first screenshot was a quick estimate for one jacket and the second a final all-in payment for a larger consolidated package, no exchange-rate calculation can make them a fair pair. Mark the physical change first. If useful, obtain a new estimate for the same parcel inputs in the current display currency and state its date. An old figure can explain the history even when it cannot answer the present comparison.",
+      "source_sha256": "4b2401952fde90aa1f6fe0c31a294994432a010bd75cf8fc62c5a896c88e1248",
+      "raw_target_sha256": "3f2af244475a0500293d5bc363e70ebc9e9fe2ce12ee133e9facfe75c8006784",
+      "translation": "Khi so kiện, giữ cùng kích thước sau đóng và cùng tuyến. Ước tính nhanh cho một áo khoác khác với tiền cuối của kiện gom lớn hơn, dù đổi sang cùng tiền tệ. Ghi thay đổi vật lý trước. Nếu cần, lấy báo giá mới cho cùng dữ liệu kiện bằng đồng tiền đang hiển thị và ghi ngày. Giá cũ vẫn hữu ích để hiểu lịch sử."
+    },
+    {
+      "source": "What a refund can and cannot tell you",
+      "source_sha256": "0ea1144439a5040a1775d24f07fe78055bef72f3431428105af67182b673efd9",
+      "raw_target_sha256": "25857dba7a4ba22ceb5aff3f33afeb7dd91fe5b77fa3ce84ce7cf8b62994f477",
+      "translation": "Khoản hoàn có thể cho biết điều gì?"
+    },
+    {
+      "source": "A refund statement may show the original currency even when your card posts a home-currency credit. Record the two values in their own columns, matched by reference where possible. A different home-currency credit from the original debit can reflect several factors. Check the amount refunded in the original currency, the payment destination, any stated fee and the dates of the transactions before attributing a difference to exchange.",
+      "source_sha256": "d66e06b520387362ee8e94a89f10f83061ac4559e1b58acdf05747ba8ac8e19b",
+      "raw_target_sha256": "f510909a3d6746a64f8379d05b734d6973348e3580b9bbe794b64b0f1382e34e",
+      "translation": "Chứng từ hoàn có thể ghi tiền gốc trong khi thẻ ghi có bằng tiền của bạn. Lưu hai giá trị riêng, ghép theo mã khi được. Nếu số ghi có khác số trừ ban đầu, kiểm tra số gốc được hoàn, tiền về đâu, phí nêu rõ và ngày giao dịch trước khi cho rằng chênh do tỷ giá."
+    },
+    {
+      "source": "Suppose a 150-yuan line was originally included within a larger payment. The later credit may refer to that one line only, not a proportion of every service on the initial order. Domestic delivery or optional work may have separate terms. Use the explicit refund breakdown or ask about the named purchase. Applying an old per-item estimate that included an allocated share of freight can create a supposed shortfall that the actual refund statement never promised to cover.",
+      "source_sha256": "3661b3c3bab7892ddab70d2d7638bd9d938a94446f0ff29a88e52ad85c7244c9",
+      "raw_target_sha256": "e5c5a299977e98a9de2bad5957c34348a34d49777535472159de4d6dc3ddb42e",
+      "translation": "Ví dụ dòng hàng 150 tệ ban đầu nằm trong khoản thanh toán lớn. Lần hoàn sau có thể chỉ hoàn dòng đó chứ không hoàn tỷ lệ của mọi dịch vụ. Cước nội địa và dịch vụ tự chọn có thể theo điều kiện riêng. Xem chi tiết hoàn hoặc hỏi đúng đơn. Lấy ước tính cũ có phân bổ cước theo món làm số phải hoàn có thể tạo ra một khoản “thiếu” không hề được cam kết."
+    },
+    {
+      "source": "Use a range when today's decision precedes payment",
+      "source_sha256": "6df8b197185cfeab250ab30149e5581ac21d77041a081cb42e4c8440a74ebcd0",
+      "raw_target_sha256": "3d8222b243ebe73f9acdd86793f2b229225a36a54923085a65a0ca02746e8b30",
+      "translation": "Dùng khoảng giả định khi cần quyết định trước lúc trả"
+    },
+    {
+      "source": "Sometimes a buyer needs a planning figure before the exact transaction rate is known. Show a sensitivity range using clearly labelled hypothetical rates instead of presenting a single amount as guaranteed. For a 450-yuan amount, 7.50 yuan per home unit produces 60.00, while 7.20 produces 62.50, before any additional charges. That 2.50 spread identifies how much the assumption matters for this hypothetical budget. It does not predict the rate available at checkout.",
+      "source_sha256": "ad285f62a7567d96977ce069436772b8c5c9eede0f9a1916d96625e07ad3a66a",
+      "raw_target_sha256": "eae622d4cac8ce6f33c42ae762f022209ea1dcb7d7b3a4f6f9f95df76c929ce7",
+      "translation": "Nếu chưa có tỷ giá giao dịch, nêu khoảng dự trù với các tỷ giá giả định có nhãn rõ. 450 tệ theo mức 7,50 tệ mỗi đơn vị cho 60,00; theo mức 7,20 cho 62,50 trước phí. Khoảng cách 2,50 cho biết giả định tác động thế nào tới ngân sách minh họa, không dự báo tỷ giá ở bước thanh toán."
+    },
+    {
+      "source": "When you receive the actual payment record, preserve your range and add the posted result beside it. State which differences came from the observed conversion and which came from changed contents or services. Share the source currency, the conversion used and the total amount due together whenever you discuss the quote with another person. This way the comparison can be reproduced without relying on a symbol such as a dollar sign that might refer to several different currencies.",
+      "source_sha256": "23632af94c649e3db9efe6cba01b1cb653c884d299ae239da11d268e125d90a3",
+      "raw_target_sha256": "820578628ed618686d4df3791adb83dd0e0fda090865ac9cdee1954738e2b9ac",
+      "translation": "Khi có giao dịch thực, giữ khoảng dự kiến và thêm số đã hạch toán bên cạnh. Ghi phần khác do quy đổi và phần do đổi hàng hoặc dịch vụ. Khi trao đổi báo giá, đưa cả tiền gốc, tỷ giá đã dùng và tổng phải trả để người khác tính lại được mà không phải đoán ý nghĩa ký hiệu đô la."
+    },
+    {
+      "source": "A practical final check",
+      "source_sha256": "dcd0d041eef8234123b8342f2e794cf142c229fb7b3de2806ec9d7f6b43a24a9",
+      "raw_target_sha256": "15fbf0767bed53052ccc10edad110bc42dff5a7bba28dad0ec6402582c600bed",
+      "translation": "Kiểm tra lần cuối"
+    },
+    {
+      "source": "A service can change the parcel twice: once through its own price and again through its effect on the finished box. Capture those effects separately before choosing how to pack.",
+      "source_sha256": "d759ce1bfb07d977c0825b09619554547fd2c32f923abbe6050ede0fb1637153",
+      "raw_target_sha256": "ddf40ec28118bda11195a3de998c7cba1554f3feb94b2a65cc9178d02358e1bb",
+      "translation": "Dịch vụ đóng gói có thể ảnh hưởng chi phí qua chính giá dịch vụ và qua thay đổi của thùng sau đóng. Tách hai tác động trước khi chọn cách đóng."
+    },
+    {
+      "source": "Start with what needs protection",
+      "source_sha256": "a192b4e015990b2fc4b8f286e652a73d4495828f36e6ac5c0b357370f39bf72b",
+      "raw_target_sha256": "50c16e1d430a026564c2b1990fb33f909c71cdeb1938754486c5e97e8d6f9325",
+      "translation": "Bắt đầu từ bộ phận cần được bảo vệ"
+    },
+    {
+      "source": "Decide which part of the purchase must arrive in a particular condition. The concern might be a thin handle, vulnerable corners or a retail box needed as a gift. A request for the cheapest packing leaves the warehouse guessing about your priorities. Identify the item and the feature that matters. If keeping a retail box affects your decision, ask before authorizing its removal, particularly while any exchange question remains open.",
+      "source_sha256": "665a16fb5b4245d870ac0beb061033792568bad5b598f54ce65ce4f163db6b3a",
+      "raw_target_sha256": "de302e0414e3638f602fdf4f618729258d3c3dc800fd6e9ae81eaf88832d4696",
+      "translation": "Xác định phần phải đến nơi nguyên vẹn: quai mỏng, góc dễ móp hay hộp bán lẻ dùng làm quà. Yêu cầu “đóng rẻ nhất” khiến kho phải đoán ưu tiên. Nêu món hàng và chi tiết quan trọng. Nếu cần giữ hộp, hỏi trước khi cho phép bỏ, nhất là khi vấn đề đổi hàng chưa giải quyết."
+    },
+    {
+      "source": "Define comparable packing options",
+      "source_sha256": "16d6fe7c0acf97b6f6dcbe23a1807a4c817dd39c634cf24d782215c8d02c9baa",
+      "raw_target_sha256": "98e22f5f2629377aa9ef3652199d8f04c2267f71e0a9904814d7d9cdcdf102e2",
+      "translation": "Xác định hai phương án có thể đối chiếu"
+    },
+    {
+      "source": "Separate the two price effects",
+      "source_sha256": "1d3ee03edce2a739feae90e809737ebff82394ecfa14ae9454ec7e9bab0f470b",
+      "raw_target_sha256": "8aeebf78215886487227cdced87a1f1636c25fa4686b383a036b45093fe3d010",
+      "translation": "Tách hai phần tác động đến giá"
+    },
+    {
+      "source": "Look at packaging removal as a trade-off",
+      "source_sha256": "a45e85d82da589fcb6f640ecf33dfe33b3835a1f9ff7e81db98698c8edd687bf",
+      "raw_target_sha256": "ebad37a8237d4e92ab047a85dc5462c409da6301520d60dc0c1753c051489174",
+      "translation": "Cân nhắc được và mất khi bỏ bao bì"
+    },
+    {
+      "source": "Removing an empty spacer can reduce volume without changing the protection needed. Removing a rigid box from an item that depends on it for shape is a different decision. Identify what will replace the original protection. Ask whether parts such as cards, straps, wrapping or detachable pieces will be retained. If your concern is size rather than weight, check the finished longest side instead of assuming that discarding a box always changes the available routes.",
+      "source_sha256": "3fbe0abe0fdaeca2e6f6ac41f23759d0b0a6d1355fac8083bafa52fb53fe3321",
+      "raw_target_sha256": "1688a8d2a5c6de3bdeea201ecf41badbad0f9b132dfaa8d77be0ecb7e49b4c55",
+      "translation": "Bỏ miếng chèn rỗng có thể giảm thể tích mà vẫn đủ bảo vệ. Bỏ hộp cứng giữ dáng cho món hàng là quyết định khác. Xác định thứ thay thế lớp bảo vệ, hỏi xem thẻ, dây, giấy bọc và phần tháo rời có được giữ không. Nếu lo giới hạn kích thước, kiểm tra cạnh dài nhất sau đóng thay vì mặc định bỏ hộp sẽ mở thêm tuyến."
+    },
+    {
+      "source": "Before accepting the packing result",
+      "source_sha256": "4dc1799623e2f944d80e1b911bc525aa334e8b93ab3b489141ce01e12d4b9ead",
+      "raw_target_sha256": "e8fd8b16ae529c346b7ca8e9700160b4ce4e8375bc1035c3af8b12da7fe380d3",
+      "translation": "Trước khi chấp nhận kết quả đóng gói"
+    },
+    {
+      "source": "Compare the warehouse's confirmed instructions with the quote, the selected content list and any submitted measurement request. If an item has been removed from the parcel, update your old comparison. Keep the record of what was requested separate from what was observed. A final packed weight is evidence of the weight; it does not reveal whether a delicate edge was padded internally.",
+      "source_sha256": "8a1aef7bd552a17b171310260813899efb2f7b77f1ebbb4f529816db45e12f04",
+      "raw_target_sha256": "c5a07033b05deea3c74cab5aeec1af509b4c8fbc877415f88580dcf46e7181a0",
+      "translation": "Đối chiếu hướng dẫn kho xác nhận với báo giá, danh sách hàng và yêu cầu đo. Nếu bỏ một món khỏi kiện, cập nhật phép so cũ. Tách điều đã yêu cầu khỏi điều quan sát được. Cân nặng cuối chứng minh số cân, không chứng minh cạnh dễ vỡ đã được lót bên trong."
+    },
+    {
+      "source": "Comparing two versions of a mixed parcel",
+      "source_sha256": "09fb668c8b8cfc520c197f2a6e843121a837efd907f1a1d17dd5392700b48dea",
+      "raw_target_sha256": "8ce65bea5e7f2a8725ede7a16804576bae954966bd00fc7f98ae6587f52a73ad",
+      "translation": "So hai cách đóng kiện có nhiều loại hàng"
+    },
+    {
+      "source": "Suppose the live representative figures you write down for an illustrative exercise are 130 for freight and 4 for the basic packing in A, compared with 136 for freight and 11 for the more protective service in B. The totals are 134 and 147. The extra cost of B is 13, consisting of six more in freight and seven more in selected packing. If the 136 already includes the protective service, the calculation changes. The wording of the line matters as much as the numbers, which are fictional and do not describe HubBuy's price list.",
+      "source_sha256": "7bc43873a27eb0d92dfa1cdef4e0394173271bcd39f5ef80b6a7ba87827d57d2",
+      "raw_target_sha256": "3ac0e32c629046dc9fe591a3451c05b87b457872093ba13bca028687c7c8e74b",
+      "translation": "Ví dụ minh họa: A có cước 130 và đóng cơ bản 4; B có cước 136 và gói bảo vệ 11. Tổng là 134 và 147. Phương án B tăng 13, gồm sáu tiền cước và bảy tiền dịch vụ. Nếu mức 136 đã bao gồm bảo vệ thì phải tính lại. Đây là số giả định, không phải bảng giá HubBuy."
+    },
+    {
+      "source": "Decide what information is worth obtaining",
+      "source_sha256": "adeb6320a0d5fc95a70925d0e8557f1d911df65cddca31f7bc0d288e76e7a325",
+      "raw_target_sha256": "b0ac5dec2450950e831841a77000ee377a735f36830dd69f789a83350e25fa8b",
+      "translation": "Xác định thông tin đáng hỏi thêm"
+    },
+    {
+      "source": "Before asking a warehouse to prepare two complete alternatives, identify which uncertainty drives your decision. If keeping a retail carton is essential, comparing a box-free arrangement wastes time. If a route has a maximum outer dimension, the useful question may be whether the existing carton fits once protection is added. If the estimator shows a result for only one product category, clarify route acceptance for all contents instead of treating cheap packing as the deciding factor.",
+      "source_sha256": "254440eda071087f0d64c6badc7572c3f8baa83d27b5963cbc080d80615b6cc4",
+      "raw_target_sha256": "b3fdafa2d4c441eb559971d6b2199a05e6f09eea0390180d21589979e4e4018f",
+      "translation": "Trước khi nhờ kho làm thử trọn hai phương án, xác định câu hỏi nào ảnh hưởng quyết định. Nếu bắt buộc giữ hộp bán lẻ, so cách bỏ hộp là vô ích. Nếu tuyến giới hạn cạnh ngoài, hỏi thùng hiện có sau khi thêm bảo vệ còn đạt không. Nếu công cụ chỉ báo một loại sản phẩm, kiểm tra tuyến có nhận toàn bộ hàng thay vì chỉ chọn theo tiền đóng gói."
+    },
+    {
+      "source": "Ask about any service charge for a change or for obtaining additional measurements. Do not assume that an alternative packing arrangement can be trialled, reversed and photographed without cost. Record what the account actually offers. A sensible short message identifies the current parcel, the protection that must remain and the measurement you need. For example, a buyer could ask whether the shortest eligible box that retains the protective insert will stay below a stated route limit. A useful answer concerns that precise plan.",
+      "source_sha256": "71b6105bfa7fb445f6addc6feecb14034004809838efbe51c7a34ad199822b1f",
+      "raw_target_sha256": "c7da65a154f4af172d1383c6e643f71102b20c3977c8853554aa234b769ad092",
+      "translation": "Hỏi phí đổi cách đóng hoặc đo bổ sung. Không mặc định được thử, tháo ra và chụp hai phương án miễn phí. Xem dịch vụ thực có trong tài khoản. Trong yêu cầu, nêu mã kiện, lớp bảo vệ phải giữ và số đo cần biết. Chẳng hạn hỏi thùng ngắn nhất vẫn giữ miếng đỡ có nằm dưới giới hạn tuyến đã cho không."
+    },
+    {
+      "source": "Recognize when cost per kilogram is the wrong measure",
+      "source_sha256": "35fd419ba362eed0fbdb93cb1410e8ac58029d334a337d5c83bde1c9a28bd311",
+      "raw_target_sha256": "50110df667f6e1cac08e2331878529847e14c972ea157d84254f76b037a40e8f",
+      "translation": "Khi nào không nên chỉ nhìn chi phí mỗi kilôgam?"
+    },
+    {
+      "source": "Some buyers compare packing by dividing the invoice by the scale weight. A heavier but better protected version may appear cheaper per kilogram even though it costs more overall. Conversely, a lighter parcel with a larger outer box may cost more on a route that considers volume. Use the total charge for the parcel that actually fulfills your requirements. Keep a per-kilogram calculation only when it helps answer a secondary comparison.",
+      "source_sha256": "ecbf510c57fc6f7be8e8efef09a48759fab167d4f43b398fa9b457f73d0421e8",
+      "raw_target_sha256": "bfc449fd872bc9bbfde7288a5b058fda21a9709628c6981977e75ce1d5da6a38",
+      "translation": "Lấy hóa đơn chia cân nặng có thể khiến kiện nặng, bọc kỹ trông rẻ hơn mỗi kilôgam dù tổng tiền cao hơn. Ngược lại, kiện nhẹ nhưng thùng cồng kềnh có thể đắt trên tuyến tính thể tích. Lấy tổng cước của kiện đáp ứng nhu cầu làm chính; chỉ dùng suất mỗi kilôgam khi nó trả lời được câu hỏi phụ cụ thể."
+    },
+    {
+      "source": "Consider a fictional box costing 150 at 2 kg and another costing 160 at 2.5 kg. Their apparent costs per kilogram are 75 and 64. The lower unit figure belongs to the more expensive parcel. It may still be the better choice if the extra protective materials serve a real need, but the numerical ratio alone cannot settle that. A buyer evaluating whether to add protection should instead look at the incremental ten, the change in dimensions and the value of preserving the required condition.",
+      "source_sha256": "20b713345e98ecd4dcb90578769a3e826950abf3a95d58e91d09fe7d10a8099b",
+      "raw_target_sha256": "25761967297ebae7e86db32961aa7a39eb7f5c9e30d0834cd53d4027d93156ee",
+      "translation": "Ví dụ một thùng 2 kg giá 150 và một thùng 2,5 kg giá 160. Chi phí mỗi kilôgam tương ứng 75 và 64. Con số trên một kilôgam thấp hơn thuộc kiện có tổng cao hơn. Bảo vệ tốt có thể đáng tiền nhưng nên xét khoản tăng mười, kích thước thay đổi và giá trị của việc giữ đúng tình trạng hàng."
+    },
+    {
+      "source": "Separate removable packaging from essential components",
+      "source_sha256": "1166812fb456a10affbdb839ddd1b7fccfb6dbaabe0898e49be953c84ba07e2b",
+      "raw_target_sha256": "967f9e4828a1a9c292613e8d257bc23ccdc6377f2b678f058369b653ca6213d4",
+      "translation": "Phân biệt bao bì có thể bỏ với bộ phận cần giữ"
+    },
+    {
+      "source": "A cloth bag inside a box might be disposable packing, a dust cover included with the merchandise or a separately paid accessory. Specify which you mean before asking for removal. Where several items carry loose parts, list the pieces that must remain together. Save the original option description if the item's completeness or potential return depends on a particular pouch or box. If the identity of a component is unclear, request clarification before allowing disposal.",
+      "source_sha256": "d401b3e27fa33c54f987cc9b0884f41f9e10a7b6502e3e9a056df474ef492cbc",
+      "raw_target_sha256": "97cd10febcde94ae3771285682caf0324e33f605618da1c5bb6a36ff4b9757a3",
+      "translation": "Túi vải bên trong có thể là bao dùng một lần, túi chống bụi đi kèm hoặc phụ kiện mua riêng. Nêu rõ trước khi yêu cầu bỏ. Nếu nhiều món có chi tiết rời, liệt kê phần phải đi cùng nhau. Giữ mô tả phân loại nếu việc đủ bộ hoặc đổi trả phụ thuộc vào túi hay hộp đó. Chưa biết là gì thì hỏi trước khi cho phép bỏ."
+    },
+    {
+      "source": "A useful packing record can be short. Write one line per item stating retain, remove or ask, followed by the physical object concerned. For example, retain the protective insert around the handle, remove the empty seller dispatch carton if permitted, and ask before discarding the outer retail box. This makes the instruction understandable even when two boxes have similar dimensions. It also helps you interpret a photograph of the contents before sealing.",
+      "source_sha256": "af2a1fa1139d083102afbbd0c7836ba022a74f008a4348b3f2c5ed710c235c1f",
+      "raw_target_sha256": "7414aec3be6dfda7ff784458433ac662e71cc58126002881d270a31247cc8671",
+      "translation": "Mỗi vật ghi một hướng dẫn: giữ, bỏ, hoặc hỏi trước. Ví dụ giữ miếng bảo vệ quanh quai, bỏ thùng giao rỗng của người bán nếu được phép, hỏi trước khi bỏ hộp bán lẻ. Dù hai hộp có kích thước tương tự, kho vẫn hiểu đúng, và bạn dễ đọc ảnh chụp trước khi niêm phong."
+    },
+    {
+      "source": "Compare the result with the instruction",
+      "source_sha256": "e59d15d3bca4c4afa991d106b466d786f19312b5b8356461c905293bf51fdec3",
+      "raw_target_sha256": "8f49a416d324bb68b3fc74b0432701b341ad2b6d5005361fbe2f6808c1c7ce35",
+      "translation": "Đối chiếu kết quả với yêu cầu"
+    },
+    {
+      "source": "At receipt, preserve photographs of the box and its internal arrangement if you need to report a problem. Document the visible condition; a photograph cannot establish where along the journey an impact occurred. Link the parcel reference, requested protection and observed outcome. Keep financial reconciliation and a condition complaint distinct even when both arise from the same shipment. One concerns which services were paid for, while the other concerns the condition in which the goods arrived.",
+      "source_sha256": "69e1d9b7d19f2f08abcff2169c6972a74e69ed73a590ebf1f5ac1c856c014962",
+      "raw_target_sha256": "c4d3483d57c834ddb8861f5e4b275b8f0cfad14a5a7f865c2e9a554b562fecc3",
+      "translation": "Khi nhận hàng có vấn đề, giữ ảnh thùng và cách xếp bên trong. Mô tả tình trạng nhìn thấy; ảnh không tự chỉ ra va chạm xảy ra ở chặng nào. Gắn mã kiện, bảo vệ đã yêu cầu và kết quả. Tách việc đối soát phí khỏi khiếu nại tình trạng hàng dù cùng một chuyến: một bên hỏi đã trả dịch vụ gì, bên kia hỏi món hàng đến nơi ra sao."
     }
   ]
 }
