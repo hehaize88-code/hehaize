@@ -3,7 +3,7 @@
   "locale": "da",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "014992a1b817952a237b7e3e6ed66e20a6439b155f5ba23b43af5c8e06a7d055",
-  "effective_dictionary_sha256": "a698a85b84d7c9338db2929626a79e367a1f825d124797cee9e4e79501ef3a47",
+  "effective_dictionary_sha256": "b75917881cd29d893dcc66006c6844fd189d08cc3e1c07830c69016241ad16f0",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -153,6 +153,42 @@
       "source_sha256": "0f2a0745dad887ac0537a2c286c171f834afc626189a9b4662dc221aa421ee3b",
       "raw_target_sha256": "22247cfdbc8f36a8f9be368f31508fa213081d0dc6ae2677f000753657393157",
       "translation": "Den anslåede transporttid kan være regnet fra afsendelsen. Læs vilkårene for ruten, før du lover modtageren en leveringsdato. Notér uafsluttet køb, sælgerens afsendelse, varemodtagelse og pakning som særskilte trin i tidsplanen. Læg ikke et vilkårligt antal dage til. Skal varen bruges på en bestemt dato, så find det trin, der stadig er usikkert, og kontrollér den senest bekræftede status."
+    },
+    {
+      "source": "Handling a partial stock confirmation",
+      "source_sha256": "ec2a38211bb19954b12facc9fe4fdfd9b1b598217be4251ac1c0b6bde89d5db5",
+      "raw_target_sha256": "35222e9478798e2584fb230a80bcc36537ac1f229dcb316f208651df84143e95",
+      "translation": "Når sælgeren kun bekræfter lagerbeholdningen for en del af ordren"
+    },
+    {
+      "source": "Make the exchange-rate direction readable",
+      "source_sha256": "e4fa0a63cfae68b6e0d25d376ab920ebd9569586cf46adae98db2fcd3a9d36f5",
+      "raw_target_sha256": "7f51f359cee17cf28f7904ad5a7847c172aa6c14b075788552d6a439ad7ca57a",
+      "translation": "Angiv, hvilken valuta beløbet omregnes fra og til"
+    },
+    {
+      "source": "Normalize inclusions before the rate",
+      "source_sha256": "028e5d3bd32b448cc0a6e0199ab6cd55c5584e999f28fcac1d1c207608f6998c",
+      "raw_target_sha256": "e6ffa27bd606abbbe49e338b8af28d4009be34c03c56f1c525473863444e9c24",
+      "translation": "Sammenlign først, hvilke udgifter tilbuddene omfatter"
+    },
+    {
+      "source": "Reconcile several outbound packages against one original quote",
+      "source_sha256": "2610325b3730cea649019d0b72d34aadc7cb635008b6b964191fc2ff85929043",
+      "raw_target_sha256": "ef6926270b91ea706387d3360fd97c10094f1373367170f469c55b78babdbab1",
+      "translation": "Sammenhold flere pakkers endelige pris med det oprindelige samlede tilbud"
+    },
+    {
+      "source": "If you receive one packet with a handwritten count of four, compare that with the seller's stated packing unit before reporting a shortage. Four accessories inside one bag may fulfill four units, whereas four empty protective sleeves do not. Describe the observable fact in your message and ask a concrete question. For instance, the order includes three two-piece sets and the warehouse entry shows three sealed packages; could you verify whether each package contains both listed pieces?",
+      "source_sha256": "d9a1135eb39fabf48de181196255c6fe57d364e19d33b64f8b401e7c35242a89",
+      "raw_target_sha256": "0ae6a767a1e9ad4627cc5ae48bfa307140fb292f14b1d6b206522e6892128761",
+      "translation": "Står der »fire« med håndskrift på én pakke, så sammenhold tallet med sælgerens pakkeenhed. Fire stykker tilbehør i én pose kan opfylde en ordre på fire enheder, mens fire tomme beskyttelsesetuier ikke gør. Beskriv det synlige og spørg konkret: »Ordren omfatter tre sæt med to dele i hvert, og lageret har modtaget tre forseglede pakker. Kan I bekræfte, at begge dele ligger i hver pakke?«"
+    },
+    {
+      "source": "Imagine a rigid accessory case and two soft shirts. The accessory case has a latch that should not bear pressure. In arrangement A, all three items sit in one tight carton with the shirts around the case. In arrangement B, the case has a separate padded sleeve within a larger outer box. Ask what protection each service actually supplies and whether the packed dimensions are confirmed or estimated. The second arrangement can provide different protection while also changing the available freight route.",
+      "source_sha256": "0bfd4b366ea6686dcc6725e9b7a93f9547ee8034c4440abe349c3db0195de886",
+      "raw_target_sha256": "4d5bf82558c987e9699a449985aff63c471dc9a5425909eea08e7460bfe1a307",
+      "translation": "Forestil dig et stift etui til tilbehør og to bløde skjorter. Etuiets lås må ikke komme under pres. I løsning A ligger alle tre varer i en tæt kasse med skjorterne rundt om etuiet. I løsning B ligger etuiet i en separat polstret pose inden i en større kasse. Spørg, hvilken beskyttelse hver løsning giver, og om ydermålene er målt eller anslået. Den ekstra beskyttelse kan også ændre, hvilke ruter der er mulige."
     }
   ]
 }

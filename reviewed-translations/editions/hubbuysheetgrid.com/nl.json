@@ -3,7 +3,7 @@
   "locale": "nl",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "bb23011382d89fe15b93eef5fbad1e760df0af2408b55e822459a79f0836c2a8",
-  "effective_dictionary_sha256": "7faff5ff24454d81ffe6d4749c42bdced5625548b98d8616c9b10ad7d5ebce21",
+  "effective_dictionary_sha256": "fbcd9be82d7359652ef89c080bc78c2d0caca600c0b103469bb67c20178d14e3",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -147,6 +147,42 @@
       "source_sha256": "0f2a0745dad887ac0537a2c286c171f834afc626189a9b4662dc221aa421ee3b",
       "raw_target_sha256": "46d5da7a57a32838cbef852b2cbda128b6e752e153af9dcc10a5585ba1b5bf82",
       "translation": "De geschatte vervoerstijd kan pas bij verzending ingaan. Lees de voorwaarden van de route voordat u de ontvanger een bezorgdatum belooft. Plan een nog openstaande aankoop, verzending door de verkoper, ontvangst in het magazijn en inpakken als aparte stappen. Tel er geen willekeurig aantal dagen bij op. Moet u het artikel op een bepaalde datum hebben, kijk dan welke stap nog onzeker is en controleer de laatst bevestigde status."
+    },
+    {
+      "source": "Handling a partial stock confirmation",
+      "source_sha256": "ec2a38211bb19954b12facc9fe4fdfd9b1b598217be4251ac1c0b6bde89d5db5",
+      "raw_target_sha256": "934e95aa87514458d3e3e2598962d52ad9a6b00a7dbc25c9153bddd16f8f987c",
+      "translation": "Als de verkoper slechts een deel van de bestelling kan leveren"
+    },
+    {
+      "source": "Make the exchange-rate direction readable",
+      "source_sha256": "e4fa0a63cfae68b6e0d25d376ab920ebd9569586cf46adae98db2fcd3a9d36f5",
+      "raw_target_sha256": "4c0d6affc2fb91ec4320c396cbeb52049f519339942f062e81f4c9944f66fa52",
+      "translation": "Vermeld de oorspronkelijke valuta en de valuta waarnaar u omrekent"
+    },
+    {
+      "source": "Normalize inclusions before the rate",
+      "source_sha256": "028e5d3bd32b448cc0a6e0199ab6cd55c5584e999f28fcac1d1c207608f6998c",
+      "raw_target_sha256": "6bfad7ce2225644f51b41485a4ddef004f8bcb0d1992f1cb47e3eea99f979a6c",
+      "translation": "Vergelijk eerst welke kosten elk aanbod omvat"
+    },
+    {
+      "source": "Reconcile several outbound packages against one original quote",
+      "source_sha256": "2610325b3730cea649019d0b72d34aadc7cb635008b6b964191fc2ff85929043",
+      "raw_target_sha256": "e3e67c8cdc7c4fc1640a770f8456d4d3b1f77953847917f488f47adb2b86f005",
+      "translation": "Vergelijk de uiteindelijke kosten van meerdere pakketten met de oorspronkelijke gezamenlijke offerte"
+    },
+    {
+      "source": "If you receive one packet with a handwritten count of four, compare that with the seller's stated packing unit before reporting a shortage. Four accessories inside one bag may fulfill four units, whereas four empty protective sleeves do not. Describe the observable fact in your message and ask a concrete question. For instance, the order includes three two-piece sets and the warehouse entry shows three sealed packages; could you verify whether each package contains both listed pieces?",
+      "source_sha256": "d9a1135eb39fabf48de181196255c6fe57d364e19d33b64f8b401e7c35242a89",
+      "raw_target_sha256": "c0d45bd8442c0b971513fb4a7db52e31d97b40cdb680ac9d743b8ea728c3032d",
+      "translation": "Staat er met de hand ‘vier’ op één verpakking, vergelijk dat dan met de verkoopeenheid van de verkoper. Vier accessoires in één zakje kunnen vier bestelde stuks zijn, maar vier lege beschermhoesjes niet. Beschrijf wat u ziet en vraag bijvoorbeeld: ‘Ik heb drie tweedelige sets besteld en het magazijn heeft drie verzegelde pakjes ontvangen. Kunt u bevestigen dat elk pakje beide vermelde onderdelen bevat?’"
+    },
+    {
+      "source": "Imagine a rigid accessory case and two soft shirts. The accessory case has a latch that should not bear pressure. In arrangement A, all three items sit in one tight carton with the shirts around the case. In arrangement B, the case has a separate padded sleeve within a larger outer box. Ask what protection each service actually supplies and whether the packed dimensions are confirmed or estimated. The second arrangement can provide different protection while also changing the available freight route.",
+      "source_sha256": "0bfd4b366ea6686dcc6725e9b7a93f9547ee8034c4440abe349c3db0195de886",
+      "raw_target_sha256": "afb2726aefde9eb8ee0c955a6a00b83245533e269fe45b8f03d9bbd63a252809",
+      "translation": "Stel dat u een harde accessoirekoffer met een sluiting die niet onder druk mag komen en twee zachte overhemden verstuurt. Bij indeling A liggen alle drie in één krappe doos, met de overhemden rond de koffer. Bij B krijgt de koffer een aparte gewatteerde beschermhoes in een grotere buitendoos. Vraag welke bescherming elke dienst biedt en of de buitenmaten zijn gemeten of geschat. De andere indeling kan ook de beschikbare verzendroutes veranderen."
     }
   ]
 }

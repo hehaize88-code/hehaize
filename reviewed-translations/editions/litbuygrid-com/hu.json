@@ -3,7 +3,7 @@
   "locale": "hu",
   "source_set_sha256": "50911bbaf8cb4e95c0ffaba18561fc7cfb1d06446f37b6a6715ee18e99d8182e",
   "raw_dictionary_sha256": "c2fcf23c8913ad6d05aaa70fcd358c98cd099e3fd5ed6bc71b3c108b6565db43",
-  "effective_dictionary_sha256": "c6b792ee8674f1e59de33882622e0f43525847063b4a1c95a541288436b2bd7d",
+  "effective_dictionary_sha256": "db7489898ffd25d052546821a59d1b0d51fdf12e0ee16e8a22225293fea421ff",
   "checked_entries": 254,
   "review_scope": "Checked all exact input keys and output structure with the project auditor. Compared actual localized price/quantity calculations, physical item and option identifiers, garment-measurement examples, warehouse and shipping stages, seller/return wording, and sampled FAQ/body passages with the English source. Personally edited all ten article titles and replaced risk passages as recorded. This coverage is an audit plus targeted bilingual review.",
   "reviewed_flags": [
@@ -129,6 +129,12 @@
       "source_sha256": "8712628fbcbee284b19897c9b466ba4b0f08840ed5a6f220ded2d7abecf96b08",
       "raw_target_sha256": "6916865b1caf98a1f32e880e0ae89393f2322809bea632ce7293fb4f3cc19d23",
       "translation": "Kérdezze meg, hogy elvégezhető-e a kért ellenőrzés, mit tartalmaz, és van-e bármilyen díj vagy kezelési feltétel. Előfordulhat, hogy a bontatlan kiskereskedelmi csomagolásnak érintetlennek kell maradnia bizonyos visszaküldések esetén. Ha a probléma ellenőrzéséhez fel kellene törni a tömítést, először érdeklődjön az állapotról. Jegyezze fel a kérdésekre vagy a kért műveletekre vonatkozó élő határidőket is. A tárolási idő azt írja le, hogy egy termék mennyi ideig maradhat a raktárban; a visszaküldés vagy a csere jogosultsága más feltételektől függhet. Ahelyett, hogy a leghosszabb látható időzítőt feltételezné, minden döntést a LitBuy aktuális súgóinformációi és az adott megrendelés határoz meg."
+    },
+    {
+      "source": "Use the current order channel and give the purchase reference, warehouse reference, component description, paid option and relevant photograph. State what has been checked. An example would be “The paid option includes a detachable crossbody strap; the warehouse overview shows the short handle only. Could you confirm whether the long strap is inside the bag's protective sleeve?” This leaves room for a simple check before escalating the matter. LitBuy's Help Center lists after-sales requests for missing or damaged items. Consult the terms relevant to the actual order and stage.",
+      "source_sha256": "d2e9967b7c2eda6fbe5835e5dfceda09db9586285f5689a22413cd75adeca1ce",
+      "raw_target_sha256": "c0a2bb7fdcd9043ac5047ea7e2a03a4c0708b1d9097022994f3fc65e8616c411",
+      "translation": "Az adott rendelés felületén adja meg a beszerzés és a raktári tétel azonosítóját, a kifizetett változatot és a tartozék leírását. Mellékelje a képet, és írja le, mit ellenőrzött. Például: „A kifizetett változathoz levehető, hosszú vállpánt jár, de a raktári összképen csak a rövid fogantyú látszik. Megnéznék, hogy a pánt a táska védőzsákjában van-e?” Így először egyszerűen ellenőrizni lehet a helyzetet. A LitBuy súgója ismerteti a hiányzó vagy sérült termékek ügyintézését. Nézze meg, mely feltételek érvényesek a rendelés jelenlegi szakaszában."
     }
   ]
 }

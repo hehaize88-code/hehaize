@@ -3,7 +3,7 @@
   "locale": "es",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "f5f813b72eb3cff901b881de12163301e68cbf523e07d7074183fa9a39d58590",
-  "effective_dictionary_sha256": "29f50445640675195771f132d67675918af226b73fac33208fd49d98beaaed42",
+  "effective_dictionary_sha256": "239240f6526e27a52fac07f70e7a39a04201799e9dabae37ce98174e10837202",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -183,6 +183,42 @@
       "source_sha256": "0f2a0745dad887ac0537a2c286c171f834afc626189a9b4662dc221aa421ee3b",
       "raw_target_sha256": "3b966cbe3ead0e28c0c5535002ab96fd9ae32632945d8e3d7f70ed758b594bba",
       "translation": "El plazo de transporte puede empezar cuando se despacha el paquete. Lea la descripción de la ruta antes de prometer al destinatario una fecha de entrega. Anote por separado las etapas pendientes de compra, envío del vendedor, recepción en el almacén y embalaje. Evite añadir días al azar. Si necesita el artículo para una fecha concreta, identifique el paso que sigue pendiente y compruebe el último estado confirmado."
+    },
+    {
+      "source": "Handling a partial stock confirmation",
+      "source_sha256": "ec2a38211bb19954b12facc9fe4fdfd9b1b598217be4251ac1c0b6bde89d5db5",
+      "raw_target_sha256": "70bf5a6a9e3fe9d322cefc988213e5af10f8ee8d897d8d18d099991b54e005e3",
+      "translation": "Cuando el vendedor solo confirma existencias para parte del pedido"
+    },
+    {
+      "source": "Make the exchange-rate direction readable",
+      "source_sha256": "e4fa0a63cfae68b6e0d25d376ab920ebd9569586cf46adae98db2fcd3a9d36f5",
+      "raw_target_sha256": "46cbbb9952d9f3937668a8936717368f2a611d1791750098b63e145d625c9370",
+      "translation": "Indique la moneda de origen y la de destino"
+    },
+    {
+      "source": "Normalize inclusions before the rate",
+      "source_sha256": "028e5d3bd32b448cc0a6e0199ab6cd55c5584e999f28fcac1d1c207608f6998c",
+      "raw_target_sha256": "74441f0f576f7116406803d5c73d9b8dc20577014ec4649f979de389eb34e8da",
+      "translation": "Compruebe primero qué gastos incluye cada oferta"
+    },
+    {
+      "source": "Reconcile several outbound packages against one original quote",
+      "source_sha256": "2610325b3730cea649019d0b72d34aadc7cb635008b6b964191fc2ff85929043",
+      "raw_target_sha256": "8d2d25f473ec1b4fd779617fb96bbb0243502e4197b6590838723316dd24219f",
+      "translation": "Compare el coste final de varios envíos con el presupuesto conjunto inicial"
+    },
+    {
+      "source": "If you receive one packet with a handwritten count of four, compare that with the seller's stated packing unit before reporting a shortage. Four accessories inside one bag may fulfill four units, whereas four empty protective sleeves do not. Describe the observable fact in your message and ask a concrete question. For instance, the order includes three two-piece sets and the warehouse entry shows three sealed packages; could you verify whether each package contains both listed pieces?",
+      "source_sha256": "d9a1135eb39fabf48de181196255c6fe57d364e19d33b64f8b401e7c35242a89",
+      "raw_target_sha256": "6a32c8a9a46832a01333b275cda89d1f9b160b6f8ac2623298ce15ed61614af5",
+      "translation": "Si recibe un paquete marcado a mano con «cuatro», compare esa cifra con la unidad de venta del vendedor. Cuatro accesorios en una bolsa pueden cubrir cuatro unidades, pero cuatro fundas protectoras vacías no. Describa lo observable y pregunte, por ejemplo: «El pedido incluye tres juegos de dos piezas y el almacén registró tres paquetes sellados. ¿Podrían confirmar si cada paquete contiene las dos piezas indicadas?»"
+    },
+    {
+      "source": "Imagine a rigid accessory case and two soft shirts. The accessory case has a latch that should not bear pressure. In arrangement A, all three items sit in one tight carton with the shirts around the case. In arrangement B, the case has a separate padded sleeve within a larger outer box. Ask what protection each service actually supplies and whether the packed dimensions are confirmed or estimated. The second arrangement can provide different protection while also changing the available freight route.",
+      "source_sha256": "0bfd4b366ea6686dcc6725e9b7a93f9547ee8034c4440abe349c3db0195de886",
+      "raw_target_sha256": "6075ebbbeca104b50b7740b5ac35cd145835d3ffe34705ee1f95695c20d5c842",
+      "translation": "Imagine un estuche rígido para accesorios y dos camisas suaves. Conviene evitar la presión sobre el cierre del estuche. En la opción A los tres artículos caben ajustados en una caja, con las camisas alrededor del estuche. En la B se coloca el estuche en una funda acolchada independiente dentro de una caja exterior mayor. Consulte qué protección ofrece cada servicio y si las medidas están confirmadas o son estimadas. La segunda solución también puede cambiar las rutas disponibles."
     }
   ]
 }

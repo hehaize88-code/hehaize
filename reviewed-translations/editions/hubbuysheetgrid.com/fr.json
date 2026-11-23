@@ -3,7 +3,7 @@
   "locale": "fr",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "2c3cc7ad281506edf7e575eba3494d6560055cd7a85de4a0ba2a4c086cface91",
-  "effective_dictionary_sha256": "66ae62e45610211cba5c83341ac5dd6bacb826a19013a15453d70a36215bed45",
+  "effective_dictionary_sha256": "98e7bc34ae800946704674b7600b689b11003200e4649c22db8fa322f66e19ef",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -183,6 +183,42 @@
       "source_sha256": "0f2a0745dad887ac0537a2c286c171f834afc626189a9b4662dc221aa421ee3b",
       "raw_target_sha256": "6d768e478d62911ad8b79f8cff5b08fc902c6804246c3e836f7aef2bf64b4909",
       "translation": "Le délai de transport annoncé peut ne commencer qu’à l’expédition. Lisez les conditions du trajet avant de promettre une date de livraison. Prévoyez séparément l’achat encore en cours, l’envoi par le vendeur, la réception en entrepôt et l’emballage. Évitez d’ajouter un nombre arbitraire de jours. Si vous avez besoin de l’article à une date précise, identifiez l’étape encore incertaine et vérifiez le dernier état confirmé."
+    },
+    {
+      "source": "Handling a partial stock confirmation",
+      "source_sha256": "ec2a38211bb19954b12facc9fe4fdfd9b1b598217be4251ac1c0b6bde89d5db5",
+      "raw_target_sha256": "f4976e5ac58df798f49ba42f1a3de52aea403ee143bf9791be3ded5225cc7b1b",
+      "translation": "Quand le vendeur ne confirme la disponibilité que d’une partie de la commande"
+    },
+    {
+      "source": "Make the exchange-rate direction readable",
+      "source_sha256": "e4fa0a63cfae68b6e0d25d376ab920ebd9569586cf46adae98db2fcd3a9d36f5",
+      "raw_target_sha256": "9ff252111c1e318b17bb5f716ef930111b602ba79cd7acd4a9f1346b89406c0e",
+      "translation": "Précisez la devise de départ et la devise d’arrivée"
+    },
+    {
+      "source": "Normalize inclusions before the rate",
+      "source_sha256": "028e5d3bd32b448cc0a6e0199ab6cd55c5584e999f28fcac1d1c207608f6998c",
+      "raw_target_sha256": "361905f9d9a6814d5b2939e3ca368077b4f40a5321109dacf58149741c752bb1",
+      "translation": "Comparez d’abord les frais inclus dans chaque devis"
+    },
+    {
+      "source": "Reconcile several outbound packages against one original quote",
+      "source_sha256": "2610325b3730cea649019d0b72d34aadc7cb635008b6b964191fc2ff85929043",
+      "raw_target_sha256": "fbe62ba1fcbe6337bd814b5cf5f5a54b412816cfda3d2907842002ed2b98cb79",
+      "translation": "Comparez le coût final de plusieurs colis avec le devis global initial"
+    },
+    {
+      "source": "If you receive one packet with a handwritten count of four, compare that with the seller's stated packing unit before reporting a shortage. Four accessories inside one bag may fulfill four units, whereas four empty protective sleeves do not. Describe the observable fact in your message and ask a concrete question. For instance, the order includes three two-piece sets and the warehouse entry shows three sealed packages; could you verify whether each package contains both listed pieces?",
+      "source_sha256": "d9a1135eb39fabf48de181196255c6fe57d364e19d33b64f8b401e7c35242a89",
+      "raw_target_sha256": "089f592e9db0ad080ae7063d3596127e9920637111fa0b52d5e15cdbebac5f78",
+      "translation": "Si un sachet porte un « quatre » manuscrit, comparez ce chiffre à l’unité de vente indiquée par le vendeur. Quatre accessoires dans un sachet peuvent correspondre à quatre unités commandées, mais quatre étuis de protection vides ne les remplacent pas. Décrivez le constat : « J’ai commandé trois ensembles de deux pièces et l’entrepôt a reçu trois paquets scellés. Pouvez-vous confirmer que chacun contient les deux pièces annoncées ? »"
+    },
+    {
+      "source": "Imagine a rigid accessory case and two soft shirts. The accessory case has a latch that should not bear pressure. In arrangement A, all three items sit in one tight carton with the shirts around the case. In arrangement B, the case has a separate padded sleeve within a larger outer box. Ask what protection each service actually supplies and whether the packed dimensions are confirmed or estimated. The second arrangement can provide different protection while also changing the available freight route.",
+      "source_sha256": "0bfd4b366ea6686dcc6725e9b7a93f9547ee8034c4440abe349c3db0195de886",
+      "raw_target_sha256": "10beeb68a71946a1887e26acd2490e823bdaadbf2a85a1653f07925ee6f50ff2",
+      "translation": "Imaginez un étui rigide pour accessoires dont le fermoir ne doit pas être comprimé, et deux chemises souples. Dans la configuration A, les trois articles tiennent dans un carton ajusté, les chemises entourant l’étui. Dans la B, l’étui est glissé dans une housse rembourrée distincte, à l’intérieur d’un carton plus grand. Demandez ce que protège chaque service et si les dimensions sont mesurées ou estimées. Cette protection différente peut aussi modifier les itinéraires disponibles."
     }
   ]
 }

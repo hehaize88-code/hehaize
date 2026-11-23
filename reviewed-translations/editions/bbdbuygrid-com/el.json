@@ -3,9 +3,9 @@
   "locale": "el",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "37032f85402962c9e16c282b05148dff57668b41e888326bbae8d1cbd1e97de3",
-  "effective_dictionary_sha256": "3c7275ffb79e31797ea723bf84419bf967dee08638b496d52b6ce955303e7f17",
+  "effective_dictionary_sha256": "f58d5d8436148072ed11ad53a8d49a85dc26e88d1a0fdae4cfc6d67dab5452ac",
   "checked_entries": 324,
-  "review_scope": "Scoped bilingual review of the FAQ, article and section titles, platform labels, numerical examples and automated flags. Corrected shipping quotations, paper-notebook and cap examples, route and dimensional-weight terminology; remaining prose was screened for numerical changes, not line-edited throughout.",
+  "review_scope": "Scoped bilingual review of the FAQ, article and section titles, platform labels, numerical examples and automated flags. Corrected shipping quotations, paper-notebook and cap examples, route and dimensional-weight terminology; remaining prose was screened for numerical changes, not line-edited throughout. Follow-up check for computer cases, retail wrapping and packing inserts.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -585,6 +585,12 @@
       "source_sha256": "5fcb636100b66eefe28ef6b4c2f039c72a09ba92a39721a05a116365d66c1458",
       "raw_target_sha256": "a55cd39891cf83db17a9a16177122d9afb91b5bb62d5257a2d40856f05db54f3",
       "translation": "Χρησιμοποιήστε την ανεξάρτητη αριθμητική ως έλεγχο σφαλμάτων, όχι ως υποκατάστατο ενός αποσπάσματος μεταφορέα. Όταν λαμβάνετε έναν φαινομενικά απίθανο αριθμό, ελέγξτε για μικτές μονάδες, ένα δεκαδικό που λείπει, μήκος που επαναλαμβάνεται στη θέση του ύψους ή μια διάσταση προϊόντος που αντιγράφεται αντί της συσκευασμένης διάστασης. Ένα αποτέλεσμα που γίνεται λογικό μετά τη διόρθωση μιας εισόδου είναι λόγος για να διατηρηθεί ο αναθεωρημένος υπολογισμός, όχι λόγος για να εισαχθεί ένα πιο ευνοϊκό νούμερο από ό, τι το δέμα πραγματικά μετρά."
+    },
+    {
+      "source": "Distinguish the product, its retail box and the complete outbound carton. A laptop sleeve might be advertised as 34 centimetres long. That figure describes neither the depth of a carton containing several sleeves nor the extra space required for protection. Label every saved dimension with the object it describes.",
+      "source_sha256": "ce7b8c5aeca500e582a699fe4b1646b0c04af72cdb3664b57c4c3d097ae8bcc4",
+      "raw_target_sha256": "20af60bb68de974c683e5557d8b14eb28a43ef77469cb1cc6b4c503fd743e125",
+      "translation": "Ξεχωρίστε το προϊόν, τη συσκευασία λιανικής και το τελικό χαρτοκιβώτιο αποστολής. Για μια θήκη φορητού υπολογιστή μπορεί να αναφέρεται μήκος 34 εκατοστών. Αυτό δεν δείχνει το βάθος ενός κουτιού με πολλές τέτοιες θήκες ούτε τον επιπλέον χώρο για προστατευτικό υλικό. Σημειώστε δίπλα σε κάθε μέτρηση ποιο αντικείμενο αφορά."
     }
   ]
 }

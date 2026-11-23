@@ -3,9 +3,9 @@
   "locale": "hr",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "b248191358e1d86ec6a6550a5b4279e387dbb2bf2220adb452ad8195be7a2a09",
-  "effective_dictionary_sha256": "5cf8dd94369e22771253ecb152c2207d6cd583c0778f2c36f4c3d21ba8ca1555",
+  "effective_dictionary_sha256": "055ec4ffda121b32e299647deaf0ef77971818a2eaf5fa500dcc0039ec186ee3",
   "checked_entries": 324,
-  "review_scope": "All article titles, machine-flagged strings, deterministic paragraph samples, freight prices and volume examples inspected. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries. Cross-checked the follow-up suggestions in the notebook example. Additional review of Croatian administrative hallucinations in cost examples. Follow-up contextual check for parcel, freight quote and weight terminology.",
+  "review_scope": "All article titles, machine-flagged strings, deterministic paragraph samples, freight prices and volume examples inspected. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries. Cross-checked the follow-up suggestions in the notebook example. Additional review of Croatian administrative hallucinations in cost examples. Follow-up contextual check for parcel, freight quote and weight terminology. Follow-up check for computer cases, retail wrapping and packing inserts.",
   "reviewed_flags": [
     {
       "issue": "language uncertain",
@@ -243,6 +243,12 @@
       "source_sha256": "56bd03dff5d82ca50922d04e1b2be8dad1b369e2e6d314cd12221fd2092255f6",
       "raw_target_sha256": "c4fa915d1acc07c6cd2d0f650012e518ad683eff7989e318250ade271ac94e0f",
       "translation": "Sačuvajte podatke za ponovnu provjeru ponude prijevoznika"
+    },
+    {
+      "source": "Distinguish the product, its retail box and the complete outbound carton. A laptop sleeve might be advertised as 34 centimetres long. That figure describes neither the depth of a carton containing several sleeves nor the extra space required for protection. Label every saved dimension with the object it describes.",
+      "source_sha256": "ce7b8c5aeca500e582a699fe4b1646b0c04af72cdb3664b57c4c3d097ae8bcc4",
+      "raw_target_sha256": "8becb8db94535aac2ba7dc5d8f3c1ea5adca7c87af0f648de8f1aa3ce277b3e8",
+      "translation": "Razlikujte sam proizvod, prodajnu kutiju i zapakiranu vanjsku kutiju za slanje. Za futrolu za prijenosno računalo može biti navedena duljina od 34 centimetra. To ne daje dubinu kutije s nekoliko takvih futrola niti uključuje dodatni prostor za zaštitu. Uz svaku mjeru navedite što ste mjerili."
     }
   ]
 }

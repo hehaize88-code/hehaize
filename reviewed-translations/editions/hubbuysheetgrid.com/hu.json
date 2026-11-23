@@ -3,7 +3,7 @@
   "locale": "hu",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "c436e2f5efefc3142a756f55557c99681570a9fadf908adaeb8be690535bf15a",
-  "effective_dictionary_sha256": "9997f6bdfee1d503ac659b92f94eb62b4cdc7ac0a353dfd7fefb594d34d4aba6",
+  "effective_dictionary_sha256": "150173ae69d34b8416e33ec9c4eaa1a058b5e89d416f38d5378e391eae89fe35",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -351,6 +351,42 @@
       "source_sha256": "0f2a0745dad887ac0537a2c286c171f834afc626189a9b4662dc221aa421ee3b",
       "raw_target_sha256": "363ac71b45bfa1f54c4ac30c55f61a00751b086f895577d6b2c06dd54276389c",
       "translation": "A feltüntetett szállítási idő lehet, hogy csak a feladástól számít. Olvassa el az útvonal feltételeit, mielőtt kézbesítési dátumot ígér a címzettnek. A még függő vásárlást, az eladó feladását, a raktári átvételt és a csomagolást külön ütemezze. Ne adjon hozzá találomra napokat. Ha egy adott napra szüksége van az árura, azonosítsa a még bizonytalan lépést, és ellenőrizze az utolsó megerősített állapotot."
+    },
+    {
+      "source": "Handling a partial stock confirmation",
+      "source_sha256": "ec2a38211bb19954b12facc9fe4fdfd9b1b598217be4251ac1c0b6bde89d5db5",
+      "raw_target_sha256": "e50233a0ef81fd80ffea10efe397d59bd91038ca70d0c0198527241faa49121c",
+      "translation": "Ha az eladó csak a rendelés egy részét tudja teljesíteni"
+    },
+    {
+      "source": "Make the exchange-rate direction readable",
+      "source_sha256": "e4fa0a63cfae68b6e0d25d376ab920ebd9569586cf46adae98db2fcd3a9d36f5",
+      "raw_target_sha256": "38f8085ac8c1de915f4a7778e71d809ee8e649a3e878149eef5a56e67f8b470c",
+      "translation": "Jelölje az átváltás kiinduló és célpénznemét"
+    },
+    {
+      "source": "Normalize inclusions before the rate",
+      "source_sha256": "028e5d3bd32b448cc0a6e0199ab6cd55c5584e999f28fcac1d1c207608f6998c",
+      "raw_target_sha256": "4071523f17a504f553d9990714b75d435fe2005a8b9f6040bacb552c96145326",
+      "translation": "Először az ajánlatokban foglalt díjakat hasonlítsa össze"
+    },
+    {
+      "source": "Reconcile several outbound packages against one original quote",
+      "source_sha256": "2610325b3730cea649019d0b72d34aadc7cb635008b6b964191fc2ff85929043",
+      "raw_target_sha256": "9a640ac23f2e03c803d9f8282b7abb8c064cbde50f55a6c1d556732625d21c94",
+      "translation": "Több csomag végleges díjának egyeztetése az eredeti közös ajánlattal"
+    },
+    {
+      "source": "If you receive one packet with a handwritten count of four, compare that with the seller's stated packing unit before reporting a shortage. Four accessories inside one bag may fulfill four units, whereas four empty protective sleeves do not. Describe the observable fact in your message and ask a concrete question. For instance, the order includes three two-piece sets and the warehouse entry shows three sealed packages; could you verify whether each package contains both listed pieces?",
+      "source_sha256": "d9a1135eb39fabf48de181196255c6fe57d364e19d33b64f8b401e7c35242a89",
+      "raw_target_sha256": "bc1b34afa1b71747580521bc411f78b858d779dbaf925030a442efbb5ff6f840",
+      "translation": "Ha egy csomagon kézzel a „négy” szó szerepel, vesse össze az eladó által megadott csomagolási egységgel. Egy tasakban négy tartozék teljesíthet négy rendelt egységet, négy üres védőtok viszont nem. Írja le a tényt: „Három kétrészes készletet rendeltem, és a raktár három lezárt csomagot vett át. Meg tudják erősíteni, hogy mindegyikben benne van mindkét feltüntetett darab?”"
+    },
+    {
+      "source": "Imagine a rigid accessory case and two soft shirts. The accessory case has a latch that should not bear pressure. In arrangement A, all three items sit in one tight carton with the shirts around the case. In arrangement B, the case has a separate padded sleeve within a larger outer box. Ask what protection each service actually supplies and whether the packed dimensions are confirmed or estimated. The second arrangement can provide different protection while also changing the available freight route.",
+      "source_sha256": "0bfd4b366ea6686dcc6725e9b7a93f9547ee8034c4440abe349c3db0195de886",
+      "raw_target_sha256": "cfd36f587ae4a1bb5c2fbe03fe8cff89a951fce9e53c16ae9fbe49b477b0cad0",
+      "translation": "Képzeljen el egy merev tartozéktokot és két puha inget. A tok zárját nem szabad nyomásnak kitenni. Az A változatban mindhárom tárgy szorosan elfér egy dobozban, az ingek a tok körül vannak. A B változatban a tok külön párnázott védőtasakba, majd nagyobb külső dobozba kerül. Kérdezze meg, mit véd az egyes szolgáltatás, és mért vagy becsült külső méretekről van-e szó. A másik csomagolás az elérhető szállítási módokat is megváltoztathatja."
     }
   ]
 }

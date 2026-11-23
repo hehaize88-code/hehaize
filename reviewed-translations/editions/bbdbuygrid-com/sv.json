@@ -3,9 +3,9 @@
   "locale": "sv",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "8e0051f6d346baa4bd2c7e0ac69810e6a6a309b9b8d94c53e49089247642839f",
-  "effective_dictionary_sha256": "304f1f4382b2dd67204ae591d660f1412027b0f03defcce3ed9b38cdff295c7c",
+  "effective_dictionary_sha256": "f2ad7f2fb756265fbbae0a210a8d891f3912ca04d32a382a8cb79eb6d7be8b5b",
   "checked_entries": 324,
-  "review_scope": "Inspected all ten article titles, all automated flags, examples containing arithmetic, quantity, carton volume and purchase records. Read deterministic passage samples and reviewed copied English headings and terminology. Cross-checked the follow-up suggestions in the notebook example. Follow-up contextual check for parcel, freight quote and weight terminology.",
+  "review_scope": "Inspected all ten article titles, all automated flags, examples containing arithmetic, quantity, carton volume and purchase records. Read deterministic passage samples and reviewed copied English headings and terminology. Cross-checked the follow-up suggestions in the notebook example. Follow-up contextual check for parcel, freight quote and weight terminology. Follow-up check for computer cases, retail wrapping and packing inserts.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -147,6 +147,12 @@
       "source_sha256": "5fcb636100b66eefe28ef6b4c2f039c72a09ba92a39721a05a116365d66c1458",
       "raw_target_sha256": "bdfb7d8275b220718081b713a9fb474daf0d72a2ceac771f3305d4c2676a5e8e",
       "translation": "Räkna gärna själv för att hitta fel och jämför med transportörens prisuppgift. Om resultatet verkar orimligt, kontrollera enheter, decimaltecken, om längden råkat skrivas i höjdfältet och om du har angett varans mått i stället för det färdigpackade paketets. Spara den rättade beräkningen och ange alltid paketets faktiska yttermått."
+    },
+    {
+      "source": "Distinguish the product, its retail box and the complete outbound carton. A laptop sleeve might be advertised as 34 centimetres long. That figure describes neither the depth of a carton containing several sleeves nor the extra space required for protection. Label every saved dimension with the object it describes.",
+      "source_sha256": "ce7b8c5aeca500e582a699fe4b1646b0c04af72cdb3664b57c4c3d097ae8bcc4",
+      "raw_target_sha256": "a1d89f500d87f1b5c625f2e7c263ccc287cb0b0d5a05e4b8be91d4c825404fa9",
+      "translation": "Skilj på själva produkten, dess försäljningsförpackning och den färdigpackade ytterkartongen. Ett laptopfodral kan enligt annonsen vara 34 centimeter långt. Måttet säger inget om djupet på en kartong med flera sådana fodral eller hur mycket plats som behövs för skyddsmaterial. Anteckna vid varje mått vad som har mätts."
     }
   ]
 }

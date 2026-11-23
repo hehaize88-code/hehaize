@@ -3,7 +3,7 @@
   "locale": "bg",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "1d943039eabc516badfa883ed9132eca32ab3f81106168069f636dae25753953",
-  "effective_dictionary_sha256": "589f16bb17e89670714e37cb391a52cee3f9af4f4fed381b3b30219d44c495ce",
+  "effective_dictionary_sha256": "4f2a79b82af242e1e208de59ef5b81d8c56c30dad41a7c6c2be092b6bda1cda0",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -597,6 +597,42 @@
       "source_sha256": "0f2a0745dad887ac0537a2c286c171f834afc626189a9b4662dc221aa421ee3b",
       "raw_target_sha256": "0c6b352b4bd83813c95a120520e12f0f686283ca700275fa257c66dfc9c3396f",
       "translation": "Посоченият срок за доставка може да започва едва след изпращането. Прочетете условията на маршрута, преди да обещаете конкретна дата на получателя. Планирайте отделно покупката, изпращането от продавача, приемането в склада и опаковането, ако още не са приключили. Не добавяйте произволен брой дни. Ако стоката ви трябва на определена дата, посочете коя стъпка още е неясна и проверете последния потвърден статус."
+    },
+    {
+      "source": "Handling a partial stock confirmation",
+      "source_sha256": "ec2a38211bb19954b12facc9fe4fdfd9b1b598217be4251ac1c0b6bde89d5db5",
+      "raw_target_sha256": "ebff4273fecddef9de796e93cff2b58452422bf17e86296091c15099fc8683cf",
+      "translation": "Когато продавачът потвърди наличност само за част от стоките"
+    },
+    {
+      "source": "Make the exchange-rate direction readable",
+      "source_sha256": "e4fa0a63cfae68b6e0d25d376ab920ebd9569586cf46adae98db2fcd3a9d36f5",
+      "raw_target_sha256": "c332c363bcdbf64f69fdf33de09ce8fb5e9723767b1acdbeca3d02da78bfee9c",
+      "translation": "Посочете коя валута в коя се преизчислява"
+    },
+    {
+      "source": "Normalize inclusions before the rate",
+      "source_sha256": "028e5d3bd32b448cc0a6e0199ab6cd55c5584e999f28fcac1d1c207608f6998c",
+      "raw_target_sha256": "7d4b740fb45849d8372795b0adf7ff34ee3ef2d7e1f403b5948e42934eb47a47",
+      "translation": "Първо сравнете кои разходи са включени в офертите"
+    },
+    {
+      "source": "Reconcile several outbound packages against one original quote",
+      "source_sha256": "2610325b3730cea649019d0b72d34aadc7cb635008b6b964191fc2ff85929043",
+      "raw_target_sha256": "6775866dd2868643271f257747a0f0bafd9bd0a80af20488ddcb5e6c2637d5eb",
+      "translation": "Съпоставете разходите за няколко пратки с първоначалната обща оферта"
+    },
+    {
+      "source": "If you receive one packet with a handwritten count of four, compare that with the seller's stated packing unit before reporting a shortage. Four accessories inside one bag may fulfill four units, whereas four empty protective sleeves do not. Describe the observable fact in your message and ask a concrete question. For instance, the order includes three two-piece sets and the warehouse entry shows three sealed packages; could you verify whether each package contains both listed pieces?",
+      "source_sha256": "d9a1135eb39fabf48de181196255c6fe57d364e19d33b64f8b401e7c35242a89",
+      "raw_target_sha256": "3409b1c1b6f04db33fa0f617d83749bd907584748de25c79a72d9789b03cb0ee",
+      "translation": "Ако върху една опаковка е написано на ръка „четири“, сравнете това с обявената от продавача единица на продажба. Четири аксесоара в един плик могат да изпълнят поръчка от четири броя, но четири празни предпазни калъфа не са четири аксесоара. Опишете какво виждате. Например: „Поръчани са три комплекта от по две части, а складът е получил три запечатани пакета. Може ли да потвърдите, че във всеки са двете посочени части?“"
+    },
+    {
+      "source": "Imagine a rigid accessory case and two soft shirts. The accessory case has a latch that should not bear pressure. In arrangement A, all three items sit in one tight carton with the shirts around the case. In arrangement B, the case has a separate padded sleeve within a larger outer box. Ask what protection each service actually supplies and whether the packed dimensions are confirmed or estimated. The second arrangement can provide different protection while also changing the available freight route.",
+      "source_sha256": "0bfd4b366ea6686dcc6725e9b7a93f9547ee8034c4440abe349c3db0195de886",
+      "raw_target_sha256": "9a2030ab82ce14beb434bb033874be5ac85aecdfbf45950cfeb4f64f6a297f03",
+      "translation": "Представете си твърд калъф за аксесоари и две меки ризи. Закопчалката на калъфа не бива да се притиска. При вариант А трите артикула са в плътен кашон с ризите около калъфа. При вариант Б калъфът е в отделна подплатена торбичка в по-голям външен кашон. Попитайте каква защита включва всяка услуга и дали размерите са измерени или прогнозни. По-добрата защита може да промени и достъпния маршрут."
     }
   ]
 }

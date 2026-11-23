@@ -3,9 +3,9 @@
   "locale": "th",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "5bc588d530ca739559fd01f4be7e9a57ff935c23db29b7ded6d8ab6f2b722fec",
-  "effective_dictionary_sha256": "f6e37a7c5348dec5e96ebb0e126a644366d2c9b7deb50c3670c92f06dd224dd5",
+  "effective_dictionary_sha256": "304eea42a6784d5ae74f4022406b325ca84da8ec5c66b28f804e2ef651026c10",
   "checked_entries": 324,
-  "review_scope": "Scoped bilingual review of the FAQ, article and section titles, platform labels, numerical examples and automated flags. Corrected shipping quotations, paper-notebook and cap examples, route and dimensional-weight terminology; remaining prose was screened for numerical changes, not line-edited throughout.",
+  "review_scope": "Scoped bilingual review of the FAQ, article and section titles, platform labels, numerical examples and automated flags. Corrected shipping quotations, paper-notebook and cap examples, route and dimensional-weight terminology; remaining prose was screened for numerical changes, not line-edited throughout. Follow-up check for computer cases, retail wrapping and packing inserts.",
   "reviewed_flags": [
     {
       "issue": "new digit or localized conversion",
@@ -513,6 +513,12 @@
       "source_sha256": "9a0631e1ed66d4191a8bb61140b87316ce395e7cfa86088b466dee824524711f",
       "raw_target_sha256": "925c6feb9dea120b4aecc506514b26c71c0b6a995dd18b7855f1f778c32bd3d0",
       "translation": "สมมติว่าคุณอยากส่งพวกเขาไปด้วยกัน การรวมทั้งสองปริมาณให้ 44,832 ลูกบาศก์เซนติเมตร แต่จำนวนนี้ไม่ได้บอกคุณ ขนาดภายนอกของกล่องรวมกัน เสื้อผ้าอาจจะพอดีในตะกร้า ถ้าวิธีการบรรจุอนุญาตให้มัน หรือตะกร้าอาจจะต้องว่าง เพื่อหลีกเลี่ยงความกดดันที่ด้านข้างของมัน การเติมเต็มและรูปทรงเรขาคณิตของรายการมีอิทธิพลต่อการจัดเรียงสุดท้าย เก็บข้อมูลการวัดภายนอกให้ครบถ้วน หรือใช้คำนวณที่ระบุไว้ชัดเจน สำหรับกล่องรวมที่เสนอ"
+    },
+    {
+      "source": "Distinguish the product, its retail box and the complete outbound carton. A laptop sleeve might be advertised as 34 centimetres long. That figure describes neither the depth of a carton containing several sleeves nor the extra space required for protection. Label every saved dimension with the object it describes.",
+      "source_sha256": "ce7b8c5aeca500e582a699fe4b1646b0c04af72cdb3664b57c4c3d097ae8bcc4",
+      "raw_target_sha256": "8a357cc57c4c881b5963e68686b13ae454763dc4d044a90ac9c5a2b10e694ba0",
+      "translation": "แยกขนาดของตัวสินค้า กล่องบรรจุขาย และกล่องด้านนอกที่พร้อมส่งออกจากกัน ผู้ขายอาจระบุว่าซองใส่แล็ปท็อปยาว 34 เซนติเมตร แต่ตัวเลขนี้ไม่ได้บอกความลึกของกล่องที่ใส่ซองหลายใบหรือพื้นที่เพิ่มเติมสำหรับวัสดุกันกระแทก เมื่อจดขนาดให้ระบุด้วยว่าวัดจากสิ่งใด"
     }
   ]
 }

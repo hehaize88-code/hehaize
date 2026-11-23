@@ -3,7 +3,7 @@
   "locale": "sk",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "d975fafc927396beb4ecc2625c632084b0ac6cea84848dfc0c3684968f8489c4",
-  "effective_dictionary_sha256": "63d6e813b5e0f16363fff28f9c25c1652652828818bf38e8f831534b29246170",
+  "effective_dictionary_sha256": "cf453c9d180b0e33b30e98cfa73ec63c33c4aef198ce55d28e9d6d5565de8297",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -249,6 +249,42 @@
       "source_sha256": "0f2a0745dad887ac0537a2c286c171f834afc626189a9b4662dc221aa421ee3b",
       "raw_target_sha256": "6403d57a714d0bcaca030f866f9a11b6364595bf06bd55bd0d63cc4b59915e8d",
       "translation": "Uvádzaný čas prepravy môže plynúť až od odoslania zásielky. Než príjemcovi sľúbite konkrétny dátum doručenia, prečítajte si podmienky trasy. Do plánu samostatne zahrňte nedokončený nákup, odoslanie predajcom, príjem v sklade a balenie. Nepridávajte ľubovoľný počet dní. Ak potrebujete tovar k určitému dátumu, zistite, ktorý krok zostáva neistý, a overte posledný potvrdený stav."
+    },
+    {
+      "source": "Handling a partial stock confirmation",
+      "source_sha256": "ec2a38211bb19954b12facc9fe4fdfd9b1b598217be4251ac1c0b6bde89d5db5",
+      "raw_target_sha256": "86d77807c11c54ddfd0eefba096d5924c7947532f0c8ea802d60b367c5ced5b3",
+      "translation": "Keď predajca potvrdí dostupnosť len časti objednávky"
+    },
+    {
+      "source": "Make the exchange-rate direction readable",
+      "source_sha256": "e4fa0a63cfae68b6e0d25d376ab920ebd9569586cf46adae98db2fcd3a9d36f5",
+      "raw_target_sha256": "0e5554c4e3e643f976b3f612f0272607309bcae40cd30492b1dd120e992d68b2",
+      "translation": "Uveďte, z ktorej meny a do ktorej meny prepočítavate sumu"
+    },
+    {
+      "source": "Normalize inclusions before the rate",
+      "source_sha256": "028e5d3bd32b448cc0a6e0199ab6cd55c5584e999f28fcac1d1c207608f6998c",
+      "raw_target_sha256": "405cf14450d86c9808b66d39f40158aef82740a27bdab5241a0aa8e62c76679f",
+      "translation": "Najprv porovnajte, ktoré poplatky zahŕňa každá ponuka"
+    },
+    {
+      "source": "Reconcile several outbound packages against one original quote",
+      "source_sha256": "2610325b3730cea649019d0b72d34aadc7cb635008b6b964191fc2ff85929043",
+      "raw_target_sha256": "92dd58b3ca8f04ae4c9cb78ef7128c7415009c8461fb1beb3924757fecb953e4",
+      "translation": "Porovnajte konečné náklady viacerých zásielok s pôvodnou spoločnou ponukou"
+    },
+    {
+      "source": "If you receive one packet with a handwritten count of four, compare that with the seller's stated packing unit before reporting a shortage. Four accessories inside one bag may fulfill four units, whereas four empty protective sleeves do not. Describe the observable fact in your message and ask a concrete question. For instance, the order includes three two-piece sets and the warehouse entry shows three sealed packages; could you verify whether each package contains both listed pieces?",
+      "source_sha256": "d9a1135eb39fabf48de181196255c6fe57d364e19d33b64f8b401e7c35242a89",
+      "raw_target_sha256": "9c11d36426bb5affe8ccd1e84a45a7de6f9f23eb1217376a4e6678eefd1330e4",
+      "translation": "Ak je na jednom balíčku rukou napísané „štyri“, porovnajte údaj s predajnou jednotkou uvedenou predajcom. Štyri doplnky v jednom vrecku môžu zodpovedať štyrom objednaným kusom, ale štyri prázdne ochranné puzdrá nie. Opíšte zistenie: „Objednal som tri dvojdielne súpravy a sklad prevzal tri uzavreté balenia. Môžete overiť, či každé obsahuje oba uvedené diely?“"
+    },
+    {
+      "source": "Imagine a rigid accessory case and two soft shirts. The accessory case has a latch that should not bear pressure. In arrangement A, all three items sit in one tight carton with the shirts around the case. In arrangement B, the case has a separate padded sleeve within a larger outer box. Ask what protection each service actually supplies and whether the packed dimensions are confirmed or estimated. The second arrangement can provide different protection while also changing the available freight route.",
+      "source_sha256": "0bfd4b366ea6686dcc6725e9b7a93f9547ee8034c4440abe349c3db0195de886",
+      "raw_target_sha256": "ee3c5642320840155f091e216a7814ceb6ffc2b2253347603ab43b634b0bed1c",
+      "translation": "Predstavte si pevné puzdro na príslušenstvo a dve mäkké košele. Na západku puzdra nesmie pôsobiť tlak. Vo variante A sú všetky tri predmety v tesnej škatuli s košeľami okolo puzdra. Vo variante B je puzdro v samostatnom vystlanom ochrannom obale vo väčšej škatuli. Overte, akú ochranu služba poskytuje a či sú vonkajšie rozmery namerané alebo odhadnuté. Zmenené balenie môže ovplyvniť aj dostupné prepravné trasy."
     }
   ]
 }

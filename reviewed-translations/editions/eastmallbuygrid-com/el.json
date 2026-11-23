@@ -3,9 +3,9 @@
   "locale": "el",
   "source_set_sha256": "d3fc8a20c25fd682a0cbcf1d5165d69d8f33114365bd18ae1f508e92c28f82c5",
   "raw_dictionary_sha256": "f0443c7e40eaaa31e41496010824cac7a7d2b687907bf4d543aa654cfbeef2d7",
-  "effective_dictionary_sha256": "d2efb0185a46be2901b4116fc7e931aa38afdfe7f3395c91201dcd184fcfeb21",
+  "effective_dictionary_sha256": "9ccadec6c1f21008fafd5fca34271ee674107643414048a096a08eedaa95d5ee",
   "checked_entries": 277,
-  "review_scope": "Targeted bilingual QA of all flagged strings, FAQ questions, article and section titles, numerical and fee examples, physical organizer/dividers, overshirt fit and garment size terminology. Includes a numerical screen and independent overlay replay. This is not whole-edition line editing. Follow-up contextual check for parcel, freight quote and weight terminology.",
+  "review_scope": "Targeted bilingual QA of all flagged strings, FAQ questions, article and section titles, numerical and fee examples, physical organizer/dividers, overshirt fit and garment size terminology. Includes a numerical screen and independent overlay replay. This is not whole-edition line editing. Follow-up contextual check for parcel, freight quote and weight terminology. Follow-up check for computer cases, retail wrapping and packing inserts.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -1071,6 +1071,42 @@
       "source_sha256": "dee65d912bbb050c2946162b8f89cc2cf1a637e5ac2787110f14f86b90897266",
       "raw_target_sha256": "829b8de922d2195716b0852e8e4b7911ed1c3052bd693d296e2f23ef56d0d81e",
       "translation": "Αποφασίστε τι χρειάζεται να γίνει όσο το προϊόν βρίσκεται ακόμη στην αποθήκη. Ζητήστε έλεγχο ή επιστροφή προτού το συμπεριλάβετε στο επόμενο δέμα. Κρατήστε την αρχική συσκευασία του πωλητή, αν ενδέχεται να απαιτείται, και ρωτήστε για τα μεταφορικά της επιστροφής στο εσωτερικό. Μόλις εμφανιστεί το πρόβλημα, δείτε την ισχύουσα πολιτική και τους όρους της συγκεκριμένης παραγγελίας. Ο χρόνος αποθήκευσης δεν καθορίζει την προθεσμία απόφασης για επιστροφή. Η αποθήκευση, η αποδοχή από τον πωλητή και η υποβολή αιτήματος μετά την αγορά είναι χωριστές ενέργειες."
+    },
+    {
+      "source": "A retail hangtag can be attached to the wrong garment, and an outer bag can be marked differently from the item inside. If a discrepancy appears, determine which label each photograph shows. A picture of a size sticker on a plastic sleeve identifies the sleeve's marking. A picture of a sewn label attached to the garment gives different evidence. A wide view that includes both can make the distinction clearer without requiring multiple unexplained close-ups.",
+      "source_sha256": "0796e8f43236bee726bcfca333686e9aa328f09b4d99e70dea2edec5002ad36b",
+      "raw_target_sha256": "cad7066fddea430bab4f2d75a704b734590fc12a40779a0bbf8a03cb783ee85e",
+      "translation": "Το καρτελάκι καταστήματος μπορεί να έχει μπει σε λάθος ρούχο και η εξωτερική σακούλα να γράφει κάτι διαφορετικό από το περιεχόμενο. Αν εντοπίσετε διαφορά, ελέγξτε ποια σήμανση δείχνει κάθε φωτογραφία. Το αυτοκόλλητο μεγέθους πάνω στην πλαστική συσκευασία αποδεικνύει μόνο τι γράφει η συσκευασία. Η ραμμένη ετικέτα του ρούχου είναι διαφορετικό στοιχείο. Μια γενική φωτογραφία που δείχνει και τα δύο ξεκαθαρίζει τη διαφορά."
+    },
+    {
+      "source": "A request to “remove the box” sounds precise until you unpack the word box. A single delivery can arrive in a seller's shipping carton, a printed retail carton, a moulded insert, a fabric bag and a protective sleeve. Only some of these layers may affect the product's resale condition or the seller's acceptance of a return. Others may be expendable after intake. Give each layer a name and, if the location is unclear, use a photograph with the relevant part indicated.",
+      "source_sha256": "1100f89c4b6714ef8bf08e98c7a66efdda7e940fa70490ffa112ee67ab2d91aa",
+      "raw_target_sha256": "a7f52c2a09e6d62f8818e62e7218086fdda36ff38c0e9ef8fa27039034882639",
+      "translation": "Η οδηγία «αφαιρέστε το κουτί» είναι ασαφής όταν υπάρχουν πολλά στρώματα συσκευασίας. Μια παραγγελία μπορεί να έχει χαρτοκιβώτιο μεταφοράς, τυπωμένο κουτί λιανικής, διαμορφωμένο στήριγμα, υφασμάτινο σακουλάκι και εξωτερική προστατευτική θήκη. Ορισμένα επηρεάζουν την κατάσταση μεταπώλησης ή την αποδοχή επιστροφής από τον πωλητή, ενώ άλλα ίσως μπορούν να αφαιρεθούν μετά την παραλαβή. Κατονομάστε κάθε στρώμα και, αν χρειάζεται, δείξτε το σε φωτογραφία."
+    },
+    {
+      "source": "For the glasses example, suppose the hard case is staying. The presentation sleeve adds little padding, while the plain carton prevents the hard case from moving against a metal accessory. If the outer carton is removed, you still need a way to separate that accessory. If the case itself is removed, you need to consider pressure on the frames and lenses, not just surface scratches. Ask about available repacking choices and their dimensions rather than writing an instruction that leaves the warehouse to infer which risks you accept.",
+      "source_sha256": "3ddd2a60e0224cb08304304c75f8249422a6a083cd93897bb1be7fec630afbbf",
+      "raw_target_sha256": "370b6c527b7cf3fed5ccfb7609826548ae98f9fc770c882569d724e8fe5d2a74",
+      "translation": "Στο παράδειγμα των γυαλιών υποθέστε ότι κρατάτε τη σκληρή θήκη. Το εξωτερικό περίβλημα παρουσίασης προσφέρει ελάχιστη προστασία, ενώ το απλό χαρτοκιβώτιο εμποδίζει τη θήκη να χτυπά σε μεταλλικό αξεσουάρ. Αν αφαιρεθεί το χαρτοκιβώτιο, πρέπει ακόμη να απομονωθεί το αξεσουάρ. Αν αφαιρεθεί και η θήκη, εξετάστε την πίεση στον σκελετό και τους φακούς, πέρα από τις γρατζουνιές. Ρωτήστε για τις επιλογές επανασυσκευασίας και τις διαστάσεις τους."
+    },
+    {
+      "source": "Sometimes the choice is to fold and retain the retail carton. State whether flattening is acceptable, whether the lid or sleeve should remain assembled and where the loose item should be placed. A collector or gift recipient may care about creases; another buyer may only need the printed model label. Decide which feature matters before asking for a change. If the original carton uses a glued or rigid construction, folding may not be possible without damaging it, however easy a rectangular diagram makes it look.",
+      "source_sha256": "15417542bee2aba68df8b3e52b0394bbbb0336e18eaf05e695d5881c8eb67e97",
+      "raw_target_sha256": "aef9b422060fc4cfea42e3131f89a5dead1454c74e5a1fe4e17778b6e086a78c",
+      "translation": "Μπορεί να θέλετε να κρατήσετε το κουτί λιανικής διπλωμένο. Διευκρινίστε αν επιτρέπετε να γίνει επίπεδο, αν το καπάκι ή το εξωτερικό περίβλημα πρέπει να μείνει συναρμολογημένο και πού να τοποθετηθεί το προϊόν. Για συλλέκτη ή για δώρο οι τσακίσεις μπορεί να έχουν σημασία, ενώ άλλος αγοραστής χρειάζεται μόνο την ετικέτα μοντέλου. Ξεκαθαρίστε τι σας ενδιαφέρει. Ένα κολλημένο ή άκαμπτο κουτί ίσως δεν διπλώνει χωρίς φθορά, όσο απλό και αν φαίνεται στο σχέδιο."
+    },
+    {
+      "source": "Record the choice and why you made it. For instance, retaining the glasses case protects the product, retaining the printed sleeve preserves the option evidence, and removing only the large outer carton reduces the parcel footprint if the revised measurements confirm it. This explanation gives you something concrete to verify at dispatch and upon delivery. It also prevents an instruction written for a soft garment or disposable carton from being applied indiscriminately to a fragile item or a product still under review.",
+      "source_sha256": "f1c6b0006b926e431b69385797823d3cb24604a11676c9a2ad66859f94ee60eb",
+      "raw_target_sha256": "bd9dc25941414584071564753af6de1325d65a170c41aa434ecdc8466a4ac406",
+      "translation": "Καταγράψτε την επιλογή και τον λόγο. Για παράδειγμα, η θήκη προστατεύει τα γυαλιά, το τυπωμένο εξωτερικό περίβλημα διατηρεί τα στοιχεία της παραλλαγής και η αφαίρεση μόνο του μεγάλου χαρτοκιβωτίου μειώνει τον χώρο του δέματος, αν το επιβεβαιώνουν οι νέες μετρήσεις. Έτσι ξέρετε τι να ελέγξετε στην αποστολή και στην παραλαβή. Αποφεύγετε επίσης να εφαρμόσετε σε εύθραυστο προϊόν ή σε προϊόν υπό έλεγχο μια οδηγία που προοριζόταν για μαλακό ρούχο ή αναλώσιμο κουτί."
+    },
+    {
+      "source": "Keep loose inserts identified when two boxes look alike. A small paper sleeve or spare component may fit either box while its printed model number belongs to only one. Photograph the layout before separation and place each item's inserts back with its matching model number when preparing the return.",
+      "source_sha256": "38c7ab88d18ae2918074ffdc948c9680788536cceb0a40e27e6782071d196e45",
+      "raw_target_sha256": "f993cf5ff2818df15aebe6c9b4ce68fe121d0a07bdf90ddf53682915128e70d2",
+      "translation": "Όταν δύο κουτιά μοιάζουν, σημειώστε σε ποιο ανήκει κάθε ξεχωριστό ένθετο. Ένας μικρός χάρτινος φάκελος ή ένα ανταλλακτικό μπορεί να χωρά και στα δύο, αλλά ο τυπωμένος κωδικός μοντέλου να αντιστοιχεί μόνο στο ένα. Φωτογραφίστε τη διάταξη πριν τα χωρίσετε και, πριν από την επιστροφή, βάλτε τα ένθετα στο κουτί με τον αντίστοιχο κωδικό."
     }
   ]
 }

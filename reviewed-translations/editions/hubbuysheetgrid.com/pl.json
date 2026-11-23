@@ -3,7 +3,7 @@
   "locale": "pl",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "8a1ba23c059510886a7034f10bd338543d0af7d2d9b647876841fa0f03e5c004",
-  "effective_dictionary_sha256": "f1d344cdb5fede4572a76f550eb15393b3240deae732a3ff25f41fc135b0a97c",
+  "effective_dictionary_sha256": "e8a5845f387dc066e2fd11c0fe1ba2cb0776629cd1a34cb3bd47f2799cc0bce9",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -291,6 +291,42 @@
       "source_sha256": "0f2a0745dad887ac0537a2c286c171f834afc626189a9b4662dc221aa421ee3b",
       "raw_target_sha256": "d4739edfe9f08aa9296c8f8716a90bc20c254ca0255211f60df8e6116284c904",
       "translation": "Podany czas przewozu może być liczony dopiero od nadania. Przeczytaj opis trasy, zanim obiecasz odbiorcy konkretną datę dostawy. Osobno zaplanuj niezakończony zakup, wysyłkę przez sprzedawcę, przyjęcie do magazynu i pakowanie. Nie dodawaj dowolnej liczby dni. Jeśli potrzebujesz rzeczy na konkretny termin, wskaż etap, który nadal jest niepewny, i sprawdź ostatnią potwierdzoną informację."
+    },
+    {
+      "source": "Handling a partial stock confirmation",
+      "source_sha256": "ec2a38211bb19954b12facc9fe4fdfd9b1b598217be4251ac1c0b6bde89d5db5",
+      "raw_target_sha256": "04d6114c9e1597201d3fb78703e080eedd482a289200086b0beb81ebfd1cc628",
+      "translation": "Gdy sprzedawca potwierdza dostępność tylko części zamówienia"
+    },
+    {
+      "source": "Make the exchange-rate direction readable",
+      "source_sha256": "e4fa0a63cfae68b6e0d25d376ab920ebd9569586cf46adae98db2fcd3a9d36f5",
+      "raw_target_sha256": "d1ff91ada858e00b03a184b717ece20ef5fa92c9da69bdc25ef73fd4c1a690fb",
+      "translation": "Wskaż walutę źródłową i docelową"
+    },
+    {
+      "source": "Normalize inclusions before the rate",
+      "source_sha256": "028e5d3bd32b448cc0a6e0199ab6cd55c5584e999f28fcac1d1c207608f6998c",
+      "raw_target_sha256": "b4185f94af5e8ca3305cbc48c5e8995168767bb7179774766ec256276d59bbef",
+      "translation": "Najpierw porównaj koszty ujęte w obu ofertach"
+    },
+    {
+      "source": "Reconcile several outbound packages against one original quote",
+      "source_sha256": "2610325b3730cea649019d0b72d34aadc7cb635008b6b964191fc2ff85929043",
+      "raw_target_sha256": "83e182d016a2ac0be77a57be5ea8a5cf58792a0c31f8118fdfae516f068b3d29",
+      "translation": "Porównaj ostateczne koszty kilku przesyłek z pierwotną wspólną wyceną"
+    },
+    {
+      "source": "If you receive one packet with a handwritten count of four, compare that with the seller's stated packing unit before reporting a shortage. Four accessories inside one bag may fulfill four units, whereas four empty protective sleeves do not. Describe the observable fact in your message and ask a concrete question. For instance, the order includes three two-piece sets and the warehouse entry shows three sealed packages; could you verify whether each package contains both listed pieces?",
+      "source_sha256": "d9a1135eb39fabf48de181196255c6fe57d364e19d33b64f8b401e7c35242a89",
+      "raw_target_sha256": "9fbe392831e9607f535872c4e8478869ee22889f451adb5140f6e39d70b7a6dd",
+      "translation": "Jeśli na opakowaniu odręcznie zapisano „cztery”, porównaj to z jednostką sprzedaży podaną przez sprzedawcę. Cztery akcesoria w jednym woreczku mogą odpowiadać czterem sztukom, ale cztery puste pokrowce ochronne ich nie zastępują. Opisz, co widać: „Zamówiłem trzy zestawy po dwa elementy, a magazyn przyjął trzy zamknięte opakowania. Czy możecie potwierdzić, że w każdym są oba wymienione elementy?”"
+    },
+    {
+      "source": "Imagine a rigid accessory case and two soft shirts. The accessory case has a latch that should not bear pressure. In arrangement A, all three items sit in one tight carton with the shirts around the case. In arrangement B, the case has a separate padded sleeve within a larger outer box. Ask what protection each service actually supplies and whether the packed dimensions are confirmed or estimated. The second arrangement can provide different protection while also changing the available freight route.",
+      "source_sha256": "0bfd4b366ea6686dcc6725e9b7a93f9547ee8034c4440abe349c3db0195de886",
+      "raw_target_sha256": "b28c677d25a486fd8bef851895839f3eed9a1a1ab233ddd916e848e15eff7695",
+      "translation": "Wyobraź sobie sztywne etui na akcesoria i dwie miękkie koszule. Zatrzask etui nie powinien być ściskany. W wariancie A wszystkie trzy rzeczy mieszczą się ciasno w kartonie, a koszule otaczają etui. W wariancie B etui trafia do osobnego wyściełanego pokrowca w większym kartonie. Zapytaj, jaką ochronę zapewnia każda usługa i czy wymiary zewnętrzne zmierzono, czy tylko oszacowano. Drugi układ może także zmienić dostępne trasy wysyłki."
     }
   ]
 }

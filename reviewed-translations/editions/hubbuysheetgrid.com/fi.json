@@ -3,7 +3,7 @@
   "locale": "fi",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "295a0596657f023d2245966d1eeafa9a48be6adf06e6f45a1a947a7ef54ea633",
-  "effective_dictionary_sha256": "94cc0a16d5ada899bfe46231afff47faec9750812e62210da5c1f1dcedc2d444",
+  "effective_dictionary_sha256": "93f260eb25c7e4380886678bdfa334258bc12c5f952ed5a9f522090f28fbf148",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -117,6 +117,42 @@
       "source_sha256": "0f2a0745dad887ac0537a2c286c171f834afc626189a9b4662dc221aa421ee3b",
       "raw_target_sha256": "ad366a46bf296b20f0d08ff496cb5b74d2f67f8b3fdf35e79b90f576641dc465",
       "translation": "Ilmoitettu kuljetusaika voi alkaa vasta lähetyksestä. Lue reitin ehdot ennen kuin lupaat vastaanottajalle toimituspäivän. Kirjaa keskeneräinen osto, myyjän lähetys, varaston vastaanotto ja pakkaus aikatauluun erillisinä vaiheina. Älä lisää summittaisia päiviä. Jos tavaraa tarvitaan tiettynä päivänä, selvitä mikä vaihe on vielä epävarma ja tarkista viimeisin vahvistettu tieto."
+    },
+    {
+      "source": "Handling a partial stock confirmation",
+      "source_sha256": "ec2a38211bb19954b12facc9fe4fdfd9b1b598217be4251ac1c0b6bde89d5db5",
+      "raw_target_sha256": "fcecb1fc3b4f3f3c5d096a869184dcfd07f4e7171b67cfe32d117540929e717f",
+      "translation": "Kun myyjä vahvistaa vain osan tilauksesta olevan saatavilla"
+    },
+    {
+      "source": "Make the exchange-rate direction readable",
+      "source_sha256": "e4fa0a63cfae68b6e0d25d376ab920ebd9569586cf46adae98db2fcd3a9d36f5",
+      "raw_target_sha256": "c48734246eef84025ebc0a9d7023fa930ad2dc4b0bbb11ac4221c4aedc233699",
+      "translation": "Merkitse, mistä valuutasta mihin muunnat summan"
+    },
+    {
+      "source": "Normalize inclusions before the rate",
+      "source_sha256": "028e5d3bd32b448cc0a6e0199ab6cd55c5584e999f28fcac1d1c207608f6998c",
+      "raw_target_sha256": "ee3f29dba2900a069341c1e7b5b51429cf2a19b476412f683e03a580d4101803",
+      "translation": "Vertaa ensin tarjouksiin sisältyviä kuluja"
+    },
+    {
+      "source": "Reconcile several outbound packages against one original quote",
+      "source_sha256": "2610325b3730cea649019d0b72d34aadc7cb635008b6b964191fc2ff85929043",
+      "raw_target_sha256": "d169b0e07a574d1b9c9616ada0aa12886e742ee76001567f86e47fbfb992864c",
+      "translation": "Vertaa usean paketin lopullisia kuluja alkuperäiseen yhteiseen tarjoukseen"
+    },
+    {
+      "source": "If you receive one packet with a handwritten count of four, compare that with the seller's stated packing unit before reporting a shortage. Four accessories inside one bag may fulfill four units, whereas four empty protective sleeves do not. Describe the observable fact in your message and ask a concrete question. For instance, the order includes three two-piece sets and the warehouse entry shows three sealed packages; could you verify whether each package contains both listed pieces?",
+      "source_sha256": "d9a1135eb39fabf48de181196255c6fe57d364e19d33b64f8b401e7c35242a89",
+      "raw_target_sha256": "cabc8d9ebde054176e5e9b042c84be12e2c583ee40604d205fdf5e432298ecd3",
+      "translation": "Jos yhdessä pakkauksessa lukee käsin ”neljä”, tarkista myyjän ilmoittama pakkausyksikkö. Neljä tarviketta yhdessä pussissa voi vastata neljää tilattua kappaletta, mutta neljä tyhjää suojakoteloa ei. Kerro, mitä näkyy, ja kysy täsmällisesti: ”Tilasin kolme kahden osan sarjaa, ja varasto vastaanotti kolme suljettua pakkausta. Voitteko vahvistaa, että kussakin on molemmat mainitut osat?”"
+    },
+    {
+      "source": "Imagine a rigid accessory case and two soft shirts. The accessory case has a latch that should not bear pressure. In arrangement A, all three items sit in one tight carton with the shirts around the case. In arrangement B, the case has a separate padded sleeve within a larger outer box. Ask what protection each service actually supplies and whether the packed dimensions are confirmed or estimated. The second arrangement can provide different protection while also changing the available freight route.",
+      "source_sha256": "0bfd4b366ea6686dcc6725e9b7a93f9547ee8034c4440abe349c3db0195de886",
+      "raw_target_sha256": "f8966d6b1b605cb0510324b15d84f73e84462681f1a9b13cbd23168f054c98a8",
+      "translation": "Ajattele kovaa tarvikekoteloa ja kahta pehmeää paitaa. Kotelon salpa ei saa joutua puristuksiin. Vaihtoehdossa A kaikki kolme ovat tiiviissä laatikossa ja paidat kotelon ympärillä. Vaihtoehdossa B kotelo pannaan omaan pehmustettuun suojapussiin suuremman laatikon sisään. Selvitä kummankin palvelun tarjoama suoja sekä se, ovatko ulkomitat mitattuja vai arvioita. Suojauksen muutos voi vaikuttaa myös mahdollisiin kuljetusreitteihin."
     }
   ]
 }

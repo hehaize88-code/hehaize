@@ -3,7 +3,7 @@
   "locale": "hr",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "cd7e2b7417f4e05adc20f6ff1af5521e51f78f8b5fca1ca5325ae10dd76cec1b",
-  "effective_dictionary_sha256": "2f92d3cea59533f577a52b04d6e0edd7560a1a968eee54d9240722dca2bf3e92",
+  "effective_dictionary_sha256": "f7a87044d4536af0931e1a3c2071585d1f0482eb44627daafce60821b7e919a9",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -405,6 +405,42 @@
       "source_sha256": "0f2a0745dad887ac0537a2c286c171f834afc626189a9b4662dc221aa421ee3b",
       "raw_target_sha256": "0c75f55553c8b4754698e53c9d859bc65e5910db00000571172424e7936df996",
       "translation": "Procijenjeno vrijeme prijevoza može se računati tek od otpreme. Pročitajte uvjete rute prije nego što primatelju obećate datum dostave. U rasporedu odvojeno navedite nedovršenu kupnju, slanje od prodavatelja, zaprimanje u skladištu i pakiranje. Nemojte proizvoljno dodavati dane. Ako vam roba treba do određenog datuma, utvrdite koji je korak još neizvjestan i provjerite posljednji potvrđeni status."
+    },
+    {
+      "source": "Handling a partial stock confirmation",
+      "source_sha256": "ec2a38211bb19954b12facc9fe4fdfd9b1b598217be4251ac1c0b6bde89d5db5",
+      "raw_target_sha256": "b695bd66724636f3e3353b4aa73a18c5c5e19a651b58ac111937755188f1b211",
+      "translation": "Kad prodavatelj potvrdi dostupnost samo dijela narudžbe"
+    },
+    {
+      "source": "Make the exchange-rate direction readable",
+      "source_sha256": "e4fa0a63cfae68b6e0d25d376ab920ebd9569586cf46adae98db2fcd3a9d36f5",
+      "raw_target_sha256": "9e00685cb92f2ee2b263b27ddfda3e8ad239ccb6942ca0459f8180424e1acd5e",
+      "translation": "Navedite iz koje se valute iznos preračunava i u koju"
+    },
+    {
+      "source": "Normalize inclusions before the rate",
+      "source_sha256": "028e5d3bd32b448cc0a6e0199ab6cd55c5584e999f28fcac1d1c207608f6998c",
+      "raw_target_sha256": "32b2823287e7468162f65d4b9aa4b24ddb90b7ca2dea7c62ce5a21c0c1ffd2a6",
+      "translation": "Najprije usporedite koje troškove ponude uključuju"
+    },
+    {
+      "source": "Reconcile several outbound packages against one original quote",
+      "source_sha256": "2610325b3730cea649019d0b72d34aadc7cb635008b6b964191fc2ff85929043",
+      "raw_target_sha256": "d3bce20b618e90a953fbb0fd006cac3acf5179ac3e7c3e22ff68d414716e9b53",
+      "translation": "Usporedite konačni trošak više pošiljki s prvotnom zajedničkom ponudom"
+    },
+    {
+      "source": "If you receive one packet with a handwritten count of four, compare that with the seller's stated packing unit before reporting a shortage. Four accessories inside one bag may fulfill four units, whereas four empty protective sleeves do not. Describe the observable fact in your message and ask a concrete question. For instance, the order includes three two-piece sets and the warehouse entry shows three sealed packages; could you verify whether each package contains both listed pieces?",
+      "source_sha256": "d9a1135eb39fabf48de181196255c6fe57d364e19d33b64f8b401e7c35242a89",
+      "raw_target_sha256": "685e345aeaa83779754acdbcfb49d63d485773dc3b2529bd90f267c5a699051b",
+      "translation": "Ako na jednom paketiću rukom piše „četiri“, usporedite to s jedinicom pakiranja koju navodi prodavatelj. Četiri dodatka u jednoj vrećici mogu odgovarati četirima naručenim komadima, ali četiri prazne zaštitne navlake ne mogu. Opišite što vidite i pitajte: „Naručena su tri kompleta od po dva dijela, a skladište je zaprimilo tri zatvorena paketa. Možete li provjeriti sadrži li svaki oba navedena dijela?“"
+    },
+    {
+      "source": "Imagine a rigid accessory case and two soft shirts. The accessory case has a latch that should not bear pressure. In arrangement A, all three items sit in one tight carton with the shirts around the case. In arrangement B, the case has a separate padded sleeve within a larger outer box. Ask what protection each service actually supplies and whether the packed dimensions are confirmed or estimated. The second arrangement can provide different protection while also changing the available freight route.",
+      "source_sha256": "0bfd4b366ea6686dcc6725e9b7a93f9547ee8034c4440abe349c3db0195de886",
+      "raw_target_sha256": "313dcc34c364ec28e1af316060f670ab9b561500b0ad1299a7f16f4765a22428",
+      "translation": "Zamislite čvrstu kutiju za pribor s kopčom koja ne smije biti pod pritiskom te dvije mekane košulje. U mogućnosti A sva tri artikla stanu u tijesnu kartonsku kutiju, a košulje su oko kutije za pribor. U mogućnosti B kutija za pribor dobiva zasebnu podstavljenu zaštitnu navlaku i veći vanjski karton. Pitajte koju zaštitu nudi svaka usluga i jesu li vanjske mjere potvrđene ili procijenjene. Drukčija zaštita može promijeniti i izbor prijevozne rute."
     }
   ]
 }
