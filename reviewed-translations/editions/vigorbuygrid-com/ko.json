@@ -3,7 +3,7 @@
   "locale": "ko",
   "source_set_sha256": "45be6cbeb6f7ed794c373e9816341de444b028e8d281d6498d5cf522a8bfa4ee",
   "raw_dictionary_sha256": "1cc74de501352f8bd65ea40aca22a06eb6f2b8c41701d4645d0816454e2a30bc",
-  "effective_dictionary_sha256": "ca631e4b1a3bfa9c76626504dc01e56ba7ff9f3b4f4328d3ab86af636e9fac2b",
+  "effective_dictionary_sha256": "dc4ac7b46cbf8d4022f80d73295d2f2784664b8d053eeff61c892d4fd83fcbf2",
   "checked_entries": 329,
   "review_scope": "Verified source coverage and reviewed FAQ, editorial headings, shipping estimates and garment size examples, all automated findings, and domain-specific parcel and price terminology.",
   "reviewed_flags": [
@@ -857,6 +857,18 @@
       "translation": "확인한 링크로 사진이 나오지 않으면 현재 판매 페이지의 이미지와 제품 설명을 직접 보세요. 창고에 들어온 뒤 확인해도 구매 결정에 늦지 않는지 생각해 보세요. 특정 치수가 구매의 전제라면 주문 전에 묻고, 입고 후에만 확인되는 부분은 판매 조건을 보고 감수할지 결정하세요."
     },
     {
+      "source": "A final check is whether somebody else can reproduce the lookup from your notes. Send yourself the plain listing URL without signing in, reopen it, and check whether it still names the seller and item you intended. Preserve the selected option separately if that choice disappears outside your session.",
+      "source_sha256": "e2ae34b17b19c509e244617a46fcfab4b011b677e6d9bc62c4a6e2f518712034",
+      "raw_target_sha256": "a4f3d31bac467a6947bd28f765726f437c94d8c6daf72b3e28d17012630e2dfa",
+      "translation": "마지막으로 기록만 보고 같은 상품을 찾을 수 있는지 확인하세요. 공개 상품 URL을 자신에게 보낸 뒤 로그인하지 않고 다시 열어 판매자와 상품이 맞는지 보세요. 세션 밖에서 선택 옵션이 초기화되면 옵션을 따로 저장합니다."
+    },
+    {
+      "source": "VigorBuy buyer tutorial",
+      "source_sha256": "6ab45f71272c434e6a19eea7d0927c7cbdab9c8fb9d5aa232a18f838ed849a6f",
+      "raw_target_sha256": "2c4e8fbc86c42f8716474b4e3301e8f82a5517791682c987d055fe3d844e8a0e",
+      "translation": "VigorBuy 구매자 안내"
+    },
+    {
       "source": "A photo search can recognize the broad shape of a jacket without distinguishing two sellers offering nearly identical versions. Use its results to uncover candidates, then test the details that could prove a candidate wrong.",
       "source_sha256": "b6752126559fd015157d1db263f3dae941097657f246e33d165e3970a3be9d2d",
       "raw_target_sha256": "8329e54e85c61cf21baae74a29eab1f17f22119124c43972dc61de8d78eb6d04",
@@ -935,6 +947,12 @@
       "translation": "한 판매 페이지에 겉모습이 비슷한 상품이 여러 개 있을 수 있습니다. 상품번호로 찾은 검품 사진은 그중 어느 하나의 사진일 수 있습니다. 판매 페이지를 확인한 뒤 본인이 고른 모델을 구별해 주는 세부 특징까지 확인하세요."
     },
     {
+      "source": "Select each candidate and note changes to its swatch, image, price and option code. A price difference can signal different contents but cannot identify which feature caused it. Save the wording and the version shown in your checkout record. A link reopened later may start on the first option instead of the last one selected.",
+      "source_sha256": "17f38b78d7b471508bda0a3b24f57162b1fdceeed0f6d334c3593c30aaca05c4",
+      "raw_target_sha256": "bff5c45be7e29545a082fb6542fef9a1bedd60c256d1e5bb4d55fa76145dcf2e",
+      "translation": "후보 옵션을 하나씩 선택해 색상 견본, 사진, 가격, 옵션 코드가 어떻게 바뀌는지 적으세요. 가격 차이는 다른 옵션이라는 단서는 되지만 소재나 구조의 차이는 금액만 보고 짐작하지 말고 판매자 설명에서 확인하세요."
+    },
+    {
       "source": "Write the outcome in three parts. Identify the paid option, the evidence on the current warehouse entry and the remaining uncertainty. For instance, the order calls for the lined medium; the warehouse label shows medium; the lining attachment remains hidden. This invites one directed photograph instead of a broad request to check everything again.",
       "source_sha256": "53367366b1db5715ec4f4732d493b329f4b94b47c8ca9575f9d865b87db98ec7",
       "raw_target_sha256": "53b28b7d9caec56e97e323b7e9adcd9f59e2f139173ec813bbc1759f754535db",
@@ -962,7 +980,7 @@
       "source": "Two jacket lengths can differ by only a few centimetres. One image might show the short size medium while another shows the long version in small. A length difference could reflect both the size and the cut. Compare the seller size chart for the same marked size across the two versions, and check whether the chart specifies a different starting point. A measurement taken from the collar seam should not be compared directly with one taken from the highest shoulder point.",
       "source_sha256": "191bf628bd422be954503dffebdeacbe2a4a84e686dac1959382ff94556546a1",
       "raw_target_sha256": "11d5b4d2c913c34dc5f3af967f58a1dcd7903e9dc43b8e25a7bc70e93458de0b",
-      "translation": "재킷 두 모델의 길이 차이는 몇 센티미터뿐일 수 있습니다. 같은 모델도 사이즈에 따라 길어 보입니다. 사진마다 모델과 표기 사이즈를 식별하고 어디서 어디까지 쟀는지 비교하세요. 짧은 기장의 M 사진만 보고 다른 큰 사이즈의 옷을 긴 기장 모델로 분류할 수는 없습니다."
+      "translation": "두 재킷의 길이는 몇 센티미터밖에 차이 나지 않을 수 있습니다. 한 사진은 짧은 모델 M, 다른 사진은 긴 모델 S라면 기장과 사이즈가 모두 길이에 영향을 줍니다. 판매자 사이즈표에서 두 모델의 같은 표기 사이즈를 비교하고 시작점도 확인하세요. 칼라 봉제선에서 잰 길이와 어깨 최고점에서 잰 길이는 직접 비교할 수 없습니다."
     },
     {
       "source": "With multiple units in one order, assign a separate record to each. Mark one as the medium removable-lining option and another as the large shell, for example. If the warehouse posts a series of pictures against a combined entry, identify which wide shot belongs to which close view. Request an overview showing each unit with its distinguishing feature when a cropped photograph cannot establish the assignment.",
@@ -987,6 +1005,12 @@
       "source_sha256": "d05a8c3c5a4bbdf6882f612d6dd4daf42e8699bb34d0663c996baec45468f0ee",
       "raw_target_sha256": "6c458aed71ddcadbb32638ea447d80e28bdac02cfe71aae176738c3925ba325a",
       "translation": "기준이 되는 재킷을 펼쳐 가슴 단면을 재니 55cm였다고 가정해 보세요. 판매자 표의 110cm는 옷 자체의 가슴둘레일 수도 있고, 권장 착용자의 신체 가슴둘레일 수도 있습니다. 두 배로 하거나 반으로 나누기 전에 표의 설명을 읽고, 불분명하면 어떤 치수인지 판매자에게 확인하세요."
+    },
+    {
+      "source": "For this example, imagine your reference jacket has enough chest room but the back hem rides slightly high. You want roughly the same chest width and a longer back, not a universally larger garment. Write down the desired changes separately. Choosing a larger labelled size simply to gain length could increase the body width beyond what you need while still leaving the sleeves or hem unsuitable.",
+      "source_sha256": "e6f385e2ed9f01e6e8c8e76ce08a66210a05b0db45f883572a11fd4be1ec7cde",
+      "raw_target_sha256": "43f05f16ad1e4b9460b7afd25053491840aea6e5bde057fb5c73c6e41152c822",
+      "translation": "기준 재킷은 가슴 여유가 충분하지만 뒤가 살짝 짧다고 합시다. 원하는 것은 가슴 너비는 비슷하게 두고 등길이만 늘리는 것이지 옷 전체를 크게 만드는 게 아닙니다. 목표를 나눠 적으세요. 길이 때문에 한 치수 올리면 몸통만 지나치게 넓어지고 소매나 밑단은 여전히 안 맞을 수 있습니다."
     },
     {
       "source": "Lay the reference flat with the normal fastening closed. Measure from one underarm seam to the other and note any padding or elastic that makes the seam hard to locate. Measure the centre-back length from the collar attachment to the hem. For reach, measure from the centre back of the neck across the shoulder and down the sleeve if that path matches the seller's chart. Take a simple picture of each tape position on your own garment. These pictures are useful instructions for a later warehouse request.",
@@ -1025,10 +1049,46 @@
       "translation": "해당 상품을 포기해도 기준으로 삼은 옷의 실측 기록은 남겨 두세요. 다음 재킷에 수치를 적용하기 전에 핏과 안에 입을 옷이 비슷한지 확인합니다. 코트 아래 입는 얇은 카디건과 실제로 입을 두꺼운 보온층은 필요한 여유가 다릅니다."
     },
     {
+      "source": "Check a neutral surface within the same image. If white paper, a grey background and the garment all look unusually warm, lighting or white balance may explain part of the shift. Compare different pictures of the same unit before treating one warm-looking sleeve as a mismatch.",
+      "source_sha256": "6e5b6a23c692082d63c0ea7da9d89645e1fccafa23ffac512c760c51e5b38cf8",
+      "raw_target_sha256": "189796cda5529a12e2cd72f467843cce8fb2851e3a7c852c4de5e67e0f0aa121",
+      "translation": "같은 사진 안의 무채색 물체를 확인하세요. 흰 종이와 회색 배경, 옷이 모두 유난히 노랗다면 조명이나 화이트밸런스 탓일 수 있습니다. 한 소매만 따뜻한 색처럼 보인다고 불일치로 판단하기 전에 같은 옷의 다른 사진도 보세요."
+    },
+    {
+      "source": "Shadow, fabric texture and angle matter. Velvet, satin and reflective fabric can change visibly as the surface turns. A close-up of a fold may look quite different from a broad, evenly lit front panel. Compare equivalent areas facing the light in a similar way.",
+      "source_sha256": "fb39480bcefa661e93bd828e3ac10ceedf82c2602a3b7582e88c2dbe4f19dd72",
+      "raw_target_sha256": "202e77b3cac71ec0dd30deeb9c80b0e446471273080bf30eec9a681c9021932e",
+      "translation": "그림자, 원단 표면과 각도에 따라 색이 다르게 보일 수 있습니다. 벨벳, 새틴, 반사 소재는 방향만 바뀌어도 인상이 달라집니다. 주름 확대 사진과 균일한 조명을 받은 앞판 전체를 바로 비교하지 말고, 서로 비슷한 부위를 빛을 비슷하게 받는 상태에서 비교하세요."
+    },
+    {
       "source": "A buyer coordinating pieces from separate sellers faces additional uncertainty even if both listings use the same colour name. Record that risk before relying on a historical QC image. When the colour match is essential, decide whether the available evidence is good enough while the item can still be inspected, and check the current order-specific options with support.",
       "source_sha256": "3f00cc03987effe645d8acefd3831825e51de4de0aabf649783127bf8d921d65",
       "raw_target_sha256": "e9d84262b78cd94523b3bc97c471cbb1446a058020ff8124d4df26a5d0412a04",
       "translation": "다른 판매자의 물건끼리 색을 맞출 때는 두 페이지의 색 이름이 같아도 실제 조화가 불확실합니다. 예전 검품 사진을 참고하기 전에 이 점을 기록하세요. 색 일치가 필수면 물건을 검사할 수 있을 때 증거가 충분한지 판단하고 해당 주문에 가능한 선택지를 고객지원에 확인하세요."
+    },
+    {
+      "source": "Imagine the seller offers olive, dark green and khaki. You want a replacement jacket that will be worn with trousers purchased months ago. There are three different decisions here. First, establish what option you ordered. Second, establish which option the warehouse received. Third, decide how closely its appearance is likely to match the trousers in ordinary use. A single photograph can contribute evidence to all three, but seldom settles them all.",
+      "source_sha256": "1771ae64a5fa272f31118939ad46cdfdac74c7393a71a68b5badba6fea29d5b7",
+      "raw_target_sha256": "3b46ac0c9d1f96a791dfbddf991cfe6922cd10ae000fa45b2da0aceb6d4f0ed0",
+      "translation": "판매자가 올리브, 짙은 초록, 카키를 팔고 있고 몇 달 전 산 바지에 맞출 재킷을 찾는다고 합시다. 주문한 색, 창고에 들어온 색, 일상에서 바지와 얼마나 어울릴지는 서로 다른 세 문제입니다. 사진 한 장이 각각의 단서는 될 수 있지만 모두를 해결하기는 어렵습니다."
+    },
+    {
+      "source": "For the first decision, save the seller's original option text and selected swatch at checkout. When comparing translations, check any model code beside the colour. A translation might display khaki for two options that differ in green or brown undertone. If the order confirmation contains only a model code, keep the seller option mapping that connects that code to the swatch. If you did not save it and the page later changes, ask for clarification instead of reconstructing the mapping from a similar listing.",
+      "source_sha256": "cf173f03e66d68926228dd469753db75f8a3c91d4131f007a4dc9ef38ee2081d",
+      "raw_target_sha256": "64bf3ba1a73cca865b770186ffdaadded0f5e202e1affa077bcdd693442d6337",
+      "translation": "결제 시 선택한 색을 확인하려면 판매자 옵션 원문, 선택한 색상 견본과 옆 모델 코드를 저장하세요. 녹색 기와 갈색 기가 다른 두 색이 모두 ‘카키’로 번역될 수 있습니다. 주문 확인서에 코드만 있으면 코드와 색 견본의 대응도 남겨 두세요. 페이지가 바뀌고 기록이 없다면 비슷한 다른 상품으로 추측하지 말고 문의하세요."
+    },
+    {
+      "source": "For the second decision, inspect the current unit's label, packaging sticker or identifiable option details. A seller label matching the confirmed option gives stronger evidence about nominal colour than a guess based purely on screen appearance. It still cannot prove that two batches look identical. A photograph of the unit and its identifying information in the same frame helps ensure that the label belongs to the pictured jacket rather than another green item in the order.",
+      "source_sha256": "fd8fcd5b6b380dc2b95990638400f95ffd0313594483b75d4e29ccaa6a3e8e2a",
+      "raw_target_sha256": "246299fd45fbf8223edf17daf5b262d7d032cb0f6f3486bb50fdc250c1626758",
+      "translation": "창고에 온 제품의 색상 옵션은 실물 라벨이나 포장 스티커, 옵션을 식별할 수 있는 특징으로 확인하세요. 주문과 맞는 판매자 라벨은 화면 색만 보고 판단하는 것보다 표기 색상을 뒷받침하지만, 생산 시기가 다른 두 제품의 실제 색이 같다는 뜻은 아닙니다. 재킷과 라벨을 한 장에 담으면 다른 녹색 상품의 라벨과 혼동하지 않습니다."
+    },
+    {
+      "source": "For the third decision, describe how close a match you actually require. Complementary tones may be perfectly acceptable for separate garments worn casually. A replacement panel for an existing outfit could need a much closer match. An online photograph cannot establish an exact match under every light. Identifying the decision threshold keeps you from asking for several extra images that still cannot resolve a requirement for a physically exact shade.",
+      "source_sha256": "2f2dfd9532afec277aaef93787a22a0760df440b9b07be607fd9a3d60bcc90c8",
+      "raw_target_sha256": "a8153dd9f656aa09f1d169fa04ceff4f36fe3d4e4d60c1c18617d0dd4e6365ea",
+      "translation": "마지막으로 어느 정도 색이 맞아야 하는지 정하세요. 평소 따로 입는 옷끼리는 어울리는 색조면 충분할 수 있지만 기존 옷의 한 패널을 교체하려면 훨씬 정밀해야 합니다. 온라인 사진은 모든 조명에서 같은 색임을 보장하지 못합니다. 허용 범위를 정하면 실물 대조가 필요한 문제에 사진만 계속 요청하지 않게 됩니다."
     },
     {
       "source": "A neutral wall behind the jacket can help reveal a strong colour cast when the wall itself appears yellow or blue. It is not a calibrated reference unless you know its real colour and lighting. A cream floor can be genuinely cream; correcting every picture until it looks white can introduce a new error. Look for consistent changes affecting several objects in the frame before attributing a difference solely to the garment.",
@@ -1037,10 +1097,58 @@
       "translation": "재킷 뒤의 무채색 벽이 누렇거나 푸르게 찍히면 전체 색조가 치우쳤을 가능성이 있습니다. 다만 벽의 실제 색과 조명을 모르면 보정된 색표로 쓸 수 없습니다. 크림색 바닥은 원래 연한 베이지일 수 있는데 사진마다 하얗게 맞추면 새 오차가 생깁니다. 옷만 다른 색이라고 판단하기 전에 여러 물체가 함께 같은 방향으로 치우치는지 보세요."
     },
     {
+      "source": "Cameras and screens add another layer of variation. A phone can adjust exposure when a dark jacket fills most of the frame, making dark green look lighter than it appeared in a wider shot. Your display brightness and colour mode can affect what you see. Looking at the same image on a second device can expose a large display difference, but two screens agreeing is still not a physical comparison with your trousers.",
+      "source_sha256": "0135ea8ef7ba43944ba327f721e26df3127a7023cbbfc95f25dd6f43cfdacf25",
+      "raw_target_sha256": "d21e5fde9195751e6e19357e0229fc8d9b768363adba6a1b0a3c44bd0b5fc3fb",
+      "translation": "어두운 재킷이 화면 대부분을 채우면 휴대전화가 노출을 바꿔 넓게 찍은 사진보다 짙은 초록을 밝게 보이게 할 수 있습니다. 화면 밝기와 색 모드도 영향을 줍니다. 같은 사진을 다른 기기에서 보면 큰 표시 차이는 찾을 수 있지만, 두 화면이 같아도 가지고 있는 바지와 실물을 맞대 본 것은 아닙니다."
+    },
+    {
+      "source": "If option identity is uncertain, request the jacket laid out beside its colour label. If the concern is a patch or uneven panel, request a wider view and one close view under consistent neutral lighting, identifying the exact area. If the concern is the difference between olive and dark green, ask whether the two available variants can be compared under the same light. These are different requests because they test different explanations.",
+      "source_sha256": "77168213d183e0eca9b54d5f24c275843fb96939cbb02b34e797084f5af94041",
+      "raw_target_sha256": "bad4d9acdfb684b0ddc4d29dcaa798bd47a7878830c2d9dd7793214efa6abeba",
+      "translation": "옵션 식별이 문제라면 재킷과 색상 라벨을 나란히 펼쳐 촬영해 달라고 하세요. 얼룩이나 패널 색 불균일이 걱정되면 정확한 부위를 지정하고 같은 중성 조명에서 전경과 확대 사진을 요청합니다. 올리브와 짙은 초록의 차이라면 두 실물을 같은 빛 아래 비교할 수 있는지 물으세요. 의문마다 필요한 사진이 다릅니다."
+    },
+    {
+      "source": "End the decision with a record of what is confirmed and what remains subjective. For the green jacket, that might be the correct seller code visible, no persistent patch across the main panel, and an exact match to your existing trousers still unknown. Keep this note with the order. If you later choose another item from the same gallery, you can reuse the comparison method while treating its colour, seller and batch as a new question.",
+      "source_sha256": "7acdf396649fa639c51d74de666b13a57f42c4fdc0a23fb2a4baa9e020b1f156",
+      "raw_target_sha256": "fa524d43107cca6284eade4cfa1446effe6574326964dc05ac36886c85d8ac6a",
+      "translation": "마지막에는 확인된 사실과 주관적인 부분을 나눠 주문에 기록하세요. 예를 들어 ‘판매자 코드 일치, 여러 각도에서 앞판에 고정된 반점 없음, 기존 바지와 정확한 색 일치는 미확인’이라고 적습니다. 같은 갤러리의 다른 상품에도 비교 방법은 쓸 수 있지만 색상, 판매자와 생산 배치는 새로 확인해야 합니다."
+    },
+    {
+      "source": "For the second view, ask for a measurement across the usable opening between the points that actually limit insertion. Explain that the exterior pocket seam may be wider than the zip opening. For the third, specify a depth measurement from the inside base to the usable top if this is possible without damaging the bag. Neither measurement by itself establishes whether a rigid object with a thick case fits; the thickness, lining, corners and shape also matter. Make that limitation explicit in the decision.",
+      "source_sha256": "e314e96dae60e25550bc7a61bbc9003236207425f20c0cfe73ffe8852edf0db2",
+      "raw_target_sha256": "048f161088fac300cbe8b79980b93807c3df1225b5cae7cc632af4f17760cbd1",
+      "translation": "두 번째 사진은 물건이 실제로 통과할 수 있는 입구의 양 끝 사이를 재 달라고 하세요. 겉주머니의 봉제 폭은 열린 지퍼의 유효 폭보다 넓을 수 있습니다. 세 번째는 가방을 손상시키지 않는 범위에서 안쪽 바닥부터 사용 가능한 위쪽 끝까지 깊이를 잽니다. 두꺼운 케이스에 든 단단한 물건이 들어가는지는 두께, 안감, 모서리와 형태도 좌우하므로 한 치수만으로 단정하지 마세요."
+    },
+    {
       "source": "Use a simple order of details: identify the unit, name the feature, describe the position, specify the endpoints and say what must remain visible. A request such as measure the bag can produce its outside height. A more precise request would name the rear pocket of the black medium backpack, ask for its zip opened, and request a tape across the unobstructed opening with zero and the final reading visible. The extra words only describe choices that could otherwise lead to the wrong measurement.",
       "source_sha256": "1ce4d3c66cfdfeb9db8f870f15b4d22c0a5f4b28fb9e598aa96aa5295170c200",
       "raw_target_sha256": "fc476ced8d95c31bd61d069ebcfb51cc157e12db5ef8af7d2d989c6121941c16",
       "translation": "상품, 확인할 부위, 놓는 방법, 측정 시작점과 끝점, 사진에 보여야 할 부분 순으로 적으세요. ‘가방을 재 주세요’라고만 하면 바깥 높이를 잴 수도 있습니다. ‘검은색 M 사이즈 배낭의 뒤 주머니 지퍼를 열고 막힘 없이 사용할 수 있는 입구를 가로질러 줄자를 댄 뒤 0 눈금과 끝 눈금이 함께 보이게 찍어 주세요’처럼 요청하세요."
+    },
+    {
+      "source": "Mention the unit you need, but keep any conversion in your own record. If the warehouse returns centimetres and your comparison item is measured in inches, convert consistently before deciding. Avoid comparing a tablet's advertised screen diagonal with an opening width. Measure the actual object in its case across the dimension that must pass through the opening. Check its depth and corner shape as well.",
+      "source_sha256": "c427d5228d6542477d2e8c612556a8799f53ee5496dfaceb987bfb82cbf5cdd0",
+      "raw_target_sha256": "58a94b39ded379ce053aa502083e84883ab0d5fadb73bb763e27199edcc0ed53",
+      "translation": "필요한 단위를 알려 주고 환산 과정은 본인 기록에 남기세요. 창고는 센티미터, 비교 물건은 인치라면 단위를 통일합니다. 태블릿 화면 대각선과 주머니 입구 폭을 비교하지 마세요. 케이스를 끼운 실물이 입구를 통과할 때 필요한 폭과 두께, 모서리 모양을 확인하세요."
+    },
+    {
+      "source": "On receipt, ask whether the photo identifies the unit, exposes the feature and makes the requested observation readable. If two of the three are satisfied, identify the single remaining gap. A clear measurement against an unidentified black bag leaves unit identity uncertain. A well-identified bag with the zero mark hidden leaves the measurement uncertain. These are concise follow-up questions that a person at the warehouse can act on.",
+      "source_sha256": "8485f5ad4f3c6dc98ffb070e9cdbb431d304ea75fe7dff2e80ee027b5680af2f",
+      "raw_target_sha256": "cd07638121257dbb23b2c7c5fab4197a6a08f9b61777692dd5a1e001c64dbcee",
+      "translation": "추가 사진이 오면 상품을 식별할 수 있는지, 필요한 부위가 보이는지, 글자나 수치를 읽을 수 있는지 확인하세요. 세 가지 중 두 가지가 충족됐다면 남은 한 가지만 물으면 됩니다. 검은 가방이 어느 제품인지 모르고 눈금만 보이는 경우와, 제품은 맞지만 줄자 0점이 가려진 경우는 다른 질문이 필요합니다."
+    },
+    {
+      "source": "If the evidence contradicts the original offer, quote the exact part of the paid option or seller description that conflicts. If it merely falls short of your own preferred dimension, describe the fit issue and consult the current purchase terms. Those situations can have different available remedies, and an accurate message makes it easier for support to respond appropriately.",
+      "source_sha256": "8d781a0c150d9a30d80104bd8edc95ac06f47915f1f863026a9f152c2901b0ca",
+      "raw_target_sha256": "79246817da72a7e8749a7ea2d7ae0a95790da9fcd864de98aa5a6347e31fc9b4",
+      "translation": "실물 증거가 구매 당시 판매자가 명시한 내용과 다르면 결제한 옵션이나 상품 설명에서 충돌하는 문구를 그대로 적으세요. 단지 본인이 선호하는 치수에 못 미친 것이라면 어떤 점이 안 맞는지 설명하고 주문 조건을 확인합니다. 두 상황에서 가능한 처리 방법이 다를 수 있어 정확한 설명이 도움이 됩니다."
+    },
+    {
+      "source": "When the additional picture arrives, reply in the same thread with the decision it supports. An example is that the new close-up shows both zipper pulls and resolves your question about the pockets, while the lining remains outside the photograph. This closes the current request without accidentally treating the lining as checked. If you need a different question answered, describe it separately and verify whether the warehouse can still access the item. Several unlabeled replies on a single image can leave the person reading your case unsure which issue is open. Saving the answer with the corresponding photograph keeps the evidence useful after the parcel leaves the warehouse.",
+      "source_sha256": "07ce70eb5006129a6a2b4833e809a134b2541d147b871aefa7b75413197f2a32",
+      "raw_target_sha256": "bfc4d851647dd4fba9164e9eb0efdece5af895b7e62818f2da99067deb1abb5e",
+      "translation": "추가 사진이 오면 같은 대화에 어떤 질문이 해결됐는지 남기세요. ‘지퍼 손잡이 두 개가 보여 주머니는 확인했지만 안감은 화면 밖’처럼 쓰면 안감까지 본 것으로 오해하지 않습니다. 다른 질문은 따로 제시하고 창고가 아직 상품을 확인할 수 있는지 물으세요. 답과 해당 사진을 연결해 두면 출고 후에도 근거가 남습니다."
     },
     {
       "source": "Copy each paid line with its unit, selected option, quantity and any explicitly included components. A bag might include a shoulder strap, a set might include matching shorts and a jacket might have a removable hood. Record only what the selected offer actually describes.",
@@ -1091,6 +1199,18 @@
       "translation": "무슨 정보가 부족한지 말하지 않은 채 합쳐 온 물건을 전부 다시 풀어 달라고 하지 마세요. 셔츠 두 장의 사이즈와 밀봉된 헤어밴드 묶음을 지정하면 직원이 해당 물건을 확인할 수 있습니다. ‘다 맞나요?’라고만 물으면 궁금한 것은 사이즈표인데 상자 수만 확인한 답을 받을 수 있습니다."
     },
     {
+      "source": "If the second shirt is the wrong size and the other pieces are correct, keep the affected line open while marking the unaffected pieces confirmed. Ask what the current options are for the one shirt before submitting the whole parcel. Retain its tags and packaging if a return or exchange may be considered. Avoid assuming the entire carton must be returned or that part of a set can always be separated; ask for the conditions tied to the actual seller purchase.",
+      "source_sha256": "13fcb30a7e55fa004d7994971ea3b7969f33d1c61ffbdef28da2e38d63a00d46",
+      "raw_target_sha256": "8f0d5f116d34693cec293cc99ca3fcd9644e9127edf0024d3e3c69aaa51cb7d7",
+      "translation": "두 번째 셔츠만 사이즈가 다르고 다른 구성품은 맞다면 그 셔츠만 미해결 상태로 두고 나머지는 확인 완료로 표시하세요. 전체 소포를 출고하기 전에 해당 셔츠의 처리 방법을 묻고, 반품이나 교환을 고려하면 태그와 포장을 보관합니다. 상자 전체를 돌려보내야 한다거나 세트 일부를 언제나 분리할 수 있다고 가정하지 말고 해당 구매의 판매 조건을 확인하세요."
+    },
+    {
+      "source": "A down jacket and a box of books can have very different relationships between weight and space. The route's actual billing rules determine which difference affects cost. Use two fully described parcels instead of comparing product weights alone.",
+      "source_sha256": "992f9cc7a316b407dd04d5e1771c63eb24520e27d32ed83cc609ac665eb88ad3",
+      "raw_target_sha256": "4ca46f8ea42b59d6173438c30d46711b0ccf61be4c563040f0323a66663f37de",
+      "translation": "다운재킷과 책 한 상자는 무게에 비해 차지하는 공간이 크게 다를 수 있습니다. 어떤 차이가 요금에 반영되는지는 해당 경로의 실제 과금 규칙에 달려 있습니다. 상품 무게만 비교하지 말고 포장된 두 소포의 치수와 실중량을 모두 기록하세요."
+    },
+    {
       "source": "Suppose a light parcel weighs 1.5 kilograms and measures 45 by 35 by 25 centimetres. Its volume is 39,375 cubic centimetres. A dense 4-kilogram parcel measuring 25 by 20 by 15 centimetres occupies 7,500 cubic centimetres. The light parcel uses more than five times as much space despite weighing less than half as much.",
       "source_sha256": "c6e6dd05040af5b4af65b98e2dfde8c9b71dd1756078d25bf78f4c44e02aa53c",
       "raw_target_sha256": "b0a3b5120f52d4f1c19827dc7b932667a5b3d071e54ab0d75959324c3bbb8f87",
@@ -1103,16 +1223,34 @@
       "translation": "가상의 배송 서비스가 세제곱센티미터 단위의 부피를 6,000으로 나눈 뒤 그 결과를 kg 단위의 실측 무게와 비교한다고 가정해 보세요. 가벼운 소포의 부피무게는 약 6.56kg, 작고 무거운 소포의 부피무게는 1.25kg입니다. 각 소포의 실중량과 부피무게 중 큰 값을 쓰는 이 예에서는 가벼운 소포의 과금 중량이 더 큽니다."
     },
     {
+      "source": "These numbers illustrate a method, not a VigorBuy tariff. A service may set a different divisor, threshold, minimum or rounding increment. Read the route description returned for your own contents and destination. Identify both the governing figure and how it becomes the final billed weight.",
+      "source_sha256": "66379a362675e79a6d93cd288caa77c3c444164d08c00910ea618f12ab81e76e",
+      "raw_target_sha256": "92d2692cd483231f7c11a7939b4f1949b7a35578bccfd9016c0df018e26172f2",
+      "translation": "여기 나온 수치는 계산법을 보여주는 예입니다. VigorBuy 고정 운임표가 아니며 배송 서비스에 따라 부피무게 제수, 적용 기준, 최저 과금 무게와 올림 단위가 다를 수 있습니다. 실제 내용물과 목적지로 표시된 경로 설명을 읽고 어떤 무게가 기준이며 어떻게 최종 과금 무게가 되는지 확인하세요."
+    },
+    {
       "source": "Reducing the large parcel's height to 20 centimetres while keeping the other sides fixed gives a volume of 31,500 cubic centimetres. With the same hypothetical divisor its dimensional figure falls to 5.25 kilograms. That may alter a quote governed by volume but tells you nothing by itself about the charge on an actual-weight-only route.",
       "source_sha256": "b665cec090fda1786133c93b7239d81fb24ad6efa3cd6ae75b4c5d0ab4baac2e",
       "raw_target_sha256": "a90980784ff81976b95b7a01d0fec14d06546ea45d5104836f7b95a80f78b391",
       "translation": "다른 두 변을 유지하고 큰 소포의 높이를 20cm로 줄이면 부피는 31,500cm³가 됩니다. 같은 가상 제수를 적용하면 부피무게는 5.25kg로 줄어듭니다. 부피무게가 기준인 요금에는 영향을 줄 수 있지만, 실제 무게만 쓰는 배송 방식의 요금은 이 부피 변화만으로 알 수 없습니다."
     },
     {
+      "source": "Enter the same destination and accurately described contents for each scenario. A service that excludes an item or cannot accept its dimensions is not an available price. Keep optional services and currency consistent across the quotes.",
+      "source_sha256": "967dd16e99116c9f56694d76018fae53195084dcd0e424ad1df7acf4604ffa30",
+      "raw_target_sha256": "93a190a81d48b6403024ffcccbf63a5672b2a7629a648c1d68b036827798649b",
+      "translation": "각 시나리오에 같은 목적지와 정확한 내용물을 입력하세요. 해당 품목이나 포장 치수를 받지 않는 경로는 선택 가능한 가격에 넣을 수 없습니다. 견적 사이의 통화와 부가 서비스도 같게 맞추세요."
+    },
+    {
       "source": "Record the result beside its assumptions. A cheaper quote for the compact parcel cannot prove that one route is cheaper for all your future purchases. The useful finding is narrower: for these packed measurements, on the displayed routes and date, one combination produced a particular total.",
       "source_sha256": "a8552eefc338524b377ae0d7140be46d53ef2f07696a2762b9c5547893919cef",
       "raw_target_sha256": "dc6c19a17b47b24145955d8ef60aef1bebd338306f539aba213c7effc2415022",
       "translation": "견적 옆에 계산 조건을 적으세요. 작은 상자의 견적이 더 저렴했다고 해서 그 배송 경로가 다음 구매에도 항상 가장 싼 것은 아닙니다. 확인된 것은 해당 날짜, 제시된 경로, 포장 실측값을 넣었을 때 그 조합에서 그 총액이 나왔다는 점입니다."
+    },
+    {
+      "source": "Take the light hypothetical parcel from the earlier example and imagine it contains a soft jacket and a rigid gift box. The buyer needs the presentation box to arrive intact. Compressing only the jacket may save space, but crushing the gift box would defeat the purpose of the purchase. Begin with permissible packing options rather than calculating the lowest theoretical volume and asking the warehouse to force the goods into it.",
+      "source_sha256": "92adaebec5b128d81b1767b68989f59b7bd2674380e5911d4e39b258ad1b2d40",
+      "raw_target_sha256": "ae1fd72f14b5a8568edf84a4c8d761a0843fedea3ec95e4b7d3c623be7a679b1",
+      "translation": "가벼운 소포에 부드러운 재킷과 멀쩡한 채 받아야 할 단단한 선물 상자가 있다고 합시다. 재킷만 압축하면 공간을 줄일 수 있지만 선물 상자를 찌그러뜨리면 구매 목적이 사라집니다. 이론상 최소 부피를 먼저 계산해 억지로 넣어 달라고 하기보다 허용 가능한 포장 방법에서 출발하세요."
     },
     {
       "source": "Assume Plan B changes the outer dimensions from 45 by 35 by 25 to 42 by 34 by 22 centimetres. The new volume is 31,416 cubic centimetres, compared with 39,375 before. At the illustrative 6,000 divisor, those volumes produce dimensional figures of about 5.24 and 6.56 kilograms respectively. Compare them with the measured scale weights under the actual route rule. These calculations establish a possible difference in billed weight; they do not establish a particular monetary saving.",
@@ -1139,6 +1277,18 @@
       "translation": "각 시나리오에서 배송 경로의 어떤 조건이 실제로 결과를 좌우하는지 적으세요. 가볍고 부피가 큰 상자는 부피무게, 작고 무거운 책 상자는 실중량일 수 있습니다. 합쳤더니 가장 긴 변이 제한을 넘으면 경로 자체가 사라질 수도 있습니다. 적용 조건이 다르니 같은 포장 변경도 결과가 달라집니다."
     },
     {
+      "source": "When a final quote seems surprising, compare its inputs with the estimate before assuming a mistake. Check whether a dimension changed, the scale was measured after reinforcement, the route applies a different billing unit or an optional service was added. Ask about the specific line that remains unexplained. For example, ask which exterior dimension and divisor led to the displayed billed weight instead of asking why a small jacket is expensive.",
+      "source_sha256": "60e12feba6c4bfc47f92dcef51b487eee59ce1b017a0ce8ae2909b144934aa0f",
+      "raw_target_sha256": "53d9fe4bfd3d4a211f9383246f24f36c633c7dc12208da7296f68154b241950d",
+      "translation": "최종 견적이 예상 밖이면 먼저 입력값을 비교하세요. 치수가 바뀌었는지, 보강 후 실중량인지, 경로의 과금 단위가 다른지, 부가 서비스가 추가됐는지 살펴봅니다. 그래도 설명되지 않는 항목을 물으세요. ‘작은 재킷인데 왜 비싸죠?’보다 ‘어떤 외부 치수와 제수로 이 과금 무게가 나왔나요?’가 확인하기 쉽습니다."
+    },
+    {
+      "source": "Keep the calculation, actual packed measurements and selected route with the parcel reference. Reuse the method for a future parcel, but update every current dimension and tariff condition. The lasting lesson concerns the relationship between scale weight, exterior volume and route rules; none of the illustrative values here promises a VigorBuy rate for any particular destination.",
+      "source_sha256": "3638ae1d5e7999e7dc998c81e28d3cfebca7c1e9b8bae69f9012adcefc2150c2",
+      "raw_target_sha256": "b9ff78feafc6aee42098cd5a202b1058bd1786c0d880c3e9e1e52d499b3bb454",
+      "translation": "계산 과정, 포장 실측 치수, 실중량과 선택 경로를 소포 번호와 함께 보관하세요. 다음 소포에도 방법은 쓸 수 있지만 모든 치수와 운임 조건은 다시 확인해야 합니다. 예시는 실중량, 외부 부피, 배송 규칙의 관계를 보여줄 뿐 특정 목적지에 대한 VigorBuy 운임을 약속하지 않습니다."
+    },
+    {
       "source": "To compare cartons after repacking, record all three external dimensions again. A narrower side can come with a longer side if the item was rotated, and measuring just the original problem dimension can hide that change. Put the new length, width, height and scale reading on one line with the packing revision. Bring that complete line to the route estimator, then keep the previous result beside it so you can explain any difference.",
       "source_sha256": "ba4dc584a2bb66cfecb7f1330795c7bb15b0c3d763d3039f10b0345870689b42",
       "raw_target_sha256": "29310987df1b648877935dabbee1be549c1ba1b781c487e18f2c7700ad66ca5f",
@@ -1157,6 +1307,18 @@
       "translation": "처음 예상한 소포 무게는 2.0kg이었고 창고에서는 나중에 2.4kg으로 측정했다고 가정해 보세요. 실중량을 기준으로 반 킬로그램 단위로 올림한다면 두 번째 값은 다른 요금 구간에 들어갑니다. 두 견적 모두 부피무게가 더 커 그 값을 기준으로 했다면 저울 눈금의 변화가 요금에 영향을 주지 않을 수 있습니다. 해당 배송 방식의 조건을 함께 확인하세요."
     },
     {
+      "source": "If the quote changes currency between the two screenshots, return to an underlying currency comparison where possible. The amount converted into your home currency can move even when the underlying freight cost stays constant. Keep any payment conversion charge separate from a freight change.",
+      "source_sha256": "d2ae49edccc685295cae80ec9a57c0900bcc1864ea46589c9e4cbfdce41930ed",
+      "raw_target_sha256": "491f953c1144b2971e8815bb80b3281c7af5661706fa10bac99ff0e8848d5e48",
+      "translation": "두 견적 화면의 통화가 다르면 되도록 원래 기준 통화를 맞춰 비교하세요. 기본 운임이 같아도 본인 결제 통화로 환산한 금액은 환율에 따라 달라질 수 있습니다. 결제 환전 수수료는 운임 변화와 별도로 적으세요."
+    },
+    {
+      "source": "Make a short comparison of old and new values for contents, packing choice, dimensions, scale weight, route, currency and services. Circle the first difference that can explain the change. If several inputs changed together, obtain fresh like-for-like quotes before assigning the difference to one cause.",
+      "source_sha256": "c49b97bca552793682c8a429241148b3f7e30a8d6750b0b7b0abcbeec0a3a755",
+      "raw_target_sha256": "20b4d628a01f2b21af53233466213a8d2d470bda2b8bd0d8e0d9b839dcb722a3",
+      "translation": "내용물, 포장, 외부 치수, 저울 실측 무게, 경로, 통화, 서비스를 이전 값과 나란히 적으세요. 차액을 설명할 수 있는 첫 변경점을 표시합니다. 동시에 여러 조건이 바뀌었다면 조건을 맞춘 새 견적을 받은 뒤 어느 부분이 원인인지 판단하세요."
+    },
+    {
       "source": "Imagine a buyer saves a screenshot showing 35 in their chosen currency for a clothing parcel. Weeks later the payment screen shows 46. That eleven-unit difference could arise from weight, packing, route, services or conversion. Without the original inputs it cannot be explained. Recreate the event with four dated entries instead: the shopping estimate before purchase, the warehouse item estimate, the packed parcel quote and the amount actually paid.",
       "source_sha256": "f3dd73d5917ed0b9094a91d55b5d6f065d0ab7cf810df682fabac3331b482fb0",
       "raw_target_sha256": "49c4b54baed2ee1c2637f1c64cb0e7a5376b980bfc44b5f24daed6f30c6d6988",
@@ -1167,6 +1329,12 @@
       "source_sha256": "f16ad00f086f6f7754f6d716dbf65f85fb359900ef05ec232f205f34ba47a8c4",
       "raw_target_sha256": "8d5dd3d6df7988ca331191e69cb6a57d3c33d87056ffc86ece4f0ba17dc6bbb3",
       "translation": "쇼핑 단계에서는 살 상품과 예상 무게·치수를 적고 추정값이라고 표시하세요. 창고에 들어오면 실측할 수 있는 정보로 새 기록을 만들되 첫 기록은 남겨 둡니다. 입고 무게에는 판매자 포장이, 최종 소포에는 추가 보호재가 포함될 수 있습니다. 값이 바뀔 때는 무엇을 잰 것인지 확인하세요."
+    },
+    {
+      "source": "Suppose the buyer wants to know whether keeping the retail shoe box changes the available route. Create two scenarios with the same shoes, destination, date and services. Change only the packing choice and its associated measured or estimated exterior dimensions and actual weight. Capture eligible routes for both. If the final parcel is still unmeasured, label this an exploratory result rather than a quote guaranteed to survive packing.",
+      "source_sha256": "d1bdea734d8a21ec8c5ade940b33d95eae29e7eed7bdf28964cf26210d333f89",
+      "raw_target_sha256": "e5d841184ab4677d3cbeb52475bd933a6e1b861de0b2f1b1d2f798b603eb0c3c",
+      "translation": "원래 신발 상자를 유지하면 배송 경로가 바뀌는지 보려면 같은 신발, 목적지, 날짜, 서비스로 두 방안을 만드세요. 포장 선택과 그에 따른 외부 치수·실중량만 바꿔 각각 가능한 경로를 저장합니다. 최종 소포를 아직 재지 않았다면 포장 후에도 보장되는 확정 견적이 아니라 시험 계산이라고 표시하세요."
     },
     {
       "source": "If route A appears for the smaller carton but disappears for the larger one, inspect any displayed size or weight criteria. A small change in the longest side can affect eligibility. Avoid comparing route A in one scenario with an unrelated route B in the other and calling the whole price difference the cost of the box. Report it more precisely: preserving the box produced this parcel description and changed which quoted services were available at the time of comparison.",
@@ -1245,6 +1413,12 @@
       "source_sha256": "5212fd9847014fa9837fc9da2bc8a12ae9d7b6e12a1db6f9870fa472d7b3a7cc",
       "raw_target_sha256": "402295f0b4897476ee6681eece3b841b6f66c0001983fcfb2caec78e8769be02",
       "translation": "운송사가 조치를 요청하면 공지된 공식 서비스나 기존 주문 계정에서 메시지를 확인하세요. 누가 어느 번호에 대해 무엇을 요구하는지 확인합니다. 갑자기 온 메시지에 익숙한 브랜드 이름이 있다고 내 소포와 관련된 것은 아닙니다. 실제 배송 기록과 대조한 뒤 확인한 알림과 답변을 보관하세요."
+    },
+    {
+      "source": "If two people at the destination may contact support, agree who will own the enquiry. Duplicate reports can produce separate reference numbers and conflicting updates about the same parcel. Give the other person the destination carrier name, the locally recognised tracking number and the last confirmed scan, plus the time you last checked. If a new status appears under one number, keep the original record as well. Later it may help the shipper identify the partner that accepted the parcel before its local number began showing events.",
+      "source_sha256": "4fdec5a505e52cb70edc3c270ab486a672b2d21ca77215a1458adca8f4df6184",
+      "raw_target_sha256": "3a3bfc22ceb084efab06e6ab8313082f8445ec2f9f755b6252c385f11ceb1806",
+      "translation": "도착지에서 두 사람이 고객센터에 연락할 수 있다면 문의 담당자를 한 명 정하세요. 같은 소포를 중복 접수하면 다른 접수번호와 서로 다른 안내가 생길 수 있습니다. 현지 배송사 이름, 현지 운송장 번호, 마지막 확인 스캔과 조회 시각을 공유하세요. 새 번호에 업데이트가 뜨더라도 원래 기록도 보관하면 현지 기록이 시작되기 전 어느 제휴사가 소포를 인수했는지 발송인이 찾는 데 도움이 됩니다."
     }
   ]
 }
