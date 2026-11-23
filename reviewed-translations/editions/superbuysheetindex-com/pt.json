@@ -3,9 +3,9 @@
   "locale": "pt",
   "source_set_sha256": "22619851fe6c0c4d68d3e0eeae0044fc51f350ee67205e4e41855e55ae1a7029",
   "raw_dictionary_sha256": "c3d7924c42a457443ad1766b5939b008e82ccd5606f6748c2f45e538601cb85a",
-  "effective_dictionary_sha256": "d4fdca73d08a2f2776694b880afedd87de085848714d2942ec685fe7fede8b80",
+  "effective_dictionary_sha256": "9d983378acf571e67a0c3646fdd6588b766d3ddae831d0a4ff18fd388160676b",
   "checked_entries": 313,
-  "review_scope": "Targeted bilingual review of ten headlines, all flagged entries, reproducible samples, volume arithmetic, currencies and tracking identifiers.",
+  "review_scope": "Targeted bilingual review of ten headlines, all flagged entries, reproducible samples, volume arithmetic, currencies and tracking identifiers. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [
     {
       "issue": "quantity unit or currency changed",
@@ -231,6 +231,18 @@
       "source_sha256": "2a9ae6971dd614f96040d9687257345e417573bc88fa7791d08caf5378bc7016",
       "raw_target_sha256": "e9b0bfa4f74befa77619c55d7441e6edc26dee582ef0e2037ab232737ffc9415",
       "translation": "Mantenha uma linha curta para cada solicitação com a referência do armazém ou encomenda, data, ação solicitada, serviço selecionado, valor e resultado esperado. Se você fez uma pergunta, mas não aceitou uma opção, registre o status como aguardando uma resposta. Se um serviço foi aceito, salve a confirmação que o identifica. Essas notas são úteis quando vários itens são quase idênticos ou quando uma conversa de suporte abrange mais de um serviço."
+    },
+    {
+      "source": "A useful order of priorities is physical constraints first, preferences second and a request for advice if both cannot be met. For instance: “The book must stay flat with its sleeve. If a smaller carton would require bending the cover, keep the larger carton and return its measurements.” This gives the packer permission to preserve the important requirement while still helping you compare the result.",
+      "source_sha256": "103948008faacb903f32058dc9655a8fbbb9bb9344a7a153dbc10574b3fd1e55",
+      "raw_target_sha256": "3057951a5d600df3511d0fd666bc1447a0e1742d63abc7fb0aa56acc913901b0",
+      "translation": "Indique primeiro as restrições físicas, depois as preferências, e peça orientação se forem incompatíveis. Por exemplo: «O livro tem de ficar plano no estojo. Se uma caixa mais pequena obrigar a dobrar a capa, mantenham a caixa maior e enviem-me as medidas.» Assim, quem embala sabe qual é o requisito essencial e pode dar-lhe os dados para comparação."
+    },
+    {
+      "source": "This record becomes especially valuable after delivery. If the gift sleeve is missing, you can show which unit required it and what instruction was accepted. If a packing treatment worked well, you can describe the successful arrangement in a future request rather than relying on an ambiguous service name. Optional services are easiest to manage when every instruction has an identifiable object and every completed request has a result you can actually inspect.",
+      "source_sha256": "3504f3f6f6ac5bfac7af966036297cbbe30e888afdcda87437ee073ede23fa08",
+      "raw_target_sha256": "ee624d84e0edad7238810d7f8c5199a2635ddd42e527eaa7ae2996605c5a7eab",
+      "translation": "Este registro torna-se especialmente valioso após a entrega da encomenda. Se a capa de presente estiver faltando, você pode mostrar qual unidade a exigiu e qual instrução foi aceita. Se um tratamento de empacotamento funcionou bem, você pode descrever o arranjo bem-sucedido em uma solicitação futura, em vez de confiar em um nome de serviço ambíguo. Os serviços opcionais são mais fáceis de gerenciar quando cada instrução tem um objeto identificável e cada solicitação concluída tem um resultado que você pode realmente inspecionar."
     }
   ]
 }

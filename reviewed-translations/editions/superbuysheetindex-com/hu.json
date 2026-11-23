@@ -3,9 +3,9 @@
   "locale": "hu",
   "source_set_sha256": "22619851fe6c0c4d68d3e0eeae0044fc51f350ee67205e4e41855e55ae1a7029",
   "raw_dictionary_sha256": "a2e07fbecb9f2f89802bdaa9ba6507df0f1dc541b306babe4cdaf446a7a75b3e",
-  "effective_dictionary_sha256": "1d570a1125e2c8ce02390a520b0cde976e23926643753e20682bf77a03d85efb",
+  "effective_dictionary_sha256": "d1a2831990d45c5b7a3a3b030c460cc23f1e222e7b3b628b9cdf12816d78a8a5",
   "checked_entries": 313,
-  "review_scope": "Targeted bilingual review of ten headlines, all flagged entries, reproducible samples, volume arithmetic, currencies and tracking identifiers.",
+  "review_scope": "Targeted bilingual review of ten headlines, all flagged entries, reproducible samples, volume arithmetic, currencies and tracking identifiers. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [
     {
       "issue": "quantity unit or currency changed",
@@ -213,6 +213,12 @@
       "source_sha256": "8a952434dbb775a237e5d7832a96fbf434ca16b3a02444458310242c75c3b2de",
       "raw_target_sha256": "9ae30d3e4e3b65610428a902ae36b492306be326cb8bcdcebc09071ef85aa7b6",
       "translation": "Két könyvet szeretne együtt küldeni: az egyiket olvasásra vette, a másikat ajándékba, illusztrált védőtokkal. Egy általános kérés a csomagolás csökkentésére mindkettőt érintheti. Adja meg külön a két raktári tételt. Az olvasópéldány egyszerű külső csomagolása levehető, az ajándékkönyv tokja maradjon meg. Jóváhagyás előtt kérdezzen rá, változik-e ettől a doboz mérete vagy a szolgáltatási díj."
+    },
+    {
+      "source": "A useful order of priorities is physical constraints first, preferences second and a request for advice if both cannot be met. For instance: “The book must stay flat with its sleeve. If a smaller carton would require bending the cover, keep the larger carton and return its measurements.” This gives the packer permission to preserve the important requirement while still helping you compare the result.",
+      "source_sha256": "103948008faacb903f32058dc9655a8fbbb9bb9344a7a153dbc10574b3fd1e55",
+      "raw_target_sha256": "7d19099cfb1791cb25fe5c0271e36ea1b2b28181a866c6dbcda0e4c8cb7715a2",
+      "translation": "Először a fizikai korlátokat, majd a kívánságait sorolja fel. Ha nem teljesülhet mindkettő, kérjen tanácsot. Például: „A könyvnek a védőtokjában is egyenesen kell maradnia. Ha kisebb dobozban meg kellene hajlítani a könyv borítóját, használják a nagyobb dobozt, és írják meg a méreteit.” Így a csomagoló tudja, mi az alapfeltétel, és lesz mért adat az összehasonlításhoz."
     }
   ]
 }
