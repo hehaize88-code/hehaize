@@ -3,7 +3,7 @@
   "locale": "id",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "5c42c86d0a00ac55941636b4579ebb7539acd679cd1dd9d88b46a57857283662",
-  "effective_dictionary_sha256": "f6885d985fa3b4ff1b63c18900046ab186dc09ce870a70a164d219346a80f10d",
+  "effective_dictionary_sha256": "d1b63033fdb5ce93cd61908813bccfd80e0ba68077df7f703c7b1fdc739f02fa",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -152,31 +152,31 @@
       "source": "Three lengths and one weight are useful only if they describe the same finished box. Measure in the units the estimator expects and record how you obtained each number.",
       "source_sha256": "a0f9be81a5409b24845d73bee37dd85ee9d15dffd46e522ef7612ef2fcf417bb",
       "raw_target_sha256": "921bff07331a7738131d1e9008a56e4de35fd56e130bd32ec3339ba621173603",
-      "translation": "Panjang, lebar, tinggi, dan berat hanya berguna jika semuanya diukur dari paket yang sama setelah dikemas. Gunakan satuan yang diminta kalkulator dan catat cara memperoleh setiap angka."
+      "translation": "Panjang, lebar, tinggi, dan berat berguna bila semuanya merujuk pada kotak jadi yang sama. Gunakan satuan yang diminta kalkulator dan simpan cara tiap angka diperoleh."
     },
     {
       "source": "The HubBuy form asks for grams. A reading of 1.45 kilograms is 1,450 grams; a reading of 145 grams is an entirely different parcel. Include the packaging and contents on the scale together. A seller's weight for one unit multiplied by the number ordered gives only an initial idea. The finished carton, protection and any original boxes can change the final figure.",
       "source_sha256": "26580367e25b9b4617a943f40095f7a88dc35d6c049f325a8b31d02972b78ca1",
       "raw_target_sha256": "fd9b47fa7ec8cb37fcf07bb9e8042a677e5706ee2c8c6973e232b1894ebcbac2",
-      "translation": "Formulir HubBuy meminta berat dalam gram. Angka 1,45 kilogram berarti 1450 gram, sedangkan 145 gram adalah berat yang jauh berbeda. Timbang isi bersama seluruh kemasannya. Berat satu barang menurut penjual dikalikan jumlah pesanan hanya memberikan perkiraan awal. Kardus pengiriman, pelindung, dan kotak asli barang bisa mengubah berat akhir."
+      "translation": "Formulir HubBuy menggunakan gram. Hasil 1,45 kg berarti 1.450 g, bukan 145 g. Timbang barang beserta kemasannya sekaligus. Berat produk per unit dari penjual dikalikan jumlah pembelian hanya gambaran awal; karton jadi, pelindung, dan kotak bawaan dapat mengubah angka akhir."
     },
     {
       "source": "Take an example of an empty carton whose inside is labelled 35 by 25 by 15 centimetres. After loading it and applying protection, the outside measures 36 by 26 by 17. The inside rectangular volume is 13,125 cubic centimetres. The outside rectangular volume is 15,912, a difference of 2,787. This discrepancy can arise without adding a second product. The box walls, the lid and a bulging section can all matter to the outer measurement.",
       "source_sha256": "6375031214d98c70a61a9486c6b29468e7330fa90a314e815a6114c15526ec72",
       "raw_target_sha256": "d663cdb8fc3c661d7ad755b15faa036b0751b2eb3edda53cb713f997ee366d72",
-      "translation": "Misalnya, ukuran dalam sebuah kardus kosong adalah 35 × 25 × 15 cm. Setelah barang dan pelindung dimasukkan, ukuran luarnya menjadi 36 × 26 × 17 cm. Volume bagian dalam adalah 13.125 cm³, sedangkan volume berdasarkan ukuran luar adalah 15.912 cm³. Selisihnya 2787 cm³ meskipun tidak ada produk kedua. Ketebalan dinding, tutup, dan bagian yang menggembung memengaruhi ukuran luar."
+      "translation": "Misalnya ukuran dalam karton kosong 35 × 25 × 15 cm. Setelah diisi dan diberi pelindung, sisi luarnya 36 × 26 × 17. Volume dalam 13.125 cm³ dan volume luar 15.912 cm³, berbeda 2.787. Perbedaan bisa terjadi tanpa menambah produk; tebal dinding, tutup, dan tonjolan memengaruhi bagian luar."
     },
     {
       "source": "The two numbers answer different questions. Internal volume helps you reason about what might fit. External volume describes the space the packed box occupies. For a route comparison based on outer dimensions, keep the latter. The percentage change in geometric volume is about 21 percent, yet it would be a mistake to predict a 21 percent change in freight. The current route defines the billing method and restrictions. A volume comparison is a measurement exercise, not a complete price calculation.",
       "source_sha256": "a42233dee7625daf05ed039beeb16e2a092855ceb5f26a3751d81e03c133649e",
       "raw_target_sha256": "426d679ea469b70b0034e3604cbd8176bbe00a1535d7b2265a874c4dda20cc73",
-      "translation": "Volume dalam membantu memperkirakan apa saja yang muat. Volume luar menunjukkan ruang yang ditempati paket setelah dikemas. Pakailah volume luar untuk membandingkan rute yang memakai ukuran luar. Dalam contoh ini, volume bertambah sekitar 21 persen. Ongkir belum tentu naik 21 persen karena setiap rute memiliki ketentuan tarif dan batas ukurannya sendiri. Perbandingan volume saja belum cukup untuk menghitung harga."
+      "translation": "Volume dalam membantu memperkirakan apa yang bisa dimuat, sedangkan volume luar menunjukkan ruang yang ditempati paket. Untuk membandingkan rute berbasis dimensi luar, pakailah angka luar. Perubahan geometris contoh tadi sekitar 21 persen. Itu tidak meramalkan ongkir naik 21 persen: metode tagihan dan batas ditentukan oleh rute yang sedang ditawarkan."
     },
     {
       "source": "Create three input fields whose names include cm, then a separate weight field labelled g. If your scale reports ounces or pounds, convert before entering the number and retain the original reading beside the converted value. For a conversion from kilograms, a simple check is to divide the entered grams by 1,000 and confirm you recover your starting reading. A suspiciously tiny value should prompt a unit check before a search for cheaper routes.",
       "source_sha256": "15bfea15a2bbaa3de6659730bf61287c319893c2d85d4082ef755eabcc207765",
       "raw_target_sha256": "860dbfccfee8459f21672d8162053cff6392819f7f5faa3c1dca6d76026c32dc",
-      "translation": "Buat tiga kolom ukuran dengan satuan cm pada namanya dan satu kolom berat dengan satuan g. Jika timbangan menunjukkan ounce atau pound, ubah dulu ke gram dan simpan angka awal di sebelah hasil konversi. Jika berangkat dari kilogram, bagi berat dalam gram dengan 1000 untuk memastikan hasilnya sama dengan angka awal. Bila berat tampak terlalu kecil, periksa satuannya sebelum mencari rute yang lebih murah."
+      "translation": "Tambahkan “cm” pada tiga kolom ukuran dan “g” pada kolom berat. Jika timbangan memakai ons atau pound, konversikan dahulu dan simpan bacaan asal. Untuk kilogram, bagi gram masukan dengan 1.000 untuk memastikan hasilnya kembali ke bacaan awal. Angka berat yang mencurigakan kecil perlu diperiksa sebelum mencari rute murah."
     },
     {
       "source": "Record it beside the purchase to which it applies. Keep any outbound parcel discount separate, and check the conditions before subtracting a promotion from a planning estimate.",
@@ -302,25 +302,25 @@
       "source": "Several items can arrive with individually recorded weights. Adding those figures provides a starting estimate for contents, but the sum omits the final outer packaging and may include packaging that will later be removed. If there are two outbound boxes, do not enter their total weight alongside the dimensions of only the smaller one. Run the estimator once for each box, with that box's own dimensions, then combine the actual quote totals for your comparison.",
       "source_sha256": "30095fd9155644341c0e09c266b6905ed9d726ba6975754d878f6c66132afea8",
       "raw_target_sha256": "fcb38fa7f1e5c052df88b3b035c3a0714d440488e31a6fd7f80e4721951b8e88",
-      "translation": "Beberapa item dapat tiba dengan berat yang tercatat secara individual. Menambahkan angka-angka tersebut memberikan perkiraan awal untuk isinya, tetapi jumlahnya menghindari kemasan luar akhir dan mungkin termasuk kemasan yang kemudian akan dihilangkan. Jika ada dua kotak keluaran, jangan masukkan berat totalnya bersama dengan dimensi dari kotak yang lebih kecil. Jalankan estimator sekali untuk setiap kotak, dengan dimensi kotak itu sendiri, lalu gabungkan total penawaran harga sebenarnya untuk perbandingan Anda."
+      "translation": "Jumlah bobot masing-masing barang memberi perkiraan isi, tetapi belum mencakup kotak luar dan mungkin sudah termasuk pembungkus yang akan dibuang. Untuk dua kotak keluar, jangan gabungkan beratnya dengan ukuran kotak yang lebih kecil. Jalankan kalkulator per kotak menggunakan data kotak itu sendiri, lalu jumlahkan hasil penawarannya."
     },
     {
       "source": "Take another fictional quote with a combined option at 214. The smaller boxes cost 112 and 94, for a total of 206, and their protective needs are already included. This time the arithmetic favours splitting by eight. Before deciding, verify whether there are additional services charged separately per parcel or any destination-specific conditions that were absent from the recorded totals. Two boxes can produce two delivery events and two references to monitor.",
       "source_sha256": "239058dbeb8f1615ded6fedec96d428f4b199ca25a6647a2ec624d5e2cf05558",
       "raw_target_sha256": "46cf9d6445d56c126ce6d5ff11c03268a2483b6859246c66921f0955bdf5c502",
-      "translation": "Ambil penawaran harga fiksi lain dengan opsi gabungan pada 214. Kotak yang lebih kecil harganya 112 dan 94, untuk total 206, dan kebutuhan perlindungan mereka sudah termasuk. Kali ini aritmetika menyukai membagi dengan delapan. Sebelum memutuskan, verifikasi apakah ada layanan tambahan yang dikenakan biaya terpisah per paket atau kondisi spesifik tujuan yang tidak ada dari total yang tercatat. Dua kotak dapat menghasilkan dua peristiwa pengiriman dan dua referensi untuk dimonitor."
+      "translation": "Pada contoh lain tarif gabungan 214 dan dua kotak 112 serta 94, total 206. Perlindungan sudah termasuk, sehingga pemisahan awalnya lebih murah delapan. Sebelum memutuskan, periksa biaya tambahan per paket atau kondisi tujuan yang belum dicatat. Dua kotak juga membawa dua referensi dan kemungkinan dua waktu penerimaan."
     },
     {
       "source": "Suppose each smaller box also needs an explicitly quoted service costing five, while the combined option already includes it. The separate total becomes 216, two more than the combined quote. Such a narrow difference may be less important than arrival timing or how easily a recipient can receive two packages. Record the non-price reason for any choice so that a later invoice comparison is not mistaken for proof that the earlier decision was irrational.",
       "source_sha256": "2667bb99764137d2dd5c056559d7b304dd88b253c59df6a378cdbf8725616d50",
       "raw_target_sha256": "312befc32092f432f47eb9f76aeb08529ce18885a8223fc37239dad3bf946bbe",
-      "translation": "Asumsikan bahwa setiap kotak yang lebih kecil juga membutuhkan layanan yang eksplisit dikutip dengan biaya lima, sementara pilihan gabungan sudah termasuk itu. Total terpisah menjadi 216, dua lebih dari penawaran harga gabungan. Perbedaan kecil seperti itu mungkin kurang penting daripada waktu kedatangan atau seberapa mudah penerima dapat menerima dua paket. Catatkan alasan non-harga untuk setiap pilihan sehingga perbandingan invoice kemudian tidak salah untuk bukti bahwa keputusan sebelumnya adalah irasional."
+      "translation": "Jika setiap kotak kecil masih perlu layanan tambahan lima dan opsi gabungan sudah mencakupnya, total terpisah menjadi 216, dua lebih tinggi dari 214. Perbedaan sekecil itu mungkin kalah penting dibanding waktu tiba dan kemudahan menerima dua paket. Tulis pertimbangan nonharga agar keputusan lama dapat dipahami ketika meninjau tagihan."
     },
     {
       "source": "A buyer might have one item already checked and another still waiting for a seller response. The combined quote assumes both will become eligible for shipment together. Record what you know about the later item and the storage status of the earlier one. A decision to split can address timing even if the combined quote has a small price advantage. State the timing requirement separately, for example that one item must leave before another has been inspected.",
       "source_sha256": "38c13f196a407ff5be9b6fd327e41a107143c88a50462282702abf459f1060b0",
       "raw_target_sha256": "1e7c5754d876bdad668fe3f6d03955cc90081fc1336656909c5e26c273645fd4",
-      "translation": "Seorang pembeli mungkin memiliki satu item yang sudah diperiksa dan yang lain masih menunggu tanggapan dari penjual. Penawaran harga gabungan mengasumsikan keduanya akan menjadi layak untuk pengiriman bersama-sama. Catat apa yang kau tahu tentang item berikutnya dan status penyimpanan dari yang sebelumnya. Keputusan untuk memisahkan dapat mengatasi waktu bahkan jika penawaran gabungan memiliki keuntungan harga yang kecil. Catatkan persyaratan waktu secara terpisah, misalnya bahwa satu item harus meninggalkan sebelum yang lain telah diperiksa."
+      "translation": "Satu item mungkin sudah lolos pemeriksaan sementara item lain menunggu penjual. Penawaran gabungan mengasumsikan keduanya siap pada waktu yang cocok. Catat status barang tertunda dan masa simpan barang yang sudah tiba. Memisahkan dapat memenuhi tenggat meski gabungan sedikit lebih murah. Tuliskan syarat waktu, misalnya item pertama harus berangkat sebelum yang kedua selesai diperiksa."
     },
     {
       "source": "Read a freight result as a quotation for a named parcel, route and destination. Use it to answer the transport question it was calculated for, then check the remaining parts of your purchase separately.",
@@ -434,19 +434,19 @@
       "source": "A good final check takes less time than investigating a mistaken quote. Read the three dimensions and their unit aloud, read the weight and its unit, confirm the destination, then confirm that every measurement describes the same physical box. Only at that point is the estimator result useful for comparing an offered service. If one measurement is still missing, state that explicitly when you share the result and keep the next decision conditional on obtaining it.",
       "source_sha256": "1e5043cab651dcb56b9ce6e06fa89aaa7a5a0da0722d86bf8a9926242810e2fb",
       "raw_target_sha256": "9d9df55dca0be02aed24305532090ef8405704f2bf04bbf1f3a5be58ba99b2aa",
-      "translation": "Pemeriksaan akhir yang baik membutuhkan waktu yang lebih singkat daripada menyelidiki penawaran harga yang salah. Baca tiga dimensi dan unitnya dengan keras, baca berat dan unitnya, konfirmasikan tujuan, lalu konfirmasikan bahwa setiap pengukuran menggambarkan kotak fisik yang sama. Hanya pada titik itu hasil estimator berguna untuk membandingkan layanan yang ditawarkan. Jika satu pengukuran masih hilang, katakan secara eksplisit ketika Anda berbagi hasil dan tetapkan keputusan berikutnya bersyarat untuk mendapatkannya."
+      "translation": "Sebelum menggunakan penawaran, baca ketiga dimensi beserta satuannya, berat dan satuannya, lalu periksa tujuan. Pastikan semua angka mengacu pada kotak yang sama. Jika satu dimensi masih kosong, sebutkan saat membagikan perkiraan dan tunggu hasil ukur sebelum menetapkan keputusan yang bergantung pada angka tersebut."
     },
     {
       "source": "Suppose the combined option in a worked example is quoted at 164 units. The split option has one box quoted at 105 and a second at 72. The split total is 177 before any separately listed packing services. Looking only at the 105 would reverse the result. Add optional charges that apply twice and remove any charge shown as already included. Record the currency and timestamp for all quotations.",
       "source_sha256": "d2c09fbbee9f0d1007f6a17e1a10db961bfd5a5bd76da9e031ced51c59d88e25",
       "raw_target_sha256": "8da850d8b6a9151805fd25bed8f60539b1f9e0fcaaf36514c4e82d446a62629f",
-      "translation": "Asumsikan pilihan gabungan dalam contoh yang bekerja dikutip pada 164 unit. Opsi split memiliki satu kotak dikutip pada 105 dan yang kedua pada 72. Jumlah terbagi adalah 177 sebelum layanan pembungkus yang terdaftar secara terpisah. Melihat hanya pada 105 akan membalikkan hasil. Tambahkan biaya opsional yang berlaku dua kali dan hapus biaya apapun yang ditampilkan sebagai sudah termasuk. Rekam mata uang dan stempel waktu untuk semua penawaran harga."
+      "translation": "Misalnya paket gabungan ditawarkan 164 unit, dan dua kotak kecil 105 serta 72. Opsi terpisah berjumlah 177 sebelum pengemasan yang ditagih tersendiri. Melihat hanya 105 akan membalik kesimpulan. Tambahkan layanan yang memang dipungut untuk tiap kotak dan jangan hitung ulang yang sudah termasuk. Catat waktu dan mata uang semua penawaran."
     },
     {
       "source": "Now add a condition: the quoted combined arrangement relies on removing the retail case, which the buyer needs as part of a gift. The 185 quote no longer describes an acceptable solution. Obtain a comparable combined quote that keeps the case, or mark that arrangement as unsuitable. The earlier numerical comparison still teaches something about what created the saving, but it cannot justify selecting a packing method that defeats the purpose of the purchase.",
       "source_sha256": "91a9a3605abdcb2946c24630dcf5de4ccb7c8a21a632e62b601299095c305e76",
       "raw_target_sha256": "6dfdaa6eb39fb92bf9cfe4ba5e147e6c2f1b4b64e4aee30e65ca492d7f651876",
-      "translation": "Sekarang tambahkan sebuah syarat: pengaturan gabungan yang dikutip bergantung pada penghapusan kasus ritel, yang pembeli butuhkan sebagai bagian dari hadiah. Penawaran harga 185 tidak lagi menggambarkan solusi yang dapat diterima. Dapatkan penawaran harga gabungan yang sebanding yang menjaga kasus, atau tandai pengaturan itu sebagai tidak sesuai. Perbandingan numerik sebelumnya masih mengajarkan sesuatu tentang apa yang menciptakan penghematan, namun hal ini tidak dapat membenarkan memilih metode pembungkus yang mengalahkan tujuan pembelian."
+      "translation": "Sekarang anggap harga gabungan 185 mensyaratkan kotak ritel dibuang, padahal dibutuhkan untuk hadiah. Penawaran itu tidak lagi memenuhi kebutuhan. Minta penawaran gabungan lain yang mempertahankan kotak atau tandai opsi tersebut tidak layak. Hitungan awal menjelaskan asal penghematan, tetapi tidak membenarkan kemasan yang menggagalkan tujuan pembelian."
     },
     {
       "source": "When an item changes after quotation",
@@ -1527,6 +1527,258 @@
       "source_sha256": "69e1d9b7d19f2f08abcff2169c6972a74e69ed73a590ebf1f5ac1c856c014962",
       "raw_target_sha256": "dc171f755354eeb7d16a49243436d9800373f22a0add0686f7853628d6656e03",
       "translation": "Saat menerima paket bermasalah, ambil foto kotak dan susunan di dalamnya. Catat kondisi yang terlihat tanpa menebak kapan benturan terjadi. Hubungkan referensi paket, perlindungan yang diminta, dan hasilnya. Pisahkan rekonsiliasi biaya dari keluhan kondisi walau menyangkut kiriman sama: yang satu tentang apa yang dibayar, yang lain tentang keadaan saat diterima."
+    },
+    {
+      "source": "Identify the parcel being measured",
+      "source_sha256": "8772b99b45f378d180dca46c262bd3b068448a27badd0c36b6a588cc6bed5a69",
+      "raw_target_sha256": "eaeccfefe585c467ffa6d1265c4ef7432f0efe2725e61ab5e9cfc873d3233cac",
+      "translation": "Tentukan paket yang sedang diukur"
+    },
+    {
+      "source": "Write down its contents and whether retail boxes and extra protection are included. Measure the outer package that would travel, not the folded garment or its original product box alone. If you only have measurements supplied by a seller, label them accordingly. HubBuy's estimator offers approximate product presets as starting points and also accepts manual information. Use the more specific measurement when it genuinely describes your parcel.",
+      "source_sha256": "b9649929103ae14fd5628390d2c026ba251a754ef14bb4323744aa93dde483ea",
+      "raw_target_sha256": "c73d5957f7fd0598cc85b302d233e6bf9b63242c69bc9001d08179f02479dc1a",
+      "translation": "Catat isi, kotak eceran yang dipertahankan, dan pelindung tambahan. Ukur bagian luar paket yang akan dikirim, bukan baju terlipat atau kotak produknya saja. Jika baru ada angka penjual, tandai sumber tersebut. HubBuy menyediakan contoh produk dan isian manual. Pilih hasil ukur lebih khusus apabila memang menggambarkan paket Anda."
+    },
+    {
+      "source": "Capture the largest outer spans",
+      "source_sha256": "36b931469b031e5d1defde8c982fc8b56f45dd6e87a347a955c00246431ab3ce",
+      "raw_target_sha256": "37dd1fdf05f8f473161df5b2266eb6437cade3a95822c759f05357a19466b801",
+      "translation": "Ukur rentang terluar pada ketiga arah"
+    },
+    {
+      "source": "Measure length, width and height perpendicular to each other, including protruding parts of the packaging. Do not use the interior dimensions printed on an empty carton when a packed lid bulges. Place the package on a stable surface. If asking someone else to measure, request centimetres, the outside of the sealed parcel and a note identifying which box they measured. Save the figures with the parcel reference.",
+      "source_sha256": "e2de2eaa38c41cf57e17329a43c27a0443528b1c7eeac0144f1edafcb7ee1689",
+      "raw_target_sha256": "674336003516cd4659d1e382c89ca0416ee6f7f1486a4ed135e3bdce94dca9ad",
+      "translation": "Ukur panjang, lebar, dan tinggi yang saling tegak lurus, termasuk bagian kemasan yang menonjol. Ukuran dalam yang tercetak pada kotak kosong tidak mewakili tutup menggembung saat terisi. Letakkan di bidang stabil. Bila dibantu orang lain, minta ukuran luar kotak tertutup dalam sentimeter dan identitas kotaknya. Simpan bersama nomor paket."
+    },
+    {
+      "source": "Keep the scale reading in the right unit",
+      "source_sha256": "22c4af2e9abc409fd861a0311fdf276c5acf1a7e6081952b574a25bfa0de81b7",
+      "raw_target_sha256": "1fe6af7543a1a0af2ca517df36ab1491219935b790df88395f993eee37c3143d",
+      "translation": "Periksa satuan pada timbangan"
+    },
+    {
+      "source": "Understand what volume tells you",
+      "source_sha256": "e135b405d8febc9f47653624449bd7988098cf8735da3592afadcace420c5b3b",
+      "raw_target_sha256": "2550be088d581bc7dfdcf376fa37891fdba2dadf86a48f1bf85ab92962f73d7f",
+      "translation": "Pahami informasi yang diberikan volume"
+    },
+    {
+      "source": "A hypothetical box measuring 40 by 30 by 20 centimetres has an outer rectangular volume of 24,000 cubic centimetres. A second box measuring 40 by 30 by 15 has 18,000. The reduced height removes a quarter of that geometric volume. Whether it changes freight depends on the chosen route's limits and billing rules, which must be checked on the actual offer. Avoid assigning a general dimensional divisor to every route.",
+      "source_sha256": "9201275407c5ee12dabdb2f9d8e710f295c967c60f9ff4daaee57d63148981f9",
+      "raw_target_sha256": "40688174516e42e458cf50a6a52a1d80671a90c3eb94d289334c805f610c6f1f",
+      "translation": "Kotak contoh 40 × 30 × 20 cm memiliki volume luar 24.000 cm³. Jika menjadi 40 × 30 × 15, volumenya 18.000 cm³: berkurang seperempat. Perubahan ongkir bergantung pada batas dan aturan penagihan rute nyata. Jangan menerapkan satu pembagi volumetrik kepada semua rute."
+    },
+    {
+      "source": "Recheck after the final modification",
+      "source_sha256": "0b1464bdad6ffdc6e2d1b14e77456b0da02e2ed62c759b8b132127ac0181e98a",
+      "raw_target_sha256": "eaf3bc64edd7887fd22427edbec11ca5b91293464b54bd55c81829386a85889c",
+      "translation": "Ulangi pengukuran setelah perubahan terakhir"
+    },
+    {
+      "source": "Adding a corner protector or moving an item into another carton can change a dimension even when the overall weight scarcely moves. Keep one dated measurement record for each arrangement. A photograph showing a tape around the box's perimeter cannot establish the three separate side lengths on its own. If one figure looks implausible, ask to see the measurement from start to end before submitting numbers to the calculator.",
+      "source_sha256": "024b7205987dcc312bafa9989bc1696bcae0fc53fe2a72be75897b569b1b9b5d",
+      "raw_target_sha256": "17046a729e752d8470c10ba2f05e578f53ae617ca7c641c75902097e4ef66868",
+      "translation": "Pelindung sudut atau perpindahan ke karton lain dapat mengubah panjang meski berat hampir tetap. Buat catatan bertanggal per susunan. Foto pita mengelilingi keliling kotak tidak memberi ketiga ukuran sisi. Bila angka tampak janggal, minta tampilan dari titik awal sampai akhir sebelum memasukkannya ke kalkulator."
+    },
+    {
+      "source": "A dimensional comparison you can reproduce",
+      "source_sha256": "c8fb2f6bf55487783f193ae6f1dd51f0a8bb736b92d6ca4ca3b6b8da321de8de",
+      "raw_target_sha256": "e42979b265e356e37bcc691f8024024b042ed25d8bf5d2566454fba8ec31a365",
+      "translation": "Contoh ukuran yang dapat dihitung ulang"
+    },
+    {
+      "source": "Handling soft and irregular shapes",
+      "source_sha256": "f3053e036d982e08b10918855ff0a1d6ac43005713b5e6e67f72e045b67de3aa",
+      "raw_target_sha256": "73a0d0be0cbbd5b889b5b04c8504ada0869d6072541b9787c9ded3f0aaf1e7b2",
+      "translation": "Paket lunak dan bentuk tidak beraturan"
+    },
+    {
+      "source": "A soft parcel can change dimensions depending on how it rests. Measure the maximum outer span as it would travel, including a thick pocket of material or protective padding. If it is later enclosed in a rigid carton, use the carton dimensions instead. Avoid pressing a soft measurement flat to obtain an attractive number unless the actual packing method keeps it that way. A parcel that expands after measuring no longer corresponds to the estimate.",
+      "source_sha256": "c721b0e5d83dcf2868a3a8af854c96d8c267a439d409006e87672b904784c6b9",
+      "raw_target_sha256": "c7df54f9a046548e0968a83a6f200c3f342102adf869fe1247623853862d284e",
+      "translation": "Paket lunak dapat berubah bentuk tergantung letaknya. Ukur rentang luar maksimum dalam kondisi yang akan dikirim, termasuk pelapis tebal. Jika nanti dimasukkan ke karton kaku, gunakan dimensi karton itu. Jangan memipihkan untuk mendapatkan angka kecil kecuali kemasan akhir mempertahankan bentuknya. Paket yang mengembang kembali tidak sama dengan estimasinya."
+    },
+    {
+      "source": "For an irregular object, record the length, width and height of its enclosing package rather than tracing curves around the object. A tape following the arc of a handle produces a distance along a curve. It does not show how wide the finished parcel is. Where the longest projection is hard to identify, request a wide view of the completed package and the measured spans. Label any estimate based on an unpacked object as provisional until the outer dimensions are known.",
+      "source_sha256": "a898c44c234e769560f09826ac1e7852c13dc1bf7815455cafdc081c0a7df50b",
+      "raw_target_sha256": "60997bc232171bb6c3800ebe25270ca00bb628e92a81b4ec1e31ef395b5a61fc",
+      "translation": "Untuk benda tidak beraturan, gunakan ukuran kemasan yang mengelilinginya. Pita mengikuti lengkungan gagang mengukur panjang busur, bukan lebar paket jadi. Bila tonjolan terpanjang sulit ditentukan, minta gambar lebar kemasan selesai beserta rentang yang diukur. Tandai perkiraan dari barang belum terbungkus sebagai sementara."
+    },
+    {
+      "source": "Comparing two readings from different people",
+      "source_sha256": "c93b239d39dba55250d93cdf3e7cd6086bd302007179eb1058a0f264d46e65bb",
+      "raw_target_sha256": "2448990347ef499c7e7222965bf2052a46a1d839b4d09ff7dc7d26667dff9631",
+      "translation": "Bandingkan hasil ukur dari dua orang"
+    },
+    {
+      "source": "A warehouse message might give 17 centimetres for height while an older seller diagram showed 14. Before asking which figure is wrong, identify what each person measured. The diagram could refer to the product, a folded product, an inner carton or the package before reinforcement. Ask for the outer parcel reference and the time of measurement. A difference can be completely reasonable when the objects measured are different.",
+      "source_sha256": "83e0912bb087973834903c67218e5ed6fb166373de26fd369f13835d1e53ccc5",
+      "raw_target_sha256": "f20fa6192e30e5bf3499453a4751839b5bcde40f24929df4351381ff996f01aa",
+      "translation": "Gudang mungkin menyebut tinggi 17 cm sementara diagram penjual terdahulu menunjukkan 14. Sebelum menanyakan mana yang salah, cari tahu apakah mereka mengukur produk, kotak ritelnya, atau paket luar, serta arah pengukurannya. Mintalah tanggal dan objek yang diukur. Benda dalam kondisi berbeda memang bisa menghasilkan angka berbeda."
+    },
+    {
+      "source": "If both records supposedly refer to the same finished parcel, compare the orientation and endpoints. A tape starting at the bottom edge of a recessed panel and ending at the centre of a flat lid may miss protected corners that project farther. Ask for the longest outside span rather than the measurement across the central panel. Keep a generous uncertainty in a planning figure when the parcel sits close to an eligibility limit. Final acceptance depends on the carrier and the route's actual rule.",
+      "source_sha256": "b4f4ebc02a22101ef0dce4b09e8e2d4c6e7c66837db80e8015d641cbde0ae583",
+      "raw_target_sha256": "cf9a3577f7b07d2decccea658011da658245821f5067da259040078573250933",
+      "translation": "Jika keduanya merujuk ke paket jadi yang sama, periksa arah dan kedua titik pengukuran. Pita dari dalam cekungan panel ke tengah tutup datar mungkin melewatkan sudut pelindung yang menonjol. Mintalah bentang luar terpanjang. Bila ukuran mendekati batas rute, akui ketidakpastian pada rencana; penerimaan akhir mengikuti aturan pengangkut dan rute."
+    },
+    {
+      "source": "Protecting the unit conversion",
+      "source_sha256": "2ce312de0412c199caf20643359629cec1cb89c72ccfeb3f4f446971d844141c",
+      "raw_target_sha256": "d78c98742f160790402eac83d7c038774c703400b78757f666850060f52622ea",
+      "translation": "Jaga konversi satuan tetap benar"
+    },
+    {
+      "source": "Retaining measurements that remain useful",
+      "source_sha256": "bee213fe497334277c6fa7a4658ebd778b55c46319e2666b62e07fc42dc13b10",
+      "raw_target_sha256": "f429ce4f1b778fb65612c3d941da1baff5615c0ce73e96bcd6df17b614b954be",
+      "translation": "Simpan hasil ukur yang dapat dipakai kembali"
+    },
+    {
+      "source": "Attach a short contents description to each measurement set. For example, record that the photograph shows the parcel containing the jacket and both accessory cases after corner protection was added. If an item is removed the following day, create another record rather than overwriting the first. When the final statement differs from the initial estimate, you can then identify whether the difference belongs to a changed route, a changed parcel or a changed pricing input.",
+      "source_sha256": "6af92a3b4bce45eb99303eabf0ce291dd6b09eedc63db6af5e49e7d527ccf110",
+      "raw_target_sha256": "7d458fccc630ec73ef5d7ecfa88a1da55c28f9e401ae1d6f8437a6f264bf1f6f",
+      "translation": "Tulis isi singkat untuk setiap set ukuran. Contoh: foto kotak jaket dan kedua kotak aksesori sesudah pelindung sudut ditambah. Bila esoknya satu item dikeluarkan, buat catatan baru. Saat tagihan berbeda dari estimasi, Anda bisa menelusuri apakah rute, paket, atau data tarif yang berubah."
+    },
+    {
+      "source": "Once the parcel has been dispatched, use the dimensions listed on the actual parcel record for reconciliation. A later measurement taken after the box has been opened or flattened describes a different condition. If you question a recorded dimension, save the label and photographs of the unopened parcel before changing its shape.",
+      "source_sha256": "8150a91405ffe1d9b1df86c5e4d635f92fb43fad368f936713c89bcbba8d6695",
+      "raw_target_sha256": "150cebf505ec572d5e4c85bdbd9212f158559d94781a7909e019771ae10d2ba2",
+      "translation": "Setelah diberangkatkan, gunakan dimensi pada catatan paket sebenarnya saat mencocokkan pembayaran. Ukuran kotak yang sudah dibuka atau diratakan menggambarkan kondisi lain. Bila perlu mempertanyakan angka, simpan label dan foto paket belum dibuka sebelum mengubah bentuknya."
+    },
+    {
+      "source": "A combined shipment is worth comparing when it remains eligible for a suitable route and protects every item. Price the entire alternative, including every box, before acting on a single attractive quote.",
+      "source_sha256": "373c020b0c02bdbe73c6a9baea8374a8df9e6261bd8b2f7efe67f91c680792a4",
+      "raw_target_sha256": "8dcb506ddd2b02f364d7d0a05c1aa6b209bc03115ccf9586cd1682f1532a438b",
+      "translation": "Pengiriman gabungan layak dibandingkan jika rutenya masih memenuhi syarat dan semua barang terlindungi. Hitung alternatif lengkap, termasuk seluruh kotak, sebelum memilih berdasarkan satu angka yang menarik."
+    },
+    {
+      "source": "Start with the same list on both sides",
+      "source_sha256": "2d8c8aba299f9d170beb39a0fe37dc5194ecc34ee841d3ca0e3b2d5e9ca5a3d6",
+      "raw_target_sha256": "e77d8997c56b2f3c6313f6e0837e7b437fd158b9f1c85e7d38026bd63c029f78",
+      "translation": "Mulai dengan daftar barang yang sama"
+    },
+    {
+      "source": "Write the warehouse identifiers and quantities for all items under consideration. Copy that list before building your two scenarios. In the combined option, assign all selected items to one box. In the split option, assign each item to exactly one of two boxes. Check the totals: a missing accessory can make a split option appear artificially cheap, while a duplicated garment makes it seem expensive.",
+      "source_sha256": "4793d015ed5c9e97f8cfe3046e9988f34aa362c887f0c22519c72d08a7f93da6",
+      "raw_target_sha256": "af677016ae005441a10ae229734cc8bb2825ecc4820afd0ae2c8724019f49a5a",
+      "translation": "Catat identitas gudang dan jumlah semua item, lalu salin daftar itu untuk kedua skenario. Pada skenario gabungan, semua masuk satu kotak. Pada skenario terpisah, masukkan setiap item ke tepat satu dari dua kotak. Periksa jumlah: aksesori yang tak tercatat membuat opsi terpisah tampak sangat murah, sedangkan pakaian tercatat ganda membuatnya tampak mahal."
+    },
+    {
+      "source": "Establish why splitting might help",
+      "source_sha256": "2eb8c4fe8d804a618a9266c80b5fbfb1e5bcd64250cb968932faa485a84774f9",
+      "raw_target_sha256": "0912fcb9b4dc9bf4cc3d3d73cb9c63513ac0e1f7621a46820a7a7c80f9e171f1",
+      "translation": "Kenali alasan memisahkan paket"
+    },
+    {
+      "source": "Perhaps only one item needs a rigid box, one piece must go to a different address, or a category affects route eligibility. Those are practical differences worth recording. If the two boxes go to different countries, you are evaluating a different delivery plan, not simply a cheaper arrangement for the same destination. Keep any urgency or special handling requirement visible alongside money.",
+      "source_sha256": "9cb8eed07275aaf3cefce9de5dfd5e1849b42234224faf6040409197f3b12652",
+      "raw_target_sha256": "92af36a93fe3d2f7879643b635525948ae5a23cf419cf364929d706f5bfa8f4d",
+      "translation": "Mungkin satu barang memerlukan kotak kaku, satu pergi ke alamat berbeda, atau salah satu kategori tidak diterima rute tertentu. Catat perbedaan praktis itu. Jika dua kotak dikirim ke negara berlainan, Anda sedang membandingkan rencana pengantaran berbeda. Cantumkan urgensi dan penanganan khusus di samping biaya."
+    },
+    {
+      "source": "Compare the full international cost",
+      "source_sha256": "33624e04f13bc564be934ba928f125380f7e6b9a6be19f19d04de2a8c2c005e2",
+      "raw_target_sha256": "e3dbaf263c384c8cd5cc347ab272b3735879fb5a22ff1072a15eda469aaff1a3",
+      "translation": "Bandingkan biaya internasional seluruh kiriman"
+    },
+    {
+      "source": "Check whether the estimates remain eligible",
+      "source_sha256": "1cc54a7f44703181d015106a4dbdb7f03ba15349d339528ac45759c4254a31e1",
+      "raw_target_sha256": "038a4ec314ec936a6a19a6840c0462c007b7b6e66b6dbbe5549f724750acfc46",
+      "translation": "Periksa kembali kelayakan tiap rute"
+    },
+    {
+      "source": "Use each box's own actual or proposed outer dimensions, weight and product category. If the combined package exceeds a route limit, strike out that route for that scenario. Never substitute the lighter box's weight for the combined box simply to obtain a result. Compare realistic packing arrangements and check that the selected service accepts all contents, including components that might be easy to forget in an accessory pocket.",
+      "source_sha256": "2560ea1a1ae4e771166616ab7ef9b594aa873a7518dd6e3f55444e2d915a601c",
+      "raw_target_sha256": "8f27866befa3b2b08daad9d7213ee6f96067183f90a45025fecf491abb3fb923",
+      "translation": "Gunakan dimensi luar, berat, dan kategori milik masing-masing kotak. Jika kotak gabungan melampaui batas suatu rute, coret rute itu hanya dari skenario gabungan. Jangan mengganti berat gabungan dengan berat kotak kecil agar kalkulator menampilkan harga. Pastikan layanan menerima seluruh isi, termasuk komponen yang mungkin terlupa di saku aksesori."
+    },
+    {
+      "source": "Make a decision you can audit",
+      "source_sha256": "e2b6f6cb4cdfe9a848468c5e486f292585e4ed1249eac6575af9e34c51fb105b",
+      "raw_target_sha256": "30b31ce4f1f4d191460e0fc06126571d25b73a5555289fd3c94da36274c6966e",
+      "translation": "Simpan alasan yang bisa diperiksa kembali"
+    },
+    {
+      "source": "Write the reason for the choice in ordinary language. It might be that the cheaper combined service satisfies all requirements, or that paying more for two boxes lets the urgent item leave before a later intake. Save the estimated difference separately from the eventual outcome. Once both parcels have been billed, compare each final entry against the estimate for the correct arrangement and explain any changed input.",
+      "source_sha256": "96251b515d07eebcc7ee2cfbd1f0ac7852330bea766fe26aa54a76a1bdec9e93",
+      "raw_target_sha256": "22502ca123cffc8a4f84ce9ba07dbe5d52a162c1bbfcd94118822ba879f7414c",
+      "translation": "Tulis alasan biasa, misalnya opsi gabungan lebih murah dan memenuhi kebutuhan, atau dua kotak memungkinkan barang mendesak dikirim lebih awal. Catat selisih perkiraan terpisah dari hasil akhir. Saat keduanya ditagihkan, cocokkan setiap tagihan dengan rancangan yang sesuai dan jelaskan masukan yang berubah."
+    },
+    {
+      "source": "An example where the larger box wins",
+      "source_sha256": "907c1875061c58bbe2c209ab5859eb2724b2c9631ad61ea9586ed04afc3fecb4",
+      "raw_target_sha256": "cd65a3227618a19a0f071c72bd8d205d67010dfbfad50998b9d7378190bea66f",
+      "translation": "Contoh ketika satu kotak besar lebih menguntungkan"
+    },
+    {
+      "source": "Consider a fictional comparison for a buyer sending two hoodies and one rigid accessory case to the same address. The buyer wants the case protected and both hoodies included. Assume the offered combined arrangement costs 185 inclusive of the necessary protection. One separate parcel for the hoodies costs 102 and a second protected parcel for the case costs 96. Their sum is 198. On these particular assumptions the single-box option costs 13 less and satisfies the stated requirements.",
+      "source_sha256": "4eb39f5694363b649b0f1ebeef689cdd1d31fe3cbbf6a11c3f72efe4564b89c3",
+      "raw_target_sha256": "634f52560db613dba35eacf07e0349fa3fad00be13f0c055de1b850f3755bc77",
+      "translation": "Seorang pembeli ingin mengirim dua hoodie dan satu kotak aksesori kaku ke alamat yang sama. Semua harus ikut, dan kotak aksesori dilindungi. Misalnya opsi gabungan 185 termasuk perlindungan. Jika terpisah, hoodie berharga 102 dan kotak terlindung 96; total 198. Berdasarkan asumsi ini, satu kotak memenuhi kebutuhan dan lebih murah 13."
+    },
+    {
+      "source": "An example where smaller boxes remain worth considering",
+      "source_sha256": "2112782d9873f6c04e59cd8b717390171edde6ddbc8ef151f190e7aa77714c83",
+      "raw_target_sha256": "7dc6261b372b172eee7355b9f1a104af6fb5a1339fad5453219e099caebfb05a",
+      "translation": "Contoh ketika dua kotak kecil patut dipertimbangkan"
+    },
+    {
+      "source": "A rectangular case can set the minimum width of a combined parcel. Soft clothing may fill empty space around it, or may require an increase in height once protection is included. Do not calculate a combined box by adding the item lengths, adding widths and adding heights independently. That describes a much larger imagined arrangement in most cases. Sketch how the pieces could sit and ask for relevant packed measurements or a realistic packing estimate.",
+      "source_sha256": "35d1e230b329d312f27d646d02fec3f148da14fd5baaebf668d884e5eff3defd",
+      "raw_target_sha256": "dfff5df01feb4288fd579640e2cc7d6b2ae9ae625c1b1f3d6baa55143e4a9c49",
+      "translation": "Kotak aksesori persegi dapat menentukan lebar minimum kotak gabungan. Pakaian lunak mungkin mengisi ruang kosong di sekelilingnya atau menambah tinggi setelah diberi pelindung. Jangan menjumlahkan ketiga panjang, seluruh lebar, dan seluruh tinggi secara terpisah: umumnya menghasilkan kotak rekaan terlalu besar. Buat sketsa susunan lalu minta ukuran atau estimasi kemasan yang realistis."
+    },
+    {
+      "source": "The estimated split arrangement deserves the same care. A padded case may fit into one small carton, while the garments can use another shape. Give each box its intended packing and dimensions. Using a generous measured combined box alongside separate dimensions guessed from bare product photographs biases the result against consolidation. State the quality of your evidence for both scenarios. If a decision turns on a small difference, obtaining equivalent measurements can matter more than refining the arithmetic.",
+      "source_sha256": "87decf73b8d810625c40bdf2cc6e2e511e2e539ab5863751da37429bee327de5",
+      "raw_target_sha256": "9d84a8c493bb44ebb7bf4555a5284bb91b12ed56049e0473b680f2524fa9d83f",
+      "translation": "Perkiraan dua kotak juga harus memakai data setara. Kotak berlapis bantalan dapat memakai karton kecil, pakaian bisa memakai bentuk lain. Tentukan kemasan dan dimensi per kotak. Membandingkan kotak gabungan yang terukur longgar dengan dimensi terpisah yang ditebak dari foto produk telanjang merugikan opsi gabungan. Bila selisih kecil, hasil ukur yang setara lebih penting daripada memperhalus rumus."
+    },
+    {
+      "source": "Organizing decisions around timing",
+      "source_sha256": "91141294401b01348e8eed18358ef88b0b901f93fbbea070e6dc3a85a4037482",
+      "raw_target_sha256": "1671dee068105aeddcb8a7014e1b0b6537e081e35d602224171371c676e059ed",
+      "translation": "Pertimbangkan waktu dalam keputusan"
+    },
+    {
+      "source": "Avoid promising a delivery date on the basis of the number of boxes alone. A route estimate, seller delay, warehouse intake and final delivery can each describe a different stage. If the two pieces are needed as one matching set, splitting also creates a practical risk that one arrives earlier than its partner. If the pieces serve different recipients, the timing difference might be entirely acceptable. The right comparison includes how the items will actually be used.",
+      "source_sha256": "01464ddeeac80eb2c568613dea33fc9918fea0d0bc0a4034f32fdb5af5bd6656",
+      "raw_target_sha256": "40e9860cad32335af7a8f556e89dedf534e67ce356d956d408e7743da5472049",
+      "translation": "Jumlah kotak saja tidak menjamin tanggal tiba. Estimasi rute, keterlambatan penjual, penerimaan gudang, dan pengantaran akhir merupakan tahap berbeda. Jika dua barang diperlukan sebagai satu set, memisahkan bisa membuat satu tiba tanpa pasangannya. Untuk penerima berbeda, jarak waktunya mungkin tidak masalah. Pertimbangkan penggunaan yang sebenarnya."
+    },
+    {
+      "source": "Verify the plan after the warehouse acts",
+      "source_sha256": "267b13e2acaaa1878536e013bb9595f623cc4a9ae022e4d7b1d8af758eb4b72e",
+      "raw_target_sha256": "10d3b5cb736bd898f20eb755630d4be828ef1d1d6a3c87d11997ef16520c9e42",
+      "translation": "Verifikasi rencana setelah gudang mengemas"
+    },
+    {
+      "source": "Once a packing decision has been confirmed, compare the assigned item list with the original scenario. Check that any separate accessory travelled with its intended parent item. In a split shipment, label the two parcel records clearly enough that the first delivery does not accidentally close the second. Keep the tracking number and payment for each box together. A notification about a single parcel can otherwise be mistaken for completion of the entire purchase.",
+      "source_sha256": "cc1b8e6d84d3623f735f79d2db38e90995343bd356dcd57801802074126ea70a",
+      "raw_target_sha256": "4a090d5b0e78804d40572c15f88028db8aa20283c87d1f093e8e83b97f860746",
+      "translation": "Setelah pilihan dikonfirmasi, cocokkan item yang dialokasikan dengan daftar semula. Pastikan aksesori menyertai barang utamanya. Untuk pengiriman terpisah, beri nama kedua catatan agar kedatangan kotak pertama tidak menutup kotak kedua. Simpan nomor lacak dan pembayaran setiap paket bersama; satu notifikasi bukan penyelesaian seluruh pesanan."
+    },
+    {
+      "source": "When the actual charges arrive, compare them with the quote for the same configuration. If the courier or route differs, document that change before calculating a saving or overrun. Add the final charges for all boxes in the split option before stating its cost. The result becomes a useful comparison for this shipment. Retain the measured details with it rather than generalizing that consolidation, or splitting, will always be cheaper for a future order.",
+      "source_sha256": "4d47375010ac86c4d7c1f738efb3d94ed75b784d003b4f6a5c67bc14cfe9b741",
+      "raw_target_sha256": "27dcc82993caf6aebf5521eefa376dde2e522d28dc50c6605f71a955c29c45df",
+      "translation": "Bandingkan tagihan nyata dengan penawaran untuk susunan yang sama. Jika pengangkut atau rute berubah, dokumentasikan sebelum menyatakan penghematan atau kelebihan biaya. Jumlahkan biaya akhir semua kotak pada opsi terpisah. Simpan ukuran bersama hasil: kesimpulan pengiriman ini tidak menjamin gabungan atau pemisahan selalu lebih murah pada pembelian berikutnya."
+    },
+    {
+      "source": "A second address changes the question",
+      "source_sha256": "c0a4f021ec02c7436f3c78c87b8e81b31bf03aa5bf2a4c8e886ed615c414f721",
+      "raw_target_sha256": "d6a49199104aaa2a47e7ec4b50ba4aaf72f22f1975fa2624cfcfc7d33e98fb17",
+      "translation": "Alamat kedua mengubah perbandingan"
+    },
+    {
+      "source": "If one box will go directly to another person, include the cost and feasibility of forwarding an item locally under the combined arrangement. Compare delivery to both intended recipients, not simply delivery to the first address. Record which additional domestic leg is confirmed and which is hypothetical before making a claim about total savings.",
+      "source_sha256": "5cb97076580f3fca382b1ae29f7054ea017cd35e5a2055d9087b45d9f1d8a344",
+      "raw_target_sha256": "7f32f6339c0a40c519ad9d4132bfb913e3ee718e039e4d2a60192d64199cc116",
+      "translation": "Jika satu kotak dikirim langsung ke orang lain, untuk opsi gabungan perhitungkan juga biaya dan kemungkinan meneruskan barang secara lokal. Bandingkan hingga kedua penerima mendapat barang, bukan hanya hingga alamat pertama. Bedakan biaya pengiriman lanjutan yang sudah terkonfirmasi dengan biaya yang baru diasumsikan."
     }
   ]
 }

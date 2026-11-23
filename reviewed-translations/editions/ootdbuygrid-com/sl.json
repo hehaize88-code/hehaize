@@ -3,9 +3,9 @@
   "locale": "sl",
   "source_set_sha256": "d3fa9f46b8822e6121c5f5032ff51cfdb56efdc052db0b6c6c720b54b6f2d6ef",
   "raw_dictionary_sha256": "a0b446fd359197a1cafdf7fb4af3bafbc5579a0723214377ce6d1afe553a4f89",
-  "effective_dictionary_sha256": "8988fbbdc2a2df10ac1c5ef6597324a979411b266d127fc09fee0ceec9cb1ce8",
+  "effective_dictionary_sha256": "49c1f9e761896c3f11463a44d008b736404fe4b1ba686b266a68a4c83c2096bf",
   "checked_entries": 281,
-  "review_scope": "Reviewed the original and effective dictionary key set, all 10 article titles, all 23 questions and answers, all audit flags, garment and backpack variants, parcel events, and numerical scenarios against English. Sampled the surrounding article prose.",
+  "review_scope": "Independently checked the source key set, all 10 titles, 70 article section headings, all 23 FAQ questions and answers, all audit flags, garment and backpack variants, parcel events, and numerical scenarios against English. Sampled the surrounding article prose.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -567,6 +567,420 @@
       "source_sha256": "cf38e7e1819c955877e07856967d0292cdf7b4a7fc3b142abc89944d7f21d97f",
       "raw_target_sha256": "eb6f89e7436a8e46dde9acf792ad2dec5204316ae017c059bdca21369ee98b55",
       "translation": "Ob prevzemu primerjajte nalepko s številko odhodne pošiljke in vsebino s seznamom izdelkov v tem paketu. Če paket prispe, manjka pa eno oblačilo, zaključite vprašanje o dostavi in odprite ločeno vprašanje o vsebini. Priložite dokazila o embalaži in izdelkih. Če podpora potrdi drugačen izid, shranite pisni odgovor in jasno označite paket, ki ga zadeva. Iz zapisa naj bo razvidno, katera pošiljka je prispela, kaj je bilo preverjeno in ali je kateri drug nakup še na poti."
+    },
+    {
+      "source": "Start with the decision the photograph needs to answer",
+      "source_sha256": "f616da70d40f88d1ff2761d8e92862a6c758d8b047a977dc14ab96930f437641",
+      "raw_target_sha256": "260806b99118e252cb0b77624e2fbd155fbacb723f9851bd95af845c0ed7a104",
+      "translation": "Določite, kaj morate ugotoviti s fotografije"
+    },
+    {
+      "source": "Trace the reference back to the seller listing",
+      "source_sha256": "9d648ccf33c07b82e34479fb57b3d48f1938d90e7a4347e6ed279a94e9d6c713",
+      "raw_target_sha256": "39925a0f48b0fad99d2721570c17b57082531b14939cdf8c3c4677dd373a058f",
+      "translation": "Poiščite prvotni prodajalčev oglas"
+    },
+    {
+      "source": "Identify the option inside the listing",
+      "source_sha256": "80bb8589bd9161344bb840005e2a1aedb2cd00a55b1adbd3d776fb4202087d1f",
+      "raw_target_sha256": "94f8e5f319f6c450cab081e61c114e2ebf3b7b2a472c3c0975d828bf8b0a1f82",
+      "translation": "V oglasu poiščite pravo različico izdelka"
+    },
+    {
+      "source": "Choose a useful historical QC photograph",
+      "source_sha256": "1930ecde523265ba56946405202300bcf1d2d428fb588f9e27ed0bc5d30c0e39",
+      "raw_target_sha256": "41c3acc59fc0185260f23a51be03c3caba505a2a2e415d2104f0d167d52fd2b8",
+      "translation": "Izberite uporabno fotografijo prejšnjega pregleda"
+    },
+    {
+      "source": "Check measurements with a comparison garment",
+      "source_sha256": "241a209074b3c268195f8d0790e54bfcd30cd53bde76d90169877fd1f0649dfd",
+      "raw_target_sha256": "8511d2aca10f13693e4f5bf40e07d411b259391fb17bef4aac7625c9e100af05",
+      "translation": "Mere primerjajte z oblačilom, ki ga nosite"
+    },
+    {
+      "source": "Request a photograph that resolves the uncertainty",
+      "source_sha256": "9583a774ba23444645e2906511c026925f8773523b402e543ebd790be49a370c",
+      "raw_target_sha256": "107efc903303c0e73090c53027608293954354caff8e8fc34852767b2938a708",
+      "translation": "Prosite za fotografijo, ki bo odpravila konkretni dvom"
+    },
+    {
+      "source": "Make the decision against the actual order",
+      "source_sha256": "e95475d09a52cd3abc339561387cd47f3d3d66657871efe5f3fa96b2f902e533",
+      "raw_target_sha256": "beb9760e421198b464ebf5761c6b1130f6027ef16f1dbb7d0653188715eb4a76",
+      "translation": "Odločite se na podlagi podatkov o svojem naročilu"
+    },
+    {
+      "source": "Choose a useful starting point",
+      "source_sha256": "dad75a1e2d4ba5574612a5234827e7ae1863a8d0d53812c3d1fce0f539ed6214",
+      "raw_target_sha256": "c9e2f04e072d046804e7a068356254890c3ecafacb1a07f19bdc73f02aea4ac7",
+      "translation": "Izberite primerno izhodišče za primerjavo"
+    },
+    {
+      "source": "Keep the marketplace identity separate from the agent view",
+      "source_sha256": "cd0a142827fa87555c88d9444598632d7d593c71d98c1f93b4b021555edda601",
+      "raw_target_sha256": "13890f973d2a2350b1d59c3eab0d2be504964f820d525d28de1d94a84da70167",
+      "translation": "Ločite oglas na tržnici od prikaza pri posredniku"
+    },
+    {
+      "source": "Distinguish a changed option from a changed price",
+      "source_sha256": "08c4cbb295d3703fbe9fca965fd22f2a6d57c355d5c5168e4b93c16a0fde79c0",
+      "raw_target_sha256": "03336da11a6fdd8ecbb250edc34fbc0edeb997ebd88e1097e9e8f29b217515ca",
+      "translation": "Preverite, ali se je spremenila različica ali cena"
+    },
+    {
+      "source": "Deal with an option that has disappeared",
+      "source_sha256": "410b09d540944c0456d9a33f03386f09361b04840a7c1260eb9bb58c201cbc98",
+      "raw_target_sha256": "cd12713839aabf9251da32ed6e340a87bae732f2cfca260b961add9b431e7384",
+      "translation": "Kaj storiti, če izbrana različica izgine"
+    },
+    {
+      "source": "Keep chronology when purchase has already happened",
+      "source_sha256": "159f2fe475dc32e65e2077eccf543e2343b16f45f1d63b46584fd5b5e8683633",
+      "raw_target_sha256": "11209a396a213cfb9c5d087b017883deb9600e66f4648e21640d024c71e13d53",
+      "translation": "Po nakupu ohranite časovni potek sprememb"
+    },
+    {
+      "source": "Update a shared spreadsheet without erasing the earlier decision",
+      "source_sha256": "c4e66719c01bc01f5fbdcdd9a13d9645d1a2fc137a394c6913935b02837a2ad1",
+      "raw_target_sha256": "1f2391babbaec9ee3d92e33fd15d3dbcb588e260e4a5ecfb8706b1ee25347d4f",
+      "translation": "Posodobite skupno preglednico, ne da bi izbrisali prejšnjo odločitev"
+    },
+    {
+      "source": "Decide whether the change matters",
+      "source_sha256": "d69a3d03d9aa734ce60bc1b8868a7963f2797e1c5516ef9846b854f1440b3d40",
+      "raw_target_sha256": "b71d9602e76a5a4dcf107e33f1c0d98bb705518aa7c06dee057cbbc0f7dbe647",
+      "translation": "Presodite, ali sprememba vpliva na vaš nakup"
+    },
+    {
+      "source": "Read the complete option, including the suffix",
+      "source_sha256": "5867f36b3e655e2939414f94156095d6f091830fab9ef8cd305c4f20498fc6da",
+      "raw_target_sha256": "ccfc42f8be2d3d450b540ae4739a46f3d50a41c50a1af5307faa6a8fa6af76f5",
+      "translation": "Preberite celotno oznako različice, vključno s končnico"
+    },
+    {
+      "source": "Check stock independently of the gallery",
+      "source_sha256": "956ee5f2ce4e93e2d6e2a54c1028cf4e76b19f2413b50417f8d67a23f24baf4c",
+      "raw_target_sha256": "648208d158e24ecd1841fa970e6af89f66809f5a6b875a65b8e480098329464e",
+      "translation": "Preverite zalogo neodvisno od fotografij v galeriji"
+    },
+    {
+      "source": "Use other photographs for the details they actually show",
+      "source_sha256": "37b727ea20729c632c29ed061e750af320fe83d2daaf4d26300b62497dc8c8fe",
+      "raw_target_sha256": "79541e0e8cda2f34ec0d5e749509242b5b6da0ec7e25aa7c576ab47e60bd06bc",
+      "translation": "Na drugih fotografijah preverjajte le podrobnosti, ki jih dejansko kažejo"
+    },
+    {
+      "source": "Compare shades under sensible conditions",
+      "source_sha256": "03d0bc2bd690d24fa99debfe9ef81b312f5531f9d3d86cc5db27918a7afca169",
+      "raw_target_sha256": "ab204dc3aefc8ade3b02876e20e7a8390d43836450d756667372545130cfdf68",
+      "translation": "Odtenke primerjajte v primerljivih pogojih"
+    },
+    {
+      "source": "Make your purchase note unambiguous",
+      "source_sha256": "5e569cec62c9b1bbce06c81219b1dc451d3884688e7c58338d8b6ec20302fe94",
+      "raw_target_sha256": "309e14e9766e043004e68400db20167709f9b946adfe31ce6ca6b8ba072039e6",
+      "translation": "Navodilo za nakup napišite nedvoumno"
+    },
+    {
+      "source": "Review the received unit, then close the decision",
+      "source_sha256": "006ecf8b20eb0672d5796216f52fee00f41d1117d0487dc4f2158d8a52a3c35b",
+      "raw_target_sha256": "7c5796bea53dfb58164c4342a875fd4e616840f113eba280ffc5458cc9244920",
+      "translation": "Preglejte prejeti izdelek in zapišite končni izid"
+    },
+    {
+      "source": "Decide which destination the recipient needs",
+      "source_sha256": "f777115d9bb8bd7f56f3efe604866737de95f4730a8384591ff0aeef50cf48d5",
+      "raw_target_sha256": "3ac2b2aff9440473be3cc9d4a1c5ced6b7e079707463cb75a46f37d9ca63b73e",
+      "translation": "Ugotovite, katero povezavo potrebuje prejemnik"
+    },
+    {
+      "source": "Read the listing identity from the opened page",
+      "source_sha256": "8e7fbdee6f94e851828afd3373a32cb5c1866fb16787e5ce8a9776ffa059e11b",
+      "raw_target_sha256": "b392c81d474204220d4dbb6b39839bee9aa995566abe1370bd9ef695644c0739",
+      "translation": "Na odprti strani preverite podatke za prepoznavo oglasa"
+    },
+    {
+      "source": "Build a minimum option record",
+      "source_sha256": "25a9a740f3ac789ada44b1374d52b7b200c67cc0097c14a22ec2cdb0786ba3d0",
+      "raw_target_sha256": "f68529e3d5b28d4f1f25629f8516fe8860137192789be3f0c7a4863ffadf1eae",
+      "translation": "Zapišite osnovne podatke o izbrani različici"
+    },
+    {
+      "source": "Test the link without your existing selection",
+      "source_sha256": "e0cdb1201f48c89fe964f24a11933ed9fece2404b3915d04137d737a44e1685e",
+      "raw_target_sha256": "77d83b15bb4eb1e5cb6ed16a13e581643c5033066dc99ee9763fe5a29bb4b282",
+      "translation": "Preizkusite povezavo brez že izbrane različice"
+    },
+    {
+      "source": "Keep the product identity through a change of agent",
+      "source_sha256": "3d723c05b39b3ca744e81891d98e8b44efdd7a31f2f0e44acb97a16b5381aefc",
+      "raw_target_sha256": "43b83e78f38909e652051e101e3ffddd0563f22bbaed735e1ee61aa189ef6dd4",
+      "translation": "Tudi ob menjavi posrednika ohranite podatke za prepoznavo izdelka"
+    },
+    {
+      "source": "Handle a changed or unavailable seller page",
+      "source_sha256": "12fa26d430f8a32a067e93499a1c86c247429f582e6686c73120cb133ef8e079",
+      "raw_target_sha256": "08d72190573fad7daafe1c55b52b42b33a325603348fbd700337caae30d62e4c",
+      "translation": "Kaj storiti, če se prodajalčeva stran spremeni ali postane nedostopna"
+    },
+    {
+      "source": "Give the recipient a usable handoff",
+      "source_sha256": "43b939ab2988f8f815bd88a2f7f4962949c183c602d40a63145ea79d76f707b6",
+      "raw_target_sha256": "85cdb0a069eb208cff994ef1182a61d38fc040e05be5ae3c2ec129013301debe",
+      "translation": "Povezavi priložite podatke, ki jih prejemnik potrebuje"
+    },
+    {
+      "source": "Pick a reference you actually wear",
+      "source_sha256": "ad15e89d88e2d50366adc1e6d3037fba4694d2b1016f26a607b96ffe64b1e116",
+      "raw_target_sha256": "90f85df7a4c1f1ad106f4bbfe12448d90bf2b4ff9b6e5d5247fddb16992045d8",
+      "translation": "Za primerjavo izberite oblačilo, ki ga nosite"
+    },
+    {
+      "source": "Identify garment dimensions and body recommendations",
+      "source_sha256": "5031a2b7f322e910d362cfca6b904f68f546c256237cbcb3e0ad4328fcd0a0b9",
+      "raw_target_sha256": "b20ca5ea49f1b59cb45a57e34461c67c4aa6d750565e8c62d609e27bfaf0c7c8",
+      "translation": "Ločite mere oblačila od priporočenih telesnih mer"
+    },
+    {
+      "source": "Match the length definition before comparing numbers",
+      "source_sha256": "03bacfdb1b8e9119c081f3b747ecb734754ceb6be0488786f228afd2def19a06",
+      "raw_target_sha256": "77d79d9fab1a99b211d7946e2884d5d69e56cec21e56e3a395f4d566be80e5e0",
+      "translation": "Pred primerjavo preverite, od kod so merili dolžino"
+    },
+    {
+      "source": "Account for shoulder shape when comparing sleeves",
+      "source_sha256": "f7342f8aba5653196e500abbc156b59b5916abccff846df376cad1ccb4835512",
+      "raw_target_sha256": "9c7b3ce19e216ddb50b93c0d8c0e3f04aeb1b8281632858b8a7e3429a9ed8ea5",
+      "translation": "Pri primerjavi rokavov upoštevajte ramenski kroj"
+    },
+    {
+      "source": "Read a set as two garments",
+      "source_sha256": "7e4a2444b9643dbb92fa55a1b322c0d9e7e6f20be0a4df20d26e0ef91ee80e77",
+      "raw_target_sha256": "cbe2d1a7baa2ad8a84a9f98830faa3b1dc7383482f6bddd7ad4d46e187c311d6",
+      "translation": "V kompletu preverite mere vsakega oblačila posebej"
+    },
+    {
+      "source": "Convert once and keep the original figures",
+      "source_sha256": "4bd5744845fd3465adcefea7821462f9ead2a852356b8bcc35af282d8eadfc2a",
+      "raw_target_sha256": "a1fb14de50020b96c61dbab72de399f5100e5d775d481d974dd9ce3687223a91",
+      "translation": "Mere pretvorite enkrat in shranite izvirne vrednosti"
+    },
+    {
+      "source": "Write the buying decision while the charts are visible",
+      "source_sha256": "78e87c5e3d8a8fd2fcf3da32276e540b8d2fcea75a52596c47fb3a73821a1f4c",
+      "raw_target_sha256": "454e2360c1b34404ffd2a420579d360c77c3f879230e5bba38219091c2fe8d93",
+      "translation": "Odločitev zapišite, dokler imate tabeli velikosti pred seboj"
+    },
+    {
+      "source": "Begin with the object outline",
+      "source_sha256": "a7236602513c4fc9e04f80719e888170403001a169ff15fa50acdacddcf880fe",
+      "raw_target_sha256": "cb04106caf493f958764ef7d9f45ada5977fe5b630b1552b385f15479acd565c",
+      "translation": "Najprej si oglejte obris izdelka"
+    },
+    {
+      "source": "Read option photographs as part of the selector",
+      "source_sha256": "2a7ea02206505c2a4ec308010ed4a98c1cce1209f003193196780d769c1304aa",
+      "raw_target_sha256": "4cbf9cef9507348b0733dda27cd3d644298912208fd56ae3466017595a189e92",
+      "translation": "Fotografije različic povežite z ustreznimi izbirami"
+    },
+    {
+      "source": "Work outward from a detail picture",
+      "source_sha256": "ffc34f27fc33b8a800a4d32fbad21230d0601a7c31c87d06ad9db967993247d2",
+      "raw_target_sha256": "736a9ec09398c2dea3e78746ee9fb7e8259dc5e37791a010ed5669fe276732c6",
+      "translation": "Podrobnost na bližnjem posnetku umestite v celoten izdelek"
+    },
+    {
+      "source": "Identify graphics and diagrams",
+      "source_sha256": "979311541a068e8d65460080a689f5c6073e4bb206e425aa6f841613a6993ca2",
+      "raw_target_sha256": "c7e77919f80497b5b322a81e463cce29c5e72274ff63ea74c5642db7da65a10b",
+      "translation": "Ločite risbe in sheme od fotografij izdelka"
+    },
+    {
+      "source": "Separate historical QC from seller presentation",
+      "source_sha256": "f26a626f23c69bf30beee17f4ec6d7e6203beceacdca32c325dd2f3313ecac92",
+      "raw_target_sha256": "962fa8d3db2d363569ffeb106c03001ebda81cd878336e4b8a55ba7ddf5d3040",
+      "translation": "Ločite fotografije prejšnjih pregledov od prodajalčevih predstavitvenih slik"
+    },
+    {
+      "source": "Make a contradiction list you can act on",
+      "source_sha256": "461e6a4d553629fe8cd8160f75698d092ba5ad752fe4845a762308f265d47147",
+      "raw_target_sha256": "3fd2509e9302cabb6506ceb5671749eaeb55bd168abc97f3685f9470cf1d2ded",
+      "translation": "Zapišite neskladja, ki jih je še mogoče razjasniti"
+    },
+    {
+      "source": "Use the gallery when the item arrives",
+      "source_sha256": "2afa99287e66681385ca66ca0cdb35e5fc553dde9fb7e1a8d56b425571e642db",
+      "raw_target_sha256": "c9f7d8ecc60613687d174c06f929e874425cec261b74650a27190491d187f3d9",
+      "translation": "Prejeti izdelek primerjajte s slikami v galeriji"
+    },
+    {
+      "source": "First establish when the problem became visible",
+      "source_sha256": "384fff32c479c46e98ad45e939bbbe938decba299eca03db66137418c2692834",
+      "raw_target_sha256": "99d5ecfba4efa7c9d9cef19b45e5e462c6163df1e294325148995925dab94a00",
+      "translation": "Ugotovite, kdaj je poškodba postala vidna"
+    },
+    {
+      "source": "Preserve the relationship between item, box and protection",
+      "source_sha256": "1eb69a9c9ca71635079ecaf9fac15af236d7b942b7676a9292371484a38423e4",
+      "raw_target_sha256": "53f1216b725c0ed0d8c37968438c9c1288530e86f5624383cfc855ff76d8bb43",
+      "translation": "Pokažite, kako je bil izdelek zaščiten v škatli"
+    },
+    {
+      "source": "Photograph the issue in context",
+      "source_sha256": "e7aa6e5a75d1785a54b85103952f486bfcdcaf58170f75b5adb22863d4580ef3",
+      "raw_target_sha256": "b3ef78e1bf6aeb0f7f919586b8985c252b9aaebcf7d96a541535158db0e64cd3",
+      "translation": "Poškodbo fotografirajte skupaj z okolico"
+    },
+    {
+      "source": "Reconstruct the records before writing the request",
+      "source_sha256": "0e14992e695e08e2646a8f251b7ada852ad4bde090bf7afee988a6fb1ad7fb32",
+      "raw_target_sha256": "c20d5537a5be3931665da19ed29a3f95fd418e95159f74cae9b2a6a4546093a9",
+      "translation": "Pred oddajo zahtevka sestavite potek dogodkov"
+    },
+    {
+      "source": "Write a short, specific first message",
+      "source_sha256": "923cc175166f8febe557405ccda9a31214fdbf12f8bc6ea48b75b0ae5615be6e",
+      "raw_target_sha256": "c33eb60fed8a8aa555f2064218cead3af105598f524b07df3ce9e913a0a9b878",
+      "translation": "Prvo sporočilo naj bo kratko in konkretno"
+    },
+    {
+      "source": "Respond to follow-up requests without losing the original record",
+      "source_sha256": "00df895b24cee447901d88a448360cd8b023c53508c19562834ed55a81eddc52",
+      "raw_target_sha256": "334f2ff8147a9341e92f4bc034fd07511eab753232fd64b74d25aa71b7c92eb3",
+      "translation": "Odgovorite na dodatna vprašanja in ohranite prvotna dokazila"
+    },
+    {
+      "source": "Close the file when the outcome is clear",
+      "source_sha256": "ea69793ac969d42e6b0a4a8d60e0965a1b89a50b2710a7b0a0b2be2cec7472e4",
+      "raw_target_sha256": "7492026fdbdc43828b24b1c467116ef7f05e5e2cf18523e3bda88813f2882f84",
+      "translation": "Primer zaključite, ko je izid jasen"
+    },
+    {
+      "source": "Fix the purchase units before adding any delivery",
+      "source_sha256": "e865bf4275a86561127fd31359d81cb547159a7474b724eb0a6d3d2db59bc310",
+      "raw_target_sha256": "c5b86246b8dbad1af21639b3cfd9711ef1cc82d86d941908a3a59d929632faf9",
+      "translation": "Pred prištevanjem dostave določite nakupne enote"
+    },
+    {
+      "source": "Count seller-to-warehouse delivery once",
+      "source_sha256": "ddf1a2298a2eccf0f64f509be85f3436047dacc38d750b969ea71c146b161c05",
+      "raw_target_sha256": "a438cea9e8b722c115b1313eb8816fb17819606eff111d7172ad8b2175efc03d",
+      "translation": "Dostavo od prodajalca do skladišča upoštevajte le enkrat"
+    },
+    {
+      "source": "Give the outbound parcel its own record",
+      "source_sha256": "48f0d27ea3973d05ff84cd2f3520ac9a18e939a65bf38a877a7682337528e91c",
+      "raw_target_sha256": "663d33dcceab286b2d14533c5e7b2fa13fd65a94099400356ac9bd78496f51b4",
+      "translation": "Za paket iz skladišča odprite ločen zapis"
+    },
+    {
+      "source": "Compare routes using the same parcel",
+      "source_sha256": "d5204af6f560c61aaa0a615cade4a1486671c241199c69f9ead3185e18f9015e",
+      "raw_target_sha256": "739d9a88891e056367f9623ce0ba3b58d4a5ae6947f3db2dfaf828231d6b1322",
+      "translation": "Poti primerjajte z enakimi podatki o paketu"
+    },
+    {
+      "source": "Allocate a shared cost only when it answers a real question",
+      "source_sha256": "abcaa718073132a73d4560242f2fd61f4cccf73cc0b246bd35c773f41fe956d9",
+      "raw_target_sha256": "08797013709d6f15c378e9a8c09e2e04e52743b783e5618b74571feaec255540",
+      "translation": "Skupni strošek razdelite le takrat, ko tak podatek potrebujete"
+    },
+    {
+      "source": "Handle currency without counting the conversion twice",
+      "source_sha256": "888951898d438fdc5bfed7d5b15fe64b6512b74022c3fb23140913f94a88b0f9",
+      "raw_target_sha256": "0b9f29931a584c6e002e88e224e43f9dd15c481b3bf3084672777ed3f253b3bd",
+      "translation": "Pazite, da valute ne preračunate dvakrat"
+    },
+    {
+      "source": "Reconcile the estimate after the final payment",
+      "source_sha256": "99c90ce48f42931a483ea1c1430714d584df03c0791535fa154c2ec0fcc14a47",
+      "raw_target_sha256": "25b40b96ecd2adfc0a380d03110f3d219262d09290ff297538c431dcdc5ffea7",
+      "translation": "Po zadnjem plačilu primerjajte oceno z dejanskim stroškom"
+    },
+    {
+      "source": "Make an inventory of shapes and surfaces",
+      "source_sha256": "d968c8627e82bcd9b25879aded6b1c23b92882272ca966574e65a99c54c810e4",
+      "raw_target_sha256": "eacfd35d0a6d2b5af3ef43a1eb16e0c6b6cf78aa3d305c68b07eac95d0232603",
+      "translation": "Opišite oblike in površine izdelkov"
+    },
+    {
+      "source": "Look for conflicts between the items",
+      "source_sha256": "394cfc51f3fa372163e05ec779bc7432e2b252734cf74f722bccff042cf2865c",
+      "raw_target_sha256": "2a6e70d65d93ee4dbde671af2d87fe2a0dee4b99e539d8f1215a81e8b2159570",
+      "translation": "Preverite, ali bi se lahko izdelki med seboj poškodovali"
+    },
+    {
+      "source": "Work out which retail packaging does useful work",
+      "source_sha256": "7308fe61a4fa4c709c424f81054a5e33db8e101a9f7cc67e107f1b658d93b270",
+      "raw_target_sha256": "f495d6e05fd06e69f4a675fd9731bfb091bd09f053ee48b0040a74018fbb0c97",
+      "translation": "Preverite, kateri deli prodajne embalaže izdelek res ščitijo"
+    },
+    {
+      "source": "Compare two practical scenarios",
+      "source_sha256": "9adcde303dea66a6ac43dd9e01ffb75c51eacc283ed4100cd38856787b4b74cf",
+      "raw_target_sha256": "1850ba0064ab6db26e9a80793bced32482ce992ec28c815facf50b46f224fe8e",
+      "translation": "Primerjajte dve izvedljivi možnosti pakiranja"
+    },
+    {
+      "source": "Ask for the information that changes the choice",
+      "source_sha256": "601be7c231d5d417ec6847ceb2782e18fbf667e4a0f42a899cddc5e3ec52017d",
+      "raw_target_sha256": "e9f1424ed67a0946a29f853521e8afca4aa5bf8697e39a86321a72be44fb1be5",
+      "translation": "Prosite za podatke, ki bi vplivali na odločitev"
+    },
+    {
+      "source": "Review the submission screen as a parcel",
+      "source_sha256": "bd6c9c9bd38cc26bc416451139ad9308bcdc265a859fc9db7b38aa8a23d53e60",
+      "raw_target_sha256": "d0c98751fc7c032d736d0423694580501c81c95989d05b6d9566d56ac3162b93",
+      "translation": "Pred potrditvijo preglejte podatke o celotnem paketu"
+    },
+    {
+      "source": "Keep a short unpacking record",
+      "source_sha256": "bcbc32b2c34fe0616e426c3e23cd3cc2acde1fc1701ea548524c9e178c6306b2",
+      "raw_target_sha256": "37c0956d3ad1104f3429ebf6d518a4081ea2c9e9e0dab1f0cd481df829ecb132",
+      "translation": "Med odpiranjem na kratko zabeležite stanje"
+    },
+    {
+      "source": "Start with the parcel you expected to receive",
+      "source_sha256": "f15023ac494212ebe5750b47126a309f97e2d50980ae42b69f49fd965ac7e5bf",
+      "raw_target_sha256": "33fb80de38454bf7aff92b0adad192e9948625fb812b82cb5b3f5ca6c481c6b3",
+      "translation": "Najprej ugotovite, kateri paket ste pričakovali"
+    },
+    {
+      "source": "Copy the latest event in its original wording",
+      "source_sha256": "1b1377346cef1e8861099e8c5e5084a46514e61b7bc3a07594b4131080b8409f",
+      "raw_target_sha256": "b25bdac575cdc6c7d7a5c6b2058242cb36f29cead812310ca7365ab919aed217",
+      "translation": "Prepišite zadnje obvestilo o sledenju v izvirni obliki"
+    },
+    {
+      "source": "Follow the handoff using the carrier's own description",
+      "source_sha256": "4194474e1280f1390ea9f6afab1e7a24c500b23b75d22ab1c465967a90a99fdb",
+      "raw_target_sha256": "23d8d57e4e0d49cdf8b9cf6e91078998675ea0ca2eefa0680778fdc8f34659e7",
+      "translation": "Predaji sledite po prevoznikovem opisu dogodka"
+    },
+    {
+      "source": "Work through an example with two tracking numbers",
+      "source_sha256": "919c8b8e9146fb998c3a3aeda3df3e8686f914bc0341bd49f92a035549c22666",
+      "raw_target_sha256": "643320d283010bd3c8b47aae77f492d24f2fe09ab8f62f5e71e25a0015ab8357",
+      "translation": "Primer z dvema sledilnima številkama"
+    },
+    {
+      "source": "Read the action requested by the latest status",
+      "source_sha256": "4e5f4e2bd1eefa0a74bd2ce056a250944095ed2a963a5ffee97c83fc646e2227",
+      "raw_target_sha256": "5939a9c8948a9070e64662efbebb327c2496e6b0160dd5ac2fee058f32237ac5",
+      "translation": "Preverite, ali zadnje obvestilo od vas zahteva ukrepanje"
+    },
+    {
+      "source": "Send an inquiry that can be followed from the first line",
+      "source_sha256": "27479e9d09cc28d63544513d1ecc6bba3a1bd58cf7596d20c62f228c75b1cbe6",
+      "raw_target_sha256": "bd07937f1c6cc5cac4cd9955dad8947d2ca27489bfeb95243fd65b00ef10c424",
+      "translation": "Poizvedbo začnite s podatki, po katerih je mogoče poiskati pošiljko"
+    },
+    {
+      "source": "Close the timeline only when the outcome is clear",
+      "source_sha256": "6ca8e6c45a5349e28407767a53f88d5d008186e36a49f7866e8ca2544d9ab0af",
+      "raw_target_sha256": "7256b13a269a636c4257c8b8e3f2a32e936c933657f2ad937c1188d5f0b58675",
+      "translation": "Časovni pregled zaključite, ko je izid znan"
     }
   ]
 }

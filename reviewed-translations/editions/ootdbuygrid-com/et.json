@@ -3,9 +3,9 @@
   "locale": "et",
   "source_set_sha256": "d3fa9f46b8822e6121c5f5032ff51cfdb56efdc052db0b6c6c720b54b6f2d6ef",
   "raw_dictionary_sha256": "c743770eb08d3494fbbf34e68dcfedeae8c2b69729ed679ca921605682795fc3",
-  "effective_dictionary_sha256": "bee3a8e529f5c2122a885103e21d2da9316bf24b93ebcf81e454ae75f73c3c58",
+  "effective_dictionary_sha256": "b0df5dbfe2b7b0356a6b80cd3d2cfa543b5ef4890b16cc1030a0aee176ed55c7",
   "checked_entries": 281,
-  "review_scope": "Reviewed the original and effective dictionary key set, all 10 article titles, all 23 questions and answers, all audit flags, garment and backpack variants, parcel events, and numerical scenarios against English. Sampled the surrounding article prose.",
+  "review_scope": "Independently checked the source key set, all 10 titles, 70 article section headings, all 23 FAQ questions and answers, all audit flags, garment and backpack variants, parcel events, and numerical scenarios against English. Sampled the surrounding article prose.",
   "reviewed_flags": [
     {
       "issue": "quantity unit or currency changed",
@@ -555,6 +555,420 @@
       "source_sha256": "cf38e7e1819c955877e07856967d0292cdf7b4a7fc3b142abc89944d7f21d97f",
       "raw_target_sha256": "a678ca1b9fc1528e670efc645eed56b497e95ff8f2956347b17754d65a20473b",
       "translation": "Paki kättesaamisel võrdle silti väljuva saadetise tunnusega ning sisu sellele pakile määratud esemete loeteluga. Kui pakk saabus, kuid üks rõivaese puudub, märgi kohaletoimetamine lõpetatuks ja esita eraldi küsimus puuduva sisu kohta. Lisa pakendi ja esemete tõendid. Kui klienditugi annab muu lahenduse, säilita kirjalik vastus ja märgi täpselt, millist pakki see puudutab. Ka teine lugeja peaks kirjetest aru saama, milline saadetis jõudis kohale, mida uuriti ja kas mõni eraldi ost on veel teel."
+    },
+    {
+      "source": "Start with the decision the photograph needs to answer",
+      "source_sha256": "f616da70d40f88d1ff2761d8e92862a6c758d8b047a977dc14ab96930f437641",
+      "raw_target_sha256": "8864f6cc985fe8fda6a1af95e14c0b6113a460241fafc485590801a886bef84f",
+      "translation": "Sõnasta küsimus, millele foto peab vastama"
+    },
+    {
+      "source": "Trace the reference back to the seller listing",
+      "source_sha256": "9d648ccf33c07b82e34479fb57b3d48f1938d90e7a4347e6ed279a94e9d6c713",
+      "raw_target_sha256": "7f04cc1daae4d395fc2ff4fefd35186df7a8d0dd1355bd17db69d0a672b68990",
+      "translation": "Leia algne müügikuulutus"
+    },
+    {
+      "source": "Identify the option inside the listing",
+      "source_sha256": "80bb8589bd9161344bb840005e2a1aedb2cd00a55b1adbd3d776fb4202087d1f",
+      "raw_target_sha256": "203e782e2b88c961f4dca7c8b739ae5ac807ea3a6d4106bb7d3cf0712a10a726",
+      "translation": "Tuvasta kuulutuses õige tootevariant"
+    },
+    {
+      "source": "Choose a useful historical QC photograph",
+      "source_sha256": "1930ecde523265ba56946405202300bcf1d2d428fb588f9e27ed0bc5d30c0e39",
+      "raw_target_sha256": "9666188f3c839593b9d2d8f6a9f0f2cd6aa3a9635fb3f25e1d2a0a153a2b6fb0",
+      "translation": "Vali varasem kontrollfoto, mis aitab otsustada"
+    },
+    {
+      "source": "Check measurements with a comparison garment",
+      "source_sha256": "241a209074b3c268195f8d0790e54bfcd30cd53bde76d90169877fd1f0649dfd",
+      "raw_target_sha256": "11cbb54766bddf102d4e6b0e44dd138e24be9c7f5fc7977ec2c2b7967af2caab",
+      "translation": "Võrdle mõõte oma rõivaga"
+    },
+    {
+      "source": "Request a photograph that resolves the uncertainty",
+      "source_sha256": "9583a774ba23444645e2906511c026925f8773523b402e543ebd790be49a370c",
+      "raw_target_sha256": "d1339364246f0f68345f7844aaf58f48738bc52682e8dea3e17202361b187aa9",
+      "translation": "Küsi fotot, mis lahendab konkreetse kahtluse"
+    },
+    {
+      "source": "Make the decision against the actual order",
+      "source_sha256": "e95475d09a52cd3abc339561387cd47f3d3d66657871efe5f3fa96b2f902e533",
+      "raw_target_sha256": "7ace976bc42ea37d9d2b746a1e5260313c3ae36ec883f2be12aac23e51183e30",
+      "translation": "Otsusta oma tellimuse andmete põhjal"
+    },
+    {
+      "source": "Choose a useful starting point",
+      "source_sha256": "dad75a1e2d4ba5574612a5234827e7ae1863a8d0d53812c3d1fce0f539ed6214",
+      "raw_target_sha256": "e43586fa2c55f9c882a1f7021bdf2db95a47e6605a85a7265294411e5c9c41e9",
+      "translation": "Vali võrdluseks sobiv lähtepunkt"
+    },
+    {
+      "source": "Keep the marketplace identity separate from the agent view",
+      "source_sha256": "cd0a142827fa87555c88d9444598632d7d593c71d98c1f93b4b021555edda601",
+      "raw_target_sha256": "4ae111722753ff14a4a815b829fc712bb7c930c0039f3cb0a469f851eb409cdb",
+      "translation": "Erista turuplatsi tooteleht ostuagendi vaatest"
+    },
+    {
+      "source": "Distinguish a changed option from a changed price",
+      "source_sha256": "08c4cbb295d3703fbe9fca965fd22f2a6d57c355d5c5168e4b93c16a0fde79c0",
+      "raw_target_sha256": "036f8db5d9772f07218da80f5327b7962ce626517560b59978d10c774aa1a80d",
+      "translation": "Kontrolli, kas muutus variant või hind"
+    },
+    {
+      "source": "Deal with an option that has disappeared",
+      "source_sha256": "410b09d540944c0456d9a33f03386f09361b04840a7c1260eb9bb58c201cbc98",
+      "raw_target_sha256": "1d58cd3d01a935f37ec72d60d59d14f6cf14ac48ab053ddb7f7c9ade1157716b",
+      "translation": "Mida teha, kui valitud varianti enam pole"
+    },
+    {
+      "source": "Keep chronology when purchase has already happened",
+      "source_sha256": "159f2fe475dc32e65e2077eccf543e2343b16f45f1d63b46584fd5b5e8683633",
+      "raw_target_sha256": "a4868c57a90f74cfe1be0063c17d036e610c393b035b57c880da2430d61c5d50",
+      "translation": "Kui ost on juba tehtud, pane sündmused ajaliselt kirja"
+    },
+    {
+      "source": "Update a shared spreadsheet without erasing the earlier decision",
+      "source_sha256": "c4e66719c01bc01f5fbdcdd9a13d9645d1a2fc137a394c6913935b02837a2ad1",
+      "raw_target_sha256": "d5f512b68cfb0a448a5ffcc5435cc4ce338ea4b02c6994cdfd25262fae518ea8",
+      "translation": "Uuenda jagatud tabelit varasemat otsust kustutamata"
+    },
+    {
+      "source": "Decide whether the change matters",
+      "source_sha256": "d69a3d03d9aa734ce60bc1b8868a7963f2797e1c5516ef9846b854f1440b3d40",
+      "raw_target_sha256": "ec8faf4aa74cada43cda67e2242a493fc09719a2a50ab498d657e493060c8969",
+      "translation": "Otsusta, kas muudatus mõjutab sinu ostu"
+    },
+    {
+      "source": "Find out which image is missing",
+      "source_sha256": "0f37ff1240851de8bfec55e53a205cd75bc8ecac7ad2e963530a7863e4f8165e",
+      "raw_target_sha256": "6538d0926975d8ca8e19cf1423d90985c392f7dc05700c5f0db27a373ac00ac6",
+      "translation": "Selgita välja, milline pilt puudub"
+    },
+    {
+      "source": "Read the complete option, including the suffix",
+      "source_sha256": "5867f36b3e655e2939414f94156095d6f091830fab9ef8cd305c4f20498fc6da",
+      "raw_target_sha256": "2e355261a3e872d041a011fb6c0a4a38d4bbcb313a5bda06e9adecb3754dc85c",
+      "translation": "Loe variandi nimetus lõpuni, ka tähed ja numbrid"
+    },
+    {
+      "source": "Check stock independently of the gallery",
+      "source_sha256": "956ee5f2ce4e93e2d6e2a54c1028cf4e76b19f2413b50417f8d67a23f24baf4c",
+      "raw_target_sha256": "a61dbad3237d7377f72069f2b6e431cbbcee5c8fc842a37eeac96d33f2334d77",
+      "translation": "Kontrolli laoseisu eraldi tootegaleriist"
+    },
+    {
+      "source": "Use other photographs for the details they actually show",
+      "source_sha256": "37b727ea20729c632c29ed061e750af320fe83d2daaf4d26300b62497dc8c8fe",
+      "raw_target_sha256": "5527cbc182fc08f71d76ef4b704b54ea5875e81fbeec1600f29703a4a990c7b0",
+      "translation": "Kasuta teisi fotosid ainult nähtavate detailide kontrollimiseks"
+    },
+    {
+      "source": "Compare shades under sensible conditions",
+      "source_sha256": "03d0bc2bd690d24fa99debfe9ef81b312f5531f9d3d86cc5db27918a7afca169",
+      "raw_target_sha256": "a3a41497961ff6cf6de711f02f9e0881a522e92a51cad08d576366f0465f9384",
+      "translation": "Võrdle värvitoone sarnastes tingimustes"
+    },
+    {
+      "source": "Make your purchase note unambiguous",
+      "source_sha256": "5e569cec62c9b1bbce06c81219b1dc451d3884688e7c58338d8b6ec20302fe94",
+      "raw_target_sha256": "355da0c074e47b2b0aadf0c8d61492d4f84f1e5839b1bf17846e5e790dbc8afa",
+      "translation": "Kirjuta ostujuhis, mida ei saa kahtmoodi mõista"
+    },
+    {
+      "source": "Review the received unit, then close the decision",
+      "source_sha256": "006ecf8b20eb0672d5796216f52fee00f41d1117d0487dc4f2158d8a52a3c35b",
+      "raw_target_sha256": "fdbe271f378d79886726626359cd73b77790bb12510a749f29998d5e45fa47ff",
+      "translation": "Kontrolli saabunud eset ja märgi tulemus üles"
+    },
+    {
+      "source": "Decide which destination the recipient needs",
+      "source_sha256": "f777115d9bb8bd7f56f3efe604866737de95f4730a8384591ff0aeef50cf48d5",
+      "raw_target_sha256": "297a692769e995904badeb48dfd1caabbcb443a704f0d359d1dac142374e3475",
+      "translation": "Mõtle läbi, millist linki saaja vajab"
+    },
+    {
+      "source": "Read the listing identity from the opened page",
+      "source_sha256": "8e7fbdee6f94e851828afd3373a32cb5c1866fb16787e5ce8a9776ffa059e11b",
+      "raw_target_sha256": "72e88510d5437abbb7dbe395d56ecf43baef6f5f0ae5b72df09adb9c159a90db",
+      "translation": "Tuvasta avatud lehel müügikuulutus"
+    },
+    {
+      "source": "Build a minimum option record",
+      "source_sha256": "25a9a740f3ac789ada44b1374d52b7b200c67cc0097c14a22ec2cdb0786ba3d0",
+      "raw_target_sha256": "f4411221ddb5a662cbe18bdcc608fb3a68b8ac94c2fec6801cd7bcc47f02425d",
+      "translation": "Pane kirja valitud variandi põhitunnused"
+    },
+    {
+      "source": "Test the link without your existing selection",
+      "source_sha256": "e0cdb1201f48c89fe964f24a11933ed9fece2404b3915d04137d737a44e1685e",
+      "raw_target_sha256": "bf637510f18a75806271363e0cbae36b532e43d498deae32220df7576bd75302",
+      "translation": "Ava link ilma varasema valikuta"
+    },
+    {
+      "source": "Keep the product identity through a change of agent",
+      "source_sha256": "3d723c05b39b3ca744e81891d98e8b44efdd7a31f2f0e44acb97a16b5381aefc",
+      "raw_target_sha256": "9d925daba9bd1c5886fe783fc45006bf67b6a8355b9961840921b3ed4b5bfb5b",
+      "translation": "Säilita toote tunnused ka ostuagenti vahetades"
+    },
+    {
+      "source": "Handle a changed or unavailable seller page",
+      "source_sha256": "12fa26d430f8a32a067e93499a1c86c247429f582e6686c73120cb133ef8e079",
+      "raw_target_sha256": "df80e9af0438ae438ac938b46577d4a58a39b28ab28a0d85e93a44a2c9999807",
+      "translation": "Mida teha, kui müüja leht muutus või pole enam saadaval"
+    },
+    {
+      "source": "Give the recipient a usable handoff",
+      "source_sha256": "43b939ab2988f8f815bd88a2f7f4962949c183c602d40a63145ea79d76f707b6",
+      "raw_target_sha256": "7c125918b2aa085fd0a3f350f308384d190b3f43c43a6e7ea8575ccf93db43ce",
+      "translation": "Lisa lingile andmed, mida saaja tegelikult vajab"
+    },
+    {
+      "source": "Pick a reference you actually wear",
+      "source_sha256": "ad15e89d88e2d50366adc1e6d3037fba4694d2b1016f26a607b96ffe64b1e116",
+      "raw_target_sha256": "6ae88f6d5f1589c62126db562a304620eb5f185fa387c88cae9097b9e5ad081a",
+      "translation": "Vali võrdluseks rõivas, mida kannad"
+    },
+    {
+      "source": "Identify garment dimensions and body recommendations",
+      "source_sha256": "5031a2b7f322e910d362cfca6b904f68f546c256237cbcb3e0ad4328fcd0a0b9",
+      "raw_target_sha256": "af89e0df0d8ed77495ffb3060caa1de42317d07030314531425f188b59cbf326",
+      "translation": "Erista rõiva mõõte soovitatud kehamõõtudest"
+    },
+    {
+      "source": "Match the length definition before comparing numbers",
+      "source_sha256": "03bacfdb1b8e9119c081f3b747ecb734754ceb6be0488786f228afd2def19a06",
+      "raw_target_sha256": "0957cadeebdc91b5e662509fb1ce153625d0e11dbc623a05503c179de6bc3953",
+      "translation": "Kontrolli enne võrdlust, kust pikkust mõõdeti"
+    },
+    {
+      "source": "Account for shoulder shape when comparing sleeves",
+      "source_sha256": "f7342f8aba5653196e500abbc156b59b5916abccff846df376cad1ccb4835512",
+      "raw_target_sha256": "b7862a9d4f13d0bf0621c9f55db2ac4f3a76f715f8428f6b1a8157f48ed45aba",
+      "translation": "Arvesta varrukaid võrreldes õla lõikega"
+    },
+    {
+      "source": "Read a set as two garments",
+      "source_sha256": "7e4a2444b9643dbb92fa55a1b322c0d9e7e6f20be0a4df20d26e0ef91ee80e77",
+      "raw_target_sha256": "a2c05df06f3c80647c84d6875879279034ded33132687f331b2f611a4e64bc6c",
+      "translation": "Võrdle komplekti kummagi rõiva mõõte eraldi"
+    },
+    {
+      "source": "Convert once and keep the original figures",
+      "source_sha256": "4bd5744845fd3465adcefea7821462f9ead2a852356b8bcc35af282d8eadfc2a",
+      "raw_target_sha256": "5f47ff16128a8c90c9254646b7695ffd4f81208f5795a719dea259cdc7a53832",
+      "translation": "Teisenda mõõdud üks kord ja säilita algsed arvud"
+    },
+    {
+      "source": "Write the buying decision while the charts are visible",
+      "source_sha256": "78e87c5e3d8a8fd2fcf3da32276e540b8d2fcea75a52596c47fb3a73821a1f4c",
+      "raw_target_sha256": "d73d2185e4ab875938612176313631e1f7596c61f3b7cfeb7f5ae81ea31d9e7c",
+      "translation": "Pane otsus kirja, kui suurustabelid on ees"
+    },
+    {
+      "source": "Begin with the object outline",
+      "source_sha256": "a7236602513c4fc9e04f80719e888170403001a169ff15fa50acdacddcf880fe",
+      "raw_target_sha256": "b6ccf43f4340c425b5c051395ff1aa0fdf97cea2b291ece3992156892b7f7d9d",
+      "translation": "Alusta eseme üldkujust"
+    },
+    {
+      "source": "Read option photographs as part of the selector",
+      "source_sha256": "2a7ea02206505c2a4ec308010ed4a98c1cce1209f003193196780d769c1304aa",
+      "raw_target_sha256": "1db771da965d4f182fd2e589ebdeaf2c2a4f627b71c66bd8b795f95b799aabbb",
+      "translation": "Seo variandifotod vastavate valikutega"
+    },
+    {
+      "source": "Work outward from a detail picture",
+      "source_sha256": "ffc34f27fc33b8a800a4d32fbad21230d0601a7c31c87d06ad9db967993247d2",
+      "raw_target_sha256": "1a04bd816103015f6e5ad1febc29cc2894ae396763489ba2dd1152cd374c9223",
+      "translation": "Vaata, kuidas lähivõtte detail sobitub tervikuga"
+    },
+    {
+      "source": "Identify graphics and diagrams",
+      "source_sha256": "979311541a068e8d65460080a689f5c6073e4bb206e425aa6f841613a6993ca2",
+      "raw_target_sha256": "6fdefc12802bc5e64e70768aabdbe21ba1bf5e817bc9ca12cf96f347b2471b33",
+      "translation": "Erista jooniseid ja skeeme fotodest"
+    },
+    {
+      "source": "Separate historical QC from seller presentation",
+      "source_sha256": "f26a626f23c69bf30beee17f4ec6d7e6203beceacdca32c325dd2f3313ecac92",
+      "raw_target_sha256": "1ea617e1d275f175720f1157b0f0894885a276e38282318c20ff5d1fa4ae1ee2",
+      "translation": "Erista varasemaid kontrollfotosid müüja tootepiltidest"
+    },
+    {
+      "source": "Make a contradiction list you can act on",
+      "source_sha256": "461e6a4d553629fe8cd8160f75698d092ba5ad752fe4845a762308f265d47147",
+      "raw_target_sha256": "b6f96e6f4cf33011e78f31755cb2d90873715798603f8e36950812e06b4233f3",
+      "translation": "Pane kirja vastuolud, mida saad täpsustada"
+    },
+    {
+      "source": "Use the gallery when the item arrives",
+      "source_sha256": "2afa99287e66681385ca66ca0cdb35e5fc553dde9fb7e1a8d56b425571e642db",
+      "raw_target_sha256": "2bf311027e57809e2e7efd1b334d6b7f8650123fdef13e14223f13671d6c3ab4",
+      "translation": "Võrdle saabunud eset galerii piltidega"
+    },
+    {
+      "source": "First establish when the problem became visible",
+      "source_sha256": "384fff32c479c46e98ad45e939bbbe938decba299eca03db66137418c2692834",
+      "raw_target_sha256": "b92484ed2bf49be961ac7a157f2bc791162f54e17860daebc0597011a48d7002",
+      "translation": "Tee kindlaks, millal kahjustus nähtavaks sai"
+    },
+    {
+      "source": "Preserve the relationship between item, box and protection",
+      "source_sha256": "1eb69a9c9ca71635079ecaf9fac15af236d7b942b7676a9292371484a38423e4",
+      "raw_target_sha256": "64e3efc0dfea1f7994d57527918233c8043b60642be771f0547acb1969975b46",
+      "translation": "Näita, kuidas ese oli kastis kaitstud"
+    },
+    {
+      "source": "Photograph the issue in context",
+      "source_sha256": "e7aa6e5a75d1785a54b85103952f486bfcdcaf58170f75b5adb22863d4580ef3",
+      "raw_target_sha256": "2cef45fb537aeeb296f3c0c374060e188f59fd4de4880e244d0dabf20ae530e2",
+      "translation": "Pildista kahjustust koos seda ümbritseva alaga"
+    },
+    {
+      "source": "Reconstruct the records before writing the request",
+      "source_sha256": "0e14992e695e08e2646a8f251b7ada852ad4bde090bf7afee988a6fb1ad7fb32",
+      "raw_target_sha256": "70a671dea7d78c262b9bd63aaf84e9cbcf30272793d8377cab2aa4d497600756",
+      "translation": "Taasta sündmuste käik enne pöördumise kirjutamist"
+    },
+    {
+      "source": "Write a short, specific first message",
+      "source_sha256": "923cc175166f8febe557405ccda9a31214fdbf12f8bc6ea48b75b0ae5615be6e",
+      "raw_target_sha256": "7fb6e23cbc1420f6e62c4547baef120ea1fac539053e3abb0a823275be381280",
+      "translation": "Kirjuta lühike ja konkreetne esimene sõnum"
+    },
+    {
+      "source": "Respond to follow-up requests without losing the original record",
+      "source_sha256": "00df895b24cee447901d88a448360cd8b023c53508c19562834ed55a81eddc52",
+      "raw_target_sha256": "6eaf598d4d21e6a945d46a1f07219755d2b606a3930ae700c6314e30564999c5",
+      "translation": "Vasta lisaküsimustele ja säilita algsed tõendid"
+    },
+    {
+      "source": "Close the file when the outcome is clear",
+      "source_sha256": "ea69793ac969d42e6b0a4a8d60e0965a1b89a50b2710a7b0a0b2be2cec7472e4",
+      "raw_target_sha256": "300dc751ab238c62e423eb93b014b266dfd17d7be939bd234c921f29eda6c427",
+      "translation": "Lõpeta juhtum, kui tulemus on selge"
+    },
+    {
+      "source": "Fix the purchase units before adding any delivery",
+      "source_sha256": "e865bf4275a86561127fd31359d81cb547159a7474b724eb0a6d3d2db59bc310",
+      "raw_target_sha256": "a3296365ecaffdcbdd76991e051a408a5af6e33403b44d6ddb00d68096e08c9a",
+      "translation": "Pane ostetavad ühikud paika enne tarnekulu lisamist"
+    },
+    {
+      "source": "Count seller-to-warehouse delivery once",
+      "source_sha256": "ddf1a2298a2eccf0f64f509be85f3436047dacc38d750b969ea71c146b161c05",
+      "raw_target_sha256": "9c6f8062ba4b8e4821c57f63084e1b1c0d22bea49a3f2217fe4344fc485c66bf",
+      "translation": "Arvesta tarne müüjalt lattu ainult üks kord"
+    },
+    {
+      "source": "Give the outbound parcel its own record",
+      "source_sha256": "48f0d27ea3973d05ff84cd2f3520ac9a18e939a65bf38a877a7682337528e91c",
+      "raw_target_sha256": "b70518359c8fa9579853271b9efe612ef40c71571929172c194ca9942a8a5833",
+      "translation": "Tee laost väljuvale pakile eraldi kirje"
+    },
+    {
+      "source": "Compare routes using the same parcel",
+      "source_sha256": "d5204af6f560c61aaa0a615cade4a1486671c241199c69f9ead3185e18f9015e",
+      "raw_target_sha256": "4dcb920ed68ac3bc21e4befe297ffa0f2ae71aabacbdcff0d027117ba2e1856f",
+      "translation": "Võrdle veoliine sama paki alusel"
+    },
+    {
+      "source": "Allocate a shared cost only when it answers a real question",
+      "source_sha256": "abcaa718073132a73d4560242f2fd61f4cccf73cc0b246bd35c773f41fe956d9",
+      "raw_target_sha256": "f3c6dfb6039e3996a113bcbedacc7986c2438f0aed44025cdccc06cc7cc0d101",
+      "translation": "Jaga ühist kulu ainult siis, kui jaotusel on eesmärk"
+    },
+    {
+      "source": "Handle currency without counting the conversion twice",
+      "source_sha256": "888951898d438fdc5bfed7d5b15fe64b6512b74022c3fb23140913f94a88b0f9",
+      "raw_target_sha256": "6749e347f17c77bbe72b59a8bda202bbaadaafaf767963ecc0fa84520bc3893c",
+      "translation": "Väldi valuuta kahekordset teisendamist"
+    },
+    {
+      "source": "Reconcile the estimate after the final payment",
+      "source_sha256": "99c90ce48f42931a483ea1c1430714d584df03c0791535fa154c2ec0fcc14a47",
+      "raw_target_sha256": "260a678be4733226d8cb6ce7f1880f10ec32d8c3f088b859a09c8ab9e93ade58",
+      "translation": "Võrdle lõpliku makse järel hinnangut tegeliku kuluga"
+    },
+    {
+      "source": "Make an inventory of shapes and surfaces",
+      "source_sha256": "d968c8627e82bcd9b25879aded6b1c23b92882272ca966574e65a99c54c810e4",
+      "raw_target_sha256": "a85c9610fa84eec343a118b83b9e9e9ba61e849b4adffee0e8165f07d0a6ae1f",
+      "translation": "Pane kirja esemete kuju ja pinnamaterjalid"
+    },
+    {
+      "source": "Look for conflicts between the items",
+      "source_sha256": "394cfc51f3fa372163e05ec779bc7432e2b252734cf74f722bccff042cf2865c",
+      "raw_target_sha256": "b24ce961904d6b8d70d39c97d2c560f44dd858b319debfae59fd63e08ea4e8fe",
+      "translation": "Kontrolli, kas esemed võivad üksteist kahjustada"
+    },
+    {
+      "source": "Work out which retail packaging does useful work",
+      "source_sha256": "7308fe61a4fa4c709c424f81054a5e33db8e101a9f7cc67e107f1b658d93b270",
+      "raw_target_sha256": "d6f04834365c2d259c1c45460df660054f436697c6118ac95551f9badc3f9dd3",
+      "translation": "Selgita välja, milline müügipakend eset kaitseb"
+    },
+    {
+      "source": "Compare two practical scenarios",
+      "source_sha256": "9adcde303dea66a6ac43dd9e01ffb75c51eacc283ed4100cd38856787b4b74cf",
+      "raw_target_sha256": "2b3241bf69e300f7e0cc95aa43c5644293b9c972d6d42d21dd68a86b27dc3a37",
+      "translation": "Võrdle kahte teostatavat pakkimisviisi"
+    },
+    {
+      "source": "Ask for the information that changes the choice",
+      "source_sha256": "601be7c231d5d417ec6847ceb2782e18fbf667e4a0f42a899cddc5e3ec52017d",
+      "raw_target_sha256": "b22971baeb72836f9770bc4f96c22a528d39cb60fc94fca5516bdf8d7758bb78",
+      "translation": "Küsi teavet, mis aitaks valikut teha"
+    },
+    {
+      "source": "Review the submission screen as a parcel",
+      "source_sha256": "bd6c9c9bd38cc26bc416451139ad9308bcdc265a859fc9db7b38aa8a23d53e60",
+      "raw_target_sha256": "b6c216648bc059724e5835264078af2dc266a67787c26d0693022a75c0f2f73a",
+      "translation": "Kontrolli enne kinnitamist kogu paki andmeid"
+    },
+    {
+      "source": "Keep a short unpacking record",
+      "source_sha256": "bcbc32b2c34fe0616e426c3e23cd3cc2acde1fc1701ea548524c9e178c6306b2",
+      "raw_target_sha256": "6bd258169a68c2c7ef1fdd25916e73aa649d2a2e5378c0979af3c5dcd9e73927",
+      "translation": "Tee lahtipakkimise ajal lühikesi märkmeid"
+    },
+    {
+      "source": "Start with the parcel you expected to receive",
+      "source_sha256": "f15023ac494212ebe5750b47126a309f97e2d50980ae42b69f49fd965ac7e5bf",
+      "raw_target_sha256": "779e8500d63ed1024288415d9499dfc6c26c51948bbc5cfc87e44e1b78cebce9",
+      "translation": "Alusta pakist, mille saabumist ootasid"
+    },
+    {
+      "source": "Copy the latest event in its original wording",
+      "source_sha256": "1b1377346cef1e8861099e8c5e5084a46514e61b7bc3a07594b4131080b8409f",
+      "raw_target_sha256": "b9c24b497350469d03d6b5d442bbe44a534ec67675845e687574fef67eb35cdc",
+      "translation": "Kopeeri viimane jälgimisteade algses sõnastuses"
+    },
+    {
+      "source": "Follow the handoff using the carrier's own description",
+      "source_sha256": "4194474e1280f1390ea9f6afab1e7a24c500b23b75d22ab1c465967a90a99fdb",
+      "raw_target_sha256": "d04ff03d16c6eb96a9798e254caad1b14a5723fe699d071329186b4c0735d726",
+      "translation": "Jälgi üleandmist vedaja enda kirjelduse põhjal"
+    },
+    {
+      "source": "Read the action requested by the latest status",
+      "source_sha256": "4e5f4e2bd1eefa0a74bd2ce056a250944095ed2a963a5ffee97c83fc646e2227",
+      "raw_target_sha256": "fd262cdccfef06d9d2d06f35a0741ef804154795e15e84de47063086d2abc608",
+      "translation": "Vaata, kas viimane teade nõuab sinult midagi"
+    },
+    {
+      "source": "Send an inquiry that can be followed from the first line",
+      "source_sha256": "27479e9d09cc28d63544513d1ecc6bba3a1bd58cf7596d20c62f228c75b1cbe6",
+      "raw_target_sha256": "4cf0a74e40a52ceb788fbad75022a54fd75c7ceefc7e39a88d681633fa7d2d8e",
+      "translation": "Alusta päringut andmetest, mille järgi saadetise leiab"
+    },
+    {
+      "source": "Close the timeline only when the outcome is clear",
+      "source_sha256": "6ca8e6c45a5349e28407767a53f88d5d008186e36a49f7866e8ca2544d9ab0af",
+      "raw_target_sha256": "1279ad66fa2ceb08c73875e2c665aace5c82013c4cbae340c395185a97581dc8",
+      "translation": "Lõpeta sündmuste ajajoon alles siis, kui tulemus on teada"
     }
   ]
 }

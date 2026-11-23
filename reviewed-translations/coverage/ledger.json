@@ -1,6 +1,6 @@
 {
   "required_editions": 289,
-  "reviewed_editions": 194,
+  "reviewed_editions": 199,
   "sites": {
     "bbdbuygrid-com": {
       "required": 23,
@@ -499,9 +499,9 @@
         },
         "id": {
           "entries": 326,
-          "replacements": 238,
+          "replacements": 280,
           "reviewed_findings": 15,
-          "effective_sha256": "f6885d985fa3b4ff1b63c18900046ab186dc09ce870a70a164d219346a80f10d"
+          "effective_sha256": "d1b63033fdb5ce93cd61908813bccfd80e0ba68077df7f703c7b1fdc739f02fa"
         },
         "it": {
           "entries": 326,
@@ -565,9 +565,9 @@
         },
         "vi": {
           "entries": 326,
-          "replacements": 232,
+          "replacements": 281,
           "reviewed_findings": 4,
-          "effective_sha256": "63c89ccbb8b869c4b6c1e92b5f800f9ebba01ab54a7abe02df7f177c8acf1b33"
+          "effective_sha256": "796d9319a7e309266f81f6ffb76f19b5b1c7625f46b58c66bc83ff84a0d8fa71"
         },
         "zh": {
           "entries": 326,
@@ -1051,9 +1051,9 @@
         },
         "et": {
           "entries": 281,
-          "replacements": 84,
+          "replacements": 153,
           "reviewed_findings": 7,
-          "effective_sha256": "bee3a8e529f5c2122a885103e21d2da9316bf24b93ebcf81e454ae75f73c3c58"
+          "effective_sha256": "b0df5dbfe2b7b0356a6b80cd3d2cfa543b5ef4890b16cc1030a0aee176ed55c7"
         },
         "fi": {
           "entries": 281,
@@ -1153,15 +1153,21 @@
         },
         "sl": {
           "entries": 281,
-          "replacements": 84,
+          "replacements": 153,
           "reviewed_findings": 9,
-          "effective_sha256": "8988fbbdc2a2df10ac1c5ef6597324a979411b266d127fc09fee0ceec9cb1ce8"
+          "effective_sha256": "49c1f9e761896c3f11463a44d008b736404fe4b1ba686b266a68a4c83c2096bf"
         },
         "sv": {
           "entries": 281,
           "replacements": 146,
           "reviewed_findings": 3,
           "effective_sha256": "937f848fc908907815607d84b8e277d7c9b2f3436dc1aed3b7372dc78459c95a"
+        },
+        "vi": {
+          "entries": 281,
+          "replacements": 280,
+          "reviewed_findings": 1,
+          "effective_sha256": "a15d525bc4a56a8cf284c013651c0be1d099cd328973f5ad48e2cd8212d7bc24"
         },
         "zh": {
           "entries": 281,
@@ -1172,13 +1178,30 @@
       },
       "pending": [
         "id",
-        "th",
-        "vi"
+        "th"
       ]
     },
     "orientdiggrid-com": {
       "required": 23,
       "reviewed": {
+        "bg": {
+          "entries": 295,
+          "replacements": 105,
+          "reviewed_findings": 58,
+          "effective_sha256": "d7aeed0cf965b0ec9784352a6b44d64c95790e79b2d57fe3de469214998c8df9"
+        },
+        "cs": {
+          "entries": 295,
+          "replacements": 65,
+          "reviewed_findings": 1,
+          "effective_sha256": "c8b7a9181e67279127a728bced10a6dd2fad044f96827d7240b288a5e4bed305"
+        },
+        "da": {
+          "entries": 295,
+          "replacements": 65,
+          "reviewed_findings": 0,
+          "effective_sha256": "1bb79ba6d34a910ba5b4d4183fb402dbeca57ef2ece07f2f6ba4feca61b29eb9"
+        },
         "es": {
           "entries": 295,
           "replacements": 39,
@@ -1215,6 +1238,12 @@
           "reviewed_findings": 0,
           "effective_sha256": "c9783ce71dddf8e7d0d8abee6125e5fbc4d791a4177dd44ecb7ac480c8220fa4"
         },
+        "ro": {
+          "entries": 295,
+          "replacements": 65,
+          "reviewed_findings": 0,
+          "effective_sha256": "4fd5be5bc6446c05021165cdf5c68eb0418502923266bd5bd1c6811d547c5d96"
+        },
         "zh": {
           "entries": 295,
           "replacements": 294,
@@ -1223,9 +1252,6 @@
         }
       },
       "pending": [
-        "bg",
-        "cs",
-        "da",
         "de",
         "el",
         "hr",
@@ -1234,7 +1260,6 @@
         "ja",
         "ko",
         "nl",
-        "ro",
         "sk",
         "sv",
         "th",
