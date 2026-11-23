@@ -1,0 +1,44 @@
+# Só parte do pedido da CNShopper chegou: como identificar os itens que faltam
+Uma imagem do armazém mostrando um produto não significa automaticamente que o vendedor enviou apenas um. Outras peças podem estar em um segundo pacote doméstico, dentro da mesma caixa, listadas em um registro de armazém diferente para um item individual ou ausentes da remessa. Estabeleça o conteúdo esperado e a evidência para cada entrega física antes de decidir qual pergunta pertence ao vendedor e qual ao armazém.
+
+## Comece com o que você realmente pediu
+Abra o registro de compra aceita. Identifique cada opção e sua quantidade encomendada, em seguida, liste os componentes físicos incluídos em cada opção. A mesma fotografia do produto pode ilustrar um conjunto completo e peças separadas. Se você comprou "apenas o top", um par de calças faltando não é uma escassez de estoque, mesmo quando a foto principal do vendedor exibe uma roupa completa.
+
+Considere um pedido de papelaria contendo dois estojos e um kit de recarga. O kit inclui três recargas de acordo com a opção paga. Sua compra, portanto, tem três unidades encomendadas e cinco peças físicas principais. Um vendedor pode embalar as recargas dentro de um estojo, colocá-las em uma capa separada ou enviá-las mais tarde. Mantenha a contagem física esperada ao lado das unidades do pedido para que um registro de armazém para um item individual que indica um kit possa ser interpretado corretamente.
+
+## Pergunte o que o vendedor enviou sob cada número
+Encontre cada número de operadora doméstica associado à compra. Um pedido do vendedor pode gerar mais de uma carta de porte se o estoque for dividido entre locais ou enviado em horários diferentes. Uma etiqueta de substituição também pode criar um segundo número sem uma segunda encomenda física. Procure eventos de coleta e movimentação e pergunte ao vendedor quais números foram realmente usados quando o registro não estiver claro.
+
+Escreva uma linha para cada carta de porte com a transportadora, o último evento e o conteúdo que o vendedor diz que contém. Deixe o conteúdo desconhecido se o vendedor não o tiver confirmado. O peso de um pacote pequeno não pode estabelecer que ele contém as recargas em vez de um estojo vazio. Adivinhar a alocação pode parecer eficiente até que os palpites entrem em conflito com as imagens do armazém e enviem a investigação para a caixa errada.
+
+## Dê a cada estágio seu próprio status
+O guia de rastreamento da CNShopper descreve o envio do vendedor, a chegada ao armazém, a correspondência com um pedido, a inspeção e a subsequente entrega internacional como etapas separadas. Uma transportadora pode relatar uma entrega antes que você possa identificar seus bens armazenados. Por outro lado, um item no armazém pode estar pronto para revisão enquanto outra caixa da mesma compra permanece em trânsito. Marque esses estados de forma independente.
+
+Para o exemplo de papelaria, suponha que a guia de transporte A mostre a entrega e uma imagem do armazém mostre claramente um estojo de lápis. A carta de porte B mostra coleta sem entrega. Você pode dizer que um caso é contabilizado visualmente e outro pacote doméstico está se movendo. Você ainda não pode concluir que uma caixa e um kit de recarga foram perdidos. A próxima pergunta útil é o que a caixa do vendedor B contém e se a primeira caixa tem peças menores embaladas dentro.
+
+## Inspecione a entrada correta sem sobre-interpretar uma fotografia
+Combine a referência do armazém, a etiqueta da opção, a cor e a contagem com as peças esperadas. Inspecione todo o grupo de fotos quando disponível. Uma fotografia de um recipiente fechado estabelece pouco sobre os acessórios dentro. Uma foto mostrando um estojo de lápis aberto e recargas envolvidas pode suportar uma contagem se as peças forem visíveis o suficiente para distingui-las. Descreva exatamente o que a imagem confirma.
+
+Se a parte crítica estiver oculta, solicite uma verificação direcionada sujeita aos serviços disponíveis. “Para o estojo azul marinho na entrada X, verifique se o kit de recarga encomendado separadamente está dentro do bolso com zíper” é específico. Um pedido para uma nova vista frontal do caso fechado provavelmente repetirá informações que você já tem. Indique se a abertura de embalagens de varejo seladas é aceitável antes de assumir que a equipe pode expor todas as partes.
+
+## Distinguir três discrepâncias comuns
+A primeira é uma diferença de tempo: uma das várias encomendas conhecidas não chegou. Continue rastreando esse número de operadora específico. A segunda é uma diferença de identidade: o pacote chegou, mas a descrição ou referência do armazém é difícil de combinar. Forneça a evidência do vendedor e da transportadora ao CNShopper. A terceira é uma diferença de conteúdo: a caixa relevante é identificada, mas um componente comprado está ausente do conteúdo registrado. Peça uma verificação do conteúdo e compare-a com a declaração de embalagem do comerciante.
+
+Esses resultados podem coexistir. A primeira caixa pode conter o estojo correto, mas a cor errada, enquanto a segunda ainda está em trânsito. Registre o problema de cor visível separadamente da questão de falta de chegada. Resolver um não resolverá o outro. Se você relatar o pedido inteiro como simplesmente incompleto, o suporte pode responder a pergunta da transportadora e perder o fato de que um item visível pode exigir ação antes do envio.
+
+## Decida se a expedição parcial serve ao seu propósito
+Depois de identificar as unidades chegadas, decida se você precisa delas juntas. Dois presentes independentes podem ser úteis em linhas de tempo diferentes. Um estojo encomendado especificamente para conter as ferramentas em falta pode não ser adequado para enviar sem elas. Considere qualquer recurso relevante do vendedor, condições de armazenamento em armazém, requisitos de embalagem e opções reais de pacote antes de selecionar as entradas disponíveis para entrega internacional.
+
+Compare as alternativas completas. Uma cotação para as peças atuais não representa o custo de envio das peças posteriores separadamente. Uma cotação combinada futura também pode mudar quando todas as dimensões são conhecidas. Registre o cenário escolhido como “enviar item confirmado agora; itens restantes retidos para entrada” ou “aguardar todas as peças correspondentes”. Essa formulação impede que um leitor posterior assuma que todos os itens da compra original estavam dentro do primeiro pacote sendo enviado do armazém para o cliente.
+
+## Montar uma pequena mensagem de exceção
+Comece com a referência do pedido e uma descrição de uma frase do que foi comprado. Adicione o número da transportadora relevante, o evento de entrega atual, o registro de armazém para um item individual e a unidade exata ainda em questão. Explique quais unidades você já combinou. Anexe a confirmação do pedido e a imagem ou a resposta do comerciante que demonstre a discrepância. Várias capturas de tela são úteis apenas se cada uma contribuir com um fato diferente.
+
+Um exemplo é: “O pedido era para dois estojos e um kit de recarga de três peças. Um caso é visível sob a entrada X. O vendedor diz que o kit viajou sob a carta de porte A com essa caixa, enquanto a segunda caixa está na carta de porte B. Você pode verificar se a bolsa de recarga foi registrada dentro da entrada X?” Adicione as referências reais em particular. Essa mensagem solicita ao armazém que verifique uma reclamação específica sem pedir que ele explique uma segunda caixa que não chegou.
+
+## Confira a compra primeiro por unidade e depois por encomenda
+Quando outro registro de armazém para um item individual aparecer, compare-o com a lista pendente em vez de reiniciar a investigação. Se a segunda caixa chegar e seu bolso contiver as recargas, atualize a contagem física e a suposição de embalagem anterior do vendedor. Mantenha a correção datada. Se as recargas permanecerem ausentes e todas as caixas domésticas tiverem sido verificadas, você agora terá uma base mais precisa para um inquérito pós-venda.
+
+Termine mapeando cada unidade aceita para uma referência de armazém e, mais tarde, para seu pacote sendo enviado do armazém para o cliente. Um produto pode ser encomendado, recebido, inspecionado e enviado em quatro datas diferentes. Manter essas datas e contagens separadas permite que você diga exatamente onde algo está faltando. Também impede que uma entrega dividida normal se transforme em uma reclamação desnecessária, preservando a evidência necessária se a escassez for real.
+
+Quando liberar os primeiros itens para envio, salve a lista exata que você selecionou. Mais tarde, a conta pode mostrar um pacote internacional entregue ao lado de um item de armazém recém-chegado da mesma compra original. Uma seleção salva permite que você reconheça isso como o resultado que você escolheu. Isso também impede que você denuncie o item posterior como faltando de um pacote que nunca deveria conter ele.

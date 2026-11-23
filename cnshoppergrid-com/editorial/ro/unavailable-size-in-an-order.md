@@ -1,0 +1,44 @@
+# Mărime indisponibilă la CNShopper: cum verifici alternativa înainte să o accepți
+O dimensiune selectată poate dispărea între salvarea unui element de foaie de calcul și solicitarea unui agent să-l cumpere. Răspunsul util depinde de ceea ce lipsește: vânzătorul poate fi epuizat, selectorul importat poate omite o opțiune validă sau două sisteme de mărimi pot fi afișate diferit. Stabiliți ce situație se aplică înainte de a accepta o altă dimensiune sau de a spune cumpărătorului să anuleze.
+
+## Recreaţi combinaţia exactă
+Reveniți la listarea curentă a vânzătorului. Selectați mai întâi culoarea, modelul sau croiala dorită, apoi verificați mărimile pentru acea combinație. Un model mediu disponibil într-o croială albastră normală nu înseamnă că este disponibil un model mediu într-o croială scurtă neagră. Salvați textul complet al opțiunii originale și vizualizarea curentă. Comparaţi-l cu nota anterioară şi cu comanda pe care aţi trimis-o.
+
+Dacă dimensiunea apare pe pagina vânzătorului, dar lipsește din ecranul de achiziție importat, raportați discrepanța cu linkul vânzătorului și două capturi de ecran clare. Întrebați dacă opțiunea exactă poate fi confirmată. În cazul în care este absent din ambele ecrane, întrebați comerciantul despre disponibilitate prin intermediul canalului corespunzător. O estimare a vânzătorului pentru o reaprovizionare viitoare este diferită de o unitate confirmată disponibilă pentru achiziționare acum. Înregistrează ce fel de răspuns ai primit.
+
+## Identificați cerința de potrivire din spatele etichetei
+O etichetă precum M sau EU 42 este o prescurtare; nu descrie toate dimensiunile relevante. Determinați ce a făcut dimensiunea originală atractivă. Pentru pantaloni, este posibil să aveți nevoie de o anumită gamă de talie, creștere, lățimea coapsei și cusătură. Pentru o cămașă, lățimea pieptului, poziția umerilor, lungimea mânecii și lungimea totală pot conta independent. Notați măsura limită, mai degrabă decât să presupuneți că o mărime în sus sau în jos va funcționa.
+
+Alegeți un articol de îmbrăcăminte de comparație cu o construcție similară, care se potrivește pentru aceeași utilizare. Un pulover liber pentru stratificare și o jachetă croită purtată peste o cămașă nu servesc drept linii de bază interschimbabile. Așezați articolul de îmbrăcăminte de comparație conform instrucțiunilor diagramei vânzătorului și înregistrați unitățile și punctele finale. O circumferință a taliei dintr-un tabel de mărimi nu poate fi comparată direct cu o lățime plată relaxată fără a verifica modul în care ambele au fost măsurate.
+
+## Confirmați ce este de fapt alternativa propusă
+Cereți opțiunea exactă a vânzătorului, nu doar cuvintele traduse „dimensiune similară”. O înlocuire propusă ar putea fi următoarea dimensiune a aceluiași articol de îmbrăcăminte, aceeași etichetă într-o altă croială, o culoare diferită care rămâne în stoc sau o listă complet diferită. Fiecare necesită o comparație diferită. Dacă vânzătorul oferă un înlocuitor dintr-o altă listă, obțineți propriul său grafic, fotografii, preț și condiții.
+
+Să presupunem că jacheta în mărimea M, varianta scurtă, nu este disponibilă. Alternativele sunt M de lungime standard și L de lungime scurtă. M standard poate păstra o lățime similară la piept, dar poate fi mai lungă. L scurtă poate păstra lungimea dorită, dar poate fi mai lată la piept și la umeri. Niciuna nu este întotdeauna cea mai apropiată. Stabilește ce măsuri trebuie păstrate și compară ambele variante cu acestea. Dacă lipsesc dimensiunile necesare, nu se poate recomanda cu certitudine o mărime.
+
+## Citește tabelele de mărimi ca măsurători, nu ca tabele de conversie
+Căutați metoda de măsurare, unitățile, poziția articolului de îmbrăcăminte și dacă numerele descriu articolul sau purtătorul. O diagramă a corpului care arată măsura recomandată în jurul pieptului persoanei are o semnificație diferită de circumferința reală a articolului de îmbrăcăminte finit. O talie elastică măsurată plată și relaxată poate diferi substanțial de lățimea sa întinsă. Cereți clarificări atunci când un termen precum „talie” apare fără o diagramă.
+
+Să presupunem că geaca ta, întinsă pe o suprafață plană, măsoară 54 cm între cele două cusături de la subraț. În tabelul vânzătorului apare „bust: 108”. Măsurile pot corespunde dacă 108 este circumferința completă a gecii măsurată la aceeași înălțime. Dacă valoarea indică circumferința recomandată a toracelui persoanei care o poartă, comparația poate fi greșită. Calculul îți arată ce trebuie să întrebi. Croiala, forma mânecilor și materialul influențează și ele potrivirea.
+
+## Decideți dacă o măsurătoare vă poate schimba răspunsul
+Dacă vânzătorul poate oferi o măsurătoare înainte de cumpărare, identificați unul sau două detalii care ar rezolva incertitudinea. „Care sunt toate dimensiunile?” poate genera o altă diagramă generică. „Pentru pantalonii scurți mari în negru, care este lungimea din centrul spatelui de la cusătura gulerului până la tiv?” identifică o opțiune și o măsurătoare exactă. Întrebați dacă stocul curent este versiunea reprezentată de grafic.
+
+Dacă singura măsurătoare disponibilă vine după intrarea în depozit, decideți dacă riscul de achiziție și condițiile actuale de returnare sunt acceptabile înainte de a comanda. CNShopper descrie fotografiile depozitului ca o revizuire vizuală și notează că inspecția suplimentară poate depinde de disponibilitate. O așteptare ca fotografiile ulterioare să răspundă la întrebarea dvs. nu este același lucru cu un angajament confirmat al vânzătorului de a furniza o dimensiune adecvată sau de a accepta un retur.
+
+## Oferiți cumpărătorului o decizie explicită
+Odată ce ați ales, trimiteți o instrucțiune care numește comanda inițială și acțiunea precisă. Dacă acceptați substitutul, specificați opțiunea vânzătorului de înlocuire, cantitatea, prețul confirmat și orice condiție necesară. Dacă o refuzați, spuneți dacă doriți ca comanda să fie reținută pentru clarificare sau anulată în funcție de opțiunile disponibile efectiv. Evitați să amestecați „încercați cea mare” cu „cumpărați numai cea medie” în același mesaj.
+
+De exemplu, „Pantalonul scurt negru M solicitat nu este disponibil. Vă rugăm să comandați scurt negru L numai dacă vânzătorul confirmă lungimea spatelui la măsura convenită. Dacă depășește această cifră, contactați-mă înainte de achiziție.” Dacă nu doriți o achiziție condiționată, utilizați o decizie mai simplă și așteptați mai întâi răspunsul. Păstrați confirmarea cumpărătorului alături de mesajul dvs., astfel încât să fie clar ce instrucțiune a fost acceptată.
+
+## Comparați articolul din depozit cu comanda revizuită
+La recepția în depozit, verifică varianta de înlocuire pe care ai acceptat-o, nu doar primul articol salvat în tabel. Dacă ai aprobat varianta scurtă în L, eticheta L poate fi corectă chiar dacă inițial voiai M. Eticheta singură nu confirmă însă croiala sau dimensiunea care a justificat schimbarea. Dacă serviciul permite, solicită imaginea care clarifică aspectul rămas în discuție.
+
+Păstrați fotografia legată de comanda specifică. Două jachete negre fotografiate pe aceeași suprafață pot fi ușor de confundat. Căutați eticheta opțiunii, o vedere de ansamblu și măsura relevantă. Dacă elementul primit diferă de confirmarea revizuită, descrieți această diferență exactă pentru a sprijini în timp ce unitatea este disponibilă pentru inspecție. Solicitarea inițială și înlocuirea acceptată furnizează contextul pentru discrepanță.
+
+## Păstrați rezultatul original pentru achizițiile viitoare
+Păstrează un rezultat scurt, de exemplu „M scurtă indisponibilă; am acceptat L scurtă după verificarea lungimii spatelui; am notat măsurătoarea reală din depozit”. Dacă ai refuzat înlocuirea, notează motivul, cum ar fi lungimea prea mare sau înălțimea nepotrivită a șezutului la pantaloni. Notele ajută la achizițiile viitoare de la același vânzător fără a presupune că etichetele de mărime înseamnă același lucru în toate magazinele.
+
+Decizia este completă atunci când puteți identifica opțiunea disponibilă efectivă, explicați de ce măsurătorile sale satisfac sau nu nevoile dvs. și indicați instrucțiunile primite de cumpărător. O mărime diferită poate fi rezonabilă, dar adecvarea sa ar trebui să rezulte din articolul de îmbrăcăminte și din utilizarea pe care o aveți în vedere. Nu ar trebui să depindă niciodată numai de o literă familiară, o miniatură similară sau o sugestie grăbită pentru a alege următoarea opțiune.
+
+Păstrați o înregistrare a opțiunii pe care ați refuzat-o, precum și pe cea pe care ați aprobat-o. Dacă un vânzător oferă atât o culoare diferită în mărimea solicitată, cât și culoarea solicitată într-o mărime diferită, un răspuns referitor la „a doua opțiune” poate deveni neclar atunci când mesajele sunt traduse sau redirecționate. Repetați culoarea, dimensiunea și modelul acceptat în întregime și solicitați confirmarea pe linia de achiziție afectată.

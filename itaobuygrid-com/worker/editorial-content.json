@@ -243,7 +243,7 @@
           [
             "Test an apparent price difference with a controlled example",
             [
-              "Imagine that two screenshots show 12.00 and 12.80 in your preferred currency. You cannot conclude that the second has a worse exchange rate from those figures alone. First inspect the seller price on both. If the first includes 96 yuan of goods and the second includes the same goods plus eight yuan of domestic postage, the higher amount can result from scope even when both use an identical rate. Recalculate from the original components before comparing the conversions themselves.",
+              "Suppose two checkout screenshots show 12.00 and 13.00 in your chosen currency. The higher total alone does not establish that the second checkout used a worse exchange rate. First check the amounts in yuan. At eight yuan per currency unit, goods worth 96 yuan convert to 12.00. If the second checkout also includes eight yuan of domestic postage, the same rate converts the new total to 13.00. Compare like-for-like components before drawing a conclusion about the rate.",
               "Next hold the original subtotal constant. With a 96-yuan purchase converted to 12 units, the implied rate is eight yuan per unit. The same 96 yuan converted to 12.80 implies 7.5 yuan per unit, provided no additional amount is bundled into either figure. That proviso is important. An apparent implied rate can absorb a service or payment charge if the screen combines entries. Call it a comparison of effective totals until the checkout explicitly identifies how the amounts are calculated."
             ]
           ],

@@ -1,0 +1,45 @@
+# Een CNShopper-bestelling volgen van aankoop tot bezorging
+
+Een ordertijdlijn begint zin te krijgen als je vraagt welk object elke update beschrijft. Een inkoopagent kan meerdere producten namens u inkopen. Een verkoper kan meerdere dozen verzenden voor één aankoop. Het magazijn kan geselecteerde artikelen combineren tot een nieuw internationaal pakket. De traceringsgebeurtenissen voor die objecten behoren tot verschillende records. De officiële bestelgids en trackinginformatie van CNShopper beschrijft de reis door de aankoop, het magazijn en de verzending. Gebruik deze stadia om de laatst bevestigde gebeurtenis voor het specifieke item dat u belangrijk vindt te vinden.
+
+## Begin met de vraag die de tijdlijn moet beantwoorden
+
+Stel dat je een blauw overhemd en een opvouwbare tas hebt besteld. Het shirt is in je magazijnvoorraad verschenen en de tas verschijnt nog steeds onder bestellingen. Uw praktische vraag is of de zak het magazijn heeft bereikt. Een leveringsmelding op je telefoon kan alleen voor het shirt gelden. Open de aankoopregel van de tas en noteer de verkoper, variant, hoeveelheid en bestel-id. Volg elk trackingnummer voor de zending binnen het land dat aan die regel is gekoppeld. Controleer of het shirt hetzelfde nummer heeft voordat u de melding behandelt als bewijs van beide items.
+
+Schrijf de laatste gebeurtenis als een volledige zin met een onderwerp. “De verkoper heeft een binnenlands verzendnummer voor de tas opgegeven” registreert precies wat u weet. “Het is verzonden” laat ruimte voor drie interpretaties, waaronder dat de agent uw internationale pakket heeft verzonden. Houd deze discipline aan als je iemand anders vraagt om de status te controleren. Een korte zin geeft een ondersteuningsmedewerker vaak meer informatie dan een screenshot waarbij de identificatie, de vervoerder en de productlijn buiten het scherm staan.
+
+## Een geslaagde betaling scheiden van een voltooide aankoop
+
+Een betalingsrecord vertelt u dat er een transactie heeft plaatsgevonden in uw account. Bekijk de afzonderlijke aankoopregels om te zien of de geselecteerde verkopersoptie daadwerkelijk is besteld. Een agent kan verduidelijking nodig hebben over een kleur, maat, hoeveelheid of gewijzigde prijs. Lees berichten die bij de bestelling zijn gevoegd, zelfs als het rekeningsaldo en het betalingsrecord correct lijken. Als een antwoord vereist is, voeg dan de volledige optietekst toe en geef aan wat er moet gebeuren als de verkoper de optie niet langer aanbiedt.
+
+Verschillende lijnen in dezelfde transactie kunnen onafhankelijk van elkaar verlopen. Zet de verkoper en de orderreferentie naast elke regel in uw notities. Twee identieke hoeden uit verschillende winkels kunnen voor afzonderlijke artikelen een aparte aankoopgeschiedenis, binnenlandse verzendingen en magazijngegevens hebben. Als een regel wordt geannuleerd, slaat u de bijbehorende kennisgeving op en vergelijkt u het bedrag en de valuta met de vermelding van die specifieke aankoop. De betaling voor het oorspronkelijke mandje kan zichtbaar blijven, zelfs nadat de afzonderlijke lijnen in verschillende richtingen zijn gegaan.
+
+## Volg binnenlandse tracking naar het eindpunt
+
+Nadat de verkoper de zending aan een binnenlandse vervoerder heeft gegeven, is de bestemming op die vrachtbrief het ontvangstadres in China. Een gebeurtenis van de vervoerder waarbij de levering op dat adres wordt weergegeven, markeert het eindpunt van de binnenlandse reis. Het volgende bewijs dat u nodig hebt, komt uit het ontvangende magazijn. Het personeel moet een pakket kunnen koppelen aan uw aankoop voordat u het bijbehorende item in uw account kunt inspecteren. Zoek naar een nieuw magazijnrecord voor een afzonderlijk item en vergelijk de foto's en hoeveelheid met de verwachte aankoop.
+
+Als de binnenlandse tijdlijn is gestopt, identificeer dan de laatste gebeurtenis en de uitgever ervan. Een vrachtbrief gemaakt door een verkoper, een afhaalscan door de vervoerder en een leveringsscan zijn verschillende waarnemingen. Kopieer de exacte tekst, de weergegeven tijd en het trackingnummer. Vraag of de verkoper het pakket aan de vervoerder heeft overhandigd als het afhalen een open vraag is. Vraag de agent om de ontvangst te controleren op de vrachtbrief als de levering al is geregistreerd. Dit leidt het onderzoek naar degene die het volgende feit kan vaststellen.
+
+## Lees het magazijnrecord naast de aankoop
+
+Inventarisatie geeft je de kans om te bevestigen wat er is aangekomen. Controleer het aantal eenheden en de opties zichtbaar in de foto's. Een foto van een gelabelde verzegelde verpakking kan een maatcode tonen en de inhoud nog steeds onzichtbaar laten. Maak een specifiek verzoek als de ontbrekende waarneming bepaalt of je het item zou houden. Vraag bijvoorbeeld om een duidelijk zicht op het maatlabel op het kledingstuk voor de geïdentificeerde magazijnregel. Controleer eventuele servicekosten en of het verzoek beschikbaar is voordat u het goedkeurt.
+
+Als u om twee eenheden hebt gevraagd en er slechts één ziet, controleert u de aankoopregel en de binnenlandse vrachtbrieven voordat u iets samenvoegt. Een tweede doos kan afzonderlijk reizen, of de ontbrekende eenheid kan naast de eerste verpakt zijn. Vermeld welke mogelijkheden open blijven wanneer je naar support schrijft. Bewaar de originele magazijnfoto’s met de referentie, zodat latere verpakkings- en verzendupdates het niet moeilijk maken om uit te leggen wat er bij inname zichtbaar was.
+
+## Overschakelen naar de internationale pakketreferentie
+
+Wanneer u artikelen uit het magazijn verzendt, kan een nieuw pakket artikelen van meerdere aankopen bevatten. Noteer de pakketreferentie naast de artikelen die je daadwerkelijk hebt meegenomen. Artikelen die nog in opslag zijn, behouden hun magazijngegevens. Als u vervolgens een andere bestelling aan uw account toevoegt, stelt de verschijning ervan in hetzelfde account niet vast dat deze is toegevoegd aan het ingediende pakket. Gebruik de opgeslagen inhoud van het pakket en de verpakkingsinformatie om te bepalen welke goederen de uitgaande zending vertegenwoordigt.
+
+Een pakketlevering of een betaalde vrachtkosten kunnen voorafgaan aan de fysieke ophaling. Open het verzendrecord om de gekozen service en het bijbehorende trackingnummer te vinden, indien beschikbaar. Raadpleeg de eigen trackingpagina van die service voor de beweging die aan dit been is gekoppeld. Als de pagina geen evenement heeft, controleer dan of u het uitgaande nummer hebt gekopieerd en of u de aangegeven service hebt geselecteerd. Het kopiëren van een binnenlands nummer naar het formulier van een internationale vervoerder is een eenvoudige manier om een routinematige discrepantie in records om te zetten in een schijnbaar ontbrekend pakket.
+
+## Interpreteer een overdracht tussen vervoerders
+
+Sommige diensten geven een andere trackingreferentie weer zodra een bestemmingspartner het overneemt. Zoek in de verzendgegevens naar een genoemde partner of een gekoppeld nummer. Noteer waar die informatie vandaan kwam, zodat je de twee geschiedenissen later kunt verbinden. Vergelijk datums met de vermelde locaties en tijdzones. Een update die in een land wordt verwerkt, kan in een andere volgorde verschijnen dan een update die lokaal wordt geregistreerd, vooral als het systeem meerdere gebeurtenissen tegelijk importeert.
+
+Als de meest recente gebeurtenis aangeeft dat er een afleverpoging is gedaan, controleert u de daadwerkelijke kennisgeving van de vervoerder voor de volgende actie en de adresgegevens die deze kan weergeven. Een huisgenoot, de receptie of een pakketkluis kan informatie bevatten die de inkoper niet kan zien. Gebruik de officiële accountpagina's of de websites van de vervoerder om het pakket op te zoeken. Geef bij het aanvragen van een tracering de traceringsreferentie op via het juiste privé-ondersteuningskanaal en houd persoonlijke adresgegevens uit openbare screenshots.
+
+## Sluit de tijdlijn met een waarneembaar resultaat
+
+Vergelijk bij ontvangst de inhoud met het uitgaande verpakkingsrecord en vergelijk vervolgens elk item met het aankoop- en magazijnrecord voor een afzonderlijk item. Deze vergelijking in twee stappen is van belang wanneer u bewust slechts een deel van een bestelling hebt verzonden. Als er iets ontbreekt, identificeer dan het vroegste record waar de verwachte hoeveelheid en de waargenomen hoeveelheid verschillen. Een invoerfoto met twee eenheden en een verpakkingsrecord met één item wijst op een andere vraag dan een magazijnrecord voor een afzonderlijk item dat altijd één item bevatte.
+
+Houd een korte afsluitende notitie bij met de relevante referenties, de observatie en eventuele onopgeloste actie. Een notitie die zegt “tas ontvangen, shirt bleef naar keuze in opslag” behoudt een beslissing die een leveringsscan nooit zou kunnen vastleggen. Als het pakket een probleem heeft, verplaatst u het bewijs naar een after-sales-verzoek en stelt u één concrete vraag over de getroffen regel. De tijdlijn doet dan zijn meest waardevolle werk. Het laat de volgende persoon precies zien waar een geverifieerde reeks eindigde en wat er nog moet worden gecontroleerd.

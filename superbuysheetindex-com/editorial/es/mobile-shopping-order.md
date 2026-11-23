@@ -1,0 +1,44 @@
+# Superbuy en el móvil: cómo comprobar la variante que aparece en el pedido
+Una pantalla móvil hace que sea fácil guardar una fotografía y difícil ver la compra completa en una vista. La imagen, variante seleccionada, cantidad y precio pueden aparecer en paneles separados. La guía de la aplicación de Superbuy describe cómo encontrar un producto, seleccionar sus opciones y pedirle al agente que lo compre. Usa esas etapas como puntos de control. El objetivo es llevar tu selección deseada desde el anuncio del vendedor hasta el pedido pagado.
+
+## Comience con una referencia de producto recuperable
+Antes de cambiar de aplicación, guarda el enlace del producto original del mercado. Si una hoja para compartir incluye texto promocional alrededor de la dirección, conserva la dirección del anuncio subyacente siempre que sea posible. Anota brevemente el nombre del vendedor y el identificador del artículo. Esto te da un camino de regreso si al abrir un enlace de compras cambias la pestaña activa del navegador o si una aplicación de mercado vuelve a su pantalla de inicio.
+
+Una captura de pantalla es un compañero útil, especialmente para un patrón distintivo. Rara vez contiene toda la información necesaria para identificar un anuncio activo. La misma imagen de estudio puede aparecer en varios productos o ser reutilizada por diferentes vendedores. Una imagen guardada que muestra un cuaderno azul no establece qué tienda lo ofrece, qué papel hay dentro o si la fotografía representa solo la portada. Guarda primero el enlace y luego la imagen.
+
+## Comprueba la transferencia a Superbuy
+La guía oficial de la aplicación describe la búsqueda desde la pantalla de inicio y el reconocimiento de ciertos enlaces de productos. Utilice el método de entrada disponible en su dispositivo. Cuando se abra la página del agente, compare la información del producto y del vendedor con la que pretendía importar. No inferir una coincidencia solo porque la primera imagen parece familiar.
+
+Si el dispositivo abre una lista de resultados de búsqueda en lugar del producto exacto, trátelo como un nuevo paso de identificación. Compare el número de artículo original cuando esté disponible, luego examine el conjunto de opciones y los detalles del vendedor. Un resultado de búsqueda con otro vendedor y un precio mostrado más bajo es una opción de compra independiente. Si todavía lo quieres, revísalo como un nuevo anuncio en lugar de reemplazar silenciosamente la selección anterior en tus notas.
+
+## Leer todo el panel de opciones
+Abra el selector e identifique las dimensiones de la elección. Un producto puede tener color, tamaño, contenido del paquete y cantidad, cada uno controlado por separado. Es posible que algunas combinaciones no estén disponibles aunque la propia muestra de color aparezca seleccionable. Haga la selección completa, luego busque el resumen final. Desplácese horizontalmente o expanda el texto donde la interfaz abrevia una etiqueta de opción larga.
+
+Una ficha de cuadernos de dibujo puede ofrecer «negro A5, hojas de puntos» y «negro A5, hojas en blanco». La miniatura puede ser idéntica porque muestra la tapa cerrada. Si quieres papel sin pauta, lo decisivo está al final del nombre. Guarda el texto completo de la opción. Una nota como «cuaderno negro» omite justo lo que el almacén podría tener que comprobar después.
+
+## Compruebe la unidad y el número que está pidiendo
+Un selector de cantidad cuenta la unidad representada por la opción elegida. Si la opción dice un paquete de tres, establecer la cantidad en dos puede significar seis piezas físicas. Si el precio se refiere a una cubierta de reemplazo, puede omitir el libro que se muestra en una fotografía de estilo de vida. Lea la descripción de la unidad y el subtotal después de hacer la selección.
+
+Una forma de comprobarlo es escribir “dos paquetes, tres piezas por paquete, seis piezas esperadas” antes de pagar. Compare esa lectura con la cantidad mostrada y la descripción de la opción del comerciante. Si una pantalla describe dos unidades y otra describe seis piezas, pueden ser consistentes. Si no puede explicar la diferencia usted mismo, pídale al agente que lo aclare antes de autorizar una compra. No intente arreglar una unidad desconocida eligiendo un número mayor y esperando que el vendedor lo interprete correctamente.
+
+## Utilice el carrito como especificación final
+Después de agregar el artículo, vuelva a abrir su línea de carrito. Compruebe la opción exacta, cantidad, vendedor y precio actual. Un artículo del carrito guardado previamente puede sobrevivir entre sesiones y parecer una segunda copia del artículo de hoy. Compare fechas o detalles de líneas antes de cambiar cantidades. Reemplazar una opción antigua con una nueva línea puede dejar ambas seleccionadas para el pago.
+
+Lee cada cargo en contexto. La guía de compras de Superbuy separa la compra y cualquier entrega nacional aplicable del posterior proceso de paquete internacional. Guarde la moneda y el total en la pantalla de compra. Si un catálogo convierte un precio por conveniencia, utilice esa cifra para una comparación aproximada y utilice el monto real de pago para su registro de pago. Una notificación móvil que cita un importe de la tarjeta puede usar una moneda diferente y no puede identificar por sí misma el elemento seleccionado.
+
+## Escribir notas que resuelvan una decisión
+Una nota de compra resulta más clara si identifica una variante que el agente pueda comprobar. Sustituye «como en la foto» por el texto original del vendedor y el requisito que te importa. Para un cuaderno: «Tapa negra, A5, hojas en blanco. Consúltame antes de sustituirlas por hojas de puntos». Si el vendedor admite personalización, copia con cuidado la ortografía y las mayúsculas y aclara las dudas antes de pagar.
+
+Evite usar una nota para contradecir una opción seleccionada sin comprobar si el vendedor puede suministrar la solicitud. Seleccionar la portada más barata y escribir “libro completo por favor” no establece que el conjunto completo ha sido comprado. Si una combinación requerida está ausente del selector en vivo, pregunte si está disponible y cuánto cuesta. Guarde la respuesta con la confirmación del pedido.
+
+## Siga la orden de compra en el almacén
+Una vez realizado el pago, guarda la referencia del pedido Superbuy. Utilice la consulta de pedido u otra vía de contacto mostrada para preguntas sobre esa compra. Una pregunta sobre un color no disponible pertenece al registro de compras; un presupuesto de envío para un paquete ensamblado que se envía desde el almacén al cliente pertenece más adelante en el proceso. Nombrar la etapa ayuda a la persona que responde a entender qué acción esperas.
+
+Cuando el objeto esté en stock, la guía oficial te dirigirá a Mi almacén. Vuelve a abrir tu nota junto a las fotos del almacén. Compruebe lo que es visible: una cubierta negra cerrada puede coincidir con el color, pero no con la regla de la página. Si el interior es importante, solicite una vista que muestre la característica relevante y compruebe las opciones de inspección disponibles para ese artículo. Mantenga la referencia del artículo en la solicitud para que una foto de un cuaderno similar no pueda usarse accidentalmente para tomar su decisión.
+
+## Recupérese con calma si un cambio de aplicación pierde su lugar
+Si la aplicación se cierra durante el proceso de compra o pago, inspecciona los registros de pedidos y pagos antes de repetir la acción. Una pantalla de pago que se reabre al principio no establece si el pago se ha realizado correctamente. Busca la referencia del pedido, el importe, la moneda y el último estado de pago. Si no están de acuerdo, utilice el canal de soporte oficial con esos detalles. Evite crear un segundo pedido solo para ver si el primero existía.
+
+Termine manteniendo un registro móvil compacto: enlace del vendedor, opción completa, unidad y cantidad, referencia del pedido pagado y la característica que debe verificarse en la entrada. Una vez que tengas esos campos, cambiar dispositivos o reabrir un carrito se vuelve manejable. Puede explicar exactamente lo que encargó, reconocer su propio artículo de almacén y manejar el flete como una nueva decisión cuando el artículo esté listo. Esa continuidad es más valiosa que cualquier disposición particular de botones en una actualización de la aplicación.
+
+Para las compras realizadas para otra persona, envíe la opción final seleccionada de vuelta a esa persona antes de pagar si la elección era ambigua. Pídales que confirmen el atributo exacto en cuestión, como la regla, la longitud de la manga o el accesorio incluido. Una respuesta que aprueba una especificación escrita clara es más fácil de usar más tarde que un pulgar hacia arriba adjunto a una foto general del producto. Guarde la confirmación final junto con el registro de pedido original.

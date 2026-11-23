@@ -1,0 +1,44 @@
+# Cara mencatat nama varian persis seperti yang ditulis penjual dalam pesanan CNShopper
+Dua pilihan dapat terlihat identik setelah terjemahan meskipun penjual memperlakukan mereka sebagai produk yang berbeda. Sebuah kode, akhiran atau gambar kecil dalam selektor dapat membedakan sistem ukuran, isi bundle, revisi atau finishing. Pertahankan cukup dari pemilihan asli bahwa pembeli dapat mereproduksi pilihan Anda. Deskripsi bahasa Inggris yang dapat dibaca membantu menjelaskan niat Anda; kata-kata tepat penjual membantu mengidentifikasi kontrol yang sebenarnya memesan.
+
+## Tangkap seleksi ketimbang judul produk
+Judul produk umumnya menggambarkan keluarga item. Opsi mengidentifikasi anggota keluarga mana yang Anda inginkan. Buka halaman penjual, lakukan seleksi lengkap dan simpan kalimat tepat di samping tautan produk. Jika opsi adalah gambar dengan sedikit teks, simpan tangkapan layar yang menunjukkan sampel mana yang ditandai dan bagaimana itu berhubungan dengan produk.
+
+Misalnya saja sebuah buku catatan yang berjudul “A5 travel journal, multiple colours.” Judul ini tidak memberikan informasi mengenai apakah halaman yang dipilih bergaris, bertitik, atau kosong. Thumbnail yang menampilkan penutup angkatan laut tertutup dapat mewakili ketiganya. Jika pemilih menetapkan kode seperti B2, pertahankan kode tersebut persis bersama dengan pembacaan Anda. Jangan asumsikan B2 berarti kosong kecuali kunci opsi penjual sendiri mendirikan koneksi.
+
+## Simpan asli dan interpretasi Anda di bidang terpisah
+Ketika Anda menerjemahkan opsi penjual, tetapkan frasa sumber terlihat di samping terjemahan Anda. Seorang pembeli kemudian dapat memeriksa apakah interpretasi bahasa sederhana Anda cocok dengan tombol yang sebenarnya. Hal ini juga memungkinkan Anda untuk memperbaiki interpretasi kemudian tanpa kehilangan satu-satunya rekaman yang dapat diandalkan dari pemilihan. Salin tanda baca yang berarti, akhiran model dan unit tepatnya di mana praktis.
+
+Jika label terjemahan berbunyi "besar" sementara opsi sumber berakhir dalam kode numerik, bandingkan kode itu dengan tabel ukuran penjual. Kode ini dapat menunjukkan ukuran pakaian, tahun model, kapasitas atau jumlah paket. Penjual lain mungkin menggunakan kata Inggris yang sama dengan cara yang berbeda. Jangan secara diam-diam mengganti kode dengan makna yang diasumsikan; menyatakan pemilihan yang tepat dan bendera atribut yang masih membutuhkan konfirmasi.
+
+## Pisahkan hal-hal yang Anda pilih bersama-sama
+Deskripsikan dimensi selektor independen. Sebuah daftar baju dapat menggunakan satu baris untuk warna, yang lain untuk ukuran dan yang lain untuk pas. Produk meja mungkin memiliki pemilih terpisah untuk lebar, finishing dan apakah pemasangan perangkat keras termasuk. Menyalin nama warna gabungan tunggal tanpa kontrol lainnya meninggalkan spesifikasi yang tidak lengkap.
+
+Contoh catatan untuk rak bisa mengatakan, “Penutupan yang dipilih ditampilkan sebagai abu kelabu dalam teks sumber yang dilampirkan; pilihan lebar 60 cm; kit pemasangan termasuk; kuantitas satu.” Jika penjual menawarkan 60 sentimeter sebagai lebar dalam yang dapat digunakan atau sebagai lebar luar total, identifikasikan yang mana yang Anda butuhkan dan minta konfirmasi. Catatannya harus menggambarkan apa yang Anda klik dan apa yang masih tidak diketahui. Sebuah angka yang akurat secara teknis tidak berguna jika mewakili pengukuran yang salah.
+
+## Periksa kembali opsi setelah mengubah pemilih lain
+Beberapa kombinasi bergantung pada pilihan sebelumnya. Mengubah lapisan permukaan dapat mengatur ulang ukuran, mengganti foto utama, atau menyembunyikan pilihan paket. Setelah mengisi pilihan terakhir, baca kembali semua varian aktif pada ringkasan akhir. Simpan tangkapan layar pada tahap itu. Foto dari dua layar sebelumnya mungkin menunjukkan kombinasi yang sudah tidak terpilih.
+
+Asumsikan Anda awalnya memilih kotak pensil berlapis ganda putih dan kemudian beralih ke angkatan laut. Penjual menawarkan angkatan laut hanya dalam versi single-layer. Jika antarmuka menetapkan kembali pemilih kedua, pilihan terakhir Anda mungkin satu-lapisan angkatan laut meskipun Anda ingat menekan dua-lapisan satu menit sebelumnya. Bandingkan subtotal dan ringkasan opsi yang ditampilkan dengan persyaratan tertulis. Jika kombinasi yang tepat tidak dapat direproduksi, tanyakan pada penjual apa yang tersedia sebelum mengirimkan permintaan manual.
+
+## Membedakan label serupa dengan pasangan perbandingan
+Jika dua varian terlihat mirip, catat keduanya berdampingan beserta perbedaannya. Satu bisa bertuliskan “dengan tali”, sedangkan yang lain “tali pengganti”. Jika keduanya diterjemahkan hanya sebagai “tali”, Anda bisa membeli aksesori alih-alih tas. Periksa satuan penjualan, selisih harga, komponen yang disertakan, dan deskripsi varian dari penjual sebelum menentukan pilihan.
+
+Untuk sebuah urutan nyata, tuliskan alternatif yang ditolak serta pilihan yang dipilih jika kebingungan mungkin terjadi. Salah satu kalimat yang berguna adalah, “Aku ingin tas hijau lengkap dengan ikat bahu. Jangan memilih strap bahu cadangan yang ditawarkan di bawah daftar yang sama.” Instruksi tersebut menyebutkan risiko yang sebenarnya. Frasa yang tidak jelas seperti “pilihlah versi yang benar” akan meninggalkan pembeli dengan ambiguitas yang Anda coba hilangkan.
+
+## Sesuai dengan perintah yang dikonfirmasi kembali ke bukti sumber
+Panduan pemesanan CNShopper meminta pembeli untuk memberikan ukuran, warna, kuantitas dan catatan penjual yang relevan sebelum membeli. Ketika konfirmasi tersedia, bandingkan pilihan terakhirnya dengan pemilihan penjual yang disimpan. Lakukan ini sementara ketidaksesuaian masih dapat dicari. Jika konfirmasi mempersingkat opsi panjang, minta penjelasan tentang akhiran yang hilang atau komponen yang termasuk daripada menerima judul yang cocok secara generik.
+
+Jika seorang penjual menjual kembali produk yang sama di bawah nomor item baru, perlakukan halaman baru sebagai penawaran baru. Simpan rekaman asli dan bandingkan keduanya. Apakah nama opsi yang sama masih menggambarkan dimensi dan bagian yang sama? Apakah foto-foto digunakan kembali dari versi sebelumnya? Catatan yang ditempel dari daftar lama adalah titik awal untuk perbandingan. Hal ini tidak menetapkan bahwa menu penjual baru memetakan kode dengan cara yang sama.
+
+## Gunakan foto gudang untuk menguji persyaratan
+Pada penerimaan, tanyakan bagian mana dari pilihan yang sebenarnya dapat diperiksa secara visual. Warna, ukuran cetak, konstruksi terlihat dan potongan yang termasuk dapat diamati; komposisi material atau ketahanan jangka panjang biasanya membutuhkan bukti yang berbeda. Sebuah foto dari sebuah kotak tertutup dapat menunjukkan label opsi tanpa membuktikan bahwa setiap komponen yang diiklankan berada di dalamnya. Bingkaikan pertanyaanmu pada apa yang bisa ditemukan dari pemeriksaan gudang.
+
+Untuk contoh kasus pensil, foto luar yang lurus mungkin menunjukkan angkatan laut tetapi meninggalkan jumlah lapisan yang tidak jelas. Minta tampilan dari kompartemen terbuka yang terikat pada rekaman gudang yang benar untuk item individu, tergantung pada layanan yang tersedia. Bandingkan dengan pesanan yang dikonfirmasi dan pilihan sumber yang disimpan. Jika unit yang diterima adalah pilihan lapisan tunggal, kalimat asli dan tangkapan layar memberikan penjelasan yang jauh lebih kuat daripada klaim kemudian bahwa Anda ingat memilih sesuatu yang lain.
+
+## Simpan catatan tertata ketika penjual menjawab
+Jika Anda menerima penjelasan, simpan jawaban penjual dengan tanggalnya dan daftar spesifik. Catat apakah ia mengkonfirmasi pilihan yang ada atau mengusulkan pengganti. Misalnya, konfirmasi bahwa "kode C termasuk kit pemasangan" berbeda dari penawaran untuk menambahkan kit secara terpisah untuk jumlah tambahan. Perbarui spesifikasi tertulis jika perubahan yang diajukan diterima.
+
+Setelah transaksi selesai, simpan pilihan asli, ringkasan yang diterima dan bukti yang Anda gunakan untuk menyetujui item gudang. Ketika Anda mengunjungi ulang spreadsheet berbulan-bulan kemudian, Anda mungkin melihat urutan pilihan yang berbeda atau terjemahan yang berbeda. Catatan Anda masih akan menunjukkan apa yang ditawarkan oleh penjual pada saat itu dan apa yang Anda sebenarnya ditugaskan. Itulah nilai praktis dari mempertahankan kata-kata penjual: ia bertahan dari perubahan pada presentasi cukup lama untuk menjawab pertanyaan tentang pembelian Anda.
+
+Untuk potongan yang cocok, periksa konsistensi pilihan di lebih dari satu daftar. Sebuah kasus dan strap terpisahnya dapat digambarkan sebagai hijau sementara membawa nama warna pemasok yang berbeda atau lebar pemasangan. Minta label atau ukuran yang tepat yang menghubungkan keduanya. Jika finishing yang cocok sangat penting, jelaskan kondisi tersebut sebelum membayar untuk bagian manapun. Dua label yang diterjemahkan ke dalam kata Inggris yang sama masih dapat mengacu pada finishing terpisah dalam katalog penjual sendiri.

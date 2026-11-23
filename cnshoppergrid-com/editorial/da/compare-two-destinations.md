@@ -1,0 +1,44 @@
+# Sådan sammenligner du CNShoppers fragtpriser til to destinationer
+To personer ønsker det samme køb leveret til forskellige adresser. Et tilbud på én destination kan ikke fortælle dig, hvad den anden person vil betale. Tilgængelige ruter, adressekrav og tjenester kan variere, selvom pakken aldrig ændrer form. Byg en kontrolleret sammenligning først, og beslut derefter, om enhver forskel kommer fra destinationen, pakken eller de valg, der er knyttet til ruten.
+
+## Definer, hvad du har brug for sammenligningen til at besvare
+Skal du beslutte, hvor du vil sende en pakke, eller sammenligne omkostningerne ved to separate forsendelser? Det er forskellige spørgsmål. Afsendelse af en komplet pakke til adresse A eller adresse B ændrer kun destinationen, hvis hvert andet input forbliver konstant. Ved at sende halvdelen af varerne til hver adresse opstår der to nye pakker med forskelligt indhold, dimensioner og muligvis forskellige emballagekrav.
+
+Antag, at en køber kan modtage en pakke derhjemme eller mens de opholder sig med familie i udlandet. Den indledende sammenligning kan bruge de samme varer og emballage til begge slutpunkter. Hvis køberen også overvejer at sende en gave separat til en slægtning, skal du behandle det som et tredje scenarie. At blande en komplet pakke til et land med en mindre gavepakke til et andet isolerer ikke virkningen af destinationen.
+
+## Opret en pakkebeskrivelse, der kan gentages
+Registrer de medfølgende lagerposter for individuelle varer, produkttyper, mængder, udvendige dimensioner og faktisk eller estimeret pakket vægt. Marker pakningstilstanden eksplicit. Bliver detailkasser bevaret? Er en skrøbelig genstand beskyttet? Er varerne faktisk blevet målt sammen, eller arbejder du ud fra sælgerens dimensioner? Brug de samme antagelser for begge destinationssøgninger, eller identificer hver bevidst ændring.
+
+Forestil dig en bog, to foldede skjorter og et hårdt etui. Hvis det oprindelige tilbud bruger en karton, der måler 35 x 25 x 15 centimeter og vejer 1.800 gram, skal du kopiere disse værdier til den anden sammenligning i de ønskede enheder. Indtast ikke ved en fejl bogdimensionerne for den anden søgning. Behold tallene som illustrerende, indtil de repræsenterer en faktisk opmålt pakke. En konsekvent antagelse gør en meningsfuld sammenligning, selv før det endelige tilbud er tilgængeligt.
+
+## Kontroller de destinationsoplysninger, der kræves af tjenesten
+Indtast destinationslandet eller -regionen nøjagtigt, og angiv postnummeret eller andre adresseoplysninger, hvis tilbudsprocessen beder om det. Et bynavn kan beskrive et bredt serviceområde. Den tilgængelige rute for en større byadresse kan være forskellig fra den tilgængelige rute for en fjern placering. Tjek de aktuelle tjenesteoplysninger i stedet for at udlede tilgængelighed fra tilstedeværelsen af et lands navn i en eksempelliste.
+
+Kontroller, at modtageren rent faktisk kan modtage på den valgte adresse. Et estimat er til ringe nytte, hvis en bestemt service ikke accepterer adresseformatet, hvis en påkrævet leveringsdetalj mangler, eller hvis modtageren er rejst, før pakken med rimelighed kan ankomme. Opbevar følsomme oplysninger i den officielle tjeneste i stedet for en offentlig sammenligningstabel. En privat etiket som "hjem" eller "familieadresse" er nok til dit eget side om side-regneark.
+
+## Sammenlign ruteforholdene, før du sammenligner nummeret
+For hver destination skal du registrere rutenavn, estimeret pris, valuta, offentliggjort leveringsestimat og eventuelle inkluderede eller valgfrie tjenester, du er interesseret i. Læs betingelserne for dine varetyper og pakkestørrelser. Hvis en rute ikke er tilgængelig for en destination, skal du markere den som ikke tilgængelig i stedet for at behandle et tomt resultat som en nulpris. Overvej andre kvalificerede tjenester, men vær opmærksom, når du sammenligner forskellige ruter.
+
+En rute med et lavere vist beløb kan bruge en anden overdragelse, leveringsmetode eller serviceniveau. Det kan være acceptabelt, hvis det opfylder dine faktiske krav. En tidsfølsom gave og almindelige husholdningsartikler kan berettige forskellige afvejninger. Identificer, hvilken betingelse der er vigtig, før du vælger den laveste række i tabellen. Et estimeret transitvindue skal registreres som et estimat og fortolkes sammen med de aktuelle vilkår, ikke som et løfte om en bestemt leveringsdato.
+
+## Hold valutaer og inkluderede tjenester ens
+Registrer den oprindelige tilbudsvaluta og brug en tydeligt dateret konvertering til en grov sammenligning, hvis det er nødvendigt. Kontroller, om hver figur indeholder den samme valgfrie behandling. Et estimat, der indeholder forstærkning og en, der udelader det, kan begge være nøjagtige, mens de besvarer forskellige spørgsmål. Hvis den samme beskyttelse er påkrævet for begge destinationer, skal du tilføje den konsekvent, hvor tjenesten tillader det, eller markere den manglende pris som ukendt.
+
+Som en numerisk illustration kan du antage, at det ene tilbud viser 85 enheder af din sammenligningsvaluta til fragt plus 5 til påkrævet emballage, mens det andet viser 92 inklusive samme emballage. De sammenlignelige beløb er 90 og 92. At sammenligne 85 og 92 overdriver forskellen. Hvis det andet tilbud ikke angiver, om emballage er inkluderet, skal du lade det samlede beløb være uløst, indtil du kan bekræfte det. Disse tal forklarer aritmetikken og repræsenterer ikke en CNShopper-pris.
+
+## Sammenlign destinationer, før du tager særskilt stilling til at dele forsendelsen
+Hvis det reelle alternativ er at sende to pakker, skal du indhente estimater for begge foreslåede pakker. Skriv ned, hvilke emner hver indeholder, og hvordan hver vil blive pakket. En stor genstand kan bestemme det meste af den ydre størrelse af en blandet pakke, mens en anden lille pakke stadig kan pådrage sig sit eget servicegebyr. Opdeling af den kombinerede kasses dimensioner eller pris i halvdelen giver ikke to pålidelige tilbud.
+
+Tag eksemplet med en bog, skjorter og etui. Et muligt arrangement sender alle fire brikker til adresse A. En anden sender bogen til adresse B og skjorterne og kufferten til adresse A. Den anden ordning har to servicebeslutninger og to faktiske leveringshændelser. Tilføj både berettigede tilbud og relevante emballagemængder, før du sammenligner det samlede beløb med alternativet med en enkelt pakke. Overvej også, hvad de tilsigtede modtagere rent faktisk har brug for; det laveste kombinerede tilbud kan levere den forkerte vare til en af dem.
+
+## Registrer, hvad tilbuddet kan og ikke kan afregne
+Et forsendelsesestimat kan hjælpe med at sammenligne rutemuligheder for de leverede input. Det kan ikke garantere, at målene vil forblive uændret efter pakning eller bestemme enhver mulig destination gebyr. Se den aktuelle rutebeskrivelse, destinationskrav og gældende officielle vejledninger for spørgsmål, der er specifikke for leveringen. Undgå at låne en afgiftsprocent, en fast grænse eller et leveringsløfte fra et ikke-relateret lands regneark.
+
+CNShoppers bestillingsguide placerer international forsendelse efter lagermodtagelse og pakkeforberedelse. Brug den tidlige sammenligning til at beslutte, om et køb stadig passer til et realistisk budget. Tjek igen, når de faktiske lagermål og endelige adresse er tilgængelige. Hvis en rute forsvinder på dette tidspunkt, skal du sammenligne de resterende kvalificerede muligheder i stedet for at antage, at den oprindelige rute burde være tilgængelig til den gamle pris.
+
+## Bevar beslutningen med dens antagelser
+Gem de to fragttilbud, datoen, pakkebeskrivelsen og dit valg i dine egne noter. Navngiv den faktor, der bestemte resultatet. F.eks. "samme færdigpakkede kasse, forskellige destinationer; valgte adresse B, fordi den tilgængelige fragtløsning passede til modtagerens tidsplan og samlede budget." Hvis valget afhang af en anslået vægt, skal du markere den til gennemgang, når de faktiske emballagedata ankommer.
+
+En senere ændring i kursen er nemmere at forstå, hvis du kan identificere, hvilke input der er flyttet. Måske forblev destinationen den samme, men kassen udvidede sig, efter at beskyttelsen blev tilføjet. Måske er feltet forblevet det samme, men den valgte service i det nye tilbud er anderledes. En klar sammenligning gør mere end at rangere to tal. Det giver dig en gentagelig måde at træffe en destinationsbeslutning med den pakke, du rent faktisk vil sende.
+
+Gem forudsætningerne sammen med det fragttilbud, du vælger. Når den faktiske pakke er pakket, skal du opdatere dens vægt og dimensioner og kontrollere den service, der stadig tilbydes for den fulde adresse. Dette sidste tjek er især vigtigt, hvis de to adresser havde forskellige leveringsarrangementer. En pakke, der så billigere ud at sende til en slægtning, kan blive mindre attraktiv, hvis dens størrelse forhindrer afhentning fra det tilsigtede sted.

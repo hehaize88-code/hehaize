@@ -1,0 +1,46 @@
+# Calculateur d’expédition Superbuy : comparer les dimensions estimées et celles du colis emballé
+Une estimation basée sur les dimensions du produit d'un vendeur et un devis basé sur un carton sortant fermé peuvent produire des résultats différents, même si rien ne s'est mal passé. La première figure peut décrire un élément nu. Le second comprend tout ce qui occupe de l'espace en transit. Avant de comparer une estimation d'expédition Superbuy avec un enregistrement de colis, identifiez ce que chaque nombre mesure et mettez les deux scénarios sur la même base.
+
+## Recueillir trois mesures, leurs unités et leur objet
+Enregistrez la longueur, la largeur et la hauteur ensemble. Une seule « taille » telle que 40 centimètres ne peut pas vous dire si une boîte est longue et étroite ou presque carrée. Identifiez l'objet mesuré: produit en vrac, boîte de vente au détail, carton de livraison du vendeur ou colis emballé expédié de l'entrepôt au client. Une mesure n’est utile que si vous savez laquelle de ces quatre choses elle décrit.
+
+Prenez une paire de chaussures comme exemple. La longueur du pied sur un tableau des tailles est une mesure d'ajustement. La longueur de la semelle extérieure décrit une chaussure. Les dimensions de la boîte à chaussures décrivent un emballage de détail. Le carton d'expédition externe peut contenir la boîte à chaussures plus le rembourrage et un autre article. La saisie de la longueur du pied comme côté le plus long du colis, car c'est le seul nombre visible, crée une estimation d'apparence précise à partir d'une mesure non liée.
+
+## Normaliser les unités avant de comparer quoi que ce soit
+Le calculateur d'expédition de Superbuy affiche le poids en grammes et les dimensions en centimètres. Lisez les étiquettes de la version que vous utilisez. Convertir un poids donné en kilogrammes en le multipliant par mille. Convertissez les millimètres en centimètres en divisant par dix. Conservez les nombres originaux dans vos notes ainsi que les valeurs converties ; cela facilitera l'identification d'une erreur de transcription par la suite.
+
+Le vendeur annonce un carton de 420 × 260 × 150 mm et la balance indique 1,80 kg. Dans les champs en centimètres et en grammes, saisissez 42 × 26 × 15 cm et 1 800 g. Une hauteur de 150 cm saisie par erreur au lieu de 15 cm donne au calculateur un carton dix fois plus haut. Si une option de transport disparaît ou si le devis semble anormalement élevé, vérifiez les unités avant de conclure à une hausse du tarif du transporteur.
+
+## Nommer les hypothèses dans la première estimation
+Enregistrez la destination, l'entrepôt, la catégorie et le contenu prévu, ainsi que le poids et les dimensions estimés. Ces champs peuvent affecter les résultats affichés. Deux estimations ayant des dimensions identiques mais des destinations différentes ne constituent pas un essai contrôlé de l'emballage. De même, une catégorie d'article différente peut modifier l'admissibilité même si le colis physique reste le même.
+
+Écrivez un bref résumé du scénario tel que « une paire, la boîte à chaussures d’origine conservée, les dimensions du carton extérieur inconnues, en utilisant les dimensions de la boîte du vendeur comme estimation de l’information inférieure. » Cela vous indique exactement ce que vous devrez remplacer lorsque l’entrepôt fournira les mesures. Évitez de décrire le résultat provisoire comme votre fret confirmé. Vous pouvez avoir une mesure précise du vendeur tout en manquant la mesure d'expédition pertinente.
+
+## Calculer la différence d'espace sans inventer une règle de fret
+Pour comparer le volume de deux cartons rectangulaires, multipliez la longueur par la largeur puis par la hauteur. Une première estimation de 40 × 25 × 15 cm donne 15 000 cm³. Un emballage extérieur mesurant en réalité 42 × 28 × 18 cm occupe 21 168 cm³. La différence est de 6 168 cm³, soit environ 41 % d’espace en plus.
+
+Ce calcul décrit seulement la géométrie du carton. Vérifiez séparément si le transporteur applique un poids volumétrique, comment il le calcule et l’arrondit, puis quel tarif il utilise. Consultez les conditions de la ligne choisie sans reprendre le diviseur d’un autre transporteur. Une hausse de volume de 41 % ne prouve pas une hausse du fret de 41 %. Le poids réel, les limites de la ligne et les tranches tarifaires peuvent davantage peser sur le prix.
+
+## Mesurer le point le plus long qui se déplace réellement
+Utilisez les dimensions extérieures maximales de l'article emballé ou de la boîte selon les instructions du transporteur. Les protecteurs d'angle, les embouts et les côtés gonflés peuvent s'étendre au-delà d'un rectangle autrement bien rangé. Demandez quelles dimensions ont été retournées par l'entrepôt si les valeurs semblent décrire uniquement l'article à l'intérieur. Enregistrez les mesures dans un ordre cohérent et étiquetez explicitement le côté le plus long lorsque les limites du parcours le rendent important.
+
+Une impression roulée est une illustration utile. La taille de l'illustration est un rectangle plat. Son tube a une longueur et un diamètre. Si plusieurs tubes sont groupés dans un carton rectangulaire, les dimensions sortantes sont à nouveau différentes. La comparaison de la hauteur de la feuille plate avec le côté le plus long du paquet vous en dit très peu. Notez l'état d'emballage que chaque entrée représente avant de décider que l'une des mesures doit être erronée.
+
+## Modifier une variable à la fois
+Pour enquêter sur une différence de devis, commencez par la version reproductible la plus proche de la première estimation. Remplacez les dimensions emballées tout en maintenant la destination, l'entrepôt, la catégorie d'article, le poids et la sélection de l'itinéraire constants si possible. Enregistrez le nouveau résultat. Ensuite, remplacer le poids emballé et comparer à nouveau. Si une entrée rend l'itinéraire original indisponible, notez-le comme un changement d'admissibilité plutôt que de comparer deux services différents comme s'il s'agissait de la même ligne.
+
+Prenons un article de 1 800 g dans l’emballage du vendeur, puis de 2 100 g une fois prêt à expédier. Si vous changez en même temps les dimensions, le poids et la destination, l’écart obtenu ne permet pas d’en isoler la cause. Faites deux simulations en ne modifiant qu’un seul paramètre. Le calculateur reste indicatif : l’objectif est de préciser les hypothèses, pas de reproduire exactement une facture du transporteur.
+
+## Réconcilier le dépôt séparément des services optionnels
+Les directives de Superbuy distinguent le dépôt d'expédition internationale de l'expédition finale en fonction des mesures vérifiées et du service sélectionné. Lorsque vous regardez un total, séparez la composante de fret de l'emballage sélectionné, des autres services et de tout ajustement distinct affiché dans le compte. Préserver la devise d'origine et garder la référence du colis réel avec chaque montant.
+
+Si votre relevé de carte est dans une devise différente, comparez d'abord les deux enregistrements Superbuy dans leur devise de transaction commune. Ensuite seulement, enquêtez sur toute conversion de paiement. Sinon, une différence dans les taux de change peut ressembler à un changement dans le poids emballé. Une question de soutien utile spécifie l'estimation originale, les mesures emballées, l'itinéraire, le dépôt et le seul montant inégalé. « Mon envoi a changé » laisse trop d’explications possibles non résolues.
+
+## Gardez la comparaison finale utile pour le prochain colis
+Conservez les dimensions emballées acceptées, le contenu, le traitement d'emballage et le poids après expédition. Cela devient un cas de référence pour une décision future similaire, à condition que vous conserviez ses conditions. Deux articles de détail identiques peuvent néanmoins donner lieu à des emballages extérieurs différents lorsque l'un est expédié seul et que l'autre est combiné avec un livre ou emballé avec une protection supplémentaire.
+
+Examinez ce que votre première estimation a été correcte et ce qui a changé. Peut-être que le poids de l'échelle était proche, mais le carton de protection était plus grand. La prochaine fois, vous saurez quelle mesure manquante mérite votre attention avant de choisir un itinéraire. L'objectif n'est pas de prédire un prix d'expédition de mémoire. Il s’agit de reconnaître quelles hypothèses sont provisoires, de les remplacer par les valeurs mesurées et de comprendre le choix qui en résulte avant d’engager le colis à la livraison internationale.
+
+Si le compte et votre feuille de calcul ne concordent toujours pas, incluez les unités originales dans votre demande. Un agent d’assistance peut vérifier une photo de la balance et du ruban à mesurer plus facilement qu’un numéro dépouillé de son unité et de son contexte d’emballage.
+
+Pour une comparaison de deux boîtes, calculez chaque volume rectangulaire séparément avant de les additionner. En multipliant la somme des longueurs par la somme des largeurs et des hauteurs, on obtient une boîte imaginaire surdimensionnée. Utilisez uniquement les dimensions mesurées d'un seul carton combiné si l'entrepôt a réellement combiné les marchandises de cette manière. Gardez chaque mesure de carton individuelle à côté de son devis correspondant.

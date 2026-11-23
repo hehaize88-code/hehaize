@@ -1,0 +1,44 @@
+# Superbuy da smartphone: controllare la variante che compare nell’ordine
+Uno schermo mobile rende facile salvare una fotografia e difficile vedere l'acquisto completo in un'unica vista. L'immagine, la variante selezionata, la quantità e il prezzo possono essere visualizzati su pannelli separati. La guida dell'app di Superbuy descrive come trovare un prodotto, selezionare le sue opzioni e chiedere all'agente di acquistarlo. Utilizzare quelle fasi come punti di controllo. L'obiettivo è quello di portare la selezione desiderata dall'inserzione del venditore all'ordine pagato.
+
+## Inizia con un riferimento di prodotto recuperabile
+Prima di cambiare app, salva il link del prodotto del marketplace originale. Se un foglio di condivisione include testo promozionale intorno all'indirizzo, conserva l'indirizzo dell'inserzione sottostante, ove possibile. Prendi una breve nota del venditore e dell'identificatore dell'articolo. Ciò consente di tornare indietro se l'apertura di un collegamento di acquisto cambia la scheda del browser attiva o se un'app di mercato torna alla schermata iniziale.
+
+Uno screenshot è un compagno utile, soprattutto per un motivo distintivo. Raramente contiene tutte le informazioni necessarie per identificare un annuncio attivo. La stessa immagine dello studio può apparire su più prodotti o essere riutilizzata da venditori diversi. Un'immagine salvata che mostra un taccuino blu non stabilisce quale negozio lo offre, quale carta è all'interno o se la fotografia raffigura solo la copertina. Salva prima il link e poi l'immagine.
+
+## Controlla il passaggio a Superbuy
+La guida ufficiale dell'app descrive la ricerca dalla schermata iniziale e il riconoscimento di alcuni collegamenti ai prodotti. Utilizzare il metodo di immissione disponibile sul dispositivo. Quando si apre la pagina dell'agente, confronta le informazioni relative al prodotto e al venditore con quelle che intendevi importare. Non dedurre una corrispondenza solo perché la prima immagine sembra familiare.
+
+Se il dispositivo apre un elenco di risultati di ricerca anziché il prodotto esatto, considerare questo come un nuovo passaggio di identificazione. Confronta il numero di articolo originale, se disponibile, quindi esamina il set di opzioni e i dettagli del venditore. Un risultato di ricerca con un altro venditore e un prezzo visualizzato inferiore è una scelta di acquisto separata. Se lo vuoi ancora, rivedilo come una nuova inserzione piuttosto che sostituire in silenzio la selezione precedente nelle tue note.
+
+## Leggere l'intero pannello delle opzioni
+Aprire il selettore e individuare le dimensioni della scelta. Un prodotto può avere colore, dimensione, contenuto del pacchetto e quantità, ognuno controllato separatamente. Alcune combinazioni potrebbero non essere disponibili anche se il campione di colore stesso appare selezionabile. Effettuare la selezione completa, quindi cercare il riepilogo finale. Scorrere orizzontalmente o espandere il testo in cui l'interfaccia abbrevia un'etichetta di opzione lunga.
+
+Immagina un annuncio per quaderni da disegno con le opzioni «nero A5, pagine puntinate» e «nero A5, pagine bianche». La miniatura può essere identica perché mostra la copertina chiusa. Se vuoi fogli senza rigatura, decide l’ultima parola. Salva la dicitura completa del venditore. Una nota come «quaderno nero» perde proprio il dettaglio che il magazzino potrebbe dover verificare.
+
+## Controlla l'unità e il numero che stai ordinando
+Un selettore di quantità conta l'unità rappresentata dall'opzione scelta. Se l'opzione dice un pacchetto di tre, impostando la quantità a due può significare sei pezzi fisici. Se il prezzo si riferisce a una copertina sostitutiva, può omettere il libro visualizzato in una fotografia di stile di vita. Leggi la descrizione dell'unità e il subtotale dopo aver effettuato la selezione.
+
+Un controllo illustrativo è quello di scrivere "due confezioni, tre pezzi per confezione, sei pezzi previsti" prima del checkout. Confronta la lettura con la quantità visualizzata e la descrizione dell'opzione del commerciante. Se una schermata descrive due unità e un'altra descrive sei pezzi, possono essere coerenti. Se non riesci a spiegare la differenza da solo, chiedi all'agente di chiarire prima di autorizzare un acquisto. Non cercare di riparare un'unità sconosciuta scegliendo un numero più grande e sperando che il venditore lo interpreti correttamente.
+
+## Utilizzare il carrello come specifica finale
+Dopo aver aggiunto l'articolo, riaprire la riga del carrello. Controlla l'opzione esatta, la quantità, il venditore e il prezzo corrente. Un articolo del carrello salvato in precedenza può sopravvivere tra le sessioni e sembrare una seconda copia dell'articolo di oggi. Confronta le date o i dettagli della linea prima di modificare le quantità. La sostituzione di una vecchia opzione con una nuova riga può lasciare entrambe selezionate per il pagamento.
+
+Leggi ogni accusa nel suo contesto. La guida all'acquisto di Superbuy separa l'acquisto e qualsiasi consegna nazionale applicabile dal successivo processo di pacco internazionale. Salva la valuta e il totale nella schermata di acquisto. Se un catalogo converte un prezzo per comodità, usa quella cifra per un confronto approssimativo e usa l'importo effettivo del checkout per il tuo record di pagamento. Una notifica mobile che cita un importo della carta può utilizzare una valuta diversa e non può da sola identificare l'elemento selezionato.
+
+## Scrivere note che risolvono una decisione
+Scrivi una nota che identifichi una variante verificabile. Al posto di «come in foto», riporta la dicitura originale del venditore e poi il requisito importante. Per un quaderno: «Copertina nera, formato A5, pagine bianche. Contattatemi prima di sostituirlo con pagine puntinate». Se il venditore offre personalizzazioni, ricopia con precisione grafia e maiuscole e chiarisci ogni dubbio prima di pagare.
+
+Evitare di utilizzare una nota per contraddire un'opzione selezionata senza verificare se il venditore può fornire la richiesta. Selezionare la copertina più economica e scrivere “libro completo per favore” non stabilisce che il set completo è stato acquistato. Se una combinazione richiesta è assente dal selettore in tempo reale, chiedere se è disponibile e quanto costa. Salva la risposta con la conferma dell'ordine.
+
+## Seguire l'ordine di acquisto nel magazzino
+Una volta completato il pagamento, salva il riferimento dell'ordine Superbuy. Utilizzare la richiesta di ordine o altro percorso di contatto indicato per domande su tale acquisto. Una domanda su un colore non disponibile appartiene al record di acquisto; un preventivo di spedizione per un pacchetto assemblato che viene spedito dal magazzino al cliente appartiene più avanti nel processo. Assegnare un nome allo stadio aiuta la persona che risponde a capire quale azione ci si aspetta.
+
+Dopo l’ingresso in magazzino, la guida ufficiale rimanda a My Warehouse. Apri la nota accanto alle foto. Una copertina nera chiusa può confermare il colore ma non se i fogli sono puntinati o bianchi. Se l’interno conta, chiedi una foto della pagina e controlla le opzioni di ispezione disponibili per quell’articolo. Indica la sua referenza nella richiesta, per evitare che la decisione si basi sulla foto di un quaderno simile.
+
+## Recupera con calma se un commutatore di app perde il tuo posto
+Se l'app si chiude durante il checkout o il pagamento, controlla i record dell'ordine e del pagamento prima di ripetere l'azione. Una schermata di checkout che si riapre all'inizio non stabilisce se il pagamento è andato a buon fine. Cerca il riferimento dell'ordine, l'importo, la valuta e l'ultimo stato di pagamento. Se non sono d'accordo, utilizzare il canale di supporto ufficiale con quei dettagli. Evitare di creare un secondo ordine solo per vedere se il primo esisteva.
+
+Termina mantenendo un record mobile compatto: link del venditore, opzione completa, unità e quantità, riferimento dell'ordine pagato e la funzionalità che deve essere controllata all'ingresso. Una volta che hai questi campi, cambiare i dispositivi o riaprire un carrello diventa gestibile. Puoi spiegare esattamente cosa hai commissionato, riconoscere il tuo articolo di magazzino e gestire il trasporto come una nuova decisione quando l'articolo è pronto. Questa continuità è più preziosa di qualsiasi particolare disposizione dei pulsanti in un aggiornamento dell'app.
+
+Per gli acquisti effettuati per qualcun altro, invia l'opzione finale selezionata a quella persona prima del checkout se la scelta era ambigua. Chiedi loro di confermare l'attributo esatto in questione, come la regola, la lunghezza della manica o l'accessorio incluso. Una risposta che approva una specifica scritta chiara è più facile da usare in seguito che un pollice in su allegato a una foto generale del prodotto. Salvare la conferma finale insieme al record dell'ordine originale.

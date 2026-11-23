@@ -1,0 +1,44 @@
+# Como registrar o nome exato da variante do vendedor em um pedido da CNShopper
+Duas opções podem parecer idênticas após a tradução, mesmo que o vendedor as trate como produtos diferentes. Um código, sufixo ou pequeno desenho no seletor pode distinguir sistemas de tamanhos, conteúdos de pacotes, revisões ou acabamentos. Preserve o suficiente da seleção original para que um comprador possa reproduzir sua escolha. Uma descrição em inglês legível ajuda a explicar sua intenção; a formulação exata do vendedor ajuda a identificar o controle que realmente o encomendou.
+
+## Capture a seleção em vez do título do produto
+Um título de produto geralmente descreve a família de itens. A opção identifica qual membro dessa família você deseja. Abra a página do vendedor, faça a seleção completa e salve o texto exato ao lado do link do produto. Se a opção for uma imagem com pouco texto, salve uma captura de tela mostrando qual amostra está destacada e como ela se relaciona com o produto.
+
+Considere um caderno intitulado “Diário de viagem A5, várias cores”. O título não fornece quase nenhuma informação sobre se as páginas selecionadas estão alinhadas, pontilhadas ou em branco. Uma miniatura exibindo uma capa azul-marinha fechada pode representar todos os três. Se o seletor especificar um código como B2, preserve esse código exatamente junto com sua leitura dele. Não assuma que B2 significa em branco, a menos que a própria chave de opção do vendedor estabeleça a conexão.
+
+## Mantenha o original e sua interpretação em campos separados
+Ao traduzir uma opção de vendedor, mantenha a frase de origem visível ao lado da sua tradução. Um comprador pode então verificar se sua interpretação em linguagem simples corresponde ao botão real. Isso também permite que você corrija uma interpretação mais tarde sem perder o único registro confiável da seleção. Copie pontuação significativa, sufixos de modelo e unidades exatamente onde for possível.
+
+Se um rótulo traduzido diz "grande" enquanto a opção de origem termina em um código numérico, compare esse código com a tabela de tamanhos do vendedor. O código pode indicar o tamanho da peça, o ano do modelo, a capacidade ou o número de embalagens. Outros vendedores podem usar a mesma palavra inglesa de forma diferente. Não substitua silenciosamente um código com um significado assumido; declare a seleção exata e sinalize o atributo que ainda precisa de confirmação.
+
+## Separe as coisas que você seleciona juntas
+Descreva as dimensões do seletor independente. Um anúncio de camisa pode usar uma linha para cor, outra para tamanho e outra para ajuste. Um produto de mesa pode ter seletores separados para largura, acabamento e se o hardware de montagem está incluído. Copiar um único nome de cor combinado sem os outros controles deixa uma especificação incompleta.
+
+Um exemplo de nota para uma prateleira pode dizer: “O acabamento selecionado é mostrado como cinza cinza no texto de origem anexado; opção de largura 60 cm; kit de montagem incluído; quantidade um”. Se o vendedor oferecer 60 centímetros como a largura interna utilizável ou como a largura total externa, identifique qual você precisa e solicite confirmação. A nota deve descrever o que você clicou e o que permanece desconhecido. Um número tecnicamente preciso é de pouca utilidade se representa a medida errada.
+
+## Verifique novamente a opção depois de alterar outro seletor
+Algumas combinações dependem de uma escolha anterior. Alterar o acabamento pode redefinir um tamanho, substituir a imagem principal ou ocultar um pacote. Depois de escolher o último campo, releia todas as opções ativas do resumo final. Salve a captura de tela nesse ponto. Uma imagem capturada duas telas antes pode mostrar uma combinação que não está mais selecionada.
+
+Suponha que você escolha inicialmente um estojo de lápis branco de camada dupla e, em seguida, mude para a marinha. O vendedor oferece a marinha apenas na versão de camada única. Se a interface redefinir o segundo seletor, sua escolha final pode ser navy single-layer, mesmo que você se lembre de tocar em double-layer um minuto antes. Compare o subtotal exibido e o resumo da opção com os requisitos escritos. Se a combinação exata não puder ser reproduzida, pergunte ao vendedor o que está disponível antes de enviar uma solicitação manual.
+
+## Distinguir rótulos semelhantes com um par de comparação
+Quando duas opções se parecerem, capture-as lado a lado em suas anotações com suas diferenças. Uma pode mostrar “com correia”, outra “correia de reposição”. Uma tradução incorreta que reduz ambos a “correia” pode transformar uma compra de bolsa em uma compra de acessório. Compare a unidade, diferença de preço, peças incluídas e descrição da opção do vendedor antes de interpretar a seleção pretendida.
+
+Para uma ordem real, anote a alternativa rejeitada, bem como a opção escolhida, se a confusão for provável. Uma frase útil é: “Eu quero a bolsa verde completa com alça de ombro. Não selecione a alça de ombro sobressalente oferecida sob a mesma listagem.” Essa instrução nomeia o risco real. Uma frase vaga como “escolha a versão correta” deixa o comprador com exatamente a ambiguidade que você estava tentando remover.
+
+## Combine a ordem confirmada de volta à evidência da fonte
+O guia de pedidos do CNShopper pede aos compradores que forneçam tamanho, cor, quantidade e notas relevantes do vendedor antes da compra. Quando uma confirmação estiver disponível, compare sua opção final com a seleção salva do vendedor. Faça isso enquanto uma discrepância ainda pode ser consultada. Se a confirmação abreviar uma opção longa, peça esclarecimentos sobre o sufixo ausente ou o componente incluído em vez de aceitar um título genérico correspondente.
+
+Se um vendedor voltar a listar o mesmo produto com um novo número de item, trate a nova página como uma nova oferta. Mantenha o registro original e compare os dois. O mesmo nome de opção ainda descreve as mesmas dimensões e peças? As fotografias são reutilizadas de uma versão anterior? Uma nota colada da listagem antiga é um ponto de partida para comparação. Ele não estabelece que o novo menu do vendedor mapeia códigos da mesma maneira.
+
+## Use fotos do armazém para testar a exigência
+Na entrada, pergunte qual parte da opção pode realmente ser verificada visualmente. A cor, o tamanho impresso, a construção visível e as peças incluídas podem ser observáveis; a composição do material ou a durabilidade a longo prazo geralmente precisam de evidências diferentes. Uma fotografia de uma caixa fechada pode mostrar um rótulo de opção sem provar que todos os componentes anunciados estão dentro. Enquadre sua pergunta em torno do que uma verificação de armazém pode razoavelmente estabelecer.
+
+Para o exemplo do estojo de lápis, uma fotografia direta do exterior pode mostrar a marinha, mas deixar o número de camadas pouco claro. Solicite uma visualização dos compartimentos abertos vinculados ao registro de armazém correto para um item individual, sujeito ao serviço disponível. Compare-o com o pedido confirmado e sua seleção de fonte salva. Se a unidade recebida for a opção de camada única, o texto original e a captura de tela fornecem uma explicação muito mais forte do que uma alegação posterior de que você se lembrou de selecionar outra coisa.
+
+## Mantenha um registro ordenado quando o vendedor responder
+Se receber um esclarecimento, guarde a resposta do vendedor com a data e o anúncio específico. Registre se confirma a opção existente ou propõe um substituto. Por exemplo, a confirmação de que “o código C inclui o kit de montagem” é diferente de uma oferta para adicionar o kit separadamente por um valor adicional. Atualize a especificação escrita se a mudança proposta for aceita.
+
+Quando a transação estiver concluída, mantenha a opção original, o resumo aceito e a evidência que você usou para aprovar o item de armazém. Quando você revisitar a planilha meses depois, poderá ver uma ordem de opções diferente ou traduções diferentes. Seu registro ainda mostrará o que o vendedor ofereceu no momento e o que você realmente comissionou. Esse é o valor prático de manter o texto do vendedor: ele sobrevive a mudanças na apresentação por tempo suficiente para responder a perguntas sobre sua compra em particular.
+
+Para peças correspondentes, verifique a consistência de opções em mais de um anúncio. Uma caixa e sua correia separada podem ser descritas como verdes, enquanto carregam nomes de cores de fornecedores diferentes ou larguras de acessórios. Peça o rótulo ou a medida precisa que conecta os dois. Se um acabamento correspondente for essencial, torne essa condição explícita antes de pagar por qualquer uma das partes. Dois rótulos que traduzem para a mesma palavra em inglês ainda podem se referir a acabamentos separados dentro do próprio catálogo do vendedor.

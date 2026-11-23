@@ -1,0 +1,44 @@
+# Useana laatikkona saapuva ostos: näin tarkistat kaikki osat Superbuyn varastossa
+Yksi osto voi luoda kaksi poikkeusta, jotka näyttävät vastakkaisilta. Yksi varastotietue yksittäisestä tuotteesta näyttää epätäydelliseltä, koska toinen laatikko on vielä matkalla. Toinen merkintä näyttää kaksoiskappaleelta, koska tuotteen nimi vastaa ensimmäistä. Molemmat voivat kuvata oikein jaettua ostoa. Jos haluat selvittää, mitä tuli, laske ostot, laatikot ja yksittäiset kappaleet erikseen.
+
+## Määritä yksikkö, jonka myyjä on suostunut toimittamaan
+Aloita käyttämällä maksullista vaihtoehtoa pääkuvan sijaan. Listauksessa, jossa on pöytä ja tuoli, voidaan myydä vain pöytää, vain tuolia tai molemmat sisältävää pakettia. Kuitin yksikkö määrää sen, mitä sinun pitäisi odottaa tilinpäätöksessä. Kirjoita se selkeällä kielellä. Jos myyjä kutsuu sarjaa "yksi yksikkö", listaa kappaleet, joita odotat sen sisällä, muuttamatta näitä kappaleita ylimääräisiksi ostetuiksi yksiköiksi.
+
+Oletetaan, että olet tilannut kaksi samanlaista pöytävalaisinta. Kauppias vahvistaa, että jokainen valaisin sisältää jalustan, varjostimen ja liittimet. Ostotietosi kuvaavat siis kahta yksikköä ja kuutta odotettua komponenttia. Se ei kuitenkaan kerro mitään siitä, kuinka monta laatikkoa kauppias käyttää. Myyjä voi lähettää jokaisen täydellisen valaisimen erikseen, ryhmitellä jalustat yhteen tai laittaa molemmat sarjat samaan ulkopakkaukseen. Tarvitset pakkauslausekkeen näiden laskujen yhdistämiseen.
+
+## Pyydä laatikkokartta ennen kuvien vertailua
+Kysy myyjältä, kuinka monta pakettia todellisuudessa luovutettiin ja mikä kuljetusliikkeen numero kuhunkin kuuluu. Jos kauppias on toimittanut pakkausluettelon, kopioi sen sanamuoto. Jos laatikon sisältö ei ole tiedossa, kerro siitä muistiinpanoissasi. Rehellinen tyhjä kertoo sinulle, mitä on vielä määritettävä. Arvattu tehtävä voi hiljaa muuntaa normaalin saapumisen vääräksi puuttuvan kohteen ilmoitukseksi.
+
+Anna laatikoille lyhyet nimet omissa muistiinpanoissasi ja säilytä samalla täydellinen kuljetusliikkeen numero. Lamppujen osalta ”laatikko, jonka loppuosa on 482, odotetaan molempia jalustoja” on hyödyllisempi kuin ”suuri laatikko”. Uudelleenpakattu laatikko voi näyttää erilaiselta kuin myyjän valokuva, ja mitat voidaan ilmoittaa eri suuntiin. Jos rahtikirjat ovat peräisin eri kuljetusliikkeiltä, liitä mukaan kunkin kuljetusliikkeen nimi. Kahdella samankaltaisella merkkijonolla voi olla erilainen merkitys eri seurantajärjestelmissä.
+
+## Vertaa toimituksia yksitellen
+Lue kunkin rahtikirjan tila erikseen. Jos kaksi laatikkoa jätetään yhdessä, ne voivat silti vastaanottaa skannauksia eri aikoina. Yksittäisen tilaustason tila markkinapaikalla voi olla yhteenveto ostotapahtuman osalta. Avaa taustalla olevat toimitustiedot ja merkitse muistiin jokaisen todellisen laatikon viimeisin tapahtuma. Säilytä peruutettu osoitetarra erillään noudettavaan pakettiin liittyvästä rahtikirjasta.
+
+Valaisimen esimerkissä laatikossa, johon on tarkoitus sijoittaa kaksi jalustaa, on toimitusskannaus, kun taas varjostimet ja liittimet sisältävä laatikko on edelleen kuljetuksen alla. Varastotietue, jossa on kaksi tietokantaa, on näiden tosiasioiden mukainen. Merkitse pohjat kirjatuiksi ja muut neljä komponenttia vireillä oleviksi. Älä ilmoita kahdesta puuttuvasta lampusta vain siksi, että alkuperäinen tilausmäärä oli kaksi. Merkittävä avoin kysymys on se, onko toinen laatikko toimitettu ja tunnistettu.
+
+## Yhdistä yksittäisten tuotteiden varastotiedostot fyysiseen sisältöön
+Kun tavarat on kirjattu varastoon, Superbuyn ohje neuvoo avaamaan My Warehouse -näkymän. Vertaa tuotteiden nimiä ja kuvia laatikoista tekemääsi luetteloon. Suljetun myyntipakkauksen merkintä ”lampunvarjostinsarja” auttaa tunnistamaan laatikon, mutta ei vahvista sisällön määrää tai kuntoa. Kuva kahdesta varjostimesta ei myöskään osoita, että molemmat kiinnitystarvikepussit ovat mukana.
+
+Jos jako laatikoihin on epäselvä, pyydä varastolta tarkistus, jonka työntekijä voi toteuttaa. Esimerkiksi: ”Vahvistatteko, sisältääkö numeroihin 482 päättyvään Kiinan sisäiseen lähetykseen liitetty varastomerkintä kaksi lampunjalkaa ja onko niiden mukana kirjattu pusseja, joissa on kiinnitysosia?” Anna yksityisessä viestissä koko tunniste. Pidä sisältökysymys erillään pintavaurion tai mittojen tarkistuksesta. Jokainen asia tarvitsee omanlaistaan näyttöä.
+
+## Käsittele odottamaton kolmas laatikko
+Kauppias voi lähettää pienen lisävarusteen erikseen päivittämättä alkuperäistä pakkausyhteenvetoa. Jos saat myöhemmän seurantailmoituksen, älä muuta vanhempaa tietuetta niin, että näyttää siltä, että olet aina odottanut kolmea laatikkoa. Lisää päivätty päivitys, jossa mainitaan uuden tiedon lähde. Tunnista, mikä komponentti on siirtynyt aiemmasta odotuksesta ylimääräiseen laatikkoon.
+
+Oletetaan, että kauppias ilmoittaa, että kiinnitystarvikepussit on lähettänyt eri kuljetusliike. Alkuperäisen toisen pakkauksen odotetaan nyt sisältävän vain lampunvarjostimia. Jos varastosta vahvistetaan molemmat varjostimet, voidaan kyseinen laatikko merkitä valmiiksi, vaikka kokonaisosto ei olekaan vielä valmis. Kirjoita muistiin kolmas rahtikirja ja siihen liittyvät kaksi lisävarustepakettia. Tällä yksinkertaisella erotuksella on merkitystä, jos kaksi ensimmäistä laatikkoa ovat valmiita lähetettäväksi ja kolmas on viivästynyt.
+
+## Päätä, odotatko vai lähetätkö osan ostoksesta
+Se, mitä varastossa on, ja se, mitä kannattaa lähettää, ovat eri kysymyksiä. Vaikka tietäisit jokaisen osan sijainnin, kansainvälinen osatoimitus ei välttämättä palvele tarkoitustasi. Modulaarisen valaisimen kaksi jalustaa voivat olla kotona hyödyttömiä ilman kiinnitysosia. Useista erillisistä paperimuistikirjoista ensimmäiset voi sen sijaan hyvin ottaa käyttöön jo ennen muita. Mieti ennen hintavertailua, mitä saat käytettäväksi, jos lähetät nyt vain saatavilla olevat osat.
+
+Tarkista soveltuva varastointipaikka ja live-pakettivaihtoehdot todellisten merkintöjen osalta. Vertaa kuin oletuksia. Osittaisesta lähetyksestä tänään ja myöhemmästä lisävarusteiden lähetyksestä saattaa aiheutua kaksi erillistä lähtömaksua. Yhdistetyllä paketilla voi myöhemmin olla erilaiset mitat, pakkaustarpeet ja reittikelpoisuus. Käsittele jokaista hintaa tarjouksena nimetylle joukolle sisältöjä. Kotimaisen myyjän laatikkomäärän valinta ei takaa sitä, mikä lähtevän lähetyksen pakkausjärjestely sopii sinulle.
+
+## Valmistele poikkeusrekisteröinti, jonka varasto voi tutkia
+Jos kuljettaja näyttää kaikki toimitetut laatikot, mutta tilillä näkyy vain osa sisällöstä, luo kompakti poikkeusraportti. Ilmoita kauppiaan tilaus, kukin kuljetusliike ja rahtikirja, kunkin laatikon odotettu sisältö ja varastotiedostot yksittäisistä löydetyistä tuotteista. Nimeä sitten yksittäinen vastaamaton laatikko tai puuttuva komponentti. Erota myyjän lausunto varastokuvasta; kun todisteet ovat selkeitä, on helpompi päättää, kuuluuko seuraava tarkistus myyjälle vai vastaanottavalle tiimille.
+
+Vältä lähettämästä kymmentä löyhästi liittyvää kuvakaappausta. Valitse tilausvahvistus, joka vahvistaa määrän, lähetysilmoitus, joka vahvistaa laatikon kohdentamisen, tietty kuljettajatapahtuma ja varastokuva, joka näyttää poikkeaman. Jos kuvakaappaus sisältää muita tilauksia tai henkilökohtaisia tietoja, rajoita sen jakaminen vain virallisen tukikanavan tarpeisiin. Säilytä alkuperäiset yksityisesti siltä varalta, että selkeämpää näkymää pyydetään.
+
+## Sovita sarja lähetettäessä tai purkaessasi pakkauksesta
+Kun kaikki odotetut palaset on laskettu, kirjoita päätösmerkintä, jossa nimetään hyväksytyt sisällöt. Lamppujen kohdalla se voisi olla seuraavanlainen: ”Kaksi jalustaa, kaksi varjostinta ja kaksi lisävarustepakettia on tarkistettu myyjän vahvistuksen perusteella; varastotiedot yksittäisistä tuotteista A, B ja C kuuluvat tähän ostoon.” Pidä kaikki näkyvät viat tai kiistanalaiset mitat omana avoimena ongelmana, kunnes ne on ratkaistu. Täydellinen komponenttien määrä ei yksinään ratkaise tilannetta.
+
+Jos yhdistät myöhemmin nämä tavarat yhdeksi kansainväliseksi paketiksi, liitä lähtevän lähetyksen viite kyseiseen varastotietueiden ryhmään yksittäisten tavaroiden osalta. Kun lähetys saavuttaa sinut, purkaa pakkaus komponentti luetteloa vastaan sen sijaan, että yrittäisit muistaa kauppiaan kotimaan laatikko järjestely. Myyjä on saattanut lähettää kolme laatikkoa ja kansainvälinen pakkaaja käyttää yhden. Tarvittavien osien alkuperäinen luettelo säilyy hyödyllisenä kummankin pakkausvaihtoehdon aikana, ja se antaa sinulle tarkan lähtökohdan, jos jokin puuttuu toimituksen yhteydessä.
+
+Tarkista löysät laitteet kokoonpano-ohjeiden perusteella, jos ne ovat saatavilla. Useista pienistä metallikappaleista otettu valokuva selvittää harvoin, mitkä kiinnikkeet kuuluvat mihinkin yksikköön. Kysy kauppiaalta odotettu määrä tyypin mukaan ja pidä tämä lausunto osaluettelon kanssa sen sijaan, että luottaisit laitteistopussin kokonaispainoon.

@@ -1,0 +1,44 @@
+# Taglia esaurita su CNShopper: come valutare un’alternativa prima di accettarla
+Una dimensione selezionata può scomparire tra il salvataggio di un elemento del foglio di calcolo e la richiesta di un agente di acquistarlo. La risposta utile dipende da ciò che manca: il venditore potrebbe essere esaurito, il selettore importato potrebbe omettere un'opzione valida o due sistemi di taglie potrebbero essere visualizzati in modo diverso. Stabilire quale situazione si applica prima di accettare un'altra taglia o dire all'acquirente di annullare.
+
+## Ricrea la combinazione esatta
+Torna all'inserzione corrente del venditore. Seleziona prima il colore, il modello o il taglio desiderato, quindi controlla le taglie per quella combinazione. Un modello medio disponibile in una vestibilità regolare blu non stabilisce che sia disponibile un modello medio in una vestibilità corta nera. Salvare il testo completo delle opzioni originali e la vista corrente. Confrontalo con la tua nota precedente e l'ordine che hai inviato.
+
+Se la taglia viene visualizzata sulla pagina del venditore ma manca dalla schermata di acquisto importata, segnala la discrepanza con il link del venditore e due screenshot chiari. Chiedi se l'opzione esatta può essere confermata. Se è assente da entrambe le schermate, chiedere al commerciante la disponibilità attraverso il canale appropriato. Una stima del venditore per un rifornimento futuro è diversa da un'unità confermata disponibile per l'acquisto ora. Annota il tipo di risposta che hai ricevuto.
+
+## Identificare il requisito di adattamento dietro l'etichetta
+Un'etichetta come M o EU 42 è un'abbreviazione; non descrive tutte le dimensioni rilevanti. Determina cosa ha reso attraente la dimensione originale. Per i pantaloni, potresti aver bisogno di una particolare fascia di vita, altezza, larghezza della coscia e interno. Per una camicia, la larghezza del petto, la posizione delle spalle, la lunghezza delle maniche e la lunghezza complessiva possono essere importanti in modo indipendente. Annota la misura limite piuttosto che assumere che una taglia in più o in meno funzionerà.
+
+Scegliere un capo di confronto con una costruzione simile che si adatta per lo stesso uso. Una felpa larga per la stratificazione e una giacca su misura indossata sopra una camicia non servono come basi intercambiabili. Posizionare il capo di confronto come indicato nel diagramma del venditore e registrare le unità e i punti finali. Una circonferenza della vita su una tabella delle taglie non può essere confrontata direttamente con una larghezza piatta rilassata senza controllare come entrambi sono stati misurati.
+
+## Confermare quale sia effettivamente l'alternativa proposta
+Chiedi l'opzione esatta del venditore, non solo le parole tradotte "taglia simile". Una sostituzione proposta potrebbe essere la taglia successiva dello stesso capo, la stessa etichetta in un altro taglio, un colore diverso che rimane in magazzino o un'inserzione completamente diversa. Ognuno richiede un confronto diverso. Se il venditore offre un sostituto da un altro elenco, ottenere il proprio grafico, foto, prezzo e condizioni.
+
+Immagina che la giacca in taglia M con lunghezza corta non sia disponibile. Restano la M di lunghezza regolare e la L corta. La M regolare può mantenere una larghezza del torace simile, ma essere più lunga. La L corta può conservare la lunghezza desiderata, ma allargarsi sul torace e sulle spalle. Nessuna delle due è sempre l’alternativa più vicina. Stabilisci quali misure vuoi mantenere e confrontale con entrambe le opzioni. Se mancano i dati necessari non puoi consigliare una taglia con sicurezza.
+
+## Leggi le tabelle delle taglie come misure, non come tabelle di conversione
+Cerca il metodo di misurazione, le unità, la posizione del capo e se i numeri descrivono l'articolo o chi lo indossa. Un grafico del corpo che mostra la misura raccomandata intorno al petto della persona ha un significato diverso dalla circonferenza effettiva del capo finito. Una cintura elastica misurata piatta e rilassata può differire sostanzialmente dalla sua larghezza allungata. Chiedi chiarimenti quando un termine come “vita” appare senza un diagramma.
+
+Supponiamo che la tua giacca, stesa in piano, misuri 54 cm da ascella ad ascella. Nella tabella del venditore compare «torace: 108». Le due misure possono corrispondere se 108 indica la circonferenza completa del capo presa alla stessa altezza. Potrebbero non corrispondere se il valore è la circonferenza toracica consigliata per chi lo indossa. Il calcolo suggerisce cosa chiedere. Anche il taglio, la forma delle maniche e il tessuto incidono sulla vestibilità.
+
+## Decidi se una misurazione potrebbe cambiare la tua risposta
+Se il venditore può fornire una misura prima dell'acquisto, identifica uno o due dettagli che risolverebbero l'incertezza. “Quali sono tutte le dimensioni?” può generare un altro grafico generico. “Per lo short large in nero, qual è la lunghezza centrale posteriore dalla cucitura del colletto all’orlo?” identifica un’opzione e una misura esatte. Chiedi se il titolo corrente è la versione rappresentata dal grafico.
+
+Se l'unica misurazione disponibile viene dopo l'assunzione in magazzino, decidere se il rischio di acquisto e le condizioni di ritorno attuali sono accettabili prima di ordinare. CNShopper descrive le fotografie del magazzino come una revisione visiva e nota che un'ispezione aggiuntiva può dipendere dalla disponibilità. L'aspettativa che le foto successive rispondano alla tua domanda non è la stessa cosa di un impegno confermato del venditore a fornire una taglia adatta o ad accettare un reso.
+
+## Dare all'acquirente una decisione esplicita
+Una volta scelto, invia un'istruzione che nomina l'ordine originale e l'azione precisa. Se accetti il sostituto, specifica l'opzione del venditore sostitutivo, la quantità, il prezzo confermato e qualsiasi condizione richiesta. Se lo rifiuti, dici se vuoi che l'ordine venga trattenuto per chiarimento o annullato in base alle opzioni effettivamente disponibili. Evita di mescolare “prova il grande” con “compra solo il medio” nello stesso messaggio.
+
+Ad esempio, “Il pantaloncino nero M richiesto non è disponibile. Si prega di ordinare pantaloncini neri L solo se il venditore conferma la lunghezza posteriore alla misura concordata. Se supera quella cifra, contattami prima dell’acquisto”. Se non si desidera un acquisto condizionale, utilizzare una decisione più semplice e attendere prima la risposta. Conserva la conferma dell'acquirente accanto al tuo messaggio in modo che sia chiaro quale istruzione è stata accettata.
+
+## Confronta l'articolo di magazzino con l'ordine modificato
+All’ingresso in magazzino verifica la variante sostitutiva approvata, oltre all’articolo iniziale del foglio di calcolo. Se hai accettato una L corta, l’etichetta L può essere corretta anche se in origine volevi una M. Da sola però l’etichetta non conferma il taglio o la misura che ti hanno convinto a cambiare. Se il servizio lo consente, chiedi una foto mirata al dubbio rimasto.
+
+Mantieni la foto collegata all'ordine specifico. Due giacche nere fotografate sulla stessa superficie possono essere facilmente confuse. Cerca l'etichetta dell'opzione, una vista generale e la misura pertinente. Se l'articolo ricevuto differisce dalla conferma riveduta, descrivere la differenza esatta per supportare mentre l'unità è disponibile per l'ispezione. La richiesta originale e la sostituzione accettata forniscono il contesto della discrepanza.
+
+## Conserva il risultato originale per gli acquisti futuri
+Annota brevemente l’esito, per esempio «M corta non disponibile; accettata la L corta dopo aver verificato la lunghezza del dorso; registrata la misura effettiva in magazzino». Se rifiuti la sostituzione, conserva il motivo, come una lunghezza eccessiva o un’altezza del cavallo inadatta. Queste note aiutano il prossimo acquisto dallo stesso venditore senza dare per scontato che le taglie siano uguali in tutti i negozi.
+
+La decisione è completa quando puoi identificare l'opzione effettivamente disponibile, spiegare perché le sue misure soddisfano o non soddisfano le tue esigenze e indicare le istruzioni ricevute dall'acquirente. Una taglia diversa può essere ragionevole, ma la sua idoneità deve derivare dal capo e dall’uso che si ha in mente. Non dovrebbe mai dipendere esclusivamente da una lettera familiare, una miniatura simile o un suggerimento frettoloso per scegliere l'opzione successiva.
+
+Tieni traccia dell'opzione che hai rifiutato e di quella che hai approvato. Se un venditore offre sia un colore diverso nella taglia richiesta che il colore richiesto in una taglia diversa, una risposta che si riferisce alla “seconda opzione” può diventare poco chiara quando i messaggi vengono tradotti o inoltrati. Ripeti per intero il colore, la taglia e il modello accettati e richiedi conferma sulla riga di acquisto interessata.

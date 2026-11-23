@@ -1,0 +1,44 @@
+# Częściowa dostawa zamówienia CNShopper: jak ustalić, których produktów brakuje
+Zdjęcie magazynowe pokazujące jeden produkt nie oznacza automatycznie, że sprzedawca wysłał tylko jeden. Inne elementy mogą znajdować się w drugiej przesyłce krajowej, wewnątrz tego samego kartonu, wymienione w innym rejestrze magazynowym dla indywidualnej pozycji lub nieobecne w przesyłce. Ustaw oczekiwaną zawartość i dowody dla każdej dostawy fizycznej, zanim zdecydujesz, które pytanie należy do sprzedawcy, a które do magazynu.
+
+## Zacznij od tego, co faktycznie zamówiłeś
+Otwórz zaakceptowany rekord zakupu. Zidentyfikuj każdą opcję i jej zamówioną ilość, a następnie wymień fizyczne komponenty zawarte w każdej opcji. To samo zdjęcie produktu może ilustrować pełny zestaw i pojedyncze elementy. Jeśli kupiłeś „tylko top”, brakująca para spodni nie jest brakiem w magazynie, nawet jeśli główne zdjęcie sprzedawcy pokazuje kompletny strój.
+
+Rozważmy zamówienie artykułów piśmienniczych zawierające dwa piórniki i jeden zestaw wkładów. W zestawie znajdują się trzy wkłady zgodnie z opcją płatną. Twój zakup ma zatem trzy zamówione jednostki i pięć głównych elementów fizycznych. Sprzedawca może zapakować wkłady do jednego piórnika, umieścić je w osobnym etui lub wysłać je później. Przechowuj oczekiwaną liczbę fizyczną obok jednostek zamówienia, aby rekord magazynowy dla pojedynczego elementu wskazującego jeden zestaw mógł być poprawnie zinterpretowany.
+
+## Zapytaj, co sprzedawca wysłał pod każdym numerem
+Znajdź numer każdego krajowego operatora powiązanego z zakupem. Zamówienie sprzedawcy może wygenerować więcej niż jeden list przewozowy, jeśli zapasy są podzielone między lokalizacje lub wysyłane w różnym czasie. Etykieta zastępcza może również utworzyć drugi numer bez drugiej fizycznej paczki. Szukaj zdarzeń zbierania i przemieszczania i zapytaj sprzedawcę, które numery zostały faktycznie użyte, gdy rekord jest niejasny.
+
+Napisz wiersz dla każdego listu przewozowego z przewoźnikiem, najnowszym wydarzeniem i zawartością, którą sprzedawca twierdzi, że zawiera. Pozostaw zawartość nieznaną, jeśli sprzedawca jej nie potwierdził. Waga małej paczki nie pozwala ustalić, że zawiera ona wkłady, a nie jeden pusty piórnik. Zgadywanie alokacji może wydawać się wydajne, dopóki zgadywanie nie koliduje ze zdjęciami magazynowymi i nie wysyła dochodzenia w kierunku niewłaściwego pola.
+
+## Nadaj każdemu etapowi własny status
+Przewodnik śledzenia CNShopper opisuje wysyłkę sprzedawcy, przybycie do magazynu, dopasowanie do zamówienia, kontrolę i późniejszą dostawę międzynarodową jako oddzielne etapy. Przewoźnik może zgłosić dostawę, zanim będziesz mógł zidentyfikować towary w magazynie. I odwrotnie, przedmiot w magazynie może być gotowy do przeglądu, podczas gdy inny karton z tego samego zakupu pozostaje w transporcie. Zaznacz te stany niezależnie.
+
+Dla przykładu artykułów piśmienniczych, załóżmy, że list przewozowy A pokazuje dostawę, a obraz magazynu wyraźnie pokazuje jeden piórnik. List przewozowy B pokazuje odbiór bez dostawy. Można powiedzieć, że jeden przypadek jest wizualnie rozliczony, a inna krajowa paczka się porusza. Nie możesz jeszcze stwierdzić, że jedna skrzynka i zestaw wkładów zostały utracone. Kolejnym przydatnym pytaniem jest to, co zawiera pudełko sprzedawcy B i czy w pierwszym pudełku są jakieś mniejsze elementy.
+
+## Sprawdzanie właściwego wpisu bez nadmiernej interpretacji zdjęcia
+Dopasuj numer referencyjny magazynu, etykietę opcji, kolor i liczbę do oczekiwanych sztuk. Sprawdź całą grupę zdjęć, gdy są dostępne. Zdjęcie zamkniętego pojemnika niewiele mówi o akcesoriach wewnątrz. Zdjęcie pokazujące otwarty piórnik i zapakowane wkłady może wspierać liczenie, jeśli kawałki są wystarczająco widoczne, aby je rozróżnić. Opisz dokładnie to, co obraz potwierdza.
+
+Jeśli krytyczna część jest ukryta, poproś o ukierunkowane sprawdzenie w zależności od dostępnych usług. „W przypadku granatowego piórnika na wpisie X, proszę sprawdzić, czy osobno zamówiony zestaw wkładów znajduje się wewnątrz kieszeni zamykanej na zamek” jest konkretny. Prośba o nowy widok z przodu zamkniętej sprawy prawdopodobnie powtórzy informacje, które już masz. Określić, czy otwarcie zamkniętego opakowania detalicznego jest dopuszczalne przed założeniem, że personel może odsłonić każdą część.
+
+## Rozróżnij trzy typowe rozbieżności
+Pierwsza to różnica czasu: jedna z kilku znanych paczek nie dotarła. Kontynuuj śledzenie tego konkretnego numeru przewoźnika. Druga to różnica tożsamości: paczka dotarła, ale opis magazynu lub numer referencyjny jest trudny do dopasowania. Dostarcz CNShopperowi dowody sprzedawcy i przewoźnika. Trzecia to różnica w zawartości: odpowiedni karton jest zidentyfikowany, ale zakupiony komponent jest nieobecny w zarejestrowanej zawartości. Poproś o sprawdzenie zawartości i porównaj ją z opakowaniem sprzedawcy.
+
+Te wyniki mogą współistnieć. Pierwsze pudełko może zawierać właściwy piórnik, ale w niewłaściwym kolorze, podczas gdy drugie jest jeszcze w drodze. Zarejestruj widoczny problem z kolorem oddzielnie od pytania o brakujące przybycie. Rozwiązanie jednego nie rozwiąże drugiego. Jeśli zgłosisz całe zamówienie jako po prostu niekompletne, wsparcie może odpowiedzieć na pytanie przewoźnika i przeoczyć fakt, że widoczny element może wymagać działania przed wysyłką.
+
+## Zdecyduj, czy częściowa wysyłka służy Twojemu celowi
+Po zidentyfikowaniu przybyłych jednostek zdecyduj, czy potrzebujesz ich razem. Dwa niezależne prezenty mogą być przydatne na różnych osiach czasu. Skrzynka zamówiona specjalnie do przechowywania brakujących narzędzi może być nieodpowiednia do wysłania bez nich. Weź pod uwagę wszelkie odpowiednie środki zaradcze sprzedawcy, warunki przechowywania w magazynie, wymagania dotyczące pakowania i rzeczywiste opcje przesyłek przed wyborem dostępnych wpisów do wysyłki międzynarodowej.
+
+Porównaj pełne alternatywy. Jedna oferta dla bieżących sztuk nie reprezentuje kosztów wysyłki późniejszych sztuk oddzielnie. Przyszła połączona oferta może również ulec zmianie, gdy wszystkie wymiary są znane. Zarejestruj wybrany scenariusz jako „Wyślij potwierdzony przedmiot teraz; pozostałe przedmioty przechowywane do przyjęcia” lub „Poczekaj na wszystkie dopasowane części”. Takie sformułowanie uniemożliwia późniejszemu czytelnikowi założenie, że każdy przedmiot z oryginalnego zakupu znajdował się w pierwszym opakowaniu wysyłanym z magazynu do klienta.
+
+## Składanie małej wiadomości o wyjątku
+Zacznij od numeru zamówienia i jednozdaniowego opisu tego, co zostało zakupione. Dodaj odpowiedni numer przewoźnika, bieżące zdarzenie dostawy, rekord magazynowy dla pojedynczej pozycji i dokładną jednostkę, o którą nadal chodzi. Wyjaśnij, które jednostki zostały już dopasowane. Dołącz potwierdzenie zamówienia i zdjęcie lub odpowiedź sprzedawcy, która pokazuje rozbieżność. Więcej zrzutów ekranu jest przydatnych tylko wtedy, gdy każdy z nich przyczynia się do innego faktu.
+
+Na przykład: „Zamówienie dotyczyło dwóch pudełek i jednego trzyczęściowego zestawu uzupełniającego. Jeden przypadek jest widoczny pod wpisem X. Sprzedawca twierdzi, że zestaw podróżował na liście przewozowym A z tą walizką, podczas gdy druga walizka jest na liście przewozowym B. Czy możesz sprawdzić, czy torebka z wkładem została zapisana we wpisie X?” Dodaj rzeczywiste odniesienia prywatnie. Ta wiadomość prosi magazyn o zweryfikowanie określonego roszczenia bez proszenia o wyjaśnienie drugiego kartonu, który nie dotarł.
+
+## Zamknij zakup przez jednostkę, a następnie przez paczkę
+Gdy pojawi się inny rekord magazynowy dla pojedynczego elementu, porównaj go z listą oczekujących, zamiast ponownie rozpoczynać dochodzenie. Jeśli drugie pudełko zostanie dostarczone, a jego kieszeń zawiera wkłady, zaktualizuj zarówno liczbę fizyczną, jak i wcześniejsze założenie dotyczące pakowania sprzedawcy. Zapisz datę korekty. Jeśli uzupełnienia pozostają nieobecne, a wszystkie kartony krajowe zostały sprawdzone, masz teraz dokładniejszą podstawę do zapytania posprzedażnego.
+
+Zakończ mapowanie każdej przyjętej jednostki do numeru referencyjnego magazynu, a następnie do opakowania wysyłanego z magazynu do klienta. Produkt może zostać zamówiony, odebrany, sprawdzony i wysłany w czterech różnych terminach. Utrzymywanie tych dat i liczb oddzielnie pozwala dokładnie określić, gdzie czegoś brakuje. Zapobiega to również przekształceniu normalnej dostawy podzielonej w niepotrzebne roszczenie, zachowując jednocześnie dowody, których potrzebujesz, jeśli niedobór jest prawdziwy.
+
+Kiedy zwolnisz pierwsze elementy do wysyłki, zapisz dokładnie tę listę, którą wybrałeś. Później na koncie może pojawić się dostarczona przesyłka międzynarodowa obok nowo przywiezionej pozycji magazynowej z tego samego pierwotnego zakupu. Zapisany wybór pozwala rozpoznać to jako wynik, który wybrałeś. Zapobiega to również zgłaszaniu późniejszego przedmiotu jako zaginionego z paczki, która nigdy nie miała go zawierać.

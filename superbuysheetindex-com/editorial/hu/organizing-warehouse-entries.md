@@ -1,0 +1,46 @@
+# A Superbuy raktárában lévő tételek rendezése a csomag összeállítása előtt
+Egy raktárlista az érkezések halmazaként kezdődik, majd fokozatosan döntések halmazává válik. Az egyik kabát készen van, a másiknak méretre van szüksége, egy ajándéknak meg kell tartania a dobozát, és egy régebbi megrendelés pótlására érkezett. Az összes látható bejegyzés kiválasztása összekeverheti ezeket a döntéseket. Szervezze a bejegyzéseket arra, hogy mit tud ténylegesen elküldeni.
+
+## Tartsa meg a raktárhivatkozást horgonyként
+Indítsa el az egyes tételek minden releváns raktárrekordjához tartozó sort. Másolja a hivatkozást a megjelenített formában, a kapcsolódó vásárlási vagy továbbítási rekordot, valamint egy később felismerhető leírást. A lefordított terméknév kétértelmű lehet. A hivatkozás és a pontos leírás (például „navy medium, plain cuffs”) segít megkülönböztetni egy egységet egy néhány nappal korábban vásárolt hasonló terméktől.
+
+Ne kényszerítse az eladót, hogy rendelje meg az egyetlen kulcsot a nyilvántartásában. Egy eladói megrendelés több raktárrekordot hozhat létre az egyes tételekhez. Egy szállítmány több vásárlásból származó árut is tartalmazhat. A helyettesítő annyira hasonlíthat az eredetihez, hogy mindkét cím azonosnak tűnik. Tartson külön mezőt a bejegyzéseket összekapcsoló eseményhez, például „az eredeti bejegyzés cseréje” vagy „ugyanabból a megrendelésből származó második egység”, ahelyett, hogy mindkét terméket átnevezné, mintha egy lenne.
+
+## Döntés, megoldatlan kérdés és tulajdonos rögzítése
+Adj minden bejegyzésnek egy gyakorlati állapotot. Hasznos példák: szállításra kész, méretre vár, az eladótól vár információt, tárgyalás alatt álló visszaküldés és szándékosan egy másik tétel számára tartott. Ezek az Ön privát munkajegyzetei; a tényleges platform állapotát külön használja. A lényeg az, hogy rögzítse, amire személyesen szüksége van, mielőtt engedélyezné azt a tételt egy csomagban, amelyet a raktárból az ügyfélnek szállítanak.
+
+Minden nyitott kérdéshez nevezze meg, hogy ki tudja megválaszolni. Előfordulhat, hogy a kereskedő tudja, hogy egy adott tartozék egy adott csomaghoz tartozik-e. A raktár személyzete képes lehet megmutatni, hogy a tartozék fizikailag jelen van-e. Eldöntheti, hogy egy kis kozmetikai jel elfogadható-e. Ha egy sor csak azt mondja, hogy "check", senki sem tudja, kinek a művelete zárja le. Cserélje ki ezt a szót a „belső címke fényképére vár” vagy „hasonlítsa össze a szélességét a saját kabátjával”.
+
+## Vegyes megrendelés áttekintése
+Képzeljünk el négy bejegyzést. Az első egy sötétkék ing, amelynek a méretcímkéjét és méretét elfogadta. A második egy újabb sötétkék ing, ezúttal nagyobb méretben, amit valaki másnak rendeltem. A címke olvashatatlan. A harmadik egy bögre egy törékeny fogantyúval. A negyedik egy olyan könyv, amelyet az eredeti tokjában szeretne tartani. Négy raktáron lévő bejegyzés nem jelent automatikusan négy szállításra kész bejegyzést.
+
+Jelölje meg az első inget készen. Tartsa a másodikat az azonosításhoz. A bögre esetében jegyezze fel az aktuális állapotát és a szükséges csomagolási védelmet az utazás előtt. Jelölje meg a kész könyvet a tok megtartásával. Így Önnek csak egy ellenőrizendő tétel és két tételspecifikus csomagolási utasítás marad. Ezek az eredmények sokkal informatívabbak, mint egy lista, amelyben minden azt mondja, hogy „megérkezett”.
+
+## Keressen korlátozásokat az áruk csoportosítása előtt
+Ellenőrizze a tartalomnak és a rendeltetési helynek megfelelő szállítási lehetőségeket, mielőtt azt feltételezné, hogy mindennek együtt kell utaznia. Egy akkumulátorral ellátott, törékeny alakú vagy szokatlan méretű tárgy megváltoztathatja a használható útvonalak listáját. Azonosítsa ezeket a tulajdonságokat a tényleges eleminformációkból. Az olyan homályos katalóguskategóriák, mint a tartozékok, ritkán tartalmaznak elegendő részletet a szállítási jogosultság megállapításához.
+
+Használja a lehetséges csoportokat a tervezéshez. Az egyik csoport tartalmazhat közönséges ruházatot, amely készen áll; egy másik tartalmazhatja a törékeny tételt, amelynek csomagolása vita tárgyát képezi. Jegyezze fel, hogy mely elemek és csomagolási feltevések kerültek be az egyes becslésekbe. Ha egy adott bejegyzés hozzáadása után eltűnik egy útvonal, vizsgálja meg a változást, mielőtt összehasonlítaná a fuvardíjakat. Egy új elem hozzáadása nem garantálja, hogy az eredeti útvonal és szolgáltatási feltételek változatlanul fennmaradnak.
+
+## Idő nyomon követése elemszinten
+Ellenőrizze a fiókjában található minden egyes bejegyzés aktuális tárolási adatait. Az érkezés, a bevitel és az adott bejegyzéshez megjelenített határidő hasznosabb az Ön számára, mint az a dátum, amikor először találta meg a terméket az interneten. Előfordulhat, hogy egy régebbi tétel közeledik a döntési ponthoz, míg egy ugyanazon eladótól származó újonnan készleten lévő tételnek több ideje van. A tervezett csomaghoz csatolt egyetlen dátum elrejti ezt a különbséget.
+
+A még nyitott eladói ügyhöz külön jegyezze fel az intézkedés határidejét. A raktározásra rendelkezésre álló idő és az eladónál érvényes visszaküldési lehetőség két külön kérdés. Ellenőrzött terméknél érdemes lehet megvárni egy másik rendelést a közös szállításhoz, tisztázatlan hiba esetén azonban a várakozás gondot okozhat. A visszaküldésről a vásárlási feltételek alapján döntsön.
+
+## A hibák elkerülése azonos áruk esetén
+Hasonló egységek esetén használjon következetes sorrendet. Hasonlítsa össze a vásárláshoz szükséges utasításokat tartalmazó első jegyzetet, a megfelelő raktárhivatkozást és a fényképeket. Fejezze be a mérkőzést, mielőtt megnyitja a következő majdnem azonos elem. Ha egy fényképből hiányzik egy hasznos tulajdonság, írja le pontosan, hogy milyen bizonyíték hiányzik. Két azonos elülső grafikával ellátott ruhadarab esetében különböző címkenézetek szükségesek ahhoz, hogy megállapítható legyen, melyik ruhadarab tartozik az egyes címzettekhez.
+
+Gyakorlati példa erre két sötét pulóver, melyeket közepes és nagy méretben rendeltünk. Előfordulhat, hogy az egyik raktárképen egy nagyméretű címke látható, míg a másikon csak a hajtogatott előlap látható. Ne címkézze fel az egyik hajtogatott hordozót kizárólag eltávolítással, ha a másik megrendelés még szállítás alatt van, vagy esetleg hibásan lett csomagolva. Kérje meg a kétértelmű bejegyzéshez kapcsolódó azonosító nézetet. A megerősítést követően jegyezze fel, hogy melyik egység melyik címkével rendelkezik, valamint az ellenőrzés dátumát.
+
+## A tételmegjegyzések lefordítása csomagutasításokká
+A leadás előtt csak a kiválasztott csomagra vonatkozó utasításokat továbbítsa. A gyűjtői hüvely megőrzésére vonatkozó megjegyzés az adott könyvhöz tartozik. A külső karton megerősítése a teljes csomagot érinti. Írja le a tárgyat és a műveletet együtt, hogy az egyik utasítás ne írja felül véletlenül a másikat, különösen akkor, ha egyes csomagolóanyagokat eltávolít, miközben más részeket érintetlenül hagy.
+
+A bögre és a könyv példájában az „összes csomagolás eltávolítása” ütközik a könyv tokjának megőrzésével, és eltávolíthatja a bögre védelmét. Egy hasznosabb utasítás azonosítja a külső szállítási anyagokat, amelyek eltávolíthatók, a kiskereskedelmi darabokat, amelyeknek meg kell maradniuk, és a védelmet igénylő törékeny felületet. Kérdezze meg, hogy a kért kezelés elérhető-e. Mentse el az elfogadott utasítást az esetleges csomagolt csomag rekord mellett.
+
+## A benyújtott kiválasztás összeegyeztetése
+Amikor a Saját raktárból küld árut szállításra, hasonlítsa össze a kiválasztott bejegyzéseket a kész listával még egyszer. Ellenőrizze a hivatkozást, az opciót, a számlálást és a csomagolási utasításokat. Mentse el a kimenő hivatkozást, amikor kiadta, és csatolja a kiválasztott bejegyzésekhez. Hagyja a kijelöletlen elemeket saját állapotukban; három elem áthelyezése egy csomagba nem oldja meg a negyedik elem függőben lévő mérési kérelmét.
+
+A kiszállítás után használja a csomagot, amelyet a raktárból az ügyfél nyilvántartásába szállítanak a nemzetközi nyomon követéshez. Tartsa meg az eredeti raktárkapcsolatokat a szállítás befejezéséig. Ha egy csomag három elemmel érkezik, amikor négyre számított, a nyilvántartásnak azonnal meg kell mondania, hogy a negyedik elemet valóban kiválasztották-e, vagy szándékosan tartották-e. Ez az egyetlen megkülönböztetés megtakaríthat egy hosszadalmas keresést az eladói előzményeken, a fuvarozói beolvasásokon és a majdnem azonos fényképeken keresztül.
+
+Egy jó raktárlista elég rövid ahhoz, hogy fenntartható legyen, és elég konkrét ahhoz, hogy megválaszolja a következő döntést. Ha egy sor tartalmaz hivatkozást, fizikai azonosítót, készenlétet, nyitott kérdést és esetleges csomagot, akkor követheti az elemet a beérkezéstől a kiszállításig anélkül, hogy elveszítené azokat a részleteket, amelyek miatt kiválasztotta.
+
+Különböző címzetteknek küldött ajándékok esetén az egyesített csomagok összehasonlítása előtt adja hozzá az egyes bejegyzésekhez a rendeltetési csoportot. Az Ön címére küldött egyetlen alacsony szállítási árajánlat nem mond semmit a tartalom későbbi újraelosztásának költségéről. A szándékolt címzett szerinti csoportosítás először felfedheti a szállítási választást, amelyet a raktársúlyok egyszerű összege elrejt.

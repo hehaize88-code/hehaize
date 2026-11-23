@@ -1,0 +1,46 @@
+# Cómo organizar los artículos del almacén de Superbuy antes de preparar un envío
+Una lista de almacén comienza como un conjunto de llegadas, luego gradualmente se convierte en un conjunto de decisiones. Una chaqueta está lista, otra necesita una medición, un regalo debe mantener su caja y un reemplazo ha llegado para un pedido más antiguo. Seleccionar todas las entradas visibles puede mezclar esas decisiones. Organiza las entradas en torno a lo que realmente puedes enviar.
+
+## Mantenga la referencia del almacén como el ancla
+Inicie una fila para cada registro de almacén relevante para un artículo individual. Copie la referencia como se muestra, el registro de compra o reenvío asociado y una descripción que pueda reconocer más tarde. Un nombre de producto traducido puede ser ambiguo. Una referencia combinada con una descripción precisa, como “azul marino mediano, puños lisos”, le ayuda a distinguir una unidad de un artículo similar comprado varios días antes.
+
+No haga que el vendedor pida la única clave en su registro. Un pedido del vendedor puede producir varios registros de almacén para artículos individuales. Un paquete de reenvío puede contener mercancías de más de una compra. Un reemplazo puede parecerse tanto al original que ambos títulos parezcan idénticos. Mantenga un campo separado para el evento que vincula las entradas, como "reemplazo de la entrada original" o "segunda unidad del mismo pedido", en lugar de cambiar el nombre de ambos productos como si fueran uno solo.
+
+## Registrar una decisión, una pregunta no resuelta y un propietario
+Dale a cada entrada un estado práctico. Ejemplos útiles incluyen listo para enviar, esperando una medición, esperando información del vendedor, devolución en discusión y deliberadamente retenido para otro artículo. Estas son sus notas de trabajo privadas; utilice el estado real de la plataforma por separado. El punto es registrar lo que usted necesita personalmente antes de permitir que ese artículo entre en un paquete que se envía desde el almacén al cliente.
+
+Para cada pregunta abierta, nombra a quien puede responderla. El minorista puede saber si un accesorio pertenece a un paquete en particular. El personal del almacén puede ser capaz de mostrar si ese accesorio está físicamente presente. Usted puede decidir si una pequeña marca cosmética es aceptable. Si una fila simplemente dice “check”, nadie sabe cuál acción la cerrará. Reemplaza esa palabra por “esperando una fotografía de la etiqueta interior” o “comparar el ancho con mi propia chaqueta”.
+
+## Trabajar a través de un orden mixto
+Imagina cuatro entradas. La primera es una camisa azul marino cuya etiqueta de talla y medidas has aceptado. La segunda es otra camisa azul marino, esta vez en la talla más grande ordenada para otra persona. Su etiqueta es ilegible. La tercera es una taza con un mango frágil. El cuarto es un libro que quieres guardar en su estuche original. Cuatro entradas almacenadas no hacen automáticamente cuatro entradas listas para el envío.
+
+Marca la primera camisa lista. Sostenga el segundo para la identificación. Para la taza, anote su condición actual y la protección del embalaje que necesita antes de viajar. Marque el libro listo sujeto a la retención de la funda. Esto le deja con un artículo para inspeccionar y dos instrucciones de embalaje específicas del artículo. Esos resultados son mucho más informativos que una lista en la que todo dice “llegó”.
+
+## Encontrar restricciones antes de agrupar mercancías
+Compruebe las opciones de envío en vivo apropiadas para el contenido y el destino antes de asumir que todo debe viajar junto. Un artículo con una batería, una forma frágil o dimensiones inusuales puede cambiar la lista de rutas utilizables. Identifique esas propiedades a partir de la información real del elemento. Una categoría de catálogo vaga como accesorios rara vez proporciona suficiente detalle para determinar la elegibilidad de envío.
+
+Utilice los grupos posibles para la planificación. Un grupo podría contener ropa ordinaria lista ahora; otro podría contener el artículo frágil cuyo embalaje está bajo discusión. Registre qué artículos y suposiciones de embalaje se incluyeron en cada estimación. Si una ruta desaparece después de agregar una entrada en particular, investigue ese cambio antes de comparar los totales de flete. Agregar un nuevo elemento no garantiza que la ruta original y las condiciones de servicio sobrevivan sin cambios.
+
+## Seguimiento del tiempo a nivel de elemento
+Compruebe la información de almacenamiento actual para cada entrada en su cuenta. La llegada, la ingesta y la fecha límite que se muestran para esa entrada específica son más útiles para usted que la fecha en que encontró por primera vez el producto en línea. Un artículo antiguo puede estar acercándose a un punto de decisión, mientras que un artículo recientemente en stock del mismo vendedor tiene más tiempo disponible. Una sola fecha adjunta al paquete planeado oculta esa diferencia.
+
+Si un problema del vendedor todavía está abierto, registra su propio plazo de acción de forma independiente. Una asignación de almacenamiento y una oportunidad de devolución del vendedor responden a preguntas diferentes. Esperar un pedido más para consolidar el flete puede ser razonable para un artículo confirmado y imprudente para un artículo con un defecto no resuelto. Lea las condiciones aplicables a su compra antes de dejar que una fecha de envío programada controle una decisión de devolución no relacionada.
+
+## Evitar errores cuando se trata de mercancías idénticas
+Utilice una secuencia consistente para unidades similares. Compare la primera nota que contiene las instrucciones para la compra, la referencia de almacén correspondiente y sus fotos juntas. Termina esa coincidencia antes de abrir el siguiente elemento casi idéntico. Si una foto carece de una característica útil, anote exactamente qué evidencia falta. Dos prendas con el mismo gráfico delantero pueden necesitar diferentes vistas de etiqueta para establecer cuál pertenece a cada destinatario.
+
+Un ejemplo práctico son dos sudaderas oscuras ordenadas en medianas y grandes. Una imagen del almacén puede mostrar una etiqueta grande marcada mientras que la otra muestra solo una parte delantera doblada. No etiquete el medio doblado únicamente por eliminación si el otro pedido todavía está en tránsito o podría haberse empaquetado incorrectamente. Pregunte por la vista de identificación vinculada a la entrada ambigua. Una vez confirmado, anote qué unidad tiene qué etiqueta y la fecha de esa comprobación.
+
+## Traducir notas de artículos en instrucciones de paquetes
+Antes de enviar, transfiera solo las instrucciones que se aplican al paquete elegido. Una nota para retener una funda de coleccionista pertenece con el libro específico. El refuerzo de una caja exterior se refiere a todo el paquete. Describe el objeto y la acción juntos para que una instrucción no anule inadvertidamente a otra, particularmente cuando se retiran algunos envases mientras se mantienen intactas otras piezas.
+
+Para el ejemplo de la taza y el libro, "quitar todo el embalaje" entra en conflicto con la retención de la funda del libro y puede quitar la protección de la taza. Una instrucción más útil identifica los materiales de entrega exterior que se pueden quitar, las piezas al por menor que deben permanecer y la superficie frágil que requiere protección. Pregunte si el tratamiento solicitado está disponible. Guarde la instrucción aceptada junto con el eventual registro del paquete empacado.
+
+## Conciliar la selección presentada
+Cuando envíe mercancías para entrega desde Mi almacén, compare las entradas seleccionadas con su lista lista una vez más. Compruebe la referencia, la opción, el conteo y las instrucciones de embalaje. Guarde la referencia de salida cuando se emita y adjúntela a las entradas seleccionadas. Deje que los elementos no seleccionados muestren sus propios estados; mover tres elementos a un paquete no resuelve la solicitud de medición pendiente de un cuarto elemento.
+
+Después del envío, utilice el paquete que se envía desde el almacén al registro del cliente para el seguimiento internacional. Mantenga los enlaces originales del almacén hasta que se complete la entrega. Si un paquete llega con tres artículos cuando usted esperaba cuatro, su registro debe decirle inmediatamente si un cuarto artículo fue realmente seleccionado o deliberadamente retenido. Esa única distinción puede ahorrar una larga búsqueda a través de historiales de vendedores, escaneos de operadores y fotos casi idénticas.
+
+Una buena lista de almacén es lo suficientemente corta para mantener y lo suficientemente específica para responder a la siguiente decisión. Si una fila contiene una referencia, identidad física, disponibilidad, pregunta abierta y eventual paquete, puede seguir un artículo desde la entrada hasta el envío sin perder los detalles que lo hicieron elegirlo.
+
+Para regalos que van a diferentes destinatarios, agregue el grupo de destino a cada entrada antes de comparar paquetes combinados. Una sola cotización de envío bajo a su dirección no dice nada sobre el costo de redistribuir los contenidos después. El agrupamiento por destinatario previsto primero puede exponer una opción de envío que un simple total de pesos de almacén oculta.

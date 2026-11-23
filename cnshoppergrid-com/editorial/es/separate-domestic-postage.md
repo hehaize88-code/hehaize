@@ -1,0 +1,44 @@
+# Costes de un pedido de CNShopper: cómo separar el porte nacional del envío internacional
+Un importe de envío junto a un producto del mercado chino y un importe de envío que se muestra para un paquete que se envía desde el almacén al cliente pueden ser correctos. Cubren diferentes trayectos. El primero puede pagar al vendedor para llevar las mercancías al almacén. El segundo puede pagar por el movimiento desde el almacén hacia su destino. Mezclarlos en una columna de la hoja de cálculo hace que un presupuesto sea difícil de verificar, especialmente cuando varias compras comparten un paquete.
+
+## Siga las mercancías en lugar de la palabra envío
+Dibuja la ruta en dos partes. El comerciante envía una o más unidades al almacén. Una vez que las mercancías estén disponibles y haya seleccionado los artículos para un paquete, comienza la entrega internacional. La guía de pedidos de CNShopper describe cómo confirmar el costo del producto y la entrega nacional antes de la compra, luego revisar los artículos del almacén y elegir el envío internacional. Utilice esos eventos distintos como la base de su registro de compras.
+
+Esto no implica que todos los vendedores cobren el envío nacional o que todos los artículos de pago tengan el mismo tratamiento. Un vendedor puede mostrar la entrega incluida, cobrar una vez por el pedido o cambiar la cantidad de acuerdo con la selección real. Registre con precisión lo que muestra el pedido pagado. Un campo de envío vacío en una tarjeta de catálogo es una entrada desconocida hasta que haya verificado cómo la compra en vivo lo maneja.
+
+## Usar el pedido del vendedor como unidad contable nacional
+Cree una línea para cada pedido del vendedor con el subtotal de los productos elegidos, cualquier cargo de envío nacional y la moneda de la transacción. Si quieres detalles a nivel de artículo, coloca las piezas debajo de ese pedido del vendedor. Evite adjuntar automáticamente la carga doméstica completa a cada pieza. Al hacerlo, se cuenta el mismo movimiento varias veces.
+
+Imagine que el vendedor A suministra dos carpetas a 30 cada una y cobra 8 para enviar ambas al almacén. El subtotal del pedido del vendedor es 60 y el costo nacional combinado es 68. Registrar cada carpeta como 30 más 8 da un total de 76 y exagera lo que se gastó. Puede asignar 4 del costo nacional a cada carpeta para su análisis interno, pero el vendedor cobró 8 una vez. Mantenga el total de la factura original junto con cualquier asignación opcional.
+
+## Añadir un segundo vendedor sin cambiar la primera factura
+Supongamos ahora que el vendedor B suministra un archivador por 50 y cobra 6 por enviarlo al almacén. La segunda compra cuesta 56. En este ejemplo, los tres artículos han costado en total 124 hasta su llegada al almacén: 68 con el vendedor A y 56 con el vendedor B. Esa suma no permite saber cuánto costará el posterior envío internacional.
+
+Esta separación se vuelve importante cuando más tarde decide qué mercancías deben viajar juntas. Si envía la carpeta primero y las carpetas más tarde, las facturas originales del vendedor permanecen iguales. Su paquete que se envía desde el almacén hasta los costos del cliente ahora pertenece a dos registros de paquetes. Si las tres piezas viajan juntas, hay un registro saliente para vincular a ambas compras del vendedor. El historial del vendedor al almacén no debería tener que reescribirse cada vez que cambie un plan de consolidación.
+
+## Mantener las estimaciones fuera de la columna de pago
+En la etapa de planificación, es posible que desee una franquicia de flete incluso antes de que haya embalado las dimensiones. Coloque esa cifra en un campo de estimación con sus suposiciones. Marque si el peso de entrada representa el artículo, el embalaje al por menor o la caja de salida propuesta. Registre el destino, la ruta y la fecha comprobada. Cuando llegue la cotización completa, conserve la suposición original como comparación en lugar de sumar ambas cifras como gasto real.
+
+Supón que en tu hoja reservaste 70 para el envío internacional y después aceptaste un presupuesto de 82 en la misma moneda. El porte supera en 12 lo previsto. Anotar ambas cifras no significa que hayas gastado 152. Si contratas un servicio opcional por separado, regístralo en otro campo y comprueba si el presupuesto ya lo incluye antes de sumarlo.
+
+## Separar la conversión de divisas de los cambios de entrega
+Mantén la moneda del vendedor visible incluso cuando prefieras un presupuesto en tu moneda local. Una conversión de catálogo, el importe en la compra y el cargo publicado por el proveedor de pagos pueden diferir porque se calcularon en momentos diferentes o bajo reglas de conversión diferentes. Compare las cantidades de origen en una moneda común antes de atribuir una diferencia al franqueo.
+
+Considere un pedido en el que la factura del vendedor se mantiene en 68 en la moneda original, pero la estimación convertida en una visita posterior cambia. La línea de entrega doméstica no se movió necesariamente. Compruebe los productos originales y las líneas de franqueo primero. Si no han cambiado, revise la conversión y cualquier cargo distinto del proveedor de pago por separado. Para una compra liquidada, conserve el registro de pago real en lugar de recalcular continuamente lo que pagó históricamente a partir de la tasa de hoy.
+
+## Asignar el flete de salida solo cuando sirve para una decisión
+Es posible que desee estimar el costo entregado de los productos individuales. Decide qué regla de asignación coincide con tu propósito y rótula como tu análisis. La división igual es fácil cuando las piezas son similares. La división por el peso del artículo puede ser más informativa para una carpeta densa y dos carpetas ligeras. Ninguno de los métodos representa automáticamente el precio real del transportista por artículo; los transportistas suelen cotizar el paquete como un todo bajo sus condiciones de servicio.
+
+Supongamos que el ejemplo de salida cuesta 90 y lo asignas por igual a tres piezas. Cada uno recibe una asignación interna de 30. Si una carpeta rígida obliga a la caja a ser mucho más grande, una división igual oculta ese hecho. Para investigar si la carpeta debe viajar por separado, compare escenarios reales de paquetes con y sin ella. La asignación aritmética explica cómo dividiste un gasto existente; una comparación de presupuesto controlada informa la decisión separada sobre cómo enviar.
+
+## Maneje cambios, reembolsos y cumplimiento dividido de forma explícita
+Si un comerciante cambia la cantidad o emite un reembolso parcial, actualice el registro de compra del vendedor con un ajuste. Mantenga el pago original y el ajuste como eventos separados. Una devolución de un artículo no elimina automáticamente el cargo de envío nacional completo de la transacción original. Compruebe los montos reales acreditados y cualquier entrada de servicio restante en lugar de revertir un cargo porque el conteo de bienes cambió.
+
+Para un envío de vendedor dividido, mantén el vínculo entre una factura del vendedor y varios números de transportista nacionales. La existencia de dos etiquetas no demuestra que usted haya pagado dos cargos domésticos. Por el contrario, dos compras del mismo comerciante no tienen que compartir un cargo de envío. Utilice el pago real y los ajustes confirmados como evidencia. Un evento de transporte y un evento financiero están relacionados, pero sus conteos no tienen que coincidir.
+
+## Conciliar el presupuesto cuando el paquete esté listo
+En el envío, comience con los totales de pedidos del vendedor confirmados, luego agregue el flete de salida y los servicios separados una vez. Compruebe la moneda de cada componente y observe qué valores siguen siendo estimaciones. Si dos cifras no coinciden, pregunte qué registro describen antes de preguntar por qué cambió la cantidad. Una discrepancia con frecuencia se vuelve comprensible cuando descubres que una figura describe a un solo comerciante y la otra describe un paquete mixto.
+
+Una nota final útil se lee como una breve explicación: “Dos pedidos del vendedor pagados, tres piezas recibidas, un paquete internacional seleccionado. La entrega nacional se cuenta una vez en cada factura; el embalaje y el flete se registran contra el paquete”. Esto le da suficiente estructura para investigar un cambio de precio sin asignarlo a la parte equivocada y para comparar compras futuras sin olvidar el segundo viaje.
+
+Una última comprobación útil es agregar los cargos domésticos al mismo nivel en el que se cotizaron. Si tres líneas comparten un envío del vendedor y el vendedor dio una cifra combinada, escríbala una vez en el total de la compra. Si la cuenta finalmente registra entradas nacionales separadas, concilie esas entradas con la cotización combinada. Guarde la explicación del vendedor si las diferentes ubicaciones de cumplimiento o las cartas de porte separadas cambiaron la forma en que se enviaron los bienes.

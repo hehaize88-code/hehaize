@@ -1,0 +1,42 @@
+# Zakup przez pośrednika czy dalsza wysyłka paczki: które zlecenie utworzyć w Superbuy?
+Link do sklepu w arkuszu kalkulacyjnym informuje, gdzie dany przedmiot jest wymieniony. To nie mówi, kto będzie go kupić. W Superbuy odpowiedź na to pytanie decyduje o tym, czy potrzebujesz zamówienia zakupowego, czy prośby o przesłanie. Wybierz, zanim pieniądze zmienią właściciela: ta sama para butów może podróżować przez ten sam magazyn w ramach obu uzgodnień, ale osoba odpowiedzialna za zakup i zapis identyfikujący przesyłkę są różne.
+
+## Śledź płatność do sprzedawcy
+Zacznij od zapytania, kto zamierza zapłacić sprzedawcy na rynku. Jeśli wybrałeś aukcję i chcesz, aby Superbuy kupił ją za Ciebie, skorzystaj z procesu agenta zakupów. Przewodnik aplikacji Superbuy opisuje wybór opcji produktu i ilości, płacenie za zakup i wszelkie stosowne dostawy krajowe, a następnie umożliwienie agentowi skontaktowania się ze sprzedawcą. Pierwszym przydatnym punktem odniesienia jest zamówienie zakupowe.
+
+Jeśli kupiłeś już buty od sprzedawcy, masz w innym miejscu zapis zakupu. Płacąc za kolejne zamówienie zakupowe w Superbuy można było zamówić drugą parę. Proces spedycji ma na celu rejestrację towarów, które ktoś inny wyśle do magazynu. Znajdź potwierdzenie sprzedawcy, sprawdź instrukcje odbioru i zarejestruj paczkę w ramach obowiązującej procedury spedycyjnej. Jeśli sprzedawca już go wysłał, poinformuj obsługę klienta o prawdziwym statusie, pytając, co jeszcze można dopasować.
+
+## Link sprzedawcy jest przydatny w obu przepływach pracy
+Link do produktu może zidentyfikować zamierzony zakup w zamówieniu zakupowym. Może również pomóc w opisaniu zawartości żądania przekierowania. Jego obecność na formularzu nie zamienia przekierowania w zakup. Spójrz, co usługa zrobi dalej. Czy ktoś skontaktuje się ze sprzedawcą i kupi przedmiot? A może dostarczasz informacje do przesyłki, którą Ty lub Twój sprzedawca wyślecie?
+
+Rozważmy przykładowy przypadek. Znalazłeś mały zestaw artykułów piśmienniczych na rynku i zapisałeś jego link. Nikt nie zapłacił. Chcesz, aby agent wybrał granatową osłonę i kupił jeden zestaw. Twoje instrukcje powinny określać pokrycie, ilość, dokładną opcję sprzedawcy i wszystko, co musisz wyjaśnić. Porównaj drugi przypadek: sprzedawca już przyjął Twoją płatność za granatowy zestaw i prosi o podanie lokalnego adresu dostawy. Teraz potrzebujesz poprawnego miejsca docelowego magazynu i sposobu identyfikacji powstałej paczki. Nowa instrukcja zakupu materiałów piśmienniczych nie rozwiązuje tego problemu.
+
+## Dowiedz się, kto może odpowiedzieć na następne pytanie
+W przypadku zakupu agenta, przekaż pytania dotyczące zamówienia za pośrednictwem zamówienia agenta. Jeśli sprzedawca zmieni dostępny kolor po dokonaniu płatności, zapytaj o to zamówienie, zanim zaakceptujesz wymianę. Zachowaj oryginalny tekst opcji i potwierdź, czy proponowany zamiennik nadal spełnia Twoje potrzeby. Istotne pytanie na tym etapie dotyczy zakupu od sprzedawcy.
+
+Dzięki przekazywaniu relacja ze sprzedawcą może być Twoja własna. Jeśli sprzedawca nie wysłał towaru, poproś go o informacje dotyczące wysyłki. Jeśli przewoźnik dostarczył paczkę na adres Superbuy, ale nie możesz znaleźć zapisu magazynowego dla pojedynczego przedmiotu, zebrać list przewozowy i numer referencyjny przesyłki dla magazynu. Wysyłanie zapytania o zwrot do magazynu, który nie kupił przedmiotu, może spowodować stratę czasu, podczas gdy warunki zwrotu sprzedawcy nadal będą miały zastosowanie.
+
+## Zrób budżet na trasę, z której faktycznie korzystasz
+Zapisz, co już zostało zapłacone przed porównaniem cen. W przypadku zakupu agenta oddziel sumę częściową przedmiotu i dostawę krajową od ewentualnej paczki zagranicznej. W przypadku samodzielnego zakupu paragon rynkowy już reprezentuje towary. Zachowaj ten paragon jako koszt przedmiotu, nawet jeśli formularz przesyłki zwrotnej prosi o zapisanie wartości przedmiotu. Rejestracja jego wartości nie oznacza, że powinieneś liczyć drugi zakup w swoim budżecie.
+
+Załóżmy, że sprzedawca wystawia fakturę na 150 jednostek swojej waluty i dolicza 10 za dostawę krajową. Jeśli obie kwoty opłacono bezpośrednio, dotychczasowy koszt zakupu wynosi 160. Wpisanie 150 jako wartości towaru w zestawieniu do dalszej wysyłki nie zwiększa wydatku do 310. Nowe opłaty dodawaj, gdy rzeczywiście się pojawią, zapisując za każdym razem usługę i walutę. Liczby ilustrują tylko sposób prowadzenia rozliczeń. Własne koszty ustal na podstawie swojego zamówienia.
+
+## Adres odbiorczy należy do konkretnego zapytania
+Przewodnik przekazywania Superbuy wyjaśnia, że identyfikator specyficzny dla konta pomaga odróżnić przychodzące paczki. Zapoznaj się z pełnym adresem magazynu wyświetlanym na Twoim koncie. Porównaj go z wybranym magazynem i adresem, który sprzedawca zaakceptował. Zwróć uwagę na końcową część danych odbiorcy podczas kopiowania ich do formularza rynku z osobnymi polami.
+
+Jeśli sprzedawca obcina pole, porównaj zapisany adres zamówienia po zakończeniu transakcji. Zapytaj sprzedawcę, czy pełne informacje o odbiorze pojawią się na fizycznej etykiecie. Jeśli czegoś brakuje, zachowaj numer referencyjny przewoźnika i powiedz Superbuy, jaki adres faktycznie użył sprzedawca. Edycja adresu w Twoim profilu nie zmienia wstecznie etykiety już dołączonej do paczki.
+
+## Przechowuj jeden rekord na zakup i jeden na przesyłkę
+Przydatna notatka zakupowa zawiera numer produktu, opcję, ilość, kwotę zapłaconą i sprzedawcę. Nota spedycyjna wymaga magazynu odbiorczego, żądania spedycji, przewoźnika i rzeczywistego listu przewozowego. Jeden zakup może wygenerować kilka listów przewozowych. Kilka zakupów może podróżować razem w jednym pudełku. Dodaj łącze między rekordami zamiast traktować numer zakupu, przychodzący list przewozowy i wychodzący numer śledzenia jako wymienne.
+
+Sprzedawca może dziś wysłać zeszyt, a jutro zamówiony osobno wkład z kartkami. Oba powiadomienia mogą dotyczyć tej samej pozycji zamówienia u sprzedawcy, choć numery listów przewozowych będą różne. Aby sprawdzić, czy oba elementy dotarły, dopasuj każdy list przewozowy do wpisu magazynowego i porównaj zawartość. Wyszukiwanie w koncie wyłącznie po słowie „zeszyt” może pominąć wkład wpisany pod inną nazwą.
+
+## Gdzie spotykają się dwa przepływy pracy
+Po przyjęciu, etap magazynowy ma więcej wspólnego. Oficjalny Superbuy przekierowuje klientów bezpośrednio do Mojego Magazynu, aby przejrzeć dostępne artykuły przed wyborem tego, co chcesz wysłać. W tym momencie Twoja decyzja dotyczy fizycznych jednostek w magazynie. Potwierdź odpowiednie opcje i ilości, rozwiąż wszelkie problemy, które musisz rozwiązać lokalnie, i wybierz prawidłowe jednostki dla przesyłki międzynarodowej.
+
+Zachowaj oryginalną relację widoczną nawet po konsolidacji. Jeśli dwie koszule zostały zakupione przez agenta, a jedna torba pochodzi ze sklepu, za który zapłaciłeś bezpośrednio, jedna paczka wysyłana z magazynu do klienta może ostatecznie zawierać wszystkie trzy. Problem z dostawą międzynarodową może dotyczyć całej przesyłki. Zły kolor na torbie może nadal prowadzić do zamówienia bezpośredniego sprzedawcy. Prosta lista wskazująca, kto kupił każdy przedmiot, zapobiega wymazywaniu tego rozróżnienia przez połączoną paczkę.
+
+## Zdecyduj, co zrobić, gdy status jest niejasny
+Jeśli nie pamiętasz, czy zamówienie zostało zrealizowane, sprawdź konto sprzedawcy, historię płatności i listę zamówień Superbuy przed wysłaniem nowej prośby. Zapisany produkt lub wpis do koszyka nie jest dowodem na to, że sprzedawca otrzymał zapłatę. Księgowana płatność może również wymagać dochodzenia, jeśli nie można zidentyfikować jej numeru referencyjnego zamówienia. Zapisz, co każdy system faktycznie pokazuje i zadaj konkretne pytanie dotyczące niedopasowanego rekordu.
+
+Zanim przejdziesz dalej, uzupełnij to zdanie we własnych notatkach: „Sprzedawca zostanie opłacony przez ___, paczka zostanie wysłana przez ___, a ja zidentyfikuję ją do Superbuy z ___.” Jeśli pierwszym pustym miejscem jest agent, zacznij od zamówienia zakupowego. Jeśli dokonałeś już płatności u sprzedawcy, zapoznaj się z przewodnikiem dotyczącym przekazywania płatności i jego procedurą przeglądu. Jeśli jakakolwiek pusta przestrzeń jest nadal niepewna, najpierw rozwiąż ten jeden punkt. O wiele łatwiej jest wyjaśnić brakujący numer referencyjny przed wysyłką, niż rozróżnić dwa identyczne zakupy po ich dostarczeniu. Zachowaj odpowiedź wraz z oryginalnym paragonem lub potwierdzeniem zamówienia.
