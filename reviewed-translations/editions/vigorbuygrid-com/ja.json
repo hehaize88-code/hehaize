@@ -3,7 +3,7 @@
   "locale": "ja",
   "source_set_sha256": "45be6cbeb6f7ed794c373e9816341de444b028e8d281d6498d5cf522a8bfa4ee",
   "raw_dictionary_sha256": "8ea893590ea11397838850cb86331ce91685e0b2cd84ef8ea56f3378cd2eb655",
-  "effective_dictionary_sha256": "5cf2379ef8068820926147ea0467d2cb8b2d4919b5b9936a28a207d7848e7845",
+  "effective_dictionary_sha256": "59337fbd5baef67fdff337bfa60974fb2d4e00e86677272e27ae2642b9b396ba",
   "checked_entries": 329,
   "review_scope": "Verified source coverage and reviewed FAQ, editorial headings, shipping estimates and garment size examples, all automated findings, and domain-specific parcel and price terminology.",
   "reviewed_flags": [
@@ -953,10 +953,22 @@
       "translation": "検品写真を探すときは、まず販売元の商品ページを特定し、次にそのページのどの写真が希望する仕様の確認に使えるかを見極めます。似た外観が見つかっただけでは、選んだ商品の裏付けにはなりません。"
     },
     {
+      "source": "Open the saved spreadsheet product and look for the underlying marketplace address. Save the marketplace name together with the item identifier. A number copied without its marketplace can be ambiguous. An agent link and a seller link may refer to the same item even though their domains differ.",
+      "source_sha256": "4ace6d7c8b182fcc41288c6844266a7f09e10c18f7bc449c33e127deaa33fdef",
+      "raw_target_sha256": "e4ddc2452186774e93b2bc4d6b4ab257fc2b7d6d716a155deb5197da275fb68d",
+      "translation": "表に保存した商品を開き、元の販売サイトのURLを探します。販売サイト名と商品番号を組で記録してください。番号だけでは曖昧です。代行リンクと販売元リンクはドメインが違っても同じ商品を指す場合があります。"
+    },
+    {
       "source": "An independent VigorBuy QC finder describes accepting seller URLs and agent URLs for lookup. If an agent link opens an unrelated result, retry with the seller listing you have verified. If all you have is a picture, use visual search to identify candidates first. Treat every visual match as a lead until you have connected it to the right seller or product specification.",
       "source_sha256": "e4c5dd29c7e62c499b1155a5dae480125c3ab3bb2cc4b6717781a07711f6860c",
       "raw_target_sha256": "1fab537fedb42d9e358f04c0cd0e3df3b6541723fe0a83b49d942fffebd901b8",
       "translation": "独立運営の VigorBuy 検品写真検索サービスでは、販売元の商品URLと購入代行ページのURLの両方に対応すると案内しています。代行リンクで別の商品が出た場合は、確認済みの販売ページで検索し直してください。画像しかない場合は、まず画像検索で候補を集め、販売元や仕様が一致するまで参考候補として扱います。"
+    },
+    {
+      "source": "Look at the date, complete image sequence and any available option information. Earlier photographs can show details of units received by other buyers. A newer date alone does not make the photographed garment the colour or version you selected.",
+      "source_sha256": "a7064e1cc37d3a0f8cc2c1c48082916b11229671fd4af5a5f38a1e1d5510fe53",
+      "raw_target_sha256": "21d62d002e7e0bfb18a84529ac8c5da421cecfb6d2b808740edfadaafa1d56fc",
+      "translation": "撮影や掲載の日付、一連の写真、分かる範囲の選択肢情報を確認します。過去の画像で別の購入者の現物は見られますが、日付が新しいだけでは、自分が選んだ色や型と同じとはいえません。"
     },
     {
       "source": "Take a backpack listing with plain and printed colourways. A recent reference can clearly show the shape of the bag, but it may hide the inside of the printed version. State what the image supports. An exterior profile can help identify proportions; an open bag photograph is needed to inspect a divider. A screenshot that has been cropped to the front panel cannot settle both questions.",
@@ -971,10 +983,40 @@
       "translation": "参考写真ごとに販売ページのURL、画像の出所、確認できた事実を一つ記録します。「ファスナーがサイドポケットの端を越えている」「内ポケットは見えるが、留め具は隠れている」などです。特定の部品を調べているなら、「問題なさそう」という感想では記録になりません。"
     },
     {
+      "source": "Separate an observed feature from an assumption. If the seller lists two capacities but the picture has no label or scale, record capacity unknown. Compare the seller specifications and ask for clarification before ordering if the capacity matters. A large number of nearly identical front pictures adds little evidence about a concealed feature.",
+      "source_sha256": "ffd0370b3a111bac20b28320136c70a922434e138abf8ad9b4bf045bbe1902d5",
+      "raw_target_sha256": "e1769dd6de06d1701857f85329f87d904e2f8705cb40800a5987cffab3139da6",
+      "translation": "見えた事実と推測を分けます。容量が二種類あり、写真に表示や大きさの基準がなければ「容量不明」と記録します。重要なら仕様を比べて注文前に尋ねてください。似た正面写真が何枚あっても、隠れている内部の確認にはなりません。"
+    },
+    {
+      "source": "Once your purchase is associated with a warehouse entry, compare your own order's information with the paid option and observations. Use an overview to establish identity and a close view for the detail that affects your decision. If you cannot link the image to your unit, ask for that connection explicitly.",
+      "source_sha256": "8c24998c7602e4af4bca0d9c0c3fadfe1f7944ff75f36d57ee5994ea1f45a66a",
+      "raw_target_sha256": "153170645454e85dbdab310f59770d49888740754757beb89ed265e0428cae63",
+      "translation": "購入した商品に入庫番号がついたら、自分の注文情報を支払済みの選択肢やそれまでの観察と照合します。全体像で現物を特定し、接写で判断に必要な細部を見ます。自分の商品に結び付く画像か不明なら、その対応を倉庫に尋ねてください。"
+    },
+    {
       "source": "An empty public search is also a result you can interpret carefully. It means no relevant photographs appeared for the input you used. Verify the link, look at independent references if available and decide whether the missing evidence changes your purchase decision. Avoid converting an absence of public images into a claim about the seller's reliability.",
       "source_sha256": "0337ca4fcc55f52a34c58604aca70d705142d1849276aad775e8c49423ba9599",
       "raw_target_sha256": "e39b1fcccd8fb3fec7c879d26007ba5148147c13c694dfae01ca3c7f7545642e",
       "translation": "公開検索で何も見つからなくても、今回の入力で参考写真を確認できなかったということにとどまります。リンクを確かめ、別の公開資料があれば照合し、写真がないことを購入判断にどう反映するか考えてください。写真の有無だけで販売元の信頼性は決まりません。"
+    },
+    {
+      "source": "Open the linked product and look for the actual seller source. Record its marketplace name and identifier. The word brown in the title is less useful for identifying the seller than that combination. If the page presents several sizes, select the version you intend to order and save the source wording. Note whether the seller assigns a separate identifier to the option. Keep the information for the option alongside the listing identifier rather than replacing one with the other.",
+      "source_sha256": "d8eeca232e832bd541766106b681d706f72bae29936885b5435cb863466edb4a",
+      "raw_target_sha256": "fbf3d81096bad8dcb8951f95861ee485baf2c540f936d2ce00c61af8c25c2aa9",
+      "translation": "共有された商品を開き、実際の販売元のページと商品番号を控えます。タイトルの「茶色」より、この組み合わせが出所を特定する手掛かりになります。複数サイズがあれば希望のものを選んで原文を保存し、選択肢ごとのコードが表示されるかも記録します。"
+    },
+    {
+      "source": "First see whether the pasted input is a link to one product or a link to a store, search result or collection. A single shop can list multiple backpacks with similar names. Opening a store index and choosing whichever product looks closest changes the object of your research. If the seller link no longer opens, preserve the old identifier before investigating visual alternatives. Label a visually similar live listing as a new candidate.",
+      "source_sha256": "003327adb618f8b4360d169be4b3832973ba09cf6eaab2d0c9295dedf93e2273",
+      "raw_target_sha256": "3bc731d03a5021a202999d3586e1a54fdd798bb2076e495b0cf21f6b24663c90",
+      "translation": "貼り付けたリンクが個別商品か、店舗・検索結果・特集ページかを確認します。同じ店に似た名前のリュックがいくつもある場合、店頭一覧から一番似た物を選ぶと調査対象が変わります。旧ページが開かなければ識別番号を保存し、似た現行商品は別候補として記録します。"
+    },
+    {
+      "source": "If an agent wrapper opens a generic page, try the original product URL you actually observed. Do not build a seller URL by copying a number from an unrelated part of a screen. Quantity, internal catalogue number and seller item identifier can all be numeric. A mistaken identifier can turn a lookup returning plausible pictures into a more serious error than an empty result because you may begin trusting the wrong gallery.",
+      "source_sha256": "f03a08d1990c39a466d1a504e3bbf479f5051580b5c24b4269500e7121c7ad9b",
+      "raw_target_sha256": "7b8ad75d6d93b4937204ba9703089acbf67fe31f2c71252232ad46863f8a1eab",
+      "translation": "代行リンクが一般ページにしかつながらなければ、実際に確認済みの元の商品URLを使います。画面の別の番号から販売元URLを組み立てないでください。数量、カタログ番号、販売元の商品番号はいずれも数字です。番号を取り違えると、もっともらしい写真が出てかえって別商品に気づきにくくなります。"
     },
     {
       "source": "When the correct link returns no photos, check the current seller images and written product specifications directly. Decide whether a current order inspection could resolve the outstanding question at a stage that still works for you. If a dimension is critical to the purchase itself, ask before ordering. A feature you cannot confirm until after intake may affect whether you are comfortable proceeding under the current seller terms.",
@@ -983,10 +1025,28 @@
       "translation": "正しいリンクで検品写真が出ない場合は、現在の販売画像と仕様説明を直接確認します。入庫後の検品でも判断に間に合うか考えてください。寸法が購入の決め手なら注文前に尋ねます。入庫まで確かめられない特徴については、販売条件を見て、その不確かさを受け入れられるか決めます。"
     },
     {
+      "source": "For the detachable straps, request an overall view showing both attachment points on the current unit and a close view of the fastening if necessary. The historical buckle picture served a useful purpose: it helped you identify the exact inspection needed. It remains separate from the evidence used to accept the current delivery.",
+      "source_sha256": "6a8120909a61c911d4dbeadb51bd64b8f35805889412915bda51d0fdd2fddc22",
+      "raw_target_sha256": "1f0287906335dfc251bcc91fb2e5a55e7dc1082567076ac11044d629aef0fb3a",
+      "translation": "ストラップの着脱は今回入庫したバッグの両端の接続部が見える全体写真で確認し、必要なら留め具の接写も依頼します。古いバックル写真は調べる箇所を教えてくれますが、今回の受け入れ判断に使う現物の証拠とは分けて保存します。"
+    },
+    {
+      "source": "After the current photos arrive, update the notes under the actual order reference. A complete entry can say that the hardware attaches at both ends, that the compartment opening was measured from seam to seam and that the depth remains unmeasured. You can then decide whether the remaining uncertainty matters. The result is a practical buying decision supported by identifiable observations, not a count of how many attractive reference images the lookup returned.",
+      "source_sha256": "6aee12a50f0cd0f5a57942fb76f72196093eb9aff0186131650b714e2b3dea8f",
+      "raw_target_sha256": "74ac7238cf6ea92e586aaab98c15b0e464c67bf604499b94ec1df8852cf0b82a",
+      "translation": "新しい写真が届いたら、実際の注文番号の下に結果を記録します。例えば「両端の金具で接続、収納口は縫い目間で実測済み、深さは未測定」と書きます。残る不確かさが購入判断に影響するかを、具体的に検討できます。"
+    },
+    {
       "source": "A final check is whether somebody else can reproduce the lookup from your notes. Send yourself the plain listing URL without signing in, reopen it, and check whether it still names the seller and item you intended. Preserve the selected option separately if that choice disappears outside your session.",
       "source_sha256": "e2ae34b17b19c509e244617a46fcfab4b011b677e6d9bc62c4a6e2f518712034",
       "raw_target_sha256": "83e7c837998870345271659bf98cb7ec2bf724542d660704609c05ebeab110f4",
       "translation": "最後に、記録だけで検索を再現できるか試します。装飾のない公開商品URLを自分宛てに送り、ログインせずに開き直して、想定した販売元と商品が表示されるか確認します。選択した仕様が引き継がれなければ、別に記録してください。"
+    },
+    {
+      "source": "VigorBuy QC finder methodology",
+      "source_sha256": "fdd30ef2e30f71d98ac452298649e67661c1877ba9c175906ade8746ff4f3cf9",
+      "raw_target_sha256": "05e6ba249c6e6dc750a66992d5cbf9c7d9956476233d37b81f423f00a9da8935",
+      "translation": "VigorBuy検品写真の検索方法"
     },
     {
       "source": "VigorBuy buyer tutorial",
@@ -999,6 +1059,12 @@
       "source_sha256": "b6752126559fd015157d1db263f3dae941097657f246e33d165e3970a3be9d2d",
       "raw_target_sha256": "3e38cc77a606ce768675ad09d822a1b3f3e0e247e0e0872cfdf181fe0ddd582a",
       "translation": "画像検索でジャケットの輪郭が似た商品は探せますが、よく似た別店舗のモデルまで見分けられるとは限りません。まず候補の商品を集め、違いを示す細部で一つずつ絞ります。"
+    },
+    {
+      "source": "Use a picture containing one item. A complete outfit against a busy background can produce matches for the shoes, trousers or surrounding colours. Crop to the relevant garment while keeping a useful outline. When identifying a jacket, the collar, hem, sleeve shape and pocket positions often carry more information than one large front graphic.",
+      "source_sha256": "d511d7cc132d88d9cfed34bf3d2f6333522176f502bb8bbc9fc107a0061837ac",
+      "raw_target_sha256": "b0e2d3b74136b31ed09ef7c8ee68eea588e4b7e275823ad3e6c4a2133560bb18",
+      "translation": "対象が一つだけ写った画像を使います。背景の複雑な全身コーデでは靴やパンツ、周囲の色が一致してしまいます。ジャケットの輪郭を残して切り抜き、正面の大きな柄だけでなく、襟、裾、袖の形、ポケット位置を比べます。"
     },
     {
       "source": "Try two different crops if the first result is unclear. Use the full garment for silhouette and a second crop that contains a distinctive construction feature. If both lead to the same candidate, open that listing. Agreement between two searches is a reason to inspect it, not proof of identity.",
@@ -1025,6 +1091,30 @@
       "translation": "候補の商品ページを開いたら、販売サイト、出品者、商品番号を確かめます。元画像の掲載ページが分かるなら番号を直接比較してください。同じ宣材写真を別の店や複数の仕様で使うこともあります。販売元が違えば、その店の販売内容を改めて確認します。"
     },
     {
+      "source": "Select the intended option and watch which image changes. Some listings retain the same main photo while the option text changes. Save the selected original wording where colour translations are close. If the option cannot be connected to the reference image, keep the match provisional.",
+      "source_sha256": "8f2790b1332684f394cfd0ec0109f464c17103e72153c19726278b335a755df3",
+      "raw_target_sha256": "5897173ef91c77588684d2b90069a815f2f2f3bd6702efa4523253b9d729e4be",
+      "translation": "希望の選択肢を選び、どの画像が切り替わるか見ます。説明文だけが変わり、メイン画像はそのままの場合もあります。色の訳語が紛らわしければ選択した原文を保存し、参考画像と選択肢が結び付かない間は候補のままにします。"
+    },
+    {
+      "source": "Write a one-line conclusion naming the strongest match and the unresolved feature. For example, the jacket has the right pocket layout, but the cuff fastening is hidden. That statement tells you what photograph or seller specification to seek next.",
+      "source_sha256": "328f3721a38a5a89672cea86b11e151bfe50ec80688e0405bc52d30b0c6d6bbe",
+      "raw_target_sha256": "085a0065388971126c238ad4f706226b8d80ce41f5a4ffae1ded8511481a27ed",
+      "translation": "最も強い一致点と未確認の特徴を一行で書きます。「ジャケットのポケット配置は合うが、袖口の留め具は隠れている」などです。次に必要な写真や販売店への質問が明確になります。"
+    },
+    {
+      "source": "If the distinguishing detail matters, ask for a view that reveals it before treating the result as the intended product. When no seller identity is available, describe it as a similar alternative. That distinction is valuable when comparing price or warehouse photos because another shop's reference cannot show what a different supplier will dispatch.",
+      "source_sha256": "d45a3e4b3947b54f7a28dcdcfbc5171e668db322f973360423f0d9c39a6da380",
+      "raw_target_sha256": "5e921a264bf3ebb1b9a7071ea5a42d49e55bf83c6101be05a8f7f77e862eb599",
+      "translation": "識別点が重要なら、その部分の写真を確認してから目的の商品と判断します。販売元を特定できない場合は「似た代替品」と表現してください。価格や検品写真を比較するときも、他店の参考写真で別の店が何を送るかは確認できません。"
+    },
+    {
+      "source": "Consider a phone screenshot of a dark-blue jacket worn at an angle. A striped cuff, one diagonal chest pocket and the bottom of a zip are visible. The sleeve partly covers the side of the jacket. Before searching, write down those three visible details and note what cannot be seen, such as the back panel and the full hem. Treating hidden features as unknown prevents you from rejecting an otherwise plausible candidate for the wrong reason.",
+      "source_sha256": "14c9305b5c2eea79bcb144824d537c39e2516dd769adf237ff05579769b18ffc",
+      "raw_target_sha256": "693dc8e1c2ba4e45c3d51f927a0feef43197a3e1e692a19a571073421fa1e444",
+      "translation": "斜めから撮った濃紺のジャケットに、しま模様の袖口、斜めの胸ポケット一つ、ファスナーの下端が写り、脇は袖に隠れているとします。検索前にこの三点を書き、背面と裾全体は不明と記録します。見えない箇所を推測で補うと、本当の候補を外しかねません。"
+    },
+    {
       "source": "Suppose the first search returns three visually close jackets. Candidate A shares the blue colour and striped cuff but has two horizontal chest pockets clearly visible in its front photograph. Candidate B appears to have the correct pocket and cuff, yet its alternate view shows a snap fastening where the original visibly has a zip. Candidate C has the visible cuff, diagonal pocket and zip, but its seller page groups four jacket options together. The first two can be set aside for an identified reason. The third remains a candidate while you determine which option the picture represents.",
       "source_sha256": "00e9aedacc16208c3faac60aaa10b277c7ad4fc997029ff48844e39cc2e17c54",
       "raw_target_sha256": "67cdde1f8a0c5b94dfafa15f96d37740bf7daa7e9dacfc00a9bda42cbef1b79e",
@@ -1035,6 +1125,12 @@
       "source_sha256": "7c08c77fc467842769ff75d40cab91989eed7371bc24c42af967286d4883d3c9",
       "raw_target_sha256": "b39f8f178d229c20292dab33bebc95b60e1288f7640f909cd263c2e9535b3ce9",
       "translation": "袖口だけを切り抜くと、Aが再び表示されるかもしれません。袖口が似ているという結果は、ポケットが違うという観察を覆しません。次はポケットとファスナーを一緒に切り抜き、Cが出たら販売ページと選択肢の説明を確認します。検索順位から販売情報の正確さ、商品の状態、在庫は判断できません。"
+    },
+    {
+      "source": "Now imagine that C's seller page uses the same studio photograph as the original screenshot. That is strong evidence that the photographs share an origin; it is weaker evidence that the current seller delivers the same physical variant. Check its seller identity and available option. If these details cannot be traced back to the screenshot, describe C as a closely matching alternative. The distinction matters if you later use older QC pictures tied to the original source to judge C's stock.",
+      "source_sha256": "ab18a9e66bdd4e9fb25fdfb45022552ad4b9310e197cef8c1f7667e264b2ea9a",
+      "raw_target_sha256": "b9fe468508bca2160fec111143dbbf6a2d7d57f9dfa4428c913469f493408557",
+      "translation": "Cの販売ページが元画面と同じスタジオ写真を使っていれば、画像の出所が同じという強い証拠になります。ただし、その店が現在まったく同じ品を届ける証拠としては弱いので、選択肢の説明や別角度、対応する現物写真を確かめます。"
     },
     {
       "source": "Compare images at a similar angle. The edge of a pocket can disappear when a jacket is open, and a mirrored promotional image can reverse the side on which a logo appears. Look for text or another known orientation cue before treating left and right as decisive. A different count of visible fasteners on two fully opened cuffs is usually easier to interpret than the apparent width of a sleeve viewed from different angles.",
@@ -1055,6 +1151,18 @@
       "translation": "候補ごとの情報を混ぜず、Cの販売サイト、販売元、選択肢、裏付けを一つの記録にまとめます。AのラベルはCの情報ではありません。三着の外形が似ていても、Bのサイズ表でCのサイズを選ぶことはできません。選択肢の定義と注文条件は販売店ごとに確認します。"
     },
     {
+      "source": "List what you need the product to do. If you simply need a jacket with a diagonal pocket and striped cuff, C may satisfy your requirements even without proof that it is the original listing. Evaluate its own price, measurements, contents and seller terms. If you need the exact version with a particular lining, the unresolved interior is a reason to collect more evidence before selecting it.",
+      "source_sha256": "3b75201aca941f1730a1b1cd0c30be017eb43356064fde376b27913eab23f47e",
+      "raw_target_sha256": "09b40db888d443bb4eb8cce932209d250cfed3b9d42bf004616510f19adc1d12",
+      "translation": "必要な機能を書き出します。斜めの胸ポケットとしま模様の袖口があればよいなら、似た代替品でも目的を満たせます。元の服と内ポケットや型まで一致させたいなら、それらの証拠も必要です。実用上の代替品と同一と確認できた物は区別します。"
+    },
+    {
+      "source": "Ask one focused question that distinguishes the remaining possibilities. For example, request a view of the inside back panel of the selected blue option, with the style identifier visible. Compare the answer with your original requirements and retain both references. A new picture showing a plain rear lining can be enough to reject C if the version you need has an internal pocket, even if the outer appearance matches perfectly.",
+      "source_sha256": "c31f8e11bcfd8d58cb362d26e8f1e087de58d72d1c2165e5705b3227641014cf",
+      "raw_target_sha256": "a370f3d9dac8558b0d66823437418a0e570fc67669b26d8c8c1ca35f96f93384",
+      "translation": "残った候補を区別する質問を一つします。例えば、選んだ青い型の背面内側と型の表示を一緒に写してもらいます。元の要件と回答を両方保存してください。内ポケットが必須で、Cの新しい写真にポケットのない裏地が確認できれば、外見が一致していても除外できます。"
+    },
+    {
       "source": "Keep the source photograph and candidate record with any later order. When the warehouse photos arrive, compare the actual received item to the version you purchased, not to a different candidate discarded early in the search. That last switch in reference point is important: once you knowingly choose an alternative seller, your strongest order evidence is that seller's actual selected offer and confirmation.",
       "source_sha256": "b26defd9e23ac79df408fe3d9135ee1c0d17339a582715fa3c8eb2028bcfb49b",
       "raw_target_sha256": "099557c6d8e4c22b3be6bb85b6b70077cee5be2b5ff390e313ef82e13c2eb66c",
@@ -1073,16 +1181,52 @@
       "translation": "一つの販売ページに、見た目の似た商品が複数並ぶことがあります。商品番号に結び付いた検品写真は、そのいずれかを写したものです。ページを特定した後で、自分の選んだ型を区別する具体的な特徴まで確認します。"
     },
     {
+      "source": "Write the available models in the seller's own terms and record the translated descriptions separately. If you see short, long and lined versions, list them as three products for this comparison. The same colour and size can appear on all three.",
+      "source_sha256": "ceeab57fd4eb992803a19b0ea790118dccfecbf422fa88d6c0d17e102958fa0c",
+      "raw_target_sha256": "5293b38b3a4e7638f73172743e31ed3470dae0b3669bcab598eebc840234dea8",
+      "translation": "販売元の原文で型を並べ、翻訳は別欄に記録します。短丈、長丈、裏地付きがあれば、今回の比較では三つの商品として扱います。色と表記サイズがすべて同じこともあります。"
+    },
+    {
       "source": "Select each candidate and note changes to its swatch, image, price and option code. A price difference can signal different contents but cannot identify which feature caused it. Save the wording and the version shown in your checkout record. A link reopened later may start on the first option instead of the last one selected.",
       "source_sha256": "17f38b78d7b471508bda0a3b24f57162b1fdceeed0f6d334c3593c30aaca05c4",
       "raw_target_sha256": "c4cfac43b630e9168582ccf8c62867c4f712484fc999d63f1299a1a26890d4d0",
       "translation": "候補の仕様を一つずつ選び、色見本、写真、価格、選択肢のコードがどう変わるか記録します。価格差は別仕様を見分ける手掛かりですが、材料や構造の違いは金額だけで決めず、販売元の説明で確認します。"
     },
     {
+      "source": "Study the written description for something that should vary between the versions. A removable inner layer, a rear vent or a second zip can distinguish two jackets whose fronts look identical. Do not spend time comparing marks common to every version when the model difference is elsewhere.",
+      "source_sha256": "80f45a646df53ceb06213f6cfaa2fcf467cf77e4c1633cedcb819b95b32ba8b6",
+      "raw_target_sha256": "84ad17b504568dade58bb70b6a50c462df7fab6d379a6b7698f2319bbca554cb",
+      "translation": "仕様説明から型ごとに異なる構造を探します。着脱式の内側、背面のベント、二本目のファスナーなどがあれば、同じ正面形状でも区別できます。違いが内側にあるなら、全型共通の外側のマークを比較し続ける必要はありません。"
+    },
+    {
+      "source": "For a long and short version, a complete side view or a defined back measurement could distinguish them. For two lined models, ask for a view inside the jacket with the lining attachment visible. Name the required feature when requesting a photograph so the recipient understands which view matters.",
+      "source_sha256": "97aab7866a9b7724ea5c27f8269257d9498f37849a616c08152454f9af439d58",
+      "raw_target_sha256": "ad1e8a8a6231cd576bc053f70cd3ead9e615069bfc3e44680d7f576514a54214",
+      "translation": "長丈と短丈なら、側面全体や始点を定めた後ろ丈の測定が役立ちます。裏地の違いなら内側の取り付け部を見ます。何が違うかに合わせて写真を選び、正面一枚にすべてを期待しないでください。"
+    },
+    {
+      "source": "A close-up can show a fastening clearly and still leave open which jacket it belongs to. Ask for a wider view linking the feature to the complete garment. For two near-identical pieces in one order, keep separate references with their respective colour and size labels.",
+      "source_sha256": "97772f18ea42983973d65bbed9d138048a39cc7ec9f7f3e4b37e92ee61c3b864",
+      "raw_target_sha256": "b4dcbcc7696c0e1b3a8d42636eb1f9f40f8d224e180b5e1fb138fc0bbb45751e",
+      "translation": "接写で留め具がはっきり見えても、どのジャケットのものか不明なことがあります。服全体と部位の位置が分かる広い写真を添え、全体写真と接写を対応させます。似た黒い服が複数ある場合は特に大切です。"
+    },
+    {
+      "source": "Read older public photos as examples of what has previously been photographed. They help you discover useful checks and possible differences. A historical image of a zip-in lining on one dark jacket says little about whether the current seller still includes the lining with your chosen option.",
+      "source_sha256": "1e503da129a35cd628e4dd633b22cf0335a832ce9c94dbfbc0843510e9ae25dd",
+      "raw_target_sha256": "a95579695ed2617c2bc9baf045ece389da3d3ccfbca5c9941ffc8e0e40bc1aa6",
+      "translation": "古い公開写真は、以前撮影された品の例として、チェック箇所や仕様差を見つけるのに使います。濃い色の服にファスナー式ライナーが付いた昔の一枚では、現在選んだ型にもライナーが付属するかは分かりません。"
+    },
+    {
       "source": "Write the outcome in three parts. Identify the paid option, the evidence on the current warehouse entry and the remaining uncertainty. For instance, the order calls for the lined medium; the warehouse label shows medium; the lining attachment remains hidden. This invites one directed photograph instead of a broad request to check everything again.",
       "source_sha256": "53367366b1db5715ec4f4732d493b329f4b94b47c8ca9575f9d865b87db98ec7",
       "raw_target_sha256": "6bf374cdcfb175782ed673e8490f454ad15f2ff6a028f8ffad863e453ed69d97",
       "translation": "支払った選択肢、今回の入庫写真で確かめたこと、残る疑問の三点を記録します。例として「注文は裏地付きのM、入庫ラベルもM、裏地の取り付け方は写真では見えない」とすれば、すべてを再点検する代わりに取り付け部分の写真を一枚頼めます。"
+    },
+    {
+      "source": "If the feature is absent, connect your observation to the saved seller option in the message. If the picture simply does not show it, say so. Those two statements lead to different next steps and avoid turning a missing angle into an unsupported defect claim.",
+      "source_sha256": "cbf5033af751cb6a6cd462c92dca66b24d257084115f9dd4b137721d44b05973",
+      "raw_target_sha256": "804d526e3ea5e85609148368e12739294858e0336c2239e78834ea32df21c1b3",
+      "translation": "選択肢に明記された特徴が現物にない場合は、観察と保存した販売元の文言を注文窓口に一緒に示します。写真に写っていないだけなら、追加写真や確認を頼み、それまでは未確認とします。隠れた部位を不足と断定しません。"
     },
     {
       "source": "Suppose a seller offers three black rain jackets under a single listing. The first is an unlined shell, the second has a fixed fabric lining and the third has a removable inner layer. The pictures at the top of the page show a model wearing a black jacket with the front closed. You need the removable layer for alternating temperatures. The seller item number and the word black identify three possible units, only one of which meets the main requirement.",
@@ -1103,10 +1247,22 @@
       "translation": "以前の検品写真で襟元に裏地が見えても、分かるのはその服に内側の層があったことまでです。別の接写のファスナーは前開き用かもしれません。ライナーを外側から少し取り外した状態など、ファスナーの位置と用途が分かる写真を探します。調べたいのは生地の有無ではなく、取り外せるかどうかです。"
     },
     {
+      "source": "If the historical photo shows the layer detached but no model identifier is visible, record that one version previously photographed had that construction. The next task is linking that construction to the current option selected. The seller's written option definition, a dated ordering screenshot and the current unit's label each supply different parts of that link. None should be treated as a substitute for the others when two versions are sold side by side.",
+      "source_sha256": "f9a3e9ae1fc3d36df6ee883584a58b32629cb952a6954ba07d923b313a8ef558",
+      "raw_target_sha256": "53a429e8a147ddf4a3d32bff3c3981f4a5a818d4af0fc25fc374ec0ba77fb36f",
+      "translation": "古い写真に外したライナーが写っていても、型の表示がなければ「このページで着脱式が撮影されたことがある」と記録します。現在の選択肢に直接結び付けず、販売説明、型番、今回の現物写真などで対応を確認します。"
+    },
+    {
       "source": "Two jacket lengths can differ by only a few centimetres. One image might show the short size medium while another shows the long version in small. A length difference could reflect both the size and the cut. Compare the seller size chart for the same marked size across the two versions, and check whether the chart specifies a different starting point. A measurement taken from the collar seam should not be compared directly with one taken from the highest shoulder point.",
       "source_sha256": "191bf628bd422be954503dffebdeacbe2a4a84e686dac1959382ff94556546a1",
       "raw_target_sha256": "5e6a6758f195d9ec4e1a8ed0561f4dd538f202d793eb7ad640a283b9483226d4",
       "translation": "二種類のジャケットの丈に数センチしか差がないとします。一方がショート丈のM、もう一方がロング丈のSなら、丈には型とサイズの両方が影響します。販売店のサイズ表で同じ表記サイズを選んで両型を比べ、採寸の始点も確認します。襟の縫い目からの値と肩の一番高い位置からの値は直接比べられません。"
+    },
+    {
+      "source": "When the model difference concerns construction, choose a construction observation over a size proxy. A photograph showing the detachable layer and attachment hardware is more direct than a weight difference that could arise from size, packaging or fabric. For a shell and a lined version, an internal view can be more informative than trying to judge thickness from a folded stack in a warehouse photo. State which evidence would resolve the actual question with the least ambiguity.",
+      "source_sha256": "3ef7a10f710ad57f81307b133626722a883cd98c0048abd757ae55511991a08c",
+      "raw_target_sha256": "2c09d0e3bf70659eef35b15c13f4f9a8fe4914f00f69029334b0f11541c4ac61",
+      "translation": "構造の違いを調べるなら、重量差を手掛かりにするより構造そのものを見ます。取り外した内側と金具の写真は、サイズや包装、生地でも変わる重量より直接的です。裏地なしと裏地付きの区別には内側の写真が役立ちます。"
     },
     {
       "source": "With multiple units in one order, assign a separate record to each. Mark one as the medium removable-lining option and another as the large shell, for example. If the warehouse posts a series of pictures against a combined entry, identify which wide shot belongs to which close view. Request an overview showing each unit with its distinguishing feature when a cropped photograph cannot establish the assignment.",
@@ -1115,10 +1271,52 @@
       "translation": "一回の注文に複数の服があるときは、着脱式ライナーのMと裏地なしのLなど、一着ずつ記録を分けます。倉庫がまとめて写真を載せた場合は、どの全体写真とどの接写が対になるかを確かめます。切り抜きだけで判断できなければ、それぞれの服と識別点が一枚に収まる写真を依頼してください。"
     },
     {
+      "source": "Imagine the current item has the correct size and colour label, an interior layer visible and a concealed attachment near the collar. If the available photograph does not show whether the layer detaches at the sides and hem, describe that uncertainty. A useful message would ask for the layer partly detached with its connection visible on the medium jacket. It does not need a repeat of every front and back photograph.",
+      "source_sha256": "e68fa2464ba132b78c2e216381f4720cf37c6cf5abd0145bd6d0eadbc3209cbc",
+      "raw_target_sha256": "4cb2e36d7a685ebcece5824b9b0ae0667f10069c45b4095b506880ae92a1a66d",
+      "translation": "サイズと色の表示が合い、襟元に内側が見えていても、脇と裾の取り付け方が写らなければ着脱は未確認です。Mのジャケットで内側を少し外し、接続部が見える写真を依頼します。前後すべてを撮り直す必要はありません。"
+    },
+    {
       "source": "If the seller confirms the layer is sewn in, compare that reply with the saved option. A mismatch between a documented removable version and a fixed lining is an issue to raise through the order before making further packing decisions. If the original wording never described a detachable layer, the question may instead concern your interpretation of the listing. Those situations require different conversations, and keeping the model key makes the difference visible.",
       "source_sha256": "324c3239e028ea6cf0ccef2159ee993dfe579f960b7e8e06e2223a969e5c800a",
       "raw_target_sha256": "9ed3334ee2435b75723aa9b7282499c71fd0cfbbc3648db7e196933708f255f1",
       "translation": "裏地が縫い付けだと販売店から回答されたら、保存した選択肢と照らし合わせます。着脱式と明記されたのに固定式なら、梱包を進める前に注文窓口で相違を伝えます。元の説明に着脱の記載がない場合は、説明の解釈を確かめる話になります。モデルごとの対照表があれば区別できます。"
+    },
+    {
+      "source": "Store the outcome as a plain description, not just a check mark. Fixed lining confirmed from the sewn side seam, or removable lining confirmed in the current unit's open picture, remains meaningful weeks later. When a similar listing appears in the spreadsheet, that description also tells you which identifying feature to look for without assuming two sellers with the same main picture are offering the same jacket.",
+      "source_sha256": "f10df4437acd31abc2d072146b92bf6121e96994c8a41ac1fbbf3c6ad3ac7a56",
+      "raw_target_sha256": "c79ac26513da88a71c8e4d28e4f90332794afb5f6d66564e0df7ca0bcb49fe68",
+      "translation": "「脇の縫い目から固定裏地を確認」「今回の服を開いた写真でライナーの着脱を確認」など、後で意味の分かる文章で結果を保存します。単なるチェック印より、似た商品が現れたときに見るべき点を思い出せます。"
+    },
+    {
+      "source": "At the end of the comparison, try writing the order in plain language without borrowing the seller's model nickname. Include the feature that changed your choice and the exact variant text displayed at checkout. If another reader could use that description to select two different options, your note needs one more distinguishing detail.",
+      "source_sha256": "794105e74ae82590a6963d8969793496de8b54a55d3f9e98e0c9c2177fa11cc3",
+      "raw_target_sha256": "c649b6b2d15d41dd390c2062daf600c2d519cb7303f9a29805e54af0934eec84",
+      "translation": "最後に販売元の愛称を使わず注文を説明してみます。決め手となった機能と、決済時の選択肢の正確な表記を入れましょう。その説明で二種類を選べてしまうなら、区別できる特徴をもう一つ書き足します。"
+    },
+    {
+      "source": "The letters on a size label are a poor comparison when two jackets are cut differently. A garment you already wear gives you an actual baseline, provided you measure both pieces in the same way.",
+      "source_sha256": "2929265a80570bedca46fcc62e9db2cb91a58525b29e4456466d3addaf354832",
+      "raw_target_sha256": "459cf217f071b0f1327637c10d94e6ef8d288afd8a700ab75ae77e49d6e513a5",
+      "translation": "裁断の異なるジャケットは、サイズラベルの文字だけではうまく比較できません。普段着ている一着を基準にして、二着を同じ方法で測ると実際の着用感と結び付けられます。"
+    },
+    {
+      "source": "Pick a jacket serving the same purpose. A fitted spring jacket worn over a shirt gives a different reference from a winter shell worn over a thick sweater. Try your comparison garment with the layer you intend to wear. Note which dimensions feel right and where you would like more room.",
+      "source_sha256": "2d14f757df9be3a311e615f1d207535fdf0f2b572c501dd3ea2e36fb1a40e0bc",
+      "raw_target_sha256": "cb1016c46f497bbdcc3352038a983a97119e91c6764a147b6018dc9a67b89adb",
+      "translation": "用途の近い服を基準にします。シャツの上に着る細身の春物と、厚手のセーターの上に着る冬用のシェルでは必要なゆとりが違います。予定する中着と手持ちのジャケットを合わせ、ちょうどよい部分と余裕を増やしたい部分を記録します。"
+    },
+    {
+      "source": "Fasten it as normally worn, lay it on a flat surface and smooth it gently. Stretching fabric to its limit produces a measurement that says little about comfort at rest. Keep the measuring tape straight and write down the unit beside every number.",
+      "source_sha256": "ee8bec62ce78f58e8a2b2b504b83b6b79ea1f56ba3a3188b1b0a8038de4b7c61",
+      "raw_target_sha256": "5d02d7913bb687d096687d0c7cb7308d3f5421e55b9eaea19efbc299720cf355",
+      "translation": "普段どおり前を留め、平らな面に置いて軽くしわを整えます。生地を限界まで引っ張った値では、自然な状態の着心地は分かりません。メジャーをまっすぐ当て、各数値に単位を付けます。"
+    },
+    {
+      "source": "For flat chest width, measure from one underarm seam to the corresponding point on the opposite side. For back length, choose a starting point such as the centre seam where the collar attaches. Write the endpoint too. A seller measuring from the high shoulder point could obtain another number on the very same jacket.",
+      "source_sha256": "9f930365b28e4419d3c8e6cdd7f3215062696a8e0cf693ee3df285d041ab607f",
+      "raw_target_sha256": "99f7152311cbf41e3fea3ac2846e11c05af531b42f756b15cdc4eadd602978c8",
+      "translation": "平置きの胸幅は片方の脇下の縫い目から反対側の同じ位置まで測ります。後ろ丈は襟の付け根の中央など始点を決め、終点も書きます。肩の一番高い位置から測る販売店なら、同じ服でも別の数字になります。"
     },
     {
       "source": "Sleeve length requires particular care. A jacket with a dropped shoulder can have a short seam-to-cuff measurement despite reaching the same place on your wrist. For a raglan sleeve, a neck-to-cuff measurement may be more useful. Photograph your measuring method so it can be repeated on the warehouse item.",
@@ -1131,6 +1329,30 @@
       "source_sha256": "d05a8c3c5a4bbdf6882f612d6dd4daf42e8699bb34d0663c996baec45468f0ee",
       "raw_target_sha256": "d83ee70bca7d1a44826ad1930b1955c1816f5388c76b653d5633383c496af4fc",
       "translation": "手持ちのジャケットを平置きし、胸の部分の身幅を測ると55センチだったとします。販売者の表にある110センチは、服を一周した胸囲かもしれませんし、着る人の推奨胸囲かもしれません。数値を半分にしたり2倍にしたりする前に、表の凡例を確認しましょう。分からなければ、何を測った値か販売者に尋ねます。"
+    },
+    {
+      "source": "Avoid choosing a size solely because one dimension matches. A jacket can match the chest and still be too short across the back or tight at the upper arm. Choose the few measurements that would actually change your decision. A clearly measured critical dimension is worth more than several figures taken from unknown endpoints.",
+      "source_sha256": "125fa08ffb99dee14c42535fef845b5fcf58414d4a91255695d1ed8992515378",
+      "raw_target_sha256": "4128987f0f6f3a767ce3ade9187952df8590e33e9b43ef2a501dafdec9a40938",
+      "translation": "一か所の数値が合うだけでサイズを決めません。胸幅がよくても後ろ丈が短い、上腕がきつい場合があります。判断を変える寸法に絞りましょう。始点と終点が明確な重要寸法一つは、測り方不明の複数の数値より役立ちます。"
+    },
+    {
+      "source": "State the order, selected size, garment position and endpoints in a short request. Ask that both the zero mark and final reading be visible. A close view may also be needed to read the tape, but the wide shot establishes the path it followed.",
+      "source_sha256": "b4209cbf28741597ae79a397e69d5b264f1d30e4b6757f4c32be66d3e1632880",
+      "raw_target_sha256": "067c3a92f5e34c7c212ffbb8733b202f673374d546c67ad10d8d74103d3daf6f",
+      "translation": "注文、選択サイズ、服の置き方、測る両端を短く伝えます。ゼロと最後の目盛りが同時に見えるよう依頼してください。数字のために接写も必要な場合がありますが、メジャーの通り道は全体写真で分かります。"
+    },
+    {
+      "source": "Compare the result with your baseline and note measurement uncertainty. A small discrepancy could come from positioning, garment construction or rounding. If it is close enough to affect your choice, ask for the specific measurement to be repeated before deciding. Retain the reference photograph and your own garment measurements alongside the selected size for future comparisons.",
+      "source_sha256": "2a34f11978d39045ddc2839d93283ad72080f90dcbe0517022e593edfd35cba2",
+      "raw_target_sha256": "fea15dba6946ed3c634c5247ee25104a0e85f34d21103a3e9d77351d9ed04326",
+      "translation": "基準値と照合し、測定の不確かさも記録します。小さな差は置き方、構造、丸め方でも生じます。判断が変わるほど際どければ、その寸法だけを測り直してもらいましょう。参考写真と手持ちの服の値も注文と一緒に保管します。"
+    },
+    {
+      "source": "Find a jacket that performs the job you expect from the new one. If the purchase is for cycling over a sweater, wear the reference jacket with that sweater, reach forward as you would on the bicycle and note what happens to the sleeves and back hem. A garment that feels right standing still can feel restrictive when reaching. Write down the problem in everyday language before translating it into a measurement request.",
+      "source_sha256": "073ef24e4284259f2c340f18714f2e6a9633a89efe9e03307c52d14facafe2f5",
+      "raw_target_sha256": "fb1f883ea0b26ac1bfa5648ffe35e143f5567269393d80e4860c9de6f49a7c19",
+      "translation": "自転車でセーターの上に着る予定なら、同じセーターと比較用ジャケットを着て、ハンドルに手を伸ばす姿勢を試します。袖と後ろ裾がどう動くか見てください。立ったままでは快適でも、前に手を伸ばすと窮屈な服もあります。困る点を言葉にしてから採寸依頼にします。"
     },
     {
       "source": "For this example, imagine your reference jacket has enough chest room but the back hem rides slightly high. You want roughly the same chest width and a longer back, not a universally larger garment. Write down the desired changes separately. Choosing a larger labelled size simply to gain length could increase the body width beyond what you need while still leaving the sleeves or hem unsuitable.",
@@ -1157,6 +1379,18 @@
       "translation": "一方のサイズは平置きの身幅が55センチで後ろの着丈が69センチ、もう一方は身幅58センチで着丈71センチとします。前者は好みの身幅に近く、後者は丈もゆとりも増えます。それぞれの寸法でどれくらい変化を望むかを考えましょう。幅と丈は別の着心地を左右するため、平均を取っても合うかどうかは分かりません。"
     },
     {
+      "source": "Check construction before translating the figures directly into comfort. A thickly padded lining can occupy space inside a jacket whose outside flat width matches a thinner shell. A stiff fabric behaves differently when you bend your arms than one with stretch. Photographs and outer measurements give partial evidence. If the deciding issue is ease of movement over a thick layer, describe that limitation rather than presenting a number as a fit guarantee.",
+      "source_sha256": "c7d0d884ea002b7db8846dd1557f817ad5ac273954c2aeaf8ec762a099f91cf9",
+      "raw_target_sha256": "71d3454268b9b98e7ff7f6e89382f27ae6e9edb94f7dd6044cf37906171904cf",
+      "translation": "数値を着心地に結び付ける前に構造を見ます。外側の平置き幅が薄手のシェルと同じでも、厚い中綿は内側の空間を使います。硬い生地と伸縮素材では腕を曲げたときの感覚も異なります。外寸と写真は部分的な証拠なので、裏側の厚みが決め手なら別に確認します。"
+    },
+    {
+      "source": "For a jacket with a curved rear hem, ask the warehouse where the longest point is measured. A side-seam length could be several centimetres shorter than the centre back on the same unit. Likewise a collar included in a vertical measurement can make one jacket appear longer on paper without adding coverage at the hem. State whether the collar is included in your reference measurement and request the same method on the new item.",
+      "source_sha256": "997243bd5442022f383264af8430be50e19dfd3af60c322617133071fa34358a",
+      "raw_target_sha256": "318098bad6574c93b788422e44d530676fbd653b26c1f2062cc19f04be518fb6",
+      "translation": "後ろ裾が曲線なら、最長点をどこで測ったか倉庫に尋ねます。同じ服でも脇丈は後ろ中央より数センチ短い場合があります。襟の高さを含めれば数字は長くなっても裾の覆う範囲は増えません。襟を含めるかを明示し、測り方を記録します。"
+    },
+    {
       "source": "When reviewing the picture, inspect whether the tape starts exactly at the seam, runs flat and follows the path requested. If the final reading lies between marks, note an approximate value instead of converting it into a spurious exact size. A small discrepancy can arise from a folded hem, compressed padding or different positioning. Ask for a repeat when that uncertainty could change the decision.",
       "source_sha256": "4cbb1e67c5f2a3b9830f18ee97213eb37b053b9fbc345913d7825f84cb6c0f7f",
       "raw_target_sha256": "e7008e0a8ec583eda44521cae65115f2bcc9eb0223605b2835d9fb1653deae26",
@@ -1169,10 +1403,34 @@
       "translation": "写真で70センチという目盛りは読めても、起点が襟に隠れている場合は、襟の付け根と裾が同じ画面に入る写真を頼みましょう。70の数字だけを大きく写しても、どこから測ったかは分かりません。全体像は鮮明でも目盛りが小さい場合は、全体写真に加えて目盛りの接写を依頼します。2枚を合わせれば、採寸箇所と測定値を確認できます。"
     },
     {
+      "source": "Return to your original fit priorities. If the chest is sufficiently close and the back is longer by the amount you sought, the evidence points toward keeping the option under those assumptions. If the chest has narrowed beyond what works for your normal sweater, the longer hem alone may not address your main use case. Record the actual jacket, layers, measurement method and reason for the decision. A future chart becomes much easier to interpret when you know how the earlier numbers related to a garment you wore.",
+      "source_sha256": "4b49a1383e3ce64140b2a479a0b72e5322906b0546e626961352f5336fb5757e",
+      "raw_target_sha256": "0bb04be40b61bf4187e9c3df27e6d3f042c9487392446c4ba5614157352d8b32",
+      "translation": "最初の優先条件に戻ります。胸幅は十分近く、後ろ丈が希望どおり長ければ、その前提では選択を維持する根拠になります。いつものセーターに対して胸が狭いなら、裾が長いだけでは用途を満たせません。比較した服、中着、採寸方法、判断理由を残すと次の表も読みやすくなります。"
+    },
+    {
       "source": "Keep one copy of the reference garment measurements even if you abandon the listing. Next time you compare a jacket, check whether its cut and intended layering resemble that reference before relying on the figures. A lightweight cardigan that fits under a coat may need less room than the insulated layer you actually intend to wear.",
       "source_sha256": "3563930b0018ddbf9ce2d4af83051832276047c4354549cf245053e80ac707fd",
       "raw_target_sha256": "443add0cbabfe95006508228c44f9862132d5a90e8faa913564caacb6b11e334",
       "translation": "その商品を見送っても、手持ちの服の採寸記録は残しておきます。次のジャケットで数値を使う前に、型と重ね着の予定が近いか確認してください。コートの下に着る薄手のカーディガンと、実際に重ねたい厚手の防寒着では必要なゆとりが変わります。"
+    },
+    {
+      "source": "Two photographs can make one garment appear charcoal and blue-black. Begin by separating colour naming, option identity and photographic appearance. Only one of these can usually be settled by reading a seller's label.",
+      "source_sha256": "a1de31b0c811edc96c7af845cec2938fc93f8e4987c344f0bd51d995c62f00c8",
+      "raw_target_sha256": "5eecc3517a9faca28f84cd79f729211e6e0d75f12181be0452dae3aead755d3d",
+      "translation": "同じ服でも二枚の写真でチャコールにも青みの黒にも見えることがあります。色の名称、入庫した選択肢、写真の見え方を分けてください。販売元のタグで通常確認できるのは表示上の色や型です。"
+    },
+    {
+      "source": "Copy the original colour text, any model suffix and the swatch visible when the order was placed. Dark green, army green and olive can be translated inconsistently. If a listing calls them colour A and colour B, preserving the code can be more reliable than inventing a descriptive name later.",
+      "source_sha256": "f3b65823ad9d5a01338102bab1364f2739a920a056605fc65b06730364686704",
+      "raw_target_sha256": "a094610e004dbb43c454cec3b33d94eade3ddc91fba97acf5a82929e48ded7d5",
+      "translation": "注文時の色名の原文、型番の末尾、選択した色見本を控えます。深緑、アーミーグリーン、オリーブは翻訳が揺れることがあります。「色A」「色B」と表示されているなら、後から色名を付けるよりコードを残す方が確実です。"
+    },
+    {
+      "source": "Look at how the option changes on the seller page. A common main image may remain visible for every colour. A specific swatch attached to the selected option is better evidence of what was selected, but screens and image processing still affect how it appears.",
+      "source_sha256": "279ee7d11765310b515b88babbf310fb8c66f450903a4c89b26600764e9e2e66",
+      "raw_target_sha256": "a920883c2776d1794b0edd197ce42448dfaa511ab39d8747f060e88e004ac15f",
+      "translation": "販売ページで色の選択を変え、どこが変わるかを見ます。全色で共通のメイン写真が残ることもあります。選択肢に結び付いた色見本は注文色の根拠になりますが、その見た目は画面や画像処理にも左右されます。"
     },
     {
       "source": "Check a neutral surface within the same image. If white paper, a grey background and the garment all look unusually warm, lighting or white balance may explain part of the shift. Compare different pictures of the same unit before treating one warm-looking sleeve as a mismatch.",
@@ -1185,6 +1443,24 @@
       "source_sha256": "fb39480bcefa661e93bd828e3ac10ceedf82c2602a3b7582e88c2dbe4f19dd72",
       "raw_target_sha256": "8b5835702e400b199df5eeaf62819e3875ce4e30d4ff1103a13a05b5e5ae9d00",
       "translation": "影、生地の表面、向きで見え方は変わります。ベルベット、サテン、反射素材は向きを変えるだけでも色が違って見えます。折り目の接写と均等に照らされた前身頃は条件が違うので、光に同じように向いた同等の場所を比べてください。"
+    },
+    {
+      "source": "Specify the item and selected colour. Request a view with the label visible and the garment spread enough to show an uninterrupted area. If possible, ask for neutral lighting and a neutral surface within the same frame. One wide view can connect the colour impression to the correct physical item.",
+      "source_sha256": "91ad90fa93ad248f7fa77bfc2d7145aa1fbf0f45a248a94cd54f828ba7999615",
+      "raw_target_sha256": "72373d4e917d047edd467c17d2e890685a3cfdd848ca00ccd963d3335cedb2f0",
+      "translation": "商品と選択色を指定し、安定した照明で現物と色表示または識別コードを一緒に撮ってもらいます。特定箇所の色むらなら位置を伝え、全体像で分からない部分だけを接写してもらいます。"
+    },
+    {
+      "source": "If two variants are physically available together, a side-by-side image under the same lighting can help distinguish them. It still cannot guarantee an exact screen-to-fabric match. Decide whether your concern is identifying the ordered option or matching an exact shade to something you already own.",
+      "source_sha256": "ccca84248895155dc062c0e2118d2a68a9319703a0456bb8913012031ef1e2a5",
+      "raw_target_sha256": "b718ddcff634e4837045b5c628e0da4d8737ca10c59b1d760b24e7593b7e0749",
+      "translation": "両色の現物があれば、同じ照明で並べた写真が区別に役立ちます。それでも画面と実際の生地の完全な一致は保証できません。得られる資料で自分の判断に足りるか考えます。"
+    },
+    {
+      "source": "If the order says dark blue but the received option label identifies black, save both references. That is stronger documentary evidence than saying a photograph looks wrong. If the label matches and only the appearance differs, describe the visual concern and request the missing evidence.",
+      "source_sha256": "7060638ce1d355ed042921f2ba4c481f15cb28495b15ef456c9b0766c6c032a5",
+      "raw_target_sha256": "c3d3fa78d156ac24fbcbefc72ad85793e6da165c1b8113e4c1027140fb7e6234",
+      "translation": "注文表示が濃紺で入庫品のタグが黒なら、両方を保存します。単に写真の色が違うと伝えるより明確な資料です。タグが注文と合い画面の色だけが気になる場合は、撮影・表示条件を別に調べます。"
     },
     {
       "source": "A buyer coordinating pieces from separate sellers faces additional uncertainty even if both listings use the same colour name. Record that risk before relying on a historical QC image. When the colour match is essential, decide whether the available evidence is good enough while the item can still be inspected, and check the current order-specific options with support.",
@@ -1223,6 +1499,12 @@
       "translation": "ジャケットの後ろの無彩色の壁が黄色や青に寄っていれば、写真全体の色かぶりの手掛かりになります。ただし、本来の壁色と照明が分からなければ色見本には使えません。クリーム色の床は元からその色かもしれず、白になるまで補正すれば別の誤差を生みます。服だけの違いと考える前に、画面の複数の物が同じように変色して見えるかを確認します。"
     },
     {
+      "source": "Fabric surface changes the comparison. A shiny synthetic shell reflects the warehouse lights and can produce bright highlights on its folds. A brushed textile can look lighter on one portion because the pile faces another direction. Compare broad panels under similar lighting angles before interpreting the lightest highlight or deepest shadow as the base colour. The smooth panel, lining and ribbed cuff may also be made of different materials and legitimately appear different.",
+      "source_sha256": "dabfadf45bba68a7a2e655682ad35c9efdbec6a04f5c3dfb26933943e7a25ad8",
+      "raw_target_sha256": "d9c6128fe7e1d4810ce55409db9a41f19c07bb4d780959dd2b107cb31dd3d54b",
+      "translation": "光沢のある合成繊維は倉庫の照明を反射し、折れ目が明るく光ります。起毛素材も毛の向きで一部が薄く見えることがあります。同じ部分を別角度から見て、色差が固定しているのか向きとともに変わるのかを確かめます。"
+    },
+    {
       "source": "Cameras and screens add another layer of variation. A phone can adjust exposure when a dark jacket fills most of the frame, making dark green look lighter than it appeared in a wider shot. Your display brightness and colour mode can affect what you see. Looking at the same image on a second device can expose a large display difference, but two screens agreeing is still not a physical comparison with your trousers.",
       "source_sha256": "0135ea8ef7ba43944ba327f721e26df3127a7023cbbfc95f25dd6f43cfdacf25",
       "raw_target_sha256": "cb0d1effe101f4949053457fbd0b0ae1a6c079c739f627aeb099af653d0913d2",
@@ -1235,16 +1517,94 @@
       "translation": "仕様の識別が不確かなら、色表示とジャケットを並べて平置きしてもらいます。しみやパネルの色むらなら位置を指定し、同じ中立的な照明で全体と接写を依頼します。オリーブと濃い緑を比べたい場合は、両方の現物を同じ照明で比べられるか尋ねます。疑問ごとに必要な写真は異なります。"
     },
     {
+      "source": "For an apparent local stain, compare the same area from more than one angle. A bright streak that moves with the reflection has a different interpretation from a mark fixed relative to a seam. Explain which you observed without demanding that someone confirm a conclusion the image cannot support. A short request to inspect the left sleeve beside the pocket is more actionable than a general statement that the whole colour looks wrong.",
+      "source_sha256": "bca1750e7fc1396987d4f3361887e51f4cb93a66e34ff81cb8b621cb3a8c5427",
+      "raw_target_sha256": "905b94c8ac1632a89cbd3cbefbd14ece08a1267b8387b3aedf5d5de4fc1100d3",
+      "translation": "汚れらしき部分は同じ位置を複数の角度で比べます。光の反射と一緒に動く筋と、縫い目に対して位置の変わらない跡では意味が異なります。写真で証明できない結論を求めず、「左袖のポケット近くを確認してください」など、観察した場所を伝えます。"
+    },
+    {
       "source": "End the decision with a record of what is confirmed and what remains subjective. For the green jacket, that might be the correct seller code visible, no persistent patch across the main panel, and an exact match to your existing trousers still unknown. Keep this note with the order. If you later choose another item from the same gallery, you can reuse the comparison method while treating its colour, seller and batch as a new question.",
       "source_sha256": "7acdf396649fa639c51d74de666b13a57f42c4fdc0a23fb2a4baa9e020b1f156",
       "raw_target_sha256": "61a0f5b3d8b4b06417614a0488c670c1fbfd87a6c14fe9e8541457a7d8a482b9",
       "translation": "最後に確認済みの事実と主観的な部分を分けて注文記録に残します。緑のジャケットなら「購入した型番が読める、前身頃に複数の写真で固定して見える斑点はない、手持ちのパンツとの厳密な色合わせは未確認」などです。同じギャラリーの別商品には方法を流用できますが、色、販売元、ロットは改めて調べます。"
     },
     {
+      "source": "If the intended use involves pairing two items, photograph your reference item in the room where you normally see it. The picture helps describe which difference bothers you, such as a blue cast beside a warm grey scarf. A supplier still cannot guarantee a match between photographs. Give the warehouse a concrete comparison to photograph and decide whether you can accept the remaining uncertainty.",
+      "source_sha256": "159b4540106da804def1e7694c8ddd8f757c7bd887cb6a709d2a0f891e4cf5e9",
+      "raw_target_sha256": "2a7b3542b46feaf22e7a5cef71c80766431c7a5105639c1b0102b02ac0ddb6d1",
+      "translation": "手持ちの服と合わせたい場合は、普段見る部屋で基準の服を撮影し、「暖かい灰色のマフラーの横で青みが気になる」など心配を具体化します。写真同士で現物の色を保証することはできないため、倉庫で実際に観察できる比較を頼みます。"
+    },
+    {
+      "source": "A request for more pictures is easy to fulfil without answering the question that matters. A good request names the item, the feature and the view that would change what you do next.",
+      "source_sha256": "f135cb979556ce34af07be924250c9692a67a5e2fcd907a746194e46bb6e123f",
+      "raw_target_sha256": "c04189fc522b93b20f8091f30ae1c4fa8cd41b33a97d9a53dcc6e27f9b36e289",
+      "translation": "「写真を増やして」と頼めば枚数は増えても疑問が残ることがあります。商品、調べたい特徴、次の判断につながる撮影方向を指定します。"
+    },
+    {
+      "source": "Read the original seller option and the image set already available. Write one sentence starting with what you need to know. Examples include whether the lining can be detached, whether a shoulder strap is included or whether the left shoe has the same label as the right. Avoid starting with a camera instruction until you know the decision.",
+      "source_sha256": "c8c07d91a578ada3e4953a55b62bc1bb492239cf5724079e2b982aa868bc699a",
+      "raw_target_sha256": "f2201ddb6472676d625ac9fd299f7fdc974876537fd0cc662f7be899a42a166d",
+      "translation": "販売元の選択肢と既存の写真を確認して、「知りたいのは何か」を一文にします。ライナーは外れるか、肩掛けベルトは付くか、左右の靴の表示は同じか、などです。確認事項を決めてから撮り方を指定します。"
+    },
+    {
+      "source": "Check whether the existing pictures already settle the issue. The answer may be visible in a wide view rather than the closest image. Enlarge the original when possible. Repeated screenshots can obscure labels even if the underlying file was readable.",
+      "source_sha256": "dfdc8442f5a0ccf2dc667edf2e3822765120aa9a52e45332e95ef0c54662a409",
+      "raw_target_sha256": "661ad42b4824efd9105bf9efe544faef3bbedda3067aa0fe1647cde07f62e71c",
+      "translation": "既存の写真にすでに答えがないか見直します。接写より全体写真に明瞭に写っている場合もあります。可能なら元画像を拡大してください。何度もスクリーンショットを重ねると読めたラベルも不鮮明になります。"
+    },
+    {
+      "source": "If fit matters, describe both measurement endpoints and the position of the item. A request to measure sleeve length is ambiguous on a raglan or dropped-shoulder jacket. A request from the centre-back neck seam to the cuff along the sleeve gives the person measuring an instruction they can follow.",
+      "source_sha256": "cda933c3520b6ebe65cdaa2f04311c5d95ade1ffd38a0519f621570841035b2b",
+      "raw_target_sha256": "d142b4ee7a4277d1cd6052d67feb326d8ea6e6fa195875a4120c843598951f62",
+      "translation": "着用感に関わる採寸は服の置き方と両端を決めます。ラグランやドロップショルダーに「袖丈を測って」だけでは曖昧です。「後ろ襟中央の縫い目から、肩と袖に沿って袖口まで」と伝えれば再現できます。"
+    },
+    {
+      "source": "Include the warehouse entry or order reference in your request. For multiple similar pieces, name the colour and size. When practical, ask for one overview that identifies the unit and one detail view that reveals the feature. A tiny crop may show a buckle well while obscuring which bag it came from.",
+      "source_sha256": "53b1b0dde7f931a8972b7d56291f168cdd794579ca4e6d9d3c02c903cde86e60",
+      "raw_target_sha256": "4d6581d72c2331c4c14947f1b44835e63eb1fa80fd03073a4bee8834352ec658",
+      "translation": "依頼に注文番号か入庫番号を添えます。似た商品が複数あれば色とサイズも書きます。可能なら現物を特定する全体像と、特徴を示す接写を各一枚依頼します。バックルだけの切り抜きでは、どのバッグの物か不明です。"
+    },
+    {
+      "source": "Check any available inspection options, charges and conditions in your account before ordering additional services. Ask whether the proposed view requires opening sealed retail packaging. That decision can affect how you intend to present, use or return the item.",
+      "source_sha256": "8f83008c0c6f50aadcbd0c5fb7910cbb19890a019d52ca0c5bba4dab9f991989",
+      "raw_target_sha256": "6753d430019e0e93c3b2eea6668994f890b48bec88f324e837be4da17333bcef",
+      "translation": "追加サービスを申し込む前に、自分のアカウントで検品の範囲、料金、条件を確認します。希望の写真に封を開ける必要があるかも尋ねましょう。開封すれば贈答、使用、返品時の状態に影響する可能性があります。"
+    },
+    {
+      "source": "Compare the new picture with the sentence you wrote at the beginning. If it shows a strap but not its attachment hardware, say exactly what remains unresolved. Ask for a different view only when the additional evidence changes your decision.",
+      "source_sha256": "956fe4e454247ed54ac97fd8c9fdbd8bad808998287ff9a2679db947dbeb7eec",
+      "raw_target_sha256": "13168120a72cd7559b720202658debf94bc8393cae32a7af5bcc8a129413e76a",
+      "translation": "新しい写真を最初の質問と照合します。ストラップ本体は写ったが取り付け金具は見えないなら、残る疑問は金具だと伝えます。次の判断に影響する場合にだけ、別角度を依頼します。"
+    },
+    {
+      "source": "Finish with an observation someone else can check. For example, the lining is attached by a zip visible at the collar and hem. Avoid claiming that a photo verifies long-term durability, water resistance or an internal component that was never shown. An effective QC decision states both the visible result and the limits of the inspection.",
+      "source_sha256": "f2796767d0b9181b5d9b371fbfdea2e2a6e4ccd9cb6616330139e21b2ee6fbce",
+      "raw_target_sha256": "beb584408e1461d1cffc076274f63a9a99b145cae0cee91cbc770ce24a5fea91",
+      "translation": "「襟元と裾のファスナーで裏地が留まっている」など、他の人も写真で確認できる観察で締めます。一枚の画像から長期の耐久性、防水性、写っていない内部の部品までは立証できません。見えた事実と限界を一緒に残します。"
+    },
+    {
+      "source": "Imagine you ordered a laptop backpack with a hidden rear pocket. You plan to keep a small tablet in that pocket and use the main compartment for a laptop. The seller picture shows the back panel closed. Your warehouse photographs show the front, side and a readable size label. Asking whether the bag is good quality gives the person inspecting it no particular feature to verify. Instead, name the missing evidence: the rear pocket opening, its usable depth and the relationship between that pocket and the item you ordered.",
+      "source_sha256": "6c8f0e1b76ec7a56870faa9734435289dedfcbccbc222fded0be4b47328c2516",
+      "raw_target_sha256": "2092b7d8c76d914aa1a3f62d0d1ada8067a4ffa9f12b0390080b5842e7750a31",
+      "translation": "隠し背面ポケットのあるノートPC用リュックを注文し、主室にPC、背面に小型タブレットを入れたいとします。販売写真では背面が閉じ、倉庫写真は正面、側面、サイズ表示だけです。「品質は良いか」では必要な答えは出ません。背面ポケットの位置、開口幅、使える深さを確かめます。"
+    },
+    {
+      "source": "Begin with an overview of the back panel with the relevant pocket unzipped. This establishes that the photographed opening belongs to the bag rather than to a separate pouch or another compartment. Ask for enough context to see the seams surrounding it. A close photograph of a zip without the surrounding panel can confirm a zip exists while leaving its location unknown.",
+      "source_sha256": "819fe1d8fa8556fb5bcb950b2a1be72ed7675ef913850e99f06356e3820414a1",
+      "raw_target_sha256": "ffc06b295afe36544175809b584c70fbe62c1472fa62307f6d9c8f49c9bbe52d",
+      "translation": "まず背面の該当ポケットを開け、周囲の縫い目を含む全体写真を依頼します。これで開口部が別の小袋や別室ではなく、このバッグの背面にあると分かります。ファスナーだけの接写では、存在は見えても位置は分かりません。"
+    },
+    {
       "source": "For the second view, ask for a measurement across the usable opening between the points that actually limit insertion. Explain that the exterior pocket seam may be wider than the zip opening. For the third, specify a depth measurement from the inside base to the usable top if this is possible without damaging the bag. Neither measurement by itself establishes whether a rigid object with a thick case fits; the thickness, lining, corners and shape also matter. Make that limitation explicit in the decision.",
       "source_sha256": "e314e96dae60e25550bc7a61bbc9003236207425f20c0cfe73ffe8852edf0db2",
       "raw_target_sha256": "15f770e913fd2bdb33110e5081ce7298bbb7369e3f51b3cb75385e3f9e95e55d",
       "translation": "二枚目では、物を通せる開口部の両端の間を測ってもらいます。外側のポケットの縫い幅は、ファスナーを開けて使える幅より広いことがあります。三枚目はバッグを傷めずに可能なら、内底から実際に使える上端までの深さを測ります。厚いケースに入った硬い物が収まるかは、厚み、裏地、角の形状にも左右されるので、どちらかの数値だけでは決まりません。"
+    },
+    {
+      "source": "If the inspector can provide only one additional view, decide which observation carries most value. When the tablet is clearly too wide for the opening, depth no longer determines the decision. If opening width is already shown but the pocket's existence is uncertain, an overview is more important than another measurement. Ranking these questions saves effort and can avoid paying for several photographs that answer essentially the same thing.",
+      "source_sha256": "695cbd32e7cf5965338baa38a7f02da862c6429f895811eea34a4c901e9c5f3f",
+      "raw_target_sha256": "e060e2545c103a7e999bb3d0ccb81b3255f04788f703684f142f6fe0401c8355",
+      "translation": "追加できる写真が一枚なら、判断に最も影響する観察を優先します。タブレットが明らかに開口部より広ければ深さはもう決め手ではありません。幅が分かっていて、目的のポケットかどうかが不明なら、再測定より背面全体が有用です。"
     },
     {
       "source": "Use a simple order of details: identify the unit, name the feature, describe the position, specify the endpoints and say what must remain visible. A request such as measure the bag can produce its outside height. A more precise request would name the rear pocket of the black medium backpack, ask for its zip opened, and request a tape across the unobstructed opening with zero and the final reading visible. The extra words only describe choices that could otherwise lead to the wrong measurement.",
@@ -1259,6 +1619,12 @@
       "translation": "希望する単位を伝え、換算は自分の記録で行います。倉庫の値がセンチで、比較用の物がインチなら単位を統一します。タブレットの公称画面対角線とポケットの開口幅を比べてはいけません。ケースを付けた実物で、開口部を通る幅、厚さ、角の形を確認します。"
     },
     {
+      "source": "For fragile or sealed products, ask what inspection is possible before requesting physical manipulation. If the original retail packaging matters to the purchase, opening it simply to photograph a concealed feature may change the condition you intend to receive. Record that decision explicitly. Sometimes the appropriate answer is that the feature cannot be verified from the outside and you must decide whether that uncertainty is acceptable.",
+      "source_sha256": "324cf3ce2f39c9ebf9f636d246c6dce977525043a97eead770c53f61f3a06c4e",
+      "raw_target_sha256": "7a12d633b899c4035c4783bcc7d4d624adec806d8ff730e63be79cfc5fc7f6a3",
+      "translation": "壊れやすい品や密封品は、動かしたり開けたりする前に可能な検品を尋ねます。元の包装が重要なら、見えない箇所の撮影のために開封すると希望の状態が変わります。判断を記録し、外から確認できなければその不確かさを受け入れるか決めます。"
+    },
+    {
       "source": "On receipt, ask whether the photo identifies the unit, exposes the feature and makes the requested observation readable. If two of the three are satisfied, identify the single remaining gap. A clear measurement against an unidentified black bag leaves unit identity uncertain. A well-identified bag with the zero mark hidden leaves the measurement uncertain. These are concise follow-up questions that a person at the warehouse can act on.",
       "source_sha256": "8485f5ad4f3c6dc98ffb070e9cdbb431d304ea75fe7dff2e80ee027b5680af2f",
       "raw_target_sha256": "2e28e899c3989252509c8d49e332c75ced4989a0f5ac0d9b07513cca40b7154c",
@@ -1269,6 +1635,12 @@
       "source_sha256": "8d781a0c150d9a30d80104bd8edc95ac06f47915f1f863026a9f152c2901b0ca",
       "raw_target_sha256": "6a3188da0a481cc7e2a825abf9df387bebeb5e3a68d17c7a11220ca22faa68af",
       "translation": "現物が購入時の販売条件に合わないなら、支払済みの選択肢や販売説明のうち、食い違う文言を正確に伝えます。単に好みの寸法に届かなかった場合は、着用上の問題を説明し、その注文の条件を確認します。両者では選べる対応が異なることがあるため、事情を分けて伝えます。"
+    },
+    {
+      "source": "Save the final photographs with the original request and order reference. If the pocket later proves too shallow despite an apparently adequate measurement, you can review which depth was measured, what packing or lining altered the fit and whether the tablet case changed. That record improves your next inspection much more than a gallery of unlabelled close-ups.",
+      "source_sha256": "96bdf4643a906a4d4e0d0b741da47a7dbf4719d1aa1c903c5e54c6a5ed15f0f4",
+      "raw_target_sha256": "9a3c9057a2dc8e956c7cfe25e693104317f1fe7e98b09fd1fd7fa4bfde637478",
+      "translation": "追加写真、最初の依頼、注文番号を一緒に保管します。数値は足りそうなのに実際は浅かったなら、どの深さを測ったか、裏地や詰め物が場所を取ったか、タブレットのケースが変わったかを振り返れます。「確認済み」の一言より次の検品に役立ちます。"
     },
     {
       "source": "When the additional picture arrives, reply in the same thread with the decision it supports. An example is that the new close-up shows both zipper pulls and resolves your question about the pockets, while the lining remains outside the photograph. This closes the current request without accidentally treating the lining as checked. If you need a different question answered, describe it separately and verify whether the warehouse can still access the item. Several unlabeled replies on a single image can leave the person reading your case unsure which issue is open. Saving the answer with the corresponding photograph keeps the evidence useful after the parcel leaves the warehouse.",

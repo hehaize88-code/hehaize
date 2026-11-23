@@ -3,7 +3,7 @@
   "locale": "zh",
   "source_set_sha256": "45be6cbeb6f7ed794c373e9816341de444b028e8d281d6498d5cf522a8bfa4ee",
   "raw_dictionary_sha256": "60a34d8e888b1a1695abfe03c6819a8cea5eb397f194792c077e5a2cdd136bac",
-  "effective_dictionary_sha256": "c8ea15dbedeaaf295c9aa540692be7e7160c48bd18ff16e23ee9f2c15ae9bbc3",
+  "effective_dictionary_sha256": "0678674cd9f2a6c1f2d2a4f980df0918e0859a53b0ccf8e9d7cda0fb7f0b660a",
   "checked_entries": 329,
   "review_scope": "Verified source coverage and reviewed FAQ, editorial headings, shipping estimates and garment size examples, all automated findings, and domain-specific parcel and price terminology.",
   "reviewed_flags": [
@@ -809,10 +809,22 @@
       "translation": "查验货参考图分两步。先找对卖家的商品页，再判断该页关联的哪些照片能回答你对于具体款式的问题。搜到相似外观只是第一步。"
     },
     {
+      "source": "Open the saved spreadsheet product and look for the underlying marketplace address. Save the marketplace name together with the item identifier. A number copied without its marketplace can be ambiguous. An agent link and a seller link may refer to the same item even though their domains differ.",
+      "source_sha256": "4ace6d7c8b182fcc41288c6844266a7f09e10c18f7bc449c33e127deaa33fdef",
+      "raw_target_sha256": "9b023b39f941ecfceb597d2e41f192834cd09f91997d25641d928eb50a4e734d",
+      "translation": "打开表格中保存的商品，找到原始购物平台的地址，同时记下平台名称和商品编号。孤立的数字容易混淆。代购链接和卖家链接即使域名不同，也可能指向同一商品。"
+    },
+    {
       "source": "An independent VigorBuy QC finder describes accepting seller URLs and agent URLs for lookup. If an agent link opens an unrelated result, retry with the seller listing you have verified. If all you have is a picture, use visual search to identify candidates first. Treat every visual match as a lead until you have connected it to the right seller or product specification.",
       "source_sha256": "e4c5dd29c7e62c499b1155a5dae480125c3ab3bb2cc4b6717781a07711f6860c",
       "raw_target_sha256": "e1cf427cbbda933536fcf7d59dec18609675574c63f95e6a63346a02a63c8879",
       "translation": "一个独立的 VigorBuy 验货图查询工具说明，它接受卖家链接和代购链接。如果代购链接跳到了无关结果，可以用已核实的卖家商品页重试。只有图片时，先用以图搜图筛选候选项。只有能与卖家身份或商品规格对应，才能将其作为进一步判断的依据。"
+    },
+    {
+      "source": "Look at the date, complete image sequence and any available option information. Earlier photographs can show details of units received by other buyers. A newer date alone does not make the photographed garment the colour or version you selected.",
+      "source_sha256": "a7064e1cc37d3a0f8cc2c1c48082916b11229671fd4af5a5f38a1e1d5510fe53",
+      "raw_target_sha256": "df735c8989cff5468ed0ece668ffa867402e3a79dabf4cf03f0268961d970747",
+      "translation": "查看照片日期、同组完整图片和已有选项资料。历史照片能展示别的买家当时收到的货，但即使照片更新，也不能仅凭日期判断它就是你选中的颜色或版本。"
     },
     {
       "source": "Take a backpack listing with plain and printed colourways. A recent reference can clearly show the shape of the bag, but it may hide the inside of the printed version. State what the image supports. An exterior profile can help identify proportions; an open bag photograph is needed to inspect a divider. A screenshot that has been cropped to the front panel cannot settle both questions.",
@@ -827,10 +839,40 @@
       "translation": "每组参考图都应保存卖家网址、图片出处和一条可核实的观察。例如，拉链超过侧袋边缘，或能够看见内袋但袋口被挡住。问题涉及具体部件时，“看起来不错”不足以说明你确认了什么。"
     },
     {
+      "source": "Separate an observed feature from an assumption. If the seller lists two capacities but the picture has no label or scale, record capacity unknown. Compare the seller specifications and ask for clarification before ordering if the capacity matters. A large number of nearly identical front pictures adds little evidence about a concealed feature.",
+      "source_sha256": "ffd0370b3a111bac20b28320136c70a922434e138abf8ad9b4bf045bbe1902d5",
+      "raw_target_sha256": "4b874e88bccde80f1d31b071fef10ff014259dc80f7098173cc6930ec15c9183",
+      "translation": "把亲眼看到的内容和推测分开。若卖家有两种容量，而照片上没有标签或尺寸参照，就标注“容量未确认”。容量影响购买时，先对照规格并在下单前问清楚。相似的正面照再多，也不能展示藏在包内的细节。"
+    },
+    {
+      "source": "Once your purchase is associated with a warehouse entry, compare your own order's information with the paid option and observations. Use an overview to establish identity and a close view for the detail that affects your decision. If you cannot link the image to your unit, ask for that connection explicitly.",
+      "source_sha256": "8c24998c7602e4af4bca0d9c0c3fadfe1f7944ff75f36d57ee5994ea1f45a66a",
+      "raw_target_sha256": "15a73c32b140965e521225bfbfccfe8cb44074030fd138d5fcd19af4aa126788",
+      "translation": "购买记录对应到仓库入库编号后，拿本单实拍跟实付选项和此前的观察核对。先用全景确认是哪一件，再用近照检查影响决定的细节。若无法确定照片拍的就是你的货，就明确请仓库确认对应关系。"
+    },
+    {
       "source": "An empty public search is also a result you can interpret carefully. It means no relevant photographs appeared for the input you used. Verify the link, look at independent references if available and decide whether the missing evidence changes your purchase decision. Avoid converting an absence of public images into a claim about the seller's reliability.",
       "source_sha256": "0337ca4fcc55f52a34c58604aca70d705142d1849276aad775e8c49423ba9599",
       "raw_target_sha256": "f771eb76695b43515c98943ecafe90e30d793003277f584f3e13e751db765bf3",
       "translation": "公开搜索没有结果，只说明这次输入没有匹配到可用照片。核对链接，查看其他独立来源，并考虑这项缺失是否影响购买。不能据此判断卖家是否可靠。"
+    },
+    {
+      "source": "Open the linked product and look for the actual seller source. Record its marketplace name and identifier. The word brown in the title is less useful for identifying the seller than that combination. If the page presents several sizes, select the version you intend to order and save the source wording. Note whether the seller assigns a separate identifier to the option. Keep the information for the option alongside the listing identifier rather than replacing one with the other.",
+      "source_sha256": "d8eeca232e832bd541766106b681d706f72bae29936885b5435cb863466edb4a",
+      "raw_target_sha256": "53cc3405f0fa5b4a81d9272c8fe071b8de988b1a1f7bdff39b82575ddae9e7c1",
+      "translation": "打开朋友发来的商品，找到卖家原链接并记下平台和商品编号。这两项比标题中的“棕色”更能确认来源。同页若分尺寸，选中想买的版本并保存卖家原文；若选项有独立代码，也一并记录。"
+    },
+    {
+      "source": "First see whether the pasted input is a link to one product or a link to a store, search result or collection. A single shop can list multiple backpacks with similar names. Opening a store index and choosing whichever product looks closest changes the object of your research. If the seller link no longer opens, preserve the old identifier before investigating visual alternatives. Label a visually similar live listing as a new candidate.",
+      "source_sha256": "003327adb618f8b4360d169be4b3832973ba09cf6eaab2d0c9295dedf93e2273",
+      "raw_target_sha256": "c7baa0ea50c5152d68bf5f66f7aa81c7f5242b01aa2ae43c0f652733ecfc35a2",
+      "translation": "先确认输入链接打开的是单个商品，而不是店铺首页、搜索结果或合集。同一家店可能有多款名字相近的背包；从店铺里挑最像的一款，已经换了查询对象。旧链接打不开时先留存原货号，再把外形相似、仍在售的商品另列为候选。"
+    },
+    {
+      "source": "If an agent wrapper opens a generic page, try the original product URL you actually observed. Do not build a seller URL by copying a number from an unrelated part of a screen. Quantity, internal catalogue number and seller item identifier can all be numeric. A mistaken identifier can turn a lookup returning plausible pictures into a more serious error than an empty result because you may begin trusting the wrong gallery.",
+      "source_sha256": "f03a08d1990c39a466d1a504e3bbf479f5051580b5c24b4269500e7121c7ad9b",
+      "raw_target_sha256": "885b0cfa304e34d1918d1795fd0c2c1e3ad221b03e443b026296ee2322829bcd",
+      "translation": "代购链接只打开通用页面时，改用曾经确切看到的原始商品网址。不要从页面其他地方随便抄个数字拼卖家链接：数量、目录内部编号和卖家货号都可能是纯数字。抓错编号即使搜出看似合理的照片，也会让人错把另一件货当成目标。"
     },
     {
       "source": "When the correct link returns no photos, check the current seller images and written product specifications directly. Decide whether a current order inspection could resolve the outstanding question at a stage that still works for you. If a dimension is critical to the purchase itself, ask before ordering. A feature you cannot confirm until after intake may affect whether you are comfortable proceeding under the current seller terms.",
@@ -839,10 +881,28 @@
       "translation": "用正确链接仍搜不到验货图时，直接查现行商品页的图片和文字规格。考虑入库后再查是否还来得及影响你的选择。如果某个尺寸决定买不买，应在下单前问清楚。只有入库后才能验证的特征，需要结合卖家条款决定是否值得承担不确定性。"
     },
     {
+      "source": "For the detachable straps, request an overall view showing both attachment points on the current unit and a close view of the fastening if necessary. The historical buckle picture served a useful purpose: it helped you identify the exact inspection needed. It remains separate from the evidence used to accept the current delivery.",
+      "source_sha256": "6a8120909a61c911d4dbeadb51bd64b8f35805889412915bda51d0fdd2fddc22",
+      "raw_target_sha256": "499c2d097c54289db27d6ebd9499b708d4f27f1b7cc205ae56f1818994d96873",
+      "translation": "肩带能否拆下，要看本次入库背包的两端连接点，必要时补一张扣具近照。历史照片中的金属扣提醒你该查哪里；是否接受本次到货，则要靠本单实拍，两类证据分开保存。"
+    },
+    {
+      "source": "After the current photos arrive, update the notes under the actual order reference. A complete entry can say that the hardware attaches at both ends, that the compartment opening was measured from seam to seam and that the depth remains unmeasured. You can then decide whether the remaining uncertainty matters. The result is a practical buying decision supported by identifiable observations, not a count of how many attractive reference images the lookup returned.",
+      "source_sha256": "6aee12a50f0cd0f5a57942fb76f72196093eb9aff0186131650b714e2b3dea8f",
+      "raw_target_sha256": "f00946f6be1edfd24f3c42f5e880f979cae8ce8f50a768407eb9c76490502fbb",
+      "translation": "收到新照片后，把观察写在本单编号下。例如，两端的扣具都已看到，夹层净开口已从一侧接缝量到另一侧，但深度尚未测。这样才能判断剩余不确定性是否重要，把查图结果用于实际购买决定。"
+    },
+    {
       "source": "A final check is whether somebody else can reproduce the lookup from your notes. Send yourself the plain listing URL without signing in, reopen it, and check whether it still names the seller and item you intended. Preserve the selected option separately if that choice disappears outside your session.",
       "source_sha256": "e2ae34b17b19c509e244617a46fcfab4b011b677e6d9bc62c4a6e2f518712034",
       "raw_target_sha256": "f45b2850f29081cc96da5d190cb3af1165299f43370d8e79f4d234f578ef5d3a",
       "translation": "最后测试记录是否足以复现查询。把不含账户信息的原始商品网址发给自己，在未登录状态重新打开，核对是否仍显示预期卖家和商品。若退出会话后选中的版本消失，就把该选项另存。"
+    },
+    {
+      "source": "VigorBuy QC finder methodology",
+      "source_sha256": "fdd30ef2e30f71d98ac452298649e67661c1877ba9c175906ade8746ff4f3cf9",
+      "raw_target_sha256": "2bd10f555e263151d7dbfbef3bfc263f35bf992ef3869a5bbd14fce155a5aed8",
+      "translation": "VigorBuy 验货图查询方法"
     },
     {
       "source": "VigorBuy buyer tutorial",
@@ -855,6 +915,12 @@
       "source_sha256": "b6752126559fd015157d1db263f3dae941097657f246e33d165e3970a3be9d2d",
       "raw_target_sha256": "95aef41480642e5b610e40b18a9315a21410a4b3f46ffb2696fe05598a5a5c36",
       "translation": "以图搜图能识别夹克的大致轮廓，却不一定分得清两个卖家卖的相似版本。先找候选商品，再逐一检查哪些细节能排除不符的款式。"
+    },
+    {
+      "source": "Use a picture containing one item. A complete outfit against a busy background can produce matches for the shoes, trousers or surrounding colours. Crop to the relevant garment while keeping a useful outline. When identifying a jacket, the collar, hem, sleeve shape and pocket positions often carry more information than one large front graphic.",
+      "source_sha256": "d511d7cc132d88d9cfed34bf3d2f6333522176f502bb8bbc9fc107a0061837ac",
+      "raw_target_sha256": "f4a7fdf699e7778ef8b02f4a58eeb20b2a784bfddd2aa9425509c7f8201b0683",
+      "translation": "尽量选择只含一个目标商品的照片。背景复杂的全身穿搭容易搜到鞋、裤子或相近背景色。裁出夹克时保留整体轮廓；领形、下摆、袖型和口袋位置，常常比一个醒目的正面图案更能区分款式。"
     },
     {
       "source": "Try two different crops if the first result is unclear. Use the full garment for silhouette and a second crop that contains a distinctive construction feature. If both lead to the same candidate, open that listing. Agreement between two searches is a reason to inspect it, not proof of identity.",
@@ -881,6 +947,30 @@
       "translation": "打开候选商品页后，核对平台、卖家和货号。如果原图来自已知商品页，直接比较两个标识。不同卖家和同一家店的多个款式都可能共用宣传图。遇到不同卖家，需要重新评估这家店实际出售的商品。"
     },
     {
+      "source": "Select the intended option and watch which image changes. Some listings retain the same main photo while the option text changes. Save the selected original wording where colour translations are close. If the option cannot be connected to the reference image, keep the match provisional.",
+      "source_sha256": "8f2790b1332684f394cfd0ec0109f464c17103e72153c19726278b335a755df3",
+      "raw_target_sha256": "e25b451f82be6846ea56b1c0fa8e3f449b013deaa19cfe4820ea111817ea9087",
+      "translation": "点选想买的版本，观察哪张图随选项改变。有的页面只会更新文字，主图始终一样。两个色名翻译很接近时，保存所选项的原文。若选项无法和参考照片对应，继续标注为候选。"
+    },
+    {
+      "source": "Write a one-line conclusion naming the strongest match and the unresolved feature. For example, the jacket has the right pocket layout, but the cuff fastening is hidden. That statement tells you what photograph or seller specification to seek next.",
+      "source_sha256": "328f3721a38a5a89672cea86b11e151bfe50ec80688e0405bc52d30b0c6d6bbe",
+      "raw_target_sha256": "0fa2f6c66e165255e99f5748f9140574aa670df475614602c60430c192753cde",
+      "translation": "用一句话写下最强的匹配证据和待核实之处，例如“夹克口袋布局一致，但袖口扣具被遮住”。下一步就知道要找哪种照片或卖家规格。"
+    },
+    {
+      "source": "If the distinguishing detail matters, ask for a view that reveals it before treating the result as the intended product. When no seller identity is available, describe it as a similar alternative. That distinction is valuable when comparing price or warehouse photos because another shop's reference cannot show what a different supplier will dispatch.",
+      "source_sha256": "d45a3e4b3947b54f7a28dcdcfbc5171e668db322f973360423f0d9c39a6da380",
+      "raw_target_sha256": "1e20337177830e262dd3da55e3c11bc5e1eb198ba83a256f243b18ae8552c3f6",
+      "translation": "关键识别点影响购买时，先请卖家拍出该处，再认定匹配。若完全查不到卖家身份，只能称为相似替代款。比较价格和仓库图时要保留这一差别，因为别家旧订单并不能证明新卖家会寄什么。"
+    },
+    {
+      "source": "Consider a phone screenshot of a dark-blue jacket worn at an angle. A striped cuff, one diagonal chest pocket and the bottom of a zip are visible. The sleeve partly covers the side of the jacket. Before searching, write down those three visible details and note what cannot be seen, such as the back panel and the full hem. Treating hidden features as unknown prevents you from rejecting an otherwise plausible candidate for the wrong reason.",
+      "source_sha256": "14c9305b5c2eea79bcb144824d537c39e2516dd769adf237ff05579769b18ffc",
+      "raw_target_sha256": "ad2393d4cd80fd521b882eeb5bc2729aa06684b6ff1595256daec59b3cf060ab",
+      "translation": "例如斜侧方拍摄的深蓝夹克截图，可见条纹袖口、一个斜向胸袋和拉链下端，袖子遮住了衣身侧面。搜图前先写下这三点；背片和完整下摆则标注没看到。若擅自补全被遮挡的细节，就可能错删真正相符的商品。"
+    },
+    {
       "source": "Suppose the first search returns three visually close jackets. Candidate A shares the blue colour and striped cuff but has two horizontal chest pockets clearly visible in its front photograph. Candidate B appears to have the correct pocket and cuff, yet its alternate view shows a snap fastening where the original visibly has a zip. Candidate C has the visible cuff, diagonal pocket and zip, but its seller page groups four jacket options together. The first two can be set aside for an identified reason. The third remains a candidate while you determine which option the picture represents.",
       "source_sha256": "00e9aedacc16208c3faac60aaa10b277c7ad4fc997029ff48844e39cc2e17c54",
       "raw_target_sha256": "d7f37bba6b7ce109b320395e388a1ae7ed7ce94a0e57a532b0c0fdcf46c3f65a",
@@ -891,6 +981,12 @@
       "source_sha256": "7c08c77fc467842769ff75d40cab91989eed7371bc24c42af967286d4883d3c9",
       "raw_target_sha256": "94744c0fb4fcbc0fb37e1dc11e38f07cc28ab93b7a5eab364b608682f2778240",
       "translation": "只裁袖口搜图，A 可能又出现在结果里。这只能说明两款袖口相似，不会推翻胸袋不一致的证据。再裁一张同时包含胸袋和拉链的图；若又找到 C，再看商品页和选项文字。搜图排名不能证明卖家信息准确、商品状态良好或目前有货。"
+    },
+    {
+      "source": "Now imagine that C's seller page uses the same studio photograph as the original screenshot. That is strong evidence that the photographs share an origin; it is weaker evidence that the current seller delivers the same physical variant. Check its seller identity and available option. If these details cannot be traced back to the screenshot, describe C as a closely matching alternative. The distinction matters if you later use older QC pictures tied to the original source to judge C's stock.",
+      "source_sha256": "ab18a9e66bdd4e9fb25fdfb45022552ad4b9310e197cef8c1f7667e264b2ea9a",
+      "raw_target_sha256": "40138bc24e87aa6fa6853b5536550bad756dc8f019d36c83b2d23d9c39bd9bc6",
+      "translation": "若 C 的商品页使用了与原截图完全相同的棚拍图，可以有把握地说两张图同源，却不能凭此断定这位卖家目前寄出的货完全相同。应继续核对选项文字、其他角度及对应实拍。"
     },
     {
       "source": "Compare images at a similar angle. The edge of a pocket can disappear when a jacket is open, and a mirrored promotional image can reverse the side on which a logo appears. Look for text or another known orientation cue before treating left and right as decisive. A different count of visible fasteners on two fully opened cuffs is usually easier to interpret than the apparent width of a sleeve viewed from different angles.",
@@ -911,6 +1007,18 @@
       "translation": "候选商品之间不能借用证据。给 C 的平台、卖家、所选版本及图片单独建档。在 A 的标签上看到的信息不能说明 C；即使三个夹克外观再像，也不能拿 B 的尺码表为 C 选尺码。要以每个卖家自己定义的选项和订单条件为准。"
     },
     {
+      "source": "List what you need the product to do. If you simply need a jacket with a diagonal pocket and striped cuff, C may satisfy your requirements even without proof that it is the original listing. Evaluate its own price, measurements, contents and seller terms. If you need the exact version with a particular lining, the unresolved interior is a reason to collect more evidence before selecting it.",
+      "source_sha256": "3b75201aca941f1730a1b1cd0c30be017eb43356064fde376b27913eab23f47e",
+      "raw_target_sha256": "d30b035ff91fe565d940679d25daaa49b769d690a514f34ae090d58c1b88bdf3",
+      "translation": "先列出使用需求。若只是要斜胸袋和条纹袖口，外观接近的替代款也可能合适；若要与原版的内袋、版型等完全一致，就必须收集能确认那些特征的证据。把实用替代品与已核实的同款分开记录。"
+    },
+    {
+      "source": "Ask one focused question that distinguishes the remaining possibilities. For example, request a view of the inside back panel of the selected blue option, with the style identifier visible. Compare the answer with your original requirements and retain both references. A new picture showing a plain rear lining can be enough to reject C if the version you need has an internal pocket, even if the outer appearance matches perfectly.",
+      "source_sha256": "c31f8e11bcfd8d58cb362d26e8f1e087de58d72d1c2165e5705b3227641014cf",
+      "raw_target_sha256": "4aaeb54dfa03fff27504a6195a5e12a786c7f72bd1465410e5eb63f56dd04c2c",
+      "translation": "问一个能区分剩余款式的问题。例如，请卖家拍所选蓝色版本的内侧后片，让款式标识同时入镜。保存答复和原始要求。如果必须有内袋，而新图清楚显示 C 的背部里布没有口袋，那么即使外形一模一样，也可以排除。"
+    },
+    {
       "source": "Keep the source photograph and candidate record with any later order. When the warehouse photos arrive, compare the actual received item to the version you purchased, not to a different candidate discarded early in the search. That last switch in reference point is important: once you knowingly choose an alternative seller, your strongest order evidence is that seller's actual selected offer and confirmation.",
       "source_sha256": "b26defd9e23ac79df408fe3d9135ee1c0d17339a582715fa3c8eb2028bcfb49b",
       "raw_target_sha256": "5fac5d3b70f0d87a9dc439db8df475317346fc88a233ef5f121a7f29d64fd88d",
@@ -929,16 +1037,52 @@
       "translation": "同一个卖家链接可以包含几款外形相近的商品。按货号查到的验货图可能拍的是其中任意一款。先确定商品页，再查能够区分你所选版本的那项具体特征。"
     },
     {
+      "source": "Write the available models in the seller's own terms and record the translated descriptions separately. If you see short, long and lined versions, list them as three products for this comparison. The same colour and size can appear on all three.",
+      "source_sha256": "ceeab57fd4eb992803a19b0ea790118dccfecbf422fa88d6c0d17e102958fa0c",
+      "raw_target_sha256": "97badbbe0e2f7261951e2100264ff0fb8f262bf9dbf1b35f25a1fb2e93f91dab",
+      "translation": "按卖家原文列出每个型号，译名放在另一栏。若同页有短款、长款和加里布款，比较时先当作三种不同商品。同一颜色和尺码可能同时出现在所有款式中。"
+    },
+    {
       "source": "Select each candidate and note changes to its swatch, image, price and option code. A price difference can signal different contents but cannot identify which feature caused it. Save the wording and the version shown in your checkout record. A link reopened later may start on the first option instead of the last one selected.",
       "source_sha256": "17f38b78d7b471508bda0a3b24f57162b1fdceeed0f6d334c3593c30aaca05c4",
       "raw_target_sha256": "123ad7b08f00d6c1ffdb136e0a9a6eefbe1a796bd16ef3f69c71eda49ec47b61",
       "translation": "分别选中每个候选款式，记录色块、图片、价格和选项代码有没有变化。价格不同可以提醒你它们并非同一个选项，但具体差别仍要看卖家文字，而不是从价差猜测用料。"
     },
     {
+      "source": "Study the written description for something that should vary between the versions. A removable inner layer, a rear vent or a second zip can distinguish two jackets whose fronts look identical. Do not spend time comparing marks common to every version when the model difference is elsewhere.",
+      "source_sha256": "80f45a646df53ceb06213f6cfaa2fcf467cf77e4c1633cedcb819b95b32ba8b6",
+      "raw_target_sha256": "86fdfdda2898ba62251cdb01518348c8ba0f48f5a5fccf33abadf68792cb9c89",
+      "translation": "从文字规格里找各款之间真正不同的结构。可拆内层、后开衩、第二道拉链，都能区分正面看起来相同的夹克。若差别在内部，就不必反复核对每款都有的外侧标志。"
+    },
+    {
+      "source": "For a long and short version, a complete side view or a defined back measurement could distinguish them. For two lined models, ask for a view inside the jacket with the lining attachment visible. Name the required feature when requesting a photograph so the recipient understands which view matters.",
+      "source_sha256": "97aab7866a9b7724ea5c27f8269257d9498f37849a616c08152454f9af439d58",
+      "raw_target_sha256": "361b619b61a94b1fc8bdbc3949be5f352ae9de047e16928de13467e9a2c0a5ba",
+      "translation": "若是长短款之别，完整侧面或起止点明确的后长测量都可能有用。若是里布结构不同，就应查看内侧连接点。根据实际区别选照片，不要期待一张正面图能区分所有版本。"
+    },
+    {
+      "source": "A close-up can show a fastening clearly and still leave open which jacket it belongs to. Ask for a wider view linking the feature to the complete garment. For two near-identical pieces in one order, keep separate references with their respective colour and size labels.",
+      "source_sha256": "97772f18ea42983973d65bbed9d138048a39cc7ec9f7f3e4b37e92ee61c3b864",
+      "raw_target_sha256": "459e132fe9439c5b82ae58a57c5e5e32e236299fdad1bb669267b222832609b2",
+      "translation": "特写能拍清扣件，却未必看得出属于哪件夹克。补一张同时拍到整件衣服和该结构位置的全景，再把全景与细节图配对；碰到多件相似的黑色夹克时尤其重要。"
+    },
+    {
+      "source": "Read older public photos as examples of what has previously been photographed. They help you discover useful checks and possible differences. A historical image of a zip-in lining on one dark jacket says little about whether the current seller still includes the lining with your chosen option.",
+      "source_sha256": "1e503da129a35cd628e4dd633b22cf0335a832ce9c94dbfbc0843510e9ae25dd",
+      "raw_target_sha256": "eb1eb277531cceac4dd7c115b648a63249dfc4c548d99f6e9b5f3c0a7f29db1b",
+      "translation": "较早的公开实拍适合用来发现值得核对的细节和可能存在的版本差异。一张深色夹克拉链内胆的旧图，不能说明你现在选的版本仍包含那件内胆。"
+    },
+    {
       "source": "Write the outcome in three parts. Identify the paid option, the evidence on the current warehouse entry and the remaining uncertainty. For instance, the order calls for the lined medium; the warehouse label shows medium; the lining attachment remains hidden. This invites one directed photograph instead of a broad request to check everything again.",
       "source_sha256": "53367366b1db5715ec4f4732d493b329f4b94b47c8ca9575f9d865b87db98ec7",
       "raw_target_sha256": "ab5402b02a035025b5caa871bc74bece11e870797a2fe7a47d61e9284d75a206",
       "translation": "记录分三部分：已付款的选项、本次入库证据和仍未确认的地方。例如，订单选了有里布的 M 码，仓库标签显示 M，但里布的连接方式没拍到。这样只需请仓库补拍连接处，无须笼统要求重新检查所有内容。"
+    },
+    {
+      "source": "If the feature is absent, connect your observation to the saved seller option in the message. If the picture simply does not show it, say so. Those two statements lead to different next steps and avoid turning a missing angle into an unsupported defect claim.",
+      "source_sha256": "cbf5033af751cb6a6cd462c92dca66b24d257084115f9dd4b137721d44b05973",
+      "raw_target_sha256": "f8f81c017e0cbde138f0ee3a0887f4a466bb833ea719060e28d8131fde4df669",
+      "translation": "如果实物没有所选版本明确承诺的部件，请在订单消息里同时附上观察和保存的卖家选项。若照片只是没拍到该处，就询问能否补图或确认，暂时记为未核实。不要把遮住的部位直接当成缺货。"
     },
     {
       "source": "Suppose a seller offers three black rain jackets under a single listing. The first is an unlined shell, the second has a fixed fabric lining and the third has a removable inner layer. The pictures at the top of the page show a model wearing a black jacket with the front closed. You need the removable layer for alternating temperatures. The seller item number and the word black identify three possible units, only one of which meets the main requirement.",
@@ -959,10 +1103,22 @@
       "translation": "一组旧验货图从领口拍到里布，只能说明当时被拍的夹克有内层，不能证明可拆。另一组拉链特写也可能拍的是前襟拉链。需要能确认拉链位置和用途的照片，例如内胆从外壳上部分拆开。买家关心的是能否拆卸，不是有没有一块布。"
     },
     {
+      "source": "If the historical photo shows the layer detached but no model identifier is visible, record that one version previously photographed had that construction. The next task is linking that construction to the current option selected. The seller's written option definition, a dated ordering screenshot and the current unit's label each supply different parts of that link. None should be treated as a substitute for the others when two versions are sold side by side.",
+      "source_sha256": "f9a3e9ae1fc3d36df6ee883584a58b32629cb952a6954ba07d923b313a8ef558",
+      "raw_target_sha256": "4fb9afd919310bdb7a11ec9489838d4c8a8dacddd31bc15285fa46c3571b5234",
+      "translation": "若旧图能看到内胆已经拆下，但看不到型号标识，就记为“该商品页至少曾有可拆款”。不要把这张图直接归到当前所选版本。还需要卖家文字、款式代码或本单实拍，将两者明确对应。"
+    },
+    {
       "source": "Two jacket lengths can differ by only a few centimetres. One image might show the short size medium while another shows the long version in small. A length difference could reflect both the size and the cut. Compare the seller size chart for the same marked size across the two versions, and check whether the chart specifies a different starting point. A measurement taken from the collar seam should not be compared directly with one taken from the highest shoulder point.",
       "source_sha256": "191bf628bd422be954503dffebdeacbe2a4a84e686dac1959382ff94556546a1",
       "raw_target_sha256": "154c755a52d5d93145b99f2e4f965fb945d5a919a55310405537606ae3514d6e",
       "translation": "两款夹克的衣长可能只差几厘米。一张图可能是短款 M 码，另一张却是长款 S 码，差异同时受版型和尺码影响。请对照卖家尺码表里两款相同标称尺码的数据，确认衣长起点是否一致。从领缝量的长度不能直接与从肩部最高点量的长度比较。"
+    },
+    {
+      "source": "When the model difference concerns construction, choose a construction observation over a size proxy. A photograph showing the detachable layer and attachment hardware is more direct than a weight difference that could arise from size, packaging or fabric. For a shell and a lined version, an internal view can be more informative than trying to judge thickness from a folded stack in a warehouse photo. State which evidence would resolve the actual question with the least ambiguity.",
+      "source_sha256": "3ef7a10f710ad57f81307b133626722a883cd98c0048abd757ae55511991a08c",
+      "raw_target_sha256": "4fa0b818dcbb961426fa81556227a35e512a5cfa34b6986b42b58371154e34d3",
+      "translation": "区别在结构时，直接看结构比用重量猜更可靠。能看见拆开的内层和扣具的照片，比两件衣服的重量差更有说服力；重量还会受尺码、包装和面料影响。区分有无里布，优先看内部实拍。"
     },
     {
       "source": "With multiple units in one order, assign a separate record to each. Mark one as the medium removable-lining option and another as the large shell, for example. If the warehouse posts a series of pictures against a combined entry, identify which wide shot belongs to which close view. Request an overview showing each unit with its distinguishing feature when a cropped photograph cannot establish the assignment.",
@@ -971,10 +1127,52 @@
       "translation": "一个订单里有几件夹克，就为每一件单独建记录，例如可拆内胆 M 码、无里布 L 码。合并入库记录若配了一组照片，要分清哪张全景对应哪张特写。裁剪图无法对应时，请仓库将每件衣服连同区别款式的特征拍在同一张照片里。"
     },
     {
+      "source": "Imagine the current item has the correct size and colour label, an interior layer visible and a concealed attachment near the collar. If the available photograph does not show whether the layer detaches at the sides and hem, describe that uncertainty. A useful message would ask for the layer partly detached with its connection visible on the medium jacket. It does not need a repeat of every front and back photograph.",
+      "source_sha256": "e68fa2464ba132b78c2e216381f4720cf37c6cf5abd0145bd6d0eadbc3209cbc",
+      "raw_target_sha256": "7c64721e1627f0b981691af3c50896250c7a062f5d878d91abf06cbf202cf49a",
+      "translation": "若尺码和颜色标签都对，领口也看得见内层，但两侧和下摆的连接处被挡住，应把能否整件拆下标为未知。请补拍 M 码夹克的内层部分拆开、连接部位可见的画面即可，无须重拍所有正反面。"
+    },
+    {
       "source": "If the seller confirms the layer is sewn in, compare that reply with the saved option. A mismatch between a documented removable version and a fixed lining is an issue to raise through the order before making further packing decisions. If the original wording never described a detachable layer, the question may instead concern your interpretation of the listing. Those situations require different conversations, and keeping the model key makes the difference visible.",
       "source_sha256": "324c3239e028ea6cf0ccef2159ee993dfe579f960b7e8e06e2223a969e5c800a",
       "raw_target_sha256": "8c3be2f56340c3ced56ecd80e3862b5980ec517ad687c3a0eaea79559ba584ec",
       "translation": "卖家若确认内胆缝死，就对照已保存的购买选项。选项明确可拆而实物缝死，应在继续打包前通过订单提出差异。若原说明本来没承诺可拆，则应先澄清自己对商品页的理解。保存各版本对照表有助于区分这两种情况。"
+    },
+    {
+      "source": "Store the outcome as a plain description, not just a check mark. Fixed lining confirmed from the sewn side seam, or removable lining confirmed in the current unit's open picture, remains meaningful weeks later. When a similar listing appears in the spreadsheet, that description also tells you which identifying feature to look for without assuming two sellers with the same main picture are offering the same jacket.",
+      "source_sha256": "f10df4437acd31abc2d072146b92bf6121e96994c8a41ac1fbbf3c6ad3ac7a56",
+      "raw_target_sha256": "000fd4a69dffd8b16c66da6a585ac11fe95e308bcf65f74ae06baa0d9f7b1967",
+      "translation": "把结果写成以后仍看得懂的描述，例如“从侧缝确认内胆缝死”或“本单敞开实拍显示内胆可拆”。过几周再看同类商品时，这能提醒你应检查哪一处，而不是让一个无上下文的对勾代替证据。"
+    },
+    {
+      "source": "At the end of the comparison, try writing the order in plain language without borrowing the seller's model nickname. Include the feature that changed your choice and the exact variant text displayed at checkout. If another reader could use that description to select two different options, your note needs one more distinguishing detail.",
+      "source_sha256": "794105e74ae82590a6963d8969793496de8b54a55d3f9e98e0c9c2177fa11cc3",
+      "raw_target_sha256": "04afb419578e3e2699821bcd0f98ba8956cf76e9fb198295353d93125bf1abc0",
+      "translation": "最后试着不用卖家给款式起的昵称，自己把订单写清楚：什么功能决定了选择，结算时的选项原文是什么。如果别人照着这段描述仍可能选到两款，就再补一项能区分它们的细节。"
+    },
+    {
+      "source": "The letters on a size label are a poor comparison when two jackets are cut differently. A garment you already wear gives you an actual baseline, provided you measure both pieces in the same way.",
+      "source_sha256": "2929265a80570bedca46fcc62e9db2cb91a58525b29e4456466d3addaf354832",
+      "raw_target_sha256": "68299f1ea43960af315c6ee4ec0289a51b6e01f2974e60b48a79b050a36e0f72",
+      "translation": "两件夹克的剪裁不同，只对比标签上的字母尺码很不可靠。找一件自己穿过的夹克作为实物基准，并以同一方法量两件，结果才有意义。"
+    },
+    {
+      "source": "Pick a jacket serving the same purpose. A fitted spring jacket worn over a shirt gives a different reference from a winter shell worn over a thick sweater. Try your comparison garment with the layer you intend to wear. Note which dimensions feel right and where you would like more room.",
+      "source_sha256": "2d14f757df9be3a311e615f1d207535fdf0f2b572c501dd3ea2e36fb1a40e0bc",
+      "raw_target_sha256": "5b2774cd5ad5e17555b80941f54ddafdabbaea7721f25b53c78664c4d7193a47",
+      "translation": "选用途相同的参考夹克。衬衫外穿的修身春装，与厚毛衣外搭的冬季外壳需要的空间不同。穿上今后打算搭配的内层，再试自己的夹克，记下哪里合适、哪里想多留余量。"
+    },
+    {
+      "source": "Fasten it as normally worn, lay it on a flat surface and smooth it gently. Stretching fabric to its limit produces a measurement that says little about comfort at rest. Keep the measuring tape straight and write down the unit beside every number.",
+      "source_sha256": "ee8bec62ce78f58e8a2b2b504b83b6b79ea1f56ba3a3188b1b0a8038de4b7c61",
+      "raw_target_sha256": "8a3e6220283556f3db5fb453bf2513c6349b3153fb84076e9f799698cdca0a58",
+      "translation": "按平时穿法扣好或拉上拉链，放在平面上轻轻理顺。把面料拉伸到极限，量到的是最大张力而非自然穿着时的尺寸。让卷尺保持平直，每个数字旁写清单位。"
+    },
+    {
+      "source": "For flat chest width, measure from one underarm seam to the corresponding point on the opposite side. For back length, choose a starting point such as the centre seam where the collar attaches. Write the endpoint too. A seller measuring from the high shoulder point could obtain another number on the very same jacket.",
+      "source_sha256": "9f930365b28e4419d3c8e6cdd7f3215062696a8e0cf693ee3df285d041ab607f",
+      "raw_target_sha256": "5311f1dfb0edea31d0b8ec2ab49e144e81cfd0fdd293e4b7fe5caf983960f5b6",
+      "translation": "平铺胸宽从一侧腋下接缝量到另一侧的对应位置。后长则先约定起点，例如后领与衣身的中央接缝，同时写明终点。若卖家从肩部最高点起量，同一件衣服也会得到不同数值。"
     },
     {
       "source": "Sleeve length requires particular care. A jacket with a dropped shoulder can have a short seam-to-cuff measurement despite reaching the same place on your wrist. For a raglan sleeve, a neck-to-cuff measurement may be more useful. Photograph your measuring method so it can be repeated on the warehouse item.",
@@ -987,6 +1185,30 @@
       "source_sha256": "d05a8c3c5a4bbdf6882f612d6dd4daf42e8699bb34d0663c996baec45468f0ee",
       "raw_target_sha256": "64ff93ab71204857a2080ac6158d6fb312ead1e1f5b5c9d782ede6b7cef7b0bb",
       "translation": "假设把自己的夹克平铺，胸部横向量得 55 厘米。卖家尺码表上的 110 厘米可能是成衣胸围，也可能是建议穿着者的身体胸围。先读图例，弄清指的是哪一种，再决定能否乘二或除二；有疑问就向卖家确认。"
+    },
+    {
+      "source": "Avoid choosing a size solely because one dimension matches. A jacket can match the chest and still be too short across the back or tight at the upper arm. Choose the few measurements that would actually change your decision. A clearly measured critical dimension is worth more than several figures taken from unknown endpoints.",
+      "source_sha256": "125fa08ffb99dee14c42535fef845b5fcf58414d4a91255695d1ed8992515378",
+      "raw_target_sha256": "b7dd2f84884e4c04c846912b8ba61322274af571db03cf6b7c421ec7e5c13f41",
+      "translation": "不能只因一项尺寸对上就决定尺码。胸宽合适，后背仍可能太短，上臂也可能偏紧。优先核对真正影响选择的几个关键尺寸。一项起止点清楚的测量，比几项不知道从哪里量的数据更有用。"
+    },
+    {
+      "source": "State the order, selected size, garment position and endpoints in a short request. Ask that both the zero mark and final reading be visible. A close view may also be needed to read the tape, but the wide shot establishes the path it followed.",
+      "source_sha256": "b4209cbf28741597ae79a397e69d5b264f1d30e4b6757f4c32be66d3e1632880",
+      "raw_target_sha256": "779fb40e3250db9616b61b353e6819b8217de4d519b9a8937d2e624c09a8e511",
+      "translation": "简短说明订单、所选尺码、衣服如何摆放及测量两端。请让零刻度和末端读数同时入镜；若刻度太小可加近照，但全景才能看出卷尺实际走过哪条路径。"
+    },
+    {
+      "source": "Compare the result with your baseline and note measurement uncertainty. A small discrepancy could come from positioning, garment construction or rounding. If it is close enough to affect your choice, ask for the specific measurement to be repeated before deciding. Retain the reference photograph and your own garment measurements alongside the selected size for future comparisons.",
+      "source_sha256": "2a34f11978d39045ddc2839d93283ad72080f90dcbe0517022e593edfd35cba2",
+      "raw_target_sha256": "ae4a92b2ecff2d38c7ab31ab8aa4924ee9d43f397249e3fb571ee3198db150d4",
+      "translation": "与自己的参考值对照，并记录测量误差。轻微差别可能来自摆放、结构或读数取整。若误差足以改变选择，就指定这一项请仓库复测。参考照片和自己的实测记录都要留在订单旁。"
+    },
+    {
+      "source": "Find a jacket that performs the job you expect from the new one. If the purchase is for cycling over a sweater, wear the reference jacket with that sweater, reach forward as you would on the bicycle and note what happens to the sleeves and back hem. A garment that feels right standing still can feel restrictive when reaching. Write down the problem in everyday language before translating it into a measurement request.",
+      "source_sha256": "073ef24e4284259f2c340f18714f2e6a9633a89efe9e03307c52d14facafe2f5",
+      "raw_target_sha256": "4c75c0d662fdda1ce3ac7c015ac526283ad324ceaab80fca08d3f4fa519e188e",
+      "translation": "找一件用途与新夹克相同的衣服。如果要套着毛衣骑车，就穿上同一件毛衣和参考夹克，双手向前伸，观察袖口和后摆的位置。站着时合适的衣服，伸手时可能束紧。先用日常语言写清问题，再转化成要量的尺寸。"
     },
     {
       "source": "For this example, imagine your reference jacket has enough chest room but the back hem rides slightly high. You want roughly the same chest width and a longer back, not a universally larger garment. Write down the desired changes separately. Choosing a larger labelled size simply to gain length could increase the body width beyond what you need while still leaving the sleeves or hem unsuitable.",
@@ -1013,6 +1235,18 @@
       "translation": "假设第一个尺码的平铺胸宽为 55 厘米，后长 69 厘米；第二个胸宽 58 厘米，后长 71 厘米。第一个的胸宽接近你喜欢的穿着效果，第二个更宽松、后身也更长。选择取决于你希望各部位分别增加多少余量。胸宽和衣长解决的是不同问题，把两个数取平均值并不能判断是否合身。"
     },
     {
+      "source": "Check construction before translating the figures directly into comfort. A thickly padded lining can occupy space inside a jacket whose outside flat width matches a thinner shell. A stiff fabric behaves differently when you bend your arms than one with stretch. Photographs and outer measurements give partial evidence. If the deciding issue is ease of movement over a thick layer, describe that limitation rather than presenting a number as a fit guarantee.",
+      "source_sha256": "c7d0d884ea002b7db8846dd1557f817ad5ac273954c2aeaf8ec762a099f91cf9",
+      "raw_target_sha256": "d3c2da4f05e4ec7d16711a6194399f6d1586b00984972a2f06eaca75bb0607a4",
+      "translation": "先看结构，再把数字换算成穿着感。厚填充内里会占掉内部空间，即使外部平铺宽度与薄外壳相同，里面也可能更紧。硬挺面料与弹力布弯手臂时表现不同。照片和外部尺寸只能回答部分问题，内里厚度若影响决定，应单独确认。"
+    },
+    {
+      "source": "For a jacket with a curved rear hem, ask the warehouse where the longest point is measured. A side-seam length could be several centimetres shorter than the centre back on the same unit. Likewise a collar included in a vertical measurement can make one jacket appear longer on paper without adding coverage at the hem. State whether the collar is included in your reference measurement and request the same method on the new item.",
+      "source_sha256": "997243bd5442022f383264af8430be50e19dfd3af60c322617133071fa34358a",
+      "raw_target_sha256": "6963d32c81388f34c22304e32f56425c585f920c479ffaa06a34ff082d21e12e",
+      "translation": "后摆呈弧形时，问清仓库量的是最长点还是侧缝。同一件夹克的侧缝可能比后中短几厘米。衣领算进垂直长度，看起来会更长，却不增加下摆覆盖。明确要求是否包含领高，并记下量法。"
+    },
+    {
       "source": "When reviewing the picture, inspect whether the tape starts exactly at the seam, runs flat and follows the path requested. If the final reading lies between marks, note an approximate value instead of converting it into a spurious exact size. A small discrepancy can arise from a folded hem, compressed padding or different positioning. Ask for a repeat when that uncertainty could change the decision.",
       "source_sha256": "4cbb1e67c5f2a3b9830f18ee97213eb37b053b9fbc345913d7825f84cb6c0f7f",
       "raw_target_sha256": "3b17b80fea9a61fad8f983d350cfc3da7a63b8244aa9ec9e772b3c41de878202",
@@ -1025,10 +1259,34 @@
       "translation": "如果照片上能读到 70 厘米，但卷尺起点被衣领挡住，请仓库把领子与衣身连接处和下摆拍在同一张照片里。单独放大数字 70 仍看不到起点。反过来，如果全景清楚但刻度太小，可以保留全景，再补拍刻度近照，两张图合起来才能说明测了哪里、量得多少。"
     },
     {
+      "source": "Return to your original fit priorities. If the chest is sufficiently close and the back is longer by the amount you sought, the evidence points toward keeping the option under those assumptions. If the chest has narrowed beyond what works for your normal sweater, the longer hem alone may not address your main use case. Record the actual jacket, layers, measurement method and reason for the decision. A future chart becomes much easier to interpret when you know how the earlier numbers related to a garment you wore.",
+      "source_sha256": "4b49a1383e3ce64140b2a479a0b72e5322906b0546e626961352f5336fb5757e",
+      "raw_target_sha256": "379c86bfe415cd798094832d0d14e179e6a0bc2f7ee260a5df8965e14f37e13d",
+      "translation": "回到最初的穿着目标：胸宽接近、后长正好多出需要的部分，是保留该选项的有力依据。若胸部已经容不下常穿的毛衣，只有下摆更长就没有解决主要问题。保存对照衣物、内搭、量法和决定原因，下次看尺码表会更容易。"
+    },
+    {
       "source": "Keep one copy of the reference garment measurements even if you abandon the listing. Next time you compare a jacket, check whether its cut and intended layering resemble that reference before relying on the figures. A lightweight cardigan that fits under a coat may need less room than the insulated layer you actually intend to wear.",
       "source_sha256": "3563930b0018ddbf9ce2d4af83051832276047c4354549cf245053e80ac707fd",
       "raw_target_sha256": "b4692fdce6a01bc9ba929aec4924a113fe965979f8b98993c0622a41a25df3d0",
       "translation": "即使最终放弃这个商品页，也要保留参考夹克的实测记录。以后比较新夹克时，先看版型和穿搭层数是否接近。穿在大衣里的薄针织衫，与准备内搭的保暖衣物，所需松量可能完全不同。"
+    },
+    {
+      "source": "Two photographs can make one garment appear charcoal and blue-black. Begin by separating colour naming, option identity and photographic appearance. Only one of these can usually be settled by reading a seller's label.",
+      "source_sha256": "a1de31b0c811edc96c7af845cec2938fc93f8e4987c344f0bd51d995c62f00c8",
+      "raw_target_sha256": "02f0d6943cb0ee2066df03e292933ddc6cb7bb0d1b8744ea9842db9bcb121d1f",
+      "translation": "同一件衣服在两张照片里可能分别像炭灰和蓝黑。先把三件事分开：卖家怎么命名颜色、实际收到的是哪个选项、照片看起来是什么颜色。读标签通常只能核对标称色号。"
+    },
+    {
+      "source": "Copy the original colour text, any model suffix and the swatch visible when the order was placed. Dark green, army green and olive can be translated inconsistently. If a listing calls them colour A and colour B, preserving the code can be more reliable than inventing a descriptive name later.",
+      "source_sha256": "f3b65823ad9d5a01338102bab1364f2739a920a056605fc65b06730364686704",
+      "raw_target_sha256": "258be2d2384596d17516adfa2d41157a2933d23d99d318d2e31fd0af51295c8e",
+      "translation": "抄下下单时的原始色名、款式后缀和选中色块。深绿、军绿、橄榄绿在翻译中可能混用。如果选项叫颜色 A、颜色 B，保留代码比事后自拟颜色名称更可靠。"
+    },
+    {
+      "source": "Look at how the option changes on the seller page. A common main image may remain visible for every colour. A specific swatch attached to the selected option is better evidence of what was selected, but screens and image processing still affect how it appears.",
+      "source_sha256": "279ee7d11765310b515b88babbf310fb8c66f450903a4c89b26600764e9e2e66",
+      "raw_target_sha256": "62ca6ea851f95d41f8d22736f681a7367c54e34313cf1ad00a91e46cbc7f0585",
+      "translation": "实际点选每个颜色，看哪些图片会变化。有时所有颜色都共用同一张主图；与所选选项绑定的色块更能证明当时选了什么，但屏幕和图像处理仍会改变其呈现效果。"
     },
     {
       "source": "Check a neutral surface within the same image. If white paper, a grey background and the garment all look unusually warm, lighting or white balance may explain part of the shift. Compare different pictures of the same unit before treating one warm-looking sleeve as a mismatch.",
@@ -1041,6 +1299,24 @@
       "source_sha256": "fb39480bcefa661e93bd828e3ac10ceedf82c2602a3b7582e88c2dbe4f19dd72",
       "raw_target_sha256": "10e006ef7a634eaf54fcaa0180ba06755faf4f1bca3e248193466613bc12b6dc",
       "translation": "阴影、面料表面和角度都会改变观感。天鹅绒、缎面和反光材料转动后，看起来可能明显不同。一道褶皱的特写不能直接对照均匀受光的整块前身；尽量找面料位置相似、朝向光线相近的区域比较。"
+    },
+    {
+      "source": "Specify the item and selected colour. Request a view with the label visible and the garment spread enough to show an uninterrupted area. If possible, ask for neutral lighting and a neutral surface within the same frame. One wide view can connect the colour impression to the correct physical item.",
+      "source_sha256": "91ad90fa93ad248f7fa77bfc2d7145aa1fbf0f45a248a94cd54f828ba7999615",
+      "raw_target_sha256": "5cb919bc6f201b1a47af0e548fb8c7c04a62dd314a93b7c00672a441b19445d4",
+      "translation": "说明具体商品和所选颜色，请仓库在稳定光线下，把实物与色标或可辨认的编号拍在同一画面。问的是某处色差时，指出位置；只有在全景不足以区分时才要局部特写。"
+    },
+    {
+      "source": "If two variants are physically available together, a side-by-side image under the same lighting can help distinguish them. It still cannot guarantee an exact screen-to-fabric match. Decide whether your concern is identifying the ordered option or matching an exact shade to something you already own.",
+      "source_sha256": "ccca84248895155dc062c0e2118d2a68a9319703a0456bb8913012031ef1e2a5",
+      "raw_target_sha256": "ba6bc1961e382baf91b7e13dde196a65e56bbec7f2f926a244f781971a25ee81",
+      "translation": "两个颜色的实物若都在场，可问能否在同一光源下并排拍摄。这比两张不同光照的图更利于区分，但无法保证屏幕和真实布料完全相同。判断现有证据是否已足以支持你的决定。"
+    },
+    {
+      "source": "If the order says dark blue but the received option label identifies black, save both references. That is stronger documentary evidence than saying a photograph looks wrong. If the label matches and only the appearance differs, describe the visual concern and request the missing evidence.",
+      "source_sha256": "7060638ce1d355ed042921f2ba4c481f15cb28495b15ef456c9b0766c6c032a5",
+      "raw_target_sha256": "ed759e1e72914ea9311c9d36be3e30a6f413b9da801356fadffe6ab96986bc27",
+      "translation": "如果实付订单是深蓝，入库商品的颜色标签却是黑色，请把两者都保存。这比只说“照片颜色不对”更能核对。若标签和订单相符，只是屏幕上的色调不同，就按拍摄和显示差异继续检查。"
     },
     {
       "source": "A buyer coordinating pieces from separate sellers faces additional uncertainty even if both listings use the same colour name. Record that risk before relying on a historical QC image. When the colour match is essential, decide whether the available evidence is good enough while the item can still be inspected, and check the current order-specific options with support.",
@@ -1079,6 +1355,12 @@
       "translation": "夹克后方原本为中性色的墙若明显偏黄或偏蓝，可以提示画面有色偏。但不知道墙面实色和光源时，它不能当作经过校准的色卡。奶油色地板可能本来就是浅米色，硬把每张图调到地板发白反而会制造误差。先看画面中多个物体是否一起偏色，再判断是否仅衣服颜色不同。"
     },
     {
+      "source": "Fabric surface changes the comparison. A shiny synthetic shell reflects the warehouse lights and can produce bright highlights on its folds. A brushed textile can look lighter on one portion because the pile faces another direction. Compare broad panels under similar lighting angles before interpreting the lightest highlight or deepest shadow as the base colour. The smooth panel, lining and ribbed cuff may also be made of different materials and legitimately appear different.",
+      "source_sha256": "dabfadf45bba68a7a2e655682ad35c9efdbec6a04f5c3dfb26933943e7a25ad8",
+      "raw_target_sha256": "302cb779dc2c7e48659736ce8400f39d1a4ee90cee070cb4cdbf5ab116335c39",
+      "translation": "亮面化纤外壳会反射仓库灯光，在褶皱处形成高光；刷绒面料的绒毛方向不同，也会让局部显浅。先看另一角度的同一位置，确认色差是固定存在，还是随表面朝向改变。"
+    },
+    {
       "source": "Cameras and screens add another layer of variation. A phone can adjust exposure when a dark jacket fills most of the frame, making dark green look lighter than it appeared in a wider shot. Your display brightness and colour mode can affect what you see. Looking at the same image on a second device can expose a large display difference, but two screens agreeing is still not a physical comparison with your trousers.",
       "source_sha256": "0135ea8ef7ba43944ba327f721e26df3127a7023cbbfc95f25dd6f43cfdacf25",
       "raw_target_sha256": "b8ceeb295bb0f9b617543d5e4ab5e108ac54ad4cbe0aad0cc2771be1400f5f15",
@@ -1091,16 +1373,94 @@
       "translation": "不确定款式色号时，请把夹克与色标一起平铺拍摄。怀疑某处有斑或拼片颜色不均时，标明位置，请在一致的中性光下拍全景和特写。如果纠结橄榄绿与深绿，则问能否把两个实际可用的款式放在同一光源下对照。不同疑点需要不同照片。"
     },
     {
+      "source": "For an apparent local stain, compare the same area from more than one angle. A bright streak that moves with the reflection has a different interpretation from a mark fixed relative to a seam. Explain which you observed without demanding that someone confirm a conclusion the image cannot support. A short request to inspect the left sleeve beside the pocket is more actionable than a general statement that the whole colour looks wrong.",
+      "source_sha256": "bca1750e7fc1396987d4f3361887e51f4cb93a66e34ff81cb8b621cb3a8c5427",
+      "raw_target_sha256": "a92567299ca0188ab4602071fc3d44ea014022a279d219d5341c994088808f74",
+      "translation": "怀疑局部有污渍时，从几个角度对照同一区域。随反光移动的亮痕，和相对于接缝始终固定的痕迹含义不同。描述实际所见，不必要求仓库确认照片无法证明的结论。比如请检查左袖靠近口袋的位置。"
+    },
+    {
       "source": "End the decision with a record of what is confirmed and what remains subjective. For the green jacket, that might be the correct seller code visible, no persistent patch across the main panel, and an exact match to your existing trousers still unknown. Keep this note with the order. If you later choose another item from the same gallery, you can reuse the comparison method while treating its colour, seller and batch as a new question.",
       "source_sha256": "7acdf396649fa639c51d74de666b13a57f42c4fdc0a23fb2a4baa9e020b1f156",
       "raw_target_sha256": "9dc58676565f88f21065110291663425c2e7d3f29bf5bdf5d1f2c0367447a0c0",
       "translation": "结束时写清已核实事实和主观部分。例如绿色夹克上可见所选卖家代码，前身在不同照片里没有固定色斑，但是否与现有裤子完全同色仍未知。把结论随订单保存。下次看同一图库的其他商品，可以复用方法；颜色、卖家和批次仍要重新核对。"
     },
     {
+      "source": "If the intended use involves pairing two items, photograph your reference item in the room where you normally see it. The picture helps describe which difference bothers you, such as a blue cast beside a warm grey scarf. A supplier still cannot guarantee a match between photographs. Give the warehouse a concrete comparison to photograph and decide whether you can accept the remaining uncertainty.",
+      "source_sha256": "159b4540106da804def1e7694c8ddd8f757c7bd887cb6a709d2a0f891e4cf5e9",
+      "raw_target_sha256": "19606dae3770d372fe70781046ff8ea44de459692c45a5806720fd332bce6a69",
+      "translation": "若需要与自己的服装搭配，给参照衣物在平时穿着的房间里拍张照，说明究竟哪种差异让你犹豫，例如偏蓝的夹克搭在暖灰围巾旁。照片之间无法保证实物同色；向仓库提出他们确实可以观察的具体对照请求。"
+    },
+    {
+      "source": "A request for more pictures is easy to fulfil without answering the question that matters. A good request names the item, the feature and the view that would change what you do next.",
+      "source_sha256": "f135cb979556ce34af07be924250c9692a67a5e2fcd907a746194e46bb6e123f",
+      "raw_target_sha256": "f519ab56f69f11c8c918d58d425119e85630eb461ad26ed9a765aac6c38fa1cb",
+      "translation": "只要求“多拍几张”，很容易收到更多照片却仍没解决问题。有效请求应点明商品、要看的特征，以及哪种画面将影响你下一步怎么做。"
+    },
+    {
+      "source": "Read the original seller option and the image set already available. Write one sentence starting with what you need to know. Examples include whether the lining can be detached, whether a shoulder strap is included or whether the left shoe has the same label as the right. Avoid starting with a camera instruction until you know the decision.",
+      "source_sha256": "c8c07d91a578ada3e4953a55b62bc1bb492239cf5724079e2b982aa868bc699a",
+      "raw_target_sha256": "2164e5945b90dbf56c95edb65acb22c2351050c566e158a91cd744b149705bae",
+      "translation": "先读原始卖家选项并看完现有图片，再写一句“我需要确认……”。例如内胆能否拆、肩带是否包含，或左右鞋标签是否一致。先想清要确认的事实，再决定相机应该往哪里拍。"
+    },
+    {
+      "source": "Check whether the existing pictures already settle the issue. The answer may be visible in a wide view rather than the closest image. Enlarge the original when possible. Repeated screenshots can obscure labels even if the underlying file was readable.",
+      "source_sha256": "dfdc8442f5a0ccf2dc667edf2e3822765120aa9a52e45332e95ef0c54662a409",
+      "raw_target_sha256": "7589bed2b25c55862d81d43b54490edd48d172a52b2f7a93ce9829f34ab98b7a",
+      "translation": "先看现有图片有没有答案；关键部位有时出现在全景中，而非最靠近的那张。能拿到原图就放大原图。反复截图会让原本可读的标签变模糊。"
+    },
+    {
+      "source": "If fit matters, describe both measurement endpoints and the position of the item. A request to measure sleeve length is ambiguous on a raglan or dropped-shoulder jacket. A request from the centre-back neck seam to the cuff along the sleeve gives the person measuring an instruction they can follow.",
+      "source_sha256": "cda933c3520b6ebe65cdaa2f04311c5d95ade1ffd38a0519f621570841035b2b",
+      "raw_target_sha256": "987f48fdb747ae82bddb46c52968066cfaf709a5ad8c90d36e1cbdc153bceb2f",
+      "translation": "若关注合身度，明确衣物的摆放方式和两个测量端点。插肩或落肩夹克只说“量袖长”会有多种量法。可要求从后领中央接缝开始，沿肩袖量至袖口。"
+    },
+    {
+      "source": "Include the warehouse entry or order reference in your request. For multiple similar pieces, name the colour and size. When practical, ask for one overview that identifies the unit and one detail view that reveals the feature. A tiny crop may show a buckle well while obscuring which bag it came from.",
+      "source_sha256": "53b1b0dde7f931a8972b7d56291f168cdd794579ca4e6d9d3c02c903cde86e60",
+      "raw_target_sha256": "b50e1083f91c00c7cfa3affd911b79a13ad958c1a4f2222d33eeadc4b9aa3053",
+      "translation": "请求里附订单号或入库编号。有几件相似商品时，写清颜色和尺码。尽可能用一张全景识别商品，再用一张细节图看具体特征。只裁一小块能看清扣具，却可能不知道是哪只包。"
+    },
+    {
+      "source": "Check any available inspection options, charges and conditions in your account before ordering additional services. Ask whether the proposed view requires opening sealed retail packaging. That decision can affect how you intend to present, use or return the item.",
+      "source_sha256": "8f83008c0c6f50aadcbd0c5fb7910cbb19890a019d52ca0c5bba4dab9f991989",
+      "raw_target_sha256": "6628e42d28aeb4cf79158e8537db44395a3f890c1fb718479f6ca57bbaac3645",
+      "translation": "订购额外服务前，在订单账户内确认可用检验项目、费用和条件。先问补拍是否需要拆开零售密封包装；拆封可能影响送礼、使用或退货时打算保留的商品状态。"
+    },
+    {
+      "source": "Compare the new picture with the sentence you wrote at the beginning. If it shows a strap but not its attachment hardware, say exactly what remains unresolved. Ask for a different view only when the additional evidence changes your decision.",
+      "source_sha256": "956fe4e454247ed54ac97fd8c9fdbd8bad808998287ff9a2679db947dbeb7eec",
+      "raw_target_sha256": "75705f1184f2ae5f84ef42bdd7d05ab4a4052d2aa2a2ed35e1543510643ea7f9",
+      "translation": "收到补图后，对照最初写下的问题。若肩带能看见，连接件却没入镜，就具体说明仍未确定的是连接件。只有新角度确实会改变决定时，才值得继续补拍。"
+    },
+    {
+      "source": "Finish with an observation someone else can check. For example, the lining is attached by a zip visible at the collar and hem. Avoid claiming that a photo verifies long-term durability, water resistance or an internal component that was never shown. An effective QC decision states both the visible result and the limits of the inspection.",
+      "source_sha256": "f2796767d0b9181b5d9b371fbfdea2e2a6e4ccd9cb6616330139e21b2ee6fbce",
+      "raw_target_sha256": "74c61da91ed248fc2c2de390a350980d0855ddfcd1eeff5a152851a9dfb10586",
+      "translation": "以别人能从照片复核的观察作结，例如“领口和下摆处均能看到固定内胆的拉链”。照片无法证明长期耐用、实际防水或从未拍到的内部零件。应同时记录可见结果与证据的边界。"
+    },
+    {
+      "source": "Imagine you ordered a laptop backpack with a hidden rear pocket. You plan to keep a small tablet in that pocket and use the main compartment for a laptop. The seller picture shows the back panel closed. Your warehouse photographs show the front, side and a readable size label. Asking whether the bag is good quality gives the person inspecting it no particular feature to verify. Instead, name the missing evidence: the rear pocket opening, its usable depth and the relationship between that pocket and the item you ordered.",
+      "source_sha256": "6c8f0e1b76ec7a56870faa9734435289dedfcbccbc222fded0be4b47328c2516",
+      "raw_target_sha256": "df84109bcf7b7d08559dc0742ed392089700038156907aed63791af448ca2faf",
+      "translation": "例如你买了一只带隐藏后袋的电脑背包，打算主仓放笔记本电脑、后袋放小平板。卖家照片中的背片关着，仓库实拍只给了正面、侧面和尺码标签。问“质量好吗”很难解决问题，真正需要确认的是后袋位置、净开口和有效深度。"
+    },
+    {
+      "source": "Begin with an overview of the back panel with the relevant pocket unzipped. This establishes that the photographed opening belongs to the bag rather than to a separate pouch or another compartment. Ask for enough context to see the seams surrounding it. A close photograph of a zip without the surrounding panel can confirm a zip exists while leaving its location unknown.",
+      "source_sha256": "819fe1d8fa8556fb5bcb950b2a1be72ed7675ef913850e99f06356e3820414a1",
+      "raw_target_sha256": "a7e774409fc0ccf035a1e90314079aac835fce6a474088b3195d6112b8f7a3e6",
+      "translation": "先请仓库把背面的目标袋拉开，拍一张看得到周围接缝的全景，以证明这个开口属于背包本体的指定口袋，而不是独立小包或另一个隔层。只有拉链特写，最多确认拉链存在，却不能定位。"
+    },
+    {
       "source": "For the second view, ask for a measurement across the usable opening between the points that actually limit insertion. Explain that the exterior pocket seam may be wider than the zip opening. For the third, specify a depth measurement from the inside base to the usable top if this is possible without damaging the bag. Neither measurement by itself establishes whether a rigid object with a thick case fits; the thickness, lining, corners and shape also matter. Make that limitation explicit in the decision.",
       "source_sha256": "e314e96dae60e25550bc7a61bbc9003236207425f20c0cfe73ffe8852edf0db2",
       "raw_target_sha256": "3680cf5fbb0b32e7ce801e38821c1dfc5b9bae9ce5d15895205f4c22149b5411",
       "translation": "第二张图应量实际限制物品放入的两个端点之间的净开口。口袋外侧缝线的总宽度可能比拉链打开后可用的宽度大。第三张图可在不损伤包的前提下，量内袋底部到可用上缘的深度。能否放入带厚壳的硬物还与厚度、里布、圆角和外形有关，不能只凭其中一个尺寸判断。"
+    },
+    {
+      "source": "If the inspector can provide only one additional view, decide which observation carries most value. When the tablet is clearly too wide for the opening, depth no longer determines the decision. If opening width is already shown but the pocket's existence is uncertain, an overview is more important than another measurement. Ranking these questions saves effort and can avoid paying for several photographs that answer essentially the same thing.",
+      "source_sha256": "695cbd32e7cf5965338baa38a7f02da862c6429f895811eea34a4c901e9c5f3f",
+      "raw_target_sha256": "db0fe35a3563cb3e4271e67f77fde7685240c291eef1cec1e61fb02ca07daacc",
+      "translation": "若只能加拍一张，优先解决最能决定是否购买的疑点。平板明显宽过袋口时，深度已无关紧要；开口宽度已有图、却不能确认是不是指定后袋时，完整背部照片比再量一次更有用。"
     },
     {
       "source": "Use a simple order of details: identify the unit, name the feature, describe the position, specify the endpoints and say what must remain visible. A request such as measure the bag can produce its outside height. A more precise request would name the rear pocket of the black medium backpack, ask for its zip opened, and request a tape across the unobstructed opening with zero and the final reading visible. The extra words only describe choices that could otherwise lead to the wrong measurement.",
@@ -1115,6 +1475,12 @@
       "translation": "说明所需单位，换算则自行留档。仓库给的是厘米，而对照物量的是英寸时，应统一单位后判断。别把平板标称屏幕对角线直接与袋口宽度比较。给平板装上保护壳，实测穿过袋口时所需的宽度，并留意厚度和圆角形状。"
     },
     {
+      "source": "For fragile or sealed products, ask what inspection is possible before requesting physical manipulation. If the original retail packaging matters to the purchase, opening it simply to photograph a concealed feature may change the condition you intend to receive. Record that decision explicitly. Sometimes the appropriate answer is that the feature cannot be verified from the outside and you must decide whether that uncertainty is acceptable.",
+      "source_sha256": "324cf3ce2f39c9ebf9f636d246c6dce977525043a97eead770c53f61f3a06c4e",
+      "raw_target_sha256": "7782c654d1600b1950b81a1f032b1df479d10531d82c9dff31f55234dfe45017",
+      "translation": "易碎或密封商品先问允许做哪些检查，再要求拆动。若原包装是购买目的的一部分，仅为看隐藏结构而拆封就会改变收货状态。把取舍记下来；有时只能承认外部无法确认，再决定能否接受这项未知。"
+    },
+    {
       "source": "On receipt, ask whether the photo identifies the unit, exposes the feature and makes the requested observation readable. If two of the three are satisfied, identify the single remaining gap. A clear measurement against an unidentified black bag leaves unit identity uncertain. A well-identified bag with the zero mark hidden leaves the measurement uncertain. These are concise follow-up questions that a person at the warehouse can act on.",
       "source_sha256": "8485f5ad4f3c6dc98ffb070e9cdbb431d304ea75fe7dff2e80ee027b5680af2f",
       "raw_target_sha256": "249b15c2e8eff269d0040850532b16606dc54dd215fb3efa8188d114254f79f8",
@@ -1125,6 +1491,12 @@
       "source_sha256": "8d781a0c150d9a30d80104bd8edc95ac06f47915f1f863026a9f152c2901b0ca",
       "raw_target_sha256": "c94900638b4f285247da6c8447718c7da998eb245a04614fd6d4f96be3582d9c",
       "translation": "如果实物证据与卖家下单时写明的商品说明不符，请逐字摘录已付款选项或描述中冲突的那一句。如果只是没达到个人偏好的尺寸，应说明哪里不适合，并查本单适用的购买条款。两种情况可用的处理方式可能不同，写准确更便于客服判断。"
+    },
+    {
+      "source": "Save the final photographs with the original request and order reference. If the pocket later proves too shallow despite an apparently adequate measurement, you can review which depth was measured, what packing or lining altered the fit and whether the tablet case changed. That record improves your next inspection much more than a gallery of unlabelled close-ups.",
+      "source_sha256": "96bdf4643a906a4d4e0d0b741da47a7dbf4719d1aa1c903c5e54c6a5ed15f0f4",
+      "raw_target_sha256": "15d909d790a9d0243c10934abfa7a60e6970cd81563f05d4daf0a1c30065a907",
+      "translation": "保存补图、原始要求和订单编号。若测量看似足够，最后却发现后袋太浅，可以回看测的是哪个深度、内衬或填充如何占位，以及平板外壳是否换过。这些资料比单独写一句“检查通过”更能改进下次验货。"
     },
     {
       "source": "When the additional picture arrives, reply in the same thread with the decision it supports. An example is that the new close-up shows both zipper pulls and resolves your question about the pockets, while the lining remains outside the photograph. This closes the current request without accidentally treating the lining as checked. If you need a different question answered, describe it separately and verify whether the warehouse can still access the item. Several unlabeled replies on a single image can leave the person reading your case unsure which issue is open. Saving the answer with the corresponding photograph keeps the evidence useful after the parcel leaves the warehouse.",
