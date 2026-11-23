@@ -3,7 +3,7 @@
   "locale": "fr",
   "source_set_sha256": "22619851fe6c0c4d68d3e0eeae0044fc51f350ee67205e4e41855e55ae1a7029",
   "raw_dictionary_sha256": "806c10dafa185439db5baf25517e8350bad39b4796b5ad05be7a777db45bd3a8",
-  "effective_dictionary_sha256": "ec7d4e573e90e95921b5d4c14dfd7907529c810e852ccfa9c9fd4330b13f7f63",
+  "effective_dictionary_sha256": "82d9062a7e3ed6d49b96f0ad957951bf3e7452613d682fbb621279d5403d3609",
   "checked_entries": 313,
   "review_scope": "Targeted bilingual review of ten headlines, all flagged entries, reproducible samples, volume arithmetic, currencies and tracking identifiers. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [],
@@ -206,6 +206,18 @@
       "source_sha256": "9f0990dc8f7aa4870abe0681a99196bc777c180228a3f40fd05b2523eae60a69",
       "raw_target_sha256": "175fc08b9bba7636aaceb9e0288ac5a18b0d4772eeff2c30a23a975b64cd7ad2",
       "translation": "Supposons que le commerçant signale que les colis de raccords ont été envoyés par un transporteur différent. La deuxième boîte originale devrait maintenant contenir uniquement des abat-jour. Si l'entrepôt confirme deux abat-jour, ce carton peut être marqué complet même si l'achat global est encore incomplet. Enregistrez la troisième lettre de voiture et ses deux paquets de raccords attendus. Cette simple distinction est importante si les deux premiers cartons sont prêts à être expédiés et que le troisième est retardé."
+    },
+    {
+      "source": "If the carrier shows all boxes delivered but the account reflects only some of the contents, build a compact exception report. State the merchant order, each carrier and waybill, the expected contents of each carton, and the warehouse entries found. Then name the single unmatched box or missing component. Distinguish the seller's statement from the warehouse photo; being clear about the evidence makes it easier to decide whether the next check belongs with the seller or the receiving team.",
+      "source_sha256": "adbd52778c997799b54482c7ccb6de32a962fca6c90aa8656040d567c822bba0",
+      "raw_target_sha256": "b2de9e8fc00415511d218866a47cebfdee9eeae57df1b08f77914c2435cfcdf2",
+      "translation": "Si le transporteur affiche toutes les boîtes livrées mais que le compte ne reflète qu'une partie du contenu, créez un rapport d'exception compact. Indiquez la commande du marchand, chaque transporteur et feuille d'expédition, le contenu prévu de chaque carton et les registres d'entrepôt pour chaque article trouvé. Nommez ensuite la seule boîte non appariée ou le composant manquant. Distinguez la déclaration du vendeur de la photo de l'entrepôt; être clair sur les preuves rend plus facile de décider si la prochaine vérification appartient au vendeur ou à l'équipe de réception."
+    },
+    {
+      "source": "Avoid multiplying records while a check is open",
+      "source_sha256": "cf41267663c62b7f6e41f2e9140b786d7950532027b588012fa49f99cfb4f0a7",
+      "raw_target_sha256": "0ce359978bd14d2c5a69eef51a841d1fe3727c21347f36335331c9c8f0d3fce0",
+      "translation": "Évitez les doublons pendant la vérification"
     }
   ]
 }

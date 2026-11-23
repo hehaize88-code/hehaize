@@ -1,0 +1,559 @@
+{
+  "site": "usfanstab-com",
+  "locale": "fr",
+  "source_set_sha256": "23d3474b7a20680ed5ee7521b6c780f6b8ae4c7620ae20617349254386027c59",
+  "raw_dictionary_sha256": "7fcf22afadbaa3bae96920587d00c9cc7d834723eaa9b28b2d6245ce2119e658",
+  "effective_dictionary_sha256": "0fabedebac1137bc8996c97963c2d0059e29ce0240e736b0fe85f9001475c856",
+  "checked_entries": 209,
+  "review_scope": "Checked all exact input keys and output structure with the project auditor. Compared actual localized price/quantity calculations, physical item and option identifiers, garment-measurement examples, warehouse and shipping stages, seller/return wording, and sampled FAQ/body passages with the English source. Personally edited all ten article titles and replaced risk passages as recorded. This coverage is an audit plus targeted bilingual review.",
+  "reviewed_flags": [],
+  "unresolved_material": [],
+  "corrections": [
+    {
+      "source": "Reading a size chart on USFans: body size, garment width and ease",
+      "source_sha256": "c1bfe7c100fca39b737bac7b05dbd6b82df84cffc43c14fb6bbba86a3b41a90e",
+      "raw_target_sha256": "1782697b5453ee650397146bd17e59d3ee2a641fe136beca671ab6753123c188",
+      "translation": "Lire un guide des tailles sur USFans : mensurations, largeur du vêtement et aisance"
+    },
+    {
+      "source": "When USFans cannot read a seller link: prepare a manual purchase request",
+      "source_sha256": "1eac61f1a9ce6fa39a4b9419a65402d5d1c95af0d04f200416f0fc4d0c152b56",
+      "raw_target_sha256": "01ffdf75cf1c273964d7fb33d25ebcfe43214b6abf7e5ab95649684be6772d8b",
+      "translation": "Que faire si USFans ne reconnaît pas le lien du vendeur ? Préparer une demande d’achat manuelle"
+    },
+    {
+      "source": "Ordering several 1688 variants through USFans: units, minimums and price tiers",
+      "source_sha256": "7a0112459923462c6de523181c3a01d3151ab6509ac92b1d7f7594950d21ad26",
+      "raw_target_sha256": "d8bea9ace14ad996fe0ab95573533dd1dc9e00c1076e7b9d616990ae81407ddf",
+      "translation": "Commander plusieurs variantes sur 1688 via USFans : unités de vente, quantités minimales et tarifs dégressifs"
+    },
+    {
+      "source": "Finding a missing USFans product link from a photo",
+      "source_sha256": "e1519ab0addd791d205bad4ddabd75b39f34dbbe7d92d51fcba36161409fdc97",
+      "raw_target_sha256": "ac09af4fe3c9db96e90ed30671a32f377321169abd783b337ce013d4873d6320",
+      "translation": "Retrouver le lien d’un produit à partir d’une photo pour le commander via USFans"
+    },
+    {
+      "source": "A USFans order note for a personalised print: from spelling to placement",
+      "source_sha256": "29f00b71c1bb8e040ebeef89c3e03d0b7c66d6d35d0a0af5f7e8015eef945d2d",
+      "raw_target_sha256": "c9764aaccd754038734a260c46cac8ac8c3d70ac88a0643bee248f07b2f09742",
+      "translation": "Impression personnalisée sur USFans : préciser l’orthographe et l’emplacement du motif dans la commande"
+    },
+    {
+      "source": "Does a USFans listing include the whole outfit? Reading set and single-piece options",
+      "source_sha256": "cb3a506a63a1232bd48b95ece8fb0fcb71dec688a7f424dc690037c0098a90fe",
+      "raw_target_sha256": "b8fb9dbeffc6371c5baa6a24a869c653baf771e8866c8d91bc09e1bff7f5466c",
+      "translation": "L’offre sur USFans comprend-elle toute la tenue ? Distinguer les ensembles des pièces vendues séparément"
+    },
+    {
+      "source": "Requesting a shoe insole measurement on USFans",
+      "source_sha256": "6747a8a1673f694f6de30abb473b16f8e8264a13acc810f1fdf4d8ff16875382",
+      "raw_target_sha256": "c123c8ddbdd4e832b4973e62fbe387d72d8cdc990102e77dcb7440ef51a2c170",
+      "translation": "Comment demander à USFans de mesurer la longueur d’une semelle intérieure"
+    },
+    {
+      "source": "Matching several USFans warehouse orders to one outbound parcel",
+      "source_sha256": "60c4fef76a1883801cffbec32932da21aafaa32599a5c2ab0cf1be6478012a1c",
+      "raw_target_sha256": "04b9b4cbee9b32c4b1d0efb3be9fe63081ba30d5a63ac1ff0eec72b69671056b",
+      "translation": "Regrouper plusieurs commandes de l’entrepôt USFans dans un même colis : vérifier les références"
+    },
+    {
+      "source": "Checking translated colour options before a USFans purchase",
+      "source_sha256": "97611875b04a92a1d1f448500a3e62ff413c92d53407c12261363a6a888483d1",
+      "raw_target_sha256": "cdcfaddbbefb096781b7c1e5b30b47795a48708a862d4773aa9e34a8cc457195",
+      "translation": "Vérifier la traduction des coloris avant de commander via USFans"
+    },
+    {
+      "source": "One seller, two deliveries: tracing a split shipment to the USFans warehouse",
+      "source_sha256": "50a70bf576be1a6411c278fb96789a93b557429ce1198e9654e47d97e5dec346",
+      "raw_target_sha256": "06844016d616d9171bc56e026178862c2f819af9e6026bf5afdb6341a3ff681a",
+      "translation": "Un vendeur, deux colis : suivre une livraison fractionnée jusqu’à l’entrepôt USFans"
+    },
+    {
+      "source": "Suppose your reference hoodie measures 56 cm flat across the chest. A chart listing a 112 cm finished chest circumference is consistent with that width for a simple, reasonably symmetrical garment laid flat. Dividing the circumference by two gives a 56 cm comparison point. If 112 cm instead describes the recommended wearer's chest, dividing by two does not tell you how wide the hoodie will be. Likewise, an entry of 56 cm described as a half chest can be compared directly to your flat measurement. These are examples to illustrate units, not a size recommendation.",
+      "source_sha256": "ea6bffb9b2755a9402f304cfd814fec81fb82425b3beb8128e79b8a3bb535a50",
+      "raw_target_sha256": "839d3cfdf6813854b9443839e9ca6e47825a861d27f577fc28aabac5440f4384",
+      "translation": "Supposons que votre sweat de référence mesure 56 cm de large à plat au niveau de la poitrine. Pour un vêtement simple et assez symétrique, cette largeur correspond à un tour de poitrine du vêtement fini de 112 cm. En divisant ce tour par deux, on retrouve les 56 cm à comparer. Si les 112 cm désignent le tour de poitrine conseillé pour la personne qui porte le sweat, les diviser par deux ne donne pas la largeur du vêtement. À l’inverse, un demi-tour de poitrine expressément indiqué à 56 cm se compare directement à votre mesure à plat. Ces valeurs illustrent les méthodes de mesure et ne constituent pas un conseil de taille."
+    },
+    {
+      "source": "Budget product price and domestic delivery together for the purchasing stage, while recording them separately. Keep later international freight as a different cost. Consider an example where an advertised item costs 70 yuan and the seller quotes 8 yuan domestic delivery for the order. Two units would give a product subtotal of 140 yuan; a single shared delivery charge would make 148 yuan before any separately listed amounts. If the 8 yuan applies per unit instead, the arithmetic changes. The example gives a checking method, not a USFans rate. Read the actual confirmation rather than copying the catalogue's lowest displayed price.",
+      "source_sha256": "0dc7a6e47a6854b4955036f550e4e2794b17e78aa292fecffa85314862c6340c",
+      "raw_target_sha256": "b7f3783294ba71dfbf2c12cda44706bd4aaf555f2f3ba561cad69430452cca3c",
+      "translation": "Pour l’étape de l’achat, prévoyez le prix des articles et la livraison en Chine, tout en notant ces deux montants séparément. Le transport international viendra ensuite. Prenons un article à 70 yuans pour lequel le vendeur annonce 8 yuans de livraison intérieure pour toute la commande. Deux articles font 140 yuans, soit 148 yuans avec les 8 yuans de livraison facturés une seule fois, avant les éventuels frais indiqués à part. Si les 8 yuans sont facturés par article, le calcul change. Il s’agit d’une méthode de vérification, pas d’un tarif USFans. Consultez votre confirmation de commande plutôt que de reprendre le prix le plus bas du catalogue."
+    },
+    {
+      "source": "Suppose a sample offer lists 2–9 units at 24 yuan and 10 or more at 20 yuan. Six units at the first rate cost 144 yuan. Ten at the second rate cost 200 yuan. The second rate is lower per unit, yet it requires a larger total payment and leaves four additional units to ship or store. These are illustrative figures. When deciding what to buy, compare total product cost at your intended quantity, then include any separately quoted domestic delivery. Treat the lower unit rate as valuable only if the extra pieces serve a purpose and the seller confirms the mix qualifies.",
+      "source_sha256": "c6640f925f270473d2379df1ea01a241b2e033bc0fa6ece4c99fa58d296a5278",
+      "raw_target_sha256": "af72447f3b1987b5952e8040beb62b37bbbf37e28655de06d02eeb16404f79ab",
+      "translation": "Imaginons une offre à 24 yuans pièce de 2 à 9 unités, puis à 20 yuans pièce à partir de 10. Six unités au premier tarif coûtent 144 yuans. Dix au second coûtent 200 yuans. Le prix unitaire baisse, mais le total à payer augmente et il reste quatre articles de plus à expédier ou à stocker. Comparez d’abord le prix des articles pour la quantité voulue, puis ajoutez les éventuels frais de livraison intérieure indiqués séparément. Le tarif inférieur n’est intéressant que si les articles supplémentaires vous servent et si le vendeur confirme que la combinaison de variantes choisie donne droit à ce tarif."
+    },
+    {
+      "source": "Check the specification from the garment owner's perspective. Imagine a hypothetical print reading MARTÍN and 07. The accent is part of the name and the leading zero is part of the number. A seller might normalize the name to MARTIN or treat 07 as the number seven when entering it into another system. Ask the recipient to repeat the intended text in writing or supply a proof if that service is available. Keep any agreed substitute spelling in a separate message. Silence about an unsupported accent is different from the buyer explicitly accepting a version without it.",
+      "source_sha256": "7310de8c298e5e3b6068ee4414399dd111a3acb5b4bb06df0016eca818cb50e7",
+      "raw_target_sha256": "f0d3417b1dc7b9a8aefa8016e457d8c3763ecd4302a7ae2b342d644b71842b8c",
+      "translation": "Relisez les indications du point de vue de la personne qui portera le vêtement. Imaginons un motif portant MARTÍN et 07. L’accent fait partie du nom et le zéro initial du numéro. Lors d’une nouvelle saisie, le vendeur pourrait remplacer MARTÍN par MARTIN ou assimiler 07 au chiffre sept. Demandez à la personne chargée de la commande de répéter le texte exact par écrit ou de fournir un visuel à valider si ce service existe. Conservez toute autre orthographe explicitement acceptée dans un message distinct. L’absence de réponse au sujet d’un accent non pris en charge ne vaut pas accord pour le supprimer."
+    },
+    {
+      "source": "If a difference remains, send the order reference, the approved proof and the photograph of the actual piece together. Describe the precise discrepancy, such as “the proof shows 07 and the finished back shows 7.” Ask which options are available under the order conditions. Preserve the packaging and tags until the response clarifies what the seller needs. For a group order, identify only the affected units and continue tracking the rest separately. This yields a clear record of what was requested, what was accepted and what actually arrived, which is much more useful than a general complaint that the design looks wrong.",
+      "source_sha256": "c583621e91552eed11c7f3fb2a4798ead0d21db0ae245b091f8e1146a26c1945",
+      "raw_target_sha256": "ebdd96bbe048c7851107dcea608a33bbd9f8cccf1b0a44ea7571cb49b3af6482",
+      "translation": "Si l’écart subsiste, envoyez ensemble la référence de commande, le visuel approuvé et la photo de l’article reçu. Décrivez précisément la différence, par exemple : « Le visuel indique 07, mais au dos du vêtement fini on lit 7. » Demandez quelles solutions sont prévues pour cette commande. Gardez l’emballage et les étiquettes jusqu’à ce que le vendeur précise ce dont il a besoin. Pour une commande groupée, identifiez uniquement les pièces concernées et continuez à suivre les autres séparément. Vous disposerez ainsi d’une trace claire de ce qui a été demandé, validé et effectivement livré."
+    },
+    {
+      "source": "Choose the exact variants first, then calculate the cost of obtaining the intended outfit. In an illustrative offer, a jacket at 85 yuan and trousers at 60 yuan make a product subtotal of 145 yuan, while a complete set is offered at 135 yuan. The set costs less only if it contains both pieces in suitable sizes. Include any domestic shipping charge according to the seller's actual checkout. One delivery charge shared by two selections behaves differently from delivery quoted per separately purchased piece. Keep the source currency visible when comparing.",
+      "source_sha256": "9d5eacd8507098ab99b58644db408fbab1090c1e818a1766b5954e818b5bf21e",
+      "raw_target_sha256": "57c787bb770675e1ba6a0464ff53cc907e5f98b662f8599ac6d04552853624bc",
+      "translation": "Choisissez d’abord les variantes exactes, puis calculez le prix de la tenue que vous souhaitez obtenir. Dans cet exemple, une veste à 85 yuans et un pantalon à 60 yuans reviennent à 145 yuans hors frais, tandis que l’ensemble est proposé à 135 yuans. L’ensemble n’est plus avantageux que s’il contient les deux pièces dans les bonnes tailles. Ajoutez les frais de livraison intérieure tels qu’ils figurent à l’étape de paiement. Des frais facturés une seule fois pour les deux pièces ne se comparent pas à des frais facturés pour chaque pièce achetée séparément. Conservez la devise d’origine dans votre comparaison."
+    },
+    {
+      "source": "Put the two photographs side by side. Imagine your reference insert measures 27.2 cm and the new photographed insert appears to measure 27.4 cm using a comparable method. The visible difference is about 2 mm. A slightly curved insert, a different camera angle or an imprecise ruler position can account for small differences. Avoid turning a rough photo comparison into an exact fit guarantee. By contrast, a clear multi-centimetre difference with matching methods would justify checking the size label and asking whether the photographed pair is the intended option.",
+      "source_sha256": "627384031be79a3ae8494b3194f72c18f6a210306a9f262f6390c8abd9a4d099",
+      "raw_target_sha256": "70a0c576fa304c9b68134ccf86207f8ade71cba667653c45a5545519f3ee33ea",
+      "translation": "Placez les deux photos côte à côte. Imaginons que votre semelle intérieure de référence mesure 27,2 cm et que la nouvelle semelle photographiée selon une méthode comparable semble mesurer 27,4 cm. La différence visible est d’environ 2 mm. Une semelle légèrement courbée, un autre angle de prise de vue ou un positionnement imprécis de la règle peuvent expliquer un petit écart. Une estimation sur photo ne garantit pas que la chaussure ira parfaitement. En revanche, si la même méthode révèle plusieurs centimètres d’écart, vérifiez l’étiquette de pointure et demandez si la paire photographiée correspond bien à la variante choisie."
+    },
+    {
+      "source": "Work out what the chart describes",
+      "source_sha256": "4fcb5be0060776d20e4c15dcda72aa3c8cac30abd7e6f18ec41a0936cec121e9",
+      "raw_target_sha256": "a479c11259b57a239f4867ea5d270dbbfd8354bf0afc1d2025070809220a65aa",
+      "translation": "Que mesure le tableau des tailles ?"
+    },
+    {
+      "source": "Build a comparison around a garment you wear",
+      "source_sha256": "0049f4d5012a12236eb332c2b835cf027349793214d4d79efa0d7b2134dfd4a0",
+      "raw_target_sha256": "2bd8fde9f071ee07adc3364e8ac8d828d5ff4ce7b237397e485170a480b69e65",
+      "translation": "Prendre pour référence un vêtement qui vous va bien"
+    },
+    {
+      "source": "Match the measurement method before calculating",
+      "source_sha256": "a8c829a68510d61f3e6cfa9fbb51fbb809f6865e30770f220cf02908d9bb3f86",
+      "raw_target_sha256": "90d5348932e0d8be6a0d41177407ea07babde2e3f50cfa7c0f54ced80403e253",
+      "translation": "Comparer les méthodes de mesure avant de calculer"
+    },
+    {
+      "source": "Distinguish the selected option from the product family",
+      "source_sha256": "baf6233ed29e01083c97ed2099cb3b737c9e7a54738bb92dff309c20e283a3bc",
+      "raw_target_sha256": "bd9a98c99899bd6d35eb3dff557aabffddc0bb8998ee003f360a9b762026c81c",
+      "translation": "Distinguer la variante choisie de la gamme"
+    },
+    {
+      "source": "Use the warehouse photograph to test the remaining uncertainty",
+      "source_sha256": "472371da034779ad4b1a0eb8c51720a6818ee06d2d8199b00eb9d63eb2a2e806",
+      "raw_target_sha256": "0774a4fd713b82c9597e9ddaa893034e13af41987b1e1e739d36269780496d41",
+      "translation": "Vérifier la mesure qui fait encore hésiter avec une photo de l’entrepôt"
+    },
+    {
+      "source": "Make the size decision legible a week later",
+      "source_sha256": "9232969a01c5351416047d4c37f370a04d13b3feb099e727149a0a8094c224bb",
+      "raw_target_sha256": "3d119be7591fefd5a12b777aab8fb4b55d9b6ecdf535f56b4f13cbab846085f5",
+      "translation": "Noter les raisons du choix de taille"
+    },
+    {
+      "source": "Identify what actually failed",
+      "source_sha256": "8c6f09a5dae3c842ce8dd59a2471f058f7d1f16683a6daba405db6f2893581b9",
+      "raw_target_sha256": "ff090de547cd201fe62e41a02e72900217f31957bcf579ee5ee5453c88099796",
+      "translation": "Repérer l’étape qui a échoué"
+    },
+    {
+      "source": "Recover enough information to identify the exact offer",
+      "source_sha256": "bec12d82d2727841c8e0756425f1d6beebd51f1cb13a7e5aa73bdcb4ec59b3c1",
+      "raw_target_sha256": "e5a4d8448f10b7e778533b8115cc612c120e4bd1056553a5de00ba0a893dfbcf",
+      "translation": "Retrouver les éléments qui identifient précisément l’offre"
+    },
+    {
+      "source": "Turn a manual request into an unambiguous specification",
+      "source_sha256": "f9c299a1100ce397b32820eed31e9558ba18ad7f115037221c8978055aaef58d",
+      "raw_target_sha256": "d245e3cdf967d202aa5a4ce4649ca64efdfddcd75a37ae78918fd70720213b0e",
+      "translation": "Rédiger une demande d’achat manuel sans ambiguïté"
+    },
+    {
+      "source": "Confirm the amount and the route before submitting payment",
+      "source_sha256": "960d5ad62536f96f2f946360a62178257c699ff2346b2eeef90577da53602a6c",
+      "raw_target_sha256": "5511d46ec1e88abeb0dcd833a948cec5f92ce02291d5653708bc09ae2f89b50b",
+      "translation": "Confirmer le montant et le mode d’achat avant de payer"
+    },
+    {
+      "source": "Handle partial answers and changed specifications",
+      "source_sha256": "089cf85009e20c3666bc0754d5e009a42bed8dcaf3d06fa23fd8f4d52148a11f",
+      "raw_target_sha256": "20d02e9f1f8b21387ac3f0ada400cdadb69bdb83a626426ec80de8f93b2d1e8e",
+      "translation": "Traiter une réponse incomplète ou un changement de caractéristiques"
+    },
+    {
+      "source": "Use the order record once the item arrives",
+      "source_sha256": "f8bb57113e8e485f84155425bb104eefaf80e3a343a835e41790700f017caa5d",
+      "raw_target_sha256": "8ffb7e1db394eb2e43b8ef0a2479123e69ffbad81302fdcc756f644992e588fb",
+      "translation": "Comparer l’article reçu à la commande initiale"
+    },
+    {
+      "source": "Find the unit behind the price",
+      "source_sha256": "c363d3811c64c67c3c2b210701b60f542ef7db8fa086db53ad23017ef4c8c196",
+      "raw_target_sha256": "b3c6e569252ed58cafcc438c4cd9f84a85eb61a447273ecf8e158e2091b24734",
+      "translation": "À quelle unité correspond le prix affiché ?"
+    },
+    {
+      "source": "Separate the seller's minimum from its quantity discounts",
+      "source_sha256": "dd544b7a4e8e331cb9c166f3f6ad051b479418b537a5b31189c64284cd840cc5",
+      "raw_target_sha256": "fbdb685aec281ceceaf714fe893c551f1949e6b864a1719a9ce966a0c99ad5ec",
+      "translation": "Distinguer minimum de commande et remise sur quantité"
+    },
+    {
+      "source": "Test what “mixed colours” actually permits",
+      "source_sha256": "056f2f0dab0c1eae20405a29401a31d13639f992d34ebd9d18ca1e85a464ecc9",
+      "raw_target_sha256": "c1b02f696aeac5c4445b40aea65f89a4225d76e4ea8bea864dbaf73da33e0760",
+      "translation": "Quelles combinaisons de couleurs sont autorisées ?"
+    },
+    {
+      "source": "Carry the agreed quantities into the USFans order",
+      "source_sha256": "0e173cc03bf21498d971f082d2e3d4ede63f9b2225e1f31a90ff309891e027aa",
+      "raw_target_sha256": "6a0cca02ceceadbe87465012c5b15771190b0d81535eb91498af8bdc8a3e4de9",
+      "translation": "Reporter les quantités convenues dans la commande USFans"
+    },
+    {
+      "source": "Inspect the delivery at the right level",
+      "source_sha256": "fca490e17fb12cc76737b6a15789280f0d8e207b3372759d5a60ceac23fe3bf7",
+      "raw_target_sha256": "6f265f91294a21abbe05d599fbed33f8a3374905ded10c5942b67ec5da3c4e39",
+      "translation": "Compter la livraison par pièce, paire ou lot"
+    },
+    {
+      "source": "Resolve short deliveries before treating the order as complete",
+      "source_sha256": "8610355d766d08b8d602f1d3afbad88b70382a36477f663757bfb18accb22eec",
+      "raw_target_sha256": "e1256a219a1c9a5f1bc2c7b8eba653a2ab6d377c0714486ec322aa75c456ed27",
+      "translation": "Résoudre les manquants avant de clôturer la commande"
+    },
+    {
+      "source": "Decide which object you are looking for",
+      "source_sha256": "4f15b91c17ea96580039a6f6ad41a3790482eb5a6ef9fe5bf5bbba010d930185",
+      "raw_target_sha256": "0bb99a8b2218163758d284f025663aabb0ef487bf7d351de40ff1c822cf97a4a",
+      "translation": "Identifier l’objet recherché sur la photo"
+    },
+    {
+      "source": "Use two different search routes with a purpose",
+      "source_sha256": "c6ddd33b6062dc06cdc4e900dcdb0b14dbf7c73e028f8b0627a932f90f3fb5f6",
+      "raw_target_sha256": "dbc96ba57c43c2337befe9fbfa6db6151eb2a5c28187d50aad29bd1013abd3e7",
+      "translation": "Combiner deux méthodes de recherche"
+    },
+    {
+      "source": "Compare stable features before reading the price",
+      "source_sha256": "1c7a21ee75ac7918e21f2eade00e6acebb756fac56791b28edbf9b1393c3e23c",
+      "raw_target_sha256": "9b0399d312583feaa94c1592589ef3ad99c18e0b544c31627e7cbcdcf07afde5",
+      "translation": "Comparer les détails stables avant de regarder le prix"
+    },
+    {
+      "source": "Compare listings and options separately",
+      "source_sha256": "6f66bd937e354f6d402109bd150ecf1ad8794ad596e6250250cfe9773813af3a",
+      "raw_target_sha256": "a2db62c879de2ade3df2cb3c628b8016d1ebb74f228b34fdf82fddcaee851b7e",
+      "translation": "Examiner séparément l’annonce et la variante"
+    },
+    {
+      "source": "Use historical QC photographs selectively",
+      "source_sha256": "67ea71ba8a28a9571fb37ce3c44b3daf5e382cf93d377fb6df9b32cde02b3302",
+      "raw_target_sha256": "821808b6a440dce214ac68af1bb6fc1dd7681826c9a1fe1e4ad0b0b9e6539827",
+      "translation": "Choisir les anciennes photos de contrôle pertinentes"
+    },
+    {
+      "source": "Save a result that will survive a changed listing",
+      "source_sha256": "9738e4b34f03853eebf464503596060119d88fd9628cf8a9602e2baee5ab7384",
+      "raw_target_sha256": "6a7b087c036c821b4e2ce7e89f65c578609137f37b734977abec9597f30689b0",
+      "translation": "Garder une trace même si l’annonce change"
+    },
+    {
+      "source": "Establish what can actually be personalised",
+      "source_sha256": "c490373c95b073d24a36f8b867b2936d667c16b3fad85c63dda7a3c7156f22cc",
+      "raw_target_sha256": "2789a0411d6a8efd2b99f4e9aecb62dbb5c126469106029f4a4222b8e7613212",
+      "translation": "Vérifier ce que le vendeur peut personnaliser"
+    },
+    {
+      "source": "Prepare a copy-ready specification",
+      "source_sha256": "8be5d6043480b470c53006ac1170ea21fe5b2eb69ac639185de6a2861f10367e",
+      "raw_target_sha256": "56909413cb09853e3fdcaa9aa8dfda462befb8b317d781b4420dd86b14d5ee0f",
+      "translation": "Préparer des instructions prêtes à copier"
+    },
+    {
+      "source": "Define placement from the garment itself",
+      "source_sha256": "3ce955fc9d2f5ef240716296c8d5a57c576ca25085a512a4a35a26f9fa8a8449",
+      "raw_target_sha256": "6516c4074402747138a635b51a3ec79f3e9341f71b36773503177d8f6286e404",
+      "translation": "Indiquer l’emplacement sur le vêtement"
+    },
+    {
+      "source": "Keep a proof tied to the correct unit",
+      "source_sha256": "e42d71818d4220f93785954484225ce1d9962ad2ee59648e6060631678b6c570",
+      "raw_target_sha256": "696261b86aaca3b7b8d9dbc5cde203f7423b4f8f96a493b5fa29ae97b1725300",
+      "translation": "Associer le bon à tirer au bon article"
+    },
+    {
+      "source": "Clarify cost and the last point for changes",
+      "source_sha256": "d2a14fefc64041b7b828989cd25d9159053cd90bed91a99154fdcac3f7e8e573",
+      "raw_target_sha256": "f85a77feeb061f9e3986f0f74fb3aaa85a4f0338923fcf5ccdc0bb2b261dccc7",
+      "translation": "Confirmer le prix et la date limite des modifications"
+    },
+    {
+      "source": "Inspect the finished piece in a reproducible order",
+      "source_sha256": "97b353029d2eac87bab9e3c13c7ee97fb7070d4a8e7555757ad7057aaa2ae32d",
+      "raw_target_sha256": "7b3d5d10a90e05fe8b88234c1842ecf46b0f16994cd3e57395c87849c1b03023",
+      "translation": "Contrôler la pièce finie dans un ordre précis"
+    },
+    {
+      "source": "Describe the purchase before interpreting the image",
+      "source_sha256": "f779db0d6545b6eabc1ce100542e7bd650a90c3e36ffa5473e4a57dc66e97a51",
+      "raw_target_sha256": "a3fbe3231aab529491a48f8a28eb536894974b96e3a9c671deef98c2b46f033a",
+      "translation": "Décrire l’achat avant d’interpréter la photo"
+    },
+    {
+      "source": "Identify which combinations the seller allows",
+      "source_sha256": "d903bcd6840e496246ad6ba0da1cbd47092f5032c9ab91d02770b9c72185b755",
+      "raw_target_sha256": "58c0a1d470405de3d939b9e7ce12582e20b868aac5de0aaa392dd0e8da477875",
+      "translation": "Identifier les combinaisons proposées par le vendeur"
+    },
+    {
+      "source": "Compare the actual cost of a set with the cost of separates",
+      "source_sha256": "cccccdc2ce4b5f2b83a6b35c050c65386511d5b494f98a787946334987a0f327",
+      "raw_target_sha256": "2d1b0a9c0bf67253cc6cecc4f784ce9cb7abc96aac1c384b677b1b0f2322a68f",
+      "translation": "Comparer le prix de l’ensemble et des pièces séparées"
+    },
+    {
+      "source": "Write an order note that survives fulfilment",
+      "source_sha256": "a484befa7b56df2456bb27bc5a97a55df97b9ad7260bb4e97d40c22b7ba7d0b2",
+      "raw_target_sha256": "1180a2a8365e9d8ff5029156173760f2664641d3bd71fd7b09621c10f3955e24",
+      "translation": "Rédiger une note utilisable jusqu’à l’expédition"
+    },
+    {
+      "source": "Check warehouse intake one component at a time",
+      "source_sha256": "db3962641146e930159e29a21f8d0969ef7494d5073a79fdbd47061869bb812e",
+      "raw_target_sha256": "e938e25a88586ff51fee41691919f5162fdd67a12bc37b63b6fcf40c80354dd5",
+      "translation": "Contrôler chaque pièce à son arrivée à l’entrepôt"
+    },
+    {
+      "source": "Resolve differences without losing track of the rest",
+      "source_sha256": "f9bb481c4c2d3303ff9bcfb437c80c9a33709206d327c41c136e491715c17b93",
+      "raw_target_sha256": "b3a615f9332e1598c6305c585634cf84c7d811fe9372515b76a70d5b055eb8d8",
+      "translation": "Traiter un écart sans perdre la trace des autres pièces"
+    },
+    {
+      "source": "Decide which length you actually need",
+      "source_sha256": "5fb2b667d444cc4720415c73e9b45562cbf622bb4ea3e2ce25de7699d351408e",
+      "raw_target_sha256": "5a829484e23daf86b3f6ff6da79b94d747834bf37b7d4e9f1da55f89731e16ec",
+      "translation": "Déterminer quelle longueur mesurer"
+    },
+    {
+      "source": "Establish a reference from a shoe that fits",
+      "source_sha256": "abfd697583e075341a92778bef0268a8534dcf4619c3e232f693ce6f84466518",
+      "raw_target_sha256": "000ad00751258a453763a982ba2a3a4bc106c6b9e2ecc9d066ea607038327224",
+      "translation": "Prendre pour référence une chaussure qui vous va"
+    },
+    {
+      "source": "Keep the request tied to the purchased pair",
+      "source_sha256": "104fa5a65319a05a19ef0b1d23fe13fa6d48d8b11b00825dfcd862d1bfb95d28",
+      "raw_target_sha256": "d8e840d4cae0828bcbbba6bc518628026b134a88be0149a04e699e0b21a678d1",
+      "translation": "Rattacher la demande de mesure à la paire achetée"
+    },
+    {
+      "source": "Give the photographer an instruction with visible endpoints",
+      "source_sha256": "e16b4593c07c1372642f0fecf628dcc77658344535c4ea9be316e058402d4c82",
+      "raw_target_sha256": "a958c4492a594c440b147f622510d6c0c4706e521f5c7423e003b05abfbdb90d",
+      "translation": "Faire photographier les deux extrémités de la mesure"
+    },
+    {
+      "source": "Compare equivalent measurements and note the uncertainty",
+      "source_sha256": "d20b79da8d2a4f2ebd4f839733dc9245a29d65fab16397a2dddbe9eb9d6daca1",
+      "raw_target_sha256": "ab6e4bfd1fc3036790ef057917231dbd04c2fbd43ff464656ec2b6dc1fb4ddc2",
+      "translation": "Comparer des mesures équivalentes et noter l’incertitude"
+    },
+    {
+      "source": "Use the result in a purchasing decision",
+      "source_sha256": "83736d2ce738bfcd42e0e13b46415709a126114577c9eb3ec61a3d5e4f2a2b19",
+      "raw_target_sha256": "575b222d1ef092daf73b2a193a15444aefa31820960cf73ad8b42adf6911a607",
+      "translation": "S’appuyer sur la mesure pour décider de l’achat"
+    },
+    {
+      "source": "Start with a list of physical pieces",
+      "source_sha256": "b03ede7fea67b299c1c2ddc2a61fd694678d195222919334e249128e32eae770",
+      "raw_target_sha256": "8625f86b3dd27bdef11d9b47a54c57de8e436b557fad4fd89c99efed032f1e65",
+      "translation": "Dresser la liste des pièces attendues"
+    },
+    {
+      "source": "Connect seller delivery to warehouse intake",
+      "source_sha256": "ade459794207a8d2ec0a9a91962e5295aa17172473e86465cc7457546c9e472b",
+      "raw_target_sha256": "69a2e5a50d22ba7ce2d06d2ee69b0a179423572b012878f4d448e6aa47b3616d",
+      "translation": "Relier l’envoi du vendeur à sa réception à l’entrepôt"
+    },
+    {
+      "source": "Decide which entries are ready for this parcel",
+      "source_sha256": "91cc9e159635dbfa915476cf7e2ef8b9adfe42909e73573e8659b500c0067ac8",
+      "raw_target_sha256": "a56812f2b25ed8d6c336fd7fb249c0d53b2fb259d990f86c436210a30db16bbf",
+      "translation": "Sélectionner les articles prêts pour ce colis"
+    },
+    {
+      "source": "Create a parcel manifest you can read later",
+      "source_sha256": "9c8af5e52fdeae1a615d2594e0eb1701265ad9045835cee07e22f11bf97c5f6f",
+      "raw_target_sha256": "182c96d2cb32d89ab540f7887bd81edd1ff0f7ded67c009e04f2c8402f773df6",
+      "translation": "Préparer une liste de colisage facile à relire"
+    },
+    {
+      "source": "Reconcile parcel measurements and tracking",
+      "source_sha256": "b680b5be8d101802cee6e37beda21c47e262cedca17d22ba2ed02f46a22e4691",
+      "raw_target_sha256": "a8e264ab40c6955cb774e46e02e7106dbeb0dfb576c173fb8fc10c8312ddade9",
+      "translation": "Vérifier les dimensions du colis et son suivi"
+    },
+    {
+      "source": "Check arrival without reconstructing the order from memory",
+      "source_sha256": "f127ea4435e3622c017d7a21599fcc42ff6d9fbbc210ad472334a5f7760af8b8",
+      "raw_target_sha256": "42471ff117d0eaf9f3d40120837991608d9e9097818206c188c50134c5f3812e",
+      "translation": "Contrôler la réception à l’aide de la liste"
+    },
+    {
+      "source": "Save the identity of the option first",
+      "source_sha256": "8a117146d1c3dad066e01eed0958e6ca0153ccfef08e46d1336f5ee960a434a6",
+      "raw_target_sha256": "0a54caf5eccc3f55918b26b0427bc49291df5ab2f6f0a77e6ed951abdeb5e313",
+      "translation": "Conserver le libellé d’origine et le code de la variante"
+    },
+    {
+      "source": "Read labels as seller vocabulary",
+      "source_sha256": "85bfd3c4bce1ad210dad719c65b1041b15a53933861659e5c477dca8e063b42a",
+      "raw_target_sha256": "ec074308deba3a1cf6aa7f02001db3bdba0f5ead255dace5ac0d0e6ec064edaa",
+      "translation": "Interpréter les noms de couleurs propres au vendeur"
+    },
+    {
+      "source": "Use photographs with a realistic understanding of colour",
+      "source_sha256": "b9c0e15fc15d40cc3174b1061d9a8c214e8206a1f1056740b5652de51dfa2f3a",
+      "raw_target_sha256": "9979261c96fc6da0f54e1a9339443129ab077880e6f1deebe27ee362a87c36f8",
+      "translation": "Tenir compte des limites du rendu des couleurs en photo"
+    },
+    {
+      "source": "Keep the order note unambiguous",
+      "source_sha256": "6922fa29e4b514c087c4b29e67be4e964d030b625f3132031580536fc44c8091",
+      "raw_target_sha256": "bda3c32f00f54d56cd4d906ed41b29586368f9681fd018ad6f570b67129eb460",
+      "translation": "Préciser la couleur dans la note de commande"
+    },
+    {
+      "source": "Determine what the warehouse can establish",
+      "source_sha256": "a0fe7912c380bffc8d9e976fa008b9f8042c4fea560461647dc86d48c7b32928",
+      "raw_target_sha256": "f8ff30aa300e1abcb5b1c76e34aac89fd2899365f5505f552636d962fad110a2",
+      "translation": "Déterminer ce que l’entrepôt peut vérifier"
+    },
+    {
+      "source": "Decide what uncertainty you can accept",
+      "source_sha256": "54a16a2cea9f06c780ebcf7be1184e6f9f5d28b753ed6a46d87c9519c9f5890e",
+      "raw_target_sha256": "37d98176d338e26a85b2332e1515478603a11e2b5c3434614b5f2555f25d7d0c",
+      "translation": "Décider quelle incertitude de couleur est acceptable"
+    },
+    {
+      "source": "Define the delivery you are trying to trace",
+      "source_sha256": "11559692d3922241d6ab2534d283ce7924dde0b30bd379d489de1ee19485aba7",
+      "raw_target_sha256": "985d07e3b1950b5a4817f39ad52674886939cc56564b5e293c2b8d016e825e63",
+      "translation": "Définir la livraison à retracer"
+    },
+    {
+      "source": "Identify evidence of an actual split",
+      "source_sha256": "2aae14df2015c493cae7f7190f36378663d6899447a498986f5454ad6ead7e2d",
+      "raw_target_sha256": "9cbac7cd3c6a2eb948e4f3b5f7a6945be6ea31fbecdc93b94a4847e4384ddbad",
+      "translation": "Repérer les preuves d’un envoi en plusieurs colis"
+    },
+    {
+      "source": "Match each package to warehouse intake",
+      "source_sha256": "a297c6c38c341bcb01004ddd32ce491c43647d9c2948e3373c24aebf351cf76f",
+      "raw_target_sha256": "a9983580f4c80fe93359270bb4e964efe1feae331ba4a17e0becbc3c58ce069e",
+      "translation": "Associer chaque colis à sa réception à l’entrepôt"
+    },
+    {
+      "source": "Use a worked example to locate the missing step",
+      "source_sha256": "f29dd0a78d52e4f2b26eaff2fb108f946f1f88e5b2c83cf0805bbb70ee2772fa",
+      "raw_target_sha256": "c91063cd4bcf6c8c389819211eeb45f10413982574d6c1ab2a35c2c027c3d70b",
+      "translation": "Repérer l’étape manquante avec un exemple"
+    },
+    {
+      "source": "Communicate without opening overlapping inquiries",
+      "source_sha256": "afde5a6758f6ec2ec1ad609caadff77fbc94a369197746cbeac0a4085d60401e",
+      "raw_target_sha256": "823f2ef0db214ebfa6e99d71a48e0691fdc0e37637793475884f283c213d4c9b",
+      "translation": "Regrouper les échanges dans une seule demande"
+    },
+    {
+      "source": "Decide when to submit the international parcel",
+      "source_sha256": "46baa0a975f5ce4d5e8892630c7c772fd22d8860e864f97d6b14693605ff4ad3",
+      "raw_target_sha256": "4d5e3106c24b89138bcd0471f1322fe9b2529621d5b32f5a494cc558ee9a2c35",
+      "translation": "Choisir quand demander l’expédition internationale"
+    },
+    {
+      "source": "A medium hoodie can have a chest marked 96 cm in one chart and 56 cm in another. Those figures may both be correct. Before purchasing through USFans, establish what each supplier measured, whose body or garment they measured, and how a familiar piece of clothing compares.",
+      "source_sha256": "cf85155fbc663d42f73f9ca9cfd4eb7a7a7e9a2be49abfd775989452e370895e",
+      "raw_target_sha256": "8816b1d41f7ec9886963a6b264227608707faa7b9bbfe73c596f4192fcc31a2c",
+      "translation": "Pour un sweat à capuche en taille M, un tableau peut indiquer 96 cm à la poitrine et un autre 56 cm. Les deux valeurs peuvent être justes. Avant d’acheter via USFans, vérifiez ce que chaque fournisseur a mesuré, sur le corps ou sur le vêtement fini, puis comparez avec une pièce que vous portez déjà."
+    },
+    {
+      "source": "Measure any feature that would change your decision. A tall buyer may be able to tolerate an extra centimetre of width but need a very particular sleeve or body length. A cropped jacket may fit across the chest while exposing a shirt beneath it. Write down an acceptable interval based on garments you actually own, if you can. Someone happy with shirts measuring 52 to 55 cm flat has a more useful reference than someone who writes only “normally medium.” This interval describes your preference; it is not a manufacturing tolerance or a promise from the seller.",
+      "source_sha256": "24b084993f70c6a9ed0e1d8119fa3616c5e618311219c29ca5943cf8913a5c10",
+      "raw_target_sha256": "62a3af9f81dd230307b0c4743fd9cb09b5046945e193bda2d62633010669dbab",
+      "translation": "Mesurez ce qui peut faire changer votre choix. Une personne grande peut accepter un centimètre de largeur de plus, mais avoir besoin d’une longueur de manche ou de dos précise. Une veste courte peut convenir à la poitrine tout en laissant dépasser la chemise. Définissez votre plage acceptable à partir de vêtements qui vous vont. « 52 à 55 cm de large à plat » renseigne mieux que « habituellement du M ». Cette plage exprime votre préférence et ne fixe aucune tolérance de fabrication ni promesse du vendeur."
+    },
+    {
+      "source": "If two versions share one chart and the photographs suggest different proportions, state the conflict precisely. Ask which version has the listed length and whether the dimension includes the collar. A question framed as “will medium fit me?” leaves the seller or agent guessing at your preferred fit. A question framed as “does the short black medium measure 63 cm from the back collar seam to the centre hem?” identifies the version, size, endpoints and number that drive your decision. Keep that conversation attached to the purchase reference in your records.",
+      "source_sha256": "b517da0e5aab80467aeae9f5929392d801bdd14ab779e3162e540977bde92173",
+      "raw_target_sha256": "06fe07f0d3d2c0cefab7d695ce5e7734ec900d20ef454f6b08b19901d7e1cdc4",
+      "translation": "Si deux variantes partagent un tableau mais présentent des proportions différentes sur les photos, demandez à laquelle s’applique la longueur et si le col est inclus. « Est-ce que le M m’ira ? » oblige le vendeur à deviner votre préférence. « La version courte noire en M mesure-t-elle 63 cm de la couture arrière du col jusqu’au milieu de l’ourlet ? » précise la variante, la taille et les deux points de mesure. Gardez la réponse avec la référence d’achat."
+    },
+    {
+      "source": "Keep a compact record with the seller listing, selected version, size, seller measurement method and reference measurement. Add the warehouse observation on a new line so that it stays distinct from the seller's claim. For example, write “chart gives 110 cm finished chest, my preferred hoodie is 54–56 cm flat, actual item photographed at 55 cm across underarms.” With that information the reason for keeping the size remains clear even after other packages arrive. If the methods do not match, record the question instead of manufacturing a precise comparison.",
+      "source_sha256": "d80b4794222d40f7b597a3182b63c6fc5140e589081947ed3dacfd6803e8315e",
+      "raw_target_sha256": "e26af1966022634661925dba8d98f23b7bce9149d0d2a8f9a08d5b83451a375d",
+      "translation": "Notez l’annonce, la variante, la taille, la méthode de mesure du vendeur et votre mesure de référence. Inscrivez l’observation de l’entrepôt sur une ligne séparée. Par exemple : « Tableau : tour de poitrine du vêtement fini de 110 cm. Sweat de référence : 54–56 cm à plat. Photo du vêtement reçu : 55 cm entre les aisselles. » Même après d’autres livraisons, cette note explique le choix. Si les méthodes diffèrent, consignez la question qui reste à éclaircir."
+    },
+    {
+      "source": "A third piece pictured alongside the set can change the calculation. If a matching belt is important, check whether either offer actually includes it. If the belt costs a further 12 yuan and is excluded from both offers, add it to both totals. If just one offer includes it, note that the offers now have different contents. Do the same for removable straps, hoods or liners when they are essential. Avoid turning a set comparison into a comparison of two unrelated totals simply because the thumbnail photographs happen to look alike.",
+      "source_sha256": "f58f2c2e5457a2488db96bca204635ac7ba8837f1ff569bc3c95d680acd29ff6",
+      "raw_target_sha256": "1facac239f13fb45e1b18614a5a56ff1b212e249564eeea53380f9b174c26c46",
+      "translation": "Un troisième élément sur la photo peut modifier le calcul. Si vous tenez à la ceinture assortie, vérifiez si chacune des offres la comprend. Si elle coûte 12 yuans supplémentaires et manque dans les deux, ajoutez ces 12 yuans aux deux totaux. Si une seule offre l’inclut, signalez que le contenu diffère. Procédez de même pour les sangles, capuches ou doublures amovibles indispensables. Deux vignettes similaires ne suffisent pas à rendre les prix comparables."
+    },
+    {
+      "source": "Check the returned picture before interpreting it. Is the ruler straight and in the same plane as the insert? Is the zero at the edge or beyond it? Is the final reading in centimetres or inches? A ruler positioned at an angle or photographed from the side can create an apparent difference. Some rulers begin before their printed zero. If the heel aligns with one centimetre and the toe with twenty-eight centimetres, the observed interval is twenty-seven centimetres. That example illustrates why the two endpoints matter more than the final numeral.",
+      "source_sha256": "dfcf4554508436934004adcc60d3459d882c079d9951b2aa45c490f28b1c33ce",
+      "raw_target_sha256": "88093bbd793fd00e44fcc66e35ce1853660fa0c0f11f592bd051e46e1eda03a9",
+      "translation": "Avant de lire la photo, vérifiez que la règle est droite, dans le même plan que la semelle intérieure, et que l’unité est bien le centimètre ou le pouce attendu. La règle peut avoir un bord avant la graduation zéro. Si le talon arrive au repère 1 cm et le point le plus long à 28 cm, la longueur observée est de 27 cm. Un angle oblique peut fausser la lecture. Il faut donc voir les deux extrémités."
+    },
+    {
+      "source": "Give each intended unit or group a short label that stays stable throughout the process. For instance, label a navy jacket J1 and the two matching trousers T1 and T2. Use warehouse and parcel identifiers alongside these labels as they become available. Do not replace the labels with successive tracking numbers. Identifiers from different stages often have different scopes: one buyer order can cover several seller deliveries, and one outbound parcel can cover several buyer orders. A stable per-item reference lets you connect all these records without assuming they share the same numbering system.",
+      "source_sha256": "c2c8b0ab03c934fdef69c97f7a58b6c05805b789fab6144357ce80a093d65bd1",
+      "raw_target_sha256": "61ee91219b58dd1af681baa4a9ed569fe41e2a3a3a5680b96d20294470046c3c",
+      "translation": "Attribuez à chaque pièce ou groupe un repère qui reste stable : par exemple J1 pour la veste bleu marine et T1 et T2 pour les deux pantalons assortis. Ajoutez ensuite les références de l’entrepôt et du colis sans remplacer ces repères par les numéros de suivi successifs. Une commande peut arriver en plusieurs envois domestiques, et un colis international peut réunir plusieurs achats. Le repère par pièce permet de relier ces étapes."
+    },
+    {
+      "source": "The option menu says grey, the picture looks green and the seller's colour code ends in G2. Which of these describes the item you will actually receive? Work from the seller's option identity, then use photographs to answer the remaining questions about appearance.",
+      "source_sha256": "69619bcfe317d49ae2249e2a79ed339602e6ed4d5329152f470060f1625e5010",
+      "raw_target_sha256": "67345a0d56d9599edb0fa1450961131b263d49481879a5cfdc60e9f70ea969b3",
+      "translation": "Le menu indique gris, la photo semble verte et le code couleur du vendeur se termine par G2. Quelle variante recevrez-vous ? Identifiez d’abord l’option choisie chez le vendeur, puis utilisez les photos pour éclaircir ce qui reste incertain sur son aspect."
+    },
+    {
+      "source": "For a two-colour purchase, an illustrative note could read “one G2 grey-green medium with dark zip, and one C1 cream medium with cream zip.” Ask before accepting a substitution if the intended colour is unavailable. Someone filling the order may read two similar translations and treat a nearby option as interchangeable, while the buyer needs a matching piece for an existing outfit. Giving both the code and feature reduces this risk without claiming a colour standard that the seller never promised. Save the confirmation beside the selected-state screenshot.",
+      "source_sha256": "3ad9770f938b9fb92d84ddfae833bcf479e665a71490f0e77f1556a6fac4fb2e",
+      "raw_target_sha256": "e2d4daf30319a22e57d329559b30d71e1b89c91e89b8738a169c7453c5dab562",
+      "translation": "Pour deux couleurs, on peut écrire : « Un G2 gris-vert en M avec fermeture éclair foncée et un C1 crème en M avec fermeture éclair crème. » Demandez à être consulté si une couleur manque. Deux traductions proches peuvent sembler équivalentes à la personne qui prépare l’achat alors que vous cherchez une pièce assortie à une tenue. Associer code et détail visible réduit le risque sans supposer que le vendeur garantit une nuance normalisée. Gardez la confirmation et la capture de l’option sélectionnée ensemble."
+    },
+    {
+      "source": "Take a second example. You need four blue medium pieces, two blue large pieces and four green medium pieces. That makes ten units in total. If a ten-unit tier applies across the listing, your mix may qualify. If ten units are required per colour, neither the six blue nor the four green qualify independently. If the seller counts each size-colour combination separately, there are three groups. The arithmetic is simple once the grouping rule is known. Until then, the total on a spreadsheet row is only a planning figure. Ask for confirmation of both the mix and the price before treating the order as approved.",
+      "source_sha256": "8accae370f02747dbcaac4c6cd4c1ef24aa9a6173606d6b304dd59cee2352d61",
+      "raw_target_sha256": "84ee48dbdf670367b5e6d9eec6a8359eda007e690a04e9c4bccd7c0b58d5cc03",
+      "translation": "Autre exemple : il vous faut quatre pièces bleues en M, deux bleues en L et quatre vertes en M, soit dix pièces. Si le tarif à partir de dix unités s’applique à toute l’annonce, cette combinaison peut y donner droit. S’il faut dix unités par couleur, ni les six bleues ni les quatre vertes n’atteignent le seuil. Si chaque combinaison taille-couleur est comptée séparément, il y a trois groupes. Faites confirmer la répartition et le prix avant d’autoriser l’achat."
+    },
+    {
+      "source": "Foot length describes a person. Removable insole length describes an insert. Internal shoe length concerns the space inside a shoe and can be difficult to measure accurately. Outsole length includes material outside that space. A seller's chart might use any of these, or might only show conversions between size systems. Read the chart heading and diagram before interpreting a centimetre value. When the chart simply says “length,” look for the endpoints in the diagram or ask what was measured. Converting a number to another unit does nothing to fix a mismatch between two different measurements.",
+      "source_sha256": "f1d56d27b96b2e43d424fb8df0b4498e7ce8baab538f8f5d5308a4eb33842e8b",
+      "raw_target_sha256": "b7739cbbebbc90f90a8fbc93865dbb70874bced036db3853c4a9ed52e007e31c",
+      "translation": "La longueur du pied se mesure sur la personne. Celle de la semelle intérieure amovible se mesure sur la pièce que l’on peut retirer. La longueur à l’intérieur de la chaussure correspond à l’espace disponible et peut être difficile à établir. La semelle extérieure, elle, dépasse les limites de cet espace. Le tableau peut employer l’une de ces mesures ou simplement convertir les pointures. Lisez son intitulé et son schéma. Si seule la « longueur » est indiquée, vérifiez les points de mesure. Convertir les unités ne rend pas deux mesures différentes comparables."
+    },
+    {
+      "source": "Consider an example with four wearable items. Warehouse entry A holds a jacket with its detachable hood. Entry B contains two shirts, size small and medium. Entry C is a cap that has yet to arrive. If you submit A and B today, the parcel covers three wearable items plus the hood that belongs to the jacket. C stays outside this shipment. Record the cap as pending rather than lost. If the two shirts are folded together inside the same protective bag, note that packaging arrangement so you know what to look for when the parcel is opened.",
+      "source_sha256": "ae0bae500c3dc85f84e214823a131584c85dd7729e84f43a50259544d50703b5",
+      "raw_target_sha256": "d117debd05e75c3586f9374aa761b59df1828065f5c946a9d8ff2b074b73cc25",
+      "translation": "Prenons quatre articles à porter. L’entrée A contient une veste et sa capuche amovible. L’entrée B contient deux chemises, l’une en S et l’autre en M. C correspond à une casquette qui n’est pas encore arrivée. Si vous faites expédier A et B aujourd’hui, le colis contiendra trois vêtements, plus la capuche de la veste. La casquette reste en attente. Si les deux chemises sont pliées dans la même housse, notez-le pour savoir où les chercher à l’ouverture du colis."
+    },
+    {
+      "source": "Maintain a short timeline. Record seller dispatch, carrier delivery scan, warehouse intake and the time the photographs became available as separate events. When one carrier package has been delivered and the warehouse has identified the correct garment, close that part of the inquiry. When another shows only label creation or pickup, continue following that specific number. If delivery was reported but warehouse intake remains unexplained, verify destination, recipient details permitted for the inquiry and carrier reference with the seller or agent. A chronological account makes the uncertain stage clear without inventing a responsibility for the problem.",
+      "source_sha256": "88048ee068c9be30f83689f271c0ed6cb1e63c2faa43a34d5be888cc497376fd",
+      "raw_target_sha256": "c4d11198e1e1e32b539713e5b17d5af4dbdb15d879c67e7d7cd16aeddd51f227",
+      "translation": "Tenez une chronologie courte en séparant l’expédition par le vendeur, le scan de livraison du transporteur domestique, l’entrée à l’entrepôt et la mise à disposition des photos. Lorsqu’un colis a été livré et que l’entrepôt a identifié le bon vêtement, ce point est réglé. Pour un autre colis dont seule l’étiquette a été créée ou dont l’enlèvement vient d’être scanné, poursuivez le suivi avec son propre numéro. Si le transporteur signale une livraison sans entrée correspondante, vérifiez auprès du vendeur ou de l’agent la destination, les informations de réception communicables et la référence de transport."
+    },
+    {
+      "source": "Imagine an order with shirts in small and medium plus a detachable belt. The seller confirms parcel A contains both shirts and parcel B contains the belt. Parcel A reaches the warehouse and the available photographs show two shirts, but only the small label is visible. Parcel B is still moving. Record the two received shirt units while flagging the medium label for verification. Record the belt as in transit. There are two unresolved questions, and they require different actions: a label check at the warehouse and a tracking check for the separate domestic shipment.",
+      "source_sha256": "4d643343514a833b434bb4ea782db071963bc68e6b6aa00a95169b5067584370",
+      "raw_target_sha256": "3b25e9c930c94b0dd8285d1bbc17d2d14e430a05e4caa43eff2f5c6de3a37849",
+      "translation": "Imaginez deux chemises, une S et une M, et une ceinture amovible. Le vendeur confirme que le colis A contient les deux chemises et le colis B la ceinture. A arrive à l’entrepôt. Sur les photos, les deux chemises sont visibles, mais seule l’étiquette S est lisible. B est encore en transit. Enregistrez les deux chemises comme reçues, laissez l’étiquette M à vérifier et notez la ceinture en transit. Demandez une vérification de l’étiquette à l’entrepôt et consultez séparément le suivi domestique du colis B."
+    }
+  ]
+}
