@@ -1,0 +1,1544 @@
+{
+  "site": "litbuygrid-com",
+  "locale": "zh",
+  "source_set_sha256": "50911bbaf8cb4e95c0ffaba18561fc7cfb1d06446f37b6a6715ee18e99d8182e",
+  "raw_dictionary_sha256": "f101eabbefc0466b7605695e54cab663bfdd94e894aebdb71fd5819441a9de68",
+  "effective_dictionary_sha256": "6d6414ee4d6a2f4286ea76916bace220e0dbc1fce5cb682d0f81cde5907a62d8",
+  "checked_entries": 254,
+  "review_scope": "Checked all exact input keys and output structure with the project auditor. Compared actual localized price/quantity calculations, physical item and option identifiers, garment-measurement examples, warehouse and shipping stages, seller/return wording, and sampled FAQ/body passages with the English source. Personally edited all ten article titles and replaced risk passages as recorded. This coverage is an audit plus targeted bilingual review.",
+  "reviewed_flags": [
+    {
+      "issue": "new digit or localized conversion",
+      "source_sha256": "b1da472feba13ab6902e7d08c9d200b85f6a0e89994417d3afce1d7d3b79c97b",
+      "raw_target_sha256": "c4560421b3017700bb9764b1287a6b34bf44e01ac5c01c8024f45b499221b6ce",
+      "resolution": "corrected translation"
+    }
+  ],
+  "unresolved_material": [],
+  "corrections": [
+    {
+      "source": "Why the LitBuy listing price changes when you select an option",
+      "source_sha256": "4b737b6ff111d72dab970c0c3bd7ca9f0847111d95105d49bf90997e95dd7531",
+      "raw_target_sha256": "9c9db9d4f4b4b86c62d35e24c36e579826e783956ce5c2ed062ba04abd90d2ff",
+      "translation": "为什么在 LitBuy 选择不同规格后，商品价格会发生变化？"
+    },
+    {
+      "source": "Is this the colour I ordered? Reading LitBuy warehouse photos",
+      "source_sha256": "d51e75f73f2e018aa790b6ffe42244e3dda805d11dd6dea853b828b3cd410f8e",
+      "raw_target_sha256": "4b6b3c88375c57be2d4f0ce395c12dae1dd4918b135e14b4e625f028d38542cb",
+      "translation": "这是我订的颜色吗？如何看懂 LitBuy 仓库实拍图"
+    },
+    {
+      "source": "A strap, liner or spare part is missing from LitBuy QC photos. What should you check?",
+      "source_sha256": "41070bbef448d1a94e025e73ed209a3a3370bbe9f937b9897bb982fcbf30de6b",
+      "raw_target_sha256": "c820e179324085ec77d7f2972c04f4cd3246bfa0e3d36a37804af4ebecd6bb49",
+      "translation": "LitBuy 质检照片里没看到肩带、内衬或备用零件，该核对什么？"
+    },
+    {
+      "source": "What to save when a LitBuy seller listing might change",
+      "source_sha256": "eb6e71e3773e96d86831f2a8c17d2c8a9a0909af8c75fd67c382fe7e828abf59",
+      "raw_target_sha256": "d1fbb11a82bb2d81095cad04eb8569a2d6ce52e89c00d0197ef50eb31b2efe9c",
+      "translation": "卖家可能修改商品页面，在 LitBuy 下单时应该保存哪些信息？"
+    },
+    {
+      "source": "How to check a hoodie body-length measurement in LitBuy QC photos",
+      "source_sha256": "3b8c083942635a36c7682386366f5732cc76c8a138890f3edca4d7b8b7148b22",
+      "raw_target_sha256": "372a908d3e84c0368371bd7728837122f31560fc2766bd71c928adf711419af9",
+      "translation": "如何通过 LitBuy 质检照片核对连帽衫衣长"
+    },
+    {
+      "source": "Mirrored photograph or reversed print? A LitBuy garment check",
+      "source_sha256": "4019721adb422b10c6ce3dafeedaefdb167b0002ff2636c6d8aebbe2aae60f91",
+      "raw_target_sha256": "3167d993aabb8b6c08280dc4345221535443f1dd621d74b5822020906de21a70",
+      "translation": "照片被镜像了，还是印花印反了？如何核对 LitBuy 衣物实拍图"
+    },
+    {
+      "source": "Keep, clarify or exchange? A decision guide for a LitBuy warehouse item",
+      "source_sha256": "998b8a5811c2816b6898ad8fc706539fc271f7b458b1a66ab550ea7d7c675817",
+      "raw_target_sha256": "3588f77f39a5a3ef661891822fe20344171a7e0b302a51528157d07db71f3748",
+      "translation": "留下商品、询问细节还是申请换货？如何判断 LitBuy 仓库里的商品"
+    },
+    {
+      "source": "Building a LitBuy return evidence record that someone else can review",
+      "source_sha256": "0f8d28554bc71317e901d198de1a27e9e58abcf9f2829a8d5bfe8a4cb95d808e",
+      "raw_target_sha256": "a8ca13ef241cb5212196cf7d40e79bcfcb57b2e94ab52af4dc4a64826bc8e0b3",
+      "translation": "如何整理 LitBuy 退货凭证，让客服能核对问题"
+    },
+    {
+      "source": "Reading a LitBuy seller response: what was offered, and what is still pending?",
+      "source_sha256": "0eaf7b25748b8456ac2bcb5b765ee5f45e26e6f42025b50b7ef5cd673e87c1a1",
+      "raw_target_sha256": "08614c2ca7e269b664242205b2705cc00bc643064c40663a2f899edcbf444d69",
+      "translation": "如何读懂 LitBuy 卖家回复：已提出什么方案，还有哪些事项待确认？"
+    },
+    {
+      "source": "How to inspect a LitBuy replacement after an exchange",
+      "source_sha256": "e3fed6cd038a8df07fce179a1370edd6faaf10294dd5e62cd6e4bf8cfa2bbfba",
+      "raw_target_sha256": "88e8a2aa8bf8d869f628346c748316d8c95cd93a1e4f71a823f24389a020cb1c",
+      "translation": "LitBuy 换货后，如何验收替换商品？"
+    },
+    {
+      "source": "Consider two illustrative listings. One offers a pack of three pairs for 36 yuan and another offers an individual pair for 14 yuan. The first works out to 12 yuan per pair, but only if the buyer actually wants all three pairs in the offered size and colours. Someone needing a single pair faces different immediate spending and shipping requirements. Comparing only 12 with 14 misses that practical difference. Keep the cost of the usable quantity, the cash required now and any unwanted surplus on separate lines in the comparison.",
+      "source_sha256": "6df0b17ef77ac144f549711a76a349928dde1e7de06fbc73146c08b1b80b371f",
+      "raw_target_sha256": "809ee5d9ef820113bfd86cf734df3a1e12a22c9afea12a70f64f0ecf2934677d",
+      "translation": "以两条假设的商品链接为例：一条卖三双装，售价 36 元；另一条按双出售，每双 14 元。三双装折合每双 12 元，但前提是尺码、颜色合适，而且三双都有用。如果只需要一双，当下要付多少钱、最后要寄多少东西，答案就不同。只比较 12 元和 14 元容易忽略这一点。建议分开记下实际用得上的数量对应的成本、现在必须支付的金额，以及可能剩下不用的部分。"
+    },
+    {
+      "source": "For an example, suppose five pieces cost 28 yuan each but ten pieces cost 24 yuan each. Five would cost 140 yuan and ten would cost 240 yuan before separately listed charges. The larger purchase lowers the unit price by four yuan but increases the product outlay by one hundred. If you needed six units, compare six at the applicable tier with ten at the lower tier. A lower number under a large-quantity column has no intrinsic value to a buyer who cannot use, store or economically ship the extra pieces. These figures illustrate comparison only and do not represent a LitBuy rate.",
+      "source_sha256": "b1da472feba13ab6902e7d08c9d200b85f6a0e89994417d3afce1d7d3b79c97b",
+      "raw_target_sha256": "c4560421b3017700bb9764b1287a6b34bf44e01ac5c01c8024f45b499221b6ce",
+      "translation": "假设买 5 件时每件 28 元，买 10 件时每件 24 元。那么不计另列费用，5 件共 140 元，10 件共 240 元。单价降了 4 元，商品总支出却多了 100 元。如果只需要 6 件，应比较按适用档位买 6 件与按低价档买 10 件的总额。多买的商品若用不上、没地方放或不划算寄出，大批量栏里的低单价就没有实际优势。以上数字仅用于演示比较方法，并非 LitBuy 价目。"
+    },
+    {
+      "source": "Compare the cost at the boundary of a tier before changing your basket. Imagine a seller advertises eight notebooks at a lower unit price than seven, while a second seller can supply the seven you actually need. Write down both complete amounts and include any separate domestic delivery on each offer. Then ask what practical use the eighth notebook has. If the extra one is a gift, the eight-pack might serve two purchases. If it is surplus that would also take room in your parcel, the smaller order can be preferable. Keeping the intended use next to the arithmetic makes a close choice easier to explain later.",
+      "source_sha256": "609284d04e0b2d958785f793f6feac559ec5a78c50b70ceb9491b01e0c253894",
+      "raw_target_sha256": "0a1fa022f7100808281f09a53e4bbfb6109eb07632b8d85da844e6163142d90d",
+      "translation": "修改购物车前，先比较阶梯价门槛两侧的总成本。假设一家店买八本纸质记事本的单价比买七本低，另一家店则正好能提供你需要的七本。分别写下两种方案的完整金额，计入各自另收的国内运费。第八本有什么实际用途？如果可以送人，八本装可能同时解决两项需求；如果用不上，还会占包裹空间，七本的方案可能更合适。在算式旁写下用途，以后也能解释这笔看起来差不多的选择。"
+    },
+    {
+      "source": "Imagine a listing offering stone G1 and moss G2. A warehouse overview makes the fabric look grey, but the small label reads G2 and the sleeve trim matches the moss option. That evidence supports the selected variant more strongly than a visual comparison to an edited seller picture alone. If the label clearly reads G1 and the trim also matches G1, an order confirmation for G2 supports a direct fulfilment question. If the code and trim disagree, ask the seller what the code represents on that model before treating it as proof of a wrong unit.",
+      "source_sha256": "06f7bdb525ae1665453276f2a070438ae0dbded5fc553a77ee168120affd7118",
+      "raw_target_sha256": "3f12e1f7330618a23cc335534c657db845e3e26f8c7ff61ed2feeda24efda259",
+      "translation": "假设卖家提供“石灰色 G1”和“苔绿色 G2”两种选项。仓库全景照里的布料偏灰，但小标签写着 G2，袖口饰边也和苔绿色款一致。与单纯对照卖家修过的图片相比，标签和细节更能说明收到的是哪一款。反过来，如果标签和饰边都对应 G1，而订单确认的是 G2，就可以直接请卖家核查是否发错。若标签代码和饰边互相矛盾，应先问清该代码在这个型号上代表什么，再判断是否错发。"
+    },
+    {
+      "source": "When a final decision is made, retain the order reference, image date and reason. A note such as “label G2 matches, same-frame jacket and trousers look coordinated, accepted” is more useful than saving a thumbnail called green. If a replacement is ordered, record its new reference and repeat the comparison on its own photographs. When the item finally arrives, a short note about how it looked in ordinary daylight can improve future choices from that seller. It remains a personal observation about that unit, alongside the more objective record of which option was ordered and received.",
+      "source_sha256": "bc04ab12617fa553e9d8d1878a81c8340dd8dd4dd34a86cd6a18702622b0bcfc",
+      "raw_target_sha256": "e1dbdd61a8b0fa9d7fe1db8b0cb3d68a57ae6ec7973aba18799feff3b44f7d25",
+      "translation": "做出决定后，保留订单编号、照片日期和判断理由。例如，写“标签 G2 相符，同框照片里的外套和裤子看起来配色协调，已接受”，比只保存一张命名为“绿色”的缩略图更清楚。如果安排换货，另记替换商品的编号，收到它的照片后再单独核对。实物到手后，还可以补记它在普通日光下看起来是什么颜色，供今后购买同一卖家商品时参考。这属于对该件实物的个人观察，可与订单选项和实际收到的款式记录一并保存。"
+    },
+    {
+      "source": "Consider a buyer researching a bag at 85 yuan and purchasing it later at 90 yuan after selecting a version with a long strap. If the seller subsequently displays 78 yuan for the version without that strap, none of the three numbers alone establishes that the payment was wrong. Look at the selected option, time and package contents. Record the original-currency values first and any currency conversion separately. A changing exchange rate can cause another visible difference without the seller changing the original item price. This precision helps both with budgeting and with explaining a genuine discrepancy.",
+      "source_sha256": "d3880f26e92841d1b96d5455d3cf6f6aca1aa0fe3a732795713f9dbdd1ddc0f1",
+      "raw_target_sha256": "ccb78f3f74e69af2feccde63e6920a124c9eb58fc8a82df6777b6b051f7837f5",
+      "translation": "假设最初看到一只包标价 85 元，后来选择带长肩带的版本，以 90 元买下。之后卖家又给不带这条肩带的版本标了 78 元。只看其中任何一个数字，都不足以说明之前付错了钱。应同时核对所选版本、价格对应的时间和包含的配件。先记录原币金额，再单列换算金额。即使卖家没有调价，汇率变化也可能影响换算后的显示价格。这样既有助于做预算，也方便说明确实存在的差额。"
+    },
+    {
+      "source": "A tape reading of 65 cm is only useful if you know where the tape began, where it ended and which hoodie was measured. For a cropped or oversized hoodie, the position of the hem can matter more than the letter printed on the size label. Use a garment you own, the seller's chart and a comparable warehouse picture to make the decision.",
+      "source_sha256": "eaf59be39cecb484c06bdecb038b2dd13d89ea43d5f0fbd62755d961e7b6a04a",
+      "raw_target_sha256": "6ace4952c82b2322f8034158f19f18cd2532aa5d88be092a0bc4f85256f0e73c",
+      "translation": "软尺读数是 65 厘米，还要知道从哪里量到哪里、量的又是哪一件连帽衫，这个数字才有参考价值。对于短款或宽松款，穿上后下摆落在哪里，可能比标签上的尺码字母更重要。可以找一件自己穿着合适的衣服，结合卖家尺码表及量法一致的仓库实拍图来判断。"
+    },
+    {
+      "source": "Suppose your preferred hoodie measures 66 cm down the centre back, and a warehouse photo shows 65.5 cm using the same method. A difference of half a centimetre may reflect the way the ribbing settled or how clearly the tape can be read. Compare that difference with your range of acceptable fit. Now suppose the seller's chart gives 70 cm from the high shoulder and the warehouse photo gives 65.5 cm from the centre back. These figures are not directly comparable. Ask for the corresponding high-shoulder measurement or repeat that method on your own reference garment before treating the difference as a shortfall.",
+      "source_sha256": "c6998f35d0ce130b23a047455770e3007cae1b2635163280e26517c2b55ab39d",
+      "raw_target_sha256": "93d91b7c143efad63ac33efecde72b78fe83788c305753b9af34e21756946320",
+      "translation": "假设你喜欢的一件连帽衫，从后背正中量出的衣长为 66 厘米；仓库按同一方法量出的读数是 65.5 厘米。相差半厘米，可能只是下摆罗纹平铺状态或软尺读数清晰度不同，可以再对照自己能接受的衣长范围。若卖家尺码表写的是从肩部最高点量 70 厘米，而仓库照片的 65.5 厘米是从后背正中量的，两者不能直接相减。先请仓库也从肩部最高点测量，或用同一方法复测自己的参考衣物，再判断衣长是否不足。"
+    },
+    {
+      "source": "A reference must itself have a known orientation. An abstract symbol or stylized logo can be ambiguous, especially if you only recognize it from other edited pictures. Numbers such as 8 or 0 can look identical after a horizontal flip. Prefer distinctive text with several characters and a confirmed reading direction. A second view in which the photographer holds a readable warehouse card near the garment can be informative if available. Avoid using a private delivery label in public discussions; a cropped, non-sensitive reference or a warehouse-provided neutral object can serve the same purpose.",
+      "source_sha256": "831e7efe0695f954a003274d3fb5e857308857c4d2ad457d920d464201a4185d",
+      "raw_target_sha256": "c98e26dc94219ce4c071ee9cd3ab40f6f3626ed2e1b6a28bc9235b5460043812",
+      "translation": "用作参照的东西，必须事先知道它正常的朝向。抽象符号或经过设计的标志可能难以分辨，特别是你只在其他处理过的图片里见过它时。数字 8 或 0 左右翻转后可能看起来一样。最好选有多个字符、阅读方向明确的文字作为参照。条件允许时，可以请拍照者在衣物旁放一张字迹清楚的仓库卡片再拍一张。公开讨论时不要晒含私人信息的面单；裁掉敏感信息的参照物或仓库提供的普通标记也能起到相同作用。"
+    },
+    {
+      "source": "Use a hypothetical example of a custom garment marked EAST 21. The saved proof reads EAST 21 on the back, with the number below the word. In a warehouse photo the whole word and number appear mirrored, while an adjacent paper card is readable. This suggests a local discrepancy worth checking. If both the card and print are reversed, request another unmirrored full view before raising a production claim. If EAST reads correctly but appears above 12 instead, the issue is number order. Explain the observed difference using the proof instead of calling it simply a mirror problem.",
+      "source_sha256": "175cb06f53b657e9a6e25383cd46fd7c4e9e08b51ea4dc485367d0392ba5b845",
+      "raw_target_sha256": "e15ce7941daa5e80e13edb5b30673d1f787a2a19f08a35b0ed4e1cd5ac1ce0fe",
+      "translation": "以一件定制印花衣物为例：已确认的效果图上，背面印着 EAST 21，数字 21 在 EAST 下方。如果仓库照片里的整组文字和数字左右颠倒，但旁边纸卡上的字可以正常阅读，就值得单独核查这处印花。若纸卡和印花都被左右翻转，先请仓库重拍一张未镜像的全景图，再判断是否存在制作问题。如果 EAST 方向正确，下面的数字却是 12，问题在于数字顺序。对照确认过的效果图说清具体差异，比笼统地说“图案反了”更准确。"
+    },
+    {
+      "source": "The low figure on a spreadsheet card can be a perfectly genuine price for something other than the item you meant to buy. Trace one selection from the seller page into the order summary before comparing two offers. The method works even when the prices appear in different currencies or the seller uses quantity breaks.",
+      "source_sha256": "fa0e703f9c2f422eef01592f460903d029b11de9a0df4c7bcb579758238a3570",
+      "raw_target_sha256": "c9d7647eddd3c7dbadd44906a443589979c21e7372468f74e91cab0720444386",
+      "translation": "表格卡片上的低价可能是真实售价，只是对应的并不是你想买的那一款。比较两家报价前，先从卖家页面选定一个规格，再看它进入订单后显示的内容和金额。即使页面使用不同币种，或者卖家按购买数量分档计价，这个方法也适用。"
+    },
+    {
+      "source": "Find the offer that produced the initial number",
+      "source_sha256": "6ac54afa7f88b20db961cc1841f94d3c5f6ed40a67fafae7e71adf79aa197207",
+      "raw_target_sha256": "bff2b0be4857509063d754565eb1f4867705205361563dae5b296ceb654c3e1d",
+      "translation": "先看页面打开时默认选中了哪一款"
+    },
+    {
+      "source": "Open the product page and record the marketplace, seller and item identifier. Then find the component or style selected when the listing first loads. A page showing a bag, matching strap and accessory pouch in one photograph can sell each component separately. The cheapest option may be the strap. A title describing the whole collection does not establish the contents of a single purchase. Select the exact item you want and see whether the displayed price, quantity unit or photo changes. Save the selected state as well as the URL, since reopening the link can restore the default option.",
+      "source_sha256": "d21a23b930b0be8a268edf693ebd015a26079cab7e7c78608acddfb408736585",
+      "raw_target_sha256": "d41c76f65f81659bb22b2c0c7cfce3508db5b2e53e9cc51741399f3ff3ec68e2",
+      "translation": "打开商品页，记下平台、店铺和商品编号，再看默认选中的是哪个款式或配件。一张图里同时摆着包、肩带和小袋，并不代表它们一起出售；最低价可能只对应肩带。选中真正想买的款式，观察价格、销售单位和图片是否变化。除了链接，也保存选中状态的截图，因为重新打开页面时可能又会回到默认选项。"
+    },
+    {
+      "source": "Read any price range as the bounds of the displayed offer until you know which choice maps to which price. The smallest size may be discounted, a sample may carry a different rate, or the seller may distinguish materials under what looks like a colour selector. If the listing changes price when choosing a swatch, expand the option text and compare model codes before assuming the colour alone explains the difference. A marketplace item number identifies the product family; the option controls which part of that family the seller is being asked to supply.",
+      "source_sha256": "4b3c1fb409cabe0b26e636747f75c02e1b970f860cba61ab1933b73fb23a6ca5",
+      "raw_target_sha256": "c6f7835ba8e59b45af7a7b0a957dcdfb0d3ef90a746e34ddd18dcaf1b2c40ea0",
+      "translation": "没有确认每个价格对应哪种规格前，价格区间只能说明这个页面覆盖的上下限。最低价可能对应特殊尺码、样品，或材质不同的版本。即使看起来只是选了一种颜色，也应展开完整选项文字并核对型号。商品编号可以在多个变体间通用，真正决定卖家应该发哪一件的是已选选项。"
+    },
+    {
+      "source": "Establish the sale unit before multiplying",
+      "source_sha256": "b86ceed6bcf51ed3d93570ceb7dabf88e02ee7bfe412db38f7f8b24497926368",
+      "raw_target_sha256": "bec4ef08f6e5238f54170d5901e7993f936732a0b3ed3bbf85f7ef590709110a",
+      "translation": "计算总价前，先弄清“一件”指什么"
+    },
+    {
+      "source": "Ask what quantity one actually purchases. A quantity of one might be one garment, one pair, a set containing two garments or a pack with several identical pieces. Write the unit in words next to the number. For example, write “one pack containing three pairs” rather than “one.” If the page uses several pictures to show the available colours, distinguish the number of colours on offer from the number of colours included in a pack. A variety photograph can illustrate choice without promising an assortment.",
+      "source_sha256": "917a9ca6a079f2d9186c3588b138372895e359dfd59f1d6a9e0a3c95a61dc52a",
+      "raw_target_sha256": "0b73d20c5ad997aa325fbb22c61e6300f698228668ceaa215fd06ecfce9ab207",
+      "translation": "确认数量填一时买到的是一件衣服、一双鞋、含两件衣服的套装，还是多件一包。把销售单位直接写在数字旁，例如“一包，内含三双”。页面展示多种颜色，只意味着有这些颜色可选，不代表每包一定包含图片中的所有颜色。"
+    },
+    {
+      "source": "Read quantity breaks as conditions",
+      "source_sha256": "21fc4872009761fdf145b879a05c9bef8d78f7463c4990a7c5b9f4f6f908b91c",
+      "raw_target_sha256": "0c638bc98057a26ff270b263ca8576b6fba5fa8b8181788046d7267cfd3f440f",
+      "translation": "按适用条件读取阶梯价"
+    },
+    {
+      "source": "A price tier applies only when its conditions are met. Check the minimum quantity, the quantities that qualify for each rate and whether the seller counts mixed options together. A ten-piece break across one style is different from a ten-piece break per size and colour. If the displayed table is missing from the imported LitBuy view or appears unclear, consult the live seller offer and ask for the price of the exact mix you intend. Keep the seller response with the order rather than reconstructing the rule from the lowest price later.",
+      "source_sha256": "8f72fb9e961757d8b2ad3b738d0cf8c93e0d3af09e028685ef818d2f4957d8d4",
+      "raw_target_sha256": "42e613dd024379afa1aeb181ae0798d4ed3b8ad210730bf69ad88e3640a9e3cf",
+      "translation": "先看起订量、各档所需数量，以及不同规格能否合并计数。同款凑够十件与每种尺码、每种颜色各买十件，是完全不同的条件。如果 LitBuy 导入页没有显示完整价格表，打开原卖家链接，把自己想买的颜色、尺码和数量一并询价。将答复和订单放在一起保存。"
+    },
+    {
+      "source": "Separate seller prices from delivery and conversion",
+      "source_sha256": "be301bdefebeea7eac5e9ece407d2a062f91b4274067ac009dc785f13ef86fdf",
+      "raw_target_sha256": "445a9c4f89eb4bf57c3ca55973f76d05a6f84b4277b66d4ca4de92ddb12d461c",
+      "translation": "分开记录商品价、运费和币种换算"
+    },
+    {
+      "source": "Look at the selected item's unit price and subtotal in its original currency. Record any seller-to-warehouse delivery charge separately. Then check whether a displayed conversion gives an estimate in your preferred currency and which currency is actually requested at payment. A price conversion can change between visits even if the seller's original figure is unchanged. Keep the observation time and original amount, especially when comparing a saved spreadsheet row with a later checkout. Round only at the end of a comparison if possible, since individually rounded unit amounts can add up differently from a converted subtotal.",
+      "source_sha256": "85cfc5f9633b1ba6ec2ef91ee57111ec66077c2c8cbc0d8ec8bfa16d90b9adef",
+      "raw_target_sha256": "5661c0835afab4145441e94a583e660544708e24b38c04bef0074ae78d072cbc",
+      "translation": "先记下原币单价和小计，把卖家寄到仓库的费用另列。再看页面显示的换算金额是否只是估算、付款实际使用什么币种。卖家未改价，换算后的金额也可能随时间变化。比较旧表格和新结算页时，保留查看日期及原币价格，尽量最后才四舍五入，以免逐件取整后与总额换算出现差异。"
+    },
+    {
+      "source": "International parcel delivery is a later question. The item price cannot establish the packing method, destination, route or eventual packed measurements. Save a separate freight estimate with the inputs used rather than adding an unexplained allowance to each product price. If two items share domestic delivery or an outbound parcel charge, count the shared amount once in the order total. For a personal budget you can allocate that charge across items by a chosen method, but keep that allocation visibly separate from the charges the seller or agent actually billed.",
+      "source_sha256": "dfe9d4e24c0f0e77ea736aa3dfad919d27aa22b591536f04c456aefb4487623f",
+      "raw_target_sha256": "2f74cadfa7ec0b0b2c87e954b5c668af1839bc81ac667548e9cdde39aff4d039",
+      "translation": "商品售价还不能决定国际运费：打包方式、目的地、线路和包裹最终尺寸都可能尚未确定。另存运费估算及其输入条件。几件商品共用一次国内运费或国际包裹运费时，在订单总额里只计一次。为了个人预算分摊运费也可以，但要把自己的分摊与卖家或代购实际收取的费用区分开。"
+    },
+    {
+      "source": "Compare two offers for the same purchase",
+      "source_sha256": "89061c705c5c7ff4b0c030ab3cce3cc279fbeafe93cfcb82e242baf6085ace44",
+      "raw_target_sha256": "3ed1baaebfb8d80513655498ee4a150d1b22e4de449d0b0e0feb0da0f96e72fc",
+      "translation": "把两家报价换算成同一份实际购买需求"
+    },
+    {
+      "source": "Make each comparison line describe the intended physical result. An example might read “two medium grey shirts, version B with pocket, delivered from the seller to the warehouse.” Check that both sellers offer the same count, model, size and included components. If one seller includes a detachable liner or spare strap, record the difference and decide whether the buyer values it. Two products styled to resemble each other in photographs can have different construction. An inexpensive offer lacking the feature that drove the search is an alternative product rather than a discount on the same one.",
+      "source_sha256": "3d9ef99bc04e5547673208282a6a52a1c3285eb18f7b528e808c8ddd590f2585",
+      "raw_target_sha256": "ea134e839205032108e63d8508169e4dc11a2cc0164903f524424d42f6aec2fb",
+      "translation": "用能核对实物的一句话描述需求，例如“两件灰色中码衬衫，B 版，带口袋，包含卖家寄至仓库”。逐项比较数量、型号、尺码和配件。一家附可拆内衬或备用肩带，就写明这部分差异，再判断是否需要。照片里造型相似，不代表结构和功能相同；缺少所需功能的低价款属于另一个选择。"
+    },
+    {
+      "source": "Review stock and the current seller terms before choosing. A price shown on an unavailable colour may remain visible on a listing with other options still in stock. Likewise a discount might apply only to a preset bundle that cannot be split. If a seller proposes a substitution after the order is placed, recheck the price tier, total quantity and domestic delivery for the revised mix. A substitution that seems minor can change the minimum or remove a package component. Ask for the revised total in the original currency before authorizing the changed order.",
+      "source_sha256": "6d5da7222674844167b58978793f0632109b50ac3c3fd2890fdeb37eafd0edea",
+      "raw_target_sha256": "ba5d4b9e68e1d20d943ab1bfa2b1a98b08b879c0501a935b96ca16a6e4ed1cf0",
+      "translation": "下单前再查库存和卖家当前条款。已售罄颜色的低价可能仍留在页面上；优惠也可能只适用于不能拆卖的固定组合。卖家提出换色或换款时，重新核对阶梯价、总件数及国内运费。即使替换看起来很小，也可能改变起订条件或配件内容。接受变更前，先请对方确认新的原币总额。"
+    },
+    {
+      "source": "Reconcile the price against the purchase record",
+      "source_sha256": "06fbd20177c6b1e3ac08db1d26dd18bcb8749476664a5f5b248a5814397dfb07",
+      "raw_target_sha256": "081d29daf22be53b5159b8417d2e260526307ec2ad94cbf829acf9fe4dc1c72a",
+      "translation": "在付款页核对所选规格和最终金额"
+    },
+    {
+      "source": "At checkout, read the original option wording, unit, count, unit amount, subtotal and delivery line together. Calculate the result once from the selected values. If the arithmetic fails, identify the exact difference rather than challenging a broad total. A useful inquiry says that the price table shows one rate at the specified quantity, the cart appears to use another, and the chosen options are listed in the attached confirmation. If the unresolved amount is material to your budget, wait for a clear answer through the current order channel before payment.",
+      "source_sha256": "cb6382e40df3b021774b0a589e10fe3f8bb7e3d6cf8c922d2d6df8acf6568b58",
+      "raw_target_sha256": "3cce4c9d87ff5013933b8a4cfd75120e0aa8820229c6c55fae6660eb385c60db",
+      "translation": "把规格原文、销售单位、数量、单价、小计和运费放在一起看，用选中的数值复算一次。发现差异时，说明哪个档位和购物车中的哪项不同，并附上所选规格的确认页。如果差额会影响预算，付款前先通过当前订单渠道问清楚。"
+    },
+    {
+      "source": "Once the seller accepts the order, save the paid confirmation, option text and supporting listing image. Keep the earlier comparison as a dated research record. If the price subsequently changes, the live listing will describe the new offer while the paid confirmation still identifies what you agreed to buy. If an item arrives missing a separately priced accessory, this same record shows whether the accessory was among the paid selections. A few exact details captured during price comparison can therefore help you check the warehouse delivery as well as the amount you spent.",
+      "source_sha256": "d599cc62d4544aac61ae6f9c6676e456ead76f8d2529ee01f8b70bea9c943584",
+      "raw_target_sha256": "79c589bc2c7170980fbb4a4890f8059c10a85ac9144b060d498248828c9cbadf",
+      "translation": "卖家接单后，保存付款确认、选项原文及相关商品图。早期比价记录应保留日期。卖家日后调价，当前页面只能说明现在的报价，付款确认才能还原当时买的是什么。如果到仓少了另行计价的配件，同一份记录也能证明这件配件有没有实际付款。"
+    },
+    {
+      "source": "A warehouse image that looks green on a phone can show a grey fabric under warm light. It can also show a genuinely different option. Start with evidence of what was ordered and photographed, then decide whether a new picture, a label check or an after-sales inquiry would answer the question.",
+      "source_sha256": "c57d296f3adb24f68d6135db9ddbd19cb7fd8d2b688571c88ca9597e290fec5b",
+      "raw_target_sha256": "cb0568990d9a443a4b986865d5dfa7307197f4a188da2d810b8febcc36dd4dfe",
+      "translation": "仓库照片在手机上看起来偏绿，可能是暖光下的灰布，也可能真的发错了色。先核实订单选项和照片对应的实物，再判断是需要补拍、查标签，还是应该提出售后问题。"
+    },
+    {
+      "source": "Identify the specific order and the expected colour",
+      "source_sha256": "f0a5390b8f6cdd34938dd55d1d13de2d85d648aa07104a71fa7243ed3b2ef8ca",
+      "raw_target_sha256": "d3143b34f97acce9d1299056b5ae1195e9a6225103f2a133b08cd7d44419f7f0",
+      "translation": "确认订单、实物和预期颜色"
+    },
+    {
+      "source": "Open the paid order and note the seller, listing, base model, size, colour wording and any option code. A product listing can keep one marketplace identifier across many colourways. The number that identifies the family does not necessarily tell you which colour was purchased. Compare the exact saved selection with the text in the order confirmation. A saved product link reopening to its default swatch may show a different choice from the one the buyer actually paid for. Keep a screenshot of both when they disagree and label which came from the confirmed order.",
+      "source_sha256": "f4e7473f6f09b9b18121a25c2e85f9b4c3bd7dcfd4189c446b78f24e33512020",
+      "raw_target_sha256": "f4f7c22f2b84f0717f4e1236bf6dda3133fa892a50abf8abdf73f7e1c80766bc",
+      "translation": "从已付款订单记下卖家、商品、基础型号、尺码、颜色原文和规格代码。多个颜色可能共用一个商品编号，编号本身未必能说明所购颜色。若重新打开链接时默认色与订单不同，分别截图，并标明哪一张来自已确认订单。"
+    },
+    {
+      "source": "Find the warehouse entry tied to that order. If several similar garments arrived together, identify which photograph belongs to which entry before comparing colours. A useful reference includes the complete item and the visible option or packaging label where available. A close crop shared in a message can lose that connection. When two units of the same garment were ordered in different colours or sizes, mark each separately. This avoids attributing an image of the correct second unit to an allegedly incorrect first unit, which would send a support case in the wrong direction.",
+      "source_sha256": "2a166a021ff144995693540e3a56a4b1d5a7fc624703492d9ec03f88292dc7a5",
+      "raw_target_sha256": "3233932f6852dafd419a75d7bc4b9380971d7a379b1c0c14cf8b961d1222cce0",
+      "translation": "找到对应的入库记录。多件相似衣服同时到仓时，先分清每张照片拍的是哪件。尽量保留能同时看到完整商品和规格标签的图片。单独转发的局部图容易失去关联。同款不同色或不同尺码应分别标记，以免拿第二件的正确照片，误判第一件错发。"
+    },
+    {
+      "source": "Understand the limits of photographs from different sources",
+      "source_sha256": "31b9d69129ff310158f45da501e34b5c50167f85c4723e00d8537575fd3432ce",
+      "raw_target_sha256": "04e5088e0d7e4ef3ba692f95fc3ab52381e1cc2933c5b9b1dafbb21ebe1848ea",
+      "translation": "区分卖家宣传图、历史质检图和本单实拍"
+    },
+    {
+      "source": "Seller studio photographs, pictures uploaded by previous buyers and images of your received unit answer different questions. Seller photographs describe the marketed appearance and may involve controlled lighting or editing. Historical QC photographs can show how an earlier unit looked under other conditions. The photographs attached to your warehouse order give evidence about the unit being handled for you. LitBuy-focused QC guides distinguish these sources; keep their roles separate when collecting images. A match to a previous buyer's photograph can be an encouraging reference while leaving the identity of your own selected option unresolved.",
+      "source_sha256": "bbf740a91aefe3bbfb21ab5f9517db85d0540055c22c2b2e19cf8ab79afccf7b",
+      "raw_target_sha256": "7dfcbaaf86af37176be3da15868214fe0ad74f3ca9912b7fd8f95cdffa721341",
+      "translation": "卖家图描述宣传效果，可能经过布光和后期；其他买家的照片只能反映此前某件实物在另一环境下的样子。本单仓库记录所附的照片，才与这次收到的实物直接关联。收集图片时注明来源。历史照片与预期相符，可以作参考，却不能代替本单标签和选项核验。"
+    },
+    {
+      "source": "Look at how the light affects other objects in the image. A white label appearing yellow suggests that the picture has a warm cast, but a label photographed at a different angle may reflect light differently from fabric. A bright camera flash can flatten texture, while a shadow near a fold can make adjacent areas appear to be different shades. Compare more than one view and look for a change that remains visible when the angle changes. If the garment is shiny, brushed or metallic, the direction of the fibres and light can noticeably alter the apparent colour within a single photograph.",
+      "source_sha256": "1db618e3dc4cbdebad95de5dc45cf59ad0825bfb9b1d900746002846d3747074",
+      "raw_target_sha256": "e3f3483d0c02361ea52bc3821c6e46d17b4e78145a5fd2a83d28dce0503a1bc9",
+      "translation": "观察同一画面里的其他物体。白色标签偏黄可能说明画面整体偏暖，但标签和布料的反光角度也可能不同。闪光灯会削弱纹理，褶皱旁的阴影会让相邻区域看起来色深不一。多看几个角度，确认疑点是否持续存在。亮面、拉绒和金属感面料甚至在同一张照片中也可能随纤维走向呈现不同色调。"
+    },
+    {
+      "source": "Use construction and codes to distinguish similar options",
+      "source_sha256": "1827dd15d1ea9537ab35654701f4c18e3d46f3710bfcbc1a645a11fa8c052293",
+      "raw_target_sha256": "4692d12a29c32def5f76f082b03f10e7c9778c9e51cb25697c5d84255eee3f8e",
+      "translation": "结合结构细节和代码识别相近颜色"
+    },
+    {
+      "source": "Look beyond hue for features that separate the seller's options. Navy version A might have a white logo while navy version B has a matching dark logo. A cream bag might have tan edging while its ivory counterpart has white edging. These details can remain recognizable under varying lighting. Compare the exact combination in the order with the combination visible on the received unit. If the seller's option code is printed on a tag or clear packaging, photograph it and compare it character by character. Note an unreadable character as uncertain rather than guessing from the colour you expected.",
+      "source_sha256": "913ed0147764e9fe144a8b0109d42299bf648ba889f9f6fd295af0dcfe8248f1",
+      "raw_target_sha256": "8af664bea1636a5827a79bb514c35369c88415716073119e77de791ee24c1d9c",
+      "translation": "不要只看色相。藏青色 A 版可能配白色标志，B 版则配深色标志；奶油色包可能是棕边，象牙白款则是白边。这些细节在不同光线下往往仍可辨认。对照订单和实物的完整组合。若吊牌或透明包装有代码，拍清楚后逐字比对；读不清的字符先标为待确认。"
+    },
+    {
+      "source": "Ask for a photograph designed to resolve the difference",
+      "source_sha256": "245e4de7b9cd0947a74ee6011d32584600f2eaff82ed0357d558bc2ed8d698a2",
+      "raw_target_sha256": "fa7cd16f17b6a7956af4235f6b87c6aeca8f84b8cba8ddb341408011442a782c",
+      "translation": "请仓库补拍能回答具体疑问的照片"
+    },
+    {
+      "source": "Frame the request around the unresolved observation. For example, ask for one picture of the garment with the order's option label visible, and one full view under neutral light showing the contrast trim. Ask through the current LitBuy order channel whether the requested view is available and whether any additional charge applies. Include the warehouse reference so the handler can find the correct unit. A specific request avoids spending time on another close picture of the same ambiguous patch of fabric from the initial photograph.",
+      "source_sha256": "e742ea2d898fa6f98f503d2a8b01b3add4b564d471772adb7002b4f06cbe13c5",
+      "raw_target_sha256": "e1481d88852a6741ad98328675499508a5f1cb13e0b2595b745890a877f2a170",
+      "translation": "把请求对准还没解决的问题。例如请拍一张能同时看到衣服和规格标签的照片，再拍一张中性光下能辨认撞色饰边的全貌。通过当前 LitBuy 订单附上仓库编号，并问清能否补拍、是否另收费。这样比再要一张同角度的局部照片更有用。"
+    },
+    {
+      "source": "For matching garments, ask whether both pieces can be photographed together under the same conditions where practical. Include the relevant references and name the areas to compare, such as the jacket sleeve and trouser thigh. This can help establish whether two physical fabrics look consistent relative to one another. It does not establish a colour standard across screens. If a sealed item would have to be opened, clarify whether opening is permitted and whether it would affect return conditions. A new photograph is helpful only when the information gained is worth the handling involved.",
+      "source_sha256": "4cf16a14ddf9ae21c1f87bfa9ee510623ab671f5fc1ef4bbde36d1a3b112bf4c",
+      "raw_target_sha256": "12fbd5536f7cb22dcc5944d3516db08acedbeddb665d5d32a5fbce3408ac92b3",
+      "translation": "需要配成一套的衣裤，可以询问仓库能否在同一光线下同框拍摄，附上两件商品的编号，并指出想比较袖子和裤腿等哪些部位。同框有助于比较两块实物之间是否协调，但不能消除不同屏幕造成的色差。如果要拆封才能补拍，先询问是否允许以及会不会影响退货条件。"
+    },
+    {
+      "source": "Separate an option mismatch from a preference",
+      "source_sha256": "4d51a3f7513569bf68701fb945d11806d296fed695649f25a21fc54893a8f5b9",
+      "raw_target_sha256": "d69fd53604b595ffc96b733050cc2160996cf0521857758a9c0262446ae35265",
+      "translation": "区分发错选项和个人不喜欢颜色"
+    },
+    {
+      "source": "After reviewing the evidence, write your conclusion in two parts. First state the ordered option and the evidence for which option arrived. Then state whether the appearance meets your personal expectation. A buyer may dislike a shade even when the order and label agree. Conversely, a buyer may be willing to keep a different shade that was supplied by mistake. These situations lead to different questions for the seller. A precise description is more constructive than a broad statement that the colour is “wrong” without identifying the basis for the claim.",
+      "source_sha256": "774caeb63a4a9610bf159c12fcb93f101018af0f4e3ac33b39f276c825f3daaa",
+      "raw_target_sha256": "e402c588c21ef144545114b0071d23eff709b316b40f05a594c4d35ba2499d71",
+      "translation": "分两句记录结论：先写订单选了什么、哪项证据说明到了哪一款，再写外观是否合自己心意。订单和标签一致，你仍可能不喜欢实物的色调；即使错发，你也可能愿意留下。两种情况要询问卖家的事项不同。明确依据，比只说“颜色错了”更便于处理。"
+    },
+    {
+      "source": "If the option appears to be different, put the paid confirmation, relevant seller option description and warehouse label together. Explain the exact disagreement and ask what can be done before international dispatch. If the option appears correct but the shade remains uncertain, check the applicable return or exchange conditions in the current LitBuy order and Help Center. Decisions about eligibility or time limits depend on the actual purchase. Avoid relying on an unrelated buyer's deadline or treating a storage date as the deadline for resolving an appearance question.",
+      "source_sha256": "3e4dcf387eb4a77e5b4ff04252d39389b5571c467b61bfe75eb6f9d692d8a1bc",
+      "raw_target_sha256": "d4e2983dac967c57f714a724a94f524adbbea5c8b8ab04367a8c103439a37a5e",
+      "translation": "怀疑发错时，把付款确认、对应的卖家选项说明和仓库标签放在一起，说明冲突点，并在国际发运前询问可选处理方式。若规格正确却拿不准色调，查本单及 LitBuy 帮助中心显示的退换条件。别人的期限不能直接套用，仓储截止日也不能当成处理颜色争议的期限。"
+    },
+    {
+      "source": "Record the decision before choosing a parcel",
+      "source_sha256": "6972ea1b61ff8d63679d756301b5a95be40571e0091cca00b830a609c9163b5b",
+      "raw_target_sha256": "ff84c22ce6910350669dfd01ce461d99637f7a41f5e8f80a75504b1827213a5e",
+      "translation": "提交国际包裹前记下处理决定"
+    },
+    {
+      "source": "Mark the affected entry as accepted, awaiting a new view, or under inquiry. Keep it separate from other accepted items when choosing what to ship. For a two-piece outfit, consider whether shipping the confirmed piece separately would complicate a possible set return or make a final colour comparison impossible. Ask the agent about the current conditions before splitting the pieces or discarding packaging. If time matters, record the relevant deadline and the date you opened the inquiry rather than assuming the act of sending a message automatically changes the order terms.",
+      "source_sha256": "c99b8c1252afce2859216dbff50e9ad509d8b13f4c1d3c14a99a81b0516fbbce",
+      "raw_target_sha256": "a5d68ffbd92dfcec44f4cb31c815c7509726b68283fa26dd53bdf186e5f1f842",
+      "translation": "给该入库条目标注“已接受”“待补拍”或“询问中”，选包裹时与已确认商品区分开。两件套若先寄走一件，之后要整套退回或同框比色可能会更困难。拆套、弃包装前先问本单条件。记下实际截止时间与发起询问的日期；发了消息不等于期限自动延长。"
+    },
+    {
+      "source": "A useful secondary clue is the construction shared by colours in the same series. Imagine that the navy jacket has a matching dark drawcord while the black version in the saved listing has a light flecked cord. If the received photo shows a dark drawcord, you have one additional clue to record, alongside the hangtag and seller option. Check that the detail actually differs across the two current options before relying on it. Manufacturers may also change trims between runs. Explain which details agree, which one still looks uncertain and whether the distinction matters when the garment is worn alongside the rest of your clothing.",
+      "source_sha256": "4e5f8a351910ba895944b4adf1275660828d43e9a5ad4e009cc25832c471c3be",
+      "raw_target_sha256": "6a270b5f9955be4b94848d6e223d7d120b84d2e4ed3a58595493527a33065650",
+      "translation": "同系列不同色的辅料也是线索。假设保存的卖家图显示，藏青色外套用深色同色抽绳，黑色款用浅色杂点抽绳。仓库图若见深色抽绳，可把它和吊牌、订单规格一并记录。先确认当前两个选项确实仍有这个区别，因为不同批次可能换辅料。说明哪些细节吻合、哪里还不确定，以及这种差异会不会影响与你现有衣物搭配。"
+    },
+    {
+      "source": "A missing accessory can mean several things. It may never have been included in the paid option, it may be packed out of sight, it may be travelling separately, or the seller may have omitted it. Test these explanations in an order that preserves the evidence and prevents a premature international shipment.",
+      "source_sha256": "e3fbdce9f77a5a9ffe97eebc95766de3abd0da3f6c6c96e2c8b447bc92217f7d",
+      "raw_target_sha256": "051b8dd70397d3f8fcbe9f0b3da48bfae46b84a7923268492dfff3eee81dd704",
+      "translation": "看不到配件可能有几种原因：所选规格本来就不含它、它被包在里面、卖家分箱发货，或者确实漏发。按顺序核查可以保留证据，也能避免问题还没弄清就把主件寄出国。"
+    },
+    {
+      "source": "Establish whether the accessory was part of the purchase",
+      "source_sha256": "4453a68ceac19c11dfa7f4ffb591111179316879c3eab3c48356b41aa0db7f0c",
+      "raw_target_sha256": "ab5ae0df3e8cb343f503a4e346d76559455c130eaf21cbeb6f47b41091d680b5",
+      "translation": "先确认所付的规格是否包含这件配件"
+    },
+    {
+      "source": "Read the paid selection, not just the product title. A handbag listing might display a decorative strap under studio lighting while selling the strap as a separately priced option. A winter jacket may be photographed with a removable liner that belongs only to the insulated version. Find the seller's description of the exact model and option you paid for. Look for a component list, a package description or a seller response specifically confirming the accessory. Save the marketplace link and an image of the selected state with the date. The live default option can change after purchase.",
+      "source_sha256": "2322f3fd4451dc31987a3792fe12da1e032515bdb69b63020ebfb19eb6d6056e",
+      "raw_target_sha256": "2e064d2fb3453e6fd6caae2ab02d7e312cebb959c2f5d1b4b07369fc3c1e0ab1",
+      "translation": "以付款时选中的选项为准。展示图里的装饰肩带可能另售，冬装照片里的可拆内衬也可能只属于加厚版。找到对应型号和选项的部件清单、包装说明或卖家确认，保存链接和带日期的选项截图。商品页现在默认显示的版本可能已改变。"
+    },
+    {
+      "source": "Separate different kinds of evidence. A paid option named “bag plus long strap” directly supports the expectation of a long strap. A product family photograph of the model wearing a long strap supports a weaker inference. A message from the seller confirming that your particular colour and size includes it is stronger. A picture from another buyer shows what an earlier unit contained but may concern a different version or promotion. Record the strongest evidence available and label uncertainty honestly. This helps an order inquiry ask the right question, whether it concerns promised contents or clarification of an ambiguous offer.",
+      "source_sha256": "04da35d7dd971aac2fe4fb30da62c415b2dfe00651b5f7fa332005b89d97090f",
+      "raw_target_sha256": "8335524f4b72aae970dd3e61fbb383307824191358053900c91c90cb23c7b616",
+      "translation": "“包＋长肩带”的已付款选项，或卖家明确答复该颜色和尺码含肩带，比全系列宣传图更能证明长肩带应在其中。其他买家的实拍，只能说明此前某件商品的情况，也许对应别的款式或活动。写清哪些事实有证据，哪些还要询问。"
+    },
+    {
+      "source": "Locate the warehouse entry and count visible units",
+      "source_sha256": "4eeb5b89d6b33501dff09d34d0e7184eed0c9bb4374c0d931443a6df704eb509",
+      "raw_target_sha256": "029c2cad28b51cffd872b588d0ed82e64d88a272c9985190f9ba849202a3f56b",
+      "translation": "对应到本单的仓库条目，再清点看得见的实物"
+    },
+    {
+      "source": "Match the paid item to the LitBuy warehouse entry using the order reference, seller option and visible identifier when possible. If several similar items arrived, identify each before inspecting accessories. A detachable strap visible next to one bag could belong to a second item photographed in the same group. Conversely, a strap folded inside protective wrapping could be part of the correct item while remaining invisible in an overview. Record what can actually be seen, including the packaging arrangement, rather than writing “missing” as soon as an expected component is absent from one angle.",
+      "source_sha256": "009fd101ac0762b298ced6f01a16bf4f3c5a1727491229362bbeca97348c188e",
+      "raw_target_sha256": "09146a8e00d4c7626bc0cd2e6e357fa3f9f66b26299cc4f2fe2ac154851353ae",
+      "translation": "结合购买编号、卖家选项和可见标签，确认照片中的实物属于哪条入库记录。同一批拍了几个包，一条带子可能属于旁边那只；相反，正确的肩带也可能折在保护套里。先记下画面中能确认的东西和包装状态，不要仅凭一个角度直接认定漏发。"
+    },
+    {
+      "source": "Make a short inventory using the physical units appropriate to the order. For a camera bag, it might read one main bag, one long strap, two removable dividers and one rain cover. A photo showing the outer bag and a bundle of folded material does not settle the count of dividers or the identity of the bundle. Identify which components are confirmed, which are uncertain and which have evidence of absence. Use the seller's terms alongside your own description if the same translated word could refer to a handle, wrist loop or shoulder strap.",
+      "source_sha256": "57af81ef38cfee41c75cda12296c9e0030acf689cd585a522f71e6a26c10f9ab",
+      "raw_target_sha256": "aa5d49378be947f578a98c0742713ae264b8f2df450009d216007080e8f451e3",
+      "translation": "按实物列清单。例如相机包可能包括主包一个、长肩带一条、可拆隔板两块、防雨罩一个。照片上只见外包和一团折好的材料，既不能认定是防雨罩，也不能确认隔板有几块。把“已看到”“尚不清楚”“有证据显示缺少”分开。手提带、腕带、肩带译名相近时，同时附上卖家原词。"
+    },
+    {
+      "source": "Check the places a component could legitimately be packed",
+      "source_sha256": "6a15ca9fbe5e39445ed89ee8635f1289c740b2a858814062dcba109ff95a6ceb",
+      "raw_target_sha256": "0ad6e5a3a0114244c70bc82d009229d3bce9bf6bd0df3d54a989842128ed224b",
+      "translation": "检查配件通常放在哪里"
+    },
+    {
+      "source": "Small accessories are often placed inside pockets, protective sleeves or the main packaging. Ask whether the warehouse can check a specific location when it is safe and permitted to do so. A request identifying the inner zip pocket and the expected folded strap is more useful than a general demand to search the entire warehouse. If a retail seal, tag or protective wrap would need to be broken, ask what the order conditions allow. Some packaging may need to remain intact for the buyer to use available return options. Do not give irreversible handling instructions merely to improve the first photograph.",
+      "source_sha256": "b5080ec80b34d91d6aa39601b5e655185d0ae8732cddcacfe1cd94e433539435",
+      "raw_target_sha256": "8fa9cd006fec211f3d1ff6260649286418e5f7b5ee357604d38f03a2e5da05e9",
+      "translation": "小配件有时收在内袋、保护套或外包装里。可以问仓库能否在允许的情况下检查某个位置，例如“请看内侧拉链袋中是否有折好的长肩带”。若必须撕封条、摘吊牌或拆保护膜，先确认订单的退货要求；不应为了拍照而做无法恢复的处理。"
+    },
+    {
+      "source": "Consider how the component normally attaches. A removable hood might already be zipped onto the jacket and concealed by the way it is folded. A bag charm might be clipped inside for transit. A spare cable could sit beneath a cardboard insert. Use the seller's assembly photo or package diagram as a reference to explain where to look. A single new overview with the main item and loose contents laid out can answer multiple count questions. A focused follow-up photo is most useful after that overview establishes which component still needs identification.",
+      "source_sha256": "4bf71d52aaf4d10967af2190505e58dae5b502aa601ff3abc3ded7a86c1c7ba3",
+      "raw_target_sha256": "7312cd06884f51748d8fdab62f5cc385db6b64a55f7a8b0235b79e8ba805c6aa",
+      "translation": "按装配方式判断可能的位置。连帽可能已经拉在外套上，只是折叠后看不到；挂件可能扣在包内，备用线可能压在纸板夹层下面。附上卖家装配图说明要查哪里。先拍主件及所有散件的全貌，再针对仍分辨不清的配件补拍。"
+    },
+    {
+      "source": "Rule out a separate seller shipment",
+      "source_sha256": "ba74f799a8a6f53901cc4a0e7a1f634f5dd5c07e6f7e0a37bc6a6e42f56069cb",
+      "raw_target_sha256": "8b7d85f8e03cc494ea1dcb251fec02a021f5a639731cec2130198724dad6cbf0",
+      "translation": "排除配件单独发货的可能"
+    },
+    {
+      "source": "Check the domestic tracking information attached to the seller order. The seller may ship an accessory separately, particularly if an additional option was bought on another listing. One warehouse entry can therefore represent only part of an order. Ask for the corresponding domestic carrier and tracking number if the seller claims a second package exists. A promise to send the piece later is different from dispatch information for a package already in transit. Keep both possibilities distinct in your record so that you know which update to request next.",
+      "source_sha256": "04d465fbdb027feca481cd4dc9c2df5d3a647bbf505fc9a14651a0f61b032199",
+      "raw_target_sha256": "5b695034e1970e94dd68abef8bf8f66270bf62bf67608e9f5fac719de49d51d0",
+      "translation": "查看卖家订单关联的国内物流。另一个链接购买的配件，可能由卖家另发一包，因此一条入库记录未必覆盖整单。若卖家说还有第二包，请对方提供对应的国内承运商和单号。“以后会补发”与已经有可查询的在途包裹应分别记录。"
+    },
+    {
+      "source": "For example, a buyer orders a bag and a separately listed strap from the same shop. The bag arrives in warehouse entry A. The seller says the strap is in package B but gives only the original order number. Ask for B's delivery or tracking reference when it is available. If B later arrives, match its option and fittings to the bag before closing the inquiry. A strap in the right colour with the wrong type of clasp does not resolve the original compatibility requirement. If the seller confirms everything was packed in A, return to the remaining evidence about the contents of that package.",
+      "source_sha256": "fae9e072fea969ff2ef9e7bcaed2e881b8405d172c113e61f27818b2c3f13f90",
+      "raw_target_sha256": "c4cbb66bdc21c8ab07c9f54c9fdf740f703bf57a5556c70106b7005aaa5f4660",
+      "translation": "例如，同一家店里，包和另一个链接上的肩带分别下单。主包已进入仓库条目 A，卖家说肩带在包裹 B，却只给了原订单号。等 B 有运单后索取并核对。到仓还要看肩带颜色和扣具是否与主包匹配。若卖家确认所有配件都放在 A，则回头查 A 的包装和清点证据。"
+    },
+    {
+      "source": "Send an inquiry with one specific resolution request",
+      "source_sha256": "43b8a57422d3f0e447010c4ebd2bfd7f030259812830c6bc5def4d7302d23223",
+      "raw_target_sha256": "82e403c1f72cd499e5a2fb9597a891d32293fcb3f5b928f80b24bed7856bb431",
+      "translation": "提问时只提出一个能落实的核查请求"
+    },
+    {
+      "source": "Use the current order channel and give the purchase reference, warehouse reference, component description, paid option and relevant photograph. State what has been checked. An example would be “The paid option includes a detachable crossbody strap; the warehouse overview shows the short handle only. Could you confirm whether the long strap is inside the bag's protective sleeve?” This leaves room for a simple check before escalating the matter. LitBuy's Help Center lists after-sales requests for missing or damaged items. Consult the terms relevant to the actual order and stage.",
+      "source_sha256": "d2e9967b7c2eda6fbe5835e5dfceda09db9586285f5689a22413cd75adeca1ce",
+      "raw_target_sha256": "fb9cf19f6d45487e69c55900c17b8a42771fa30c1137ad2b794535cd174fc56a",
+      "translation": "在当前订单里附上购买编号、仓库编号、配件说明、已付款选项和照片，并说明已经查过什么。例如：“所选规格含可拆斜挎带，全景图只见短提手，能否确认长肩带是否在保护套里？”LitBuy 帮助中心设有缺件或损坏的售后入口，具体步骤以本单当前阶段和条款为准。"
+    },
+    {
+      "source": "If the component is confirmed absent, ask what remedy is available and what each option covers. The seller might propose sending the missing part, exchanging a whole set, or making another arrangement. Check whether an accessory resend would have its own shipping cost or affect the timing of the main item. If a return is proposed, establish which components and packaging need to go back together. Preserve any evidence of the received condition. A request is easier to handle when it distinguishes the value and function of the absent part from the condition of everything that did arrive.",
+      "source_sha256": "21eef75c6845fcfbd8926b4d2af2d54a48f1ecd061569c3255158922160a8c78",
+      "raw_target_sha256": "95b06d1da97b38aa84bc3ea2469c5d698c8f7757143a859214cc0b696414f58d",
+      "translation": "确认缺件后，再问可选方案及各自覆盖范围，例如单独补发、整套更换或其他安排。补发配件是否另收运费、主件要等多久？若退回，哪些散件和包装必须一起交回？保存到货时的状态，并把缺件的功能和价值，与已经收到的部分分开说明。"
+    },
+    {
+      "source": "Check the resolution against the original purpose",
+      "source_sha256": "ee65b9aac466fa33deff5515bc2a3cfa169d1947d6f6a8dd30c538a5e48e7586",
+      "raw_target_sha256": "453e9006ccb360524a401d2cb17bfe34ddf31365cf18eaa964d40d73aa6f7b86",
+      "translation": "最终方案能否满足当初购买的用途？"
+    },
+    {
+      "source": "Before approving an international parcel, decide whether the item remains usable without the accessory. A spare decorative charm and an essential load-bearing shoulder strap have different consequences. If the seller offers a partial refund, record the amount, currency and whether accepting it closes the case. Compare that outcome with the actual cost and feasibility of obtaining a compatible replacement where you live. If a resend is agreed, wait for the new warehouse entry or consciously decide whether sending the main item separately is worth the extra handling and possible freight.",
+      "source_sha256": "8610c34edf7e9c2932f93985787d1eb1ff1df951885066c8da36a268f36e9e0f",
+      "raw_target_sha256": "3e73fe1c1efab55a1f2440c861fb4ebfdce0a4d6f4fc8d99f9195fa70ab62158",
+      "translation": "提交国际包裹前，判断没有配件还能否使用。装饰挂件和承重肩带的作用显然不同。若卖家提出部分退款，核对金额、币种和接受后是否结案，再与当地购买兼容替件的成本比较。若决定补发，等新配件入库，或明确评估主件先寄所增加的处理和运费。"
+    },
+    {
+      "source": "Mark the case closed only when the replacement component has been checked or another agreed outcome has occurred. Photograph the fittings and size if compatibility matters, then list both the main item and accessory in the final packing record. If you accept a refund instead, mark the accessory as refunded and absent. This prevents a second support inquiry when you later open the international parcel and cannot find a part you already agreed would not travel. The final record should explain exactly what you expected, what the warehouse found and how the difference was resolved.",
+      "source_sha256": "8e5af14b3ea7d4da2c1878c00d85d0b2e7afae9e43e7e3c8f856d1c8adeb1111",
+      "raw_target_sha256": "30b000dc9726a21a4644d209960b402e4983e8bfb2f500d437d677b9c9ec73bd",
+      "translation": "补件到仓并核对无误，或其他约定方案确实落实后，再将记录标为解决。注明最终包含哪些配件和各自的仓库编号。主件和补件分开寄送时，分别跟踪。这样以后查到一个包裹“已送达”，也不会误以为另一个已同时到手。"
+    },
+    {
+      "source": "When the missing piece attaches to a particular point, photograph that connection as well as the pieces received. For example, two metal rings on a bag show where a shoulder strap could fit. They do not establish that a strap was sold with this option. Combine that view with the purchase selection and a photograph showing everything taken from the package. If the seller sends a strap separately, compare its clip shape and length with those attachment points before treating the order as complete. Receiving a physically similar spare can still leave the bag unusable in the way that motivated the purchase.",
+      "source_sha256": "6c1954d264d34cc8f3afafcce2c63d0f6508214483b3c02e0a2cd5b67ba43080",
+      "raw_target_sha256": "a76665ce991c42a3d52b6497900c7e0e8c882dbd892b82f3321db9a8a1a44e33",
+      "translation": "如果配件必须接在特定位置，同时拍清接口和配件本身。例如，扣具不能装上并不等同于完全没有肩带。记录缺的是哪个部件、现有部件哪里无法匹配，要求卖家按原规格核对。这样即便需要补发，也能较准确地指出应该补哪一件。"
+    },
+    {
+      "source": "A seller can update a hero photograph, remove a colour option or reuse a listing for a revised product. A bookmark lets you revisit the page as it exists today. To compare an eventual warehouse delivery with what you actually ordered, keep a small, dated record of the offer as you accepted it.",
+      "source_sha256": "b146050cf8e9089f95fb90ffc50bbe1202e19bce04d9cdc10921e545e10c6683",
+      "raw_target_sha256": "4fbc41dc265cb8e769307e3e4fa7e3e60b09327c92f186f2322ae00e65c88769",
+      "translation": "卖家可能更换主图、删除颜色选项，或者用同一链接出售新版商品。下单前后留下少量有日期、能对应具体选项的资料，比事后只找到一个已改动的链接有效得多。"
+    },
+    {
+      "source": "Preserve the selected state rather than a generic thumbnail",
+      "source_sha256": "a93dfc0e4a22beac50226394211c0c516955a5c0850c9cd4e3064e916bfafa59",
+      "raw_target_sha256": "ec86fad0db73e9ab5279524cbdd3242e323101f8ca319fdb388efe490f09d0a6",
+      "translation": "保存已选规格，而不只是一张商品缩略图"
+    },
+    {
+      "source": "Open the live seller page and choose the exact model, colour, size and package you intend to buy. Check whether the page changes the main photograph, quantity unit, price or stock status after each selection. Save a view with the selected option visible and the related picture or description in context. If the page has a long scrolling layout, separate captures may be clearer than one unreadably small image. Keep them together with a short note explaining how the chosen option connects to the pictured product.",
+      "source_sha256": "da487d663fb685746e71762bbc49d838a532ab5e7d8f19608421b5b99c35684f",
+      "raw_target_sha256": "c81cf8e2842c30364e664475b25deedd832acb36570dff6dc4a7857656c8d7be",
+      "translation": "打开实际卖家页面，选定准备购买的型号、颜色、尺码和组合，观察价格与描述是否随之变化。保留选项文字和对应图片，标注日期。页面很长时，可拆成几张清晰截图，加一条简短说明把所选规格和商品图对应起来，不必把整页压成看不清的小图。"
+    },
+    {
+      "source": "Save the marketplace, shop name, item identifier and URL in plain text. Keep the LitBuy product or order link separately. These identifiers serve different purposes. A marketplace link identifies the seller offer, a selected option identifies a purchase choice within that offer, and an agent order reference points to the transaction in your account. A seller can reuse a single item identifier across several versions. For example, the black short jacket and navy long jacket can share a listing while having different construction and size charts. The item ID alone cannot settle which version was purchased.",
+      "source_sha256": "1e1c7577ab5e0e4cbcec5df998774d164ca0dbc97e1f52a4d24ae9d3c91748fb",
+      "raw_target_sha256": "80cb352347dc1fe54fb30bd1541ea4d0705c61cbe0aa6c0d3e4ae32f8b226922",
+      "translation": "另以文字保存平台、店名、商品编号和网址。LitBuy 商品或订单链接单独记录：卖家链接指向一个报价页面，选项说明你买其中哪款，代购订单编号则对应账户交易。黑色短外套和藏青色长外套可能共用同一编号，却使用不同结构和尺码表。"
+    },
+    {
+      "source": "Capture only the claims that matter to the decision",
+      "source_sha256": "d6a9dca99e34cf4b9ac6b90fd046036af8778ff8fbe0bff8547a81321aefff53",
+      "raw_target_sha256": "1eecf6e2c2b049cddac7c1b8c61a17db67ca13a33d359a130119a43324f61e94",
+      "translation": "优先保存会影响购买决定的商品说明"
+    },
+    {
+      "source": "Identify the features that would make you keep or refuse the item. They might include a detachable strap, a particular fabric composition, a measured garment length or a two-piece set. Save the seller's specific description of each relevant feature. A general gallery of attractive images has less evidential value than one clearly labelled option table. When a feature appears only in a promotional photograph, record that limitation. If the seller confirms it in a message especially for your selected option, preserve the answer with enough surrounding text to show what question it addressed.",
+      "source_sha256": "d39d9a6cbbfa2f65ddb6aaad54cc96bb6ddb61bd68bf485fbd3d4ac2d57d9526",
+      "raw_target_sha256": "a538759e2aca3f379a04de01b3a4d593548cda9a92693da5def1a5f0a4d2c9e2",
+      "translation": "先列出缺少就可能不买的特征，例如可拆肩带、面料成分、衣长或套装内容。逐项保存卖家的具体说明。能看清规格的一张选项表，通常比一批无标注的好看图片更有用。只出现在宣传图中的配件应注明尚未确认。若卖家为你选的规格作出答复，连同提问的上下文一起保存。"
+    },
+    {
+      "source": "For a hypothetical padded coat, you might save the chosen colour code, selected size, chart showing back length, description of a removable hood and statement of the included belt. The photo of a model wearing boots adds no information about the coat's contents. A small record organized around four relevant claims is easier for another person to review later than thirty images with no explanation. Preserve original option terms alongside translations. A later translation engine can choose different words for the same seller label, and a translated nickname can lose a model suffix that distinguished two options.",
+      "source_sha256": "6c2cf1da00b6755c0fbe11bb1a9ab41f022a88aea10918036c84e81c6662038c",
+      "raw_target_sha256": "1c1bc4633957796e0d963a9d8da63577fbf0fdab8e29653b17b6caab8fcc83df",
+      "translation": "以棉服为例，可记下颜色代码和尺码，保存标明背长的尺码表、可拆帽说明以及是否含腰带。模特脚上的靴子与棉服配件无关。围绕少数关键承诺整理，比存几十张看不出用途的图更便于复核。卖家的标签原文也要保留，翻译可能变化或省去区分两个型号的后缀。"
+    },
+    {
+      "source": "Separate the advertised figure from the paid amount",
+      "source_sha256": "514aa38c8e95885152df47f676cc2c5effae296cebd4c339b4da8be1af6a9b97",
+      "raw_target_sha256": "98ceaf279c6be7f98d04f42af9072271a1a582441ddd7aaf31665175854dc26e",
+      "translation": "区分浏览时的标价与实际成交金额"
+    },
+    {
+      "source": "Record the selected unit price, quantity, currency and any domestic delivery amount shown at checkout. If a discount depends on a quantity tier, save the applicable tier and the actual selected mix. Then preserve the paid confirmation. The price available when researching the product may differ from the price accepted when ordering. Distinguishing the two dates prevents a later price drop from being confused with a billing error. A marketplace page revised after payment describes the current offer; the confirmation records the amount paid on your order.",
+      "source_sha256": "bc03208eb5a5ce3e1afdfdd92cfc3973ac844657ece81510fe6f60d5ced346e9",
+      "raw_target_sha256": "7ded8609ae6eaa457de4df02fcae049172cc6f794ae04290470bfb2fb61d96ed",
+      "translation": "在结算页记录所选单价、数量、币种和国内运费。若价格与数量档位有关，保存对应档位和实际混选的规格，再保存付款确认。浏览日期与成交日期要区分；之后降价不会自动证明先前多收了钱。新页面说明当前报价，付款凭证记录这笔订单实际付了多少。"
+    },
+    {
+      "source": "Make evidence readable without oversharing",
+      "source_sha256": "e41ba01e97ce2fcb42dd718840ea9b66c1a14644e3ffe5207e07a28b1d2cb8df",
+      "raw_target_sha256": "b7f267e23cfd8514ad9f9354fa741cc2f7b811ffeb4808bb975bafc0da6ccfb1",
+      "translation": "让凭证容易核查，同时保护私人信息"
+    },
+    {
+      "source": "Give files descriptive names containing a date, a short item reference and what the image shows. Use local labels for personal organization and keep the full order reference in a private record. If sharing a case with the official order support channel, include the specific order and warehouse references necessary to identify it. If asking a community for general advice, remove names, addresses, parcel labels, account identifiers and payment details. The same screenshot can have very different privacy implications depending on its audience. A crop showing the option description is usually enough for a general question about what it means.",
+      "source_sha256": "e7811aadebe28550356af221acc089746c60463113c5361edec18348ee0911c2",
+      "raw_target_sha256": "276b43cf5dc51142cdea304a276f74f0d82b74457fd1fe7215632b2c8fc34f61",
+      "translation": "文件名可写日期、简短商品名和画面内容，完整订单编号保存在私下记录。通过官方订单渠道处理时，提供定位订单所必需的购买和仓库编号；在公开社区只问选项含义时，可裁出相关区域，移除姓名、地址、面单、账号标识和支付信息。"
+    },
+    {
+      "source": "Write a brief accompanying note in your own words while the purchase is fresh. For example, “Selected navy B because it includes the inner liner; seller chart measured from the collar seam, not the shoulder.” Keep the original seller image unedited and create a separate annotated copy if arrows or highlights help explain a detail. Annotations should direct attention to evidence rather than obscure nearby conditions or exclusions. If the description is in another language, keep the original wording beside your interpretation and clearly identify which is which.",
+      "source_sha256": "bb4e6f15cf5f60d43b888fc31073c28d9312054d8813fe9c0c43091947ea85ac",
+      "raw_target_sha256": "3d5fd3651d53339af9067396ebcf5facc5ebb097dfec5d8e4b002d810e3503a6",
+      "translation": "下单时顺手写一句自己的选择理由。例如：“选藏青色 B 版是因为含内衬；表格从领口接缝而非肩部起量。”原图保留不改，需要画箭头就另存标注版，别挡住旁边的适用条件或排除项。有翻译时把原文和自己的理解并列，并注明哪部分是解释。"
+    },
+    {
+      "source": "Compare a revised listing without rewriting the past",
+      "source_sha256": "2de3a8b4cffe055758694c055aa4d0c89202d76b164bdf0a2542afe15a6519a9",
+      "raw_target_sha256": "9f5c31adc16c9102f7f56db56770189f38873543c937f49c01f8ed4495284326",
+      "translation": "保留新旧两个版本，再比较变化"
+    },
+    {
+      "source": "If the seller changes the page, save the new version with a new date. Compare model, option text, chart, quantity unit and included pieces. A change of hero image with identical option details might be purely presentational. A changed code or new component description can materially affect what a new buyer receives. Do not silently replace the original capture with the new one. Keep the two versions side by side and write a one-sentence summary of the difference. This makes the point in dispute visible without requiring support to reconstruct the entire listing history.",
+      "source_sha256": "cce6177968ce03a41f4d5f9ec51c6f297b850aa400805cc85133e39b167abf4d",
+      "raw_target_sha256": "4d053a5fca442b582642de768e71e4a11490b47648f13192a09460651c389137",
+      "translation": "卖家改页后给新版另存日期，比较型号、选项文字、尺码表、销售单位和组合内容。仅换主图有时只是展示变化，更换代码或配件说明则可能改变新买家实际收到的商品。不要用新版覆盖旧版；把两者并列，用一句话说明争议点。"
+    },
+    {
+      "source": "When a seller says an item “was always supplied this way,” refer to the actual saved claim and paid selection. Avoid arguing from a remembered impression. A statement that “the capture dated at checkout lists one removable hood under option C and the received unit has no attachment” is specific and checkable. If your evidence only shows the hood in an unlabelled gallery picture, ask whether it belonged to that option rather than presenting inclusion as settled. A fair distinction between what was promised and what was inferred makes genuine mismatches easier to identify.",
+      "source_sha256": "169c2448169a3bf9f2ac8fed099c5f944dcf0ede382a7aa90dc8cc17b93487a5",
+      "raw_target_sha256": "3936307b9af07b1ff33650fd21e2bb1d377e352756d4c99a1d2e8994a34c5891",
+      "translation": "如果卖家说“一直都是这样配的”，回到当时的选项和证据。比如“付款当天的截图显示 C 选项含可拆帽，但实物没有连接位置”，就是可核实的差异。若帽子只出现在没有标注的图库照片里，应问它是否属于该选项，而不是直接断定卖家少发。"
+    },
+    {
+      "source": "Use the record at inspection and after delivery",
+      "source_sha256": "03857209dabe4c8750988adba98bb1f91192ef099f4f2740932fd68736d45d24",
+      "raw_target_sha256": "2af5091e1e4400b461fd5583266b476008d63f4efcd4bd22ef0bbc7e818b697b",
+      "translation": "到仓和最终收货后继续使用这份记录"
+    },
+    {
+      "source": "When warehouse photographs arrive, inspect the features that justified the purchase in the first place. Compare the received option and visible details with the dated record. If the key feature is hidden by folding or wrapping, ask for the relevant view through the LitBuy order channel and check the current available services and deadlines. For an item issue, the LitBuy Help Center directs users to after-sales information. Preserve packaging while clarifying whether the item or full set would need to be returned. A clear comparison gives the seller or agent a practical question to resolve.",
+      "source_sha256": "152265dc0fe5ba7cb69087d7c8487f1fda2637e98f0deb76df1b975f2af4a3da",
+      "raw_target_sha256": "2941d991ef308ce74420c55f9f088d772ef01665f5f7eb9c5a8df98314e23892",
+      "translation": "仓库发来实拍后，优先核查当初最在意的功能。如果因折叠或包装看不清，通过 LitBuy 当前订单询问能否补拍、收费及期限。商品问题可查帮助中心的售后说明。先保留包装，弄清是单件还是整套需要退回，再决定如何处理。"
+    },
+    {
+      "source": "Once the order is accepted, keep the final warehouse photograph and any agreed changes with the original offer. If the seller supplied a different version with your consent, record that consent and the revised price or contents. If a component was refunded, mark it accordingly. When the international parcel arrives, the end-to-end record can distinguish a seller listing change, an agreed substitution, a packing omission and damage in transit. A small number of carefully labelled records can answer those questions long after the live listing has been redesigned or removed.",
+      "source_sha256": "db168a77cb009778243da15bc621439860f0458ca83e4db10428f76cae389cc8",
+      "raw_target_sha256": "ca9e7173b0df1506d8adaca0fd414864663187a254b1b3c7359ebb6e21c3cd49",
+      "translation": "确认收货状态时，把最后的仓库照片和双方同意的改动放在原始报价旁。已同意换版本，就留存同意内容及新价格或配件；已退某件配件款，就单独标注。国际包裹到手后，这些资料能帮助区分页面改版、同意替代、打包遗漏和运输损坏。"
+    },
+    {
+      "source": "Imagine that a bookmarked listing opens next week with a fresh identifier because the seller has moved the product. Preserve the original record and make a second entry for the replacement listing. Compare the features important to your order, particularly package contents and option wording. If support points to the new page, ask whether it is intended to describe what you previously bought or only what the seller offers today. Keep that answer with the two links. An old bookmark and a new page with the same headline can describe separate offers, and a reviewer needs to see how the current page entered your case.",
+      "source_sha256": "e74761a45d2c822f279b243d1144b5fcea0f86c40a618b47a8aa4c5295227d76",
+      "raw_target_sha256": "050d71ed8dd9760c3e2aa84e3fc7bed984396db70f09d0cd5e46fc9420643850",
+      "translation": "收藏的商品若被移至新链接，应保留旧记录，另建一条新链接记录。对照当时在意的配件和选项原文。若客服引用新页，可以问它描述的是原订单，还是今天在售的版本，再把回答与两个网址放在一起。标题相同不代表两条报价完全相同。"
+    },
+    {
+      "source": "Define what you mean by length",
+      "source_sha256": "33f5fce4f31fdd3010676870a1a71a893bc09b261d8819416d199be56fc69769",
+      "raw_target_sha256": "f57afebb35277df37d6ddd6bc8a4f88f444a55d6dc710844ae26b1e3d88f5c25",
+      "translation": "先确定自己想量哪一种衣长"
+    },
+    {
+      "source": "Look at the hoodie as it will be worn. Do you care where the back hem finishes, whether the front covers a waistband, or how the body looks under a jacket? These can be different measurements on a garment with a curved or dropped hem. Decide on the feature that affects your purchase. A hoodie can have the right back length but a shorter front. Another can look shorter when worn because a tight ribbed waistband gathers the body above the hips. Write the practical requirement in a sentence before looking at the size chart.",
+      "source_sha256": "2af4b115786f1425bb9b4f29f3451db3ddf8f38ac2d15fa7b1f0fcff5750b4b0",
+      "raw_target_sha256": "0f623d91a1957939d3faa1256b96f9ee61a51f82810ae53fae1fb2121ab3bc5b",
+      "translation": "穿上以后，你在意的是后摆落在哪里、前摆能不能盖住裤腰，还是罩在外套里面会不会露出来？弧形下摆或前短后长的款式可能需要分别测量。有时要遮住腰部，有时想让短款停在胯部上方。先用一句话写明穿着需求，再看尺码表。"
+    },
+    {
+      "source": "Now locate the seller's measurement diagram for the exact version. The chart may measure down the centre back from the base of the hood, or from the high point of the shoulder near the neckline. The upper edge of the hood itself is a different starting point. Some charts include the ribbed waistband and others do not make that clear. If the figure appears without a diagram, ask how the seller measured it. A numerical comparison made with two different starting points can produce a misleading difference even when both measurements were recorded accurately.",
+      "source_sha256": "61ff8082db616f7aaee39b5160a3c6fc4b30fbdd007d3fa501ce5247d6598009",
+      "raw_target_sha256": "d8744acb4faa39b470789ee156bb1da675ee24489ea4b425ade35ad970f03031",
+      "translation": "找出所选版本的测量示意图。有的从帽根沿后背正中量到下摆，有的从领口旁的肩部最高点开始。把帽子顶端也算进去又是另一种量法。确认是否把下摆罗纹计入，以及表中量的是前片还是后片。起止点不一致，即使每次都量得准确，读数差异也可能毫无比较意义。"
+    },
+    {
+      "source": "Choose a useful reference hoodie",
+      "source_sha256": "a20bcf1dae9b3ffff662dfcea176b120f2768e35b934c78655df4366b9db7124",
+      "raw_target_sha256": "ce7623dd40174c1a25dc3ea21d8ad367ac655acb063507aa262c7949a13255ed",
+      "translation": "选一件用途和版型相近的连帽衫作参考"
+    },
+    {
+      "source": "Pick a hoodie you wear for the same purpose and with a similar layer underneath it. A lightweight gym layer and a thick fleece worn over a shirt can sit differently at the same flat length. Close any zip, empty bulky pockets and lay the garment flat on a level surface. Straighten folds gently while letting the fabric and ribbing rest naturally. Avoid pulling the hem downward to reach a preferred number. Record whether you measured the front or the back and whether the waistband is included.",
+      "source_sha256": "98b6b43e67074ebfea4428ebbd911a718916722ef101e52c8c91467e2d410164",
+      "raw_target_sha256": "b70f48e176e52fc274e00f0fccb4f0946ff00e67ddecbd21cfa8d47f6e0f4d11",
+      "translation": "找一件会在类似场合穿、内搭厚度也相近的连帽衫。轻薄运动衫与厚绒款即使平铺衣长一样，上身位置也会不同。拉好拉链，清空鼓起的口袋，平铺且不要拉伸。记录量的是前片还是后片、是否含下摆罗纹，不只记一个数字。"
+    },
+    {
+      "source": "Take a full photograph of your reference measurement. Place the tape at the defined starting seam, run it straight along the intended path and keep both endpoints visible. Note the units and the exact reference garment. If the seller's diagram starts at the high shoulder point while your first measurement began at the centre back, take a second measurement using the seller's method. Do not apply a guessed correction between the two. The seam shape, neck width and shoulder construction determine the difference, which can vary between garments and is often precisely where the uncertainty arises.",
+      "source_sha256": "29092a352aa6882b023d6bd0b99e969ac5672ce3a91f688a405c853a9d850e47",
+      "raw_target_sha256": "c96f6cb415decc722e3150a0eee16cfa7cab46687d837757ba952a4cf185ff19",
+      "translation": "给参考衣物拍一张完整的测量照。软尺从约定接缝的零点开始，沿规定路径伸直到终点，两端都要拍清，注明单位和衣物。如果卖家的示意图从肩部起量，自己的衣服也照此复测，不要靠猜测去扣减领口到肩部的距离。"
+    },
+    {
+      "source": "Match the chart to the item that arrived",
+      "source_sha256": "20ff09a4ed9773debfd908c1e5bcda317eebe6fb87e9d6eb8c206bf5da9f66e8",
+      "raw_target_sha256": "50f8724f6078c530823cf74e7231b69daf0930be8dc7ed63efb178c768820b2d",
+      "translation": "确认尺码表和入库实物属于同一款"
+    },
+    {
+      "source": "A marketplace listing can contain a standard pullover, a cropped version and a zip-through model under the same product title. Check that the selected seller option, order confirmation, warehouse entry and chart all refer to the model you want. Keep any model suffix next to the size. A chart labelled only with a seller's internal code can be easy to misassign if the translated title omits it. If photos from an earlier order show the same colour, verify their model and size before using them even as a reference.",
+      "source_sha256": "e7e16a120cdcc3b98195eee3a5df6de59c01d77a5b0dfd52b33304fdf9aac221",
+      "raw_target_sha256": "5de209b9b7874adfbb727b0ab5471bb9324116c78faf24d039233f6f97d71e33",
+      "translation": "一个商品标题下可能同时售卖普通套头款、短款和全拉链款。对照卖家选项、付款确认、仓库条目及尺码表，确认都是同一版本。保存型号、颜色、尺码和图表。其他买家的同色照片也要先核实版型和尺码，才可作辅助参考。"
+    },
+    {
+      "source": "Compare body width and length together when evaluating an oversized style. A medium with a wide body and short hem can be an intentional boxy cut. Sizing up to gain length can also increase width or change the shoulder placement. Read across the relevant chart rows before assuming the next size solves the problem. Record a comfortable length interval based on garments you own when possible. That interval describes your preference rather than a seller tolerance. Check both the preferred length and any other important measurement, such as cuff position, before making a decision based solely on body length.",
+      "source_sha256": "e4de4d25b884f176a9d0f33d8440ed9077219d5c7bd0436e7ec31bc71c87cbb4",
+      "raw_target_sha256": "3b7414bb75a36d22b814462b9aa7044e8b5a1674898e20bf03654d4a858082ee",
+      "translation": "评估宽松款时要同时看胸宽和衣长。中码胸宽较大、衣摆较短，可能本来就是方形剪裁。为了增加衣长而买大一号，也可能同时改变宽度和落肩位置。横向阅读同一尺码的一整行，并检查袖口位置等其他重要尺寸。"
+    },
+    {
+      "source": "Request a photograph that can settle a real question",
+      "source_sha256": "4df0dc7f9d69984ee8198027d209414e3ec2ecb5c836096098a67aa065b713e1",
+      "raw_target_sha256": "91554951085db0bd5bf220c02710f73d308064c672f97eea91c426abbd06de52",
+      "translation": "向仓库说明补拍哪一种测量照"
+    },
+    {
+      "source": "When the LitBuy warehouse images do not show a usable measurement, specify the garment, warehouse reference, side, start, end and units in your inquiry. An example would be “Please lay the navy medium pullover flat, back facing up, and measure from the centre seam where the hood joins the back to the lowest back hem, including the ribbed band. Please show the entire tape in centimetres.” Check through the current order whether that view is available and whether the service carries a charge. The person handling the garment then knows exactly what arrangement will answer the question.",
+      "source_sha256": "fad91d4dd50e7d68e3b1fe987622846da7724818826f4405ac97ab7f72b49838",
+      "raw_target_sha256": "96cee66e5cd3752f28698056c3cbc6a833b24e8ca7fccc85729e6dcbcfb0a583",
+      "translation": "在 LitBuy 当前订单里写明仓库编号、衣服颜色和尺码、正反面、起点、终点及单位。例如：“请将藏青色中码套头衫背面朝上平铺，从帽根后中接缝沿直线量到下摆，厘米刻度和两端都拍清楚。”具体描述能让操作人员一次摆到正确位置。"
+    },
+    {
+      "source": "Inspect the response before reading the final number. The tape should begin at its zero mark, run straight along the garment and end at the requested edge. If the picture is angled sharply, the scale can be difficult to read. A photograph showing the end of the tape but hiding the start inside the hood does not establish the defined length. Ask for the missing part of the view rather than requesting an unrelated gallery of more pictures. If the garment remains sealed, check the applicable handling and return conditions before authorizing any action that changes its packaging.",
+      "source_sha256": "e1824fadba39b32907abd099cf87ad19f7a6969f1501a0780eb77ec57d11c791",
+      "raw_target_sha256": "a88b76f859ac99bb0406abbf290e0612dd17d0884410968e54582a3a9b22d5bc",
+      "translation": "先看软尺是否从零开始、是否沿衣身走直、终点是否正好到指定边缘，再读数。角度太斜会让刻度不好辨认，只拍最后一截也无法证明起点正确。如需拆开原包装才能测量，先问清可用服务、处理条件及是否影响退货安排。"
+    },
+    {
+      "source": "Interpret the difference rather than chasing false precision",
+      "source_sha256": "e52214edef66e964f606b65443bde2c0054195c2526ae7bf0bd986b6a28f5a8d",
+      "raw_target_sha256": "0b1715a31586d3fef051dc52c795fddec8eb8a4cda6ce0835e0977a4731c674f",
+      "translation": "判断差异是否有实际影响"
+    },
+    {
+      "source": "If the result remains outside your acceptable range with matching methods, state the evidence precisely. Say which version and size were ordered, which chart row applies, where each measurement was taken and what the photographs show. A seller may specify a manufacturing tolerance or a particular measurement method. Check the current listing and after-sales terms for the actual order before claiming a particular remedy. If the paid size and visible label differ, flag that as a separate fulfilment question. A wrong label and an unexpected garment measurement do not necessarily have the same explanation.",
+      "source_sha256": "b786b2e805ccafad50b4d9deec77971334b3f9f59b5a8f996935130a68a2aeb3",
+      "raw_target_sha256": "55d1efc5148d374c0840e95a053db4089792d5eef3dcb7c8bf6c940bfed2c2f8",
+      "translation": "量法一致后仍超出自己能接受的范围，应列出订购版本和尺码、适用的尺码表行、两次测量的起止点及照片读数。看看卖家是否给出测量说明，再询问本单可采取的处理方式。标签上的尺码错误，与标签正确但实测不合预期，是两种不同的问题。"
+    },
+    {
+      "source": "Decide while the hoodie is still accessible",
+      "source_sha256": "5ea75a89483b623a989e51d64f668bac231373dc9ee75a05184da97f1e35d6ee",
+      "raw_target_sha256": "d232a44a29876c050044bab10d76a8ef89dcb020d2ed1c8f4c97ed0682720843",
+      "translation": "趁衣物还在仓库时决定下一步"
+    },
+    {
+      "source": "Before international parcel submission, mark the warehouse entry accepted or awaiting clarification. Keep the measurement record with the order and note any relevant deadline. Storage time, return eligibility and the time needed for a photo inquiry can follow different conditions. Use the live account and LitBuy Help Center to check available options for the specific item. Where a replacement is possible, verify the target version and size in writing; a second hoodie selected from the same broad product family may otherwise reproduce the exact uncertainty that led to the exchange.",
+      "source_sha256": "0198f241234b1b7568ae230310ca5edc1779d403ae2cd0acca6e80dcc6d3f11a",
+      "raw_target_sha256": "842bc3a6675993faff04e85032931f405cc6e6c33321241bee7b7a032d3e7098",
+      "translation": "提交国际包裹前，标记这件衣服是已接受还是待核实，把测量记录和相关截止时间附在订单旁。仓储期限、退货资格和补拍所需时间应分别确认。如需换货，也要明确希望换成哪个版本和什么尺寸，避免替换件到仓后又遇到同样疑问。"
+    },
+    {
+      "source": "When you eventually try the garment on, note how the measured length translated into actual wear. Did the waistband rest where expected? Did the weight of the fabric change the drape? Did a layer underneath lift the hem? This first-hand note is useful on a future purchase, particularly if you buy similar cuts. Keep it distinct from the measurable facts a warehouse can confirm. The result is a practical fit record combining the original chart, an identifiable unit, reproducible measurements and the wearer's own preference, rather than a size letter expected to do all that work by itself.",
+      "source_sha256": "f20765d6074ca4323f0e7f2e167a56075d64f15bff242a6433d94c91e2f1f113",
+      "raw_target_sha256": "cf858156e0ff761e34f87614ba40e1cddacb1723b7995d96ee67e4bd577be13e",
+      "translation": "实际试穿后，记下这个衣长穿到身上是什么效果：罗纹下摆停在哪里、布重是否改变垂感、内搭是否顶起衣摆。这是以后购买类似版型时很有价值的第一手经验。把量法、照片、实物和自己的喜好连在一起，比单记一个尺码字母可靠。"
+    },
+    {
+      "source": "A split hem makes a single body-length figure particularly easy to misread. Suppose the back panel visibly extends below the front, and you intend to wear the hoodie underneath a shorter jacket. Measure the centre back on a hoodie you already own and record how much fabric shows below the jacket when worn. For the warehouse item request that same centre-back span, with both endpoints visible. You can then judge whether the longer panel creates the look you want. A front-only measurement might be accurate for the seller's chart yet leave your personal layering question unanswered, especially where the hem curves at the sides.",
+      "source_sha256": "6ffb676442128f708c3e452570e1947b21f133ea3245abc7aea71a53c591200a",
+      "raw_target_sha256": "d025856853c91c48d447fb44c4274b442dbffe37948497843b35f107844db9f2",
+      "translation": "开衩或前短后长的下摆尤其容易被一个“衣长”误导。若计划在外面叠穿较短的夹克，可先量自己衣服的后中长，并另记前摆落点，再向仓库要同两项。只量最短或最长点，也许能得到正确读数，却不能回答弧形侧摆叠穿时是否会露出的问题。"
+    },
+    {
+      "source": "Lettering looks backwards in the warehouse picture. Before reporting a printing error, establish whether the whole photograph was mirrored, whether you are looking through the inside of the fabric, or whether the design really was applied in a different orientation. The right comparison can save an unnecessary exchange and still catch a genuine defect before shipment.",
+      "source_sha256": "3acd5b54f21c71553f35764ed4da8c0f513606d7a9404c675bed39ff368fe6cb",
+      "raw_target_sha256": "7691efc793b45a6b5560d5e015c2b8bf7d2b96ea35774d29c80a18cc69563850",
+      "translation": "仓库图上的文字像是反了，可能是整张图被镜像、拍到了布料内侧，也可能确实印错。报告印制问题前，先把这几种情况区分开。这样既不会不必要地换货，也有机会在寄出前查出真正的差错。"
+    },
+    {
+      "source": "Identify exactly which part appears reversed",
+      "source_sha256": "cdf952b85a8ea67ab598f32cc573ca47dffcdd4638aa2bf3aadb5857d45ca64f",
+      "raw_target_sha256": "912a6db91c4c49a4e7e974ecafdd2cb3c0e886dde14ebd458c854bfea663b1e8",
+      "translation": "指出具体哪里看起来反了"
+    },
+    {
+      "source": "Open the photograph attached to your specific LitBuy order and save a copy. Note the seller option, garment size, side shown and location of the questioned design. Determine whether letters read in reverse order, individual characters are mirrored, a graphic faces the opposite direction, or an element appears on the opposite sleeve. These observations have different explanations. “The print is backwards” can describe all of them without identifying the problem. A more precise description, such as “the word on the front panel reads from right to left,” makes the next check easier to choose.",
+      "source_sha256": "579cf26f5ac73ac96c6f6d4af50981687684d4e2f1449d91aada2c3ebc4ee699",
+      "raw_target_sha256": "4b9a25dc9fe9fbce128b18f5531107a60e65336745ba501202f903a7201c059a",
+      "translation": "打开本单的原始仓库照片并留存。记下选项、尺码、所拍正反面及图案位置。究竟是字母顺序反了、单个字母左右颠倒，还是图案放在另一边？像“前片上的词从右往左读”这样的描述，能帮助确定下一步要查什么。"
+    },
+    {
+      "source": "Review the selected seller description and available order evidence. The listing may intentionally show a mirrored design or use asymmetric lettering as part of the artwork. If the buyer ordered custom printing, identify the particular proof or written specification that the seller accepted. An unrelated image of another product can show a design the buyer prefers while saying little about what was agreed. Save the original seller image or approved proof alongside the warehouse photo, retaining both in their original orientation. Annotate copies later if necessary so that the raw evidence remains available.",
+      "source_sha256": "e467e082041c60a64334ce1cde4128869b8b5461ba81597eecc25aa346b1e4dd",
+      "raw_target_sha256": "3d88d5acbaaa3faa33b89b9add6bc6727a90ab0072433c140fc3b2e6e06876b0",
+      "translation": "查看所选款式的卖家说明。有些设计本来就用镜像图案或不对称字体。定制单应以卖家接受的效果图或文字规格为准，另一款产品的图片只能说明个人偏好。将未经翻转或裁切的原图、确认稿与仓库图一同保存，需要标注时另存副本。"
+    },
+    {
+      "source": "Look for another readable object in the same frame",
+      "source_sha256": "0ec58bed03f8ece1d18c1f91420972cc9b5fe56eef1bb7e47682ba144f36840c",
+      "raw_target_sha256": "60a218da3d501fde15ea19120cbd6a2c74208514c7c0177c8dfb195bff077cdc",
+      "translation": "找同一画面中方向明确的文字作参照"
+    },
+    {
+      "source": "Examine labels, packing marks, rulers or ordinary text visible in the warehouse photograph. A readable reference printed in its normal direction can help distinguish a locally reversed design from an entirely flipped image. When every piece of text, including an ordinary label, appears mirrored, the image itself is a likely explanation. When the package label is legible but the garment print is mirrored, a simple full-image flip would not explain both observations. Check that the reference and garment are genuinely in the same photograph rather than separate images combined into a collage.",
+      "source_sha256": "0f5825e0a00a11e773bdcc559e76f922fe3802a90f07de3d5f30b123fa15f9a8",
+      "raw_target_sha256": "2502fbf42b1a2b40e69388ff1f9d4e5d17bd17c1b4f8b20cfcc4a55c013bea34",
+      "translation": "观察标签、包装印字、尺子或普通卡片上的文字。如果这些字读起来正常，只有衣服上的字反了，就值得核查印花。如果包括标签在内的所有文字都反向，更可能是整张图被翻转。先确认参照物和衣服确实同框，而不是拼贴中的两张独立图片。"
+    },
+    {
+      "source": "Confirm which surface the camera shows",
+      "source_sha256": "1d7c6209f076c35309292a51aed1015792c80012c33def57af822d5547756ff6",
+      "raw_target_sha256": "87672c0d54d08746c856dfce3a11978a1b864b7841b1680e2a7045ceac77a45b",
+      "translation": "辨认镜头拍的是衣料正面还是反面"
+    },
+    {
+      "source": "Thin or translucent fabric can show a reversed version of a correctly printed design when viewed from the inside. Look for seams, neck labels, hem finishes and pocket orientation to determine which surface is facing the camera. A garment laid partially inside out for inspection can make one panel appear incorrect while its exterior is fine. If the photo shows a transfer backing, protective film or a transparent accessory, determine whether the print is intended to be viewed through another surface. Ask the seller or warehouse for the normal worn view if the setup is uncertain.",
+      "source_sha256": "8e74eb2f54d9d2cd6ef94615e1a336be21857c6f10e5a8f9827fd221b10b4cc9",
+      "raw_target_sha256": "b8b610c9c4904f90a286a9335a79bb720ed25107812ddd9dd460cf002f4dc9d0",
+      "translation": "轻薄或半透明面料从内侧看，正常印花也会显得左右相反。借助接缝、领标、下摆和口袋朝向判断哪一面朝外。衣服部分翻折时，可能同一照片里出现两个面。不确定陈列方式，就请仓库按正常穿着的朝向再拍。"
+    },
+    {
+      "source": "For sleeve placement, describe sides as worn by the person rather than left or right on the screen. A front-facing garment naturally places the wearer's left on the viewer's right. A back-facing garment changes that relationship. Compare the design to a stable feature such as a pocket or fastening whose location is clear in the agreed version. In a message, write “wearer's left sleeve when the shirt is worn,” and name the mark being compared. This removes a source of confusion without requiring the recipient to infer your viewpoint from a screenshot.",
+      "source_sha256": "4d6ecedbeef7075996960a7e6ee3d42234a59714870558bbddf69ce5724597b3",
+      "raw_target_sha256": "d339307b511657447a8517a4556e077d7def05658bba0ff671db1b4442829f73",
+      "translation": "说左右袖时，以穿衣人的左右为准。正面对镜头时，穿衣人的左侧在画面右边；背面对镜头时，两者关系又会不同。将设计和同侧袖子、口袋及缝线对照。描述上注明“穿着者左袖”，可以避免双方各按自己的视角理解。"
+    },
+    {
+      "source": "Compare the exact artwork instead of general impression",
+      "source_sha256": "dbbafd346feb7623b54c66ab8990bd685eef0d536e158217b00cd8fbd7e4a0b0",
+      "raw_target_sha256": "13540f1775b29f2384c53ee7b31b91543c7c0593b46621bf38bc4ecd4890cc4d",
+      "translation": "对照获确认的具体图稿"
+    },
+    {
+      "source": "Read the design character by character and note which elements match the approved version. Check spelling, character order, alignment, line breaks and which direction the image faces. A wrong letter, rotated graphic and mirror-reversed transfer are three different problems. For a symmetrical graphic with a short word underneath, the word may provide a stronger orientation clue than the graphic. If the product uses two deliberately different side panels, make sure the reference image corresponds to the same panel and model variant as the received piece.",
+      "source_sha256": "0d4070c20ed31997dc9053378a2c12668d88acf9fcb2ad15abd1785c05355e0d",
+      "raw_target_sha256": "ffe978980d1fe269265d0cb81b6f3e7186722bba00d509ebc39f6499385cf81c",
+      "translation": "把确认稿和仓库照片以可比较的方向并排，逐项核对字母顺序、重音、数字、图案所在面以及与口袋或接缝的相对位置。不要自行水平翻转一张图后只保存处理版。保留原图并记录做过哪些调整，以便他人复核。"
+    },
+    {
+      "source": "Request one controlled follow-up photograph",
+      "source_sha256": "5b6704baeeca987bc01c6fd3d70297591dd4eb9cd08a7e62ff509044a1b12f54",
+      "raw_target_sha256": "407f0677d98ba6c0c29a7cd376e7e15dfc4f223ece969da0641260382f8c6495",
+      "translation": "要求一张方向可验证的补拍图"
+    },
+    {
+      "source": "Ask through the current order channel for the garment laid flat, correct side out, with the full affected area visible. Specify whether you need the front, back or particular sleeve. If orientation remains the question, request a readable neutral card in the same frame or another reliable orientation cue. A second close-up cropped to the exact same graphic may reproduce the uncertainty. For placement as well as orientation, an overview is particularly valuable because it shows the relationship to the collar, side seams and hem. Check the service and any charge available on the actual order.",
+      "source_sha256": "f2f6efd4fa27a0aed3e5b876c2bcaacd9496c9af82e5b525cc25eba51eb4dcd7",
+      "raw_target_sha256": "03e670a85ad151680d5af9124aa681dfe26a6052bff7d6fb5df766d09f5c5997",
+      "translation": "写清仓库编号和衣服规格，要求整件衣服按正常方向放平，把可辨认的参照卡放在旁边，并让领口、侧缝和下摆都入镜。确认全貌后，再补拍图案细节。通过本单询问是否能提供该服务及是否另收费。"
+    },
+    {
+      "source": "Review the new image alongside the original and the seller reference. If they resolve the issue, record why. A note such as “first image mirrored entirely; second image has readable card and correct artwork” can prevent the same question resurfacing during parcel preparation. If they appear to confirm a discrepancy, keep all original images and annotate a separate copy to show the one or two relevant details. A heavy markup covering letters or hiding the surrounding garment makes it harder for support to verify the orientation independently.",
+      "source_sha256": "66d0e02cbe4c4ccd910452b292e2f102586fc4e13cf719225f4a35519d93ba0d",
+      "raw_target_sha256": "e27b49d9955826eb3021b15549c234180e0ffe6b8eb8af3cafe71b9b32cccb7c",
+      "translation": "将新图、原图和卖家确认稿放在一起。若疑问解决，记下原因，例如“第一张整图镜像；第二张卡片可正常阅读，图案与确认稿一致”。若仍有差异，保留能说明方向的全景和局部，不要只把图案裁出来，让客服无法独立判断朝向。"
+    },
+    {
+      "source": "Send an evidence-based request before international dispatch",
+      "source_sha256": "3a68a6dda667cc1fa654f733e90bda47b2e79a6da2b4cdb61e99a39609fea818",
+      "raw_target_sha256": "b9297bbb38a1354e9432b69ebf4ea2af33e5a5538c4eaede95f313d47d4033fc",
+      "translation": "国际发运前提交有证据的核查请求"
+    },
+    {
+      "source": "Identify the order and warehouse reference, the agreed artwork or seller option, and the exact observed difference. Ask what remedy is available for that purchase while the garment remains accessible. LitBuy's Help Center includes after-sales guidance. Consult the current terms for custom and standard items and do not assume a specific refund, exchange deadline or result from another buyer's experience. Keep the tags and packaging until the seller or agent clarifies any return requirements. If several pieces share the same custom print, specify exactly which units have been checked and which are affected.",
+      "source_sha256": "060b251df374937f8cc7a83d917110bc8a8b56d27d80e830c49f10a3bd65db4e",
+      "raw_target_sha256": "7a4ef7446503d70dc8fa6048dc629769554087742886f92e07e9a171370c4441",
+      "translation": "注明订单及仓库编号、获确认的图稿或卖家选项，以及观察到的具体差异。实物仍在仓库时，询问该单允许什么处理方式，并查 LitBuy 帮助中心相应的售后说明。同一图案印在多件衣服上时，逐件说明哪些已查、哪些受影响。"
+    },
+    {
+      "source": "If a replacement or correction is agreed, preserve the approved orientation as a dated reference. Confirm the intended side, spelling, number and model again before new work begins. At warehouse receipt, repeat the orientation check on the replacement itself rather than treating the seller's promise as proof of the completed result. If you choose to accept the original piece despite the difference, document that decision and any agreed adjustment. A clear record separates a camera artefact from an actual production issue and makes the eventual purchase decision understandable even after the shirt and its photos have left the warehouse.",
+      "source_sha256": "ed3ddb44f45fc93e964beca1684bd4668804b963349ec6bfaf1d25667fca31cb",
+      "raw_target_sha256": "5ff20f426b28a8e93e0d36c3db7208354d2b689350eadc8f2a5a78fbdfc547cb",
+      "translation": "如双方同意补做或换货，把已确认的方向留作带日期的参照。开始制作前再次明确正反面、拼写、号码与型号。替换件到仓后，用它自己的照片重新核对，记录是否接受。这样日后回看也能还原决定是基于哪件实物作出的。"
+    },
+    {
+      "source": "A photograph taken through thin fabric can resemble a mirrored image for another reason. The camera may be looking at the reverse of the printed panel. Locate the neck label, seam allowances and any pocket to establish which side faces the camera before asking the warehouse to assess the artwork. If you still cannot tell, request a picture of the garment laid with the front facing upward and the collar and side seams in view. Include your initial observation as a question. This gives the warehouse a straightforward way to resolve the orientation without assuming that the seller printed the entire production run incorrectly.",
+      "source_sha256": "6f932ee27ab1f80bbc102711ae95a47509b0a0d20c77d46d698e07b7c5af8d2e",
+      "raw_target_sha256": "63235112c8763d73c534f8d5ba8f594ede62a91471827716ae98453c795bc415",
+      "translation": "薄布另一面透出的图案，也会造成类似镜像的错觉。先通过领标、缝份和口袋找出镜头面对的那一侧；如果拍到的是布料反面，请求按穿着状态拍正面。先确认单件朝向，不必据一张图推断整批制品印错。"
+    },
+    {
+      "source": "A disappointing warehouse photograph creates pressure to act quickly, but the first useful action depends on what is actually wrong. Separate an unresolved question about the image from a confirmed difference in the item, then compare the remedies available for that specific order.",
+      "source_sha256": "223a31d28f0ecc99ff96522fb2ff71fca28fecc0dbe4aa9e730ca7af042081d8",
+      "raw_target_sha256": "843d172c5c4b67571c639ec15b5f0e42b50a576d74939542c626dbed33812405",
+      "translation": "仓库照片不理想时，很容易急于决定。先分清疑点仅仅来自照片，还是实物确实与订单不符，再比较本单实际可用的处理方式。"
+    },
+    {
+      "source": "Put the concern into a testable sentence",
+      "source_sha256": "fb5a46924610dfe96de4857082a277e1d3d958630ad32fce83093f5944e8c716",
+      "raw_target_sha256": "891ed11cc59d0f7ad215cb977287b30d6d1b778446d7a4e1569de90714169ef5",
+      "translation": "把担心之处写成可以核实的问题"
+    },
+    {
+      "source": "Name the feature that makes you reluctant to ship the item. “The jacket looks off” is an understandable reaction but gives the agent little to investigate. “The paid option shows a two-way zip and the received jacket seems to have only one slider” identifies a check that can be made. Other examples include a size label differing from the paid selection, an accessory absent from a set, embroidery positioned on the wrong panel or a visible tear near a seam. Keep fit preferences, product identification and physical damage as separate issues when several arise at once.",
+      "source_sha256": "d08b2d1f91dfda00128183dec314bbdcf1fdc7f48d7d6f0507f2ca21e7f4add9",
+      "raw_target_sha256": "b1fc338731ccb0d57b9b5b06ecbfc4c9b84e7500b7ff2955fd547e5376cee533",
+      "translation": "“夹克看起来不对”不足以定位问题。改成“我付费选择的版本是双向拉链，照片却好像只有一个拉头”，仓库就能按这个部位检查。一次出现多个问题时，将个人偏好、款式识别和实物损伤分别记录。"
+    },
+    {
+      "source": "Gather the seller's description of the exact option, your paid confirmation and warehouse images tied to the order. Distinguish material facts from interpretation. A label clearly marked small alongside a confirmation showing large is a direct discrepancy. A grey fabric looking slightly green in a single warm-lit image is an uncertain appearance question. A garment matching the seller's chart but sitting outside your preferred measurement may be a fit preference rather than an order fulfilment error. These distinctions affect how you communicate the issue and which current terms you should consult before choosing a remedy.",
+      "source_sha256": "a65de9f3920428008550e5a2b119f06c1f28f772030fce2ccd98f811fb580fb0",
+      "raw_target_sha256": "63c3ea588187fc6dfa4298c87291952ec0b419449da1049dfe8557712547d032",
+      "translation": "收集所选规格的卖家说明、付款确认和本单仓库图。标签清楚写着小码，确认单写大码，这是直接矛盾；色调看起来不同，可能还受灯光影响。先写可观察的事实，再写自己的判断，这会影响应询问什么以及该查哪些当前条款。"
+    },
+    {
+      "source": "Check whether another observation would change the decision",
+      "source_sha256": "69c2b6c13d4e91d4d45f7143ba9e220b6cdc51e88a759d7ff294704e8f1ea995",
+      "raw_target_sha256": "515b47129079bb169ee82e9a2acaaa4f2c19f967fa6696f86af77bb4adaa9a85",
+      "translation": "多一次核查是否真的会改变你的决定？"
+    },
+    {
+      "source": "A clarification is worthwhile when one specific observation could change what you do. For the zip example, an unobstructed picture of the bottom and top sliders could settle the matter. For a suspected shortage, a full view of the empty packaging and accessory pockets might help. For a fit decision, a measurement with defined endpoints could be more useful than another photograph on a hanger. Write down the two possible outcomes before requesting anything. If you would exchange the item regardless of the answer, a new photograph might add delay without improving your decision.",
+      "source_sha256": "b2747ab02812c3d19708a14fdce9a1b5ea17b89a6b8618861d4ef521c5adffbe",
+      "raw_target_sha256": "7f4a62e2e9fdb15f82a9d7524e6f27c96c0b62a26a53014bd667775526a091c4",
+      "translation": "如果一条具体信息足以改变决定，就值得询问。双向拉链可请拍清上下两个拉头；疑似缺件可请拍空包装和配件袋；担心合身与否，可请按明确起止点测量。先写下两种可能的结果和相应选择。如果无论答案如何都不会要这件商品，再补拍可能只会耽误时间。"
+    },
+    {
+      "source": "Ask whether the requested check is available, what it involves and whether any fee or handling condition applies. An unopened retail package may need to stay intact for certain returns. If checking the issue would require breaking a seal, ask about the condition first. Also note any live deadline for an inquiry or requested action. Storage time describes how long an item can remain in the warehouse; return or exchange eligibility can depend on other conditions. Consult the current LitBuy help information and your specific order rather than assuming the longest visible timer governs every decision.",
+      "source_sha256": "8712628fbcbee284b19897c9b466ba4b0f08840ed5a6f220ded2d7abecf96b08",
+      "raw_target_sha256": "a9e4ba1931aa02c29cd2fe1adb915dc0313f21f64fe6d027fa6cf7853e7f3e95",
+      "translation": "先问能否核查、会做哪些处理、有无费用。某些退货条件可能要求零售包装保持完好，拆封前先问影响。核对当前订单的仓储和售后期限，不要假定页面上最长的倒计时适用于所有决定。"
+    },
+    {
+      "source": "Establish which alternatives really exist",
+      "source_sha256": "f376376641f77d7206b07a82b9974b8d44cc38d7cbae450eb461a441a0900e42",
+      "raw_target_sha256": "eacbfc9b9ac7621e911abd254d8fc50d22d840d5ec4f30e009bbcdf8aaf3a3c4",
+      "translation": "确认哪些方案对这笔订单真正可行"
+    },
+    {
+      "source": "An exchange means obtaining another unit under agreed terms. Clarify whether the seller has the exact replacement in stock, whether the whole set must be returned and whether a different option affects the price. A replacement in the same labelled size may not solve a fit problem caused by the cut. A larger size could add width while changing the length too little. Check the intended result against the seller's current chart and the buyer's requirements before choosing an alternative merely because it is the next available size or colour.",
+      "source_sha256": "18609266e1db94fd36f00fd7c6675616968e527a9a6dd9045a9463ce6432f492",
+      "raw_target_sha256": "869128f13beccdbbe2fc0c1d23ca19f225247b36cdd79a1080e69ddf479859f2",
+      "translation": "换货意味着按双方同意的条件取得另一件实物。问清目标规格是否有货、是否必须退回整套，以及换款会不会改价。同一个尺码字母并不保证尺寸相同。不要只因某种颜色或相邻尺码有现货，就在未核对需求前接受替换。"
+    },
+    {
+      "source": "Other possibilities can include keeping the supplied item, seeking clarification, requesting a return, or considering a specific seller proposal. The available choices depend on the order and applicable terms. Ask what each proposal would actually do. A “refund” could refer to the item price, a particular missing component or another amount. A request submitted to the seller may still be awaiting approval. Keep the wording and date of each response. Treat an inquiry, approval, dispatch of a replacement and receipt of that replacement as separate events rather than one vaguely defined exchange.",
+      "source_sha256": "ef040aa2278e7e504ab489078575f20c4cc6f82d8c5772fcc5ebb912979851f0",
+      "raw_target_sha256": "746e9c6852da5b600a3fcbaac952666bfb0cd7dc6c36c3ce914b3c9346ae896b",
+      "translation": "可选方案可能包括保留现货、要求澄清、申请退货或接受卖家的具体提议，取决于本单条件。问清每个方案实际会发生什么。接受换货、原件退回、卖家发出替换件和替换件到仓，是几个应分开确认的节点。"
+    },
+    {
+      "source": "Compare the practical costs of each choice",
+      "source_sha256": "91625f739fb62558d207670432586eb19eedb2079924d6eee83c012148753b0d",
+      "raw_target_sha256": "7e22614e7cff6acf91e9a90513a48f6849f9dae4f383c7e9ee3a6d47968efefa",
+      "translation": "比较各方案的实际成本"
+    },
+    {
+      "source": "List the costs and consequences that differ between the choices. These may include domestic return delivery, replacement delivery, a new service charge, waiting time, the cost of obtaining a missing part elsewhere or the cost of shipping an item internationally that you already know you cannot use. Distinguish confirmed amounts from estimates. Use the original currency first. Shared outbound freight for a parcel containing other items is a separate issue from a new domestic charge for this single item. Ask about any unresolved cost instead of assuming the seller or agent will cover it.",
+      "source_sha256": "8e50e18ef0022248903197409df720542ef6639770e7de0ecde53a44907235bf",
+      "raw_target_sha256": "e2e1fd0dc07f5d20f5d6db3994e5be6e0a64c6fb7f3f60b61047f6e787e03ac2",
+      "translation": "列出不同方案会改变的成本和后果：国内退回或补发运费、新服务费、等待时间、在当地另配零件的价格，以及把不合适商品寄出国的费用。多件共用的运费不用重复算在每件上。不确定谁承担哪项费用，就先问清。"
+    },
+    {
+      "source": "Consider a hypothetical bag supplied with a short handle but without the long strap expected from the paid option. If the seller can send the correct strap separately, that could preserve a suitable bag without requiring a full exchange. Check the clasp, width, colour and delivery arrangement before accepting. If the missing strap is the only practical way for the buyer to carry the bag, a modest partial refund may not restore its usefulness. If the buyer already owns a compatible strap, the same proposal could be acceptable. The right decision depends on the item's intended use and the actual offer made.",
+      "source_sha256": "641220b8510a12f83bd6ca888cf4ace1bebf08f10096b4ad2e582d122f9cd4ab",
+      "raw_target_sha256": "177e408e784b32a7b654211e37e538614ead416440bc268bcd14fef15a0d19bc",
+      "translation": "例如，付款规格理应含长肩带，收到的包却只有短提手。如果卖家可以单补正确的长带，或许不必整包更换，但要核实扣具是否兼容、颜色是否匹配、何时发出及谁付运费。若买来就是为了手提，其他具体补偿也可能合适，关键在实际用途和卖家提出的方案。"
+    },
+    {
+      "source": "Keep the order's timing and dependencies visible",
+      "source_sha256": "0744f42adc00d22c136eb1d32b7c06af391a62b09eb6b80c676af3b95c3a7fc5",
+      "raw_target_sha256": "ffcb08ed26252cd2bce99eb5b430d48eddf5f8484074781fd800f8d4d28c2e2b",
+      "translation": "查看等待换货会影响哪些其他订单"
+    },
+    {
+      "source": "An exchange can affect more than one item. A buyer may be waiting to send a coordinated outfit or gifts needed together. Identify which other warehouse entries depend on the replacement and their own storage or decision deadlines. Compare waiting for a combined parcel with sending accepted items earlier, using current packing and route estimates. A seller's optimistic dispatch estimate is a forecast, not evidence that the replacement has been received. Keep contingency plans tied to actual milestones instead of accepting an unsuitable original item solely because the rest of the parcel is ready.",
+      "source_sha256": "b2737d486b3bbeccc462a3a8920569ea755edf26cecf926f89adb1968eb0240f",
+      "raw_target_sha256": "5a72ec288e2d3fe6f780562bf789e31a23741f62337cd34cac17b37e8daae6cd",
+      "translation": "一件换货可能拖住成套穿搭或需要一起送出的礼物。把关联的仓库条目及各自期限列出来，比较等齐再寄与先寄部分商品的后果。不要只因为其他东西已经就绪，就接受一件明显不合适的商品。"
+    },
+    {
+      "source": "If a full set may need to go back, keep every component, label and protective package together. Do not discard the outer box or send the unaffected piece internationally until the return instructions are clear. For a personalised item, keep the accepted proof and production messages; a mistake in the submitted specification and a deviation from an approved proof are different questions. Keep the current warehouse entry clearly marked as pending. Selection mistakes are easier to avoid when a parcel manifest identifies each accepted or unresolved entry by warehouse reference rather than by a short product nickname.",
+      "source_sha256": "65329dde479237d6a78297a1091a866cfb960e9675b69b571f78f6d667272066",
+      "raw_target_sha256": "4ca2bfbd70795fbae45f418a6502c7549355816ac0cc706575d87f69ee2fec7e",
+      "translation": "整套可能需要退回时，将所有配件、吊牌和保护包装放在一起。未明确退件要求前，别丢外盒或先把其中一件寄出国。定制品保存获确认的规格和效果图。用仓库编号分别标识已接受和待处理的条目，比只写简称清楚。"
+    },
+    {
+      "source": "Make and document one clear decision",
+      "source_sha256": "3d57b8009bd97be4b61d50f2f94a8fcf91928c68a3923bbb4d8ce3ec9f7e06d2",
+      "raw_target_sha256": "e35deaafdae48ec2c02d685b81b72a9846b9a0f005b5be35ae8708bab130dc3d",
+      "translation": "明确写下一项决定及其依据"
+    },
+    {
+      "source": "When requesting an exchange, state the original option, the proven issue and the exact desired replacement. Give the size, colour, model code and package contents, together with any condition under which you want to be contacted again. Ask which unit should be returned, what must accompany it and when you should expect a new reference or tracking update. Save any approval and confirm what it covers. If the issue remains unresolved, identify the single question still needing an answer and the last time you checked the order conditions.",
+      "source_sha256": "a30f762e14e3a4af923e8aa8e91e69efed76c15dd121ac6eda26ed308784a322",
+      "raw_target_sha256": "25d4fa1ca391480a4421e5b6f691ce3fd82b7ae5118e80724a8f9306634af4dc",
+      "translation": "申请换货时，写出原选项、已确认的问题和所需替换规格，包括尺码、颜色、型号、包含哪些配件，以及哪些变动必须先征求同意。问哪件应退、下一步由谁做。若暂缓决定，就记下唯一仍需回答的问题和最新核对条款的时间。"
+    },
+    {
+      "source": "When keeping the item, record why the available evidence or seller arrangement made that choice acceptable. If waiting for more information, write down what will trigger a decision. If a replacement arrives, inspect its own label and images against the agreed selection before releasing it for dispatch. A short case note can state what was ordered, what was observed, what the seller agreed and what the buyer ultimately received. That record gives a practical ending to the inquiry and helps distinguish a genuinely resolved exchange from an order that merely changed status on a screen.",
+      "source_sha256": "2fc6b4cf33b81c0753ce75176136127a2a0cb7c84a2966d336e805ae6d9152de",
+      "raw_target_sha256": "ff47c390b69ee3152fb7302c98ad4384f563ec9925487d7a7a4cb465f0c4fdcc",
+      "translation": "决定保留时，注明是哪些证据或卖家方案解决了顾虑；继续等待时，写清什么事件发生后再决定。替换件到仓后，按它的标签和照片重新验收。这样可区分问题实际解决与页面状态仅更新。"
+    },
+    {
+      "source": "It can help to decide what answer would actually change your mind before requesting another picture. A person choosing a jacket for a uniform may have little flexibility over the designated colour and pocket layout. Another person considering the same jacket for weekend wear might care much more about sleeve length. In the first case a clear view of the pocket and option code may settle the decision. In the second case a photograph with a tape along the sleeve offers better evidence. Define the decision in those terms before spending time on an issue that would leave your preference unchanged either way.",
+      "source_sha256": "ba1f7f3b6f0b6d7b9e9589e1f38c1787afe18f6f64b115c7624e767f694bd7d9",
+      "raw_target_sha256": "9dea21ef83d73c4af632697c1ef6bc41c167ce8b2d8836e95e45a5a46438a171",
+      "translation": "询问补拍前，不妨先想清什么答案会改变决定。制服采购可能要求固定颜色和口袋布局；普通穿搭可能更在乎尺寸，细小色差可以接受。如果无论补拍结果如何都不会改变选择，先查看可用条款，比反复拍照更有意义。"
+    },
+    {
+      "source": "A support reviewer needs to identify the transaction, understand the agreed item, see the condition received and know what outcome you are asking about. A small, well-labelled set of records can answer those questions more effectively than a folder of unexplained screenshots.",
+      "source_sha256": "6609254e8a8da93ea41f56d0b23e2c347a5edc1dbc99edc6b2c48019d659a908",
+      "raw_target_sha256": "35bfbaf06d61b1f21fc33eb8cb9fc988f633c25d16f5e3f16016af39205cdd95",
+      "translation": "客服需要定位交易、知道卖家答应提供什么、看清实际收到的状态，以及你希望核实或处理哪件事。一小组有编号、有说明的凭证，通常比一大串没有上下文的截图容易核查。"
+    },
+    {
+      "source": "Start with the transaction and its current stage",
+      "source_sha256": "7e0e84f5f6295ad34947f6defe1ea4275082b2ae94f737ef70ccba95d582b4f9",
+      "raw_target_sha256": "7bcaa5d23adbb28c87f52dcfbf1d6e394d67c984008af5a0e89ae569234b5fa8",
+      "translation": "先交代交易和当前所处阶段"
+    },
+    {
+      "source": "Record the agent order reference, seller listing, selected option, quantity and payment date. Add the warehouse reference if the item has arrived there. Add an international parcel reference only if an outbound parcel is relevant. A seller item number, an agent order number and a carrier tracking number identify different things. Label each explicitly rather than sending an uncaptioned series of numbers. If several units share one order, identify the affected colour, size or component so support can distinguish it from similar pieces that are satisfactory.",
+      "source_sha256": "6826a015b4a40cf92b5bc441230b51e5b2ac99d1bce87d08b294715b81dad7d1",
+      "raw_target_sha256": "a93a5673a2fd902a3b093b5ba38717fd60a387361dfd2b18671f55557a0bc448",
+      "translation": "填写代购订单编号、卖家链接、所选规格、数量和付款日。已经到仓就补上仓库编号；涉及国际运输再加国际包裹编号。同一笔订单有多双鞋或多件衣服时，明确哪一件有问题，避免客服把同批其他正常商品算进去。"
+    },
+    {
+      "source": "State where the item currently is. An issue visible while the item remains at the warehouse can require different evidence from damage first discovered after international delivery. If the item is with the buyer, keep the external parcel label and packaging until the case instructions are clear. If it remains at the warehouse, avoid authorizing changes to tags, seals or packaging while clarifying return conditions. LitBuy's Help Center separates cancellation, returns and after-sales topics. Use the current order and relevant help category to identify the appropriate channel and any applicable reporting requirement.",
+      "source_sha256": "2d2c97138257891a3dd249a5562c73bd1c28bb2ed618600f4336600be46800b9",
+      "raw_target_sha256": "bc611bd28a023c4917fc64a9d56759536077d1a434f44896a209ce4cd3bd37c7",
+      "translation": "写出实物目前在哪里。入库时已经看见的问题，与国际签收后才发现的损坏，可能需要不同凭证。记录首次发现的时间、当时拍的照片及有关物流节点。消息发出或照片下载的时间，不一定就是问题发生的时间。"
+    },
+    {
+      "source": "Establish what the seller agreed to supply",
+      "source_sha256": "e044e1d79bc7cea8c11e1af64d25e95eab024c1875fd19ac34f17baa2d6a1450",
+      "raw_target_sha256": "a6a414e8b8a4e4a8d3d5425fa56b47b901b17c2065dc2737fb465d5635c5eccd",
+      "translation": "证明卖家当初承诺提供什么"
+    },
+    {
+      "source": "Keep the paid order confirmation and the seller description for the exact option. A general photograph of an outfit can show components sold separately. A family-level size chart can differ from the chart for a cropped or insulated variant. Mark the specific text or option code that supports the expectation in question. If the seller confirmed a feature in a message, save the question and response together so that the context is visible. A single “yes” is difficult to interpret when the preceding message asked about both pocket placement and colour availability.",
+      "source_sha256": "eec6d2ba0dac93acf4be852086eacee40dbbbb7f2af614a9926e543b0946db7f",
+      "raw_target_sha256": "757dbb1df625cccf85e6384caec7446fafbb36eb4ff841f5f2e42eb132c2c2f2",
+      "translation": "保存付款确认和对应规格的说明。宣传图里的搭配单品可能另售，普通版尺码表也未必适用短款或加厚版。标出支持预期的文字和代码。卖家在聊天中确认某项功能时，连同提问一起保存；同一个“是”可能只回答了口袋位置，而没回答颜色是否有货。"
+    },
+    {
+      "source": "List expected contents in physical terms. For a hypothetical bag order, write “one black model B bag, detachable long strap and two internal dividers.” For a customised shirt, write the exact spelling, number, placement and applicable approved proof revision. Distinguish these commitments from personal preferences or assumptions. A buyer who expected a particular shade from gallery photography may still have a legitimate inquiry, but the evidence differs from a confirmed colour code appearing differently on the received label. A clear statement of the expectation avoids overstating what the original seller material establishes.",
+      "source_sha256": "d09cdb447ef91869ce9cf7be19dc1e9c83b48f23e780da55d8cec79ffac2f1ec",
+      "raw_target_sha256": "ce61f01e8330e8fffe427909fc1b648cd9be9cf40e54ba1131b9d9b6072160fe",
+      "translation": "用实物列出预期内容，例如“黑色 B 型包一个、可拆长肩带一条、内隔板两块”。定制衬衫则记录确认的文字、号码及印制位置。哪些来自已付款选项、哪些只是从展示图推测，要明确区分。"
+    },
+    {
+      "source": "Show what actually arrived",
+      "source_sha256": "860887e48a5861f163d4af045d3d3ce97b88fcee9463fa476177b69e2b20feea",
+      "raw_target_sha256": "11c0bf07a654cbb8ac73138f8f4f27ea62fd044ba8816978eea030ded8f4f762",
+      "translation": "展示实际到仓或签收的状态"
+    },
+    {
+      "source": "Collect an overview that connects the item to the order, then a closer view of the issue. A close-up of a cracked buckle can show the defect while leaving the viewer unable to identify which of several bags it belongs to. A full photograph of the bag and a second picture showing the buckle in context connect the evidence. Retain original files and create separate annotated copies if helpful. A small arrow can highlight a hard-to-see detail. Heavy drawing or cropping that hides nearby seams, labels or packaging can make the evidence less useful.",
+      "source_sha256": "0c44f968fed409d1b14020ce7e5b1e08582e418163b2640338bcc2319a9d24c0",
+      "raw_target_sha256": "280aa90293042fd8203c17b751fda91bdb8d875ea6f5eb98dc9869e474cf6ebc",
+      "translation": "先用全景说明这是本单哪件商品，再用近照展示疑点。断裂卡扣的特写能说明损伤，却未必看得出属于哪只包。保留原图，另做必要标注，不要把附近的缝线、标签和包装全部裁掉。"
+    },
+    {
+      "source": "For a measurement discrepancy, show both tape endpoints, units, garment position and the seller's method. For a missing piece, show the received contents together and the seller option naming the missing component. For a printing issue, show the full orientation and a readable reference when a mirrored photograph might explain it. For transit damage, record the external box, label, internal protection and damaged area. These examples concern different evidence. Sending a picture of the parcel label alone will not establish a sizing difference, and a studio photograph of a perfect item will not establish when physical damage occurred.",
+      "source_sha256": "b5b68b6f214d00488f7df7865754f7cf4d8559324872f39b90b0be9aa8583242",
+      "raw_target_sha256": "0b936d29a1d1c52f048180ba1d2450d62bc81e40bf61905b70743b6bd3ea74af",
+      "translation": "尺寸争议需拍清软尺起止点、单位、衣服摆放方式，并附卖家量法。缺件要拍主件与已收到配件的合照，对照卖家选项。运输损坏应记录实际包装及到货状态；另一位买家曾拍到完好商品，不能证明这件商品是什么时候损坏的。"
+    },
+    {
+      "source": "Build a compact chronology",
+      "source_sha256": "b68f0043bd9d020f587f1cd5fdcee1859620cace5ae754ce70311fca4d907561",
+      "raw_target_sha256": "a9c3a5b371599e81ddb225f6e9264109b94f6d5d774117ce4dd20d1c61b8c35f",
+      "translation": "按已知事实整理时间线"
+    },
+    {
+      "source": "Use dated entries with the event, source and reference. A useful timeline could include purchase confirmation, seller dispatch, warehouse intake, first image showing the discrepancy, inquiry submission and seller response. If there was a later replacement or additional shipment, give it a separate tracking reference. Keep domestic tracking events distinct from international ones. When an exact event time is unknown, label it unknown or state when you first observed the event. Do not turn the time you downloaded a picture into a claimed time of damage.",
+      "source_sha256": "91e754d7a79828c60facacd29d4444134006371a2713253ae1e309e8eb960da6",
+      "raw_target_sha256": "1f81f4e5c8b8273dc630169d6f9310664845776d77667a9649b8e98f439928fd",
+      "translation": "每条写日期、事件、记录来源和编号。可依次记下付款确认、卖家发货、仓库入库、第一次显示差异的照片和第一次询问。若只知道某天第一次看见问题，就这样写，不要把下载照片的时间当成损坏发生的时间。"
+    },
+    {
+      "source": "The chronology should clarify who observed what at each stage. Suppose an accessory is absent from a warehouse overview, the seller says it was packed separately and a second domestic parcel later arrives. The chronology can show that the initial image did not settle the matter, that a later statement introduced a testable explanation and that the second package eventually did or did not contain the correct part. This protects both sides from a distorted account based on a single image. If an earlier interpretation proves wrong, keep the correction so the current reviewer can understand why the request changed.",
+      "source_sha256": "753d67e8ba11d86b1752fe946ddb9510c3d6df95b9a5f336ee73f1e5c03a73c5",
+      "raw_target_sha256": "b3c458445d360a40a94e8af067ecaf2c77fe550fe81667d2bb31e15bc54767c8",
+      "translation": "时间线应看得出每个观察是谁作出的。例如仓库全景没见配件，卖家说已另外装箱，后来又出现第二个国内单号。这些是不同事实，不宜直接概括为“卖家漏发”。补充后续进展，保留原记录并注明更正原因。"
+    },
+    {
+      "source": "Prepare a short support message",
+      "source_sha256": "baf78b98a681e381168ca8452287b4a9a8f4f8ac8d7bf940dc5ca1742879a905",
+      "raw_target_sha256": "043412a9e952c8235edcd6a32e8929756642de4aadc1789cfe0f015f5f8c81c4",
+      "translation": "给客服写一条能直接回答的信息"
+    },
+    {
+      "source": "Open with the affected order and one sentence describing the discrepancy. Then provide the strongest expected-versus-received evidence and the requested next action. An example would be “Order [reference], warehouse entry [reference], was paid as navy model B with a long strap. The seller confirmation names the strap and the warehouse has checked the packaging. The strap is absent. Please advise whether the seller can send it or what return options apply.” Attach the relevant images with short captions. This gives the reviewer a concrete question without forcing them to infer meaning from attachment order.",
+      "source_sha256": "ead3eda230fcc29a46000d8bdcd2adda391ed965cb33ee167752b4c0e2d91f10",
+      "raw_target_sha256": "beec1037250839135844e1c2142c91d2a3014d269f7908f7398988afb38a7f5d",
+      "translation": "先写受影响的订单和一句准确描述，再附最能说明预期与实物差异的证据，最后写明下一步希望对方做什么。为附件注明各自对应哪个选项或部位，不要让客服靠猜测还原图片顺序。"
+    },
+    {
+      "source": "Ask any unresolved logistical questions explicitly. Which item must be sent back? Must tags and the retail box be included? Who arranges domestic return shipping and what charge applies? Is an offered refund for the item, a component or another amount? Which currency and destination are stated? If there is a deadline, ask which action must occur by that time. A deadline to submit an inquiry and a deadline for a seller to receive returned goods can be different obligations. Rely on the current order conditions and written instructions for your case rather than a time quoted by another shopper.",
+      "source_sha256": "c0a7c1f28bde5365e30d28cab811c18b6608b555d406dd48b3ce11a97eecce89",
+      "raw_target_sha256": "2df922646e49bd80c12058276c43e767dfcc9afbd1b32635e9b16bc73fd511d1",
+      "translation": "需退回哪件商品？吊牌、零售盒和整套配件是否都要寄回？国内退回由谁安排、费用多少？这些不明确的操作要求要分开问。以本案收到的书面说明和期限为准，不要照搬其他买家的答复。"
+    },
+    {
+      "source": "Close the case using an observable outcome",
+      "source_sha256": "fd2fbc8ab605793837a3869e26682f67c07662c59bbde276cea65f7360d76016",
+      "raw_target_sha256": "600cacefabf2289f4691a976f49227190d5bfc1d576e7377dc3174dbb0f6fffe",
+      "translation": "以已经发生且可核实的结果结案"
+    },
+    {
+      "source": "Preserve the response and distinguish the stages it describes. “Return requested” records a request. A seller's acceptance records an agreed action. A domestic tracking number records a shipment, and a refund entry records a financial event. These milestones do not substitute for one another. Keep the case open in your notes until the agreed outcome has actually happened or until the platform tells you what remains pending. If a refund is issued, compare the amount, currency and destination with the agreement before recording the issue as resolved.",
+      "source_sha256": "1dece3626cccd390ed63d51bd8c524fb5f0ccf9fa81ccd3dde012ebe9908b6be",
+      "raw_target_sha256": "481c4528c5f15ab5556f8730350ff8f7ea4650651987895f663e63d3146cb024",
+      "translation": "“已申请退货”是提出申请；卖家接受是同意后续处理；国内退回单号记录的是物流；退款实际到账又是另一步。保存各节点的答复，按约定核对金额、币种和到账去向，再标记处理完成。"
+    },
+    {
+      "source": "Protect your private records when seeking outside advice. Order references and full parcel labels may be appropriate in the official support channel but unnecessary on a public forum. Redact names, addresses and payment information from public examples while retaining the originals privately. If sharing a cropped photograph, keep enough visible context to explain what it shows. A useful final case file should answer four questions without speculation: what was ordered, what evidence showed the problem, what the seller or platform agreed to do, and which observable event completed that agreement. Those answers remain valuable even after a listing changes or a support thread closes.",
+      "source_sha256": "c1466a5f76e14b4fb620ba3e7a7450cfcd962f5d2c5d68494f7872d5b39f7574",
+      "raw_target_sha256": "3dd138efa65110223e4c041a53f7d5e37bc8854b6ecd8ef589935162696d993b",
+      "translation": "公开求助时保护私人资料。向官方订单客服提供必要编号有助于定位案件，但论坛里通常不需要完整面单或订单编号。保留私有原图，公开只用去除个人信息的副本。按日期命名和分清原图、标注图，日后页面变更仍能查证。"
+    },
+    {
+      "source": "Before sharing images from an order screen, check what else appears around the relevant item. A screenshot can show another purchase, someone else's gift, your delivery address or account details. Keep a complete private original and crop a working copy for the specific enquiry. Leave the order reference, selected option and evidence of the disputed feature readable in the copy you send through the order channel. If the agent genuinely needs another part of the record, supply it there in context. This also improves readability because the person checking your case can immediately see which line of a busy receipt matters.",
+      "source_sha256": "b1eca187f673c0c641197a5fb38a62618c4047a3c6c15c066c5564901741cf74",
+      "raw_target_sha256": "becba6647caf2540d70595065f75c184ccb2bb33f5da2d639fa6c95ca711ff86",
+      "translation": "截订单页面前，看看争议商品周围是否露出其他订单、礼物信息、地址或付款资料。保留完整私有记录，另截仅覆盖相关项目的清晰版本。这样既少披露个人信息，也能让核查者立即找到长收据中真正有争议的那一行。"
+    },
+    {
+      "source": "A short message such as “can replace” may confirm that a seller is willing to discuss an exchange while leaving the size, cost, return requirement and dispatch date unresolved. Translate a response into concrete actions before accepting a proposal or submitting the item for international delivery.",
+      "source_sha256": "bf9b0a8d260b189b043dbfe4f92ca8013de4b3ac7a44c6747cacd0335072cf1b",
+      "raw_target_sha256": "d5d43314c3a21a4902f85eea9586682f0eadf726d9f4af8bb5e09e2e33c37017",
+      "translation": "卖家回一句“可以换”，可能只是愿意谈换货，还没确认尺码、费用、退回要求或补发时间。把简短答复放回原问题中，分清已同意的事项和仍待落实的动作。"
+    },
+    {
+      "source": "Read the answer alongside the question that prompted it",
+      "source_sha256": "7f901dda8a85da6388e02f517654e745d246822fa394048848facfafca9eda4a",
+      "raw_target_sha256": "a81da86a4aea6987488051355b69b7c86d5cef820137715e2fca0a339497af69",
+      "translation": "把卖家回复和此前的提问一起读"
+    },
+    {
+      "source": "Find the original message, any accompanying images and the order reference. Identify which question the seller was answering. Buyers often ask several questions at once: whether a replacement is available, whether the missing component is included, and who pays domestic postage. A one-word answer can appear to resolve all three while referring to just one. Quote the relevant question and ask the unresolved points separately. Keep the original wording and its translation together where language is involved. A translated “will handle” can express an intention without specifying the actual remedy.",
+      "source_sha256": "920c433bd1843699c431d1caf87344e7b0dd917e40fcad22ad4929169d327d3d",
+      "raw_target_sha256": "37dae182c58288c18c262d3ada4810c1edcf05f5ee1aa2769f1f514143bf9740",
+      "translation": "找出原消息、附件和订单编号，确认卖家究竟回答了哪个问题。如果一次问了是否有货、能否换色和谁付运费，一个“可以”不一定同时答复三项。“会处理”也未说明具体方案，可以逐项追问仍不清楚的地方。"
+    },
+    {
+      "source": "Identify which party supplied the information. A seller can describe stock and fulfilment, a warehouse can describe what it physically received, and an agent can relay information or explain the current order process. A tracking record describes a carrier event. Each source has a different basis for its statement. A seller saying a strap was included does not establish what can be seen in a warehouse photograph. A warehouse noting that a strap was not visible does not necessarily prove it was never packed. Keep both observations and ask what check would resolve the difference.",
+      "source_sha256": "36f53f42e9b01210574ea4e569205c349c2cd35e63a0c41fc7f32febe43a48e8",
+      "raw_target_sha256": "79b2debcca075942e5ae841a3fa9ddd6e9738dacecc57639338e11d695110a81",
+      "translation": "区分消息来源。卖家能说明库存和发货安排；仓库能说明实际见到的东西；代购可能是在转述。卖家说“已装箱”和仓库照片“尚未看到”，不必强行当成同一事实。把两项都保留，再问怎样核查。"
+    },
+    {
+      "source": "Separate a proposal from an action already taken",
+      "source_sha256": "4d260b86bb2d4d861446f4fba38f328c16f2b1c9667c654fb4c7391ef70c5a14",
+      "raw_target_sha256": "ef104220215af810accaaab77b246803351caf3bb829a1107e20247ca568c51c",
+      "translation": "区分提议、承诺和已经发生的动作"
+    },
+    {
+      "source": "Read the verbs carefully. “We can send another,” “we will send another,” and “we sent another under tracking number B” represent different stages. In the first case the buyer might need to accept the offer. In the second the seller has stated an intention. In the third there is a specific dispatch event that can be checked. None by itself establishes that the replacement has reached the warehouse or matches the agreed option. Record the current stage and the next event you expect rather than marking the case resolved at the first reassuring message.",
+      "source_sha256": "7f5f023c77d9d0f8cfb5c1a50ebd03db66bcfdcb924d1533c15da3b6757a1fae",
+      "raw_target_sha256": "0dc41336fb53ae6f3006b1b5eb3340911a86718c742b6f25aa9869134d31ee69",
+      "translation": "“可以再寄一件”是提议，可能还要买家同意；“我们会再寄一件”表示卖家已表达计划；“已补发，单号为 B”才指向一个可以查询的发货事件。三者都不能单独证明替换件已到仓或符合约定规格。记下当前阶段及正在等的下一个事件，不要看到一句安慰性的回复便直接结案。"
+    },
+    {
+      "source": "The same distinction applies to refunds. “Refund available” invites a decision. “Refund approved” describes authorization. An amount visible in the account or payment channel is evidence of the resulting transaction. Check the amount, currency and destination described for the actual case. If the seller offers a partial refund, establish the component or defect it covers and whether acceptance settles the issue. Do not infer a specific arrival time or payment destination from another buyer's story. Use the current LitBuy order information and relevant help guidance where a platform process is involved.",
+      "source_sha256": "ccc0d2bd4a6a8224036be546ffcf2cd0bffe78affdbb68b71f09c0a064a25c94",
+      "raw_target_sha256": "89d032ee1f05c326aba4ba1298eaba3b43ca42fd223ab2e7eab0a01ffcc0e45c",
+      "translation": "退款也有类似区别。“可以退款”需要决定是否接受，“退款已批准”表示流程获准，账户或支付渠道出现对应记录才是后续的资金结果。核实金额、币种和去向。涉及平台操作时，查看本单信息及帮助说明。"
+    },
+    {
+      "source": "Identify the exact replacement or remedy",
+      "source_sha256": "b3f43163d3002173fa3977b1f70f4d3cace60d939d897ca0a52682eaf2d63206",
+      "raw_target_sha256": "0d44c42b0203eab204b3cbf01d8abe8aa3469a7df45fb284b687f703c0abb37d",
+      "translation": "明确承诺的替换件或其他处理方案"
+    },
+    {
+      "source": "For an exchange, repeat the replacement specification in full. Include seller option code, model, colour, size, quantity and contents. “Same item” can mean the same general listing, even when the original problem was the wrong colour within that listing. If the first item arrived with a wrong label, ask how the replacement will be identified. If the issue concerned a missing accessory, clarify whether the seller intends to send the accessory itself, replace the whole set, or offer a different compatible part. Each proposal requires a different warehouse check.",
+      "source_sha256": "d247de4043a8327a2620bf912445dc1330fc67cbf881e136f741108191e85d0b",
+      "raw_target_sha256": "300a243832afaabdfd98e4a43edde4107435ff4ba8feeaf825a0d18f91614b06",
+      "translation": "换货时完整复述型号、卖家规格代码、颜色、尺码、数量和包含的部件。“同款”可能指同一个商品页面，不一定是相同版本。问清补整件、只补配件，还是提供另一种兼容零件；到仓后的验收重点并不相同。"
+    },
+    {
+      "source": "Suppose a buyer ordered model B with a removable grey strap and received model A with a fixed black handle. The seller replies “can send strap.” A loose strap may not solve the problem if model A lacks attachment points. Ask whether the supplied bag has the required fittings and whether the offered strap matches them. An offer to replace the bag with model B could be a different solution. State the underlying requirement in practical terms: a bag with the agreed attachment points and the corresponding strap. This keeps the conversation focused on the useful outcome rather than the superficial presence of an extra part.",
+      "source_sha256": "f0c1244e03ddf4f9f67ec9c50dddced880222b9269a6d60b44af793bc3e77136",
+      "raw_target_sha256": "363127ee002d855c25fa4cd64817165435a6dfaf43c845dab91dfb0290bb96cf",
+      "translation": "例如，订的是可拆灰肩带的 B 型包，收到的却是固定黑提手的 A 型。卖家回“可发肩带”，仍需确认现有包是否有相应连接位置。若没有，仅多收到一条肩带并不能达到原用途。应请对方说明到底补带、换包还是提供别的方案。"
+    },
+    {
+      "source": "Resolve costs, deadlines and return conditions",
+      "source_sha256": "3a86385ad0ad8bd11d0a4fadad984cc1fdbb8d615389fa0bb517f2c969b69252",
+      "raw_target_sha256": "76bf8cd4c54474d682c6372893cb8db415cafbc1c3090fac4696e31c896d18f2",
+      "translation": "分别核对费用、期限和退回事宜"
+    },
+    {
+      "source": "Read which actions the buyer must perform and which the seller or agent will arrange. Does the seller need the original item returned before dispatching the replacement? Must every component of a set be included? Are tags, protective film and retail packaging required? Ask before instructing the warehouse to remove packaging or combining unaffected pieces with another outbound parcel. Save the return reference and instructions when supplied. A return address without a clear order connection or an instruction applying to another item can create a new problem.",
+      "source_sha256": "c66df5c0fd4820a67ac4e4f5d380dedb87aff22ed63c6051b16aea88c40e8326",
+      "raw_target_sha256": "e113a0245554530eaf7d87cb85d0105a8630e4af1804a2bd2bc8293a63f84537",
+      "translation": "明确哪些动作由买家、卖家或代购负责。卖家是否须先收到原件才发替换件？整套配件和外盒是否要一起退？确认适用于当前这件商品的地址、步骤和期限，避免依照其他商品的退回说明操作。"
+    },
+    {
+      "source": "If any costs are mentioned, attach them to a specific leg or service. Domestic return freight, domestic delivery of a replacement, international parcel freight and an optional warehouse service are different charges. A seller offering “free shipping” may mean just one of these. Confirm the relevant currency and amount where available. A date also needs a verb: dispatch by Friday, expected warehouse receipt on Friday, and buyer response required by Friday are three entirely different commitments. Ask which one the seller means before shifting a parcel plan or allowing an order deadline to pass.",
+      "source_sha256": "8fd27eb5590869c34e9d17c5428bd6e0aa796a3bc0f585bf212134cbf31089c2",
+      "raw_target_sha256": "25d6adbaa53cb4284fc4996d55b03a1f2c4222c1d65e676699d0811f5fbb1ded",
+      "translation": "把费用具体对应到环节：国内退货、国内补发、国际运费、可选仓库服务各不相同。不要将一句“运费我们负责”自动理解成所有环节全免。安排包裹或等待期限前，问清对方指的是哪一段、什么金额或条件。"
+    },
+    {
+      "source": "Reply with a concise restatement",
+      "source_sha256": "9683fd5d64d104fed353a31fdae8fb429845c548c1024decd99464b563645ce7",
+      "raw_target_sha256": "d97e3b4b014aefbbe6aafa7a4e7bb8a53e6d882d08eae0a8d808444f3c1e77f0",
+      "translation": "用一句复述确认双方理解一致"
+    },
+    {
+      "source": "When a proposal seems workable, restate what you understand in one short message. Include the order reference, affected unit, agreed action and unresolved condition. An example might be “I understand you will send one model B grey strap for order [reference], with no additional domestic charge. The bag stays at the warehouse. Please confirm the clasp matches model B and send the domestic tracking reference when dispatched.” This gives the seller an opportunity to correct a misunderstanding while the action is still reversible. If the proposal is unacceptable, identify which element does not meet the original requirement.",
+      "source_sha256": "d18d3ae42ddb11175b39a015183128606250254f94b9375a84cebc186fab2e9e",
+      "raw_target_sha256": "44855e1ff5fe35cebff80237965519fe61ab22f69b03bb217b9a7b878e92fce6",
+      "translation": "方案可行时，简短复述订单编号、受影响商品、双方约定的动作，以及仍待确认的条件。例如确认先寄回原件，再发指定型号；若目标缺货，要求联系后再替换。若方案不合适，说明具体哪一点不满足原先需求。"
+    },
+    {
+      "source": "Avoid adding unrelated evidence each time the seller responds. Link back to the paid selection or warehouse image only when it clarifies the point currently disputed. If two orders have a similar issue, keep their references separate even if the same seller handles both. Do not allow a reply about one size to be treated as approval for all sizes. For several identical garments, record how many units the seller agrees to replace or refund. A response covering one defective piece and a response covering the full order have different practical consequences.",
+      "source_sha256": "8599f703a8cfff2e33514dfdd766ec063d376944da167ec697fba95c9836adfc",
+      "raw_target_sha256": "4eb0a18e2de1d0b860390d6668a7d6b58b8ce3dbaeed81133d2617c2f628ba59",
+      "translation": "回复只附当前争议所需的证据，不用每次都重发所有材料。若两笔订单都有相同问题，按编号分开写。只针对一件的回复与覆盖整笔订单的回复，涉及的实物范围可能完全不同。"
+    },
+    {
+      "source": "Verify the result before closing the thread",
+      "source_sha256": "8ea7e81684614dfc4e424ef31630a7d256e1267d060d01d912175dff6fa0399f",
+      "raw_target_sha256": "76ee09a0746d9c80046053331cf6d4de05c42b0b00157f2b1d2b21e48e6625dd",
+      "translation": "核实最终结果再结束沟通"
+    },
+    {
+      "source": "After an agreed replacement dispatch, follow its domestic shipment and match the new warehouse entry to the original case. Inspect the particular feature that prompted the exchange and check that the basic model, size, colour and count are correct. For an agreed refund, match the transaction record to the amount and currency. For a promised additional inspection, review the returned photograph or written check. Mark the case complete only after the observable event actually resolves the issue you identified. If the result differs from the proposal, reply with the exact remaining discrepancy.",
+      "source_sha256": "8feac781401d9e9b2149026e36b96c5213c7e0cc11c31473334d0417cfba85ee",
+      "raw_target_sha256": "a7ecba4e2be0ccc46ae55a2067a402e260e1bcdefee267de6dae1bfa30897585",
+      "translation": "卖家同意补发后，跟踪的是替换件的国内单号，把新入库记录关联回原问题，再检查当初要求更换的具体特征。退款则核对实际金额和到账去向。结果仍与方案不符，就指出剩下哪一点需要处理。"
+    },
+    {
+      "source": "Keep a final note summarizing the seller's position, what you accepted and the completed outcome. This can be as short as “strap resent separately, grey model B confirmed in warehouse photo, parcel now ready.” If the answer remained uncertain and you chose to keep the original item, record that conscious decision instead. A clear final note prevents old promises from being mistaken for new warehouse inventory and preserves the distinction between a helpful seller reply, a binding decision on an order and the physical or financial outcome the buyer ultimately received.",
+      "source_sha256": "3e5a4cfa3ee6f59e8606d8e6b79590009c134ded623105d6f19724efb0ba5404",
+      "raw_target_sha256": "0c71c75935713f52edf259640893280a03b781a34a4d3f3cf41ebc53b7693fd6",
+      "translation": "最后留一句可回溯的记录，包括卖家的方案、你的选择和已完成的结果。例如“肩带单独补发，新仓库记录确认是灰色 B 型”。这样看到交易历史时，能区分当时的答复与买家最终收到的实物或款项。"
+    },
+    {
+      "source": "Sometimes the seller's message contains two offers with different conditions. For example, keeping the current item for a small price adjustment and returning it for a replacement are separate choices. Write each on its own line with what you would receive, what would happen to the item already in the warehouse and who still needs to act. If the message leaves one of those points open, quote just the relevant phrase when asking for clarification. Once you decide, name the chosen option explicitly. A short reply such as “okay” can be interpreted as agreement to either outcome and may require another round of messages.",
+      "source_sha256": "33c7b4ba8c04c78746478357caf5e04ff4a66a52a64fc310d2abef9416beb0b5",
+      "raw_target_sha256": "a897e5bd9782dd35c2d2d35b9f65fbd9250e4a594037b796ba99d34f3345d1f7",
+      "translation": "卖家有时会同时给两种不同条件的提议，例如保留现货获得少量补偿，或退回后换货。回复时应明确接受哪一项、金额或规格是什么，哪些条件仍待确认。只回一句“好的”，可能让双方误以为同意了不同方案。"
+    },
+    {
+      "source": "A replacement reaching the warehouse is an important milestone. The exchange is resolved when the new unit satisfies the agreed specification and the original item's status is understood. Link the two records, check the feature that triggered the exchange and then inspect the rest of the replacement as a new delivery.",
+      "source_sha256": "f4b73de2b0b2a71517bfb6cf060f8703eea01f4231f85f61942b33920adf0cdb",
+      "raw_target_sha256": "7f55b9e4f7487de3f1ff1988e475c2a732cbea2615c5319c7541916e8e77f236",
+      "translation": "替换件到仓是重要进展，但还需要确认新件符合约定、原件的处理状态清楚，才能说换货已经完成。"
+    },
+    {
+      "source": "Reconstruct the agreement before opening the photos",
+      "source_sha256": "ee08b96634e17b2779f58775c05a7b97c71f628c3d8dc88cfe9504f063115b0c",
+      "raw_target_sha256": "940f4cdf584dc02c89ec0b902f9466780b7b5b64470ed8856f297aacb79c16b1",
+      "translation": "看新照片前，先还原双方约定"
+    },
+    {
+      "source": "Read the paid seller option, the original warehouse finding and the seller or agent response that approved the exchange. Write down what was supposed to change and what was supposed to remain the same. A jacket exchanged from medium to large should still have the chosen colour and construction. A bag replaced because its zip failed should still include the agreed strap. A seller who agreed to resend only a belt has not necessarily agreed to replace a full outfit. Establish the scope before interpreting photographs of the new arrival.",
+      "source_sha256": "10358d8acadc5949e233716fc675b37d9296da04d8fb7025629e19972459f185",
+      "raw_target_sha256": "0dcb492c4b4ee47fd4e1aeb8bbf0df231e4defd68eff3039de18918c161daf1d",
+      "translation": "对照已付款选项、原仓库发现的问题和批准换货的答复，写明哪些内容应改、哪些应保持一致。换颜色与换尺码需要复核不同特征；只补零件也不同于整件换新。先确定范围，再解释新图。"
+    },
+    {
+      "source": "Keep separate identifiers for the original purchase, original warehouse entry, return shipment, replacement delivery and new warehouse entry. Not every case will have a distinct reference at every stage. Record the references that actually exist and label missing information as pending. A seller's reuse of the original order number does not prove that the new unit is the same physical item. A new domestic tracking number can identify a replacement shipment without identifying which variant was packed. The goal is to connect each record to an observable event rather than merge every identifier into one ambiguous order note.",
+      "source_sha256": "e14b5db156e99761ce6c43172ce9d244ff011fb2195ac4917ff15020bcc87b23",
+      "raw_target_sha256": "2ee0d09bdfe80236ca57745264f5cc4471bfcc512c5b1772fe0b5cfd696ad285",
+      "translation": "为购买订单、原入库记录、国内退回单、替换件国内物流及新入库记录分别留位置。某个阶段没有编号，就注明待确认，不要编一个。卖家沿用原订单号，不代表照片里的实物没换；新的国内单号也只能说明运输节点，不能代替新件验收。"
+    },
+    {
+      "source": "Identify which physical unit the new images show",
+      "source_sha256": "59dcacd1565f0bf20d4f5815ea0d8d8f29a6fa041a8b260efe18b7b278f0e8d4",
+      "raw_target_sha256": "b057feb7b7021dc17f84143c31bff945e0c0dde60fb599bf19ad726951828451",
+      "translation": "确认新照片拍的是哪一件实物"
+    },
+    {
+      "source": "Start with the warehouse entry and its intake information. Compare the attached seller, option text, arrival sequence and any visible label. If you have several similar orders, a newly added photograph in an old conversation may concern a different unit from the one you expect. Ask which warehouse reference the image belongs to when that connection is unclear. Save a full view with the order association and a separate detail view for the particular issue. Keep the original photographs beside them with clearly different file names.",
+      "source_sha256": "d468e9600b04190ebf9c05df62664b49732b9c53d3d8cf51486af12994049ae6",
+      "raw_target_sha256": "8cf591a81c58aad077e22652ab9d02a4a8cf7f57ffd6bb0e2260e453ed73a96d",
+      "translation": "从仓库条目和入库时间入手，核对卖家、选项文字、到仓顺序及可见标签。有多个相近订单时，新照片不一定就是该换货单的替换件。把原件和替换件照片分开命名，并保留两者对应编号。"
+    },
+    {
+      "source": "Look for features that distinguish the original and replacement. A label changing from M to L is direct evidence of a marked size change. A close-up of a different piece of black fabric is weak evidence of a whole-garment replacement. A corrected print should show the relevant lettering in its proper context. If a seller corrected the original item rather than sending another unit, ask what work was done and inspect that specific area. The difference matters when deciding which unit remains in the warehouse and whether a duplicate or unresolved return still needs attention.",
+      "source_sha256": "0342317ff100bfa170aebfdc26e7f2c1d85d31bde1d9f906094ba3e2acf51a65",
+      "raw_target_sha256": "fce4395dbf7db198421f8e10799a71f7a0ebc024caffa861bb2dbb5f7d606b29",
+      "translation": "找能区分两件商品的证据。例如原标签 M、新标签 L，直接反映标注的尺码发生变化；只有一块黑色面料的近照则难以辨认。若新旧条目都还显示在仓，询问原件实际去了哪里，以及是否仍有退货步骤未完成。"
+    },
+    {
+      "source": "Repeat the original test using the same method",
+      "source_sha256": "46d10b67ecbe1021c0529e40eb3f7c9f65f0ec45571614f6ff410103fe99d3ae",
+      "raw_target_sha256": "e4ca8189d0363283fea06747e9944ceedd1c13b5c21d89096252d73500ebaf1e",
+      "translation": "用同一方法复查原来的问题"
+    },
+    {
+      "source": "Return to the concrete reason for the exchange. If the original hoodie was too short relative to a seller chart, use the same garment side, seam endpoints and units on the replacement. Comparing the original centre-back length to the replacement's high-shoulder length may create the appearance of improvement without measuring the same thing. If the first pair of shoes had the wrong marked size, start with the new pair's label before interpreting an insole photograph. If the original concern was colour, compare the replacement option code and identifying trim as well as its overall appearance.",
+      "source_sha256": "3dad0df54d46c384875164e9001c326c990933c29b1e55bf8cb8549c03b74610",
+      "raw_target_sha256": "8c13fdf4763e2c426982b0b3e9b04f2f2224a6a0a9e0e72ae7fb1ebc5cc3685f",
+      "translation": "当初因连帽衫衣长过短而换货，替换件就应按同一面、同一接缝起止点和相同单位再量。因颜色或版本不符而换货，则核对新标签、规格代码、识别性饰边和整体外观。量法或参照变了，两个读数不能直接比较。"
+    },
+    {
+      "source": "A practical example is a jacket ordered with two zip sliders but received with one. One photograph of the replacement showing a closed zip from a distance does not settle the issue. Request or inspect a view covering the top slider and lower end in context. Confirm it is the intended jacket and model before marking the zip requirement satisfied. If the seller's remedy involved adding a separate slider, check whether the completed closure operates as agreed rather than accepting the presence of a loose piece of hardware as equivalent evidence. Ask what inspection is available for that particular order.",
+      "source_sha256": "6b2d58836b56653b702b91d9c2dcd3da2a8eeb01ad129cd628a87dc8132bab60",
+      "raw_target_sha256": "0e94d102ef543ad66ecf231480bafeb5e8f3698be33758f59692725fdcbc8757",
+      "translation": "例如买的是双拉头夹克，原件只有一个拉头。替换件的拉链从远处看已经拉好，并不能证明两个拉头都在。请拍清上下两端，确认两个拉头确实存在。先问本单允许做哪些检查，必要时再要局部图。"
+    },
+    {
+      "source": "Check unaffected features too",
+      "source_sha256": "315cf10de3b04036a9f5d415221495d154f62e029b1f9888f277cdc949c62312",
+      "raw_target_sha256": "961b79edd50d3c72e90a876b87d9424fd5040da7d22e6270d38feb32c0114aee",
+      "translation": "原来没有问题的部分也要复核"
+    },
+    {
+      "source": "Treat the replacement as a full incoming unit. Confirm its quantity, model, colour, marked size and included pieces, then check visible condition. Correcting one problem can introduce another: a seller may send the right size in the wrong colour, or return a replacement bag without the detachable strap that accompanied the first one. An exchange focused on a garment print still deserves a basic check of fabric, seams, packaging and any included accessories. The purpose is to ensure the replacement functions as the purchase the buyer approved, not to search endlessly for microscopic differences.",
+      "source_sha256": "f2be5ce551a9a0a6688763406fd78eb6e2a9bd58a46bc695c9a53dc1811ae480",
+      "raw_target_sha256": "513109a891bfa60368b0cd0a3f622d3bbdc3bfa726764f22aee0e405e660f25b",
+      "translation": "把替换件当作一次新的收货，核对数量、型号、颜色、标签尺码和配件，再看可见状态。纠正一个问题同时也可能引入另一个。重点是确认实际收到的就是双方同意的版本，不必无限放大与购买无关的微小差异。"
+    },
+    {
+      "source": "When only a component is replaced, check compatibility with the part you kept. A strap of the correct colour may have the wrong clasp width. A liner may use different attachment points even when it carries the same size label. A replacement belt might match the fabric but be too wide for the loops. Ask for the relevant dimensions or an appropriate same-frame view when available and permitted. If both pieces are accessible at the warehouse, an inspection that links the specific parts can be more valuable than a beautiful image of the replacement component alone.",
+      "source_sha256": "e6be8dfcf06b269231c25fcfe7aa5d7080c7cce3d5d140c511553356155fba69",
+      "raw_target_sha256": "0735183fa5d6a7c7d6aaf34a5a4c232b9b261235035f7079b7b400ad39bfe572",
+      "translation": "如果只替换配件，要确认它能与保留下来的主件配合。肩带颜色正确，扣具宽度仍可能不合；内衬或许用不同的连接点。把接口和配件放在同一图里，往往比单独拍一张漂亮的配件近照更有用。"
+    },
+    {
+      "source": "Reconcile inventory, packaging and charges",
+      "source_sha256": "7198409ddd50aad7a7c057a936053c5b689b7f8f6b4b848b8ca72f27d432993c",
+      "raw_target_sha256": "f7ff0850d2faba7b515d2a0dcd7003353cab71d489787c8ef16edd208d56c95c",
+      "translation": "核对仓内数量、包装和相关收费"
+    },
+    {
+      "source": "Check where the original item now stands. If it was returned, retain the domestic tracking or other confirmation. If the seller allowed you to keep it, make sure the warehouse entries accurately distinguish the original from the replacement. If a return is still pending, follow the instructions and preserve any required components or packaging. Do not automatically submit both items for international delivery. A second unit in the inventory can represent a replacement alongside an original awaiting resolution, not a second unit that the buyer owns and intends to export.",
+      "source_sha256": "a7e091b15714a69d345bb626c29e05f521d3c3c5e3511afc413a3c0653e67fcc",
+      "raw_target_sha256": "e071543ffe94e2460aaa9980d46882b89d4c8b75f610d5122178ee1496dd3a0d",
+      "translation": "确认原件当前状态。已经退回就保存国内物流或其他确认；卖家允许留存则注明，避免把仓库页面上暂时并列的两个条目都误当成要寄出国的商品。仍待处理的原件不一定是买家可以随意寄出的第二件。"
+    },
+    {
+      "source": "Review any amounts connected to the exchange. Identify the original product charge, any approved price difference, domestic return or replacement shipping and any refund or adjustment. Keep the currency and payment destination clear. If the seller agreed to cover a specific charge, compare the recorded outcome with the agreement. An amount still showing in the transaction history may relate to an older stage rather than a new bill. Ask about the specific line and reference if it remains unexplained. The current LitBuy Help Center and order channel are the right starting points for an unresolved after-sales question.",
+      "source_sha256": "ec86638593b8612b6a3691028f84214dc6149144ceaf33d61ef41358b525f5d0",
+      "raw_target_sha256": "d620c857b25da559738235b43fca12c9dd832b04f45d7ff47f36a7801ee90ec0",
+      "translation": "分开核对原商品价、已批准的补差、国内退回或补发运费，以及退款或价格调整。保留金额和币种及相关确认。若仍有售后疑问，从 LitBuy 帮助中心和当前订单渠道查起。"
+    },
+    {
+      "source": "Release the correct unit for shipping",
+      "source_sha256": "ac609c505291d1f0382a04d7d17f46928ff5916ac855ebd8f15c07a6ae708e29",
+      "raw_target_sha256": "50ec3276ff83c83aa718b6d419348d866b80d49e463fa2c36e8435530b53afdd",
+      "translation": "确认无误后选中正确的条目寄出"
+    },
+    {
+      "source": "Write a short acceptance note when the replacement is satisfactory. For example, “New warehouse entry B shows the large navy jacket, both sliders visible, original entry A returned under domestic tracking R.” Add only B to the outbound manifest. If the replacement still differs from the agreement, send the original specification, exchange approval and new evidence together. Describe the remaining difference precisely and ask which options are now available under the actual order conditions. Avoid making irreversible packing decisions while a further return or inspection might require the retail box or all set components.",
+      "source_sha256": "a6da398dd796e7deabaee0ed42383b0f4be781c60ee5614458d1044e0bc44c44",
+      "raw_target_sha256": "f249bcfb4fd6ea7e095a3d6d741c0e2853a78a47343638057c4191d15510862a",
+      "translation": "验收后写一句简短记录，例如“新条目 B，藏青色大码夹克，两个拉头均可见；原条目 A 已退回”。提交国际包裹时选新条目而非旧件。若仍需售后或补检，先确认是否要保留零售盒和整套配件。"
+    },
+    {
+      "source": "When the international parcel arrives, use the replacement's own photographs for the final comparison. An image of the original defective unit can confuse a later damage report if the two sets of records have been merged. Keep the seller's agreement and resolution history privately until you have reconciled the package and any financial adjustment. Then close the case with a note of what physically arrived and which issue was resolved. This final step turns an exchange from a vague chain of messages into a traceable record of one agreed change and the particular replacement that fulfilled it.",
+      "source_sha256": "c428f0682df72e715296ade4b3b835862a6f302d531e7ebec55c8303ea3aaefd",
+      "raw_target_sha256": "69cffee1946212e3116e4355615f7739554a35787313de501d95e55ca4ed20c7",
+      "translation": "国际包裹送达后，用替换件自己的入库照片对照。若误用原问题件的照片，之后说明运输损坏时可能混淆。保存换货答复、两个仓库编号、正确实物照片和最终包裹记录，形成对同一次变更的完整记录。"
+    },
+    {
+      "source": "A replacement can resolve the original concern while introducing a different one. Suppose the first bag arrived with the wrong strap, and the replacement has the correct strap but a zipper pull that appears bent. Record the original strap issue as resolved and photograph the new concern separately, with the replacement reference visible in your notes. That distinction prevents the seller from looking for the old fault again. If the warehouse can obtain a clearer angle, check whether the pull is physically deformed or simply resting sideways. Make the next decision using the replacement itself, even if the first exchange took more time than expected.",
+      "source_sha256": "941618c48c939e7004bca1ef7e87410992f882b507c2ad532ea9927fd8b16f5e",
+      "raw_target_sha256": "5e162fc58ea87188354a3ed2877e7c33bbfc6dcbf93c6d750e8140e5bcab730e",
+      "translation": "替换件可能解决原问题，同时带来另一个问题。比如第一次包的肩带不对，第二次肩带正确，却出现新的可见瑕疵。先记录原问题是否解决，再单独描述新问题并附新件照片。第一次换货耗时，并不会让替换件的新问题自动消失。"
+    },
+    {
+      "source": "Where can I check LitBuy's current after-sales rules?",
+      "source_sha256": "8f1328cea93f8c045c38945380964f1018356d7122c166f20ccab13896e0ccdc",
+      "raw_target_sha256": "45c2bb2329d51c4b0c308ef81e46e75c052c31905d461c5097d53ac6a5496612",
+      "translation": "在哪里查看 LitBuy 当前的售后规则？"
+    },
+    {
+      "source": "Open the LitBuy Help Center and choose After-sales Request for a missing or damaged item. For a change of mind before international dispatch, read Cancel Order and the terms linked from your order.",
+      "source_sha256": "8cb18f25009544704795742541cd91398c939d78fa3250b980fb9e6106a539e5",
+      "raw_target_sha256": "9f1a5654a93fce06aa6d1920ef63cb46e8f46c0cc6e7751055a78bf2e98c62ae",
+      "translation": "缺件或到货损坏时，打开 LitBuy 帮助中心的售后申请（After-sales Request）。若在国际发运前改变主意，查看取消订单（Cancel Order）说明及当前订单关联的具体条款。"
+    },
+    {
+      "source": "What evidence should I keep if a seller changes the listing?",
+      "source_sha256": "7abc09e2159c57a9b74b5fc511a2200d170bd712e4eb42e7bcf2efa9b4c55af9",
+      "raw_target_sha256": "54afc0e38d8de79e543ba62aa7a632e6c76eedb45425d944bc5f71d262cc0cf3",
+      "translation": "卖家可能修改商品页面，我应保存哪些凭证？"
+    },
+    {
+      "source": "Save your selected option, the description at checkout and the purchase confirmation. A later screenshot may describe a revised listing. Identify which version was visible when you paid.",
+      "source_sha256": "802644cbed0ed0523c2617f55f7c139572564ce51737b7e3abe39c45a3a2c8fb",
+      "raw_target_sha256": "3aab47275ece36c73d3a6cb4e619977f24e0472d72a345bd1ea39f958ff9b5a6",
+      "translation": "保存已选规格、结算时的商品说明和付款确认。后来截的图可能对应新版本，应标明付款时看到的是哪一版。"
+    },
+    {
+      "source": "How can I tell whether my set is missing a piece?",
+      "source_sha256": "7596764a99303478628dc9db69f46a8f1a866fb24c95d9ede5efb46ff5d79b29",
+      "raw_target_sha256": "d7b66c60e1d8fd715ed80528d8b6fd6adddc9c50ab623d7cb291e1ea0e7afefc",
+      "translation": "如何判断买的套装是否少了一件？"
+    },
+    {
+      "source": "Read the option on the paid order. A styled photograph can show a complete outfit even if the option covers only a top. Compare the stated contents with a photograph showing all received pieces together.",
+      "source_sha256": "9280c3d58e946ec1ff432f90d25eb5b9afbbf959ee93bd6b3914d0f73ef16740",
+      "raw_target_sha256": "10fc302a175daf7d6558f78b6a890222fd50e8bbcc099f163db670c21e5d89dc",
+      "translation": "查看已付款订单的选项。模特图可以展示完整穿搭，但所买选项可能只有上衣。先核对明确包含的单品，再看仓库把收到的各件商品放在一起拍的照片。"
+    },
+    {
+      "source": "The warehouse photographed another colour. What should I send?",
+      "source_sha256": "00a43196ddb4b78819800b1391dd169a61545857532ea551e7f6d2581c5bf29a",
+      "raw_target_sha256": "ae3e176a85dc16c1dbe727553dab05342114c912d1921e7dafa1c3c95c14d929",
+      "translation": "仓库照片的颜色与订单不同，应提供什么？"
+    },
+    {
+      "source": "Put the ordered colour text beside a picture that shows the received option label. If lighting could explain the difference, request another view before describing the item as the wrong colour.",
+      "source_sha256": "fa6e8c788bb68fd484ed40cdd920df47cd99b46cb65cc729753c3fed21506100",
+      "raw_target_sha256": "217a4ce42113df227f8bddd5baf710d71aa64d40b1d8679003c27678bd443ace",
+      "translation": "把订单上的颜色原文和能看清实物规格标签的照片放在一起。如果光线可能造成差异，先请仓库换个角度或光源补拍，再判断是否发错颜色。"
+    },
+    {
+      "source": "How do I report lettering printed backwards?",
+      "source_sha256": "4bf576391789aecbafc8effec8e0dc66e8a106fae361633bda4684864214e2d6",
+      "raw_target_sha256": "30e06db53ff1b5d2656907119605ac5aef3c06ffbf0f2b2ff845088dc22bae7d",
+      "translation": "如何说明衣服上的文字疑似印反？"
+    },
+    {
+      "source": "Compare the lettering to a second object in the same frame to rule out a mirrored image. Send a photograph where both the print and a readable label are visible, together with the seller reference.",
+      "source_sha256": "e9ecd077f39c0752074e49530c94d8a5d5a888fe50c9ddb28889bdf22218a5b0",
+      "raw_target_sha256": "e157a3af2c0ec496c1f22c10dd07e9be780adc8c1ab47f507fb7e4e77fa205f7",
+      "translation": "找同一画面中方向明确的另一样东西，先排除整张照片镜像。提供一张既能看清印花、又能正常阅读旁边标签的照片，并附卖家对应的图稿或商品说明。"
+    },
+    {
+      "source": "Should I discard a shoebox while deciding on an exchange?",
+      "source_sha256": "347a6fad6b745f1507f4ad5a5e6e507ec2e871099e1a0b6dd606923c6906cbd8",
+      "raw_target_sha256": "7868ff5a7afb4105f8bde337681ff84a0bf37bd629b603e619a80f3243b732f2",
+      "translation": "还在考虑换货，可以先丢掉鞋盒吗？"
+    },
+    {
+      "source": "Keep the packaging and tags until the seller or agent confirms what must be returned. Photograph any damage before asking the warehouse to alter the packaging.",
+      "source_sha256": "f09779d16e97bedfb8bb2c75a10417998bb7bdcacc456ee6a46325a7384db1e1",
+      "raw_target_sha256": "3bf49fe365f8c190a70cc17777d79a4d516a54a8591af9d19befa51825a22586",
+      "translation": "在卖家或代购确认哪些物品要一起退回之前，把包装和吊牌保留下来。若鞋盒已有损伤，先拍照，再要求仓库调整包装。"
+    },
+    {
+      "source": "What if the replacement is the same wrong version?",
+      "source_sha256": "9c1b8dbaf094d7d78093bdc4160a09bd807b2e4c63a0c0505c92dc5e01103c69",
+      "raw_target_sha256": "37a2b63ebf86a2a871b3414263bea8e3122ddaf827da3958b039d309f454a5cc",
+      "translation": "换货后还是同一个错误版本怎么办？"
+    },
+    {
+      "source": "Compare the replacement warehouse reference and its new pictures against the original order note. Quote both references in the same support thread so the second delivery is distinguishable from the first.",
+      "source_sha256": "c0945824149de48c1fc6fde2d5be4e55d8a34462dd16d85f7df3d652fd59184c",
+      "raw_target_sha256": "20d1d891544a5b5abe8898fc4a330d682d297d203ba5edec71e1e996e62af230",
+      "translation": "将替换件的新仓库编号和新照片与原订单备注比较。在同一条售后沟通里列出新旧两个编号，方便客服区分第一次和第二次到货。"
+    },
+    {
+      "source": "Does the storage deadline tell me how long I can wait to return something?",
+      "source_sha256": "2c5c526a6afa645516261aaae816b8b3123397e4393f722a66d3cc1376d7503b",
+      "raw_target_sha256": "fba57470ab96b8513d8fa36477166c59eb172917f7e7e8b75e2f8b10c28b5198",
+      "translation": "仓储截止日就是可以提出退货的最后一天吗？"
+    },
+    {
+      "source": "Read the return conditions separately. Storage concerns how long the warehouse holds a unit. Seller acceptance and the stage of the individual purchase can affect the return decision earlier.",
+      "source_sha256": "b759e2c2e56916332b2ddf051152e82a6ad114cfe085a4d8cfd73a5762d0bb11",
+      "raw_target_sha256": "97e4ae2df1108b2ae9065c694647bc5451b158706a697300efe97cade73ff5f9",
+      "translation": "退货条件需要单独查看。仓储期限说明仓库能保管多久；卖家是否接受、订单进行到哪一步，可能会让可退货的时间更早结束。"
+    },
+    {
+      "source": "How can I distinguish a missing delivery from a warehouse mismatch?",
+      "source_sha256": "d88491d50ccdcb6ad6398982a1bb28ffd54306fa19552056150bbffae534d839",
+      "raw_target_sha256": "072394711e0771fe9630cf11edf5c46ea6e0bc58e17b720af7952c3bd51085da",
+      "translation": "怎样区分国内包裹还未送到和仓库条目对应错误？"
+    },
+    {
+      "source": "Compare the domestic tracking number, destination warehouse and item record. Identify the last confirmed event. A carrier delivery scan and a warehouse inventory entry describe different steps.",
+      "source_sha256": "c657a4d54c90f356a0c1ba17204bfaed2fbfaa1d09349fd4b3946e2f0d4f2b8d",
+      "raw_target_sha256": "00ed18729620b1d53a7154fe4a78dca764ef8e8d848d44245c6c104bc4716533",
+      "translation": "比对国内物流单号、目的仓库和商品入库记录，找出最后一个能确认的节点。承运商显示签收和仓库库存中出现对应商品，是两个不同步骤。"
+    },
+    {
+      "source": "Which reference should I give LitBuy after the international parcel arrives?",
+      "source_sha256": "1ded0dd22d52db6d88cfc21cf0c82767d75a3200bc3c177277d0077066bf4f96",
+      "raw_target_sha256": "c0bf32dce162c4ceafe28df22819fa2b654a757c3a9f970bc2daba290ac6b34e",
+      "translation": "国际包裹到货后发现损坏，应向 LitBuy 提供哪个编号？"
+    },
+    {
+      "source": "Use the outbound parcel reference for delivery damage, plus the purchase reference for the affected item. Photograph the shipping label, outer box, internal packing and item before removing more packaging.",
+      "source_sha256": "6b32e93d2646158fb5c4d75ff9858950bd313e83d639307e80d1663f116bbba5",
+      "raw_target_sha256": "fc04f05e1ea308d85a38acae8b1b59ad2697e44a1825c90283409e4f88e656d3",
+      "translation": "提供国际包裹编号，并补充受损商品的购买订单号。继续拆包前，先拍清面单、外箱、内包装和商品状态。"
+    },
+    {
+      "source": "How should I measure a hoodie if sleeve length is disputed?",
+      "source_sha256": "7bde485fffb182c3ad7d66dc27176172832ca3f3443e39894cf0fc112ac05a37",
+      "raw_target_sha256": "82d9d8958a12aea289349a7b05371695169b9bb4777abcd43e7b8b22c6c73aa5",
+      "translation": "对连帽衫袖长有疑问时应该从哪里量？"
+    },
+    {
+      "source": "Look at how the seller defines sleeve length. A drop-shoulder sleeve measured from its seam gives a different result from a neck-to-cuff measurement. Request the same endpoints used in the chart.",
+      "source_sha256": "cbbce4ed8aac8bed2abda756cac069982cd357bd9fa1e73eca61d92cfc694a69",
+      "raw_target_sha256": "d76a95ad2c9805f4a4d426fc85374a54a396ae70afe4ee546260e7cb8339e4c5",
+      "translation": "先看卖家的袖长定义。落肩袖从肩袖接缝量到袖口，与从领口量到袖口的结果不同。请仓库采用与尺码表一致的起点和终点。"
+    },
+    {
+      "source": "How do I document a missing detachable strap?",
+      "source_sha256": "0ee625b585c14a7c86290011e58fe57b61c787e03df3850958b10d2292738f64",
+      "raw_target_sha256": "dc895a96547639acc6537b28b307736c1906df97202eca1976d7bb66a828163c",
+      "translation": "怎样证明包里缺少一条可拆肩带？"
+    },
+    {
+      "source": "Save the option description that lists the strap and request a photograph of the bag beside the contents of its pockets or protective wrapping. Identify whether another accessory was supplied in its place.",
+      "source_sha256": "e63b75ba3a61a7aed5c5987572c54378a3bb862824d479aaffed7e8e318c5af5",
+      "raw_target_sha256": "80772bb37dcbd84ebc4582f14c8db894d81558f87cc32e5e39213eeac66bd1a8",
+      "translation": "保存明确包含肩带的选项说明，请仓库把包和内袋或保护套里取出的配件同框拍摄。同时确认是否用其他配件代替了原先约定的肩带。"
+    },
+    {
+      "source": "Can I rely on a previously saved freight estimate after removing an item?",
+      "source_sha256": "af5e2b958b02c19f557f6bc6b89807344866b24f496e0eb98b3bb08c0f7bc750",
+      "raw_target_sha256": "e0486c84d9b30e51ea4741af4e3e8744a6aa8017b69f087cfa6be6eb92f7d360",
+      "translation": "从包裹里移除一件商品后，还能沿用以前的运费估算吗？"
+    },
+    {
+      "source": "Enter the revised items and packing assumptions. Removing one piece can change both weight and box dimensions, so the old quote cannot establish the new final charge.",
+      "source_sha256": "f6e47fccdecff3e205af49186ca82e19e65b1a55e5566d70c21592b7df89b7fb",
+      "raw_target_sha256": "9c804f41d7a58c8beb6661586851e8eeab21a9b42bd492004091b76e9d6afd43",
+      "translation": "用修改后的商品清单和包装条件重新估算。少一件可能同时改变重量和箱子尺寸，旧报价不能确定新包裹的最终收费。"
+    },
+    {
+      "source": "What should I compare before accepting a partial refund?",
+      "source_sha256": "5cbcfb074cbc3bedbbc72ee2b2df488ba137c1cbb07c5ebcc61db8adf6a29b69",
+      "raw_target_sha256": "f2437690b5ebceb1a4255155876b15fe26cbea599bf494686316f4a81343c7cb",
+      "translation": "接受部分退款前要核对哪些事项？"
+    },
+    {
+      "source": "Read the amount, currency, refund destination and whether accepting closes the case. Keep a copy of the proposed settlement and check which item and quantity it covers.",
+      "source_sha256": "a22e99d0ca31ab23fdab720bffc59a680497feedbf8739e8f13ff70fde862702",
+      "raw_target_sha256": "1ca5fbde14fb10979e2ed067aa6e6aff4a3800cc57d56232ff69df5d891519d4",
+      "translation": "核对金额、币种、退款去向，以及接受后是否结案。保留方案副本，确认它具体覆盖哪件商品和多少件。"
+    },
+    {
+      "source": "What details belong in a damage report for a two-piece order?",
+      "source_sha256": "bf438596b074fb6acefb22dc37daa3519945da439389ece940e3d8f22318dd7e",
+      "raw_target_sha256": "62ed30fbec69870a4664d1f390abebea716ae39aba9380bbf1b076efc0348a19",
+      "translation": "两件套中有一件损坏，报告里应写什么？"
+    },
+    {
+      "source": "Name the affected piece and show it beside the unaffected piece for identification. Record whether the issue was visible in the warehouse images or first noticed after delivery.",
+      "source_sha256": "3a73e22f0353b1aefa955e113422c58d94b0279e855743ce2d1d9094d9e8f45f",
+      "raw_target_sha256": "aed26b4115ed2e3a237725058ac59f214d1861f3df3e9b090b4dfa39b5833cb5",
+      "translation": "注明受影响的是哪件，将它与完好的一件放在一起拍照以便辨认。记录该问题在仓库照片中就已可见，还是最终收货后才首次发现。"
+    },
+    {
+      "source": "Which details should I save before cancelling a LitBuy order?",
+      "source_sha256": "e46cad48e70163b8bd03ea3a6dab873ca9a0d3e36b78988764a0ed85d72068c0",
+      "raw_target_sha256": "88d599a84c971f36576c47d7608d29bc04d81043c4aad447000a3d319d160d0e",
+      "translation": "取消 LitBuy 订单前要保存哪些信息？"
+    },
+    {
+      "source": "Save the status, seller option, amount already paid and displayed cancellation conditions. Check whether the seller has dispatched the order before choosing the relevant support route.",
+      "source_sha256": "a40411b31bf1f7a06cc3732d8e1e66491d4d03c8dea281898a5cfbe130198927",
+      "raw_target_sha256": "25d94a2d8f0364b984e1028eb5944003c39bb628dfa6210bec6b76a6e9c7f883",
+      "translation": "保存订单状态、卖家选项、已付金额及页面显示的取消条件。先确认卖家是否已发货，再选择相应的客服或售后渠道。"
+    },
+    {
+      "source": "What if the label shows my size but the garment looks too short?",
+      "source_sha256": "9a3351542ee1daefa4024dc01a07be7402c53c1d485be30ef37a94359d485ca6",
+      "raw_target_sha256": "99f164e4289bea066b830c653e8795bb6a0e615d9c5c2619e13e8a86055e1745",
+      "translation": "尺码标签没错，但衣服看起来太短怎么办？"
+    },
+    {
+      "source": "Compare one defined measurement with the seller's chart and a garment you own. Ask for the tape's starting and ending points in the same image. A size label identifies the option, while the measured length helps you decide whether it will fit.",
+      "source_sha256": "6dfe851d818e3c4e6edbaae5651428c40b2fef7d7843837226754cff81359f1f",
+      "raw_target_sha256": "200cb824618dd9be43d67136096f3e054bbdea2a18c50c062a32417b008cbd12",
+      "translation": "选一种明确的量法，对照卖家尺码表和自己穿着合适的衣服。让软尺的起点和终点出现在同一张图里。标签能说明所选规格，实际衣长才能帮助判断是否适合。"
+    },
+    {
+      "source": "Can a close-up tell me which of two similar items has a stain?",
+      "source_sha256": "24c3e50865a4737d4c7d21558af44857de50f21c3895207ea0bee88a9b7222f8",
+      "raw_target_sha256": "c530c23a6f2462923681cca52eddb765e47db3424fe74f6cddc62d61b0aff0e9",
+      "translation": "两件商品很像，仅凭污渍特写能判断是哪一件吗？"
+    },
+    {
+      "source": "Keep a wider view that identifies the item and a close-up of the affected area. Link both to the receiving or order reference. If the mark could be a shadow, request another angle before attributing it to the fabric.",
+      "source_sha256": "9c45d5637771545fd874c99d82cebf24eeaa2a1003d4eb3dd9a9c1b6a557edbc",
+      "raw_target_sha256": "60d06d336124a3168e548f4c8963affde64c879051df50879ec3bdb805b0a9b9",
+      "translation": "保留可识别商品的全景，再配疑似污渍的近照，两张图都注明入库或订单编号。痕迹可能是阴影时，先请仓库换角度补拍。"
+    },
+    {
+      "source": "Which details help distinguish a zip problem from a misleading QC angle?",
+      "source_sha256": "1f0d566a2f7bde4514bd73abebae4cf7d47e5f6e274d62a85168ccfec78bdfc1",
+      "raw_target_sha256": "292ef6e72a16ce134e1012d94f90123a9d60f887bd7a20fc6dd20b1db1f27f05",
+      "translation": "怎样分辨拉链故障和质检照片角度造成的错觉？"
+    },
+    {
+      "source": "Name the part you are concerned about, such as the pull, teeth or seam beside the zipper. Ask for a clear view of that part. If your concern is movement, ask whether someone can check the action on the received item.",
+      "source_sha256": "c1db2e94747c4079c722a58fd35cae1ddcd6082441702bb1866b3d6e9a239f78",
+      "raw_target_sha256": "e40381be42b473ddffe5c5f33c6ca6857b2f2252d98e541beaf211e031dacfcb",
+      "translation": "说清疑点在拉片、链齿，还是拉链旁的缝线，要求拍清该处。若在意的是拉动是否顺畅，可以询问能否对本单实物做相应检查。"
+    },
+    {
+      "source": "How can I check a pair of shoes when only one tongue label is visible?",
+      "source_sha256": "80cd032a710cae620c5bce0536f511b271e7bcaeb0fd9c99074bcf3817084e31",
+      "raw_target_sha256": "2578f5d2e69841337ab36b9a78150ce132dfba485ce8aedab78cfa8a24347e03",
+      "translation": "一双鞋只拍到一个鞋舌标签，怎样核对是否配错？"
+    },
+    {
+      "source": "Compare the order selection with both shoes. Ask for one view showing the two tongue labels together if a mixed pair is your concern. Keep the original full-pair view to establish which shoes the labels came from.",
+      "source_sha256": "33271d693c0c5220447a3fd7effc3fbea9fe957561329d09c5c5929a44a91890",
+      "raw_target_sha256": "3d270e866e4664a0f74b306d761f4a6114cfabf129febd903c11aeff979cd4b1",
+      "translation": "将两只鞋分别与所选规格比较。如果担心左右脚尺码或款式不一，请仓库把两个鞋舌标签放在同一张图里，同时保留能看到整双鞋的原图。"
+    },
+    {
+      "source": "Can an earlier buyer's QC image settle a dispute about my LitBuy item?",
+      "source_sha256": "9d3fe360ed577059c8d79b44ad7a7ceddc5e358c5704d9ac07f24da41b5e7719",
+      "raw_target_sha256": "a08389406f786ff1400b18896dbfe8ffd18437531db29b8523131880353677a8",
+      "translation": "其他买家的质检照片能证明我的 LitBuy 商品有问题吗？"
+    },
+    {
+      "source": "Use earlier photos to identify a detail worth checking. For a dispute, show the selected seller option and the corresponding photo of your own received item. A previous purchase may involve another size, colour or production run.",
+      "source_sha256": "28b455c91aaab934d0e699759e1178281bbd531dd39f5525f9fcc0123a17c41b",
+      "raw_target_sha256": "0164ac6295f642c50efba30d8a43c745796057c1bcbdb7681ed31520a076bccc",
+      "translation": "旧照片可用来找值得核查的细节。实际争议应提供自己所选的卖家规格，以及本单收到的实物照片。前一位买家购买的可能是其他尺码、颜色或批次。"
+    },
+    {
+      "source": "How do I compare stitching when the seller and warehouse photos use different angles?",
+      "source_sha256": "8538187414e2e7c5736f8d2081c6d97a6d9804e79d42d6e59dace894e2fb0cd9",
+      "raw_target_sha256": "b8595eb45f6067c75cd569fcba8f65c040bbd1fbb87f68d6d298f47ec45a2598",
+      "translation": "卖家图和仓库图角度不同，怎样比较缝线？"
+    },
+    {
+      "source": "Choose a fixed point such as the corner of a pocket, then compare the seam on the same side of the garment at a similar scale. If the fold obscures it, request that particular section laid flat before deciding whether the seam is defective.",
+      "source_sha256": "4aa031924310a8ea89d7be114a05e8de901d5cc0a25a394e20af2607d4468b70",
+      "raw_target_sha256": "ff878eb5f5d61c90615bc3eb9d959b4e4032570332bdaa4155537111d792cafa",
+      "translation": "先定一个固定参照点，例如口袋转角，再在相近比例下比较衣服同一侧对应位置的缝线。若褶皱挡住了，先请把这部分铺平补拍，再判断是否有做工问题。"
+    }
+  ]
+}
