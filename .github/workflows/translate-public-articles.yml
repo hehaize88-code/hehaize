@@ -1,0 +1,28 @@
+name: Translate public site articles
+on:
+  push:
+    branches: [editorial-translation-13-20261123]
+    paths: ['editorial-translation/input/**']
+permissions:
+  contents: read
+jobs:
+  translate:
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [de, fr, es, it, pt, pl, nl, ro, sv, zh, da, fi, el, cs, hu, bg, sk, hr, ja, ko, vi, th, id, sl, lt, lv, et, ga]
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: editorial-translation
+          persist-credentials: false
+      - run: python -m pip install ctranslate2==4.9.1 sentencepiece==0.2.1
+      - run: python editorial-translation/translate.py "${{ matrix.language }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: translations-${{ matrix.language }}
+          path: translations/
+          if-no-files-found: error
+          retention-days: 7
