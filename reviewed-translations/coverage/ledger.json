@@ -1,6 +1,6 @@
 {
   "required_editions": 289,
-  "reviewed_editions": 241,
+  "reviewed_editions": 248,
   "sites": {
     "bbdbuygrid-com": {
       "required": 23,
@@ -1481,6 +1481,18 @@
     "superbuysheetindex-com": {
       "required": 23,
       "reviewed": {
+        "bg": {
+          "entries": 313,
+          "replacements": 68,
+          "reviewed_findings": 59,
+          "effective_sha256": "42086fc02443d1adcca18db296055ec61b6bbcf38906e67c5d557ded4805819d"
+        },
+        "cs": {
+          "entries": 313,
+          "replacements": 30,
+          "reviewed_findings": 2,
+          "effective_sha256": "9a77ad4dd0d618db2aaba245118bb468b94bfec41549c0dfb7389509a0bad720"
+        },
         "de": {
           "entries": 313,
           "replacements": 32,
@@ -1499,11 +1511,41 @@
           "reviewed_findings": 0,
           "effective_sha256": "720e2aae4888a81367f3fd62324a6619287cb6b3f16745c245e6bebcf277d944"
         },
+        "hr": {
+          "entries": 313,
+          "replacements": 35,
+          "reviewed_findings": 9,
+          "effective_sha256": "e8a3fcdc8b15c7ede0fe958a564d387361fc08fbcd0b5c6fd9289d04df8591e7"
+        },
+        "hu": {
+          "entries": 313,
+          "replacements": 32,
+          "reviewed_findings": 2,
+          "effective_sha256": "1d570a1125e2c8ce02390a520b0cde976e23926643753e20682bf77a03d85efb"
+        },
         "it": {
           "entries": 313,
           "replacements": 31,
           "reviewed_findings": 2,
           "effective_sha256": "6005c3784b1ec315361738b8094975b0211c5d42248e8285c9b1a6c47972ceb0"
+        },
+        "pl": {
+          "entries": 313,
+          "replacements": 31,
+          "reviewed_findings": 3,
+          "effective_sha256": "59713aac970c9af279ec2b49b46ec3b15de3507517dfe4cd02e6fe520f39361f"
+        },
+        "pt": {
+          "entries": 313,
+          "replacements": 36,
+          "reviewed_findings": 1,
+          "effective_sha256": "d4fdca73d08a2f2776694b880afedd87de085848714d2942ec685fe7fede8b80"
+        },
+        "ro": {
+          "entries": 313,
+          "replacements": 30,
+          "reviewed_findings": 1,
+          "effective_sha256": "5cfe40c76c92cd6235942792641f8bf20ab9015aeaf0e95f120382ad31e7af4d"
         },
         "sv": {
           "entries": 313,
@@ -1513,20 +1555,13 @@
         }
       },
       "pending": [
-        "bg",
-        "cs",
         "da",
         "el",
         "fi",
-        "hr",
-        "hu",
         "id",
         "ja",
         "ko",
         "nl",
-        "pl",
-        "pt",
-        "ro",
         "sk",
         "th",
         "vi",

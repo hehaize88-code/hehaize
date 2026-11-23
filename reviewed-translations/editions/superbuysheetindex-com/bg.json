@@ -1,0 +1,776 @@
+{
+  "site": "superbuysheetindex-com",
+  "locale": "bg",
+  "source_set_sha256": "22619851fe6c0c4d68d3e0eeae0044fc51f350ee67205e4e41855e55ae1a7029",
+  "raw_dictionary_sha256": "6aa2efd88d1a671f620b6c019b5ba6018f4194f11481699899271457ec401658",
+  "effective_dictionary_sha256": "42086fc02443d1adcca18db296055ec61b6bbcf38906e67c5d557ded4805819d",
+  "checked_entries": 313,
+  "review_scope": "Targeted bilingual review of ten headlines, all flagged entries, reproducible samples, volume arithmetic, currencies and tracking identifiers.",
+  "reviewed_flags": [
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "3e526827c18451cd39b4ecfa1d63cf670dee1d0e55ef2dfbce17ed692c6375a2",
+      "raw_target_sha256": "fbaefd6e1081dd12a6c4acaf51ae0a4b2917d95cd96eac546b647d412321b048",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "0fc6021d1edde959a6a23eef8da7c79db09d501ce1770e828412a0a2aee754e6",
+      "raw_target_sha256": "d04a88c4674e4b353accfb0f42997fb245e0234dd7126555134d25d69dd20076",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "178ed669bcbe474ae335867c421e011f4b6cd67cd97e38abff4b518cc83b35bd",
+      "raw_target_sha256": "66934df7a942b98e4747d19cebfdf313387d4502bb2ec40374d49b2be752f889",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "e3604eb934dc1a5ff26b3f926332fca98e6e4e42eba94f66f3313f060b8c3328",
+      "raw_target_sha256": "3369dca96bb93d4007fab3f215e46d8a0987a3e225c50f49469e02f0fdf40486",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "da354133e9619346a68c6c704fc287761b2a9eadbcf5ee0e44bd3b0827dbdac1",
+      "raw_target_sha256": "cfe4631672b4b196aaa7d168fba85c38066a483d92ce3d5706713455a9678ccf",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "2b4de4d9a327b119df6504b8ea2f26712342f2f661ef70da9410301c4dae246b",
+      "raw_target_sha256": "c85bf83966e139b56f60eebfeb7f3b934a37d3e5574dd2f67d230084bd87c7e3",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "2e5c93d2f178c4689c49010dcfbd85eb4f6ae579b98bdc31757ec8d514fd82af",
+      "raw_target_sha256": "8dcf187059a01fae131249cfb02a4e210a763ec92aaf4433dc846fa854eb4d69",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "ba699bfc01166bf4ad933c51ff1b8be7d69c0d98af1cf64d1195ca46445e9987",
+      "raw_target_sha256": "352e6073f1641c0eb71e83016c027cb1f4f39b17d76176807d9aa0615173e7a2",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "71ee11e29829388fa9d37c8d08cd9fcf693fe3389e3dd256194d6c0c9332704d",
+      "raw_target_sha256": "a3d29b8d63ac637addcd9ad7a740e98b5b8e7642045f4812ab60db01fb8ec266",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "715bb349a62a0a6125327bcdb9018a91e02337b05cf3940756cf48832921e169",
+      "raw_target_sha256": "2daf0a733a021dd99d2d89bb7f48141ce2c13164e415452a505a572436c31600",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "21f5cff47fe7fe86a8209e79e39ac0851ea9f3f2bb0e137e253a1f712156dafe",
+      "raw_target_sha256": "a8bb6d8d1275929e2074c770268b5cce5a946a973727cf7a3c725e20a5465fd9",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "example number omitted or reformatted",
+      "source_sha256": "30fa1a4141ec6b4711796b92d7f845dfb2e7637a39718b56ffd2fab827ee476b",
+      "raw_target_sha256": "12e7d796e409207bff153071ae3d9c9fd473ab164fde30b841e6f51d78dbd245",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "new digit or localized conversion",
+      "source_sha256": "30fa1a4141ec6b4711796b92d7f845dfb2e7637a39718b56ffd2fab827ee476b",
+      "raw_target_sha256": "12e7d796e409207bff153071ae3d9c9fd473ab164fde30b841e6f51d78dbd245",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "quantity unit or currency changed",
+      "source_sha256": "30fa1a4141ec6b4711796b92d7f845dfb2e7637a39718b56ffd2fab827ee476b",
+      "raw_target_sha256": "12e7d796e409207bff153071ae3d9c9fd473ab164fde30b841e6f51d78dbd245",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "ce441b3b40e7f67e376b63c33801d7c993d86d8b5e814487ac038e1fd40a48b2",
+      "raw_target_sha256": "81c9a04de4f489fc6e90303ce055a0e903d5e655267eac7bd6367172d43c8279",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "5d4b342936556b5d776a403a3f6b5be1489a7d40706bb98b7e9aeee28af8342d",
+      "raw_target_sha256": "065cdc59dbd57ec51862205cef935be3b5ebdb9fa3ce7f010d3e9ab02a400791",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "f833e36c42598d190a5ebc76c32d98fdcd9e9b7155de5229446947e8bacdd8ba",
+      "raw_target_sha256": "f13b481f42a6b7052294a58db94a4eab791589d5282caf159b84379282cd2a01",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "acbf85adddf8d11c79e5f0f6b194ec59066d3e193dfbca62eca4e6039971259c",
+      "raw_target_sha256": "a706da1a1670c42e86a21eee31fa170e21bda3e6bc48710dc6dfc080cd43a303",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "6751f35b088aad5750f11361ed7b242aa0afa971c2d9ca0925ccf888b57970df",
+      "raw_target_sha256": "2c511f0a635a17315f1941c5ed718a53e4eea5401fcc9f7bb955f371e6e70df6",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "882c97681feb1c4eec19c42a1908d520c57bfc5f959c9c1593e637607505c875",
+      "raw_target_sha256": "871dac39c05c5c477cbd28b4d290b910d16655f1a6e50565dbf1743b7929b746",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "84fc1a94fdfe7ff7db3e796fcb879c51aad54d3e825229d74b5883d4f31c765c",
+      "raw_target_sha256": "f12c0a51cf6ade69aa84a34c6296dda832014ddfdaf0d15ae8ac76aee5a5d160",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "18e74c7bcd5db60e6f77888ef722295551665b75ebc19b9ec040631a931dbb54",
+      "raw_target_sha256": "7c14b4043b0ba36c3fba60a42364298b8639384e9090e22626efba89e4bac2ee",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "52e9b57e8f697000f1552e16670e62fd3020de825753fe387f178618081608a2",
+      "raw_target_sha256": "3b0f743d2d6d9c0b905e8007baa4244a0a578f65952adae08153b93ae50eb857",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "e4425662abc7ea55153d4c1b70d0ce7dd416fb4259ca5c166735cb6a28b98617",
+      "raw_target_sha256": "d7349a094a842ced4005483cb3dcedc02d6e5821e0afbeaaeff21b970652e1be",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "1e9398fff6b0e4a1c579fde57273190329ee6448bf0869a5aecc056048018f94",
+      "raw_target_sha256": "72a5e3fcdfa5b38c6ea1a0da506e938934fb987b2183b71d9179bdb6dad26dd8",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "ddada8cb8b534f83db3ab33f66e134af22d71fc6aebef55e588f9a7fe5ce586b",
+      "raw_target_sha256": "7263346bbec64340ae2f330c7e0eb55b712cdbe6edc59ccc6e63ffcfc6ed860c",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "f3ac443a7cddbb8dec98a2d2991f1b0c52091611f7186c344444caa6aef13e2e",
+      "raw_target_sha256": "5b23ea78bf71547af08ffc93e69a3b46210ece1a4d4dde0e27b08e3f764dc75b",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "1494ea46b6c5e370fe2689e304eb2caf47d02f9e58303706dfdeec86625e4353",
+      "raw_target_sha256": "d38f835817155973097c039cace918446ba96327ee7c8c3310a8b47510a5dc7b",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "2c7e26f5ddfaa91cf83811b4a4e4a11387f0e123adf059940a61c18ad5da0cfb",
+      "raw_target_sha256": "96b873ac659a42f4df855c3ab7566a6b141f491cb8ef7880964f6792d5568201",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "da90f6d6176c3eea00385357675d71a31256ff4b8eca8e01261f9d1210eea970",
+      "raw_target_sha256": "747f91e2a7f19b6f6fb76e20c49d5055e331a2b119a7bb76ee836009909af600",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "33402987353c0507971a3e24e5dedb842fbaeeb3b44523e9a6247b3135316573",
+      "raw_target_sha256": "f4ca6989eab9e04d6a24c75cb15cdbb2b7cc832bd4b612a9579c87c0441fbe01",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "example identifier changed",
+      "source_sha256": "305a1dd8884ad94041863ab941400fa0db55d7089698d5ba92334abee2be3c6c",
+      "raw_target_sha256": "766c4348105901c0783ca26d29d12b385e18f725fab667e94a35689c4cf39d53",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "a3143723aef74d328a60999b15ff6906ee1d07d18dc9d46a7e7b4b6d27f08588",
+      "raw_target_sha256": "6081ff893779dc0a54f2a226e7e46a2923755d059bad0880167f69ede46282d4",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "example identifier changed",
+      "source_sha256": "3a58e712ebcb3774a7b760ab1249337c2981c0c9d056d1c28adbfa4491a7b9cd",
+      "raw_target_sha256": "77ae657240f43606e591632bb6b4d805e07ce8bf85d8c72efcd6679988aeb1ab",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "d36d8596bebf47ba4907bc274cb88c7d17f0b847b3583f9187ca529cba65ea12",
+      "raw_target_sha256": "8f0f24276189d2e61ec5298163aa99235473562ec045fc8aa2cf6c1b0404a9ec",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "4763c69b9b5c77d9e48c1e1e1a26307c9881e15c39ba6f15ec7e3cfd9cc8e6fb",
+      "raw_target_sha256": "14feedfc08c5d4ac85fd95a6ff729d0213550b5495157ad8e87a2a0f4a8224fb",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "1cebc29a670aa9d75f7d15fa0afb46b06ae8c7e243648ff573d010f84ed882c2",
+      "raw_target_sha256": "2da2bd2590f972da1ee2c1aa1fa7b27ff0644282f74bb31588e200fcf224fbe3",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "29c75509a27c89559835dc2739ca0fc15dd48d8f7e8fd0e1796f0b0d80f2aad8",
+      "raw_target_sha256": "527c0c46245caf17a52b657f0cc2dcb516d55b2bb69fb914e00fc8e68e635acf",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "7300646c86cef9379ae1f1fb0321972326dc9e65a81531b88ea52296f0d45868",
+      "raw_target_sha256": "5d05e4740eeb281c1815cb0aaa511ade443cad6b0965573da58d1cf1c5cc22ef",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "161a635f8b3307cf78f36bec9f9696d50799e39753ade6355e1f81886cce5896",
+      "raw_target_sha256": "771015b095c5b070e1847c4dd4ffb5b9577b5a0cbcb4db531208d1dc6d45c527",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "4444d62d69ca490a385dbde7344bd57459cec5ff20d5273cdb96c38a06d897f1",
+      "raw_target_sha256": "9217683bbd97c9a218024630e8906b99df59b42bd35e81626b25b541780e5799",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "d533192e8fa54b78b7e241010eaa757bfd80aeed706a914cb8c8f4e680f37004",
+      "raw_target_sha256": "1615554af575e16cd3eeca6376a07fc847b968c1440582b3c2b5ec65b79a0f10",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "e60d589ecefd1036300ecbaaf679447c7b716f597ed5ebadaa94f06877fdb80e",
+      "raw_target_sha256": "d8f9459d91d41aab60e87fcedc0d83774f7ac92593f2d315538bfe431ddd3964",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "1b9f507cebc4e47d86d810d72df776cb740b7bfc2eefe7b28281bac4fd359f84",
+      "raw_target_sha256": "497294e1c9ba20b1d44e0b9c305d96639f58224160f79506230f24fe1c8455de",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "c03a57830fe2669a6625a04efa39cd764f693739b472fbdbede8d412438455dc",
+      "raw_target_sha256": "c42d4c84c018f8b3afe8658e70960a3f80b69e30c6044f55e966237da30aa41c",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "4bf443a94431da58d3b1b24368dc499d97b10a49e8b20064ddd7a67e85be3dd1",
+      "raw_target_sha256": "0f6ce49a06fd807ca5a996a05c85c7d784537fbb848453f03131255d026dbc7e",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "example number omitted or reformatted",
+      "source_sha256": "4bf443a94431da58d3b1b24368dc499d97b10a49e8b20064ddd7a67e85be3dd1",
+      "raw_target_sha256": "0f6ce49a06fd807ca5a996a05c85c7d784537fbb848453f03131255d026dbc7e",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "51c7008084901fdc8600e49abbf20f2a2f8f1c109f45a96c82a3d419107ecce5",
+      "raw_target_sha256": "4526d4c176eb8f2a28d0ccec8fb2377901041979f1996ea56df630b99bc59449",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "c6b8e7be0ef1e8963c2d5102d3a7c6b822e225e043173d523471161d336b66de",
+      "raw_target_sha256": "0a0f11000f1db5197fcbd320cd3359dbf73f2391d5abae125fc8390ebdc8a292",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "cfc366513602794fd496dc2e960663ddd2a5c294f51b95ee9a3f4ea423848139",
+      "raw_target_sha256": "dbc5153b41fed7a6b3689dca7980d743bc6ec06c6144b42bb7f1d494b75582be",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "17028b6f779c603b6c084e5bd2a620bad13ed8adfbe3602ff2102cf68aa13f79",
+      "raw_target_sha256": "c22bde6107bc095aeb8dc914eef36a5bcd3361a7adc864f587a761dc2642879b",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "238fe08c1c354382be7b9b318203d235e864e1590c8f449e6223f572757e410b",
+      "raw_target_sha256": "78e14ca99fef155ada6bf9a588daa5c416f9c956ce61c3564b8e0787122b84c5",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "cce343827c75e2d85c95701696c5a99ca0c78c46bcba498fdf51f061439070f9",
+      "raw_target_sha256": "5bb3e1ccf6e5f0c841ced9ec075b1996e4b7d3f785a67280eab191640f466899",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "bc877c9ed7235dc5440eb3187c90b6f42559b31809bb9fe54b3dc879d319d4cb",
+      "raw_target_sha256": "7c2ff3485e9fc3fe3edede8ad18022a8bc21ce043d3e22c5e4af60e9b98bacf2",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "68e64d426e46cdde64a1718e510880dafc4bc484e07bd14dbd3ab298e4dcaad9",
+      "raw_target_sha256": "153a2d589e8669bfd43ff12483db679890c9819980fbf0bbf0586d18e8195eb7",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "756cc13945db10abe97ce17a30cfabe03cd456ab876e54ab7e91bfccb37834ae",
+      "raw_target_sha256": "ff4fb82be2f3ae636d491d671b0e090dbdcb33ceed3782581a1ab37818488a02",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "0b12e490a180f695b4861c0d83c5376b0d7381f0c6342b4e9471a3597e06506e",
+      "raw_target_sha256": "0fe41839398c49e500d7d5b3eb7f7bdd7ee55901a4e7d52ece69e34984482291",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "d77dfccede284505f81ca2b407a667bca2a30cf6a4b9d43b275c4d8a2e11c234",
+      "raw_target_sha256": "c10fd26528536eee43dc957003ee2d339b2a6936c94f7a3e0d99ec4b03d476c4",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "e05f80dd8a0489d36062e965da16d536dee95fb1775272ca58b2e672a8287f17",
+      "raw_target_sha256": "ff709647e9ae204a1325d05ef867025eaa2f54eccb37eaae98f3710965c32c08",
+      "resolution": "corrected translation"
+    }
+  ],
+  "unresolved_material": [],
+  "corrections": [
+    {
+      "source": "Comparing estimated and packed dimensions in Superbuy's shipping calculator",
+      "source_sha256": "71ee11e29829388fa9d37c8d08cd9fcf693fe3389e3dd256194d6c0c9332704d",
+      "raw_target_sha256": "a3d29b8d63ac637addcd9ad7a740e98b5b8e7642045f4812ab60db01fb8ec266",
+      "translation": "Сравняване на приблизителните и опаковани размери в калкулатора за доставка на Superbuy"
+    },
+    {
+      "source": "How to match a domestic tracking number to a Superbuy warehouse entry",
+      "source_sha256": "f833e36c42598d190a5ebc76c32d98fdcd9e9b7155de5229446947e8bacdd8ba",
+      "raw_target_sha256": "f13b481f42a6b7052294a58db94a4eab791589d5282caf159b84379282cd2a01",
+      "translation": "Как да свържете китайски номер за проследяване със запис в склада на Superbuy"
+    },
+    {
+      "source": "A self-purchased parcel is missing from Superbuy: prepare an intake investigation",
+      "source_sha256": "e4425662abc7ea55153d4c1b70d0ce7dd416fb4259ca5c166735cb6a28b98617",
+      "raw_target_sha256": "d7349a094a842ced4005483cb3dcedc02d6e5821e0afbeaaeff21b970652e1be",
+      "translation": "Липсва самостоятелно закупена пратка от Superbuy: подгответе приемно разследване"
+    },
+    {
+      "source": "Using Superbuy on a phone: check the option that reaches your shopping order",
+      "source_sha256": "2c7e26f5ddfaa91cf83811b4a4e4a11387f0e123adf059940a61c18ad5da0cfb",
+      "raw_target_sha256": "96b873ac659a42f4df855c3ab7566a6b141f491cb8ef7880964f6792d5568201",
+      "translation": "Superbuy през телефона: проверете кой вариант влиза в поръчката ви"
+    },
+    {
+      "source": "Organizing Superbuy warehouse entries before you select a parcel",
+      "source_sha256": "4763c69b9b5c77d9e48c1e1e1a26307c9881e15c39ba6f15ec7e3cfd9cc8e6fb",
+      "raw_target_sha256": "14feedfc08c5d4ac85fd95a6ff729d0213550b5495157ad8e87a2a0f4a8224fb",
+      "translation": "Как да подредите стоките в склада на Superbuy, преди да ги обедините в пратка"
+    },
+    {
+      "source": "Receiving a multi-box purchase at Superbuy without losing track of its pieces",
+      "source_sha256": "1cebc29a670aa9d75f7d15fa0afb46b06ae8c7e243648ff573d010f84ed882c2",
+      "raw_target_sha256": "2da2bd2590f972da1ee2c1aa1fa7b27ff0644282f74bb31588e200fcf224fbe3",
+      "translation": "Получаване на покупка на няколко кутии в Superbuy, без да губите следа от парчетата си"
+    },
+    {
+      "source": "Registering a Superbuy forwarding shipment before your seller sends it",
+      "source_sha256": "7300646c86cef9379ae1f1fb0321972326dc9e65a81531b88ea52296f0d45868",
+      "raw_target_sha256": "5d05e4740eeb281c1815cb0aaa511ade443cad6b0965573da58d1cf1c5cc22ef",
+      "translation": "Как да заявите препращане чрез Superbuy, преди продавачът да изпрати стоката"
+    },
+    {
+      "source": "Preparing useful packing instructions before a Superbuy shipping estimate",
+      "source_sha256": "c03a57830fe2669a6625a04efa39cd764f693739b472fbdbede8d412438455dc",
+      "raw_target_sha256": "c42d4c84c018f8b3afe8658e70960a3f80b69e30c6044f55e966237da30aa41c",
+      "translation": "Как да дадете указания за опаковане, преди Superbuy да изчисли ориентировъчната цена на доставката"
+    },
+    {
+      "source": "Superbuy shopping agent or parcel forwarding: which order should you create?",
+      "source_sha256": "51c7008084901fdc8600e49abbf20f2a2f8f1c109f45a96c82a3d419107ecce5",
+      "raw_target_sha256": "4526d4c176eb8f2a28d0ccec8fb2377901041979f1996ea56df630b99bc59449",
+      "translation": "Покупка чрез посредник или препращане на пратка: коя заявка да подадете в Superbuy?"
+    },
+    {
+      "source": "Tracking Superbuy photo and packing requests from instruction to result",
+      "source_sha256": "d77dfccede284505f81ca2b407a667bca2a30cf6a4b9d43b275c4d8a2e11c234",
+      "raw_target_sha256": "c10fd26528536eee43dc957003ee2d339b2a6936c94f7a3e0d99ec4b03d476c4",
+      "translation": "Как да проследите заявките за снимки и опаковане в Superbuy до изпълнението им"
+    },
+    {
+      "source": "For a rectangular box, multiply length by width by height to compare volumes. If an illustrative first estimate uses 40 by 25 by 15 centimetres, the rectangular volume is 15,000 cubic centimetres. A measured outer package of 42 by 28 by 18 is 21,168 cubic centimetres. The difference is 6,168 cubic centimetres, around 41 percent more space than the estimate.",
+      "source_sha256": "30fa1a4141ec6b4711796b92d7f845dfb2e7637a39718b56ffd2fab827ee476b",
+      "raw_target_sha256": "12e7d796e409207bff153071ae3d9c9fd473ab164fde30b841e6f51d78dbd245",
+      "translation": "За да сравните обемите на правоъгълни кашони, умножете дължината, ширината и височината. Първоначална оценка 40 × 25 × 15 см дава 15 000 см³. Ако измерената външна опаковка е 42 × 28 × 18 см, обемът ѝ е 21 168 см³. Разликата е 6 168 см³, или около 41 процента повече място от очакваното."
+    },
+    {
+      "source": "For an illustrative calculation, a packed parcel measuring 40 by 30 by 20 centimetres occupies 24,000 cubic centimetres. A second packing option measuring 40 by 30 by 15 occupies 18,000. That is a reduction of 6,000 cubic centimetres, or one quarter of the first volume. It does not follow that the shipping charge falls by one quarter. Check each eligible route's actual billing and size rules and whether the protective treatment still meets your needs.",
+      "source_sha256": "e8b3ee62db0f37a26004b6cda6d705285f9782527dfc222e8775d1d10609c995",
+      "raw_target_sha256": "201c8a3af05209f6060f38ec1b6d73b5bcab7fc612ef0e0245c3710609136876",
+      "translation": "В примера опакована пратка с размери 40 × 30 × 20 см заема 24 000 см³. Вторият вариант на опаковката е 40 × 30 × 15 см и заема 18 000 см³. Намалението е 6 000 см³, една четвърт от първоначалния обем. Това не означава, че цената за доставка намалява с една четвърт. Проверете начина на таксуване и ограниченията за размерите при всяка възможна услуга, както и дали опаковката все още осигурява нужната защита."
+    },
+    {
+      "source": "Imagine a seller invoice of 150 in the seller's currency, plus 10 for domestic delivery. If you paid those amounts directly, your running purchase cost is 160. Entering 150 as an item value on a forwarding worksheet does not raise the running cost to 310. Add actual new charges when they occur, identifying the service and currency for each. These figures illustrate bookkeeping only; the applicable amounts come from your own order.",
+      "source_sha256": "9885784106ff1a6b5b1e40e9d1e77b5158911c6186e7ea93a2b9a665bba813b4",
+      "raw_target_sha256": "579d74573397be5ddd3d075ce33733befae63ec9f15c5c4b56b92a77919ddc77",
+      "translation": "Представете си фактура за 150 във валутата на продавача плюс 10 за вътрешна доставка. Ако сте платили и двете суми пряко, разходите ви за покупката досега са 160. Вписването на 150 като стойност на стоката във формуляра за препращане не увеличава разходите на 310. Добавяйте новите такси, когато действително бъдат начислени, и записвайте услугата и валутата за всяка от тях. Числата само илюстрират воденето на сметка. За своята покупка използвайте сумите от собствената си поръчка."
+    },
+    {
+      "source": "Superbuy's shipping calculator requests the destination, warehouse, weight, size and item category. Use the same inputs as the measured parcel when comparing the resulting options. Weights shown in kilograms may require conversion if the form asks for grams. One kilogram equals one thousand grams. Copying 2.4 into a grams field misstates the input by a factor of a thousand.",
+      "source_sha256": "4bf443a94431da58d3b1b24368dc499d97b10a49e8b20064ddd7a67e85be3dd1",
+      "raw_target_sha256": "0f6ce49a06fd807ca5a996a05c85c7d784537fbb848453f03131255d026dbc7e",
+      "translation": "Калкулаторът за доставка на Superbuy изисква дестинация, склад, тегло, размери и категория на стоката. Сравнявайте различните варианти с едни и същи данни за измерената пратка. Ако теглото е в килограми, а формулярът иска грамове, преобразувайте го. Един килограм е 1000 грама. Ако за пратка от 2,4 кг въведете 2,4 в полето за грамове, ще посочите хиляда пъти по-малко тегло от действителното."
+    },
+    {
+      "source": "Suppose the request asked for chest width on a closed jacket laid flat. The returned picture shows a tape around the outside of an open jacket on a hanger. It may be a legitimate measurement, but it does not answer your comparison with a garment measured flat. Explain the difference and ask whether the original view can be supplied under the selected service. Avoid assuming another charge is due or a refund is guaranteed until the actual terms and response are clear.",
+      "source_sha256": "e7014841d79e30bc2255f89a7434fcb7f9c493678ef0891d932c0a4bebe62fa3",
+      "raw_target_sha256": "348a1fcdf552edf45f55610592dde301a5823cb88b19e350402a667db64bc111",
+      "translation": "Представете си, че сте поискали ширината при гърдите на закопчано яке, поставено върху равна повърхност. Получената снимка показва шивашки метър, обвит около разкопчано яке на закачалка. Само по себе си това може да е валидно измерване, но не позволява сравнение с дрехата ви, измерена в легнало положение. Обяснете разликата и попитайте дали избраната услуга позволява да се направи първоначално поисканата снимка. Не приемайте, че се дължи друга такса или че е гарантирано възстановяване на сумата, преди да проверите условията и отговора."
+    },
+    {
+      "source": "If the arrangement is ambiguous, ask for an inventory check that someone can carry out. An example request is: “For the warehouse entry linked to the domestic waybill ending 482, please confirm whether it contains two lamp bases and whether any fittings packets were recorded with them.” Include the full reference in the private inquiry. Keep the question about contents separate from a second question about damaged finish or measurements. Each has a different piece of evidence that can settle it.",
+      "source_sha256": "a11559955c960e6cb7c78473bea58a6362a1e761133ee46f5d1e10ba43394cfb",
+      "raw_target_sha256": "a79fb493bdb9dcc90dfac18c3f4a7132565b379bd34837e627a600f95d8435f2",
+      "translation": "Ако разпределението не е ясно, поискайте конкретна проверка на съдържанието. Например: „За складовия запис, свързан с вътрешната товарителница, завършваща на 482, моля, потвърдете дали съдържа две основи за лампи и дали с тях са регистрирани пликчета с монтажни части.“ В личното запитване посочете целия номер. Отделете въпроса за съдържанието от въпросите за повредено покритие или размери. Всеки се проверява с различни доказателства."
+    },
+    {
+      "source": "Suppose a seller lists a box as 420 by 260 by 150 millimetres and the scale reads 1.80 kilograms. Its corresponding inputs are 42 by 26 by 15 centimetres and 1,800 grams. If one side is accidentally entered as 150 centimetres, the box in the calculator becomes ten times taller than the box on the desk. A disappearing route or implausibly high figure can be a reason to recheck units before assuming the carrier has changed its prices.",
+      "source_sha256": "26ca674f094d7097cc6e164b4078162ae71de3917a6de0712e37cb8d77f70aec",
+      "raw_target_sha256": "d8e5909fe8f494d6a329e04366b3d31698645e8561fa7216660d9639032df99b",
+      "translation": "Продавачът посочва размери на кутията 420 × 260 × 150 mm, а кантарът показва 1,80 kg. Ако полетата изискват сантиметри и грамове, въведете 42 × 26 × 15 cm и 1 800 g. Ако вместо 15 cm напишете 150 cm, калкулаторът ще смята кутията за десет пъти по-висока. Когато даден маршрут изчезне или прогнозната цена изглежда необичайно висока, първо проверете мерните единици, преди да приемете, че превозвачът е променил тарифата."
+    },
+    {
+      "source": "Suppose two purchases appear in your marketplace history with almost identical titles and consecutive order dates. On one, the waybill ends in 381; on the other, it ends in 318. A glance at the first digits may suggest that both refer to the delivery you just received. Compare the entire string. When you later write to support, paste the complete number rather than the last three digits used in your private notes.",
+      "source_sha256": "e057bc1f582aec26e38e448703f29f7e0bd5eaba2e8f03eaaeadc2033b38e160",
+      "raw_target_sha256": "3b3ccb571fa898c7ae0d7b99405ed6d9e7efc539fa2a6cd9d9cccc85c8cc4b00",
+      "translation": "Представете си две покупки с почти еднакви заглавия, направени в два поредни дни. Номерът на едната товарителница завършва на 381, а на другата на 318. Сходните начални цифри могат да ви подведат, че и двата записа са за току-що получената пратка. Сравнете целите номера. Когато пишете на поддръжката, поставете пълния номер, а последните три цифри използвайте само като съкращение в личните си бележки."
+    },
+    {
+      "source": "I paid the seller directly. Which Superbuy service should I look at?",
+      "source_sha256": "3e526827c18451cd39b4ecfa1d63cf670dee1d0e55ef2dfbce17ed692c6375a2",
+      "raw_target_sha256": "fbaefd6e1081dd12a6c4acaf51ae0a4b2917d95cd96eac546b647d412321b048",
+      "translation": "Платих направо на продавача. Коя услуга на Superbuy ми трябва?"
+    },
+    {
+      "source": "Read the parcel forwarding guide. It covers items you bought yourself and need received at a Superbuy warehouse. A shopping agent order instead asks Superbuy to make the purchase.",
+      "source_sha256": "0fc6021d1edde959a6a23eef8da7c79db09d501ce1770e828412a0a2aee754e6",
+      "raw_target_sha256": "d04a88c4674e4b353accfb0f42997fb245e0234dd7126555134d25d69dd20076",
+      "translation": "Прочетете ръководството за изпращане на колети. Тя обхваща стоки, които сте закупили сами и трябва да бъдат получени в склад. Поръчка на търговски агент вместо това иска Superbuy да направи покупката."
+    },
+    {
+      "source": "Should I register a forwarding request for an item Superbuy bought for me?",
+      "source_sha256": "178ed669bcbe474ae335867c421e011f4b6cd67cd97e38abff4b518cc83b35bd",
+      "raw_target_sha256": "66934df7a942b98e4747d19cebfdf313387d4502bb2ec40374d49b2be752f889",
+      "translation": "Трябва ли да заявя препращане за стока, която Superbuy купи вместо мен?"
+    },
+    {
+      "source": "Superbuy says that a purchase made through its shopping agent service does not require a separate forwarding submission. Check the shopping order and its warehouse status first.",
+      "source_sha256": "e3604eb934dc1a5ff26b3f926332fca98e6e4e42eba94f66f3313f060b8c3328",
+      "raw_target_sha256": "3369dca96bb93d4007fab3f215e46d8a0987a3e225c50f49469e02f0fdf40486",
+      "translation": "Superbuy твърди, че покупка, направена чрез услугата им за търговски агенти, не изисква отделно изпращане. Първо проверете поръчката за покупка и нейния складов статус."
+    },
+    {
+      "source": "Imagine a listing for sketchbooks with “black A5, dotted” and “black A5, blank.” The thumbnail can be identical because it shows the closed cover. If your requirement is blank paper, the word at the end is the decisive feature. Save the complete option text. A hand-written note saying “black notebook” loses precisely the detail that the warehouse may later need to verify.",
+      "source_sha256": "305a1dd8884ad94041863ab941400fa0db55d7089698d5ba92334abee2be3c6c",
+      "raw_target_sha256": "766c4348105901c0783ca26d29d12b385e18f725fab667e94a35689c4cf39d53",
+      "translation": "В обява за скицници може да има варианти „черен A5, хартия на точки“ и „черен A5, бели нелинирани листове“. Миниатюрите може да съвпадат, защото показват само затворената корица. Ако искате чисти листове, решаваща е последната част от описанието. Запазете целия текст на варианта. Бележка „черен бележник“ пропуска точно онова, което складът по-късно може да трябва да провери."
+    },
+    {
+      "source": "For example, a seller may send a notebook today and its separately ordered refill tomorrow. The seller order can be the same on both dispatch notices while the carrier numbers differ. To check whether both pieces arrived, match each waybill and then compare the contents of the warehouse entries. An account search for the ordinary-language title “notebook” alone may miss a refill entered under a different name.",
+      "source_sha256": "b46e36e56d4663d2165d0391558f9d348ed6c2cc20debb615b66e7e93d6e9e07",
+      "raw_target_sha256": "af01fdbfcd94d1f915e7bec88508aedf88ca92828718e70ad7d44e8b04713ad2",
+      "translation": "Продавачът може да изпрати бележника днес, а отделно поръчаните листове за допълване утре. В двете известия може да стои една и съща поръчка при продавача, но номерата за проследяване да са различни. За да проверите дали са пристигнали и двете части, съпоставете всяка товарителница със складовия запис и сравнете съдържанието. Търсене само по думата „бележник“ може да пропусне допълнителните листове, записани под друго име."
+    },
+    {
+      "source": "That comparison describes geometry only. Whether a particular carrier uses dimensional billing, how it converts volume into a billing weight, how it rounds and how much it charges are separate questions. Read the selected route rules instead of borrowing a divisor from a different carrier's tutorial. A 41 percent increase in volume does not prove that freight increased by 41 percent. The actual weight, route limits and rate bands may matter more.",
+      "source_sha256": "5ca7980da154223c959d1cbf4f137f65b3ee7a29139eaf651e9870b25fc07379",
+      "raw_target_sha256": "60f0a9fc45186e74d5b8b4b181c0da76c09857e3ae1f144810fe96db41d6eff0",
+      "translation": "Тази сметка описва само геометрията на кутията. Отделно проверете дали превозвачът използва обемно тегло, как го изчислява и закръгля и по каква тарифа таксува. Прочетете правилата за избраната линия, вместо да вземате делител от пример на друг превозвач. Увеличение на обема с 41% не доказва увеличение на навлото с 41%. Действителното тегло, ограниченията на линията и тарифните стъпки може да са по-важни."
+    },
+    {
+      "source": "An order note works best when it identifies an option the agent can check. Instead of “as pictured,” write the original seller option followed by your explanation of what matters. For a sketchbook, that might be “black cover, A5, blank pages; please ask before replacing with dotted paper.” If the seller allows customization, reproduce spelling and case carefully and specify any uncertainties before payment.",
+      "source_sha256": "3a58e712ebcb3774a7b760ab1249337c2981c0c9d056d1c28adbfa4491a7b9cd",
+      "raw_target_sha256": "77ae657240f43606e591632bb6b4d805e07ce8bf85d8c72efcd6679988aeb1ab",
+      "translation": "Бележката към поръчката е по-полезна, ако посочва вариант, който посредникът може да провери. Вместо „като на снимката“ препишете означението на продавача и добавете какво е важно. За скицник: „Черна корица, A5, чисти листове. Попитайте, преди да замените с листове на точки.“ При персонализация проверете правописа и главните букви и уточнете неяснотите преди плащане."
+    },
+    {
+      "source": "An availability decision and a packing decision are separate. You might know exactly where every unit is but still need to decide whether partial international delivery serves your purpose. For a modular lamp, shipping the bases without fittings can leave you with two unusable pieces at home. For several independent notebooks, an early partial shipment may be more practical. Describe the consequence of dispatching the available pieces before comparing prices.",
+      "source_sha256": "336a63d6d17cb9673e3330b065eb31d5be3f39f420a0394b613d5838c5b04f8e",
+      "raw_target_sha256": "aeb6b51382bf50d20755a41a879b768904666bbef2e292d3c27e14dbc73e0130",
+      "translation": "Наличността на частите и изборът за изпращане са отделни въпроси. Дори да знаете къде е всяка бройка, трябва да решите дали частична международна доставка ви устройва. Двете основи на модулна лампа може да са неизползваеми у дома без крепежите. При няколко отделни хартиени бележника обаче може да е удобно да получите наличните по-рано. Преди да сравнявате цените, преценете какво бихте могли да използвате при частично изпращане."
+    },
+    {
+      "source": "Superbuy's forwarding guide describes supplying an item name and type for an already prepared parcel. Describe the actual contents and use the form's current requirements to check whether review is possible.",
+      "source_sha256": "2b4de4d9a327b119df6504b8ea2f26712342f2f661ef70da9410301c4dae246b",
+      "raw_target_sha256": "c85bf83966e139b56f60eebfeb7f3b934a37d3e5574dd2f67d230084bd87c7e3",
+      "translation": "Ръководството за изпращане на Superbuy описва предоставянето на име и тип на артикула за вече подготвена пратка. Опишете действителното съдържание и използвайте текущите изисквания на формуляра, за да проверите дали прегледът е възможен."
+    },
+    {
+      "source": "Where do I see items that have been stocked at Superbuy?",
+      "source_sha256": "2e5c93d2f178c4689c49010dcfbd85eb4f6ae579b98bdc31757ec8d514fd82af",
+      "raw_target_sha256": "8dcf187059a01fae131249cfb02a4e210a763ec92aaf4433dc846fa854eb4d69",
+      "translation": "Къде мога да видя артикули, които са в наличност в Superbuy?"
+    },
+    {
+      "source": "Superbuy's guidance distinguishes the international shipping deposit from final shipping based on verified measurements and the selected service. When looking at a total, separate the freight component from selected packing, other services and any distinct adjustments displayed in the account. Preserve the original currency and keep the actual parcel reference with every amount.",
+      "source_sha256": "ce441b3b40e7f67e376b63c33801d7c993d86d8b5e814487ac038e1fd40a48b2",
+      "raw_target_sha256": "81c9a04de4f489fc6e90303ce055a0e903d5e655267eac7bd6367172d43c8279",
+      "translation": "Насоките на Superbuy разграничават международния депозит за доставка от окончателната доставка въз основа на проверени измервания и избраната услуга. Когато разглеждате общата сума, отделете компонента за превоз от избраната опаковка, други услуги и всички отделни корекции, показани в профила. Запазете оригиналната валута и запазете действителната референция на пратката с всяка сума."
+    },
+    {
+      "source": "For an agent purchase, find the Superbuy shopping order associated with the original item. For a purchase you made yourself, find the forwarding request and the logistics information you supplied. Superbuy's forwarding guide directs the user to provide the inbound shipping details after the item is reviewed. Check which of those two starting points describes your case. A shopping order number from a similar purchase can lead you to inspect the wrong record.",
+      "source_sha256": "6751f35b088aad5750f11361ed7b242aa0afa971c2d9ca0925ccf888b57970df",
+      "raw_target_sha256": "2c511f0a635a17315f1941c5ed718a53e4eea5401fcc9f7bb955f371e6e70df6",
+      "translation": "За покупка от агент намерете поръчката за пазаруване свързана с първоначалния артикул. За покупка, която сте направили сами, намерете заявката за спедиция и логистичната информация, която сте предоставили. Ръководството за препращане на Superbuy насочва потребителя да предостави данните за входящата доставка, след като артикулът бъде прегледан. Проверете коя от тези две отправни точки описва вашия случай. Номер на поръчка за пазаруване от подобна покупка може да ви накара да проверите грешен запис."
+    },
+    {
+      "source": "Look at the destination alongside the event. Does the city and receiving address correspond to the warehouse selected on your request? An account login or internal recipient identifier can help connect the parcel with the customer after delivery. If the marketplace receipt shows a different address from the one in Superbuy, keep both records and explain the difference. Do not “correct” the screenshot before sharing it with official support: the original discrepancy may be exactly what identifies the problem.",
+      "source_sha256": "882c97681feb1c4eec19c42a1908d520c57bfc5f959c9c1593e637607505c875",
+      "raw_target_sha256": "871dac39c05c5c477cbd28b4d290b910d16655f1a6e50565dbf1743b7929b746",
+      "translation": "Вижте дестинацията заедно със събитието. Градът и адресът на получаване съответстват ли на склада, избран във вашата заявка? Входът в акаунта или вътрешният идентификатор на получателя могат да помогнат за свързването на пратката с клиента след доставката. Ако разписката от пазара показва различен адрес от този в Superbuy, запазете и двата записа и обяснете разликата. Не „коректирайте“ екранната снимка, преди да я споделите с официалната поддръжка: първоначалното несъответствие може да е точно това, което идентифицира проблема."
+    },
+    {
+      "source": "Open My Warehouse for the relevant account. Superbuy's official guidance identifies this as the place to view stocked items. Review the warehouse entries around the delivery event. Check the item description, purchase or forwarding reference, quantity and available pictures. A translated title may differ substantially from the seller's original wording; use identifiers wherever possible.",
+      "source_sha256": "84fc1a94fdfe7ff7db3e796fcb879c51aad54d3e825229d74b5883d4f31c765c",
+      "raw_target_sha256": "f12c0a51cf6ade69aa84a34c6296dda832014ddfdaf0d15ae8ac76aee5a5d160",
+      "translation": "Отворете Моят склад за съответния акаунт. Официалното ръководство на Superbuy идентифицира това като място за преглед на складираните артикули. Прегледайте складовите записи за отделни артикули около събитието за доставка. Проверете описанието на артикула, референтната стойност за покупка или изпращане, количеството и наличните снимки. Преведеното заглавие може да се различава значително от оригиналната формулировка на продавача; използвайте идентификатори, когато е възможно."
+    },
+    {
+      "source": "Open your own Superbuy forwarding instructions and compare them with the address on the seller's confirmed order. Match warehouse, region, street and the account-specific information used to identify incoming shipments. Superbuy's guide explains the purpose of the identification number appearing with a receiving address. A seller may have copied the street correctly while shortening the last field on the printed label.",
+      "source_sha256": "ddada8cb8b534f83db3ab33f66e134af22d71fc6aebef55e588f9a7fe5ce586b",
+      "raw_target_sha256": "7263346bbec64340ae2f330c7e0eb55b712cdbe6edc59ccc6e63ffcfc6ed860c",
+      "translation": "Отворете собствените си инструкции за препращане и ги сравнете с адреса на потвърдената поръчка на продавача. Съпоставете склада, региона, улицата и специфичната за акаунта информация, използвана за идентифициране на входящите пратки. Ръководството на Superbuy обяснява целта на идентификационния номер, който се появява с адреса за получаване. Продавачът може да е копирал улицата правилно, като съкращава последното поле на отпечатания етикет."
+    },
+    {
+      "source": "Check that the number belongs to the courier that physically handled the parcel. Distinguish it from a seller order, forwarding application, marketplace consolidation number or an international tracking number from a previous shipment. Open the merchant's shipping record and compare the carrier and complete number with what you entered in Superbuy. Leading zeroes, letters and transposed digits can all affect a match.",
+      "source_sha256": "f3ac443a7cddbb8dec98a2d2991f1b0c52091611f7186c344444caa6aef13e2e",
+      "raw_target_sha256": "5b23ea78bf71547af08ffc93e69a3b46210ece1a4d4dde0e27b08e3f764dc75b",
+      "translation": "Проверете дали номерът принадлежи на куриера, който физически е обработил пратката. Разграничете го от поръчка на продавача, заявка за спедиция, номер за консолидация на пазара или международен номер за проследяване от предишна пратка. Отворете документа за доставка на търговеца и сравнете превозвача и пълния номер с това, което сте въвели в Superbuy. Водещи нули, букви и транспонирани цифри могат да повлияят на съвпадението."
+    },
+    {
+      "source": "Check the handoff to Superbuy",
+      "source_sha256": "33402987353c0507971a3e24e5dedb842fbaeeb3b44523e9a6247b3135316573",
+      "raw_target_sha256": "f4ca6989eab9e04d6a24c75cb15cdbb2b7cc832bd4b612a9579c87c0441fbe01",
+      "translation": "Проверете предаването на Superbuy"
+    },
+    {
+      "source": "Superbuy describes forwarding submissions for an already prepared parcel and for products associated with an online listing. Follow the option that fits what you actually have. If a relative is sending a used item, do not paste a different retailer's link simply to make the fields look complete. Describe the physical item and consult the account form or support about required information.",
+      "source_sha256": "4444d62d69ca490a385dbde7344bd57459cec5ff20d5273cdb96c38a06d897f1",
+      "raw_target_sha256": "9217683bbd97c9a218024630e8906b99df59b42bd35e81626b25b541780e5799",
+      "translation": "Superbuy описва препращането на заявки за вече подготвена пратка и за продукти, свързани с онлайн обява. Следвайте опцията, която отговаря на това, което всъщност имате. Ако роднина изпраща използван артикул, не поставяйте връзка към друг търговец на дребно, само за да изглеждат полетата пълни. Опишете физическия артикул и се консултирайте с формуляра за акаунт или поддръжка за необходимата информация."
+    },
+    {
+      "source": "Start by asking who is going to pay the marketplace seller. If you have picked a listing and want Superbuy to buy it for you, use the shopping agent process. Superbuy's app guide describes choosing the product options and quantity, paying for the purchase and any applicable domestic delivery, and then letting the agent contact the seller. Your first useful reference is the shopping order.",
+      "source_sha256": "cfc366513602794fd496dc2e960663ddd2a5c294f51b95ee9a3f4ea423848139",
+      "raw_target_sha256": "dbc5153b41fed7a6b3689dca7980d743bc6ec06c6144b42bb7f1d494b75582be",
+      "translation": "Започнете, като попитате кой ще плати на продавача на пазара. Ако сте избрали обява и искате Superbuy да я закупи вместо вас, използвайте процеса на агент за покупки. Ръководството на приложението описва избора на опциите на продукта и количеството, плащането за покупката и всяка приложима вътрешна доставка и след това позволява на агента да се свърже с продавача. Вашата първа полезна справка е поръчката за пазаруване."
+    },
+    {
+      "source": "If you have already bought the shoes from the seller, you have a purchase record somewhere else. Paying for another shopping order in Superbuy could commission a second pair. The forwarding process is designed to register goods that someone else will send to the warehouse. Locate the seller's confirmation, check the receiving instructions and register the parcel under the applicable forwarding procedure. If the seller has already dispatched it, tell support the true status when asking what can still be matched.",
+      "source_sha256": "17028b6f779c603b6c084e5bd2a620bad13ed8adfbe3602ff2102cf68aa13f79",
+      "raw_target_sha256": "c22bde6107bc095aeb8dc914eef36a5bcd3361a7adc864f587a761dc2642879b",
+      "translation": "Ако вече сте закупили обувките от продавача, имате запис за покупката някъде другаде. Плащането на друга поръчка за пазаруване в Superbuy може да възложи втори чифт. Процесът на спедиция е предназначен за регистриране на стоки, които някой друг ще изпрати в склада. Намерете потвърждението на продавача, проверете инструкциите за получаване и регистрирайте пратката в съответната процедура за изпращане. Ако продавачът вече го е изпратил, кажете на поддръжката истинския статус, когато питате какво все още може да бъде съчетано."
+    },
+    {
+      "source": "Superbuy's forwarding guide explains that an account-specific identifier helps distinguish incoming parcels. Read the full warehouse address shown in your own account. Compare it to the selected warehouse and to the address the seller has accepted. Pay attention to the final part of the receiving details when copying them into a marketplace form with separate fields.",
+      "source_sha256": "cce343827c75e2d85c95701696c5a99ca0c78c46bcba498fdf51f061439070f9",
+      "raw_target_sha256": "5bb3e1ccf6e5f0c841ced9ec075b1996e4b7d3f785a67280eab191640f466899",
+      "translation": "Ръководството за препращане на Superbuy обяснява, че специфичният за акаунта идентификатор помага за разграничаване на входящите пратки. Прочетете пълния адрес на склада, показан в собствения си акаунт. Сравнете го с избрания склад и с адреса, който продавачът е приел. Обърнете внимание на последната част от данните за получаване, когато ги копирате във формуляр за пазаруване с отделни полета."
+    },
+    {
+      "source": "After intake, the warehouse stage has more in common. The official Superbuy guides direct customers to My Warehouse to review stocked items before choosing what to ship. At that point your decision concerns the physical units in the warehouse. Confirm the relevant options and quantities, resolve any problem you need to address locally, and select the correct units for the international parcel.",
+      "source_sha256": "68e64d426e46cdde64a1718e510880dafc4bc484e07bd14dbd3ab298e4dcaad9",
+      "raw_target_sha256": "153a2d589e8669bfd43ff12483db679890c9819980fbf0bbf0586d18e8195eb7",
+      "translation": "След приемане, етапа на склад има повече общи черти. Официалното ръководство за Superbuy насочва клиентите към Моят склад, за да прегледат наличностите, преди да изберат какво да изпратят. В този момент вашето решение се отнася до физическите единици в склада. Потвърдете съответните опции и количества, разрешете всеки проблем, който трябва да бъде решен на местно ниво, и изберете правилните единици за международната пратка."
+    },
+    {
+      "source": "If you cannot remember whether an order was completed, check the seller account, your payment record and Superbuy's order list before submitting a new request. A saved product or cart entry is not evidence that the seller was paid. A posted payment may also need investigation if its order reference cannot be identified. Record what each system actually shows and ask a specific question about the unmatched record.",
+      "source_sha256": "756cc13945db10abe97ce17a30cfabe03cd456ab876e54ab7e91bfccb37834ae",
+      "raw_target_sha256": "ff4fb82be2f3ae636d491d671b0e090dbdcb33ceed3782581a1ab37818488a02",
+      "translation": "Ако не си спомняте дали дадена поръчка е завършена, проверете акаунта на продавача, историята на плащанията и списъка с поръчки на Superbuy, преди да изпратите нова заявка. Запазеният продукт или вписване в количката не е доказателство, че продавачът е бил платен. Възможно е също така да се наложи да се извърши разследване, ако номерът на поръчката не може да бъде идентифициран. Запишете какво всъщност показва всяка система и задайте конкретен въпрос за несравнимия запис."
+    },
+    {
+      "source": "Superbuy's shopping and forwarding guides describe optional treatments such as removing packaging or reinforcing a parcel. The service offered for a particular item and its applicable terms should be checked in your account. A suggestion on an independent site is a reason to ask about an option, not evidence that any particular service has been selected, paid for or performed.",
+      "source_sha256": "e05f80dd8a0489d36062e965da16d536dee95fb1775272ca58b2e672a8287f17",
+      "raw_target_sha256": "ff709647e9ae204a1325d05ef867025eaa2f54eccb37eaae98f3710965c32c08",
+      "translation": "Ръководствата за пазаруване и изпращане на Superbuy описват допълнителни обработки като премахване на опаковката или подсилване на пратката. Услугата, предлагана за даден артикул, и приложимите условия трябва да бъдат проверени в акаунта ви. Предложението на независим сайт е причина да попитате за опция, а не доказателство, че е избрана, платена или извършена конкретна услуга."
+    },
+    {
+      "source": "Use the receiving address displayed in your own Superbuy forwarding account for the selected warehouse. Copy all the address parts and account-specific identification exactly before sending the seller the delivery instructions.",
+      "source_sha256": "da354133e9619346a68c6c704fc287761b2a9eadbcf5ee0e44bd3b0827dbdac1",
+      "raw_target_sha256": "cfe4631672b4b196aaa7d168fba85c38066a483d92ce3d5706713455a9678ccf",
+      "translation": "За избрания склад използвайте адреса за получаване в собствения си профил за препращане в Superbuy. Копирайте точно всички адресни части и специфичната идентификация на акаунта, преди да изпратите на продавача инструкциите за доставка."
+    },
+    {
+      "source": "Where can I follow a parcel after Superbuy dispatches it?",
+      "source_sha256": "ba699bfc01166bf4ad933c51ff1b8be7d69c0d98af1cf64d1195ca46445e9987",
+      "raw_target_sha256": "352e6073f1641c0eb71e83016c027cb1f4f39b17d76176807d9aa0615173e7a2",
+      "translation": "Къде мога да проследя пратката, след като Superbuy я изпрати?"
+    },
+    {
+      "source": "An estimate based on a seller's product dimensions and a quote based on a closed outbound carton can produce different results even when nothing has gone wrong. The first figure may describe a bare item. The second includes everything that occupies space in transit. Before comparing a Superbuy shipping estimate with a parcel record, identify what each number measures and bring both scenarios onto the same basis.",
+      "source_sha256": "715bb349a62a0a6125327bcdb9018a91e02337b05cf3940756cf48832921e169",
+      "raw_target_sha256": "2daf0a733a021dd99d2d89bb7f48141ce2c13164e415452a505a572436c31600",
+      "translation": "Оценка, базирана на размерите на продукта на продавача, и оферта, базирана на затворена изходяща кутия, могат да доведат до различни резултати, дори когато нищо не се е объркало. Първата фигура може да описва гол елемент. Вторият включва всичко, което заема пространство в транзит. Преди да сравнявате прогнозата на Superbuy със записа за пратката, проверете какво измерва всяка стойност и уеднаквете условията."
+    },
+    {
+      "source": "Superbuy's shipping calculator displays weight in grams and dimensions in centimetres. Read the labels on the version you are actually using. Convert a weight given in kilograms by multiplying by one thousand. Convert millimetres to centimetres by dividing by ten. Keep the original numbers in your notes as well as the converted values; this makes it easier to identify a transcription error later.",
+      "source_sha256": "21f5cff47fe7fe86a8209e79e39ac0851ea9f3f2bb0e137e253a1f712156dafe",
+      "raw_target_sha256": "a8bb6d8d1275929e2074c770268b5cce5a946a973727cf7a3c725e20a5465fd9",
+      "translation": "Калкулаторът на Superbuy използва грамове за теглото и сантиметри за размерите. Прочетете етикетите на версията, която всъщност използвате. Умножете теглото в килограми по хиляда, за да получите грамове. Конвертирайте милиметри в сантиметри, като разделите на десет. Запазете първоначалните числа във вашите бележки, както и преобразуваните стойности; това улеснява идентифицирането на грешка в транскрипцията по-късно."
+    },
+    {
+      "source": "If your card statement is in a different currency, first compare the two Superbuy records in their common transaction currency. Only then investigate any payment conversion. Otherwise a difference in exchange rates can look like a change in packed weight. A useful support question specifies the original estimate, packed measurements, route, deposit and the single unmatched amount. “My shipping changed” leaves too many possible explanations unresolved.",
+      "source_sha256": "5d4b342936556b5d776a403a3f6b5be1489a7d40706bb98b7e9aeee28af8342d",
+      "raw_target_sha256": "065cdc59dbd57ec51862205cef935be3b5ebdb9fa3ce7f010d3e9ab02a400791",
+      "translation": "Ако картовото извлечение е в друга валута, първо сравнете двата записа в Superbuy в общата им валута. Едва след това проучете всяка конверсия на плащане. В противен случай разликата във валутните курсове може да изглежда като промяна в опакованото тегло. Полезен въпрос за поддръжка уточнява първоначалната оценка, опаковани измервания, маршрут, депозит и единична несъответстваща сума. \"Моята доставка се промени\" оставя твърде много възможни обяснения нерешени."
+    },
+    {
+      "source": "A delivery notification from a seller can be accurate while your Superbuy warehouse list still looks incomplete. The two records are answering different questions. One reports what a carrier did with a parcel. The other records what was received, identified and stocked for your account. Before deciding which party to contact, follow the particular box across that boundary.",
+      "source_sha256": "acbf85adddf8d11c79e5f0f6b194ec59066d3e193dfbca62eca4e6039971259c",
+      "raw_target_sha256": "a706da1a1670c42e86a21eee31fa170e21bda3e6bc48710dc6dfc080cd43a303",
+      "translation": "Известието за доставка от продавача може да е вярно, дори списъкът в склада на Superbuy още да е непълен. Двата записа отговарят на различни въпроси. Един докладва какво е направил превозвачът с пратката. Другият записва какво е получено, идентифицирано и складирано за вашия акаунт. Преди да решите с коя страна да се свържете, следвайте конкретната кутия през тази граница."
+    },
+    {
+      "source": "Now change one detail. The merchant says both items were in the first carton and the second number was a cancelled replacement label. The warehouse picture still shows only the organiser. The open question has changed. It now concerns the contents of a delivered carton and the status of a second unused label. Ask the merchant to confirm its packing list. Ask Superbuy which items were recorded under the first waybill. Keep the distinction clear and avoid asking a carrier to locate an item that may never have travelled under its number.",
+      "source_sha256": "18e74c7bcd5db60e6f77888ef722295551665b75ebc19b9ec040631a931dbb54",
+      "raw_target_sha256": "7c14b4043b0ba36c3fba60a42364298b8639384e9090e22626efba89e4bac2ee",
+      "translation": "Сега променете един детайл. Търговецът казва, че и двете стоки са били в първата кутия, а вторият номер е бил отменен етикет за замяна. Снимката на склада все още показва само организатора. Отвореният въпрос се е променил. Сега става въпрос за съдържанието на доставена картонена опаковка и статуса на втори неизползван етикет. Помолете търговеца да потвърди списъка си за опаковане. Попитайте Superbuy кои артикули са заведени по първата товарителница. Дръжте разграничението ясно и избягвайте да искате от превозвача да намери елемент, който може никога да не е пътувал под неговия номер."
+    },
+    {
+      "source": "If the carrier shows only creation of a label, the merchant can usually clarify whether it actually dispatched that carton. If the event names the wrong destination, ask the sender and carrier about the address they used. If the correct parcel shows delivery to the intended warehouse but you cannot match it with an entry, Superbuy can investigate its receiving records. Explain which of these checks you have already completed.",
+      "source_sha256": "52e9b57e8f697000f1552e16670e62fd3020de825753fe387f178618081608a2",
+      "raw_target_sha256": "3b0f743d2d6d9c0b905e8007baa4244a0a578f65952adae08153b93ae50eb857",
+      "translation": "Ако превозвачът показва само създаването на етикет, търговецът обикновено може да изясни дали всъщност е изпратил тази кутия. Ако събитието посочва погрешна дестинация, попитайте подателя и превозвача за адреса, който са използвали. Ако превозвачът е доставил пратката в правилния склад, но не намирате съответстващ запис, Superbuy може да провери документацията за приемането. Обяснете кои от тези проверки вече сте завършили."
+    },
+    {
+      "source": "You have a forwarding request, your seller says the package arrived and My Warehouse does not show the expected item. The most useful first step is to build a short investigation with one clearly defined missing link. Establish what the seller dispatched, where the carrier took it and what your Superbuy account shows. Each party can then check the part of the journey it actually handled.",
+      "source_sha256": "1e9398fff6b0e4a1c579fde57273190329ee6448bf0869a5aecc056048018f94",
+      "raw_target_sha256": "72a5e3fcdfa5b38c6ea1a0da506e938934fb987b2183b71d9179bdb6dad26dd8",
+      "translation": "Имате заявка за препращане, продавачът ви казва, че пратката е пристигнала, а Моят склад не показва очаквания артикул. Най-полезната първа стъпка е да се изгради кратко разследване с една ясно определена липсваща връзка. Установете какво е изпратил продавачът, къде го е доставил превозвачът и какво показва профилът ви в Superbuy. След това всяка страна може да провери частта от пътуването, която действително е обработила."
+    },
+    {
+      "source": "If the last evidence is a marketplace status saying the seller prepared the order, the seller can clarify actual dispatch. If a carrier records an attempted delivery or an address problem, ask about the unresolved delivery event. If the carrier confirms delivery to the expected destination and the logistics details were recorded, use the Superbuy support route associated with the forwarding request. Each inquiry should ask for an action the recipient can perform.",
+      "source_sha256": "1494ea46b6c5e370fe2689e304eb2caf47d02f9e58303706dfdeec86625e4353",
+      "raw_target_sha256": "d38f835817155973097c039cace918446ba96327ee7c8c3310a8b47510a5dc7b",
+      "translation": "Ако последното доказателство е статус на пазара, който казва, че продавачът е подготвил поръчката, продавачът може да изясни действителното изпращане. Ако превозвачът регистрира опит за доставка или проблем с адреса, попитайте за неразрешеното събитие за доставка. Ако превозвачът потвърди доставката до правилното място и сте въвели данните за превоза, свържете се с поддръжката на Superbuy през съответната заявка за препращане. Всяко запитване трябва да поиска действие, което получателят може да извърши."
+    },
+    {
+      "source": "A mobile screen makes it easy to save a photograph and hard to see the complete purchase in one view. The image, selected variant, quantity and price can appear on separate panels. Superbuy's app guide describes finding a product, selecting its options and asking the agent to purchase it. Use those stages as checkpoints. The aim is to carry your intended selection all the way from the seller listing to the paid order.",
+      "source_sha256": "da90f6d6176c3eea00385357675d71a31256ff4b8eca8e01261f9d1210eea970",
+      "raw_target_sha256": "747f91e2a7f19b6f6fb76e20c49d5055e331a2b119a7bb76ee836009909af600",
+      "translation": "Мобилният екран улеснява запазването на снимка и затруднява визуализирането на цялата покупка в един изглед. Изображението, избраният вариант, количеството и цената могат да се показват на отделни панели. Ръководството на Superbuy за приложението описва как да откриете артикул, да изберете вариант и да възложите покупката на агента. Използвайте тези етапи като контролни пунктове. Целта е да пренесете желания от вас избор по целия път от обявата на продавача до платената поръчка."
+    },
+    {
+      "source": "Read each charge in context. Superbuy's shopping guide separates the purchase and any applicable domestic delivery from the later international parcel process. Save the currency and total on the purchase screen. If a catalogue converts a price for convenience, use that figure for rough comparison and use the actual checkout amount for your payment record. A mobile notification quoting a card amount may use a different currency and cannot by itself identify the selected item.",
+      "source_sha256": "a3143723aef74d328a60999b15ff6906ee1d07d18dc9d46a7e7b4b6d27f08588",
+      "raw_target_sha256": "6081ff893779dc0a54f2a226e7e46a2923755d059bad0880167f69ede46282d4",
+      "translation": "Проверете за какво се отнася всяка сума. Ръководството за покупки на Superbuy разграничава цената на стоката и евентуалната вътрешна доставка от последващата международна доставка. Запазете валутата и общата сума на екрана за покупка. Ако даден каталог конвертира цената за удобство, използвайте тази цифра за приблизително сравнение и използвайте действителната сума за плащане за вашия запис за плащане. Мобилно известие, посочващо сума по картата, може да използва различна валута и не може само по себе си да идентифицира избрания елемент."
+    },
+    {
+      "source": "Once payment is complete, save the Superbuy order reference. Use the order inquiry or other contact route shown for questions about that purchase. A question about an unavailable colour belongs with the shopping record; a shipping quote for an assembled outbound parcel belongs later in the process. Naming the stage helps the person responding understand what action you expect.",
+      "source_sha256": "d36d8596bebf47ba4907bc274cb88c7d17f0b847b3583f9187ca529cba65ea12",
+      "raw_target_sha256": "8f0f24276189d2e61ec5298163aa99235473562ec045fc8aa2cf6c1b0404a9ec",
+      "translation": "След плащането запазете номера на поръчката в Superbuy. Използвайте запитването за поръчка или друг начин за контакт, показан за въпроси относно тази покупка. Въпрос за неналичен цвят принадлежи към записа за пазаруване; оферта за доставка на сглобена опаковка, която се изпраща от склада до клиента, принадлежи по-късно в процеса. Именуването на етапа помага на лицето, което отговаря, да разбере какво действие очаквате."
+    },
+    {
+      "source": "Once goods are stocked, Superbuy's guides direct users to My Warehouse. Inspect item names and photographs alongside your box map. Decide what each picture actually shows. A closed retail carton labelled “shade set” can support identification of a carton without establishing the count or condition of its contents. A visible pair of shades does not establish that both fittings packets are present.",
+      "source_sha256": "29c75509a27c89559835dc2739ca0fc15dd48d8f7e8fd0e1796f0b0d80f2aad8",
+      "raw_target_sha256": "527c0c46245caf17a52b657f0cc2dcb516d55b2bb69fb914e00fc8e68e635acf",
+      "translation": "След завеждането на стоката ръководството на Superbuy насочва към My Warehouse. Проверете имената на елементите и снимките заедно с картата на кутията. Решете какво всъщност показва всяка снимка. Затворена кутия с надпис „комплект абажури“ помага да разпознаете кутията, но не доказва броя или състоянието на съдържанието. Снимката на двата абажура не доказва, че са пристигнали и двете пакетчета с монтажни части."
+    },
+    {
+      "source": "The easiest time to connect a self-purchased item with its warehouse record is before the seller prints a label. You can still change an address, ask what the box will contain and correct a description without having to trace a parcel in transit. Use Superbuy's forwarding guide alongside the instructions in your own account. The sequence matters more than the position of any individual button.",
+      "source_sha256": "161a635f8b3307cf78f36bec9f9696d50799e39753ade6355e1f81886cce5896",
+      "raw_target_sha256": "771015b095c5b070e1847c4dd4ffb5b9577b5a0cbcb4db531208d1dc6d45c527",
+      "translation": "Най-лесният момент за свързване на самостоятелно закупен артикул с неговия складов запис е преди продавачът да отпечата етикет. Все още можете да промените адрес, да попитате какво ще съдържа кутията и да коригирате описание, без да се налага да проследявате пратка в транзит. Използвайте ръководството на Superbuy за препращане заедно с указанията в собствения си профил. Последователността е по-важна от позицията на всеки отделен бутон."
+    },
+    {
+      "source": "Use the warehouse shown for your request and the complete receiving instructions associated with your account. A warehouse photograph on a forum, an address from a previous order and a friend's saved checkout address are poor substitutes. Superbuy's guide explains that a unique identifier at the end of a user's address can help identify a parcel. Treat it as part of the address when preparing the seller's delivery details.",
+      "source_sha256": "d533192e8fa54b78b7e241010eaa757bfd80aeed706a914cb8c8f4e680f37004",
+      "raw_target_sha256": "1615554af575e16cd3eeca6376a07fc847b968c1440582b3c2b5ec65b79a0f10",
+      "translation": "Използвайте склада, показан за вашата заявка и пълните инструкции за получаване, свързани с вашия акаунт. Снимка на склад във форум, адрес от предишна поръчка и запазен адрес за плащане на приятел са лоши заместители. Според ръководството на Superbuy индивидуалният идентификатор в края на адреса помага при разпознаването на пратката. Третирате го като част от адреса, когато подготвяте данните за доставка на продавача."
+    },
+    {
+      "source": "Consider a marketplace form that splits the address into region, city, district, street and extra details. Copying a whole address into the street field can duplicate the district while omitting the final identifier. After saving, read the address the way it will print on the label. Compare each part with the Superbuy address from top to bottom. If the seller must enter the address manually, ask them to confirm the completed destination before handing the box to a carrier.",
+      "source_sha256": "e60d589ecefd1036300ecbaaf679447c7b716f597ed5ebadaa94f06877fdb80e",
+      "raw_target_sha256": "d8f9459d91d41aab60e87fcedc0d83774f7ac92593f2d315538bfe431ddd3964",
+      "translation": "Помислете за формуляр за пазар, който разделя адреса на регион, град, район, улица и допълнителни подробности. Копирането на цял адрес в полето за улица може да дублира района, като пропусне последния идентификатор. След като запишете, прочетете адреса по начина, по който ще се отпечата върху етикета. Сравнете поред всяка част с адреса, показан от Superbuy. Ако продавачът трябва да въведе адреса ръчно, помолете го да потвърди попълнената дестинация, преди да предаде кутията на превозвача."
+    },
+    {
+      "source": "This is important if a merchant offers rapid dispatch. Tell the seller when you expect to provide the approved destination instead of guessing an address to satisfy a checkout countdown. If the seller has already dispatched the goods, do not describe them as still awaiting shipment. Record the time, address used and waybill; ask Superbuy which steps apply to an inbound parcel that has already left. A second submission cannot physically redirect it.",
+      "source_sha256": "1b9f507cebc4e47d86d810d72df776cb740b7bfc2eefe7b28281bac4fd359f84",
+      "raw_target_sha256": "497294e1c9ba20b1d44e0b9c305d96639f58224160f79506230f24fe1c8455de",
+      "translation": "Това е важно, ако търговецът предлага бърза доставка. Кажете на продавача кога очаквате да предоставите одобрената дестинация, вместо да отгатвате адрес, за да задоволите обратното броене при плащане. Ако продавачът вече е изпратил стоките, не ги описвайте като все още очакващи изпращане. Запишете часа, използвания адрес и товарителницата и попитайте Superbuy как да постъпите с вече изпратена към склада пратка. Второ изпращане не може физически да го пренасочи."
+    },
+    {
+      "source": "A shop link in a spreadsheet tells you where an item is listed. It does not tell you who will buy it. On Superbuy, the answer to that question determines whether you need a shopping order or a forwarding request. Choose before money changes hands: the same pair of shoes can travel through the same warehouse under either arrangement, but the person responsible for the purchase and the record that identifies the shipment are different.",
+      "source_sha256": "c6b8e7be0ef1e8963c2d5102d3a7c6b822e225e043173d523471161d336b66de",
+      "raw_target_sha256": "0a0f11000f1db5197fcbd320cd3359dbf73f2391d5abae125fc8390ebdc8a292",
+      "translation": "Връзка към магазина в електронна таблица ви казва къде даден артикул е в списъка. Тя не ви казва кой ще го купи. В Superbuy отговорът определя дали да създадете поръчка за покупка, или заявка за препращане. Изберете, преди парите да сменят ръцете си: същият чифт обувки може да пътува през един и същ склад и при двете договорености, но лицето, отговорно за покупката и записът, който идентифицира пратката, са различни."
+    },
+    {
+      "source": "With forwarding, the seller relationship may be your own. If the merchant has not dispatched the goods, ask that merchant for dispatch information. If a carrier has delivered a package to the Superbuy address but you cannot find its warehouse entry, gather the waybill and forwarding reference for the warehouse. Sending a refund question to a warehouse that did not buy the item can waste time while the seller's return conditions continue to apply.",
+      "source_sha256": "238fe08c1c354382be7b9b318203d235e864e1590c8f449e6223f572757e410b",
+      "raw_target_sha256": "78e14ca99fef155ada6bf9a588daa5c416f9c956ce61c3564b8e0787122b84c5",
+      "translation": "С препращане, връзката продавач може да бъде ваш собствен. Ако търговецът не е изпратил стоките, попитайте го за информация за доставката. Ако превозвачът е доставил пратката на адреса на Superbuy, но не откривате запис в склада, подгответе товарителницата и номера на заявката за препращане. Изпращането на въпрос за възстановяване на сума до склад, който не е закупил артикула, може да загуби време, докато условията за връщане на продавача продължават да важат."
+    },
+    {
+      "source": "If a seller truncates a field, compare the saved order address after checkout. Ask the seller whether the complete receiving information will appear on the physical label. If something is missing, keep the carrier reference and tell Superbuy which address the seller actually used. An edited address in your profile does not retroactively alter a label already attached to a parcel.",
+      "source_sha256": "bc877c9ed7235dc5440eb3187c90b6f42559b31809bb9fe54b3dc879d319d4cb",
+      "raw_target_sha256": "7c2ff3485e9fc3fe3edede8ad18022a8bc21ce043d3e22c5e4af60e9b98bacf2",
+      "translation": "Ако продавачът съкрати дадено поле, сравнете записания адрес на поръчката след плащане. Попитайте продавача дали пълната информация за получаването ще се появи на физическия етикет. Ако липсва част от адреса, запазете номера на товарителницата и посочете на Superbuy какъв адрес действително е използвал продавачът. Редактиран адрес в профила ви не променя със задна дата етикет, който вече е прикрепен към пратка."
+    },
+    {
+      "source": "Before proceeding, complete this sentence in your own notes: “The seller will be paid by ___, the parcel will be sent by ___, and I will identify it to Superbuy with ___.” If the first blank is the agent, start from your shopping order. If you already paid the merchant, consult the forwarding guide and its review procedure. If any blank is still uncertain, resolve that one point first. It is much easier to clarify a missing reference before dispatch than to distinguish two identical purchases after both arrive. Keep the answer with the original receipt or order confirmation.",
+      "source_sha256": "0b12e490a180f695b4861c0d83c5376b0d7381f0c6342b4e9471a3597e06506e",
+      "raw_target_sha256": "0fe41839398c49e500d7d5b3eb7f7bdd7ee55901a4e7d52ece69e34984482291",
+      "translation": "Преди да продължите, попълнете в бележките си: „На продавача ще плати ___, пратката ще изпрати ___, а пред Superbuy ще я посоча с ___“. Ако агентът ще плаща, отворете поръчката за покупка. Ако вече сте платили на търговеца, вижте ръководството за препращане и процедурата за преглед. Ако някоя празна все още е несигурна, първо решете тази една точка. Много по-лесно е да се изясни липсваща референция преди изпращането, отколкото да се разграничат две еднакви покупки, след като и двете пристигнат. Запазете отговора с оригиналната разписка или потвърждение на поръчката."
+    },
+    {
+      "source": "Check the current storage information for each entry in your account. Arrival, intake and the deadline displayed for that specific entry are more useful to you than the date you first found the product online. An older item can be approaching a decision point while a newly stocked item from the same seller has more time available. A single date attached to the planned parcel hides that difference.",
+      "source_sha256": "a90608c712e893909ad7d2e165bead36987783d053dafcaca67cd8bf5a984faa",
+      "raw_target_sha256": "b8140365f59a346f4e9faccfbe1cd38b508595012f4e79672a7962f16245b7cd",
+      "translation": "Проверете текущата информация за мястото за съхранение за всяко вписване в профила си. Пристигането, приемането и крайният срок, показани за този конкретен запис, са по-полезни за вас, отколкото датата, на която за първи път сте намерили продукта онлайн. По-стар артикул може да наближава точката на вземане на решение, докато нов артикул от същия продавач има повече време на разположение. Една единствена дата, прикрепена към планирания колет, скрива тази разлика."
+    },
+    {
+      "source": "A useful ledger might show “entry A, two size-label photographs requested, quoted amount recorded, awaiting confirmation” and “parcel P, outer reinforcement accepted, completion pending.” Neither line should say completed merely because the request was sent. Likewise, a charge appearing on a payment record tells you something about billing; it does not by itself establish that the correct item was photographed or that a packaging instruction was followed.",
+      "source_sha256": "521674ff9eb4f1de2f4ece9253457058918cf5770f4e1914fdc30edfa657ed03",
+      "raw_target_sha256": "1f858d847fd58ea39f28947aecaa36e052c74c32bcd293a24cdc61135c523ad3",
+      "translation": "Една полезна книга може да покаже „вписване А, поискани две снимки с етикет с размери, цитирана сума, записана, в очакване на потвърждение“ и „колет Р, външно подсилване прието, завършване в очакване.“ Нито един ред не трябва да казва, че е завършен само защото е изпратено искането. По същия начин, таксуване, което се появява в запис на плащане, ви казва нещо за фактурирането; това само по себе си не установява, че правилният артикул е бил заснет или че инструкцията за опаковане е била следвана."
+    },
+    {
+      "source": "Before submitting for overseas delivery, compare the final selection with the measured one. Did another item arrive? Did you ask staff to keep a box that the first estimate removed? Did the destination change? Each is a reason to revisit the quote. The benefit of a rehearsal is knowing what was measured and being able to use that observation. A precise request gives you a decision you can make confidently even when the cheapest eligible route is different from the one you originally expected.",
+      "source_sha256": "7e7fcee8b1057545d596dc1fc19e5382d0a775fe3f970b80aa9ab4168fe87f8e",
+      "raw_target_sha256": "801ec655f9a4de8dc44b6dcafea48360ca941d5a8264eecd8442fa1ac3af2780",
+      "translation": "Преди да заявите международна доставка, сравнете избраните артикули с измерените. Пристигнал ли е още един артикул? Поискахте ли да запазят кутия, премахната при първата оценка? Смени ли се адресът? Всяка промяна е причина за нова оферта. Пробното опаковане показва точно какво е измерено и ви помага да решите, дори най-евтиният допустим маршрут вече да е друг."
+    }
+  ]
+}
