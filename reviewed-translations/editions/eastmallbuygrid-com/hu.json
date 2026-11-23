@@ -1,0 +1,680 @@
+{
+  "site": "eastmallbuygrid-com",
+  "locale": "hu",
+  "source_set_sha256": "d3fc8a20c25fd682a0cbcf1d5165d69d8f33114365bd18ae1f508e92c28f82c5",
+  "raw_dictionary_sha256": "1f1f4ffd710a38709e48c53eeadd1d0a7c33f395c96bef267b1d641513908207",
+  "effective_dictionary_sha256": "6b4847c0810763b88f911f8e14e00c37de357861bcac3ec7a128f9641639000c",
+  "checked_entries": 277,
+  "review_scope": "Targeted bilingual QA of all flagged strings, FAQ questions, article and section titles, numerical and fee examples, physical organizer/dividers, overshirt fit and garment size terminology. Includes a numerical screen and independent overlay replay. This is not whole-edition line editing.",
+  "reviewed_flags": [
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "4eb8d98bc73c4da524f08b4baa964d71230fdbae2d8cd33d31c83f65f91ed70e",
+      "raw_target_sha256": "07d9c82b2ec7683747667dd18c75f0a34ce52fb76865600adc4b4298ead3ee60",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "quantity unit or currency changed",
+      "source_sha256": "57917b7003ac1fe0e1a06f6a751c08ac3b7db3e9fd69e5cdf9179959aebcde6d",
+      "raw_target_sha256": "f07e1f87e10312e677de5258a78edc36b47eddbdb75150e0fae47b5c6b585846",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "example number omitted or reformatted",
+      "source_sha256": "0f51f0ee5b0595b4aa612d499f3d5731c20cb4d5913f536b78853da7957b6c21",
+      "raw_target_sha256": "11dea90b6b743c783b264de644f35f448ca4a3dfee1e3d25b7e769c915d312e7",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "quantity unit or currency changed",
+      "source_sha256": "123ddb02519197701eb6a02299c535d6f7ab408fd01a975d4603abebec6b658b",
+      "raw_target_sha256": "2a5621b43d04cbc618accc68f7c8243bb4330ba07b4a041486789e3d153d789c",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "quantity unit or currency changed",
+      "source_sha256": "8f1ab25dab3e81b87f7190054ef0beab6b319ebc8fd3b44b56eb16853e574d8c",
+      "raw_target_sha256": "e53c0fe58930393a198cee8537aace4fcedde6ba3c59e80a8bb314186aa624bd",
+      "resolution": "corrected translation"
+    }
+  ],
+  "unresolved_material": [],
+  "corrections": [
+    {
+      "source": "Reporting a damaged accessory to EastMallBuy: photographs that identify the problem",
+      "source_sha256": "b28aaaaddff829ce964ac9569b6fa220e9b257eaf6741ca317abc195c4131c37",
+      "raw_target_sha256": "fe85eeaf31dff4042bb3f4b73b09060afc2df609e733893fa7b1c1e12711568b",
+      "translation": "Sérült tartozék bejelentése az EastMallBuy-nál: milyen fotók mutatják meg a hibát?"
+    },
+    {
+      "source": "EastMallBuy · Refund and Return Policy",
+      "source_sha256": "4eb8d98bc73c4da524f08b4baa964d71230fdbae2d8cd33d31c83f65f91ed70e",
+      "raw_target_sha256": "07d9c82b2ec7683747667dd18c75f0a34ce52fb76865600adc4b4298ead3ee60",
+      "translation": "EastMallBuy – visszaküldési és visszatérítési feltételek"
+    },
+    {
+      "source": "EastMallBuy · Help Center",
+      "source_sha256": "50d84dcf4d80d89dd211b2cfae6bcde7acc35e01823b0f78a1e6b7a620b4566b",
+      "raw_target_sha256": "41980b58d756fd000d65b0c7d2dd43693c59de2a1e886ebd65f7ceb6ca68d3a8",
+      "translation": "EastMallBuy súgóközpont"
+    },
+    {
+      "source": "EastMallBuy QC and fit: distinguish a wrong item, a measurement issue and a preference",
+      "source_sha256": "9239e42ae902b6f5fc830f6128f93c6c9f5ec23dfd3e5407774ce49891b4e7de",
+      "raw_target_sha256": "18058b5ac887924f0999a8cc3fed3d5a5ccdbd7fd67e69cd89ea4c69a78225ce",
+      "translation": "EastMallBuy minőségellenőrzés és méret: téves termék, mérési eltérés vagy egyéni preferencia?"
+    },
+    {
+      "source": "Before EastMallBuy buys from the seller: verify the marketplace offer you selected",
+      "source_sha256": "7384ca530a5f25ce3d9cc6c2a4aa93d598430b82b9f5888afb66a036dad32f55",
+      "raw_target_sha256": "ce7ba0778c51ece1bbf8b1bbf3dc51d15fed25a87a229de1cfe261d0f759c631",
+      "translation": "Mielőtt az EastMallBuy vásárol: ellenőrizze a kiválasztott piactéri ajánlatot"
+    },
+    {
+      "source": "EastMallBuy shipping estimates for a mixed parcel: when the box changes the bill",
+      "source_sha256": "c6ecefe255c24af0af38666b058a6b29fb0019d2f500360a8079a1ac7ac46987",
+      "raw_target_sha256": "bec7d3fd843229bb1e4e2659a8ab73dbc23f5750ef97489b97811342c5d609d1",
+      "translation": "EastMallBuy szállítási díj vegyes csomagnál: mikor változtat a doboz a számításon?"
+    },
+    {
+      "source": "EastMallBuy · Why shipping charges may differ",
+      "source_sha256": "d03cebf0ce817d85434b0dcef1bc1bdcb8f5eecdb75fa4f6c6e5964d94b77640",
+      "raw_target_sha256": "4ea29a8b6bbab0bfa82e71afdc774aadadee3826a946fb9101405f1c97fab275",
+      "translation": "EastMallBuy – Miért térhet el a szállítási díj?"
+    },
+    {
+      "source": "EastMallBuy warehouse QC: how to read a size label in context",
+      "source_sha256": "0a14a64d913ee1247529e0b703305715e3d74a855313bd888b217b16de586782",
+      "raw_target_sha256": "40516a2a0e21e3609826dc754835f6a3d2abcc21b8ad476c3f64b5c993a02357",
+      "translation": "Méretcímke az EastMallBuy raktári fotóján: hogyan értelmezze az adott terméknél?"
+    },
+    {
+      "source": "How to reconcile a split EastMallBuy order by item and size",
+      "source_sha256": "dc53b2b885163cc0df01e7f4c84840cf7434a178a75760edad77d2e50ec8bd6e",
+      "raw_target_sha256": "5e7c6a2f4ccff138ba702abfb41b47c2ec890c7027fdbdc8f4e08b696b8f88c3",
+      "translation": "Több részletben érkező EastMallBuy-rendelés egyeztetése termékenként és méretenként"
+    },
+    {
+      "source": "Keep, fold or discard? EastMallBuy packaging decisions before a return",
+      "source_sha256": "849668bf23ce27b54b4069ae25b615498d3880f3817d7de76add370242f73afd",
+      "raw_target_sha256": "4aef9369e507a50cdb017f70305ff622f4873c4b3a8e63c979e3e95a4f5500a7",
+      "translation": "Megtartani, összehajtani vagy kidobni? Csomagolási döntések EastMallBuy-visszaküldés előtt"
+    },
+    {
+      "source": "EastMallBuy returns before dispatch: find the right stage of your order",
+      "source_sha256": "9abfbf5bfb912b19aa4ee916eccd79f8c2f3cef323a00b79ff8767036e27c9b7",
+      "raw_target_sha256": "e6ec087e98718d39506a4cfdb67e8eff0bb60b2406dd7d566d83b5782db5b5bf",
+      "translation": "Visszaküldés az EastMallBuy-nál a feladás előtt: melyik szakaszban van a rendelés?"
+    },
+    {
+      "source": "Reviewing an EastMallBuy parcel before dispatch: contents, protection and instructions",
+      "source_sha256": "afa574e854ceec35849c8f79a8fa3b057a3c071100d2f0bc87026c51044c58f5",
+      "raw_target_sha256": "d2347718ae7f5435177ee9a2978e235ddbce86e2ddf4ff0c828b15174343cbbb",
+      "translation": "EastMallBuy-csomag ellenőrzése feladás előtt: tartalom, védelem és csomagolási utasítások"
+    },
+    {
+      "source": "EastMallBuy exchange requests: turn a seller's reply into a usable agreement",
+      "source_sha256": "579031e47a839e1798b93d456d755fdbc43b649082aeadc69b3054274eedda37",
+      "raw_target_sha256": "7868a7327acb6a4bc2494a03891a20c7771db7f10e38d0badb0eb76b7e5c0295",
+      "translation": "Termékcsere az EastMallBuy-nál: hogyan tisztázza a feltételeket az eladó válasza alapján?"
+    },
+    {
+      "source": "Consider an imaginary offer listing one organizer at 39 yuan and a three-piece set at 105. Buying quantity three of the single organizer yields three units for 117 before other costs. Buying quantity one of the set could yield three pieces for 105, but only if the set actually contains three organizers rather than one organizer and two accessories. Read the contents before comparing the arithmetic. A lower number attached to another unit is not a lower price for the same purchase.",
+      "source_sha256": "57917b7003ac1fe0e1a06f6a751c08ac3b7db3e9fd69e5cdf9179959aebcde6d",
+      "raw_target_sha256": "f07e1f87e10312e677de5258a78edc36b47eddbdb75150e0fae47b5c6b585846",
+      "translation": "Tegyük fel, hogy egy tárolótasak ára 39 jüan, egy háromrészes készleté pedig 105. Ha a külön kapható tasakból hármat rendel, az három darab, a további költségek nélkül 117 jüanért. Egy készletből három darab jöhet 105-ért, de csak akkor három tasak, ha valóban az van benne, és nem egy tasak két tartozékkal. Számolás előtt olvassa el a tartalomjegyzéket. Más összetételű csomag kisebb ára nem azonos termékre adott kedvezmény."
+    },
+    {
+      "source": "Take an illustrative order for a medium overshirt with a listed garment width of 58 centimetres. You plan to wear it over a sweatshirt. There are three separate tests: whether medium was supplied, whether the garment measures as the applicable chart describes, and whether that shape suits the way you plan to wear it. A photograph of a medium tag speaks to the first test. A tape measurement following the diagram speaks to the second. Trying a comparable garment over your sweatshirt helps with the third.",
+      "source_sha256": "ec9c58833518af875554b10a103098713b6ebc757cb167bab27cec6cb7677ecb",
+      "raw_target_sha256": "4e44fb9ff5091a3798ee7c98a38eecee76e71ab011de7dd5617f6a5851d80184",
+      "translation": "Tegyük fel, hogy M-es méretű, felső rétegnek szánt inget rendel, amelynek megadott szélessége 58 centiméter. Pulóver fölött szeretné viselni. Három külön kérdés van: M-es méretet küldtek-e, a ruhadarab a táblázat szerint mérve valóban akkora-e, és kényelmes-e így hordani. A címkefotó az első, az ábrának megfelelő mérőszalagos kép a második kérdést segít eldönteni. A harmadikhoz próbáljon fel egy hasonló szabású inget a saját pulóverére."
+    },
+    {
+      "source": "Suppose the warehouse reports 56 centimetres for the overshirt while the chart shows 58. Before interpreting the two-centimetre difference, check that both refer to the same size, style, unit and method. Read any tolerance specified by the seller rather than inventing one. If the endpoints are obscured, seek a clearer view. If the method is correct and the difference persists, present the chart and the measurement side by side. This gives the seller a concrete question to assess under the purchase terms.",
+      "source_sha256": "2f430f208750ed41994d68f584e2d30c7f3c982d58ba52ec7029b5313a7e28bf",
+      "raw_target_sha256": "3123cfe582c890a3c38f6bbee95adfc8d11e514e5bdd3cb67b5923b51bec1cd4",
+      "translation": "Ha a raktár 56 centimétert mér a felső ingnél, a táblázatban viszont 58 szerepel, először ellenőrizze, hogy ugyanarról a méretről, fazonról, mértékegységről és mérési módról van-e szó. A két centiméter eltérést az eladó által megadott tűréshatár alapján értelmezze. Ha nem látszanak a mérés végpontjai, kérjen tisztább fotót. Ha az eltérés helyes mérésnél is fennáll, küldje el egymás mellett a táblázatot és a mért adatot, hogy az eladó a vásárlási feltételek alapján ellenőrizhesse."
+    },
+    {
+      "source": "Your current favourite overshirt might measure 61 centimetres across the chest. Even a perfectly supplied 58-centimetre garment could feel tight over the sweatshirt you intend to wear. That does not make the warehouse inspection wrong. Record the difference between your reference garment and the seller's stated dimensions, including the conditions of the measurement. A rigid woven fabric and a stretchy knit with the same flat width can also feel different when worn. A width comparison narrows the decision without guaranteeing comfort.",
+      "source_sha256": "2091c859095a8e875f42f9ba0dc1432b4e55c903eef18e19917bfdf061860f8a",
+      "raw_target_sha256": "5ed9f33256b9ca66c02e3e16d110e5929d7b74543166843cda6fa59dde08a874",
+      "translation": "Lehet, hogy a kedvenc felső inge mellben, fektetve mérve 61 centiméter széles. Egy pontosan a megadott 58 centiméternek megfelelő ing is szűknek érződhet a pulóver fölött. Ettől még a raktári ellenőrzés helyes lehet. Jegyezze fel saját ingének és az eladó méreteinek eltérését a mérési körülményekkel együtt. Azonos fektetett szélesség mellett a merev szövet és a rugalmas kötött anyag viseléskor eltérően viselkedik. A szélesség segít a választásban, de önmagában nem garantál kényelmet."
+    },
+    {
+      "source": "How can I cancel an EastMallBuy order before the agent buys it?",
+      "source_sha256": "73ab74b7783594badbc9b4311dcd2ac830f289b3713dbe49efafc1c4c84fe401",
+      "raw_target_sha256": "f07509f3529dd69f0e276d8db82736c01680f9b585e60b15c76a9247c9f0ecd3",
+      "translation": "Hogyan mondhatom le az EastMallBuy-rendelést, mielőtt az ügynök megveszi az árut?"
+    },
+    {
+      "source": "What if the seller has dispatched my order but the warehouse has not received it?",
+      "source_sha256": "d97a598705f7eab04ff574f92c7e17b08e384664d470fb9c102af10985346049",
+      "raw_target_sha256": "6083e547033772d8daa8ccff51e2c355ee535c4a7f407c03704f1a0a3459e86b",
+      "translation": "Mi történik, ha az eladó már feladta az árut, de az még nem érkezett meg a raktárba?"
+    },
+    {
+      "source": "Which costs should I check before agreeing to a return?",
+      "source_sha256": "22a3958b63e865a7744adc3955d8642e6eb5fe1734dde66abba8fb6baaf882b4",
+      "raw_target_sha256": "3289e09256f5d885e7f181d58a673c4715650757f3fd23ca0366db38d03509c1",
+      "translation": "Milyen költségeket ellenőrizzek, mielőtt beleegyezem a visszaküldésbe?"
+    },
+    {
+      "source": "How do I tell a warehouse deadline from a seller return deadline?",
+      "source_sha256": "960bb2a515c308e5dcf97a6b5bcb5c1d86d4558a55db1fba7306b9c93c14f2b7",
+      "raw_target_sha256": "76cb09497addb1ad2c49712acb5789e3bc8f1909199b90a4d349a4cd26d0028f",
+      "translation": "Hogyan különböztessem meg a raktározás határidejét az eladó visszaküldési határidejétől?"
+    },
+    {
+      "source": "Why might the balance change before my bank shows a refund?",
+      "source_sha256": "fc3f4df514f3fe7d0e49d1a5cd3b00ed2bd240ce0ccb0526dbbcb173508b0cf0",
+      "raw_target_sha256": "b8ddd73cdefb0662e72dbda888c90b90de8066707c33e6da875dd602d0e873d6",
+      "translation": "Miért változhat az egyenlegem, mielőtt a bankszámlámon megjelenik a visszatérítés?"
+    },
+    {
+      "source": "Should I discard the shipping carton if the item is damaged?",
+      "source_sha256": "2a9529e8f67e4c6dcc564d8edae6eaeac4e06b84631ee16645b9033eb2ded00e",
+      "raw_target_sha256": "590896178921c66a2df3d6b1b65dde89ef7576078a235c2e1dcafea149d37f14",
+      "translation": "Kidobjam a szállítódobozt, ha az áru megsérült?"
+    },
+    {
+      "source": "What if only one component of a set is defective?",
+      "source_sha256": "37d15781ce92aaf26a0fc640dd8638b056f469c8ea361d08494e63baeee8a78c",
+      "raw_target_sha256": "02916cf83cc9e042922ce96ffcc1bd93aa0a8935c566da90c9104e7f21935a2f",
+      "translation": "Mi a teendő, ha a készletnek csak az egyik darabja hibás?"
+    },
+    {
+      "source": "How do I describe a fit issue accurately?",
+      "source_sha256": "77670515ea1886c852eed1420bc281b447d79ac4b7efa27a77fc414992dd298b",
+      "raw_target_sha256": "267ef1d6e4760fe2409ee7b4fb876afd7c1cf5688106a9e4296440a5bc549f68",
+      "translation": "Hogyan írjam le pontosan, hogy egy ruhadarab miért nem áll jól?"
+    },
+    {
+      "source": "What makes a warehouse photograph of a size tag useful?",
+      "source_sha256": "e1ac676ccf9d4dc745c7f36184905b54dedfde8f3070c0784eaf7aa996755c06",
+      "raw_target_sha256": "8e4a0095d85accc7636ada51e9a8deb4a4c05f61ceda57279eea49f63a421bb4",
+      "translation": "Mitől használható egy raktári fotó a méretcímkéről?"
+    },
+    {
+      "source": "How do I check a marketplace listing before approving a purchase?",
+      "source_sha256": "87a55364b4a520bc034eec68f7ffaa61bcba601efcb18a04bab6d93985cb4a81",
+      "raw_target_sha256": "847531b8d1e38c9bce55b83b91965bf1e025c616b072ed8b0b7d9f265b796a33",
+      "translation": "Mit nézzek meg a piactéri hirdetésben, mielőtt jóváhagyom a vásárlást?"
+    },
+    {
+      "source": "How can I compare freight estimates for a mixed parcel?",
+      "source_sha256": "80734d0f20e1c47e235ccfddc752e38dd149686ff4802f892f863729dd386d7d",
+      "raw_target_sha256": "93e0eea7048c5269adc4d2364fabb1388a09d261a186edef4d5eb491ca62902a",
+      "translation": "Hogyan hasonlíthatom össze egy többféle árut tartalmazó csomag szállítási díjbecsléseit?"
+    },
+    {
+      "source": "Can a photograph taken before sealing confirm every item in a box?",
+      "source_sha256": "be744874e162679481683cd31b4247e7bd2c42261a1fe3fa33c205037bac8cb0",
+      "raw_target_sha256": "dc02f416e77b5dd785d2ca5c74065ad0ff4616517146b1ac92f651059907b9c2",
+      "translation": "Egy lezárás előtt készült kép igazolhatja a doboz teljes tartalmát?"
+    },
+    {
+      "source": "The seller used two domestic tracking numbers. How do I reconcile the quantities?",
+      "source_sha256": "3b658c295803494fb32300e6f0edacb2b31a1a86bb7bccae623d57c14422823a",
+      "raw_target_sha256": "7fcab6177f5a0e29e553fd87115066891c804b679b6f2a8e84d019fcc139ff29",
+      "translation": "Az eladó két belföldi nyomkövetési számot adott. Hogyan egyeztessem a darabszámokat?"
+    },
+    {
+      "source": "How can I report a scratched accessory without confusing a reflection for damage?",
+      "source_sha256": "b66830785d8a3619d0fb9bb804af532d6a820d59fab1ca2428f807c22009ed7f",
+      "raw_target_sha256": "40417b27c651abeec32244e9344bf7e9855244ab91494812778991d95613c034",
+      "translation": "Hogyan jelentsek karcolást egy tartozékon úgy, hogy ne tévesszem össze a fényvisszaverődéssel?"
+    },
+    {
+      "source": "What should I check before accepting a replacement option?",
+      "source_sha256": "9e61136ac5ca9d95039c3b03b4fa1dbaf6c82ea5e549cc7708d8cce655550314",
+      "raw_target_sha256": "f5e353f4364c287e6d53c741075ba59b995fb2e47306c34a0b25f65b6b9e3d3c",
+      "translation": "Mit ellenőrizzek a helyettesítő változat elfogadása előtt?"
+    },
+    {
+      "source": "Where are EastMallBuy's current return instructions?",
+      "source_sha256": "e7166d0d9dea17a69accd2888644b114b190b38f6dacd9567d7c61a2c0a52713",
+      "raw_target_sha256": "b5cf125e4fa67ea5b21910acbe97ebd78c2643f8d00c4926fb034234e23b71f9",
+      "translation": "Hol találom az EastMallBuy aktuális visszaküldési útmutatóját?"
+    },
+    {
+      "source": "EastMallBuy's Help Center gives an example of a route using parcel dimensions in centimetres and a divisor of 8,000. The following numbers are invented to illustrate that arithmetic. They are neither an actual order nor a promise that a route uses this rule today. Suppose a carton measures 48 by 36 by 30 centimetres and weighs 5.4 kilograms with all contents and packaging. Its external volume is 51,840 cubic centimetres. Dividing by 8,000 produces a dimensional weight of 6.48 kilograms.",
+      "source_sha256": "1162bbe155d217b9542994801020148acaa7fa48cd454768c7905dc2f5cc784b",
+      "raw_target_sha256": "c2fc294b9be64e6031199eaa47939a3c91b0b2c9d0ddf1cee2bd470cfa4e1eab",
+      "translation": "Az EastMallBuy súgója olyan szállítási módot is bemutat, amelynél centiméterben megadott méretekkel és 8 000-es osztóval számolnak. A következő adatok kizárólag szemléltető példák: nem valódi rendelés vagy jelenlegi díjszabás adatai. Tegyük fel, hogy a becsomagolt áru 5,4 kilogrammot nyom, a doboz külső mérete pedig 48 × 36 × 30 centiméter. A külső térfogat 51 840 köbcentiméter; 8 000-rel osztva 6,48 kilogramm térfogatsúlyt kapunk."
+    },
+    {
+      "source": "On a route charging the larger of actual and dimensional weight, the starting figure would be 6.48 kilograms before any billing increments or other rules. The parcel has not physically become heavier than 5.4 kilograms. Its box occupies enough space for the route's conversion to produce a larger billing input. Check the current route card to learn how that input is rounded and priced. Knowing the larger weight alone does not tell you the exact cash charge without the tariff and other applicable conditions.",
+      "source_sha256": "bf7239719aba87019dcb90116a41fd4e8a92597bc55987882af237c6a68a198b",
+      "raw_target_sha256": "274b3b43cc41a7f70b2c68e4c200ac3e9a8b2c88246e60b9b976285793fb4385",
+      "translation": "Ha az adott szállítási módnál a tényleges tömeg és a térfogatsúly közül a nagyobbat számítják, a díj alapja a kerekítés és a további szabályok alkalmazása előtt 6,48 kilogramm. A csomag továbbra is 5,4 kilogrammot nyom; a doboz helyigénye miatt nagyobb a számított tömeg. Az aktuális díjszabás mutatja meg, hogyan kerekítik és árazzák ezt az értéket. A díjtétel és a többi feltétel nélkül a nagyobb tömeg önmagában nem adja meg a fizetendő összeget."
+    },
+    {
+      "source": "Consider a revised packing proposal. The shoes retain their retail box and the jacket is folded differently, reducing the carton height from 30 to 25 centimetres while keeping length and width fixed. The new volume is 43,200 cubic centimetres and the example dimensional weight becomes 5.4 kilograms. If the physical weight is unchanged, actual and dimensional weight now coincide. The reduction of five centimetres removed 8,640 cubic centimetres, corresponding to 1.08 kilograms in this example.",
+      "source_sha256": "842ec3c84222037489578b2035ce012c461904e874d738b1b2d2dd28fd5164e6",
+      "raw_target_sha256": "bc386334c9fc8f92f4d09cd95f42117668e56cb2eb7719b3782c5e96477afaa4",
+      "translation": "Most a cipő a saját dobozában marad, a kabátot viszont másképp hajtják össze. A külső doboz magassága 30-ról 25 centiméterre csökken, a hossz és a szélesség változatlan. Az új térfogat 43 200 köbcentiméter, a példabeli térfogatsúly 5,4 kilogramm. Ha a tényleges tömeg nem változik, a két érték most azonos. Az öt centiméteres csökkenés 8 640 köbcentimétert, vagyis ebben a példában 1,08 kilogramm térfogatsúlyt jelent."
+    },
+    {
+      "source": "For a fixed actual weight and divisor, there is a boundary volume. In the example, multiply 5.4 kilograms by 8,000 to get 43,200 cubic centimetres. At or below that volume, dimensional weight no longer exceeds actual weight under this assumed rule. With the same 48 by 36 footprint, divide 43,200 by 1,728 to find the 25-centimetre boundary height. This explains why a reduction from 30 to 25 centimetres can matter while further compression may offer diminishing freight benefit.",
+      "source_sha256": "d1020644ff051c7f159990d74621c4b4baed0f230116833527a266b5906933ea",
+      "raw_target_sha256": "e82db7408c0b9dcf9abec2f3d7a314307bf61821ac25ef680f067e87e2752374",
+      "translation": "Ha a tényleges tömeg és az osztó állandó, kiszámítható az a térfogat, amelynél a tényleges tömeg és a térfogatsúly azonos. A példában 5,4 kilogramm szorozva 8 000-rel 43 200 köbcentimétert ad. Ekkora vagy kisebb térfogatnál a térfogatsúly már nem haladja meg a tényleges tömeget. A 48 × 36 centiméteres alapterület 1 728 négyzetcentiméter; 43 200-at ezzel osztva a határmagasság 25 centiméter. Ezért számíthat a 30-ról 25 centiméterre csökkentés, miközben további összenyomással már kevésbé csökkenhet a fuvardíj."
+    },
+    {
+      "source": "Suppose you could force the carton down to 22 centimetres. The dimensional calculation would give 4.752 kilograms, but a parcel still weighing 5.4 kilograms continues to be rated from at least its physical weight on this illustrative route. Compare that result with the cost and risk of more aggressive packing. If reducing height beyond the boundary compromises protection, the supposed saving may disappear before you even consider the possibility of damage. Check whether a separate size band or route limit changes the outcome before finalizing the choice.",
+      "source_sha256": "825fc7dd53050e7838421f0127da90e32b8df1ad8d8a58fb8039ea96d0addfdd",
+      "raw_target_sha256": "f89b817897b514950fde15400c09092cd6ab51ef781363d5523e7c479ede8121",
+      "translation": "Tegyük fel, hogy a doboz magassága akár 22 centiméterre csökkenthető. A térfogatsúly ekkor 4,752 kilogramm, de ha a csomag tényleges tömege 5,4 kilogramm, a példabeli szállítási módon legalább e tényleges tömeg alapján számláznak. Mérlegelje a szorosabb csomagolás költségét és kockázatát. Ha a határmagasság alatt sérül a védelem, a remélt megtakarítás már a sérülés kockázatának figyelembevétele előtt elmaradhat. Ellenőrizze, hogy egy másik méretsáv vagy útvonalkorlát változtat-e a döntésen."
+    },
+    {
+      "source": "For the overshirt scenario, imagine the label and chart both check out but the buyer wants more layering room. A larger size could solve that preference if its shoulder and body dimensions are appropriate. Check the larger size's complete chart before agreeing. Moving from medium to large does not change only chest width. The back length, sleeve and proportions may change too. If the larger version solves one concern and creates another, an exchange can add cost without improving the overall fit.",
+      "source_sha256": "1eedf232e3deeb1eb5ce3c286ecd1249cba66051d69cd7d9309d868decdaa5ec",
+      "raw_target_sha256": "90ba7aaf9ae230783f9b25a4565b4113ff98e7067ac99e0b897c52b73ce08b09",
+      "translation": "A felső inges példában a címke és a méretek stimmelnek, a vásárló azonban bővebb fazont szeretne a réteges öltözködéshez. A nagyobb méret akkor lehet megfelelő, ha vállban és törzsben is jól áll. A csere elfogadása előtt ellenőrizze a teljes mérettáblázatot. Az M-ről L-re váltással a mellbőség mellett a háthossz, az ujjak és az arányok is változhatnak. Ha a nagyobb méret egy problémát megold, de közben másikat okoz, a cserével pénzt költhet anélkül, hogy jobban állna a ruhadarab."
+    },
+    {
+      "source": "Imagine a canvas organizer photographed with three removable dividers. One seller option describes an empty organizer, another includes the three dividers and a third sells the dividers alone. A catalogue result may display every version under one name. The question is not simply whether the organizer is the one in the photograph. You need to know which combination your selected unit supplies. Change the option and check the updated price and description before copying the listing into the agent order.",
+      "source_sha256": "462299140bcb6de07d57952b5cb2a56d43d738bfc23322de6ae4ef272e055635",
+      "raw_target_sha256": "f789ae76bc03efe6643366d5645bbe79c045dd507c2c5fdbfa53063acad29f35",
+      "translation": "Tegyük fel, hogy egy vászon tárolótasak fotóján három kivehető térelválasztó látható. Az egyik változat csak az üres tasakot tartalmazza, a másik mindhárom elválasztót is, a harmadik pedig csak az elválasztókat. A katalógus mindet egy név alatt mutathatja. Nem elegendő, hogy a tasak hasonlít a fotóra: ellenőrizze, mit kap egy egységben az Ön által választott összeállításból. Váltson a megfelelő változatra, majd nézze meg a frissített árat és leírást, mielőtt a hirdetést a beszerzési rendeléshez csatolja."
+    },
+    {
+      "source": "Open the size or dimension chart for the chosen model. Check how length and width were measured, particularly for items that open, fold or taper. For the organizer, a chart might give the exterior width while the useful internal width is narrower because of the dividers. If a specific item must fit inside, the opening dimension and position of the dividers may matter more than the overall size shown in a studio photograph. Note this requirement before deciding which option is acceptable.",
+      "source_sha256": "1f9b977bf62b8488ab316eed4e42c3245eeb97fc9141f4f0d42dd9131b0bc9b8",
+      "raw_target_sha256": "ffd7427ea8b8889eeab51fdbcb9176ee8dbf2b8cbd42b54dbb455bb455fd3dc1",
+      "translation": "Nyissa meg a választott modell mérettáblázatát. Ellenőrizze, hogyan mérték a hosszát és a szélességét, különösen a nyitható, hajtogatható vagy keskenyedő tárgyaknál. A tárolótasaknál a táblázat a külső szélességet adhatja meg, míg a hasznos belső tér a térelválasztók miatt keskenyebb. Ha meghatározott tárgynak kell beleférnie, a nyílás mérete és az elválasztók helye fontosabb lehet a stúdiófotón látható külső méretnél. Rögzítse ezt az igényt, mielőtt változatot választ."
+    },
+    {
+      "source": "A useful purchase note has a clear fallback. Identify the exact desired option, the quantity and any condition that should stop the purchase. For example, ask the agent to contact you before buying if the organizer with three dividers is unavailable. This gives the agent an actionable boundary. A direction to find “something close” is less useful when multiple versions differ in size or contents and you have not said which differences are acceptable.",
+      "source_sha256": "6b5d0630c62ca2048b85f13e21db56c353273f3a7de1d28c1476ddcb8e054c8a",
+      "raw_target_sha256": "a2c299ca6fad74d2e1b2ba312f51924056a04aca031f3afe87ee57718d101315",
+      "translation": "A beszerzési megjegyzésben írja le azt is, mi történjen, ha a kiválasztott változat hiányzik. Nevezze meg pontosan a változatot, a darabszámot és a vásárlást megállító feltételt. Például kérje, hogy az ügynök egyeztessen Önnel vásárlás előtt, ha a három térelválasztós tárolótasak nem elérhető. Az ilyen utasítás világos keretet ad. A „valami hasonló” túl bizonytalan, ha a változatok mérete és tartalma eltér, és nem jelezte, mely különbségeket fogadja el."
+    },
+    {
+      "source": "Use the confirmed selection to define a short warehouse checklist. For the organizer that might be the specified colour, correct width and three removable dividers visible with the main item. If one detail is hidden in a folded photograph, request the smallest additional observation needed. Your marketplace verification work now serves a second purpose. It lets you tell the difference between an image that merely resembles the intended product and an actual received unit that satisfies the offer you authorized.",
+      "source_sha256": "f7665c9e4dc66c17eed137520fddc85d6046f6f9d998ac36ecfc31f7ad96e692",
+      "raw_target_sha256": "dd8d14c56149b70b8eef94f2f70465ca5fb588b74922164db974d3e86080cabc",
+      "translation": "A visszaigazolt változat alapján írjon rövid listát a raktári ellenőrzéshez. A tárolótasaknál ellenőrizhető a választott szín, a megfelelő szélesség és az, hogy a tasak mellett mindhárom kivehető térelválasztó látható-e. Ha az összehajtott termék képén valami takarásban van, csak a hiányzó részletre kérdezzen rá. A piactéri ellenőrzés így az átvételnél is segít megkülönböztetni a pusztán hasonlító terméket attól, amelyik tényleg megfelel a jóváhagyott ajánlatnak."
+    },
+    {
+      "source": "Those results give you a specific question for the warehouse. Can the contents fit within a height of 25 centimetres without crushing the shoes, damaging an insert or leaving a hard object pressing against fabric? Shrinking the carton only on paper does nothing. The calculation identifies an achievable target to investigate. If the smallest suitable carton is actually 28 centimetres tall, recalculate using 28. Keep the revised dimensions beside the estimate and ask whether the figures refer to the sealed exterior or the dimensions of an empty carton.",
+      "source_sha256": "abf96128b968cbca1dda3fe745155a498f84e8291e34ba358d0f500122d59832",
+      "raw_target_sha256": "7fb6beda4d1819e0d89f90a6cde61a47790db66998e9abb6543061960f1b857c",
+      "translation": "A számításból konkrét kérdés adódik a raktárnak: elfér-e a tartalom 25 centiméter magas dobozban a cipő összenyomása, a betét sérülése vagy a textilt nyomó kemény tárgy nélkül? A dobozt papíron kisebbre venni nem változtat a valós méreteken. Ha a legkisebb megfelelő doboz valójában 28 centiméter magas, számoljon 28-cal. A módosított adatokat rögzítse a becslés mellett, és kérdezze meg, hogy a lezárt csomag külső méreteit vagy az üres doboz adatait kapta-e."
+    },
+    {
+      "source": "Record any selected packing service separately from the freight calculation. The service might change dimensions, weight or both, but its price is an additional part of the total. Compare the combined amount for each proposal. If option A quotes 100 units of currency for transport and option B quotes 93 plus a nine-unit service, option B totals 102. These imaginary round numbers illustrate why the smaller transport charge need not produce a smaller final payment. Use the original quote currency throughout.",
+      "source_sha256": "6df5365b8827b695dff69627a67e1e25292d09134ddd2d44e1ce8f42b62b4051",
+      "raw_target_sha256": "c545fe2eacd0bb37853c5bf0eb5402f4685173e1662bf9fb851a719562fcd396",
+      "translation": "A csomagolási szolgáltatás díját a fuvardíjtól külön tüntesse fel. A szolgáltatás változtathat a méreteken, a tömegen vagy mindkettőn, de az ára hozzáadódik a végösszeghez. Ha A ajánlata 100 pénzegység a szállításért, B-é 93, amelyhez további kilenc egység szolgáltatási díj járul, B összesen 102-be kerül. Ezek kitalált számok: az alacsonyabb fuvardíj mellett is lehet magasabb a teljes fizetendő összeg. Végig az ajánlat eredeti pénznemében számoljon."
+    },
+    {
+      "source": "Consider a shoe label that lists several regional systems. A marking of 8 next to one system and 41 next to another may be part of one conversion printed by the manufacturer. Comparing an order for an unspecified “8” with the visible 41 establishes little until the ordered system is identified. Go back to the original option wording and seller chart. If the original selection did not name a system, explain this uncertainty instead of treating a plausible conversion found elsewhere as the seller's own chart.",
+      "source_sha256": "6f167e05192067bcbc4ea4ad22d9dc74c473493f642503442694060e41e01adb",
+      "raw_target_sha256": "f62fa7ed2fe94332fd75edf85020b11a3394eba9af25efd9addb10d7f45b62e5",
+      "translation": "Egy cipőcímkén több ország méretezése is szerepelhet. Az egyik rendszer mellett álló 8-as és a másik mellett látható 41-es ugyanannak a gyártói átváltásnak a része lehet. Egy meg nem nevezett rendszerben rendelt „8-as” és a látható 41-es összevetése önmagában kevés. Nézze meg az eredeti változat szövegét és az eladó táblázatát. Ha a választásnál nem nevezték meg a rendszert, jelezze a bizonytalanságot. Egy máshol talált valószínű átváltást ne tekintsen az eladó saját adatának."
+    },
+    {
+      "source": "For an illustrative purchase of two units at 80 yuan each, returning one unit starts with an 80-yuan item value. It does not automatically establish either the final credit or a refund of half the full international parcel cost. Add any agreed postage or deduction only when the agent or merchant identifies it. If the expected credit is 72 yuan after an explained eight-yuan deduction, compare the final credit with 72 and keep the explanation beside it. These figures demonstrate the arithmetic and are unrelated to EastMallBuy's actual fees.",
+      "source_sha256": "123ddb02519197701eb6a02299c535d6f7ab408fd01a975d4603abebec6b658b",
+      "raw_target_sha256": "2a5621b43d04cbc618accc68f7c8243bb4330ba07b4a041486789e3d153d789c",
+      "translation": "Tegyük fel, hogy két darabot vásárolt egyenként 80 jüanért. Egy darab visszaküldésénél az áru kiindulási értéke 80 jüan. Ez még nem a végső jóváírás, és nem jelenti azt sem, hogy a nemzetközi csomag teljes fuvardíjának felét visszakapja. Csak az egyeztetett postaköltséget és levonásokat vezesse át, amikor az ügynök vagy az eladó azonosította őket. Ha egy megindokolt nyolc jüanos levonás után 72 jüan jár vissza, a végső jóváírást 72-vel vesse össze, és őrizze meg a magyarázatot. Ezek szemléltető összegek, nem az EastMallBuy díjai."
+    },
+    {
+      "source": "Consider an invented example. The original item costs 120 yuan, the proposed replacement costs 128 and there is a quoted domestic return charge of nine yuan. Before any other conditions or reimbursement, approving those two additional amounts would imply 17 yuan of further cost. If the seller agrees to cover the nine yuan later, your initial outlay and eventual net cost may differ. Record both. These numbers illustrate reconciliation and do not represent EastMallBuy rates, seller policy or a guaranteed outcome.",
+      "source_sha256": "8f1ab25dab3e81b87f7190054ef0beab6b319ebc8fd3b44b56eb16853e574d8c",
+      "raw_target_sha256": "e53c0fe58930393a198cee8537aace4fcedde6ba3c59e80a8bb314186aa624bd",
+      "translation": "Egy kitalált példában az eredeti termék 120 jüan, a csereváltozat 128 jüan, a belföldi visszaküldésre pedig kilenc jüant jeleztek. Más feltétel vagy visszatérítés nélkül az árkülönbözet és a visszaküldés elfogadása további 17 jüan kiadást jelentene. Ha az eladó vállalja, hogy később visszatéríti a kilenc jüant, az először kifizetett összeg és a végleges nettó költség eltérhet. Rögzítse mindkettőt. Ezek egyeztetési példák, nem EastMallBuy-díjak, eladói szabályok vagy garantált eredmények."
+    },
+    {
+      "source": "Start by fixing the time and place",
+      "source_sha256": "dc30958e547ed0f6cc7a27ee5de474f4731448e3f922b7dfe48a7b8d339dc887",
+      "raw_target_sha256": "69638f0f6ffecbc40ea64bfbbffbaee080a9f910c343b32322169a9acff161d9",
+      "translation": "Először rögzítse, mikor és hol vette észre a hibát"
+    },
+    {
+      "source": "Show the entire unit before magnifying the mark",
+      "source_sha256": "908e1f0564def12e530b0b18eb551a57a20e6ac23b0d7b136bbbd31a77fcc43d",
+      "raw_target_sha256": "12c10fe2a624f5739d7aa2a5209d209e3fcf5160b3e77203b22c44d6e90b2ae9",
+      "translation": "Először az egész tárgyat mutassa meg, utána a sérülést közelről"
+    },
+    {
+      "source": "Change the lighting to test a plausible alternative",
+      "source_sha256": "965f3b22981a52f2248ece075f64b4e3a67c4cc3460317216f3e66bf0fbbfe05",
+      "raw_target_sha256": "8ed59d1c00d8b45980f01da35dbac0d5d8e19220301461f7b7e0f779b45d008b",
+      "translation": "Ellenőrizze más megvilágításban, nem csak tükröződésről van-e szó"
+    },
+    {
+      "source": "Document packaging as a separate object",
+      "source_sha256": "5805e4aa41ccfe7deacf2482ab68810906a278cc07ae7de00c13d7d0db613030",
+      "raw_target_sha256": "829039c5d4e7637f2415693e7332e3580f0f6bed16cd0fb9cde778b4ab782abd",
+      "translation": "Külön dokumentálja a csomagolás állapotát"
+    },
+    {
+      "source": "Match the issue to the exact option and quantity",
+      "source_sha256": "eed46e01dbae5befe2b2269d6081f46d4efbef437e376bbbea594608989e661c",
+      "raw_target_sha256": "13361338be8f3370ca1067118e95257cc97ecfc9486f89bfe00eaaa469b40547",
+      "translation": "Rendelje a hibát a pontos változathoz és darabszámhoz"
+    },
+    {
+      "source": "Ask for the remedy that fits the evidence",
+      "source_sha256": "76eaecebd5846cc8b9731afa760c654045d4bc4894f73b4584882e510d674885",
+      "raw_target_sha256": "7bdf3c5a37c495cec0a68b8ec174af0ff030edbb12d2dbe0a88a35bcf1b4d8d1",
+      "translation": "A bizonyítékok alapján kérjen megoldást"
+    },
+    {
+      "source": "Conclude with a short evidence index",
+      "source_sha256": "a653190c1052659a18b226789b44a63f3d28f768435094a04b072e3ea75280a9",
+      "raw_target_sha256": "4a54307f691be4103960eee24aa8f0cb9d6647ea06db55d6449baf7b839af91c",
+      "translation": "Mellékeljen rövid jegyzéket a bizonyítékokról"
+    },
+    {
+      "source": "Identify a selection or fulfilment mismatch",
+      "source_sha256": "623efb6469d47780b6d78e30eb65e95b9739cace1e56b1dadd16c6c689dfa7a3",
+      "raw_target_sha256": "90074075349221dbf1cf800eeaf996abe3bd69be0c3f5f8c35d029a9b38ab6ef",
+      "translation": "Eltérő változatot választott, vagy mást szállítottak?"
+    },
+    {
+      "source": "Test a suspected measurement discrepancy",
+      "source_sha256": "fc67de84a3875580c49e4f17f6bfebf66668684351a304c08029e896e4c9a98f",
+      "raw_target_sha256": "904731cbb6b873dfaa282ef51d8f026f46dc10d17d79ac39e92ace197e16dcfa",
+      "translation": "Ellenőrizze a feltételezett méreteltérést"
+    },
+    {
+      "source": "Evaluate personal fit separately from inspection",
+      "source_sha256": "08f954e2e3b972cf34d570e988bc9ae56f8b418f858428f0f0f6f66c9be59366",
+      "raw_target_sha256": "01bb655004188c348115ef528fc640f7ff54f2fa3c199637b81093167df9c1c8",
+      "translation": "A viselési érzetet a raktári ellenőrzéstől külön értékelje"
+    },
+    {
+      "source": "Put the facts into the right type of request",
+      "source_sha256": "671ba3a3033c237cf21d859cb87d1aede80fd635d20c0e9f13b630cbd5457710",
+      "raw_target_sha256": "7cd837467941ae4ed09384d2bd941f93475d5702fa74965c021f4c9f943223fa",
+      "translation": "A tények alapján fogalmazza meg, mit kér"
+    },
+    {
+      "source": "Define the offer independently of its cover image",
+      "source_sha256": "e4054c57a5a9789ac86dc7fd49ec65b4ed608d66810f3c47c716a93232fe78a5",
+      "raw_target_sha256": "588944da908aee0109ce530bb4d18af3e2ca8b69568d5fe5115b44b36540d7ab",
+      "translation": "Az ajánlat tartalmát a nyitóképtől függetlenül ellenőrizze"
+    },
+    {
+      "source": "Check the seller identity and listing identifier",
+      "source_sha256": "ee6a1af0e691d7369e38d0e38f1104b93a46e6f8acc29ad903c8d4f81c3787d1",
+      "raw_target_sha256": "3df4e1b8c6d77148384c8aaa7c65f50f82d9fce4687e26bc2963daf0d2beb559",
+      "translation": "Ellenőrizze az eladót és a hirdetés azonosítóját"
+    },
+    {
+      "source": "Read quantity rules before calculating a total",
+      "source_sha256": "2cc796f55cff04d17ee8670844acdb2d90c82f88a37fa3943ba8836a8428afce",
+      "raw_target_sha256": "92db1ce7565e2fd5301f5137e2a738917096a235807dc5ec95f9e91763ec6b6f",
+      "translation": "Az összeg kiszámítása előtt tisztázza az értékesítési egységet"
+    },
+    {
+      "source": "Verify size, material and what the photographs can establish",
+      "source_sha256": "ab116db20e8e791681e2f8da215dea9a572c2e64b4488d443677d5db05ca587a",
+      "raw_target_sha256": "af6cdcd973fddb9d65253ddb01d6367cc0975ce4225d893e572f6cd815a7738f",
+      "translation": "Ellenőrizze a méretet, az anyagot és a képen látható részleteket"
+    },
+    {
+      "source": "Resolve ambiguity with a bounded instruction",
+      "source_sha256": "f2693dca6991368ae9c60ef4e4e543656cea7479dbf87b67cea2c9929f00f466",
+      "raw_target_sha256": "2e0da1ab46110ebe08b055a08e3a873effb4b8c867152ac0df2e49bd6d163bc4",
+      "translation": "Adjon pontos utasítást arra az esetre, ha valami nem egyértelmű"
+    },
+    {
+      "source": "Retain the confirmation that defines the warehouse check",
+      "source_sha256": "991d80d2818ecbc9178413d40922b9c802724793a57685fbed4746f73acebfd8",
+      "raw_target_sha256": "3a380c832da25352a92602d5c7deb595c85415fd9d658bcc89e165a2399fb6c0",
+      "translation": "Őrizze meg a raktári ellenőrzés alapját adó visszaigazolást"
+    },
+    {
+      "source": "Start with the packed parcel you intend to send",
+      "source_sha256": "57b073ed687c52d5222bd399c5d8181e6be851824bcdb725f32b1b67eaba1c7d",
+      "raw_target_sha256": "0a0b999e4ddd9b397364433dd8bea8000c689c563600ae8857ae4b1f90e1312d",
+      "translation": "A ténylegesen feladni kívánt csomagból induljon ki"
+    },
+    {
+      "source": "Work an example using actual and dimensional weight",
+      "source_sha256": "8bb0d9d048991f68c1a4bdf1da96529000d08f89af7b526a91d7cf8c431d5728",
+      "raw_target_sha256": "f2bd89d85f9781ce477bb665e8f06dbdf01ecb935dd92441de24201b3c07cc65",
+      "translation": "Számítási példa tényleges tömeggel és térfogatsúllyal"
+    },
+    {
+      "source": "Change one dimension and see whether it matters",
+      "source_sha256": "c7a77f62a8a4990f4a506bf5f1442d7c236cc17c36c6728935557d2589088486",
+      "raw_target_sha256": "794ecb8cf413a514a9e9c723e806986b169aa759fd2050cf4d25c85192518cea",
+      "translation": "Mit változtat a számításon egyetlen méret módosítása?"
+    },
+    {
+      "source": "Find the point where reducing volume stops helping",
+      "source_sha256": "5af1e2324eeec0c022d089d71fd513a9dfc3aa8bd489846beb10512b0c162cc7",
+      "raw_target_sha256": "1ae609d63b28de248a1abf5d50595695c6049eea3953d92c576f24018d37e4ea",
+      "translation": "Mikor nem csökkenti tovább a díjat a kisebb térfogat?"
+    },
+    {
+      "source": "Compare two routes without mixing their inputs",
+      "source_sha256": "3256241bad405b95cff9dbb2b2eb88a513dd21ef8dbf86db5845dbf014e83723",
+      "raw_target_sha256": "7d339c16fccf2008fbc239d05a3f3fffd9cae2fc6159095dda63de54676bd474",
+      "translation": "Két szállítási mód összehasonlítása azonos bemenő adatokkal"
+    },
+    {
+      "source": "Keep service charges and freight in separate columns",
+      "source_sha256": "fbe0ef3b88fa8f51fd053270dc5dc02bb4ed8c69258dab2c6fcb600072579e99",
+      "raw_target_sha256": "eaef96fe70819f00dfab705cd26583be618bab224b957d94b2b870f81d710af2",
+      "translation": "A szolgáltatási díjak és a fuvardíj külön oszlopba kerüljenek"
+    },
+    {
+      "source": "Compare the estimate with the final packed measurements",
+      "source_sha256": "d7afe29e0d3b0ee99f1f9f335afd1acb462e20671357dc212a07dfb72068d9c1",
+      "raw_target_sha256": "b424bec9f2ea0c9ed795294de65156af6e20270cd3e352028a06460609522d99",
+      "translation": "Vesse össze a becslést a kész csomag mért adataival"
+    },
+    {
+      "source": "Identify the garment the label belongs to",
+      "source_sha256": "200de09d42d885ec2a36d91cc7e9b73bd0fc2ebae22caa335083d09fca85197d",
+      "raw_target_sha256": "635610798d0802137bf5d276ddf678fa1aa302475575df7462fc642c19cfb821",
+      "translation": "Azonosítsa, melyik ruhadarabhoz tartozik a címke"
+    },
+    {
+      "source": "Read all markings before choosing the relevant one",
+      "source_sha256": "5f33de0a5b448c9423534493cbe29eeca83c3b2c701db3aaabc30b94e2faa7ca",
+      "raw_target_sha256": "15621793ad8a92a7c41acb31ddf8b8f58acc02ceb70bca3c1f4cdef089f4f36f",
+      "translation": "Olvassa el az összes jelölést, mielőtt kiválasztja a megfelelő méretet"
+    },
+    {
+      "source": "Check whether a removable label and a sewn label agree",
+      "source_sha256": "36d6db218048a831a98a77fbd930ef80ec1d83b2de1b948f127b94e2c0704502",
+      "raw_target_sha256": "4ae05ddd37dbfb8b07f833bc516f68d3cec83c27790918986739556da6149e23",
+      "translation": "Egyeznek-e a levehető és a bevarrt címke adatai?"
+    },
+    {
+      "source": "Count the things you bought",
+      "source_sha256": "1b07cdf21a469e1fbc1663be7a594a0488efae417229228e2dad038d35fa3348",
+      "raw_target_sha256": "0cd2cd4b9b020f155bb9f82a33e9c9ad84c387a7e8888b28452484ecce81a867",
+      "translation": "Számolja meg a ténylegesen megvásárolt darabokat"
+    },
+    {
+      "source": "Follow the numbers across the domestic journey",
+      "source_sha256": "9c3187762a19b5c6468afcf423ba51a358d5b333ff04bacfe0842bb3b9efea5c",
+      "raw_target_sha256": "2d02270fba7bf35df4b6968b2820f4ea2eb18ec554b276c439915a223ef1c124",
+      "translation": "Kövesse a csomagszámokat a belföldi szállítás során"
+    },
+    {
+      "source": "Identify what the warehouse actually counted",
+      "source_sha256": "2b52dfa289ae75f9419e4c45484cb8f6ec937d7dd8e768a7db3acf958af0af2c",
+      "raw_target_sha256": "4e7dac4fb45de102dbf35e35f01a3f8629d5c3691081781d08ecb3a18fc86021",
+      "translation": "Tisztázza, mit számolt meg a raktár"
+    },
+    {
+      "source": "Keep an open quantity apart from a shortage",
+      "source_sha256": "fe74cec413d373ebc7c2ef9815006dc7c638171c2faa6d974cc14339603b3e60",
+      "raw_target_sha256": "6c2d4c37994b3a49fbfddf18eff258eb4b85fa162fd43012e27e7c751f82e0eb",
+      "translation": "Különítse el a függőben lévő mennyiséget az igazolt hiánytól"
+    },
+    {
+      "source": "Decide whether the partial order can move",
+      "source_sha256": "1d9386e4558df5fdbe29140695a6242c70ddf426e032bc44170dfd0a037d6887",
+      "raw_target_sha256": "1a3b6c126ca3912d6b8bd9ab7fd645c092e3eecf970f43be37ec95df31173cd3",
+      "translation": "Továbbküldhető-e a rendelés már megérkezett része?"
+    },
+    {
+      "source": "Identify the layer you are talking about",
+      "source_sha256": "41ab32c5c226acb8a06e3f794924c97b8848f132276c31822f65992f4d983e09",
+      "raw_target_sha256": "420384d61ca39cebdfcd931752eecc243850d3934d71ff02506cdacdc48525b6",
+      "translation": "Határozza meg, melyik csomagolási rétegről van szó"
+    },
+    {
+      "source": "Measure the saving at the parcel level",
+      "source_sha256": "32035456f041a3b7d12db76994da6cf19fdce7fad51ea8851b17ed17df8f7f63",
+      "raw_target_sha256": "0a31255becd437ab2044130d85c2589d07ff4c0bd8b5ff062e99f6b46bddeacb",
+      "translation": "A megtakarítást a teljes csomag alapján mérje fel"
+    },
+    {
+      "source": "Specify what should happen to the saved components",
+      "source_sha256": "a414e3a392a2441b828beda52cb1e799928d8dace2bb1d42bdb200493c585aa3",
+      "raw_target_sha256": "e42d1968db13b74da618db1374a5ad6121dbeae3aa2c006e283184e57acb16da",
+      "translation": "Adja meg, mi történjen a megtartandó csomagolási elemekkel"
+    },
+    {
+      "source": "Read the order line before the parcel record",
+      "source_sha256": "5c7f9d936d03c7b3a0e1abe3a67404adbfecfc1ca60b3ba147ea93e5faf312d3",
+      "raw_target_sha256": "ab670ee095137472a598b08682eeb904a91c545b2109e79865fff00a8a53762f",
+      "translation": "Először a rendelési tételt ellenőrizze, utána a csomag adatait"
+    },
+    {
+      "source": "If the agent has received payment but has not purchased",
+      "source_sha256": "de11b43d51aa3abeca97fbed623462e1b2901d45c3f6e1bcea18ac1e355fc004",
+      "raw_target_sha256": "0c72ce6bff2e63cb8a306190642e3dca86032284272ac3d2eed867aceec4cc2f",
+      "translation": "Ha az ügynök már megkapta a pénzt, de még nem vásárolt"
+    },
+    {
+      "source": "If the seller has already received the purchase",
+      "source_sha256": "221ac1599d2121b0f5555717ea4bf74a63dae8db18ad156fcbf11d616600cc84",
+      "raw_target_sha256": "10b2aa2f944ff5b4a28da387ade38cff3b142ef18af4adb5fce752635107888d",
+      "translation": "Ha az eladó már megkapta a megrendelést"
+    },
+    {
+      "source": "If an international waybill already exists",
+      "source_sha256": "d5b9a6f6b31ffc8547d25fa86cf78f05388036ac07068b9a846ce5f35458aadf",
+      "raw_target_sha256": "e76bb7f9a38eeab6d0ee50cfeeb62f948d45df345a385bb69391a347e0886560",
+      "translation": "Ha már elkészült a nemzetközi fuvarlevél"
+    },
+    {
+      "source": "Close the loop before moving the remainder",
+      "source_sha256": "94a2d775daac99df2f45023903e4c15076ae6fce5c00b3a0ead5984225b34516",
+      "raw_target_sha256": "3787a813cd1cf4414fb782709e6af8298dfc5431bfb11ce0b3e8294f51fe11b1",
+      "translation": "A fennmaradó áruk továbbküldése előtt zárja le a visszaküldést"
+    },
+    {
+      "source": "Give each protection instruction a clear purpose",
+      "source_sha256": "f317565298f7935ebf8be3291c243831f0b97676b3ee78f44cced7548c1c83f8",
+      "raw_target_sha256": "eefb4ed9bfd03a1e09e8605da33f71be7d53ed645ae50846f693b50be441d88f",
+      "translation": "Minden védőcsomagolási utasításhoz rendeljen konkrét célt"
+    },
+    {
+      "source": "Match packed dimensions with the intended route",
+      "source_sha256": "e099fae12eafcde7038eee4d0886a765c45b0b4ce5a13e1a3325a3d75f5c7d7e",
+      "raw_target_sha256": "4c0779805f9514018566476a5e701e4cbfee57ff888149100f74014f3f74cbda",
+      "translation": "Vesse össze a csomagméretet a kiválasztott szállítási mód korlátaival"
+    },
+    {
+      "source": "Read the outbound instruction as the warehouse will see it",
+      "source_sha256": "7b816b9de5b046d725cd53eacc25d782c60e958a41ed5ba83ef7de47af1f9e5e",
+      "raw_target_sha256": "d1a7c1e3c00a2105cc670be33360e8d75aa1d685852ae6af038dfceb6a552007",
+      "translation": "Olvassa át a feladási utasítást a raktár szemszögéből"
+    },
+    {
+      "source": "Save a release record you can use on delivery",
+      "source_sha256": "abc45b4f30f32bc95c872d6efb5fa78f58d0bd56b03e77327a54fa92cfbe232c",
+      "raw_target_sha256": "31e6124ea047f1ba60776e655fae248217acb7f772747c596ed9ab28421787f3",
+      "translation": "Mentse el a feladási adatokat, hogy átvételkor ellenőrizhesse őket"
+    },
+    {
+      "source": "Describe the change in one complete line",
+      "source_sha256": "e4c8edd8104b7710c9a1c1dc6ba27fdf04b54dd38675e6198838bcfd1955e991",
+      "raw_target_sha256": "7be35f0d1584c86b169e4243fcc88a389ad298bf465de5f7c875e379085654d9",
+      "translation": "Egy mondatban foglalja össze a kért cserét"
+    },
+    {
+      "source": "Identify the party who answered and the action they approved",
+      "source_sha256": "39a69e7c164f81fdafd10fd4a3a527e0df6e946ea63c8e49cef1b97b19a80793",
+      "raw_target_sha256": "cd560e0a54a11072663d1eba06dae445c4ba2345d85b78052d5a9b65991fdda6",
+      "translation": "Ki válaszolt, és pontosan mibe egyezett bele?"
+    },
+    {
+      "source": "Record the identity of the replacement",
+      "source_sha256": "8b1cf99cc2406956156c79afb8cac04205cf972fdda24e2ef5a9a3c6f81a9a8b",
+      "raw_target_sha256": "c6e54ab9cc43b4897247ae42897533afee1aa9ac29ed161b4d7bc852e8d67419",
+      "translation": "Rögzítse a cseretermék pontos változatát"
+    },
+    {
+      "source": "Establish what must go back and when",
+      "source_sha256": "363826cb01fa59402afd2822cc98efc917c5606c2400ed3d370f506142005fa6",
+      "raw_target_sha256": "11273a9a241760e61d29369f0bb63365418bad8a6bc19ac57a9e7f50916c2827",
+      "translation": "Mit kell visszaküldeni, és meddig?"
+    },
+    {
+      "source": "Agree how postage and price differences will be handled",
+      "source_sha256": "c1e56f05e81fbd9bbfcf55303433c343944ab719bb78e1848377fe201d7a48aa",
+      "raw_target_sha256": "e9766b6ef5a7d64bd8c6fc5d4903adea18a14cef07652d6e89e60d8459f0c57a",
+      "translation": "Állapodjon meg a visszaküldési díj és az árkülönbözet elszámolásáról"
+    },
+    {
+      "source": "Trace the return and the replacement separately",
+      "source_sha256": "ea57b67573d38633f940d83f0f6befef694bf64ced0976decc296add576a93f0",
+      "raw_target_sha256": "2ff5692d9380007919a65dfbf4ad2f0d15b9ed9dd94dc2de12305f0d61b07df1",
+      "translation": "Külön kövesse a visszaküldött és a helyette küldött csomagot"
+    },
+    {
+      "source": "Save the conversation with the original item, replacement option and seller's reply visible. Confirm whether there is a deadline, who provides the domestic return label and what happens if the replacement goes out of stock.",
+      "source_sha256": "e7ad1d2c0d192b14e3ab643e93b75b3380ab91fd3bcef5d34ce4f91db383e89a",
+      "raw_target_sha256": "15ad2d778f825e559ade551e19cc4a84b48b1632b0b629deac146afe5bc7a0b0",
+      "translation": "Mentse el a beszélgetést úgy, hogy az eredeti termék, a javasolt csere és az eladó válasza is látszódjon. Tisztázza a határidőt, hogy ki biztosítja a belföldi visszaküldési címkét, és mi történik, ha a cseretermék időközben elfogy."
+    },
+    {
+      "source": "Find the refund destination on the transaction or support decision. An account-balance credit and a reversal to the original payment method create different records. Save the date, currency and payment reference for the route actually used.",
+      "source_sha256": "1416658c22a176954f162fdaebb06c1068e02721f969a39d96d3f46eb1926813",
+      "raw_target_sha256": "aa5a369585178c8f62babd5a2fae4ffebb87604f77d20124dd805495d7b995c6",
+      "translation": "A tranzakció vagy az ügyfélszolgálat visszaigazolása megmutatja, hová érkezik a visszatérítés. A platformegyenlegen történő jóváírás és az eredeti fizetési módra visszafordított fizetés különböző nyomot hagy. Őrizze meg a ténylegesen használt módhoz tartozó dátumot, pénznemet és tranzakcióazonosítót."
+    },
+    {
+      "source": "Distinguish the ordered label, the label received, the seller's sizing diagram and your own measurement. A correct label on an uncomfortable garment is a different case from receiving a different ordered size.",
+      "source_sha256": "04047cda83bb38172b5cbd16bdfcff2c345ff2f4c59cc37f047e8c402950a047",
+      "raw_target_sha256": "0be115ef71d20315f4bf5eb58e6174a49eb1f44bf481878386b96f96ce745edc",
+      "translation": "Különítse el a rendelt és a kapott méretjelölést, az eladó mérési ábráját és a saját mérését. Más eset, ha a megfelelő címkéjű ruha kényelmetlen, és más, ha nem a rendelt méretet kapta."
+    },
+    {
+      "source": "Create one row per package with its tracking number, expected units and warehouse receipt. Count units by option. A package marked delivered can contain only the first part of the seller's order.",
+      "source_sha256": "87459800c1ecc6920eef4d62362dcb1b89c9fd850f3cf08824434641fab5868a",
+      "raw_target_sha256": "13ea9d153155f1ae356ccc445e97f633576643584440c79dc9453b6eca186683",
+      "translation": "Minden csomaghoz rögzítse külön sorban a nyomkövetési számot, a várt darabokat és a raktári átvétel adatait. Változatonként számoljon. Egy kézbesítettnek jelzett csomag az eladó által feladott rendelésnek csak az első részét tartalmazhatja."
+    },
+    {
+      "source": "Compare the available resolutions in practical terms",
+      "source_sha256": "315d27495ad74e57b65d3943ba23039b516853e9b557e92d95c2ba8d3ae2752a",
+      "raw_target_sha256": "df29be7c74bd23163435bce30832f21c5de8814a765fdde950c0d2e95aea407a",
+      "translation": "Hasonlítsa össze a lehetséges megoldások gyakorlati következményeit"
+    },
+    {
+      "source": "Decide whether the purchase is settled",
+      "source_sha256": "02612e2830f098052c52191b6d2f3ef03ae7ef1fdf6228f59b912318f3a64cfe",
+      "raw_target_sha256": "393c033cebfac5d83767ad3d482493ac7625065e8aa64d70c4b8abd412ffe35b",
+      "translation": "Tisztázza, hogy a termékkel kapcsolatos minden kérdés rendeződött-e"
+    },
+    {
+      "source": "Use a fictional case to see the distinction. A presentation box occupies 28 by 20 by 10 centimetres, but a rigid item beside it already requires a parcel 30 centimetres tall. Removing the presentation box may create an internal gap without reducing the exterior at all. Conversely, a retail lid that sticks up just two centimetres above every other item might require a taller carton. Record the proposed external dimensions and packed weight for both versions. Ask for the route calculation applicable to the actual destination and contents.",
+      "source_sha256": "0f51f0ee5b0595b4aa612d499f3d5731c20cb4d5913f536b78853da7957b6c21",
+      "raw_target_sha256": "11dea90b6b743c783b264de644f35f448ca4a3dfee1e3d25b7e769c915d312e7",
+      "translation": "Egy kitalált példában a díszdoboz 28 × 20 × 10 centiméteres, de a mellette lévő merev tárgy miatt eleve 30 centiméter magas külső dobozra van szükség. A díszdoboz kivételekor belül üres hely keletkezhet, miközben a külső méret nem csökken. Máskor viszont már egy olyan fedélhez is magasabb külső doboz kellhet, amely két centiméterrel túlnyúlik az összes többi tárgyon. Írja fel mindkét megoldás külső méreteit és becsomagolt tömegét. A tényleges rendeltetési hely és tartalom alapján kérjen szállítási díjszámítást."
+    },
+    {
+      "source": "Inspect the replacement before closing the case",
+      "source_sha256": "f6a518abc62cec852a74eda89e20dbe46b256fa5ec6e975dd45d35dfe0cdae2d",
+      "raw_target_sha256": "265a7708084d0257ae358041674937abda820aa7980ddd1d3c1ebf413ab07fb8",
+      "translation": "Az ügy lezárása előtt ellenőrizze a csereterméket"
+    }
+  ]
+}
