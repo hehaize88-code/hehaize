@@ -1,6 +1,6 @@
 {
   "required_editions": 289,
-  "reviewed_editions": 209,
+  "reviewed_editions": 215,
   "sites": {
     "bbdbuygrid-com": {
       "required": 23,
@@ -1217,6 +1217,12 @@
           "reviewed_findings": 0,
           "effective_sha256": "c1667c69a499850aee4f0bc792b6711185420232f6f91b3358e4149894872b2c"
         },
+        "el": {
+          "entries": 295,
+          "replacements": 64,
+          "reviewed_findings": 52,
+          "effective_sha256": "388d7e2640df19550341dd1aa2c6ec4e09b26f50a448576d8023999ea2b35cd2"
+        },
         "es": {
           "entries": 295,
           "replacements": 39,
@@ -1240,6 +1246,12 @@
           "replacements": 28,
           "reviewed_findings": 3,
           "effective_sha256": "13fd33da6e6a75e9e19147c6681735beeb7211b1d8a1bc4d890f859261341300"
+        },
+        "hu": {
+          "entries": 295,
+          "replacements": 138,
+          "reviewed_findings": 1,
+          "effective_sha256": "f865e7bd12cef84db50fb9283da232e0a3b9299b5e5fee6975ad33f30fb7bb78"
         },
         "it": {
           "entries": 295,
@@ -1297,8 +1309,6 @@
         }
       },
       "pending": [
-        "el",
-        "hu",
         "id",
         "ja",
         "th",
@@ -1308,30 +1318,51 @@
     "sugargoogrid-com": {
       "required": 23,
       "reviewed": {
+        "da": {
+          "entries": 297,
+          "replacements": 136,
+          "reviewed_findings": 0,
+          "effective_sha256": "3ef0196cfd9b1a04f0e1e016596106cd3e2634d3effecf90563792558f426279"
+        },
         "de": {
           "entries": 297,
           "replacements": 36,
           "reviewed_findings": 0,
           "effective_sha256": "ee3c2c617f009177b2a6673865eb5561e76f4c6aee045cba2037e0329713fc47"
         },
+        "es": {
+          "entries": 297,
+          "replacements": 144,
+          "reviewed_findings": 0,
+          "effective_sha256": "7ff454f2b676c25d2b0951de88f0649829f1a918cf0f1921c1f610baf1541c5c"
+        },
         "fr": {
           "entries": 297,
           "replacements": 36,
           "reviewed_findings": 1,
           "effective_sha256": "8847815bf5d200ec1a3a049001dff244bd909b245d21c980b40919dd1f8b3a31"
+        },
+        "it": {
+          "entries": 297,
+          "replacements": 144,
+          "reviewed_findings": 0,
+          "effective_sha256": "dc71634d6b756bbfa7165ec4b246529cb928f51cef478f2bcd02a9307c0829af"
+        },
+        "zh": {
+          "entries": 297,
+          "replacements": 296,
+          "reviewed_findings": 0,
+          "effective_sha256": "be6c4914d0a05b1de3dab698ae3e7f81e3fb916a3d3dbd0d48ad0ccbf1d367d4"
         }
       },
       "pending": [
         "bg",
         "cs",
-        "da",
         "el",
-        "es",
         "fi",
         "hr",
         "hu",
         "id",
-        "it",
         "ja",
         "ko",
         "nl",
@@ -1341,8 +1372,7 @@
         "sk",
         "sv",
         "th",
-        "vi",
-        "zh"
+        "vi"
       ]
     },
     "superbuysheetindex-com": {
