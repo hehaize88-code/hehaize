@@ -3,7 +3,7 @@
   "locale": "sk",
   "source_set_sha256": "7b8bf397ce0bb7e1ebf77a03a07fac795fafadde6c651ecf497362774610be7b",
   "raw_dictionary_sha256": "bb00c9cd8c6dc5fcb307d7dd9ea0839632479da4311625fc99bf058c16cfc54d",
-  "effective_dictionary_sha256": "7c3803edebd4e62a45ff5332b42f5e9565c0a9c9f906f169bb184975c0b0b33c",
+  "effective_dictionary_sha256": "e47d0e261f091ba31f5654718edc19be4e98b87ecd7f12cf40d1d314bfbc6a7b",
   "checked_entries": 297,
   "review_scope": "Source-based edits for all 10 article titles, selected article section headings, 21 full FAQ pairs, and high-risk paragraphs about garment sizes, tracking, freight, actual/volumetric weight and optional fees. Compared numerical examples and inspected sampled surrounding text and the full detected raw flag queue.",
   "reviewed_flags": [
@@ -519,6 +519,414 @@
       "source_sha256": "e284be0a73fcdf66fb1eedd15d1c212ae7fc7fc0115f9a0a864a65efa8a59452",
       "raw_target_sha256": "1968120b7b13c80f351d00adffda430271d5a4f323aae1cea8b7b5b8fe7d22ce",
       "translation": "Pri novom údaji zistite, či nahrádza pôvodný poplatok, pridáva sa k nemu alebo sa vzťahuje na iný riadok nákupu. V správe uveďte odkaz na nákup a pôvodnú cenu dopravy. Napríklad: „V potvrdení o platbe je domáca doprava 6 jüanov. Nahrádza nový riadok na 10 jüanov túto sumu, alebo ide o doplatok?“ Uchovajte odpoveď spolu s výslednou platbou. Iba z dvoch upozornení na platbu sa poradie udalostí spätne určuje ťažko."
+    },
+    {
+      "source": "Save enough information to find the offer again",
+      "source_sha256": "2c11df3c36acc794871eb2a313dfc3c91cea45ae977dce706afbaf171bdb0190",
+      "raw_target_sha256": "82c0e85ffbabd34d763d0f98c846c6c0c9a7b51693c1b7bb7c862cf9a59a803b",
+      "translation": "Uložte si údaje potrebné na opätovné nájdenie ponuky"
+    },
+    {
+      "source": "Compare the imported listing with the one you meant to buy",
+      "source_sha256": "cd9cfa91ee2ccd8d1aa283d9bbd83dfa38296ab33d4aaecf05b733a4b6ad47aa",
+      "raw_target_sha256": "0178e3c2f52e95884fc5401debb72b649c0bbada84c915ba0cc45e2e731207a1",
+      "translation": "Porovnajte načítanú ponuku s pôvodným inzerátom"
+    },
+    {
+      "source": "Make size and colour choices that survive a page refresh",
+      "source_sha256": "9d6935cc48286ec6bfa7142e4401e219e55f48090e6ef15dc1b370207da9f7e7",
+      "raw_target_sha256": "6e32175d5387721a9dfd319af6d85a502ead55cf1b8514aa8363897c6f885e18",
+      "translation": "Zaznamenajte si farbu a veľkosť pred obnovením stránky"
+    },
+    {
+      "source": "Separate what the first payment covers",
+      "source_sha256": "33cf457bc29c829cec3f83f15fef68dd5d174aaec363b86e53c82dfb2e49bd7f",
+      "raw_target_sha256": "f233e159a4acc8987ac7f35897c8efda38f54aefea4630b4602dfa28ddfbf16c",
+      "translation": "Overte, čo pokrýva prvá platba"
+    },
+    {
+      "source": "Check the record immediately after submission",
+      "source_sha256": "7b78c0817af0831048335f1ae308a8adf12b9cf01b4c8b411ac57578a63f551f",
+      "raw_target_sha256": "95ca645e62b4e05170c5ecef13a2835429961ce6adfd88f0d8d92facec0bf7b2",
+      "translation": "Skontrolujte súhrn hneď po odoslaní objednávky"
+    },
+    {
+      "source": "Work through a failed import without losing the original choice",
+      "source_sha256": "bd63a534af935cf3d9d3103f9da245bcfb8b9b10abb0cdc2fbcd134a49fcae48",
+      "raw_target_sha256": "c7d84e38a30b40aec716bcb5f9c63a77837eefbfb5f74ffc79e3589abd9f31c6",
+      "translation": "Zachovajte pôvodný variant, aj keď načítanie zlyhá"
+    },
+    {
+      "source": "Begin with the journey the charge describes",
+      "source_sha256": "5bde46ce743ec745f1fcb14bc148962abc4adc56ac422ea91ea76207756a7189",
+      "raw_target_sha256": "e86ce0f08eac50e45017ededce07364362c63c8728f9f9279751c0dd39a86323",
+      "translation": "Určte, ku ktorej časti prepravy poplatok patrí"
+    },
+    {
+      "source": "Use the paid order as the starting document",
+      "source_sha256": "fd25760fd79fe71c0a48d25fc80011f7d3f4c7b75160ba624826808b24290ded",
+      "raw_target_sha256": "0c69caf9a1a812b9182001e09e89aa579d3ff42082e414dba5b7b028ddcdeb9c",
+      "translation": "Začnite dokladom o uhradenej objednávke"
+    },
+    {
+      "source": "Keep allocation separate from the amount paid",
+      "source_sha256": "5c426765d9ecbdb7cf1d2cbdda73ed2c5c876d592998ed200b53eb5bc5271971",
+      "raw_target_sha256": "05f47debe9c40e534ddf9cc05d2d68b480e64b5f7eb71eeeb3988f7a96f2f152",
+      "translation": "Rozlíšte rozdelenie nákladov a zaplatenú sumu"
+    },
+    {
+      "source": "Recognize what a tracking number can and cannot establish",
+      "source_sha256": "9f7c7a18ba792fc6b4438d365f81ff629ea0ade71c29ce56f1c23c780a3c0516",
+      "raw_target_sha256": "bedf7fd905e849369f9ca9c6736df3a30fa15838c27bd64c359cb1267e3e3d10",
+      "translation": "Overte, čo sledovacie číslo skutočne dokazuje"
+    },
+    {
+      "source": "Check amendments without overwriting the previous record",
+      "source_sha256": "a1da7cae2e96c190e3e3ecb68a3087da0357630fe23d5a75e2cb5d3ed69f4076",
+      "raw_target_sha256": "d80303d1eb8969bd3102348617b868787e61769060b8003ecb42f2a01782ddbf",
+      "translation": "Zapíšte zmeny bez prepísania pôvodného záznamu"
+    },
+    {
+      "source": "Compare currencies only after the original amounts reconcile",
+      "source_sha256": "3dd28ed1ea1abd72b08f0cc977df9555937b0d347fa47b464fd56563525c62e8",
+      "raw_target_sha256": "da967e09ebf27fae97104767347675342530a9f791a68b9af1e6e45d2f90bb6f",
+      "translation": "Porovnajte meny až po overení pôvodných súm"
+    },
+    {
+      "source": "Close the domestic record before comparing international routes",
+      "source_sha256": "4f0ddc99670cdd027a9c66891d6f749b00b157c5ce36050bc7384a2fdff95d65",
+      "raw_target_sha256": "722d4aea33629186691b8e04704ea2febcbb586716711e0164e701b8f4140b40",
+      "translation": "Uzavrite vnútroštátnu dopravu pred porovnaním medzinárodných liniek"
+    },
+    {
+      "source": "Put a noun after every status",
+      "source_sha256": "8509bb6fead78aec9c1292cea0757e6a978795edab695f94976b81aeb1966a5b",
+      "raw_target_sha256": "5220d38adc5346c200745af9d5eff5ada21ee257435ae5dea0f8fa8b4da60331",
+      "translation": "Pri každom stave uveďte, čoho sa týka"
+    },
+    {
+      "source": "Follow a purchase line through three different records",
+      "source_sha256": "958fb8dcb73ed9013a9e84bbcedad83aa808a9f00613d0036c400409301e0385",
+      "raw_target_sha256": "e24ad513876e906b8ff782ba82baca3088fe19b5f660cc6141fb4768a2829159",
+      "translation": "Sledujte jeden riadok objednávky v troch rôznych záznamoch"
+    },
+    {
+      "source": "Diagnose a seller delay without changing the parcel plan",
+      "source_sha256": "9ab0adfd32268557562f2889851a31a4b43c6e24660f50775e51cf22a195389e",
+      "raw_target_sha256": "26a9b8f37ec5334462bb16fd5da2f60abd34a3959d5033042f1dced6b8034d67",
+      "translation": "Overte oneskorenie u predajcu oddelene od plánu balenia"
+    },
+    {
+      "source": "Read a warehouse entry as evidence of a specific item",
+      "source_sha256": "8add1eb2fee1f1eb6e7f2be1b9371794a50a119775c6aa266b62a7851769b1d9",
+      "raw_target_sha256": "7276fdf7137a19244dac1fd6a925f00a208383c51def19b1566586d0b37a583e",
+      "translation": "Priraďte skladový záznam ku konkrétnemu prijatému kusu"
+    },
+    {
+      "source": "Identify the transition into an international parcel",
+      "source_sha256": "eadabfe2011b939cb87a182beff4842b78148b37ca583e873a40bcbe80cfb2e0",
+      "raw_target_sha256": "5c99a00c1a6ac2f01a1173ce50f916abad377e3d83620494ff3d0cf3ac471ab0",
+      "translation": "Určte okamih vzniku medzinárodnej zásielky"
+    },
+    {
+      "source": "Decide where an exception belongs",
+      "source_sha256": "8cc1ff6e15b2e66999b362173f7cb09b812b589de962bf728e5e3dede6502c1f",
+      "raw_target_sha256": "b2a74e4732af09d7cee0bc0564eb9ca7748178fa06fc1df7be60c079247a7da8",
+      "translation": "Určte fázu, v ktorej vznikol problém"
+    },
+    {
+      "source": "Keep a timeline you can explain a month later",
+      "source_sha256": "318bf662b5581422dd14bf0bef5184bd6eaffad8ab0b22cc7c146331572b89a4",
+      "raw_target_sha256": "d34a9a6a968b3b2028e9e4f312c938bd72d621b394ecae27adf17c93c5b4e4ae",
+      "translation": "Zapíšte chronológiu zrozumiteľnú aj o mesiac"
+    },
+    {
+      "source": "Make each intended unit distinguishable in writing",
+      "source_sha256": "3ea6ab01a81382d436ee55e31364e9f4c5b4ebc7e35c54cc6ab075e068a64547",
+      "raw_target_sha256": "189093a8d00a84febaacc15b5d1217cdef27dda0512f57b019ddaff95d436359",
+      "translation": "Opíšte každý vybraný kus samostatne"
+    },
+    {
+      "source": "Separate a second selection from a quantity increase",
+      "source_sha256": "3e21bc1eade041c65d71c37ee8751f99ba99bdcd5fc73cc6e9c87b37818ea18d",
+      "raw_target_sha256": "58484512f547d94eea5d187479ba24fccfaf78f27f6e97185157be28fddc3712",
+      "translation": "Rozlíšte druhý variant od ďalšieho kusu toho istého variantu"
+    },
+    {
+      "source": "Prepare for an unavailable option before it happens",
+      "source_sha256": "6511050d2233b7d1488ba36e12e23af2026a4c4477467dbda37ea7a2b992e6f2",
+      "raw_target_sha256": "5aca01c06b50a06749486bc1fcca7179aa6877bbc3c7028feeaf34d3ba6f2b67",
+      "translation": "Rozhodnite sa, čo urobíte pri vypredanom variante"
+    },
+    {
+      "source": "Match the seller dispatch to warehouse units",
+      "source_sha256": "45dcd915a33cbb8b2d0781cb2d88a6153bfd225f7491d9db32daee219dba01ea",
+      "raw_target_sha256": "17d9a5757d41aadb6ece4cebda7d6b26ba9a1c98639e152d108df42c7911094a",
+      "translation": "Priraďte zásielku predajcu k prijatým položkám skladu"
+    },
+    {
+      "source": "Resolve a mismatch before the shirts share an outbound bag",
+      "source_sha256": "4746a93526ebcbcf47b148802c13b072803dd2ffa586341fe5e3fb0202b9cd2b",
+      "raw_target_sha256": "96c2b648415c1d879c6f7b442edb7ce0b60fe9fffde54de81459655c39f43629",
+      "translation": "Vyriešte nezhodu skôr, než košele spojíte do balíka"
+    },
+    {
+      "source": "Verify the final split if the pieces travel separately",
+      "source_sha256": "948aaa5577e16c100139175c8267958d30d581a407c775c42c523a34ae5cee5e",
+      "raw_target_sha256": "c686eb0431736b9e5290a17f8aa926107b1796a676f8c71db73c9a204aa445e1",
+      "translation": "Overte rozdelenie tovaru, ak sa kusy posielajú oddelene"
+    },
+    {
+      "source": "Define one unit in the seller's language",
+      "source_sha256": "ebdb5f22dc70dc7c3b425ab10324aad144041497013310847078c0883ac87b9f",
+      "raw_target_sha256": "28a49fe7fb7f03d7a255b70daedb7f63a6ddc97e12fc72f22576ae20ee1bb2f5",
+      "translation": "Určte predajnú jednotku podľa pôvodného opisu"
+    },
+    {
+      "source": "Build a count sheet with a stable denominator",
+      "source_sha256": "632b0ce5a2055c1a329c133d572c9bba854f673fe756844b1e7464449156bf64",
+      "raw_target_sha256": "9b502cb9179eb7bde815a07e914310025ebe212e416dea09e5067700cccee35f",
+      "translation": "V celej evidencii používajte rovnakú jednotku"
+    },
+    {
+      "source": "Interpret split deliveries as movement rather than final counts",
+      "source_sha256": "132846914bd2040d17cd7e8e339cda6e23aae6bfbbaef31208ef379ed8e83452",
+      "raw_target_sha256": "aaed6c0c2916709397ef023304b85d503437ffaf20a433950012046cf03b23e2",
+      "translation": "Čiastkové dodávky evidujte ako priebežný pohyb"
+    },
+    {
+      "source": "Count objects in photos carefully",
+      "source_sha256": "7800fa77e0e336868ba68e8c92c3f349572aee5e292869644ef49de9084be4c7",
+      "raw_target_sha256": "73839085b9893c057294fc8dddb948984f72c4779d97b28ebba54ad3e507a60f",
+      "translation": "Pozorne spočítajte diely viditeľné na fotografiách"
+    },
+    {
+      "source": "Locate the first stage at which the count becomes inconsistent",
+      "source_sha256": "6556ae20394c7fcdc7340942aab42aeae5bf2531e276f4c8bbc7dae202d4ed76",
+      "raw_target_sha256": "cc75062e727463a22979e2d79d6afdddca01e4e1dbdc534ce6766745a44b3033",
+      "translation": "Nájdite prvú fázu, v ktorej sa počty rozchádzajú"
+    },
+    {
+      "source": "Decide what should wait before international shipment",
+      "source_sha256": "4a261ae57eddb64f8b0148b7b5c8cb0ec5a93230f7f1cdf64f2a2787c67ab303",
+      "raw_target_sha256": "bada772c0f876d5438a0b171a3911aafc836102e16e0f3381246740dea75057e",
+      "translation": "Rozhodnite, na čo treba počkať pred medzinárodným odoslaním"
+    },
+    {
+      "source": "Reconcile the selected parcel one final time at delivery",
+      "source_sha256": "689986e29ceb038be8aafb0f97f46a63e392ae320e5d7457bd360ad38f813637",
+      "raw_target_sha256": "f05e8cf21315acea317b1c633a4fc1abb07cca16d582f15de23cb40277e9c3c2",
+      "translation": "Pri doručení porovnajte obsah s výberom na odoslanie"
+    },
+    {
+      "source": "Name the purchase before collecting its pictures",
+      "source_sha256": "8ec7851d9c1b436c85c3b2a3ef44f9173bed34f439ddc1e574763f315cd992c4",
+      "raw_target_sha256": "82aae41668b97e25104f3d3d659e3c3db9e54521d07cd10c68d6bae874b62a2a",
+      "translation": "Pomenujte nákup skôr, než začnete zhromažďovať fotografie"
+    },
+    {
+      "source": "Write down the decision each picture supports",
+      "source_sha256": "32de4455f0f816032214b951666d5058ffee0f6a302900f03a844715de8e010f",
+      "raw_target_sha256": "0648cde16b555f5db61bb2b5813c18dfc71fb4342be117ddf60715b2acbae12b",
+      "translation": "Zapíšte, pri akom rozhodnutí vám fotografia pomôže"
+    },
+    {
+      "source": "Use an overview, an identifier and a decision view",
+      "source_sha256": "f5de75a303475e9197bb12633b17512c67d2f8ce837e27b10370476bd9d965ce",
+      "raw_target_sha256": "21dc63b7d498a441f79ec018abc277b29f28b76b586aaf9adb2ad520daa3da7f",
+      "translation": "Uložte celkový záber, identifikátor a rozhodujúci detail"
+    },
+    {
+      "source": "Compare similar garments side by side without inventing differences",
+      "source_sha256": "4ac87338317ba884d8be9c0c603c8c55ef0caba3562c90b90eae85b6f22ddf6c",
+      "raw_target_sha256": "c1815aabf0453739ebebbcde24fc9246f3500f316f6254a3dfd066885ce949f3",
+      "translation": "Porovnajte podobné odevy vedľa seba podľa viditeľných znakov"
+    },
+    {
+      "source": "Document a measurement so another person can reproduce it",
+      "source_sha256": "f6f7d2ec1cba3e58aa9698f78dfb16f84a49d5891286e95f9d4180f25365248a",
+      "raw_target_sha256": "5670b9deb4ae4b068f019cc55c5c0dbfbfd280f31b436fd57511154e2b4bee16",
+      "translation": "Opíšte meranie tak, aby ho iný človek mohol zopakovať"
+    },
+    {
+      "source": "Track unresolved questions without losing the ready items",
+      "source_sha256": "b68a92582bb97d2c127e0c03bb2bb1ad9c10fb5fa5948713d09be134c97ece26",
+      "raw_target_sha256": "32e20b3e3a6220b8efc6a3eab3751785f1d10b3b57fa21e81e5504833169e54a",
+      "translation": "Oddeľte otvorené otázky od kusov pripravených na odoslanie"
+    },
+    {
+      "source": "Preserve a useful record after dispatch",
+      "source_sha256": "8f8cf380bb67d421b7502e3b374b226ab26334a4982f3c80c3ca39ca7d8cba6d",
+      "raw_target_sha256": "503958b95926087c0dd56ddb7897b15d7daba003042621f3a1223efef8650808",
+      "translation": "Uchovajte užitočné záznamy aj po odoslaní"
+    },
+    {
+      "source": "Label the stage of every estimate",
+      "source_sha256": "cf5033337762f127c5c35f9eacbe1d66f071384570a91c573ea570ad8ced38ad",
+      "raw_target_sha256": "8dfcef042439a4d3b8f98834dfeb66906f6dc0e636471afa917a7e0d4d5300b7",
+      "translation": "Pri každom odhade uveďte fázu, v ktorej vznikol"
+    },
+    {
+      "source": "Start with the contents and destination",
+      "source_sha256": "c690e991763a5b6152ba4d24be7ce25fe4931d4862f7d926148bf67f987585d3",
+      "raw_target_sha256": "fcdca03195bb9ac40cd2418351b989bd8385e6f5d9dfce5b4e8a7382f71eb1ca",
+      "translation": "Začnite obsahom balíka a miestom doručenia"
+    },
+    {
+      "source": "Treat the complete outer box as the measured object",
+      "source_sha256": "9ae3ff7d6fc13bc60121834c8716807307050c28fdc178277bfdc7d014cbcb08",
+      "raw_target_sha256": "e8760daa846b290b2c08309ea327255feabadeb0e554612c55d8b0edf746a38c",
+      "translation": "Odmerajte celú vonkajšiu škatuľu"
+    },
+    {
+      "source": "Keep physical mass, volume and billing weight distinct",
+      "source_sha256": "ba9fa46a06ef7a2516d7e5ba238cfc151ab9b43620502bdf87e10a04d0c76df8",
+      "raw_target_sha256": "0f738be0fa053b05af099e43be5e5e04e44ef21c23b86f7e2a89e503e63f17e2",
+      "translation": "Rozlíšte skutočnú hmotnosť, objem a účtovanú hmotnosť"
+    },
+    {
+      "source": "Build a realistic low and high scenario",
+      "source_sha256": "c2e16f7cf5b3aebfa5caa358bd6fa46dd47355f830263f6b11c6ace346bbdb6c",
+      "raw_target_sha256": "8247461f76851d4968cfc885bf744cf535e0848ea9842cfe1055c1efd479e9e0",
+      "translation": "Zostavte realistický spodný a horný odhad"
+    },
+    {
+      "source": "Use simulation when the result can change what you do",
+      "source_sha256": "9863d3faae5272bfee2143d3f9dc6d037bf08d320f4e3e1c82d274a1f107c727",
+      "raw_target_sha256": "7bbf4fc0ebec8fb86099456ae6aa066975afaddfcbc4e92248eac4154e806d38",
+      "translation": "Zvoľte skúšobné balenie, ak výsledok môže zmeniť rozhodnutie"
+    },
+    {
+      "source": "Reconcile the final quote before paying",
+      "source_sha256": "6e205f853777575b8e22016e010eb2b327cd23fd178d334761f61ba5995e7dd6",
+      "raw_target_sha256": "9e3e3b39e27bb6672df49da1d7aa2cd8cb38ebddb1baf0470f76523728c86871",
+      "translation": "Pred platbou overte konečnú cenovú ponuku"
+    },
+    {
+      "source": "Define the decision before ranking prices",
+      "source_sha256": "386d4036205fef42c519243e621d8f61b0a6803ebf3220286865a3a6eb38b2e6",
+      "raw_target_sha256": "6e3b5295b963b050cd12895aa44a354a5e7ae901da3bb01b65d7920fd5c8cb42",
+      "translation": "Pred zoradením cien si ujasnite, čo potrebujete rozhodnúť"
+    },
+    {
+      "source": "Eliminate physically ineligible routes",
+      "source_sha256": "e73aff7225b7c773d8a62524de592eeb0b61a923c80a149dc3676dd5b543113c",
+      "raw_target_sha256": "fae3a6d54cfa35bf249148e7bb24afa07f396c6a6d7e2e694202659ab48b923e",
+      "translation": "Vylúčte linky, ktoré balík pre jeho rozmery neprijmú"
+    },
+    {
+      "source": "Read the arithmetic beneath the headline amount",
+      "source_sha256": "ccb4e1b7c54e73c58ccb774fca99cad8f69caff13c3d41315c8918d7b49e2cac",
+      "raw_target_sha256": "bf3dabf24cc0347d0f5368dab088a21e53ae482f18b5dfded4281aa5596d07cb",
+      "translation": "Zistite, z ktorých položiek sa skladá uvedená cena"
+    },
+    {
+      "source": "Compare the delivery information on equal terms",
+      "source_sha256": "ab67acf41b5287cd329235a210f72230792220ee41b4b7e86e225c5e2e5c30a0",
+      "raw_target_sha256": "1107c0b4a9e3140cbad4eea46c40f227ef37f3eaa5becee6c9c2a2cd5a65b489",
+      "translation": "Porovnávajte údaje o doručení za rovnakých podmienok"
+    },
+    {
+      "source": "Compare protection and packing as separate questions",
+      "source_sha256": "c7fa75dfe7b9d42df6b65b191da042f71cafc239e8121cf556f05e007dbbb0df",
+      "raw_target_sha256": "7ac67a74c0fc0b7e0adcde1902d81afc279eba857b41670d4dd835f1c7ba4e03",
+      "translation": "Posúďte ochranu a balenie osobitne"
+    },
+    {
+      "source": "Test whether the ranking survives plausible changes",
+      "source_sha256": "252750a3d4f3facc62f93395ea91bdac40ee4fbbf5a4c53146367687d64c7121",
+      "raw_target_sha256": "625a7b7d2e79cf19d7a34e59f183f65d1a6f01cb6487045dd9ddb6136f3940d3",
+      "translation": "Overte, či sa poradie zmení pri iných predpokladoch"
+    },
+    {
+      "source": "Save your selection with a reason",
+      "source_sha256": "c6e12578aede7115be18cb8ac36a856abf4021af1613ac617e54fea9b9f62c1a",
+      "raw_target_sha256": "4a805354d2c5fa060b0bda8f91d72348dcba03dd3800cc00cc1d4b48712d9cb6",
+      "translation": "Uložte si zvolenú linku aj dôvod výberu"
+    },
+    {
+      "source": "Identify the service and its object",
+      "source_sha256": "46ad6d2a8684dff723f7f915389b45bc4623f5eef00aeae12df1fdb6ceb0adec",
+      "raw_target_sha256": "245c7a8acb0162471ab1edac564b870910dfc4125a6b32fe562e60ac2f3adf96",
+      "translation": "Pomenujte službu a určte, čoho sa týka"
+    },
+    {
+      "source": "Write the decision before selecting the extra",
+      "source_sha256": "7662eec696b61478be9aa217d1a4a64a889eb6f56796bbc5b0232a54cb782556",
+      "raw_target_sha256": "2a534c0ce409981ad24526307b01c3ea88855e511d75933b18c1d92f41f23088",
+      "translation": "Pred výberom služby určte rozhodnutie, pri ktorom má pomôcť"
+    },
+    {
+      "source": "Give each service its own line and payment status",
+      "source_sha256": "6fa3cf8c1784926c8c5c62ba767bb28f23c9fbeb9c6410031b287cd0a6c4d74e",
+      "raw_target_sha256": "af92d3721d79758d3ba1857854fabd30d61b45cdaad73692f1dd1da3361343c6",
+      "translation": "Každú službu zapíšte do vlastného riadka so stavom platby"
+    },
+    {
+      "source": "Allocate shared services only when the allocation is needed",
+      "source_sha256": "6035a1c85c9985034383fec8818a14af2ce8d586df1070074957a609afa06745",
+      "raw_target_sha256": "42c68e06f991d23ac37fb7860575f6222fe52526eba62be9727c6ab159aff166",
+      "translation": "Spoločné služby rozdeľujte len vtedy, keď treba"
+    },
+    {
+      "source": "Reassess services after changing the parcel",
+      "source_sha256": "6af2734c5b2be433eb8601ec32ce2953bb50399d6705218acb7b934b88d953e4",
+      "raw_target_sha256": "51d21672af0ccfb416e5bbef0f022d5499c480cabce16a5d46f411081b4c3d3c",
+      "translation": "Po zmene balíka opätovne posúďte zvolené služby"
+    },
+    {
+      "source": "Verify what the service delivered",
+      "source_sha256": "79da7b55c3cf48f3ef48d234d8eeb90e93dfd769442e3f8c5228af5c898c5cf0",
+      "raw_target_sha256": "5ef695f140e09b2d738751f6bdfd1140cc6ea9c96b4a9fe11e01b8e2d1980047",
+      "translation": "Overte výsledok objednanej služby"
+    },
+    {
+      "source": "Close the ledger against the final parcel record",
+      "source_sha256": "bec594a6f2d9f08227d97d99d69259d2c482f53c8b230ee9281715f9eee9b341",
+      "raw_target_sha256": "b7ea2503c605b767cc6a6cd8c4026d86eb4d8dfc7de5eef620a84fa63647f659",
+      "translation": "Porovnajte evidenciu s konečným výpisom za balík"
+    },
+    {
+      "source": "Start with the final parcel identity",
+      "source_sha256": "57ecc665082d776a394ab8f8ea10f4ab83d12791760d646559d6614e01d430fd",
+      "raw_target_sha256": "04c60b8a9860dae2d1106ad3c039cf995a039a64f90a5aaabb0688bed780ad56",
+      "translation": "Určte, ku ktorému hotovému balíku výpis patrí"
+    },
+    {
+      "source": "Match the physical measurements before comparing money",
+      "source_sha256": "cf230a26fb7b5ddc9efb5086a7c2c6b395b8c9fb6b666db35ce4d7e4be6ae2f0",
+      "raw_target_sha256": "435dc6dd1975ccc5035f11dd89ba597d052784502d501788c5220f66f5b9de19",
+      "translation": "Pred porovnaním cien skontrolujte fyzické rozmery"
+    },
+    {
+      "source": "Identify the billing basis used on the selected line",
+      "source_sha256": "661e2dd6bdb2438d6ae35bfcd4c2d1fb41233daa2ae81fe1aa68731e6482e226",
+      "raw_target_sha256": "743f87a8e742c42206d3e14675858ea6d83e39895670147de44826146f00e6ed",
+      "translation": "Overte spôsob účtovania zvolenej linky"
+    },
+    {
+      "source": "Put totals, included lines and extras in separate columns",
+      "source_sha256": "851b5b339e03a7a6c90dbcd3734182eb3d58cd4188563bd49dea61d5f72c491b",
+      "raw_target_sha256": "f3192220528c012fcb4fb193d272d60a0a2033fa8db33421b5b5153579faeca9",
+      "translation": "Oddeľte súčty, zahrnuté položky a príplatky"
+    },
+    {
+      "source": "Separate currency display from transaction history",
+      "source_sha256": "fccfa391642da0f4c5e496632db28aaa50841097fc176edbbd60b751843b3f1b",
+      "raw_target_sha256": "454d8d38f4dc3aef311fdfb8163c3df344029ed0fb1f2dd208c3593cf5ef0594",
+      "translation": "Rozlíšte zobrazenú menu od skutočných platieb"
+    },
+    {
+      "source": "Ask a narrow question when a difference remains",
+      "source_sha256": "19321b5c9e5dfa8002dd7cdbb3fd00ed8742ae60ffdc2022d5bc19cad1232b10",
+      "raw_target_sha256": "56a1254e3965fd53900be8b0005e139d66c03935aa0fa125198776211870cc49",
+      "translation": "Spýtajte sa na konkrétny nevysvetlený rozdiel"
+    },
+    {
+      "source": "Close the comparison with a reproducible explanation",
+      "source_sha256": "fef6627dc43845821517bf19b0cbed9f714903bf692c613637bd87cf33cf0ba2",
+      "raw_target_sha256": "525b6386fccf01c3825256abf48025d133074fb1d9b50375a940d08396ad5f9b",
+      "translation": "Uzavrite porovnanie výpočtom, ktorý možno zopakovať"
     }
   ]
 }

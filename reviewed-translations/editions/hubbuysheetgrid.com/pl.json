@@ -3,7 +3,7 @@
   "locale": "pl",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "8a1ba23c059510886a7034f10bd338543d0af7d2d9b647876841fa0f03e5c004",
-  "effective_dictionary_sha256": "0d3bac8fba90da4c905737029a904be008a5589d927441363eb5a74cde900e11",
+  "effective_dictionary_sha256": "6e661f120511f76136abca87b7da01e770504f6f467f27a1bebbf9cef0b05684",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -248,7 +248,7 @@
       "source": "Save both outbound parcel references, their item lists and their final charge statements. Mark the line you are comparing on each record so the question stays tied to the correct parcel.",
       "source_sha256": "baa564c8afd6b6f139c54ca948290d096026e69c37baa603560efd436cf90c7c",
       "raw_target_sha256": "50f0905d5425464184218bd889529858de25ecad310a37f2ba6c351aabec1b8a",
-      "translation": "Zapisz zarówno paczkę wysyłaną z magazynu do klientów, ich listy artykułów, jak i ich końcowe zestawienia opłat. Zaznacz linię, którą porównujesz na każdym rekordzie, aby pytanie pozostało związane z właściwą przesyłką."
+      "translation": "Zachowaj numery obu wysyłanych paczek, listy ich zawartości i końcowe zestawienia opłat. Na każdym dokumencie oznacz porównywaną pozycję, aby pytanie dotyczyło właściwej paczki."
     },
     {
       "source": "Keep the old quote and add a revised quote under it. If the larger amount was already paid, track the credit process separately from the recalculated cost. Do not enter 202 as the only payment when the account shows 274 collected and a credit still pending. The two records answer different questions: what the retained merchandise should cost, and which funds have actually moved. Keep the same line names so that a friend reviewing the change can tell which item became unavailable.",
@@ -363,6 +363,12 @@
       "source_sha256": "536b8b79fc83da8498e787cdf8d8ed4a9f798a2b9e0105b754be105d333bddd8",
       "raw_target_sha256": "c4db8ef4a93f53c7a1051ca05b88999f4f5430c201904a628c250c0ec4c004a2",
       "translation": "Tylko jeśli wszystkie trzy przedmioty rzeczywiście zostaną ułożone wzdłuż jeden za drugim. Zmierz zewnętrzne wymiary całego układu, uwzględnij miejsce na zabezpieczenia i sprawdź wynik po spakowaniu."
+    },
+    {
+      "source": "Check destination coverage, size limits and acceptance of your actual contents. Compare delivery estimates and included services only among routes available for that parcel.",
+      "source_sha256": "53c93344f28c0396927cd3c658239f85333cc3467522fe9d1ce5963f1c7c50fd",
+      "raw_target_sha256": "61e77e466d6b3b0fb38b5f37edb6d4461e0f6088d8225c4826c444c5b54296ea",
+      "translation": "Sprawdź, czy usługa obejmuje miejsce docelowe, czy paczka mieści się w limitach rozmiaru i czy przewoźnik przyjmie jej konkretną zawartość. Porównuj terminy i usługi w cenie wyłącznie dla tras dostępnych dla tej paczki."
     }
   ]
 }

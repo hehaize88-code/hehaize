@@ -3,7 +3,7 @@
   "locale": "zh",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "1c2c2bc2a5ac0409560a7ea21fdcbfd1b384d0814f5898764491cac0b230ed55",
-  "effective_dictionary_sha256": "5db92789c847c00603312b8487f1f1b3053c75297f602b93d54ace129cc15c75",
+  "effective_dictionary_sha256": "94a7d21e594bb921ebf11ea9b0c20f1a78d4b67afa251c1572b77e4cf816963a",
   "checked_entries": 326,
   "review_scope": "Every English source field and its final localized replacement reviewed, including all ten articles, section headings, numeric examples, FAQ questions and answers, and navigation labels. Source and raw target hashes verified when creating corrections.",
   "reviewed_flags": [
@@ -20,7 +20,7 @@
       "source": "Imagine that an estimated 140 rises to a final debit of 168. A final statement shows base freight of 156 and packing of 12. The first 16 of the difference comes from the freight line, and the remaining 12 is the packing line. The reconstructed final amount is 168. Do not sum 168, 156 and 12: the total already contains the two components.",
       "source_sha256": "32e65e70ac5d42111df6901a022f14160bb1bf9e7df21f9841473cb4cd7ed93a",
       "raw_target_sha256": "5ceb74185ef1585a2989bd12a1c0685d45ddba261b276570ab32e9858a9c3000",
-      "translation": "假设预估费用为 140，最终扣款为 168。结算单列出基本运费 156、包装费 12。比预估多出的 28 中，16 来自运费上涨，另有 12 是包装费。两项合计正好是 168。不要把 168、156 和 12 三个数字相加，前者已经包含后两项。"
+      "translation": "假设预估费用为 140，最终扣款为 168。结算单列出基本运费 156、包装费 12。与预估相比，多出的 16 来自运费变化，另外 12 是包装费。核对最终账单时应算 156 + 12 = 168。不要把 168、156 和 12 全部相加，168 已是后两项的合计。"
     },
     {
       "source": "Two friends agree to buy from one shop. Mei chooses one garment costing 120 yuan and Arun chooses four accessories at 20 yuan each. The single domestic charge is 12. Dividing by five units gives Mei 2.40 and Arun 9.60 of the delivery cost. Dividing in proportion to merchandise value gives Mei 7.20 and Arun 4.80. Splitting the delivery equally makes each share six. All three methods reconcile to the same total. The important question is which agreement the people sharing the bill intend, not which method produces the lowest price for a particular person's line.",
@@ -470,7 +470,7 @@
       "source": "If two people share the order, agreeing on a split matters more than producing a falsely precise cost per item. A simple split across three units gives approximately 3.33 yuan per piece with a one-cent rounding adjustment. Another method assigns the 10 in proportion to product value. Each 68-yuan shirt gets about 3.82 and the cap about 2.36. Both methods reproduce 188. Neither method can establish the seller's actual transport cost for the cap.",
       "source_sha256": "b3af22d1adab7c597bf95d231fa0fc28c58b1677335d4b87d35137200ec48af2",
       "raw_target_sha256": "814bf04de69db207189de5c677d46466a600898c7f47c8e3f251fedc7fd3a22b",
-      "translation": "两个人拼单，先约定怎么分比追求看似精确的单件成本更重要。10 元运费按三件商品平摊，每件约 3.33 元，尾差 0.01 元要调到其中一件；若按货值分，两件 68 元的 T 恤各约 3.82 元，帽子约 2.36 元。无论哪种，当订单合计都还是 188 元。分摊金额不能证明卖家实际为单寄这顶帽子花了多少钱。"
+      "translation": "两人拼单时，先约定分摊方法，比计算看似精确的单件运费更重要。10 元运费按三件商品平摊，每件约 3.33 元，需把 0.01 元的尾差计入其中一件。若按货值分摊，两件单价 68 元的衬衫各分约 3.82 元，帽子分约 2.36 元。两种算法都能对上 188 元的订单总额，但分摊金额不能证明卖家实际为这顶帽子支付了多少运费。"
     },
     {
       "source": "When one seller sends two boxes",
@@ -602,7 +602,7 @@
       "source": "Consider a hypothetical worksheet with three product entries, two inner cartons and one outer parcel. Assume the quoted service is 4 yuan per inner carton and an outer-packing option costs 7 yuan for the parcel. The worksheet should add 8 and 7, or 15 in total. Multiplying both charges by three because there are three item rows produces 33. This example illustrates the arithmetic only; read the actual service units and amounts on the live offer.",
       "source_sha256": "d69a5da514621e530a2052e5742f1a2b8c367baec6ee1bbd4fe41739c8216408",
       "raw_target_sha256": "9d9bfa77031859efa9d1791b60690e5d198f025dd9d113afe23637bc42e0a136",
-      "translation": "假设表中有三件商品、两个内盒和一个外箱。内盒服务每盒 4 元，外包装服务每个包裹 7 元，正确计算是 4 × 2 + 7 = 15 元。若看见三行商品就把两种服务都乘三，则会错误地得到 33 元。这里只演示算法，具体价格和收费单位仍以当前报价为准。"
+      "translation": "假设表中有三件商品、两个内盒、一个外箱。内盒服务每盒 4 元，两盒共 8 元；外包装服务每个包裹 7 元，因此合计 8 + 7 = 15 元。若仅因有三行商品就把两种费用都乘三，会错误地得到 33 元。这个例子只演示算法，实际价格和收费单位以当前报价为准。"
     },
     {
       "source": "Separate optional and included services",
