@@ -1,6 +1,6 @@
 {
   "required_editions": 289,
-  "reviewed_editions": 268,
+  "reviewed_editions": 273,
   "sites": {
     "bbdbuygrid-com": {
       "required": 23,
@@ -1649,6 +1649,12 @@
           "reviewed_findings": 1,
           "effective_sha256": "5110ca74f274ca973948f273b1dad90cc5dcadce9593f497938bbf29808c593e"
         },
+        "pl": {
+          "entries": 209,
+          "replacements": 91,
+          "reviewed_findings": 4,
+          "effective_sha256": "1028f06df91387a06714a225816be2d90c7cfcc02deb9359a99525a1f425bdab"
+        },
         "pt": {
           "entries": 209,
           "replacements": 90,
@@ -1662,18 +1668,34 @@
           "effective_sha256": "8003ada169a66a5abb0c39be1ee0e2e2ca6350c71d34f7208deded1decd75050"
         }
       },
-      "pending": [
-        "pl"
-      ]
+      "pending": []
     },
     "vigorbuygrid-com": {
       "required": 23,
       "reviewed": {
+        "bg": {
+          "entries": 329,
+          "replacements": 121,
+          "reviewed_findings": 19,
+          "effective_sha256": "3befe405c4d0ae000b7748f9e684cf07b8b963ad057bf7fd438cd09e512ffeaf"
+        },
         "es": {
           "entries": 329,
           "replacements": 93,
           "reviewed_findings": 1,
           "effective_sha256": "63976267631116380c328e89b0a867307d10760990cff64d0bdd6d9e16a8db82"
+        },
+        "fr": {
+          "entries": 329,
+          "replacements": 123,
+          "reviewed_findings": 1,
+          "effective_sha256": "53c7781446035a5f2d6e82034351344707d84204989ea9a588a2fa2aa6b6a4f9"
+        },
+        "hr": {
+          "entries": 329,
+          "replacements": 100,
+          "reviewed_findings": 8,
+          "effective_sha256": "373620c9e9210a174de85f6eea3b429dedeecc9aaa29e407f624153c234d3e0c"
         },
         "it": {
           "entries": 329,
@@ -1686,23 +1708,25 @@
           "replacements": 149,
           "reviewed_findings": 1,
           "effective_sha256": "c1c69a8cbea5439fab45a1b91695bcac4e9124d19f18a3ac42d530bcad0efdfc"
+        },
+        "pt": {
+          "entries": 329,
+          "replacements": 98,
+          "reviewed_findings": 1,
+          "effective_sha256": "b3fc35ffc82662939fd392d86e822908630c3cc9e9aa69f2722d289b82d6cb92"
         }
       },
       "pending": [
-        "bg",
         "cs",
         "da",
         "de",
         "el",
         "fi",
-        "fr",
-        "hr",
         "hu",
         "id",
         "ja",
         "ko",
         "nl",
-        "pt",
         "ro",
         "sk",
         "sv",
