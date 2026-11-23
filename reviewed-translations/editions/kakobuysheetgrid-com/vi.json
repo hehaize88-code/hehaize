@@ -1,0 +1,110 @@
+{
+  "site": "kakobuysheetgrid-com",
+  "locale": "vi",
+  "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
+  "raw_dictionary_sha256": "9aa2e96fb4b8e29ce0c3c0245f96dc433930a7ce77aaa7de35fd23f441cc60ab",
+  "effective_dictionary_sha256": "783f0a81c6a91c1be2e945a0129cb53592ca3e1143f202b044bcd7bfa373c6f2",
+  "checked_entries": 317,
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "reviewed_flags": [
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "2ef2f3a66ed21a67deb485f33a7f656ce915ef2cb1c6ee10790dde0b4e5b328a",
+      "raw_target_sha256": "c91cd1c7541e3015037553f3435c4580a7d22ad72e15bb5c6d24716bb562c1a2",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "new digit or localized conversion",
+      "source_sha256": "b9a5de4e4d0d810cd1aef5d557b0a8e506c2ae591c4e189ea44fbca4754efae3",
+      "raw_target_sha256": "c25aba987432689496e6e32d17b0787b26a1d06e8c28161f89d23bcbf326ee36",
+      "resolution": "corrected translation"
+    }
+  ],
+  "unresolved_material": [],
+  "corrections": [
+    {
+      "source": "KakoBuy spreadsheet FAQ",
+      "source_sha256": "2ef2f3a66ed21a67deb485f33a7f656ce915ef2cb1c6ee10790dde0b4e5b328a",
+      "raw_target_sha256": "c91cd1c7541e3015037553f3435c4580a7d22ad72e15bb5c6d24716bb562c1a2",
+      "translation": "Câu hỏi thường gặp về bảng sản phẩm KakoBuy"
+    },
+    {
+      "source": "An internal SKU is helpful when the seller actually exposes one. It might identify a particular combination even when two translated option names look alike. Treat it as a literal identifier, including any leading zeroes or letters. A spreadsheet that interprets the value as a number can discard part of it. Store the value as text and reopen the file to confirm it survived. If the seller never displays an internal code, the marketplace link plus the precise option text and dated order confirmation can still be an adequate record.",
+      "source_sha256": "b9a5de4e4d0d810cd1aef5d557b0a8e506c2ae591c4e189ea44fbca4754efae3",
+      "raw_target_sha256": "c25aba987432689496e6e32d17b0787b26a1d06e8c28161f89d23bcbf326ee36",
+      "translation": "Nếu người bán công khai mã SKU nội bộ, mã đó có thể giúp phân biệt hai tổ hợp có tên gần giống nhau sau khi dịch. Hãy chép nguyên mã, kể cả số 0 ở đầu và các chữ cái. Lưu dưới dạng văn bản rồi mở lại bảng để kiểm tra, vì định dạng số có thể làm mất một phần mã. Nếu không có SKU, hãy lưu đường dẫn gốc, nguyên văn tên tùy chọn và xác nhận đơn hàng kèm ngày."
+    },
+    {
+      "source": "Some details can be shown by rotating an item. Others require opening packaging, removing a tag or disassembling a component. Identify what the photo would require and check whether the service can perform that action. If it would affect a seal or condition important to your purchase, stop and decide whether the evidence is worth that change. A request to show a manufacturer's printed seal from the outside may answer part of the question with less handling.",
+      "source_sha256": "50b7c53cdec957944ccfccfa6b0ab216c47eeffad543b4195c1c2d4a8a8bdb1a",
+      "raw_target_sha256": "1464e961a6e96ffb43de7d628f5399d75763f1b806f158c0654e83d21dfe37eb",
+      "translation": "Có chi tiết chỉ cần xoay món hàng để chụp, nhưng cũng có chi tiết phải mở bao bì, tháo nhãn hoặc tháo rời một bộ phận. Hãy xác định thao tác cần thiết và hỏi xem kho có hỗ trợ hay không. Nếu phải làm hỏng niêm phong hoặc ảnh hưởng đến tình trạng hàng mà bạn muốn giữ, hãy cân nhắc trước khi đồng ý. Đôi khi chỉ cần chụp dấu niêm phong của nhà sản xuất từ bên ngoài là đã trả lời được một phần câu hỏi."
+    },
+    {
+      "source": "Packing paper can create an apparent bulge and a loose lace can make one opening look larger. For something you suspect to be a physical mismatch, note whether the feature persists across another angle. A shadow at the sidewall in a front view may disappear in a side image. A clearly different tread pattern visible across the whole outsole is a different kind of observation. State the visible feature and ask the person handling the order to check it directly if necessary.",
+      "source_sha256": "a863e7ca2d3986dfab7668f66b65124ecd4c77274081dea1a2c4860d26148b1a",
+      "raw_target_sha256": "da815823fd5bb2aa6c45ef78244c16eb85ba087efd713aad1037d320c845bd0e",
+      "translation": "Giấy chèn có thể làm một bên giày trông phồng hơn, còn dây giày lỏng có thể khiến miệng giày có vẻ rộng hơn. Nếu nghi ngờ hai chiếc thực sự khác nhau, xem đặc điểm đó có còn xuất hiện từ góc chụp khác hay không. Bóng trên thành đế khi nhìn thẳng có thể biến mất ở góc nghiêng. Ngược lại, hai hoa văn khác nhau trên toàn bộ mặt đế là một dấu hiệu cụ thể. Mô tả đúng phần nhìn thấy và nhờ người đang cầm đôi giày kiểm tra trực tiếp nếu cần."
+    },
+    {
+      "source": "KakoBuy QC lookup: matching a photograph by marketplace and item ID",
+      "source_sha256": "173a739a992ecd8a6d356b89b50944b89164d1098cc950c7fac9e3ba1fbe29a7",
+      "raw_target_sha256": "1c1ec7fe15f445537cf50a8acff544819b0c083123f9818758c1004230ca4bab",
+      "translation": "Đối chiếu ảnh kiểm hàng KakoBuy theo sàn giao dịch và mã sản phẩm"
+    },
+    {
+      "source": "KakoBuy item ID versus size and colour: preserving the exact choice",
+      "source_sha256": "b0c92e9eba09b098ae1aec157a176a4cb535879115a92b3624d827b59db20342",
+      "raw_target_sha256": "9fa317478b33b7e2a0817d2066cbced249b13d480be1544d2329deb9aaac3bea",
+      "translation": "Mã sản phẩm, kích cỡ và màu sắc trên KakoBuy: cách ghi lại đúng tùy chọn"
+    },
+    {
+      "source": "How to recover the seller listing behind a KakoBuy link",
+      "source_sha256": "fa6f7133bed0cc0b7ccc996f2ee1a02a56d431512a005e841e92c77b6d465fe6",
+      "raw_target_sha256": "d1156bb9b762eaea994f4bcd1271d60604725c6459aecaa0e0a1f78f18deb3c5",
+      "translation": "Cách tìm lại trang sản phẩm gốc của người bán từ liên kết KakoBuy"
+    },
+    {
+      "source": "Same photo, different listing: comparing two KakoBuy spreadsheet finds",
+      "source_sha256": "59eaebae8149b4ca75904c016b5b173a08e7ce47c0f535fa8adeae816fe4dfb0",
+      "raw_target_sha256": "a2afda129ae464d5c3a24cffe6698a1aef5b40611e85b380000d0cd478a092f7",
+      "translation": "Cùng ảnh, khác trang bán: so sánh hai sản phẩm tìm thấy trong bảng tính KakoBuy"
+    },
+    {
+      "source": "How to read a clothing label in KakoBuy warehouse photos",
+      "source_sha256": "8a097b3bd82f4c7aa54feba94799ecfea1a24b8dace7538862bc898bdc1293c7",
+      "raw_target_sha256": "8e3fa4751574b7eea5024fd0c8a99b08973b9e16601be20fd700276ca460533e",
+      "translation": "Cách đọc nhãn quần áo trong ảnh chụp tại kho KakoBuy"
+    },
+    {
+      "source": "KakoBuy shoe QC: checking both shoes in the pair",
+      "source_sha256": "59cbcf77fe4300e6d4b06a4b6f8cfe19756df35cb88c99ca1f98b7574f407ef5",
+      "raw_target_sha256": "0329ecb929cfe71ca6acb08af155d89f9a792f7bacc5437f3b4408f224413c4e",
+      "translation": "Kiểm tra giày trên KakoBuy: xem cả hai chiếc trong một đôi"
+    },
+    {
+      "source": "A missing strap, cable or pouch: documenting a KakoBuy accessory issue",
+      "source_sha256": "a210033930baba6fbadd360cf6f85f6c67443479a6571d4a672e7a20bf70bba3",
+      "raw_target_sha256": "3fb0c02b7da804987ed4d9043e167af5490746a556cbfbb4b009af003b454268",
+      "translation": "Thiếu dây đeo, cáp hoặc túi đựng: cách ghi nhận vấn đề phụ kiện trên KakoBuy"
+    },
+    {
+      "source": "Writing a useful KakoBuy detail-photo request before shipping",
+      "source_sha256": "cd8bee9c280c2a7037f3f1417bc3793df7dda7b898281c5f45fca31da3a5bf87",
+      "raw_target_sha256": "749633378e59d6906627514e3a4edc53af95cd7812088d6992f728220ef450f4",
+      "translation": "Cách yêu cầu KakoBuy chụp ảnh chi tiết cần thiết trước khi gửi hàng"
+    },
+    {
+      "source": "Tracking a KakoBuy exchange from the original purchase to the replacement",
+      "source_sha256": "6393f6a7d4ab9783cb5128f3e2412caa08cfde692d860d39ea0cdf421b05ff12",
+      "raw_target_sha256": "93ef7aeb7f1f84bde164df3d315bb484da77ffb925260a09c90d1941583023a0",
+      "translation": "Theo dõi việc đổi hàng trên KakoBuy từ lần mua ban đầu đến khi nhận hàng thay thế"
+    },
+    {
+      "source": "When a seller changes a KakoBuy listing after you save or buy it",
+      "source_sha256": "cb73284ec36da0cbb2899dca06f01d4fbf451b51eae43f8a6a2f1cde5248ff7b",
+      "raw_target_sha256": "94ccba6e936079b2f96f4ebff40340a7b4be43c019b37db6d18f0605066d3591",
+      "translation": "Cần kiểm tra gì khi người bán sửa trang sản phẩm KakoBuy sau khi bạn lưu hoặc mua hàng?"
+    }
+  ]
+}

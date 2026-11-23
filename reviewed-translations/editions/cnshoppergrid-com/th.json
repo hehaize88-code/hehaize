@@ -3,7 +3,7 @@
   "locale": "th",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "4dba409c9b9ce88c3fd5a623b4e15af7db89d4fd7a98e1b985fdd5a228acbd2d",
-  "effective_dictionary_sha256": "52a3c86e82a6a3abd25555d2374c11625c743be7a35a8ecf2ed10e686a9d6ea0",
+  "effective_dictionary_sha256": "52f6b3692a9fc80b502c0392da5177aadeefb175c86bd5503040537c9e600b27",
   "checked_entries": 305,
   "review_scope": "All dictionary keys and language, figure, URL, brand, identifier and repetition checks. All ten article headings, flagged full passages, two sampled paragraphs, and financial and garment-measurement examples reviewed against the English originals. Material terminology and numerical-example errors in the inspected passages corrected.",
   "reviewed_flags": [
@@ -206,7 +206,7 @@
       "source": "Record each colour as a separate line with its size and count. For example, two navy medium shirts and one grey large shirt are two distinct selections. Compare both lines with the purchase confirmation.",
       "source_sha256": "d26973353a9a726ef696fc01aed39d79201b5b06f4eebb79203739390865725b",
       "raw_target_sha256": "331904fb12c5788c81c2c74424361178e65c87ee90259ef9ce1fee20d55b7a81",
-      "translation": "แยกแต่ละสีเป็นคนละบรรทัด พร้อมระบุไซซ์และจำนวน เช่น เสื้อสีน้ำเงินกรมท่าไซซ์กลางสองตัว กับเสื้อสีเทาไซซ์ใหญ่หนึ่งตัวเป็นคนละตัวเลือก ตรวจทั้งสองบรรทัดกับใบยืนยันการซื้อ"
+      "translation": "แยกหนึ่งบรรทัดต่อสี พร้อมจดไซซ์และจำนวน เช่น เสื้อเชิ้ตสีกรมท่าไซซ์ M สองตัว กับเสื้อเชิ้ตสีเทาไซซ์ L หนึ่งตัวเป็นคนละตัวเลือก เทียบทั้งสองบรรทัดกับใบยืนยันคำสั่งซื้อ"
     },
     {
       "source": "Can I identify a seller listing using only a screenshot?",
@@ -464,7 +464,7 @@
       "source": "At intake, review the accepted replacement specification, not merely the first item saved to your spreadsheet. If you approved short large, a large label can be correct even though the original wishlist said medium. However, the label alone may not confirm the cut or measurement that justified the change. Request the appropriate view for the remaining question if the service permits it.",
       "source_sha256": "d0063535ffffcfba6185923b52e865c6c9c8271aa6ab5b6ff060d250291a1063",
       "raw_target_sha256": "1ed3f7dca9bd547b2ba738484a70d961b35a86e45e930c6427b43bbf3c5a8f64",
-      "translation": "ตอนรับเข้าคลัง ให้เทียบสินค้ากับข้อกำหนดของรุ่นทดแทนที่คุณตอบตกลง ไม่ใช่ดูเพียงรุ่นแรกที่เคยบันทึกในสเปรดชีต หากยอมรับเสื้อทรงสั้นไซซ์ใหญ่ ป้ายไซซ์ใหญ่อาจถูกต้องแม้รายการเดิมจะระบุไซซ์กลาง แต่ป้ายอย่างเดียวอาจยืนยันทรงหรือขนาดจริงที่เป็นเหตุให้ยอมเปลี่ยนไม่ได้ หากบริการอนุญาต ให้ขอภาพมุมที่ตอบข้อสงสัยที่ยังเหลืออยู่"
+      "translation": "เมื่อสินค้าเข้าคลัง ให้ตรวจเทียบกับรุ่นทดแทนที่ตกลงล่าสุด หากคุณยอมรับรุ่นทรงสั้นไซซ์ L แล้ว ป้าย L ก็อาจถูกต้องแม้รายการเดิมระบุ M แต่ป้ายอย่างเดียวอาจไม่ยืนยันทรงหรือความยาวที่ใช้ตัดสินใจเปลี่ยน หากยังมีข้อสงสัยและบริการรองรับ ให้ขอภาพเฉพาะส่วนที่ต้องการตรวจ"
     },
     {
       "source": "Use an overall image to orient the person reviewing the case, then add a closer image of the disputed detail. For a color mismatch, photograph both the product and any option label if they are available. Describe the lighting when color is central to the decision. Screen settings, warehouse lighting and the original listing image can all affect appearance. A label with the seller's color code can give the reviewer a second way to identify what was sent.",
@@ -507,6 +507,12 @@
       "source_sha256": "252af8f88a918ff22d1e458fc2ae8436f9d879dc1da9cfeb7dcb1d8e2c015538",
       "raw_target_sha256": "c5edb4b0e668b9af82f1c50db149ad2ac7b45b8dde0ead7699aff47d4bdaf240",
       "translation": "สมมติว่าแจ็กเก็ตทรงสั้นไซซ์ M หมด ทางเลือกคือทรงความยาวปกติไซซ์ M กับทรงสั้นไซซ์ L รุ่นความยาวปกติไซซ์ M อาจมีความกว้างช่วงอกใกล้เดิมแต่ตัวยาวขึ้น ส่วนทรงสั้นไซซ์ L อาจรักษาความยาวที่ต้องการได้แต่ช่วงอกและไหล่กว้างขึ้น ไม่มีตัวเลือกใดใกล้ของเดิมที่สุดในทุกด้าน ระบุขนาดที่ต้องการคงไว้แล้วเทียบค่าที่วัดได้จริงของทั้งสองทางเลือก หากไม่มีข้อมูลสำคัญ ให้บันทึกว่ายังสรุปไม่ได้แทนการแนะนำไซซ์อย่างมั่นใจ"
+    },
+    {
+      "source": "Save a short result such as “short medium unavailable; accepted short large after checking back length; actual warehouse measurement recorded.” If you declined a substitute, keep the reason, such as excessive length or incompatible rise. Those notes improve future purchases from the same seller without pretending that a size label has universal meaning across shops.",
+      "source_sha256": "ca9118fdb6d97a71cfeedaeba9a97a986370d37c8660d6a8f3cd018d7d410535",
+      "raw_target_sha256": "c42898cdf4bc4a21e09d0d6d9fb9e697007b12364deb0b7a1bc6dcaa4898cd99",
+      "translation": "บันทึกสั้น ๆ ได้ว่า “ทรงสั้น M หมด ตรวจความยาวด้านหลังแล้วจึงยอมรับทรงสั้น L และเก็บผลวัดจริงจากคลังแล้ว” หากไม่รับของทดแทน ให้จดเหตุผล เช่น ตัวยาวเกินไปหรือความยาวเป้ากางเกงไม่เหมาะ บันทึกนี้ช่วยเมื่อกลับมาซื้อจากร้านเดิม โดยยังต้องเทียบขนาดจริงหากเปลี่ยนร้าน"
     }
   ]
 }

@@ -1,0 +1,392 @@
+{
+  "site": "kakobuysheetgrid-com",
+  "locale": "ko",
+  "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
+  "raw_dictionary_sha256": "3d2e7d027a4e70636e329e3cca5b88a94648ace88348eea5aeccbf9e7d473a72",
+  "effective_dictionary_sha256": "52cf84811b5b03382e9c1b4aa6c252c33da1b4f094a52a4b97e7a8f7e0773d1b",
+  "checked_entries": 317,
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "reviewed_flags": [
+    {
+      "issue": "platform spelling or transliteration",
+      "source_sha256": "2ef2f3a66ed21a67deb485f33a7f656ce915ef2cb1c6ee10790dde0b4e5b328a",
+      "raw_target_sha256": "2f584a43da9e2d51199fe02954d533b12dd74da4e28193c3906929078c37d987",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "new digit or localized conversion",
+      "source_sha256": "b9a5de4e4d0d810cd1aef5d557b0a8e506c2ae591c4e189ea44fbca4754efae3",
+      "raw_target_sha256": "e1b4ae28060e26dad44710ca7a06c1202085eabe03011d4a0fc48cc03bcdf5de",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "new digit or localized conversion",
+      "source_sha256": "3ca6d6bc596c9fe8f803c4e0c6ea38a15b849cd14a1babc9285b3dc269ed882e",
+      "raw_target_sha256": "92e66da53a7c98aabc13ec093107e90526a2a02f22ab66442785109306f14522",
+      "resolution": "corrected translation"
+    }
+  ],
+  "unresolved_material": [],
+  "corrections": [
+    {
+      "source": "KakoBuy spreadsheet FAQ",
+      "source_sha256": "2ef2f3a66ed21a67deb485f33a7f656ce915ef2cb1c6ee10790dde0b4e5b328a",
+      "raw_target_sha256": "2f584a43da9e2d51199fe02954d533b12dd74da4e28193c3906929078c37d987",
+      "translation": "KakoBuy 상품 목록 자주 묻는 질문"
+    },
+    {
+      "source": "An internal SKU is helpful when the seller actually exposes one. It might identify a particular combination even when two translated option names look alike. Treat it as a literal identifier, including any leading zeroes or letters. A spreadsheet that interprets the value as a number can discard part of it. Store the value as text and reopen the file to confirm it survived. If the seller never displays an internal code, the marketplace link plus the precise option text and dated order confirmation can still be an adequate record.",
+      "source_sha256": "b9a5de4e4d0d810cd1aef5d557b0a8e506c2ae591c4e189ea44fbca4754efae3",
+      "raw_target_sha256": "e1b4ae28060e26dad44710ca7a06c1202085eabe03011d4a0fc48cc03bcdf5de",
+      "translation": "판매자가 자체 품목 코드(SKU)를 공개하면 번역한 옵션 이름이 비슷해도 색상과 크기 조합을 구분하는 데 쓸 수 있습니다. 앞자리의 0과 영문자까지 그대로 복사하세요. 스프레드시트가 숫자로 처리하면 앞자리가 사라질 수 있으므로 텍스트 형식으로 저장한 뒤 다시 열어 확인합니다. 코드가 없다면 원본 상품 주소, 정확한 옵션 문구, 날짜가 적힌 주문 확인서를 함께 보관하세요."
+    },
+    {
+      "source": "Check availability, fees and processing information in the current KakoBuy order flow. A third-party article can suggest useful angles, but the conditions attached to your own order decide which request can be fulfilled. Once the image arrives, keep it with the original request and the decision you made. A dated note explaining the accepted measurement remains useful if the item later becomes part of a multi-item parcel.",
+      "source_sha256": "3ca6d6bc596c9fe8f803c4e0c6ea38a15b849cd14a1babc9285b3dc269ed882e",
+      "raw_target_sha256": "92e66da53a7c98aabc13ec093107e90526a2a02f22ab66442785109306f14522",
+      "translation": "추가 촬영 가능 여부와 요금, 처리 방법은 현재 KakoBuy 주문 화면에서 확인하세요. 다른 사이트의 글은 촬영 각도를 고르는 데 참고가 되지만 실제 요청 가능 범위는 주문 조건에 따릅니다. 사진이 도착하면 요청 문구와 결정 내용을 함께 보관하세요. 어떤 치수를 확인했는지 날짜와 함께 남겨 두면 나중에 여러 상품을 합배송할 때도 도움이 됩니다."
+    },
+    {
+      "source": "An album tied to the same marketplace identifier may show a version sold before the edit. Check the recording date, label, visible construction and package contents. Use it as a guide to the detail worth checking rather than evidence of the new offer. If your own current warehouse pictures become available, connect them to their order and option first and document any specific difference before deciding about shipping.",
+      "source_sha256": "25c423befbf247d3ff24a467f8f8a596adeee1290c61b07e94ab378d61f6b862",
+      "raw_target_sha256": "4c014df3c0efbc339a572aa2ef8b2e708d9e72677460b765a31ce6517b4368a9",
+      "translation": "마켓 상품 번호가 같아도 이전 사진은 판매자가 내용을 바꾸기 전의 버전을 보여 줄 수 있습니다. 촬영일, 라벨, 눈에 보이는 구조와 구성품을 확인하세요. 예전 사진은 다시 확인할 부분을 찾는 데 활용합니다. 내 주문의 창고 사진이 도착하면 먼저 주문과 선택한 옵션을 연결하고, 실제 차이를 기록한 다음 발송 여부를 결정하세요."
+    },
+    {
+      "source": "Before purchase, decide whether the missing detail matters enough to ask the seller or leave the item on your shortlist. After purchase, use the photographs tied to your own order for decisions about the received unit. Retain the older album as a comparison and clearly label its origin. If the new unit differs, identify the specific feature and quote your selected option, rather than promising support that the historical picture describes every item now supplied.",
+      "source_sha256": "c5c0445fa667385723420119717be5caa752fbae6333e27fa682002141e07d82",
+      "raw_target_sha256": "fbaed990683c51f57bebfe1ef85fb4f5c6d0a3716b8a5accea99608aa8c19240",
+      "translation": "구매 전에는 확인되지 않은 부분을 판매자에게 물어볼지, 후보로만 남겨 둘지 정하세요. 구매 후에는 내 주문에 연결된 사진으로 실물을 판단합니다. 과거 앨범에는 출처를 붙여 비교 자료로 보관하세요. 새로 받은 제품이 다르면 해당 부위와 주문할 때 선택한 옵션 문구를 상담원에게 알려 주세요. 과거 사진 한 장으로 지금 공급되는 모든 제품이 같다고 단정하기는 어렵습니다."
+    },
+    {
+      "source": "KakoBuy QC lookup: matching a photograph by marketplace and item ID",
+      "source_sha256": "173a739a992ecd8a6d356b89b50944b89164d1098cc950c7fac9e3ba1fbe29a7",
+      "raw_target_sha256": "33b670da6270456954d18d3cf03fbe74d12fa53dbcc735a72abe68a41e8daaff",
+      "translation": "판매 플랫폼과 상품 ID로 KakoBuy 검수 사진 대조하기"
+    },
+    {
+      "source": "KakoBuy item ID versus size and colour: preserving the exact choice",
+      "source_sha256": "b0c92e9eba09b098ae1aec157a176a4cb535879115a92b3624d827b59db20342",
+      "raw_target_sha256": "48b8e4c2fbb4f6cf2711187bfcb781f6d587da6c689cfe2a0193d16c44d1c27d",
+      "translation": "KakoBuy 상품 ID와 사이즈·색상의 차이: 선택한 옵션을 정확히 기록하는 방법"
+    },
+    {
+      "source": "How to recover the seller listing behind a KakoBuy link",
+      "source_sha256": "fa6f7133bed0cc0b7ccc996f2ee1a02a56d431512a005e841e92c77b6d465fe6",
+      "raw_target_sha256": "f8144a80aebe474ad89ce95a3501dbd049a8d434c739da8cf644b10b74c3cc20",
+      "translation": "KakoBuy 링크에서 판매자의 원래 상품 페이지 찾기"
+    },
+    {
+      "source": "Same photo, different listing: comparing two KakoBuy spreadsheet finds",
+      "source_sha256": "59eaebae8149b4ca75904c016b5b173a08e7ce47c0f535fa8adeae816fe4dfb0",
+      "raw_target_sha256": "df2900e3bbda43d55519260bd14d99aeb2c91355c33a7c35eee1b20c33e0ac6c",
+      "translation": "같은 사진, 다른 판매 페이지: KakoBuy 목록에서 찾은 두 상품 비교하기"
+    },
+    {
+      "source": "How to read a clothing label in KakoBuy warehouse photos",
+      "source_sha256": "8a097b3bd82f4c7aa54feba94799ecfea1a24b8dace7538862bc898bdc1293c7",
+      "raw_target_sha256": "8928786a38ce7330d5e0b8c2b7e6935470c8c11bc47df141345f18107d668197",
+      "translation": "KakoBuy 창고 사진에서 의류 라벨 읽는 방법"
+    },
+    {
+      "source": "KakoBuy shoe QC: checking both shoes in the pair",
+      "source_sha256": "59cbcf77fe4300e6d4b06a4b6f8cfe19756df35cb88c99ca1f98b7574f407ef5",
+      "raw_target_sha256": "4c791e6cb46600ee9f82d8b5e3d34e2a12dead81b912877524ffa91783a7d2ea",
+      "translation": "KakoBuy 신발 검수 시 한 켤레의 양쪽을 모두 확인하는 방법"
+    },
+    {
+      "source": "A missing strap, cable or pouch: documenting a KakoBuy accessory issue",
+      "source_sha256": "a210033930baba6fbadd360cf6f85f6c67443479a6571d4a672e7a20bf70bba3",
+      "raw_target_sha256": "a96d509ceba196896b06d6146dda0e234375662195e1b89c32bdc473b8fffe36",
+      "translation": "스트랩, 케이블 또는 파우치가 빠졌을 때 KakoBuy 주문의 구성품 문제 기록하기"
+    },
+    {
+      "source": "Writing a useful KakoBuy detail-photo request before shipping",
+      "source_sha256": "cd8bee9c280c2a7037f3f1417bc3793df7dda7b898281c5f45fca31da3a5bf87",
+      "raw_target_sha256": "6ae2cd3616f319a45b79fff9c40e4ff1551c52afb7ee28d0e0a11d71eea6d473",
+      "translation": "발송 전 KakoBuy에 필요한 부분의 상세 사진을 요청하는 방법"
+    },
+    {
+      "source": "Tracking a KakoBuy exchange from the original purchase to the replacement",
+      "source_sha256": "6393f6a7d4ab9783cb5128f3e2412caa08cfde692d860d39ea0cdf421b05ff12",
+      "raw_target_sha256": "b56f49e6a0f5f687b9370feff27ac64d946e01cfdccc1eba053e473a5a62f367",
+      "translation": "최초 구매부터 교환품 수령까지 KakoBuy 교환 진행 상황 확인하기"
+    },
+    {
+      "source": "When a seller changes a KakoBuy listing after you save or buy it",
+      "source_sha256": "cb73284ec36da0cbb2899dca06f01d4fbf451b51eae43f8a6a2f1cde5248ff7b",
+      "raw_target_sha256": "6b36dae0a803944b0cb47d3eac531d57aca655db8f634f26aefba4efb1cba631",
+      "translation": "저장하거나 구매한 뒤 판매자가 KakoBuy 상품 페이지를 바꿨을 때 확인할 사항"
+    },
+    {
+      "source": "What does a KakoBuy QC finder match?",
+      "source_sha256": "dd59c80329690c1ac2ae3e8d6c3d68fe1b9bb77c4d5c150bb6b3ecbc3ec11397",
+      "raw_target_sha256": "597e458ef0307107ba556941f5f6fbaf0e19d188943571924427e9a8ceb857ac",
+      "translation": "KakoBuy 검수 사진 검색에서는 무엇을 대조하나요?"
+    },
+    {
+      "source": "A finder can use the underlying marketplace listing to locate photographs linked to earlier orders. First match the marketplace and item ID. Then check whether the pictures identify the same size, colour and version as the one you are considering.",
+      "source_sha256": "30b3c6536a91476b2dc570a0f5953f7d6a6ae4cd9d8b488781e3fe1c5bd39e62",
+      "raw_target_sha256": "90a0185051deeaf813b408fe859e2c380bd6a966d70e309fde01b9a386972faa",
+      "translation": "원래 쇼핑몰의 상품 페이지를 바탕으로 과거 주문에 연결된 사진을 찾을 수 있습니다. 먼저 쇼핑몰과 상품 번호가 일치하는지 확인하고, 사진에서 원하는 사이즈·색상·버전까지 구별되는지 살펴보세요."
+    },
+    {
+      "source": "Is the number in this catalogue page address the Weidian item ID?",
+      "source_sha256": "01743a345013914201d8f0d62df35dffe9c6f6655b31c019a36006925e612d27",
+      "raw_target_sha256": "1fabd901169cb9f30e14832874a9cd91929399fc5e896febc6476ffc4b9f5ee5",
+      "translation": "이 사이트의 상품 주소에 있는 숫자가 웨이디엔 상품 번호인가요?"
+    },
+    {
+      "source": "The number in a Sheet Grid page address identifies that catalogue page. Open the original seller link and read the itemID value there before using a Weidian QC lookup.",
+      "source_sha256": "516328e62cd88a787b300af9a8d70729ba22c0e7aec5e7c938de05e15cd89e85",
+      "raw_target_sha256": "d207981221bc62bb876ee72ffbae681f55da9586cca1ea872d4d029fefccc7b5",
+      "translation": "Sheet Grid 주소의 숫자는 이 사이트 내부의 상품 페이지 번호입니다. 웨이디엔 검수 사진을 찾으려면 판매자의 원래 상품 링크를 열어 itemID를 확인하세요."
+    },
+    {
+      "source": "What should I do if an agent link contains an encoded seller URL?",
+      "source_sha256": "d73c3d29b8ddea2d90f15a01abd4682ebca6571bd8ac702dc49fac00962578a5",
+      "raw_target_sha256": "7d2a1a925b6dd9100da739904903f7f22d084fc97e33b8cfe8eab7c75a9b73b6",
+      "translation": "구매대행 링크에 인코딩된 판매자 주소가 들어 있으면 어떻게 하나요?"
+    },
+    {
+      "source": "Open the product normally and use its original marketplace link when available. Compare the destination, shop and item number with the saved row. Avoid guessing which digits in a long agent URL identify the product.",
+      "source_sha256": "8b1e11d464ed0b76ef35e5169ad5c92b29e54dd0073c14fafcd6eb285f0fac7d",
+      "raw_target_sha256": "fdbc219ec1ae7173c1cce7a172e92653b49d2ef1bb292ba627a6dc2cd507d33e",
+      "translation": "상품 페이지를 정상적으로 연 뒤 제공된 원본 쇼핑몰 링크를 이용하세요. 도착한 사이트와 상점, 상품 번호를 저장해 둔 기록과 대조합니다. 대행사 주소에 보이는 숫자를 상품 번호로 단정하지 마세요."
+    },
+    {
+      "source": "Can an image match find the exact seller?",
+      "source_sha256": "1af00952e050fa11da394c4f4deee38b6e5c82543b92193d125a01296ec6ede5",
+      "raw_target_sha256": "c4f77606a22cdde4235499d139ef18afd19845c4cf5ead1378ab454764a7f765",
+      "translation": "이미지 검색으로 원래 판매자를 찾을 수 있나요?"
+    },
+    {
+      "source": "An image match can suggest visually similar rows. Several shops can use the same photograph. Compare seller identity and marketplace item ID before assigning any historical warehouse photographs to the result.",
+      "source_sha256": "10e016718c7d3e91b51ac095be9a5593c0eb824778e675de20c02d075f85bce2",
+      "raw_target_sha256": "47c94f535c348bd2b31a506b46b6acd1e66d774b631120b9e36fb0d42e91c850",
+      "translation": "겉모습이 비슷한 상품을 찾는 데 도움이 되지만 여러 상점이 같은 사진을 쓰기도 합니다. 과거 창고 사진을 특정 검색 결과와 연결하기 전에 판매자와 상품 번호를 확인하세요."
+    },
+    {
+      "source": "Do older QC photos show the item I will receive?",
+      "source_sha256": "a4cb1304c8de057f522fac2b57a67936de874123246da66c07aba7497d0458e1",
+      "raw_target_sha256": "c935ac97b97ef9ec9c6aea3466f1b9dce8f8d4e80f92ec14236f41751007bfcf",
+      "translation": "예전 검수 사진에 보이는 것이 제가 받을 바로 그 상품인가요?"
+    },
+    {
+      "source": "Earlier photos can reveal what someone received from a listing at that time. Only evidence tied to your own order can show the unit assigned to you. Record the age, option and visible limitations of a reference.",
+      "source_sha256": "38d7cc1c6439b74df30e8b02083a9831b73cbe71c57aead89e22788ac2d17fba",
+      "raw_target_sha256": "8ea70c14b7817b9004eb7b989e9a99ea7e98df32cc3e028dceae84ba63a4479e",
+      "translation": "그 페이지에서 다른 구매자가 과거에 받은 상품의 모습일 수 있습니다. 자신에게 배정된 물건은 본인 주문에 연결된 자료로 확인해야 합니다. 참고 사진의 시기, 보이는 옵션, 확인할 수 없는 부분을 메모하세요."
+    },
+    {
+      "source": "What does a blank QC result mean?",
+      "source_sha256": "034ccd4277a08846b7785997282ec8ab1eab4073db92a5a660895d9d1143e5ab",
+      "raw_target_sha256": "40793c3a45620cb30fbc6a0175fbd4d39457d40f07d90af0fc82418f36d850b6",
+      "translation": "검수 사진 검색 결과가 없다는 것은 무슨 뜻인가요?"
+    },
+    {
+      "source": "It means that search produced no usable reference for your query. Check the marketplace, item number and link type. An empty search does not tell you whether an inspection exists in a private order or whether a product is in stock.",
+      "source_sha256": "131b2645a2d582758f779e9dbe1abe0b32459c97802771961b3f32a7c59cbcef",
+      "raw_target_sha256": "618825002611fe350ff5ae566cb783a898d314ea1d4d2dad7e979343c514341f",
+      "translation": "해당 조건으로 참고 사진을 찾지 못했다는 뜻입니다. 쇼핑몰, 상품 번호, 링크 유형을 다시 확인하세요. 검색 결과만으로 개인 주문에 사진이 없는지 또는 재고가 있는지 알 수 없습니다."
+    },
+    {
+      "source": "Can a copied item link preserve my selected size?",
+      "source_sha256": "be0f263119a0b1995193f10dff3c814e856895c3ace23e3b7e54556818675133",
+      "raw_target_sha256": "4907f10290877f12a29dba17a949257225826cac7b53c0055ac0ce8dd5dbb2f2",
+      "translation": "상품 링크를 복사하면 선택한 사이즈도 저장되나요?"
+    },
+    {
+      "source": "Reopen the link and inspect the selectors. If it opens with a default size, save the original option text and your intended size separately. Verify them again in the order summary.",
+      "source_sha256": "e2fd050338e9c5cb1da242e2e2504b151c60773b9f10ca5557c976cc33f62e6c",
+      "raw_target_sha256": "7ccd88741f6990aaf713190a77fffc476a2e6a0798ca6e9e1d2bcb06bcb6cf1c",
+      "translation": "복사한 주소를 다시 열어 옵션을 확인하세요. 기본값으로 돌아간다면 판매자의 옵션 표기와 원하는 사이즈를 따로 저장하고 주문 확인 화면에서 다시 대조합니다."
+    },
+    {
+      "source": "How can I tell whether a row describes a set or a single piece?",
+      "source_sha256": "550dfcb1c108ad6f089643007b1b027220535a4789f09b63d110a06f0f695b52",
+      "raw_target_sha256": "385f3ede040f3aac61f3ab402565167a705c2d149ce7e26d83d88ef06491646d",
+      "translation": "목록에 나온 상품이 세트인지 단품인지 어떻게 확인하나요?"
+    },
+    {
+      "source": "Read the selected option beside its live price. Identify the pieces listed for that option and compare them with the summary. A photograph of a model in a matching outfit can represent items sold separately.",
+      "source_sha256": "af6f01d9e688b7ec4665de6401baa4ea7d01973a96ea0c0601a03ba8e86fb8fe",
+      "raw_target_sha256": "dfba519baa8f10cc31d652754af982b470650182bd892d4051c80489860874da",
+      "translation": "선택한 옵션의 이름과 가격, 설명에 명시된 구성품, 주문 요약을 확인하세요. 모델이 한 벌로 입고 있어도 상하의를 따로 판매할 수 있습니다."
+    },
+    {
+      "source": "Why do two listings show exactly the same studio photograph?",
+      "source_sha256": "292443d1f0b83c1d6000aa011a734dc9c671e8cce973d42b7042deb792e279f2",
+      "raw_target_sha256": "09ef65338659cd066f996e3265241fd76f591076db1cfe98589b22bd60044979",
+      "translation": "두 상품 페이지에서 같은 스튜디오 사진을 쓰는 이유는 무엇인가요?"
+    },
+    {
+      "source": "Sellers can use common imagery. Compare their shop names, IDs, option names and size charts separately. Keep a screenshot under the listing it came from even when another page shows the same garment.",
+      "source_sha256": "7d391a8c9b49b6d3b1d499648ca356e75bfb410e862ce6718a0638b20ca77d29",
+      "raw_target_sha256": "ef842c317e5f693790a4e3361a6e947e1a9c4ddfe6667badb078f7300b89e6c8",
+      "translation": "판매자가 같은 홍보 이미지를 사용할 수 있습니다. 상점명, 상품 번호, 옵션명, 사이즈표를 각각 대조하세요. 같은 옷처럼 보여도 화면 캡처는 실제 출처 페이지의 기록에 보관합니다."
+    },
+    {
+      "source": "Which clothing label should I ask to see?",
+      "source_sha256": "12bec290e8305b9c29bc679aefbde1ff27a3376fce88696a5a18f31091f3dce5",
+      "raw_target_sha256": "d0c8713fa03e0a269331a59fb814587cd22a91ac54e4ae09d785a2cd84d6f4bc",
+      "translation": "옷의 라벨을 확인하려면 어떤 사진을 부탁해야 하나요?"
+    },
+    {
+      "source": "Specify the purpose. A neckline size label shows the marked size; a care label may provide composition or care instructions. Ask for a full view in context and a close-up with legible text.",
+      "source_sha256": "9fd339ea163be9a23fc63aa66ac318f34f3576f42dc0e0422c207d9a5fed3ef4",
+      "raw_target_sha256": "b6b89e36a3545c1a00f6c9dca17034fee7e611042242e2a2d0ba83626e347186",
+      "translation": "무엇을 확인하려는지 먼저 말하세요. 목 부분의 사이즈 라벨은 표기 사이즈를, 세탁 라벨은 혼용률이나 관리 방법을 보여줄 수 있습니다. 라벨 위치가 보이는 사진과 글자가 선명한 근접 사진을 함께 요청하세요."
+    },
+    {
+      "source": "Does a size tag confirm fit?",
+      "source_sha256": "41dc1390270f69d82eeac05572f03f9735275fa59c4de4248d6fdeb2d97bc561",
+      "raw_target_sha256": "ab747cb68ba40938f12be5ff4ee45d2cde357f2bf5ecfd99ff27609f0bada274",
+      "translation": "사이즈 라벨을 보면 옷이 몸에 맞을지 알 수 있나요?"
+    },
+    {
+      "source": "Compare the actual garment measurements with a piece that fits. Use the seller's measurement diagram and consistent endpoints. The same marked size can correspond to different patterns.",
+      "source_sha256": "6b3d45fb82a46b4e0dc63f30f793bc3192132481d9693d385d7c29ecff7450da",
+      "raw_target_sha256": "d71368541af8b06af9ecd09342775c83f01f2bb3c7bcf15068540cb877c2d852",
+      "translation": "판매자의 측정 그림과 같은 위치에서 완성된 옷의 실측값을 확인하고, 잘 맞는 옷도 같은 방법으로 재서 비교하세요. 표기 사이즈가 같아도 재단에 따라 핏이 다릅니다."
+    },
+    {
+      "source": "How should a tape be positioned for an underarm-width photo?",
+      "source_sha256": "9e5630b3532b09a05b4c0508e024177f7c192d549060bd21d09034a9f1d51235",
+      "raw_target_sha256": "3e9e659734c99a39a7ae9f81982f7814c59f74be3fae41301c803555c9a3dfdf",
+      "translation": "가슴 단면을 잰 사진에서 줄자는 어디에 놓아야 하나요?"
+    },
+    {
+      "source": "Request the garment laid flat and relaxed, with the tape crossing between the corresponding underarm seam points. Both ends and the units should be visible in one frame.",
+      "source_sha256": "29d1cd26b66cf4ac5f1a4e798394c91c47ccdf8365067a5e531769c5286f2c2b",
+      "raw_target_sha256": "56cf2e9edd89cba5c07ca853320984412ccc9068c88d051027a35db99a93fee3",
+      "translation": "옷을 늘이지 않고 평평하게 펼친 뒤 양쪽 겨드랑이의 대응하는 봉제선을 잇도록 가로로 놓습니다. 시작점과 끝점, 측정 단위가 한 사진에 보이도록 요청하세요."
+    },
+    {
+      "source": "How can I compare two shoes in a single pair?",
+      "source_sha256": "a6f647d8213f1ab575794c9cf92e82b98eacec61e25637039125591d3739e538",
+      "raw_target_sha256": "2d0a60796e8fe8dce3a50c8c81b57e63369c847b3cd247249f2726947e29583f",
+      "translation": "한 켤레의 왼쪽과 오른쪽 신발은 어떻게 비교하나요?"
+    },
+    {
+      "source": "Ask for both shoes together, aligned at their heels and photographed from above. Use additional views to check each label and the feature of concern. A single shoe cannot establish that its partner matches.",
+      "source_sha256": "5f86ba070b57fe4c0fc365a22f6a0f49fd87a47e9c77d5c3250e1a6a0f492290",
+      "raw_target_sha256": "05a504b7aeda06b6bbebcf8d1a884f13bd895370a22b8f6461d39f5b264f0ccd",
+      "translation": "두 신발의 뒤꿈치를 나란히 맞추고 위에서 수직으로 찍어 달라고 하세요. 이어 다른 각도에서 양쪽의 라벨과 문제가 의심되는 부분을 확인합니다. 한 짝만 보고는 반대쪽과 일치하는지 알기 어렵습니다."
+    },
+    {
+      "source": "What makes a shoe-label photo readable?",
+      "source_sha256": "2fd8add50f2cb8bf89128dffe0ec0407d4e233477fbb72e31eb64c5fa408f3c4",
+      "raw_target_sha256": "cbaad48b385e843bfefbf24d28ccf9ae6d6112449e8175829650782c92c702bc",
+      "translation": "신발 사이즈 라벨을 선명하게 찍으려면 어떻게 하나요?"
+    },
+    {
+      "source": "Ask for one label per shoe with the printed size and sizing system in focus. Save each picture under its left or right identifier. Watch for EU, US and UK sizes sharing one label.",
+      "source_sha256": "97e105f0a71503f52e373b49d8090c694ecf96bfe930813823bf4ae4b3f9b75a",
+      "raw_target_sha256": "84efb3cab9b3faccbd14eaf331a1c6c2a100948404741bb8622471c7c0570334",
+      "translation": "왼쪽과 오른쪽 신발의 라벨을 각각 찍고 사이즈 숫자와 규격명에 초점을 맞춰 달라고 하세요. 좌우를 구분해 저장합니다. EU·US·UK 사이즈가 함께 표시될 수 있으므로 같은 규격끼리 비교하세요."
+    },
+    {
+      "source": "What should I do if an advertised accessory appears to be missing?",
+      "source_sha256": "bab55a23730aad47d07e1e19baacb7fca550101264458397d960ce3cdff25ead",
+      "raw_target_sha256": "279b8bc680872bdcbb411cec105f8087e2303752b983a671ec729b3aa7caf4db",
+      "translation": "페이지에서 본 부속품이 안 보이면 어떻게 하나요?"
+    },
+    {
+      "source": "Save the exact option description showing that it includes the accessory. Ask for an overview of the full contents and a check of pockets or inner packaging before reporting a shortage.",
+      "source_sha256": "08ea56fbe95aa3314d840f80d7fa049805864bb836a876b736e81107fe153a1f",
+      "raw_target_sha256": "58dacc7de8a93de3c003f6a29f25bff947e3c07caecda4b58f579977e05c1f42",
+      "translation": "선택한 옵션에 그 부속품이 포함된다는 문구를 저장하세요. 입고된 물건을 모두 펼친 사진을 요청하고 주머니와 속포장도 확인한 뒤 누락 여부를 알립니다."
+    },
+    {
+      "source": "Which details belong in a custom photo request?",
+      "source_sha256": "dd60608fb111b2c8e70209de2184c5382210e3aafdeb22d3b21c1d235c2cf14d",
+      "raw_target_sha256": "137c10eb59743f1632ab4ce0f12ee5711564e3ef7e8009080aded01ecb70b30f",
+      "translation": "추가 상세 사진을 요청할 때 어떤 정보를 넣나요?"
+    },
+    {
+      "source": "Give the order reference, selected option, view required and the decision it will resolve. For measurements, add endpoints and units. Check service availability and the displayed price before confirming.",
+      "source_sha256": "d3c6787298d4de8b080009e1ab93820c6efbafd9ac15c3407d674495101ee039",
+      "raw_target_sha256": "709e76ec65a2e90f5afba3a7f2bde1ef58aca3d4ed53c6e0631ea86269838ca3",
+      "translation": "주문 번호, 선택 옵션, 원하는 촬영 각도, 사진으로 확인할 점을 적습니다. 실측을 원하면 시작점과 끝점, 단위도 지정하세요. 제출 전 이용 가능 여부와 표시 가격을 확인합니다."
+    },
+    {
+      "source": "Can a warehouse photo confirm the true colour on my screen?",
+      "source_sha256": "7bfb512c278913e11025a9e526bcdf1cb34b8a6f1bae605afc3d1398fff320b1",
+      "raw_target_sha256": "e8a52a7af59125823b85a869493abb67f7b960d02b6fedc7278e1e53d38a6bd4",
+      "translation": "창고 사진에서 화면에 보이는 색이 실물과 똑같나요?"
+    },
+    {
+      "source": "Lighting, white balance and screen settings influence appearance. Compare several views and the seller's colour label. If two options only differ by shade, ask for a view with the identifier visible.",
+      "source_sha256": "67ac455473c23ebf5b9d71c83aff10e09212a9dd79d298a846dbd620d5d804d3",
+      "raw_target_sha256": "d8ac1d16cd264e61904bd07df26b3cb71823c5e7380e9b771817dd03277f3b8b",
+      "translation": "조명, 화이트 밸런스, 화면 설정에 따라 색감이 달라질 수 있습니다. 여러 각도에서 찍은 사진과 판매자가 표기한 색상명을 대조하세요. 두 옵션이 미묘한 색조로만 구분된다면 품번이나 라벨 사진을 요청할 수 있습니다."
+    },
+    {
+      "source": "How should I record a replacement order?",
+      "source_sha256": "5b834045dc919c6464069e52e2140285117ff6e987acefb762ebf90156996be2",
+      "raw_target_sha256": "39686a5c98362a09bd227b24df4250566da13ad0a978e954b82b96c41767bf41",
+      "translation": "교환품은 어떻게 기록하나요?"
+    },
+    {
+      "source": "Keep the original case reference and give the replacement a separate entry. Record the replacement's option, intake reference and pictures. Recheck the original problem on the new unit.",
+      "source_sha256": "7c752f70cc71febc58621cdb76948c8f9c4333ff9be2403d731eb390bd336b08",
+      "raw_target_sha256": "c0e75ca14ef7f14197a39ed90ab24696ed49305d85f23cc5833dbabd690c90d1",
+      "translation": "기존 문의 번호는 보관하고 교환품은 별도 행에 기록하세요. 옵션, 입고 번호, 새 사진을 모아 두고 처음 문제로 지적한 부분을 실제 교환품에서 다시 확인합니다."
+    },
+    {
+      "source": "What if the seller edits an option after I pay?",
+      "source_sha256": "bc0056172aca05fd6383d8896379e279cada1fae9c5591468c4bc1998ff4a9e7",
+      "raw_target_sha256": "e055546f648563ba6b561e01607c1760a6f1e0cd62bcac36cd3dc633d48b414e",
+      "translation": "결제 후 판매자가 옵션 설명을 수정했다면 어떻게 하나요?"
+    },
+    {
+      "source": "Keep the dated selection screenshot and order confirmation from payment. Compare the received item against that record, then show the changed listing separately when asking for a check.",
+      "source_sha256": "d6bab1a4a506aa30eb697130a6352680af95c1a3e4ab8a460fddb5609ee3fc87",
+      "raw_target_sha256": "a022eb5603b6208e4e7f876caad3375ff485f6f7dfb8a14586eb7bc846794af1",
+      "translation": "주문 시점의 날짜가 담긴 옵션 화면과 결제에 해당하는 주문 확인 내역을 보관하세요. 당시 기록을 받은 물건과 대조한 뒤, 수정된 페이지를 별도로 제시해 차이를 문의합니다."
+    },
+    {
+      "source": "Should I discard the retail packaging before deciding about an exchange?",
+      "source_sha256": "570490a94809d186087718c1c687c3bb0479dbe6b8d87dae4003da58d86f84af",
+      "raw_target_sha256": "46865e232e877aec57aa4fa6a55d4b28e58eab26ffc9960a2f7ef8aa144c7f0f",
+      "translation": "교환 여부를 정하기 전에 상품의 원래 포장을 버려도 되나요?"
+    },
+    {
+      "source": "Ask the applicable service or seller which tags, bags and boxes must accompany the item. Keep those materials until you understand the conditions for the specific order.",
+      "source_sha256": "a6e2dca501e66200991da34893639db060a5491496580d5b9ee159e1df0898c6",
+      "raw_target_sha256": "4c1afe3acc0af7a073b00a32e8277928cd7c587f55de0c88bb2e96af60ea42fa",
+      "translation": "반품에 어떤 택, 봉투, 상자가 필요한지 판매자나 담당 서비스에 먼저 확인하세요. 해당 주문의 조건을 알 때까지 포장재를 보관합니다."
+    },
+    {
+      "source": "Where should I take a question about an actual KakoBuy order?",
+      "source_sha256": "b68997a1f2e91efa0ef203fadb024352b4dfecf1cfa0f9dc6a7e33e5eb15454c",
+      "raw_target_sha256": "d2988508f5f879d098565338f4e9f2c67fda77137a372e7e7048133b738d787c",
+      "translation": "실제 KakoBuy 주문은 어디로 문의하나요?"
+    },
+    {
+      "source": "Use the support channel in your KakoBuy account with the purchase or parcel reference. This independent catalogue can help identify a listing, while the account record contains the transaction details.",
+      "source_sha256": "bb536e01f90a1b9bfdad4ea535760994ee24ccd378c94ea964c7c6faea045ea7",
+      "raw_target_sha256": "87fe8b44b2130581f1c3a150981401f400a351dfb22a7bd885808d5103c97599",
+      "translation": "KakoBuy 계정 안의 공식 고객지원 창구에 구매 번호나 소포 번호를 제시하세요. 이 독립 상품 목록은 판매 페이지를 찾는 데 쓰며, 개별 거래 내용은 계정의 주문 기록에서 확인합니다."
+    },
+    {
+      "source": "One listing might offer a single sweatshirt while the other offers a sweatshirt and matching trousers. Read the option description, quantity and subtotal after making the intended selection on both pages. Then compare size charts using the same measurement paths. A medium in one seller's pattern can differ from a medium on another page even when the photograph displays the same model.",
+      "source_sha256": "b348482bd5fa5dd69852b7e16f308864c23378b561fc35f36e79bfb838797e59",
+      "raw_target_sha256": "f45a8c2e27674e59bd86cc63e2b8033de1b3c701d22e3ff5c4889b02efcdeb87",
+      "translation": "한 판매 페이지에서는 맨투맨 한 벌만, 다른 페이지에서는 같은 맨투맨과 바지를 세트로 팔 수 있습니다. 두 페이지에서 원하는 옵션을 고른 뒤 구성, 수량, 소계를 확인하세요. 사이즈표는 같은 지점에서 잰 치수끼리 비교합니다. 사진 속 모델이 같아도 판매자마다 패턴이 달라 M 사이즈의 실제 치수가 다를 수 있습니다."
+    },
+    {
+      "source": "Some labels show multiple size systems or a combination of a letter and numbers. Copy the full line before translating it. Compare the seller's selected option and size chart with that line. A reference photo marked XL from an earlier order tells you what was printed on that photographed unit only. It does not establish the fit of the medium currently assigned to your order.",
+      "source_sha256": "260903139f45fd0a296d01748e86219154a60780a60c4dff6976ce2f77b71a56",
+      "raw_target_sha256": "725c2deb359d38daf25c551eeebf149f2c712458d9550acb2f638715c61427d9",
+      "translation": "라벨 하나에 여러 국가의 크기 표기나 영문자와 숫자가 같이 적히기도 합니다. 번역 전에 한 줄 전체를 옮겨 적고 판매자의 선택 옵션 및 사이즈표와 대조하세요. 이전 주문의 창고 사진에 XL이라고 적혀 있다면 그때 촬영한 제품의 표기를 확인한 것입니다. 이번에 주문한 M 사이즈의 착용감까지 알려 주지는 않습니다."
+    },
+    {
+      "source": "A useful clothing-label note can be just a few sentences. Identify the garment and selected option, state the visible wording, identify the unresolved question and specify whether it affects your decision. For example, the paid order says navy jacket, size medium. The label appears to read medium. A number at the bottom is cut off, but you only needed to confirm size. In that case the missing number need not generate another photo request or delay your decision.",
+      "source_sha256": "1a5015376685ea91644f7e226199f7de47a199e340f2a6ab210e022f106ad80c",
+      "raw_target_sha256": "ccaff4060fc4906f9287ad750ad27bbf719c1456ae21a55ff0e76390a73bf834",
+      "translation": "라벨에 대한 메모는 몇 문장이면 충분합니다. 상품과 선택 옵션, 실제로 읽히는 글자, 남은 의문점과 그것이 결정에 미치는 영향을 적으세요. 예를 들어 결제한 상품이 남색 재킷 M이고 라벨에도 M이라고 보이는데 아래쪽 숫자만 잘렸다면, 확인 목적이 사이즈였을 때는 그 숫자 때문에 사진을 다시 요청하거나 결정을 미룰 필요가 없습니다."
+    }
+  ]
+}

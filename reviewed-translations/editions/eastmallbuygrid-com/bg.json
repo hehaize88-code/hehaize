@@ -3,7 +3,7 @@
   "locale": "bg",
   "source_set_sha256": "d3fc8a20c25fd682a0cbcf1d5165d69d8f33114365bd18ae1f508e92c28f82c5",
   "raw_dictionary_sha256": "85dcebfdecb68765d37a865188c13710180f1e84cbfc084c984791183c1d1375",
-  "effective_dictionary_sha256": "c271725aa6f44237679636406616f41b9d13411e77d59a7a59a0a079f6cf8bb2",
+  "effective_dictionary_sha256": "37059433df41428f7c474f3e92601193f1dc004f52447f6e9ab32700f79fa62d",
   "checked_entries": 277,
   "review_scope": "Machine checks cover all rows. Editorial review covers every SEO title, FAQ and support terminology, numeric and garment-sizing examples, long-passage samples and every flagged row. Reviewed shipping quote and parcel terminology in the secondary semantic sweep.",
   "reviewed_flags": [
@@ -603,6 +603,30 @@
       "source_sha256": "daceaa6a7f7bacde3543343e988d87731b8bf17dd00b3b7a694d3a50b83fbdee",
       "raw_target_sha256": "04aab0b51230afeb8af064a341eac0741ccf7789e71f8f3eeba73c6fab55fda4",
       "translation": "Накрая сверете плащанията. Отбележете пощенската такса, доплащането или кредита като уредени само след като намерите съответната операция. Кратката бележка може да гласи: черното яке M е върнато с посочения вътрешен номер, продавачът е потвърдил получаването, тъмносиньото M е заведено с нов складов номер, заместителят е проверен и договорената разлика е осчетоводена. Така се проследяват и стоката, и парите, а в международната пратка ще включите правилното яке."
+    },
+    {
+      "source": "If the confirmed order is for medium and a photograph attached to the correct warehouse item clearly shows a large label, you have a specific discrepancy to investigate. Before concluding that a seller sent the wrong item, confirm the image belongs to your actual unit, particularly if you ordered more than one size. Look for the warehouse entry and an overview connecting the tag with the garment. A detached label photo in a collection of similar shirts can easily be attributed to the wrong purchase.",
+      "source_sha256": "75c010ede2ef0da875a91d12f76deae1cfade9fbfaa21f4a0aef078b8a9ec902",
+      "raw_target_sha256": "a8c351e2b4e494fa000d44a1edfdc7ce7a3fb452d5d644054d6ab539bb1422fd",
+      "translation": "Ако в потвърдената поръчка е посочен размер M, а снимка към правилния складов запис ясно показва етикет L, има конкретно несъответствие. Преди да заключите, че продавачът е изпратил грешна стока, проверете дали снимката е на вашата бройка, особено при поръчани няколко размера. Намерете складовия запис и общ кадър с етикета и дрехата заедно. Отделна снимка на етикет сред сходни ризи лесно се отнася към погрешната покупка."
+    },
+    {
+      "source": "Suppose the outer sleeve reads large while the sewn label reads medium and the order specifies medium. Record all three facts. The unit may be the intended size packed in a different sleeve, or there may be another issue requiring a physical measurement. Do not tell support that a large garment was received solely because of the sleeve sticker. Ask for verification of the item, using the actual garment label and an appropriate measurement where useful. Also decide whether the incorrect packaging matters for gifting or a potential return.",
+      "source_sha256": "3211a58aa2bc673ac940682cc6c73d94d328b1927f29a245d91c14cc7262c6cd",
+      "raw_target_sha256": "90b0d5c2870eb1c1acf161878d63069c51cb880a35f9f0f6ef7df5c1f3d3c34e",
+      "translation": "Да приемем, че външният опаковъчен плик е означен с L, пришитият етикет с M и поръчката също е за M. Запишете и трите обстоятелства. Правилната дреха може да е в друг плик или да е необходимо физическо измерване. Не съобщавайте получен размер L единствено заради стикера на плика. Поискайте проверка на пришития етикет и при нужда подходящо измерване. Преценете и дали грешната опаковка има значение за подарък или евентуално връщане."
+    },
+    {
+      "source": "If selection and label match but the measurement appears off, compare units, endpoints and the seller's stated tolerance. A measurement taken from the back collar edge may differ from one taken from the shoulder. A garment measured while unfastened may not be comparable with one measured closed. Give support the precise conflict rather than a conclusion unsupported by the method. “Medium label; flat width appears different from the medium chart; tape start not visible” identifies both the concern and the missing evidence.",
+      "source_sha256": "8d3ee7bb6b5c9799a3a86f2bef5c059918276e9b365dc904fe37bf83b3d8e9c7",
+      "raw_target_sha256": "1025f468a16cba96e2cbf67f942b6b25485087aa3f5361b413838ff3e2460dc1",
+      "translation": "Ако поръчаният вариант и етикетът съвпадат, но измерването изглежда различно, сравнете единиците, крайните точки и посоченото допустимо отклонение. Дължина от задния край на яката може да се различава от дължина от рамото. Разкопчана дреха може да даде друг резултат от закопчана. Посочете точния проблем: „Етикет M, ширината в легнало положение изглежда различна от таблицата за M, началото на шивашкия метър не се вижда“. Така става ясно както съмнението, така и какво доказателство липсва."
+    },
+    {
+      "source": "Save the selected option, relevant order line, overview and readable label together. Add one sentence explaining what the evidence establishes. For instance: “The sewn label on the unit in warehouse entry A matches the medium option; the outer sleeve is marked large; physical fit has not been tested.” This record is considerably more useful than a thumbnail named “QC good” because it preserves both the conclusion and its scope.",
+      "source_sha256": "c6057698042bf0afe32b3b3bd0988f74f6384302d5bad384f63f35ea220fe974",
+      "raw_target_sha256": "082ef2924d43e1b41ca726332b9dc20d553494cd79c5a59125bbb6d14cae8461",
+      "translation": "Запазете на едно място избрания вариант, реда от поръчката, общия кадър и четливия етикет. Уточнете с едно изречение какво е проверено: „Пришитият етикет върху дрехата от складов запис A показва поръчания M, външният опаковъчен плик е означен L, а дрехата не е пробвана.“ Така записът показва повече от умалена снимка с име „проверката е добра“, защото разграничава установеното от неизпитаното."
     }
   ]
 }

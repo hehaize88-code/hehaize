@@ -3,7 +3,7 @@
   "locale": "zh",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "a5de9afda121fa52df26efffb25e18d342595894928b20e8c60fc9427ec1348f",
-  "effective_dictionary_sha256": "8c3d2ba356472ecfe17d87d6efd97df4fac084eb4eb5e75a65c1d8fbaea6588d",
+  "effective_dictionary_sha256": "8eaf61807c90b202fa7d9936afc17c2713f8ea04b89f7d29a90911b338cbf15f",
   "checked_entries": 305,
   "review_scope": "All dictionary keys and language, figure, URL, brand, identifier and repetition checks. All ten article headings, flagged full passages, two sampled paragraphs, and financial and garment-measurement examples reviewed against the English originals. Material terminology and numerical-example errors in the inspected passages corrected.",
   "reviewed_flags": [],
@@ -487,7 +487,7 @@
       "source": "Record each colour as a separate line with its size and count. For example, two navy medium shirts and one grey large shirt are two distinct selections. Compare both lines with the purchase confirmation.",
       "source_sha256": "d26973353a9a726ef696fc01aed39d79201b5b06f4eebb79203739390865725b",
       "raw_target_sha256": "afb4161f8705bc1ea49aec0cb0c95ee413c3cec24b41d3bd691bd885d4bc4544",
-      "translation": "每种颜色单列一行，分别写上尺码和数量。例如“两件藏青色中码衬衫”和“一件灰色大码衬衫”是两个不同的选项。下单后，逐行核对采购确认。"
+      "translation": "按颜色分行，分别写明尺码和件数。例如，深蓝色 M 码衬衫两件、灰色 L 码衬衫一件，是两个独立选项。把这两行分别与订单确认单核对。"
     },
     {
       "source": "Can I identify a seller listing using only a screenshot?",
@@ -728,6 +728,18 @@
       "source_sha256": "252af8f88a918ff22d1e458fc2ae8436f9d879dc1da9cfeb7dcb1d8e2c015538",
       "raw_target_sha256": "1ba5285bc1ed62e98062655263f795aae3510a1c0f2d8b32b0da4084ea997333",
       "translation": "假设短款 M 码夹克缺货，备选是常规长度 M 码和短款 L 码。常规 M 码可能保持相近的胸宽，但衣长会增加；短款 L 码可能保留想要的衣长，胸宽和肩宽却会变大。哪一种更接近原先要求，取决于哪些尺寸不能变。把这些关键尺寸列出来，再用两个备选的实测数据逐项比较。缺少必要数据时，应标为无法确定，不宜直接推荐某个尺码。"
+    },
+    {
+      "source": "At intake, review the accepted replacement specification, not merely the first item saved to your spreadsheet. If you approved short large, a large label can be correct even though the original wishlist said medium. However, the label alone may not confirm the cut or measurement that justified the change. Request the appropriate view for the remaining question if the service permits it.",
+      "source_sha256": "d0063535ffffcfba6185923b52e865c6c9c8271aa6ab5b6ff060d250291a1063",
+      "raw_target_sha256": "a0ad74d443165f73ac913e90e212163c2eab436b04dc567af27c58226968bae5",
+      "translation": "入库时应核对你最后同意的替代规格。如果你接受短款 L 码，仓库拍到 L 码标签就可能是正确的，即使最初的清单写着 M 码。标签本身无法证实版型和促使你更改决定的实测尺寸。还有疑问时，可在服务允许的范围内申请拍摄相应部位。"
+    },
+    {
+      "source": "Save a short result such as “short medium unavailable; accepted short large after checking back length; actual warehouse measurement recorded.” If you declined a substitute, keep the reason, such as excessive length or incompatible rise. Those notes improve future purchases from the same seller without pretending that a size label has universal meaning across shops.",
+      "source_sha256": "ca9118fdb6d97a71cfeedaeba9a97a986370d37c8660d6a8f3cd018d7d410535",
+      "raw_target_sha256": "e9ebd554f258f0ef57b79591140a741b3e4a46d79c0e72f43d3559bd7b191787",
+      "translation": "可以这样记录结果：“短款 M 码缺货。核对后衣长后同意改为短款 L 码，已保存仓库实测数据。”如果拒绝替换，也写明原因，例如衣长过长或裤子裆深不合适。下次在同一家店购买时可以参考；跨店比较仍应查看各自的实际尺寸。"
     }
   ]
 }

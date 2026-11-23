@@ -3,7 +3,7 @@
   "locale": "id",
   "source_set_sha256": "d3fc8a20c25fd682a0cbcf1d5165d69d8f33114365bd18ae1f508e92c28f82c5",
   "raw_dictionary_sha256": "207932290fafb470a3fb907234456dc9f5ba13060ca36090329a5ea590a11b14",
-  "effective_dictionary_sha256": "34e1504994524b0e6d6deaaa8c047e9db7ba1ca985742c5520bcb6d99045d71d",
+  "effective_dictionary_sha256": "f593ea16437043a3ba755731750f6e7053d2da5f031cc6b5a39cab0c3f8f4b12",
   "checked_entries": 277,
   "review_scope": "Targeted bilingual QA of all flagged strings, FAQ questions, article and section titles, numerical and fee examples, physical organizer/dividers, overshirt fit and garment size terminology. Includes a numerical screen and independent overlay replay. This is not whole-edition line editing. Follow-up contextual check for parcel, freight quote and weight terminology.",
   "reviewed_flags": [
@@ -716,7 +716,7 @@
       "source": "If selection and label match but the measurement appears off, compare units, endpoints and the seller's stated tolerance. A measurement taken from the back collar edge may differ from one taken from the shoulder. A garment measured while unfastened may not be comparable with one measured closed. Give support the precise conflict rather than a conclusion unsupported by the method. “Medium label; flat width appears different from the medium chart; tape start not visible” identifies both the concern and the missing evidence.",
       "source_sha256": "8d3ee7bb6b5c9799a3a86f2bef5c059918276e9b365dc904fe37bf83b3d8e9c7",
       "raw_target_sha256": "cc70efff8753fbc844cdfc19b4e7eb52a89720bb33f9f8bbf7f8e5861ebbec70",
-      "translation": "Jika varian yang dipilih dan label sudah cocok tetapi hasil ukur tampak berbeda, bandingkan satuan, titik awal dan akhir, serta toleransi yang disebutkan penjual. Pengukuran dari tepi kerah belakang bisa berbeda dari pengukuran dari bahu. Pakaian yang diukur dalam keadaan terbuka juga sulit dibandingkan dengan pakaian yang dikancingkan. Laporkan perbedaan yang tepat: “Label M; lebar datar tampak berbeda dari tabel ukuran M; titik nol pada pita ukur tidak terlihat.” Dengan begitu petugas mengetahui apa yang diragukan dan bukti apa yang masih kurang."
+      "translation": "Jika opsi dan labelnya sama tetapi hasil ukur tampak berbeda, cocokkan satuan, kedua titik pengukuran, dan toleransi yang dicantumkan penjual. Panjang dari tepi belakang kerah dapat berbeda dari panjang yang diukur dari bahu. Pakaian terbuka juga belum tentu sebanding dengan pakaian yang dikancingkan. Jelaskan perbedaannya secara tepat kepada petugas. Misalnya, “Label ukuran M; lebar saat dibentangkan tampak berbeda dari tabel M; titik awal pita ukur tidak terlihat.” Ini menunjukkan masalah sekaligus bukti yang masih diperlukan."
     },
     {
       "source": "When the item moves, keep the outgoing domestic tracking record attached to the old unit. Save the warehouse release date and any receipt or merchant acknowledgment. If a replacement is dispatched, attach its tracking number to the new unit. Reusing a single generic field called “tracking” causes problems when both shipments are in progress. A delivered scan on the return can mean the seller has received the old piece, while your replacement has not yet left their shop.",
@@ -831,6 +831,24 @@
       "source_sha256": "daceaa6a7f7bacde3543343e988d87731b8bf17dd00b3b7a694d3a50b83fbdee",
       "raw_target_sha256": "b216be236dafc311987f037f63b62598c4446f309d7afb798abda293a843cadf",
       "translation": "Terakhir, cocokkan pula catatan keuangan. Tandai ongkos kirim, tambahan pembayaran, atau pengembalian saldo sebagai selesai hanya setelah catatan transaksinya ditemukan. Catatan akhir misalnya: jaket hitam ukuran M dikembalikan dengan nomor resi domestik yang dicatat; penjual mengonfirmasi penerimaan; jaket biru navy ukuran M tiba dengan nomor gudang baru; barang pengganti selesai diperiksa; selisih yang disepakati sudah dibukukan. Dengan demikian, pergerakan barang dan uang dapat ditelusuri, dan jaket yang benar siap dimasukkan ke paket internasional berikutnya."
+    },
+    {
+      "source": "If the confirmed order is for medium and a photograph attached to the correct warehouse item clearly shows a large label, you have a specific discrepancy to investigate. Before concluding that a seller sent the wrong item, confirm the image belongs to your actual unit, particularly if you ordered more than one size. Look for the warehouse entry and an overview connecting the tag with the garment. A detached label photo in a collection of similar shirts can easily be attributed to the wrong purchase.",
+      "source_sha256": "75c010ede2ef0da875a91d12f76deae1cfade9fbfaa21f4a0aef078b8a9ec902",
+      "raw_target_sha256": "b360420edcbe83c2d3c8eb30c68b5604f0d779ac615d947c424c9461758871a0",
+      "translation": "Jika konfirmasi pesanan menunjukkan ukuran M, tetapi pada foto barang yang sama di gudang terlihat label ukuran L, ada ketidaksesuaian yang perlu diperiksa. Sebelum menyimpulkan penjual salah kirim, pastikan foto itu milik barang Anda, terutama jika memesan beberapa ukuran. Cari catatan penerimaan dan foto keseluruhan yang menunjukkan label pada pakaiannya. Foto dekat label yang terselip di antara beberapa kemeja serupa mudah dikaitkan dengan pembelian yang salah."
+    },
+    {
+      "source": "Suppose the outer sleeve reads large while the sewn label reads medium and the order specifies medium. Record all three facts. The unit may be the intended size packed in a different sleeve, or there may be another issue requiring a physical measurement. Do not tell support that a large garment was received solely because of the sleeve sticker. Ask for verification of the item, using the actual garment label and an appropriate measurement where useful. Also decide whether the incorrect packaging matters for gifting or a potential return.",
+      "source_sha256": "3211a58aa2bc673ac940682cc6c73d94d328b1927f29a245d91c14cc7262c6cd",
+      "raw_target_sha256": "1a9666f762516cc59bbd2f94dc8e13a8c9f3e255588e6c59665f548ed782b3fe",
+      "translation": "Misalnya plastik pembungkus luar bertanda L, sedangkan label yang dijahit pada pakaian bertanda M dan Anda memesan M. Catat ketiga fakta itu. Pakaiannya mungkin benar tetapi dimasukkan ke plastik yang salah, atau perlu diukur langsung. Stiker pembungkus saja belum membuktikan bahwa Anda menerima pakaian ukuran L. Minta verifikasi melalui label pada pakaian dan pengukuran bila perlu. Pertimbangkan juga apakah pembungkus yang keliru menjadi masalah jika barang dijadikan hadiah atau dikembalikan."
+    },
+    {
+      "source": "Save the selected option, relevant order line, overview and readable label together. Add one sentence explaining what the evidence establishes. For instance: “The sewn label on the unit in warehouse entry A matches the medium option; the outer sleeve is marked large; physical fit has not been tested.” This record is considerably more useful than a thumbnail named “QC good” because it preserves both the conclusion and its scope.",
+      "source_sha256": "c6057698042bf0afe32b3b3bd0988f74f6384302d5bad384f63f35ea220fe974",
+      "raw_target_sha256": "e0a5a8526b041be376e39a1962776f5d8808f41c263c65fc400266a7dd353162",
+      "translation": "Simpan opsi yang dipilih, baris pesanan, foto keseluruhan, dan foto label yang terbaca dalam satu catatan. Tambahkan satu kalimat tentang apa yang sudah terbukti, misalnya: “Label yang dijahit pada pakaian di catatan gudang A sesuai dengan opsi M; plastik pembungkus luar bertanda L; pakaian belum dicoba.” Ini lebih berguna daripada gambar mini bernama “QC bagus” karena mencatat kesimpulan dan batas pemeriksaan."
     }
   ]
 }

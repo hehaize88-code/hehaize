@@ -3,7 +3,7 @@
   "locale": "ko",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "9ae3ee6c8c737758e3261a219afd8c6de94dd9b4001d7548ec7bf012720201ac",
-  "effective_dictionary_sha256": "dd9b439163cc20147fd36b6b8c03f071b50d55ad19f429dd4cc03f26eec0416f",
+  "effective_dictionary_sha256": "b2d2a44628d7e498e268e48f6e69f002d80cf55c15e1763492e0c811002de98b",
   "checked_entries": 305,
   "review_scope": "All dictionary keys and language, figure, URL, brand, identifier and repetition checks. All ten article headings, flagged full passages, two sampled paragraphs, and financial and garment-measurement examples reviewed against the English originals. Material terminology and numerical-example errors in the inspected passages corrected.",
   "reviewed_flags": [
@@ -164,7 +164,7 @@
       "source": "At intake, review the accepted replacement specification, not merely the first item saved to your spreadsheet. If you approved short large, a large label can be correct even though the original wishlist said medium. However, the label alone may not confirm the cut or measurement that justified the change. Request the appropriate view for the remaining question if the service permits it.",
       "source_sha256": "d0063535ffffcfba6185923b52e865c6c9c8271aa6ab5b6ff060d250291a1063",
       "raw_target_sha256": "2d5b10e97506e4f50dd89968cb8a666cba155ece6b13ecc8893427d621dd4537",
-      "translation": "입고 시에는 처음 목록에 저장한 상품만 보지 말고 구매자가 동의한 대체 옵션을 확인하세요. 짧은 기장의 L 사이즈를 승인했다면 처음 원한 것이 M이었다 해도 L 라벨이 맞을 수 있습니다. 하지만 라벨만으로는 교환에 동의한 이유인 기장이나 재단까지 확인할 수 없습니다. 서비스가 허용한다면 아직 확인이 필요한 부분이 보이는 사진을 요청하세요."
+      "translation": "창고에 도착하면 처음 저장한 후보가 아니라 실제로 승인한 대체 사양을 확인하세요. 원래 희망한 것이 짧은 기장의 M이어도 짧은 기장의 L로 변경하기로 했다면 L 라벨이 맞습니다. 다만 라벨로는 변경의 근거였던 기장이나 실측치를 확인할 수 없습니다. 확인할 부분이 남았다면 서비스가 허용하는 범위에서 해당 부분의 사진을 요청하세요."
     },
     {
       "source": "Consider a desk tray that must fit a 32-centimetre shelf. External width is essential; the colour of a removable divider might be flexible. An instruction saying “32 cm tray preferred, grey please” obscures the priority. Write “outside width must be no more than 32 cm; ask before purchase if the seller gives only inside width. Grey divider preferred; another divider colour is acceptable.” This lets the purchaser decline a visually similar tray that would not physically fit.",
@@ -212,7 +212,7 @@
       "source": "Record each colour as a separate line with its size and count. For example, two navy medium shirts and one grey large shirt are two distinct selections. Compare both lines with the purchase confirmation.",
       "source_sha256": "d26973353a9a726ef696fc01aed39d79201b5b06f4eebb79203739390865725b",
       "raw_target_sha256": "f3b1a9851a42c63a29c47be5b01ae5b0535142cee31e3b54415636600b545094",
-      "translation": "색상마다 줄을 나누어 사이즈와 수량을 적으세요. 예를 들어 남색 M 셔츠 두 장과 회색 L 셔츠 한 장은 서로 다른 선택입니다. 주문 확인서에서도 두 항목을 각각 대조하세요."
+      "translation": "색상별로 행을 나누고 사이즈와 수량을 적으세요. 예를 들어 남색 M 셔츠 두 벌과 회색 L 셔츠 한 벌은 서로 다른 두 선택 항목입니다. 두 줄 모두 주문 확인서와 대조하세요."
     },
     {
       "source": "Can I identify a seller listing using only a screenshot?",
@@ -459,6 +459,12 @@
       "source_sha256": "252af8f88a918ff22d1e458fc2ae8436f9d879dc1da9cfeb7dcb1d8e2c015538",
       "raw_target_sha256": "d9a45aaebe3433df40b943971b35dfb595845288281b7c9dd31978887356df09",
       "translation": "짧은 기장의 M 사이즈 재킷이 품절이고 일반 기장 M과 짧은 기장 L이 대안이라고 가정하세요. 일반 기장 M은 가슴 단면이 비슷해도 총장이 길 수 있습니다. 짧은 기장 L은 원하는 총장에 가깝지만 가슴 단면과 어깨너비가 커질 수 있습니다. 어느 한쪽이 무조건 더 비슷하지는 않습니다. 유지해야 할 치수를 먼저 정한 뒤 두 대안의 실측값과 대조하세요. 필요한 수치가 없으면 확실한 사이즈 추천 대신 미확인으로 남깁니다."
+    },
+    {
+      "source": "Save a short result such as “short medium unavailable; accepted short large after checking back length; actual warehouse measurement recorded.” If you declined a substitute, keep the reason, such as excessive length or incompatible rise. Those notes improve future purchases from the same seller without pretending that a size label has universal meaning across shops.",
+      "source_sha256": "ca9118fdb6d97a71cfeedaeba9a97a986370d37c8660d6a8f3cd018d7d410535",
+      "raw_target_sha256": "868c7fbe175ca4a0d68e6e079eda815390f1cb70b0ab9cc858d338a42780f416",
+      "translation": "“짧은 기장 M 품절. 등쪽 총장을 확인하고 같은 짧은 기장의 L로 변경. 창고 실측값 기록 완료”처럼 결과를 남기세요. 대체품을 거절했다면 기장이 너무 길거나 바지 밑위가 맞지 않는 등 이유도 적으세요. 같은 판매자에게 다시 주문할 때 참고할 수 있으며, 다른 매장에도 같은 사이즈 표기가 그대로 적용된다고 가정할 필요가 없습니다."
     }
   ]
 }

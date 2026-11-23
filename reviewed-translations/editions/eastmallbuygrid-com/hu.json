@@ -3,7 +3,7 @@
   "locale": "hu",
   "source_set_sha256": "d3fc8a20c25fd682a0cbcf1d5165d69d8f33114365bd18ae1f508e92c28f82c5",
   "raw_dictionary_sha256": "1f1f4ffd710a38709e48c53eeadd1d0a7c33f395c96bef267b1d641513908207",
-  "effective_dictionary_sha256": "bef86b074be6cf02364f876a856f99486d221ca797a36b76fd4c1400a29d6ead",
+  "effective_dictionary_sha256": "5ffd01f2d5835799cb71b7e916bb469d407d42195f72c941d340d4553c255ef7",
   "checked_entries": 277,
   "review_scope": "Targeted bilingual QA of all flagged strings, FAQ questions, article and section titles, numerical and fee examples, physical organizer/dividers, overshirt fit and garment size terminology. Includes a numerical screen and independent overlay replay. This is not whole-edition line editing. Follow-up contextual check for parcel, freight quote and weight terminology.",
   "reviewed_flags": [
@@ -735,6 +735,30 @@
       "source_sha256": "daceaa6a7f7bacde3543343e988d87731b8bf17dd00b3b7a694d3a50b83fbdee",
       "raw_target_sha256": "21d788a00f2e48fe6fc62541da0e8031758140fdf75791e78e62297568fae136",
       "translation": "Végül a pénzmozgást is ellenőrizze. A függő postaköltséget, ráfizetést vagy jóváírást csak azonosítható tranzakció alapján jelölje rendezettnek. A záró feljegyzés lehet rövid: a fekete M-es kabátot a feljegyzett belföldi küldeményszámmal visszaküldték; az eladó átvette; a sötétkék M-es új raktári azonosítóval megérkezett; a cserekabátot ellenőrizték; a megállapodás szerinti különbözetet könyvelték. Így az árumozgás és az elszámolás is követhető, a megfelelő kabát pedig mehet a későbbi nemzetközi csomagba."
+    },
+    {
+      "source": "If the confirmed order is for medium and a photograph attached to the correct warehouse item clearly shows a large label, you have a specific discrepancy to investigate. Before concluding that a seller sent the wrong item, confirm the image belongs to your actual unit, particularly if you ordered more than one size. Look for the warehouse entry and an overview connecting the tag with the garment. A detached label photo in a collection of similar shirts can easily be attributed to the wrong purchase.",
+      "source_sha256": "75c010ede2ef0da875a91d12f76deae1cfade9fbfaa21f4a0aef078b8a9ec902",
+      "raw_target_sha256": "03918d9ab2a1ba41f53bbb4e941e56ab068a877d95e53067509d43a05e90dc0d",
+      "translation": "Ha a visszaigazolás szerint M-es méretet rendelt, de a megfelelő raktári tételhez csatolt képen L-es címke látható, konkrét eltérést kell tisztázni. Előbb ellenőrizze, valóban a saját darabja szerepel-e a képen, különösen, ha több méretet rendelt. Keresse meg a raktári azonosítót és egy áttekintő képet, amely a címkét a ruhával együtt mutatja. Több hasonló ing fotói között egy önálló címkefelvétel könnyen a rossz rendeléshez kerülhet."
+    },
+    {
+      "source": "Suppose the outer sleeve reads large while the sewn label reads medium and the order specifies medium. Record all three facts. The unit may be the intended size packed in a different sleeve, or there may be another issue requiring a physical measurement. Do not tell support that a large garment was received solely because of the sleeve sticker. Ask for verification of the item, using the actual garment label and an appropriate measurement where useful. Also decide whether the incorrect packaging matters for gifting or a potential return.",
+      "source_sha256": "3211a58aa2bc673ac940682cc6c73d94d328b1927f29a245d91c14cc7262c6cd",
+      "raw_target_sha256": "cbea80884a056b48717b24cd979bdf04487cb3106c906ebb1fa325d11116f49b",
+      "translation": "Tegyük fel, hogy a külső csomagolózacskón L jelzés látható, miközben a bevarrt címkén és a rendelésben M szerepel. Jegyezze fel mindhárom adatot. Lehet, hogy megfelelő darab került másik zacskóba, de fizikai mérésre is szükség lehet. A zacskó matricája alapján még ne jelentsen L-es ruhát. Kérje az azonosítást a bevarrt címke és szükség esetén mért adatok alapján. Azt is gondolja végig, gondot okoz-e a hibás csomagolás ajándékozásnál vagy visszaküldéskor."
+    },
+    {
+      "source": "If selection and label match but the measurement appears off, compare units, endpoints and the seller's stated tolerance. A measurement taken from the back collar edge may differ from one taken from the shoulder. A garment measured while unfastened may not be comparable with one measured closed. Give support the precise conflict rather than a conclusion unsupported by the method. “Medium label; flat width appears different from the medium chart; tape start not visible” identifies both the concern and the missing evidence.",
+      "source_sha256": "8d3ee7bb6b5c9799a3a86f2bef5c059918276e9b365dc904fe37bf83b3d8e9c7",
+      "raw_target_sha256": "94e776d0f27c1ef359188511e6ad5ff76dffa28af0309ab81d4905c0ac5846c5",
+      "translation": "Ha a választott méret és a címke egyezik, de a mért adat eltérni látszik, vesse össze a mértékegységet, a mérés végpontjait és az eladó megadott tűrését. Más értéket adhat a gallér hátsó szélétől vagy a válltól végzett mérés; egy nyitva mért ruhadarab sem feltétlenül vethető össze a begombolttal. Pontosan írja le, mi nem egyezik. Például: „M-es címke; a kiterített szélesség eltérhet az M-es táblázattól; a mérőszalag kezdete nem látható.” Így a hiányzó bizonyítékot is megnevezi."
+    },
+    {
+      "source": "Save the selected option, relevant order line, overview and readable label together. Add one sentence explaining what the evidence establishes. For instance: “The sewn label on the unit in warehouse entry A matches the medium option; the outer sleeve is marked large; physical fit has not been tested.” This record is considerably more useful than a thumbnail named “QC good” because it preserves both the conclusion and its scope.",
+      "source_sha256": "c6057698042bf0afe32b3b3bd0988f74f6384302d5bad384f63f35ea220fe974",
+      "raw_target_sha256": "188e1742810576b4eb965416696d1121be20e28fffc9b9d32a1b6af0659e2914",
+      "translation": "A kiválasztott változatot, a rendelési tételt, az áttekintő képet és a jól olvasható címkét mentse együtt. Írja le egy mondatban, mit igazolnak. Például: „Az A jelű raktári tétel bevarrt címkéje megfelel az M-es választásnak; a külső csomagolózacskón L szerepel; a ruhát nem próbáltuk fel.” Egy ilyen feljegyzés többet ér egy „QC rendben” nevű bélyegképnél, mert a megállapítás határát is jelzi."
     }
   ]
 }

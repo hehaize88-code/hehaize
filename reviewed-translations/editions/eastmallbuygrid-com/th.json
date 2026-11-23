@@ -3,7 +3,7 @@
   "locale": "th",
   "source_set_sha256": "d3fc8a20c25fd682a0cbcf1d5165d69d8f33114365bd18ae1f508e92c28f82c5",
   "raw_dictionary_sha256": "6d8b11a0305ac16b0201271e22a6f6707fa88ce339bf4d7fed030306a70cd641",
-  "effective_dictionary_sha256": "057efa972e0ed99e4cc91fe70c76f101eba0223e570278ffcef2521f9d90bf52",
+  "effective_dictionary_sha256": "062fecd218e48e40b7363cfbee28eeb34c34aba44dfe20c270e157ad8d7df2ac",
   "checked_entries": 277,
   "review_scope": "Targeted bilingual QA of all flagged strings, FAQ questions, article and section titles, numerical and fee examples, physical organizer/dividers, overshirt fit and garment size terminology. Includes a numerical screen and independent overlay replay. This is not whole-edition line editing. Follow-up contextual check for parcel, freight quote and weight terminology.",
   "reviewed_flags": [
@@ -1035,6 +1035,30 @@
       "source_sha256": "daceaa6a7f7bacde3543343e988d87731b8bf17dd00b3b7a694d3a50b83fbdee",
       "raw_target_sha256": "2d9e89ed82aed0d92932eb08ffd3806068953c684812ce8942f750d75c323e9d",
       "translation": "สุดท้ายตรวจเงินด้วย ทำเครื่องหมายว่าค่าส่ง ยอดจ่ายเพิ่ม หรือเครดิตคืนเสร็จสิ้นต่อเมื่อพบรายการธุรกรรมที่ตรงกัน ตัวอย่างบันทึกปิดเรื่องคือ ส่งแจ็กเก็ตสีดำไซซ์ M คืนตามเลขพัสดุภายในประเทศที่จดไว้ ผู้ขายยืนยันรับแล้ว แจ็กเก็ตสีกรมท่าไซซ์ M เข้าคลังด้วยเลขอ้างอิงใหม่ ตรวจตัวทดแทนแล้ว และลงบัญชีส่วนต่างตามที่ตกลงแล้ว บันทึกนี้ตามได้ทั้งของและเงิน และช่วยให้หยิบของชิ้นที่ถูกต้องรวมส่งต่างประเทศครั้งหน้า"
+    },
+    {
+      "source": "If the confirmed order is for medium and a photograph attached to the correct warehouse item clearly shows a large label, you have a specific discrepancy to investigate. Before concluding that a seller sent the wrong item, confirm the image belongs to your actual unit, particularly if you ordered more than one size. Look for the warehouse entry and an overview connecting the tag with the garment. A detached label photo in a collection of similar shirts can easily be attributed to the wrong purchase.",
+      "source_sha256": "75c010ede2ef0da875a91d12f76deae1cfade9fbfaa21f4a0aef078b8a9ec902",
+      "raw_target_sha256": "2a3d3c59867574816e872827d9cce958d797d805be0cec4b650aef33da70ed13",
+      "translation": "หากคำยืนยันสั่งซื้อเป็นไซซ์ M แต่รูปในรายการคลังที่ตรงกันเห็นป้ายไซซ์ L ชัดเจน นี่คือข้อแตกต่างที่ควรตรวจ ก่อนสรุปว่าร้านส่งผิด ให้ยืนยันว่ารูปเป็นของชิ้นที่สั่งจริง โดยเฉพาะเมื่อสั่งหลายไซซ์ หาเลขอ้างอิงคลังและรูปภาพรวมที่เห็นป้ายติดอยู่กับตัวเสื้อ รูปป้ายระยะใกล้ลอย ๆ ในกลุ่มรูปเสื้อที่คล้ายกันอาจถูกนำไปผูกกับผิดรายการได้"
+    },
+    {
+      "source": "Suppose the outer sleeve reads large while the sewn label reads medium and the order specifies medium. Record all three facts. The unit may be the intended size packed in a different sleeve, or there may be another issue requiring a physical measurement. Do not tell support that a large garment was received solely because of the sleeve sticker. Ask for verification of the item, using the actual garment label and an appropriate measurement where useful. Also decide whether the incorrect packaging matters for gifting or a potential return.",
+      "source_sha256": "3211a58aa2bc673ac940682cc6c73d94d328b1927f29a245d91c14cc7262c6cd",
+      "raw_target_sha256": "6c0658dc98b4735696ca752b75b5d4a57d5251cb529d87a90e4fb8a8a2dc717d",
+      "translation": "สมมติว่าถุงบรรจุด้านนอกระบุไซซ์ L แต่ป้ายที่เย็บติดเสื้อระบุ M และคำสั่งซื้อก็เป็น M ให้จดทั้งสามอย่าง อาจเป็นสินค้าถูกไซซ์ที่ใส่ผิดถุง หรืออาจต้องวัดตัวเสื้อเพิ่มเติม อย่าแจ้งว่าได้เสื้อไซซ์ L จากสติกเกอร์บนถุงเพียงอย่างเดียว ขอให้คลังตรวจป้ายบนตัวเสื้อและวัดจุดที่เหมาะสมหากจำเป็น แล้วพิจารณาด้วยว่าถุงผิดไซซ์มีผลต่อการให้เป็นของขวัญหรือการคืนสินค้าหรือไม่"
+    },
+    {
+      "source": "If selection and label match but the measurement appears off, compare units, endpoints and the seller's stated tolerance. A measurement taken from the back collar edge may differ from one taken from the shoulder. A garment measured while unfastened may not be comparable with one measured closed. Give support the precise conflict rather than a conclusion unsupported by the method. “Medium label; flat width appears different from the medium chart; tape start not visible” identifies both the concern and the missing evidence.",
+      "source_sha256": "8d3ee7bb6b5c9799a3a86f2bef5c059918276e9b365dc904fe37bf83b3d8e9c7",
+      "raw_target_sha256": "15f19c5795fe2460a48998e54908d3df8e7f90ac236bd90775c8acecf2ff7862",
+      "translation": "หากตัวเลือกและป้ายไซซ์ตรงกันแต่ผลวัดดูไม่ตรง ให้เทียบหน่วย จุดเริ่มกับจุดปลาย และค่าคลาดเคลื่อนที่ร้านระบุ การวัดจากขอบปกเสื้อด้านหลังอาจต่างจากการวัดเริ่มที่ไหล่ เสื้อที่ปลดกระดุมอยู่ก็อาจเทียบกับเสื้อที่ติดกระดุมแล้วไม่ได้ แจ้งข้อขัดแย้งตามข้อมูลจริง เช่น “ป้ายเป็นไซซ์ M แต่ความกว้างเมื่อวางราบดูต่างจากตารางไซซ์ M และมองไม่เห็นจุดเริ่มของสายวัด” จะได้รู้ทั้งปัญหาและหลักฐานที่ขาด"
+    },
+    {
+      "source": "Save the selected option, relevant order line, overview and readable label together. Add one sentence explaining what the evidence establishes. For instance: “The sewn label on the unit in warehouse entry A matches the medium option; the outer sleeve is marked large; physical fit has not been tested.” This record is considerably more useful than a thumbnail named “QC good” because it preserves both the conclusion and its scope.",
+      "source_sha256": "c6057698042bf0afe32b3b3bd0988f74f6384302d5bad384f63f35ea220fe974",
+      "raw_target_sha256": "8c96825b8372bda1cd4e3c31c445c64c2b5a6b21c4075d72e14019496bf227b5",
+      "translation": "เก็บตัวเลือก รายการสั่งซื้อ รูปเต็มตัว และรูปป้ายที่อ่านได้ไว้ด้วยกัน แล้วสรุปหนึ่งประโยคว่าหลักฐานยืนยันอะไร เช่น “ป้ายเย็บบนเสื้อในรายการคลัง A ตรงกับตัวเลือกไซซ์ M ถุงด้านนอกเขียน L และยังไม่ได้ลองสวมจริง” บันทึกนี้ให้ข้อมูลมากกว่าภาพย่อที่ตั้งชื่อว่า “QC ผ่าน” เพราะระบุทั้งข้อสรุปและสิ่งที่ยังไม่ได้ทดสอบ"
     }
   ]
 }

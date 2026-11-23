@@ -3,7 +3,7 @@
   "locale": "ja",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "6b7f7329ae3334f84ed64a2104620ae0ee0e9d5ddff58b466d05ffd13de91865",
-  "effective_dictionary_sha256": "3503045e3d9cfcf94fc0589d0fe24dfa5204f0c07d59354374e81f7de0b6f84a",
+  "effective_dictionary_sha256": "abdcc0db3f9c43d5f1baf93b4f3cf5036be946339568089d6d63ee8ea30d9e85",
   "checked_entries": 305,
   "review_scope": "All dictionary keys and language, figure, URL, brand, identifier and repetition checks. All ten article headings, flagged full passages, two sampled paragraphs, and financial and garment-measurement examples reviewed against the English originals. Material terminology and numerical-example errors in the inspected passages corrected.",
   "reviewed_flags": [
@@ -386,7 +386,7 @@
       "source": "Record each colour as a separate line with its size and count. For example, two navy medium shirts and one grey large shirt are two distinct selections. Compare both lines with the purchase confirmation.",
       "source_sha256": "d26973353a9a726ef696fc01aed39d79201b5b06f4eebb79203739390865725b",
       "raw_target_sha256": "fa3ed036250b312b04404ff71d5384fcf1f4c2aad6af02e4655ae272787b718d",
-      "translation": "色ごとに行を分け、サイズと数量を記入します。たとえば「紺・Mのシャツ2枚」と「グレー・Lのシャツ1枚」は別の選択です。注文確認でも両方の行を照合してください。"
+      "translation": "色ごとに行を分け、各行にサイズと枚数を書きます。例えば紺のシャツがMで2枚、グレーがLで1枚なら二つの選択です。どちらも注文確認書と照合しましょう。"
     },
     {
       "source": "Can I identify a seller listing using only a screenshot?",
@@ -669,6 +669,18 @@
       "source_sha256": "252af8f88a918ff22d1e458fc2ae8436f9d879dc1da9cfeb7dcb1d8e2c015538",
       "raw_target_sha256": "d1a6300c6d2a4d3a46cf4477bfd6b0a824f7236afeff5aa072bbe03dd5ab27fc",
       "translation": "丈が短いタイプのMサイズのジャケットが欠品し、標準丈Mと短丈Lが候補になったとします。標準丈Mは身幅が近くても着丈が長くなる場合があります。短丈Lは希望の着丈に近くても、身幅や肩幅が広がるかもしれません。どちらが元の希望に近いかは、一律には決まりません。保ちたい寸法を挙げ、両候補の実寸をその条件と比べてください。必要な実測値がなければ、サイズを断定せず未確認とします。"
+    },
+    {
+      "source": "At intake, review the accepted replacement specification, not merely the first item saved to your spreadsheet. If you approved short large, a large label can be correct even though the original wishlist said medium. However, the label alone may not confirm the cut or measurement that justified the change. Request the appropriate view for the remaining question if the service permits it.",
+      "source_sha256": "d0063535ffffcfba6185923b52e865c6c9c8271aa6ab5b6ff060d250291a1063",
+      "raw_target_sha256": "d8ce71ace286ed8b5bbd14f97914cc354c3ebf78ab0912c0fe688bb3d379aa29",
+      "translation": "入庫時には当初の候補だけでなく、実際に承認した代替仕様を確認します。短め丈のLを了承したなら、元の候補がMでもLと書かれたラベルは正しい可能性があります。ただしラベルだけでは丈の型や実寸は分かりません。まだ確認したいことがあり、サービスで対応できる場合は、その箇所の撮影を依頼しましょう。"
+    },
+    {
+      "source": "Save a short result such as “short medium unavailable; accepted short large after checking back length; actual warehouse measurement recorded.” If you declined a substitute, keep the reason, such as excessive length or incompatible rise. Those notes improve future purchases from the same seller without pretending that a size label has universal meaning across shops.",
+      "source_sha256": "ca9118fdb6d97a71cfeedaeba9a97a986370d37c8660d6a8f3cd018d7d410535",
+      "raw_target_sha256": "fe0ed0fc99bb93c55f81a9e391d0632e561ee24a093df9d5c2dfe0a5364ad479",
+      "translation": "「短め丈のMは欠品。背面の着丈を確認して短め丈のLに変更。倉庫での実測値も記録」と簡潔に残しましょう。代替を断った場合も、丈が長すぎる、股上が合わないなど具体的な理由を控えます。同じ店で次に買うときに役立ち、他店でも同じサイズ記号なら同じ実寸だと思い込まずに済みます。"
     }
   ]
 }
