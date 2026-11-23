@@ -3,9 +3,9 @@
   "locale": "id",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "7a4ff9aabb461b2920e9ca0022b7e96f10a267b1ccdcc4ab4516c4c5193056d7",
-  "effective_dictionary_sha256": "f8510cbe3f01ed848504ffa2f30fbe70ad0bdcc0a8c30efd2e4f0877887d8ac8",
+  "effective_dictionary_sha256": "ead99a8fa293c9f34016742e59ae3cd61da501a297c4fef1057ce8fed5408cbd",
   "checked_entries": 305,
-  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage.",
+  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [
     {
       "issue": "language uncertain",
@@ -273,6 +273,60 @@
       "source_sha256": "402fdf4697c813df71e21f49a3cb9b93e8ed34280f5615d614553be60e54ffef",
       "raw_target_sha256": "f12d7330479514b5a714b798155e4bfda7f875589aa5171ef0c9409e0357c6eb",
       "translation": "Misalnya, Anda menganggarkan 70 untuk ongkir internasional lalu menyetujui penawaran sebesar 82 dalam mata uang yang sama. Ongkir naik 12 dibandingkan anggaran. Tercantumnya kedua angka itu di lembar kerja bukan berarti Anda mengeluarkan 152. Catat layanan tambahan yang dibeli terpisah pada kolom sendiri dan periksa apakah biayanya sudah termasuk dalam penawaran sebelum menjumlahkannya."
+    },
+    {
+      "source": "Allow for it before the purchase. CNShopper describes collecting the product payment first and calculating international shipping after warehouse measurement. Leave room for a parcel quote based on the actual contents.",
+      "source_sha256": "915f64670ad29adbce6484a0427f877681ec612a79a623151347f3f357d55764",
+      "raw_target_sha256": "b87a0a963ae579e80a9ba141b11fcca178b098fd46cb49d3a604ade30078c29c",
+      "translation": "Biarkan untuk itu sebelum membeli. CNShopper menggambarkan mengumpulkan pembayaran produk pertama dan menghitung pengiriman internasional setelah pengukuran gudang. Tinggalkan ruang untuk penawaran tarif paket berdasarkan isi yang sebenarnya."
+    },
+    {
+      "source": "Record the original quote currency and use a clearly dated conversion for a rough comparison if needed. Check whether each figure includes the same optional treatment. An estimate that includes reinforcement and one that omits it can both be accurate while answering different questions. If the same protection is required for both destinations, add it consistently where the service permits or mark the missing price as unknown.",
+      "source_sha256": "807e484d45559bc05cb74e129015a3ae87d69c1156d3e264b1416fb61dda18cc",
+      "raw_target_sha256": "168c44349f279cf977491f09f2b21bc4818f35c47de3c637a557322c6ca5669b",
+      "translation": "Catat mata uang penawaran tarif asli dan gunakan konversi dengan tanggal yang jelas untuk perbandingan kasar jika diperlukan. Periksa apakah setiap angka termasuk perlakuan opsi yang sama. Perkiraan yang mencakup penguatan dan yang menghindarinya dapat menjadi akurat saat menjawab pertanyaan yang berbeda. Jika perlindungan yang sama diperlukan untuk kedua tujuan, tambahkan secara konsisten di mana layanan mengizinkan atau tandai harga yang hilang sebagai tidak diketahui."
+    },
+    {
+      "source": "For a numerical illustration, suppose one quote shows 85 units of your comparison currency for freight plus 5 for required packing, while the second shows 92 including the same packing. The comparable amounts are 90 and 92. Comparing 85 and 92 exaggerates the difference. If the second quote does not state whether packing is included, leave that total unresolved until you can verify it. These numbers explain the arithmetic and do not represent a CNShopper rate.",
+      "source_sha256": "2f219690656d75ee3faee8d392ff5539420999714bbe50fd92327b662945a75f",
+      "raw_target_sha256": "f65e2932c22da1edebaf153e7b522931a3bb903b82d47ac574c6e5231599f08c",
+      "translation": "Untuk ilustrasi numerik, asumsikan satu penawaran tarif menunjukkan 85 unit mata uang perbandingan Anda untuk kargo plus 5 untuk pembungkus yang dibutuhkan, sementara yang kedua menunjukkan 92 termasuk pembungkus yang sama. Jumlah yang sebanding adalah 90 dan 92. Membandingkan 85 dan 92 membesar-besarkan perbedaannya. Jika penawaran tarif kedua tidak menyatakan apakah pembungkus termasuk, biarkan total itu tidak terpecahkan sampai Anda dapat memverifikasinya. Angka-angka ini menjelaskan aritmetika dan tidak mewakili tarif CNShopper."
+    },
+    {
+      "source": "If the real alternative is sending two parcels, obtain estimates for both proposed parcels. Write down which items each contains and how each will be packed. One bulky item can determine most of the external size of a mixed parcel, while a second small parcel can still incur its own service charge. Dividing the combined box's dimensions or price in half does not produce two reliable quotes.",
+      "source_sha256": "8e6f2775555d103cf605492184b4b227c5bb6924c4103e3169780be8cd7bbf20",
+      "raw_target_sha256": "08819fbce6a894682ba291463492b4519d28749fbb546860ba87ff3f1e8a278d",
+      "translation": "Jika alternatif yang sebenarnya adalah mengirim dua paket, dapatkan perkiraan untuk kedua paket yang diusulkan. Tulis barang-barang yang masing-masing berisi dan bagaimana masing-masing akan dikemas. Satu item berukuran besar dapat menentukan sebagian besar ukuran eksternal paket campuran, sementara paket kecil kedua masih dapat dikenakan biaya layanannya sendiri. Pembagian dimensi atau harga kotak gabungan menjadi dua tidak menghasilkan dua penawaran tarif yang dapat diandalkan."
+    },
+    {
+      "source": "Save the pair of quotes, date, parcel description and choice in a private record. Name the factor that determined the outcome. For instance, “same packed carton, different destinations; chose address B because the eligible service fit the recipient's schedule and total budget.” If the choice depended on an estimated weight, mark it for review after the actual packing data arrives.",
+      "source_sha256": "32fa22cc8cbcde270798f4e489e36b877ebc8e9fb60518219cb19ef2d1c27a0d",
+      "raw_target_sha256": "e4ed2f0d8f6db940c57324ffb7e3715b036fe429d39dbc471160d0e166549e73",
+      "translation": "Simpan pasangan penawaran tarif, tanggal, deskripsi paket dan pilihan dalam catatan pribadi. Namakan faktor yang menentukan hasil. Misalnya, “kardus terkemas yang sama, tujuan yang berbeda; pilih alamat B karena layanan yang layak sesuai dengan jadwal dan total anggaran penerima.” Jika pilihan tergantung pada perkiraan berat, tandai untuk ditinjau setelah data pengiriman yang sebenarnya tiba."
+    },
+    {
+      "source": "A later change in price is easier to understand if you can identify which input moved. Perhaps the destination stayed the same but the carton expanded after protection was added. Perhaps the box stayed the same but the service selected in the new quote differs. A clear comparison does more than rank two numbers. It gives you a repeatable way to make a destination decision with the parcel you will actually send.",
+      "source_sha256": "c5dd0128a31ec282213cfea6071ea7c08e70b85e2cb70ec674137d5224f66490",
+      "raw_target_sha256": "14dfbd0c916207fc28733798bc0e568593ba3aa0f2a80eea2234203ec123cda9",
+      "translation": "Perubahan harga kemudian lebih mudah dipahami jika Anda dapat mengidentifikasi input mana yang bergerak. Mungkin tujuannya tetap sama tapi kotaknya membesar setelah perlindungan ditambahkan. Mungkin kotak tetap sama tapi layanan yang dipilih dalam penawaran tarif baru berbeda. Perbandingan yang jelas lebih dari sekedar rangking dua angka. Ini memberi Anda cara yang dapat diulang untuk membuat keputusan tujuan dengan paket yang Anda sebenarnya akan mengirim."
+    },
+    {
+      "source": "Compare the full alternatives. One quote for the current pieces does not represent the cost of shipping the later pieces separately. A future combined quote may also change when all dimensions are known. Record the chosen scenario as “dispatch confirmed item now; remaining items held for intake” or “wait for all matched pieces.” That wording prevents a later reader from assuming every item on the original purchase was inside the first outbound parcel.",
+      "source_sha256": "d0d227861d82b3c7c18909822693149a5f4f44c18fc35ec48cbc2104b9d33129",
+      "raw_target_sha256": "d1223a09cf6e5b021e22f4699663e8846bfc1a36b357d405b18a913a3695ff4d",
+      "translation": "Bandingkan alternatif-alternatif penuh. Satu penawaran tarif untuk barang saat ini tidak mewakili biaya pengiriman barang berikutnya secara terpisah. Penawaran tarif gabungan masa depan juga dapat berubah ketika semua dimensi diketahui. Catat skenario yang dipilih sebagai “pengiriman barang yang dikonfirmasi sekarang; barang yang tersisa ditahan untuk masuk” atau “tunggu semua barang yang cocok.” Ungkapan tersebut mencegah pembaca yang datang kemudian untuk berasumsi bahwa setiap barang yang dibeli pada awalnya ada di dalam paket pertama yang dikirim dari gudang ke pelanggan."
+    },
+    {
+      "source": "At the planning stage you may want a freight allowance even before you have packed dimensions. Put that figure in an estimate field with its assumptions. Mark whether the input weight represents the item, retail packaging or proposed outbound box. Record the destination, route and date checked. When the packed quote arrives, retain the original assumption as a comparison rather than adding both figures as actual expenditure.",
+      "source_sha256": "b8fd64ba0e29ae8a1d4d51da4e1bc95a056382ca2f3240bf5e09f8e741e1e49c",
+      "raw_target_sha256": "68a5efb89bf9b3fe4f9f9d0680a206c03fbd4f9224b117abdfead98fe679fc86",
+      "translation": "Pada tahap perencanaan Anda mungkin ingin tambahan kargo bahkan sebelum Anda telah mengemas dimensi. Masukkan angka itu ke dalam bidang perkiraan dengan asumsinya. Tandai apakah berat input mewakili item, kemasan ritel atau kotak keluaran yang diusulkan. Catat tujuan, rute dan tanggal yang diperiksa. Ketika penawaran tarif lengkap tiba, simpan asumsi awal sebagai pembanding daripada menambahkan kedua angka tersebut sebagai pengeluaran yang sebenarnya."
+    },
+    {
+      "source": "Record the displayed price for the chosen option and the currency. If your instruction contains a maximum, say what it includes. A ceiling for the goods alone differs from a ceiling that includes seller-to-warehouse delivery. Keep international freight separate unless you have an actual quote for the packed parcel. CNShopper's ordering guide treats purchase confirmation and international shipping as different stages.",
+      "source_sha256": "4f3d48912445340c53db3fe0ad0dc2a89c4d9cc0a7aca8541ed020366a172f9e",
+      "raw_target_sha256": "e8a9b6e7094be91990f42c7373020627b26627c2b00ad3d619f550fb5d1a0138",
+      "translation": "Catat harga yang ditampilkan untuk opsi yang dipilih dan mata uang. Jika instruksi Anda berisi maksimum, katakan apa yang termasuk. Batas atas untuk barang saja berbeda dari batas atas yang mencakup pengiriman dari penjual ke gudang. Jaga kargo internasional terpisah kecuali Anda memiliki penawaran tarif yang sebenarnya untuk paket yang dikemas. Panduan pemesanan CNShopper memperlakukan konfirmasi pembelian dan pengiriman internasional sebagai tahapan yang berbeda."
     }
   ]
 }

@@ -3,9 +3,9 @@
   "locale": "pl",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "981f96ede76efaf367080d9ee1a287c3dfa7cffce62e3d6212373bc239967a9e",
-  "effective_dictionary_sha256": "c0aac2255dcd0c93cefa3817ef5c11276f651b4906b21dfc6674a7ed2d01bd9c",
+  "effective_dictionary_sha256": "bfc5b89e860d116ff77b2af36e4d83e3152f167e695bd9de726bdd42c8799504",
   "checked_entries": 305,
-  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage.",
+  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [],
   "unresolved_material": [],
   "corrections": [
@@ -98,6 +98,24 @@
       "source_sha256": "402fdf4697c813df71e21f49a3cb9b93e8ed34280f5615d614553be60e54ffef",
       "raw_target_sha256": "648e00157fbe12c156cf2a39b98784e0b1019583dbfada1e4243d3de4f5bd680",
       "translation": "Załóżmy, że na wysyłkę międzynarodową przeznaczasz 70, a później akceptujesz wycenę 82 w tej samej walucie. Różnica względem budżetu wynosi 12. Obecność obu liczb w arkuszu nie oznacza wydatku 152. Osobno wykupioną usługę wpisz w oddzielnym polu. Zanim doliczysz jej koszt, sprawdź, czy wycena już go uwzględnia."
+    },
+    {
+      "source": "Imagine one book, two folded shirts and a rigid pencil case. If the initial quote uses a carton measuring 35 by 25 by 15 centimetres at 1,800 grams, copy those values into the second comparison in the units requested. Do not enter the book dimensions for the second search by mistake. Preserve the figures as illustrative until they represent a real measured parcel. A consistent assumption makes a meaningful comparison even before the final quote is available.",
+      "source_sha256": "a712abf07d597a429bebbe09828e1df8d2cd2ca568a8f3c82c5bde1dcd0c8a3c",
+      "raw_target_sha256": "5a8af00d8f58d5c83295558d4c11f6c89f27deea10e73fbc563ea7225f432d85",
+      "translation": "Wyobraź sobie jedną książkę, dwie złożone koszule i sztywny piórnik. Jeśli w pierwotnej wycenie użyto kartonu o wymiarach 35 na 25 na 15 centymetrów i wadze 1800 gramów, skopiuj te wartości do drugiego porównania w żądanych jednostkach. Nie wpisuj przez pomyłkę wymiarów książki dla drugiego wyszukiwania. Traktuj te liczby jako przykład, dopóki nie zmierzysz rzeczywistej paczki. Spójne założenie umożliwia znaczące porównanie, nawet zanim dostępna będzie ostateczna oferta."
+    },
+    {
+      "source": "Separate a destination comparison from a split-parcel decision",
+      "source_sha256": "5503222297f8edd5f59247083a3e2f93244bcdc628730a2b4eb9f2a6a575125d",
+      "raw_target_sha256": "1af2828923a5025512922fe255b7841527f905f661c1de22b4ca3e0ca5df4d35",
+      "translation": "Oddziel porównanie adresów docelowych od decyzji o podziale przesyłki"
+    },
+    {
+      "source": "Save the pair of quotes, date, parcel description and choice in a private record. Name the factor that determined the outcome. For instance, “same packed carton, different destinations; chose address B because the eligible service fit the recipient's schedule and total budget.” If the choice depended on an estimated weight, mark it for review after the actual packing data arrives.",
+      "source_sha256": "32fa22cc8cbcde270798f4e489e36b877ebc8e9fb60518219cb19ef2d1c27a0d",
+      "raw_target_sha256": "dd80849fdd7534a3e8fe6c0874072165678c893c417bf86065d3f256712f27e4",
+      "translation": "Zapisz obie wyceny, datę, opis paczki i wybór w prywatnym rekordzie. Wymień czynnik, który określił wynik. Na przykład „to samo opakowanie, różne miejsca przeznaczenia; wybrano adres B, ponieważ kwalifikująca się usługa pasowała do harmonogramu i całkowitego budżetu odbiorcy”. Jeśli wybór zależał od szacowanej wagi, zaznacz go do przeglądu po otrzymaniu rzeczywistych danych dotyczących pakowania."
     }
   ]
 }

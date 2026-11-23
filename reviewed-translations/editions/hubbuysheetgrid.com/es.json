@@ -3,7 +3,7 @@
   "locale": "es",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "f5f813b72eb3cff901b881de12163301e68cbf523e07d7074183fa9a39d58590",
-  "effective_dictionary_sha256": "ff566fe0f79e53ba45fb02988e981a272251ee26d1a8394f11c91bec0338028c",
+  "effective_dictionary_sha256": "01c2f9507228533aee73ff97f9e467ccc65bee5911e3dd3ad5eccc4bbda75341",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -129,6 +129,54 @@
       "source_sha256": "9a4641881e57be3b6c26da181b86ed2d763deadcd8e3fb11fd79d3d7275e41e4",
       "raw_target_sha256": "779d620289a4917a38e418833f2e2de5a50fedbad8d21103c5a0c23ab74b3d85",
       "translation": "Cómo contrastar el desglose final de un paquete de HubBuy con la cotización inicial"
+    },
+    {
+      "source": "Save both outbound parcel references, their item lists and their final charge statements. Mark the line you are comparing on each record so the question stays tied to the correct parcel.",
+      "source_sha256": "baa564c8afd6b6f139c54ca948290d096026e69c37baa603560efd436cf90c7c",
+      "raw_target_sha256": "5e28590278754dc2e60853789da9fb7907e9a4050a8b6f2c68e728c4c14c1b05",
+      "translation": "Guarde tanto el paquete que se envía desde el almacén a las referencias de los clientes, sus listas de artículos y sus estados de cuenta finales. Marque la línea que está comparando en cada registro para que la pregunta permanezca vinculada al paquete correcto."
+    },
+    {
+      "source": "Comparing two versions of a mixed parcel",
+      "source_sha256": "09fb668c8b8cfc520c197f2a6e843121a837efd907f1a1d17dd5392700b48dea",
+      "raw_target_sha256": "f87cb9f583fe83b6b44c1c5d9820513a8a1301acc61afb410be133aac39b3301",
+      "translation": "Comparación de dos versiones de un paquete con artículos distintos"
+    },
+    {
+      "source": "Consider a fictional box costing 150 at 2 kg and another costing 160 at 2.5 kg. Their apparent costs per kilogram are 75 and 64. The lower unit figure belongs to the more expensive parcel. It may still be the better choice if the extra protective materials serve a real need, but the numerical ratio alone cannot settle that. A buyer evaluating whether to add protection should instead look at the incremental ten, the change in dimensions and the value of preserving the required condition.",
+      "source_sha256": "20b713345e98ecd4dcb90578769a3e826950abf3a95d58e91d09fe7d10a8099b",
+      "raw_target_sha256": "40d1d508244a1dc62cdc46accde71d1bd8e758b1530f678fc72a049f13e9decb",
+      "translation": "Considere una caja ficticia que cuesta 150 a 2 kg y otra que cuesta 160 a 2,5 kg. Sus costos aparentes por kilogramo son 75 y 64. La cifra unitaria más baja pertenece a el paquete más caro. Aún puede ser la mejor opción si los materiales protectores adicionales sirven a una necesidad real, pero la proporción numérica por sí sola no puede resolver eso. Un comprador que esté evaluando si agregar protección debería en su lugar mirar el incremento de diez, el cambio en las dimensiones y el valor de preservar la condición requerida."
+    },
+    {
+      "source": "A soft parcel can change dimensions depending on how it rests. Measure the maximum outer span as it would travel, including a thick pocket of material or protective padding. If it is later enclosed in a rigid carton, use the carton dimensions instead. Avoid pressing a soft measurement flat to obtain an attractive number unless the actual packing method keeps it that way. A parcel that expands after measuring no longer corresponds to the estimate.",
+      "source_sha256": "c721b0e5d83dcf2868a3a8af854c96d8c267a439d409006e87672b904784c6b9",
+      "raw_target_sha256": "9e8df702d5d0061ccfa959bf794025b63a809b718bdfc4c1e5a1aafb7e54777e",
+      "translation": "Un paquete blando puede cambiar de dimensiones dependiendo de cómo descansa. Mida el alcance exterior máximo a medida que viaja, incluyendo un bolsillo grueso de material o acolchado protector. Si posteriormente se encierra en una caja rígida, utilice las dimensiones de la caja. Evite presionar una medición suave plana para obtener un número atractivo a menos que el método de embalaje real lo mantenga de esa manera. Un paquete que se expande después de medir ya no se corresponde con la estimación."
+    },
+    {
+      "source": "If both records supposedly refer to the same finished parcel, compare the orientation and endpoints. A tape starting at the bottom edge of a recessed panel and ending at the centre of a flat lid may miss protected corners that project farther. Ask for the longest outside span rather than the measurement across the central panel. Keep a generous uncertainty in a planning figure when the parcel sits close to an eligibility limit. Final acceptance depends on the carrier and the route's actual rule.",
+      "source_sha256": "b4f4ebc02a22101ef0dce4b09e8e2d4c6e7c66837db80e8015d641cbde0ae583",
+      "raw_target_sha256": "fa6107eac795c5864fae66cacdf395594a8fbc2f21b7b8c5cec8724a99bf91a2",
+      "translation": "Si ambos registros se refieren al mismo paquete ya embalado, compare la orientación de la cinta y los puntos de inicio y fin. Una medida desde el borde inferior de un panel hundido hasta el centro de la tapa puede dejar fuera los protectores de esquina que sobresalen. Pida la mayor distancia exterior, en vez de medir solo el panel central. Si la medida queda cerca del límite del servicio, deje margen en la estimación. La aceptación final depende del transportista y de las condiciones de la ruta."
+    },
+    {
+      "source": "Use actual parcel changes to explain an apparent price change",
+      "source_sha256": "8622e8ef5e5779511a9f31048414891df3016a519c4bd2e41729fccfd0c80f01",
+      "raw_target_sha256": "085565a7b2317b3f86b49f5115317f2a976d1f26ef53eab58291e8caadbb74e9",
+      "translation": "Utilice cambios reales del paquete para explicar un cambio de precio aparente"
+    },
+    {
+      "source": "The buyer may initially quote a single pair of shoes using a quick-estimate preset. Later the seller's box is retained, then a belt is added before international submission. The resulting packed measurements no longer describe the same shipment as the preset. Compare the revised quote with the final parcel statement, while keeping the original as evidence of how the budget developed. A difference between the first and last amounts is not automatically a new fee.",
+      "source_sha256": "10ec70bbae6b9a7c22fe16e97239c46b035d424eb2c54f4181e1741356e9a670",
+      "raw_target_sha256": "27cbdf326d909c6e9715d3b7471d846396770d3577819acdeb874f53e16fd0b2",
+      "translation": "El comprador puede cotizar inicialmente un solo par de zapatos utilizando un ajuste preestablecido de estimación rápida. Más tarde se conserva la caja del vendedor, luego se agrega un cinturón antes de la presentación internacional. Las medidas de embalaje resultantes ya no describen el mismo envío que el preestablecido. Compare la cotización revisada con el estado final del paquete, mientras mantiene el original como evidencia de cómo se desarrolló el presupuesto. Una diferencia entre la primera y la última cantidad no es automáticamente una nueva tarifa."
+    },
+    {
+      "source": "A useful quote summary fits into a short paragraph: name the destination, contents, dimensions, scale weight, route, currency and the date of the estimate. Add a sentence identifying any fee that is known to be separate and any part still unresolved. Keep private delivery and payment details out of shared screenshots. Another buyer can then reproduce the estimate for the same inputs or identify why their own parcel differs.",
+      "source_sha256": "ba5fa4c4188d13fde99181875f36934ff3ce18f1d0801a5f2fa940444f7c4b38",
+      "raw_target_sha256": "95798ffa09280daaa488a82bcde24bafa857e8bc6f1c9f689f4a8a992d65a4ec",
+      "translation": "Un resumen de presupuesto útil cabe en un párrafo corto: nombre el destino, el contenido, las dimensiones, el peso de la balanza, la ruta, la moneda y la fecha del presupuesto. Agregue una oración que identifique cualquier tarifa que se sepa que está separada y cualquier parte que aún no se haya resuelto. Mantenga los detalles de envío y pago privados fuera de las capturas de pantalla compartidas. Otro comprador puede entonces reproducir la estimación para los mismos insumos o identificar por qué su propio paquete difiere."
     }
   ]
 }

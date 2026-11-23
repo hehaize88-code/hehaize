@@ -3,9 +3,9 @@
   "locale": "hr",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "eee35d8dbaf595a842f8a29256acb8bd9ca3a46f79484210615e172f0b095754",
-  "effective_dictionary_sha256": "161099400afe7b2482eb68af7c572bb50570c20cdda1344867f1b24ae1efa16b",
+  "effective_dictionary_sha256": "abf5c4c5cc02277c8dfdbcd8e2548547fc0daba6acca3272a0c230a98b24c04e",
   "checked_entries": 305,
-  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage.",
+  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [
     {
       "issue": "language uncertain",
@@ -141,6 +141,42 @@
       "source_sha256": "402fdf4697c813df71e21f49a3cb9b93e8ed34280f5615d614553be60e54ffef",
       "raw_target_sha256": "e32bda88eeba9445b8ae4d7e1bd33403f18d17ef6b1727e3f39ca013d6abbbd0",
       "translation": "Primjerice, u tablici predvidite 70 za međunarodnu dostavu, a poslije prihvatite ponudu od 82 u istoj valuti. Dostava tako košta 12 više od planiranog. To što su obje brojke u tablici ne znači da ste potrošili 152. Zasebno kupljenu dodatnu uslugu zapišite u posebno polje i prije zbrajanja provjerite je li već uključena u ponudu."
+    },
+    {
+      "source": "Create a parcel description that can be repeated",
+      "source_sha256": "cef7c8aef9c4fe4b1a74c78ebbd0ccadb45aa85872d9891ddeec443fc88824f3",
+      "raw_target_sha256": "31d53085c17b2411d8777c1be8ee1c2000a84532e92c4720bff7e55665a039f3",
+      "translation": "Kako opisati paket za ponovljivu usporedbu"
+    },
+    {
+      "source": "Imagine one book, two folded shirts and a rigid pencil case. If the initial quote uses a carton measuring 35 by 25 by 15 centimetres at 1,800 grams, copy those values into the second comparison in the units requested. Do not enter the book dimensions for the second search by mistake. Preserve the figures as illustrative until they represent a real measured parcel. A consistent assumption makes a meaningful comparison even before the final quote is available.",
+      "source_sha256": "a712abf07d597a429bebbe09828e1df8d2cd2ca568a8f3c82c5bde1dcd0c8a3c",
+      "raw_target_sha256": "834adf09ba9119ebfc9f3bc5ade44c951b9f8d995183cac43a89c84432fa256f",
+      "translation": "Zamislite jednu knjigu, dvije presavijene majice i kruti etui za olovke. Ako se u početnom predračunu koristi kartonska kutija dimenzija 35 x 25 x 15 centimetara i težine 1800 grama, kopirajte te vrijednosti u drugu usporedbu u traženim jedinicama. Nemojte pogrešno unijeti dimenzije knjige za drugo pretraživanje. Ove su brojke primjer dok ne dobijete stvarne mjere paketa. Dosljedna pretpostavka čini smislenu usporedbu čak i prije nego što je konačna ponuda dostupna."
+    },
+    {
+      "source": "For a numerical illustration, suppose one quote shows 85 units of your comparison currency for freight plus 5 for required packing, while the second shows 92 including the same packing. The comparable amounts are 90 and 92. Comparing 85 and 92 exaggerates the difference. If the second quote does not state whether packing is included, leave that total unresolved until you can verify it. These numbers explain the arithmetic and do not represent a CNShopper rate.",
+      "source_sha256": "2f219690656d75ee3faee8d392ff5539420999714bbe50fd92327b662945a75f",
+      "raw_target_sha256": "94c23ac4ddabc528bfa26694012aaa37fdb33813a65b2c1c7968f5f4dc6ae1f8",
+      "translation": "Za numeričku ilustraciju, recimo da jedna ponuda navodi 85 jedinica vaše usporedbene valute za prijevoz plus 5 za potrebno pakiranje, dok druga navodi 92 uključujući isto pakiranje. Usporedivi iznosi su 90 i 92. Usporedbom 85 i 92 pretjeruje se u razlici. Ako druga ponuda ne navodi je li pakiranje uključeno, ostavite taj ukupni iznos neriješen dok ga ne možete provjeriti. Ovi brojevi objašnjavaju aritmetiku i ne predstavljaju tarifu CNShoppera."
+    },
+    {
+      "source": "Separate a destination comparison from a split-parcel decision",
+      "source_sha256": "5503222297f8edd5f59247083a3e2f93244bcdc628730a2b4eb9f2a6a575125d",
+      "raw_target_sha256": "114f6b2d53b45a2c4b6a2e78db417a3648a4771a1f649a1713bb46da24ee3e8e",
+      "translation": "Odvojite usporedbu odredišta od odluke o podjeli pošiljke"
+    },
+    {
+      "source": "Save the pair of quotes, date, parcel description and choice in a private record. Name the factor that determined the outcome. For instance, “same packed carton, different destinations; chose address B because the eligible service fit the recipient's schedule and total budget.” If the choice depended on an estimated weight, mark it for review after the actual packing data arrives.",
+      "source_sha256": "32fa22cc8cbcde270798f4e489e36b877ebc8e9fb60518219cb19ef2d1c27a0d",
+      "raw_target_sha256": "42ea9a43c199522fec747ac7eaefc7ca999c5c2805814baaaff126609d2c2eb1",
+      "translation": "Spremite par ponuda, datum, opis paketa i izbor u privatnom zapisu. Navedite čimbenik koji je odredio ishod. Na primjer, „ista zapakirana kutija, različita odredišta; odabrana adresa B jer kvalificirana usluga odgovara rasporedu i ukupnom proračunu primatelja.“ Ako je izbor ovisio o procijenjenoj težini, označite ga za pregled nakon što stignu stvarni podaci o pakiranju."
+    },
+    {
+      "source": "Compare the full alternatives. One quote for the current pieces does not represent the cost of shipping the later pieces separately. A future combined quote may also change when all dimensions are known. Record the chosen scenario as “dispatch confirmed item now; remaining items held for intake” or “wait for all matched pieces.” That wording prevents a later reader from assuming every item on the original purchase was inside the first outbound parcel.",
+      "source_sha256": "d0d227861d82b3c7c18909822693149a5f4f44c18fc35ec48cbc2104b9d33129",
+      "raw_target_sha256": "b9e27c88cbd62acc7bb7831e87e1d782aabfba7ce3f035160e507fbb55019692",
+      "translation": "Usporedite potpune alternative. Jedna ponuda za trenutne komade ne predstavlja trošak otpreme kasnijih komada zasebno. Buduća zajednička ponuda također se može promijeniti kad budu poznate sve dimenzije. Zabilježite odabrani scenarij kao „pošalji potvrđenu stavku sada; preostale stavke zadržane za prijem“ ili „čekaj sve usklađene komade.“ Taj tekst sprječava kasnijeg čitatelja da pretpostavi da je svaka stavka na izvornoj kupnji bila unutar prvog paketa koji se šalje iz skladišta kupcu."
     }
   ]
 }

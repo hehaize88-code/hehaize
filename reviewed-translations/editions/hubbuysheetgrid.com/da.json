@@ -3,7 +3,7 @@
   "locale": "da",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "014992a1b817952a237b7e3e6ed66e20a6439b155f5ba23b43af5c8e06a7d055",
-  "effective_dictionary_sha256": "06e3b7cdd1d7247323326ddc2f4d1c2c46420d773cac86c156937b2426f73d98",
+  "effective_dictionary_sha256": "8e18a3a5d759b88395071cb86b1ce9681a8b208b760303657b3cca566d105b98",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -93,6 +93,30 @@
       "source_sha256": "9a4641881e57be3b6c26da181b86ed2d763deadcd8e3fb11fd79d3d7275e41e4",
       "raw_target_sha256": "84de98bd94cc84262de3f5180b1f1bffbcbd0466d13c9c8e0c3644446ebe0c0a",
       "translation": "Afstem en pakkes slutopgørelse med det første tilbud fra HubBuy"
+    },
+    {
+      "source": "Keep the old quote and add a revised quote under it. If the larger amount was already paid, track the credit process separately from the recalculated cost. Do not enter 202 as the only payment when the account shows 274 collected and a credit still pending. The two records answer different questions: what the retained merchandise should cost, and which funds have actually moved. Keep the same line names so that a friend reviewing the change can tell which item became unavailable.",
+      "source_sha256": "d934b1be832ea7a829823f1f235cb216308d04f4d58e293696e5f10aa1b5a6b9",
+      "raw_target_sha256": "06fbb9519c79e05bf24dcfaa09201fca5d8a561983c553bc5475f0331c282369",
+      "translation": "Behold det gamle tilbud og tilføj et revideret tilbud under det. Hvis det større beløb allerede er blevet betalt, skal du spore krediteringsprocessen separat fra de genberegnede omkostninger. Indtast ikke 202 som den eneste betaling, når kontoen viser 274 indsamlet og en kredit stadig afventer. De to optegnelser besvarer forskellige spørgsmål: hvad de tilbageholdte varer skulle koste, og hvilke midler der rent faktisk er flyttet. Behold de samme linjenavne, så en ven, der gennemgår ændringen, kan se, hvilket element der er blevet utilgængeligt."
+    },
+    {
+      "source": "Imagine a teaching example in which one home-currency unit buys 7.20 yuan. A 360-yuan quote corresponds to 50 units before fees because 360 is divided by 7.20. If you instead record the rate as home units per yuan, multiply by that number. Write out both currency codes with the rate. A single bare value such as 7.20 is especially easy to use backwards when a sheet mixes several quotations.",
+      "source_sha256": "670c82e94d3b8b3e94b14ada36ed532920913817bc2e6e2ca975eae7f7ae0edb",
+      "raw_target_sha256": "419d641582bbff3da574dc31d74559977d1e6ed700fd6ee62b96d921d48a8aec",
+      "translation": "Forestil dig et undervisningseksempel, hvor en hjemme-valutaenhed køber 7,20 yuan. Et tilbud på 360 yuan svarer til 50 enheder før gebyrer, fordi 360 er divideret med 7,20. Hvis du i stedet registrerer satsen som boligenheder pr. yuan, skal du gange med dette tal. Skriv begge valutakoder ud sammen med kursen. En enkelt nøgen værdi som 7,20 er især nem at bruge baglæns, når et ark blander flere tilbud."
+    },
+    {
+      "source": "Suppose quote A covers the same merchandise and domestic delivery as quote B, but only A includes protective packing. Compare the contents before worrying about exchange-rate rounding. Either add the confirmed packing amount to B or label the quotes as different offers. If a missing charge has no confirmed amount, leave a gap instead of filling it with an attractive guess. A conversion cannot repair two quotes that describe different services.",
+      "source_sha256": "33bb436a69ded2e9ee3771159ed02b69551edba9744747c51ac8ee084fcc54fa",
+      "raw_target_sha256": "9c13fa70c7305a42314b58e0be4a7873b9d3d979d0b557a3affc02538263278c",
+      "translation": "Antag, at tilbud A dækker samme vare og indenrigslevering som tilbud B, men kun tilbud A omfatter beskyttende emballage. Sammenlign indholdet, før du bekymrer dig om afrunding af valutakurser. Tilføj enten den bekræftede emballagemængde til B, eller mærk tilbuddene som forskellige tilbud. Hvis en manglende opkrævning ikke har et bekræftet beløb, skal du efterlade et hul i stedet for at udfylde det med et attraktivt gæt. En konvertering kan ikke reparere to tilbud, der beskriver forskellige tjenester."
+    },
+    {
+      "source": "Turn one unknown into one support question. Instead of asking whether the whole estimate is correct, specify that you entered a named destination and measured parcel, received a quote for a particular route, and need to know whether the selected packing service is already inside the displayed total. Save the answer with the date and the quote version. Avoid applying a reply about one route to a different service with different terms.",
+      "source_sha256": "741207c84e0bd3ef447ae75a2145fd7d36c817a82eb76cf43eb36c8e464ad48a",
+      "raw_target_sha256": "1974bd3a8bba7f4fed8bc7bddadde1baad8e4f6c84beac347a5fa6bd063e168e",
+      "translation": "Gør en ukendt til et supportspørgsmål. I stedet for at spørge, om hele estimatet er korrekt, skal du angive, at du har indtastet en navngivet destination og målt pakken, modtaget et tilbud på en bestemt rute og har brug for at vide, om den valgte pakkeservice allerede er inde i det viste beløb. Gem svaret med datoen og versionen af tilbuddet. Undgå at anvende et svar om en rute til en anden tjeneste med forskellige vilkår."
     }
   ]
 }

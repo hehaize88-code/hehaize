@@ -3,7 +3,7 @@
   "locale": "it",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "e2fdd989c385b4aeac4d15da3b49b62722ae852fb2bce7e6ff0a093ee48222bd",
-  "effective_dictionary_sha256": "9a52a696c84c0f1b6800ce566217a8a5f01719f370910d577d8e1a51d7d3f7c1",
+  "effective_dictionary_sha256": "aba3a6be4027ecf6da2c9fc9611f5a3b50077a2e28318dc569d296402bc5fe81",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -87,6 +87,24 @@
       "source_sha256": "9a4641881e57be3b6c26da181b86ed2d763deadcd8e3fb11fd79d3d7275e41e4",
       "raw_target_sha256": "cf1525147a9a5dab39fe94c17c95791b11b0ba0f2934d0376244573720b22153",
       "translation": "Confrontare il rendiconto del pacco HubBuy con il preventivo iniziale"
+    },
+    {
+      "source": "Keep the old quote and add a revised quote under it. If the larger amount was already paid, track the credit process separately from the recalculated cost. Do not enter 202 as the only payment when the account shows 274 collected and a credit still pending. The two records answer different questions: what the retained merchandise should cost, and which funds have actually moved. Keep the same line names so that a friend reviewing the change can tell which item became unavailable.",
+      "source_sha256": "d934b1be832ea7a829823f1f235cb216308d04f4d58e293696e5f10aa1b5a6b9",
+      "raw_target_sha256": "728d555e82b480eca1d2b18014fde4ae3f7bc2de165b30c38103cff961dfb4aa",
+      "translation": "Mantieni il vecchio preventivo e aggiungi un preventivo aggiornato sotto di essa. Se l'importo maggiore è già stato pagato, monitorare il processo di accredito separatamente dal costo ricalcolato. Non inserire 202 come unico pagamento quando il conto mostra 274 incassati e un credito ancora in sospeso. I due record rispondono a domande diverse: quanto dovrebbe costare la merce trattenuta e quali fondi sono stati effettivamente spostati. Mantieni gli stessi nomi delle righe in modo che un amico che esamina la modifica possa dire quale elemento è diventato non disponibile."
+    },
+    {
+      "source": "Suppose quote A covers the same merchandise and domestic delivery as quote B, but only A includes protective packing. Compare the contents before worrying about exchange-rate rounding. Either add the confirmed packing amount to B or label the quotes as different offers. If a missing charge has no confirmed amount, leave a gap instead of filling it with an attractive guess. A conversion cannot repair two quotes that describe different services.",
+      "source_sha256": "33bb436a69ded2e9ee3771159ed02b69551edba9744747c51ac8ee084fcc54fa",
+      "raw_target_sha256": "97eb52240f3d1574093fa5cea9c014c6f2bbb99928110e3210c73804d3cd7cf9",
+      "translation": "Supponiamo che la quotazione A copra la stessa merce e la stessa consegna nazionale della quotazione B, ma solo A include l'imballaggio protettivo. Confronta i contenuti prima di preoccuparti dell'arrotondamento del tasso di cambio. Aggiungere la quantità di imballaggio confermata a B o etichettare i preventivi come offerte diverse. Se un addebito mancante non ha un importo confermato, lascia un vuoto invece di riempirlo con un'ipotesi attraente. Una conversione non può riparare due preventivi che descrivono servizi diversi."
+    },
+    {
+      "source": "Turn one unknown into one support question. Instead of asking whether the whole estimate is correct, specify that you entered a named destination and measured parcel, received a quote for a particular route, and need to know whether the selected packing service is already inside the displayed total. Save the answer with the date and the quote version. Avoid applying a reply about one route to a different service with different terms.",
+      "source_sha256": "741207c84e0bd3ef447ae75a2145fd7d36c817a82eb76cf43eb36c8e464ad48a",
+      "raw_target_sha256": "4db125426cc2bb1fdc8a8633f12033bc2f4dea853727a4032fe95000c7efbf94",
+      "translation": "Trasforma un'incognita in una domanda di supporto. Invece di chiedere se l'intero preventivo è corretto, specifica che hai inserito una destinazione e un pacco misurato, ricevuto un preventivo per un particolare percorso e hai bisogno di sapere se il servizio di imballaggio selezionato è già all'interno del totale visualizzato. Salva la risposta con la data e la versione del preventivo. Evitare di applicare una risposta su un percorso a un servizio diverso con termini diversi."
     }
   ]
 }

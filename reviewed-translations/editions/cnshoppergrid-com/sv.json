@@ -3,9 +3,9 @@
   "locale": "sv",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "a2af2256cf28ba1d19ed3f40a335bc76b987513cfccf0a85c8a05867aa0ed337",
-  "effective_dictionary_sha256": "52ed577afe3e086bdf4a9834ea0b6ba18fbd183e7ea5a611435805c5d864ddf3",
+  "effective_dictionary_sha256": "7307fd1356f2cce33ab8a8b32660cb523f6c64864db713e65a4dddd97d542c2d",
   "checked_entries": 305,
-  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage.",
+  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [],
   "unresolved_material": [],
   "corrections": [
@@ -92,6 +92,18 @@
       "source_sha256": "402fdf4697c813df71e21f49a3cb9b93e8ed34280f5615d614553be60e54ffef",
       "raw_target_sha256": "67d22ef83a3e1b70f3388979dc81cf15324c0c6340291fc5cbfe83b4e989c440",
       "translation": "Anta att du har budgeterat 70 för den internationella frakten och sedan godkänner en offert på 82 i samma valuta. Frakten blev 12 dyrare än planerat. Du har inte betalat 152 bara för att båda beloppen står i kalkylbladet. Anteckna en separat tilläggstjänst i ett eget fält och kontrollera om den redan ingår i offerten innan du lägger till beloppet."
+    },
+    {
+      "source": "For a numerical illustration, suppose one quote shows 85 units of your comparison currency for freight plus 5 for required packing, while the second shows 92 including the same packing. The comparable amounts are 90 and 92. Comparing 85 and 92 exaggerates the difference. If the second quote does not state whether packing is included, leave that total unresolved until you can verify it. These numbers explain the arithmetic and do not represent a CNShopper rate.",
+      "source_sha256": "2f219690656d75ee3faee8d392ff5539420999714bbe50fd92327b662945a75f",
+      "raw_target_sha256": "22642ef2d64dd65c69642188d0a0a82740cdf2d7c17a67aaf5148424e66c368e",
+      "translation": "För en numerisk illustration, låt oss säga att en offert visar 85 enheter av din jämförelsevaluta för frakt plus 5 för nödvändig förpackning, medan den andra visar 92 inklusive samma förpackning. De jämförbara beloppen är 90 och 92. Att jämföra 85 och 92 överdriver skillnaden. Om den andra offerten inte anger om förpackning ingår, vänta med totalsumman tills du kan kontrollera vad som ingår. Dessa siffror förklarar aritmetiken och representerar inte ett fraktpris från CNShopper."
+    },
+    {
+      "source": "Save the pair of quotes, date, parcel description and choice in a private record. Name the factor that determined the outcome. For instance, “same packed carton, different destinations; chose address B because the eligible service fit the recipient's schedule and total budget.” If the choice depended on an estimated weight, mark it for review after the actual packing data arrives.",
+      "source_sha256": "32fa22cc8cbcde270798f4e489e36b877ebc8e9fb60518219cb19ef2d1c27a0d",
+      "raw_target_sha256": "78b4710f9d6af69caa9642d395e2d772adf81df98323d2e0b88f5ed65b59c347",
+      "translation": "Spara de två offerterna, datum, paketbeskrivning och val i en privat post. Namnge den faktor som avgjorde resultatet. Till exempel ”samma förpackade kartong, olika destinationer; valde adress B eftersom den kvalificerade tjänsten passade mottagarens schema och totala budget.” Om valet berodde på en uppskattad vikt, markera den för granskning efter att den faktiska förpackningsinformationen har kommit in."
     }
   ]
 }

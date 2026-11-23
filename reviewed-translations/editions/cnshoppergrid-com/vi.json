@@ -3,9 +3,9 @@
   "locale": "vi",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "7dbb7854beeb818018cbcf65a5be6a744b426e22aa758283674bd39143432f52",
-  "effective_dictionary_sha256": "ffa38f4151a1efd59a43ae6c36b4b9f94d2d8db7a0c54c26cf291b4cef2d17c0",
+  "effective_dictionary_sha256": "de35dbe5d55d653ebe4a97aff164f6acec2343949ab60897f46e25ebca6c88bd",
   "checked_entries": 305,
-  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage.",
+  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [],
   "unresolved_material": [],
   "corrections": [
@@ -110,6 +110,42 @@
       "source_sha256": "0932fd9af0e632cb16ce7afb704267bbef9efe6e8e9f7b0460b1d61db02ac353",
       "raw_target_sha256": "36faf3a450fa25102853c4741241597ec17d9e9031463f25c9aa54cc871975c2",
       "translation": "Ví dụ, khi đặt áo khoác của bạn nằm phẳng, chiều ngang đo từ nách này đến nách kia là 54 cm. Bảng của người bán ghi “ngực: 108”. Hai số đo có thể tương ứng nếu 108 là vòng ngực toàn bộ chiếc áo, đo ở cùng vị trí. Nếu 108 là vòng ngực khuyến nghị của người mặc thì không thể so trực tiếp. Phép tính chỉ giúp bạn biết cần hỏi gì. Độ vừa còn phụ thuộc vào phom áo, dáng tay áo và đặc tính của vải."
+    },
+    {
+      "source": "Write down packed length, width, height and actual weight, with units. Keep destination and route constant when testing how a packing decision changes the estimate. Record any service included in only one quote.",
+      "source_sha256": "caec92a3dd7d8d4576ae0af1669c068528da60e752f849cd83d0ed8f8fa29ee9",
+      "raw_target_sha256": "5933aef93329eeb4938ae5331ac68186f11444989e3cac9ca950a9d4a5ba8dcd",
+      "translation": "Ghi lại chiều dài, chiều rộng, chiều cao và trọng lượng thực tế, với đơn vị. Giữ mục tiêu và tuyến đường không đổi khi kiểm tra cách một quyết định đóng gói thay đổi ước tính. Ghi lại bất kỳ dịch vụ nào chỉ trong một báo giá."
+    },
+    {
+      "source": "Save the pair of quotes, date, parcel description and choice in a private record. Name the factor that determined the outcome. For instance, “same packed carton, different destinations; chose address B because the eligible service fit the recipient's schedule and total budget.” If the choice depended on an estimated weight, mark it for review after the actual packing data arrives.",
+      "source_sha256": "32fa22cc8cbcde270798f4e489e36b877ebc8e9fb60518219cb19ef2d1c27a0d",
+      "raw_target_sha256": "c1ec59331f68464bf8772560afd0f327b299cd0d22a802c6f4987f4f530339e8",
+      "translation": "Lưu cặp báo giá, ngày, mô tả gói và lựa chọn trong một hồ sơ riêng. Cho biết yếu tố quyết định kết quả. Ví dụ, \"cùng hộp đóng gói, các điểm đến khác nhau; chọn địa chỉ B vì dịch vụ đáp ứng với lịch trình và tổng ngân sách của người nhận.\" Nếu lựa chọn phụ thuộc vào trọng lượng ước tính, đánh dấu nó để xem xét sau khi dữ liệu đóng gói thực tế đến."
+    },
+    {
+      "source": "A later change in price is easier to understand if you can identify which input moved. Perhaps the destination stayed the same but the carton expanded after protection was added. Perhaps the box stayed the same but the service selected in the new quote differs. A clear comparison does more than rank two numbers. It gives you a repeatable way to make a destination decision with the parcel you will actually send.",
+      "source_sha256": "c5dd0128a31ec282213cfea6071ea7c08e70b85e2cb70ec674137d5224f66490",
+      "raw_target_sha256": "09c02f734c51c22c70389a73b891986dfed5b347bed3a3fc18680b1d8944fcc6",
+      "translation": "Một sự thay đổi giá sau đó sẽ dễ hiểu hơn nếu bạn có thể xác định đầu vào nào đã di chuyển. Có lẽ điểm đến vẫn như cũ nhưng hộp giấy mở rộng sau khi được bảo vệ. Có lẽ hộp vẫn như cũ nhưng dịch vụ được chọn trong báo giá mới đã thay đổi. Một so sánh rõ ràng làm nhiều hơn là xếp hạng hai con số. Nó cho bạn một cách lặp đi lặp lại để đưa ra một quyết định điểm đến với gói mà bạn thực sự sẽ gửi."
+    },
+    {
+      "source": "Compare the full alternatives. One quote for the current pieces does not represent the cost of shipping the later pieces separately. A future combined quote may also change when all dimensions are known. Record the chosen scenario as “dispatch confirmed item now; remaining items held for intake” or “wait for all matched pieces.” That wording prevents a later reader from assuming every item on the original purchase was inside the first outbound parcel.",
+      "source_sha256": "d0d227861d82b3c7c18909822693149a5f4f44c18fc35ec48cbc2104b9d33129",
+      "raw_target_sha256": "20441914cc3b1ec1cea90c57519aa76240dba35f752954e5fe1360ffe2e136b5",
+      "translation": "So sánh các lựa chọn đầy đủ. Một báo giá cho các mảnh hiện tại không đại diện cho chi phí vận chuyển các mảnh sau này riêng biệt. Một báo giá kết hợp trong tương lai cũng có thể thay đổi khi tất cả các chiều được biết. Ghi lại kịch bản được chọn như \"gửi hàng hóa xác nhận bây giờ; các mặt hàng còn lại được chờ nhập kho\" hoặc \"chờ đợi tất cả các mảnh ghép phù hợp.\" Điều đó ngăn chặn người đọc sau đó từ giả định rằng mỗi mặt hàng trên việc mua ban đầu nằm trong gói đầu tiên được gửi từ kho đến khách hàng."
+    },
+    {
+      "source": "At the planning stage you may want a freight allowance even before you have packed dimensions. Put that figure in an estimate field with its assumptions. Mark whether the input weight represents the item, retail packaging or proposed outbound box. Record the destination, route and date checked. When the packed quote arrives, retain the original assumption as a comparison rather than adding both figures as actual expenditure.",
+      "source_sha256": "b8fd64ba0e29ae8a1d4d51da4e1bc95a056382ca2f3240bf5e09f8e741e1e49c",
+      "raw_target_sha256": "f50e964dfeddb96022e2e4f1c03f87a3569714993757af7e7a5cd495dd10b8a9",
+      "translation": "Ở giai đoạn lập kế hoạch bạn có thể muốn một khoản chi phí vận chuyển thậm chí trước khi bạn đã đóng gói kích thước. Đặt con số đó vào một ô ước tính với những giả định của nó. Đánh dấu liệu trọng lượng đầu vào đại diện cho mặt hàng, bao bì bán lẻ hoặc hộp xuất khẩu đề xuất. Ghi lại điểm đến, tuyến đường và ngày kiểm tra. Khi báo giá đóng gói đến, giữ lại giả thiết ban đầu như là một so sánh thay vì thêm cả hai con số như chi phí thực tế."
+    },
+    {
+      "source": "You may want to estimate the delivered cost of individual products. Decide which allocation rule matches your purpose and label it as your analysis. Equal division is easy when the pieces are similar. Dividing by item weight can be more informative for a dense binder and two light folders. Neither method automatically represents the carrier's true price per item; carriers typically quote the parcel as a whole under its service conditions.",
+      "source_sha256": "aa89f51a160ae0bccfb13836549ddf758e4f646ef17d9e73655546b07d0eed0d",
+      "raw_target_sha256": "3c95915b561d63a75a2743517f7d182fca37df7da187b983ce2ba4fe3f03171e",
+      "translation": "Bạn có thể muốn ước tính chi phí giao hàng của từng sản phẩm. Quyết định quy tắc phân bổ nào phù hợp với mục đích của bạn và dán nhãn nó như là phân tích của bạn. Phân chia bằng nhau là dễ dàng khi các mảnh tương tự nhau. Việc chia theo trọng lượng mục có thể hữu ích hơn cho một bìa còng nặng và hai bìa hồ sơ nhẹ. Cả hai phương pháp đều không tự động đại diện cho giá thực sự của nhà vận chuyển cho mỗi mặt hàng; hãng vận chuyển thường báo giá cho cả kiện theo điều kiện của dịch vụ."
     }
   ]
 }

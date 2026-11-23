@@ -3,9 +3,9 @@
   "locale": "fr",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "7e08a7ff19bded8602fd968e78d5b0c027e4213064a840e0e82976e1a905a38a",
-  "effective_dictionary_sha256": "0857119c6a8b7beb57f9b774f790d28218710597537ef34ef096f3a841e2e13e",
+  "effective_dictionary_sha256": "1a8bdb6d48c7a92a6d08af0fb8812d1d388721ee8a1b210dc90565d9ed8246e8",
   "checked_entries": 305,
-  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage.",
+  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [],
   "unresolved_material": [],
   "corrections": [
@@ -92,6 +92,30 @@
       "source_sha256": "0932fd9af0e632cb16ce7afb704267bbef9efe6e8e9f7b0460b1d61db02ac353",
       "raw_target_sha256": "a18a56111ccd3317c0efd74b70f6276f2cc9478dd14f9bc8e544c3c087f35b34",
       "translation": "Prenons une veste qui mesure 54 cm à plat, d’une aisselle à l’autre. Le tableau du vendeur indique « poitrine : 108 ». Les deux mesures peuvent correspondre si 108 désigne le tour complet du vêtement pris au même niveau. Elles ne sont pas forcément équivalentes si 108 désigne le tour de poitrine conseillé pour la personne qui le porte. Le calcul vous indique quelle précision demander. La coupe, la forme des manches et le tissu peuvent aussi modifier le résultat à l’essayage."
+    },
+    {
+      "source": "Create a parcel description that can be repeated",
+      "source_sha256": "cef7c8aef9c4fe4b1a74c78ebbd0ccadb45aa85872d9891ddeec443fc88824f3",
+      "raw_target_sha256": "181c1bc8f4c7e83a8949f7034a12be6249a20a3dfb2aaa7b16b7ef1b102f6f2c",
+      "translation": "Décrire le colis pour pouvoir reproduire la comparaison"
+    },
+    {
+      "source": "Imagine one book, two folded shirts and a rigid pencil case. If the initial quote uses a carton measuring 35 by 25 by 15 centimetres at 1,800 grams, copy those values into the second comparison in the units requested. Do not enter the book dimensions for the second search by mistake. Preserve the figures as illustrative until they represent a real measured parcel. A consistent assumption makes a meaningful comparison even before the final quote is available.",
+      "source_sha256": "a712abf07d597a429bebbe09828e1df8d2cd2ca568a8f3c82c5bde1dcd0c8a3c",
+      "raw_target_sha256": "b4d637f45a5377cb96af6b25860bcdc12befc9f42e4e2373da8581fcc3fac550",
+      "translation": "Imaginez un livre, deux chemises pliées et une trousse rigide. Si le devis initial utilise un carton mesurant 35 par 25 par 15 centimètres à 1 800 grammes, copiez ces valeurs dans la deuxième comparaison dans les unités demandées. Ne saisissez pas les dimensions du livre pour la deuxième recherche par erreur. Conservez les chiffres comme illustration tant que vous n’avez pas mesuré le colis réel. Une hypothèse cohérente permet une comparaison significative avant même que le devis final ne soit disponible."
+    },
+    {
+      "source": "For a numerical illustration, suppose one quote shows 85 units of your comparison currency for freight plus 5 for required packing, while the second shows 92 including the same packing. The comparable amounts are 90 and 92. Comparing 85 and 92 exaggerates the difference. If the second quote does not state whether packing is included, leave that total unresolved until you can verify it. These numbers explain the arithmetic and do not represent a CNShopper rate.",
+      "source_sha256": "2f219690656d75ee3faee8d392ff5539420999714bbe50fd92327b662945a75f",
+      "raw_target_sha256": "eccedbb6332bf8f9ffbe5fa12c863c6ef80ab5e1fd7691c92d971cc19e323afd",
+      "translation": "Pour une illustration numérique, supposons qu'un devis indique 85 unités de votre devise de comparaison pour le fret plus 5 pour l'emballage requis, tandis que le second indique 92, y compris le même emballage. Les montants comparables sont 90 et 92. Comparer 85 et 92 exagère la différence. Si le deuxième devis n'indique pas si l'emballage est inclus, laissez ce total non résolu jusqu'à ce que vous puissiez le vérifier. Ces chiffres expliquent l'arithmétique et ne représentent pas un tarif de CNShopper."
+    },
+    {
+      "source": "Separate a destination comparison from a split-parcel decision",
+      "source_sha256": "5503222297f8edd5f59247083a3e2f93244bcdc628730a2b4eb9f2a6a575125d",
+      "raw_target_sha256": "d2a22accdef4859b99a6b695c0cd7b379629c36118fa095ded0a92fc4f1a38a2",
+      "translation": "Comparer les destinations séparément de la décision de fractionner l’envoi"
     }
   ]
 }

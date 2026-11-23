@@ -3,7 +3,7 @@
   "locale": "sv",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "a728ab33cfe973246e20720cd8738790fd17eb62b1964b97f63a0b6a7ef0d35d",
-  "effective_dictionary_sha256": "1c77f64b273eed6f23a65ae33fb05b020f6c33dc70c2b4af76b72ea258e6292d",
+  "effective_dictionary_sha256": "4e43dc175f4c88d0655e26d65857cfb46a73e6dd94d2383722914cf6146fee39",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -99,6 +99,30 @@
       "source_sha256": "9a4641881e57be3b6c26da181b86ed2d763deadcd8e3fb11fd79d3d7275e41e4",
       "raw_target_sha256": "75391dca9c17ce4fe54a42bd50f48378023aee0a62d60d7669ca158fafba53ce",
       "translation": "Stäm av paketets slutliga kostnader mot den första offerten från HubBuy"
+    },
+    {
+      "source": "Keep the old quote and add a revised quote under it. If the larger amount was already paid, track the credit process separately from the recalculated cost. Do not enter 202 as the only payment when the account shows 274 collected and a credit still pending. The two records answer different questions: what the retained merchandise should cost, and which funds have actually moved. Keep the same line names so that a friend reviewing the change can tell which item became unavailable.",
+      "source_sha256": "d934b1be832ea7a829823f1f235cb216308d04f4d58e293696e5f10aa1b5a6b9",
+      "raw_target_sha256": "871c9d881fac16ca980c3e3cea3f866d88f981a1f8f37918b9b1d70aaf784e7f",
+      "translation": "Behåll den gamla offerten och lägg till en reviderad offert under den. Om det större beloppet redan har betalats spårar du krediteringsprocessen separat från den omräknade kostnaden. Ange inte 202 som enda betalning när kontot visar 274 inkasserade och en kredit som ännu inte har betalats. De två posterna svarar på olika frågor: vad de kvarhållna varorna ska kosta och vilka medel som faktiskt har flyttats. Behåll samma radnamn så att en vän som granskar ändringen kan se vilket objekt som blev otillgängligt."
+    },
+    {
+      "source": "Imagine a teaching example in which one home-currency unit buys 7.20 yuan. A 360-yuan quote corresponds to 50 units before fees because 360 is divided by 7.20. If you instead record the rate as home units per yuan, multiply by that number. Write out both currency codes with the rate. A single bare value such as 7.20 is especially easy to use backwards when a sheet mixes several quotations.",
+      "source_sha256": "670c82e94d3b8b3e94b14ada36ed532920913817bc2e6e2ca975eae7f7ae0edb",
+      "raw_target_sha256": "1ec48bf3defcfcc25474bfe180ac9a92781cb215f7fe2364f9b523c3fce3432a",
+      "translation": "Föreställ dig ett undervisningsexempel där en enhet i inhemsk valuta köper 7,20 yuan. En offert på 360 yuan motsvarar 50 enheter före avgifter eftersom 360 divideras med 7,20. Om du istället registrerar kursen som bostäder per yuan, multiplicera med det antalet. Skriv ut båda valutakoderna med kursen. Ett enstaka värde som 7,20 är särskilt lätt att använda bakåt när ett blad blandar flera offerter."
+    },
+    {
+      "source": "Suppose quote A covers the same merchandise and domestic delivery as quote B, but only A includes protective packing. Compare the contents before worrying about exchange-rate rounding. Either add the confirmed packing amount to B or label the quotes as different offers. If a missing charge has no confirmed amount, leave a gap instead of filling it with an attractive guess. A conversion cannot repair two quotes that describe different services.",
+      "source_sha256": "33bb436a69ded2e9ee3771159ed02b69551edba9744747c51ac8ee084fcc54fa",
+      "raw_target_sha256": "de700c5dc5d719417e0a6e89acb813844d27c503fd23903c9664c394cd42de18",
+      "translation": "Anta att offert A omfattar samma varor och inrikesleverans som offert B, men att endast A inkluderar skyddsförpackning. Jämför innehållet innan du oroar dig för växelkursavrundning. Antingen lägger du till den bekräftade förpackningsmängden till B eller så märker du offerterna som olika erbjudanden. Om en saknad debitering inte har något bekräftat belopp, lämna ett tomrum istället för att fylla det med en attraktiv gissning. En konvertering kan inte reparera två offerter som beskriver olika tjänster."
+    },
+    {
+      "source": "Turn one unknown into one support question. Instead of asking whether the whole estimate is correct, specify that you entered a named destination and measured parcel, received a quote for a particular route, and need to know whether the selected packing service is already inside the displayed total. Save the answer with the date and the quote version. Avoid applying a reply about one route to a different service with different terms.",
+      "source_sha256": "741207c84e0bd3ef447ae75a2145fd7d36c817a82eb76cf43eb36c8e464ad48a",
+      "raw_target_sha256": "34381524258c786037c3f6fdc4d94cf9ae8f507edcb656c734a56e1d54e8ef36",
+      "translation": "Förvandla en okänd till en supportfråga. Istället för att fråga om hela uppskattningen är korrekt, ange att du angav en namngiven destination och mätt paketet, fick en offert för en viss rutt och behöver veta om den valda förpackningstjänsten redan ingår i den visade summan. Spara svaret med datum och offertversionen. Undvik att använda ett svar om en rutt till en annan tjänst med olika villkor."
     }
   ]
 }

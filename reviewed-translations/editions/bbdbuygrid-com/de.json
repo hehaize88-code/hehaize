@@ -3,9 +3,9 @@
   "locale": "de",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "0275756c464d2043770d6975afda6aa933744efbf396ad2eb1696fae58db3efa",
-  "effective_dictionary_sha256": "03379aca7565c22818d545d45256ee044774ff35da0e7e9d9bb5318f9cd84bc8",
+  "effective_dictionary_sha256": "50e7f92a88e956e0a962f026f7b09a0558b9e203f139609fdf6743445b93123a",
   "checked_entries": 324,
-  "review_scope": "Scoped bilingual review of the FAQ, article and section titles, platform labels, numerical examples and automated flags. Corrected shipping quotations, paper-notebook and cap examples, route and dimensional-weight terminology; remaining prose was screened for numerical changes, not line-edited throughout.",
+  "review_scope": "Scoped bilingual review of the FAQ, article and section titles, platform labels, numerical examples and automated flags. Corrected shipping quotations, paper-notebook and cap examples, route and dimensional-weight terminology; remaining prose was screened for numerical changes, not line-edited throughout. Follow-up contextual check for parcel, freight quote and weight terminology.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -357,6 +357,18 @@
       "source_sha256": "5e663c61d9a34516ffc46266d2b274d51d9a40fecd13a7dda961a2b1f9cb3b26",
       "raw_target_sha256": "d2a64fb1872b722ded45e97ede7fa734b90498efce65c4e6d05af6d7238cb657",
       "translation": "Ja. Ein Angebot kann dasselbe Bild für verschiedene Optionen wiederverwenden. Speichern Sie die exakt ausgewählte Größe und fragen Sie nach dem Größenetikett auf dem erhaltenen Artikel, falls eine Nichtübereinstimmung Ihre Entscheidung beeinflussen würde."
+    },
+    {
+      "source": "Read whether a route rounds individual dimensions, final weight or both. Consider two weights of 2.01 and 2.49 kilograms. Under an illustrative rule rounding upward to half-kilogram steps, both become 2.5 kilograms. Reducing a parcel from 2.49 to 2.10 under that rule would not move it into a lower band. Reducing it to exactly 2.00 could do so if actual weight governs and there are no other minimums. Check the interface or route description before applying that reasoning to your own case.",
+      "source_sha256": "e7426d5c2b685a0707d08d203ffcc78f1dffbd22c708fedbf00efd216e6547c2",
+      "raw_target_sha256": "a2d845e458e7ed29a429e016dc9ed47d620419ece4839dd8baa8ded89736e5ee",
+      "translation": "Prüfen Sie, ob der Versanddienst die einzelnen Maße, das Endgewicht oder beides rundet. Bei einer beispielhaften Aufrundung auf halbe Kilogramm ergeben sowohl 2,01 als auch 2,49 kg ein Abrechnungsgewicht von 2,5 kg. Sinkt das Paketgewicht von 2,49 auf 2,10 kg, bleibt die Stufe gleich. Genau 2,00 kg könnten eine niedrigere Stufe ergeben, sofern das tatsächliche Gewicht zählt und kein anderes Mindestgewicht gilt. Prüfen Sie die Regel im Rechner oder in der Beschreibung des Versanddienstes."
+    },
+    {
+      "source": "Use independent arithmetic as an error check, not a substitute for a carrier quote. When you obtain a seemingly improbable number, check for mixed units, a missing decimal, length repeated in place of height, or a product dimension copied instead of the packed dimension. A result that becomes sensible after correcting one input is a reason to preserve the revised calculation, not a reason to enter a more favourable figure than the parcel actually measures.",
+      "source_sha256": "5fcb636100b66eefe28ef6b4c2f039c72a09ba92a39721a05a116365d66c1458",
+      "raw_target_sha256": "7e11444b94dc2fd43a4b62d67ed1bdb2e6ba50600b680289108422e1a6e4c711",
+      "translation": "Prüfen Sie das Ergebnis durch eigenes Nachrechnen. Den Preis erfahren Sie beim Versanddienst. Bei einem unerwarteten Ergebnis lohnt sich ein Blick auf Maßeinheiten, Dezimalstellen und Eingabefelder. Haben Sie etwa die Länge zweimal eingegeben oder die Höhe des Produkts statt der Höhe des verpackten Pakets verwendet? Bewahren Sie die korrigierte Rechnung auf und geben Sie stets die tatsächlichen Außenmaße des Pakets an."
     }
   ]
 }

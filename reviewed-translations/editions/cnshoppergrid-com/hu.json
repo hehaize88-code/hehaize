@@ -3,9 +3,9 @@
   "locale": "hu",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "83fa4e796aed9b13c89335be9142014cd082154f9841f113021a732e4c6379af",
-  "effective_dictionary_sha256": "b296f575731b20a18f191708ce5d4bc457875d3ba990d7aa9dbf5cdb8b548288",
+  "effective_dictionary_sha256": "c2b499ef9980cff240c174dc5fa6e435027893447fb1a4deadef5b3f41c66a3b",
   "checked_entries": 305,
-  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage.",
+  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [],
   "unresolved_material": [],
   "corrections": [
@@ -98,6 +98,30 @@
       "source_sha256": "0932fd9af0e632cb16ce7afb704267bbef9efe6e8e9f7b0460b1d61db02ac353",
       "raw_target_sha256": "fb4c4355668f500a313f16bc38b625a92c1fce12b5c05be01172cc704ec41ee4",
       "translation": "Tegyük fel, hogy a saját kabátod kiterítve, az egyik hónaljtól a másikig mérve 54 cm széles. Az eladó mérettáblázatában a mellbőség mellett 108 áll. A két adat megfelelhet egymásnak, ha a 108 a kabát teljes körmérete ugyanazon a magasságon. Ha az ajánlott testméretet jelöli, a két szám nem feltétlenül vethető össze. A számítás abban segít, hogy tudd, mire kérdezz rá. A szabás, az ujj formája és az anyag is befolyásolja az illeszkedést."
+    },
+    {
+      "source": "Imagine one book, two folded shirts and a rigid pencil case. If the initial quote uses a carton measuring 35 by 25 by 15 centimetres at 1,800 grams, copy those values into the second comparison in the units requested. Do not enter the book dimensions for the second search by mistake. Preserve the figures as illustrative until they represent a real measured parcel. A consistent assumption makes a meaningful comparison even before the final quote is available.",
+      "source_sha256": "a712abf07d597a429bebbe09828e1df8d2cd2ca568a8f3c82c5bde1dcd0c8a3c",
+      "raw_target_sha256": "73b66832020f7be635613f37ebe3a558bd099a80cc45e2f89e5125d6ac243ba7",
+      "translation": "Képzeljen el egy könyvet, két összehajtott inget és egy merev tolltartót. Ha az első árajánlat egy 35 x 25 x 15 centiméteres, 1800 grammos kartondobozt használ, másolja ezeket az értékeket a második összehasonlításba a kért mértékegységekben. Ne adja meg véletlenül a könyv méreteit a második kereséshez. Ezek a számok csak példaként szolgálnak, amíg ténylegesen meg nem méri a csomagot. A következetes feltételezés értelmes összehasonlítást tesz lehetővé még a végső árajánlat elkészítése előtt."
+    },
+    {
+      "source": "For a numerical illustration, suppose one quote shows 85 units of your comparison currency for freight plus 5 for required packing, while the second shows 92 including the same packing. The comparable amounts are 90 and 92. Comparing 85 and 92 exaggerates the difference. If the second quote does not state whether packing is included, leave that total unresolved until you can verify it. These numbers explain the arithmetic and do not represent a CNShopper rate.",
+      "source_sha256": "2f219690656d75ee3faee8d392ff5539420999714bbe50fd92327b662945a75f",
+      "raw_target_sha256": "dcdca320745de38c72b96690975c9815870b192034d683d431493226ca489d77",
+      "translation": "Tegyük fel, hogy az egyik árajánlat az összehasonlítási pénznem 85 egységét mutatja a szállításért és 5 egységet a szükséges csomagolásért, míg a második 92 egységet mutat ugyanazzal a csomagolással együtt. Az összehasonlítható összegek 90 és 92. A 85 és a 92 összehasonlítása eltúlozza a különbséget. Ha a második árajánlat nem mondja meg, hogy a csomagolás benne van-e, hagyja ezt az összeget megoldatlanul, amíg ellenőrizheti. Ezek a számok magyarázzák az aritmetikát, és nem jelentenek CNShopper árat."
+    },
+    {
+      "source": "Separate a destination comparison from a split-parcel decision",
+      "source_sha256": "5503222297f8edd5f59247083a3e2f93244bcdc628730a2b4eb9f2a6a575125d",
+      "raw_target_sha256": "7010764ce82cc299131806960c9d35734f7b640e251031ca3615b18c6b346ad2",
+      "translation": "A célállomások összehasonlítása és a küldemény felosztása két külön kérdés"
+    },
+    {
+      "source": "Save the pair of quotes, date, parcel description and choice in a private record. Name the factor that determined the outcome. For instance, “same packed carton, different destinations; chose address B because the eligible service fit the recipient's schedule and total budget.” If the choice depended on an estimated weight, mark it for review after the actual packing data arrives.",
+      "source_sha256": "32fa22cc8cbcde270798f4e489e36b877ebc8e9fb60518219cb19ef2d1c27a0d",
+      "raw_target_sha256": "91a73a40d38508877183ec354899d43545f7628e5cb094374dce406d35bc11a4",
+      "translation": "Mentse el a két árajánlatot, a dátumot, a csomag leírását és a választást egy privát rekordban. Nevezze meg a kimenetelt meghatározó tényezőt. Például: „ugyanaz a csomagolt doboz, különböző rendeltetési helyek; a B címet választotta, mert a jogosult szolgáltatás megfelelt a címzett ütemtervének és teljes költségvetésének.” Ha a választás a becsült súlytól függött, jelölje meg felülvizsgálatra, miután a tényleges csomagolási adatok megérkeztek."
     }
   ]
 }

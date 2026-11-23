@@ -3,9 +3,9 @@
   "locale": "es",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "cb9019f2366af5d5a41a7e66316d740d5fccfe6ed82decee0be9fb8b0232a79b",
-  "effective_dictionary_sha256": "df10df052e00c1b4e8bd87e8acf334bb9cf9e357839e1bca8ba00e982d4d5c82",
+  "effective_dictionary_sha256": "2c5380b491cdec30be1ec4167392ed623daf356cabe19c75690cbf69a9691dbb",
   "checked_entries": 305,
-  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage.",
+  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [],
   "unresolved_material": [],
   "corrections": [
@@ -86,6 +86,24 @@
       "source_sha256": "402fdf4697c813df71e21f49a3cb9b93e8ed34280f5615d614553be60e54ffef",
       "raw_target_sha256": "be26df55029e6a282979bd325c8a30d7b98d2e2a523c4aa0f74a428b391b0a85",
       "translation": "Supón que en tu hoja reservaste 70 para el envío internacional y después aceptaste un presupuesto de 82 en la misma moneda. El porte supera en 12 lo previsto. Anotar ambas cifras no significa que hayas gastado 152. Si contratas un servicio opcional por separado, regístralo en otro campo y comprueba si el presupuesto ya lo incluye antes de sumarlo."
+    },
+    {
+      "source": "Create a parcel description that can be repeated",
+      "source_sha256": "cef7c8aef9c4fe4b1a74c78ebbd0ccadb45aa85872d9891ddeec443fc88824f3",
+      "raw_target_sha256": "b40a83e78a8e5f87d666f0f9c36bfb086f7e9817029da8896870d0c9a7b6a94e",
+      "translation": "Describe el paquete de forma que puedas repetir la comparación"
+    },
+    {
+      "source": "Imagine one book, two folded shirts and a rigid pencil case. If the initial quote uses a carton measuring 35 by 25 by 15 centimetres at 1,800 grams, copy those values into the second comparison in the units requested. Do not enter the book dimensions for the second search by mistake. Preserve the figures as illustrative until they represent a real measured parcel. A consistent assumption makes a meaningful comparison even before the final quote is available.",
+      "source_sha256": "a712abf07d597a429bebbe09828e1df8d2cd2ca568a8f3c82c5bde1dcd0c8a3c",
+      "raw_target_sha256": "1ecbb0200b06800831089cade60fa4505e7c83711c3d56dd4228ff0c5ea2b0f9",
+      "translation": "Imagina un libro, dos camisas dobladas y un estuche rígido. Si el presupuesto inicial utiliza una caja de cartón de 35 por 25 por 15 centímetros a 1.800 gramos, copia esos valores en la segunda comparación en las unidades solicitadas. No introduzcas las dimensiones del libro para la segunda búsqueda por error. Trata estas cifras como un ejemplo hasta que puedas medir el paquete real. Una suposición consistente hace una comparación significativa incluso antes de que la cotización final esté disponible."
+    },
+    {
+      "source": "Separate a destination comparison from a split-parcel decision",
+      "source_sha256": "5503222297f8edd5f59247083a3e2f93244bcdc628730a2b4eb9f2a6a575125d",
+      "raw_target_sha256": "7bdeb7d373e6032225340d58ab41faa44a2d8c7369e95448c07a4c84119754a0",
+      "translation": "Compara los destinos por separado de la decisión de dividir el envío"
     }
   ]
 }

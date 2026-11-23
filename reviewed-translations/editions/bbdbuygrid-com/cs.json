@@ -3,9 +3,9 @@
   "locale": "cs",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "f124caa0f9748b1a1c2c6a6e4ce85c3bfbeea5b78d61be6b956082ea984de041",
-  "effective_dictionary_sha256": "a7428025c949442fa6c0539ecdfea7e98dc0446bdae116166314f7ef02ec28bf",
+  "effective_dictionary_sha256": "7af6d3302f0ca603ee316cc3db70756be7ccc4a3909af7006c2869372cea31ef",
   "checked_entries": 324,
-  "review_scope": "All dictionary keys and long-paragraph language, number, unit, brand, identifier and repetition checks. All ten article titles and flagged source/target pairs inspected. Two article paragraphs sampled separately. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries. Cross-checked the follow-up suggestions in the notebook example.",
+  "review_scope": "All dictionary keys and long-paragraph language, number, unit, brand, identifier and repetition checks. All ten article titles and flagged source/target pairs inspected. Two article paragraphs sampled separately. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries. Cross-checked the follow-up suggestions in the notebook example. Follow-up contextual check for parcel, freight quote and weight terminology.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -141,6 +141,18 @@
       "source_sha256": "dd7dbc83be0357a055968ae5bf8b1035741b50106313a0468cf12e63bab783ea",
       "raw_target_sha256": "f0a409fa3a7fb15631cef8fcf7628826ea15f9625881c231303485b647fdc5bf",
       "translation": "V příkladu se sešity by užitečná odpověď uváděla, že jste požadovali tři jednotky v jedné barvě, že nová nabídka pokrývá dvě a že chcete potvrzení jednotkové ceny a vnitrostátního poplatku. Přidejte, co by se mělo stát, pokud třetí jednotka není k dispozici. To dává agentovi omezenou akci namísto toho, aby je požádal, aby hádali, zda je nejdůležitější množství, barva nebo cena."
+    },
+    {
+      "source": "Read whether a route rounds individual dimensions, final weight or both. Consider two weights of 2.01 and 2.49 kilograms. Under an illustrative rule rounding upward to half-kilogram steps, both become 2.5 kilograms. Reducing a parcel from 2.49 to 2.10 under that rule would not move it into a lower band. Reducing it to exactly 2.00 could do so if actual weight governs and there are no other minimums. Check the interface or route description before applying that reasoning to your own case.",
+      "source_sha256": "e7426d5c2b685a0707d08d203ffcc78f1dffbd22c708fedbf00efd216e6547c2",
+      "raw_target_sha256": "7870d0cb3214d04ba71205ac05f421063077f1f47ffac56719067c8fd0e21027",
+      "translation": "Ověřte, zda se u zvolené přepravy zaokrouhlují jednotlivé rozměry, výsledná hmotnost, nebo obojí. Při modelovém zaokrouhlování nahoru na půl kilogramu se zásilky o hmotnosti 2,01 i 2,49 kg účtují jako 2,5 kg. Pokud zásilku odlehčíte z 2,49 na 2,10 kg, účtované pásmo se nezmění. Při přesně 2,00 kg by mohlo být nižší, pokud rozhoduje skutečná hmotnost a neplatí jiné minimum. Nejdřív ověřte pravidla v kalkulátoru nebo v popisu přepravy."
+    },
+    {
+      "source": "Use independent arithmetic as an error check, not a substitute for a carrier quote. When you obtain a seemingly improbable number, check for mixed units, a missing decimal, length repeated in place of height, or a product dimension copied instead of the packed dimension. A result that becomes sensible after correcting one input is a reason to preserve the revised calculation, not a reason to enter a more favourable figure than the parcel actually measures.",
+      "source_sha256": "5fcb636100b66eefe28ef6b4c2f039c72a09ba92a39721a05a116365d66c1458",
+      "raw_target_sha256": "7bacda076c39426a5c74711ea2c3e7e403b74017bc705d3ccf9e1fe38831f2c6",
+      "translation": "Přepočet slouží ke kontrole chyb, cenu však určuje dopravce. Vypadá-li výsledek nezvykle, ověřte jednotky, desetinnou čárku, případnou záměnu výšky za délku a to, zda jste použili rozměry zabalené zásilky, nikoli samotného zboží. Po opravě chyby si nový výpočet uschovejte. Do kalkulátoru vždy zadávejte skutečně naměřené rozměry balíku."
     }
   ]
 }

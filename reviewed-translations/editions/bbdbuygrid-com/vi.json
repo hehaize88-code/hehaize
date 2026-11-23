@@ -3,9 +3,9 @@
   "locale": "vi",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "048ff52d6ab53002212a2fbcd5d18a84b02aab1f4eeb83fe8951248ced3d35d1",
-  "effective_dictionary_sha256": "3d64a219efd2408fbf0f24179a0ebf8fb187cf1147061b4d1575fe3e769ec673",
+  "effective_dictionary_sha256": "627fe202bd0621f455d1c3683309f82f58c7e20579a752fb4df23c77d1675506",
   "checked_entries": 324,
-  "review_scope": "Inspected all ten article titles, all automated flags, examples containing arithmetic, quantity, carton volume and purchase records. Read deterministic passage samples and reviewed copied English headings and terminology. Cross-checked the follow-up suggestions in the notebook example.",
+  "review_scope": "Inspected all ten article titles, all automated flags, examples containing arithmetic, quantity, carton volume and purchase records. Read deterministic passage samples and reviewed copied English headings and terminology. Cross-checked the follow-up suggestions in the notebook example. Follow-up contextual check for parcel, freight quote and weight terminology.",
   "reviewed_flags": [
     {
       "issue": "new digit or localized conversion",
@@ -207,6 +207,96 @@
       "source_sha256": "3e9b77d857808f1a7567ef6463c7a745dbb051766ebc1192c67c1dc77a63e59c",
       "raw_target_sha256": "472a802df2296eb95d9859d68448a6e88fe85eb2efebaeba26edc82f554213e3",
       "translation": "Nếu đề nghị thay thế thay vào đó bao gồm ba cuốn sổ có kiểu đóng gáy khác, giá mỗi cuốn là 20 và đã bao gồm phí giao hàng, nó cũng có tổng cộng 60. Điều đó tương ứng chính xác với giá ban đầu trong khi thay đổi những gì đã được mua. Xem độ dày mới, màu sắc và số lượng trước khi đồng ý. Chọn một con số không thể bù đắp cho việc mất đi tính năng đã khiến bạn chọn mục đích ban đầu. Xử lý một đề nghị với một tùy chọn khác như một quyết định mua mới trong chính quyền của nó."
+    },
+    {
+      "source": "Now imagine the seller can supply only one shirt. You might expect a credit of 75, the unused unit price. Whether some domestic delivery is credited must be checked against the actual agreement. If the seller delivers one shirt for the originally quoted domestic fee and a credit of 75 really is recorded, the net cost of the goods and domestic delivery becomes 125. Keep the original 162 payment intact in the record. Replacing it with 87 conceals the transaction you will need if the credit is delayed.",
+      "source_sha256": "ebece8a93209ba3d02192633d2818966dc4d63221ebf3e3b4cf38a6b1b36472d",
+      "raw_target_sha256": "17372742c6d273f14b5cd83f14b6905475d2f2dd0e0f0988db60d232abbb6233",
+      "translation": "Giả sử người bán chỉ còn một chiếc áo. Bạn có thể dự kiến được ghi có 75 cho chiếc không giao được. Hãy đối chiếu thỏa thuận để biết có được hoàn một phần phí giao nội địa hay không. Nếu người bán giao một chiếc với mức phí nội địa đã báo ban đầu và khoản ghi có 75 thực sự xuất hiện, chi phí ròng cho hàng hóa và giao nội địa là 125. Giữ nguyên khoản thanh toán ban đầu 162 trong sổ. Thay con số đó bằng 87 sẽ che mất giao dịch cần tra cứu nếu tiền hoàn về chậm."
+    },
+    {
+      "source": "Avoid combining a price enquiry with an unrelated change in the order. Changing the colour, quantity and packing request at the same time can generate another quote that cannot explain the earlier one. First ask for the revised component breakdown. Then decide whether to accept it, make a specific alternate request or ask about the status and conditions for cancellation.",
+      "source_sha256": "68b4b2a3504d3bc6f2574658a518f09fd2bbb3263877f8d7dd7d683c9ef17965",
+      "raw_target_sha256": "e6a7446722e1f75fd48cbe229da8e634b576a35b4778635cba6b2b78e7b6acef",
+      "translation": "Khi hỏi về giá, hãy giữ nguyên những lựa chọn khác của đơn hàng. Nếu đồng thời đổi màu, số lượng và yêu cầu đóng gói, báo giá mới sẽ không giải thích được vì sao báo giá trước thay đổi. Trước tiên hãy xin bảng kê từng khoản sau khi điều chỉnh. Sau đó mới quyết định chấp nhận, đề nghị một phương án thay thế cụ thể hoặc hỏi về tình trạng và điều kiện hủy."
+    },
+    {
+      "source": "Put each estimated packed size into the quote for the same destination and contents. Check the route rules for the billing weight and size limits. Actual weight may govern one quote even if you reduce dimensions; a minimum charge or billing increment can also leave the price unchanged.",
+      "source_sha256": "d6e7061197a2876881f2498ce7b50915aabfa0c921d4959da7f845b656ce0641",
+      "raw_target_sha256": "25e45b08e491b4afaee962f0fd7204d7844d23106280c31af192590ecdbd0902",
+      "translation": "Nhập từng bộ kích thước ước tính sau đóng gói để lấy báo giá với cùng điểm đến và cùng hàng hóa. Kiểm tra quy tắc xác định trọng lượng tính cước và giới hạn kích thước của tuyến. Có thể cước vẫn tính theo cân nặng thực tế dù kích thước giảm. Mức cước tối thiểu hoặc nấc làm tròn cũng có thể khiến giá không đổi."
+    },
+    {
+      "source": "Save your final decision with the parcel number. A good note might record the original retail box removed by request, both shoes and spare laces retained, outer dimensions measured after packing and selected route quoted at that point. If the delivered contents later differ, you can refer to an agreed packing plan and the last clear photograph instead of trying to reconstruct the decision from the final price.",
+      "source_sha256": "c5153e304dacc462b091efd12db08ff95000f49dab7fa5de15cc8aca45f0dc01",
+      "raw_target_sha256": "356c369d9672b46cbc41ed2f401c633915b6ee4bd72682113e68bf96b7ed922b",
+      "translation": "Lưu quyết định cuối cùng cùng mã kiện hàng. Chẳng hạn, ghi rõ đã bỏ hộp giày gốc theo yêu cầu, giữ đủ hai chiếc giày và dây dự phòng, đo kích thước ngoài sau khi đóng gói và lưu mức cước được báo cho tuyến đã chọn ở thời điểm ấy. Nếu đồ nhận được khác dự kiến, bạn có thể đối chiếu kế hoạch đóng gói đã thống nhất và bức ảnh rõ cuối cùng."
+    },
+    {
+      "source": "Read whether a route rounds individual dimensions, final weight or both. Consider two weights of 2.01 and 2.49 kilograms. Under an illustrative rule rounding upward to half-kilogram steps, both become 2.5 kilograms. Reducing a parcel from 2.49 to 2.10 under that rule would not move it into a lower band. Reducing it to exactly 2.00 could do so if actual weight governs and there are no other minimums. Check the interface or route description before applying that reasoning to your own case.",
+      "source_sha256": "e7426d5c2b685a0707d08d203ffcc78f1dffbd22c708fedbf00efd216e6547c2",
+      "raw_target_sha256": "76c847ee4434a3f7c9436ee340596994906a2221a3d5e08850dbe92c777575ff",
+      "translation": "Kiểm tra xem tuyến vận chuyển làm tròn kích thước, trọng lượng cuối cùng hay cả hai. Theo quy tắc minh họa làm tròn lên từng nửa kilôgam, kiện nặng 2,01 kg và kiện nặng 2,49 kg đều được tính là 2,5 kg. Giảm từ 2,49 xuống 2,10 kg vẫn chưa sang nấc thấp hơn. Giảm xuống đúng 2,00 kg có thể hạ nấc nếu tuyến tính theo cân nặng thực tế và không áp dụng mức tối thiểu khác. Hãy đối chiếu quy tắc trong công cụ tính hoặc mô tả tuyến."
+    },
+    {
+      "source": "Use independent arithmetic as an error check, not a substitute for a carrier quote. When you obtain a seemingly improbable number, check for mixed units, a missing decimal, length repeated in place of height, or a product dimension copied instead of the packed dimension. A result that becomes sensible after correcting one input is a reason to preserve the revised calculation, not a reason to enter a more favourable figure than the parcel actually measures.",
+      "source_sha256": "5fcb636100b66eefe28ef6b4c2f039c72a09ba92a39721a05a116365d66c1458",
+      "raw_target_sha256": "0e3ef51ce9219a25597c25a0ebd45a6371d11ad5a7c4da91f38524d15dcbf6cf",
+      "translation": "Bạn có thể tự tính để phát hiện sai sót, còn mức cước cần đối chiếu với báo giá của hãng vận chuyển. Nếu kết quả bất thường, hãy kiểm tra đơn vị, dấu thập phân, việc nhập lặp chiều dài vào ô chiều cao hoặc việc lấy kích thước riêng của sản phẩm thay vì kích thước sau đóng gói. Khi sửa được thông số sai, hãy lưu phép tính mới và tiếp tục dùng kích thước đo thực tế của kiện."
+    },
+    {
+      "source": "Suppose the final actual weight is much higher than expected while exterior dimensions match your notes. Check whether the estimate described only the items and excluded the outer box or reinforcement. If the opposite happens and actual weight is unchanged while the quote rises, look at dimensions and billed weight. A different destination postal area or service choice can also change the offer even when every measurement matches.",
+      "source_sha256": "1cecb849729b3282d099745bf27cb72faee02950941ebb458f1f094afb467760",
+      "raw_target_sha256": "e7b578413128942974ebdc8a603f542f819cd817ec971e1ae1e5a6ba28681ac4",
+      "translation": "Nếu cân nặng thực tế cuối cùng cao hơn nhiều so với dự kiến nhưng kích thước ngoài vẫn khớp, hãy kiểm tra xem lần ước tính trước chỉ cân hàng và bỏ qua vỏ hộp hoặc vật liệu gia cố hay không. Nếu cân nặng không đổi nhưng giá cước tăng, hãy xem kích thước và trọng lượng tính cước. Khu vực giao theo mã bưu chính hoặc dịch vụ đã chọn cũng có thể ảnh hưởng báo giá dù mọi số đo đều khớp."
+    },
+    {
+      "source": "For irregular shapes, use the rule the route actually asks for. A cylindrical item packed in a rectangular carton has rectangular exterior measurements at dispatch. Measuring the curved item's volume with a geometric formula describes the object, but may bear little relationship to what the shipping calculator accepts. Similarly, two parcels tied together can create a different outer envelope from the two considered separately. If the final shape or carrier treatment is uncertain, request the packed measurements and current route guidance before making a commitment. Write down whether a result is an independent rough estimate, a displayed quote or the final charge; those are three useful numbers with different levels of certainty.",
+      "source_sha256": "1ece4a807f600b2794d8f6056fc94f6f6e8525e98ede74c254a823b176c76aa7",
+      "raw_target_sha256": "5460300c09f1434398a34a3159a0251bd8cd071b08631e87b06721b6cc448b5b",
+      "translation": "Với kiện có hình dạng lạ, áp dụng đúng quy tắc của tuyến. Một món hình trụ đặt trong hộp chữ nhật sẽ có kích thước bên ngoài là kích thước hộp. Công thức thể tích hình trụ mô tả món hàng nhưng có thể khác dữ liệu công cụ tính cước yêu cầu. Hai kiện buộc với nhau cũng có thể có kích thước bao ngoài khác với khi tính riêng. Nếu chưa rõ hình dạng cuối cùng hoặc cách hãng xử lý, hãy xin kích thước sau đóng gói và hướng dẫn hiện hành trước khi xác nhận. Ghi rõ con số là ước tính riêng, báo giá đang hiển thị hay cước cuối cùng."
+    },
+    {
+      "source": "Two quotes become comparable only after you define the parcel and destination they both describe. Build the comparison around eligibility first, then price and service. An attractive route that cannot carry the actual contents cannot save you money.",
+      "source_sha256": "2c0a849aa9e19b37535d61b3fe08fa0aaecc36df70622c4ade4b32d79f558c32",
+      "raw_target_sha256": "c71b739fd19b5f49ce8aeba3d02737ee1eee41a1c679953c7c0781c34bd475f4",
+      "translation": "Chỉ so sánh được hai báo giá khi chúng cùng mô tả một kiện hàng và điểm đến. Trước tiên hãy xác định tuyến nào nhận được số hàng đó, rồi mới so giá và dịch vụ. Tuyến có giá hấp dẫn nhưng không nhận hàng của bạn sẽ không giúp tiết kiệm chi phí."
+    },
+    {
+      "source": "Freeze the parcel description",
+      "source_sha256": "ab081196d1892af223e325fd9e7c9d0dde81c06051f406010f7f4835a7b3678d",
+      "raw_target_sha256": "c698c766116a2e61c34ebb3729e6e169fc9aa3a39fc2c30170a3c3ea28868bae",
+      "translation": "Giữ nguyên thông tin kiện hàng khi so sánh"
+    },
+    {
+      "source": "Keep the packing plan fixed during the first comparison. If one quote includes reinforcement and another assumes a soft mailer, record those as separate packing scenarios. Trying to decide between both a route and a packing change in one step obscures what caused the price difference.",
+      "source_sha256": "1a27700b75fb40b871a2fc8cf57fc1a73b14dc0bc9892be662225234646a04aa",
+      "raw_target_sha256": "d5c759886de78ad2bfae05bdb75531155dcc59a7dbdba01e72d4a4494bb39ec6",
+      "translation": "Giữ nguyên cách đóng gói trong lần so sánh đầu tiên. Nếu một báo giá bao gồm gia cố còn báo giá kia giả định dùng túi gửi hàng mềm, hãy ghi thành hai phương án đóng gói khác nhau. Thay đổi cả tuyến vận chuyển lẫn cách đóng gói trong cùng một bước sẽ khiến bạn khó xác định nguyên nhân chênh lệch giá."
+    },
+    {
+      "source": "For date-sensitive deliveries, distinguish a quoted transit estimate from the time still needed for warehouse packing, carrier handoff and any border processing. A range starting at carrier collection cannot predict the day the seller's goods will reach the warehouse. Give all dates their correct starting event.",
+      "source_sha256": "d94052a4d05ea469f2b2ef3d17bb6193c5080470aa488cb17ca22fe5d0d1d929",
+      "raw_target_sha256": "04d2f44d72893f324fa697cd4a74f762464533799c038e2a6c4cd83380e48e45",
+      "translation": "Nếu cần hàng trước một ngày cụ thể, hãy phân biệt thời gian vận chuyển dự kiến do hãng thông báo với thời gian còn cần để kho đóng gói, bàn giao và xử lý qua biên giới. Khoảng thời gian bắt đầu khi hãng nhận kiện không cho biết ngày hàng của người bán tới kho. Với mỗi mốc, ghi rõ sự kiện bắt đầu."
+    },
+    {
+      "source": "Start with two possible dispatch plans for the same packed items. In the first, the buyer needs them before a particular event. In the second, the date is flexible but the buyer wants a clear delivery history. A route comparison that ranks by total price alone cannot represent both preferences. Write down the actual requirements before looking at the sort order on a quote screen. Separate a firm need, such as destination coverage, from a preference, such as a more frequent tracking update.",
+      "source_sha256": "8ba6b55ccb17ef95034d9eafcde8b386aafb77a6fd7c654719247046053b4da9",
+      "raw_target_sha256": "ddaf06d557f4fba60f9b2a85cc0e9cd4810ec21711d0a195736fe081ab05a74d",
+      "translation": "Hãy xét hai kế hoạch gửi cùng số hàng đã đóng gói. Ở kế hoạch đầu, người mua cần nhận hàng trước một sự kiện. Ở kế hoạch còn lại, ngày nhận linh hoạt nhưng người mua muốn xem được lịch sử giao hàng rõ ràng. Chỉ xếp theo tổng giá không phản ánh hết hai nhu cầu này. Hãy ghi yêu cầu thực tế trước khi xem thứ tự trên màn hình báo giá. Phân biệt điều kiện bắt buộc, chẳng hạn tuyến phải phục vụ điểm đến, với ưu tiên như cập nhật theo dõi thường xuyên hơn."
+    },
+    {
+      "source": "Suppose three hypothetical lines appear against an early estimate. Line One is inexpensive but cannot accept the parcel after the longest side is measured. Line Two accepts the dimensions and quotes 38 in your chosen currency. Line Three quotes 41 and displays an included service you want. Remove Line One from the price ranking. Its earlier figure may have been accurate for the earlier dimensions; it no longer describes an available choice for this box.",
+      "source_sha256": "4a8aa8e23c741ca70b0eb12d46f7e27003b3576f0b3d92ab1341fa122f64fe3a",
+      "raw_target_sha256": "5ef3b2845c634a2ecd13bd0afefbf532cf04f539dfa9f3c47b90f7241a321554",
+      "translation": "Giả sử dự toán ban đầu đưa ra ba tuyến. Tuyến thứ nhất rẻ nhưng khi đo cạnh dài nhất thì không nhận kiện này. Tuyến thứ hai chấp nhận kích thước và báo giá 38 theo loại tiền bạn chọn. Tuyến thứ ba báo giá 41, có kèm một dịch vụ bạn muốn. Loại tuyến thứ nhất khỏi bảng so sánh giá. Mức giá cũ có thể đúng với kích thước dự kiến trước đây, nhưng hiện tuyến đó không còn là lựa chọn cho kiện hàng này."
+    },
+    {
+      "source": "Write the quote date and currency on every row. If the payment page collects a converted amount, keep the underlying quote with the payment total. An apparent price difference may combine freight, exchange and optional services. Delivery estimates and eligibility also depend on current conditions; an old screenshot can show what you saw at the time without proving the route remains available.",
+      "source_sha256": "ae0a25ea011396fc890e0944b7080d412f2cf45e7002f120e55fea697c2b9447",
+      "raw_target_sha256": "6aa084b636bfb86afa87aece21dab751274c5be42ba697ddfe70fbcf2a867b2c",
+      "translation": "Ghi ngày báo giá và loại tiền trên từng dòng. Nếu trang thanh toán thu tiền sau khi quy đổi, lưu cả báo giá gốc lẫn tổng tiền thanh toán. Chênh lệch có thể đến từ cước vận chuyển, tỷ giá hoặc dịch vụ tùy chọn. Thời gian giao dự kiến và việc tuyến có nhận kiện hay không cũng phụ thuộc điều kiện hiện hành. Ảnh chụp cũ chỉ ghi lại thông tin tại thời điểm chụp."
     }
   ]
 }

@@ -3,7 +3,7 @@
   "locale": "de",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "35a14551d5bf9f139c4e937bfcbb9f3f1cc06d10d3b632f2fb501c022c14f100",
-  "effective_dictionary_sha256": "3b0fdb93959a0b52e71826c45cafd286d1d2854287c1ec473f25eb23f8d40a05",
+  "effective_dictionary_sha256": "c1a1d27461a3c5ce61dad0f3a876a1e84698197ccf22cef308e821e109cd5f53",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -99,6 +99,42 @@
       "source_sha256": "9a4641881e57be3b6c26da181b86ed2d763deadcd8e3fb11fd79d3d7275e41e4",
       "raw_target_sha256": "bf72097bfc54a3d8edd2d730648e665537657c2a7b9bb67fbe49c741eddb1f1c",
       "translation": "Die HubBuy-Paketabrechnung mit dem ursprünglichen Angebot abgleichen"
+    },
+    {
+      "source": "Keep the old quote and add a revised quote under it. If the larger amount was already paid, track the credit process separately from the recalculated cost. Do not enter 202 as the only payment when the account shows 274 collected and a credit still pending. The two records answer different questions: what the retained merchandise should cost, and which funds have actually moved. Keep the same line names so that a friend reviewing the change can tell which item became unavailable.",
+      "source_sha256": "d934b1be832ea7a829823f1f235cb216308d04f4d58e293696e5f10aa1b5a6b9",
+      "raw_target_sha256": "fed5c76c260a8c74d6c009d723c9f30ad1a7daabedd67e695864079c4d014c0c",
+      "translation": "Behalte das alte Angebot und füge ein überarbeitetes Angebot darunter hinzu. Wenn der größere Betrag bereits bezahlt wurde, verfolgen Sie den Gutschriftsprozess getrennt von den neu berechneten Kosten. Geben Sie nicht 202 als einzige Zahlung ein, wenn das Konto 274 eingezogene und eine noch ausstehende Gutschrift anzeigt. Die beiden Aufzeichnungen beantworten unterschiedliche Fragen: Was sollte die zurückgehaltene Ware kosten und welche Mittel haben sich tatsächlich bewegt. Behalten Sie die gleichen Zeilennamen bei, damit ein Freund, der die Änderung überprüft, feststellen kann, welches Element nicht mehr verfügbar ist."
+    },
+    {
+      "source": "Imagine a teaching example in which one home-currency unit buys 7.20 yuan. A 360-yuan quote corresponds to 50 units before fees because 360 is divided by 7.20. If you instead record the rate as home units per yuan, multiply by that number. Write out both currency codes with the rate. A single bare value such as 7.20 is especially easy to use backwards when a sheet mixes several quotations.",
+      "source_sha256": "670c82e94d3b8b3e94b14ada36ed532920913817bc2e6e2ca975eae7f7ae0edb",
+      "raw_target_sha256": "661e5033c8e2dd68d20cc96bd3360c122f217e9348cc4a1116a05d27f047c7dc",
+      "translation": "Stellen Sie sich ein Unterrichtsbeispiel vor, in dem eine Einheit der Heimatwährung 7,20 Yuan kauft. Ein Kurs von 360 Yuan entspricht 50 Einheiten vor Gebühren, da 360 durch 7,20 geteilt wird. Wenn Sie stattdessen die Rate als Wohneinheiten pro Yuan aufzeichnen, multiplizieren Sie mit dieser Zahl. Schreiben Sie beide Währungscodes mit dem Kurs aus. Ein einzelner bloßer Wert wie 7,20 ist besonders einfach rückwärts zu verwenden, wenn ein Blatt mehrere Angebote mischt."
+    },
+    {
+      "source": "Suppose a hypothetical quote rises from 150 to 166 after a service is selected. If the service itself is listed at 10 and the packing changes the freight line by 6, record both changes. If the quote shows only an all-in increase of 16, report that observed difference and leave its composition unresolved. Do not present the whole 16 as the service fee or add the visible 10 on top of the already updated total.",
+      "source_sha256": "68d8bad3107f5a52d9eb1c9de2dd4cc24e04d841758b08975d4c56726f9d30a7",
+      "raw_target_sha256": "acf922154a4f38fe7f2ca20e4cb5ee25e6401772ef8dbcec822f70d2f6afc9ec",
+      "translation": "Nehmen wir an, ein hypothetisches Angebot steigt von 150 auf 166, nachdem ein Service ausgewählt wurde. Wenn der Service selbst bei 10 aufgeführt ist und die Verpackung die Frachtposition um 6 ändert, notieren Sie beide Änderungen. Wenn das Angebot nur eine All-in-Erhöhung von 16 zeigt, melden Sie diesen beobachteten Unterschied und lassen Sie seine Zusammensetzung ungelöst. Präsentieren Sie nicht die gesamten 16 als Servicegebühr oder addieren Sie die sichtbaren 10 auf die bereits aktualisierte Gesamtsumme."
+    },
+    {
+      "source": "A soft parcel can change dimensions depending on how it rests. Measure the maximum outer span as it would travel, including a thick pocket of material or protective padding. If it is later enclosed in a rigid carton, use the carton dimensions instead. Avoid pressing a soft measurement flat to obtain an attractive number unless the actual packing method keeps it that way. A parcel that expands after measuring no longer corresponds to the estimate.",
+      "source_sha256": "c721b0e5d83dcf2868a3a8af854c96d8c267a439d409006e87672b904784c6b9",
+      "raw_target_sha256": "0a4ef74e27145cd1587eb382e78839be9a77fbf301a8f76511c8c7ff05d42887",
+      "translation": "Ein weiches Paket kann die Abmessungen ändern, je nachdem, wie es ruht. Messen Sie die maximale äußere Spannweite, wie sie sich bewegen würde, einschließlich einer dicken Tasche aus Material oder Schutzpolsterung. Wenn es später in einem starren Karton eingeschlossen wird, verwenden Sie stattdessen die Kartonabmessungen. Vermeiden Sie es, ein weiches Maß flach zu drücken, um eine attraktive Zahl zu erhalten, es sei denn, die tatsächliche Verpackungsmethode hält es so. Ein Paket, das sich nach der Vermessung ausdehnt, entspricht nicht mehr der Schätzung."
+    },
+    {
+      "source": "If both records supposedly refer to the same finished parcel, compare the orientation and endpoints. A tape starting at the bottom edge of a recessed panel and ending at the centre of a flat lid may miss protected corners that project farther. Ask for the longest outside span rather than the measurement across the central panel. Keep a generous uncertainty in a planning figure when the parcel sits close to an eligibility limit. Final acceptance depends on the carrier and the route's actual rule.",
+      "source_sha256": "b4f4ebc02a22101ef0dce4b09e8e2d4c6e7c66837db80e8015d641cbde0ae583",
+      "raw_target_sha256": "bdfb1d97af0687970f3e0a8830e8d34c0d42ad5aedb0a52fc22fe07082eae5ce",
+      "translation": "Wenn sich beide Datensätze angeblich auf dasselbe fertige Paket beziehen, vergleichen Sie die Ausrichtung und die Endpunkte. Ein Klebeband, das an der unteren Kante einer Vertiefung beginnt und in der Mitte eines flachen Deckels endet, kann geschützte Ecken übersehen, die weiter hinausragen. Fragen Sie nach der längsten äußeren Spannweite und nicht nach der Messung über das zentrale Paneel. Behalten Sie eine großzügige Unsicherheit in einer Planungszahl bei, wenn das Paket nahe an einer Fördergrenze liegt. Die endgültige Akzeptanz hängt vom Transportunternehmen und der tatsächlichen Regel der Strecke ab."
+    },
+    {
+      "source": "Turn one unknown into one support question. Instead of asking whether the whole estimate is correct, specify that you entered a named destination and measured parcel, received a quote for a particular route, and need to know whether the selected packing service is already inside the displayed total. Save the answer with the date and the quote version. Avoid applying a reply about one route to a different service with different terms.",
+      "source_sha256": "741207c84e0bd3ef447ae75a2145fd7d36c817a82eb76cf43eb36c8e464ad48a",
+      "raw_target_sha256": "09808cd9a9e9191d1e7716db9108f03355388f97b0ad2f5d23eb08bb90dd72cc",
+      "translation": "Verwandeln Sie eine Unbekannte in eine Support-Frage. Anstatt zu fragen, ob die gesamte Schätzung korrekt ist, geben Sie an, dass Sie ein benanntes Ziel und ein gemessenes Paket eingegeben haben, ein Angebot für eine bestimmte Route erhalten haben und wissen möchten, ob der ausgewählte Verpackungsservice bereits in der angezeigten Gesamtsumme enthalten ist. Speichern Sie die Antwort mit dem Datum und der Version des Angebots. Vermeiden Sie es, eine Antwort über eine Route auf einen anderen Service mit unterschiedlichen Bedingungen anzuwenden."
     }
   ]
 }

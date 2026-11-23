@@ -3,9 +3,9 @@
   "locale": "hr",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "b248191358e1d86ec6a6550a5b4279e387dbb2bf2220adb452ad8195be7a2a09",
-  "effective_dictionary_sha256": "a66e08b844eb26307a8288a8e6f62f4fd8f343077bb127e99b994a6cd2f59bb0",
+  "effective_dictionary_sha256": "3b01ccdebd916f9821ba024cd996d48dd272dfa024c36d8902ef017d5bb5b615",
   "checked_entries": 324,
-  "review_scope": "All article titles, machine-flagged strings, deterministic paragraph samples, freight prices and volume examples inspected. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries. Cross-checked the follow-up suggestions in the notebook example. Additional review of Croatian administrative hallucinations in cost examples.",
+  "review_scope": "All article titles, machine-flagged strings, deterministic paragraph samples, freight prices and volume examples inspected. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries. Cross-checked the follow-up suggestions in the notebook example. Additional review of Croatian administrative hallucinations in cost examples. Follow-up contextual check for parcel, freight quote and weight terminology.",
   "reviewed_flags": [
     {
       "issue": "language uncertain",
@@ -225,6 +225,18 @@
       "source_sha256": "5b139f73cd5c8981d4c940866a4b489048c21a5f76221d99d6552c12ea37eca2",
       "raw_target_sha256": "b29a47cadb18785f38049a612483fcd06b6ebd8d6005c16fc8161f584f34d27c",
       "translation": "Zamislite dvije stavke od 80 i 120 u istoj valuti te jednu zajedničku naknadu od 10 za dostavu unutar zemlje. Ukupan trošak kupnje je 210. Dodate li po 10 svakoj stavci, dobit ćete 220 i precijeniti ukupne troškove. Ako želite procjenu po artiklu za svoj proračun, tih 10 možete podijeliti jednako ili razmjerno vrijednosti artikala. Zabilježite odabranu metodu. Prodavatelj je dostavu naplatio samo jednom."
+    },
+    {
+      "source": "Freeze the parcel description",
+      "source_sha256": "ab081196d1892af223e325fd9e7c9d0dde81c06051f406010f7f4835a7b3678d",
+      "raw_target_sha256": "d39f24b0a6adffb5122b87188d2aef3772f96b2b05a1191c6834a456637997bf",
+      "translation": "Za usporedbu koristite isti opis paketa"
+    },
+    {
+      "source": "Keep the packing plan fixed during the first comparison. If one quote includes reinforcement and another assumes a soft mailer, record those as separate packing scenarios. Trying to decide between both a route and a packing change in one step obscures what caused the price difference.",
+      "source_sha256": "1a27700b75fb40b871a2fc8cf57fc1a73b14dc0bc9892be662225234646a04aa",
+      "raw_target_sha256": "c03951aff6a5a5fdae5e9ab753b4aa1eb6d45bc7818cbbd16cf404462cb23c28",
+      "translation": "Pri prvoj usporedbi zadržite isti način pakiranja. Ako jedna ponuda uključuje ojačanje, a druga podrazumijeva mekanu omotnicu za slanje, zabilježite ih kao dvije različite mogućnosti pakiranja. Ako istodobno promijenite način dostave i pakiranje, teško je utvrditi što je uzrokovalo razliku u cijeni."
     }
   ]
 }

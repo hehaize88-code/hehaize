@@ -3,9 +3,9 @@
   "locale": "it",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "37d1be95a2fe94f6ebe767a75e2f61ad3974b65721b919031d3a669e25edb293",
-  "effective_dictionary_sha256": "baccba171113ecd006ddd356e687440424722ce0040fdccc21ac129c4e021cc7",
+  "effective_dictionary_sha256": "d7f871fb8191d06b5dfed3f1db49a776119ff6d8749fa7314645c2c49646bf20",
   "checked_entries": 305,
-  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage.",
+  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [],
   "unresolved_material": [],
   "corrections": [
@@ -92,6 +92,18 @@
       "source_sha256": "402fdf4697c813df71e21f49a3cb9b93e8ed34280f5615d614553be60e54ffef",
       "raw_target_sha256": "e8a8f181a81c036be9d99215fc010f6c805f3aa0f74262077bbe29d914e2f990",
       "translation": "Supponiamo che nel foglio tu abbia previsto 70 per la spedizione internazionale e che in seguito accetti un preventivo di 82 nella stessa valuta. Lo scostamento dal budget è di 12. La presenza di entrambi gli importi non significa che tu abbia speso 152. Annota in un campo separato un servizio opzionale acquistato a parte e verifica se il preventivo lo comprende già prima di sommarlo."
+    },
+    {
+      "source": "For a numerical illustration, suppose one quote shows 85 units of your comparison currency for freight plus 5 for required packing, while the second shows 92 including the same packing. The comparable amounts are 90 and 92. Comparing 85 and 92 exaggerates the difference. If the second quote does not state whether packing is included, leave that total unresolved until you can verify it. These numbers explain the arithmetic and do not represent a CNShopper rate.",
+      "source_sha256": "2f219690656d75ee3faee8d392ff5539420999714bbe50fd92327b662945a75f",
+      "raw_target_sha256": "dbe5175b491fa0da9853f0a74be1badb5c0b29a89b5d54b06c09213bd017c3a2",
+      "translation": "Per un esempio numerico, supponiamo che una quotazione mostri 85 unità della valuta di confronto per il trasporto più 5 per l'imballaggio richiesto, mentre la seconda mostra 92 compreso lo stesso imballaggio. Gli importi comparabili sono 90 e 92. Confrontare 85 e 92 esagera la differenza. Se il secondo preventivo non indica se l'imballaggio è incluso, lascia quel totale irrisolto fino a quando non puoi verificarlo. Questi numeri spiegano l'aritmetica e non rappresentano una tariffa di CNShopper."
+    },
+    {
+      "source": "Save the pair of quotes, date, parcel description and choice in a private record. Name the factor that determined the outcome. For instance, “same packed carton, different destinations; chose address B because the eligible service fit the recipient's schedule and total budget.” If the choice depended on an estimated weight, mark it for review after the actual packing data arrives.",
+      "source_sha256": "32fa22cc8cbcde270798f4e489e36b877ebc8e9fb60518219cb19ef2d1c27a0d",
+      "raw_target_sha256": "2b52a07518de83c4510d4fb69062b1f586d8ce322559471f63478aac8db397d5",
+      "translation": "Conserva i due preventivi, la data, la descrizione del pacco e la scelta nei tuoi appunti. Indica il fattore che ha determinato il risultato. Ad esempio, \"stesso cartone imballato, destinazioni diverse; ho scelto l'indirizzo B perché il servizio idoneo si adatta alla programmazione e al budget totale del destinatario\". Se la scelta dipendeva da un peso stimato, contrassegnarlo per la revisione dopo l'arrivo dei dati di imballaggio effettivi."
     }
   ]
 }

@@ -3,9 +3,9 @@
   "locale": "hu",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "304d237323cd334c8ca10f1775ba369c62a5dfeb99c3a123bd5f3bea8d356123",
-  "effective_dictionary_sha256": "bd8950e11eb26e1e348f81ce017ea57dfe30ad8bd944cb7a3e5840a61725a521",
+  "effective_dictionary_sha256": "be98e3b97cf2038d3687723b414db100e3c6a8274b78c7ce23d1049b546378da",
   "checked_entries": 324,
-  "review_scope": "Scoped bilingual review of the FAQ, article and section titles, platform labels, numerical examples and automated flags. Corrected shipping quotations, paper-notebook and cap examples, route and dimensional-weight terminology; remaining prose was screened for numerical changes, not line-edited throughout.",
+  "review_scope": "Scoped bilingual review of the FAQ, article and section titles, platform labels, numerical examples and automated flags. Corrected shipping quotations, paper-notebook and cap examples, route and dimensional-weight terminology; remaining prose was screened for numerical changes, not line-edited throughout. Follow-up contextual check for parcel, freight quote and weight terminology.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -387,6 +387,12 @@
       "source_sha256": "48fee3849deeb4b671ed01fbc97fc51a0e170b9d526c14dc906ebb1af37d81bb",
       "raw_target_sha256": "20938af0ce5ad7af126820f645ccb5337f7e8b81b915b16a5cb03996dda91604",
       "translation": "Ha megállapodás születik a hitelről, a következő kérdés inkább pénzügyi, mint fényképészeti. Jegyezze fel az összeget, a pénznemet és a rendeltetési helyet. Az új támogatási üzenetnek meg kell kérdeznie a jóváírási azonosítót vagy annak közzétételi állapotát, nem pedig az eredeti hiányzó szíjat, amikor ezt a problémát már elfogadták. Ez a megkülönböztetés megtartja az ügy fókuszát, és csökkenti annak az esélyét, hogy két ember ugyanazon tranzakció különböző szakaszait vizsgálja."
+    },
+    {
+      "source": "Read whether a route rounds individual dimensions, final weight or both. Consider two weights of 2.01 and 2.49 kilograms. Under an illustrative rule rounding upward to half-kilogram steps, both become 2.5 kilograms. Reducing a parcel from 2.49 to 2.10 under that rule would not move it into a lower band. Reducing it to exactly 2.00 could do so if actual weight governs and there are no other minimums. Check the interface or route description before applying that reasoning to your own case.",
+      "source_sha256": "e7426d5c2b685a0707d08d203ffcc78f1dffbd22c708fedbf00efd216e6547c2",
+      "raw_target_sha256": "a039b41226ae2e5104d7e6b9c36770f0da6f349a30847ec0b9962c231a26e99c",
+      "translation": "Ellenőrizze, hogy az adott szállítási módnál az egyes méreteket, a végső tömeget vagy mindkettőt kerekítik-e. Ha például a tömeget felfelé, félkilós lépésekben kerekítik, akkor a 2,01 és a 2,49 kilogrammos csomagot egyaránt 2,5 kilogrammosként számolják el. A tömeg 2,49-ről 2,10 kilogrammra csökkentése nem viszi lejjebb a díjsávot. Pontosan 2,00 kilogrammnál már más lehet a helyzet, ha a tényleges tömeg számít és nincs magasabb minimum. Mindig nézze meg a kalkulátort vagy a szállítási mód szabályait."
     }
   ]
 }

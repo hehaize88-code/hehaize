@@ -3,9 +3,9 @@
   "locale": "bg",
   "source_set_sha256": "d3fc8a20c25fd682a0cbcf1d5165d69d8f33114365bd18ae1f508e92c28f82c5",
   "raw_dictionary_sha256": "85dcebfdecb68765d37a865188c13710180f1e84cbfc084c984791183c1d1375",
-  "effective_dictionary_sha256": "d3e13468b876155d379f17b3b066b46b92e193d5b64342cc226c0dc897c096b3",
+  "effective_dictionary_sha256": "8943e31eaba250510ea9ced3869512b3e8d65351cf8f35e7a49ff05decd4b58b",
   "checked_entries": 277,
-  "review_scope": "Machine checks cover all rows. Editorial review covers every SEO title, FAQ and support terminology, numeric and garment-sizing examples, long-passage samples and every flagged row.",
+  "review_scope": "Machine checks cover all rows. Editorial review covers every SEO title, FAQ and support terminology, numeric and garment-sizing examples, long-passage samples and every flagged row. Reviewed shipping quote and parcel terminology in the secondary semantic sweep.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -356,7 +356,7 @@
       "source": "Read the external length, width, height and scale weight associated with the current packing arrangement. If you authorized a different carton or removed the shoe box, figures recorded before that change may be stale. EastMallBuy's freight help explains that dimensional weight can affect a charge. Use the current route's conditions and the measured completed parcel, not measurements of individual seller boxes or an estimate copied from a different destination. Keep units visible and record the time of the quote.",
       "source_sha256": "f423782c3a7b278246505be2a4099a8b7d7f5c7aab26490642c76c12cbaefdfd",
       "raw_target_sha256": "00fef3e566f4324f5d48565db37a318e6381d0590cbe9b69a5c40c24586fecf4",
-      "translation": "Прочетете външната дължина, ширина, височина и теглото на скалата, свързани с текущата подредба на опаковката. Ако сте упълномощили различна кутия или сте премахнали кутията за обувки, данните, записани преди тази промяна, може да са остарели. Указанията на EastMallBuy за транспорта обясняват как обемното тегло може да повлияе на цената. Използвайте условията на текущия маршрут и измерената завършена пратка, а не измервания на отделни кутии на продавача или оценка, копирана от друга дестинация. Дръжте единиците видими и записвайте времето на цитата."
+      "translation": "Прочетете външната дължина, ширина, височина и теглото на скалата, свързани с текущата подредба на опаковката. Ако сте упълномощили различна кутия или сте премахнали кутията за обувки, данните, записани преди тази промяна, може да са остарели. Указанията на EastMallBuy за транспорта обясняват как обемното тегло може да повлияе на цената. Използвайте условията на текущия маршрут и измерената завършена пратка, а не измервания на отделни кутии на продавача или оценка, копирана от друга дестинация. Дръжте единиците видими и записвайте часа, в който е изготвена офертата."
     },
     {
       "source": "Creating a waybill and physically dispatching a parcel are different events. EastMallBuy's policy treats the period before international dispatch separately from the period after it. If you notice a problem, give support the waybill reference and explain the requested change immediately. Ask whether the parcel can still be stopped or amended, what service has already been performed and whether the estimate must be revised. Do not assume an uncollected or unscanned tracking number proves that packing can still be reversed.",
@@ -531,6 +531,18 @@
       "source_sha256": "579031e47a839e1798b93d456d755fdbc43b649082aeadc69b3054274eedda37",
       "raw_target_sha256": "b178212bfd1d975d20948b5740833f7ef74006a452e3acf1c2991fe01e1b8a6a",
       "translation": "Замяна чрез EastMallBuy: как да потвърдите условията с продавача"
+    },
+    {
+      "source": "Take the same measured parcel to both route estimates. Record destination, contents, dimensions, weight, route name and quote time. Only change the route in this first comparison. A quote based on an unboxed pair of shoes and a second quote based on a boxed pair answer different questions. Make a second pair of estimates if you want to investigate the packaging decision too. This produces four intelligible comparisons rather than two attractive totals whose assumptions cannot be recovered.",
+      "source_sha256": "8b95c56ea0e2ccbca524da10013014c69815cf2e3302da1e5c1add209bd571f1",
+      "raw_target_sha256": "d0c629424af3430ddf21227cf505b2e6ef894277aa82335e2aacd98042b45e70",
+      "translation": "Вземете една и съща измерена пратка и за двата маршрута. Запишете дестинация, съдържание, размери, тегло, име на маршрута и време за оферта. Променете само маршрута в това първо сравнение. Офертата за обувки без кутия и офертата за същите обувки в кутия не са за еднаква пратка. Направете втора двойка оценки, ако искате да проучите и решението за опаковане. Това произвежда четири разбираеми сравнения, а не две атрактивни суми, чиито предположения не могат да бъдат възстановени."
+    },
+    {
+      "source": "Examine how the current package restrains the item. Does a stiff insert support a delicate handle? Does the inner case prevent pressure on a lens? Does the retail box keep two surfaces from rubbing together? A smaller parcel that removes those functions has changed more than volume. Describe the protective job in practical terms before deciding whether another material can perform it. Two objects that fit in the same physical space can still damage one another if the parcel moves.",
+      "source_sha256": "c80c4d850899ae712b05a1df4dff101169744b87746f2fb56c56f9b38694c3f6",
+      "raw_target_sha256": "678f141b770bf9db2bb74684003a09ff0172a27955b10c1b5d8119ed655e3afa",
+      "translation": "Проучете как текущият пакет ограничава елемента. Твърдата вложка поддържа ли деликатна дръжка? Вътрешният калъф предотвратява ли натиска върху обектива? Кутията за търговия на дребно предпазва ли две повърхности от триене заедно? Ако по-малкият пакет вече не защитава стоката по тези начини, не се е променил само обемът. Опишете защитната функция от практическа гледна точка, преди да решите дали друг материал може да я изпълни. Два обекта, които се побират в едно и също физическо пространство, все още могат да се повредят един друг, ако пратката се движи."
     }
   ]
 }

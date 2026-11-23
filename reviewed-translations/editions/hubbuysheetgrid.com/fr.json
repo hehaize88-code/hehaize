@@ -3,7 +3,7 @@
   "locale": "fr",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "2c3cc7ad281506edf7e575eba3494d6560055cd7a85de4a0ba2a4c086cface91",
-  "effective_dictionary_sha256": "3908e272cd54111c1ab7b5f31f98ea0577c7881aa65bbd5282de1089028c61b2",
+  "effective_dictionary_sha256": "1ed9f9d804dec51fd1a88af02ce1fbd18211a5ef301e91729f655e0eb7209713",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -99,6 +99,72 @@
       "source_sha256": "9a4641881e57be3b6c26da181b86ed2d763deadcd8e3fb11fd79d3d7275e41e4",
       "raw_target_sha256": "0638fa5d6b4bdf3190e6db6d9814042411ca9246d84dc812217d7ef3a634e8be",
       "translation": "Rapprocher le décompte d’un colis HubBuy du devis initial"
+    },
+    {
+      "source": "Save both outbound parcel references, their item lists and their final charge statements. Mark the line you are comparing on each record so the question stays tied to the correct parcel.",
+      "source_sha256": "baa564c8afd6b6f139c54ca948290d096026e69c37baa603560efd436cf90c7c",
+      "raw_target_sha256": "b415c512d738948ce9f12475d098858a2a1f173927ae0d2bf951691c5b3abe2a",
+      "translation": "Enregistrez à la fois les colis expédiés de l'entrepôt aux références des clients, leurs listes d'articles et leurs relevés de charge finaux. Marquez la ligne que vous comparez sur chaque enregistrement afin que la question reste liée au bon colis."
+    },
+    {
+      "source": "Keep the old quote and add a revised quote under it. If the larger amount was already paid, track the credit process separately from the recalculated cost. Do not enter 202 as the only payment when the account shows 274 collected and a credit still pending. The two records answer different questions: what the retained merchandise should cost, and which funds have actually moved. Keep the same line names so that a friend reviewing the change can tell which item became unavailable.",
+      "source_sha256": "d934b1be832ea7a829823f1f235cb216308d04f4d58e293696e5f10aa1b5a6b9",
+      "raw_target_sha256": "11c71b857a8c64bf5ba9f229085153322938beb5afb51778624670c1c5b86ac0",
+      "translation": "Gardez l’ancien devis et ajoutez un devis révisé en dessous. Si le montant plus élevé a déjà été payé, suivez le processus de crédit séparément du coût recalculé. N'inscrivez pas 202 comme seul paiement lorsque le compte indique 274 encaissés et un crédit toujours en attente. Les deux registres répondent à des questions différentes : combien les marchandises retenues devraient coûter et quels fonds ont effectivement été déplacés. Gardez les mêmes noms de ligne afin qu'un ami qui examine le changement puisse dire quel élément est devenu indisponible."
+    },
+    {
+      "source": "Comparing two versions of a mixed parcel",
+      "source_sha256": "09fb668c8b8cfc520c197f2a6e843121a837efd907f1a1d17dd5392700b48dea",
+      "raw_target_sha256": "74b95048d1cbe815750ce79484e72ed2122ea5afce83eff6ee99254ed2fc8e50",
+      "translation": "Comparaison de deux versions d’un colis contenant plusieurs articles"
+    },
+    {
+      "source": "At receipt, preserve photographs of the box and its internal arrangement if you need to report a problem. Document the visible condition; a photograph cannot establish where along the journey an impact occurred. Link the parcel reference, requested protection and observed outcome. Keep financial reconciliation and a condition complaint distinct even when both arise from the same shipment. One concerns which services were paid for, while the other concerns the condition in which the goods arrived.",
+      "source_sha256": "69e1d9b7d19f2f08abcff2169c6972a74e69ed73a590ebf1f5ac1c856c014962",
+      "raw_target_sha256": "7ae379b4d6fa449352a006fb28bb9a5f1c793005767bfdc5c2703b775519e800",
+      "translation": "À la réception, conservez des photographies de la boîte et de son agencement interne au cas où vous auriez besoin de signaler un problème. Documenter l'état visible; une photographie ne peut pas établir où un impact s'est produit tout au long du trajet. Lier la référence du colis, la protection demandée et le résultat observé. Gardez le rapprochement financier et une plainte d'état distincts, même si les deux proviennent de la même expédition. L'une concerne les services qui ont été payés, tandis que l'autre concerne l'état dans lequel les marchandises sont arrivées."
+    },
+    {
+      "source": "A soft parcel can change dimensions depending on how it rests. Measure the maximum outer span as it would travel, including a thick pocket of material or protective padding. If it is later enclosed in a rigid carton, use the carton dimensions instead. Avoid pressing a soft measurement flat to obtain an attractive number unless the actual packing method keeps it that way. A parcel that expands after measuring no longer corresponds to the estimate.",
+      "source_sha256": "c721b0e5d83dcf2868a3a8af854c96d8c267a439d409006e87672b904784c6b9",
+      "raw_target_sha256": "41b587f341a0ebf78eb979cda837b5d77d18302656f884c8e07984592b91b351",
+      "translation": "Un colis souple peut changer de dimensions en fonction de la façon dont il repose. Mesurez la portée extérieure maximale au fur et à mesure qu'elle se déplace, y compris une poche épaisse de matériau ou de rembourrage protecteur. S'il est ensuite emballé dans un carton rigide, utilisez plutôt les dimensions du carton. Évitez d'appuyer sur un plat de mesure souple pour obtenir un nombre attrayant à moins que la méthode d'emballage réelle ne le maintienne de cette façon. Un colis qui se dilate après la mesure ne correspond plus à l'estimation."
+    },
+    {
+      "source": "If both records supposedly refer to the same finished parcel, compare the orientation and endpoints. A tape starting at the bottom edge of a recessed panel and ending at the centre of a flat lid may miss protected corners that project farther. Ask for the longest outside span rather than the measurement across the central panel. Keep a generous uncertainty in a planning figure when the parcel sits close to an eligibility limit. Final acceptance depends on the carrier and the route's actual rule.",
+      "source_sha256": "b4f4ebc02a22101ef0dce4b09e8e2d4c6e7c66837db80e8015d641cbde0ae583",
+      "raw_target_sha256": "802a9a8350fc98e620b12974907cc1c78ec880be3887f866664a59049d7cc560",
+      "translation": "Si les deux enregistrements sont censés faire référence au même colis fini, comparez l'orientation et les points d'extrémité. Un ruban commençant au bord inférieur d'un panneau encastré et se terminant au centre d'un couvercle plat peut manquer les coins protégés qui dépassent plus loin. Demandez la plus longue portée extérieure plutôt que la mesure à travers le panneau central. Gardez une incertitude généreuse dans un chiffre de planification lorsque le colis est proche d'une limite d'admissibilité. L'acceptation finale dépend du transporteur et de la règle réelle de la route."
+    },
+    {
+      "source": "Turn one unknown into one support question. Instead of asking whether the whole estimate is correct, specify that you entered a named destination and measured parcel, received a quote for a particular route, and need to know whether the selected packing service is already inside the displayed total. Save the answer with the date and the quote version. Avoid applying a reply about one route to a different service with different terms.",
+      "source_sha256": "741207c84e0bd3ef447ae75a2145fd7d36c817a82eb76cf43eb36c8e464ad48a",
+      "raw_target_sha256": "f5aeefb9246b0e0465ebdf34e8683ca611851d55f8281f8a9bf2b5f53215a809",
+      "translation": "Transformez une inconnue en une question de soutien. Au lieu de demander si l'estimation entière est correcte, spécifiez que vous avez entré une destination nommée et mesuré le colis, reçu un devis pour un itinéraire particulier et que vous devez savoir si le service d'emballage sélectionné est déjà inclus dans le total affiché. Enregistrez la réponse avec la date et la version du devis. Évitez d'appliquer une réponse sur un itinéraire à un service différent avec des termes différents."
+    },
+    {
+      "source": "Use actual parcel changes to explain an apparent price change",
+      "source_sha256": "8622e8ef5e5779511a9f31048414891df3016a519c4bd2e41729fccfd0c80f01",
+      "raw_target_sha256": "f2244af62b82533bb27a946d9682fd8279d93a8f449c8e839fea8e52196da5ae",
+      "translation": "Utiliser des changements réels du colis pour expliquer un changement apparent de prix"
+    },
+    {
+      "source": "The buyer may initially quote a single pair of shoes using a quick-estimate preset. Later the seller's box is retained, then a belt is added before international submission. The resulting packed measurements no longer describe the same shipment as the preset. Compare the revised quote with the final parcel statement, while keeping the original as evidence of how the budget developed. A difference between the first and last amounts is not automatically a new fee.",
+      "source_sha256": "10ec70bbae6b9a7c22fe16e97239c46b035d424eb2c54f4181e1741356e9a670",
+      "raw_target_sha256": "229fb70f3d857f591269c951506303c99d971de360567d9cbfa6438ce91d94da",
+      "translation": "L'acheteur peut initialement soumettre un devis pour une seule paire de chaussures en utilisant un préréglage d'estimation rapide. Plus tard, la boîte du vendeur est conservée, puis une ceinture est ajoutée avant la soumission internationale. Les mesures emballées résultantes ne décrivent plus le même envoi que le préréglage. Comparez le devis révisé avec l'état final du colis, tout en conservant l'original comme preuve de l'évolution du budget. Une différence entre le premier et le dernier montant ne constitue pas automatiquement une nouvelle redevance."
+    },
+    {
+      "source": "A useful quote summary fits into a short paragraph: name the destination, contents, dimensions, scale weight, route, currency and the date of the estimate. Add a sentence identifying any fee that is known to be separate and any part still unresolved. Keep private delivery and payment details out of shared screenshots. Another buyer can then reproduce the estimate for the same inputs or identify why their own parcel differs.",
+      "source_sha256": "ba5fa4c4188d13fde99181875f36934ff3ce18f1d0801a5f2fa940444f7c4b38",
+      "raw_target_sha256": "54ed45ef2ffd28de0d079d3319aef817df2644e34d54be414e56c3cc525d643b",
+      "translation": "Un résumé de devis utile tient dans un court paragraphe: nommez la destination, le contenu, les dimensions, le poids de la balance, l'itinéraire, la devise et la date de l'estimation. Ajouter une phrase indiquant tous les frais dont on sait qu'ils sont distincts et toute partie encore non réglée. Gardez les détails de livraison et de paiement privés hors des captures d'écran partagées. Un autre acheteur peut alors reproduire l’estimation pour les mêmes intrants ou déterminer pourquoi son propre colis diffère."
+    },
+    {
+      "source": "Suppose the planning sheet contains an old seller subtotal of 220, domestic delivery of 10 and an outbound estimate of 145. The initial overall figure is 375. During packing the buyer adds a separately purchased accessory. Its purchase and domestic movement have already been recorded elsewhere. The outbound box also changes: the final freight line is 153 and the packing service line is 9. The new outbound total is 162. Comparing 162 with 145 gives a 17-unit change on the parcel side.",
+      "source_sha256": "9c1a40111580ea305b7a37933c57096d7fa261c27e35750c2e58fc4ecc3f5584",
+      "raw_target_sha256": "9fc1a27b9a979cb72944c6d6d92a90f43ca407784074ef3b311cfd8633f6be03",
+      "translation": "Supposons que la feuille de planification contienne un ancien sous-total du vendeur de 220, une livraison intérieure de 10 et une estimation sortante de 145. Le chiffre global initial est de 375. Lors de l'emballage, l'acheteur ajoute un accessoire acheté séparément. Son achat et son mouvement intérieur ont déjà été enregistrés ailleurs. La boîte sortante change également: la ligne de fret final est 153 et la ligne de service d'emballage est 9. Le nouveau total sortant est de 162. La comparaison de 162 avec 145 donne un changement de 17 unités du côté des colis."
     }
   ]
 }

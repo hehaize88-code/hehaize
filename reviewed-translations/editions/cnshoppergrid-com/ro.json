@@ -3,9 +3,9 @@
   "locale": "ro",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "07dd47b90e7aca9c18c09eb4a374adc8556dfdf697a65377da845e9a79859da6",
-  "effective_dictionary_sha256": "5967ae723b118d26ce096e09622fdf4c37a7e268f50f8c941f44a60a273a998e",
+  "effective_dictionary_sha256": "4d86cd0f99fd6783aa764f7714fa0d72d73b7144fe6a899cc169afa103923931",
   "checked_entries": 305,
-  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage.",
+  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [],
   "unresolved_material": [],
   "corrections": [
@@ -86,6 +86,30 @@
       "source_sha256": "0932fd9af0e632cb16ce7afb704267bbef9efe6e8e9f7b0460b1d61db02ac353",
       "raw_target_sha256": "289ea6a51119d451c1423f4687c505fe032c003d686e41a320b086c1a690f444",
       "translation": "Să presupunem că geaca ta, întinsă pe o suprafață plană, măsoară 54 cm între cele două cusături de la subraț. În tabelul vânzătorului apare „bust: 108”. Măsurile pot corespunde dacă 108 este circumferința completă a gecii măsurată la aceeași înălțime. Dacă valoarea indică circumferința recomandată a toracelui persoanei care o poartă, comparația poate fi greșită. Calculul îți arată ce trebuie să întrebi. Croiala, forma mânecilor și materialul influențează și ele potrivirea."
+    },
+    {
+      "source": "For a numerical illustration, suppose one quote shows 85 units of your comparison currency for freight plus 5 for required packing, while the second shows 92 including the same packing. The comparable amounts are 90 and 92. Comparing 85 and 92 exaggerates the difference. If the second quote does not state whether packing is included, leave that total unresolved until you can verify it. These numbers explain the arithmetic and do not represent a CNShopper rate.",
+      "source_sha256": "2f219690656d75ee3faee8d392ff5539420999714bbe50fd92327b662945a75f",
+      "raw_target_sha256": "71ce45eba4a3e5cc242746ed6d02b137b6ea0688e272a84ff11aeb24e5cf428b",
+      "translation": "Pentru o ilustrare numerică, să presupunem că o ofertă indică 85 de unități din moneda dvs. de comparație pentru transport plus 5 pentru ambalarea necesară, iar a doua indică 92, inclusiv același ambalaj. Sumele comparabile sunt 90 și 92. Comparând 85 și 92 exagerează diferența. Dacă a doua ofertă nu menționează dacă ambalajul este inclus, lăsați acest total nerezolvat până când îl puteți verifica. Aceste numere explică aritmetica și nu reprezintă un tarif CNShopper."
+    },
+    {
+      "source": "Separate a destination comparison from a split-parcel decision",
+      "source_sha256": "5503222297f8edd5f59247083a3e2f93244bcdc628730a2b4eb9f2a6a575125d",
+      "raw_target_sha256": "788595e783e4d8b1005a95a996f686d6158625a890d516f425d6fb98b37f4780",
+      "translation": "Compară destinațiile separat de decizia de a împărți coletul"
+    },
+    {
+      "source": "Save the pair of quotes, date, parcel description and choice in a private record. Name the factor that determined the outcome. For instance, “same packed carton, different destinations; chose address B because the eligible service fit the recipient's schedule and total budget.” If the choice depended on an estimated weight, mark it for review after the actual packing data arrives.",
+      "source_sha256": "32fa22cc8cbcde270798f4e489e36b877ebc8e9fb60518219cb19ef2d1c27a0d",
+      "raw_target_sha256": "8d651cce2c671480aefb85fbcb24ede05fc4ed757c5994dd47baed394df5d1cf",
+      "translation": "Salvați cele două oferte, data, descrierea coletului și alegerea într-o înregistrare privată. Numiți factorul care a determinat rezultatul. De exemplu, „aceeași cutie ambalată, destinații diferite; adresa B a fost aleasă deoarece serviciul eligibil se potrivește cu programul și bugetul total al destinatarului.” Dacă alegerea a depins de o greutate estimată, marcați-o pentru revizuire după ce ajung datele reale de ambalare."
+    },
+    {
+      "source": "Compare the full alternatives. One quote for the current pieces does not represent the cost of shipping the later pieces separately. A future combined quote may also change when all dimensions are known. Record the chosen scenario as “dispatch confirmed item now; remaining items held for intake” or “wait for all matched pieces.” That wording prevents a later reader from assuming every item on the original purchase was inside the first outbound parcel.",
+      "source_sha256": "d0d227861d82b3c7c18909822693149a5f4f44c18fc35ec48cbc2104b9d33129",
+      "raw_target_sha256": "0a1d95ffb26a0fd22968005716620b08f0bd780ccf4416148faea73172ab52ad",
+      "translation": "Compară alternativele complete. O singură ofertă pentru piesele curente nu reprezintă costul de expediere a pieselor ulterioare separat. O ofertă viitoare pentru expedierea împreună a tuturor articolelor se poate schimba, de asemenea, atunci când toate dimensiunile sunt cunoscute. Înregistrați scenariul ales ca „expedierea articolului confirmat acum; articolele rămase reținute pentru recepție” sau „așteptați toate piesele potrivite.” Această formulare împiedică un cititor ulterior să presupună că fiecare articol din achiziția inițială a fost în interiorul primului pachet expediat din depozit către client."
     }
   ]
 }

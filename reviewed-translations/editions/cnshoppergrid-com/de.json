@@ -3,9 +3,9 @@
   "locale": "de",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "296bf2177dadfeffa4355800c340a224f2d1ef095f0675efba60beaa7246a901",
-  "effective_dictionary_sha256": "1bd9795254472d592d06568c56808b56f442b122e339cc56cc05d6ce82077c0b",
+  "effective_dictionary_sha256": "32679ebab2656a60fb6340b05ef70f8625b06537fd6ea6b900e758c5e3789297",
   "checked_entries": 305,
-  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage.",
+  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [],
   "unresolved_material": [],
   "corrections": [
@@ -92,6 +92,24 @@
       "source_sha256": "402fdf4697c813df71e21f49a3cb9b93e8ed34280f5615d614553be60e54ffef",
       "raw_target_sha256": "c93387632a70d012b3963d00eeae205548a2e93b51e4914f4e3ee33af8f470df",
       "translation": "Angenommen, du planst 70 für den Auslandsversand ein und nimmst später ein Angebot über 82 in derselben Währung an. Deine Versandkosten liegen damit um 12 über dem Plan. Dass beide Zahlen in der Tabelle stehen, bedeutet keine Ausgabe von 152. Erfasse einen zusätzlich gekauften Service in einer eigenen Spalte und prüfe vor dem Addieren, ob das Angebot ihn bereits enthält."
+    },
+    {
+      "source": "Imagine one book, two folded shirts and a rigid pencil case. If the initial quote uses a carton measuring 35 by 25 by 15 centimetres at 1,800 grams, copy those values into the second comparison in the units requested. Do not enter the book dimensions for the second search by mistake. Preserve the figures as illustrative until they represent a real measured parcel. A consistent assumption makes a meaningful comparison even before the final quote is available.",
+      "source_sha256": "a712abf07d597a429bebbe09828e1df8d2cd2ca568a8f3c82c5bde1dcd0c8a3c",
+      "raw_target_sha256": "1a9c50fb0568df91a05bcdc0e8e70d8ebf5aac0ef9624aa47dbe99f33ced9be5",
+      "translation": "Stellen Sie sich ein Buch, zwei gefaltete Hemden und ein starres Federmäppchen vor. Wenn das erste Angebot einen Karton von 35 x 25 x 15 Zentimetern bei 1.800 Gramm verwendet, kopieren Sie diese Werte in den gewünschten Einheiten in den zweiten Vergleich. Geben Sie nicht versehentlich die Buchabmessungen für die zweite Suche ein. Bewahren Sie die Zahlen als Illustration auf, bis sie an einem echten Paket nachgemessen wurden. Eine konsistente Annahme ermöglicht einen aussagekräftigen Vergleich, noch bevor das endgültige Angebot vorliegt."
+    },
+    {
+      "source": "For a numerical illustration, suppose one quote shows 85 units of your comparison currency for freight plus 5 for required packing, while the second shows 92 including the same packing. The comparable amounts are 90 and 92. Comparing 85 and 92 exaggerates the difference. If the second quote does not state whether packing is included, leave that total unresolved until you can verify it. These numbers explain the arithmetic and do not represent a CNShopper rate.",
+      "source_sha256": "2f219690656d75ee3faee8d392ff5539420999714bbe50fd92327b662945a75f",
+      "raw_target_sha256": "6f8f2e5f94a65f26cf0c47634042c9f2d30fc15ee1767754b49e899d017feb2c",
+      "translation": "Nehmen wir als numerische Darstellung an, dass ein Angebot 85 Einheiten Ihrer Vergleichswährung für die Fracht plus 5 für die erforderliche Verpackung anzeigt, während das zweite Angebot 92 Einheiten inklusive derselben Verpackung anzeigt. Die vergleichbaren Beträge sind 90 und 92. Der Vergleich von 85 und 92 übertreibt den Unterschied. Wenn das zweite Angebot nicht angibt, ob die Verpackung enthalten ist, lassen Sie diese Gesamtsumme ungelöst, bis Sie sie überprüfen können. Diese Zahlen erklären die Arithmetik und stellen keinen Tarif von CNShopper dar."
+    },
+    {
+      "source": "Separate a destination comparison from a split-parcel decision",
+      "source_sha256": "5503222297f8edd5f59247083a3e2f93244bcdc628730a2b4eb9f2a6a575125d",
+      "raw_target_sha256": "71a357ec8253890eb2112b8782471763be845a69413643f082c8c7a90b183d76",
+      "translation": "Zielländer vergleichen und über eine Teilung der Sendung getrennt entscheiden"
     }
   ]
 }

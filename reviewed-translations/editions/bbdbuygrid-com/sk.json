@@ -3,9 +3,9 @@
   "locale": "sk",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "4fb9c81515eaf5edaef095af0b8c69789661f40fc47286033ef22e5262875551",
-  "effective_dictionary_sha256": "44edebf7274c31bdaa7b1afb790077b1d16a0853957c8e025af4eb799da7ad26",
+  "effective_dictionary_sha256": "76504fd05851478d20ce01a2b83d9fcf460d5817056750a3cc3b523dd240ffab",
   "checked_entries": 324,
-  "review_scope": "All dictionary keys and long-paragraph language, number, unit, brand, identifier and repetition checks. All ten article titles and flagged source/target pairs inspected. Two article paragraphs sampled separately. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries. Cross-checked the follow-up suggestions in the notebook example.",
+  "review_scope": "All dictionary keys and long-paragraph language, number, unit, brand, identifier and repetition checks. All ten article titles and flagged source/target pairs inspected. Two article paragraphs sampled separately. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries. Cross-checked the follow-up suggestions in the notebook example. Follow-up contextual check for parcel, freight quote and weight terminology.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -141,6 +141,18 @@
       "source_sha256": "dd7dbc83be0357a055968ae5bf8b1035741b50106313a0468cf12e63bab783ea",
       "raw_target_sha256": "7a33147ad7a0d710ca2fb2fa287225de8f56be1d1e86b25fb8c1e391d7d33da8",
       "translation": "V príklade so zošitmi by užitočná odpoveď uvádzala, že ste požadovali tri jednotky v jednej farbe, že nová ponuka pokrýva dve a že chcete potvrdenie jednotkovej ceny a vnútroštátneho poplatku. Pridajte, čo by sa malo stať, ak tretia jednotka nie je k dispozícii. To dáva agentovi obmedzenú akciu namiesto toho, aby ich požiadal, aby uhádli, či je najdôležitejšie množstvo, farba alebo cena."
+    },
+    {
+      "source": "Read whether a route rounds individual dimensions, final weight or both. Consider two weights of 2.01 and 2.49 kilograms. Under an illustrative rule rounding upward to half-kilogram steps, both become 2.5 kilograms. Reducing a parcel from 2.49 to 2.10 under that rule would not move it into a lower band. Reducing it to exactly 2.00 could do so if actual weight governs and there are no other minimums. Check the interface or route description before applying that reasoning to your own case.",
+      "source_sha256": "e7426d5c2b685a0707d08d203ffcc78f1dffbd22c708fedbf00efd216e6547c2",
+      "raw_target_sha256": "6d81584ca3a54597c41fc70ae91f36f33801295d55cc59f749578441c75de9f3",
+      "translation": "Zistite, či sa pri zvolenej preprave zaokrúhľujú jednotlivé rozmery, konečná hmotnosť alebo oboje. Ak sa napríklad zaokrúhľuje nahor po pol kilogramoch, zásielky s hmotnosťou 2,01 aj 2,49 kg sa účtujú ako 2,5 kg. Zníženie hmotnosti balíka z 2,49 na 2,10 kg by ho do nižšieho pásma neposunulo. Pri presne 2,00 kg by to mohlo vyjsť, ak rozhoduje skutočná hmotnosť a neplatí iné minimum. Pred použitím tohto výpočtu si overte podmienky v kalkulačke alebo v opise prepravy."
+    },
+    {
+      "source": "Use independent arithmetic as an error check, not a substitute for a carrier quote. When you obtain a seemingly improbable number, check for mixed units, a missing decimal, length repeated in place of height, or a product dimension copied instead of the packed dimension. A result that becomes sensible after correcting one input is a reason to preserve the revised calculation, not a reason to enter a more favourable figure than the parcel actually measures.",
+      "source_sha256": "5fcb636100b66eefe28ef6b4c2f039c72a09ba92a39721a05a116365d66c1458",
+      "raw_target_sha256": "aa716ab98a9576a8734c930b81525c06dfb467304298212810ef0b841b407b19",
+      "translation": "Vlastným prepočtom si overte výsledok, cenu však určuje dopravca. Ak vám vyjde neobvyklé číslo, skontrolujte jednotky a desatinnú čiarku. Overte, či ste namiesto výšky znova nezadali dĺžku alebo nepoužili rozmery samotného výrobku namiesto zabaleného balíka. Ak nájdete chybu, uložte si opravený výpočet a vždy uvádzajte skutočne namerané rozmery zásielky."
     }
   ]
 }

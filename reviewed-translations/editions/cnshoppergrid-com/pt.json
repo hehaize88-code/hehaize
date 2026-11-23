@@ -3,9 +3,9 @@
   "locale": "pt",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "0ad965f60a0d0d5b882fc9de71cf539186b711b8452dfc00a6e74ce3497ff09e",
-  "effective_dictionary_sha256": "bffd7ca6e79c760bd436a08f041584132722084946276166afcda764a519a90e",
+  "effective_dictionary_sha256": "6f45671ea6f35b55589c821d147a0a66946162483d9cbca4faa94148ec4f644f",
   "checked_entries": 305,
-  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage.",
+  "review_scope": "Targeted review of ten headings, automated findings, parcel and order vocabulary, numeric examples, package dimensions, currencies, clothing-fit ambiguity and reproducible samples. Not a complete line edit of every passage. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [],
   "unresolved_material": [],
   "corrections": [
@@ -86,6 +86,18 @@
       "source_sha256": "402fdf4697c813df71e21f49a3cb9b93e8ed34280f5615d614553be60e54ffef",
       "raw_target_sha256": "dbda65e018f2d3d3d5c4e70a151b73d5875741b595e55df74cff8f1671401ffb",
       "translation": "Por exemplo, você reserva 70 para o frete internacional e depois aceita uma cotação de 82 na mesma moeda. O frete saiu 12 acima do previsto. Ter os dois valores na planilha não significa que você gastou 152. Se contratou um serviço opcional à parte, anote-o em outro campo e confira se ele já está incluído na cotação antes de somar o valor."
+    },
+    {
+      "source": "For a numerical illustration, suppose one quote shows 85 units of your comparison currency for freight plus 5 for required packing, while the second shows 92 including the same packing. The comparable amounts are 90 and 92. Comparing 85 and 92 exaggerates the difference. If the second quote does not state whether packing is included, leave that total unresolved until you can verify it. These numbers explain the arithmetic and do not represent a CNShopper rate.",
+      "source_sha256": "2f219690656d75ee3faee8d392ff5539420999714bbe50fd92327b662945a75f",
+      "raw_target_sha256": "cb66aa6265dc87eaae14bbc25626c66e1649fa681500edb1483e39ba1a6abda1",
+      "translation": "Para uma ilustração numérica, suponha que uma cotação mostre 85 unidades de sua moeda de comparação para frete mais 5 para embalagem necessária, enquanto a segunda mostra 92, incluindo a mesma embalagem. Os valores comparáveis são 90 e 92. Comparar 85 e 92 exagera a diferença. Se a segunda cotação não indicar se a embalagem está incluída, deixe esse total sem resolver até que você possa verificá-lo. Estes números explicam a aritmética e não representam uma taxa CNShopper."
+    },
+    {
+      "source": "Save the pair of quotes, date, parcel description and choice in a private record. Name the factor that determined the outcome. For instance, “same packed carton, different destinations; chose address B because the eligible service fit the recipient's schedule and total budget.” If the choice depended on an estimated weight, mark it for review after the actual packing data arrives.",
+      "source_sha256": "32fa22cc8cbcde270798f4e489e36b877ebc8e9fb60518219cb19ef2d1c27a0d",
+      "raw_target_sha256": "8e1a102b7213ace724fdc6d24c42845d87b6d05dd6c6705e7d0da5412eb11d90",
+      "translation": "Salve as duas cotações, a data, a descrição da encomenda e escolha em um registro privado. Nomeie o fator que determinou o resultado. Por exemplo, “mesma caixa embalada, destinos diferentes; escolhi o endereço B porque o serviço elegível se encaixa na programação e no orçamento total do destinatário”. Se a escolha depender de um peso estimado, marque-o para revisão após a chegada dos dados reais da embalagem."
     }
   ]
 }
