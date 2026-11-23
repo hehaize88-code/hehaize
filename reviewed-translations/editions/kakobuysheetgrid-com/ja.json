@@ -3,7 +3,7 @@
   "locale": "ja",
   "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
   "raw_dictionary_sha256": "e3344f15ecc9b07195fcfe8707060cf61aa6246371337cb41c67ac2414316a23",
-  "effective_dictionary_sha256": "43f7a20d7d23590dd5b854d33761fb640b6e2a63c3f70769d508c4794c1dc21f",
+  "effective_dictionary_sha256": "7c9ac40201939e299f965bfa60769c736e79e8e94bb4e80bf4eea8b0e8c8784b",
   "checked_entries": 317,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -110,7 +110,7 @@
       "source": "Open both selected options and compare the words describing the contents. One seller may explicitly list a woven strap and an internal pouch, while the second shows both in a product photograph without specifying inclusion. Record the second listing's package contents as unclear. Contact that seller if the difference determines your choice. A positive answer from the first shop cannot resolve the second shop's offer, even if the same photograph and nearly identical product name appear on both pages.",
       "source_sha256": "7ea0a731b9698da816714213fdeaaacf7dfbec11e257076650b4f0123f963c86",
       "raw_target_sha256": "f56c19feeb01c3c077b0e8fd706fdec3ec4152714bf8d00169f0f4e82ff546c0",
-      "translation": "両店で検討中の仕様を選んで、セット内容の記述を読み比べます。一方は織りストラップと内ポーチを明記し、もう一方は両方を画像に載せただけかもしれません。後者は「同梱不明」と記録し、それが選択を左右するならその店に問い合わせましょう。同じ写真と似た商品名を使っていても、一方の店の返答で他店のセット内容までは確定しません。"
+      "translation": "両店で目的の仕様を開き、付属品の記述を比べます。一店は織りストラップと内ポーチを明記し、他店は写しただけなら、後者は同梱不明です。必要ならその店に聞いてください。同じ写真・商品名でも一店の返答は他店を拘束しません。"
     },
     {
       "source": "A label can answer the question printed on it. Separate marked size, garment measurements and care information so a single tiny picture does not have to carry three different conclusions.",
@@ -440,7 +440,7 @@
       "source": "One listing might offer a single sweatshirt while the other offers a sweatshirt and matching trousers. Read the option description, quantity and subtotal after making the intended selection on both pages. Then compare size charts using the same measurement paths. A medium in one seller's pattern can differ from a medium on another page even when the photograph displays the same model.",
       "source_sha256": "b348482bd5fa5dd69852b7e16f308864c23378b561fc35f36e79bfb838797e59",
       "raw_target_sha256": "e42228c29b0da0a09601f3f13e818fb00e0bad24e2810c68655a69f826bab4ac",
-      "translation": "一方の店はスウェット一枚、別の店はスウェットと同色のパンツをセットで販売していることがあります。両方で希望の仕様を選び、内容、数量、小計を確認します。サイズ表は同じ箇所の寸法で比べてください。同じモデル写真を使っていても、型紙が違えば同じMサイズでも実寸は異なります。"
+      "translation": "一方がスウェット一枚、他方が同色のズボン付きかもしれません。希望の仕様を選んだ後、内容、数量、小計を比べます。サイズ表は同じ箇所の寸法を確認してください。同じモデル写真でも店ごとの型紙が違えばMの実寸は異なります。"
     },
     {
       "source": "Some labels show multiple size systems or a combination of a letter and numbers. Copy the full line before translating it. Compare the seller's selected option and size chart with that line. A reference photo marked XL from an earlier order tells you what was printed on that photographed unit only. It does not establish the fit of the medium currently assigned to your order.",
@@ -945,6 +945,150 @@
       "source_sha256": "5fba3b79adbb529acef594b2c4419b836f67e0806b0e44b04b29db1147aec6f6",
       "raw_target_sha256": "5b5a3fb1ea33d95b41249c3d7408eda1d34863dd58dabfa8b2d1b3db860dc5b9",
       "translation": "見つけたURLで買う前に今の価格、入数、選択した仕様を確認します。元リンクを突き止めても今日の販売条件は別途調査が必要です。すでに決済済みなら注文確認や個別サポートの記録で取引内容を確認します。"
+    },
+    {
+      "source": "Identical studio images can lead to different shops, sizes and packages. Compare what each seller actually offers before using a visual match as evidence about the goods.",
+      "source_sha256": "643ae932ea9db0242756a243231461b464b0d470127f053f9ec5f4f3aa2f3fa7",
+      "raw_target_sha256": "0861199514737b6c6627d2a84c106be92af6bdc5b6f9c9a1bc3d2a135c7869a1",
+      "translation": "同じ撮影画像でも、店、寸法、販売単位が異なることがあります。実物が同じと考える前に、各店が選択した仕様で何を約束しているかを読みます。"
+    },
+    {
+      "source": "Start with the source pair",
+      "source_sha256": "f6057d83490cefc614dfcb4ffac4642b9cab91f5ed55756389068e41396b76c7",
+      "raw_target_sha256": "5b3bf9bfcc0e9bdf78c8b3eed3b3e9c16901b7a7fa938b4459aaa356b8842c6f",
+      "translation": "元の二つの出品を並べる"
+    },
+    {
+      "source": "Save both seller links and identify their marketplace listing numbers. A repeat of the same listing across two catalogue pages is different from two separate sellers reusing a studio image. If the links point to one listing, investigate whether your notes refer to different options or snapshots taken at different dates. If the listings differ, keep two independent evidence records even if the thumbnail is identical down to the background.",
+      "source_sha256": "3bf9aea431643690bb4c58bdba9ac625167e828992c67a9a7bb78b6b3d9e9d71",
+      "raw_target_sha256": "966a979a7cedbb1db2e98f06057aac31185c53eff4b5edf0bcac5e4d16cb6d45",
+      "translation": "両店のURLと市場の商品番号を保存します。同じ出品の二重掲載と、別の店が同じ撮影画像を使う場合を区別します。同じ出品なら、メモに残した仕様や閲覧した日付の違いを調べましょう。"
+    },
+    {
+      "source": "Look past the most recognizable feature",
+      "source_sha256": "b5ab3b4f19ae1e6aafcc43e12c4d65d8dc7fe5863d2a45bbf9c2b937a89cf997",
+      "raw_target_sha256": "d0912f9e2bd17c57c12205520d65d1408ee97053646d24783ccc368318ce957c",
+      "translation": "目につきやすい特徴の先を見る"
+    },
+    {
+      "source": "A front graphic, colour or model pose works well for finding candidates. It is less useful for deciding whether the construction is the same. Compare objective features such as pocket shape, number of seams, lining, fastening direction and the position of a label. A wide shot establishes where that feature sits; a close detail view can then show its construction. Mark an unseen feature as unknown.",
+      "source_sha256": "0647fd4db405e016a1c57d0ff88d6d4939a7d4c273472afbb664c8a6c1cf0298",
+      "raw_target_sha256": "5f1ba5b3ea31cf210d6e6ddd2cc8e98b6961bc9f37dcab8b36735a355d719e04",
+      "translation": "前面の柄、色、モデルの姿勢は検索の手掛かりです。構造を比べるならポケットの形、縫い目の数、裏地、留め具の向き、タグの位置を見ます。全景で場所を確かめ、それぞれの出品の拡大画像で細部を調べてください。"
+    },
+    {
+      "source": "Compare the selling unit and size system",
+      "source_sha256": "6bdb5419b532ddecb09a244947f5d5420016abe6e59a266ccdfb5de9e5d143be",
+      "raw_target_sha256": "9a381cc3f954c3b71243dc476429ef04333eda1fb4dd7477270fe52811c93ebf",
+      "translation": "販売単位とサイズ表を比べる"
+    },
+    {
+      "source": "Keep warehouse pictures with their source",
+      "source_sha256": "7c986f901a8adbc824cfd3079ec43e3fba51fe59ed5b4af1dae206e9b29fcf8d",
+      "raw_target_sha256": "3868772161167bef12fcbd8bdb43e9b482d4ddf8b93e0b685c9aaedf7b4c6614",
+      "translation": "倉庫画像を元の出品に結び付ける"
+    },
+    {
+      "source": "A warehouse image found for seller A is evidence about the photographed unit from that listing. Do not move it into seller B's folder simply because the studio photographs match. If a gallery does not identify its source or option, keep its status clear. It might help you recognize a design detail to investigate, but does not resolve whether the seller you are considering currently supplies that detail.",
+      "source_sha256": "a2ba05ce1ce8eddc32c50adcb1df04fd43c249301e5be676afe63e71d34ecb8f",
+      "raw_target_sha256": "6a8c150680c2025d45eb4f8c0a39a11b418e7db6404db198eed1e9f657491162",
+      "translation": "A店に結び付いた写真はA店で撮影された品の証拠です。棚撮りが同じだからとB店のフォルダーへ移しません。出典や仕様が不明ならそう記し、B店で調べたい特徴を見つける参考に留めてください。"
+    },
+    {
+      "source": "Decide what further evidence would change your choice",
+      "source_sha256": "6e6e9ef1133789d0aa3fed0470497d497d93decbb6b80e16f60e603f03b2dc67",
+      "raw_target_sha256": "d90a10f93213047d0a309b2d28bba3061b1f071d7111ba5c859036c520b5a078",
+      "translation": "どの情報があれば選べるか決める"
+    },
+    {
+      "source": "Identify the one difference that matters. If you need a lined garment, a picture of the inside of the chosen version may settle the question. If you care about sleeve length, ask for the measurement and defined endpoints. Keep the two offers separate until the evidence answers that decision. A lower displayed price has little meaning until both columns describe the same contents, options and units.",
+      "source_sha256": "5f067f1f3ec149e7e1e9b73f4c64da91c909d5ff9c267189a5741cef033dd8bf",
+      "raw_target_sha256": "e50ae44bb54c75ea25d53951310595ddbe4eb04cbd08d7911df620a72f0c576e",
+      "translation": "裏地が必要なら選んだ仕様の内側、袖丈が重要なら始点と終点の分かる実測を求めます。必要な情報がそろうまで二つの出品は別々に扱います。表に出た安値だけで仕様の不確かさは解消しません。"
+    },
+    {
+      "source": "Classify what kind of image you are comparing",
+      "source_sha256": "c5d7d379010c6f27caebcd2dc50f6deb0fb9b227146f21684b1ad10827d05cbb",
+      "raw_target_sha256": "3e431a38049018f8fc5575b6b7dedf9aaf24fef3c74441dd986a82ee9d67ce32",
+      "translation": "比較する画像の種類を見極める"
+    },
+    {
+      "source": "A studio image usually tries to communicate an overall look. It may include a model, decorative props, coordinated garments or multiple colourways. A diagram can communicate dimensions or show a feature from a useful angle. A warehouse picture can show a particular unit after it was received. When comparing listings with the same thumbnail, write the origin of each image beside your observation. A denim jacket photographed with a matching belt does not establish that the belt ships with every version of the jacket.",
+      "source_sha256": "17f6ceceadde035447ef7678d59d2895df47447bb627842d0b180934460170cb",
+      "raw_target_sha256": "479eb794765c39d75aff64bc20f4cbe58c514da02cab15b99a3ebd176e967e8a",
+      "translation": "スタジオ写真は着こなし全体を見せるため、モデル、小道具、別売りの服、複数色を含む場合があります。図面は寸法や構造、倉庫写真は受け取った一個を表します。何の資料を比べているのかを書いてから、目的に答える部分を見ます。"
+    },
+    {
+      "source": "A recognisable background can help you see that two images share the same underlying photograph. The same crease on a sleeve or identical reflection on a buckle gives you a clue. The clue relates to the image, not automatically to the identity of a supplier or the construction of the goods. Two shops may make different claims beside the same photograph. Compare those claims on their own terms and give more weight to evidence attached to the exact option being considered.",
+      "source_sha256": "1ef153d39a5090e55d445572ae2b032ca2d91ef5794aa8447175e5bb42c38227",
+      "raw_target_sha256": "31a605c4551e7b9a1fa554ab7d0ffc6cd2509aaf65c092e0bf1aa28812ea617a",
+      "translation": "背景や袖のしわ、金具の反射がぴったり一致すれば、元写真が同じ手掛かりになります。仕入れ元や縫製まで同じだと示すわけではありません。写真の一致と、売り手がその仕様で提供する実物は別々に調べましょう。"
+    },
+    {
+      "source": "Pick details that change your buying decision",
+      "source_sha256": "b237a26735691925346eada21f8b94aa1e314356502c72124bcab12ce79ad0e3",
+      "raw_target_sha256": "d5169d5f45b5d979fa3902759053281c023a936e1791a861461cf85127d27633",
+      "translation": "購入判断に関わる細部を選ぶ"
+    },
+    {
+      "source": "Suppose you need a work bag that fits a document folder without folding it. A side-by-side view of two matching front graphics will do little to answer your question. Look for internal opening width, usable depth, zipper shape and the position of any central divider. A listed exterior width might include thick sides or tapered corners. Ask for the particular dimension that controls whether the folder slides through the opening. Keep the folder dimensions beside your notes so the question has a defined purpose.",
+      "source_sha256": "ff17d64946b55058b93c1e31cc215d671c4bc3ccc3500a3bbfc0d4903ffb2b52",
+      "raw_target_sha256": "bee13bcff7f7e7991f70d25a55d269aa56b6791a0974bb9c62d9ea17dc37c5e2",
+      "translation": "書類を折らずに入れる通勤バッグなら、前面柄より開口部の有効幅、奥行き、ファスナーの形、中央の仕切りを見ます。外幅には縫い代や突出部が含まれるため、書類の通る幅とは限りません。"
+    },
+    {
+      "source": "A different buyer may care primarily about strap attachment. For that buyer, an image of a metal ring stitched through a reinforced tab is more useful than a close view of the front graphic. Check both attachment points where possible and identify which listing supplied each view. The most helpful comparison depends on the intended use. A longer checklist of unrelated visual similarities can make two listings seem well researched while leaving the one purchasing requirement completely unanswered.",
+      "source_sha256": "6e6968cc1923808db81cddc844f0c8ab45c51faaef72b59381e047326883f0db",
+      "raw_target_sha256": "4b33a71b961f898acdcb581aec19a36257d0754744ef22a41afb34a5c31d3705",
+      "translation": "ストラップの付け根を重視する人なら、前面ロゴより補強されたタブを通る金属リングの画像が役立ちます。できれば両端と各画像の出典を確認します。関係の薄い類似点を多く数えても、本当に必要な条件は未確認のままです。"
+    },
+    {
+      "source": "Read the specific seller commitments",
+      "source_sha256": "d9b3987b936edb463b369b2fb0ce8b422c65879d7873151cc16b2283a1777950",
+      "raw_target_sha256": "d698f8fbe284fbc6b50151abf38c67b5a66c4e48c2027cc6eba7a42008eb7d36",
+      "translation": "店が明記している内容を読む"
+    },
+    {
+      "source": "Read measurements with similar care. A chart headed “approximate outer size” describes a different measurement from “usable opening.” If a screenshot cuts off the chart heading or its unit, obtain the full chart before comparing numbers. The better documented listing might offer fewer illustrations and still answer more of your actual questions. Conversely, a detailed specification can identify a potential fit problem even when every photograph looks visually identical to a product you previously purchased from another source.",
+      "source_sha256": "72878bfedf549f60904ca98303c3d2328d61eb1fa0c1da4392ba20f8df0fd5d0",
+      "raw_target_sha256": "427ea0c3ac038a9e3ef63d5944544e38e04c6d911c120fa76ec3ccfa253d7b5b",
+      "translation": "「外寸目安」と「有効開口幅」は別の測定です。表題や単位が切れた画面では元の表を確認します。画像が少なくても必要な値が明記されている店はあります。以前買った物とそっくりでも、仕様を読むと寸法が合わないと分かる場合があります。"
+    },
+    {
+      "source": "Distinguish a seller change from a product difference",
+      "source_sha256": "23c026999600a10add42992368d8d453e99cc1fa7292b681b6f764a3cff49da7",
+      "raw_target_sha256": "2ef9f3f8702bfbd29725ac7172319c801be52a281e5ac061ec11b509412de276",
+      "translation": "出品の更新と別商品を区別する"
+    },
+    {
+      "source": "If both links lead to the same marketplace and item identifier, compare the selected options and the dates the pages were captured. A difference in price may arise because one capture shows an accessory, a different quantity, or an earlier version of the offer. If the identifiers differ, keep separate records even when the shop name matches. A seller may create multiple offers with different package quantities or terms while reusing studio assets. Those are different buying choices until the specific details reconcile.",
+      "source_sha256": "362d367fcb8e5259eb30365fe0304187b68550083679638c32e72fee776db6e2",
+      "raw_target_sha256": "e4bc0aff24c8a6efcf920b058e7e0db4cd98ab60129923b8034c99f77aaea1a6",
+      "translation": "両方が同じ市場・商品番号なら仕様と記録日を比べます。価格差はアクセサリー単品、異なる数量、旧時点の条件によることがあります。番号が違えば、見た目や題名が似ても別に記録してください。"
+    },
+    {
+      "source": "A duplicate spreadsheet entry is a further possibility. If both grid cards link through to the same source listing with the same selected option, one set of current seller checks may serve both discoveries. Preserve their discovery links if you want to revisit the categories where you found them. Where the original listing is inaccessible, describe the relationship as unresolved. Guessing from two visually similar cards risks merging unrelated references and makes later order questions harder to reconstruct.",
+      "source_sha256": "118cf8b0bbcd624a299d10f825c2ae162dac554fff598743e7666c44dfcdd3fd",
+      "raw_target_sha256": "f38ba4562a4436eaa7ff5e4e9a4fe80f19b290f5277f1ef31f08012718a40f32",
+      "translation": "二枚のカードが同じ元出品・同じ選択肢なら、一度の現行チェックを両方に使えます。発見した分類へ戻れるよう入口のリンクは保存します。元リンクや仕様が違う場合は別々に扱いましょう。"
+    },
+    {
+      "source": "Write a conclusion that another buyer could check",
+      "source_sha256": "79862bea39d393b6fc6a87ef30b408843b1688ad025d7d57b3bf3bdd2e0d2c8d",
+      "raw_target_sha256": "84e483a187369c9dacb15268e201840b950bd3f50999a2e104ffe51fba39c377",
+      "translation": "後から確かめられる結論を書く"
+    },
+    {
+      "source": "An actionable comparison might read as follows. Both listings show the same green bag on a wooden stool. Seller A gives an opening width and includes an adjustable strap in the chosen option. Seller B gives exterior dimensions and does not describe the strap. The folder fit and strap inclusion are therefore unresolved for seller B. This note identifies the shared visual, the facts attributable to each seller and the remaining questions without rating either seller or making claims about stock quality.",
+      "source_sha256": "250ebd6b449bc85f8d97c9683ca2b0fe7c97c30203d8b8e5a142ed04d8a1b94f",
+      "raw_target_sha256": "f2673720eb52da51a70e7a3f5f0291a4283fc886f7840ea1077df9cda963fe63",
+      "translation": "例えば「木の椅子の緑バッグの写真は同じ。Aは開口幅を示し、選択肢に調節ストラップを含む。Bは外寸のみでストラップの記載なし。Bの書類入れ適合と付属品は未確認」と書けば、確定事項と次に聞く点が明確です。"
+    },
+    {
+      "source": "If you purchase one version, add an observation about your own received unit beneath that seller's record. A photograph of the bag open with the stated contents visible can answer questions about the unit you received. It does not retrospectively verify another listing. Over time, this practice produces a small collection of comparable evidence with dates and option labels. When someone asks whether a visually similar find is the same product, you can point to the precise features established and the comparisons still missing.",
+      "source_sha256": "8b5a71ad600b3ad3ce0f43bbb5ab447f72765388f28118b63266d91ef3f987e3",
+      "raw_target_sha256": "9ec9e99f22cf8b03eceaf9ef59e9c5e2ff6aa25ef5cbf5a77177fb394e24b362",
+      "translation": "一方を買った場合、実物についての観察はその店の記録に加えます。バッグを開いて内容が写った写真は自分の一個への答えで、他店を後から証明しません。日付と仕様を積み重ねれば、似た発見について確かめられた部分と不足を具体的に示せます。"
     }
   ]
 }

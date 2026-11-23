@@ -3,7 +3,7 @@
   "locale": "bg",
   "source_set_sha256": "50911bbaf8cb4e95c0ffaba18561fc7cfb1d06446f37b6a6715ee18e99d8182e",
   "raw_dictionary_sha256": "f4754f62d67c0a26d3978371a4c96bd06f4c1f8f9735d014556ef5d32724a33e",
-  "effective_dictionary_sha256": "12901670554868f0a8070c8b8179a6e3342323184c06bce391e930f58dc78147",
+  "effective_dictionary_sha256": "4542ca9845d515588a711f2a599ce8563a81ace078bfdc6751fa0f80bed315a5",
   "checked_entries": 254,
   "review_scope": "Checked all exact input keys and output structure with the project auditor. Compared actual localized price/quantity calculations, physical item and option identifiers, garment-measurement examples, warehouse and shipping stages, seller/return wording, and sampled FAQ/body passages with the English source. Personally edited all ten article titles and replaced risk passages as recorded. This coverage is an audit plus targeted bilingual review.",
   "reviewed_flags": [
@@ -495,6 +495,12 @@
       "source_sha256": "d3880f26e92841d1b96d5455d3cf6f6aca1aa0fe3a732795713f9dbdd1ddc0f1",
       "raw_target_sha256": "9ef02058ccc31eda794fb026024c6d16a13699099204bfd0ca7756645d3175ce",
       "translation": "Купувач вижда чанта на цена 85 юана (CNY), а по-късно плаща 90 юана за варианта с дълъг ремък. След това продавачът показва цена 78 юана за варианта без него. Нито една от трите суми сама по себе си не доказва грешно плащане. Проверете избрания вариант, момента и какво включва комплектът. Запишете първо сумите в първоначалната валута, а превалутирането отделно. Промяна във валутния курс може да промени показаната сума без промяна в цената на продавача."
+    },
+    {
+      "source": "Make each comparison line describe the intended physical result. An example might read “two medium grey shirts, version B with pocket, delivered from the seller to the warehouse.” Check that both sellers offer the same count, model, size and included components. If one seller includes a detachable liner or spare strap, record the difference and decide whether the buyer values it. Two products styled to resemble each other in photographs can have different construction. An inexpensive offer lacking the feature that drove the search is an alternative product rather than a discount on the same one.",
+      "source_sha256": "3d9ef99bc04e5547673208282a6a52a1c3285eb18f7b528e808c8ddd590f2585",
+      "raw_target_sha256": "29a3b1664618117583da8853173ad140eda3fb3b5a27334e092372894b4fcee1",
+      "translation": "Направете всяка линия за сравнение, за да опишете желания физически резултат. Пример: „две сиви ризи размер M, вариант B с джоб, доставени от продавача до склада.“ Проверете дали и двамата продавачи предлагат еднакъв брой, модел, размер и включени компоненти. Ако един продавач включва подвижна облицовка или резервна каишка, запишете разликата и решете дали купувачът я оценява. Два продукта, стилизирани така, че да приличат един на друг на снимки, могат да имат различна конструкция. Евтината оферта, в която липсва функцията, която е задвижила търсенето, е алтернативен продукт, а не отстъпка за същия."
     }
   ]
 }
