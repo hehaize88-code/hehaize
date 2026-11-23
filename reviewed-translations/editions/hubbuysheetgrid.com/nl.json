@@ -3,7 +3,7 @@
   "locale": "nl",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "bb23011382d89fe15b93eef5fbad1e760df0af2408b55e822459a79f0836c2a8",
-  "effective_dictionary_sha256": "fbcd9be82d7359652ef89c080bc78c2d0caca600c0b103469bb67c20178d14e3",
+  "effective_dictionary_sha256": "f7312de0d7fb4118459e92e31ec5fbaa5ce987254799efc5803d12f006e91320",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -134,7 +134,7 @@
       "source": "Now add a condition: the quoted combined arrangement relies on removing the retail case, which the buyer needs as part of a gift. The 185 quote no longer describes an acceptable solution. Obtain a comparable combined quote that keeps the case, or mark that arrangement as unsuitable. The earlier numerical comparison still teaches something about what created the saving, but it cannot justify selecting a packing method that defeats the purpose of the purchase.",
       "source_sha256": "91a9a3605abdcb2946c24630dcf5de4ccb7c8a21a632e62b601299095c305e76",
       "raw_target_sha256": "6a99a55e2225fb6d5aaeb43f1ba96f7d568d0412bd4d0eab74e037082665b839",
-      "translation": "Voeg nu een voorwaarde toe: de geciteerde gecombineerde regeling is gebaseerd op het verwijderen van de retailcase, die de koper nodig heeft als onderdeel van een geschenk. Het aanbod 185 beschrijft niet langer een aanvaardbare oplossing. Krijg een vergelijkbare gecombineerde offerte die de zaak houdt, of markeer die regeling als ongeschikt. De eerdere numerieke vergelijking leert nog steeds iets over wat de besparing heeft veroorzaakt, maar het kan niet rechtvaardigen dat een verpakkingsmethode wordt geselecteerd die het doel van de aankoop tenietdoet."
+      "translation": "Stel dat de offerte van 185 voor de gecombineerde zending uitgaat van verwijdering van de originele verpakking. De koper heeft die juist nodig voor een cadeau. Vraag een vergelijkbare offerte aan waarbij de verpakking behouden blijft, of markeer deze optie als ongeschikt. De eerdere berekening verklaart de besparing, maar maakt de verpakking nog niet geschikt als cadeau."
     },
     {
       "source": "The buyer may initially quote a single pair of shoes using a quick-estimate preset. Later the seller's box is retained, then a belt is added before international submission. The resulting packed measurements no longer describe the same shipment as the preset. Compare the revised quote with the final parcel statement, while keeping the original as evidence of how the budget developed. A difference between the first and last amounts is not automatically a new fee.",
@@ -183,6 +183,90 @@
       "source_sha256": "0bfd4b366ea6686dcc6725e9b7a93f9547ee8034c4440abe349c3db0195de886",
       "raw_target_sha256": "afb2726aefde9eb8ee0c955a6a00b83245533e269fe45b8f03d9bbd63a252809",
       "translation": "Stel dat u een harde accessoirekoffer met een sluiting die niet onder druk mag komen en twee zachte overhemden verstuurt. Bij indeling A liggen alle drie in één krappe doos, met de overhemden rond de koffer. Bij B krijgt de koffer een aparte gewatteerde beschermhoes in een grotere buitendoos. Vraag welke bescherming elke dienst biedt en of de buitenmaten zijn gemeten of geschat. De andere indeling kan ook de beschikbare verzendroutes veranderen."
+    },
+    {
+      "source": "Write down the exact service, amount and whether it applies to an item or parcel. Check if a quoted total already includes it before adding it separately.",
+      "source_sha256": "9e77b7abf0e39bd9fa9189dafb8eb2b07c3f49dca520ef95ec38323189c690cb",
+      "raw_target_sha256": "8ea53574e59c3c92ce6d0865020dd78f7d101f20afc15dcac78bbba6d1c7f4df",
+      "translation": "Schrijf de exacte dienst, het bedrag en of het gaat om een item of pakket. Controleer of het totaal volgens de offerte het al bevat voordat u het apart toevoegt."
+    },
+    {
+      "source": "Consider a hypothetical worksheet with three product entries, two inner cartons and one outer parcel. Assume the quoted service is 4 yuan per inner carton and an outer-packing option costs 7 yuan for the parcel. The worksheet should add 8 and 7, or 15 in total. Multiplying both charges by three because there are three item rows produces 33. This example illustrates the arithmetic only; read the actual service units and amounts on the live offer.",
+      "source_sha256": "d69a5da514621e530a2052e5742f1a2b8c367baec6ee1bbd4fe41739c8216408",
+      "raw_target_sha256": "f24454ba14089a4eeb296f1a786cec4e004d66bb0e2a3b074663800092fb747d",
+      "translation": "Neem een hypothetisch werkblad met drie productvermeldingen, twee binnenverpakkingen en één buitenverpakking. Veronderstel dat de aangeboden dienst 4 yuan per binnenkarton is en een buiten-verpakkingsoptie 7 yuan voor het pakket kost. Het werkblad moet 8 en 7 optellen, of 15 in totaal. Het vermenigvuldigen van beide kosten met drie omdat er drie items rijen produceert 33. Dit voorbeeld illustreert alleen de rekenkunde; lees de werkelijke service-eenheden en bedragen op de live-aanbieding."
+    },
+    {
+      "source": "Use separate rows for quoted, paid and credited amounts. If a charge was removed, enter the credit with its reference. When a final invoice rolls services into a parcel subtotal, place that subtotal in a comparison column rather than adding it to the detailed entries. Check that your reconstructed total agrees with the payment record within ordinary rounding. Write down the remaining difference and ask support which invoice line explains it.",
+      "source_sha256": "b4f3dede9df755627787afff51d746f3d3c31eba0df484be2406fa0ed8db27b7",
+      "raw_target_sha256": "6050b802bd446008953a961bdfb0bd17217806051fe83bcb469b8e35883a30df",
+      "translation": "Gebruik afzonderlijke rijen voor aangeboden, betaalde en gecrediteerde bedragen. Als een afschrijving is verwijderd, voert u het tegoed in met de referentie. Wanneer een eindfactuur services in een subtotaal van een pakket optelt, plaatst u dat subtotaal in een vergelijkingskolom in plaats van het toe te voegen aan de gedetailleerde vermeldingen. Controleer of uw gereconstrueerde totaal overeenkomt met de betalingsrecord binnen de gewone afronding. Schrijf het resterende verschil op en vraag support welke factuurregel dit verklaart."
+    },
+    {
+      "source": "Here is a fictional receipt to practise with. Two fragile pieces require individual protective wrapping at 3 yuan per piece. One outer box uses a 9-yuan reinforcement option. The quoted base freight is 118. A screen then shows a parcel total of 133. The numbers reconcile because 118 plus six plus nine is 133. The words per piece and per parcel make the arithmetic reproducible. Without them, two buyers could look at the same three numbers and arrive at different totals.",
+      "source_sha256": "d022cf8612acda86bc16391f7edac14f4562874968528f52aa5f0a26ad21a47b",
+      "raw_target_sha256": "cf48582590c1a3e04ddb9b9933231f068b1aa848469b13e41d542e6a6ed4c032",
+      "translation": "Hier is een fictief ontvangstbewijs om mee te oefenen. Twee kwetsbare stukken vereisen individuele beschermende verpakking bij 3 yuan per stuk. Één buitendoos gebruikt een 9-yuan versterkingsoptie. De basisvracht volgens de offerte is 118. Een scherm toont dan een pakket totaal van 133. De getallen komen overeen, want 118 plus zes plus negen is 133. De woorden per stuk en per pakket maken de rekenkunde reproduceerbaar. Zonder deze gegevens kunnen twee kopers naar dezelfde drie cijfers kijken en tot verschillende totalen komen."
+    },
+    {
+      "source": "Before accepting a number from a screenshot, identify the currency code and whether the price covers one unit, the selected quantity or the entire parcel. Save any quoted conversion alongside the original amount. Someone reviewing the purchase later should be able to reproduce the converted value using those saved inputs, even after the currency selector displays a different rate.",
+      "source_sha256": "423e0cf302192f1b93d8247a3d7a30edf2c3b6f841c8e50c494acd9696851ff5",
+      "raw_target_sha256": "c890d98eaf8050dda7af361b97eb7f1439272bd7bc9ae9f57dad07be0736636e",
+      "translation": "Voordat u een nummer van een screenshot accepteert, identificeert u de valutacode en of de prijs één eenheid, de geselecteerde hoeveelheid of het hele pakket omvat. Sla elke aangeboden omrekening op naast het oorspronkelijke bedrag. Iemand die de aankoop later bekijkt, moet de omgerekende waarde kunnen reproduceren met behulp van die opgeslagen invoer, zelfs nadat de valutakiezer een andere koers weergeeft."
+    },
+    {
+      "source": "In a teaching example, option A uses an existing carton and simple padding. Option B adds an inner protective shell. Write the cost of each quoted service, then measure or request the external weight and dimensions of the finished parcel under each arrangement. The shell may change the size available to a route, even if it adds little weight. Enter the same destination and product category for both estimates.",
+      "source_sha256": "6da576fcb0a7235baf38dc2ed0405705168582f5db95b54c441787ab58f23df7",
+      "raw_target_sha256": "b570af426a87d91e0b0c341db336572fc9c3a426c1cdcde5a912f3ec289db8a0",
+      "translation": "In een lesvoorbeeld gebruikt optie A een bestaand karton en een eenvoudige vulling. Optie B voegt een binnenste beschermende schaal toe. Schrijf de kosten van elke aangeboden dienst, meet vervolgens of vraag het externe gewicht en de afmetingen van het afgewerkte pakket onder elke regeling. De shell kan de beschikbare grootte van een route veranderen, zelfs als het weinig gewicht toevoegt. Voer voor beide schattingen dezelfde bestemming en productcategorie in."
+    },
+    {
+      "source": "Changing the contents, packing, measurements or selected services calls for a fresh estimate. Keep the old result because it can help explain a later difference. Mark the revised input with the reason for the change, such as a retained shoebox or a removed accessory. Ask HubBuy support about a specific line if the conditions appear identical but the quoted result still differs.",
+      "source_sha256": "5404359e370df79f7003ee10774e8d4b3ec30d27335d5e5784413cdd5c77cf08",
+      "raw_target_sha256": "287fb0e9fc3c369d235f0c0dd5f37a44b44c31a1a1977e4f622c74dd49da1f2a",
+      "translation": "Wijzigingen in de inhoud, verpakking, afmetingen of geselecteerde diensten vragen om een nieuwe offerte. Bewaar het oude resultaat omdat het een later verschil kan verklaren. Markeer de herziene invoer met de reden voor de wijziging, zoals een behouden schoenendoos of een verwijderd accessoire. Vraag HubBuy-ondersteuning over een specifieke regel als de voorwaarden identiek lijken, maar het bedrag in de offerte nog steeds verschilt."
+    },
+    {
+      "source": "Turn one unknown into one support question. Instead of asking whether the whole estimate is correct, specify that you entered a named destination and measured parcel, received a quote for a particular route, and need to know whether the selected packing service is already inside the displayed total. Save the answer with the date and the quote version. Avoid applying a reply about one route to a different service with different terms.",
+      "source_sha256": "741207c84e0bd3ef447ae75a2145fd7d36c817a82eb76cf43eb36c8e464ad48a",
+      "raw_target_sha256": "dc525eeb82b76a3c007c0060cc6d4ddfb9df1fbf82669c4de376127a799cd52c",
+      "translation": "Verander één onbekende in één ondersteuningsvraag. In plaats van te vragen of de gehele schatting juist is, geef aan dat u een bestemming hebt ingevoerd en een pakket hebt opgemeten, een offerte hebt ontvangen voor een bepaalde route en wilt weten of de geselecteerde verpakkingsservice al in het weergegeven totaal zit. Sla het antwoord op met de datum en de versie van de offerte. Vermijd het toepassen van een antwoord over een route op een andere service met verschillende voorwaarden."
+    },
+    {
+      "source": "A route can have size limits or consider parcel volume when billing. Enter the actual outer length, width and height when you have them, and read the terms for the route you select.",
+      "source_sha256": "6878e715c45b8681c3aa09353b842cb1bb4be1a6bc61d874dc796275de3b66d6",
+      "raw_target_sha256": "31eb0dc47f055037495b0edd11ac5bffcbc9042a18a6d036b81ba019ed1c1b53",
+      "translation": "De vervoerder kan maximale afmetingen hanteren of het pakketvolume meewegen in de prijs. Vul de werkelijke buitenlengte, breedte en hoogte in en controleer de voorwaarden van de gekozen route."
+    },
+    {
+      "source": "What does seller-to-warehouse delivery pay for?",
+      "source_sha256": "8d0b4c629f3ad61bbd90c766e08c7287b22d9e382415395c2c922a8af27e9c7d",
+      "raw_target_sha256": "11023fbe1e576d0ff3cca2c8ab8594b48e11b9c085ca6a7a86761d7c550cb470",
+      "translation": "Wat dekt de levering van de verkoper aan het magazijn?"
+    },
+    {
+      "source": "It covers the domestic movement from the seller to the receiving warehouse when such a charge applies. HubBuy lists the product purchase and China shipping before the later international parcel stage.",
+      "source_sha256": "07768ae8510ca6c90a9ace3f7440442a5d92c57e150953febdee66de34d8b16d",
+      "raw_target_sha256": "e877079e87473c978ec1d7f0c5dfd0a4328c90a535527b9b04bd24050a49b569",
+      "translation": "Een eventuele vergoeding betreft het vervoer binnen China van de verkoper naar het ontvangende magazijn. HubBuy toont de aankoop en deze binnenlandse levering vóór de latere internationale verzending."
+    },
+    {
+      "source": "How should I budget two items from the same seller?",
+      "source_sha256": "57e8143e9141de36ec02c9efc93c5aa715452c9f2382476a1ecab7bc0f9fdf8a",
+      "raw_target_sha256": "02f15a76ee97f21de15767a346a3058379a6bbf5e0748318fa871dc915ae36f2",
+      "translation": "Hoe begroot ik twee artikelen van dezelfde verkoper?"
+    },
+    {
+      "source": "Use the packed figure for the international parcel estimate once available. It includes the box and packing materials, whereas a seller's product figure may refer only to the unit.",
+      "source_sha256": "cdc8a1c8dde506ba039e6ec7567ea877aa6f81f9c35b4304d4cc9493062879c8",
+      "raw_target_sha256": "813770f3d653092c91d59dcda36237fc587309b89c64c393ff6623fb5177f0a1",
+      "translation": "Gebruik voor de internationale verzendschatting het gewicht van het ingepakte pakket zodra u dat kent. Daarin zitten ook de doos en het beschermingsmateriaal. De verkoper vermeldt mogelijk alleen het artikelgewicht."
+    },
+    {
+      "source": "Only if the items will actually be packed end to end. Decide on the proposed arrangement and measure its outer envelope. Leave room for protective material and confirm packed dimensions later.",
+      "source_sha256": "536b8b79fc83da8498e787cdf8d8ed4a9f798a2b9e0105b754be105d333bddd8",
+      "raw_target_sha256": "f379b2e637c35488fa2dbc8faad1aeb961b2d500cbf33159ff27e9a064b09374",
+      "translation": "Alleen als de drie artikelen in de lengte achter elkaar worden gelegd. Meet de buitenmaten van de hele opstelling, houd ruimte vrij voor beschermingsmateriaal en controleer de maten na het inpakken."
     }
   ]
 }

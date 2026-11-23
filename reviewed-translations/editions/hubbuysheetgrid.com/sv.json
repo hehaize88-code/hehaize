@@ -3,7 +3,7 @@
   "locale": "sv",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "a728ab33cfe973246e20720cd8738790fd17eb62b1964b97f63a0b6a7ef0d35d",
-  "effective_dictionary_sha256": "0364d05fe9de0e0a4e0d7f17c614f21de14eb8c51289175db2dfb0b102cec498",
+  "effective_dictionary_sha256": "b243376544817bbec193fd3e9949c1b6dc06ad2f1c05795985c11b6cb444dd50",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -140,7 +140,7 @@
       "source": "Now add a condition: the quoted combined arrangement relies on removing the retail case, which the buyer needs as part of a gift. The 185 quote no longer describes an acceptable solution. Obtain a comparable combined quote that keeps the case, or mark that arrangement as unsuitable. The earlier numerical comparison still teaches something about what created the saving, but it cannot justify selecting a packing method that defeats the purpose of the purchase.",
       "source_sha256": "91a9a3605abdcb2946c24630dcf5de4ccb7c8a21a632e62b601299095c305e76",
       "raw_target_sha256": "de14d82210c18392bb5e43d6bde3b9aa5e45584819cb153101a533fb654496b3",
-      "translation": "Lägg nu till ett villkor: det angivna kombinerade arrangemanget förlitar sig på att ta bort detaljhandeln, som köparen behöver som en del av en gåva. Offerten på 185 beskriver inte längre en godtagbar lösning. Få en jämförbar kombinerad offert som håller fallet, eller markera det arrangemanget som olämpligt. Den tidigare numeriska jämförelsen lär fortfarande något om vad som skapade besparingen, men den kan inte motivera att man väljer en förpackningsmetod som motverkar syftet med köpet."
+      "translation": "Anta att priset 185 för samfrakt förutsätter att originalförpackningen tas bort. Köparen behöver den till en present, så offerten uppfyller inte längre kravet. Be om en jämförbar offert där förpackningen behålls, eller markera alternativet som olämpligt. Den tidigare beräkningen visar hur besparingen uppstod, men motiverar inte en packning som gör köpet olämpligt som present."
     },
     {
       "source": "A delivery estimate may refer to a stage starting at dispatch. Read the route description before promising someone a date based on it. Include unresolved purchasing, seller dispatch, warehouse intake or packing in a separate planning timeline. Avoid adding arbitrary days to manufacture a confident arrival date. If the use date matters, state which pending event creates uncertainty and check the latest confirmed status.",
@@ -183,6 +183,48 @@
       "source_sha256": "0bfd4b366ea6686dcc6725e9b7a93f9547ee8034c4440abe349c3db0195de886",
       "raw_target_sha256": "31100e457d6e87a84e32161384bffd9e78ae247dec567600718f397bf3a59a9b",
       "translation": "Tänk dig ett styvt tillbehörsetui och två mjuka skjortor. Etuiets lås får inte utsättas för tryck. I alternativ A ligger alla tre tätt i en kartong med skjortorna runt etuiet. I alternativ B ligger etuiet i en separat vadderad skyddspåse inuti en större ytterkartong. Fråga vilket skydd varje tjänst ger och om yttermåtten är uppmätta eller uppskattade. Den andra packningen kan också påverka vilka fraktrutter som är tillgängliga."
+    },
+    {
+      "source": "Before accepting a number from a screenshot, identify the currency code and whether the price covers one unit, the selected quantity or the entire parcel. Save any quoted conversion alongside the original amount. Someone reviewing the purchase later should be able to reproduce the converted value using those saved inputs, even after the currency selector displays a different rate.",
+      "source_sha256": "423e0cf302192f1b93d8247a3d7a30edf2c3b6f841c8e50c494acd9696851ff5",
+      "raw_target_sha256": "d07a18b2c97b44bad5fa561f56f2112145a2397faa3238ff0164c7323c4f2284",
+      "translation": "Innan du accepterar ett nummer från en skärmdump, identifiera valutakoden och om priset täcker en enhet, den valda mängden eller hela paketet. Spara eventuella erbjudna valutaomräkningar tillsammans med det ursprungliga beloppet. Någon som granskar köpet senare bör kunna återskapa det konverterade värdet med hjälp av de sparade inmatningarna, även efter att valutaväljaren visar en annan kurs."
+    },
+    {
+      "source": "A route can have size limits or consider parcel volume when billing. Enter the actual outer length, width and height when you have them, and read the terms for the route you select.",
+      "source_sha256": "6878e715c45b8681c3aa09353b842cb1bb4be1a6bc61d874dc796275de3b66d6",
+      "raw_target_sha256": "15d4556a3fdc8295c6cbd11eb422d53453eb46e6018f62d0a1965ed1bad12676",
+      "translation": "Transporttjänsten kan ha storleksgränser eller ta hänsyn till paketets volym när priset beräknas. Ange verklig utvändig längd, bredd och höjd och kontrollera villkoren för den valda rutten."
+    },
+    {
+      "source": "What does seller-to-warehouse delivery pay for?",
+      "source_sha256": "8d0b4c629f3ad61bbd90c766e08c7287b22d9e382415395c2c922a8af27e9c7d",
+      "raw_target_sha256": "317157f327bac6791953350e60821a78a2fe07508b256249cc48ea1604bf03ad",
+      "translation": "Vad täcker leveransen från säljaren till lagret?"
+    },
+    {
+      "source": "It covers the domestic movement from the seller to the receiving warehouse when such a charge applies. HubBuy lists the product purchase and China shipping before the later international parcel stage.",
+      "source_sha256": "07768ae8510ca6c90a9ace3f7440442a5d92c57e150953febdee66de34d8b16d",
+      "raw_target_sha256": "3a267500826a9bab7318485560a135178a40aebdd8563bb9e705969a11449acc",
+      "translation": "En eventuell avgift gäller transporten inom Kina från säljaren till det mottagande lagret. HubBuy visar köpet och denna inrikesleverans före den senare internationella frakten."
+    },
+    {
+      "source": "How should I budget two items from the same seller?",
+      "source_sha256": "57e8143e9141de36ec02c9efc93c5aa715452c9f2382476a1ecab7bc0f9fdf8a",
+      "raw_target_sha256": "548567d7d28df24da5aed36dccc607b7882d4aba1b09821f353e3e0e5e4db5f9",
+      "translation": "Hur budgeterar jag för två varor från samma säljare?"
+    },
+    {
+      "source": "Use the packed figure for the international parcel estimate once available. It includes the box and packing materials, whereas a seller's product figure may refer only to the unit.",
+      "source_sha256": "cdc8a1c8dde506ba039e6ec7567ea877aa6f81f9c35b4304d4cc9493062879c8",
+      "raw_target_sha256": "55696e09672da886ec1ed42e12ebb45e1482fb13ce10b442ae0f7738da39ca06",
+      "translation": "Använd det färdigpackade paketets vikt när du beräknar internationell frakt, så snart vikten är känd. Den omfattar kartong och skyddsmaterial. Säljarens viktuppgift kan avse enbart varan."
+    },
+    {
+      "source": "Only if the items will actually be packed end to end. Decide on the proposed arrangement and measure its outer envelope. Leave room for protective material and confirm packed dimensions later.",
+      "source_sha256": "536b8b79fc83da8498e787cdf8d8ed4a9f798a2b9e0105b754be105d333bddd8",
+      "raw_target_sha256": "2f532c1a2afb8558585e7813bf2830cd6b5477119388ea8e9ffcd959e0681932",
+      "translation": "Bara om alla tre varor faktiskt läggs på längden efter varandra. Mät hela uppställningens yttermått, lämna plats för skyddsmaterial och kontrollera måtten efter packning."
     }
   ]
 }

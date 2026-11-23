@@ -3,7 +3,7 @@
   "locale": "pt",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "4a14c03d78048b87349fd31f853ca76a310b041226f50f5b0e73d1d46fe2fa5e",
-  "effective_dictionary_sha256": "bcdfc58daf052772f8a4ef19b308c37f3015cb948aee702cc622c59f62b052a8",
+  "effective_dictionary_sha256": "7da6bb7f3916fbcaa2a32088ff77132ae769c79f40cf47134763d642c0b3cfeb",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -116,7 +116,7 @@
       "source": "Write down the exact service, amount and whether it applies to an item or parcel. Check if a quoted total already includes it before adding it separately.",
       "source_sha256": "9e77b7abf0e39bd9fa9189dafb8eb2b07c3f49dca520ef95ec38323189c690cb",
       "raw_target_sha256": "236cca7f1c600b784ac9f98f6dc52a3424930713e52d5fb869aab6eaa9d290db",
-      "translation": "Anote o serviço exato, o valor e se ele se aplica a um item ou encomenda. Verifique se um total citado já o inclui antes de adicioná-lo separadamente."
+      "translation": "Anote o serviço exato, o valor e se ele se aplica a um item ou encomenda. Verifique se o total orçamentado já o inclui antes de adicioná-lo separadamente."
     },
     {
       "source": "Record what changed and rerun the estimate using the revised outer dimensions and weight. Keep the old result as a reference instead of presenting it as a quote for the new parcel.",
@@ -146,7 +146,7 @@
       "source": "Here is a fictional receipt to practise with. Two fragile pieces require individual protective wrapping at 3 yuan per piece. One outer box uses a 9-yuan reinforcement option. The quoted base freight is 118. A screen then shows a parcel total of 133. The numbers reconcile because 118 plus six plus nine is 133. The words per piece and per parcel make the arithmetic reproducible. Without them, two buyers could look at the same three numbers and arrive at different totals.",
       "source_sha256": "d022cf8612acda86bc16391f7edac14f4562874968528f52aa5f0a26ad21a47b",
       "raw_target_sha256": "c736ba4f724cb19ca3e6f306ea82ad5cb2d6951afc53e9a4cbdb349a2740a0ba",
-      "translation": "Aqui está uma receita fictícia para praticar. Duas peças frágeis requerem embalagem protetora individual a 3 yuan por peça. Uma caixa exterior usa uma opção de reforço de 9 yuans. O frete base citado é 118. Uma tela então mostra um total de 133 pela encomenda. Os números se reconciliam porque 118 mais seis mais nove é 133. As palavras por peça e por encomenda tornam a aritmética reprodutível. Sem eles, dois compradores poderiam olhar para os mesmos três números e chegar a totais diferentes."
+      "translation": "Aqui está uma receita fictícia para praticar. Duas peças frágeis requerem embalagem protetora individual a 3 yuan por peça. Uma caixa exterior usa uma opção de reforço de 9 yuans. O frete base orçamentado é 118. Uma tela então mostra um total de 133 pela encomenda. Os números se reconciliam porque 118 mais seis mais nove é 133. As palavras por peça e por encomenda tornam a aritmética reprodutível. Sem eles, dois compradores poderiam olhar para os mesmos três números e chegar a totais diferentes."
     },
     {
       "source": "The service description should tell you what will be done to the object. A request to protect a bag could mean filling its interior to retain shape, keeping its original box or placing it in a larger outer carton. Each choice may affect the parcel differently. Specify the object, the result you need and any condition such as keeping detachable handles together. Then read what the selected service actually promises. If it covers only an outer carton, do not count it as individual protection for every item inside.",
@@ -206,7 +206,7 @@
       "source": "Now add a condition: the quoted combined arrangement relies on removing the retail case, which the buyer needs as part of a gift. The 185 quote no longer describes an acceptable solution. Obtain a comparable combined quote that keeps the case, or mark that arrangement as unsuitable. The earlier numerical comparison still teaches something about what created the saving, but it cannot justify selecting a packing method that defeats the purpose of the purchase.",
       "source_sha256": "91a9a3605abdcb2946c24630dcf5de4ccb7c8a21a632e62b601299095c305e76",
       "raw_target_sha256": "05b451f6ddbffbe94aaf7012a42bcae22d0cd4cffd7cf378c36f179c7fd0ef7e",
-      "translation": "Agora adicione uma condição: o arranjo combinado citado depende da remoção da caixa de varejo, que o comprador precisa como parte de um presente. A cotação 185 já não descreve uma solução aceitável. Obtenha uma cotação combinada comparável que mantenha o caso, ou marque esse arranjo como inadequado. A comparação numérica anterior ainda ensina algo sobre o que criou a economia, mas não pode justificar a seleção de um método de embalagem que derrota o propósito da compra."
+      "translation": "Suponha que o orçamento de 185 para o envio conjunto exija retirar a embalagem original, de que o comprador precisa para oferecer o artigo. A proposta deixa de satisfazer esse requisito. Peça um orçamento comparável que mantenha a embalagem ou exclua a opção. O cálculo anterior mostra de onde vem a poupança, mas não justifica uma forma de embalar que inviabiliza o presente."
     },
     {
       "source": "Compare two routes on one parcel",
@@ -279,6 +279,60 @@
       "source_sha256": "0bfd4b366ea6686dcc6725e9b7a93f9547ee8034c4440abe349c3db0195de886",
       "raw_target_sha256": "0a49b38107c50159ea4b43ec208b12065ae62fe51aef0f7f5cddd37887bbad73",
       "translation": "Imagine um estojo rígido para acessórios, com um fecho que não deve ficar sob pressão, e duas camisas macias. Na opção A os três artigos cabem numa caixa justa, com as camisas em volta do estojo. Na B o estojo recebe uma capa acolchoada separada dentro de uma caixa externa maior. Pergunte que proteção cada serviço oferece e se as medidas foram confirmadas ou estimadas. A segunda configuração também pode alterar as rotas disponíveis."
+    },
+    {
+      "source": "Consider a hypothetical worksheet with three product entries, two inner cartons and one outer parcel. Assume the quoted service is 4 yuan per inner carton and an outer-packing option costs 7 yuan for the parcel. The worksheet should add 8 and 7, or 15 in total. Multiplying both charges by three because there are three item rows produces 33. This example illustrates the arithmetic only; read the actual service units and amounts on the live offer.",
+      "source_sha256": "d69a5da514621e530a2052e5742f1a2b8c367baec6ee1bbd4fe41739c8216408",
+      "raw_target_sha256": "156d923ca4e3d5290504bfa7d090bc09903fc1d4043281653b3f0d0caa9eebfc",
+      "translation": "Considere uma planilha hipotética com três entradas de produtos, duas caixas internas e um pacote externo. Suponha que o serviço orçamentado custa 4 yuan por caixa interna e uma opção de embalagem externa custa 7 yuan para o pacote. A planilha deve somar 8 e 7, ou 15 no total. Multiplicando ambas as cargas por três porque há três linhas de itens produz 33. Este exemplo ilustra apenas a aritmética; leia as unidades de serviço reais e os valores na oferta ao vivo."
+    },
+    {
+      "source": "Take a fictional payment in which the base amount is 300 yuan and the comparison rate is 7.50 yuan per home-currency unit. The base conversion gives 40.00. One hypothetical payment method adds a fixed fee of 1.30 home units. Another has no fixed fee but quotes a conversion that results in 41.00. For this amount, the second method would cost 0.30 less, provided both figures are final and cover the same goods and services. The lower quoted exchange figure alone does not determine the result.",
+      "source_sha256": "0c3db5328050fabbc9b5052a42801e535861af27e07a7b916137cdc9e792ed84",
+      "raw_target_sha256": "245f36912633f951b672889f41ca553bf9316c388a9ffb194041e69dee71db1b",
+      "translation": "Considere um pagamento fictício em que o valor base é de 300 yuans e a taxa de comparação é de 7,50 yuans por unidade de moeda local. A conversão base dá 40,00. Um método de pagamento hipotético adiciona uma taxa fixa de 1,30 unidades residenciais. Outro não tem taxa fixa, mas cita uma conversão que resulta em 41,00. Para esse valor, o segundo método custaria 0,30 menos, desde que ambos os números sejam finais e abranjam os mesmos bens e serviços. O valor de câmbio mais baixo apresentado na cotação por si só não determina o resultado."
+    },
+    {
+      "source": "Changing the contents, packing, measurements or selected services calls for a fresh estimate. Keep the old result because it can help explain a later difference. Mark the revised input with the reason for the change, such as a retained shoebox or a removed accessory. Ask HubBuy support about a specific line if the conditions appear identical but the quoted result still differs.",
+      "source_sha256": "5404359e370df79f7003ee10774e8d4b3ec30d27335d5e5784413cdd5c77cf08",
+      "raw_target_sha256": "9c99dce4b45081a2fd015eae0c1f86520dcbde8c0b573efefc8f43a6fbe8da56",
+      "translation": "Alterar o conteúdo, embalagem, medidas ou serviços selecionados requer um novo orçamento. Mantenha o resultado antigo porque ele pode ajudar a explicar uma diferença posterior. Marque a entrada revisada com o motivo da alteração, como uma caixa de sapatos retida ou um acessório removido. Pergunte ao suporte do HubBuy sobre uma linha específica se as condições parecerem idênticas, mas o valor do orçamento ainda for diferente."
+    },
+    {
+      "source": "A route can have size limits or consider parcel volume when billing. Enter the actual outer length, width and height when you have them, and read the terms for the route you select.",
+      "source_sha256": "6878e715c45b8681c3aa09353b842cb1bb4be1a6bc61d874dc796275de3b66d6",
+      "raw_target_sha256": "14d90810e4fb9ee7dba037ed11fc18da29db998f4d7d1befa79ad8ddf89dff32",
+      "translation": "O serviço pode impor limites de tamanho ou considerar o volume da encomenda no preço. Introduza o comprimento, a largura e a altura exteriores reais e consulte as condições da rota escolhida."
+    },
+    {
+      "source": "What does seller-to-warehouse delivery pay for?",
+      "source_sha256": "8d0b4c629f3ad61bbd90c766e08c7287b22d9e382415395c2c922a8af27e9c7d",
+      "raw_target_sha256": "7b9d6fb108910bf09276ab356b08d63ca9167da38b9c17ec03058010e933d2f4",
+      "translation": "O que cobre a entrega do vendedor ao armazém?"
+    },
+    {
+      "source": "It covers the domestic movement from the seller to the receiving warehouse when such a charge applies. HubBuy lists the product purchase and China shipping before the later international parcel stage.",
+      "source_sha256": "07768ae8510ca6c90a9ace3f7440442a5d92c57e150953febdee66de34d8b16d",
+      "raw_target_sha256": "46b58ad1f5f3dd0106093f4de5d12f3d1fc4c938cf0618f95f317647da74b0d0",
+      "translation": "Quando cobrada, corresponde ao transporte dentro da China, do vendedor ao armazém que recebe o artigo. A HubBuy apresenta a compra e esta entrega nacional antes da posterior expedição internacional."
+    },
+    {
+      "source": "How should I budget two items from the same seller?",
+      "source_sha256": "57e8143e9141de36ec02c9efc93c5aa715452c9f2382476a1ecab7bc0f9fdf8a",
+      "raw_target_sha256": "e33d43806509529f308339918c0de75373d78c0e08c789c151590b73f3de6aa7",
+      "translation": "Como calcular o orçamento de dois artigos do mesmo vendedor?"
+    },
+    {
+      "source": "Use the packed figure for the international parcel estimate once available. It includes the box and packing materials, whereas a seller's product figure may refer only to the unit.",
+      "source_sha256": "cdc8a1c8dde506ba039e6ec7567ea877aa6f81f9c35b4304d4cc9493062879c8",
+      "raw_target_sha256": "4cbc969ca32ec28afdb6d1ba65a6633f223d001f3a02364787429c7dbf99eb4d",
+      "translation": "Logo que disponível, utilize o peso da encomenda já embalada para estimar o envio internacional. Inclui a caixa e os materiais de proteção. O peso indicado pelo vendedor pode ser apenas o do produto."
+    },
+    {
+      "source": "Only if the items will actually be packed end to end. Decide on the proposed arrangement and measure its outer envelope. Leave room for protective material and confirm packed dimensions later.",
+      "source_sha256": "536b8b79fc83da8498e787cdf8d8ed4a9f798a2b9e0105b754be105d333bddd8",
+      "raw_target_sha256": "ff4dca2922c15ecbbd74f9f5fee55f501a52aaacbb640ad8350efb5c0670458e",
+      "translation": "Apenas se os três artigos forem realmente dispostos em fila, ponta a ponta no sentido do comprimento. Meça as dimensões exteriores do conjunto, reserve espaço para proteção e confirme depois de embalar."
     }
   ]
 }

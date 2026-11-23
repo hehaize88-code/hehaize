@@ -3,7 +3,7 @@
   "locale": "hu",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "c436e2f5efefc3142a756f55557c99681570a9fadf908adaeb8be690535bf15a",
-  "effective_dictionary_sha256": "150173ae69d34b8416e33ec9c4eaa1a058b5e89d416f38d5378e391eae89fe35",
+  "effective_dictionary_sha256": "33b5378a2c7d677468744a7feaec56198a4a8ace1d428ac2c72c5e72531a11cd",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -308,7 +308,7 @@
       "source": "Now add a condition: the quoted combined arrangement relies on removing the retail case, which the buyer needs as part of a gift. The 185 quote no longer describes an acceptable solution. Obtain a comparable combined quote that keeps the case, or mark that arrangement as unsuitable. The earlier numerical comparison still teaches something about what created the saving, but it cannot justify selecting a packing method that defeats the purpose of the purchase.",
       "source_sha256": "91a9a3605abdcb2946c24630dcf5de4ccb7c8a21a632e62b601299095c305e76",
       "raw_target_sha256": "d7d8e0e6e958affc39094adb4e141da6af3c92ac4f43a48a4e9629b202b3d0e6",
-      "translation": "Most adjunk hozzá egy feltételt: az az ajánlatban szereplő kombinált elrendezés a kiskereskedelmi tok eltávolítására támaszkodik, amelyre a vevőnek ajándék részeként van szüksége. A 185-ös árajánlat már nem ír le elfogadható megoldást. Szerezzen be egy összehasonlítható kombinált árajánlatot, amely megtartja az esetet, vagy jelölje meg az elrendezést nem megfelelőnek. A korábbi számszerű összehasonlítás még mindig tanít valamit arról, hogy mi teremtette meg a megtakarítást, de nem igazolhatja egy olyan csomagolási módszer kiválasztását, amely legyőzi a vásárlás célját."
+      "translation": "Tegyük fel, hogy a 185 egységért ajánlott közös csomagoláshoz el kell távolítani az eredeti díszdobozt, a vevőnek viszont szüksége van rá az ajándékhoz. Kérjen összehasonlítható ajánlatot a doboz megtartásával, vagy jelölje ezt a megoldást alkalmatlannak. Az előző számítás megmutatja a megtakarítás okát, de a csomagolásnak a vásárlás célját is szolgálnia kell."
     },
     {
       "source": "Take another fictional quote with a combined option at 214. The smaller boxes cost 112 and 94, for a total of 206, and their protective needs are already included. This time the arithmetic favours splitting by eight. Before deciding, verify whether there are additional services charged separately per parcel or any destination-specific conditions that were absent from the recorded totals. Two boxes can produce two delivery events and two references to monitor.",
@@ -387,6 +387,48 @@
       "source_sha256": "0bfd4b366ea6686dcc6725e9b7a93f9547ee8034c4440abe349c3db0195de886",
       "raw_target_sha256": "cfd36f587ae4a1bb5c2fbe03fe8cff89a951fce9e53c16ae9fbe49b477b0cad0",
       "translation": "Képzeljen el egy merev tartozéktokot és két puha inget. A tok zárját nem szabad nyomásnak kitenni. Az A változatban mindhárom tárgy szorosan elfér egy dobozban, az ingek a tok körül vannak. A B változatban a tok külön párnázott védőtasakba, majd nagyobb külső dobozba kerül. Kérdezze meg, mit véd az egyes szolgáltatás, és mért vagy becsült külső méretekről van-e szó. A másik csomagolás az elérhető szállítási módokat is megváltoztathatja."
+    },
+    {
+      "source": "Suppose quote A covers the same merchandise and domestic delivery as quote B, but only A includes protective packing. Compare the contents before worrying about exchange-rate rounding. Either add the confirmed packing amount to B or label the quotes as different offers. If a missing charge has no confirmed amount, leave a gap instead of filling it with an attractive guess. A conversion cannot repair two quotes that describe different services.",
+      "source_sha256": "33bb436a69ded2e9ee3771159ed02b69551edba9744747c51ac8ee084fcc54fa",
+      "raw_target_sha256": "b4e1a2b099fee58f2dc1a476d5301fe8a479d193ed9f8a0b57b8ab559125d8a1",
+      "translation": "Tegyük fel, hogy az A árajánlat ugyanarra az árura és belföldi szállításra vonatkozik, mint a B árajánlat, de csak az A tartalmazza a védőcsomagolást. Hasonlítsa össze a tartalmat, mielőtt aggódna az árfolyam-kerekítés miatt. Vagy adja hozzá a visszaigazolt csomagolási díjat a B-hez, vagy címkézze az árajánlatokat különböző ajánlatokként. Ha egy hiányzó terhelésnek nincs megerősített összege, hagyjon egy hézagot ahelyett, hogy egy vonzó találgatással töltené ki. Az átváltástól még nem válik összehasonlíthatóvá két különböző szolgáltatást tartalmazó árajánlat."
+    },
+    {
+      "source": "A route can have size limits or consider parcel volume when billing. Enter the actual outer length, width and height when you have them, and read the terms for the route you select.",
+      "source_sha256": "6878e715c45b8681c3aa09353b842cb1bb4be1a6bc61d874dc796275de3b66d6",
+      "raw_target_sha256": "4116f6c8128b5dccfe8e8147623cb5717b09646a0152b0076a54f96f75136616",
+      "translation": "A szállítási módnál mérethatár lehet érvényben, és a díj a csomag térfogatától is függhet. Adja meg a tényleges külső hosszúságot, szélességet és magasságot, majd ellenőrizze az útvonal feltételeit."
+    },
+    {
+      "source": "What does seller-to-warehouse delivery pay for?",
+      "source_sha256": "8d0b4c629f3ad61bbd90c766e08c7287b22d9e382415395c2c922a8af27e9c7d",
+      "raw_target_sha256": "f94799ec2bfea409ab147005548be18ff234c518fd2261519694d1e60028b075",
+      "translation": "Mit fedez az eladótól a raktárig történő szállítás díja?"
+    },
+    {
+      "source": "It covers the domestic movement from the seller to the receiving warehouse when such a charge applies. HubBuy lists the product purchase and China shipping before the later international parcel stage.",
+      "source_sha256": "07768ae8510ca6c90a9ace3f7440442a5d92c57e150953febdee66de34d8b16d",
+      "raw_target_sha256": "b6dc281bebc9d39bcb5b3975c569b87f435b14fccf0b4990e6c370c61699c38c",
+      "translation": "Ha felszámítják, ez a díj az eladótól az átvevő raktárig tartó, Kínán belüli szállítást fedezi. A HubBuy a vásárlást és ezt a belföldi szállítást a későbbi nemzetközi feladás előtt tünteti fel."
+    },
+    {
+      "source": "How should I budget two items from the same seller?",
+      "source_sha256": "57e8143e9141de36ec02c9efc93c5aa715452c9f2382476a1ecab7bc0f9fdf8a",
+      "raw_target_sha256": "f90b8926aac765047065819234249eec6f2eea8bb7d7430421625d335ea11f45",
+      "translation": "Hogyan tervezzem meg két, ugyanattól az eladótól származó termék költségét?"
+    },
+    {
+      "source": "Use the packed figure for the international parcel estimate once available. It includes the box and packing materials, whereas a seller's product figure may refer only to the unit.",
+      "source_sha256": "cdc8a1c8dde506ba039e6ec7567ea877aa6f81f9c35b4304d4cc9493062879c8",
+      "raw_target_sha256": "a02d0f1bedd5d2227b7859bc3caa9774b704074483d423c59b0bd3e095ed7d5f",
+      "translation": "Amint ismert a becsomagolt küldemény tömege, ezt használja a nemzetközi szállítás becsléséhez. A doboz és a csomagolóanyag tömege is beleszámít. Az eladó adata esetleg csak a termékre vonatkozik."
+    },
+    {
+      "source": "Only if the items will actually be packed end to end. Decide on the proposed arrangement and measure its outer envelope. Leave room for protective material and confirm packed dimensions later.",
+      "source_sha256": "536b8b79fc83da8498e787cdf8d8ed4a9f798a2b9e0105b754be105d333bddd8",
+      "raw_target_sha256": "97fabbcb5a398567a9d23c43c1a54a27996d74f2c0d9baa50ba33712fc543cde",
+      "translation": "Csak akkor, ha mindhárom terméket hosszában, egymás után helyezik el. Mérje meg az elrendezés külső méreteit, hagyjon helyet a védelemnek, majd csomagolás után ellenőrizze az eredményt."
     }
   ]
 }

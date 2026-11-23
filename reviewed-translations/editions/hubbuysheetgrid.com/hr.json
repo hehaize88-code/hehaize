@@ -3,7 +3,7 @@
   "locale": "hr",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "cd7e2b7417f4e05adc20f6ff1af5521e51f78f8b5fca1ca5325ae10dd76cec1b",
-  "effective_dictionary_sha256": "f7a87044d4536af0931e1a3c2071585d1f0482eb44627daafce60821b7e919a9",
+  "effective_dictionary_sha256": "4b300f71dc53147a8c767985dc67274a5d782a9d07088e45c38ad61505635020",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -158,7 +158,7 @@
       "source": "Only if the items will actually be packed end to end. Decide on the proposed arrangement and measure its outer envelope. Leave room for protective material and confirm packed dimensions later.",
       "source_sha256": "536b8b79fc83da8498e787cdf8d8ed4a9f798a2b9e0105b754be105d333bddd8",
       "raw_target_sha256": "ccc2509b911d35f080c9f295e53d2d20707d43ad5c4825258357a2d6f2585173",
-      "translation": "Samo ako ćete proizvode zaista složiti u jedan red, jedan iza drugoga. Odaberite raspored, izmjerite ukupne vanjske dimenzije, predvidite prostor za zaštitu i nakon pakiranja provjerite konačne mjere."
+      "translation": "Samo ako su sva tri artikla zaista položena jedan iza drugoga po duljini. Izmjerite vanjske dimenzije tako složene robe, ostavite mjesta za zaštitu i provjerite mjere nakon pakiranja."
     },
     {
       "source": "Write down the exact service, amount and whether it applies to an item or parcel. Check if a quoted total already includes it before adding it separately.",
@@ -398,7 +398,7 @@
       "source": "Now add a condition: the quoted combined arrangement relies on removing the retail case, which the buyer needs as part of a gift. The 185 quote no longer describes an acceptable solution. Obtain a comparable combined quote that keeps the case, or mark that arrangement as unsuitable. The earlier numerical comparison still teaches something about what created the saving, but it cannot justify selecting a packing method that defeats the purpose of the purchase.",
       "source_sha256": "91a9a3605abdcb2946c24630dcf5de4ccb7c8a21a632e62b601299095c305e76",
       "raw_target_sha256": "5df67c4199a3108806a67be03fe38eb0fe75978012c9a8fdc6880f9072cb70bd",
-      "translation": "Sada dodajte uvjet: navedeni kombinirani aranžman oslanja se na uklanjanje maloprodajnog slučaja, koji kupac treba kao dio poklona. Ponuda od 185 više ne opisuje prihvatljivo rješenje. Nabavite usporedivu kombiniranu ponudu koja drži slučaj ili označite taj aranžman kao neprikladan. Ranija numerička usporedba još uvijek uči nešto o tome što je stvorilo uštedu, ali ne može opravdati odabir metode pakiranja koja uništava svrhu kupnje."
+      "translation": "Pretpostavimo da zajedničko slanje po cijeni od 185 zahtijeva uklanjanje izvornog pakiranja, a kupcu ono treba za dar. Ta ponuda više ne odgovara njegovim uvjetima. Zatražite usporedivu ponudu u kojoj izvorno pakiranje ostaje ili označite mogućnost neprikladnom. Prvotni izračun pokazuje kako je nastala ušteda, ali ne opravdava pakiranje koje onemogućuje svrhu kupnje."
     },
     {
       "source": "A delivery estimate may refer to a stage starting at dispatch. Read the route description before promising someone a date based on it. Include unresolved purchasing, seller dispatch, warehouse intake or packing in a separate planning timeline. Avoid adding arbitrary days to manufacture a confident arrival date. If the use date matters, state which pending event creates uncertainty and check the latest confirmed status.",
@@ -441,6 +441,36 @@
       "source_sha256": "0bfd4b366ea6686dcc6725e9b7a93f9547ee8034c4440abe349c3db0195de886",
       "raw_target_sha256": "313dcc34c364ec28e1af316060f670ab9b561500b0ad1299a7f16f4765a22428",
       "translation": "Zamislite čvrstu kutiju za pribor s kopčom koja ne smije biti pod pritiskom te dvije mekane košulje. U mogućnosti A sva tri artikla stanu u tijesnu kartonsku kutiju, a košulje su oko kutije za pribor. U mogućnosti B kutija za pribor dobiva zasebnu podstavljenu zaštitnu navlaku i veći vanjski karton. Pitajte koju zaštitu nudi svaka usluga i jesu li vanjske mjere potvrđene ili procijenjene. Drukčija zaštita može promijeniti i izbor prijevozne rute."
+    },
+    {
+      "source": "A route can have size limits or consider parcel volume when billing. Enter the actual outer length, width and height when you have them, and read the terms for the route you select.",
+      "source_sha256": "6878e715c45b8681c3aa09353b842cb1bb4be1a6bc61d874dc796275de3b66d6",
+      "raw_target_sha256": "71a518ea5956871d316fbafa6094c84800efc7bed379e28f3c0811003521c7b7",
+      "translation": "Prijevoznik može ograničiti dimenzije ili obračunati cijenu prema obujmu paketa. Unesite stvarnu vanjsku duljinu, širinu i visinu te provjerite uvjete odabrane rute."
+    },
+    {
+      "source": "What does seller-to-warehouse delivery pay for?",
+      "source_sha256": "8d0b4c629f3ad61bbd90c766e08c7287b22d9e382415395c2c922a8af27e9c7d",
+      "raw_target_sha256": "eb5ef4d14cd37aa8bb564280d37617b8f3ca91005f74ee0f0f54b3a4f02aef27",
+      "translation": "Što pokriva dostava od prodavatelja do skladišta?"
+    },
+    {
+      "source": "It covers the domestic movement from the seller to the receiving warehouse when such a charge applies. HubBuy lists the product purchase and China shipping before the later international parcel stage.",
+      "source_sha256": "07768ae8510ca6c90a9ace3f7440442a5d92c57e150953febdee66de34d8b16d",
+      "raw_target_sha256": "27a023aa5b3b4097d95fa87baebd8a8f4b96ee625f139ac1c6826102447b4ac2",
+      "translation": "Ako se naplaćuje, riječ je o prijevozu unutar Kine od prodavatelja do skladišta koje zaprima robu. HubBuy navodi kupnju robe i tu domaću dostavu prije kasnijeg međunarodnog slanja."
+    },
+    {
+      "source": "How should I budget two items from the same seller?",
+      "source_sha256": "57e8143e9141de36ec02c9efc93c5aa715452c9f2382476a1ecab7bc0f9fdf8a",
+      "raw_target_sha256": "eb177122e72ea8ee54a09ed851facf3df7c9c6529a5e58565656db8c687545ff",
+      "translation": "Kako planirati trošak dvaju artikala istog prodavatelja?"
+    },
+    {
+      "source": "Use the packed figure for the international parcel estimate once available. It includes the box and packing materials, whereas a seller's product figure may refer only to the unit.",
+      "source_sha256": "cdc8a1c8dde506ba039e6ec7567ea877aa6f81f9c35b4304d4cc9493062879c8",
+      "raw_target_sha256": "7640477d019f05b3dd0c796cdc6665741fe0b1a66a39801273a5381712d925d5",
+      "translation": "Kad znate masu zapakiranog paketa, upotrijebite je za procjenu međunarodne dostave. Obuhvaća kutiju i zaštitni materijal, dok prodavatelj možda navodi masu samog proizvoda."
     }
   ]
 }

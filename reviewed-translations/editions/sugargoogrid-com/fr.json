@@ -3,9 +3,9 @@
   "locale": "fr",
   "source_set_sha256": "7b8bf397ce0bb7e1ebf77a03a07fac795fafadde6c651ecf497362774610be7b",
   "raw_dictionary_sha256": "73e91b94444e4593b40080013cec92a59bbc9719372604def0103030c4475391",
-  "effective_dictionary_sha256": "8847815bf5d200ec1a3a049001dff244bd909b245d21c980b40919dd1f8b3a31",
+  "effective_dictionary_sha256": "d0cab8a941b16a87cc9d883e2dab86acecbcc8956df4730063d0901adabc82d3",
   "checked_entries": 297,
-  "review_scope": "Reviewed edition covering ten titles, all baseline findings, worked examples and item sizes, domestic and international freight, outer dimensions, warehouse records and payment precedence.",
+  "review_scope": "Reviewed edition covering ten titles, all baseline findings, worked examples and item sizes, domestic and international freight, outer dimensions, warehouse records and payment precedence. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [
     {
       "issue": "repeated translated sentence",
@@ -231,6 +231,30 @@
       "source_sha256": "4c2eba5f0a157340fa950e13a2d8ef96edc034329504408507d31f5cb8e064b1",
       "raw_target_sha256": "09cb3695bace209bf74c75317c3fdda237a25a0e0470cea9af2cc893588a324c",
       "translation": "Exemple fictif : le devis initial est de 190 unités monétaires. Le relevé final comprend 170 de frais de base et de tranches supplémentaires, plus 35 de frais de traitement, soit 205. Un service facultatif de 6 a été payé à part. L’écart sur le transport est de 15, entre 190 et 205. La dépense totale liée au colis atteint 211 avec le service séparé. Si le relevé précise que les 6 sont déjà compris dans les 205, le total reste 205. Le montant pertinent dépend de la question."
+    },
+    {
+      "source": "Meanwhile, keep your parcel decision provisional. If the cap has arrived, you may have a choice between sending what is available and waiting for the remaining goods. Separate that choice from the question of where the green shirt is. Check storage dates for the received items, any unresolved quality questions and route availability for the intended contents. An estimate for three pieces can help you plan, but it cannot establish the quoted charge for a different selection of pieces. Record the actual selection when you commit to packing.",
+      "source_sha256": "a5653c54827b3d8c8bdf2110cf35962ebdfd4006504260f267e5a9498f974181",
+      "raw_target_sha256": "2bf374f970cdb446f93e178dceadad75e7b2ec6654bd9635caded7b81164412b",
+      "translation": "En attendant, gardez votre projet de colis ouvert. Si la casquette est arrivée, vous pouvez envisager d’expédier les pièces disponibles ou d’attendre le reste. Cette décision est distincte de la recherche de la surchemise verte. Vérifiez les dates de stockage, les questions de contrôle encore ouvertes et les lignes accessibles au contenu prévu. Une estimation pour trois pièces ne vaut pas devis pour une autre sélection. Notez ce que vous incluez effectivement en demandant l’emballage."
+    },
+    {
+      "source": "Consider three problems that sound similar in a short message: “the cap is missing.” Before warehouse intake, the seller may not have dispatched the cap. At intake, a seller package may have arrived but the cap may not be identifiable or may be absent from its expected contents. After international delivery, the cap may have been left out of the outbound selection entirely, or may be missing from a parcel where it was explicitly included. These possibilities involve different records and different evidence. Start with the last stage where you can establish that the cap was present.",
+      "source_sha256": "d2787da64021332d8aca397d022fd708108d32e03663cb2ff3ad74d98949b0fe",
+      "raw_target_sha256": "313c5de161f0bdca5f3f64ac112c565e89b3f8ada67b877df2da58850cfa8a0e",
+      "translation": "« Il manque la casquette » peut décrire plusieurs problèmes. Avant la réception à l’entrepôt, le vendeur ne l’a peut-être pas expédiée. À la réception, un colis du vendeur peut être arrivé sans que la casquette soit identifiable ou présente parmi les pièces attendues. Après livraison internationale, elle peut ne jamais avoir été sélectionnée pour l’envoi, ou manquer dans un colis dont la liste la mentionnait explicitement. Reprenez les événements au dernier stade où vous pouvez établir sa présence."
+    },
+    {
+      "source": "At delivery, close the timeline by comparing the parcel contents with the submitted selection. Return to your original shopping list only after this comparison. Perhaps the cap is still in the warehouse by design. Perhaps it belongs to another parcel. With separate records, you can answer both questions without relying on memory or sending a broad inquiry about the entire order. You also have a clear starting point for your next purchase: identify the thing each status belongs to before deciding what it means.",
+      "source_sha256": "02302a436097683d30f4049ff67f45e692cb083a10205026b85534e20d035972",
+      "raw_target_sha256": "65f4df88dd867f1d1fc8ede733cee3ca1b1b8161fadcf1d67d0d9e5ba8937cc9",
+      "translation": "À la livraison, confrontez d’abord le contenu à la sélection effectivement soumise pour ce colis, puis à votre liste d’achats. La casquette a peut-être été laissée volontairement à l’entrepôt ou placée dans un autre colis. Des fiches distinctes permettent de le vérifier sans faire appel à votre mémoire ni interroger l’assistance sur toute la commande. Pour le prochain achat aussi, identifiez ce que concerne chaque statut avant de l’interpréter."
+    },
+    {
+      "source": "When you request support, identify the purchase line, relevant shipment or warehouse reference and the piece you want checked. Include the option description showing the expected contents and the image that creates the discrepancy. Ask a question the warehouse can answer physically: “Is there a notebook inside each of these two cases?” A refund or replacement decision can follow from the facts and current policy. Starting with a precise count helps avoid promising yourself an outcome before anyone has established what is actually missing.",
+      "source_sha256": "7fd28dbd2b5ef3966653d84e115faf8ba5a3d328cc69ce3ea7d4330bc17d7f9f",
+      "raw_target_sha256": "d02e051a18669bea32b35ad645508f7cf1087dfba1fb33c52e733227c6aea211",
+      "translation": "Dans votre demande, indiquez la ligne d’achat, la référence d’envoi ou d’entrepôt et la pièce à contrôler. Joignez la description de la variante qui énumère le contenu attendu et la photo à l’origine du doute. Posez une question vérifiable sur place : « Y a-t-il un carnet en papier dans chacun de ces deux étuis ? » L’éventuel remboursement ou remplacement dépendra des faits et des conditions applicables. Commencez par établir le nombre de pièces réellement présentes."
     }
   ]
 }

@@ -3,7 +3,7 @@
   "locale": "cs",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "cea1f9277abaddd0199e00781492799d4dd29627fd6e2c427fedd9e41427f71d",
-  "effective_dictionary_sha256": "26d171d38b7f15e0f7c40d50a445d3faba368e0c958e14324dfdaada68794d87",
+  "effective_dictionary_sha256": "e957620476f35f9540f64ca55a7d2bb0e62a7e19e848149057e0551fba51adb1",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -236,7 +236,7 @@
       "source": "Now add a condition: the quoted combined arrangement relies on removing the retail case, which the buyer needs as part of a gift. The 185 quote no longer describes an acceptable solution. Obtain a comparable combined quote that keeps the case, or mark that arrangement as unsuitable. The earlier numerical comparison still teaches something about what created the saving, but it cannot justify selecting a packing method that defeats the purpose of the purchase.",
       "source_sha256": "91a9a3605abdcb2946c24630dcf5de4ccb7c8a21a632e62b601299095c305e76",
       "raw_target_sha256": "0d1f22690c870ff4760d6df3eda669197cf6ff4e4673a5962491d84166784d7a",
-      "translation": "Nyní přidejte podmínku: uvedené kombinované uspořádání spoléhá na odstranění maloobchodního pouzdra, které kupující potřebuje jako součást daru. Nabídka 185 již nepopisuje přijatelné řešení. Získejte srovnatelnou kombinovanou nabídku, která udržuje případ, nebo označte toto uspořádání jako nevhodné. Dřívější číselné srovnání nás stále něco učí o tom, co vytvořilo úsporu, ale nemůže ospravedlnit výběr způsobu balení, který zmaří účel nákupu."
+      "translation": "Společné balení za 185 předpokládá odstranění původní prodejní krabice. Kupující ji ale potřebuje jako součást dárku, takže tato nabídka už nesplňuje jeho podmínky. Vyžádejte si cenu společného balení s krabicí, případně variantu vyřaďte. Původní výpočet ukazuje, kde vznikla úspora, nikoli proč by měl kupující o důležitou součást dárku přijít."
     },
     {
       "source": "A delivery estimate may refer to a stage starting at dispatch. Read the route description before promising someone a date based on it. Include unresolved purchasing, seller dispatch, warehouse intake or packing in a separate planning timeline. Avoid adding arbitrary days to manufacture a confident arrival date. If the use date matters, state which pending event creates uncertainty and check the latest confirmed status.",
@@ -279,6 +279,84 @@
       "source_sha256": "0bfd4b366ea6686dcc6725e9b7a93f9547ee8034c4440abe349c3db0195de886",
       "raw_target_sha256": "b6e0ecdb4ff8d4e7e4eac3725379ea87ba6db7e0fd6144e15175ee1ea66e54fd",
       "translation": "Představte si pevné pouzdro na příslušenství a dvě měkké košile. Na západku pouzdra nesmí nic tlačit. Ve variantě A jsou všechny tři položky v těsné krabici, košile kolem pouzdra. Ve variantě B je pouzdro uloženo v samostatném polstrovaném obalu ve větší krabici. Ověřte ochranu poskytovanou každou službou i to, zda jsou rozměry změřené, nebo odhadnuté. Jiná ochrana může změnit i výběr dostupné trasy."
+    },
+    {
+      "source": "Read an adjustment without erasing the original quote",
+      "source_sha256": "e0936a2d0afd23a83899a9b5f9612d756693ae1c1ddbda43aea31d5385bab116",
+      "raw_target_sha256": "adf737637556dc883d977d98e8c80a5c91749c08b91929ed911e6756f11b7c46",
+      "translation": "Čtení úpravy bez vymazání původní cenové nabídky"
+    },
+    {
+      "source": "Use separate rows for quoted, paid and credited amounts. If a charge was removed, enter the credit with its reference. When a final invoice rolls services into a parcel subtotal, place that subtotal in a comparison column rather than adding it to the detailed entries. Check that your reconstructed total agrees with the payment record within ordinary rounding. Write down the remaining difference and ask support which invoice line explains it.",
+      "source_sha256": "b4f3dede9df755627787afff51d746f3d3c31eba0df484be2406fa0ed8db27b7",
+      "raw_target_sha256": "3f09f4537923e951e8bba70b069864f80338ee604503918e3f14904176a6ca8f",
+      "translation": "Používejte samostatné řádky pro nabídnuté, zaplacené a připsané částky. Pokud byla platba odebrána, zadejte dobropis s jeho referencí. Pokud závěrečná faktura zahrnuje služby do mezisoučtu balíčku, umístěte tento mezisoučet do sloupce srovnání a nepřidávejte jej do podrobných položek. Zkontrolujte, zda se rekonstruovaný součet shoduje se záznamem o platbě v rámci běžného zaokrouhlování. Zapište si zbývající rozdíl a zeptejte se podpory, který řádek faktury to vysvětluje."
+    },
+    {
+      "source": "Keep the old quote and add a revised quote under it. If the larger amount was already paid, track the credit process separately from the recalculated cost. Do not enter 202 as the only payment when the account shows 274 collected and a credit still pending. The two records answer different questions: what the retained merchandise should cost, and which funds have actually moved. Keep the same line names so that a friend reviewing the change can tell which item became unavailable.",
+      "source_sha256": "d934b1be832ea7a829823f1f235cb216308d04f4d58e293696e5f10aa1b5a6b9",
+      "raw_target_sha256": "65b521e4ff576ff4f8742af3f6e33b524f6f542bd3a83fcc827db3b863079a34",
+      "translation": "Zachovejte původní cenovou nabídku a pod ni přidejte novou. Pokud již byla větší částka zaplacena, sledujte proces dobropisu odděleně od přepočítaných nákladů. Nezadávejte 202 jako jedinou platbu, když účet ukazuje 274 vybraných a stále nevyřízený kredit. Tyto dva záznamy odpovídají na různé otázky: kolik by mělo zboží stát a jaké finanční prostředky byly skutečně přesunuty. Zachovejte stejné názvy řádků, aby přítel, který si změnu prohlíží, mohl zjistit, která položka se stala nedostupnou."
+    },
+    {
+      "source": "Before accepting a number from a screenshot, identify the currency code and whether the price covers one unit, the selected quantity or the entire parcel. Save any quoted conversion alongside the original amount. Someone reviewing the purchase later should be able to reproduce the converted value using those saved inputs, even after the currency selector displays a different rate.",
+      "source_sha256": "423e0cf302192f1b93d8247a3d7a30edf2c3b6f841c8e50c494acd9696851ff5",
+      "raw_target_sha256": "455b759373d014fbd719d5a422a38de8430c8215fbe4378a8faea16e04de23a9",
+      "translation": "Než přijmete číslo ze snímku obrazovky, identifikujte kód měny a zda se cena vztahuje na jednu jednotku, vybrané množství nebo na celý balík. Uložte jakýkoli nabídnutý přepočet vedle původní částky. Někdo, kdo nákup zkontroluje později, by měl být schopen reprodukovat převedenou hodnotu pomocí těchto uložených vstupů, a to i poté, co se ve výběru měny zobrazí jiný kurz."
+    },
+    {
+      "source": "In a teaching example, option A uses an existing carton and simple padding. Option B adds an inner protective shell. Write the cost of each quoted service, then measure or request the external weight and dimensions of the finished parcel under each arrangement. The shell may change the size available to a route, even if it adds little weight. Enter the same destination and product category for both estimates.",
+      "source_sha256": "6da576fcb0a7235baf38dc2ed0405705168582f5db95b54c441787ab58f23df7",
+      "raw_target_sha256": "e06c98ea6cbb07adae12abfb033e9b350ccbb38f098c7fbb7804e5f571821af2",
+      "translation": "Ve výukovém příkladu možnost A používá stávající karton a jednoduché polstrování. Možnost B přidává vnitřní ochranný plášť. Zadejte cenu každé nabízené služby, poté změřte nebo vyžádejte vnější hmotnost a rozměry hotového balíku v rámci každého uspořádání. Plášť může změnit velikost dostupnou pro trasu, i když přidává jen malou váhu. U obou odhadů zadejte stejnou destinaci a kategorii produktů."
+    },
+    {
+      "source": "Suppose the combined option in a worked example is quoted at 164 units. The split option has one box quoted at 105 and a second at 72. The split total is 177 before any separately listed packing services. Looking only at the 105 would reverse the result. Add optional charges that apply twice and remove any charge shown as already included. Record the currency and timestamp for all quotations.",
+      "source_sha256": "d2c09fbbee9f0d1007f6a17e1a10db961bfd5a5bd76da9e031ced51c59d88e25",
+      "raw_target_sha256": "f5e8ae7f1c23e8c41c09cc0d864a85c10dde81c5ca79239a8bcbf9f4ceba4a7d",
+      "translation": "Předpokládejme, že kombinovaná opce v pracovním příkladu je kótována na 164 jednotek. Možnost rozdělení má jednu krabici kotovanou na 105 a druhou na 72. Rozdělený součet je 177 před jakýmikoliv samostatně uvedenými balicími službami. Dívat se pouze na 105 by zvrátilo výsledek. Přidejte volitelné poplatky, které platí dvakrát, a odstraňte všechny poplatky, které jsou již zahrnuty. Zaznamenávejte měnu a časové razítko pro všechny cenové nabídky."
+    },
+    {
+      "source": "Turn one unknown into one support question. Instead of asking whether the whole estimate is correct, specify that you entered a named destination and measured parcel, received a quote for a particular route, and need to know whether the selected packing service is already inside the displayed total. Save the answer with the date and the quote version. Avoid applying a reply about one route to a different service with different terms.",
+      "source_sha256": "741207c84e0bd3ef447ae75a2145fd7d36c817a82eb76cf43eb36c8e464ad48a",
+      "raw_target_sha256": "736aad6783c99df1a65762709d2c566352cc2764e2ae200484d52bac30b3ef49",
+      "translation": "Proměňte jednu neznámou otázku v jednu otázku podpory. Namísto dotazu, zda je celý odhad správný, upřesněte, že jste zadali jmenovanou destinaci a změřili balík, obdrželi nabídku na konkrétní trasu a potřebujete vědět, zda je vybraná balicí služba již v zobrazeném součtu. Uložte si odpověď s datem a verzí cenové nabídky. Nepoužívejte odpověď o jedné trase na jinou službu s jinými podmínkami."
+    },
+    {
+      "source": "A route can have size limits or consider parcel volume when billing. Enter the actual outer length, width and height when you have them, and read the terms for the route you select.",
+      "source_sha256": "6878e715c45b8681c3aa09353b842cb1bb4be1a6bc61d874dc796275de3b66d6",
+      "raw_target_sha256": "6cdeb193855e91c4b24a0b4f04cd6ba880661dd1e83ccce64fb9303c8588c39c",
+      "translation": "Přepravní služba může mít rozměrové limity nebo zohledňovat objem při výpočtu ceny. Zadejte skutečnou vnější délku, šířku a výšku a ověřte podmínky vybrané trasy."
+    },
+    {
+      "source": "What does seller-to-warehouse delivery pay for?",
+      "source_sha256": "8d0b4c629f3ad61bbd90c766e08c7287b22d9e382415395c2c922a8af27e9c7d",
+      "raw_target_sha256": "afbbf168eea006ee2f7d5837e1977ae9bd3b9bb990f7517d55a833f8d375707f",
+      "translation": "Co zahrnuje doprava od prodejce do skladu?"
+    },
+    {
+      "source": "It covers the domestic movement from the seller to the receiving warehouse when such a charge applies. HubBuy lists the product purchase and China shipping before the later international parcel stage.",
+      "source_sha256": "07768ae8510ca6c90a9ace3f7440442a5d92c57e150953febdee66de34d8b16d",
+      "raw_target_sha256": "f02ea92148e63ec0d479723f04f71ac8d761504762f2845eeeeb41751de976df",
+      "translation": "Pokud se účtuje, jde o vnitrostátní přepravu v Číně od prodejce do přijímacího skladu. HubBuy uvádí nákup zboží a tuto přepravu před pozdějším mezinárodním odesláním."
+    },
+    {
+      "source": "How should I budget two items from the same seller?",
+      "source_sha256": "57e8143e9141de36ec02c9efc93c5aa715452c9f2382476a1ecab7bc0f9fdf8a",
+      "raw_target_sha256": "ee5fdc4b0666fc757560ecc2273a2839b3b3893b5fc921d34a396151ab16de95",
+      "translation": "Jak spočítat rozpočet pro dvě položky od jednoho prodejce?"
+    },
+    {
+      "source": "Use the packed figure for the international parcel estimate once available. It includes the box and packing materials, whereas a seller's product figure may refer only to the unit.",
+      "source_sha256": "cdc8a1c8dde506ba039e6ec7567ea877aa6f81f9c35b4304d4cc9493062879c8",
+      "raw_target_sha256": "a71d8c1c98ace18b35ac4afb8fe1f8a25048b61180d0091003973df2a9aa1e0e",
+      "translation": "Jakmile znáte hmotnost zabalené zásilky, použijte ji pro odhad mezinárodního poštovného. Zahrnuje krabici a balicí materiál. Hmotnost uváděná prodejcem může patřit samotnému výrobku."
+    },
+    {
+      "source": "Only if the items will actually be packed end to end. Decide on the proposed arrangement and measure its outer envelope. Leave room for protective material and confirm packed dimensions later.",
+      "source_sha256": "536b8b79fc83da8498e787cdf8d8ed4a9f798a2b9e0105b754be105d333bddd8",
+      "raw_target_sha256": "9c31c6ecf3e34a343ec1c80613028212b19a732c041709b4c3990cd0261e813e",
+      "translation": "Pouze pokud budou všechny tři předměty ležet v jedné řadě za sebou. Změřte vnější rozměry navrženého uspořádání, ponechte prostor na ochranný materiál a po zabalení ověřte skutečné rozměry."
     }
   ]
 }

@@ -3,7 +3,7 @@
   "locale": "el",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "e595a800f1694bca78304b24327ffc5c868d28e649a73c44ee6a83f7bd8eb038",
-  "effective_dictionary_sha256": "3ca0f1239951410767da60f7e450e32d1a3ada6a76bb7a37269933cda4349ba1",
+  "effective_dictionary_sha256": "3ae6d74f4e552adb9fa51bd8bc30f02743a03ca5c8d5d70f449abe9aa0b5b0e4",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -113,7 +113,7 @@
       "issue": "quantity unit or currency changed",
       "source_sha256": "d69a5da514621e530a2052e5742f1a2b8c367baec6ee1bbd4fe41739c8216408",
       "raw_target_sha256": "863b6f761d503b3cef6f779ba4108cacc2291f91121ee2cb4956c0342c1c1fc1",
-      "resolution": "The formula 4 yuan per inner carton, two inner cartons, plus 7 yuan per outer parcel gives 15, not 33."
+      "resolution": "corrected translation"
     },
     {
       "issue": "quantity unit or currency changed",
@@ -326,7 +326,7 @@
       "source": "It covers the domestic movement from the seller to the receiving warehouse when such a charge applies. HubBuy lists the product purchase and China shipping before the later international parcel stage.",
       "source_sha256": "07768ae8510ca6c90a9ace3f7440442a5d92c57e150953febdee66de34d8b16d",
       "raw_target_sha256": "5e5b57c5b21ee681a1fb62991bdc2a544c52558bcd66342ec03210d656075489",
-      "translation": "Αν υπάρχει τέτοια χρέωση, αφορά την παράδοση από τον πωλητή στην αποθήκη παραλαβής εντός Κίνας. Ο οδηγός του HubBuy τοποθετεί την αγορά και την εγχώρια μεταφορά πριν από το στάδιο της διεθνούς αποστολής."
+      "translation": "Αν υπάρχει χρέωση, αφορά την εσωτερική μεταφορά εντός Κίνας από τον πωλητή στην αποθήκη παραλαβής. Στο HubBuy η αγορά και αυτή η παράδοση προηγούνται της διεθνούς αποστολής."
     },
     {
       "source": "How do I convert kilograms for the HubBuy calculator?",
@@ -621,6 +621,48 @@
       "source_sha256": "0bfd4b366ea6686dcc6725e9b7a93f9547ee8034c4440abe349c3db0195de886",
       "raw_target_sha256": "c605be828f2dc8ca12228768c31c88abd1c8854c1656422d94af53a5c6858ab4",
       "translation": "Φανταστείτε μια άκαμπτη θήκη εξαρτημάτων με κούμπωμα που δεν πρέπει να πιεστεί και δύο μαλακά πουκάμισα. Στη λύση Α όλα μπαίνουν σε στενό χαρτοκιβώτιο με τα πουκάμισα γύρω από τη θήκη. Στη λύση Β η θήκη μπαίνει σε ξεχωριστό προστατευτικό κάλυμμα με επένδυση μέσα σε μεγαλύτερο κιβώτιο. Ρωτήστε τι προστασία προσφέρει κάθε υπηρεσία και αν οι διαστάσεις είναι μετρημένες ή κατά προσέγγιση. Η δεύτερη διαμόρφωση μπορεί να επηρεάσει και τις διαθέσιμες διαδρομές."
+    },
+    {
+      "source": "Consider a hypothetical worksheet with three product entries, two inner cartons and one outer parcel. Assume the quoted service is 4 yuan per inner carton and an outer-packing option costs 7 yuan for the parcel. The worksheet should add 8 and 7, or 15 in total. Multiplying both charges by three because there are three item rows produces 33. This example illustrates the arithmetic only; read the actual service units and amounts on the live offer.",
+      "source_sha256": "d69a5da514621e530a2052e5742f1a2b8c367baec6ee1bbd4fe41739c8216408",
+      "raw_target_sha256": "863b6f761d503b3cef6f779ba4108cacc2291f91121ee2cb4956c0342c1c1fc1",
+      "translation": "Εξετάστε ένα υποθετικό φύλλο εργασίας με τρεις καταχωρήσεις προϊόντων, δύο εσωτερικά κουτιά και ένα εξωτερικό δέμα. Υποθέστε ότι η υπηρεσία της οικονομικής προσφοράς είναι 4 γιουάν ανά εσωτερικό χαρτοκιβώτιο και μια επιλογή εξωτερικός-συσκευασίας κοστίζει 7 γιουάν για το δέμα. Το φύλλο εργασίας θα πρέπει να προσθέσει 8 και 7, ή 15 συνολικά. Ο πολλαπλασιασμός και των δύο χρεώσεων επί τρία επειδή υπάρχουν τρεις σειρές στοιχείων παράγει 33. Αυτό το παράδειγμα απεικονίζει μόνο την αριθμητική. Διαβάστε τις πραγματικές μονάδες υπηρεσιών και τα ποσά στη ζωντανή προσφορά."
+    },
+    {
+      "source": "Now add a condition: the quoted combined arrangement relies on removing the retail case, which the buyer needs as part of a gift. The 185 quote no longer describes an acceptable solution. Obtain a comparable combined quote that keeps the case, or mark that arrangement as unsuitable. The earlier numerical comparison still teaches something about what created the saving, but it cannot justify selecting a packing method that defeats the purpose of the purchase.",
+      "source_sha256": "91a9a3605abdcb2946c24630dcf5de4ccb7c8a21a632e62b601299095c305e76",
+      "raw_target_sha256": "91c6746db8e9fdb03a438b85c59058d96bf7c31c7a1ab774d185f797956143e4",
+      "translation": "Η προσφορά των 185 για κοινή αποστολή προϋποθέτει αφαίρεση της αρχικής συσκευασίας, την οποία ο αγοραστής χρειάζεται για δώρο. Ζητήστε συγκρίσιμη προσφορά που διατηρεί τη συσκευασία ή σημειώστε ότι η λύση είναι ακατάλληλη. Ο αρχικός υπολογισμός εξηγεί από πού προέκυψε η οικονομία, αλλά η φθηνότερη λύση δεν εξυπηρετεί τον σκοπό της αγοράς."
+    },
+    {
+      "source": "A route can have size limits or consider parcel volume when billing. Enter the actual outer length, width and height when you have them, and read the terms for the route you select.",
+      "source_sha256": "6878e715c45b8681c3aa09353b842cb1bb4be1a6bc61d874dc796275de3b66d6",
+      "raw_target_sha256": "47c3904db6b5772f0c44fa50d736aa64320f7606a03ae00793b3cf58b9bb2370",
+      "translation": "Η υπηρεσία μπορεί να επιβάλλει όρια διαστάσεων ή να συνυπολογίζει τον όγκο στη χρέωση. Καταχωρίστε το πραγματικό εξωτερικό μήκος, πλάτος και ύψος και διαβάστε τους όρους της επιλεγμένης διαδρομής."
+    },
+    {
+      "source": "What does seller-to-warehouse delivery pay for?",
+      "source_sha256": "8d0b4c629f3ad61bbd90c766e08c7287b22d9e382415395c2c922a8af27e9c7d",
+      "raw_target_sha256": "d6bb41b017118ca8c5b62365cfec3dbde61e5dd6fdb5650df35cf43e18b743a2",
+      "translation": "Τι καλύπτει η παράδοση από τον πωλητή στην αποθήκη;"
+    },
+    {
+      "source": "How should I budget two items from the same seller?",
+      "source_sha256": "57e8143e9141de36ec02c9efc93c5aa715452c9f2382476a1ecab7bc0f9fdf8a",
+      "raw_target_sha256": "d457ef638d5a51c0abb027b1e8971008e7bbc6deb804f625b564cf515953ad0c",
+      "translation": "Πώς υπολογίζω το κόστος δύο ειδών από τον ίδιο πωλητή;"
+    },
+    {
+      "source": "Use the packed figure for the international parcel estimate once available. It includes the box and packing materials, whereas a seller's product figure may refer only to the unit.",
+      "source_sha256": "cdc8a1c8dde506ba039e6ec7567ea877aa6f81f9c35b4304d4cc9493062879c8",
+      "raw_target_sha256": "3a2619cce9f758de7680e32064f3dcbcf732d7cb9a851a22bdc515f45a72214b",
+      "translation": "Για την εκτίμηση της διεθνούς αποστολής χρησιμοποιήστε το βάρος του συσκευασμένου δέματος μόλις το μάθετε. Αυτό περιλαμβάνει το κουτί και τα υλικά, ενώ το βάρος του πωλητή μπορεί να αφορά μόνο το προϊόν."
+    },
+    {
+      "source": "Only if the items will actually be packed end to end. Decide on the proposed arrangement and measure its outer envelope. Leave room for protective material and confirm packed dimensions later.",
+      "source_sha256": "536b8b79fc83da8498e787cdf8d8ed4a9f798a2b9e0105b754be105d333bddd8",
+      "raw_target_sha256": "b116e06d3368b209ffbefbfe9d0fffd08385adf3ab8269e32f25525ab6498cec",
+      "translation": "Μόνο αν τα τρία αντικείμενα τοποθετηθούν στη σειρά κατά μήκος. Μετρήστε τις συνολικές εξωτερικές διαστάσεις της διάταξης, αφήστε χώρο για προστασία και επιβεβαιώστε τις τελικές μετρήσεις μετά τη συσκευασία."
     }
   ]
 }

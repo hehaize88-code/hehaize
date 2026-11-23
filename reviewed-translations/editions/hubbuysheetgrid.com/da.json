@@ -3,7 +3,7 @@
   "locale": "da",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "014992a1b817952a237b7e3e6ed66e20a6439b155f5ba23b43af5c8e06a7d055",
-  "effective_dictionary_sha256": "b75917881cd29d893dcc66006c6844fd189d08cc3e1c07830c69016241ad16f0",
+  "effective_dictionary_sha256": "181590c8fe6659f615503e706a462c78ef0a444d2f75b43030e07cf0fbe79be5",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -140,13 +140,13 @@
       "source": "Suppose the combined option in a worked example is quoted at 164 units. The split option has one box quoted at 105 and a second at 72. The split total is 177 before any separately listed packing services. Looking only at the 105 would reverse the result. Add optional charges that apply twice and remove any charge shown as already included. Record the currency and timestamp for all quotations.",
       "source_sha256": "d2c09fbbee9f0d1007f6a17e1a10db961bfd5a5bd76da9e031ced51c59d88e25",
       "raw_target_sha256": "5912788a2420745c402e652926a049f206fda4f5ae6c57ee58cda3c3cbe9df1f",
-      "translation": "Antag, at den kombinerede option i et arbejdende eksempel er noteret til 164 enheder. Split-optionen har en boks citeret til 105 og en anden til 72. Den opdelte total er 177 før eventuelle separat anførte emballagetjenester. Hvis man kun ser på 105'eren, ville resultatet blive det modsatte. Tilføj valgfrie gebyrer, der gælder to gange, og fjern eventuelle gebyrer, der vises som allerede inkluderet. Optag valuta og tidsstempel for alle tilbud."
+      "translation": "Antag, at den kombinerede option i et arbejdende eksempel er noteret til 164 enheder. Split-optionen har en kasse med en tilbudspris på 105 og en anden til 72. Den opdelte total er 177 før eventuelle separat anførte emballagetjenester. Hvis man kun ser på 105'eren, ville resultatet blive det modsatte. Tilføj valgfrie gebyrer, der gælder to gange, og fjern eventuelle gebyrer, der vises som allerede inkluderet. Optag valuta og tidsstempel for alle tilbud."
     },
     {
       "source": "Now add a condition: the quoted combined arrangement relies on removing the retail case, which the buyer needs as part of a gift. The 185 quote no longer describes an acceptable solution. Obtain a comparable combined quote that keeps the case, or mark that arrangement as unsuitable. The earlier numerical comparison still teaches something about what created the saving, but it cannot justify selecting a packing method that defeats the purpose of the purchase.",
       "source_sha256": "91a9a3605abdcb2946c24630dcf5de4ccb7c8a21a632e62b601299095c305e76",
       "raw_target_sha256": "ea3a9f5149a53ef9b627dc63aebba673b41195907d3d25389d24438d1f03c5a8",
-      "translation": "Tilføj nu en betingelse: Den citerede kombinerede ordning er afhængig af fjernelse af detailkassen, som køberen har brug for som en del af en gave. Tilbuddet på 185 beskriver ikke længere en acceptabel løsning. Få et sammenligneligt kombineret tilbud, der holder sagen, eller markér denne ordning som uegnet. Den tidligere numeriske sammenligning lærer stadig noget om, hvad der skabte besparelsen, men det kan ikke retfærdiggøre at vælge en emballagemetode, der undergraver formålet med købet."
+      "translation": "Antag nu, at den samlede pris på 185 forudsætter, at den originale æske fjernes. Køberen skal bruge æsken til en gave, så tilbuddet opfylder ikke længere behovet. Indhent et sammenligneligt tilbud på samlet forsendelse med æsken, eller markér løsningen som uegnet. Regnestykket viser, hvor besparelsen kommer fra, men gør ikke denne emballering egnet til gaven."
     },
     {
       "source": "A delivery estimate may refer to a stage starting at dispatch. Read the route description before promising someone a date based on it. Include unresolved purchasing, seller dispatch, warehouse intake or packing in a separate planning timeline. Avoid adding arbitrary days to manufacture a confident arrival date. If the use date matters, state which pending event creates uncertainty and check the latest confirmed status.",
@@ -189,6 +189,78 @@
       "source_sha256": "0bfd4b366ea6686dcc6725e9b7a93f9547ee8034c4440abe349c3db0195de886",
       "raw_target_sha256": "4d5bf82558c987e9699a449985aff63c471dc9a5425909eea08e7460bfe1a307",
       "translation": "Forestil dig et stift etui til tilbehør og to bløde skjorter. Etuiets lås må ikke komme under pres. I løsning A ligger alle tre varer i en tæt kasse med skjorterne rundt om etuiet. I løsning B ligger etuiet i en separat polstret pose inden i en større kasse. Spørg, hvilken beskyttelse hver løsning giver, og om ydermålene er målt eller anslået. Den ekstra beskyttelse kan også ændre, hvilke ruter der er mulige."
+    },
+    {
+      "source": "Consider a hypothetical worksheet with three product entries, two inner cartons and one outer parcel. Assume the quoted service is 4 yuan per inner carton and an outer-packing option costs 7 yuan for the parcel. The worksheet should add 8 and 7, or 15 in total. Multiplying both charges by three because there are three item rows produces 33. This example illustrates the arithmetic only; read the actual service units and amounts on the live offer.",
+      "source_sha256": "d69a5da514621e530a2052e5742f1a2b8c367baec6ee1bbd4fe41739c8216408",
+      "raw_target_sha256": "3459588b2bd9ddee47feadd0fd79be99b3f45ceca0509451709d64dba592f1e4",
+      "translation": "Overvej et hypotetisk regneark med tre produktposter, to indvendige kasser og en udvendig pakke. Antag, at den tilbudte ydelse er 4 yuan pr. Indvendig karton og en ydre emballageindstilling koster 7 yuan for pakken. Regnearket skal tilføje 8 og 7, eller 15 i alt. Multiplikation af begge afgifter med tre, fordi der er tre element rækker producerer 33. Dette eksempel illustrerer kun aritmetikken; læs de faktiske serviceenheder og beløb på det levende tilbud."
+    },
+    {
+      "source": "Take a fictional payment in which the base amount is 300 yuan and the comparison rate is 7.50 yuan per home-currency unit. The base conversion gives 40.00. One hypothetical payment method adds a fixed fee of 1.30 home units. Another has no fixed fee but quotes a conversion that results in 41.00. For this amount, the second method would cost 0.30 less, provided both figures are final and cover the same goods and services. The lower quoted exchange figure alone does not determine the result.",
+      "source_sha256": "0c3db5328050fabbc9b5052a42801e535861af27e07a7b916137cdc9e792ed84",
+      "raw_target_sha256": "b707c940f5ff075fa42e96fb529c24d38b815d59664ac7aa1ae0298537e3a9dc",
+      "translation": "Tag en fiktiv betaling, hvor basisbeløbet er 300 yuan, og sammenligningskursen er 7,50 yuan pr. hjem-valutaenhed. Den grundlæggende konvertering giver 40,00. En hypotetisk betalingsmetode tilføjer et fast gebyr på 1,30 boligenheder. En anden har ingen fast gebyr, men tilbyder en valutaomregning, der resulterer i 41,00. For dette beløb ville den anden metode koste 0,30 mindre, forudsat at begge tal er endelige og dækker de samme varer og tjenesteydelser. Den lavere kurs alene er ikke afgørende for resultatet."
+    },
+    {
+      "source": "Before accepting a number from a screenshot, identify the currency code and whether the price covers one unit, the selected quantity or the entire parcel. Save any quoted conversion alongside the original amount. Someone reviewing the purchase later should be able to reproduce the converted value using those saved inputs, even after the currency selector displays a different rate.",
+      "source_sha256": "423e0cf302192f1b93d8247a3d7a30edf2c3b6f841c8e50c494acd9696851ff5",
+      "raw_target_sha256": "435fc2d7eab3cefadf33872e741d35cdfedfad6016562746266bf232d736ca47",
+      "translation": "Før du accepterer et tal fra et skærmbillede, skal du identificere valutakoden og om prisen dækker en enhed, det valgte antal eller hele pakken. Gem enhver tilbudt valutaomregning sammen med det oprindelige beløb. En person, der gennemgår købet senere, bør kunne gengive den konverterede værdi ved hjælp af de gemte indtastninger, selv efter at valutavælgeren viser en anden kurs."
+    },
+    {
+      "source": "Suppose each smaller box also needs an explicitly quoted service costing five, while the combined option already includes it. The separate total becomes 216, two more than the combined quote. Such a narrow difference may be less important than arrival timing or how easily a recipient can receive two packages. Record the non-price reason for any choice so that a later invoice comparison is not mistaken for proof that the earlier decision was irrational.",
+      "source_sha256": "2667bb99764137d2dd5c056559d7b304dd88b253c59df6a378cdbf8725616d50",
+      "raw_target_sha256": "868c6dd62f1b60f822e19a38520df3a401493751f95342a254436292d7ddffc9",
+      "translation": "Antag, at hver mindre boks også har brug for en ydelse med en særskilt tilbudspris, der koster fem, mens den kombinerede mulighed allerede inkluderer det. Den separate total bliver 216, to mere end det kombinerede tilbud. En så lille forskel kan være mindre vigtig end ankomsttidspunktet eller hvor let en modtager kan modtage to pakker. Registrer den ikke-prismæssige årsag til ethvert valg, så en senere fakturasammenligning ikke forveksles med bevis for, at den tidligere beslutning var irrationel."
+    },
+    {
+      "source": "Put the route's displayed freight figure on one line. Beneath it, list each other cost you expect to encounter: seller price, domestic delivery, packing services and any other item actually named on the offer. Mark each one as included, separately quoted, already paid or unknown. Treat an omitted entry as unknown unless the live terms tell you otherwise. An estimate showing only international delivery cannot settle the price of seller-side goods.",
+      "source_sha256": "037c7ba2b966ad7f1d3675e7960ccc475b9952fa7c092c4d72b80ba15747980c",
+      "raw_target_sha256": "37bf9b9a1e075abeaef5c5ee2739a07a4ee2318f6cf18944c6a94f160285bba7",
+      "translation": "Sæt rutens viste fragttal på én linje. Nedenfor det, liste hinanden omkostninger, du forventer at støde på: sælger pris, indenlandsk levering, pakning tjenester og enhver anden vare faktisk navngivet på tilbuddet. Markér hver enkelt som inkluderet, prissat særskilt, allerede betalt eller ukendt. Behandle en udeladt post som ukendt, medmindre de aktuelle vilkår fortæller dig andet. Et estimat, der kun viser international levering, kan ikke afregne prisen på sælgers varer."
+    },
+    {
+      "source": "Changing the contents, packing, measurements or selected services calls for a fresh estimate. Keep the old result because it can help explain a later difference. Mark the revised input with the reason for the change, such as a retained shoebox or a removed accessory. Ask HubBuy support about a specific line if the conditions appear identical but the quoted result still differs.",
+      "source_sha256": "5404359e370df79f7003ee10774e8d4b3ec30d27335d5e5784413cdd5c77cf08",
+      "raw_target_sha256": "336d14ef806ae0028e5012c0373736bf24bc5262d248a3876e73636bb609757b",
+      "translation": "Ændring af indhold, emballage, mål eller udvalgte ydelser kræver et nyt tilbud. Behold det gamle resultat, fordi det kan hjælpe med at forklare en senere forskel. Markér den reviderede indgang med årsagen til ændringen, f.eks. en bevaret skoæske eller et fjernet tilbehør. Spørg HubBuy support om en specifik linje, hvis betingelserne ser identiske ud, men beløbet i tilbuddet stadig er forskelligt."
+    },
+    {
+      "source": "A route can have size limits or consider parcel volume when billing. Enter the actual outer length, width and height when you have them, and read the terms for the route you select.",
+      "source_sha256": "6878e715c45b8681c3aa09353b842cb1bb4be1a6bc61d874dc796275de3b66d6",
+      "raw_target_sha256": "d75911f402fbac33960f02df6d0ed929f44fc9994e523a2d4edfd0450c3358cf",
+      "translation": "Transportøren kan have størrelsesgrænser eller medregne pakkens rumfang i prisen. Indtast den faktiske udvendige længde, bredde og højde, og læs betingelserne for den valgte rute."
+    },
+    {
+      "source": "What does seller-to-warehouse delivery pay for?",
+      "source_sha256": "8d0b4c629f3ad61bbd90c766e08c7287b22d9e382415395c2c922a8af27e9c7d",
+      "raw_target_sha256": "63133113afb4148cea16c20a75214c4f3ba6e780eca7f789426453bd0530cb15",
+      "translation": "Hvad dækker leveringen fra sælgeren til lageret?"
+    },
+    {
+      "source": "It covers the domestic movement from the seller to the receiving warehouse when such a charge applies. HubBuy lists the product purchase and China shipping before the later international parcel stage.",
+      "source_sha256": "07768ae8510ca6c90a9ace3f7440442a5d92c57e150953febdee66de34d8b16d",
+      "raw_target_sha256": "b3f1ba57dfbb86b9d509955e3ea9bc9caffd948c40668b63f5fe7d2399925800",
+      "translation": "Hvis der opkræves et gebyr, dækker det den indenlandske transport i Kina fra sælgeren til modtagelageret. Hos HubBuy kommer varekøb og denne levering før den senere internationale forsendelse."
+    },
+    {
+      "source": "How should I budget two items from the same seller?",
+      "source_sha256": "57e8143e9141de36ec02c9efc93c5aa715452c9f2382476a1ecab7bc0f9fdf8a",
+      "raw_target_sha256": "f4ca5974c5837c779f1118f9c214a8a5f04548bdd93de698389336de6f0c2f1a",
+      "translation": "Hvordan lægger jeg budget for to varer fra samme sælger?"
+    },
+    {
+      "source": "Use the packed figure for the international parcel estimate once available. It includes the box and packing materials, whereas a seller's product figure may refer only to the unit.",
+      "source_sha256": "cdc8a1c8dde506ba039e6ec7567ea877aa6f81f9c35b4304d4cc9493062879c8",
+      "raw_target_sha256": "3322f0a3d17c02c994a4014f0d9ca8c6a32737f694f99311a6add7cee7b9058e",
+      "translation": "Brug den færdigpakkede vægt til at beregne den internationale fragt, så snart du har den. Den omfatter kasse og pakkemateriale; sælgerens vægt kan være varens egenvægt."
+    },
+    {
+      "source": "Only if the items will actually be packed end to end. Decide on the proposed arrangement and measure its outer envelope. Leave room for protective material and confirm packed dimensions later.",
+      "source_sha256": "536b8b79fc83da8498e787cdf8d8ed4a9f798a2b9e0105b754be105d333bddd8",
+      "raw_target_sha256": "76c0fee4b2d09fa63d7e5e68b5cd75571307e7182eaf6de0eeebcb7815a9345f",
+      "translation": "Kun hvis de tre varer faktisk lægges på langs i forlængelse af hinanden. Mål den samlede opstilling udefra, beregn plads til beskyttelse, og kontrollér målene igen efter pakning."
     }
   ]
 }

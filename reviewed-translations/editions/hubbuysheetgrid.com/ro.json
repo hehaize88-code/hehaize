@@ -3,7 +3,7 @@
   "locale": "ro",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "b7cfe2293745853bcdd469ecd7dfaf347263125a1128b55c0e58c6e4aaf2358e",
-  "effective_dictionary_sha256": "8bce6cf7c97eb27eff7bc7092071742314000975eb5235be188672d83487c7c4",
+  "effective_dictionary_sha256": "741f7fec7ab85f91b53e73ad27306a43beaf2bc84a40ecd5bcbe1dac24b2d37f",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -152,7 +152,7 @@
       "source": "Now add a condition: the quoted combined arrangement relies on removing the retail case, which the buyer needs as part of a gift. The 185 quote no longer describes an acceptable solution. Obtain a comparable combined quote that keeps the case, or mark that arrangement as unsuitable. The earlier numerical comparison still teaches something about what created the saving, but it cannot justify selecting a packing method that defeats the purpose of the purchase.",
       "source_sha256": "91a9a3605abdcb2946c24630dcf5de4ccb7c8a21a632e62b601299095c305e76",
       "raw_target_sha256": "ecf57038e154b2c04f99e29bf4f6e6f8d7d0279c8c2b7554baa2ffda1f9b492e",
-      "translation": "Acum adăugați o condiție: oferta de expediere combinată se bazează pe îndepărtarea cazului de vânzare cu amănuntul, de care cumpărătorul are nevoie ca parte a unui cadou. Oferta de 185 nu mai descrie o soluție acceptabilă. Obțineți o ofertă combinată comparabilă care păstrează cazul sau marcați acest aranjament ca fiind nepotrivit. Comparația numerică anterioară încă ne învață ceva despre ceea ce a creat economia, dar nu poate justifica selectarea unei metode de ambalare care învinge scopul achiziției."
+      "translation": "Să presupunem că oferta de 185 pentru expedierea comună presupune înlăturarea cutiei originale, de care cumpărătorul are nevoie pentru cadou. Oferta nu mai corespunde cerinței. Cereți o ofertă comparabilă care păstrează cutia sau marcați varianta ca nepotrivită. Calculul inițial explică economia, dar nu justifică un ambalaj care împiedică folosirea produsului drept cadou."
     },
     {
       "source": "A delivery estimate may refer to a stage starting at dispatch. Read the route description before promising someone a date based on it. Include unresolved purchasing, seller dispatch, warehouse intake or packing in a separate planning timeline. Avoid adding arbitrary days to manufacture a confident arrival date. If the use date matters, state which pending event creates uncertainty and check the latest confirmed status.",
@@ -195,6 +195,42 @@
       "source_sha256": "0bfd4b366ea6686dcc6725e9b7a93f9547ee8034c4440abe349c3db0195de886",
       "raw_target_sha256": "dadacd89a714462b1a23fcba43f5f65e8df7660f6330dc96833e8dcf47758bfb",
       "translation": "Imaginați-vă o cutie rigidă pentru accesorii și două cămăși moi. Închizătoarea nu trebuie presată. În varianta A toate cele trei articole intră într-un carton strâmt, cu cămășile în jurul cutiei. În varianta B cutia pentru accesorii este introdusă într-o husă matlasată separată, în interiorul unui carton mai mare. Întrebați ce protecție oferă fiecare serviciu și dacă dimensiunile au fost măsurate sau doar estimate. Altă ambalare poate schimba și rutele disponibile."
+    },
+    {
+      "source": "A route can have size limits or consider parcel volume when billing. Enter the actual outer length, width and height when you have them, and read the terms for the route you select.",
+      "source_sha256": "6878e715c45b8681c3aa09353b842cb1bb4be1a6bc61d874dc796275de3b66d6",
+      "raw_target_sha256": "f460c412bd40c1975feba577f2c699c2256c1b7978e66c302c13f09119c884f1",
+      "translation": "Serviciul de transport poate impune limite de dimensiuni sau poate lua în calcul volumul la tarifare. Introduceți lungimea, lățimea și înălțimea exterioare reale și consultați condițiile rutei alese."
+    },
+    {
+      "source": "What does seller-to-warehouse delivery pay for?",
+      "source_sha256": "8d0b4c629f3ad61bbd90c766e08c7287b22d9e382415395c2c922a8af27e9c7d",
+      "raw_target_sha256": "b52d5c7048b924dccbe97147a2eb8fc668d1d5b832f9a9cddab7580302837a7e",
+      "translation": "Ce acoperă livrarea de la vânzător la depozit?"
+    },
+    {
+      "source": "It covers the domestic movement from the seller to the receiving warehouse when such a charge applies. HubBuy lists the product purchase and China shipping before the later international parcel stage.",
+      "source_sha256": "07768ae8510ca6c90a9ace3f7440442a5d92c57e150953febdee66de34d8b16d",
+      "raw_target_sha256": "adaa5ac00f62df1eaaa8ed99e544f065c9cfe24685efd0ef235b169b4646eae6",
+      "translation": "Dacă se percepe o taxă, aceasta acoperă transportul intern în China de la vânzător la depozitul de recepție. HubBuy prezintă achiziția și această livrare internă înainte de expedierea internațională ulterioară."
+    },
+    {
+      "source": "How should I budget two items from the same seller?",
+      "source_sha256": "57e8143e9141de36ec02c9efc93c5aa715452c9f2382476a1ecab7bc0f9fdf8a",
+      "raw_target_sha256": "bb2937ff02f90f6f0f54bacd79cbd1bd0fb656e6a8c138881eb9c7386a15e63c",
+      "translation": "Cum planific costul a două articole de la același vânzător?"
+    },
+    {
+      "source": "Use the packed figure for the international parcel estimate once available. It includes the box and packing materials, whereas a seller's product figure may refer only to the unit.",
+      "source_sha256": "cdc8a1c8dde506ba039e6ec7567ea877aa6f81f9c35b4304d4cc9493062879c8",
+      "raw_target_sha256": "6784306577b0d41be34f6e2f3fa64f9f06606e0e0d2567210d6e5a97270ebd2c",
+      "translation": "Folosiți greutatea coletului gata ambalat pentru estimarea transportului internațional, imediat ce o aveți. Ea include cutia și materialele de protecție. Vânzătorul poate indica doar greutatea produsului."
+    },
+    {
+      "source": "Only if the items will actually be packed end to end. Decide on the proposed arrangement and measure its outer envelope. Leave room for protective material and confirm packed dimensions later.",
+      "source_sha256": "536b8b79fc83da8498e787cdf8d8ed4a9f798a2b9e0105b754be105d333bddd8",
+      "raw_target_sha256": "a284935e88a76d22d8022ef1d13f60ad39f2ed5565900ead848077f648651937",
+      "translation": "Numai dacă cele trei articole sunt așezate efectiv în șir, unul după altul, pe lungime. Măsurați dimensiunile exterioare ale ansamblului, lăsați spațiu pentru protecție și confirmați după ambalare."
     }
   ]
 }
