@@ -46,7 +46,8 @@ def request(path):
 
 
 def allowed_outputs(source):
-    paths = set()
+    # A reviewed post-install correction reconciles one worked exchange-rate example.
+    paths = {Path('itaobuygrid-com/worker/editorial-content.json')}
     for site, languages in LANGUAGES.items():
         for lang in languages:
             if site in MARKDOWN:
@@ -120,6 +121,17 @@ def install(workspace, args):
     apply_reviews(workspace, destination, expected, args['reviewed_sha'])
     tool = Path(__file__).with_name('install_editorial_locales.py')
     subprocess.run([sys.executable, tool, '--root',source,'--dictionaries',destination],check=True)
+    corrections = workspace/'reviews/reviewed-translations/corrections_after_install.py'
+    receipt = workspace/'reports/post-install-corrections.json'
+    subprocess.run([sys.executable,corrections,'--sites',source,'--dictionaries',destination,'--summary',receipt],check=True)
+    correction = read(receipt)
+    expected_locales = {'en', *LANGUAGES['itaobuygrid-com']}
+    if ({row['language'] for row in correction['editions']} != expected_locales
+            or len(correction['editions']) != len(expected_locales)
+            or correction['site'] != 'itaobuygrid-com'
+            or correction['slug'] != 'compare-display-price-and-checkout-currency'
+            or (correction['section'], correction['paragraph']) != (5, 1)):
+        raise ValueError('Incomplete receipt for the reviewed iTaoBuy price example')
     paths = allowed_outputs(source)
     # Only native content may enter the candidate. Generated deployment files are a separate artifact.
     actual = {Path(s) for s in run('git','ls-files','-m','-o','--exclude-standard','-z',cwd=source).split('\0') if s}
