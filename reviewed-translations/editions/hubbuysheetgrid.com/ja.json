@@ -3,7 +3,7 @@
   "locale": "ja",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "dea617232056297673bf120891afbe515e18571887614d553b7deae0b07ac02c",
-  "effective_dictionary_sha256": "859e1039e0f08e1907889bb15ca11af712a63305ecbe931fc9fc6af68e529258",
+  "effective_dictionary_sha256": "d12273df069af6a75f46a5c63dce22f3c492e6487d5b0721eaec0725a5aef272",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -686,181 +686,1471 @@
       "source": "Work through a quotation with mixed units",
       "source_sha256": "86c7122c9336ab643f1dd40ee79ebf0a9504135d774226fe19872d5111de7677",
       "raw_target_sha256": "6efa74f0c38439e1fa5368f43b94116ac202d9f00d019f08f546a21080216b9f",
-      "translation": "複数の単位で見積もりを作成"
+      "translation": "異なる単位の料金を合計する"
     },
     {
       "source": "Read the quote in the state in which you intend to purchase it. A checkbox with a price beside it describes a possible selection. A selected checkbox and corresponding subtotal tell you more. Record the initial base, activate the desired service and compare the new amount, currency and named lines. Keep a note if the price display already bundles the service. Adding the visible price again outside the quote would inflate the apparent cost.",
       "source_sha256": "27c2808907831ab1f14d90cd32f8ef0809e44b2a7993c096848e21708788726f",
       "raw_target_sha256": "7e528fede3606a62de8b30dcbb566d103f78f5f14aa29489f4f3cd74f21d8042",
-      "translation": "あなたが購入するつもりの状態で見積もりを読んでください。 チェックボックスとその隣の価格は、可能な選択を記述します。 チェックボックスを選択すると、それに対応する中間和が表示されます。 初期基準を記録し，望むサービスを活性化し，新しい金額，通貨，名前のついた行を比較する。 価格表示が既にサービスをバンドルしている場合は、メモを保持してください。 見かけの価格を見積もりの外に加えると見かけのコストを膨らませる。"
+      "translation": "実際に購入予定の状態で見積もりを読みます。未選択のチェック欄の横の金額は、選べるサービスの価格です。まず基本額を控え、希望サービスを選び、通貨、明細、更新後の合計を比べます。すでに組み込み済みならその旨をメモしてください。表示総額に同じ作業の値段を再度加えると費用を過大に見積もります。"
     },
     {
       "source": "Read an adjustment without erasing the original quote",
       "source_sha256": "e0936a2d0afd23a83899a9b5f9612d756693ae1c1ddbda43aea31d5385bab116",
       "raw_target_sha256": "3ead81e0c0ca2f5aab13afdd989a4d17e233bd3e1c28a8065d4101d7fed74900",
-      "translation": "元の見積もりを削除せずに調整を読み込む"
+      "translation": "元の見積もりを残して変更を追う"
     },
     {
       "source": "Use separate rows for quoted, paid and credited amounts. If a charge was removed, enter the credit with its reference. When a final invoice rolls services into a parcel subtotal, place that subtotal in a comparison column rather than adding it to the detailed entries. Check that your reconstructed total agrees with the payment record within ordinary rounding. Write down the remaining difference and ask support which invoice line explains it.",
       "source_sha256": "b4f3dede9df755627787afff51d746f3d3c31eba0df484be2406fa0ed8db27b7",
       "raw_target_sha256": "6fb8411614aae838e5fe6a04d418705418e22ca1a7475d82ff030fee9b8ac7ad",
-      "translation": "見積額、支払われた金額、クレジットされた金額に別々の行を使用します。 クレジットが削除された場合は、その参照とともにクレジットを入力します。 最終請求書がサービスを小計に加算するときは、詳細項目に加算する代わりに比較列にその小計を置く。 再構成された総額が通常の四捨五入で支払い記録と一致するかどうか確認してください。 残りの差額を書き留め、サポートにそれを説明する請求書の行を尋ねる。"
+      "translation": "見積額、支払額、返金額を別の行に記録します。料金が取り消されたら、返金と取引番号を記入してください。最終明細で各サービスが小包の小計にまとまった場合、小計は照合用の欄に置き、詳細行の上にもう一度足さないようにします。通常の端数を考慮しても支払額と合わなければ、残る差額を示して対応する請求項目を尋ねます。"
     },
     {
       "source": "The service description should tell you what will be done to the object. A request to protect a bag could mean filling its interior to retain shape, keeping its original box or placing it in a larger outer carton. Each choice may affect the parcel differently. Specify the object, the result you need and any condition such as keeping detachable handles together. Then read what the selected service actually promises. If it covers only an outer carton, do not count it as individual protection for every item inside.",
       "source_sha256": "a7c0dd5d5d2f0f04c6f92888f9bd3873535979fd58271fb749068251da42535c",
       "raw_target_sha256": "27faca9acfcd90df90e1d2b430dbfeb2f434ecca091fb9bff13e6b30d02ac509",
-      "translation": "サービスの説明は、オブジェクトに対して何が行われるのかを教えてくれるべきです。 袋を保護するための要求は，形状を保持するために内部を満たすこと，元の箱を保持すること，あるいはより大きな外箱に入れることを意味する。 それぞれの選択は荷物に異なる影響を与える。 オブジェクト、必要な結果、分離可能なハンドルを一緒に保持するような条件を指定します。 次に選択したサービスが実際に何を約束しているかを読む。 外箱のみを保護する場合は、中身の個々の保護とは考えない。"
+      "translation": "「かばんを保護」には、中に詰め物をして形を保つ、元箱を残す、より大きな外箱に入れるなど複数の方法があります。何をどのような状態にしたいか、着脱式の持ち手も一緒にするかを伝え、選んだサービスが何を約束しているか読みます。外箱の補強しか含まれていないなら、中身全点の個別包装まで付くとは考えないでください。"
     },
     {
       "source": "If the request changes, keep the first quotation and add the new one. Record which service was removed and whether its replacement has a different unit. Consider replacing one outer-box option costing ten with individual protection costing four for each of three units. The new selected services total twelve, a difference of two. Adding twelve to the old ten would describe buying both alternatives, which was never the instruction. A dated note beside each version helps later if the two appear in separate account messages.",
       "source_sha256": "b2df154738381dd4b1ce130ee4367c86c9129518b3b785cf80dba8e8641aa850",
       "raw_target_sha256": "af79f440c352c99f4e28143fb30ec8ae55e1ba1137d8502f1cf3666ef6cfe75e",
-      "translation": "リクエストが変更された場合、最初の見積もりを保持し、新しい見積もりを追加します。 どのサービスが削除され、その代わりに別のユニットがあるかを記録します。 １つの外箱オプションを１０ドルで ３つのユニットごとに４ドルの個別保護に置き換えてみよう 新しく選定されたサービスは２つの違いで合計１２である。 古い10に12を加えることは 両方の選択肢を買うことを表すだろう それは決して指示ではなかった それぞれのバージョンに日付を付けたノートは、2つのバージョンが別々のアカウントメッセージに現れる場合、後で役に立つ。"
+      "translation": "要望を変えたら最初の見積もりを残し、取り消したサービスと新しい料金単位を記録します。外箱一式10の作業から、3点を1点4で個別保護する作業に変えると、新料金は12、差額は2です。古い10と新しい12を両方足すと、頼んでいない両方の作業を購入した計算になります。各版に日付を入れておくと、異なる確認メッセージとも照合できます。"
     },
     {
       "source": "Begin with the parcel reference, currency and exact service label. State the amount you can reconcile and the remaining difference. For instance: my summary shows two wraps at three each and a carton at nine, totalling fifteen; my service subtotal is eighteen; please identify the remaining three. Add the relevant quote date and a cropped image of the service lines if necessary. Exclude unrelated orders and personal payment details. One concrete arithmetic question gives support a practical starting point.",
       "source_sha256": "9ce58a9c023de868738ad732765a02c074877ee80b6aa6865e77e4b522325f3b",
       "raw_target_sha256": "170a11a6ffafbb029f33eb911bbbff87c8500e8878a49f9629a35c5b53bb8d47",
-      "translation": "郵便番号と通貨と 正確なサービスラベルから始める あなたが調整できる金額と残りの差額を言ってください。 例えば、私の要約では、2つの包装紙が3つずつ、1つの箱が9つで、合計15であり、私のサービスの小計は18である。残りの3つを特定してください。 必要に応じて、関連する見積もり日とサービスラインの切り抜き画像を追加します。 関係のない注文や 個人的な支払詳細を除外する 具体的な算術問題は実用的な出発点を与える。"
+      "translation": "小包番号、通貨、サービスの正確な表示名から始めます。「個別包装が2点で各3、外箱が9なので計15です。サービス小計は18ですが、残りの3は何の料金ですか」と書くと、差額が明確です。必要なら見積日と該当する明細部分の画像を添え、関係ない注文や支払い情報は伏せてください。"
     },
     {
       "source": "A catalogue conversion helps with browsing. A merchant quotation shows an amount offered in a particular currency. A card statement shows what was actually posted. Write which of those three you have beside every number. Do not replace the source currency when you translate a quote into your home currency. Keep the original information available so you can recalculate later without relying on a rounded display.",
       "source_sha256": "db352828918454dfdaef6d19fe36e7227f04f4c8d896efbdd387c93fd87b9c0e",
       "raw_target_sha256": "d0e2d3fc62a0924dc1c981f3c23eea8bb2652e60a7289a2a825b8646daaa88b8",
-      "translation": "カタログ変換はブラウジングを助ける。 売買価格は特定の通貨で提供される金額を示す。 カードの明細書は実際に何が投稿されたかを示す。 それぞれの数字の隣に、あなたが持っているこの３つのうちのどれを書いてください。 見積もりを自分の通貨に変換するときは、ソース通貨を置き換えないでください。 元の情報を利用可能に保ち、後で丸めた表示に頼らずに再計算できるようにします。"
+      "translation": "商品一覧の換算価格は閲覧時の目安、店の見積もりは特定通貨での提示額、カード明細は実際の記帳額です。各金額にどの資料の数字かを書きます。自分の通貨に換算しても、元の金額と通貨は残してください。丸められた画面表示に頼らず後で計算し直せます。"
     },
     {
       "source": "Imagine a teaching example in which one home-currency unit buys 7.20 yuan. A 360-yuan quote corresponds to 50 units before fees because 360 is divided by 7.20. If you instead record the rate as home units per yuan, multiply by that number. Write out both currency codes with the rate. A single bare value such as 7.20 is especially easy to use backwards when a sheet mixes several quotations.",
       "source_sha256": "670c82e94d3b8b3e94b14ada36ed532920913817bc2e6e2ca975eae7f7ae0edb",
       "raw_target_sha256": "c30bc6680a30e0e6da82a7114e3282567be8124d38431770410ab02bed43996a",
-      "translation": "1本の本国通貨単位が7.20元を買うという教え方を想像してみよう。 360円の取引は、360を7.20で割ると、手数料50円に相当する。 代わりに1元あたりの住宅単位で記録する場合は、その数で乗算する。 両通貨コードとレートを書き出す。 7.20のような単一の裸の値は、特に複数の見積もりを混ぜたシートで後ろ向きに使うのが容易である。"
+      "translation": "仮に自分の通貨1単位で7.20元を買えるなら、360元の見積もりは手数料前で50単位です。360を7.20で割ります。「1元当たり自分の通貨で何単位か」と逆に記録した場合は、その値を掛けます。レートの両側に通貨コードを書きましょう。複数の見積もりがある表で「7.20」とだけ書くと、向きを取り違えやすくなります。"
     },
     {
       "source": "Suppose quote A covers the same merchandise and domestic delivery as quote B, but only A includes protective packing. Compare the contents before worrying about exchange-rate rounding. Either add the confirmed packing amount to B or label the quotes as different offers. If a missing charge has no confirmed amount, leave a gap instead of filling it with an attractive guess. A conversion cannot repair two quotes that describe different services.",
       "source_sha256": "33bb436a69ded2e9ee3771159ed02b69551edba9744747c51ac8ee084fcc54fa",
       "raw_target_sha256": "66e670a5f41b507bb2d5c27b00249f4466550fa4d341882736fd8a4372f79847",
-      "translation": "請求書Ａは請求書Ｂと同じ商品，同じ国内配送を対象とするが，保護包装は請求書Ａのみを含むとする。 交換レートの丸めを心配する前に内容を比較してください。 Ｂに確認された包装量を加えるか、別のオファーとしてラベルを付ける。  欠落した電荷が確認された量を持たない場合、それを魅力的な推測で埋める代わりにギャップを残す。 変換は異なるサービスを記述する二つの見積もりを修正できない。"
+      "translation": "AとBが同じ商品と国内送料を含み、保護包装が入るのはAだけだとします。端数の違いより先に、Bに確認済みの保護料を足すか、異なるサービス一式の見積もりだと明記します。未確認額は空欄に状態を添え、都合のよい仮の価格で埋めないでください。通貨換算をしても、サービスの違いは消えません。"
     },
     {
       "source": "Before accepting a number from a screenshot, identify the currency code and whether the price covers one unit, the selected quantity or the entire parcel. Save any quoted conversion alongside the original amount. Someone reviewing the purchase later should be able to reproduce the converted value using those saved inputs, even after the currency selector displays a different rate.",
       "source_sha256": "423e0cf302192f1b93d8247a3d7a30edf2c3b6f841c8e50c494acd9696851ff5",
       "raw_target_sha256": "0e0de1437e104ff78f95a92604d568b409ab9a75c9c98fd85caa2d911ea803f1",
-      "translation": "スクリーンショットから数字を受け取る前に、通貨コードと価格が単位、選択した量、または包装全体に適用されるかを識別する。 提示された換算額を元の金額と一緒に保存します。 後で購入を見直す人は，通貨選択器が異なるレートを表示した後でも，これらの保存された入力を使って換算値を再現できる。"
+      "translation": "通貨コードと、金額が1点分、選んだ数量分、または荷物全体のどれかを確認します。提示された換算額も元の金額の横に保存してください。後日通貨表示のレートが変わっても、残した条件で当時の換算額を再現できるようにします。"
     },
     {
       "source": "Suppose a hypothetical quote rises from 150 to 166 after a service is selected. If the service itself is listed at 10 and the packing changes the freight line by 6, record both changes. If the quote shows only an all-in increase of 16, report that observed difference and leave its composition unresolved. Do not present the whole 16 as the service fee or add the visible 10 on top of the already updated total.",
       "source_sha256": "68d8bad3107f5a52d9eb1c9de2dd4cc24e04d841758b08975d4c56726f9d30a7",
       "raw_target_sha256": "3699134654d474df3129e4787f7b59633da6714f16c125d01ce2875c8e445934",
-      "translation": "サービスを選択した後，仮想的な価格が１５０から１６６に上昇したとする。 サービス自体が１０に記載され，梱包が６で貨物行を変更する場合は，両方の変更を記録する。 見積もりが１６のみのオールイン増加を示すならば，観測された差を報告し，その組成を未解決にする。 すべての16をサービス料として提示せず、既に更新された総額に見える10を加えないでください。"
+      "translation": "仮にサービス選択後に見積もりが150から166になったとします。サービス自体が10で、梱包が変わって運賃が6上がったと分かれば、両方を記録します。総額が16上がったことしか分からない場合は、その差だけを示し内訳は未確認としておきます。16すべてをサービス料としたり、更新済みの166に10をさらに足したりしないでください。"
     },
     {
       "source": "Comparing two versions of a mixed parcel",
       "source_sha256": "09fb668c8b8cfc520c197f2a6e843121a837efd907f1a1d17dd5392700b48dea",
       "raw_target_sha256": "6813c150734752d258088c3ec1debb9564ce6831a48d1bc15749fa12c82fe3c0",
-      "translation": "混合荷物の2つのバージョンの比較"
+      "translation": "複数の商品を同梱する2案を比較する"
     },
     {
       "source": "Keep the final parcel statement next to your selected services and measured outer dimensions. If the outbound charge changes, compare the final dimensions with the size assumed earlier. If the invoice shows an additional service, identify which piece and which instruction it corresponds to. If there is no clear match, ask support to explain the line and supply the quote you were comparing.",
       "source_sha256": "1724744fec3bd6f6c43deadcc8353df61b8b03091e65d292b9d04250ca2ca386",
       "raw_target_sha256": "df2b99c2b3ad13ff61d191eb50f19e33e84abd298c927f1a0c226b48e894d3c0",
-      "translation": "選択したサービスと測定した外部寸法の 近くに最終的な配達状を保存してください。 出力電荷が変化すると，最終寸法を先に仮定したサイズと比較する。 請求書に付加サービスが表示されている場合は，それがどの部品とどの指示に相当するかを特定する。 明確な一致が見つからなければ、サポートに問い合わせて行を説明し、比較した見積もりを提供してください。"
+      "translation": "確定明細と選んだサービス、実測外寸を一緒に保存します。国際運賃が変われば、当初の想定寸法と比べます。新たな作業料があれば、どの商品についての何の指示かを特定します。対応が分からなければ、比較していた見積もりを示してその明細行の説明を求めます。"
     },
     {
       "source": "At receipt, preserve photographs of the box and its internal arrangement if you need to report a problem. Document the visible condition; a photograph cannot establish where along the journey an impact occurred. Link the parcel reference, requested protection and observed outcome. Keep financial reconciliation and a condition complaint distinct even when both arise from the same shipment. One concerns which services were paid for, while the other concerns the condition in which the goods arrived.",
       "source_sha256": "69e1d9b7d19f2f08abcff2169c6972a74e69ed73a590ebf1f5ac1c856c014962",
       "raw_target_sha256": "66d7d841de3958115c92c346016ae8d8bbd8231e670d2f31243f62248186ad72",
-      "translation": "受け取り時に箱の写真と内装の写真を保存しておくと、問題があれば報告することができます。 写真では衝撃がどこで起きたかを確認できない。 荷物番号，要求保護，観察結果をリンクする。 同じ出荷物から発生した場合でも，財務調整と状態不満を区別しておく。 １つはどのようなサービスに対して支払われたか，もう１つは商品が到着した状態に関するものである。"
+      "translation": "受け取り後に問題を報告する場合、外箱と中の配置を写真に残します。目で分かる状態を記録し、衝撃を受けた区間まで写真だけで断定しないでください。荷物番号、依頼した保護、到着状態を関連付けます。払ったサービス料の照合と、到着状態についての申し立ては、同じ荷物でも扱う問題が異なります。"
     },
     {
       "source": "A soft parcel can change dimensions depending on how it rests. Measure the maximum outer span as it would travel, including a thick pocket of material or protective padding. If it is later enclosed in a rigid carton, use the carton dimensions instead. Avoid pressing a soft measurement flat to obtain an attractive number unless the actual packing method keeps it that way. A parcel that expands after measuring no longer corresponds to the estimate.",
       "source_sha256": "c721b0e5d83dcf2868a3a8af854c96d8c267a439d409006e87672b904784c6b9",
       "raw_target_sha256": "434dd2b7165fb9b4309ba70cea7222449f867613f5a38a1fb4cd564e0b2415f0",
-      "translation": "柔らかい荷物は，どのように休止するかに依存して寸法を変えることができる。 厚い物質のポケットまたは保護パッドを含めて，最大の外部スパンを測定する。 後に硬い箱に入れる場合は、箱の寸法を用いる。 実際の充填方法がそうでない限り，魅力的な数値を得るために柔らかい測定平面を押すことを避ける。 測定後に膨張する荷物は，もはや推定値と一致しない。"
+      "translation": "柔らかい荷物は置き方で大きさが変わります。輸送時と同じ状態で、厚く重なった布や保護材を含め、最も外側の間隔を測ります。後から硬い外箱に入れるならそちらの外寸を使います。実際に平らな状態が維持されない限り、手で押さえて小さく測ってはいけません。手を離して膨らめば見積もりの前提が崩れます。"
     },
     {
       "source": "For an irregular object, record the length, width and height of its enclosing package rather than tracing curves around the object. A tape following the arc of a handle produces a distance along a curve. It does not show how wide the finished parcel is. Where the longest projection is hard to identify, request a wide view of the completed package and the measured spans. Label any estimate based on an unpacked object as provisional until the outer dimensions are known.",
       "source_sha256": "a898c44c234e769560f09826ac1e7852c13dc1bf7815455cafdc081c0a7df50b",
       "raw_target_sha256": "7c1107db76880e3a92f2fc6b6b148c2b2ce8565eb10fb77d32b7cba85079bea3",
-      "translation": "不規則な物体に対しては，物体の周りの曲線を追跡するよりも，包み込むパッケージの長さ，幅，高さを記録する。 ハンドルの弧に沿ったテープは曲線に沿った距離を生成する。 完成した荷物がどれだけ広いかは示さない。 最も長い突出部の同定が困難な場合は，完成したパッケージと測定したスパンの広い視野を要求する。 外部寸法が分かるまで、パッケージ外のオブジェクトに基づく推定値を仮定値としてラベル付けします。"
+      "translation": "不規則な形の物は、輪郭をなぞらず、それを収めた外装の縦・横・高さを記録します。持ち手の曲線に沿って測っても、荷物の幅にはなりません。突出部がどこか分かりにくければ、梱包全体と測定の両端が見える写真を頼みます。梱包前の寸法に基づく見積もりには、外寸判明まで暫定と表示しておきます。"
     },
     {
       "source": "Several items can arrive with individually recorded weights. Adding those figures provides a starting estimate for contents, but the sum omits the final outer packaging and may include packaging that will later be removed. If there are two outbound boxes, do not enter their total weight alongside the dimensions of only the smaller one. Run the estimator once for each box, with that box's own dimensions, then combine the actual quote totals for your comparison.",
       "source_sha256": "30095fd9155644341c0e09c266b6905ed9d726ba6975754d878f6c66132afea8",
       "raw_target_sha256": "fe9a94d65d84ab027b970e48902438942165391ea1d4197e23063ead06c162c6",
-      "translation": "重量を個別に記録したいくつかのアイテムが到着できる。 これらの数字を加算すると内容物の初期推定値が得られるが、最終的な外包装は省略され、後に取り除かれる包装も含まれるかもしれない。 2 つの出荷箱がある場合は、小さい箱のみの寸法とともにそれらの総重量を入力しないでください。 それぞれのボックスに対して一度推定器を実行し、それぞれのボックス自身の寸法を使い、比較のために各見積額を組み合わせます。"
+      "translation": "入庫時の個別重量を合計しても、最終外箱は入らず、後で取り外す包装は含まれているかもしれません。荷物を2箱に分ける場合は、合計重量と小さい一方の外寸を組み合わせないでください。各箱の寸法と重量で個別に見積もりを取り、その2件の金額を足して比較します。"
     },
     {
       "source": "A good final check takes less time than investigating a mistaken quote. Read the three dimensions and their unit aloud, read the weight and its unit, confirm the destination, then confirm that every measurement describes the same physical box. Only at that point is the estimator result useful for comparing an offered service. If one measurement is still missing, state that explicitly when you share the result and keep the next decision conditional on obtaining it.",
       "source_sha256": "1e5043cab651dcb56b9ce6e06fa89aaa7a5a0da0722d86bf8a9926242810e2fb",
       "raw_target_sha256": "bf73dc361f41adfa805c299579392468d8d4b7201386f1bd76e30c68d83e8778",
-      "translation": "良い最終チェックは誤った見積もりを調査するよりも少ない時間を要する。 ３次元とその単位を大声で読み，重さとその単位を読み，目的地を確認し，それぞれの測定が同じ物理的箱を記述していることを確認する。 ここでは，評価結果が提供されるサービスの比較に有用なのは，その時点である。 １つの測定がまだ欠けている場合は，結果を共有するときにそれを明示的に述べ，次の決定をそれを得ることに条件付ける。"
+      "translation": "見積もりの誤りを後から調べるより、入力前の最終確認のほうが短時間で済みます。3辺と単位、重量と単位、配送先、すべて同じ箱のデータであることを順に確認します。値が1つでも欠けていれば共有時に明記し、それによって変わる判断は実測後まで保留します。"
     },
     {
       "source": "Now add a condition: the quoted combined arrangement relies on removing the retail case, which the buyer needs as part of a gift. The 185 quote no longer describes an acceptable solution. Obtain a comparable combined quote that keeps the case, or mark that arrangement as unsuitable. The earlier numerical comparison still teaches something about what created the saving, but it cannot justify selecting a packing method that defeats the purpose of the purchase.",
       "source_sha256": "91a9a3605abdcb2946c24630dcf5de4ccb7c8a21a632e62b601299095c305e76",
       "raw_target_sha256": "a0a8ffe17da94c81ed04152101281b9d6432bf9befa5889155ba6a21acfe0af3",
-      "translation": "さらに条件を追加すると，購入者が贈り物として必要とする小売ケースの除去に依存する。 185の見積もりはもはや受け入れられる解を記述していない。 事例を保持する比較可能な組み合わせの見積もりを得るか，その配列を不適切とマークする。 これらの結果から，パッケージの選定において，パッケージの目的に反するパッケージ法の選択は正当化できないことを示した。"
+      "translation": "ただし、同梱185の条件が、贈り物に不可欠な商品のケースを外すことだったらどうでしょう。この案は条件を満たしません。ケースを残した同梱見積もりを取り直すか、不採用と記録します。当初の比較は何を外すと安くなるかを示せますが、購入の目的を損なう方法を選ぶ根拠にはなりません。"
     },
     {
       "source": "Take another fictional quote with a combined option at 214. The smaller boxes cost 112 and 94, for a total of 206, and their protective needs are already included. This time the arithmetic favours splitting by eight. Before deciding, verify whether there are additional services charged separately per parcel or any destination-specific conditions that were absent from the recorded totals. Two boxes can produce two delivery events and two references to monitor.",
       "source_sha256": "239058dbeb8f1615ded6fedec96d428f4b199ca25a6647a2ec624d5e2cf05558",
       "raw_target_sha256": "ffd02932f1674f2a2ad2b99caa5e12046fad418a4ed677408d1a75025f499082",
-      "translation": "214のオプションを組み合わせた 別の架空の見積もりを見てみよう 小さな箱は１１２と９４で，合計２０６で，その保護の必要性は既に含まれている。 今回は算術的に８で割る方が有利だ。 決める前に、個別に別途料金がかかるサービスがあるか、あるいは記録された総額に欠ける目的地特有の条件があるかを確認する。 ２つのボックスは２つの配送イベントと２つのモニタリンクを生成する。"
+      "translation": "別の架空例では、同梱214に対し、小箱2個の見積もりが112と94で計206、必要な保護は込みです。計算上は別送が8安いですが、別料金の箱ごとのサービスや、特定の配送先でのみ必要な費用が抜けていないかを確認します。2箱なら配達が2回になり、追跡番号も2件管理することになります。"
     },
     {
       "source": "A rectangular case can set the minimum width of a combined parcel. Soft clothing may fill empty space around it, or may require an increase in height once protection is included. Do not calculate a combined box by adding the item lengths, adding widths and adding heights independently. That describes a much larger imagined arrangement in most cases. Sketch how the pieces could sit and ask for relevant packed measurements or a realistic packing estimate.",
       "source_sha256": "35d1e230b329d312f27d646d02fec3f148da14fd5baaebf668d884e5eff3defd",
       "raw_target_sha256": "d167103c9bf464dd631b59ec88d485240f050ac5343b1fabfd3a4e7a89936e54",
-      "translation": "矩形の場合，組合せ荷物の最小幅を設定できる。 柔らかい衣類は周囲の空隙を埋めるか，あるいは保護を含めると高さを増やす必要があるかもしれない。 単独でアイテムの長さ、幅、高さを加算してコンビネーションボックスを計算しない。 これは多くの場合，より大きな想像された配列を記述する。 部品の位置をスケッチし，適切な梱包寸法または現実的な梱包予測を求める。"
+      "translation": "硬いケースが入ると、それが同梱箱の最小幅を決めることがあります。柔らかい衣類は周りの隙間に入る場合も、保護材を入れると高さが増す場合もあります。商品の縦どうし、横どうし、高さどうしを別々に足すと、実際よりずっと大きい箱を想定しがちです。配置を描き、実測値や現実的な梱包後寸法を尋ねてください。"
     },
     {
       "source": "Put the route's displayed freight figure on one line. Beneath it, list each other cost you expect to encounter: seller price, domestic delivery, packing services and any other item actually named on the offer. Mark each one as included, separately quoted, already paid or unknown. Treat an omitted entry as unknown unless the live terms tell you otherwise. An estimate showing only international delivery cannot settle the price of seller-side goods.",
       "source_sha256": "037c7ba2b966ad7f1d3675e7960ccc475b9952fa7c092c4d72b80ba15747980c",
       "raw_target_sha256": "5240b42d7275ae048266a410a9ba5b51276c6dfbd863986b60e10c6168345c29",
-      "translation": "路線の表示されている貨物数字を一行にする。 その下に、売り手の価格、国内配送、梱包サービス、その他のオファーに実際に名前が書かれている項目など、あなたが遭遇すると予想される費用を一覧にする。 それぞれを含まれている、別途見積もり、既に支払われている、または不明とマークします。 省略されたエントリを未知として扱います。ライブ条件が別のことを指示しない限り。 国際配送のみを示す推定値は、売り手側の商品の価格を決めることができない。"
+      "translation": "まず表示運賃を1行に置き、ほかに見込む商品代、国内送料、梱包サービス、その見積もりに明記された料金を並べます。「込み」「別途見積もり」「支払済み」「不明」を個々に付けます。現在の条件に説明がないものを自動的に無料とはしません。国際運賃の表示だけでは、店側の商品代までは確定しません。"
     },
     {
       "source": "The destination is part of the quote. Use the correct country and any region or postal information the estimator requests on the official page. If you share a comparison with someone, retain enough information to identify the route while removing the full delivery address. A screenshot of two prices cannot establish identical coverage when the destination fields are out of view.",
       "source_sha256": "772b6852b6b8df80c857ccfed55f46417b780bc273629e0bf89a7dd966bb25aa",
       "raw_target_sha256": "dcc6f802ffc94e91c90476ae094e01f432dda970d4f9bc7d886d1beacfebe371",
-      "translation": "目的地は見積もりの一部です。 正しい国名と公式ページで求められる地域または郵便番号を使用してください。 誰かと比較を共有する場合は、配送先の全てのアドレスを削除しながら、経路を識別するのに十分な情報を保持してください。 ２つの価格のスクリーンショットは，目的地フィールドが見えないときは同一の被覆を確立できない。"
+      "translation": "配送先は見積もり条件の一部です。公式ページで国と、求められる地域・郵便番号を正確に入力します。比較を共有するときは配送範囲が分かる情報は残し、番地などの詳細は伏せます。配送先が切れたスクリーンショットで2つの金額だけを見ても、対象地域が等しいことまでは確かめられません。"
     },
     {
       "source": "When an item changes after quotation",
       "source_sha256": "e3a9ac352c98cfaf77ceb712b26621433e6333dd16a0eeaed9141dc69de852c5",
       "raw_target_sha256": "42996867b8f38ed2466fcf9d850b6e4b80ca47b2ad8757095f41b964dfac34d3",
-      "translation": "見積もり後に項目が変更される場合"
+      "translation": "見積もり後に中身や仕様が変わった場合"
     },
     {
       "source": "Changing the contents, packing, measurements or selected services calls for a fresh estimate. Keep the old result because it can help explain a later difference. Mark the revised input with the reason for the change, such as a retained shoebox or a removed accessory. Ask HubBuy support about a specific line if the conditions appear identical but the quoted result still differs.",
       "source_sha256": "5404359e370df79f7003ee10774e8d4b3ec30d27335d5e5784413cdd5c77cf08",
       "raw_target_sha256": "7e8d071a004f0328e26d0d4b2aa9b8139b61ee10cb11bffccf9564b8cae8b899",
-      "translation": "内容，包装，測定，あるいは選択したサービスを変更するには，新しい見積もりが必要である。 後の違いを説明するのに役立つので古い結果を保持する。 修正された入力を変更の理由でマークします。例えば、靴箱を保持したり、アクセサリを取り除いたりします。 条件が同じに見えるが見積もり結果がまだ異なる場合は、特定の行についてHubBuyサポートに問い合わせてください。"
+      "translation": "中身、梱包、寸法、サービスが変わったら再見積もりします。初回の結果も残し、「靴箱を保持」「付属品を除外」などの理由を新しい条件に添えます。条件が同じように見えても結果が違うなら、対象の明細行を特定してHubBuyの窓口に問い合わせてください。"
     },
     {
       "source": "Turn one unknown into one support question. Instead of asking whether the whole estimate is correct, specify that you entered a named destination and measured parcel, received a quote for a particular route, and need to know whether the selected packing service is already inside the displayed total. Save the answer with the date and the quote version. Avoid applying a reply about one route to a different service with different terms.",
       "source_sha256": "741207c84e0bd3ef447ae75a2145fd7d36c817a82eb76cf43eb36c8e464ad48a",
       "raw_target_sha256": "d4538bf09cce4e2e825290fdc98a6f3fdfb7cbbeeffb29e02b90b1e6e92cf5e2",
-      "translation": "１つの未知数を １つの支援質問に変えろ 全体の見積もりが正しいかどうかを尋ねる代わりに、名前の付いた目的地を入力し、包装を計測し、特定のルートの見積もりを受け取り、選択した包装サービスがすでに表示された総額の中にあるかどうかを知りたいと指定します。 日付と見積もりバージョンとともに答えを保存します。 一つのルートに関する返信を異なるサービスに対して異なる条件で適用することを避ける。"
+      "translation": "条件を示して質問を1つに絞ります。例えば「この配送先と実測荷物でこの経路の見積もりが出ました。選択した保護包装は表示総額に入っていますか」と聞けます。返答を日付と見積版と一緒に保存し、異なる条件の別サービスにはそのまま適用しないでください。"
     },
     {
       "source": "A useful quote summary fits into a short paragraph: name the destination, contents, dimensions, scale weight, route, currency and the date of the estimate. Add a sentence identifying any fee that is known to be separate and any part still unresolved. Keep private delivery and payment details out of shared screenshots. Another buyer can then reproduce the estimate for the same inputs or identify why their own parcel differs.",
       "source_sha256": "ba5fa4c4188d13fde99181875f36934ff3ce18f1d0801a5f2fa940444f7c4b38",
       "raw_target_sha256": "01041070c11876d736fb72f08831a52ed30da57e65814e21eebf401f92427a6e",
-      "translation": "有用な見積もり要約は短い段落に収まる：目的地、内容、寸法、秤量、経路、通貨、および推定の日付の名前。 分離されたと知られている費用と未解決の部分を識別する文を追加する。 スクリーンショットを共有しないでください 他の買い手は同じ入力に対する推定値を再現したり，自分の荷物が異なる理由を特定したりできる。"
+      "translation": "配送先、内容、寸法、はかりの重量、経路、通貨、見積日を短い段落にまとめます。別料金と判明した項目や、未解決の条件も1文足します。共有画像から住所や支払いの個人情報を除くと、相手は必要な情報だけで同条件の試算や自分の荷物との違いの確認ができます。"
     },
     {
       "source": "When the final route appears identical by name, check any displayed service variation or delivery zone. Two similar names may describe different delivery products. Compare actual route identifiers if the account exposes them. Save relevant screenshots with private addresses and payment information cropped out before sharing. If a code has changed but its meaning is unclear, ask support to confirm whether the quote and statement refer to the same service.",
       "source_sha256": "3515ed095ff9b262fd74d8ad6036b9eaf490e9bd8f910e96ff6a3d81039f457d",
       "raw_target_sha256": "e00a8dbcad05e51e19f6d3d707a406f32c69e16def76070b127831a5e8f4a4a8",
-      "translation": "最終ルートが名前で同じに見えるときは、表示されているサービスバリエーションや配達地域を確認する。 ２つの類似した名前が異なる配達製品を記述することがある。 アカウントが実際のルート識別子を公開している場合、それらを比較します。 共有する前に、個人の住所と支払い情報を削除した関連スクリーンショットを保存します。 コードが変更されたが意味が不明な場合は、サポートに問い合わせて、見積もりとステートメントが同じサービスを指しているかどうかを確認してください。"
+      "translation": "名称が同じように見えても、配送区域や細かいサービス区分を確認します。識別コードが見える場合は両方を照合してください。共有する画像では住所と支払情報を伏せます。コードだけが変わり意味が判別できなければ、見積もりと明細が同じサービスか窓口に確認します。"
     },
     {
       "source": "Reconcile several outbound packages against one original quote",
       "source_sha256": "2610325b3730cea649019d0b72d34aadc7cb635008b6b964191fc2ff85929043",
       "raw_target_sha256": "70896e7132663754761c01e825f1fc91e57d48579a7a722c94fab2b10420e492",
-      "translation": "複数の出力パケットを一つの原始見積もりに対して調整"
+      "translation": "1件の見積もりを複数の最終発送と照合する"
+    },
+    {
+      "source": "Sources",
+      "source_sha256": "caf85b0888d78f1f83771a07b25c3d30fa1210242f2fae6e5ae5d9a686602800",
+      "raw_target_sha256": "003741059728c399ec945632c3c80506c9d9370de65c7b9752b1bf67dd7af672",
+      "translation": "参考資料"
+    },
+    {
+      "source": "HubBuy shopping guides",
+      "source_sha256": "304881749701f023343da1ac05076b51d0e7238ac3ad1379f8bf539074fb5deb",
+      "raw_target_sha256": "ff052274c6c30eb3565ae6b257c8b599ac0f2458cedd3b96451c03c24ddf6999",
+      "translation": "HubBuy購入ガイド"
+    },
+    {
+      "source": "Work through the figures behind a HubBuy purchase, from domestic delivery charges to a final parcel statement.",
+      "source_sha256": "a310a4d24a802de1964b15943252d54d39904853bd0e058a241854e8462d5fc3",
+      "raw_target_sha256": "7f21fcdce14e8519fca58a620c119323eabd1ae8d6dace7bd54c655590dcb245",
+      "translation": "中国国内の送料から国際小包の最終請求まで、HubBuyでの購入にかかる費用を明細ごとに確認します。"
+    },
+    {
+      "source": "HubBuy spreadsheet FAQ",
+      "source_sha256": "de11d14cd0f85a08738da5f9db76cb223c249add0840b8a2f9d41d0e64bb3cef",
+      "raw_target_sha256": "647dd5ff4d9095993c774bea79361ae4acc1586c96127e4c2e526689eeb0b50e",
+      "translation": "HubBuy商品一覧についてよくある質問"
+    },
+    {
+      "source": "A delivery line can disappear from your budget or appear twice, depending on where you write it. Follow one seller order to the warehouse before assigning any part of that charge to an international parcel.",
+      "source_sha256": "029ec3c45a2f13f549d09e00301d073e5b6f24435908e58b95913013fd513816",
+      "raw_target_sha256": "bbe7ecb651ba228926f9a032d2b0d94827ec3db247dcffb06c993f6caf732b36",
+      "translation": "送料をどこに記録するかによって、1区間分が抜けたり、同じ料金を二重に数えたりします。国際小包に費用を配分する前に、まず出品者1人の注文を、店から倉庫に届くまで追ってみましょう。"
+    },
+    {
+      "source": "Follow the physical delivery",
+      "source_sha256": "6f38e856425121670f73b0afb8929e63bf8e241bbe29d59d475548adde34dee4",
+      "raw_target_sha256": "5d514d1b326e533b59f2cdcab7a1f18adc43bb6baa28349461744815cd38eadb",
+      "translation": "荷物の移動を区間ごとに追う"
+    },
+    {
+      "source": "HubBuy's public purchase guide describes paying for the product and shipping within China at the ordering stage. International shipping appears later, after warehousing and the selection of items to send abroad. Draw the journey on a scrap of paper. Put the shop on the left, the receiving warehouse in the middle and your address on the right. Mark which leg the delivery charge on your screen actually covers. A seller's promise of free delivery may answer the first question while leaving the last leg entirely open.",
+      "source_sha256": "76356a0ef9250143fdf37008abbaa9ef5da4bda9e018cc560f6f53154a050f07",
+      "raw_target_sha256": "48805819229890a6f50525a5e674710f9994a5c1767bdafa33b74b00f8379080",
+      "translation": "HubBuyの購入ガイドでは、注文時に商品代と中国国内の送料を払い、倉庫に届いて海外へ送る品物を選んだ後に国際送料を確認します。紙に「店→倉庫→自宅」と書き、画面の送料がどの区間にかかるか印を付けてください。店の「送料無料」は倉庫までの料金を示すことがあり、自宅までの国際送料までは分かりません。"
+    },
+    {
+      "source": "Read one order before dividing the charge",
+      "source_sha256": "903a1fc53a8db06a0cf818462fecff8464844850837a2e9cc34d7c4f09c7ff71",
+      "raw_target_sha256": "6ba0f9dec4cdee5c0944b56584bf7d0917a75a359227cdb4459e7cc2077ad295",
+      "translation": "送料を分ける前に注文全体を見る"
+    },
+    {
+      "source": "Suppose one shop supplies two T-shirts at 68 yuan each and a cap at 42 yuan. The checkout shows a single domestic charge of 10 yuan. The seller order totals 188 yuan. Three separate rows in your shortlist should not turn that into three charges of 10. Keep the 10 on a summary line until you have a reason to calculate the cost of an individual piece. Record who collected the payment and which seller order number appears beside it.",
+      "source_sha256": "a49bc81c389a89fb7ca84e8fca7a62ce968a0254d720913cafdbfe33e51e9aba",
+      "raw_target_sha256": "3ecf30a38a5dd7325e9a7fdbb33f35cc461c34edc14235111d8f85f94ac4cea8",
+      "translation": "同じ店で1枚68元のTシャツ2枚と42元の帽子を買い、注文全体の国内送料が10元なら、合計は188元です。表に商品が3行あるからといって、10元を3回加えてはいけません。送料はまとめて1行に記録し、1点当たりの原価が必要なときに配分します。代金の受取人と、支払いに表示された店の注文番号も控えます。"
+    },
+    {
+      "source": "Choose an allocation method suited to your question",
+      "source_sha256": "e54446e18d129d8ed2d4b8a3b0f3ca8bb6e7af64e7bf5cd5545332b81c531530",
+      "raw_target_sha256": "bf2689ce522b0f195642786f385360868b4143ec56a66594084035790e15d46e",
+      "translation": "用途に応じた配分方法を選ぶ"
+    },
+    {
+      "source": "If two people share the order, agreeing on a split matters more than producing a falsely precise cost per item. A simple split across three units gives approximately 3.33 yuan per piece with a one-cent rounding adjustment. Another method assigns the 10 in proportion to product value. Each 68-yuan shirt gets about 3.82 and the cap about 2.36. Both methods reproduce 188. Neither method can establish the seller's actual transport cost for the cap.",
+      "source_sha256": "b3af22d1adab7c597bf95d231fa0fc28c58b1677335d4b87d35137200ec48af2",
+      "raw_target_sha256": "e1bf5cbd116c1d935cfb06a3a097f70097005d8b603342ee74f9dfa0160c569f",
+      "translation": "2人で注文するときは、まず送料をどう負担するか合意します。10元を商品3点で均等に割れば1点約3.33元で、0.01元の端数を調整します。商品代に比例させるなら、68元のTシャツにはそれぞれ約3.82元、帽子には約2.36元です。どちらでも注文総額は188元です。配分額から、帽子だけの輸送に店が実際にいくらかけたかは分かりません。"
+    },
+    {
+      "source": "When one seller sends two boxes",
+      "source_sha256": "14b67c30ea838c73965bb8a7454b364e081d8256fc2b508b0a0191d46bf0fbfc",
+      "raw_target_sha256": "3d5a167ad1084278056edf424f3de62b2fb7ea374dce967d195cb1606e026544",
+      "translation": "同じ出品者が2箱に分けて送った場合"
+    },
+    {
+      "source": "A second domestic tracking number can appear if the shop sends items separately. Look for a new payment line before adding a second shipping cost. One seller order can have two deliveries, just as one delivery can contain multiple garments. Track the boxes separately for receipt but keep the financial record tied to what was actually charged. If an item has not arrived, a delivery scan for the first box tells you very little about the location of the second.",
+      "source_sha256": "461143de9e250e7bf965927b466b136b482da537bdbdb15b2ba48bed096c1337",
+      "raw_target_sha256": "43cc545c4153886167f260546ce32d0a1f0a65a5ab2a629955755e15cab64275",
+      "translation": "店が分けて発送すると、国内の追跡番号が2件になることがあります。送料を増やす前に、新しい請求が本当にあるかを調べてください。1件の注文が2回に分かれることも、1箱に何枚も服が入ることもあります。入庫状況は箱別、支出は請求別に記録します。1箱目の配達完了だけでは、2箱目の場所や到着は分かりません。"
+    },
+    {
+      "source": "What changes after a cancellation",
+      "source_sha256": "84663a436715a643ee0e3dc49cbe4603d1d8869512e21e25bd91ce48b2785eae",
+      "raw_target_sha256": "29c22c91f0f4241acca75d3d48008f6d112df8648b4db5436a20c1d41d078106",
+      "translation": "キャンセル後に変わる項目"
+    },
+    {
+      "source": "If the cap is cancelled, avoid immediately subtracting 42 from the old total and treating the result as settled. Check the refund statement for the product amount and any domestic adjustment. The original allocation may now describe goods that never travelled together. Keep the original order and add a dated credit row, then calculate the remaining cost from the surviving items. Ask for clarification with the purchase reference if the domestic charge has no corresponding adjustment explanation.",
+      "source_sha256": "c3a8b7ab92509d5424e46381383e6e99391ff4e40466eb6b974124c35b573907",
+      "raw_target_sha256": "f2b21947efb9f887fd0a810a6eb1ca8c88c23da439aac90671fc8e2c47f1a92d",
+      "translation": "帽子をキャンセルしても、元の合計から42を引いただけで精算済みとしないでください。商品代の返金と国内送料の調整を明細で別々に確認します。元の配分はすべての品物が一緒に動く前提だったかもしれません。注文記録を残し、日付入りの返金行を追加して、残る品物の原価を算出します。送料の扱いが不明なら購入番号を添えて尋ねましょう。"
+    },
+    {
+      "source": "A worked comparison with two sellers",
+      "source_sha256": "a748b3d920a72078db9c0a2d0a1d606b1e460abb3eeadfc7fa89a46427cb61c6",
+      "raw_target_sha256": "6bc4963d8118032ee296a2cbc4b7c7bdad09577d97c683b00c19d6ae1d3f52b4",
+      "translation": "2店舗で同じ商品を買う場合の計算例"
+    },
+    {
+      "source": "Consider a buyer choosing between two offers for the same packs of plain socks. Shop Green lists the selected packs at 24 yuan each and shows 8 yuan domestic delivery for the order. Shop Blue lists them at 26 each with domestic delivery included in the displayed checkout. At a quantity of one, Green costs 32 and Blue costs 26. At a quantity of three, the totals are 80 and 78. At a quantity of four, both cost 104. These break-even figures assume the prices and delivery conditions remain fixed as quantity changes. Open each checkout again at the intended quantity before basing a purchase on the calculation.",
+      "source_sha256": "c8fa34368d856acb77aa7d33d132356348f2e37dd6c5201e3feb4eb0797241ae",
+      "raw_target_sha256": "2363c7daa7b6efd2afae2caf9bdeda2bc5db585b55bbdb7bfb89d8e595334fac",
+      "translation": "靴下1パックがGreenでは24元、国内送料は注文全体で8元とします。Blueでは1パック26元で国内送料込みです。1パックなら両店の支払額は32元と26元、3パックなら80元と78元、4パックならどちらも104元です。数量で単価や送料条件が変わらなければ、4パックで並びます。購入する数量を各店の決済画面で指定し、実際の総額を確認してください。"
+    },
+    {
+      "source": "Splitting the cost of a group order",
+      "source_sha256": "584a3dd2342b2d9ef71dee8db71b20e947ac728eae3bfd9ae7140a011d753516",
+      "raw_target_sha256": "4c18bc308f26cde93155ef247fe0057f26070ea937cecabfd81050f1ea53bf08",
+      "translation": "共同購入の送料を分ける"
+    },
+    {
+      "source": "Two friends agree to buy from one shop. Mei chooses one garment costing 120 yuan and Arun chooses four accessories at 20 yuan each. The single domestic charge is 12. Dividing by five units gives Mei 2.40 and Arun 9.60 of the delivery cost. Dividing in proportion to merchandise value gives Mei 7.20 and Arun 4.80. Splitting the delivery equally makes each share six. All three methods reconcile to the same total. The important question is which agreement the people sharing the bill intend, not which method produces the lowest price for a particular person's line.",
+      "source_sha256": "a52049bad816b75a57396359651b5b602b1b578e63a740b1f1449a74c87cb720",
+      "raw_target_sha256": "bba8f6482c2b99326eb238d82f38e7e65121dbabb816a51ea159c847040f24f3",
+      "translation": "メイは120元の服1着、アルンは20元のアクセサリー4個を同じ店から買い、国内送料は合計12元でした。5点で割るとメイは2.40元、アルンは9.60元です。商品代に比例させると7.20元と4.80元、2人で折半すれば各6元です。合計はいずれも12元です。誰か1人にとって最安の方法ではなく、合意したルールを使います。"
+    },
+    {
+      "source": "Put that agreement in the note accompanying the order before asking either friend to settle. Record the original 12 as the amount on the seller order. Then display the chosen allocation in a separate column. If you later need to ask HubBuy about the domestic charge, send the seller-order figure. Sending one friend's allocated share as if it were the amount charged would create a discrepancy that exists only in your own accounting.",
+      "source_sha256": "a37ee2124a69cdb04acd03c0ecb8c04099c78845285c07f3b6210e9bebc0b7a2",
+      "raw_target_sha256": "08861b7bd7775aefa258bd306a6341a8f88e3db6bd071df299c7f076d6afd5f1",
+      "translation": "精算を頼む前に、注文メモに分け方を書いてください。店が請求した12は注文の送料欄に残し、個人別の負担額は別の列に記載します。後日HubBuyに国内送料を確認するときは、個人の分担額ではなく店の請求額を伝えます。分担額を請求額と取り違えると、自分の表の中だけで差額が発生します。"
+    },
+    {
+      "source": "Separating a seller's refund from a delivery refund",
+      "source_sha256": "a3b9ab0c273febb0ae57afac81d46065f81131c9811768c9903c54adddd5d5fa",
+      "raw_target_sha256": "b7b60ce04521c3d14c91797c562bf0d195870f103cdc8487d15c826bb9849bb4",
+      "translation": "商品代の返金と送料の返金を区別する"
+    },
+    {
+      "source": "Consider a seller that receives payment for two 65-yuan pieces and one 12-yuan domestic charge. One piece cannot be supplied. The transaction history then shows a confirmed refund of 65. The net payment is 77. That total is consistent with one remaining piece and the original delivery charge, but it does not tell you whether a revised shipping arrangement was discussed. Check the refund description and the terms for the seller order before attributing a reason to it.",
+      "source_sha256": "e4a058ab39cf0263e31fea6c47ca020f1b54787d8ffc80a5771854dd77155438",
+      "raw_target_sha256": "1b7a8ebc4bf29e980f85d812735e36cc5df99d59aae0cee9e9214237723eb549",
+      "translation": "1点65元の商品を2点購入し、中国国内送料12元も支払いました。1点が欠品し、取引履歴で65元の返金が確認できたとします。差し引きの支出は77元で、残った1点と当初の送料に一致します。ただし、この数字だけで送料について再交渉したかは分かりません。返金理由の欄と注文条件を確認してください。"
+    },
+    {
+      "source": "Reading common pieces of evidence",
+      "source_sha256": "4d7ba87517a05cbf86ac4fe76aba0ebbdd3fc2e4212ac20b2592b610a99abde1",
+      "raw_target_sha256": "04760f067d10460d6989d270dd9fe63ba5dad47ca5d858e224f46c234e56c6fa",
+      "translation": "資料ごとに確認できること"
+    },
+    {
+      "source": "A listing screenshot is useful for identifying the offer and the date. It may show a shipping statement for a default address, a default option or a promotional threshold that your order does not meet. A checkout screenshot with the exact options and receiving destination provides a better estimate. A payment confirmation tied to the seller order establishes what was actually collected. A refund record establishes a later movement. Preserve this sequence rather than replacing every earlier document with the latest one.",
+      "source_sha256": "7f2e4873f0c703d7f2fdb0cbfef8af526f18a7d92eaf1c41e7a52a4c9f3bf458",
+      "raw_target_sha256": "cbeb642670537e266757cbcc80712c29a03a1073b5354df9d67f5e4c11ee8a53",
+      "translation": "商品ページの画像は当時の掲載内容と日付を確かめるのに役立ちますが、既定の住所、初期の仕様、条件を満たしていないキャンペーン向けの送料かもしれません。選んだ仕様と実際の受け取り先が映る決済画面のほうが購入前の見積もりに適しています。実際の請求は注文番号に紐づく支払確認、その後の変動は返金明細で確かめます。古い資料を消さず時系列で保存してください。"
+    },
+    {
+      "source": "Warehousing evidence answers a different question. A courier label can identify which package travelled. A warehouse entry can identify the items recorded as received. Neither document independently tells you how the seller calculated the price. If you need to connect a missing piece to a cost question, include the order summary and the delivery references together. For example, state that order X showed one domestic charge and two packages were received, and ask whether a second charge shown elsewhere belongs to this seller. Give support an identifiable line to investigate.",
+      "source_sha256": "4f3302b0dab867d948842c4b5b87ff1ad55de5870105f7aa04804fd4c3a640e1",
+      "raw_target_sha256": "2b56008c8b9b04b39ae2fd3b6050ea1cc83bf39390eb9d541f3a216c5628c369",
+      "translation": "国内配送のラベルはどの箱が移動したか、入庫記録は何を受け取ったかを示しますが、どちらも店の値付けの根拠ではありません。欠品と送料を一緒に調べるなら注文概要と両方の配送番号を示し、「注文Xの国内送料は1回、届いた箱は2個です。この別の請求も同じ店のものですか」と尋ねると、調査対象を特定できます。"
+    },
+    {
+      "source": "A quick check before accepting the total",
+      "source_sha256": "51f38b53432fd58ffd8d61fa8a39f914b12778d0e3314fcf31aba34127bc1a9f",
+      "raw_target_sha256": "daa532aa5c3e30d54ca236934c393e784ac6e2d1f70ecc097a6f38f5345785e4",
+      "translation": "合計を確定する前の確認"
+    },
+    {
+      "source": "Read your worksheet from left to right. Can you point to the selected selling unit, the number purchased, the seller-level subtotal, the domestic charge collected, any later credit and the resulting net? Mark any estimate that still rests on an unconfirmed delivery price. If the merchandise is already paid for and a friend only needs an approximate per-item share, explain the allocation method and its rounding. If you are comparing two live sellers, use their full domestic totals at the same quantity. Save international shipping for the parcel comparison, where its own inputs can be checked.",
+      "source_sha256": "70feb8e41a81d7781ead387be1ed85a41b33212aa1dcae1572835b718fea5ea9",
+      "raw_target_sha256": "439f859408a149458a840887c643af09e8c96172117aaae471c0664d7a5c0d03",
+      "translation": "販売単位、数量、店ごとの小計、国内送料、返金、差引額を表の左から順に追ってください。未確定の送料による見積もりには印を付けます。支払済みの商品を友人と精算するだけなら配分方法と端数処理を示しましょう。現時点の2店舗を比べるなら同じ数量と国内送料込み総額で比較します。国際送料は梱包条件が分かってから別途比べます。"
+    },
+    {
+      "source": "Before comparing the size of two charges, identify what each service does, which object it applies to and whether it has already entered the amount due.",
+      "source_sha256": "97821d4f88c98c64a4ff1f9853cb3b1c31abacc949aa0cb221be080722010a43",
+      "raw_target_sha256": "a0948205c83f866d38ecc56e783bd8a138825539a3d904b617508aef7ebf5f4a",
+      "translation": "料金の大小を比べる前に、どの作業を、何に対して行い、その料金がすでに支払総額に入っているかを確認します。"
+    },
+    {
+      "source": "Give each charge a unit",
+      "source_sha256": "4e4c1ddf7e82fa5b03d033fb9d851d493354630e64731f7c5a88512483715b90",
+      "raw_target_sha256": "e521f91b0834fa8860412f97224001ebc0d383fb7cf50ea3db3193de5502a92d",
+      "translation": "請求単位を記入する"
+    },
+    {
+      "source": "HubBuy links separately to Service & Fees and Logistics Shipping Fees. Open the current description that matches the stage you are reviewing. Copy the name as it appears on your statement. Write a unit beside it: one purchased unit, one order, one packed box or one international parcel. A figure of six beside a packing option means something different if it is applied once per parcel than if it is applied to each item.",
+      "source_sha256": "0a6c1f2d3f4b573f0942ff8cbf1b2e65d85e5c2ff7e6c6bfcad82865b3046886",
+      "raw_target_sha256": "4983bcdc5d103aaf07fe9385025b83a4ab717dc7e1b67e4cce7af0ef9ca9077f",
+      "translation": "HubBuyではサービス料金と物流・送料の説明を別々に案内しています。対象の段階に合う説明を開き、明細の項目名をそのまま控えます。横に「商品1点」「注文1件」「梱包箱1個」「国際小包1個」のように単位を書きます。梱包欄の「6」も、荷物ごとか商品ごとかで総額が変わります。"
+    },
+    {
+      "source": "Consider a hypothetical worksheet with three product entries, two inner cartons and one outer parcel. Assume the quoted service is 4 yuan per inner carton and an outer-packing option costs 7 yuan for the parcel. The worksheet should add 8 and 7, or 15 in total. Multiplying both charges by three because there are three item rows produces 33. This example illustrates the arithmetic only; read the actual service units and amounts on the live offer.",
+      "source_sha256": "d69a5da514621e530a2052e5742f1a2b8c367baec6ee1bbd4fe41739c8216408",
+      "raw_target_sha256": "6025cc2f05c28be9170d7e2dc1e0d3c6f7496d4b0f9de03e306d9fb193c478b4",
+      "translation": "商品3点を内箱2個に入れ、外箱1個で送るとします。内箱のサービスが1箱4元、外箱の梱包が1個の小包につき7元なら、8 + 7 = 15元です。商品が3行あるからと両方の料金を3倍にすると、誤って33元になります。これは計算例です。実際の単位と金額は現在の見積もりで確認してください。"
+    },
+    {
+      "source": "Separate optional and included services",
+      "source_sha256": "6682a7d679e77fcac6d8b7650808aeeb13768db52163e7723afef996f239bdcb",
+      "raw_target_sha256": "5c6d2a55855264a6970e0cd72cb78fdd16d73344607076ec7c510e65e117bb84",
+      "translation": "任意の追加と料金込みの作業を分ける"
+    },
+    {
+      "source": "Keep evidence of the requested work",
+      "source_sha256": "29693d7faa82db6f1a77c2937f3362b7a4c71a1ab5899b6863fb11440c54d01c",
+      "raw_target_sha256": "fa7592b8ea9495eb57de30a26ab4fa08ca82120b8043dca52090248ce6d0e1df",
+      "translation": "依頼した作業を記録に残す"
+    },
+    {
+      "source": "A service name alone may be ambiguous after dispatch. If you need a bag protected from crushing, write down whether you asked for an inner box, corner protection or to keep the original packaging. Retain the confirmation attached to the parcel. If the result differs, show what was requested and which visible feature is missing. Support can investigate a specific operation more readily than a general complaint about expensive packing.",
+      "source_sha256": "c2718958abd8c7e6b790fbf73ea3e75f3f16848b9d2173c9611b8318d831ad24",
+      "raw_target_sha256": "5b7cf6d49b9b984b4ba233b2a71e4c0130a589970911f1de6b607ebe9d5be203",
+      "translation": "発送後にサービス名だけを見ても、作業内容が分からないことがあります。かばんのつぶれ防止なら、内箱、角の保護、元箱の保持のどれを頼んだか記録し、荷物に紐づく確認通知も保存します。到着状態が違えば、依頼と実際に見当たらない部分を示してください。「梱包が高かった」だけより、具体的な作業のほうが窓口も調べやすくなります。"
+    },
+    {
+      "source": "Reconstructing a service total from a receipt",
+      "source_sha256": "e43dcc8b1cb70bb23f99012efbe6fa8881b412962d0abf0af596e54b5461727e",
+      "raw_target_sha256": "f14356767e0bfb497455f2c32f181d8e57df209ce325e3a52c3136b6a7180c8f",
+      "translation": "領収書からサービス料を確かめる"
+    },
+    {
+      "source": "Here is a fictional receipt to practise with. Two fragile pieces require individual protective wrapping at 3 yuan per piece. One outer box uses a 9-yuan reinforcement option. The quoted base freight is 118. A screen then shows a parcel total of 133. The numbers reconcile because 118 plus six plus nine is 133. The words per piece and per parcel make the arithmetic reproducible. Without them, two buyers could look at the same three numbers and arrive at different totals.",
+      "source_sha256": "d022cf8612acda86bc16391f7edac14f4562874968528f52aa5f0a26ad21a47b",
+      "raw_target_sha256": "73ea59ac3cc534c33f9c3c3b88873b8f5b2c3f9b78939f7da3b8f84a4964937f",
+      "translation": "架空の例では、壊れ物2点の個別包装が各3元、外箱1個の補強が9元、基本運賃が118元です。荷物の合計は118 + 6 + 9 = 133元となり、画面の133元と一致します。「1点ごと」と「1箱ごと」を区別しないと、同じ単価を見ている人どうしでも違う答えになってしまいます。"
+    },
+    {
+      "source": "Suppose the final invoice shows 124 as freight including the two protective wraps and 9 on a separate line. The total is still 133. It would be misleading to report a new six-yuan increase merely because the value called freight rose from 118 to 124. Compare the composition of each displayed figure before comparing its magnitude. If the final description does not make clear whether the wraps are inside the 124, ask for the breakdown. Record an unresolved question instead of changing a line description to make the numbers fit.",
+      "source_sha256": "69043cd9a59e9998cafa0fa0e9fa3916f28e7ffc49f60cc4e55e86b24c925e56",
+      "raw_target_sha256": "dcce8fdde7f73169d57a5c68545bf99a0717619c1b2ec4356f017c7dfd85a214",
+      "translation": "最終明細では個別包装2点分が運賃に入り、運賃124と別料金9と表示されたとします。合計は変わらず133です。運賃欄が118から124になっただけで6の追加負担が発生したとはいえません。内訳を合わせてから金額を比較します。124に個別包装が入っているか書かれていなければ、推測で項目名を変えず、内訳を問い合わせてください。"
+    },
+    {
+      "source": "What to do when the same service appears twice",
+      "source_sha256": "3acf70b08c980f60ae57427ddeb06898af689db13958971712d988f0c18af65c",
+      "raw_target_sha256": "6808b0c98722bb24068d6ae405d7b6be47108ccff33d1c4fcd4e7c7e07fc9cfe",
+      "translation": "同じ名前のサービスが2回出てきたら"
+    },
+    {
+      "source": "A familiar label can denote two legitimate operations. An item-level service can prepare one fragile object before it enters a parcel, while a parcel-level service can reinforce the outer box. Open the details of each entry and compare the object being handled, the quantity and the stated purpose. If one charge is attached to a purchase reference and another to an outbound parcel, save both references. A shared word such as protection does not establish a duplicate.",
+      "source_sha256": "69744db6115f961585d64decaaeee545438e666ae0dad88100a3f15799305b8f",
+      "raw_target_sha256": "60a95ca71c4ca36aee812f3412127d52d3bff7a2e2b3156f78960e4927b19018",
+      "translation": "似た名前でも別の作業があり得ます。例えば、商品を箱に入れる前の個別包装と、外箱自体の補強です。各明細を開き、対象、数量、目的を調べます。一方に購入番号、もう一方に国際小包番号が紐づいていれば両方控えます。「保護」という共通の言葉だけでは二重請求とは判断できません。"
+    },
+    {
+      "source": "Ask for an outcome you can identify",
+      "source_sha256": "1dc4bf0cf5e343b3f30a302e8866aa7272ba125a055016f1731133f88cd4c745",
+      "raw_target_sha256": "888fc167b5f1b7fe27f7b54b6a93630b626911ed5c52732eead22cfb83112a57",
+      "translation": "写真や到着時に確認できる形で依頼する"
+    },
+    {
+      "source": "Distinguish a cost comparison from a quality judgment",
+      "source_sha256": "97edc42033fd44dd4ace35497890d6924feb39521be40eebd502ab58466d67a8",
+      "raw_target_sha256": "8ab92745d236c06fbd3777f029b0078d1af47c73f4a5cdcefcbd40b84c3ad0ae",
+      "translation": "価格と保護内容を別々に判断する"
+    },
+    {
+      "source": "A lower service price is useful only if it addresses the actual concern. Someone sending replacement parts may care that small components stay bundled. Someone sending a gift might care that the retail carton remains intact. These people can receive identical freight quotes yet make different rational decisions about optional work. Write a one-sentence acceptance condition for each service you consider. For a loose accessory, it could be that it remains with its known parent item inside the package.",
+      "source_sha256": "6e3258363b4c5e16e5dd89775f275e925f370e02ad189edbccffaa54796e3e1b",
+      "raw_target_sha256": "f8dbb89e891dbc04a8fbe84ed1b56b6530844c4e942d9772d9c550e3b615e491",
+      "translation": "低い料金に意味があるのは、必要な条件を満たす場合です。交換部品なら小さな部品の散逸を防ぐこと、贈り物なら化粧箱を傷めないことが目的かもしれません。同一運賃でも必要な追加作業は違います。「緩い付属品は該当する本体と一緒に袋に入っている」など、受け入れられる状態をサービスごとに1文で書いてください。"
+    },
+    {
+      "source": "After delivery, compare that condition with what you can observe. A well-protected outer corner is not evidence that an internal accessory was separately wrapped. If an instruction appears to have been missed, show the order acknowledgement, the selected service and a picture of the relevant part of the received package. Avoid attributing damage to a particular event without evidence. State the requested outcome and what you found, then ask which next step applies.",
+      "source_sha256": "200b97e253e9d1efd47c50b17442d1394d2059acd4442ed3eca795b9548c8420",
+      "raw_target_sha256": "37c4a7a88b3dc3b26e1f9bf3ff41f65578895dc64760a6156379a438a1712890",
+      "translation": "到着したら、その条件と目で確認できる状態を照合します。外箱の角が保護されていても、中の付属品を個別包装した証拠にはなりません。指示どおりでないときは、注文の受付、選んだサービス、届いた箱の該当箇所の写真を示してください。依頼内容と実際の状態を伝え、証拠がないまま特定の輸送段階を原因と決めつけず、次の手続きを尋ねます。"
+    },
+    {
+      "source": "A support message that isolates an unexplained amount",
+      "source_sha256": "0da33059789bb8691e4e2badbc88d69fce386c320bbc57a0bd039a6b78b12647",
+      "raw_target_sha256": "a37e7545a0c260d839087448270e2f0b8fc8ab13dbec76b7bf26b8d191822ce4",
+      "translation": "説明できない差額だけを尋ねる"
+    },
+    {
+      "source": "When a reply comes back, enter the provider's explanation beside the line it concerns. If the difference is a previously unseen quantity, correct the quantity column. If it is an already established charge, link it to the earlier entry rather than creating another. Once the detailed services, freight and credits reproduce the statement, your worksheet can serve two purposes: checking the present transaction and building a more realistic estimate for a future parcel with similar requirements.",
+      "source_sha256": "9789a2df087805f76c6c97aedff0adbc452751e73a4fa67e1b98bba4abe7785d",
+      "raw_target_sha256": "ec344a3efbc56cf0e73c26f94bd495052b305904703f9ce4d27e5c513c34e6ca",
+      "translation": "返答を受けたら説明を該当行に書き込みます。数量が見落とされていれば数量欄を直し、すでに記録した費用ならその行に関連付けます。重複して項目を増やさないでください。サービス、運賃、返金の合計で請求書を再現できれば、今回の支払いを確認するとともに、次に同様の条件で送る際の予算資料にもなります。"
+    },
+    {
+      "source": "Multiple choices on one marketplace listing can mean different units, quantities and prices. Build the estimate from confirmed options before applying delivery or discounts.",
+      "source_sha256": "bf19ebd5a93821a8db0044997102efc8a88811985010a7635c5b3610f9f9f8b0",
+      "raw_target_sha256": "753e86235b639fbe730487b17e82ccbbbb390d3e2bdd9b2bf677ce542faae315",
+      "translation": "同じ商品ページでも、選択肢によって販売単位、入数、価格が変わります。確定した仕様の小計を出してから、送料や割引を計算します。"
+    },
+    {
+      "source": "Make the seller's selling unit explicit",
+      "source_sha256": "b9d22755e40f809bc7fd7ad19576782f241329cb95cc8a3b060315470fbf944d",
+      "raw_target_sha256": "5c6c0be57f92b9a750195dc73fb5f6285b2c915987b79eb197aa993c03731e96",
+      "translation": "店が何を1単位として売っているか確認する"
+    },
+    {
+      "source": "Read each option before copying the lowest displayed price. A listing can offer a complete set, a single piece, a replacement part or more than one pack size. Save the seller's option text in its original language as well as your translation. If you are buying two shirts in one colour and another in a different size, give them separate lines. An entry saying only three shirts gives you no way to check which line changed when the seller confirms part of the order.",
+      "source_sha256": "bb73e0fac1e00161c31bd0f7f7e539a5b33494af246067ef24a8219922eda100",
+      "raw_target_sha256": "429d874554eb9b534171f78dd56a5c51f9ba8774444cb2ae56b3feecd8492428",
+      "translation": "最安の表示価格を書き写す前に各選択肢を読んでください。セット、単品、交換部品、異なる入数のパックが同じページに並ぶ場合があります。仕様名は翻訳と原文の両方を保存します。同じ色のシャツ2枚とサイズ違い1枚なら別の行に書きます。「シャツ3枚」だけでは一部欠品の連絡が来ても、どれが変更されたか追えません。"
+    },
+    {
+      "source": "Build the merchandise subtotal first",
+      "source_sha256": "54717411ad08c8a7c32948f0d2b19a06be3ba5f2555b7793866eaf6ead4b63e4",
+      "raw_target_sha256": "826c8a3b83b670c7d4564cc9214a9c7174616c8373ffa624d1b923ad3212e6a8",
+      "translation": "商品小計を先に出す"
+    },
+    {
+      "source": "For example, assume the selected medium shirt costs 72 yuan, the large costs 76 and the two-piece set costs 130. Selecting two medium shirts and one set costs 274 before delivery. Accidentally using the 72-yuan shirt price for the set gives 216. The 58-yuan difference comes from selecting the wrong unit, not from a hidden freight charge. Keeping pack type, option, unit price and quantity in separate columns makes the error visible.",
+      "source_sha256": "e693a04247cb69da69145d2095f6229501229efe4c4a154929e716ea691d8378",
+      "raw_target_sha256": "5a12044af51b5c9c68817348fd095c777999bea5356390a4e6922b2656a9ca43",
+      "translation": "Mサイズのシャツが72元、Lサイズが76元、上下セットが130元なら、Mサイズ2枚とセット1組は送料前で274元です。セットにも72元を当てはめると216元になり、58元ずれます。これは隠れた運賃ではなく、販売単位の取り違えです。セット種別、仕様、単価、数量を別々の列にすると見つけやすくなります。"
+    },
+    {
+      "source": "Check minimums and tiers against the selected mix",
+      "source_sha256": "e5485bdbf64bf2782f1dd61781895e70fa6cd44e84e88b298d2d5bae33ffda20",
+      "raw_target_sha256": "735ac257279c1d466a8df7bdbabf9ddb5fc6c4412b6fb62be2ab6cfca7751462",
+      "translation": "最低購入数と段階価格を選んだ組み合わせに当てはめる"
+    },
+    {
+      "source": "Split a discount using the rule printed on the order",
+      "source_sha256": "cad037304293c308ee2ebfb7e7dff405b72639f16d9abf30365c9165310f7887",
+      "raw_target_sha256": "ec68a3df57dc442099ccb3ef6415c1ce6fefb30357c98ed7e31b9a1bafcdd391",
+      "translation": "注文に記載された条件で割引を配分する"
+    },
+    {
+      "source": "Look at the seller summary before allocating the saving. A promotion may apply only to certain items or may change when a unit is cancelled. Keep the eligibility conditions with the order. When you simply need to share a bill, state your allocation method separately from the seller's calculation. For example, proportional distribution among eligible items may be fair among friends but does not describe which refund the seller will approve later.",
+      "source_sha256": "7cb3b049b2b0eb5106fa2e69dc079f3142cfc8dd6da7da144a9b847f6fc55ad4",
+      "raw_target_sha256": "dc321d277bcec548625ed5f40fafb9c72e5a1940e7773f2152f6074f1a0d17ac",
+      "translation": "割引を分ける前に店の注文概要を確認してください。一部の商品のみ対象だったり、1点を取り消すと割引が消えたりします。適用条件も保存します。友人どうしの精算で対象商品の金額に応じて配分することと、店が後日いくら返金するかは別です。自分たちの配分方法を店の計算と分けて記録します。"
+    },
+    {
+      "source": "Carry item identities into the warehouse",
+      "source_sha256": "ae1a80f5af7e651d6097fa54c8a0ced4617a2cd54875ae4c75837a831405a19e",
+      "raw_target_sha256": "0d641e319dbc6aa15004ae6423be438bbb9d302cb779864f2154df05973696fe",
+      "translation": "倉庫でも注文の各行と実物を対応させる"
+    },
+    {
+      "source": "Give each line a stable name, such as navy shirt medium or blue set large. When two deliveries appear, match warehouse entries to those names and counts. Keep one cancelled line in the ledger as cancelled rather than reusing its identifier for another piece. Before submitting a parcel, compare the count of completed entries against what you paid for. A total that balances financially can still conceal a missing colour or an incomplete set.",
+      "source_sha256": "9150f3dd5695c41777ce2e7027972927b71a5cf2c9447dfef09f2203a5a9936e",
+      "raw_target_sha256": "1c6a7f73f17654a2cf971806b9c3f46577ca0a492b402f5c1e478b3a748a57ae",
+      "translation": "「紺シャツ・M」「青のセット・L」など、行ごとに識別できる名前を付けます。荷物が2つ届いたら、各入庫記録の品名と数を照合してください。キャンセル行はそう表示して残し、別商品の番号として再利用しません。国際発送の前に入庫が完了した数と支払済みの数を比較しましょう。金額が合っていても特定の色やセットの一部が不足している場合があります。"
+    },
+    {
+      "source": "Buying for three people from one option grid",
+      "source_sha256": "d0239f170664023a33e05e743d2915e2084e89a30eb72da8bec7df19440078a4",
+      "raw_target_sha256": "ceef923477fcb67f4d4596ad0f4e060878d61cc8e96ebe4e46d69dfe980de7bf",
+      "translation": "3人が同じ一覧から違う仕様を選ぶとき"
+    },
+    {
+      "source": "Imagine three friends choosing trousers from one listing. One selects the unlined version in size medium, another selects the lined version in medium and the third selects the unlined version in large. The listing title and seller number are identical on all three records. The information that distinguishes them lives in the option columns. Write one complete selection per line and name the recipient in your private sheet. If the seller option names are translated alike, keep the original wording and thumbnail beside the selections.",
+      "source_sha256": "b6195535c1b6d1f8909444dac3ebdce40b2f17eebf3ff4ff85561c73bb911eb4",
+      "raw_target_sha256": "bc8c5cddd1ff7df1f6c6616d8c7f00636d18c0ba75d24ae053d09e4aa4582f70",
+      "translation": "3人で同じ商品ページのパンツを買うとします。1人は裏地なしM、1人は裏地ありM、もう1人は裏地なしLです。商品タイトルと店の商品番号は全員同じで、違うのは仕様です。1行に1人分の選択をすべて書き、自分用の表に受取人も記入します。翻訳すると同じ名前になる仕様には原文と選択画像を付けてください。"
+    },
+    {
+      "source": "Checking a multi-pack against single units",
+      "source_sha256": "17affab70e67217c2d82d365b3fe78708364d730301be9c3fe8194cf1d5d3786",
+      "raw_target_sha256": "28c088b93716d2397b921636c2a6d8e1cfd316bd427dd8092b986feed1c1f74e",
+      "translation": "複数入りパックと単品を比べる"
+    },
+    {
+      "source": "Read the size and colour assortment on the pack. A five-pack may contain an assortment chosen by the seller rather than five duplicates of a selected colour. If only two pairs match the need, dividing by five is a misleading measure of value to that buyer. Before paying, write a sentence describing exactly what should arrive: five wearable pairs in size X, with the colours distributed as stated in option Y. This sentence becomes a usable warehouse count instead of a number with no physical meaning.",
+      "source_sha256": "659d2708aed2ca1d3b1aaa2ebb9630f632ce45792596566408dff924f148962f",
+      "raw_target_sha256": "5592169d8a449168aa728a64ff62d5af80fc65fbe04147ebf1a698a581589d7b",
+      "translation": "パックのサイズと色構成も確認します。5足パックは、選んだ色5足ではなく店指定のアソートかもしれません。必要な色が2足だけなら、価格を5で割っても自分にとっての価値を表しません。「サイズXで履ける5足、色の内訳は選択肢Yの記載どおり」といった形で受け取り条件を書いておきます。倉庫でも中身に即して数えられます。"
+    },
+    {
+      "source": "Handling a partial stock confirmation",
+      "source_sha256": "ec2a38211bb19954b12facc9fe4fdfd9b1b598217be4251ac1c0b6bde89d5db5",
+      "raw_target_sha256": "8c6ff132a91e8facaa12867778c714d40601918603e4ba7e6b9c00b3c392bc42",
+      "translation": "一部だけ在庫が確定した場合"
+    },
+    {
+      "source": "Take the example of two medium shirts and a set. If the seller confirms only one medium shirt, the original 274 no longer describes the goods available. One shirt at 72 plus the set at 130 gives a merchandise total of 202. Check whether a quantity threshold, domestic delivery condition or discount has changed as well. A cancellation can affect more than the removed unit if the promotion depended on the original basket.",
+      "source_sha256": "3494235e91bdc6cd07e43652ea5d572b4d6a899a65c0773c1026ba361e7c36b0",
+      "raw_target_sha256": "25340676b286efd4f1c445ddc6604ec007f0ca4921f7611d101320a8096e1310",
+      "translation": "Mサイズのシャツ2枚とセット1組の例で、店がMを1枚しか用意できないとします。元の274はもう実際に買える商品の小計ではありません。シャツ72とセット130を合わせて202です。数量条件、国内送料、割引適用も再確認してください。元のカート全体に対する特典なら、取り消した商品の金額以外にも影響します。"
+    },
+    {
+      "source": "Identifying a quantity mistake before it travels",
+      "source_sha256": "e5e96f0a394458d8d064dc4c3ff7d0ff0deaee03d187b89230197270fa967f32",
+      "raw_target_sha256": "212ca2d1f21d4731abb57e55789d208f328597eeb150455c05c0a4c2a6f8ce6b",
+      "translation": "発送前に数量違いを見分ける"
+    },
+    {
+      "source": "A photograph of three unopened packets can confirm that three packets are present. It may not confirm the number of units inside each. For a set with different contents per package, ask for a view or label that distinguishes the package versions without damaging packaging the seller may require. For separate garment sizes, match each readable size tag to a line on the paid order, especially when two colours differ only slightly under warehouse lighting.",
+      "source_sha256": "840e6b972c99347c2a0ae150a95b7b52ee14750b759757412aa832e62663563e",
+      "raw_target_sha256": "110553df7dec07fc07c14a563675a2d154d8aa5c171fbaae4fb201a3fbfb983c",
+      "translation": "未開封の袋が3つ並んだ写真で、袋が3つあることは分かりますが、各袋の入数までは断定できません。中身の異なるセットがあるなら、返品条件に関わる包装を破らずに判別できるラベルや外観の写真を頼みます。衣類のサイズ違いなら、読めるサイズタグを支払済み注文の行に結び付けます。倉庫の照明で似た色に見えるときは特に有効です。"
+    },
+    {
+      "source": "If you receive one packet with a handwritten count of four, compare that with the seller's stated packing unit before reporting a shortage. Four accessories inside one bag may fulfill four units, whereas four empty protective sleeves do not. Describe the observable fact in your message and ask a concrete question. For instance, the order includes three two-piece sets and the warehouse entry shows three sealed packages; could you verify whether each package contains both listed pieces?",
+      "source_sha256": "d9a1135eb39fabf48de181196255c6fe57d364e19d33b64f8b401e7c35242a89",
+      "raw_target_sha256": "79ab3e30d1e3fb787b140ce6d4805431580305b89993bedbaeed09082132d819",
+      "translation": "袋に手書きで「4」とあっても、まず店の販売単位を確認します。1袋に付属品が4点入っていれば4単位を満たすかもしれませんが、空の保護スリーブ4本は商品4点ではありません。「2点入りを3セット注文し、入庫写真では未開封の袋が3つです。各袋に記載の2点が入っているか確認できますか」と、見えた事実に基づいて依頼します。"
+    },
+    {
+      "source": "Keeping product mathematics separate from outbound freight",
+      "source_sha256": "7c8890fd16fcf419d225256248706176f898e8a4724bf3c17f3ec77db9470465",
+      "raw_target_sha256": "572b3e5b110b538e2ab099fd9d64f18769f54ebf0988eb0bc9d455ff1bc452fd",
+      "translation": "商品の原価計算と国際送料を分ける"
+    },
+    {
+      "source": "The price per usable item can be useful before purchase, but do not silently add a future international fee to each seller line and treat the result as confirmed. Once the goods arrive, a shared parcel may contain items from several purchases and use packing that was unknown earlier. Retain the confirmed seller costs and add a separate outbound comparison when measured figures become available. If you later allocate freight among recipients, document that policy separately.",
+      "source_sha256": "d04fb0dec019f09eabeecc5f1251b12807962689aeb293be54012553528eb888",
+      "raw_target_sha256": "6aea7e7e6634cd4a96b2debac0fac419834a4b69c12f9a47faa11b46e774a81b",
+      "translation": "実際に使える1点当たりの費用は購入前の判断に役立ちます。一方、まだ確定していない国際送料を各店の行に足して確定額にはしません。入庫後は複数注文を同梱するかもしれず、梱包も未定です。店の確定原価を残し、実測値がそろってから別に国際送料を比較します。受取人どうしで分ける場合は分担ルールも別に記録してください。"
+    },
+    {
+      "source": "A complete record lets you answer three questions without recalculating from memory. Which version and quantity did the seller agree to supply? How much was actually collected or returned on the purchase? Which items are ready for international submission? A purchase line can be financially complete while one piece is still waiting for identification, so close each line only when its contents and its payment history are both clear.",
+      "source_sha256": "68a3468359044a5e26abfda966207f326649659dd8d42d33b3ecd37b282cee25",
+      "raw_target_sha256": "aef3069aa2b67958e6542d3c93611278fa2b269639ab46fb4ec3d82fce26e19c",
+      "translation": "必要な情報がそろった記録なら、店が約束した仕様と個数、実際に支払った額と返った額、国際発送できる品物を記憶に頼らず確認できます。決済が終わっていても、1点の識別がまだということはあります。中身と資金の動きの両方が明らかになってから、その行を完了にします。"
+    },
+    {
+      "source": "A multi-shop shortlist can look like one cart, while costs and delivery events still originate with different sellers. Organize the purchase by shop first and the international shipment by parcel later.",
+      "source_sha256": "f97eaf1e81454d8f51fe0cbf00fae7d6447d2866fe0af64cdef551c0d1dbc361",
+      "raw_target_sha256": "2f4d3336e56c1d7a8f7752cf51603c9f5cc1c8796d864ad947f507b997b5de91",
+      "translation": "複数の店の商品が1つのカートに見えても、請求や入庫は出品者ごとに発生します。購入時は店別に、後の国際発送は荷物別に整理します。"
+    },
+    {
+      "source": "Create a small register for each seller",
+      "source_sha256": "f68f726587f807f9c2fc0a39b5739a99422de9ed512a323b17002bc8c1c8b2c4",
+      "raw_target_sha256": "97cd37cdf005fed428f65cef345f9a78b03faaee82cd0af8f3fa39ec634ffb0a",
+      "translation": "店ごとに小さな購入台帳を作る"
+    },
+    {
+      "source": "Save the original listing, chosen option, quantity, product amount and domestic delivery shown for that particular purchase. Put discounts under the shop where they apply. Two listings sharing the same studio photo can still be offered by different sellers. Use the shop identity and the marketplace listing number to distinguish them, and give the lines names you will recognize even if the seller edits the title.",
+      "source_sha256": "ef47bf2754d504526e0df933100a1bdf34e0c9b97d507842474d3d4468f2c73f",
+      "raw_target_sha256": "95b7c94b13f0915d0f43cc4988d744f75d46e2c26ecb7f6906281eaf6e9235f0",
+      "translation": "元の掲載ページ、選択仕様、数量、商品代、その注文の国内送料を記録します。割引は実際に適用された店に付けます。同じスタジオ写真を使う別の店もあるため、店名と元サイトの商品番号を控え、後日タイトルが変わっても分かる品名を表に付けてください。"
+    },
+    {
+      "source": "Keep committed costs separate from intentions",
+      "source_sha256": "7e642cdca349f2e12a1052f1d01f89b2097f543f5392b74ba3b237aa8bbe2679",
+      "raw_target_sha256": "00012bfb9a48b9c0039902300a4b339c20aa578619b9e6c55080974edb1b0b30",
+      "translation": "確定額と購入予定を区別する"
+    },
+    {
+      "source": "Suppose shop A has confirmed a 90-yuan jacket and 8 yuan delivery. Shop B still shows a 54-yuan scarf with domestic delivery unknown. Shop C has cancelled a 30-yuan accessory and its refund has not arrived. Show 98 as the confirmed purchase cost for A, 54 plus an unresolved amount as the estimate for B and 30 as a pending credit if it was actually paid. Adding everything into one definite subtotal would hide three different states.",
+      "source_sha256": "37f5222e9db2b2bf15e89543147df12df5c923a18373e7ba4e9032b85a64c179",
+      "raw_target_sha256": "e785047728d3fd88dfd1e2523883ff91ddcd29fc3e9bae5f7c82685a44ec689f",
+      "translation": "店Aは上着90元と送料8元を確定。店Bのマフラーは54元で国内送料が不明。店Cの30元の小物はキャンセル済みで返金待ちとします。Aは98元の確定支出、Bは54元に未確定送料を加えた見込み、Cは支払済みであれば30元の返金待ちです。ひとつの確定小計にすると、この3つの状態が見えなくなります。"
+    },
+    {
+      "source": "Track arrivals without changing the accounting basis",
+      "source_sha256": "021ab5c0697b2ad4b273cc8e66a52a87e647a47d2b78f87de338198a16000acf",
+      "raw_target_sha256": "a09dfa94259cabec524e41027051cbed3120832b6bd791d2ab09ecf582982d57",
+      "translation": "入庫の進捗と費用を別々に記録する"
+    },
+    {
+      "source": "The parcel that reaches the warehouse first may belong to the last shop you ordered from. An arrival changes what you can inspect or submit for shipping, but does not automatically create an additional seller charge. Record the domestic tracking reference against the purchase and the warehouse reference against the received unit. If two tracking numbers arrive for one seller order, confirm the contents of each before treating either shipment as complete.",
+      "source_sha256": "585ad28963b7a25777a4ee1105243d61da2d12da743143a9cf224a3b8e3ea5f7",
+      "raw_target_sha256": "13f61d3742e0a7ff43634c9d094498645870a105c4d0528608ae6e11893fcbf8",
+      "translation": "最後に注文した店の荷物が先に倉庫に届く場合もあります。到着すると検品や発送依頼に進めますが、自動的に追加送料がかかるわけではありません。店への注文に国内追跡番号を付け、受け取った品物には入庫番号を付けます。ひとつの注文に2件の追跡番号があれば、中身を確認してから受け取り完了にしてください。"
+    },
+    {
+      "source": "Decide what waiting for the last item costs",
+      "source_sha256": "04652bc8096065146e19945d63e4cfcd70c3be6f6f601332517e922fa5f1fb59",
+      "raw_target_sha256": "d8bb9db0097c54d9c86edea4e5fa22fabc38d4b901b6f228bd2756aeb5ec958d",
+      "translation": "最後の商品を待つ条件を整理する"
+    },
+    {
+      "source": "Write down the warehouse deadlines for the items already stored and the latest confirmed information for the missing piece. Compare a combined parcel when all items arrive with sending the ready items now. Do not assign an invented cost to waiting. If a storage charge or packing service could matter, check the current account information. If the item has a firm use date, represent that constraint separately from the freight comparison.",
+      "source_sha256": "74cf45bac0fbb7c75262c1b0a0b5fb9c715437325c190acacc3550ee94c0cda3",
+      "raw_target_sha256": "6d57bf507d59c44d0a8a9a11f216ba739d4f615fe50d0f2a9b9fc1933322c629",
+      "translation": "保管済みの商品には倉庫の期限を、未着品には最後に確認された状況を記録します。全品を待って同梱する案と、準備済みの品を先に送る案を比べ、待つこと自体に架空の費用は付けません。保管料や梱包料が関係しそうならアカウントで現在の条件を調べます。使用期限がある場合は運賃とは別の条件として明示してください。"
+    },
+    {
+      "source": "Rebuild the final total from its records",
+      "source_sha256": "07f7dd3240d9f20e50ebe8c86e66693dc6f3c495f1c8b012fd29fb9e344c1cb1",
+      "raw_target_sha256": "dfad15c589dace938fc56378898a61e8fe39485932bd3da66270ea3a7676919d",
+      "translation": "明細から最終支出を再現する"
+    },
+    {
+      "source": "Start with net merchandise across sellers. Add the domestic amounts actually charged once each, then add outbound parcel payments and any separately shown services. Subtract refunds only when you can match them to the correct purchase, currency and destination. A refund returned to an account balance may affect your usable balance differently from a credit to your original payment method. Keep both the economic cost and the payment history visible.",
+      "source_sha256": "f7c9ee3c7ea5e76b5c681c4ce312a76b6cbe7092aae501f0a40549310e7f6293",
+      "raw_target_sha256": "5a09bed13139df95965fbd13462e44dede88d80ac8c0534c1794612e3d510eea",
+      "translation": "各店の正味の商品代を集計し、実際の国内送料、国際小包の支払い、別途請求のサービスを各1回加えます。返金は購入、通貨、返金先が一致してから差し引きます。アカウント残高への返金と元の支払方法への返金では、今すぐ使える額が違うことがあります。正味のコストと実際の入出金を両方見えるようにします。"
+    },
+    {
+      "source": "A basket that changes while the first item is in storage",
+      "source_sha256": "38b41bfcafdb2e3e445cfff1b702f284fd55a1eeb5ff58a25f8ee0b063d3da52",
+      "raw_target_sha256": "c811aaf48806e132684032ca15d07b60453f817eec136cb901d92b03bf7542cd",
+      "translation": "最初の商品が保管中にカートが変わる場合"
+    },
+    {
+      "source": "Deciding who owes what in a shared basket",
+      "source_sha256": "1fefa08cff11aa78c65e5f72997f611167444f4184522c35c4bd07972be47b3b",
+      "raw_target_sha256": "86f3e0f2cfa5cc701cf24ff918cf0ae7d42e3dd6b6a3fb23b0620bf038051a9c",
+      "translation": "共同購入の精算方法"
+    },
+    {
+      "source": "Suppose one friend buys from shop A only and another friend buys from shops B and C. Individual seller charges belong to the appropriate purchase first. The friends might then agree to divide the international shipping equally, by weight or according to another rule. Keep that private agreement separate from the charges the sellers or HubBuy applied. A buyer's contribution can change when the packing plan changes even if no seller has altered its own amount.",
+      "source_sha256": "265b9fe1db59015eac328c404442c99cf9edd3fdd48811a3af257aebbdf19358",
+      "raw_target_sha256": "01705f3355908f81ed2f9daf2b325c6730f0c3f7bfb3c3f4de4ad05e1d3411f3",
+      "translation": "友人の1人がA店のみ、もう1人がB店とC店で買った場合、各店の料金はまず該当の注文に計上します。国際送料はその後で、人数割り、重量割りなど合意した方法で配分します。友人間の約束と、店やHubBuyが実際に請求した費用は別です。各店の価格が変わらなくても、梱包方法が変われば個人の負担が変わり得ます。"
+    },
+    {
+      "source": "For example, three purchases might have net totals of 106, 64 and 180 yuan. Their combined purchase cost is 350. If one purchase later gets a 20-yuan credit, the new cost is 330. Assign that credit to the purchase it belongs to before splitting anything else. Subtracting it from the international parcel total would make it harder to explain either the net seller cost or the eventual outbound charge. Show a pending credit separately until it actually appears.",
+      "source_sha256": "ab342c0afda44335355e4e5e7a855ff40e5422befbe40fe8f44f0b58629114e8",
+      "raw_target_sha256": "0a871862a0383a8716da6ff7c4c2f8f30a45e03859a8f5000f64377e82d4ed60",
+      "translation": "3件の正味購入額が106元、64元、180元なら合計350元です。そのうちの1件で20元の返金が確定すれば、合計は330元になります。返金を先にその購入行に対応させてから他の費用を配分します。国際送料から引いてしまうと、店での正味支出も国際配送の実費も分かりにくくなります。入金まで待っている返金は別欄に置いてください。"
+    },
+    {
+      "source": "Inventory matching across deliveries",
+      "source_sha256": "2fbeb030411731a369612a453a21fd5254a15a5587924d17f3508fdff545895e",
+      "raw_target_sha256": "88df1be117c261cc419fe671c350f344e47154df153c5fea7d42370382744ee5",
+      "translation": "複数の配送から届いた品物を照合する"
+    },
+    {
+      "source": "Use a unique row identifier for each chosen option. A short name such as coat-A-small is enough in a personal worksheet if it also points to the underlying order reference. When an intake notification arrives, match the item to a row using the seller, domestic tracking and identifying details. If two similar bags came from different shops, a studio picture shared by both shops is weaker evidence than the corresponding delivery record.",
+      "source_sha256": "659dd75865e850482d5c1bf696b472c1371d457d905c195243074c18aba56aba",
+      "raw_target_sha256": "dfa9108c82dba9fb2c6847b686c22f10f422007e42ce813e9d4185c428295511",
+      "translation": "各行には固有の識別名を付けます。「A店コートS」などの短い名前で十分ですが、元の注文番号にも結び付けます。入庫通知が届いたら、店、国内追跡番号、品物の特徴で照合します。似たバッグが別の店から来た場合、店どうしで共通の宣材写真より、個々の配送記録のほうが出所を確かめる手掛かりになります。"
+    },
+    {
+      "source": "If a delivery appears without an obvious match, do not immediately reassign it to whichever row is still blank. Check how many pieces each seller was expected to send, the last known tracking events and any note about a split delivery. Contact support with the specific unresolved record and the candidate orders. A clear inquiry might say that two domestic numbers were expected from shop C, one has an identifiable bag in stock, and you need help matching the second number to its intake.",
+      "source_sha256": "4841d13ea7b2fb0302bd935bd67a6828518530cec14e5acdf1cbb71823c7dd6c",
+      "raw_target_sha256": "c5951b8203546b5819ac8d241a9567b333c5e479a2d2e99827aaac7b7194c8a2",
+      "translation": "入庫品がどの行に当たるかすぐ分からなくても、空いている行に当てはめないでください。店別の発送予定個数、最後の追跡情報、分割配送の連絡を確認します。そのうえで「C店から国内の番号が2件あり、片方のバッグは識別できました。もう一方の入庫記録を照合してください」と、未解決の番号と候補の注文を挙げて尋ねます。"
+    },
+    {
+      "source": "Planning the outbound comparison with unresolved costs",
+      "source_sha256": "e7dfee6be33be5ba847c17730d92d5115bbbdc8c72368e0974c8d411f938a642",
+      "raw_target_sha256": "7c0cf32c6b706e621dd959032501cf22139954b7dc435bb7e05c1c39d77c403c",
+      "translation": "費用が未確定のまま発送を比較する"
+    },
+    {
+      "source": "Keep unknown amounts visibly unknown. A blank field frequently gets treated as zero when a spreadsheet sums a column. Add a status such as awaiting domestic quote to flag a missing charge. If the seller confirms a range instead of a final amount, preserve both endpoints for planning and mark the calculation as conditional. Use the exact amount on the confirmed payment record when it becomes available.",
+      "source_sha256": "f67d0f02b785405902e45c3949788c0803465744a05e066453832b9305b4e070",
+      "raw_target_sha256": "00f249a9748e472e5438af0f1e85db52a3f6624cf9f317fcc3683261338e96e7",
+      "translation": "表計算の空欄は合計でゼロ扱いされることがあります。未確定の送料には「国内送料の返答待ち」などの状態を付けます。店が価格の範囲だけを示したら上限と下限を残し、条件付きの予算と明記します。確定した支払記録が出た段階で実額を使うようにします。"
+    },
+    {
+      "source": "You can still make a useful decision with one missing number. Assume the confirmed items total 250 yuan and the preferred basket has a hard merchandise budget of 300. There is 50 left for the unresolved item plus any remaining seller charges. If the item's selected price alone exceeds 50, you already know this plan will exceed that budget, even before international freight. If the selected item costs 40, the decision turns on the remaining conditions. The calculation identifies what you need to ask next.",
+      "source_sha256": "b9328892921c2f0b25868d0f4ecf22ab90dcfe2c80423050d47ba1c8c873abdf",
+      "raw_target_sha256": "7e7d9b91fec6b016a47edce5336b76a77a009fbcc682925e0763b570d7577442",
+      "translation": "確定した商品代が250元、商品予算の上限が300元なら、残る商品と店側の追加料金に使えるのは合わせて50元です。その商品の選択価格だけで50元を超えれば、国際送料を入れなくても予算超過です。40元なら残る条件次第です。1件の値段が不明でも、何を確認すべきかは絞れます。"
+    },
+    {
+      "source": "Closing the basket without losing its history",
+      "source_sha256": "81fb1c9516dcdc8451ecede3e4508ace422bfedab2ed2a684bde26662c269b38",
+      "raw_target_sha256": "3ede4ec96feaa245bb7015853e53c98dc37ccfb4cf2220c0ce4b40dab1d7045d",
+      "translation": "変更の履歴を残してカートを締める"
+    },
+    {
+      "source": "After delivery, keep a final list of which purchases ended up in which parcel. Some may be returned, sent later or accepted as replacements. If you sent the coat earlier and the two bags later, the original one-box estimate is useful historical information, not the final transport bill. Enter two outbound references and their confirmed amounts. Where an amount is in another currency, retain its original value and the actual converted payment entry.",
+      "source_sha256": "ad019ffc062501eadc4c70c50a31bbfe5e33044099d585329f54e4b9974be4db",
+      "raw_target_sha256": "9a23793df55a7e2336cb799e832489fcdb72c9864c660a2dbead2a5c0fd98280",
+      "translation": "受け取り後、どの店の何をどの箱で送ったか最終一覧を残します。返品、後日発送、交換品も識別します。コートを先に、バッグ2個を後から送ったなら、最初の1箱の見積もりは経緯の資料であって最終運賃ではありません。2箱それぞれの国際小包番号と確定額、別通貨の支払いなら元の額と実際の換算後の記録も保存します。"
+    },
+    {
+      "source": "Finish by checking arithmetic in stages. Sum retained merchandise by shop. Add domestic delivery shown on the relevant purchases. Apply confirmed seller credits. Add final parcel payments and separately billed services only once. Reconcile any friend-to-friend allocation to the result. The resulting total can then be traced to records the people involved can inspect, including the reason the final basket differs from the first shortlist.",
+      "source_sha256": "1d9e3df29cc43d20091966013a7c0a98a085b9968b225f5c87d60105d639dbf8",
+      "raw_target_sha256": "91cbe4c3394d32a228c3e9eef16077f3cc00e50765ac05fb49a9d982c5aea9fd",
+      "translation": "最後に、手元に残した商品代を店別に合計し、該当注文の国内送料と確定した返金を反映します。国際小包の最終支払いと別サービスを各1回計上してから、個人の分担額の合計を照合します。各人が確認可能な記録を残せば、最終的なカートが当初の候補リストと違う理由も説明できます。"
+    },
+    {
+      "source": "Two screenshots can show different numbers for the same purchase without showing a different underlying price. Work from a common currency, a stated conversion direction and an identical set of included charges.",
+      "source_sha256": "6bf28f42334c0e7b34f483760d5104fd7c5b05ed922c6e733e6e1ce02b4db573",
+      "raw_target_sha256": "9a1dfecb16c0664dd5e00fa0335558010b373458cdec6b6c83b990083a65a16d",
+      "translation": "同じ購入でも画面によって金額が違って見えることがあります。元の価格が変わったかを判断するには、通貨と換算方向をそろえ、両方が同じ費用を含むか確認します。"
+    },
+    {
+      "source": "Decide what you are comparing",
+      "source_sha256": "a08b7fb5edcbd61099d08e9e65b631b12da71a079d9165c14c43a0d4bd023c72",
+      "raw_target_sha256": "bd290eab0ba2cc1bd9614f891dbcf4f1a8f66424b1aaee43a10da3a727571ebd",
+      "translation": "どの数字を比べているか明らかにする"
+    },
+    {
+      "source": "Make the exchange-rate direction readable",
+      "source_sha256": "e4fa0a63cfae68b6e0d25d376ab920ebd9569586cf46adae98db2fcd3a9d36f5",
+      "raw_target_sha256": "bf024f21d7dba05de41f9f5708d4507c7c0a3e6d206ae436a0625781aa054d48",
+      "translation": "為替レートの向きを明記する"
+    },
+    {
+      "source": "Normalize inclusions before the rate",
+      "source_sha256": "028e5d3bd32b448cc0a6e0199ab6cd55c5584e999f28fcac1d1c207608f6998c",
+      "raw_target_sha256": "cc10edb2ede7e8854d4b72e6a229c39bea6238ec25d34f8219f94ac0aa8ef803",
+      "translation": "レートを比べる前にサービス内容をそろえる"
+    },
+    {
+      "source": "Include payment fees exactly once",
+      "source_sha256": "98683f4e7520fd644357d39598d9b861f9af700da3a749c0ca6593198131d7b3",
+      "raw_target_sha256": "3858ea8cd06e56d27ab7ba411384b739a82e23f8a5ff768a091e4697b8100658",
+      "translation": "決済手数料を二重に計上しない"
+    },
+    {
+      "source": "A card might show one all-in home-currency debit, or separate conversion and service entries. Record what the statement actually shows. If the statement amount is already converted and includes a fee, treating that total as a new source amount and applying another conversion repeats the adjustment. When comparing a live quote with a posted charge, document the quote time and posting date. A later rate can differ even when the merchandise price is identical.",
+      "source_sha256": "aa280a057cbda53a0e7cfd1bdb063010f7cbd44a16be23276779ebd260caf2ea",
+      "raw_target_sha256": "b3aa7a4338d6c8ddc58c007c544402ec5bea050431160175bd4fbf79e0f9d847",
+      "translation": "カード明細には本国通貨の合計が1行で出ることも、換算や手数料が分かれて出ることもあります。実際の表示どおり記入します。手数料を含む換算済みの額を元の価格として再換算すると、調整を二重にすることになります。現在の見積もりと実際の引き落としを比べるときは取得時刻と記帳日も控えます。商品代が同じでもレートは変わり得ます。"
+    },
+    {
+      "source": "Round at the point where payment rounds",
+      "source_sha256": "e6c4dc2923c5d7106126101284b046fddd8614bf7140e37bc798324a87828292",
+      "raw_target_sha256": "8e8d9cd134e0f50d15088aead7deffe43d7e68d7818bee52871b3c7ca33b848f",
+      "translation": "実際の決済と同じ段階で端数を丸める"
+    },
+    {
+      "source": "When a seller summary collects several lines into one payment, convert the original-currency subtotal for your comparison. Rounding every small item first can create a few cents of difference from converting the order once. For a reimbursement sheet you may still need per-person figures. State which line absorbs the rounding remainder so that the sum of the allocations matches the amount actually paid.",
+      "source_sha256": "c59cf691180c32d61209d8865a0a86d2a39e916fc71178bcdf50c87f55e10d76",
+      "raw_target_sha256": "39b48766d993ba2583d2dff71f83df48a5511c9e84a6bf265a8c523fae362fb9",
+      "translation": "複数の商品行が1回の決済になる場合は、元の通貨で小計を出し、その小計を換算します。各点で先に端数を丸めてから足すと、注文全体を換算した場合と少し違うことがあります。共同購入の精算で個人別の金額が必要なら、誰の行で端数を調整したかを書き、合計が実際の支払額に一致するようにします。"
+    },
+    {
+      "source": "Worked example with a fixed fee",
+      "source_sha256": "4d49b34d0fec809f05d0d2aee85a66cb402f5e3e8a83572c22074f5f83056ffd",
+      "raw_target_sha256": "11d73b08790bbc31df12483dffc73ff6523b0bdcb34dc4809f6b09ce9622e73f",
+      "translation": "定額手数料を含めた比較例"
+    },
+    {
+      "source": "Keep a consistent direction in a mixed-currency worksheet",
+      "source_sha256": "718304e88caca3d4ac1e63da41042e9174b8ff37903c992a09773499a2ad8aff",
+      "raw_target_sha256": "c19a6fd9380dae1c7a37355625035f007252c9fe0021e905c9a1fc2ed5350666",
+      "translation": "複数通貨の表で換算方向を統一する"
+    },
+    {
+      "source": "If one seller quotes in yuan and another amount already appears in your home currency, define a single comparison column. Convert each source amount into that column once. A simple note next to the source amount should give its unit and the conversion direction. Enter 150 CNY and 7.50 CNY per home unit as separate fields. Check that the converted result times 7.50 returns the source amount before any fees.",
+      "source_sha256": "4bb2c9449ba1cb6aac59545b33a886dbce2ef89cf575933f4ed475cada7220dd",
+      "raw_target_sha256": "72ac4e047dd07c9b738380f32afabb1f9b021f0b39a3d7fdf5591728778a9c76",
+      "translation": "店Aの価格は人民元、別の金額はすでに自分の通貨で表示されているなら、比較用の列を1つ作ります。元の金額をそれぞれ1回だけその列に換算します。「150 CNY」「自分の通貨1単位当たり7.50 CNY」のように金額とレートを別の欄に入力し、換算結果に7.50を掛けると手数料前の元の額に戻ることを確かめます。"
+    },
+    {
+      "source": "A common mistake occurs when a friend pastes a displayed conversion into a column that ordinarily contains original yuan amounts. The sheet then converts an amount that has already been converted, creating an implausibly low total. Use clear column names and keep screenshots or payment references close to the corresponding row. If you cannot tell which currency a pasted number uses, leave it out of the combined total until you can identify its unit.",
+      "source_sha256": "4347ad0f8751f966fb8d3e5b956089dabb9a6b8cea582e2595dd518d6f90d103",
+      "raw_target_sha256": "921b4ae319086ff8cf08515bc10f2eb512bb4657df8b6701ffd05a0997fc31f7",
+      "translation": "友人が換算済みの表示額を、本来は人民元の元値を入れる列に貼り付けると、表が2度目の換算を行って不自然に低い合計が出ます。列名に通貨を記し、画面画像や支払番号を対応する行に付けてください。貼り付けた数字の通貨が分からない場合は、確認できるまで合計から外します。"
+    },
+    {
+      "source": "Compare estimates at the same point in the transaction",
+      "source_sha256": "c37bc766a5a7a39cb7fe1324f12fe8ebf5d217b655d249cf41c54bfdbfccd5ce",
+      "raw_target_sha256": "19892803cb14b84cf499513f24ac4554034000c4f39edd51f386d3864617e8bb",
+      "translation": "取引の同じ時点・同じ内容で比較する"
+    },
+    {
+      "source": "A product card viewed in the morning and a payment statement issued days later are different observations. Changes in selected variant, quantity, discounts or payment method can alter the result before exchange rates are considered. Begin by reconstructing the original-currency merchandise subtotal. Add domestic shipping and any services the relevant screen includes. Only once both source subtotals describe the same purchase should you compare conversion rates.",
+      "source_sha256": "2de528059d188a69c46e10b9456f3baebd7f010c578f63d2f8be3b6902c14751",
+      "raw_target_sha256": "efd41c720c975a51b4ecdf6fd84f814e19733b753f5cc343f11a685297f9fd16",
+      "translation": "朝の商品カードと数日後に発行された決済明細は、違う段階の数字です。仕様や数量、割引、決済方法の変更だけでも結果は変わります。まず元の通貨で商品小計を復元し、その画面が含む国内送料とサービスを加えます。同じ購入内容の小計にそろった段階で、初めて換算レートを比べてください。"
+    },
+    {
+      "source": "What a refund can and cannot tell you",
+      "source_sha256": "0ea1144439a5040a1775d24f07fe78055bef72f3431428105af67182b673efd9",
+      "raw_target_sha256": "08c4c3b5c21ea0b8e397aee4532f0ebf46bc0b8fed8d849c8c55b82b8ac3be5b",
+      "translation": "返金から分かることを見きわめる"
+    },
+    {
+      "source": "A refund statement may show the original currency even when your card posts a home-currency credit. Record the two values in their own columns, matched by reference where possible. A different home-currency credit from the original debit can reflect several factors. Check the amount refunded in the original currency, the payment destination, any stated fee and the dates of the transactions before attributing a difference to exchange.",
+      "source_sha256": "d66e06b520387362ee8e94a89f10f83061ac4559e1b58acdf05747ba8ac8e19b",
+      "raw_target_sha256": "39e88240004bb697706e1d64c565b6d56598b1ab6cbca6e4059eedc2c6dc0e59",
+      "translation": "返金明細は元の通貨でも、カードには自分の通貨で返金されることがあります。取引番号があれば両方を対応付け、別の列に保存します。本国通貨の返金額が当初の引き落としと異なるときは、元通貨の返金額、返金先、記載手数料、両方の取引日を確認してください。為替だけが差の原因とは限りません。"
+    },
+    {
+      "source": "Suppose a 150-yuan line was originally included within a larger payment. The later credit may refer to that one line only, not a proportion of every service on the initial order. Domestic delivery or optional work may have separate terms. Use the explicit refund breakdown or ask about the named purchase. Applying an old per-item estimate that included an allocated share of freight can create a supposed shortfall that the actual refund statement never promised to cover.",
+      "source_sha256": "3661b3c3bab7892ddab70d2d7638bd9d938a94446f0ff29a88e52ad85c7244c9",
+      "raw_target_sha256": "9e9f8e600bc947931d25babcd2bf676d8bd27e91a2d10313ca89e759e3d3d207",
+      "translation": "150元の商品行が大きな決済に含まれていた場合、返金がその商品1点だけを対象とし、元注文の全サービスは比例返金されないことがあります。国内送料や追加作業には別条件があり得ます。明示された返金内訳を調べるか、該当の購入番号で尋ねましょう。按分した送料を含む自分の単価を当てはめると、店が約束していない不足額を作ってしまいます。"
+    },
+    {
+      "source": "Use a range when today's decision precedes payment",
+      "source_sha256": "6df8b197185cfeab250ab30149e5581ac21d77041a081cb42e4c8440a74ebcd0",
+      "raw_target_sha256": "ff9afa52dc909e32a0ea2621902d29a797ab7f47eeb13b110a5377b20243473a",
+      "translation": "決済前の予算は幅を持たせる"
+    },
+    {
+      "source": "When you receive the actual payment record, preserve your range and add the posted result beside it. State which differences came from the observed conversion and which came from changed contents or services. Share the source currency, the conversion used and the total amount due together whenever you discuss the quote with another person. This way the comparison can be reproduced without relying on a symbol such as a dollar sign that might refer to several different currencies.",
+      "source_sha256": "23632af94c649e3db9efe6cba01b1cb653c884d299ae239da11d268e125d90a3",
+      "raw_target_sha256": "033d925510e3baa94439ed40cae7a7163d762bf1ebeef5e32addd7f5f5b892a2",
+      "translation": "実際の決済記録を入手しても、予算の範囲を残し横に実額を記入します。換算による差と、内容物や追加サービスの変更による差を分けます。見積もりを共有するときは、元通貨、換算方法、支払総額を一緒に示してください。複数の国で使うドル記号などに頼らず、相手が同じ計算を再現できます。"
+    },
+    {
+      "source": "A practical final check",
+      "source_sha256": "dcd0d041eef8234123b8342f2e794cf142c229fb7b3de2806ec9d7f6b43a24a9",
+      "raw_target_sha256": "a5cf983cfb4eae0ed83cb5ccf6691c22ce7098047b5b663697f9fcefd588bebf",
+      "translation": "画面画像の金額を使う前の確認"
+    },
+    {
+      "source": "Start with what needs protection",
+      "source_sha256": "a192b4e015990b2fc4b8f286e652a73d4495828f36e6ac5c0b357370f39bf72b",
+      "raw_target_sha256": "a411a541def96f1ff5a521f0b798140f5cc57f25fc4936ccaa0dce10f2d02a04",
+      "translation": "何をどの状態で届けたいか決める"
+    },
+    {
+      "source": "Decide which part of the purchase must arrive in a particular condition. The concern might be a thin handle, vulnerable corners or a retail box needed as a gift. A request for the cheapest packing leaves the warehouse guessing about your priorities. Identify the item and the feature that matters. If keeping a retail box affects your decision, ask before authorizing its removal, particularly while any exchange question remains open.",
+      "source_sha256": "665a16fb5b4245d870ac0beb061033792568bad5b598f54ce65ce4f163db6b3a",
+      "raw_target_sha256": "5d569bffca564a5c4c15db0de006b4405ab6cfb694de38e48263306df41499e6",
+      "translation": "細い持ち手、傷みやすい角、贈り物として残したい化粧箱など、守りたい部分を具体的にします。「一番安く梱包」とだけ頼むと、倉庫は優先順位を判断できません。該当品と大切な特徴を伝えてください。元箱の有無で購入判断が変わる場合、特に交換について確認中なら、処分を許可する前に相談します。"
+    },
+    {
+      "source": "Define comparable packing options",
+      "source_sha256": "16d6fe7c0acf97b6f6dcbe23a1807a4c817dd39c634cf24d782215c8d02c9baa",
+      "raw_target_sha256": "a9e957a0bb3eb05ef4efafdb8976d40e9bee506299cff5d1fba94d979cd491ef",
+      "translation": "比較できる梱包案を作る"
+    },
+    {
+      "source": "In a teaching example, option A uses an existing carton and simple padding. Option B adds an inner protective shell. Write the cost of each quoted service, then measure or request the external weight and dimensions of the finished parcel under each arrangement. The shell may change the size available to a route, even if it adds little weight. Enter the same destination and product category for both estimates.",
+      "source_sha256": "6da576fcb0a7235baf38dc2ed0405705168582f5db95b54c441787ab58f23df7",
+      "raw_target_sha256": "2830d8e08823a7c0745c49c8a33d5197d696f2613d5377c5cef82b83ef59b432",
+      "translation": "例として、Aは今の箱に簡単な緩衝材、Bはさらに内側の保護シェルを使うとします。作業ごとの見積額を控え、各案で梱包した場合の総重量と外寸を測るか、倉庫に尋ねます。軽いシェルでも大きさのために利用できる配送方法が変わる場合があります。両方に同じ配送先と商品カテゴリーを入力してください。"
+    },
+    {
+      "source": "Separate the two price effects",
+      "source_sha256": "1d3ee03edce2a739feae90e809737ebff82394ecfa14ae9454ec7e9bab0f470b",
+      "raw_target_sha256": "e4ab4596d5c590bd6a53b5a904e7a3ad224bdd640d306539f74fc8ced01021fa",
+      "translation": "サービス料と運賃への影響を分ける"
+    },
+    {
+      "source": "Look at packaging removal as a trade-off",
+      "source_sha256": "a45e85d82da589fcb6f640ecf33dfe33b3835a1f9ff7e81db98698c8edd687bf",
+      "raw_target_sha256": "960e2e2398bec165a2751f09409970d05d225ca10cb844f98f54de45e43f3809",
+      "translation": "梱包材を外す際の利点と条件を比べる"
+    },
+    {
+      "source": "Removing an empty spacer can reduce volume without changing the protection needed. Removing a rigid box from an item that depends on it for shape is a different decision. Identify what will replace the original protection. Ask whether parts such as cards, straps, wrapping or detachable pieces will be retained. If your concern is size rather than weight, check the finished longest side instead of assuming that discarding a box always changes the available routes.",
+      "source_sha256": "3fbe0abe0fdaeca2e6f6ac41f23759d0b0a6d1355fac8083bafa52fb53fe3321",
+      "raw_target_sha256": "90c83b07d72328339cf709550e2add5b5dcd0046240b55ee169a75874e3e3793",
+      "translation": "空のスペーサーを外すと、保護を損なわず容積を減らせる場合があります。商品の形を維持する硬い箱を外すのは別の判断です。元の保護を何で補うか確認し、カード、ストラップ、包装紙、付属品のどれを残すか明示します。重量よりサイズが問題なら、元箱を捨てれば経路が変わると考えず、完成後の最長辺を確かめます。"
+    },
+    {
+      "source": "Before accepting the packing result",
+      "source_sha256": "4dc1799623e2f944d80e1b911bc525aa334e8b93ab3b489141ce01e12d4b9ead",
+      "raw_target_sha256": "51bec7a8df31894507aaecc4c1f86c4f60457c0629933096905952871ea71904",
+      "translation": "梱包結果を受け入れる前に"
+    },
+    {
+      "source": "Compare the warehouse's confirmed instructions with the quote, the selected content list and any submitted measurement request. If an item has been removed from the parcel, update your old comparison. Keep the record of what was requested separate from what was observed. A final packed weight is evidence of the weight; it does not reveal whether a delicate edge was padded internally.",
+      "source_sha256": "8a1aef7bd552a17b171310260813899efb2f7b77f1ebbb4f529816db45e12f04",
+      "raw_target_sha256": "8693450b795ad0b71c1e3e6d721bc26aee6fb6db037c12c8ab284cde9b2a3d19",
+      "translation": "倉庫が受け付けた指示と見積もり、選んだ中身、採寸依頼を照合します。荷物から品物を抜いたら以前の比較を更新してください。依頼内容と目で確認できた結果は別に残します。最終重量が判明しても、傷みやすい縁に内側からクッションを当てたかまでは分かりません。"
+    },
+    {
+      "source": "Imagine a rigid accessory case and two soft shirts. The accessory case has a latch that should not bear pressure. In arrangement A, all three items sit in one tight carton with the shirts around the case. In arrangement B, the case has a separate padded sleeve within a larger outer box. Ask what protection each service actually supplies and whether the packed dimensions are confirmed or estimated. The second arrangement can provide different protection while also changing the available freight route.",
+      "source_sha256": "0bfd4b366ea6686dcc6725e9b7a93f9547ee8034c4440abe349c3db0195de886",
+      "raw_target_sha256": "2c1e832d66a1a13323261b0536263eb2272fb0a793ef4fbb08800d26d1d5aec2",
+      "translation": "硬いアクセサリーケースとシャツ2枚を送るとします。ケースの留め具には圧力をかけられません。Aは小さめの箱でシャツをケースに沿わせ、Bは内側にクッション付きの袋を加えて大きめの外箱に入れます。具体的な保護内容と、外寸が実測か概算かを尋ねます。Bは保護だけでなく利用できる配送方法も変えるかもしれません。"
+    },
+    {
+      "source": "Suppose the live representative figures you write down for an illustrative exercise are 130 for freight and 4 for the basic packing in A, compared with 136 for freight and 11 for the more protective service in B. The totals are 134 and 147. The extra cost of B is 13, consisting of six more in freight and seven more in selected packing. If the 136 already includes the protective service, the calculation changes. The wording of the line matters as much as the numbers, which are fictional and do not describe HubBuy's price list.",
+      "source_sha256": "7bc43873a27eb0d92dfa1cdef4e0394173271bcd39f5ef80b6a7ba87827d57d2",
+      "raw_target_sha256": "b2fabe0f6bc15b983d8e701ee453a0e85b11769f361fae9626235dd9551e24de",
+      "translation": "仮にAの運賃は130、普通梱包は4で計134、Bの運賃は136、追加保護が11で計147とします。Bの追加支出13の内訳は運賃6と梱包7です。ところが136に保護がすでに含まれるなら計算は変わります。数字と一緒に項目説明も確かめます。この例の金額はHubBuyの実際の料金表ではありません。"
+    },
+    {
+      "source": "Decide what information is worth obtaining",
+      "source_sha256": "adeb6320a0d5fc95a70925d0e8557f1d911df65cddca31f7bc0d288e76e7a325",
+      "raw_target_sha256": "76fef09ea8e424611291030e50b021e8a07d2156f099680926682c28fa2aed30",
+      "translation": "決定に影響する情報を絞る"
+    },
+    {
+      "source": "Before asking a warehouse to prepare two complete alternatives, identify which uncertainty drives your decision. If keeping a retail carton is essential, comparing a box-free arrangement wastes time. If a route has a maximum outer dimension, the useful question may be whether the existing carton fits once protection is added. If the estimator shows a result for only one product category, clarify route acceptance for all contents instead of treating cheap packing as the deciding factor.",
+      "source_sha256": "254440eda071087f0d64c6badc7572c3f8baa83d27b5963cbc080d80615b6cc4",
+      "raw_target_sha256": "f41564ba72919d87f5020f0f888326ee173190a45f9671cbe62b8e186cac3d4e",
+      "translation": "2案を実際に試すよう頼む前に、何が判断を左右するか考えます。元箱が必須なら、元箱なしの試算には意味がありません。外寸上限があるなら、保護を加えた状態で今の箱が収まるかが重要です。見積もりが1つの商品区分でしか出ない場合は、安い梱包を選ぶ前に、すべての中身がその配送方法で送れるか確かめてください。"
+    },
+    {
+      "source": "Ask about any service charge for a change or for obtaining additional measurements. Do not assume that an alternative packing arrangement can be trialled, reversed and photographed without cost. Record what the account actually offers. A sensible short message identifies the current parcel, the protection that must remain and the measurement you need. For example, a buyer could ask whether the shortest eligible box that retains the protective insert will stay below a stated route limit. A useful answer concerns that precise plan.",
+      "source_sha256": "71b6105bfa7fb445f6addc6feecb14034004809838efbe51c7a34ad199822b1f",
+      "raw_target_sha256": "db496897950a96b0d3ba250bc50da6fb7c246ba888de2d35b38446d69e97875d",
+      "translation": "変更や追加採寸の料金も確認します。試し梱包、元に戻す作業、写真撮影がすべて無料だとは限りません。実際に提供される作業を控え「この荷物で保護インサートを残す場合、使える最短の箱は指定された上限内に収まりますか」と、荷物番号、維持したい保護、必要な測定を具体的に伝えます。"
+    },
+    {
+      "source": "Recognize when cost per kilogram is the wrong measure",
+      "source_sha256": "35fd419ba362eed0fbdb93cb1410e8ac58029d334a337d5c83bde1c9a28bd311",
+      "raw_target_sha256": "c8a637582529c958e3621c17a2a12f11d2f0d702268877daad6ef52d9660725c",
+      "translation": "1 kg当たりの料金だけでは判断しにくい場合"
+    },
+    {
+      "source": "Separate removable packaging from essential components",
+      "source_sha256": "1166812fb456a10affbdb839ddd1b7fccfb6dbaabe0898e49be953c84ba07e2b",
+      "raw_target_sha256": "3fb3451fc9919a2c7ddaa2e71520f6874a3d5b7cde95a5a9e641e6543f3157d8",
+      "translation": "捨てられる包装と商品に必要な部品を区別する"
+    },
+    {
+      "source": "A cloth bag inside a box might be disposable packing, a dust cover included with the merchandise or a separately paid accessory. Specify which you mean before asking for removal. Where several items carry loose parts, list the pieces that must remain together. Save the original option description if the item's completeness or potential return depends on a particular pouch or box. If the identity of a component is unclear, request clarification before allowing disposal.",
+      "source_sha256": "d401b3e27fa33c54f987cc9b0884f41f9e10a7b6502e3e9a056df474ef492cbc",
+      "raw_target_sha256": "b73ccec8eecfd5aa27895e99f4877f67e28e67fb5b96ce5a4345aee401cca609",
+      "translation": "箱の中の布袋は、使い捨て包装、商品付属の保存袋、別料金のアクセサリーのいずれかかもしれません。処分依頼では対象を特定します。付属品が複数ある場合は、一緒に保管する部品を列挙しましょう。返品や商品構成が特定の袋や箱に依存するなら、元の仕様説明を保存します。分からない部品は処分を許可する前に確認してください。"
+    },
+    {
+      "source": "A useful packing record can be short. Write one line per item stating retain, remove or ask, followed by the physical object concerned. For example, retain the protective insert around the handle, remove the empty seller dispatch carton if permitted, and ask before discarding the outer retail box. This makes the instruction understandable even when two boxes have similar dimensions. It also helps you interpret a photograph of the contents before sealing.",
+      "source_sha256": "af2a1fa1139d083102afbbd0c7836ba022a74f008a4348b3f2c5ed710c235c1f",
+      "raw_target_sha256": "3cf0498f2b829c51c14c521e894e1e849e7b5798ceb5e69e9360e05928510d65",
+      "translation": "指示は短くても構いません。各品物で「残す・外す・要確認」と対象物を1行にします。例えば、持ち手周りの保護材は残し、許可されるなら店が送った空の輸送箱は処分、商品の外箱は捨てる前に確認、と書きます。同じ大きさの箱が2つあっても識別しやすく、封をする前の写真とも照合できます。"
+    },
+    {
+      "source": "Compare the result with the instruction",
+      "source_sha256": "e59d15d3bca4c4afa991d106b466d786f19312b5b8356461c905293bf51fdec3",
+      "raw_target_sha256": "d7703e43ed3bd8110a8e574dfe14769272951c57e2cfa3d70a40be3d3cf44ac0",
+      "translation": "作業結果を依頼内容と照合する"
+    },
+    {
+      "source": "Three lengths and one weight are useful only if they describe the same finished box. Measure in the units the estimator expects and record how you obtained each number.",
+      "source_sha256": "a0f9be81a5409b24845d73bee37dd85ee9d15dffd46e522ef7612ef2fcf417bb",
+      "raw_target_sha256": "bb53ef51dfc0a1ae93144a0411eea6a15bd1d52767e130e5e84fc99dd9c9f68e",
+      "translation": "縦・横・高さと重量は、同じ梱包済みの荷物を測った値でそろえます。見積もり画面が求める単位に合わせ、各数値の測定方法を残してください。"
+    },
+    {
+      "source": "Identify the parcel being measured",
+      "source_sha256": "8772b99b45f378d180dca46c262bd3b068448a27badd0c36b6a588cc6bed5a69",
+      "raw_target_sha256": "7103cf932da80051d38eb970066f9287faced759472fe334fd78d09cbd92fb5c",
+      "translation": "測定する荷物を特定する"
+    },
+    {
+      "source": "Capture the largest outer spans",
+      "source_sha256": "36b931469b031e5d1defde8c982fc8b56f45dd6e87a347a955c00246431ab3ce",
+      "raw_target_sha256": "03cc892e9344bc7c481494283d8087c6fb9cf620b5325669af56f77c537d33b6",
+      "translation": "突起を含む最大の外寸を測る"
+    },
+    {
+      "source": "Keep the scale reading in the right unit",
+      "source_sha256": "22c4af2e9abc409fd861a0311fdf276c5acf1a7e6081952b574a25bfa0de81b7",
+      "raw_target_sha256": "79369b005067b428070af1e8c79f736baaa1b263dcd5212009a9cbd582f04d0c",
+      "translation": "はかりの単位を確かめる"
+    },
+    {
+      "source": "The HubBuy form asks for grams. A reading of 1.45 kilograms is 1,450 grams; a reading of 145 grams is an entirely different parcel. Include the packaging and contents on the scale together. A seller's weight for one unit multiplied by the number ordered gives only an initial idea. The finished carton, protection and any original boxes can change the final figure.",
+      "source_sha256": "26580367e25b9b4617a943f40095f7a88dc35d6c049f325a8b31d02972b78ca1",
+      "raw_target_sha256": "64ad391c11fa0151469e2a927015538e4932ac64ff14fe148afb607b9dfd80e0",
+      "translation": "HubBuyのフォームが求めるのはグラムです。はかりの1.45 kgは1450 gで、145 gとは10倍違います。荷物と梱包材を一緒にはかってください。店が示した商品1点の重さを個数倍しても目安にすぎず、発送箱、保護材、残した元箱が加われば最終重量は変わります。"
+    },
+    {
+      "source": "Understand what volume tells you",
+      "source_sha256": "e135b405d8febc9f47653624449bd7988098cf8735da3592afadcace420c5b3b",
+      "raw_target_sha256": "82a900becda984842d72778d3eed6a1efbb7180605eb8260b3879208fbcdb3f5",
+      "translation": "体積から読み取れること"
+    },
+    {
+      "source": "Recheck after the final modification",
+      "source_sha256": "0b1464bdad6ffdc6e2d1b14e77456b0da02e2ed62c759b8b132127ac0181e98a",
+      "raw_target_sha256": "7f691afa1481b83f2f461c0744c4dbf0f9e11723244ca154f0f883448926a160",
+      "translation": "最後に梱包を変更したらもう一度測る"
+    },
+    {
+      "source": "Adding a corner protector or moving an item into another carton can change a dimension even when the overall weight scarcely moves. Keep one dated measurement record for each arrangement. A photograph showing a tape around the box's perimeter cannot establish the three separate side lengths on its own. If one figure looks implausible, ask to see the measurement from start to end before submitting numbers to the calculator.",
+      "source_sha256": "024b7205987dcc312bafa9989bc1696bcae0fc53fe2a72be75897b569b1b9b5d",
+      "raw_target_sha256": "eede676afb942de005a2b945a22ef6e3724aa7542e8b614554f4e58c162a19de",
+      "translation": "角を保護したり別の箱に移したりすると、総重量がほぼ同じでも寸法が変わります。各案に日付付きの測定記録を残してください。箱を一周するメジャーの写真だけでは3辺それぞれの長さは分かりません。不自然な数値があれば、計算機に入れる前に両端が見える写真を依頼します。"
+    },
+    {
+      "source": "A dimensional comparison you can reproduce",
+      "source_sha256": "c8fb2f6bf55487783f193ae6f1dd51f0a8bb736b92d6ca4ca3b6b8da321de8de",
+      "raw_target_sha256": "b828cd8413922cf5436658a44eeb5740514708de70adfd3b95fbd88754664503",
+      "translation": "内寸と外寸を比較する例"
+    },
+    {
+      "source": "The two numbers answer different questions. Internal volume helps you reason about what might fit. External volume describes the space the packed box occupies. For a route comparison based on outer dimensions, keep the latter. The percentage change in geometric volume is about 21 percent, yet it would be a mistake to predict a 21 percent change in freight. The current route defines the billing method and restrictions. A volume comparison is a measurement exercise, not a complete price calculation.",
+      "source_sha256": "a42233dee7625daf05ed039beeb16e2a092855ceb5f26a3751d81e03c133649e",
+      "raw_target_sha256": "3ecdaeeaa25d8741e15499e9e52faab918455a5e298d86070e5a4379d8353e68",
+      "translation": "内側の体積は中に何が入るか、外側の体積は梱包後にどれだけ場所を取るかを考える指標です。外寸を使う配送方法の比較では後者を使います。例では体積が約21％増えても、送料も21％上がるとは限りません。計算方法や利用上限は個々の配送条件によります。"
+    },
+    {
+      "source": "Handling soft and irregular shapes",
+      "source_sha256": "f3053e036d982e08b10918855ff0a1d6ac43005713b5e6e67f72e045b67de3aa",
+      "raw_target_sha256": "e67dbba5369f42a561ae7b0569e223662005a7415a8e5b3caa92ed7d3aec74f9",
+      "translation": "柔らかい荷物や不規則な形を測る"
+    },
+    {
+      "source": "Comparing two readings from different people",
+      "source_sha256": "c93b239d39dba55250d93cdf3e7cd6086bd302007179eb1058a0f264d46e65bb",
+      "raw_target_sha256": "e4c40574bc16dcf347509e126353e6ba0179a34f86b686c5bc04653c435040ea",
+      "translation": "測定者によって数値が違う場合"
+    },
+    {
+      "source": "Protecting the unit conversion",
+      "source_sha256": "2ce312de0412c199caf20643359629cec1cb89c72ccfeb3f4f446971d844141c",
+      "raw_target_sha256": "6a1f8a0db15398bbab3a86efcc550cdcbe364760ceda54349a2730d2c1578c44",
+      "translation": "単位の取り違えを防ぐ"
+    },
+    {
+      "source": "Create three input fields whose names include cm, then a separate weight field labelled g. If your scale reports ounces or pounds, convert before entering the number and retain the original reading beside the converted value. For a conversion from kilograms, a simple check is to divide the entered grams by 1,000 and confirm you recover your starting reading. A suspiciously tiny value should prompt a unit check before a search for cheaper routes.",
+      "source_sha256": "15bfea15a2bbaa3de6659730bf61287c319893c2d85d4082ef755eabcc207765",
+      "raw_target_sha256": "c1ff4555ab6d7d5ee6304c2980ea1ab8b88b523f917004fe5dd89a4fe17b4701",
+      "translation": "各寸法欄にはcm、重量欄にはgと明記します。はかりがオンスやポンドなら、換算前と換算後の値を両方残してください。kgをgに換算した場合は、入力した数値を1000で割って元のkg表示に戻るか確認できます。極端に小さな重量が出たら、安い配送方法を探す前に単位を確かめましょう。"
+    },
+    {
+      "source": "Retaining measurements that remain useful",
+      "source_sha256": "bee213fe497334277c6fa7a4658ebd778b55c46319e2666b62e07fc42dc13b10",
+      "raw_target_sha256": "0c05db021b4cce529f4de074a95f9765adc40e2bfb6a798b3dcabc7c9945f1a0",
+      "translation": "後から再利用できる測定記録"
+    },
+    {
+      "source": "When the box has already left the warehouse",
+      "source_sha256": "6a4a77f5aea1965496c2544b6d168982128678178bb0e72b33e88e1e6762190d",
+      "raw_target_sha256": "1b5621144fda4acd3f13550dc6e6cdaf8a444ed838fae998b8297039f3112c43",
+      "translation": "荷物がすでに出庫した場合"
+    },
+    {
+      "source": "Once the parcel has been dispatched, use the dimensions listed on the actual parcel record for reconciliation. A later measurement taken after the box has been opened or flattened describes a different condition. If you question a recorded dimension, save the label and photographs of the unopened parcel before changing its shape.",
+      "source_sha256": "8150a91405ffe1d9b1df86c5e4d635f92fb43fad368f936713c89bcbba8d6695",
+      "raw_target_sha256": "9aafacd5c7cad2ed2d778aafdfdd98e078ca4c437fb7aba9fdfb2561867fe8b4",
+      "translation": "出庫後に照合するなら、実際の発送記録にある寸法を使います。開封した箱や折り畳んだ箱は、発送時とは別の状態です。記録された外寸を確認したい場合は、箱の形を変える前に配送ラベルを保存し、未開封の状態で写真を撮ってください。"
+    },
+    {
+      "source": "A combined shipment is worth comparing when it remains eligible for a suitable route and protects every item. Price the entire alternative, including every box, before acting on a single attractive quote.",
+      "source_sha256": "373c020b0c02bdbe73c6a9baea8374a8df9e6261bd8b2f7efe67f91c680792a4",
+      "raw_target_sha256": "f9d8a15843efa8593b3cd749fe677966097a1d84b4767088bb322e0a54e0ac40",
+      "translation": "同梱は、希望の配送方法を使えて全品の保護を維持できるときに検討できます。1箱分だけの安い金額で選ばず、別送案もすべての箱を含めた総額で比べます。"
+    },
+    {
+      "source": "Start with the same list on both sides",
+      "source_sha256": "2d8c8aba299f9d170beb39a0fe37dc5194ecc34ee841d3ca0e3b2d5e9ca5a3d6",
+      "raw_target_sha256": "d65fe6319f20db4e00690c43be78f1538dfb3a8e56a458010b7879fbf3a246e5",
+      "translation": "同じ内容品から2案を作る"
+    },
+    {
+      "source": "Write the warehouse identifiers and quantities for all items under consideration. Copy that list before building your two scenarios. In the combined option, assign all selected items to one box. In the split option, assign each item to exactly one of two boxes. Check the totals: a missing accessory can make a split option appear artificially cheap, while a duplicated garment makes it seem expensive.",
+      "source_sha256": "4793d015ed5c9e97f8cfe3046e9988f34aa362c887f0c22519c72d08a7f93da6",
+      "raw_target_sha256": "16b57044e6995a90c0bb125ca69280c69c6ec37caf1f9fb669319a22a92b8800",
+      "translation": "比較するすべての入庫番号と数量を記入し、リストを複製します。同梱案では全品を1箱に、別送案では各品を必ずどちらか1箱だけに割り当てます。小物の記入漏れは別送案を実際より安く、服の二重計上は高く見せるので、個数を照合します。"
+    },
+    {
+      "source": "Establish why splitting might help",
+      "source_sha256": "2eb8c4fe8d804a618a9266c80b5fbfb1e5bcd64250cb968932faa485a84774f9",
+      "raw_target_sha256": "6e47e50a526d5afedf4d366193fc49507db566f83dfff688f17528e9710a648f",
+      "translation": "分割する目的を決める"
+    },
+    {
+      "source": "Perhaps only one item needs a rigid box, one piece must go to a different address, or a category affects route eligibility. Those are practical differences worth recording. If the two boxes go to different countries, you are evaluating a different delivery plan, not simply a cheaper arrangement for the same destination. Keep any urgency or special handling requirement visible alongside money.",
+      "source_sha256": "9cb8eed07275aaf3cefce9de5dfd5e1849b42234224faf6040409197f3b12652",
+      "raw_target_sha256": "9c0d331983bfe8ff70ad75c8d09580d4d74569b617b80775fd3903ddf1861577",
+      "translation": "一部だけ硬い箱が必要、1点だけ別住所に送る、品目で配送方法の可否が変わる、などの事情を明記します。2箱が違う国に向かうなら、単に同じ目的地への送料を比べる話ではありません。必要な時期や特別な取り扱いも金額と並べてください。"
+    },
+    {
+      "source": "Compare the full international cost",
+      "source_sha256": "33624e04f13bc564be934ba928f125380f7e6b9a6be19f19d04de2a8c2c005e2",
+      "raw_target_sha256": "b71fd0dda305f0955ed353a1ac1f47419a9e27e5978f67616468f8994b4d6050",
+      "translation": "国際発送の総額を比較する"
+    },
+    {
+      "source": "Check whether the estimates remain eligible",
+      "source_sha256": "1cc54a7f44703181d015106a4dbdb7f03ba15349d339528ac45759c4254a31e1",
+      "raw_target_sha256": "7b726cd87c5fa662fc7204352ba2238b544770c9f72d045eb10cbabf8ad7665d",
+      "translation": "配送条件を各案で満たしているか確認する"
+    },
+    {
+      "source": "Use each box's own actual or proposed outer dimensions, weight and product category. If the combined package exceeds a route limit, strike out that route for that scenario. Never substitute the lighter box's weight for the combined box simply to obtain a result. Compare realistic packing arrangements and check that the selected service accepts all contents, including components that might be easy to forget in an accessory pocket.",
+      "source_sha256": "2560ea1a1ae4e771166616ab7ef9b594aa873a7518dd6e3f55444e2d915a601c",
+      "raw_target_sha256": "c36bf75b06094f8d1b4d848ad4dbbaf56f3c09073618689f70bcf6f8f8cfc98c",
+      "translation": "箱ごとの実測値または予定の外寸・重量・品目で見積もります。同梱したらサイズ上限を超える場合、その案では当該経路を外します。結果表示のために軽い箱の重量を同梱箱に流用しないでください。付属品ポケットの中身を含め、実際の梱包案で全品を引き受けてもらえるかを確認します。"
+    },
+    {
+      "source": "Make a decision you can audit",
+      "source_sha256": "e2b6f6cb4cdfe9a848468c5e486f292585e4ed1249eac6575af9e34c51fb105b",
+      "raw_target_sha256": "bdd33c3c0a0bff1a3f55e5fe8649ff458f2e71e290304fda3bb961d3020af6a3",
+      "translation": "選んだ理由を記録する"
+    },
+    {
+      "source": "Write the reason for the choice in ordinary language. It might be that the cheaper combined service satisfies all requirements, or that paying more for two boxes lets the urgent item leave before a later intake. Save the estimated difference separately from the eventual outcome. Once both parcels have been billed, compare each final entry against the estimate for the correct arrangement and explain any changed input.",
+      "source_sha256": "96251b515d07eebcc7ee2cfbd1f0ac7852330bea766fe26aa54a76a1bdec9e93",
+      "raw_target_sha256": "435d2e0474f58d3aaf897ad3cd4a6ea9765c657c383238466c5f57e37b032006",
+      "translation": "「安い同梱で保護条件を満たせる」「別送は高いが遅い商品の入庫前に急ぎの品を出せる」など、理由を短く書きます。予想した差額と最終結果は別に残します。2箱とも請求が出たら、各箱に対応する案と金額を照合し、条件が変わった部分を示します。"
+    },
+    {
+      "source": "An example where the larger box wins",
+      "source_sha256": "907c1875061c58bbe2c209ab5859eb2724b2c9631ad61ea9586ed04afc3fecb4",
+      "raw_target_sha256": "f5f95f05cba2113fa952564b423ab68253540d80d6ac91c0727cee8893550890",
+      "translation": "大きな1箱が適する例"
+    },
+    {
+      "source": "An example where smaller boxes remain worth considering",
+      "source_sha256": "2112782d9873f6c04e59cd8b717390171edde6ddbc8ef151f190e7aa77714c83",
+      "raw_target_sha256": "2c95e2c4514c87528383639e692db75f62e41916810d6085040b0b2ec08a2419",
+      "translation": "小さい2箱にも利点がある例"
+    },
+    {
+      "source": "How placement changes the measurement",
+      "source_sha256": "8e5955003ded0976c10624c349e09cae57452e571c177aae1cb1f0c756a632a3",
+      "raw_target_sha256": "508a5cf9586a77b7af4628575996f54d556d46a19d75c9932879b6aac5350b76",
+      "translation": "入れ方による寸法の違い"
+    },
+    {
+      "source": "The estimated split arrangement deserves the same care. A padded case may fit into one small carton, while the garments can use another shape. Give each box its intended packing and dimensions. Using a generous measured combined box alongside separate dimensions guessed from bare product photographs biases the result against consolidation. State the quality of your evidence for both scenarios. If a decision turns on a small difference, obtaining equivalent measurements can matter more than refining the arithmetic.",
+      "source_sha256": "87decf73b8d810625c40bdf2cc6e2e511e2e539ab5863751da37429bee327de5",
+      "raw_target_sha256": "ab907ab00be445d8f15c60f3af655fe232fb80be36c0e08903a63e8040ce17ef",
+      "translation": "別送でも同じ基準を使います。保護ケースは小さな箱、衣類は別形状の箱になるかもしれません。各箱の梱包と外寸を明示します。同梱は余裕を見た実測の箱、別送は裸の商品写真からの推測では同梱に不利です。どの程度確かな値かを両案で示し、差が小さいときは同等の測定を優先しましょう。"
+    },
+    {
+      "source": "Organizing decisions around timing",
+      "source_sha256": "91141294401b01348e8eed18358ef88b0b901f93fbbea070e6dc3a85a4037482",
+      "raw_target_sha256": "182f3cce11526b065cc7f7149c5af12b8456ab86af39d813410af0fa40e3c12c",
+      "translation": "発送時期から判断する"
+    },
+    {
+      "source": "A buyer might have one item already checked and another still waiting for a seller response. The combined quote assumes both will become eligible for shipment together. Record what you know about the later item and the storage status of the earlier one. A decision to split can address timing even if the combined quote has a small price advantage. State the timing requirement separately, for example that one item must leave before another has been inspected.",
+      "source_sha256": "38c13f196a407ff5be9b6fd327e41a107143c88a50462282702abf459f1060b0",
+      "raw_target_sha256": "60240d4d9cf38a880b7d71a0b714864777db018d0bc6e8bc483b51cb2843047d",
+      "translation": "1点は検品済みでも、もう1点は店からの返答待ちという場合があります。同梱見積もりは両方を一緒に出せる前提です。遅い商品の状況と先に届いた商品の保管期限を記録します。同梱が少し安くても急ぎなら別送に意味があります。「後の商品を検品する前に先の品を出す必要あり」などの条件を別に書きます。"
+    },
+    {
+      "source": "Avoid promising a delivery date on the basis of the number of boxes alone. A route estimate, seller delay, warehouse intake and final delivery can each describe a different stage. If the two pieces are needed as one matching set, splitting also creates a practical risk that one arrives earlier than its partner. If the pieces serve different recipients, the timing difference might be entirely acceptable. The right comparison includes how the items will actually be used.",
+      "source_sha256": "01464ddeeac80eb2c568613dea33fc9918fea0d0bc0a4034f32fdb5af5bd6656",
+      "raw_target_sha256": "188deeec6a14d3f36329d9ccd3330e956dcf5681b839daaadb6ba12f7b2bf88a",
+      "translation": "箱数だけでは到着日は約束できません。店の遅れ、倉庫受け入れ、発送後の所要日数、最終配達は別の段階です。セットで使う2点の別送では片方だけ先に届くかもしれません。受取人が違えば到着のずれを問題にしないこともあります。実際の使い方を比較条件に含めます。"
+    },
+    {
+      "source": "Verify the plan after the warehouse acts",
+      "source_sha256": "267b13e2acaaa1878536e013bb9595f623cc4a9ae022e4d7b1d8af758eb4b72e",
+      "raw_target_sha256": "4805f5eb5d3c66594f375e2fee341a981c8ae9e8b03018d12455a22c3feb4651",
+      "translation": "倉庫作業後に内容を照合する"
+    },
+    {
+      "source": "Once a packing decision has been confirmed, compare the assigned item list with the original scenario. Check that any separate accessory travelled with its intended parent item. In a split shipment, label the two parcel records clearly enough that the first delivery does not accidentally close the second. Keep the tracking number and payment for each box together. A notification about a single parcel can otherwise be mistaken for completion of the entire purchase.",
+      "source_sha256": "cc1b8e6d84d3623f735f79d2db38e90995343bd356dcd57801802074126ea70a",
+      "raw_target_sha256": "436615d063ccfdd355832deaf5ab914bbc3e243ff5f6cd2543837ff6617a51d0",
+      "translation": "梱包が確定したら出荷品リストと元の配分を合わせ、付属品が対応する本体と同じ箱か確認します。別送では各箱の入出金と追跡番号をひとまとめにし、1箱目の配達通知で2箱目まで完了にしないよう、記録にはっきり区別を付けます。"
+    },
+    {
+      "source": "When the actual charges arrive, compare them with the quote for the same configuration. If the courier or route differs, document that change before calculating a saving or overrun. Add the final charges for all boxes in the split option before stating its cost. The result becomes a useful comparison for this shipment. Retain the measured details with it rather than generalizing that consolidation, or splitting, will always be cheaper for a future order.",
+      "source_sha256": "4d47375010ac86c4d7c1f738efb3d94ed75b784d003b4f6a5c67bc14cfe9b741",
+      "raw_target_sha256": "d3db978234206347b698e718fb0716f38b9903f956a83b7dea56f3bc75dca670",
+      "translation": "実際の請求は同じ構成の見積もりと比べます。配送会社や経路が変わったら、その変更を記録してから増減を計算します。別送はすべての箱の最終料金を合算します。実測寸法も残し、今回どちらが安かったかを説明してください。別の買い物でも常に同梱または別送がお得とは限りません。"
+    },
+    {
+      "source": "If one box will go directly to another person, include the cost and feasibility of forwarding an item locally under the combined arrangement. Compare delivery to both intended recipients, not simply delivery to the first address. Record which additional domestic leg is confirmed and which is hypothetical before making a claim about total savings.",
+      "source_sha256": "5cb97076580f3fca382b1ae29f7054ea017cd35e5a2055d9087b45d9f1d8a344",
+      "raw_target_sha256": "1499adce61cd17e63a7d0065472dc6327e3cc38bb92621992f658a305f7bd3fd",
+      "translation": "片方の箱を別の人へ直接送るなら、同梱案では最初の受取人から現地で転送する費用と可否も考えます。比較の到達点は最初の住所ではなく両者の手元です。追加の国内区間で確認済みの費用と仮定を区別してから、総額でどれだけ節約できるかを述べます。"
+    },
+    {
+      "source": "Read a freight result as a quotation for a named parcel, route and destination. Use it to answer the transport question it was calculated for, then check the remaining parts of your purchase separately.",
+      "source_sha256": "2cd882f31d23dff41843fa37f4d719ea88f49530f4d5f8743111a2b1883a6c13",
+      "raw_target_sha256": "4f18297496187994e5f4be541d93338bbb0be8c37e946e81d11a8b2146d4456a",
+      "translation": "運賃表示は、指定した荷物、配送方法、配送先に対する見積もりです。その条件の輸送費を判断するために使い、購入費用の残りの部分は別途確かめましょう。"
+    },
+    {
+      "source": "Read the inputs before the result",
+      "source_sha256": "fadf01a958b2e76aca3b969dcb1a687f2663fd03de0272dfbc255c776794f78a",
+      "raw_target_sha256": "f49d49b8a137079348d05c51c65b24b4186b000bc338e86eef46dbe387c66591",
+      "translation": "結果を読む前に入力条件を確認する"
+    },
+    {
+      "source": "The HubBuy estimator accepts a destination and weight in grams and provides fields for product category and centimetre dimensions. An estimate based on a preset hoodie and one based on a measured packed box describe different evidence. Record which you used. A result without its inputs is difficult to reuse because you may later forget whether it covered a single garment or the full shipment.",
+      "source_sha256": "e21cfbef201266db79f7fa2ed14432937dc30d4c2f53373e808f5ac78ab41d76",
+      "raw_target_sha256": "3a7148fdda14b01a8d79bccd8237fac05c007fc1627e551f06c04675bfc5f1c5",
+      "translation": "HubBuyの計算機では配送先と重量をgで入力し、商品カテゴリーと寸法をcmで指定できます。既定のパーカーの値で試す場合と、梱包済みの実箱をはかる場合では根拠が違います。使った条件を残してください。結果だけだと、後で1着分か荷物全体か分からなくなります。"
+    },
+    {
+      "source": "Build an inclusion list",
+      "source_sha256": "516c7c8edf582f72463d187709443adaf54e33affa696d8e9caad293af0ced3f",
+      "raw_target_sha256": "bcf42ca0669fc64de1035a82d90d512493b4ee1df55284e99c3717ee0c34677d",
+      "translation": "料金に含まれるものを表にする"
+    },
+    {
+      "source": "Compare timing on the same basis",
+      "source_sha256": "a5e664b56a88c9e7b65e33025b88db1c29d8b226ebdc0c1fad07ace44ba92007",
+      "raw_target_sha256": "f784000abede892762d5ffb9765c1af9ead2b6a5f3da5a790fe93b9a1022ebb6",
+      "translation": "同じ時点から数えた所要日数を比べる"
+    },
+    {
+      "source": "A delivery estimate may refer to a stage starting at dispatch. Read the route description before promising someone a date based on it. Include unresolved purchasing, seller dispatch, warehouse intake or packing in a separate planning timeline. Avoid adding arbitrary days to manufacture a confident arrival date. If the use date matters, state which pending event creates uncertainty and check the latest confirmed status.",
+      "source_sha256": "0f2a0745dad887ac0537a2c286c171f834afc626189a9b4662dc221aa421ee3b",
+      "raw_target_sha256": "7b2eeb9a28a987d25ffc51e5135ab6478f231a7ae454ebc78d1a3bbc5a9bdef7",
+      "translation": "日数の目安が発送後から始まる場合があります。その数字で到着日を約束する前に配送条件を読んでください。購入手続き、店の出荷待ち、入庫、梱包は別の予定表で管理します。根拠なく日数を足すより、使用期限に影響する未確定の工程と最新の確認状況を示しましょう。"
+    },
+    {
+      "source": "Recheck destination details privately",
+      "source_sha256": "42a0a1a181dd827b9911d0a7e97c649e712e2a420ab93a2e8d4b504c7f9ecb94",
+      "raw_target_sha256": "3518c04b27728429621a4376cb0e98e91891a25634449d1b8a646eb21cd04b94",
+      "translation": "住所情報を公開せずに配送先を確認する"
+    },
+    {
+      "source": "Mark the boundary of the estimate with an example",
+      "source_sha256": "dbc6edb49e3b7fa7912c1c30435ee70040d6a63e27c0a01fdf2d53227d0c18da",
+      "raw_target_sha256": "bce654e7b8bb5e1b930f3e5a2f00b157649885dac77cc8f1330f71263a0a0640",
+      "translation": "どこまでが見積額かを数字で区別する"
+    },
+    {
+      "source": "Imagine a buyer who has a confirmed merchandise total of 280 yuan, a domestic delivery charge of 12 and a screen showing an illustrative international freight estimate of 135. The cost recorded so far is 427, provided the freight estimate holds and there are no other separately applied charges. The 135 is not the price of the entire purchase. Equally, adding the 280 and 12 again to a consolidated budget that already includes those entries would overstate the amount.",
+      "source_sha256": "8d50523044e945bafff091c275202b8b8ae2bfa9be2c34e7bcc93a3f527230e3",
+      "raw_target_sha256": "f9aedb2ca9ecef3075572028d44a2b6a2fb930af67bae8fc9c102a90a0dc3976",
+      "translation": "確定商品代280元、国内送料12、国際運賃の見込み135とします。見込みどおりで別料金がなければ、今分かる合計は427です。135は購入全体の代金ではありません。反対に、280と12をすでに含む購入予算にもう一度加えても過大になります。"
+    },
+    {
+      "source": "Suppose the buyer keeps a separate running budget containing 292 already paid. To evaluate cash still needed, start with the prospective 135 and any other unpaid components that can be documented. To evaluate the total cost of acquiring and receiving the goods, include paid and unpaid components. Both calculations are valid, but they answer different questions. Label the output remaining payment or total purchase budget rather than presenting a single unexplained figure.",
+      "source_sha256": "e2424e9a4b33216e0e03f53764fc50e1b4e01f6b508c607d9fac81e67ef2ad90",
+      "raw_target_sha256": "1268b74adabbca7aa488f4caaa928df31ff5deca4a8ef4a1eb46846acb7d4bf9",
+      "translation": "すでに292を支払い済みと記入した予算があるなら、「これから必要なお金」は未払いの135と、確認できたその他の未払い費用から考えます。「買って手元に届くまでの総額」には支払済み分も入ります。同じ買い物でも違う問いなので、「残りの支払予定額」か「総購入予算」かを明示してください。"
+    },
+    {
+      "source": "Compare two routes on one parcel",
+      "source_sha256": "6abbea692de48ad4d459e851dc7f34f22557d4a3859921769c98b3066fc3936e",
+      "raw_target_sha256": "0afcfbd08e099510e983701e8323c475013011c245bad48a9534e56f26e633dd",
+      "translation": "同じ荷物で配送方法を2つ比較する"
+    },
+    {
+      "source": "A route summary can show an estimated duration, price and brief notes, while a detail page may describe eligibility and service conditions. For a fair comparison, run both routes against the same parcel. Keep the destination, category, weight, outer dimensions, packing and declared contents consistent. Check what the figures include and whether one service shown in the summary becomes a separate charge later. If a route does not accept the contents, remove it from the usable comparison.",
+      "source_sha256": "6e4f6dbd9b279632ad1a8b6d80cd5340d6c12d9f5517c37235576fdcb113d4fc",
+      "raw_target_sha256": "39fc8684a86f8f68a2e2ef331a952ea6f6a352c79ee5023f9a426ee9838120b9",
+      "translation": "配送一覧には日数、価格、短い注意書きのみで、引き受け条件や提供内容は詳細ページにあることがあります。配送先、品目、重量、外寸、梱包と申告内容をそろえて2案を計算します。表示額に含まれる作業と後で別請求になる作業を確認してください。内容物を引き受けない配送方法は比較候補から外します。"
+    },
+    {
+      "source": "In a teaching exercise, route A displays 150 and route B displays 166. If A requires a separately quoted 12-unit service that B includes, the comparable amounts are 162 and 166. If B includes something you do not need and A needs nothing additional, the original 150 and 166 may be the relevant comparison. The example does not represent a real HubBuy route or a real price. Its purpose is to show why a service description can change which arithmetic belongs beside the price.",
+      "source_sha256": "f441673ba26fdcb6014c194f593f2f715aaccc25da7bebd3937adbc0ea6216cb",
+      "raw_target_sha256": "6635ff14bf002deeaf52049438ff7026238762a5670d43b760755e981186b58c",
+      "translation": "例として、経路Aが150、Bが166と表示されています。Aだけに必要な別作業12があり、Bには含まれていれば、比べるべき金額は162と166です。Bに付く作業は不要でAに追加もなければ、150と166を使えます。これはHubBuyの実在経路や実料金ではなく、サービス内容で足し算が変わることを示す例です。"
+    },
+    {
+      "source": "Translate uncertain components into clear questions",
+      "source_sha256": "cf0fbf457645bd5cf729b85c17026792fac5983bc4cd31fdee5be47cb1cca807",
+      "raw_target_sha256": "5353a09829e03238203ce333ff045c234fd5278dd7fe9c778557dc00f120fb48",
+      "translation": "未確定の項目を具体的な質問にする"
+    },
+    {
+      "source": "Use a short list with four statuses: included, already paid separately, confirmed additional cost, and unknown. Place each disputed component into one category only. For example, if an invoice confirms payment of domestic delivery with the seller order, do not also treat it as an unknown outbound fee. If the estimator does not explain how a particular optional service is handled, record the uncertainty beside that service.",
+      "source_sha256": "1c712d402d0db8850d4730e0a54275b3145f12eb3b7c709970844b94b786094f",
+      "raw_target_sha256": "4c59c3ef4a0d22864876d26cf40eb3fe90ddd563bd5ddb65d789bd6c4ce271af",
+      "translation": "各項目を「込み」「別途支払済み」「追加額確定」「不明」のどれか1つに分類します。店の注文で国内送料を支払った請求書があるなら、同じ額を国際発送時の未確定費用にも入れないようにします。任意の作業が含まれるか見積もりに説明がない場合、その作業にだけ「未確認」と付けます。"
+    },
+    {
+      "source": "Use actual parcel changes to explain an apparent price change",
+      "source_sha256": "8622e8ef5e5779511a9f31048414891df3016a519c4bd2e41729fccfd0c80f01",
+      "raw_target_sha256": "52648fe234614d3ff2da447c7233b8e1330b8af4909bfd51709f506f59146704",
+      "translation": "荷物の変更と見かけの値上がりを照合する"
+    },
+    {
+      "source": "The buyer may initially quote a single pair of shoes using a quick-estimate preset. Later the seller's box is retained, then a belt is added before international submission. The resulting packed measurements no longer describe the same shipment as the preset. Compare the revised quote with the final parcel statement, while keeping the original as evidence of how the budget developed. A difference between the first and last amounts is not automatically a new fee.",
+      "source_sha256": "10ec70bbae6b9a7c22fe16e97239c46b035d424eb2c54f4181e1741356e9a670",
+      "raw_target_sha256": "cbf27af5519ca01edba34814c3ada60ccdfc1fa5ff420d12474a0fa6547c156b",
+      "translation": "最初は靴1足の既定値で概算した後、元の靴箱を残し、さらにベルトを同梱する場合があります。完成後の荷物は元の概算とは条件が違います。新しい条件での見積もりを最終明細と比べ、初回の値は予算の経緯として残します。最初と最後の差額がすべて追加手数料とは限りません。"
+    },
+    {
+      "source": "If you want to learn which change drove the difference, vary one input at a time in your own planning worksheet, provided the estimator supports the comparison. Keep the original destination and category, replace the assumed weight with the packed weight and record the result. Then apply the new dimensions. Label intermediate results as analytical scenarios rather than quotes for parcels you intend to send. If package category or eligibility changed, that can invalidate a direct one-input comparison.",
+      "source_sha256": "5f8584b005f53740c8815cd5f5e3efcb6e8e36dc95d0bd275b5033c759c1282e",
+      "raw_target_sha256": "e5d466cebd955960dc510e7357d058410b7e702b3a69b6142e5224ea5942ca4c",
+      "translation": "どの変更が効いたか調べる場合、計算機が対応していれば一度に1つだけ入力を変えます。配送先とカテゴリーを維持して見込み重量を実測に直し、次に新しい寸法を入れます。途中の結果には比較用の試算と明記し、その条件で実際に送る見積もりと区別します。品目や利用資格が変わる場合、1条件だけの直接比較が成り立たないこともあります。"
+    },
+    {
+      "source": "Hand the result to another buyer clearly",
+      "source_sha256": "7d29d29748598b972a745cb73e53cd521a3bb7a1d824ef18fb136178e7e116af",
+      "raw_target_sha256": "e13601d97924d44d66e20648f5aba951ea4c9c2bcdcc31b958d0634edc99fbf1",
+      "translation": "別の購入者にも再現できる形で伝える"
+    },
+    {
+      "source": "When the parcel is ready, revisit the paragraph. Replace assumed measurements with confirmed ones, check that the route still appears and compare the actual payment request with the latest estimate. If an input is still provisional, say so before approving the expense. Keep the final payment record for reconciliation. The value of an estimate is its ability to support a decision under specified conditions, not its ability to guarantee a number after those conditions have changed.",
+      "source_sha256": "ceb695ccc6ed47b07bfe359ad8c4c364cc28d20c79a2bf55e254573894714fef",
+      "raw_target_sha256": "dbf47eb1fd36579565ecd2efeb489fb21556a6ffbfb1528ee1deca85f9457373",
+      "translation": "荷物が準備できたらメモを見直し、仮の寸法を確定値に直します。経路がまだ選べるか、支払依頼が最新の見積もりと合うか確認してください。暫定条件が残るなら支払い前に明記し、最終決済を照合用に保存します。見積もりは決めた条件で判断するためのもので、その条件が変わった後の価格保証ではありません。"
+    },
+    {
+      "source": "Record who provided each figure",
+      "source_sha256": "37ad54d19fadab80ecf36fb42f1b658f7192531b19996b6c7149076024e199ce",
+      "raw_target_sha256": "645c97edb3228d87e1c53a1b0c8745f774feaf2f5207e13c9babe8e4849f4a8c",
+      "translation": "各数値の出所を記入する"
+    },
+    {
+      "source": "Put the source beside each amount when the seller, warehouse, and carrier all appear in one comparison. A seller’s approximate packed weight can be enough for an early screening decision. Once a warehouse measurement arrives, retain the seller figure in a separate column so a reader can see why the estimate changed and which measurement supported the eventual booking.",
+      "source_sha256": "0fa92a04f2f2920d7f416075cf761327cdcc393bb5b9eb1461b1adc76c248a8b",
+      "raw_target_sha256": "8715bca028dc342d4b2aef31cd323be75aa9eb63a8a880b1680fc9e30b88f57a",
+      "translation": "店、倉庫、配送会社の数字を一緒に扱うなら、金額や重量の横に提供元を入れます。最初の候補選びには店の概算重量で十分な場合もあります。倉庫で実測できたら店の値を別欄に残すと、どの測定で最終的な出荷を決めたか、見積もりがなぜ変わったかを説明できます。"
+    },
+    {
+      "source": "A good reconciliation tells you where a difference first appeared. Work in the original currency and parcel reference before looking at exchange effects or assuming a fee was added.",
+      "source_sha256": "672a7805192a6ba58cf8b65f83376d075d928a576304bfcb1e9c11235c0a8731",
+      "raw_target_sha256": "238cc74bf102b7b915fe6954b47778ecf6d8b23f22a4ea6e33ff57c6684caaba",
+      "translation": "明細を照合するときは、差が初めて生じた箇所を探します。まず元通貨と同じ荷物番号で比較し、為替や新しい手数料の可能性は後から検討します。"
+    },
+    {
+      "source": "Reconstruct the original comparison",
+      "source_sha256": "585a341f53b71b3427894cd711b1550be9beedd01e81f062caa67b1048d81bb4",
+      "raw_target_sha256": "17009d10d18bb4b6d7dc80d31602ed1d404cff99542bfea9f71c34b4aa212826",
+      "translation": "最初の比較条件を再現する"
+    },
+    {
+      "source": "Gather the original estimate, the warehouse submission and the final payment record. Confirm they refer to the same parcel contents and destination. A quote for two garments and a bill for two garments plus a box of shoes cannot be explained by checking the arithmetic alone. Keep the old list visible and make a separate column for the list eventually sent.",
+      "source_sha256": "c58c367b30785c5aaf6492b78162ffa4354e0168c946faffd5d8b2b4e2ca5c75",
+      "raw_target_sha256": "14ac81fc6d87a8b67fbc6d7a51bfcda67962081f4bb63c2e3703cecaf1f93db5",
+      "translation": "初回の見積もり、倉庫への発送指示、最終決済をそろえ、中身と配送先が一致するか確認します。服2着の見積もりと、服2着に靴箱を加えた請求の差は足し算だけでは説明できません。元の内容リストを残し、実際に送ったリストを隣の欄に記入します。"
+    },
+    {
+      "source": "Compare physical inputs before money",
+      "source_sha256": "280a3c623c455d7633eb184062d503db7ddf4b76302481b0c1f032910a359b4e",
+      "raw_target_sha256": "28beaa747d7b95f8655a38f71605aa59e88bf7f8e87c11ecad004f026dc762b0",
+      "translation": "金額の前に荷物の条件を比較する"
+    },
+    {
+      "source": "Write the initial and final weight beside the initial and final outer dimensions. Record which inputs came from product presets, seller figures, proposed packing or an actual completed parcel. Put the route and service choice on the same row. If the original option disappeared because of a size limit, compare the final route's charge with a revised quote for that route rather than blaming every difference on the weight change.",
+      "source_sha256": "0590b52a4c0802cfdba04363c9d0fc6ee3b4845acc370899a7f3c395de81352f",
+      "raw_target_sha256": "6bb74d001e2056da9396d02713769c6e8a85aa0298971b908fecde68c900c096",
+      "translation": "最初と最後の重量・外寸を並べ、既定値、店の数字、試算した梱包、実測のどれかを示します。経路とサービスも同じ行に記録します。サイズ上限で当初の方式を使えなくなったら、実際に使った経路の新しい見積もりと比べます。すべてを重量変化のせいにしないでください。"
+    },
+    {
+      "source": "Separate displayed totals from independent charges",
+      "source_sha256": "acffd07d3485b23f842c3a800d8719b79d2156222e07f88d5433164965a0c19d",
+      "raw_target_sha256": "6f49171e96307253ee9b21a89e10cba34fae367a0597b7b4f98ab5eef4a904a4",
+      "translation": "合計表示と別途加える料金を区別する"
+    },
+    {
+      "source": "Imagine that an estimated 140 rises to a final debit of 168. A final statement shows base freight of 156 and packing of 12. The first 16 of the difference comes from the freight line, and the remaining 12 is the packing line. The reconstructed final amount is 168. Do not sum 168, 156 and 12: the total already contains the two components.",
+      "source_sha256": "32e65e70ac5d42111df6901a022f14160bb1bf9e7df21f9841473cb4cd7ed93a",
+      "raw_target_sha256": "106fc272c8616f5c0918e08215b97e58c0e99c414426bb4ebdad1dd49df344e1",
+      "translation": "見込み140に対して最終引き落としが168とします。明細が基本運賃156と梱包12なら、元の見込みとの差は運賃の増額16と梱包12です。156 + 12で168を再現できます。168、156、12をすべて足さないでください。168にはすでに2項目が入っています。"
+    },
+    {
+      "source": "Reconcile the payment destination",
+      "source_sha256": "6d44efb3c0b973e92fba97fe2dcf4b0e024044882015ddc71703e3b0d3189f20",
+      "raw_target_sha256": "c47cd321548cba7e510cea1a430db1484ed4d65e6808a19631d6ba451c1e1679",
+      "translation": "どの手段からいくら支払ったかを照合する"
+    },
+    {
+      "source": "A coupon, account credit or refund can change the amount paid from an external card without changing the invoice subtotal. Record invoice total, balance used, external payment and credits as separate fields. When converting to your home currency, keep the original values intact and state the rate or posted amount used. If a promised credit has not posted, label it as pending instead of deducting it from the confirmed payment history.",
+      "source_sha256": "99c44293144f828d2a0ff6efcd386004ff6dd9739a80723b263e9fcd0effdaea",
+      "raw_target_sha256": "a77193bec41daf8f1f45ceca4e69b5dcce0269ecd0e4a41a60fa330a543ef9cf",
+      "translation": "クーポン、アカウント残高、返金により、請求書の小計が変わらなくてもカード負担は変わり得ます。請求総額、利用残高、外部決済、返金を別欄に記載します。自国通貨表示には元の数値と使用したレートまたは実際の記帳額を残し、約束された返金が未着なら支払実績から引かず保留にします。"
+    },
+    {
+      "source": "Ask one question with the relevant evidence",
+      "source_sha256": "abbbb28812a26e51834af9d19afeee2c14a1fed37cc288506dc0ac3b56399da1",
+      "raw_target_sha256": "9b233c4f5d719c85dad9defaa28d40225b09e151722aacb32e74cf93dd7e8c2e",
+      "translation": "証拠を付けて差額を1件ずつ尋ねる"
+    },
+    {
+      "source": "If a difference remains, identify the charge and both records where you expected it to match. For example, ask which input changed the base freight between a named quote and a named parcel. Include the route, measurement date and currency, and omit unrelated payment details. HubBuy's public support page lists parcel submission, orders and shipping among its support topics. Use that channel for an explanation specific to your account.",
+      "source_sha256": "83e7626e367cbcfb1564e0cf0042f3344cac38061405501350cf549334019df8",
+      "raw_target_sha256": "5f0745f99ad93115b5dd26c90aeb6ea0d3b7b56e2967e03671ef45ae262202a8",
+      "translation": "説明できない場合、どの料金がどの2つの記録で一致するはずだったかを示します。見積番号と小包番号を挙げ、どの条件で基本運賃が変わったか尋ねましょう。経路、測定日、通貨を添え、無関係な決済情報は省きます。HubBuyの公開サポートには発送手続き、注文、配送などの項目があります。個別アカウントの質問はその窓口で確認します。"
+    },
+    {
+      "source": "A complete fictional reconciliation",
+      "source_sha256": "e92e67bcbd9109ee3bba9caa76b2012a1807f7dbc279a9aea46d3733712569ae",
+      "raw_target_sha256": "548ce6c7d963bc1286835dfb288236ddd1a9a5b49aeba6a51b66b89c72be515b",
+      "translation": "架空の明細を最後まで照合する"
+    },
+    {
+      "source": "Suppose the planning sheet contains an old seller subtotal of 220, domestic delivery of 10 and an outbound estimate of 145. The initial overall figure is 375. During packing the buyer adds a separately purchased accessory. Its purchase and domestic movement have already been recorded elsewhere. The outbound box also changes: the final freight line is 153 and the packing service line is 9. The new outbound total is 162. Comparing 162 with 145 gives a 17-unit change on the parcel side.",
+      "source_sha256": "9c1a40111580ea305b7a37933c57096d7fa261c27e35750c2e58fc4ecc3f5584",
+      "raw_target_sha256": "c8bd339bc5bd56f71e4efee87645543606370d238222645d3c387da280c6a2ce",
+      "translation": "初回の予算が店の商品小計220、国内送料10、国際運賃見込み145で合計375だったとします。梱包時に別途購入したアクセサリーを追加しました。その商品代と国内送料は別の注文で記録済みです。外箱も変わり、最終の基本運賃153と梱包9で国際分は162。145との差は国際発送部分だけで17です。"
+    },
+    {
+      "source": "That 17 consists of eight more in the freight line and nine in the selected service under these example assumptions. It does not measure the cost of the accessory itself and should not be compared with the earlier all-purchase total of 375. Add the accessory's actual purchase entries separately if the question is total cost for the entire basket. Keep the same currency and identify whether any discount applies to freight, merchandise or the charge as a whole. The purpose is to reach an explanation for every difference without counting anything twice.",
+      "source_sha256": "416a611b06f6fcbb91f4881f16daf863f251becb1224d994d38b3793cf0ab96f",
+      "raw_target_sha256": "ad57199577ebd5e9378f07d222420ddb03f4cfa026cbe5d943f62c9471d7a986",
+      "translation": "この17の内訳は運賃の増分8と追加作業9で、アクセサリーそのものの代金は含みません。当初の商品代込み375とは直接比較できません。カート全体を問う場合は、別に記録したアクセサリーの実際の費用を加えます。通貨をそろえ、割引が商品・運賃・全体のどれにかかるか確認し、各差額を重複なく説明します。"
+    },
+    {
+      "source": "Distinguish invoice totals from sources of payment",
+      "source_sha256": "fa813dd61f243c3913f549d775bfca28833759a7094f67225534a2f24abd705e",
+      "raw_target_sha256": "51b4368a77241b278042b1458ad86f4ccc4af0fe1d41f751d438bc3baf86db27",
+      "translation": "請求額と支払原資は別の記録"
+    },
+    {
+      "source": "Imagine the final parcel invoice is 162, the buyer uses 20 of account credit and the external card supplies the remaining 142. Checking only the card account might make the shipment look cheaper than it was. The invoice total still describes 162 of parcel charges. The payment history shows how that amount was settled. Record both pieces of information instead of replacing the invoice total with the smaller card debit.",
+      "source_sha256": "8690db122b73072e5bfa62e24e8058c793394d3f7e936a0f49f15fb50f4bad64",
+      "raw_target_sha256": "8583e3c6c3ca8412de7d2438df68640e4f2fd6818898ad31014cecb6f7886507",
+      "translation": "請求額162のうち20はアカウント残高、残り142はカードで払ったとします。カードだけ見ると本当の発送費用を過小評価します。請求総額は162で、支払い履歴はその額をどの手段で払ったかを示します。小さいカードの記帳額で請求総額を上書きしないでください。"
+    },
+    {
+      "source": "The distinction also matters after a refund. Suppose six units are returned to the account balance later. Preserve the original 162 invoice, the original combination of payments and the separate six-unit credit with its destination. You can calculate a net cost when the refund is confirmed. If it has merely been requested, keep it in a pending column. That way one person reviewing the sheet for available funds and another reviewing it for net cost can both understand the figures.",
+      "source_sha256": "fa0728631d1847c51f92a7f569e17ce57d20ab9b52d74e8b57cf129b1fad61f1",
+      "raw_target_sha256": "a3168a3108db4bb0729dd64313bcb16d1564fc1c90f4238ce10ef6b9200506f0",
+      "translation": "後から6がアカウント残高に戻っても、元の請求162と支払手段の内訳を維持し、返金6と返金先を別行にします。入金が確定したら正味の費用を計算し、申請しただけなら保留欄に置きます。利用可能な残高を調べる人と、最終支出を確かめる人の両方が数字を追えます。"
+    },
+    {
+      "source": "Account for a route change before comparing rates",
+      "source_sha256": "aad8d93c3e66bf0232035b2833d8aa842faa3f8be7363daef870bb033862ef85",
+      "raw_target_sha256": "65385172201efd9e5424fc879367d353b6796ae88e398aec052a4a3a7119f021",
+      "translation": "経路の変更を確認してから運賃を比べる"
+    },
+    {
+      "source": "If the originally chosen route could not take the final parcel, compare the final statement with an estimate for the route that was actually used. Keep the old option separately and note why it became unavailable if the platform supplies a reason. A rate difference between two routes does not prove an unexpected change in the price of either route. Likewise, a change of destination or declared category can produce a different service set before weight and volume are even considered.",
+      "source_sha256": "6c0a52c36f462c6515f96a1dd82935a2a58341b27445f8608dd698bc18f5a91e",
+      "raw_target_sha256": "c892b54fb6efa21b8d1f1d08b21ddcf2df8cb250acadf6baa499310dc5e26c9d",
+      "translation": "元の経路では完成した荷物を引き受けられなかったら、実際に使った経路の見積もりを最終明細と比べます。元の案も残し、利用できなくなった理由が示されていれば記録します。違う経路の価格差だけでは、どちらかの経路が値上がりした証拠にはなりません。配送先や申告区分の変更で、重量や体積以前に選択可能なサービスが変わることもあります。"
+    },
+    {
+      "source": "Build a one-line contents list for each final parcel and match each original item exactly once. Identify excluded, returned or later-added items. If the contents have changed substantially, also retain a separate estimate calculated for the revised two-box arrangement. This new comparison is often better for checking the final charge, while the original estimate remains useful for understanding why the shopping plan exceeded the initial budget.",
+      "source_sha256": "0ba44aeee9236a3d8c1afd090c9fcccde45464eb5bc58aba71337cafaa07a71b",
+      "raw_target_sha256": "11ca1931cff757a22747ef55980185f485d82c842cf3854e35c16c5487b9a842",
+      "translation": "最終的な箱ごとに内容を1行で記し、元の品物を各1回だけ割り当てます。除外、返品、後から入れた物は識別します。内容が大きく変わった場合、新しい2個口案でも見積もりを残してください。最終請求を調べるには新しい条件、当初予算を超えた経緯を説明するには元の条件が役立ちます。"
+    },
+    {
+      "source": "Decide whether the remaining difference is actionable",
+      "source_sha256": "f5622605da33b051a5b790a2040f8712f49e07fa0d42c7f36ab6fbf189b2161a",
+      "raw_target_sha256": "3bc2b8bff81f5739f48bec8eeae19e971dd2042516350ad564af7e41b0a8d81a",
+      "translation": "残る差額を問い合わせるべきか判断する"
+    },
+    {
+      "source": "A small difference can come from rounding after currency conversion. It can also identify a real missing service line. Reconstruct the original-currency amounts first. Check whether rounding at the invoice level instead of at the item level accounts for the difference. If both the currency and all inputs match and a residual remains, do not create an unnamed miscellaneous charge just to make the sheet total agree. Preserve the residual and ask about it.",
+      "source_sha256": "1c0e45e369c2ccb8b8391e59e0367c503734a9dca7c4b138dfc361f9226c61db",
+      "raw_target_sha256": "62d317fcdee5e42e88a07a21dc66aeae135e2a171fc18f8eb7422a0e2efa1e7f",
+      "translation": "小さなずれは換算後の丸めでも起こりますが、実在するサービス行の漏れかもしれません。まず元通貨で計算し直し、個別商品で丸めた場合と請求合計で丸めた場合を比べます。通貨も条件も一致してなお残れば、帳尻を合わせるために「雑費」を作らず、差額そのものを残して問い合わせます。"
+    },
+    {
+      "source": "Send a message containing the parcel reference, original quote date, input measurements, final amount and arithmetic that remains unexplained. If the answer identifies an existing line, correct its classification instead of adding a duplicate. If a new credit is promised, follow it through to the account record. Close the reconciliation when both the invoice composition and the actual payment movements can be traced. Keep the dated comparison with the parcel documents for the next time you budget a similar shipment.",
+      "source_sha256": "8703ace3ef2d7e2fc013ae16841626fc20b2a78154da3c7d127de28b8327a5be",
+      "raw_target_sha256": "9db12440da47750f6ad8915ab50a29901fa28df22709b328f696b17897c5976a",
+      "translation": "小包番号、最初の見積日、入力した寸法・重量、最終金額、説明できない算式をまとめます。答えが既存の明細行を指すなら分類を直し、同じ費用を追加しません。新たな返金が約束されたら実際に記帳されるまで追います。請求内訳と資金移動の両方をたどれるようになったら照合を閉じ、日付付きの比較を次回の予算用に保管します。"
+    },
+    {
+      "source": "Keep a readable closing note",
+      "source_sha256": "4df428e7a3b004f4cbbeff95d9f12e7050010e7a55f5d9fad427851b472ebeb4",
+      "raw_target_sha256": "2beecef5d3c73ad80528b740ebbc51f1dd13681e2d387b99d762372cb9dfba94",
+      "translation": "結論を短く記録する"
+    },
+    {
+      "source": "Write a one-sentence conclusion next to each resolved difference. For example, a previously unexplained charge might match a packing service on an earlier confirmation. Record that confirmation date and amount. Someone checking your records later can follow that connection even if the original transaction description was abbreviated.",
+      "source_sha256": "95c223af7a7e468996befdd5dd8634bccbb3fdcd082c40ccc2a0ce53ddcd08c9",
+      "raw_target_sha256": "0ce6db3aebb2102678d88e26d03ed5f82ef084824e32d725b10f3adcce85fe44",
+      "translation": "解決した差額の横に理由を1文添えます。例えば、当初不明だった料金が以前に確認済みの梱包作業と一致したら、その確認日と金額を記録します。元の取引摘要が略称でも、後で見た人が同じ根拠を確認できます。"
     }
   ]
 }
