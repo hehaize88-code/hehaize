@@ -1,0 +1,164 @@
+name: Verify 13-site editorial release candidate
+on:
+  push:
+    branches: [editorial-release-control-20261123]
+    paths: ['editorial-rc/request.json']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: editorial-release-candidate
+  cancel-in-progress: false
+jobs:
+  request:
+    runs-on: ubuntu-latest
+    outputs:
+      source_sha: ${{ steps.pins.outputs.source_sha }}
+      results_sha: ${{ steps.pins.outputs.results_sha }}
+      maltese_sha: ${{ steps.pins.outputs.maltese_sha }}
+      maltese_path: ${{ steps.pins.outputs.maltese_path }}
+      update_draft: ${{ steps.pins.outputs.update_draft }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: editorial-rc
+          persist-credentials: false
+      - id: pins
+        run: python editorial-rc/integrate.py inputs editorial-rc/request.json
+  verify:
+    needs: request
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    env:
+      SOURCE_SHA: ${{ needs.request.outputs.source_sha }}
+      ASTRO_TELEMETRY_DISABLED: '1'
+      WRANGLER_SEND_METRICS: 'false'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: editorial-rc
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.request.outputs.source_sha }}
+          path: editorial
+          sparse-checkout: |
+            bbdbuygrid-com
+            cnshoppergrid-com
+            eastmallbuygrid-com
+            hubbuysheetgrid.com
+            itaobuygrid-com
+            kakobuysheetgrid-com
+            litbuygrid-com
+            ootdbuygrid-com
+            orientdiggrid-com
+            sugargoogrid-com
+            superbuysheetindex-com
+            usfanstab-com
+            vigorbuygrid-com
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.request.outputs.results_sha }}
+          path: results
+          sparse-checkout: |
+            dictionaries
+            translation-progress.json
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.request.outputs.maltese_sha }}
+          path: maltese
+          sparse-checkout: ${{ needs.request.outputs.maltese_path }}
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Validate dictionaries and stage only native source changes
+        run: python editorial-rc/integrate.py install editorial-rc/request.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Audit all translated texts and record language and numerical review flags
+        run: |
+          python -m pip install -r editorial-rc/translation-qa/requirements.txt
+          python editorial-rc/translation-qa/check_auditor.py
+          python editorial-rc/translation-qa/audit.py --input-packs editorial-rc/input --dictionaries verified-dictionaries --out linguistic-report
+          python -c "import json; d=json.load(open('linguistic-report/summary.json')); assert d['audited']==289 and not d['pending']"
+      - name: Install locked dependencies for the four sites that use them
+        run: python editorial-rc/candidate.py dependencies
+      - name: Run 13 production builds and Wrangler dry-run bundles
+        run: python editorial-rc/check_editorial_upload_sizes.py --root editorial --out candidate-outputs --wrangler editorial/usfanstab-com/node_modules/.bin/wrangler
+      - name: Run native site tests and artifact validators
+        run: python editorial-rc/candidate.py tests
+      - name: Verify all localized editorial pages, navigation, schema, and sitemaps
+        run: |
+          cp -r editorial-rc/release-qa release-qa
+          python release-qa/run.py all
+          python editorial-rc/integrate.py gate release-qa/summary-all.json
+      - name: Create pinned candidate and archive built Workers and assets
+        run: python editorial-rc/candidate.py package "$SOURCE_SHA"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: editorial-verification
+          path: |
+            release-qa/*.json
+            candidate-outputs/*/*.log
+            candidate-outputs/sizes.json
+            linguistic-report/summary.json
+            linguistic-report/samples.jsonl
+            linguistic-report/review.jsonl
+          if-no-files-found: ignore
+      - uses: actions/upload-artifact@v4
+        with:
+          name: built-workers
+          path: worker-archives/
+          compression-level: 0
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
+        with:
+          name: checked-candidate
+          path: candidate-transfer/
+          compression-level: 0
+          if-no-files-found: error
+  advance-draft:
+    needs: [request, verify]
+    if: needs.request.outputs.update_draft == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      SOURCE_SHA: ${{ needs.request.outputs.source_sha }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: editorial-rc
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.request.outputs.source_sha }}
+          path: editorial
+          sparse-checkout: |
+            bbdbuygrid-com
+            cnshoppergrid-com
+            eastmallbuygrid-com
+            hubbuysheetgrid.com
+            itaobuygrid-com
+            kakobuysheetgrid-com
+            litbuygrid-com
+            ootdbuygrid-com
+            orientdiggrid-com
+            sugargoogrid-com
+            superbuysheetindex-com
+            usfanstab-com
+            vigorbuygrid-com
+      - uses: actions/download-artifact@v4
+        with:
+          name: checked-candidate
+          path: candidate-transfer
+      - name: Fast-forward the draft ref using its expected SHA
+        run: python editorial-rc/candidate.py advance "$SOURCE_SHA"

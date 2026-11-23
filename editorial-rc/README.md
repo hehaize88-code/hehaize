@@ -1,0 +1,15 @@
+# Editorial release candidate
+
+This control branch prepares the 13 projects on the draft branch named `editorial-13-sites-20261123`. The translation run writes its 288 MADLAD dictionaries to `editorial-full-mt-results-20261123`. OOTDBuy has a separately reviewed Maltese dictionary. The input pack hashes here identify the English texts used to generate and audit those results.
+
+## Start a candidate
+
+1. Read the current head of the source draft and the completed results branch. Check that `translation-progress.json` lists 288 completed site/language pairs and an empty pending list. Find the commit that contains the final Maltese dictionary, plus its SHA-256. Refresh these values whenever corrections land.
+2. Copy `editorial-rc/request.example.json` to `editorial-rc/request.json` on this control branch. Use the full immutable commits for `source_sha`, `results_sha` and `maltese_sha`. Set `update_draft` to false for verification only. Set it to true when the coordinator authorizes advancing the source draft after verification.
+3. Commit the request to `editorial-release-control-20261123`. A change to that file triggers **Verify 13-site editorial release candidate**. The installation preflights all 289 non-English dictionaries and stages native content files. Four projects use locked npm dependencies. The other nine build with Node or shell scripts.
+4. Download **editorial-verification** for native test logs, upload sizes, all 302 language editions, and linguistic review findings. Automated structural checks cover 130 new English articles, 21 or more FAQ entries per site, localized article routes, canonical URLs, sitemaps, structured data and article duplication. Review the translation flags and text samples before final publication. Numeric spellings, transliterations and locale punctuation can produce flags.
+5. **built-workers** contains one archive per site with Wrangler dry-run modules, the source Wrangler configuration and any configured static asset directory. **checked-candidate** contains the verified commit bundle and a manifest with the expected parent and hashes. When requested, a separate job advances only the draft ref with an exact SHA lease. If the draft moves while checks run, use its new head for a fresh run.
+
+## After verification
+
+Reconcile the verified draft with the current production branch and rerun the affected checks if source or content changed. Use the project's existing production release process. After production deployments finish, run the acceptance harness with `live-all` for all 13 public domains. Review the numeric, unit, URL and language findings alongside the live article counts before announcing publication. The inventory under `release-report/` records the researched topics and source links. Its workbook generator requires the ChatGPT artifact-tool runtime.
