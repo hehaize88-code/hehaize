@@ -3,7 +3,7 @@
   "locale": "fr",
   "source_set_sha256": "23d3474b7a20680ed5ee7521b6c780f6b8ae4c7620ae20617349254386027c59",
   "raw_dictionary_sha256": "7fcf22afadbaa3bae96920587d00c9cc7d834723eaa9b28b2d6245ce2119e658",
-  "effective_dictionary_sha256": "0fabedebac1137bc8996c97963c2d0059e29ce0240e736b0fe85f9001475c856",
+  "effective_dictionary_sha256": "714eff53782b5ce17cc89ebccb1fd63acd92f78b0152df756af903b802d8c4a5",
   "checked_entries": 209,
   "review_scope": "Checked all exact input keys and output structure with the project auditor. Compared actual localized price/quantity calculations, physical item and option identifiers, garment-measurement examples, warehouse and shipping stages, seller/return wording, and sampled FAQ/body passages with the English source. Personally edited all ten article titles and replaced risk passages as recorded. This coverage is an audit plus targeted bilingual review.",
   "reviewed_flags": [],
@@ -554,6 +554,12 @@
       "source_sha256": "4d643343514a833b434bb4ea782db071963bc68e6b6aa00a95169b5067584370",
       "raw_target_sha256": "3b25e9c930c94b0dd8285d1bbc17d2d14e430a05e4caa43eff2f5c6de3a37849",
       "translation": "Imaginez deux chemises, une S et une M, et une ceinture amovible. Le vendeur confirme que le colis A contient les deux chemises et le colis B la ceinture. A arrive à l’entrepôt. Sur les photos, les deux chemises sont visibles, mais seule l’étiquette S est lisible. B est encore en transit. Enregistrez les deux chemises comme reçues, laissez l’étiquette M à vérifier et notez la ceinture en transit. Demandez une vérification de l’étiquette à l’entrepôt et consultez séparément le suivi domestique du colis B."
+    },
+    {
+      "source": "Suppose the seller says a jacket shipped today and the matching trousers will follow tomorrow. This is evidence of an intended split but does not yet identify the second parcel. Record the jacket's tracking reference if supplied and mark the trousers as awaiting domestic tracking. Ask for their reference after dispatch. If the seller supplies one number for both pieces, ask whether they were packed together. The question concerns the number of physical packages and the contents attributed to each one. A seller order number reused in two messages does not answer it.",
+      "source_sha256": "b0034852a360c04a2c86a1780bf1c4f3819046655140a342d06a5038aef3a3dc",
+      "raw_target_sha256": "18b0f7f8f87f26c64acdcd72ddd1345fbaaa2b24805edd203fb77f5000e4b514",
+      "translation": "Le vendeur annonce que la veste est partie aujourd’hui et que le pantalon assorti suivra demain. Cela indique un envoi fractionné prévu, sans encore identifier un deuxième colis. Notez le numéro de suivi de la veste s’il est disponible. Marquez le pantalon « en attente du suivi domestique » et demandez son numéro une fois l’expédition confirmée. Si le vendeur donne le même numéro pour les deux pièces, demandez si elles ont été emballées ensemble. Il faut connaître le nombre de colis physiques et le contenu de chacun. Une référence de commande répétée dans deux messages ne suffit pas."
     }
   ]
 }

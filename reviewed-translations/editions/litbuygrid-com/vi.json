@@ -3,7 +3,7 @@
   "locale": "vi",
   "source_set_sha256": "50911bbaf8cb4e95c0ffaba18561fc7cfb1d06446f37b6a6715ee18e99d8182e",
   "raw_dictionary_sha256": "3169141988c5cda9592ff8b1d4176fbb5dbdffabd54d96beaa32a6b216007596",
-  "effective_dictionary_sha256": "909b2cffcc1e73b36b588a41f7a58f7d70ffffd320b8ba6a6dfbce031c78dc2c",
+  "effective_dictionary_sha256": "64725e95b301f071a55147a691b470b771ae499c3b79542f63ee3796501932ac",
   "checked_entries": 254,
   "review_scope": "Checked all exact input keys and output structure with the project auditor. Compared actual localized price/quantity calculations, physical item and option identifiers, garment-measurement examples, warehouse and shipping stages, seller/return wording, and sampled FAQ/body passages with the English source. Personally edited all ten article titles and replaced risk passages as recorded. This coverage is an audit plus targeted bilingual review.",
   "reviewed_flags": [],
@@ -128,6 +128,12 @@
       "source_sha256": "e1824fadba39b32907abd099cf87ad19f7a6969f1501a0780eb77ec57d11c791",
       "raw_target_sha256": "2f9ad71883a247f625328f94e9d9e82a0368179690d77e07a22e5cdbea6fe258",
       "translation": "Kiểm tra phản ứng trước khi đọc số cuối cùng. Thước dây nên bắt đầu ở dấu không, chạy thẳng dọc theo quần áo và kết thúc ở cạnh yêu cầu. Nếu bức ảnh có góc nghiêng nghiêm trọng, thang đo có thể khó đọc. Một bức ảnh cho thấy kết thúc của băng nhưng giấu điểm bắt đầu bên trong nắp không thiết lập độ dài được xác định. Hỏi về phần thiếu của view thay vì yêu cầu một phòng trưng bày không liên quan của nhiều hình ảnh hơn. Nếu quần áo vẫn được đóng kín, kiểm tra các điều kiện xử lý và trả lại trước khi cấp phép bất kỳ hành động nào thay đổi bao bì của nó."
+    },
+    {
+      "source": "Enter the revised items and packing assumptions. Removing one piece can change both weight and box dimensions, so the old quote cannot establish the new final charge.",
+      "source_sha256": "f6e47fccdecff3e205af49186ca82e19e65b1a55e5566d70c21592b7df89b7fb",
+      "raw_target_sha256": "126d197bff564eeb439d1c210b4028f089b0ef4b0f7550102fdfc3ee2055cd84",
+      "translation": "Nhập lại danh sách hàng và phương án đóng gói sau khi thay đổi. Bớt một món có thể làm thay đổi cả trọng lượng lẫn kích thước thùng nên báo giá vận chuyển cũ chưa cho biết số tiền cuối cùng của gói mới."
     }
   ]
 }

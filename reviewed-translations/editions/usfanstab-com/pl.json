@@ -3,7 +3,7 @@
   "locale": "pl",
   "source_set_sha256": "23d3474b7a20680ed5ee7521b6c780f6b8ae4c7620ae20617349254386027c59",
   "raw_dictionary_sha256": "57d238cb1e7fb979efa556fa26fa3d9ea1b9848c7e61bd78a33b8fea8a52cf33",
-  "effective_dictionary_sha256": "1028f06df91387a06714a225816be2d90c7cfcc02deb9359a99525a1f425bdab",
+  "effective_dictionary_sha256": "d6fe122d636f412a2a529c3f871923002be837dba11b8fe01640886a710a8613",
   "checked_entries": 209,
   "review_scope": "Checked all exact input keys and output structure with the project auditor. Compared actual localized price/quantity calculations, physical item and option identifiers, garment-measurement examples, warehouse and shipping stages, seller/return wording, and sampled FAQ/body passages with the English source. Personally edited all ten article titles and replaced risk passages as recorded. This coverage is an audit plus targeted bilingual review.",
   "reviewed_flags": [
@@ -579,6 +579,12 @@
       "source_sha256": "4d643343514a833b434bb4ea782db071963bc68e6b6aa00a95169b5067584370",
       "raw_target_sha256": "f0eaac21f045164fd5d1c1ae0ff5f0e40c2c5955f32c5e963ef2289fbbad8dc8",
       "translation": "Załóżmy, że zamówienie obejmuje koszulę S, koszulę M i odpinany pasek. Według sprzedawcy obie koszule są w paczce A, a pasek w paczce B. A dociera do magazynu. Na zdjęciach widać dwie koszule, ale czytelna jest tylko metka S. B nadal jest w drodze. Odnotuj odbiór dwóch koszul, zostaw do sprawdzenia metkę M i oznacz pasek jako będący w transporcie. Magazyn powinien sprawdzić metkę, a drugą przesyłkę należy osobno śledzić po numerze krajowym."
+    },
+    {
+      "source": "Suppose the seller says a jacket shipped today and the matching trousers will follow tomorrow. This is evidence of an intended split but does not yet identify the second parcel. Record the jacket's tracking reference if supplied and mark the trousers as awaiting domestic tracking. Ask for their reference after dispatch. If the seller supplies one number for both pieces, ask whether they were packed together. The question concerns the number of physical packages and the contents attributed to each one. A seller order number reused in two messages does not answer it.",
+      "source_sha256": "b0034852a360c04a2c86a1780bf1c4f3819046655140a342d06a5038aef3a3dc",
+      "raw_target_sha256": "b54aa0987a3b3509da2baaa55a968005d9ee53a2fc3df98acec709af3e5c7a51",
+      "translation": "Sprzedawca informuje, że kurtkę wysłał dziś, a pasujące spodnie wyśle jutro. Wskazuje to na planowaną wysyłkę w częściach, ale nie identyfikuje jeszcze drugiej paczki. Zapisz numer przesyłki kurtki, jeśli go podano, i oznacz spodnie jako oczekujące na krajowy numer śledzenia. Poproś o niego po nadaniu. Jeśli sprzedawca poda ten sam numer dla obu ubrań, zapytaj, czy zapakował je razem. Chodzi o liczbę rzeczywistych paczek i zawartość każdej z nich. Ten sam numer zamówienia w dwóch wiadomościach tego nie wyjaśnia."
     }
   ]
 }

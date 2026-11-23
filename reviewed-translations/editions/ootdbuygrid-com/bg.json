@@ -3,9 +3,9 @@
   "locale": "bg",
   "source_set_sha256": "d3fa9f46b8822e6121c5f5032ff51cfdb56efdc052db0b6c6c720b54b6f2d6ef",
   "raw_dictionary_sha256": "85f727ec083c59627c0519898a2c63cdfaf5ecd4f50da4e87afb28a34b36900c",
-  "effective_dictionary_sha256": "d5d4286bcae2ef6c8a324a9912ff482a46479bd5960619435a49e4015c4490a3",
+  "effective_dictionary_sha256": "e87dccf67a2b3a961fc4aec54dd7e836c238fd818aef0e6f948721f5c3b97900",
   "checked_entries": 281,
-  "review_scope": "English/locale edition review including all 281 original keys, ten headings, all audit flags, domestic and international freight, quantity, photo and return wording, garment dimensions and cubic centimetres.",
+  "review_scope": "English/locale edition review including all 281 original keys, ten headings, all audit flags, domestic and international freight, quantity, photo and return wording, garment dimensions and cubic centimetres. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -747,6 +747,18 @@
       "source_sha256": "b3145c2941a23a5654ddd5e50a29bd8c70e984d7c698d11fda3009c55824eae7",
       "raw_target_sha256": "aeea139d945eb023f6d18c7208d510b5e62010173c32112af294c210eb3f20d5",
       "translation": "При получаване сравнете етикета с номера на изходящата пратка. Ако нещо изглежда повредено, заснемете състоянието на външната опаковка и вътрешната защита при разопаковане. Запазете опаковката, докато проверявате указанията за рекламация. Ако всичко е наред, отбележете кое е помогнало. „Оформената вложка запази чантата, външната декоративна обвивка не ми беше нужна“ ще ви помогне повече при следваща пратка с различни стоки от самата цена на превоза."
+    },
+    {
+      "source": "A useful opening might read: “Parcel [reference] was delivered on [date]. It included the blue mug from order [reference]. On unpacking I found a crack at the upper handle joint. Attached are the parcel label, the outer carton, the internal packing, the complete mug and a close view of the crack. I still have the packaging. Please tell me which review process applies and whether you need another view.” Replace each placeholder with your own facts and attach the files you actually have.",
+      "source_sha256": "4cf448275aa40d67d11caf3406d36896e5b7c94abf225eea4a0137069a1e5510",
+      "raw_target_sha256": "a5d8755f311e3819c4a1cd1d74640f3bbe6f0ab6d8aa77de2183242aa7ca32bd",
+      "translation": "Можете да започнете така: „Пратка [номер] беше доставена на [дата]. В нея имаше синя чаша от поръчка [номер]. При разопаковането открих пукнатина при горната връзка на дръжката. Прилагам снимки на етикета, външната кутия, вътрешната опаковка, цялата чаша и пукнатината отблизо. Пазя опаковката. Моля, посочете приложимата процедура и дали е нужна друга снимка.“ Попълнете собствените си данни и приложете само файловете, с които разполагате."
+    },
+    {
+      "source": "When you receive the parcel, compare the label with the outbound reference and check the contents against the items assigned to it. If the parcel arrived but one garment is missing, close the delivery question and open a contents question with the relevant packaging and item evidence. If support confirms another outcome, retain the written resolution and identify precisely which parcel it covers. The result should let another reader tell which delivery was completed, which issue was investigated and whether any separate purchase is still in transit.",
+      "source_sha256": "cf38e7e1819c955877e07856967d0292cdf7b4a7fc3b142abc89944d7f21d97f",
+      "raw_target_sha256": "f0104260a92421bbe33d1778244e05ddd64b776be1395e2b8e1080e756a64870",
+      "translation": "При получаване сравнете етикета с номера на изходящата пратка и проверете съдържанието спрямо списъка. Ако пратката е пристигнала, но липсва дреха, отбележете доставката като приключена и открийте отделен въпрос за съдържанието със снимки на опаковката и артикула. При друго потвърдено решение запазете писмения отговор и номера на конкретната пратка. Така читателят вижда кое е доставено, кой проблем е проверен и дали друга покупка още пътува."
     }
   ]
 }

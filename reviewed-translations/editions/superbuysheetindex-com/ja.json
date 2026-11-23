@@ -3,7 +3,7 @@
   "locale": "ja",
   "source_set_sha256": "22619851fe6c0c4d68d3e0eeae0044fc51f350ee67205e4e41855e55ae1a7029",
   "raw_dictionary_sha256": "faf56f2e11311b2317365244308b43d7e0f66d07bc79aeb16204473caa717536",
-  "effective_dictionary_sha256": "b6257d414f09290f9aefd3165da7b9bf80ad62f1ea4e56699ec4a54c38ca10b9",
+  "effective_dictionary_sha256": "c957cb3271bdfe1a366d656f2acf4c427ab9f3e3191cbf40f941db314f5d72ad",
   "checked_entries": 313,
   "review_scope": "Targeted bilingual review of ten headlines, all flagged entries, reproducible samples, volume arithmetic, currencies and tracking identifiers.",
   "reviewed_flags": [
@@ -1653,6 +1653,36 @@
       "source_sha256": "e05f80dd8a0489d36062e965da16d536dee95fb1775272ca58b2e672a8287f17",
       "raw_target_sha256": "a6201603fb1ec6cd6164817077ebf5ef6cc0ca694645e9932723b5b017ffe058",
       "translation": "Superbuyの購入・転送ガイドでは包装の取り外しや荷物の補強などの追加作業が説明されています。個々の品で使えるサービスとその条件は自分のアカウントで確かめます。独立サイトの提案は問い合わせのきっかけにはなりますが、特定のサービスを選択・支払い・実施した証拠にはなりません。"
+    },
+    {
+      "source": "To investigate a quote difference, start from the closest reproducible version of the first estimate. Substitute the packed dimensions while keeping destination, warehouse, item category, weight and route selection constant if possible. Record the new result. Then substitute the packed weight and compare again. If an input makes the original route unavailable, note that as an eligibility change rather than comparing two different services as though they were the same line.",
+      "source_sha256": "5ffd2ee017eadd8cae7fb670831bcf14b5cdec27d472e839dc18f2c82a49a0ba",
+      "raw_target_sha256": "5f65b2c52baba06ce4c0400b876b08c1433fb13c749ca8fe2f31ae7ec64625e2",
+      "translation": "見積額の差を調べる際は、最初の条件をできるだけ再現します。宛先、倉庫、品目、重量、路線をできるだけ固定し、梱包後の寸法だけを入れて結果を保存します。次に実測重量へ変えて再比較します。入力の変更で最初の路線が使えなくなったら、適用条件が変わったと記録します。別のサービス同士を同じ路線のように比較しないでください。"
+    },
+    {
+      "source": "For a two-box comparison, calculate each rectangular volume separately before adding them. Multiplying the sum of the lengths by the sum of the widths and heights produces an imaginary oversized box. Only use the measured dimensions of a single combined carton if the warehouse has actually combined the goods that way. Keep each individual carton measurement beside its corresponding quote.",
+      "source_sha256": "9ad9af1845fcfdbd876a4da6c12f89a3036d77d54122ca0a1cfbb54a95fe307c",
+      "raw_target_sha256": "6d6229a616fe46c45514249fb9959fd42624988a16809fcacbaaf169cbcd4dd5",
+      "translation": "二箱を比べるなら、直方体としてそれぞれの体積を計算してから足します。二箱の長さ、幅、高さをそれぞれ足して掛け合わせると、実在しない大きな箱の体積になってしまいます。倉庫が実際に一箱にまとめたときだけ、その外箱の実測値を使います。比較のために箱ごとの寸法と結果も残します。"
+    },
+    {
+      "source": "Check the current storage information for each entry in your account. Arrival, intake and the deadline displayed for that specific entry are more useful to you than the date you first found the product online. An older item can be approaching a decision point while a newly stocked item from the same seller has more time available. A single date attached to the planned parcel hides that difference.",
+      "source_sha256": "a90608c712e893909ad7d2e165bead36987783d053dafcaca67cd8bf5a984faa",
+      "raw_target_sha256": "1684aaff8ec7b71bc1e414e83c54ea6c0335dc3322f16c148c2efe010ed4b97e",
+      "translation": "アカウントで各入庫品の現在の保管情報を確認します。初めて商品を見つけた日よりも、到着日、入庫日、その品に表示された期限が重要です。同じ販売者の品でも、早く届いたものは判断期限が近く、新しい入庫品にはまだ時間があるかもしれません。予定する荷物全体に一つの日付を付けるだけでは、この違いが分かりません。"
+    },
+    {
+      "source": "Before submitting for overseas delivery, compare the final selection with the measured one. Did another item arrive? Did you ask staff to keep a box that the first estimate removed? Did the destination change? Each is a reason to revisit the quote. The benefit of a rehearsal is knowing what was measured and being able to use that observation. A precise request gives you a decision you can make confidently even when the cheapest eligible route is different from the one you originally expected.",
+      "source_sha256": "7e7fcee8b1057545d596dc1fc19e5382d0a775fe3f970b80aa9ab4168fe87f8e",
+      "raw_target_sha256": "037456e1ed550fffaafabea7f635ce33dff7cdc0fca08c14db64c4e303ce26ad",
+      "translation": "国際発送を申し込む前に、最終的な選択を採寸時の内容と照合します。別の品が届いた、外す予定だった箱を残すよう頼んだ、宛先が変わったといった場合は見積もりを取り直します。試験梱包の利点は、何を測ったか分かった上で実測値を使えることです。条件を明確にすれば、利用できる最安の路線が当初の予想と違っても判断できます。"
+    },
+    {
+      "source": "A packing request can alter the weight, outer dimensions or route eligibility of the proposed parcel. Write down which measurements correspond to which treatment. A quote based on keeping retail boxes and one based on removing them belong to different scenarios. If reinforcement was added later, the packed package can change again. Do not overwrite the earlier figures; label them with the treatment they describe.",
+      "source_sha256": "92cd62d74a8493f94e5c5f10f28d2af361f07e2cf729ae898bcb91623ddd6f60",
+      "raw_target_sha256": "2ebfbbd9579166590d795bd8a63f66989fbcb8d116370f5583409412d132daae",
+      "translation": "梱包指示によって重量、外寸、利用可能な配送路線が変わる場合があります。どの数値がどの処理後のものか記録してください。販売用の箱を残す見積もりと外す見積もりは、別々の条件に対する価格です。後で補強すれば梱包状態はさらに変わります。異なる条件の測定値や価格を一つの荷物の結果として混ぜないようにします。"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "locale": "pt",
   "source_set_sha256": "23d3474b7a20680ed5ee7521b6c780f6b8ae4c7620ae20617349254386027c59",
   "raw_dictionary_sha256": "61eea14598a798000473ec6b69ad4f5bdc356bb211bb73fccb87815b6f96acd1",
-  "effective_dictionary_sha256": "a37f186cc9288fc774d916061a59167d07e6770a74cb4fe820f272f9947c1505",
+  "effective_dictionary_sha256": "fb5f66eadb81794217fe355e8967a06745cde652a799b41bdba1cb03c0228d20",
   "checked_entries": 209,
   "review_scope": "Checked all exact input keys and output structure with the project auditor. Compared actual localized price/quantity calculations, physical item and option identifiers, garment-measurement examples, warehouse and shipping stages, seller/return wording, and sampled FAQ/body passages with the English source. Personally edited all ten article titles and replaced risk passages as recorded. This coverage is an audit plus targeted bilingual review.",
   "reviewed_flags": [],
@@ -548,6 +548,30 @@
       "source_sha256": "4d643343514a833b434bb4ea782db071963bc68e6b6aa00a95169b5067584370",
       "raw_target_sha256": "4791aabfb91d0231d6e921aee1933100f242dad66f2af95a3b98468f8634c97f",
       "translation": "Imagine um pedido com uma camisa S, uma M e um cinto removível. O vendedor confirma que o pacote A contém as duas camisas e o B contém o cinto. A chega ao armazém. As fotos mostram duas camisas, mas só a etiqueta S está legível. B continua em trânsito. Registre as duas camisas como recebidas e deixe pendente a confirmação da etiqueta M. Mantenha o cinto como em trânsito. É preciso conferir a etiqueta no armazém e, separadamente, acompanhar o rastreio doméstico de B."
+    },
+    {
+      "source": "Track the outbound shipment using the carrier and reference shown for that parcel. A domestic seller number may already show delivered, even while the international parcel is only being prepared. If a carrier hands the parcel to a local delivery partner, record the second number against the same manifest when the tracking information identifies it. A new tracking reference does not automatically mean a second physical parcel exists. Look for confirmation of a split or additional package before creating an extra entry in your inventory or assuming something was left behind.",
+      "source_sha256": "2e8015f3e99b6cd7670867efe1ffd0ffeb59736d1778dd2629973ae0a2adae4a",
+      "raw_target_sha256": "bbc6e79b8660325ba0867ccf713b08175d24c5e897e13b5d158e26c2d6d55661",
+      "translation": "Acompanhe a remessa internacional com o transportador e o código indicados para aquele pacote. O rastreio doméstico do vendedor pode constar como entregue quando a encomenda internacional ainda está sendo preparada. Se houver transferência para um parceiro local, vincule o segundo código à mesma lista de conteúdo assim que o rastreio o identificar. Um código novo não significa automaticamente que existe outro pacote. Confirme se a remessa foi dividida antes de criar uma nova entrada ou presumir que ficou algo para trás."
+    },
+    {
+      "source": "First distinguish the delivery from the Chinese seller to the warehouse from the later international parcel. The seller's tracking number normally describes a domestic leg. A delivery scan on that number can therefore mean delivery to the receiving facility in China. It does not establish that the buyer's international parcel has been submitted or delivered. USFans's beginner guide separates seller purchasing, warehouse inspection and the later parcel stage. Check the part of your account corresponding to the stage you are investigating before interpreting a tracking status.",
+      "source_sha256": "2284d475b087b8f606e7f8403237a5107fae5f66997647c7bdbbd729ca2f4323",
+      "raw_target_sha256": "8fdc7f86349643b01d291f8c0432061eaa93163338e445d390f6809d8a045df9",
+      "translation": "Distinga a entrega do vendedor chinês ao armazém da encomenda internacional que será enviada depois. O rastreio fornecido pelo vendedor costuma cobrir o trajeto doméstico. A indicação de entrega pode corresponder ao recebimento nas instalações na China. Ela não comprova que a encomenda internacional já foi solicitada ou entregue. O guia da USFans separa a compra, a inspeção no armazém e a etapa de envio. Consulte a área da conta correspondente ao trecho que está investigando."
+    },
+    {
+      "source": "Suppose the seller says a jacket shipped today and the matching trousers will follow tomorrow. This is evidence of an intended split but does not yet identify the second parcel. Record the jacket's tracking reference if supplied and mark the trousers as awaiting domestic tracking. Ask for their reference after dispatch. If the seller supplies one number for both pieces, ask whether they were packed together. The question concerns the number of physical packages and the contents attributed to each one. A seller order number reused in two messages does not answer it.",
+      "source_sha256": "b0034852a360c04a2c86a1780bf1c4f3819046655140a342d06a5038aef3a3dc",
+      "raw_target_sha256": "2f3d4d79d0792e1612ce6215c86b11fd7ef4790a73f06b17654bf0c53718db38",
+      "translation": "O vendedor informa que a jaqueta saiu hoje e que a calça combinando sairá amanhã. Isso indica uma divisão planejada, mas ainda não identifica um segundo pacote. Registre o código da jaqueta, se disponível, e deixe a calça como pendente de rastreio doméstico. Peça o código depois do envio. Se o vendedor fornecer o mesmo número para ambas as peças, pergunte se foram embaladas juntas. O que importa é quantos pacotes físicos existem e o que vai em cada um. Receber o mesmo número de pedido em duas mensagens não esclarece isso."
+    },
+    {
+      "source": "Once the warehouse has identified the expected entries, check each item that needs a quality or option decision. The arrival of the last domestic package does not resolve an earlier question about size or damage. If you prefer to ship accepted pieces before a missing item arrives, compare current packing and freight options for a split outbound shipment. The seller's domestic split and the buyer's international parcel choice are independent. Two seller packages can ultimately travel together internationally if the agent and chosen route permit it.",
+      "source_sha256": "f803269dcfc90abd0f387fcf614b3e195f68817f6c7752951100d2a877739c36",
+      "raw_target_sha256": "b1f20d393827a7f64becaaeeff4e70e8dacfdde271056759cab20103d1230191",
+      "translation": "Depois que o armazém identificar os registros esperados, confira cada peça que ainda dependa de uma decisão sobre qualidade ou variante. A chegada do último pacote doméstico não significa que tudo esteja pronto para sair. Se pretende enviar parte agora e parte depois, compare as condições atuais de embalagem e frete. O vendedor ter dividido a entrega doméstica não obriga você a dividir o envio internacional. As duas remessas podem seguir juntas para o exterior se o agente e a rota permitirem."
     }
   ]
 }

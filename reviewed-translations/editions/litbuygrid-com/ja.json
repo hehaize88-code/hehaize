@@ -3,7 +3,7 @@
   "locale": "ja",
   "source_set_sha256": "50911bbaf8cb4e95c0ffaba18561fc7cfb1d06446f37b6a6715ee18e99d8182e",
   "raw_dictionary_sha256": "95d3af7d7c1029aa741ee6cd7e8f92008a4be71b0392324ccf9b436a4aa3be96",
-  "effective_dictionary_sha256": "cb6bac386fd3d7da808a8e524d550a66dc3290fc525d5071c9a789e25de271d7",
+  "effective_dictionary_sha256": "eb2ccfc170acc87ec4f9bf35a3d96c48c55fa808572470661a5845b9b0e3bcb1",
   "checked_entries": 254,
   "review_scope": "Checked all exact input keys and output structure with the project auditor. Compared actual localized price/quantity calculations, physical item and option identifiers, garment-measurement examples, warehouse and shipping stages, seller/return wording, and sampled FAQ/body passages with the English source. Personally edited all ten article titles and replaced risk passages as recorded. This coverage is an audit plus targeted bilingual review.",
   "reviewed_flags": [
@@ -297,6 +297,24 @@
       "source_sha256": "d2e9967b7c2eda6fbe5835e5dfceda09db9586285f5689a22413cd75adeca1ce",
       "raw_target_sha256": "6f97ef039a1224054b0a6737ee9ef5d2ca2a6c607ab03313fdfe42c18dd01df8",
       "translation": "注文の問い合わせ窓口から、購入番号と入庫番号、支払った仕様、部品の説明、該当写真を送る。何を確認したかも明記しよう。例えば「購入した仕様には取り外し可能な長いショルダーストラップが付きます。倉庫の全体写真には短い持ち手しか見えません。長いストラップがバッグの保護袋に入っていないか確認できますか」と頼めば、まず現物を調べてもらえる。LitBuyヘルプセンターには欠品や破損の問い合わせ案内がある。今回の注文と手続き段階に適用される条件を確認しよう。"
+    },
+    {
+      "source": "Record the decision before choosing a parcel",
+      "source_sha256": "6972ea1b61ff8d63679d756301b5a95be40571e0091cca00b830a609c9163b5b",
+      "raw_target_sha256": "047db8eed57d54c2d67ffc667c4afb2cbf6e40735d801506c5909d544dbebadc",
+      "translation": "国際発送する荷物を選ぶ前に判断結果を記録する"
+    },
+    {
+      "source": "Compare the replacement warehouse reference and its new pictures against the original order note. Quote both references in the same support thread so the second delivery is distinguishable from the first.",
+      "source_sha256": "c0945824149de48c1fc6fde2d5be4e55d8a34462dd16d85f7df3d652fd59184c",
+      "raw_target_sha256": "45aca7aa4607848d9a56f009881c5ceffb4ad86af31d66d105b65291a72ddcd7",
+      "translation": "交換品の入庫番号と新しい写真を元の注文メモと照合します。サポートへの同じ問い合わせ内に元の商品と交換品の両方の番号を書き、どちらの入庫分なのか区別できるようにしましょう。"
+    },
+    {
+      "source": "Enter the revised items and packing assumptions. Removing one piece can change both weight and box dimensions, so the old quote cannot establish the new final charge.",
+      "source_sha256": "f6e47fccdecff3e205af49186ca82e19e65b1a55e5566d70c21592b7df89b7fb",
+      "raw_target_sha256": "992194347f1dfd5cd5a30ccee61e96435c5ec97a94ccf2a6476e790816790e96",
+      "translation": "変更後の内容物と梱包条件で再計算します。商品を1点外すだけでも、重量と外箱の寸法が変わることがあります。以前の送料見積もりから新しい確定額を判断することはできません。"
     }
   ]
 }

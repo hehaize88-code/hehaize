@@ -3,7 +3,7 @@
   "locale": "hr",
   "source_set_sha256": "d3fa9f46b8822e6121c5f5032ff51cfdb56efdc052db0b6c6c720b54b6f2d6ef",
   "raw_dictionary_sha256": "d55c74e40d91ddba5a75e1779f02bf9be0caf5670325f70481dfefaa5a9de825",
-  "effective_dictionary_sha256": "b38408bd6d30104ecb112467c74a961884f31fc9c2025dcc514b54ee4d39ba34",
+  "effective_dictionary_sha256": "417f1700640158a8311729378d7dfb2859e688998abe064331fdaa9dc83a6603",
   "checked_entries": 281,
   "review_scope": "English/locale edition review including all 281 original keys, ten headings, all audit flags, domestic and international freight, quantity, photo and return wording, garment dimensions and cubic centimetres. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [
@@ -465,6 +465,18 @@
       "source_sha256": "b3145c2941a23a5654ddd5e50a29bd8c70e984d7c698d11fda3009c55824eae7",
       "raw_target_sha256": "080e27b036837687681050c2f8401b6dbdc66cb2231da2e5677a93ca6ce7fec3",
       "translation": "Kad paket stigne, usporedite naljepnicu s brojem odlazne pošiljke. Ako uočite oštećenje, tijekom otvaranja dokumentirajte stanje vanjske ambalaže i unutarnje zaštite. Sačuvajte ambalažu dok provjeravate upute za reklamaciju. Ako je sve stiglo kako ste očekivali, zapišite što je dobro poslužilo. Bilješka „oblikovani umetak zaštitio je torbu, a vanjski ukrasni omot nisam trebao“ pri sljedećoj pošiljci različitih artikala vrijedi više od samog iznosa dostave."
+    },
+    {
+      "source": "Create a row for the proposed parcel and list which purchases it contains. Add destination, route, packed weight and outer dimensions when known. Mark each value as measured or estimated. An estimate using a seller's product weight and an estimated box size has a different evidential basis from a quote based on a packed parcel. Preserve the inputs when you save a quote. The result alone cannot explain a later difference.",
+      "source_sha256": "60bafbb319057a9b6b32c30949b2a86908f72a3af7e4d8d10475a0f1962e14e4",
+      "raw_target_sha256": "231bab33011f1c87ade43967014b1ae0527d7b156807181322a8f63b49051ccc",
+      "translation": "Otvorite redak za predloženu pošiljku i navedite koje kupnje obuhvaća. Kad ih saznate, dodajte odredište, rutu, zapakiranu masu i vanjske dimenzije. Označite što je izmjereno, a što procijenjeno. Procjena prema masi proizvoda koju navodi prodavatelj i približnoj veličini kutije nema istu osnovu kao ponuda za zapakiranu pošiljku. Uz svaku ponudu spremite ulazne podatke jer sam iznos ne objašnjava naknadnu razliku."
+    },
+    {
+      "source": "A change of route can affect the charge, eligible contents and delivery assumptions. To compare prices, keep the destination, units, weight and dimensions fixed. Note which services are included in each quote. A figure that includes an optional service cannot be compared fairly with a figure that omits the same service unless you explain the difference. If a route will not accept the parcel as described, mark it unavailable instead of treating its displayed price as a viable saving.",
+      "source_sha256": "62cb2db7ed1cf72ac3500bc40caaee0be7fa8dac8291b8e73f11ad52497ae31b",
+      "raw_target_sha256": "b3963daa646c992e26f12dd8aea435dc30b3f7e84e536d3d1148be20b274d18a",
+      "translation": "Promjenom rute mogu se promijeniti cijena, dopušten sadržaj i uvjeti dostave. Pri usporedbi cijena odredište, jedinice, masa i dimenzije moraju biti jednaki. Zabilježite koje usluge uključuje svaka ponuda. Ako jedna obuhvaća dodatnu uslugu, a druga ne, objasnite tu razliku. Rutu koja ne prihvaća opisanu pošiljku označite kao nedostupnu; njezina prikazana cijena ne predstavlja ostvarivu uštedu."
     }
   ]
 }

@@ -3,7 +3,7 @@
   "locale": "es",
   "source_set_sha256": "23d3474b7a20680ed5ee7521b6c780f6b8ae4c7620ae20617349254386027c59",
   "raw_dictionary_sha256": "a51b278b54fbb9037c53b53da607fd94250b51820d6e86be5452a51e7679c374",
-  "effective_dictionary_sha256": "2509bacc24d9f0ecc36773d8fe8a86cac4c1f7ae5b321e4570de6432f333f871",
+  "effective_dictionary_sha256": "48fadf4ed89793aa70acf859a091fd3368d66c6126a0da25dc6242c7e6558569",
   "checked_entries": 209,
   "review_scope": "Checked all exact input keys and output structure with the project auditor. Compared actual localized price/quantity calculations, physical item and option identifiers, garment-measurement examples, warehouse and shipping stages, seller/return wording, and sampled FAQ/body passages with the English source. Personally edited all ten article titles and replaced risk passages as recorded. This coverage is an audit plus targeted bilingual review.",
   "reviewed_flags": [
@@ -555,6 +555,12 @@
       "source_sha256": "4d643343514a833b434bb4ea782db071963bc68e6b6aa00a95169b5067584370",
       "raw_target_sha256": "c3704a6617648f773aae309eca3e01de5381c56e37784351d5e0ee1fdd00a5d9",
       "translation": "Imagina dos camisas, una S y una M, y un cinturón desmontable. El vendedor confirma que el paquete A contiene ambas camisas y el B el cinturón. A ya está en el almacén: las fotos muestran dos camisas, pero solo se lee la etiqueta S. B sigue en tránsito. Registra las dos camisas como recibidas, deja la etiqueta M pendiente de comprobar y anota el cinturón en tránsito. Pide al almacén que verifique la etiqueta y consulta aparte el seguimiento nacional de B."
+    },
+    {
+      "source": "Suppose the seller says a jacket shipped today and the matching trousers will follow tomorrow. This is evidence of an intended split but does not yet identify the second parcel. Record the jacket's tracking reference if supplied and mark the trousers as awaiting domestic tracking. Ask for their reference after dispatch. If the seller supplies one number for both pieces, ask whether they were packed together. The question concerns the number of physical packages and the contents attributed to each one. A seller order number reused in two messages does not answer it.",
+      "source_sha256": "b0034852a360c04a2c86a1780bf1c4f3819046655140a342d06a5038aef3a3dc",
+      "raw_target_sha256": "d1cc69b4f14b39956888f2b28d0788038ec013a1e51e84a38b6622202a796cab",
+      "translation": "Supón que el vendedor dice que hoy ha enviado la chaqueta y mañana enviará los pantalones a juego. Es una intención de dividir el envío, pero todavía no identifica un segundo paquete. Anota el número de seguimiento de la chaqueta si te lo da y deja los pantalones como pendientes de seguimiento nacional. Pide su número después del despacho. Si el vendedor facilita un solo número para ambas prendas, pregunta si las ha embalado juntas. Lo que necesitas saber es cuántos paquetes físicos hay y qué contiene cada uno. Repetir el número de pedido en dos mensajes no aclara esa cuestión."
     }
   ]
 }

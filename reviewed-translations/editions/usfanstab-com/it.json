@@ -3,7 +3,7 @@
   "locale": "it",
   "source_set_sha256": "23d3474b7a20680ed5ee7521b6c780f6b8ae4c7620ae20617349254386027c59",
   "raw_dictionary_sha256": "897b1f936e4e1230a7b348ff868b540097e720c54bde67f9c639bc65f52d2c15",
-  "effective_dictionary_sha256": "5110ca74f274ca973948f273b1dad90cc5dcadce9593f497938bbf29808c593e",
+  "effective_dictionary_sha256": "dda83ee47863fd4f75818b0eb71b2f5a4229a498593886ee69ac3cfe60c61fdf",
   "checked_entries": 209,
   "review_scope": "Checked all exact input keys and output structure with the project auditor. Compared actual localized price/quantity calculations, physical item and option identifiers, garment-measurement examples, warehouse and shipping stages, seller/return wording, and sampled FAQ/body passages with the English source. Personally edited all ten article titles and replaced risk passages as recorded. This coverage is an audit plus targeted bilingual review.",
   "reviewed_flags": [
@@ -561,6 +561,12 @@
       "source_sha256": "4d643343514a833b434bb4ea782db071963bc68e6b6aa00a95169b5067584370",
       "raw_target_sha256": "16687ba58bf592eaec1bf5167cb9df8bcf469cbcf75b793d63c344473cb6a6ab",
       "translation": "Immagina di aver ordinato una camicia S, una M e una cintura staccabile. Il venditore conferma che le due camicie sono nel pacco A e la cintura nel pacco B. A arriva in magazzino: si vedono due camicie, ma si legge soltanto l’etichetta S. B è ancora in viaggio. Registra le due camicie come ricevute, lascia da verificare l’etichetta M e annota la cintura come in transito. Per il primo dubbio serve una verifica in magazzino; per il secondo, il tracciamento della spedizione domestica B."
+    },
+    {
+      "source": "Suppose the seller says a jacket shipped today and the matching trousers will follow tomorrow. This is evidence of an intended split but does not yet identify the second parcel. Record the jacket's tracking reference if supplied and mark the trousers as awaiting domestic tracking. Ask for their reference after dispatch. If the seller supplies one number for both pieces, ask whether they were packed together. The question concerns the number of physical packages and the contents attributed to each one. A seller order number reused in two messages does not answer it.",
+      "source_sha256": "b0034852a360c04a2c86a1780bf1c4f3819046655140a342d06a5038aef3a3dc",
+      "raw_target_sha256": "a42811cb0f44107f518125759ee5b0a6dcc4f623ffcfafe7adafbcc871221e7f",
+      "translation": "Il venditore dice di aver spedito oggi la giacca e che i pantaloni abbinati partiranno domani. È un’indicazione di spedizione separata prevista, ma non identifica ancora un secondo pacco. Registra il tracciamento della giacca, se disponibile, e segna i pantaloni in attesa del numero di spedizione domestica. Chiedilo dopo la partenza. Se il venditore fornisce un unico numero per entrambi i capi, chiedi se li ha imballati insieme. Servono il numero dei colli fisici e il contenuto di ciascuno. Il numero dell’ordine ripetuto in due messaggi non risponde alla domanda."
     }
   ]
 }
