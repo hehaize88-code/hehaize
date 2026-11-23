@@ -1,0 +1,128 @@
+{
+  "site": "hubbuysheetgrid.com",
+  "locale": "vi",
+  "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
+  "raw_dictionary_sha256": "1b03c9adee47bf66ea0475d6965577cc1c3c8df3f6deb8528f86fe0c97c6aebf",
+  "effective_dictionary_sha256": "06459c4acf25c386427a45628989fe9aaf6eb74bc7386a6d17eb1fa587a7e7c6",
+  "checked_entries": 326,
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "reviewed_flags": [
+    {
+      "issue": "example number omitted or reformatted",
+      "source_sha256": "9fead998e848c9e940421e4f7aca5c4b8cd525d069238f5bafe41a7538b13e21",
+      "raw_target_sha256": "e026dabe33f577a8d4ee759933e827ed01dfd7be9f93c66f15dcea7c9960d7d6",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "new digit or localized conversion",
+      "source_sha256": "4bb2c9449ba1cb6aac59545b33a886dbce2ef89cf575933f4ed475cada7220dd",
+      "raw_target_sha256": "704a625501792a4bd7bca6064d637b90bd06dc52e79fc79f9bdf4fe57640d7c2",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "new digit or localized conversion",
+      "source_sha256": "9201275407c5ee12dabdb2f9d8e710f295c967c60f9ff4daaee57d63148981f9",
+      "raw_target_sha256": "8aece6d036370e6fc97be628d31f52054982f45c3e213e95ee33956a1fb43e88",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "new digit or localized conversion",
+      "source_sha256": "6375031214d98c70a61a9486c6b29468e7330fa90a314e815a6114c15526ec72",
+      "raw_target_sha256": "05cad9d439a141cae4c9aa949f1137889271007147702f3e53f9a324a481a53f",
+      "resolution": "corrected translation"
+    }
+  ],
+  "unresolved_material": [],
+  "corrections": [
+    {
+      "source": "Multiply kilograms by 1,000 to enter grams. A parcel measured at 1.35 kg is 1,350 g. Keep length, width and height in centimetres on the same worksheet.",
+      "source_sha256": "9fead998e848c9e940421e4f7aca5c4b8cd525d069238f5bafe41a7538b13e21",
+      "raw_target_sha256": "e026dabe33f577a8d4ee759933e827ed01dfd7be9f93c66f15dcea7c9960d7d6",
+      "translation": "Để đổi từ kilôgam sang gam, hãy nhân với 1000. Ví dụ, kiện hàng nặng 1,35 kg thì nhập 1350 g. Trên cùng bảng tính, ghi chiều dài, chiều rộng và chiều cao bằng cm."
+    },
+    {
+      "source": "If one seller quotes in yuan and another amount already appears in your home currency, define a single comparison column. Convert each source amount into that column once. A simple note next to the source amount should give its unit and the conversion direction. Enter 150 CNY and 7.50 CNY per home unit as separate fields. Check that the converted result times 7.50 returns the source amount before any fees.",
+      "source_sha256": "4bb2c9449ba1cb6aac59545b33a886dbce2ef89cf575933f4ed475cada7220dd",
+      "raw_target_sha256": "704a625501792a4bd7bca6064d637b90bd06dc52e79fc79f9bdf4fe57640d7c2",
+      "translation": "Nếu một người bán báo giá bằng nhân dân tệ còn giá khác đã được hiển thị bằng đồng tiền của bạn, hãy chọn một cột chung để so sánh. Mỗi giá gốc chỉ được quy đổi sang cột đó một lần. Ghi rõ đồng tiền và chiều quy đổi bên cạnh số tiền gốc. Chẳng hạn, nhập 150 CNY và tỷ giá 7,50 CNY cho một đơn vị tiền của bạn vào hai ô riêng. Nhân kết quả quy đổi với 7,50 phải thu lại số tiền gốc trước phí."
+    },
+    {
+      "source": "A hypothetical box measuring 40 by 30 by 20 centimetres has an outer rectangular volume of 24,000 cubic centimetres. A second box measuring 40 by 30 by 15 has 18,000. The reduced height removes a quarter of that geometric volume. Whether it changes freight depends on the chosen route's limits and billing rules, which must be checked on the actual offer. Avoid assigning a general dimensional divisor to every route.",
+      "source_sha256": "9201275407c5ee12dabdb2f9d8e710f295c967c60f9ff4daaee57d63148981f9",
+      "raw_target_sha256": "8aece6d036370e6fc97be628d31f52054982f45c3e213e95ee33956a1fb43e88",
+      "translation": "Một thùng giả định có kích thước ngoài 40 × 30 × 20 cm thì có thể tích 24.000 cm³. Thùng thứ hai có kích thước 40 × 30 × 15 cm, tương ứng 18.000 cm³. Giảm chiều cao như vậy làm thể tích giảm một phần tư. Cước có thay đổi hay không còn tùy giới hạn kích thước và cách tính tiền của tuyến đã chọn. Hãy đọc báo giá thực tế thay vì dùng chung một hệ số quy đổi trọng lượng thể tích cho mọi tuyến."
+    },
+    {
+      "source": "Take an example of an empty carton whose inside is labelled 35 by 25 by 15 centimetres. After loading it and applying protection, the outside measures 36 by 26 by 17. The inside rectangular volume is 13,125 cubic centimetres. The outside rectangular volume is 15,912, a difference of 2,787. This discrepancy can arise without adding a second product. The box walls, the lid and a bulging section can all matter to the outer measurement.",
+      "source_sha256": "6375031214d98c70a61a9486c6b29468e7330fa90a314e815a6114c15526ec72",
+      "raw_target_sha256": "05cad9d439a141cae4c9aa949f1137889271007147702f3e53f9a324a481a53f",
+      "translation": "Ví dụ, kích thước trong của một thùng rỗng là 35 × 25 × 15 cm. Sau khi xếp hàng và chèn vật liệu bảo vệ, kích thước ngoài đo được là 36 × 26 × 17 cm. Tính theo hình hộp chữ nhật, thể tích trong là 13.125 cm³, thể tích ngoài là 15.912 cm³, chênh lệch 2787 cm³. Dù không thêm sản phẩm thứ hai, độ dày của thành và nắp thùng, cũng như chỗ phồng ra, đều có thể làm thay đổi kích thước ngoài."
+    },
+    {
+      "source": "When a reply comes back, enter the provider's explanation beside the line it concerns. If the difference is a previously unseen quantity, correct the quantity column. If it is an already established charge, link it to the earlier entry rather than creating another. Once the detailed services, freight and credits reproduce the statement, your worksheet can serve two purposes: checking the present transaction and building a more realistic estimate for a future parcel with similar requirements.",
+      "source_sha256": "9789a2df087805f76c6c97aedff0adbc452751e73a4fa67e1b98bba4abe7785d",
+      "raw_target_sha256": "8295aedb02962d59c444338f2fdbdb4fc77b8b5f245af9462a696efed43584e3",
+      "translation": "Khi nhận được phản hồi, ghi lời giải thích của nhà cung cấp bên cạnh đúng dòng chi phí. Nếu trước đó chưa tính đúng số lượng, hãy sửa cột số lượng. Nếu đó là khoản đã thanh toán, liên kết với dòng cũ để tránh ghi trùng. Khi tổng các dịch vụ, cước và khoản ghi có khớp với bảng kê, bạn có thể dùng bảng tính để đối chiếu giao dịch hiện tại và ước tính sát hơn cho một kiện hàng sau này có yêu cầu tương tự."
+    },
+    {
+      "source": "HubBuy domestic shipping: where a seller's charge belongs in your budget",
+      "source_sha256": "eab3836733510b7a99cb55148e5e1b68a8629cabb4ee5b538abeae065f56a312",
+      "raw_target_sha256": "eab3836733510b7a99cb55148e5e1b68a8629cabb4ee5b538abeae065f56a312",
+      "translation": "Phí vận chuyển nội địa trên HubBuy: cách tính phí giao hàng của người bán vào ngân sách"
+    },
+    {
+      "source": "How to read a HubBuy service or packing charge on a quote",
+      "source_sha256": "222dfa464ad2abb7057c2a96d95e68d875cb97401e526a46b881ec4a1068708a",
+      "raw_target_sha256": "9679d8611f7d7bc42bddc9eae6c621b63b31a5f3c3dd9302e617d6c86b0e178f",
+      "translation": "Cách đọc phí dịch vụ hoặc phí đóng gói trong báo giá HubBuy"
+    },
+    {
+      "source": "Pricing a HubBuy order with several options from the same seller",
+      "source_sha256": "7fb9278702bf2e09253f22bbddee44200ca797400782ed4b7d2a0ccbeedc8923",
+      "raw_target_sha256": "2a933d8119b481fe1e5d9864d792bc03b7356dc8f2e88b8d988d3d390868af0b",
+      "translation": "Tính chi phí đặt nhiều tùy chọn từ cùng một người bán trên HubBuy"
+    },
+    {
+      "source": "Budgeting a HubBuy basket supplied by different sellers",
+      "source_sha256": "423273c3c007c9862f2e7f34924969be1678f9acf51bab03c0c9218d12598025",
+      "raw_target_sha256": "0837ed3b2974a1ef7b56a91ec7941fa6b2fecfc0952430dba97988e129274d17",
+      "translation": "Lập ngân sách cho giỏ hàng HubBuy gồm sản phẩm của nhiều người bán"
+    },
+    {
+      "source": "Comparing HubBuy quotes when the currencies differ",
+      "source_sha256": "338af70e4daa52606a92f6225bafefe344190b0c999fcc3a8166869df0a0bee4",
+      "raw_target_sha256": "a9614889a8436a2028dac0ef7f7a9aeb1d8aa615f0141d90b12698aa6309f545",
+      "translation": "So sánh báo giá HubBuy bằng các loại tiền tệ khác nhau"
+    },
+    {
+      "source": "HubBuy packing choices: comparing protection and base freight",
+      "source_sha256": "8ef88cd08cae21126861c4b2c5d919a81777298e119e49faf90a98c92be0f32d",
+      "raw_target_sha256": "b9ac2077b5f67a614a59657c372a13074067034031dd5623a9ed4e4d72423018",
+      "translation": "Lựa chọn đóng gói trên HubBuy: so sánh mức bảo vệ và cước vận chuyển cơ bản"
+    },
+    {
+      "source": "How to measure a packed parcel for the HubBuy shipping estimator",
+      "source_sha256": "44e243bf152024c7aba3b8f106b699b20441e654578c832e3cc671be2072c987",
+      "raw_target_sha256": "c7e3de20c0ceb2f528e56e08893b4d81d9f0ac328f07b2c44ba38a76d6678569",
+      "translation": "Cách đo kiện hàng đã đóng gói để ước tính cước vận chuyển trên HubBuy"
+    },
+    {
+      "source": "One HubBuy parcel or two? A like-for-like consolidation comparison",
+      "source_sha256": "bd5603c5d65a1a510f37ec7ee0dac5f93c28a565008c6c507e8606fd8632b5c2",
+      "raw_target_sha256": "b269e5d54f64563329974bcbfa21ba94f7c46597dd28d3417bdcd6eb3c217fd0",
+      "translation": "Một hay hai kiện hàng HubBuy? So sánh chi phí gộp kiện trong cùng điều kiện"
+    },
+    {
+      "source": "What does a HubBuy shipping estimate actually cover?",
+      "source_sha256": "dd7b597e479c531dd3d112e29bb093556ab3f3c23abf162caeba849f2efe93ad",
+      "raw_target_sha256": "bca152df4601bd06c4d0fe1c515b09afffec4090f4de1dbb6279d2ac48d0bdfe",
+      "translation": "Ước tính cước vận chuyển của HubBuy bao gồm những khoản nào?"
+    },
+    {
+      "source": "How to reconcile a HubBuy parcel statement with your first quote",
+      "source_sha256": "9a4641881e57be3b6c26da181b86ed2d763deadcd8e3fb11fd79d3d7275e41e4",
+      "raw_target_sha256": "e013b4617295788679cbfd626535c17862229d9763c24b6c7c0cf314fcbd103c",
+      "translation": "Cách đối chiếu bảng kê chi phí kiện hàng HubBuy với báo giá ban đầu"
+    }
+  ]
+}

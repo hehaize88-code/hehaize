@@ -3,9 +3,9 @@
   "locale": "hr",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "b248191358e1d86ec6a6550a5b4279e387dbb2bf2220adb452ad8195be7a2a09",
-  "effective_dictionary_sha256": "4ae7769bf3a3f119f0332cfff111dd4e302ef643cf6539b43db3bcc32ed64d4c",
+  "effective_dictionary_sha256": "a66e08b844eb26307a8288a8e6f62f4fd8f343077bb127e99b994a6cd2f59bb0",
   "checked_entries": 324,
-  "review_scope": "All article titles, machine-flagged strings, deterministic paragraph samples, freight prices and volume examples inspected. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries. Cross-checked the follow-up suggestions in the notebook example.",
+  "review_scope": "All article titles, machine-flagged strings, deterministic paragraph samples, freight prices and volume examples inspected. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries. Cross-checked the follow-up suggestions in the notebook example. Additional review of Croatian administrative hallucinations in cost examples.",
   "reviewed_flags": [
     {
       "issue": "language uncertain",
@@ -219,6 +219,12 @@
       "source_sha256": "dd7dbc83be0357a055968ae5bf8b1035741b50106313a0468cf12e63bab783ea",
       "raw_target_sha256": "c8dd112f34cfd6fd5e1271a3070ad778fee312915959f92d865192a65a63c2ab",
       "translation": "U primjeru s bilježnicama koristan bi odgovor bio da ste zatražili tri jedinice u jednoj boji, da se čini da nova ponuda pokriva dvije te da želite potvrdu jedinične cijene i domaće pristojbe. Dodajte što bi se trebalo dogoditi ako treća jedinica nije dostupna. To agentu daje ograničenu akciju umjesto da ga pita da pogodi je li količina, boja ili cijena najvažnija."
+    },
+    {
+      "source": "Imagine two seller charges of 80 and 120 in the same currency with one shared domestic charge of 10. Their purchase subtotal is 210. Counting 10 on each item produces 220 and makes the later parcel look more expensive than it was. If you want a per-item estimate for your own budget, split the 10 equally or proportionally and note the method. The seller still charged one amount.",
+      "source_sha256": "5b139f73cd5c8981d4c940866a4b489048c21a5f76221d99d6552c12ea37eca2",
+      "raw_target_sha256": "b29a47cadb18785f38049a612483fcd06b6ebd8d6005c16fc8161f584f34d27c",
+      "translation": "Zamislite dvije stavke od 80 i 120 u istoj valuti te jednu zajedničku naknadu od 10 za dostavu unutar zemlje. Ukupan trošak kupnje je 210. Dodate li po 10 svakoj stavci, dobit ćete 220 i precijeniti ukupne troškove. Ako želite procjenu po artiklu za svoj proračun, tih 10 možete podijeliti jednako ili razmjerno vrijednosti artikala. Zabilježite odabranu metodu. Prodavatelj je dostavu naplatio samo jednom."
     }
   ]
 }

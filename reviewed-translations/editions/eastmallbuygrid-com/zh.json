@@ -3,7 +3,7 @@
   "locale": "zh",
   "source_set_sha256": "d3fc8a20c25fd682a0cbcf1d5165d69d8f33114365bd18ae1f508e92c28f82c5",
   "raw_dictionary_sha256": "6163ee21e4e496fe2dab819872ae5c93b6a015e220e44c71764e8fc82a9636db",
-  "effective_dictionary_sha256": "27a80d26171720e526a13b12a5afe2cd6dfc11dfafcdd73f11af12070d705563",
+  "effective_dictionary_sha256": "0a9da5171572b07806c6fdee2e745eb46d7b91ee0e852039f2bb5b7383bf33a9",
   "checked_entries": 277,
   "review_scope": "Machine checks cover all rows. Editorial review covers every SEO title, FAQ and support terminology, numeric and garment-sizing examples, long-passage samples and every flagged row.",
   "reviewed_flags": [
@@ -38,7 +38,7 @@
       "source": "What if the seller has dispatched my order but the warehouse has not received it?",
       "source_sha256": "d97a598705f7eab04ff574f92c7e17b08e384664d470fb9c102af10985346049",
       "raw_target_sha256": "46617af3ff1c90201239450443b3bb5b9a3153e0660efc3f3609c4f4d0d10501",
-      "translation": "卖家已经发货，EastMallBuy 仓库还没收到，该怎么办？"
+      "translation": "卖家已经发货，仓库还没收到，该怎么办？"
     },
     {
       "source": "Record the domestic tracking number and purchase status, then contact the agent promptly. At this stage the seller's cancellation or return conditions matter. Ask whether the package can be intercepted or whether it must arrive first.",
@@ -512,7 +512,7 @@
       "source": "Match seller parcels, warehouse records and purchased quantities when tracking shows several deliveries for one EastMallBuy order.",
       "source_sha256": "460857191b3edfc5b191aa8c8b53075ac6518447d234577c9606c8f44a5f5b19",
       "raw_target_sha256": "f78d38576720188369c8fd7c13b5d0f9a82e611fa399ad0252a7fc676d22a95c",
-      "translation": "卖家将一笔订单拆成几个包裹后，国内物流的送达次数不等于商品件数。把快递单号、入库记录、购买数量和尺码逐项对起来。"
+      "translation": "卖家将一笔 EastMallBuy 订单拆成几个包裹后，国内物流的送达次数不等于商品件数。把快递单号、入库记录、购买数量和尺码逐项对起来。"
     },
     {
       "source": "Count the things you bought",
@@ -608,7 +608,7 @@
       "source": "A payment, a seller shipment, warehouse receipt and an international waybill are different events. Identify which one has actually happened before asking EastMallBuy for a cancellation, an exchange or a refund.",
       "source_sha256": "69093409c67520a96708ecdefb51a8ed6340c18e436a91d93eaf07267cd4b01d",
       "raw_target_sha256": "4a9d9ca1ae26cd51765f5c03e3bcbd6dacbabe5e4522c985629ffba7807d91f5",
-      "translation": "付款、卖家发货、仓库收货和创建国际运单分别代表不同阶段。申请退货前先核对目标商品当前状态，才知道还可以向哪一方提出什么处理要求。"
+      "translation": "付款、卖家发货、仓库收货和创建国际运单分别代表不同阶段。向 EastMallBuy 申请取消、换货或退款前先核对目标商品当前状态，才知道还可以向哪一方提出什么处理要求。"
     },
     {
       "source": "Read the order line before the parcel record",
@@ -872,7 +872,7 @@
       "source": "For a suspected wrong unit, quote the ordered option and the warehouse label or visible variant. For a suspected chart discrepancy, provide the chart, method and unit-specific reading. For a change of preference, say what you received and what alternative you would prefer. EastMallBuy's return policy directs buyers to stage-specific and merchant conditions. Describing the reason accurately helps support determine which conditions and costs apply. A general statement that the quality is bad obscures what remedy you actually need.",
       "source_sha256": "547036129d4818d76b2a0cc064125e300875f611b77e152263835793d6f2538f",
       "raw_target_sha256": "bd79965e35aac074f97e8cb1be183f5ac1d6bb36223c5f63654af61fc27f03dc",
-      "translation": "怀疑发错货，就对照订单选项、仓库标签和可见款式。怀疑尺码表与实物有差异，就附表格、量法、单位和读数。若实物符合说明，只是希望穿起来宽松些，应明确说是想查询能否换码。这三种表述会让客服查不同的证据。"
+      "translation": "怀疑发错货，就对照订单选项、仓库标签和可见款式。怀疑尺码表与实物有差异，就附表格、量法、单位和读数。若实物符合说明，只是希望穿起来宽松些，应明确说是想查询能否换码。EastMallBuy 的退货政策还区分订单阶段和卖家条件。写明原因，客服才能查到对应的证据和费用。"
     },
     {
       "source": "If more than one issue exists, separate them. You might receive the ordered medium but notice a torn seam and also prefer a larger size. Photograph the torn seam and explain your size preference in separate sentences. Then ask whether the seller can replace the damaged piece with the larger option and what price or postage difference would result. This avoids an exchange that resolves the seam while leaving the fit preference unanswered, or a paid size change that silently ignores the documented defect.",
@@ -1292,7 +1292,7 @@
       "source": "Look for the actual marketplace order stage. A purchase can be placed without a tracking number yet being available. It can also be on its way to the warehouse even though the warehouse inventory screen is empty. EastMallBuy refers to merchant and marketplace conditions for this part of the process. Collect the seller listing and option text that existed when you paid. An edited listing may no longer show the exact version supplied under your purchase.",
       "source_sha256": "0a56f04877c61db98ef60563b28dfdc8dd9e53f4a7faa6823cda0bdd5a3f6cbc",
       "raw_target_sha256": "55c8d3eb5819cced8d2f47693f37e4e21e83c4a84cecbce25faf2d7fc3487d9f",
-      "translation": "查卖家订单本身的状态。已经向卖家采购，不代表一定已有快递号；仓库列表为空，也可能只是商品正在国内运输。保存已知的下单信息与快递记录，请代理核实取消、拦截或到仓后寄回分别还来不来得及。"
+      "translation": "查卖家订单本身的状态。已经向卖家采购，不代表一定已有快递号；仓库列表为空，也可能只是商品正在国内运输。保存已知的下单信息与快递记录，EastMallBuy 在这一步也会参考商家及所在平台的条件。请代理核实取消、拦截或到仓后寄回分别还来不来得及。"
     },
     {
       "source": "Explain the reason for your request in terms that can be checked. “I chose charcoal and now prefer beige” and “I selected charcoal but the seller confirmed beige” suggest different conversations with the merchant. Include the selection or message that establishes the difference. Ask for the seller's reply and what must happen next. An agent's acknowledgment that the question was sent is a progress update. An actual seller agreement should identify the item, the requested resolution and any conditions attached to it.",
@@ -1340,7 +1340,7 @@
       "source": "There is value in writing a short case summary even for a small purchase. “Wrong colour found before seller dispatch; merchant cancellation confirmed; expected credit recorded; bag remains in warehouse” contains more usable information than a folder of unexplained screenshots. Someone reading your message can identify the next action without reconstructing an entire chat history. If facts change, revise the stage and the affected references first, then consult the part of EastMallBuy's live policy that applies to that new situation.",
       "source_sha256": "39922296dee19002bba7731397c7c431909e9a6f4881399c1cb706723c388570",
       "raw_target_sha256": "8e64f48f416e14384be0216d619d994a6dc7175477b9caab114c444ef02d6743",
-      "translation": "小额订单也值得留一条简明摘要。例如：“卖家发货前发现颜色问题；商家确认取消；已记录预计退款；包仍在仓库。”之后若余额或入库状态有变化，用这句话能迅速找到仍待核实的一项，无须翻完整段聊天。"
+      "translation": "小额订单也值得留一条简明摘要。例如：“卖家发货前发现颜色问题；商家确认取消；已记录预计退款；包仍在仓库。”之后若余额或入库状态有变化，用这句话能迅速找到仍待核实的一项，再查新阶段适用的 EastMallBuy 政策。"
     },
     {
       "source": "If the order contains a matching pair, clarify whether the seller expects the entire pair back. Sending only the visibly defective piece might leave the return incomplete. Ask the agent to record the required quantity and any included accessories before a domestic return label is used. This also gives you a count to check against the eventual settlement.",
@@ -1388,7 +1388,7 @@
       "source": "Read the external length, width, height and scale weight associated with the current packing arrangement. If you authorized a different carton or removed the shoe box, figures recorded before that change may be stale. EastMallBuy's freight help explains that dimensional weight can affect a charge. Use the current route's conditions and the measured completed parcel, not measurements of individual seller boxes or an estimate copied from a different destination. Keep units visible and record the time of the quote.",
       "source_sha256": "f423782c3a7b278246505be2a4099a8b7d7f5c7aab26490642c76c12cbaefdfd",
       "raw_target_sha256": "39414de6e9bebb5978e7cc49da85dc73ff4647f048b31caf220dcd6b76f0294a",
-      "translation": "核对当前包装对应的外部长宽高和秤重。若后来换了箱子或去掉了鞋盒，改动前的尺寸可能已不适用。把旧估算与新封箱值注明日期和单位，再查所选线路如何计算体积重，避免误用旧数据申请或比较报价。"
+      "translation": "核对当前包装对应的外部长宽高和秤重。若后来换了箱子或去掉了鞋盒，改动前的尺寸可能已不适用。把旧估算与新封箱值注明日期和单位，EastMallBuy 的运费说明提示体积重会影响费用；再查所选线路如何计算体积重，避免误用旧数据申请或比较报价。"
     },
     {
       "source": "Check eligibility separately from cost. An inexpensive route can have restrictions involving dimensions or contents that make it unsuitable for this parcel. If a particular item would require splitting the shipment, obtain comparable quotes for the split arrangement before assuming the lower route price saves money overall. Compare the actual destinations, packing options and services. A valid comparison includes both parcels if two are required and includes the packing protection you have decided to retain, even if that produces a higher total.",
@@ -1610,7 +1610,7 @@
       "source": "Use a fictional case to see the distinction. A presentation box occupies 28 by 20 by 10 centimetres, but a rigid item beside it already requires a parcel 30 centimetres tall. Removing the presentation box may create an internal gap without reducing the exterior at all. Conversely, a retail lid that sticks up just two centimetres above every other item might require a taller carton. Record the proposed external dimensions and packed weight for both versions. Ask for the route calculation applicable to the actual destination and contents.",
       "source_sha256": "0f51f0ee5b0595b4aa612d499f3d5731c20cb4d5913f536b78853da7957b6c21",
       "raw_target_sha256": "4ca6277fd15d4ec0f115f96cd4dd754a9ffac37da8ff7e7e5518979f637b7975",
-      "translation": "假设一个展示盒长 28、宽 20、高 10 厘米，但旁边的硬质物品已经需要 30 厘米高的外箱。去掉展示盒可能只是腾出内部空隙，外箱尺寸一点也不变。反过来，如果某个商品盒盖比所有其他物品高出两厘米，就可能迫使仓库选更高的外箱。分别记下保留和去除时的外尺寸与封箱实重，再按实际目的地、物品和线路核算。"
+      "translation": "假设一个展示盒长 28、宽 20、高 10 厘米，但旁边的硬质物品已经需要 30 厘米高的外箱。去掉展示盒可能只是腾出内部空隙，外箱尺寸一点也不变。反过来，如果某个商品盒盖比所有其他物品高出 2 厘米，就可能迫使仓库选更高的外箱。分别记下保留和去除时的外尺寸与封箱实重，再按实际目的地、物品和线路核算。"
     },
     {
       "source": "For an illustrative purchase of two units at 80 yuan each, returning one unit starts with an 80-yuan item value. It does not automatically establish either the final credit or a refund of half the full international parcel cost. Add any agreed postage or deduction only when the agent or merchant identifies it. If the expected credit is 72 yuan after an explained eight-yuan deduction, compare the final credit with 72 and keep the explanation beside it. These figures demonstrate the arithmetic and are unrelated to EastMallBuy's actual fees.",
