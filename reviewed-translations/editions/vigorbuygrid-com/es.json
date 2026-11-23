@@ -3,7 +3,7 @@
   "locale": "es",
   "source_set_sha256": "45be6cbeb6f7ed794c373e9816341de444b028e8d281d6498d5cf522a8bfa4ee",
   "raw_dictionary_sha256": "0d082ea21fbaab8e3ddf2a1a4d0493088d749e52981a09639bf0173fc3080059",
-  "effective_dictionary_sha256": "63976267631116380c328e89b0a867307d10760990cff64d0bdd6d9e16a8db82",
+  "effective_dictionary_sha256": "992ad4d1cc08288deb9b464747bf7e2d8ecb48ce341ed0b2e444d466b48f9f78",
   "checked_entries": 329,
   "review_scope": "Verified source coverage and reviewed FAQ, editorial headings, shipping estimates and garment size examples, all automated findings, and domain-specific parcel and price terminology.",
   "reviewed_flags": [
@@ -207,6 +207,12 @@
       "source_sha256": "a3520bc29c50292adf9057ade32aebde837ebf536020558d4cd15ed7ca50225f",
       "raw_target_sha256": "60dddffc5553507aace0a1f0dc161e85ac463bbefc8f93a6fc152bdd402e46c9",
       "translation": "¿Qué número de seguimiento doy al transportista local?"
+    },
+    {
+      "source": "For a short delivery, describe expected and observed counts in the same units. One missing pack of three pairs differs from one pair missing inside a pack. Name the exact item, order reference and supporting photograph when asking for assistance.",
+      "source_sha256": "f69d2a0405d01da1a9a997c99409c420919f60fb0680379bd781143afbe7ad99",
+      "raw_target_sha256": "123c126ea3ff1f9a625ecaabfb9126b5c9d52979062c0495d24face85193b0c3",
+      "translation": "Si han llegado menos unidades de las previstas, expresa ambas cantidades en la misma unidad. Que falte un paquete de tres pares no equivale a que falte un par dentro de ese paquete. Al solicitar ayuda, identifica el artículo exacto, indica la referencia del pedido y adjunta la fotografía que documenta la diferencia."
     },
     {
       "source": "A public lookup can show earlier warehouse observations associated with a seller listing. Compare the selected option and date. Use photographs attached to your current order to decide whether your own delivery contains the right unit.",
@@ -569,10 +575,334 @@
       "translation": "Verifica el aviso de entrega con los identificadores correctos"
     },
     {
-      "source": "For a short delivery, describe expected and observed counts in the same units. One missing pack of three pairs differs from one pair missing inside a pack. Name the exact item, order reference and supporting photograph when asking for assistance.",
-      "source_sha256": "f69d2a0405d01da1a9a997c99409c420919f60fb0680379bd781143afbe7ad99",
-      "raw_target_sha256": "123c126ea3ff1f9a625ecaabfb9126b5c9d52979062c0495d24face85193b0c3",
-      "translation": "Si han llegado menos unidades de las previstas, expresa ambas cantidades en la misma unidad. Que falte un paquete de tres pares no equivale a que falte un par dentro de ese paquete. Al solicitar ayuda, identifica el artículo exacto, indica la referencia del pedido y adjunta la fotografía que documenta la diferencia."
+      "source": "Recover a usable starting link",
+      "source_sha256": "db05fa6df91432b1f71f3ea8bf5b130aee17b5331ac361fc85f0f953920cb681",
+      "raw_target_sha256": "de80ca1d084a340d8cabd194cf562d0fb171dda42143e5bc50062736a316a240",
+      "translation": "Recupera un enlace válido al anuncio original"
+    },
+    {
+      "source": "Read the results in context",
+      "source_sha256": "997fcdde2552f32fbe32417ed6d94c605a4e625091d18d988be514220d102374",
+      "raw_target_sha256": "511fdceb021e1e20f3ee5f1fed1cf185dd0547c2b7799e37dd13f650f31707ae",
+      "translation": "Interpreta cada resultado en su contexto"
+    },
+    {
+      "source": "Make a short evidence record",
+      "source_sha256": "7bc9e135e4aa93c4e6f8c72cb9c970f57b44c27efc0db108741e5a2d6280ec98",
+      "raw_target_sha256": "fbef301967e2c8b90df89b179205fae3ad421cade1beafc62c94710d6e405f79",
+      "translation": "Anota brevemente lo que muestra cada imagen"
+    },
+    {
+      "source": "Use the current order for your final inspection",
+      "source_sha256": "6adb6497423ee5be98cdd70430ec4a9c82b8b0186709cf6d66980d7439203a9e",
+      "raw_target_sha256": "96b18a539726cc99f79854e13d658cdeb92896d08bb4d91b5c70729838f1ea72",
+      "translation": "Reserva la comprobación final para las fotos de tu pedido"
+    },
+    {
+      "source": "Follow one reference from a short link to a usable observation",
+      "source_sha256": "209e53d9744e835fa206536b3c701d60f16c8482c6b5cc559ed6c08846f7bb0c",
+      "raw_target_sha256": "426ab1f3542ba3f145d1e6957e2cafde40e266a7ea28e220c47a7cf4f296b072",
+      "translation": "Del enlace corto a un detalle verificable del producto"
+    },
+    {
+      "source": "Check a failed lookup without losing track of the original item",
+      "source_sha256": "27739870ed6bf996b9575fd2ec653d97aedc8d57217a3af8d50642bd3e53e2f6",
+      "raw_target_sha256": "c047005c256e755fa8aea43a51fbdff689fba63054dffee9668749306db8c5a2",
+      "translation": "Retoma una búsqueda fallida sin perder la referencia original"
+    },
+    {
+      "source": "Turn historical evidence into a precise current-order request",
+      "source_sha256": "5f13e72f14ff501580a9b4fdca810be349c78afab78a33a06b39386c7f11d029",
+      "raw_target_sha256": "8dd20410c78c0c434c970596a7309e6608dbd538def90e0266f88ffe1564b8e9",
+      "translation": "Usa las fotos antiguas para preguntar por el artículo de tu pedido"
+    },
+    {
+      "source": "Crop for the item you want to identify",
+      "source_sha256": "790ee0b35c5641e4a966061f3cb80b40df08b8668364b5d3c074115541c42584",
+      "raw_target_sha256": "48d83be3a03f7a409504bba32cd5e1dd89c1c696f975159983363b0988a1ecab",
+      "translation": "Recorta la imagen para aislar el producto que buscas"
+    },
+    {
+      "source": "Look for a disqualifying detail",
+      "source_sha256": "85fd95849dfac611e7236e47d2925ca9d2a614811cbddcd1e728ae0881d0e3df",
+      "raw_target_sha256": "aebe8b62577456cec22434e93a5d330d7d3df9cd8ef363224ba6f7b72cab4de5",
+      "translation": "Busca un detalle que descarte la coincidencia"
+    },
+    {
+      "source": "Follow the seller link and option",
+      "source_sha256": "f42fab190563a2b56b98afcfc1dfeea5906a1f912ae7fdf2157af4e5d502cb7b",
+      "raw_target_sha256": "93c3af84fa9a6b98a5232d499e3f3ebb8a9ce31e189dc3d6ee1ecb6cf9243fc8",
+      "translation": "Comprueba el enlace del vendedor y la variante"
+    },
+    {
+      "source": "Decide what to do with uncertainty",
+      "source_sha256": "a88a951da73972f305736c6673270b14a47df93d61379d3ee0135a3d8edae2fb",
+      "raw_target_sha256": "888a7a3b2d175734aca5d648f1efaf44f832a130f00f50138860df2cfb73a646",
+      "translation": "Decide cómo actuar si todavía hay dudas"
+    },
+    {
+      "source": "Compare three candidates from the same original image",
+      "source_sha256": "cb350d6030c4b46c1b1792f2d3bc3911617cdff56853b134782e14c49e95b9a2",
+      "raw_target_sha256": "7ba119c8974d2145efc7f34a55f5073a0d31bd42e980c27904e747ce0a1a5237",
+      "translation": "Compara tres resultados que proceden de la misma imagen"
+    },
+    {
+      "source": "Separate photographic effects from construction differences",
+      "source_sha256": "c6139203a6f1398a48ffe547917dbea1f25d2a169ea20cfd1b2a447f85603489",
+      "raw_target_sha256": "936b578b1f8949f127e79e183d46ac958c81fae120422da88753d245e5f2338e",
+      "translation": "Distingue los efectos de la fotografía de las diferencias de fabricación"
+    },
+    {
+      "source": "Decide whether to buy an alternative or keep looking",
+      "source_sha256": "2f011f66da90961535046f4233478c80d0df60e6ee2862a94b0fed199e86f4b4",
+      "raw_target_sha256": "313809762afe99838e2688110296e9cb2d6b2d47ac64cd426a64c8f1ec06dbee",
+      "translation": "Decide si te sirve una alternativa o prefieres seguir buscando"
+    },
+    {
+      "source": "Map the choices before examining photos",
+      "source_sha256": "255d7c8ec14ef435fde92afd68a0a43e095a70b6c25a8360147886a9117520a5",
+      "raw_target_sha256": "c0cb9568e839c5c93ba27d85aa943f6cf3fdb8d3ee34fad25fdb1e521b2b19d2",
+      "translation": "Anota las variantes antes de examinar las fotos"
+    },
+    {
+      "source": "Choose a feature that actually separates models",
+      "source_sha256": "8799ca5bc8d02d09ed0b1378a5ca8b33e7ea9e370346201770d5e44cd0fb95db",
+      "raw_target_sha256": "bf1b64328f33fa5595f576509eae3ef74f02e5685d9a4ef364d43120db476ad5",
+      "translation": "Elige una característica que de verdad distinga los modelos"
+    },
+    {
+      "source": "Connect the feature to the item",
+      "source_sha256": "12ebb4cf9e504c011cc521696f2594323b8232c640a33cefb4cdd21548c2b567",
+      "raw_target_sha256": "34a402029a721d8049052f78d60663ae485da276ea8c8b53a4dac17bef7995a8",
+      "translation": "Comprueba que el detalle corresponde al artículo correcto"
+    },
+    {
+      "source": "Make an actionable comparison",
+      "source_sha256": "0df2e7627147cba2847dea2e042a8de0a96f594b647d055038436ec154e866ab",
+      "raw_target_sha256": "f47fd13e2253de60dcd12a3ed3599b5e6830240dda93dbc39ddb639c25cae7ce",
+      "translation": "Compara los rasgos que te ayudarán a decidir"
+    },
+    {
+      "source": "Work through a model comparison when every colour is called black",
+      "source_sha256": "85f07f6d82d2156060d37110040bdae5eb224259cc0c9dd894a418b9b01f18de",
+      "raw_target_sha256": "36af0e5942186f4e51ad8adc0c3fc66dd1ad9ea66704a8526895031a1fc210ae",
+      "translation": "Compara los modelos cuando todas las variantes se llaman negro"
+    },
+    {
+      "source": "Use measurements carefully when distinguishing a model",
+      "source_sha256": "b2e1087dd15dc2c95e5d9145a1a0e8a3c5d98d7f29f0b732161c4c120372dc8c",
+      "raw_target_sha256": "c600af4fe0bd1a1e6efb7042dffa0ed1a30d0ca5386e924f074e1a3f4094e256",
+      "translation": "Usa las medidas para distinguir los modelos"
+    },
+    {
+      "source": "Decide what the buyer can responsibly conclude",
+      "source_sha256": "cc18398833d67d6d38695c613591c03883c63b5ad1d7c5330e017ca131a4945d",
+      "raw_target_sha256": "13213e17f32d771837caeaf01035c1b366966ef388a78660cec32df3e9028a77",
+      "translation": "Define qué se puede concluir a partir de las pruebas"
+    },
+    {
+      "source": "Choose the right comparison garment",
+      "source_sha256": "79260407928204fcc0557f1b1de23a8965599b037fe559e60629166fb97112f1",
+      "raw_target_sha256": "aff6ed1c511d68c209834fefa8cc46aeae9c7c8ac08e41f4a06c45d876891a03",
+      "translation": "Elige una prenda adecuada como referencia"
+    },
+    {
+      "source": "Define the measurements precisely",
+      "source_sha256": "40306b513bfbac322c43e1320d0a26847880b6dab7e1b0c33e1562835892d061",
+      "raw_target_sha256": "9f4d6472b05d1d21fe2dfacbce95120518eebe96869bf87b91db23efdc117346",
+      "translation": "Define los puntos exactos de cada medición"
+    },
+    {
+      "source": "Build a measurement card for one jacket you know",
+      "source_sha256": "e4798af923202b2ff97087eca5534a9b51a5b5d784a1b9165fda84ed6a4071aa",
+      "raw_target_sha256": "bbce03706cd0b08c80a81cafb43e3d12b0a75e740d7d1ce03fd7daa9ed91d615",
+      "translation": "Prepara una ficha con las medidas de una chaqueta tuya"
+    },
+    {
+      "source": "Compare two candidate sizes without averaging away an important difference",
+      "source_sha256": "fe5188a12bd15d44d41f4b5b10d85c144c2f46bce9694e1bd26d3a89c2201c86",
+      "raw_target_sha256": "b83b5d1dbaeec41b552e6c407b2edd9f04184c21e193684616451bcd1fbb8483",
+      "translation": "Compara dos tallas sin ocultar sus diferencias al calcular una media"
+    },
+    {
+      "source": "Interpret a warehouse measurement with honest precision",
+      "source_sha256": "0c3c30f433c8cccaec44ed17d3962fcda2c42e24192ff43776f7b893e1130695",
+      "raw_target_sha256": "5dda8a5bc64bd26d376a5fc7c1e6b812e7aa714b77c60a88618762b0278bd0f9",
+      "translation": "Ten en cuenta la precisión que permite la foto"
+    },
+    {
+      "source": "Check the selected colour first",
+      "source_sha256": "f60086ba9bc5be7c6f6d43231d13318e4c2cf0b34e10ccab6b1d422aa510a92e",
+      "raw_target_sha256": "6eecde44601ef8feb3121dc034778a2ea06375c5269bb43b060845d1be23693d",
+      "translation": "Comprueba primero qué color elegiste"
+    },
+    {
+      "source": "Look for clues in the frame",
+      "source_sha256": "efe59593f56aa63c78fef64eb8d975b75839bd5cffd001464421b6879ac48455",
+      "raw_target_sha256": "0b93940d03dc53b6e4de3eb76ed6470ff9a55273db4d818d7d8395a6ff2cbcb8",
+      "translation": "Busca referencias dentro de la foto"
+    },
+    {
+      "source": "Separate three colour decisions using a green jacket as an example",
+      "source_sha256": "4baab858200bb9e5936745703f87e39b7990ac5e94ed97f1063c6b24fbc8b7ad",
+      "raw_target_sha256": "d9c962a97129fa88daf2b2a13901743b3025bfe2946a8f0d81ecb70e65766c74",
+      "translation": "Analiza tres decisiones sobre el color a partir de una chaqueta verde"
+    },
+    {
+      "source": "Understand how the scene changes the apparent colour",
+      "source_sha256": "a523e83ff61830661166f0c1693cf81680ac5542ed4f9a365b788e305dc5d192",
+      "raw_target_sha256": "150aa3e7f96fd387065e2724ffef88a72ba1c1b398fc4f0d4c20c980b5f4d586",
+      "translation": "Observa cómo cambia el color aparente según el entorno"
+    },
+    {
+      "source": "Ask the question that evidence can answer",
+      "source_sha256": "db0d24084d2bd0377c37a6b0128cad4fbdc2cf22bf9d8e074976ed381e567b3c",
+      "raw_target_sha256": "3d16e9fa257f86d779cc964ae1382ecd7020bbef4a3428f7b758d1e4171965a1",
+      "translation": "Formula una pregunta que las imágenes puedan responder"
+    },
+    {
+      "source": "Define the missing information",
+      "source_sha256": "3c764b63fef8628a09588c44ada460889a4dc2ef48a547ea5e118a2c84610674",
+      "raw_target_sha256": "709cf71b62d6ad93cb320353da6e74065566cf5327d2fa8572f55c135e919133",
+      "translation": "Identifica la información que te falta"
+    },
+    {
+      "source": "Match the angle to the feature",
+      "source_sha256": "0513069157b002bf7b90e7ea71e51910182db895aefd2d52b0a37011ec9369f1",
+      "raw_target_sha256": "774e81d2b78921e3b397499ed568a7fd9a18106cac8d94dc5d9feed1d44879ea",
+      "translation": "Elige el ángulo que muestre el detalle"
+    },
+    {
+      "source": "Review the answer against your question",
+      "source_sha256": "6a15d8903ab5e3b19e1774ec990bbeaa81caec662e4bc76042e5fab18656d9c1",
+      "raw_target_sha256": "86e28e4a43c5753456b88a2c4053749acd121fda0c6e93f8f0417ac8ca739922",
+      "translation": "Comprueba si la respuesta resuelve tu duda"
+    },
+    {
+      "source": "Convert an unhelpful request into three practical views",
+      "source_sha256": "0b69c1df7b0cc68084c05e68d82e592cbf9b35939861304b00e992f186ed6db6",
+      "raw_target_sha256": "169d79fa4c0b9c6392738449645593cd86833ecb7bee4fb906baeae18024bb4d",
+      "translation": "Convierte una petición imprecisa en tres tomas concretas"
+    },
+    {
+      "source": "Phrase a measurement request to reduce ambiguity",
+      "source_sha256": "0c95e14502af531bd66e51b0915a61c8ad0acac94b1409e010c31b422d397c28",
+      "raw_target_sha256": "95fdc0454717a8635f49fd77ba56929eb197b7c6557820fd63ad2a25bc41eae8",
+      "translation": "Especifica cómo debe hacerse la medición"
+    },
+    {
+      "source": "Evaluate the returned view as evidence",
+      "source_sha256": "e56ff303654d9961626b9907630fe01bf5832c32af57008825814680dfba14f9",
+      "raw_target_sha256": "485cc456901348b6d152c0475289a69ef62120220cb5e3e505304a6763e7bcfe",
+      "translation": "Determina qué demuestra la imagen recibida"
+    },
+    {
+      "source": "Compare the item with what is visible",
+      "source_sha256": "a2eb5aa12f56c761229379a6749721b6f9792c2f6eb55b87487eaa5ee5fd84f7",
+      "raw_target_sha256": "a287405c3e2b893223a10a5ee2ad124ce5c2d9552f7e351aa72e6d26565351e9",
+      "translation": "Compara el artículo esperado con las piezas visibles"
+    },
+    {
+      "source": "Separate boxes from purchase lines",
+      "source_sha256": "a5c8dcd06c87526bb0a6077d5c2f083391c9940275095051beda3a3fd49bc65f",
+      "raw_target_sha256": "586d89cf5a3fb7697a95c473154686a66a9350a1ff71aa4d8b8cf7006e69091d",
+      "translation": "Distingue el número de cajas de las líneas del pedido"
+    },
+    {
+      "source": "Close or escalate each discrepancy",
+      "source_sha256": "30645cf6336094a8d6ed42e785361853f562349a3ef4f74cefe43611a8baf2b5",
+      "raw_target_sha256": "0993f814db90c50924896a842043eb25182a2883575220972f0282b906a61d8e",
+      "translation": "Resuelve o comunica cada discrepancia"
+    },
+    {
+      "source": "Measure the same object at each stage",
+      "source_sha256": "8798cf052153e8b651eec705a14503b21918c5a32b6b99940b1901f9e4a723d8",
+      "raw_target_sha256": "5aa9dd4e88cbfac8975cff57d6c70287bac0aa19b8f6625abb6c6af00a9a9de2",
+      "translation": "Mide el mismo objeto en cada etapa"
+    },
+    {
+      "source": "Apply only the rule stated for the route",
+      "source_sha256": "e456c467d3556babfa29c8fef1fd84cb8bd4e0f8b430c2314b801cbcd2caf8e2",
+      "raw_target_sha256": "4e2945cedffb20087299699eadab41489f70d2b7100d3ab62d32da90c0b10162",
+      "translation": "Aplica la regla indicada para la ruta elegida"
+    },
+    {
+      "source": "Evaluate a packing change in context",
+      "source_sha256": "d7201bcd60ea33fe2617e5931697058a6f99e0d921578af985e486e0e607dfe5",
+      "raw_target_sha256": "f01396123041feb206543d598e47cbdf4a5bb7270a0c9991aa786c0bec31c0cb",
+      "translation": "Valora el efecto del cambio de embalaje"
+    },
+    {
+      "source": "Work through a packing decision with a real constraint",
+      "source_sha256": "006506f4108646d48d248ec3f1b09c1faaf3ffe25c8ff5b556ceadefa85665e8",
+      "raw_target_sha256": "6b5645d6b3d3a61f8ea313250ee8d81d621c5d0caee8b3d3b432ce62fd6099de",
+      "translation": "Elige el embalaje teniendo en cuenta una limitación concreta"
+    },
+    {
+      "source": "Identify which change could move the final quote",
+      "source_sha256": "b67e165435d8d0cf3fa9800f06aba9ba518cd558b72494dcf1c3d76fc804cd6e",
+      "raw_target_sha256": "b8f42ae65407cec30fa195baa52da91d300abe715f68261dd43c9a155e0fad2d",
+      "translation": "Identifica el cambio que puede modificar el presupuesto final"
+    },
+    {
+      "source": "Capture the route and included services",
+      "source_sha256": "da1cd7e6211bcfb855d1d20b32efdb067a6aa478c402fe78d9ac6c71774d33ab",
+      "raw_target_sha256": "d490962c5d85b38d9712fd1501b0572bf315528418a65c71006bd0553aafa406",
+      "translation": "Anota la ruta y los servicios incluidos"
+    },
+    {
+      "source": "Reconstruct four versions of the same planned shipment",
+      "source_sha256": "763233afcdac6e7d24bfbbe981a17afbcb55eb02f018582daa299d34a300f9e0",
+      "raw_target_sha256": "1c124c138efa3f43a166a7125e0e1ec8fb5cc229e37bd47bf186128bbc619f37",
+      "translation": "Reconstruye cuatro versiones del mismo envío previsto"
+    },
+    {
+      "source": "Use a controlled comparison when only one thing interests you",
+      "source_sha256": "e331c74b383a2f11b5d0c5dc5c7c7e3b6be029a9f59933e7875de870f2b5233f",
+      "raw_target_sha256": "ac6a5909080228130688647a13107379596b7a06a250f57da3d173b51497c803",
+      "translation": "Compara dos escenarios modificando una sola variable"
+    },
+    {
+      "source": "Handle missing records without inventing the old inputs",
+      "source_sha256": "e97db3ca81abd30873811bdd52658649b31145925e12268bf6cd22ef98177ddc",
+      "raw_target_sha256": "c8a01f0830234739100e74046b5d2db2d5ec639dc3411337e71d97584aad1e15",
+      "translation": "Deja constancia de los datos que faltan"
+    },
+    {
+      "source": "Match the reference to its destination",
+      "source_sha256": "cd9a2a3ca3232e3efa2fb0f9741962f25cd027c0022d48b3641123bb930309d2",
+      "raw_target_sha256": "f4b8e89c2fe0f8be59dda30cb3ea95d364cb55cd1a3e2d38dc9e7b37538ae19c",
+      "translation": "Asocia el número de seguimiento con su destino"
+    },
+    {
+      "source": "Read each event literally",
+      "source_sha256": "2b70599d030c10c975c84530335df86a116b6b37766faee3bb4392e3eb862e16",
+      "raw_target_sha256": "cb687a96f7fd656a132379dc5d1ffb788994c385966be7638ce6083886c4c4d5",
+      "translation": "Lee cada evento según lo que dice literalmente"
+    },
+    {
+      "source": "Resolve common apparent contradictions",
+      "source_sha256": "2a4f9834e7fecb19a4af81bb17755cfe5c59563e2874ab251ba5cefb0b76def3",
+      "raw_target_sha256": "ec54eccecbdf9fdf7a51c9b316c868cf86f1548d94df20b47bc20c8994fece31",
+      "translation": "Aclara las contradicciones aparentes más comunes"
+    },
+    {
+      "source": "Open a focused enquiry",
+      "source_sha256": "69898a5f8bf309e6787aae4512e60f951e7b8bb20b2a66ae572275ec8752c360",
+      "raw_target_sha256": "7ac81b3433751cd9d617e2e8c8dce34d46493401449e04cfc966274a66247e2b",
+      "translation": "Envía una consulta concreta"
+    },
+    {
+      "source": "Read a tracking timeline as a sequence of evidence",
+      "source_sha256": "0fbbc40057ceeac70d95b63ffe200eaaff5427b4ddb7f94b4bd576f90ddb2860",
+      "raw_target_sha256": "abbe351255ba21c3f31aeb3afe9aea6775b3e8126967bfe0a23b877e4aa80f88",
+      "translation": "Reconstruye el recorrido mediante los eventos de seguimiento"
+    },
+    {
+      "source": "Write a support message that distinguishes delay from an exception",
+      "source_sha256": "f0f370607d8fbbaa40badfb4a3442c5d0901a49646c4e2b4bb21099d3d0967b6",
+      "raw_target_sha256": "4c55dbdbf508873bfd4e8d1ad7bcea1aff1efb253416c598603d5d592a6973e3",
+      "translation": "Explica a atención al cliente si se trata de un retraso o de una incidencia"
     }
   ]
 }
