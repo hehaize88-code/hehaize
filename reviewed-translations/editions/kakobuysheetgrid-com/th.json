@@ -3,7 +3,7 @@
   "locale": "th",
   "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
   "raw_dictionary_sha256": "82e9344927ff51168bb2b8af1bd1d60cd6830bd41d8313511b7237b1ac7192c7",
-  "effective_dictionary_sha256": "31d94ddb72f0c2f1953e2f16b11840bdcf099a094ef56971e0966e3a1a0f6bb0",
+  "effective_dictionary_sha256": "8f5e36536ef3b9725049f7ee07de9dadfb4a11774f2c44629975b7b3f9027d90",
   "checked_entries": 317,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -62,13 +62,13 @@
       "source": "A repeatable lookup has a simple test. A second person, given only the public listing reference, should be able to follow the same route to the same offer or report that the offer has since changed. Record the date, marketplace name, complete identifier and public gallery address where available. A friend should never need your account password or access to your payment history to reproduce a public product search. Keep purchase-specific checks in your private order record instead.",
       "source_sha256": "417a0e455eb2208f94b218f42ddde1f00fcc10890200381b7a10d4e1d3053498",
       "raw_target_sha256": "7681d56227daba5345dc1ab434d9a83cb717d34838ae364f4fb110c373f48f72",
-      "translation": "ลองให้คนอื่นใช้เพียงข้อมูลอ้างอิงสาธารณะของประกาศ หากเขาตามเส้นทางเดียวกันไปถึงสินค้าเดิมหรือระบุได้ว่าประกาศเปลี่ยนไปแล้ว ก็ถือว่าตรวจซ้ำได้ จดวันที่ ชื่อตลาดออนไลน์ รหัสสินค้าเต็ม และลิงก์แกลเลอรีสาธารณะหากมี การค้นหาสินค้าสาธารณะไม่ควรต้องใช้รหัสผ่านหรือประวัติชำระเงินของคุณ ส่วนการตรวจคำสั่งซื้อเฉพาะตัวให้เก็บไว้ในบันทึกส่วนตัว"
+      "translation": "ให้คนอื่นลองตามเฉพาะข้อมูลประกาศสาธารณะ หากเจอประกาศเดิมหรือบอกได้ว่ามีการเปลี่ยนแปลง ก็ตรวจซ้ำได้ จดวัน ชื่อตลาด รหัสเต็ม และที่อยู่แกลเลอรีถ้ามี การค้นสาธารณะไม่ต้องใช้รหัสผ่านหรือประวัติชำระเงิน ให้เก็บการตรวจคำสั่งซื้อเฉพาะตัวไว้เป็นส่วนตัว"
     },
     {
       "source": "A public product find can generate several addresses that look plausible in isolation. The spreadsheet has its own page for the item, the agent can show a product detail page, and the original seller lists the product on a marketplace. A link to the product image opens a fourth destination. Use meaningful field names when you save them. “Spreadsheet discovery page,” “agent purchase page” and “original marketplace offer” are more useful a week later than three unlabeled links in a chat.",
       "source_sha256": "771121fbb381151f4e0fbf7cd4ac34d5310f59ce817cc22d1b0f87759b1db503",
       "raw_target_sha256": "2dfaa4270104cacaa4743b2089e528e50427ac7a99a852ae675b1eaf67544f61",
-      "translation": "สินค้าหนึ่งชิ้นอาจมีหลายลิงก์ หน้าสินค้าในตาราง หน้ารายละเอียดของตัวแทนซื้อ และหน้าประกาศต้นทางของผู้ขายเป็นคนละที่ ส่วนลิงก์ไฟล์ภาพพาไปอีกแห่ง ตั้งชื่อช่องเมื่อบันทึก เช่น “หน้าที่พบสินค้าในตาราง” “หน้าสั่งผ่านตัวแทน” และ “ประกาศต้นทางของร้าน” เมื่อย้อนดูในสัปดาห์ถัดไป คุณจะรู้ว่าต้องเปิดหน้าไหนโดยไม่ต้องเดาจากลิงก์สามอันในแชต"
+      "translation": "หน้าตาราง หน้าซื้อผ่านตัวแทน ประกาศของร้านบนตลาด และไฟล์ภาพเป็นคนละปลายทาง ตั้งชื่อว่า “หน้าที่ค้นพบ” “หน้าซื้อตัวแทน” และ “ประกาศร้านต้นทาง” เป็นต้น ผ่านไปหนึ่งสัปดาห์จะยังรู้ว่าต้องเปิดอันไหน"
     },
     {
       "source": "Open both selected options and compare the words describing the contents. One seller may explicitly list a woven strap and an internal pouch, while the second shows both in a product photograph without specifying inclusion. Record the second listing's package contents as unclear. Contact that seller if the difference determines your choice. A positive answer from the first shop cannot resolve the second shop's offer, even if the same photograph and nearly identical product name appear on both pages.",
@@ -98,7 +98,7 @@
       "source": "For the storage box, keep the length, width, height and lid choice beside the link. If the seller uses a label such as “large with lid,” preserve that exact wording and add the dimensions separately. If the link later shows an amended size chart, the original observation remains traceable to a date. You can then decide whether the current offer still serves your purpose, without having to reconstruct why an earlier buyer associated a particular capacity or price with the shared address.",
       "source_sha256": "0aea8c0b2ade58fdbbae55ea10c2b078084b127205918d0a8e4569660ead0fd3",
       "raw_target_sha256": "9d40418794fefe69c558d65bd32df51299915d6bb717f933f52c296149574fbe",
-      "translation": "สำหรับกล่องเก็บของ ให้จดความยาว ความกว้าง ความสูง และตัวเลือกฝาไว้ข้างลิงก์ ถ้าร้านเรียกตัวเลือกว่า “ขนาดใหญ่พร้อมฝา” ให้เก็บข้อความเดิมแล้วเพิ่มขนาดจริงอีกช่อง หากภายหลังลิงก์เดิมแสดงตารางขนาดใหม่ จะยังย้อนดูสิ่งที่เห็นตามวันที่ได้ และตัดสินใจว่าข้อเสนอปัจจุบันเหมาะหรือไม่โดยไม่ต้องเดาว่าทำไมคนซื้อก่อนหน้าจึงผูกความจุหรือราคานั้นกับลิงก์นี้"
+      "translation": "กล่องเก็บของควรจดกว้าง ยาว สูง และรุ่นฝาคู่ลิงก์ เก็บคำจริง เช่น “ใหญ่พร้อมฝา” และแยกขนาดอีกช่อง หากตารางเปลี่ยนภายหลังจะยังเห็นว่าวันนั้นข้อมูลว่าอะไร จึงตัดสินข้อเสนอปัจจุบันได้โดยไม่ต้องเดาว่าราคาหรือความจุเดิมมาจากไหน"
     },
     {
       "source": "KakoBuy QC lookup: matching a photograph by marketplace and item ID",
@@ -159,6 +159,468 @@
       "source_sha256": "cb73284ec36da0cbb2899dca06f01d4fbf451b51eae43f8a6a2f1cde5248ff7b",
       "raw_target_sha256": "ba612b43632899f035a75666ee4d6926fd9c524af3b81b43db84ed6ded8c6d78",
       "translation": "สิ่งที่ควรตรวจเมื่อผู้ขายแก้ไขหน้าสินค้าบน KakoBuy หลังจากที่คุณบันทึกหรือสั่งซื้อไปแล้ว"
+    },
+    {
+      "source": "KakoBuy shopping guides",
+      "source_sha256": "d73045cd66940b81c6a2c0f276876c11bb3447e9f14bfd7cdc17992a500f8d23",
+      "raw_target_sha256": "faca203681d1eb432155461445a9c8152ed0d5284d39ef7ea437c9ea7caa1ead",
+      "translation": "คู่มือซื้อสินค้าผ่าน KakoBuy"
+    },
+    {
+      "source": "Check a KakoBuy find against its original listing, selected option and warehouse photographs.",
+      "source_sha256": "0a494b3eb125e58347ed837e4a019a3b73b7e00697cd621403509a6114a5790e",
+      "raw_target_sha256": "b632f32ed716dc8390525d6711a6b9c9573d9849e3ad4bfcf8f6b0a73af8c194",
+      "translation": "ตรวจสินค้าที่พบใน KakoBuy เทียบกับประกาศต้นทาง ตัวเลือกที่ซื้อ และภาพถ่ายจริงจากคลัง"
+    },
+    {
+      "source": "A number can narrow a search from thousands of similar product photographs to one seller listing. It is most useful when you also retain the marketplace, the selected option and the date of the reference.",
+      "source_sha256": "af5e81d9243611c1e390d1a639ac3de720415f691c140d5b9bc10d599445979e",
+      "raw_target_sha256": "9ac292bd36b742d5fcdc8315f3619079ae2af2fd9f0b11153c75d00832a7b927",
+      "translation": "รหัสสินค้าช่วยจำกัดการค้นจากภาพคล้ายกันจำนวนมากให้เหลือประกาศเฉพาะของร้าน จดแพลตฟอร์ม ตัวเลือกที่สนใจ และวันที่ของภาพอ้างอิงไว้คู่กัน"
+    },
+    {
+      "source": "Identify the number you actually have",
+      "source_sha256": "683d9d094177ce98a0e1db11ded7a8f0771abe2b3c17e7bb8fe9a87e6191eed0",
+      "raw_target_sha256": "d1a8e96dcd61c75d3d8e5d27f1872b2e98062f631e3a9c8585504af9ae3a8415",
+      "translation": "แยกให้ออกว่าหมายเลขที่มีคืออะไร"
+    },
+    {
+      "source": "Start on the purchase page for the product you mean to investigate. Follow the original seller link and record its marketplace. A Weidian listing can carry an itemID value in the seller URL. The smaller number at the end of a Sheet Grid catalogue page identifies a different record. An agent order reference, domestic tracking number and warehouse intake reference also serve different purposes. Keep their names beside them when copying numbers to your notes.",
+      "source_sha256": "13a9cbcc8de0ea599e6f8055b329439d6bd35327bb3066b33d8838c4eb7a0b62",
+      "raw_target_sha256": "d130ddc67e03e86ad20b7ba2e694082fbbc4ccb929feedaf9b3ff376199cd22e",
+      "translation": "เปิดสินค้าจากหน้าซื้อแล้วตามลิงก์ไปหน้าร้านเดิม จดชื่อตลาดออนไลน์ด้วย ค่า itemID ใน URL ของ Weidian เป็นคนละรหัสกับเลขสั้นท้ายหน้าสินค้า Sheet Grid ส่วนเลขคำสั่งซื้อของตัวแทน เลขติดตามในจีน และเลขรับเข้าคลังก็ใช้คนละงาน กำกับชื่อทุกเลขเมื่อคัดลอก"
+    },
+    {
+      "source": "Run a lookup with the source attached",
+      "source_sha256": "132e36893c50b48c2cbd140c7b017184bdec39dfe79194061f92e5f7bffb05ab",
+      "raw_target_sha256": "31cf7c4db4d51180d141d68874eca994af71aaa43140e9a01be1b03976748808",
+      "translation": "เก็บต้นทางพร้อมผลค้น"
+    },
+    {
+      "source": "Use the complete source product link where a QC finder accepts it. If a service asks for a marketplace and number separately, use the pair from the same original listing. Save both the search input and the result so another person can reproduce your comparison. A result reached only by typing a broad garment name is a candidate for review. Compare its original seller identifier before attaching the photos to your intended order.",
+      "source_sha256": "622575c874c4c7cc4805592c7402d07977364da2b716748cdb4f40dffbdbd4c5",
+      "raw_target_sha256": "a5ef699179cd3317a642288fc77b2aa8a7855ba77aab0283fb39208483c3f82e",
+      "translation": "หากเครื่องมือ QC รับลิงก์สินค้าเต็ม ให้ใช้ลิงก์ของร้านต้นทาง หากต้องกรอกแพลตฟอร์มและรหัสแยก ให้ใช้ข้อมูลจากประกาศเดียวกัน เก็บข้อมูลที่กรอกและผลลัพธ์ไว้ ภาพที่ค้นด้วยชื่อเสื้อผ้ากว้าง ๆ ยังเป็นเพียงผู้สมัคร ตรวจรหัสของร้านก่อนผูกภาพกับคำสั่งซื้อ"
+    },
+    {
+      "source": "Test what the album can establish",
+      "source_sha256": "b77c23dd1b3a3f286748939ad6dcd50326dfdafd37ec6b510219185e9ab32d51",
+      "raw_target_sha256": "e7c25e918163a4389986f2c02cdd6b12411390cc5db9005e56d4db3dd958b04c",
+      "translation": "อัลบั้มนี้ยืนยันอะไรได้"
+    },
+    {
+      "source": "Suppose the listing has a black jacket and a navy version with a different lining. An old front photograph might confirm the shape of the pockets. Without the option label or a visible lining it cannot settle which version was photographed. Describe the strongest observation you can make, such as two flap pockets visible. Keep a separate note for the unresolved question, such as the material on the inside of the navy version.",
+      "source_sha256": "5ec4739de5ac287db1ae890db015c06536b9aff52e17a857b125e2c5dd408105",
+      "raw_target_sha256": "f70b898e8560123250586448043397201520925197b19c78c638f1d4dfbd3109",
+      "translation": "สมมติเสื้อแจ็กเก็ตสีดำกับสีกรมท่าใช้ซับในต่างกัน ภาพด้านหน้าเก่าอาจยืนยันว่ามีกระเป๋าฝาปิดสองใบ แต่หากไม่มีป้ายรุ่นและไม่เห็นซับใน ก็ยังระบุไม่ได้ว่าถ่ายรุ่นใด บันทึกสิ่งที่เห็นแยกจากคำถามเรื่องวัสดุซับในของสีกรมท่า"
+    },
+    {
+      "source": "Handle empty and conflicting results",
+      "source_sha256": "86f0f8ed4ebcea434b348040451090dd1eaaf99121ff8acb48b391ea3fb13808",
+      "raw_target_sha256": "ad13badb3b683d7eabf104764b46a862ecb61d81c9a5089ce9bf9d08d51ea47a",
+      "translation": "เมื่อไม่พบภาพหรือได้ผลขัดกัน"
+    },
+    {
+      "source": "Check the marketplace, the intact item number and whether you copied an item link rather than a shop homepage or an image URL. A finder may have no public album for an otherwise valid listing. If two albums conflict, compare dates, options, packaging and the particular detail visible. A seller can update a listing over time, or a gallery may mix options. Do not average inconsistent evidence into a confident claim.",
+      "source_sha256": "1a489ea249154b07f2fcf271a7e73a766a2e8ce217a8c8fddf19e59101f984ff",
+      "raw_target_sha256": "42944494a54999e26c8c26281d1a40c98322eef7803b5463fed8b0f85473ccdc",
+      "translation": "ตรวจตลาดออนไลน์ รหัสเต็ม และปลายทางว่าคือประกาศสินค้า ไม่ใช่หน้าแรกของร้านหรือไฟล์ภาพ ประกาศที่ยังเปิดได้อาจไม่มีอัลบั้มสาธารณะ หากสองอัลบั้มแสดงต่างกัน ให้เทียบวัน รุ่น บรรจุภัณฑ์ และชิ้นส่วนที่เห็น ร้านอาจแก้ประกาศ หรือแกลเลอรีอาจรวมหลายตัวเลือก จึงไม่ควรสรุปให้เหลือคำตอบเดียวเมื่อหลักฐานขัดกัน"
+    },
+    {
+      "source": "Move from reference to order evidence",
+      "source_sha256": "9ed065b23590b45f6beb8c1ccf8daeb98e2dd522748aa623df49a679eb5b80d6",
+      "raw_target_sha256": "c24bc3d8c93ef3172940cb3d6c8721a2f529b6204e4218c31e48540e102eb4e0",
+      "translation": "หลังสั่งซื้อให้ใช้หลักฐานของตนเอง"
+    },
+    {
+      "source": "Before purchase, decide whether the missing detail matters enough to ask the seller or leave the item on your shortlist. After purchase, use the photographs tied to your own order for decisions about the received unit. Retain the older album as a comparison and clearly label its origin. If the new unit differs, identify the specific feature and quote your selected option, rather than promising support that the historical picture describes every item now supplied.",
+      "source_sha256": "c5c0445fa667385723420119717be5caa752fbae6333e27fa682002141e07d82",
+      "raw_target_sha256": "bc26c845548eb78067d650eff33d7f254890dd426cefbcbf0e63c0e3d74bb0f7",
+      "translation": "ก่อนซื้อให้ตัดสินว่าข้อมูลที่ขาดสำคัญพอจะถามร้านไหม หรือจะคงไว้ในรายชื่อก่อน หลังซื้อให้ใช้ภาพที่ผูกกับคำสั่งซื้อของตนตัดสินของที่ได้รับ เก็บอัลบั้มเก่าเป็นตัวเทียบโดยระบุต้นทาง หากต่างกัน ให้แจ้งจุดที่ต่างกับข้อความตัวเลือกจริง ภาพในอดีตไม่ยืนยันสินค้าทุกชิ้นในปัจจุบัน"
+    },
+    {
+      "source": "Make the search repeatable",
+      "source_sha256": "41fe2a015405703a0ba5cb2de2274c2cd8b536bd76c6c2f86e57f22dc6c8b1f3",
+      "raw_target_sha256": "589b0dfc749f211cc49988daa85f5902ee61da07a3f5a789c0dd4c6e6f27f020",
+      "translation": "ทำให้คนอื่นค้นซ้ำได้"
+    },
+    {
+      "source": "Imagine a friend sends a cropped photo of a brown overshirt. The corner shows part of an item number. Searching that partial number might produce a page with an overshirt, but several digits or even the marketplace could be missing. Ask for the product link that accompanied the photo. If your friend only has the image, create a visual-reference note and leave its seller blank. The distinction matters weeks later when you are deciding whether to buy a listing that happens to resemble the picture.",
+      "source_sha256": "f0f32d1cf7da340badd62ae005f1e5371d7835c49eacba4c11290d36ffefbc9b",
+      "raw_target_sha256": "a2bf2475afffeba36f5872537ac6e77dc1e14cdcbf5f6548275f92694561b2a7",
+      "translation": "เพื่อนอาจส่งภาพครอปของเสื้อคลุมเชิ้ตสีน้ำตาล เห็นเลขสินค้าเพียงบางหลัก การค้นเลขส่วนนี้อาจเจอเสื้อคล้ายกัน แต่เลขยังไม่ครบหรืออาจเป็นคนละตลาด ขอให้เพื่อนส่งลิงก์ที่มากับภาพ หากมีแต่ภาพ ให้ระบุว่าเป็นตัวอย่างหน้าตาและเว้นช่องร้านไว้ อีกหลายสัปดาห์จะได้ไม่หลงคิดว่าประกาศที่คล้ายกันคือร้านเดิม"
+    },
+    {
+      "source": "Check the gallery against a feature you can distinguish",
+      "source_sha256": "51a9fec978d350cc53c4aa47db713c962ded333ff3642e63ddb2c02e75b4bea1",
+      "raw_target_sha256": "9a4c038951f0eaa36719c82fce13895554ef814e92fc6d7a2e2ea75704ee98cb",
+      "translation": "เลือกจุดที่ต้องการดูก่อนเปิดภาพ"
+    },
+    {
+      "source": "Choose a detail before opening a gallery. For the overshirt, the relevant question might be whether a button sits on each cuff or whether the cuff closes with a snap. Look for an angle where the closure is open and the inside surface is visible. A front photograph with the sleeves folded underneath may show the cloth colour and approximate cut while telling you nothing about either cuff. Describe what is visible separately from what you infer from the seller description.",
+      "source_sha256": "c7353b5cd8eae57e4560459f55eef63a611f4983fdab453848265182d9621436",
+      "raw_target_sha256": "a9320ebf95d2419c3e9b04db9acfa0cfc205fcb23bb803d6bcaf42686d6153da",
+      "translation": "ถ้าอยากรู้ว่าปลายแขนเสื้อคลุมใช้กระดุมธรรมดาหรือกระดุมแป๊ก ให้หาภาพที่ปลดส่วนปิดและเห็นด้านใน ภาพหน้าเสื้อที่พับแขนซ่อนไว้อาจเห็นสีและทรงโดยรวม แต่ตอบเรื่องปลายแขนไม่ได้ แยกสิ่งที่เห็นจากสิ่งที่เดาตามคำบรรยายร้าน"
+    },
+    {
+      "source": "Consider how two photos could disagree without either being altered. A photograph of the brown option may show dark fasteners and one of the cream option may show pale fasteners. The gallery could then contain two visually different cuffs under one marketplace item ID. Check the option tag if one exists. Where it is missing, use the photos to formulate a more precise question for the seller, such as whether the brown option currently has dark buttons at both cuffs.",
+      "source_sha256": "3e19c01c5d5b57e727f7082d9824422816925b99e276db063967d65d80cc8963",
+      "raw_target_sha256": "16d08db74b468c6e33b4ec269a248d1cf5445fe5de2d4734d655e8b34e4a6cc0",
+      "translation": "ภาพสีกรมเข้มของกระดุมบนรุ่นน้ำตาลกับกระดุมสีอ่อนบนรุ่นครีมอาจเป็นภาพจริงทั้งคู่ รหัสเดียวกันจึงมีปลายแขนสองแบบได้ เช็กป้ายตัวเลือกหากมี หากไม่มี ใช้ภาพตั้งคำถาม เช่น รุ่นน้ำตาลที่ขายตอนนี้ใช้กระดุมสีเข้มที่ปลายแขนทั้งสองข้างหรือไม่"
+    },
+    {
+      "source": "Read dates in context",
+      "source_sha256": "ca11afc383ed65afb16ea4db456936b0b0ca52c8acc93ab989217a58d37a73a2",
+      "raw_target_sha256": "b0af9992296d3fd04e05898c0bfbdde95cf92711fb8cd855d661a0bad273451e",
+      "translation": "ดูว่าวันที่หมายถึงเหตุการณ์ใด"
+    },
+    {
+      "source": "A photograph's publication date and the date a buyer received the item need not coincide. When a finder supplies only one date, write down the label beside the date. Avoid assigning the image to a particular production run unless the source actually supplies that information. If the seller page recently acquired a new colour name, an old gallery result is still a reference for the listing, but the connection to the new option needs separate evidence. Do not rename an older image to match the newer choice.",
+      "source_sha256": "ec42f7cd62a6c76d97ecddc0af1fbbb8a058f5352c7d307e560d67c24e56e947",
+      "raw_target_sha256": "d7c7a0d9668e8628504d23f9bc0f83d0225f588564b98e14f640702c7bb46ad9",
+      "translation": "วันที่เผยแพร่ภาพกับวันที่ผู้ซื้อได้รับของอาจไม่ตรงกัน หากแสดงวันเดียว ให้จดชื่อช่องข้างวันที่ด้วย อย่าระบุล็อตผลิตเองหากแหล่งที่มาไม่ได้บอก เมื่อร้านเพิ่งเพิ่มชื่อสี ภาพเก่าอ้างถึงประกาศได้แต่ยังไม่ยืนยันสีใหม่ อย่าเปลี่ยนชื่อภาพเก่าให้กลายเป็นภาพของรุ่นใหม่"
+    },
+    {
+      "source": "For a simple comparison, write two dated lines. One could say that the album seen on Monday showed a brown overshirt with two visible chest pockets. The other could say that on Thursday the seller offered a brown option whose description mentioned one chest pocket. The two lines preserve the disagreement precisely. A support question can now ask which pocket arrangement applies to the presently selected brown option without arguing about whether the entire listing is accurate.",
+      "source_sha256": "c4186b9c0601979a287ace8e07e28767f16d6506c06270dbecee9e9c60c40663",
+      "raw_target_sha256": "cb1fa97f7e4c97a36ceb10e9ad6c2d21e44333318f988d1e3550f4507de2fdea",
+      "translation": "เขียนสองบรรทัดพร้อมวัน เช่น ภาพที่เห็นวันจันทร์มีช่องอกสองช่องบนเสื้อสีน้ำตาล แต่วันพฤหัสร้านบรรยายรุ่นน้ำตาลว่ามีช่องอกหนึ่งช่อง จากนั้นถามได้ตรง ๆ ว่าตัวเลือกสีน้ำตาลปัจจุบันมีช่องอกแบบไหน โดยไม่ต้องโต้เถียงว่าประกาศทั้งหมดถูกหรือผิด"
+    },
+    {
+      "source": "Read the gaps in an otherwise convincing album",
+      "source_sha256": "b61d26d1b11a51c0bc0fded93daf0f475eddf88dee3843d059e999f71934599b",
+      "raw_target_sha256": "f8bb16787cfb330535f30f5ad4484f630f021674b29f8a5c0d6a24193a2b5c23",
+      "translation": "ช่องว่างในอัลบั้มที่ดูน่าเชื่อถือ"
+    },
+    {
+      "source": "Several photographs can all originate from the same unit. Five angles of a garment spread on a green table give more information about that garment, but they do not establish that five buyers received it. Look for shared folds, identical tags and repeated packing labels when assessing the range of examples. Count distinct units only when the source gives you a basis for doing so. Otherwise describe the number of useful views and avoid implying that you assessed a larger sample.",
+      "source_sha256": "0230afc08ed90755faad17db31268eba54929a931853cc4285b16de5d7ac32f7",
+      "raw_target_sha256": "d53ad599fb84962b0c1ddd2e04a206489ce4554b2addd1db1ab3bd3a1b2dc830",
+      "translation": "ภาพเสื้อบนโต๊ะเขียวห้ามุมอาจมาจากเสื้อตัวเดียว จึงไม่ใช่หลักฐานว่าผู้ซื้อห้าคนได้รับของแบบนั้น สังเกตรอยพับ ป้าย และฉลากกล่องที่เหมือนกัน นับจำนวนชิ้นจริงเมื่อมีที่มารองรับ ไม่เช่นนั้นให้บอกเพียงว่ามีภาพจากกี่มุมที่ตอบคำถามได้"
+    },
+    {
+      "source": "A series can also omit precisely the feature that matters. A bag might be shown from the front, back and both sides while its interior remains closed. The gallery could resolve whether it has external side pockets and leave the number of interior compartments unanswered. Save the picture that best shows the external pockets. Write down the interior question beside it so the next stage of your research addresses that missing detail instead of repeating a search that has already yielded all it can.",
+      "source_sha256": "bc86be88a6bf01f9f3c220ce01f4b148c8deed1c6d686fb006bb3972ea12e8aa",
+      "raw_target_sha256": "cfbb5d0b56d616c3f8e777fa4ab1293ceb6ba1b6fe92491d8fd6a74213400096",
+      "translation": "ภาพกระเป๋าครบหน้า หลัง และสองข้างอาจยังไม่เห็นช่องภายในหากไม่เปิดปาก เก็บภาพที่แสดงกระเป๋าข้างชัดที่สุดแล้วเขียนจำนวนช่องข้างในเป็นคำถามค้าง การค้นรอบต่อไปจึงมุ่งหาภาพเปิดกระเป๋าแทนการย้อนดูภาพภายนอกซ้ำ"
+    },
+    {
+      "source": "Bring the correct comparison back to your order",
+      "source_sha256": "0b3abd1cab83b94882571827a47acc28b9e21cd2db59cf2b5408c26a808178ee",
+      "raw_target_sha256": "95876d335098a6efe2c51a3113bc2f13f82ed1e9168df9fbadeba839b1a5fc9c",
+      "translation": "นำผลเทียบกลับมาตรวจของในคำสั่งซื้อ"
+    },
+    {
+      "source": "Once your own warehouse record is available, start a separate folder or note for the received item. Include the selected option as it appeared on the order, then add your observations about the received unit. If the newly photographed garment has an unexpected cuff, compare its label and the specific closure against the saved seller option. The old public image can illustrate what prompted your initial question. Your paid selection and your own photographs explain the actual order difference.",
+      "source_sha256": "5c2d2819dccb841b75a3f7666c9bb056c5bcb7273f89943b7af7ec12118d6b5e",
+      "raw_target_sha256": "4e96680a5e832c7e53ddd667f22a8c7e0ffe521bb2f828779baa929a8beba0d2",
+      "translation": "เมื่อได้บันทึกรับเข้าคลังของตน ให้แยกโน้ตสำหรับของจริง ใส่ตัวเลือกตามคำสั่งซื้อแล้วจดสิ่งที่เห็น หากปลายแขนต่างจากที่คิด ให้เทียบป้ายและตัวปิดกับตัวเลือกร้าน ภาพสาธารณะเก่าบอกที่มาของข้อสงสัย ส่วนตัวเลือกที่จ่ายกับภาพของตนบอกความต่างในคำสั่งซื้อจริง"
+    },
+    {
+      "source": "For a message requesting clarification, supply only the pieces someone needs to act. Identify the order privately, name the selected option, describe the visible detail and ask for the missing view or confirmation. A message such as “Please show the open left cuff of the brown overshirt so I can see whether it closes with a button” gives the reader a clear action. If the current photo answers the question, close the note with that observation and its date.",
+      "source_sha256": "e750d7efb539eb2aad7831eac9ace3265062871dba70bf07debd19c736168ae9",
+      "raw_target_sha256": "e2161d913ba338554ceae1c8cfd90601b07a9dd017cd13217c0420bfe8add864",
+      "translation": "ส่งเลขคำสั่งซื้อในช่องส่วนตัว พร้อมตัวเลือก รายละเอียดที่เห็น และจุดที่ต้องยืนยัน เช่น “ช่วยเปิดปลายแขนซ้ายของเสื้อคลุมสีน้ำตาลให้เห็นว่าใช้กระดุมธรรมดาไหม” หากภาพเดิมตอบได้แล้ว ให้จดผลและวันที่แล้วปิดเรื่อง"
+    },
+    {
+      "source": "A seller can place many combinations on one product page. The marketplace identifier finds that page; a saved selection explains which one of those combinations you wanted.",
+      "source_sha256": "18246cac84856870c1636dd13c592b4b4ca981c3eb311127262bdff1a79ef87e",
+      "raw_target_sha256": "d755be3de83dfc66f52bae0e6942955c7c28045b96f40ef3a841a1a89a0456a4",
+      "translation": "หนึ่งประกาศอาจมีหลายชุดตัวเลือก รหัสสินค้าใช้หาหน้าประกาศ ส่วนข้อมูลที่บันทึกจากตัวเลือกบอกว่าต้องการชุดไหน"
+    },
+    {
+      "source": "Separate three records",
+      "source_sha256": "efa48977e1995b32fba39bd62896468e8264f5e4a78b2bf63af99c6b7f0d73e0",
+      "raw_target_sha256": "390db0f15b4faae3c95c6b7b445fb274af3f89fffaf78d7bac949e0e06e85aac",
+      "translation": "แยกข้อมูลสามประเภท"
+    },
+    {
+      "source": "Keep the seller listing, the selected option text and the paid order summary. The first record identifies an offer, the second identifies a choice within it, and the third shows what was submitted. An internal stock keeping unit may be visible for some selections. When no SKU is displayed, do not manufacture one by inventing a number or appending a colour name to the item link.",
+      "source_sha256": "eb05d514c5b5400c8219884759593a4a2c52d74b71c68ca3951fa723107e5ae2",
+      "raw_target_sha256": "bd922f2c7fd67bc341d54d450e7148a08c8e574bb251141896774f3c63413269",
+      "translation": "เก็บประกาศต้นทาง ข้อความตัวเลือกที่เลือก และใบสรุปที่ชำระแล้ว แยกให้เห็นว่าร้านเสนออะไร คุณเลือกอะไร และส่งคำสั่งซื้ออะไร หากมี SKU ภายในของร้านให้จดไว้ ถ้าไม่แสดง อย่าคิดเลขขึ้นเองหรือต่อชื่อสีท้ายลิงก์"
+    },
+    {
+      "source": "Change one selector at a time",
+      "source_sha256": "c30591a785988c209a7e3a330987e0fbfe8bb07776aa530f085b6e55b2d987dd",
+      "raw_target_sha256": "5078ebdf316dcf0a48837bb0e16c0cafb1f900a434783e734925509d7444eca4",
+      "translation": "เปลี่ยนเงื่อนไขครั้งละอย่าง"
+    },
+    {
+      "source": "Open the listing and choose a colour while holding size constant. Observe whether the image, available sizes, price or quantity changes. Now change size and repeat. Two almost identical labels can refer to different fabric, an earlier model or a version sold without accessories. Keep the original seller wording as well as any translation. The word black alone rarely distinguishes two black choices if the seller uses a suffix to separate them.",
+      "source_sha256": "699eb003d97919885ef49f85fa99552cd96e507f63e3405fc3fcc4045d8dca7e",
+      "raw_target_sha256": "0baef3e3f13762a0cf41fe637cd41a2ce58b79f68a03a39b638b11eb05b47a22",
+      "translation": "คงไซซ์เดิมแล้วเปลี่ยนสี ดูว่าภาพ ไซซ์ที่ยังเลือกได้ ราคา หรือจำนวนเปลี่ยนหรือไม่ แล้วลองเปลี่ยนไซซ์ ชื่อสองแบบที่เกือบเหมือนกันอาจแยกผ้า รุ่นเก่า หรือของที่ไม่รวมอุปกรณ์ เก็บคำร้านคู่คำแปล โดยเฉพาะคำต่อท้ายตัวเลือกสีดำสองแบบ"
+    },
+    {
+      "source": "Reopen the copied link",
+      "source_sha256": "f8cd29da92076a77989e6dd0da6c817f8c76c0a2dc697fa20fd707baf351871c",
+      "raw_target_sha256": "c5c51711370cca52dd3af8ff3e1643bc7a4f2445cc255ee5758ee9328a7968e0",
+      "translation": "เปิดลิงก์ที่คัดลอกอีกครั้ง"
+    },
+    {
+      "source": "Copy the source link and open it in a fresh tab. If the page starts at a default selection, the link is useful for finding the listing but does not preserve your choice. Keep the option notes beside it. If a link appears to restore a choice, still confirm the order summary before payment. A prior selection in a shopping session or an edited listing can affect what a returning visitor sees.",
+      "source_sha256": "f25add19326f78acc6bcf3ba69b15833ab1ca304ded892dc7929a6fa4165474a",
+      "raw_target_sha256": "544b3115c90c8ccb339e63f6de46135fbdeda882e09e7913356459714af65e01",
+      "translation": "เปิดลิงก์ในแท็บใหม่ ถ้ากลับไปตัวเลือกเริ่มต้น แปลว่าลิงก์เก็บเฉพาะหน้า ให้จดรุ่นแยก แม้เปิดแล้วได้รุ่นเดิมก็ยังต้องตรวจสรุปก่อนจ่าย เพราะเซสชันก่อนหน้าหรือการแก้ประกาศมีผล"
+    },
+    {
+      "source": "Compare options as complete combinations",
+      "source_sha256": "fd6c015143b207705c0742f1114fdd46f4e4ca1ed94902c37475cad679bb9d9d",
+      "raw_target_sha256": "f7d3f50c3992f2a9eb52c377b7a23be7af65bc3795a7e5b13febbf6701bb1561",
+      "translation": "เทียบทั้งชุดที่เลือก"
+    },
+    {
+      "source": "Imagine one row showing trousers, a jacket and a complete suit. The cheapest price could correspond to the trousers. Add the exact jacket-and-trousers option before comparing its subtotal with a different shop's full suit. For quantities, record complete sets separately from pieces. Two units of a suit and two individual garments represent different orders even when a cart shows the number two in both cases.",
+      "source_sha256": "65231a70dbf8b5eebc24dc1f34b1c0c0a053e6c6324b71b98fc5ab68d4ec2da8",
+      "raw_target_sha256": "1ed48d9dd44c73331fd72629bb8ab051510b867f275b84189d717ff4f529c456",
+      "translation": "หากประกาศเดียวขายกางเกง แจ็กเก็ต และชุดสูท ราคาต่ำสุดอาจเป็นกางเกงตัวเดียว ให้เลือกชุดเสื้อกับกางเกงก่อนเทียบยอดกับร้านอื่น แยกจำนวนชุดกับจำนวนชิ้น สูทสองชุดกับเสื้อผ้าสองชิ้นไม่ใช่ของแบบเดียวกันแม้ตะกร้าแสดงเลขสอง"
+    },
+    {
+      "source": "Match the warehouse entry to the selection",
+      "source_sha256": "bd65ef37d041b5ad6093a1695df1a2881396be9b85e8fa58cc5da4d65d224f51",
+      "raw_target_sha256": "d5974013ce9b2fea6bab6790068cbcb5db267e5680222ab8984664b77ade2ddf",
+      "translation": "จับคู่รายการเข้าคลังกับตัวเลือก"
+    },
+    {
+      "source": "When photographs arrive, identify the order and the option on the received unit. A size label can support a size check, while a picture showing both pieces helps confirm a set. Ask for the missing feature in a new view if the existing picture does not resolve the question. An item ID match is a necessary link in the evidence chain, but it cannot select a colour or count an accessory for you.",
+      "source_sha256": "4051f673eddcd1fa3d2127b0f5aad3d0533f17c221cc6bc8cb6e610888c7c4c6",
+      "raw_target_sha256": "b605fc1834474c7059b05bf7cc5e0905247ffd8e71a488175dcec64fdc1ec849",
+      "translation": "เมื่อภาพมาถึง ให้จับคู่กับคำสั่งซื้อและรุ่นของที่ได้รับ ป้ายช่วยบอกไซซ์ ภาพที่เห็นทั้งสองชิ้นช่วยตรวจชุด หากมองไม่เห็นจุดสำคัญให้ขอมุมใหม่ รหัสสินค้าตรงกันอย่างเดียวยังไม่ระบุสีหรือจำนวนอุปกรณ์"
+    },
+    {
+      "source": "Read a listing as a collection of choices",
+      "source_sha256": "22730e5fc8106503b31d336b9d184988f414ffdac55b1ace659a3d30b9f7a45d",
+      "raw_target_sha256": "2106478a3b979bb0f58241b1043fec0263d2daaec0b1dcadb3127e5ee94cc76e",
+      "translation": "อ่านประกาศเป็นชุดตัวเลือก"
+    },
+    {
+      "source": "Suppose you are comparing two canvas bags that share one marketplace link. The seller offers short and long handles in two colours, then a separate choice between a bag alone and a bag with a removable pouch. Choosing green does not settle the handle length or whether you are buying a pouch. Read through all visible selectors after making a colour choice. Some combinations may disappear or change names as a result of the preceding selection. Save the complete final wording in the order the seller displays it.",
+      "source_sha256": "ec4ccf8f705910eea793d7460ad75cd040ad0ae606218529cc85c87d1c4426a0",
+      "raw_target_sha256": "9fa049c517652a81000137ba04cb4c540c76c62a3d6954812cd9a4a9043010ef",
+      "translation": "สมมติหน้ากระเป๋าผ้าใบมีหูสั้นและหูยาว สองสี และให้เลือกกระเป๋าเดี่ยวหรือพร้อมซองถอดได้ การเลือกสีเขียวยังไม่ยืนยันความยาวหูหรือซอง ตรวจทุกช่องหลังเลือกสี บางชุดอาจหายหรือเปลี่ยนชื่อ จดตัวเลือกสุดท้ายทั้งหมดตามลำดับที่ร้านแสดง"
+    },
+    {
+      "source": "An internal SKU is helpful when the seller actually exposes one. It might identify a particular combination even when two translated option names look alike. Treat it as a literal identifier, including any leading zeroes or letters. A spreadsheet that interprets the value as a number can discard part of it. Store the value as text and reopen the file to confirm it survived. If the seller never displays an internal code, the marketplace link plus the precise option text and dated order confirmation can still be an adequate record.",
+      "source_sha256": "b9a5de4e4d0d810cd1aef5d557b0a8e506c2ae591c4e189ea44fbca4754efae3",
+      "raw_target_sha256": "548b00b0fbb5c2dd2d387d190d9b7bb2ce3ec9e765909eec0649f3643f979fcd",
+      "translation": "SKU ที่ร้านแสดงช่วยแยกชุดที่แปลชื่อออกมาเหมือนกัน เก็บเป็นข้อความให้ครบทั้งศูนย์ข้างหน้าและตัวอักษร แล้วเปิดตารางตรวจอีกครั้ง หากไม่มีรหัส ให้ใช้ลิงก์ร้าน ข้อความตัวเลือกเต็ม และใบยืนยันพร้อมวันที่"
+    },
+    {
+      "source": "Observe what the selected price buys",
+      "source_sha256": "9c6eb28444c6e5bd2a97e5c1fe4cdb3527bcd8b2e7dbfa0ee61ddeb40ead5d11",
+      "raw_target_sha256": "c32716be4ed47e7a8b67b0f3b247af0283e25caef2feeff11ba5325552595822",
+      "translation": "ตรวจว่าราคาที่เลือกซื้ออะไรได้"
+    },
+    {
+      "source": "At the top of a multi-option listing, a displayed price may be a starting point. Select the exact components you want, then note the amount and quantity alongside that selection. In the canvas bag example, a photo might show the pouch clipped inside the bag while the cheapest choice sells the pouch alone. Copying the headline price beside a photo of the set would produce a misleading comparison. A row labelled “green bag, long handles, pouch included, one set” gives the price a defined unit.",
+      "source_sha256": "390be2ff21ba198caf06531aed15472192122c37c0a3b40680160ac045c57279",
+      "raw_target_sha256": "f10681aaa29aa144720b4e561cd38580cfe811df38463f4fa520f57966b030f6",
+      "translation": "ราคาหัวหน้าอาจเป็นราคาเริ่มต้น ภาพโชว์ซองในกระเป๋าแต่ตัวเลือกถูกสุดอาจขายซองอย่างเดียว เลือกองค์ประกอบจริงแล้วจดราคาและจำนวน เช่น “กระเป๋าเขียว หูยาว พร้อมซอง หนึ่งชุด” จึงรู้ว่าราคานั้นต่ออะไร"
+    },
+    {
+      "source": "Quantity deserves a separate check. If you want two people to receive one complete set each, first confirm how many bags and pouches one unit of the selected option contains. Place the desired quantity in the cart and inspect the resulting selection and subtotal before deciding. A free-text instruction about including a pouch does not establish that you paid for the option containing it. If the combination you want has disappeared, ask which listing currently offers it and start a new comparison for that listing.",
+      "source_sha256": "9b3f43174a545a6f6ca822497fd130a78b3e3192ccbc873c2575a0f39dae763a",
+      "raw_target_sha256": "e56c8b00263ed08fb7940c72747929c8ab22ba5b48f124a1494551eaed45bec8",
+      "translation": "หากจะให้สองคนคนละชุด ตรวจว่าหนึ่งหน่วยมีกระเป๋าและซองกี่ใบ ใส่จำนวนแล้วดูตัวเลือกกับยอดในตะกร้า ข้อความว่า “ขอซองด้วย” ไม่ได้ยืนยันว่าจ่ายตัวเลือกที่รวมซอง หากชุดเดิมหายไปให้ถามว่าประกาศไหนขายอยู่แล้วเริ่มเทียบใหม่"
+    },
+    {
+      "source": "Use translations without losing distinguishing details",
+      "source_sha256": "16ea49d3e81eef75fc10aeeeb33c60496a996f93bd154a66ef7487d32c76cf67",
+      "raw_target_sha256": "26ba803774ace23f168832eb9535e3f1f17c953aa3f2fd4a759e223a89d20722",
+      "translation": "รักษาความต่างที่คำแปลอาจกลบ"
+    },
+    {
+      "source": "Machine translation can make two option strings read identically even when the original includes an extra character, a model suffix or a different unit. Save both original labels and your working translations, with the original spelling intact. Note the option order only as a temporary aid. A seller can rearrange choices, so “third tile from the left” may describe the wrong product when you return. An image thumbnail can help locate a choice, but its colour or pictured accessories need confirmation from the selected option text.",
+      "source_sha256": "4b9a1871f7da6024373c9bae4d04b73018e0e5407eadf952756abc168a84aa6c",
+      "raw_target_sha256": "81068af3a5154db8911132816094dc2e1be3122f3edfc0c7c44464dd38dfca23",
+      "translation": "ข้อความเดิมที่ต่างเพียงหนึ่งตัวอักษร ท้ายรุ่น หรือหน่วย อาจถูกแปลเหมือนกัน เก็บชื่อเดิมคู่คำแปล ลำดับ “ช่องที่สามจากซ้าย” ใช้ชั่วคราวเพราะร้านจัดใหม่ได้ ภาพย่อช่วยหา แต่สีและของแถมให้ยืนยันจากตัวเลือกจริง"
+    },
+    {
+      "source": "If the language difference affects a practical decision, make the question concrete. For example, ask whether the two green long-handle options differ in pouch inclusion or in bag dimensions. Include their original option text so the respondent can distinguish them. A broad question asking which version is better may produce an opinion without resolving the specific difference. Keep the answer with its source and date. If it refers to one colour, avoid applying it to every colour on the listing.",
+      "source_sha256": "348db9ff046a1da4004a7ac03a2a9dfbdfec29ead37b72acffe72b291ada234c",
+      "raw_target_sha256": "ad07e1e4db5213f7707a0cbc62733b8be624f0225cfd9d387f71ee5f04cada87",
+      "translation": "หากมีรุ่นเขียวหูยาวสองแบบ ให้ถามตรง ๆ ว่าต่างกันที่ซองหรือขนาดกระเป๋า พร้อมแนบชื่อเดิมทั้งคู่ คำถามว่า “อันไหนดีกว่า” อาจได้แต่ความเห็น เก็บคำตอบพร้อมที่มาและวัน และอย่าขยายคำตอบเฉพาะสีหนึ่งไปทุกสี"
+    },
+    {
+      "source": "Distinguish the selection from a customer's note",
+      "source_sha256": "d8ff75193a523158380bd298fcfd9fe9ecb79c879ae2960b6a117e84815aa67c",
+      "raw_target_sha256": "3e788e7a3be011ca63763d34682a1d506aed91a4546f089ccbff775abcd3ae82",
+      "translation": "แยกตัวเลือกสินค้าจากข้อความฝากร้าน"
+    },
+    {
+      "source": "A configurable product sometimes invites a buyer to leave instructions. The instruction and the selected item perform different jobs. The selected option establishes what the cart and receipt describe; a note communicates something you have requested. If you select a short-handle bag and type “long handle please” in a message, the records may point in different directions. Before paying, choose the exact available option or seek a written explanation of how the seller handles the requested combination.",
+      "source_sha256": "da657ea632e2982d3683fb5b3eeb6a04c07e40b279414ffbe373f905b9d520ac",
+      "raw_target_sha256": "27bd1314e5e12a8676f19bee21729a934de6ba3059792dfda5a31879290bc5fa",
+      "translation": "ตัวเลือกคือสิ่งที่ปรากฏในตะกร้าและใบเสร็จ ส่วนหมายเหตุเป็นสิ่งที่ขอ หากเลือกรุ่นหูสั้นแล้วเขียน “ขอหูยาว” ข้อมูลจะขัดกัน ก่อนจ่ายให้เลือกชุดที่ถูกหรือขอคำอธิบายเป็นลายลักษณ์อักษรจากร้าน"
+    },
+    {
+      "source": "For a gift with several components, create a short record for each intended recipient. Record their chosen colour, handle length, pouch choice and quantity, even if the marketplace URL is identical for everyone. Confirm the final order has the expected number of distinct lines. Two identical green bags may legitimately appear on one line with quantity two. Green bags with different handle lengths need a way to distinguish those selections in the record you will use at warehouse intake.",
+      "source_sha256": "2a69d00faba871ae2ac71de3de2978762e35c5959b2f32ccfb42bf39e83cc695",
+      "raw_target_sha256": "670861b69fe39e3f7706f5448b8cde3546702ba4ade3bd0ffc86a0c053ba2786",
+      "translation": "หากซื้อให้หลายคน ให้จดสี ความยาวหู ซอง และจำนวนของแต่ละคนแม้ลิงก์เดียวกัน ตรวจจำนวนบรรทัดสุดท้าย กระเป๋าเขียวเหมือนกันสองใบอยู่บรรทัดเดียวจำนวนสองได้ แต่ถ้าหูต่างกันต้องแยกแยะได้เมื่อตรวจรับเข้าคลัง"
+    },
+    {
+      "source": "Resolve mismatches at the right level",
+      "source_sha256": "9d256bf6d49b2807e74d33ff7922aadcb52f2f53dd19a19ffb7fb76fcb02ed7a",
+      "raw_target_sha256": "9ca734603ec22b84cb61c3867bf9025763921ebbd5310468164d52d7cf07cddc",
+      "translation": "หาว่าความต่างอยู่ตรงไหน"
+    },
+    {
+      "source": "When a received item differs, ask first whether the listing, the selected combination or the received unit is in question. A correct item number with the wrong colour points to an option-level issue. A correct colour with a missing pouch raises a package-content question. An entirely different seller item number is a source-link discrepancy. Each needs different evidence, and naming the precise difference makes a follow-up easier for the person handling the order.",
+      "source_sha256": "4c9ff46e6354edbcd686821a749b6e0a7ed4221b7853f13f4d5ae26b06febc7a",
+      "raw_target_sha256": "73a923400eb8ac8d11aa851fc1c29c41d3286d64b802119c0cafd565832602e5",
+      "translation": "เลขสินค้าถูกแต่สีผิดเป็นปัญหาระดับตัวเลือก สีถูกแต่ไม่เห็นซองเป็นปัญหาของในชุด หากเลขสินค้าของร้านต่างกันให้ตรวจลิงก์ต้นทาง ระบุระดับให้ถูกเพื่อส่งหลักฐานที่เกี่ยวข้อง"
+    },
+    {
+      "source": "For the bag example, gather the paid order line showing the pouch-inclusive combination, the warehouse photo showing the bag, and any photograph that lets you inspect its interior. If the bag is closed, describe the pouch as unconfirmed and ask for an open view if available. If a clear view of the contents and an item count confirms the pouch is absent, update the note. Your record now connects the specific option purchased to the specific feature you needed to verify.",
+      "source_sha256": "bc24626ff71d1c7008cdb8452d3b0917103d98337c03826160b18b57ff317c2a",
+      "raw_target_sha256": "5da0e637809ac45a84222f81f96a4ff0220cc97b6ef444535e7d730ca4c7f575",
+      "translation": "เก็บใบจ่ายที่ระบุรวมซอง ภาพกระเป๋าจากคลัง และภาพที่เห็นข้างใน หากยังปิดให้จดว่า “ยังยืนยันซองไม่ได้” และขอภาพเปิด หากภาพภายในและการนับยืนยันว่าไม่มีจริงจึงแก้บันทึก"
+    },
+    {
+      "source": "An agent link is convenient for checkout. The original marketplace page gives you a separate reference for the seller, the listing identifier and the options you are researching.",
+      "source_sha256": "f157da3ad58d1085fc8b9cc837edf2891707414f07ce3815e4a4f8a33904a158",
+      "raw_target_sha256": "b9f195447d7a54546f2c24ea2ab2c73601e4d8dc8701aa04300d6b4474a91e08",
+      "translation": "ลิงก์ตัวแทนสะดวกสำหรับชำระเงิน ส่วนประกาศต้นทางใช้ยืนยันร้าน รหัสสินค้า และตัวเลือกที่กำลังตรวจ"
+    },
+    {
+      "source": "Work from the item page",
+      "source_sha256": "1e17aa084fda4b44d23391c9361117e3bb97f8c740344f685b1f6b3e2854a2db",
+      "raw_target_sha256": "67d0378ed8ee16a952c6e153f3223848d100a70c3b69c5aa2a6486c23b106303",
+      "translation": "เริ่มจากหน้ารายละเอียดสินค้า"
+    },
+    {
+      "source": "Start with the specific product rather than the platform homepage, an affiliate registration page or a search results page. Open the product normally and look for an original listing link. On this grid, use the source-link control on the detail page when it is available. Copy the resulting address to a private note. If the destination is simply a shop, return to the item and identify the product inside that shop before doing a QC lookup.",
+      "source_sha256": "c0744cb32c0bc35c3d0652769ecd31ed0c12c7e1e75a9fd12b32d1c32007ec77",
+      "raw_target_sha256": "70d80635469731056a769024424d5c278efab8223f432439febc47ad4f2065d6",
+      "translation": "เปิดหน้าสินค้าจริง ไม่ใช่หน้าแรก หน้าสมัครจากลิงก์แนะนำ หรือผลค้น หากรายละเอียดในตารางนี้มีปุ่มแหล่งเดิมให้ใช้แล้วเก็บ URL ปลายทางในโน้ตส่วนตัว ถ้าถึงเพียงหน้าร้านให้ระบุสินค้าภายในร้านก่อนค้นภาพ QC"
+    },
+    {
+      "source": "Recognize an embedded URL",
+      "source_sha256": "adfd1e68c62534eac2b221349bebc612cc73ad2cabd6f5778a59346f1f65ce61",
+      "raw_target_sha256": "72cc2fecc9ac9ea81bdc31956ef0c9e060fb4be2a390d5e924b887993e256b9f",
+      "translation": "สังเกต URL ที่ซ้อนอยู่"
+    },
+    {
+      "source": "Some KakoBuy item links include an encoded marketplace address in a url parameter. Percent-encoded characters can make it look unfamiliar: an encoded question mark or equals sign still belongs to the embedded address. A finder may accept the complete agent link directly. Prefer an exposed original-link control when possible, and inspect the resulting destination rather than deleting punctuation until a URL happens to open.",
+      "source_sha256": "6d9f4cd15bb728d8219aa29538e356072f1f3294e9bdf748335b05c9c916c2eb",
+      "raw_target_sha256": "88652d56819a943240d9fa407bbb91fd4eee759515a99c54eee551c9af6746a4",
+      "translation": "บางลิงก์ KakoBuy ซ่อนที่อยู่ตลาดต้นทางแบบเข้ารหัสไว้ในพารามิเตอร์ url เครื่องหมายคำถามหรือเท่ากับอาจแสดงด้วยรหัสเปอร์เซ็นต์แต่ยังเป็นส่วนของที่อยู่นั้น เครื่องค้นบางตัวรับลิงก์ตัวแทนเต็มได้ หากมีปุ่มต้นทางให้ใช้แล้วตรวจหน้าปลายทาง แทนการสุ่มลบเครื่องหมาย"
+    },
+    {
+      "source": "Verify the recovered destination",
+      "source_sha256": "708650ee103f660ad3d5d0e7d8810e55d1e092c6894df7264b37096a89a0c2d7",
+      "raw_target_sha256": "b8498b9b11386fd21eb5961ec82ad454242b6c634dc96c8da9269cfd9244f10f",
+      "translation": "ตรวจปลายทางที่พบ"
+    },
+    {
+      "source": "Compare the seller domain, item number, title, pictures and available options. A convincing title alone is insufficient when several shops sell similarly named items. An agent URL and its seller URL need not look alike, but the marketplace identity and item number should reconcile where both expose them. Save the pair under one note and give the note a recognizable label such as blue jacket with two-way zip.",
+      "source_sha256": "9ac56af9b5ad54f2f881cf820466f8b097f8772282e061ca69530c8b0a9c8ce8",
+      "raw_target_sha256": "f1ead71a95ba14a8d8422215d15425a4d3e3473913536021a3c7b25f066a0f03",
+      "translation": "เทียบโดเมน เลขสินค้า ชื่อ ภาพ และตัวเลือก หลายร้านใช้ชื่อใกล้กันจึงยืนยันจากชื่ออย่างเดียวไม่ได้ URL ตัวแทนกับร้านอาจหน้าตาต่างกัน แต่หากทั้งสองแสดงตลาดและเลขสินค้าควรตรวจให้ตรง เก็บความต่างที่ยังอธิบายไม่ได้ไว้"
+    },
+    {
+      "source": "Distinguish useful metadata from private order information",
+      "source_sha256": "2450d8846d90974789bc93e01ec854661beea387a4dcbb361da63a568e8ff725",
+      "raw_target_sha256": "f2718ac7c3dd3d6faebb3b7310eef29adb0d2e0cf1ee5ca8619f809b32827e6e",
+      "translation": "แยกข้อมูลสินค้าออกจากข้อมูลส่วนตัว"
+    },
+    {
+      "source": "A public listing reference is usually sufficient for comparing a find. Do not share an account dashboard URL, a checkout page containing personal information or a screenshot with an address to prove a simple listing match. Crop any evidence you share to the item and option. An exchange or payment inquiry belongs in the official order channel, where the corresponding order reference can be supplied privately.",
+      "source_sha256": "6ff45467d53fcf8496b4b25c99c877078990e786eafe1957fea42946532325b3",
+      "raw_target_sha256": "64a4b16d6f8516eeb2f7401b7690f91b9a78ccc77fb3bc75512f1c1f0907691c",
+      "translation": "ตรวจว่าสินค้าตรงกันมักใช้แค่เลขประกาศสาธารณะ อย่าส่งลิงก์หลังบ้าน หน้าจ่ายเงิน หรือภาพมีที่อยู่ ครอปเฉพาะสินค้าและตัวเลือก เรื่องเปลี่ยนหรือชำระเงินให้ตรวจในบันทึกส่วนตัวและถามผ่านบัญชี"
+    },
+    {
+      "source": "Deal with an unavailable listing",
+      "source_sha256": "8c7001aa99e8496bb69389f3614cca47e274e16ecb52d194ea68217602d326c8",
+      "raw_target_sha256": "a34d28a2d8c613814cafdd6d720f137d60561c30547d74ee18113bf3b02476ee",
+      "translation": "เมื่อประกาศเปิดไม่ได้"
+    },
+    {
+      "source": "A seller may remove a product or restrict what an anonymous visitor can see. Record the page state and date. If a visual search returns another shop, create a new entry instead of replacing the old source link under the same name. The new listing needs its own price, size, option and QC checks. An old warehouse album attached to the first seller cannot establish what the second seller will deliver.",
+      "source_sha256": "5ddb4459b4ec9024b4753002d7f7dd1631154e84fc3a603cfed9b573cf9a7184",
+      "raw_target_sha256": "7fd0d645f724a610526384635de276d535123fd4b1b46a78c2ed436e06523efd",
+      "translation": "ร้านอาจลบสินค้าหรือจำกัดผู้ไม่ได้เข้าสู่ระบบ จดสภาพหน้าและวัน หากค้นภาพเจออีกร้านให้เพิ่มรายการใหม่ อย่าแทนลิงก์เก่า ต้องตรวจราคา ไซซ์ ตัวเลือก และ QC ใหม่ อัลบั้มคลังของร้านแรกไม่ยืนยันของที่ร้านที่สองจะส่ง"
+    },
+    {
+      "source": "Give each address a purpose",
+      "source_sha256": "c792b403f31f291c3a9c0dcaf00a4846fe41e175eac09f099b13f3dcd50e1607",
+      "raw_target_sha256": "80ebd073a0e45ae8098bbd28d999015d12280ea0252906dc95bcfa10a5e4f7df",
+      "translation": "กำกับหน้าที่ของแต่ละลิงก์"
+    },
+    {
+      "source": "A common test is to imagine which page you would open to answer a question about the seller's current options. A standalone image can show the bag pictured in an advertisement. It cannot establish whether the merchant still offers a red version with a shoulder strap. A catalogue card can help you return to the find, but its short description may omit a seller option. Keep the sources that serve each purpose and record which one supplied a particular observation about the product.",
+      "source_sha256": "da0bd56fb2b09b1a9d2453151bcccd8e549fa5b8af74e2d71f62c02519558c0a",
+      "raw_target_sha256": "18a75855a0b485f3e217d6656ee0a0b6bcc863d1e9f38c197bdd248d7d07603b",
+      "translation": "ลองคิดว่าจะเปิดหน้าไหนเพื่อดูตัวเลือกปัจจุบัน ภาพโฆษณาบอกหน้าตากระเป๋า แต่ไม่บอกว่ารุ่นแดงพร้อมสายยังขายอยู่หรือไม่ การ์ดในตารางช่วยกลับมาจุดที่พบ ส่วนตัวเลือกปัจจุบันต้องตรวจประกาศร้าน"
+    },
+    {
+      "source": "Follow a normal redirect carefully",
+      "source_sha256": "c8e607e11e8e9a79e7be62ad0c11ac5f87868548123da46212f9c47f0bb62c21",
+      "raw_target_sha256": "306c6c1cb3f0f07288b75e71fd5cd2d5fa49c86ac79779a502af95267b89132c",
+      "translation": "ตามการเปลี่ยนเส้นทางปกติ"
+    },
+    {
+      "source": "A shared link may go through a redirect before reaching a product. Open it as an ordinary public listing and note the final destination. Read the address bar alongside the actual content on the page. A shop landing page featuring a similar product in a carousel does not identify that carousel entry as the original item. Look for a specific product title, item identifier and selection controls. If you reach a sign-in page, keep the original public reference and note that the destination could not be confirmed from that session.",
+      "source_sha256": "d1fb90f738a1a53f9dbc17343633baa460963a4d9fe7241d9b0f7cf15dc0bb5e",
+      "raw_target_sha256": "da68b2ddeeadc31302d38c64c93f96afdb0a16b18ef3d617dc02d9b7c82f63ca",
+      "translation": "เปิดลิงก์ร่วมตามปกติ จดปลายทางหลังเปลี่ยนหน้าแล้วเทียบแถบที่อยู่กับเนื้อหา ถ้าเป็นหน้าแรกของร้านที่มีสินค้าคล้ายในแถบแนะนำ ยังระบุไม่ได้ว่านั่นคือสินค้าเดิม เปิดรายละเอียดและตรวจรหัสกับตัวเลือกก่อน"
+    },
+    {
+      "source": "Avoid sending an entire browser or order export to someone who only needs to identify a product. If the item link lives inside a purchase history, use the public product or original link control and check its destination before sharing. A screenshot of the whole order history may include unrelated products, names or payment details. The marketplace label and public item reference normally give another person a much cleaner starting point for an independent check of the seller listing.",
+      "source_sha256": "c609c7297bebd41ea9f75cf4c183279513b2343ae7b5eb9e6e06bb6387c26d32",
+      "raw_target_sha256": "df4fa886b0d3869507d48ea3f2ffffdc93efe73c191c0776cb4b0cee100d01db",
+      "translation": "คนที่ต้องการระบุสินค้าหนึ่งชิ้นไม่ต้องใช้ประวัติเบราว์เซอร์หรือรายการซื้อทั้งหมด หากลิงก์อยู่ในประวัติคำสั่งซื้อ ให้เปิดปุ่มสินค้าสาธารณะหรือต้นทางแล้วตรวจปลายทางก่อนแชร์ ภาพทั้งประวัติอาจติดสินค้าอื่นและข้อมูลส่วนตัว"
+    },
+    {
+      "source": "Recognize a link that opens at the wrong level",
+      "source_sha256": "ac31ed83a3da5bdc1c89d887ec70efb44fcf8797cd80547f16116f9247c0dc1b",
+      "raw_target_sha256": "e6bd7920faa1b341efeed37e2e2378145ad9ebb47fc3c286140098577064fcb3",
+      "translation": "เมื่อลิงก์พาไปเพียงหน้ารวม"
+    },
+    {
+      "source": "Imagine a short link opens a seller's collection of storage boxes. The image of a green box looks familiar, but selecting it reveals a page with several sizes and lids sold separately. You have found a candidate, not yet a recovered link. Compare its marketplace number with any identifier in the original product record. Check whether the seller name and available configurations align with what you saved. If the original record has no identifier, describe the new link as a possible match and explain the basis.",
+      "source_sha256": "7095b5c7cf56f8743e55984973a6ba5ac3b87badcd3f383cb08e39d58dc7eec5",
+      "raw_target_sha256": "e614e15172164116baf79a8205d7fb5f30440f8015dcc44b7e0fbed33fbc214f",
+      "translation": "ลิงก์สั้นอาจเปิดคอลเลกชันกล่องเก็บของ เมื่อเลือกกล่องเขียวหน้าคุ้นกลับพบหลายขนาดและแยกขายฝา นี่ยังเป็นผู้สมัคร ให้เทียบเลขตลาดกับข้อมูลเดิม รวมทั้งขนาดและฝาที่เลือก ถ้ายังขาดหลักฐานให้ระบุว่ายังไม่ยืนยัน"
+    },
+    {
+      "source": "A seller can have more than one listing for nearly identical boxes. One might sell sample units, another bulk sets. A product photo can survive across both listings while prices, quantities and dimensions differ. Using the currently accessible offer as a substitute for the old one may be a reasonable buying decision after a fresh review. Replacing the saved original URL without noting the substitution, however, would assign older warehouse photographs and purchase details to a different commercial offer.",
+      "source_sha256": "e5f607b5e874f2d7d3e0708cc14930034bba97a548d83a186d9db98775ee5214",
+      "raw_target_sha256": "535fcb27a6101675c6ca1b1a09696a31fa9cde9dc635e4f4707a7e8af02d6f2f",
+      "translation": "ร้านเดียวอาจมีสองประกาศสำหรับกล่องแทบเหมือนกัน อันหนึ่งขายตัวอย่าง อีกอันขายยกชุด ใช้ภาพเดิมได้แม้ราคา จำนวน และขนาดต่าง หากจะซื้อประกาศที่ยังเปิดเป็นตัวแทน ให้จดเป็นทางเลือกใหม่ ไม่ใช่ยืนยันว่าคือลิงก์เก่า"
+    },
+    {
+      "source": "Check what survives when the link is shared",
+      "source_sha256": "3772834835379fd3ad03b5ac4d7b151756c4b097967d26a77d00ad0e2c8523f4",
+      "raw_target_sha256": "e011f83055bf9e0293d9f440ac4c17e3572f6a5f3ed214452002c480afb697e6",
+      "translation": "ตรวจว่าคนที่ได้รับลิงก์เห็นตัวเลือกใด"
+    },
+    {
+      "source": "If the item opens with a selected size in your session, copy its public address into a fresh tab. See whether it preserves the selected option or returns to a default page. A session can remember choices that are absent from the URL. Ask a collaborator to choose the exact option text in their own session if they need to confirm a price or photograph. Do not assume their first displayed option matches yours merely because the marketplace page has the same item number.",
+      "source_sha256": "827ac6656bdf34870a00eade6e4d4e47c755d0cbeb8c55a1405821c05fdb8499",
+      "raw_target_sha256": "c208ebfa5a4cd6759f1233e1e4242733dce8fc56929132fd92d4648b3299c9cc",
+      "translation": "เปิดที่อยู่สาธารณะในแท็บใหม่แล้วดูว่ายังเลือกไซซ์นั้นหรือกลับไปค่าเริ่มต้น เซสชันอาจจำสิ่งที่ URL ไม่ได้เก็บ ขอให้ผู้ร่วมตรวจเลือกข้อความตัวเลือกเดียวกันในหน้าของเขาก่อนเทียบ"
+    },
+    {
+      "source": "Leave a useful result when recovery fails",
+      "source_sha256": "208df5d5a637fa24961dd2f602ccdb5b7a063c4ebf8b7976f59b1617842cc968",
+      "raw_target_sha256": "8a733cbae958ae47e4dade8ffdb90a85d2add43b591d7789d653c73611839743",
+      "translation": "บันทึกอย่างไรเมื่อกู้ประกาศเดิมไม่ได้"
+    },
+    {
+      "source": "A useful record can end with an unresolved source. Write down the last confirmed public location and what stopped the search, such as a removed product page or a redirect to a shop. Keep any item identifier you can independently read from the original link. Distinguish a seller claim that the item moved from a verified replacement link that the seller supplied. If you later receive that replacement, open a separate record and connect the two with the date and explanation.",
+      "source_sha256": "56551309977508d32909df0c4f919de0046f6141d3b2837ed52621b72787e70a",
+      "raw_target_sha256": "a076981d27805f60eb7e84ca1913534c7973029b134418ef71c7e47e4a089489",
+      "translation": "บันทึกหน้าสาธารณะสุดท้ายที่ยืนยันได้ เหตุที่ค้นต่อไม่ได้ เช่น ถูกลบหรือพากลับหน้าร้าน และเลขสินค้าเดิมที่อ่านได้ แยกระหว่างคำบอกร้านว่าย้ายที่กับการตรวจพบหลักฐานเชื่อมสองประกาศจริง"
+    },
+    {
+      "source": "Before using a recovered link to make a purchase, review the current price, package quantity and selected option. A recovered historical URL answers the question of where the original find pointed. The product offered there today still merits its own review. For a purchase already in progress, use the order's private support channel and attach only the relevant original and current product evidence. A public QC search and an account-specific order question can then be resolved independently.",
+      "source_sha256": "5fba3b79adbb529acef594b2c4419b836f67e0806b0e44b04b29db1147aec6f6",
+      "raw_target_sha256": "757d27522622c1e7d21be81ef48d1e28cceba5eae7b38c8c645f8e1bba04db21",
+      "translation": "ก่อนใช้ลิงก์ที่หาได้มาซื้อ ตรวจราคาปัจจุบัน จำนวนต่อแพ็ก และตัวเลือก การรู้ว่าลิงก์เดิมชี้ไปไหนยังไม่ยืนยันของที่ขายวันนี้ ส่วนคำสั่งซื้อที่เริ่มแล้วให้ตรวจใบยืนยันและช่องช่วยเหลือของบัญชี"
     }
   ]
 }

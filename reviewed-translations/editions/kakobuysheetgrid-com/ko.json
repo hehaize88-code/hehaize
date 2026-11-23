@@ -3,7 +3,7 @@
   "locale": "ko",
   "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
   "raw_dictionary_sha256": "3d2e7d027a4e70636e329e3cca5b88a94648ace88348eea5aeccbf9e7d473a72",
-  "effective_dictionary_sha256": "52cf84811b5b03382e9c1b4aa6c252c33da1b4f094a52a4b97e7a8f7e0773d1b",
+  "effective_dictionary_sha256": "fe8c52b38e5bce6766c534bf92fa9620212c1cec21209bad49715a2bc447e45f",
   "checked_entries": 317,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -38,7 +38,7 @@
       "source": "An internal SKU is helpful when the seller actually exposes one. It might identify a particular combination even when two translated option names look alike. Treat it as a literal identifier, including any leading zeroes or letters. A spreadsheet that interprets the value as a number can discard part of it. Store the value as text and reopen the file to confirm it survived. If the seller never displays an internal code, the marketplace link plus the precise option text and dated order confirmation can still be an adequate record.",
       "source_sha256": "b9a5de4e4d0d810cd1aef5d557b0a8e506c2ae591c4e189ea44fbca4754efae3",
       "raw_target_sha256": "e1b4ae28060e26dad44710ca7a06c1202085eabe03011d4a0fc48cc03bcdf5de",
-      "translation": "판매자가 자체 품목 코드(SKU)를 공개하면 번역한 옵션 이름이 비슷해도 색상과 크기 조합을 구분하는 데 쓸 수 있습니다. 앞자리의 0과 영문자까지 그대로 복사하세요. 스프레드시트가 숫자로 처리하면 앞자리가 사라질 수 있으므로 텍스트 형식으로 저장한 뒤 다시 열어 확인합니다. 코드가 없다면 원본 상품 주소, 정확한 옵션 문구, 날짜가 적힌 주문 확인서를 함께 보관하세요."
+      "translation": "판매자가 SKU를 공개하면 번역한 이름이 비슷해도 조합을 구분할 수 있습니다. 앞자리 0과 문자까지 텍스트 형식으로 저장하고 다시 열어 확인하세요. 코드가 없으면 원본 링크, 정확한 옵션 원문, 날짜가 적힌 주문 확인서를 함께 보관하세요."
     },
     {
       "source": "Check availability, fees and processing information in the current KakoBuy order flow. A third-party article can suggest useful angles, but the conditions attached to your own order decide which request can be fulfilled. Once the image arrives, keep it with the original request and the decision you made. A dated note explaining the accepted measurement remains useful if the item later becomes part of a multi-item parcel.",
@@ -56,7 +56,7 @@
       "source": "Before purchase, decide whether the missing detail matters enough to ask the seller or leave the item on your shortlist. After purchase, use the photographs tied to your own order for decisions about the received unit. Retain the older album as a comparison and clearly label its origin. If the new unit differs, identify the specific feature and quote your selected option, rather than promising support that the historical picture describes every item now supplied.",
       "source_sha256": "c5c0445fa667385723420119717be5caa752fbae6333e27fa682002141e07d82",
       "raw_target_sha256": "fbaed990683c51f57bebfe1ef85fb4f5c6d0a3716b8a5accea99608aa8c19240",
-      "translation": "구매 전에는 확인되지 않은 부분을 판매자에게 물어볼지, 후보로만 남겨 둘지 정하세요. 구매 후에는 내 주문에 연결된 사진으로 실물을 판단합니다. 과거 앨범에는 출처를 붙여 비교 자료로 보관하세요. 새로 받은 제품이 다르면 해당 부위와 주문할 때 선택한 옵션 문구를 상담원에게 알려 주세요. 과거 사진 한 장으로 지금 공급되는 모든 제품이 같다고 단정하기는 어렵습니다."
+      "translation": "구매 전에는 빠진 정보를 판매자에게 물을지, 후보로만 남길지 정하세요. 구매 뒤에는 내 주문에 연결된 실물 사진을 기준으로 삼고 예전 사진은 출처를 붙여 비교용으로 보관합니다. 새 상품이 다르면 주문 옵션의 원문과 다른 부분을 상담원에게 알려 주세요. 예전 사진 한 장은 현재의 모든 재고를 대표하지 않습니다."
     },
     {
       "source": "KakoBuy QC lookup: matching a photograph by marketplace and item ID",
@@ -387,6 +387,474 @@
       "source_sha256": "1a5015376685ea91644f7e226199f7de47a199e340f2a6ab210e022f106ad80c",
       "raw_target_sha256": "ccaff4060fc4906f9287ad750ad27bbf719c1456ae21a55ff0e76390a73bf834",
       "translation": "라벨에 대한 메모는 몇 문장이면 충분합니다. 상품과 선택 옵션, 실제로 읽히는 글자, 남은 의문점과 그것이 결정에 미치는 영향을 적으세요. 예를 들어 결제한 상품이 남색 재킷 M이고 라벨에도 M이라고 보이는데 아래쪽 숫자만 잘렸다면, 확인 목적이 사이즈였을 때는 그 숫자 때문에 사진을 다시 요청하거나 결정을 미룰 필요가 없습니다."
+    },
+    {
+      "source": "Sources",
+      "source_sha256": "caf85b0888d78f1f83771a07b25c3d30fa1210242f2fae6e5ae5d9a686602800",
+      "raw_target_sha256": "ffa449b1814256e31b7673468aed0e3267bfb080fdc00fa6a1b3395b113d0d30",
+      "translation": "참고 자료"
+    },
+    {
+      "source": "KakoBuy shopping guides",
+      "source_sha256": "d73045cd66940b81c6a2c0f276876c11bb3447e9f14bfd7cdc17992a500f8d23",
+      "raw_target_sha256": "f0471c4b46433423b4116dc87f73ba4cefc1faf21c5e2492edbcb3b80ff64af1",
+      "translation": "KakoBuy 구매 안내"
+    },
+    {
+      "source": "Check a KakoBuy find against its original listing, selected option and warehouse photographs.",
+      "source_sha256": "0a494b3eb125e58347ed837e4a019a3b73b7e00697cd621403509a6114a5790e",
+      "raw_target_sha256": "fd5f40a29fcd4f1b2534aaf2e12d77e19290fb8bdb04efcf3fefcb3272a6b2e1",
+      "translation": "KakoBuy에서 찾은 상품을 판매자의 원래 상품 페이지, 선택한 옵션, 창고 실물 사진과 대조해 보세요."
+    },
+    {
+      "source": "A number can narrow a search from thousands of similar product photographs to one seller listing. It is most useful when you also retain the marketplace, the selected option and the date of the reference.",
+      "source_sha256": "af5e81d9243611c1e390d1a639ac3de720415f691c140d5b9bc10d599445979e",
+      "raw_target_sha256": "69cebaf1d7622bc1badc819d7475bce0779e4f91a20e8465e8c60ad86f6d97c2",
+      "translation": "상품 번호는 수많은 유사 사진에서 특정 판매자의 상품 페이지를 찾는 데 도움이 됩니다. 마켓 이름, 선택한 옵션, 참고 자료를 확인한 날짜까지 함께 남겨 두세요."
+    },
+    {
+      "source": "Identify the number you actually have",
+      "source_sha256": "683d9d094177ce98a0e1db11ded7a8f0771abe2b3c17e7bb8fe9a87e6191eed0",
+      "raw_target_sha256": "16690d891269df8a502d953a04b83388cc4b3ebcdcdd4d78a67bbadaf91ae5aa",
+      "translation": "지금 가진 번호의 종류부터 확인하기"
+    },
+    {
+      "source": "Start on the purchase page for the product you mean to investigate. Follow the original seller link and record its marketplace. A Weidian listing can carry an itemID value in the seller URL. The smaller number at the end of a Sheet Grid catalogue page identifies a different record. An agent order reference, domestic tracking number and warehouse intake reference also serve different purposes. Keep their names beside them when copying numbers to your notes.",
+      "source_sha256": "13a9cbcc8de0ea599e6f8055b329439d6bd35327bb3066b33d8838c4eb7a0b62",
+      "raw_target_sha256": "f000438cf9f66029771009d413dba281c2ad13294bceb1c94a194c0ab25fcff3",
+      "translation": "구매 페이지에서 원래 판매자 링크를 열고 마켓 이름을 적으세요. 웨이디안 상품 URL의 itemID와 Sheet Grid 소개 페이지 끝의 짧은 숫자는 다른 번호입니다. 대행 주문 번호, 중국 내 운송장 번호, 창고 입고 번호도 따로 이름을 붙여 저장하세요."
+    },
+    {
+      "source": "Run a lookup with the source attached",
+      "source_sha256": "132e36893c50b48c2cbd140c7b017184bdec39dfe79194061f92e5f7bffb05ab",
+      "raw_target_sha256": "168bdd5885453b959e35c698b287033fdb4d56b01a6cbfcdf165666271b5f21c",
+      "translation": "원본 링크와 검색 결과 함께 보관하기"
+    },
+    {
+      "source": "Use the complete source product link where a QC finder accepts it. If a service asks for a marketplace and number separately, use the pair from the same original listing. Save both the search input and the result so another person can reproduce your comparison. A result reached only by typing a broad garment name is a candidate for review. Compare its original seller identifier before attaching the photos to your intended order.",
+      "source_sha256": "622575c874c4c7cc4805592c7402d07977364da2b716748cdb4f40dffbdbd4c5",
+      "raw_target_sha256": "f0454503bb884d32dc0e2ea342d20b7a671e82d6fb6b8d734b399282eacf1a35",
+      "translation": "검품 사진 검색기가 상품 URL 전체를 받으면 원본 주소를 그대로 넣으세요. 마켓과 번호를 따로 요구한다면 같은 상품 페이지에서 두 정보를 가져옵니다. 입력값과 결과를 함께 저장하고, 옷 이름만으로 찾은 사진은 판매자 상품 번호가 일치하기 전까지 후보로 남겨 두세요."
+    },
+    {
+      "source": "Test what the album can establish",
+      "source_sha256": "b77c23dd1b3a3f286748939ad6dcd50326dfdafd37ec6b510219185e9ab32d51",
+      "raw_target_sha256": "e26059c38bf83c9b70e8d4de1c48d4e41d9374bb13b21a7f8684551fa7fdc577",
+      "translation": "사진으로 확인할 수 있는 범위"
+    },
+    {
+      "source": "Suppose the listing has a black jacket and a navy version with a different lining. An old front photograph might confirm the shape of the pockets. Without the option label or a visible lining it cannot settle which version was photographed. Describe the strongest observation you can make, such as two flap pockets visible. Keep a separate note for the unresolved question, such as the material on the inside of the navy version.",
+      "source_sha256": "5ec4739de5ac287db1ae890db015c06536b9aff52e17a857b125e2c5dd408105",
+      "raw_target_sha256": "7a36f4200fcb0adb32446dc3d3cef8e5c2ae9c2f322e6a77ed60c7e1f40d2381",
+      "translation": "검정과 남색 재킷의 안감이 다르다고 해 보세요. 예전 정면 사진으로 주머니 모양은 보이지만 옵션 표시나 안감이 없으면 어느 버전인지 알 수 없습니다. ‘덮개 있는 주머니 두 개가 보임’과 ‘남색 안감 소재는 미확인’을 구분해 기록하세요."
+    },
+    {
+      "source": "Handle empty and conflicting results",
+      "source_sha256": "86f0f8ed4ebcea434b348040451090dd1eaaf99121ff8acb48b391ea3fb13808",
+      "raw_target_sha256": "540e0a6aeb24633a964dad51db14fedc27d99d15d31b11c6c41106ab55795b25",
+      "translation": "검색 결과가 없거나 서로 다를 때"
+    },
+    {
+      "source": "Check the marketplace, the intact item number and whether you copied an item link rather than a shop homepage or an image URL. A finder may have no public album for an otherwise valid listing. If two albums conflict, compare dates, options, packaging and the particular detail visible. A seller can update a listing over time, or a gallery may mix options. Do not average inconsistent evidence into a confident claim.",
+      "source_sha256": "1a489ea249154b07f2fcf271a7e73a766a2e8ce217a8c8fddf19e59101f984ff",
+      "raw_target_sha256": "e5159b308eb2477c4e2f782fd5901e57cb7ed214095934ecb84a3ce85f4674fa",
+      "translation": "마켓 이름, 번호 전체, 링크가 이미지나 상점 첫 화면이 아닌 상품인지 확인하세요. 유효한 상품에도 공개 앨범이 없을 수 있습니다. 두 자료가 다르면 날짜, 옵션, 포장, 실제 보이는 부분을 비교합니다. 판매자가 내용을 고쳤거나 여러 옵션이 한 앨범에 섞였을 수 있습니다."
+    },
+    {
+      "source": "Move from reference to order evidence",
+      "source_sha256": "9ed065b23590b45f6beb8c1ccf8daeb98e2dd522748aa623df49a679eb5b80d6",
+      "raw_target_sha256": "2a726d29eacafacb2576936f7916f8da4273319a660089b3a67ba6dbf9f99446",
+      "translation": "구매 후에는 내 주문의 자료로 확인하기"
+    },
+    {
+      "source": "Make the search repeatable",
+      "source_sha256": "41fe2a015405703a0ba5cb2de2274c2cd8b536bd76c6c2f86e57f22dc6c8b1f3",
+      "raw_target_sha256": "72cc23cf141f39f987d4d58a8bec892c0420f0021917b9fef25ff2f9f46eb58b",
+      "translation": "다른 사람도 같은 검색을 따라갈 수 있게 하기"
+    },
+    {
+      "source": "Imagine a friend sends a cropped photo of a brown overshirt. The corner shows part of an item number. Searching that partial number might produce a page with an overshirt, but several digits or even the marketplace could be missing. Ask for the product link that accompanied the photo. If your friend only has the image, create a visual-reference note and leave its seller blank. The distinction matters weeks later when you are deciding whether to buy a listing that happens to resemble the picture.",
+      "source_sha256": "f0f32d1cf7da340badd62ae005f1e5371d7835c49eacba4c11290d36ffefbc9b",
+      "raw_target_sha256": "6a5a141c65e3ca9059c7f9748336798e3926a3a928e7963626e58bd36f25a8ec",
+      "translation": "갈색 셔츠 재킷 사진 한쪽에 상품 번호 일부만 보인다고 해 보세요. 그 숫자로 비슷한 상품이 나와도 자릿수나 마켓을 모를 수 있습니다. 친구에게 원래 링크를 요청하고 사진뿐이라면 외관 참고 자료로만 남겨 판매자 칸은 비워 두세요. 몇 주 뒤 같은 옷처럼 보이는 상품을 찾아도 출처를 확인했는지 구분할 수 있습니다."
+    },
+    {
+      "source": "A repeatable lookup has a simple test. A second person, given only the public listing reference, should be able to follow the same route to the same offer or report that the offer has since changed. Record the date, marketplace name, complete identifier and public gallery address where available. A friend should never need your account password or access to your payment history to reproduce a public product search. Keep purchase-specific checks in your private order record instead.",
+      "source_sha256": "417a0e455eb2208f94b218f42ddde1f00fcc10890200381b7a10d4e1d3053498",
+      "raw_target_sha256": "1921c49e3bdc9d7969c632c6f2b0d8f72c6208f9a63a054073363a0fa2e34ebd",
+      "translation": "공개 상품 정보만 받은 사람이 같은 경로로 상품을 찾거나 그사이 변경됐음을 확인할 수 있으면 됩니다. 날짜, 마켓명, 전체 식별자, 공개 갤러리 주소를 남기세요. 공개 상품 검색에는 계정 비밀번호나 결제 내역이 필요하지 않습니다. 주문별 확인은 개인 기록에 보관하세요."
+    },
+    {
+      "source": "Check the gallery against a feature you can distinguish",
+      "source_sha256": "51a9fec978d350cc53c4aa47db713c962ded333ff3642e63ddb2c02e75b4bea1",
+      "raw_target_sha256": "af0204fd1c12c57fee6c2ab6405e0546482b1d5ff20ba275062f1b3b83d48117",
+      "translation": "어느 부위를 볼지 정하고 갤러리 열기"
+    },
+    {
+      "source": "Choose a detail before opening a gallery. For the overshirt, the relevant question might be whether a button sits on each cuff or whether the cuff closes with a snap. Look for an angle where the closure is open and the inside surface is visible. A front photograph with the sleeves folded underneath may show the cloth colour and approximate cut while telling you nothing about either cuff. Describe what is visible separately from what you infer from the seller description.",
+      "source_sha256": "c7353b5cd8eae57e4560459f55eef63a611f4983fdab453848265182d9621436",
+      "raw_target_sha256": "35fba2919f0528609fca6fc329394862459918a7b9e483bda443184890665832",
+      "translation": "셔츠 재킷의 소맷단이 단추인지 똑딱단추인지 알고 싶다면 잠금부를 열어 안쪽이 보이는 사진을 찾으세요. 소매를 몸판 아래 접은 정면 사진은 색과 대략적인 핏을 보여 주지만 소맷단은 확인할 수 없습니다. 보이는 정보와 판매 설명에서 추정한 내용을 분리해 적으세요."
+    },
+    {
+      "source": "Consider how two photos could disagree without either being altered. A photograph of the brown option may show dark fasteners and one of the cream option may show pale fasteners. The gallery could then contain two visually different cuffs under one marketplace item ID. Check the option tag if one exists. Where it is missing, use the photos to formulate a more precise question for the seller, such as whether the brown option currently has dark buttons at both cuffs.",
+      "source_sha256": "3e19c01c5d5b57e727f7082d9824422816925b99e276db063967d65d80cc8963",
+      "raw_target_sha256": "7108efeac4699068ccac01b208b1e00d4d1b311263e6cd94767d8bf6f1897fc4",
+      "translation": "갈색 옵션에는 어두운 단추, 크림색에는 밝은 단추를 써서 같은 상품 번호에 다른 소맷단이 나올 수 있습니다. 사진이 편집됐다고 단정할 필요는 없습니다. 옵션 표기를 찾고 없다면 ‘현재 갈색 옵션은 양쪽 소맷단 모두 어두운 단추인가요?’처럼 구체적으로 물으세요."
+    },
+    {
+      "source": "Read dates in context",
+      "source_sha256": "ca11afc383ed65afb16ea4db456936b0b0ca52c8acc93ab989217a58d37a73a2",
+      "raw_target_sha256": "592563dd6abc2c72a81d9de9740fc02cb922d506d9670871fc1a0536aa61a189",
+      "translation": "날짜가 무엇을 가리키는지 확인하기"
+    },
+    {
+      "source": "A photograph's publication date and the date a buyer received the item need not coincide. When a finder supplies only one date, write down the label beside the date. Avoid assigning the image to a particular production run unless the source actually supplies that information. If the seller page recently acquired a new colour name, an old gallery result is still a reference for the listing, but the connection to the new option needs separate evidence. Do not rename an older image to match the newer choice.",
+      "source_sha256": "ec42f7cd62a6c76d97ecddc0af1fbbb8a058f5352c7d307e560d67c24e56e947",
+      "raw_target_sha256": "c7215016a94482b2d7265dbc81260a2c982ca6db90289074a53f07b437bf160e",
+      "translation": "사진 게시일과 구매자가 물건을 받은 날은 다를 수 있습니다. 날짜 하나만 나오면 항목 이름도 적으세요. 출처에 없는 생산 시기를 추측하지 마세요. 최근 새 색상이 추가됐다면 예전 사진은 그 상품 페이지의 과거 참고 자료일 뿐입니다. 새 옵션과 연결하려면 별도 근거가 필요합니다."
+    },
+    {
+      "source": "For a simple comparison, write two dated lines. One could say that the album seen on Monday showed a brown overshirt with two visible chest pockets. The other could say that on Thursday the seller offered a brown option whose description mentioned one chest pocket. The two lines preserve the disagreement precisely. A support question can now ask which pocket arrangement applies to the presently selected brown option without arguing about whether the entire listing is accurate.",
+      "source_sha256": "c4186b9c0601979a287ace8e07e28767f16d6506c06270dbecee9e9c60c40663",
+      "raw_target_sha256": "9b4c505545f641d34c3a76be84b90da47925a45a9428cb456c719ca0c6ddd0ea",
+      "translation": "월요일에 본 갈색 셔츠 재킷 사진에는 가슴 주머니 두 개가 있었고 목요일 판매 문구에는 하나라고 썼다고 해 보세요. 날짜별로 두 줄에 남기면 ‘현재 선택한 갈색 옵션의 가슴 주머니가 몇 개인가요?’라고 정확히 물을 수 있습니다."
+    },
+    {
+      "source": "Read the gaps in an otherwise convincing album",
+      "source_sha256": "b61d26d1b11a51c0bc0fded93daf0f475eddf88dee3843d059e999f71934599b",
+      "raw_target_sha256": "275fed23b4401db0a4414721f264d0bdd472ae5085cb1ce5ed5b5fe435b629c2",
+      "translation": "사진이 많아도 확인할 수 없는 부분"
+    },
+    {
+      "source": "Several photographs can all originate from the same unit. Five angles of a garment spread on a green table give more information about that garment, but they do not establish that five buyers received it. Look for shared folds, identical tags and repeated packing labels when assessing the range of examples. Count distinct units only when the source gives you a basis for doing so. Otherwise describe the number of useful views and avoid implying that you assessed a larger sample.",
+      "source_sha256": "0230afc08ed90755faad17db31268eba54929a931853cc4285b16de5d7ac32f7",
+      "raw_target_sha256": "f45d173c033cb23a76acea5194aa30fbcddf08b0679fe7ddba6cbd25f38a8388",
+      "translation": "초록색 탁자 위에 놓인 옷을 다섯 각도에서 찍었다고 해서 구매자 다섯 명의 사례는 아닙니다. 반복되는 주름, 동일한 택이나 포장 라벨을 살펴보세요. 서로 다른 실물이라는 근거가 없으면 확인 가능한 촬영 각도의 수만 설명하세요."
+    },
+    {
+      "source": "A series can also omit precisely the feature that matters. A bag might be shown from the front, back and both sides while its interior remains closed. The gallery could resolve whether it has external side pockets and leave the number of interior compartments unanswered. Save the picture that best shows the external pockets. Write down the interior question beside it so the next stage of your research addresses that missing detail instead of repeating a search that has already yielded all it can.",
+      "source_sha256": "bc86be88a6bf01f9f3c220ce01f4b148c8deed1c6d686fb006bb3972ea12e8aa",
+      "raw_target_sha256": "1ed3e780c688c3df8b421a0b7e4b0e734eaa70d5be517b38e3556451bea18dd0",
+      "translation": "가방의 앞·뒤·양옆을 모두 촬영했어도 닫혀 있으면 안쪽 수납칸 수는 모릅니다. 바깥 주머니가 잘 보이는 사진을 보관하고 내부는 미확인으로 남기세요. 다음에는 외관을 다시 찾기보다 가방을 연 상태의 자료를 확인할 수 있습니다."
+    },
+    {
+      "source": "Bring the correct comparison back to your order",
+      "source_sha256": "0b3abd1cab83b94882571827a47acc28b9e21cd2db59cf2b5408c26a808178ee",
+      "raw_target_sha256": "39c079c0402774da1373e404c1e9685d6eab4a8c8968930380decdaab6420024",
+      "translation": "내 주문과 연결해 비교하기"
+    },
+    {
+      "source": "Once your own warehouse record is available, start a separate folder or note for the received item. Include the selected option as it appeared on the order, then add your observations about the received unit. If the newly photographed garment has an unexpected cuff, compare its label and the specific closure against the saved seller option. The old public image can illustrate what prompted your initial question. Your paid selection and your own photographs explain the actual order difference.",
+      "source_sha256": "5c2d2819dccb841b75a3f7666c9bb056c5bcb7273f89943b7af7ec12118d6b5e",
+      "raw_target_sha256": "deccb42f0f5d54f12b2c85aaa56c61e8a529a7bbc62caa8be74e860b5b7e8cb6",
+      "translation": "내 입고 기록이 생기면 새 메모에 주문 옵션 원문과 받은 상품의 특징을 적으세요. 소맷단이 예상과 다르면 라벨과 잠금장치를 저장한 판매자 옵션에 대조합니다. 예전 공개 사진은 처음 의문이 생긴 이유이고, 실제 주문 내용은 결제한 옵션과 내 실물 사진으로 설명할 수 있습니다."
+    },
+    {
+      "source": "For a message requesting clarification, supply only the pieces someone needs to act. Identify the order privately, name the selected option, describe the visible detail and ask for the missing view or confirmation. A message such as “Please show the open left cuff of the brown overshirt so I can see whether it closes with a button” gives the reader a clear action. If the current photo answers the question, close the note with that observation and its date.",
+      "source_sha256": "e750d7efb539eb2aad7831eac9ace3265062871dba70bf07debd19c736168ae9",
+      "raw_target_sha256": "9f2e14e769a4880216021e1812908fb605dd79cc6ba104a96b11c4a7251fe5a9",
+      "translation": "문의할 때는 주문 번호를 비공개로 전달하고 선택 옵션, 지금 보이는 특징, 추가로 필요한 부분을 알려 주세요. ‘갈색 셔츠 재킷의 왼쪽 소맷단을 열어 일반 단추인지 볼 수 있게 찍어 주세요’처럼 쓰면 됩니다. 기존 사진으로 확인됐다면 내용과 날짜를 기록하고 마무리하세요."
+    },
+    {
+      "source": "A seller can place many combinations on one product page. The marketplace identifier finds that page; a saved selection explains which one of those combinations you wanted.",
+      "source_sha256": "18246cac84856870c1636dd13c592b4b4ca981c3eb311127262bdff1a79ef87e",
+      "raw_target_sha256": "8303156e1148c24eed7851aab8840e55b033a8e832daf166db4f1141c555ff91",
+      "translation": "상품 번호는 판매 페이지를 찾는 번호입니다. 그 안에서 어느 조합을 골랐는지는 저장해 둔 옵션으로 확인하세요."
+    },
+    {
+      "source": "Separate three records",
+      "source_sha256": "efa48977e1995b32fba39bd62896468e8264f5e4a78b2bf63af99c6b7f0d73e0",
+      "raw_target_sha256": "d90727e94067045dfbb86a5027c2a11c1381d37cce491e135ac0af2d4839aca9",
+      "translation": "세 종류의 기록 구분하기"
+    },
+    {
+      "source": "Keep the seller listing, the selected option text and the paid order summary. The first record identifies an offer, the second identifies a choice within it, and the third shows what was submitted. An internal stock keeping unit may be visible for some selections. When no SKU is displayed, do not manufacture one by inventing a number or appending a colour name to the item link.",
+      "source_sha256": "eb05d514c5b5400c8219884759593a4a2c52d74b71c68ca3951fa723107e5ae2",
+      "raw_target_sha256": "4adfffd609a83c8166688fa8eb4bbe6764d97cbd2d6ca31b57258a2ff3406410",
+      "translation": "원본 상품 페이지, 선택 옵션 원문, 결제 완료 내역을 각각 보관하세요. 상품, 그 안에서 고른 조합, 실제 주문을 구분할 수 있습니다. 판매자 자체 SKU가 보이면 기록하고, 없으면 번호를 만들거나 URL에 색상명을 덧붙이지 마세요."
+    },
+    {
+      "source": "Change one selector at a time",
+      "source_sha256": "c30591a785988c209a7e3a330987e0fbfe8bb07776aa530f085b6e55b2d987dd",
+      "raw_target_sha256": "336c37eac5e1950f1e69457750cd929ed2251e82569aae4bfdd04df1f8343806",
+      "translation": "한 번에 옵션 하나씩 바꾸기"
+    },
+    {
+      "source": "Open the listing and choose a colour while holding size constant. Observe whether the image, available sizes, price or quantity changes. Now change size and repeat. Two almost identical labels can refer to different fabric, an earlier model or a version sold without accessories. Keep the original seller wording as well as any translation. The word black alone rarely distinguishes two black choices if the seller uses a suffix to separate them.",
+      "source_sha256": "699eb003d97919885ef49f85fa99552cd96e507f63e3405fc3fcc4045d8dca7e",
+      "raw_target_sha256": "0f2c9dfaa8e9a691bf3c22ea16f2ca0d28a5d1e42ebae871ae8ee62747071f6a",
+      "translation": "사이즈를 고정하고 색을 바꾸며 사진, 재고 사이즈, 가격, 수량을 보세요. 이어 색을 고정하고 사이즈를 바꿉니다. 비슷한 이름이라도 원단, 이전 모델, 구성품이 다를 수 있습니다. 검정 옵션이 둘이라면 뒤에 붙은 말이 중요하므로 원문과 번역을 함께 남기세요."
+    },
+    {
+      "source": "Copy the source link and open it in a fresh tab. If the page starts at a default selection, the link is useful for finding the listing but does not preserve your choice. Keep the option notes beside it. If a link appears to restore a choice, still confirm the order summary before payment. A prior selection in a shopping session or an edited listing can affect what a returning visitor sees.",
+      "source_sha256": "f25add19326f78acc6bcf3ba69b15833ab1ca304ded892dc7929a6fa4165474a",
+      "raw_target_sha256": "5430209df571164c6c0a046be47bbf70240d12a195deb7ca0ba6d0f40d5d8ef8",
+      "translation": "새 탭에서 기본 옵션으로 돌아가면 링크는 상품만 가리키므로 옵션을 별도로 적으세요. 기존 선택이 복원된 것처럼 보여도 이전 세션이나 상품 수정이 영향을 줄 수 있으니 결제 직전 주문 내역을 확인하세요."
+    },
+    {
+      "source": "Compare options as complete combinations",
+      "source_sha256": "fd6c015143b207705c0742f1114fdd46f4e4ca1ed94902c37475cad679bb9d9d",
+      "raw_target_sha256": "59732ecb1d20aa355d2b4e7c2c4fb66ad5ef251219672ac2d7681d3a67173788",
+      "translation": "선택한 조합 전체로 비교하기"
+    },
+    {
+      "source": "Imagine one row showing trousers, a jacket and a complete suit. The cheapest price could correspond to the trousers. Add the exact jacket-and-trousers option before comparing its subtotal with a different shop's full suit. For quantities, record complete sets separately from pieces. Two units of a suit and two individual garments represent different orders even when a cart shows the number two in both cases.",
+      "source_sha256": "65231a70dbf8b5eebc24dc1f34b1c0c0a053e6c6324b71b98fc5ab68d4ec2da8",
+      "raw_target_sha256": "9d2b859b4e00d9d4f033d9f889ba6f5193435e9a7a57939b92c428db7a53a3c2",
+      "translation": "바지, 재킷, 한 벌을 한 페이지에서 팔면 최저가는 바지 한 벌 가격일 수 있습니다. 상하 세트를 선택한 소계를 다른 매장의 정장 세트와 비교하세요. 세트 두 개와 낱옷 두 벌은 장바구니 숫자가 같아도 다른 주문입니다."
+    },
+    {
+      "source": "Match the warehouse entry to the selection",
+      "source_sha256": "bd65ef37d041b5ad6093a1695df1a2881396be9b85e8fa58cc5da4d65d224f51",
+      "raw_target_sha256": "002adf6f33135aa767cb9bb8b97d5515bb9376069d80f131051c2a7112772e68",
+      "translation": "입고 내역을 선택 옵션과 대조하기"
+    },
+    {
+      "source": "When photographs arrive, identify the order and the option on the received unit. A size label can support a size check, while a picture showing both pieces helps confirm a set. Ask for the missing feature in a new view if the existing picture does not resolve the question. An item ID match is a necessary link in the evidence chain, but it cannot select a colour or count an accessory for you.",
+      "source_sha256": "4051f673eddcd1fa3d2127b0f5aad3d0533f17c221cc6bc8cb6e610888c7c4c6",
+      "raw_target_sha256": "1096cb54c559c2f4f3fd73293b38686ac51e372fdb74d660f22ae697f446a3b3",
+      "translation": "사진이 오면 해당 주문과 실물 옵션부터 확인하세요. 사이즈는 라벨로, 세트는 두 구성품이 함께 나온 사진으로 확인할 수 있습니다. 필요한 부분이 안 보이면 새 각도를 요청하세요. 상품 번호만으로 색이나 구성품 수는 확인되지 않습니다."
+    },
+    {
+      "source": "Read a listing as a collection of choices",
+      "source_sha256": "22730e5fc8106503b31d336b9d184988f414ffdac55b1ace659a3d30b9f7a45d",
+      "raw_target_sha256": "98baff6e254b323503ca2da8b566bfdcc1a4945ce190560f3ab19093b2245cc9",
+      "translation": "상품 페이지의 선택지를 조합으로 읽기"
+    },
+    {
+      "source": "Suppose you are comparing two canvas bags that share one marketplace link. The seller offers short and long handles in two colours, then a separate choice between a bag alone and a bag with a removable pouch. Choosing green does not settle the handle length or whether you are buying a pouch. Read through all visible selectors after making a colour choice. Some combinations may disappear or change names as a result of the preceding selection. Save the complete final wording in the order the seller displays it.",
+      "source_sha256": "ec4ccf8f705910eea793d7460ad75cd040ad0ae606218529cc85c87d1c4426a0",
+      "raw_target_sha256": "041094b5d31a20f77623aed258510e0e2e98f2c2ff58cec80bc54411fa69b324",
+      "translation": "같은 캔버스 가방 URL에서 손잡이 길이 두 종류와 색상 두 가지, 가방만 또는 탈착 파우치 포함을 선택한다고 해 보세요. 초록을 골라도 손잡이와 파우치는 정해지지 않습니다. 앞선 선택에 따라 다른 항목이 사라지거나 이름이 바뀔 수 있으니 최종 문구를 표시 순서대로 저장하세요."
+    },
+    {
+      "source": "Observe what the selected price buys",
+      "source_sha256": "9c6eb28444c6e5bd2a97e5c1fe4cdb3527bcd8b2e7dbfa0ee61ddeb40ead5d11",
+      "raw_target_sha256": "f06843051680c0759ba5970aa6d1c649e6549eab4d1632454da6437ed6c2496c",
+      "translation": "선택 가격에 포함된 상품 확인하기"
+    },
+    {
+      "source": "At the top of a multi-option listing, a displayed price may be a starting point. Select the exact components you want, then note the amount and quantity alongside that selection. In the canvas bag example, a photo might show the pouch clipped inside the bag while the cheapest choice sells the pouch alone. Copying the headline price beside a photo of the set would produce a misleading comparison. A row labelled “green bag, long handles, pouch included, one set” gives the price a defined unit.",
+      "source_sha256": "390be2ff21ba198caf06531aed15472192122c37c0a3b40680160ac045c57279",
+      "raw_target_sha256": "1f75f74c6bd981ef9661114931bebfac420ef66ffc87c968dc389b87df17b2a1",
+      "translation": "상단 금액이 시작 가격일 수 있습니다. 사진에 가방과 파우치가 함께 있어도 최저가가 파우치 단품이면 세트 가격이 아닙니다. 원하는 구성을 선택한 뒤 수량과 소계를 ‘초록 가방, 긴 손잡이, 파우치 포함, 한 세트’처럼 기록하세요."
+    },
+    {
+      "source": "Quantity deserves a separate check. If you want two people to receive one complete set each, first confirm how many bags and pouches one unit of the selected option contains. Place the desired quantity in the cart and inspect the resulting selection and subtotal before deciding. A free-text instruction about including a pouch does not establish that you paid for the option containing it. If the combination you want has disappeared, ask which listing currently offers it and start a new comparison for that listing.",
+      "source_sha256": "9b3f43174a545a6f6ca822497fd130a78b3e3192ccbc873c2575a0f39dae763a",
+      "raw_target_sha256": "1a8c843b502d57cf143608f26463690a9276bfb3d8d53a1f1881f26dd97eaa89",
+      "translation": "두 사람에게 한 세트씩 줄 계획이라면 판매 단위 하나에 가방과 파우치가 몇 개씩 들어가는지 확인한 뒤 수량과 소계를 보세요. 메모에 파우치를 요청해도 포함 옵션을 결제했다는 근거는 아닙니다. 조합이 없어졌다면 현재 판매 페이지를 확인하고 새로 비교하세요."
+    },
+    {
+      "source": "Use translations without losing distinguishing details",
+      "source_sha256": "16ea49d3e81eef75fc10aeeeb33c60496a996f93bd154a66ef7487d32c76cf67",
+      "raw_target_sha256": "ee16d3147db7f439694598e6ec75562493f5eae8c13519c412de6219cbf684e3",
+      "translation": "번역해도 구분점 남기기"
+    },
+    {
+      "source": "Machine translation can make two option strings read identically even when the original includes an extra character, a model suffix or a different unit. Save both original labels and your working translations, with the original spelling intact. Note the option order only as a temporary aid. A seller can rearrange choices, so “third tile from the left” may describe the wrong product when you return. An image thumbnail can help locate a choice, but its colour or pictured accessories need confirmation from the selected option text.",
+      "source_sha256": "4b9a1871f7da6024373c9bae4d04b73018e0e5407eadf952756abc168a84aa6c",
+      "raw_target_sha256": "fd3c50ca370dfddcc5f12af9fea97e4cff49f329b4d81266df79d7f087e15c07",
+      "translation": "원문 한 글자, 모델명 접미사, 단위가 달라도 자동 번역은 같은 이름을 보여 줄 수 있습니다. 원문과 번역을 나란히 두세요. ‘왼쪽 세 번째’는 판매자가 순서를 바꾸면 달라집니다. 작은 사진은 찾는 데 쓰고 색과 구성품은 선택 옵션 설명으로 확인하세요."
+    },
+    {
+      "source": "If the language difference affects a practical decision, make the question concrete. For example, ask whether the two green long-handle options differ in pouch inclusion or in bag dimensions. Include their original option text so the respondent can distinguish them. A broad question asking which version is better may produce an opinion without resolving the specific difference. Keep the answer with its source and date. If it refers to one colour, avoid applying it to every colour on the listing.",
+      "source_sha256": "348db9ff046a1da4004a7ac03a2a9dfbdfec29ead37b72acffe72b291ada234c",
+      "raw_target_sha256": "7bbbb6a78f33facebac27ccc7a49fa2aa43e1a05f6f6fb0bd82227b9eb145b70",
+      "translation": "초록 긴 손잡이 옵션 두 개라면 파우치 포함 여부가 다른지 가방 치수가 다른지 원문을 첨부해 물으세요. ‘어느 게 좋아요?’라는 의견만으로는 차이를 확인하기 어렵습니다. 답변의 출처와 날짜를 남기고 한 색상의 설명을 전체에 적용하지 마세요."
+    },
+    {
+      "source": "Distinguish the selection from a customer's note",
+      "source_sha256": "d8ff75193a523158380bd298fcfd9fe9ecb79c879ae2960b6a117e84815aa67c",
+      "raw_target_sha256": "950a98111532359958dbca9550b1f53280360a9663487d8cb6262670471686fb",
+      "translation": "선택 옵션과 구매자 메모 구분하기"
+    },
+    {
+      "source": "A configurable product sometimes invites a buyer to leave instructions. The instruction and the selected item perform different jobs. The selected option establishes what the cart and receipt describe; a note communicates something you have requested. If you select a short-handle bag and type “long handle please” in a message, the records may point in different directions. Before paying, choose the exact available option or seek a written explanation of how the seller handles the requested combination.",
+      "source_sha256": "da657ea632e2982d3683fb5b3eeb6a04c07e40b279414ffbe373f905b9d520ac",
+      "raw_target_sha256": "066b0d1fbda19ef475c3330139475c45237da5857f3de01e2740c23e4b703ed0",
+      "translation": "선택 옵션은 장바구니와 영수증에 남고 메모는 요청을 전달합니다. 짧은 손잡이를 고르고 ‘긴 손잡이 주세요’라고 쓰면 두 기록이 충돌합니다. 결제 전 정확한 옵션을 선택하거나 판매자에게 원하는 조합의 처리 방법을 글로 확인하세요."
+    },
+    {
+      "source": "For a gift with several components, create a short record for each intended recipient. Record their chosen colour, handle length, pouch choice and quantity, even if the marketplace URL is identical for everyone. Confirm the final order has the expected number of distinct lines. Two identical green bags may legitimately appear on one line with quantity two. Green bags with different handle lengths need a way to distinguish those selections in the record you will use at warehouse intake.",
+      "source_sha256": "2a69d00faba871ae2ac71de3de2978762e35c5959b2f32ccfb42bf39e83cc695",
+      "raw_target_sha256": "c09ef5fc1f0141d33a7c9f670831ac41bfa95e402d8fabaf202221b532d1b10f",
+      "translation": "여러 사람에게 선물한다면 URL이 같아도 사람별 색상, 손잡이 길이, 파우치, 수량을 적으세요. 같은 초록 가방 두 개는 한 줄에 수량 2여도 됩니다. 손잡이가 다르면 입고할 때 구분할 방법이 있어야 합니다. 최종 주문 줄 수도 확인하세요."
+    },
+    {
+      "source": "Resolve mismatches at the right level",
+      "source_sha256": "9d256bf6d49b2807e74d33ff7922aadcb52f2f53dd19a19ffb7fb76fcb02ed7a",
+      "raw_target_sha256": "9270426e0ea137604c2528b4632b6e03f843e3aac07069ee011ba122a93638e1",
+      "translation": "불일치가 생긴 지점 찾기"
+    },
+    {
+      "source": "When a received item differs, ask first whether the listing, the selected combination or the received unit is in question. A correct item number with the wrong colour points to an option-level issue. A correct colour with a missing pouch raises a package-content question. An entirely different seller item number is a source-link discrepancy. Each needs different evidence, and naming the precise difference makes a follow-up easier for the person handling the order.",
+      "source_sha256": "4c9ff46e6354edbcd686821a749b6e0a7ed4221b7853f13f4d5ae26b06febc7a",
+      "raw_target_sha256": "c4868fd3cf360380320c285e190df4bf6f67149db9b22f32c6677a2d66e4f8b3",
+      "translation": "상품 번호는 맞는데 색이 다르면 옵션 문제, 색은 맞는데 파우치가 안 보이면 구성 문제, 판매자 번호 자체가 다르면 원본 링크 문제입니다. 상품 페이지, 선택 조합, 받은 실물 중 어느 단계가 다른지 밝혀 문의하세요."
+    },
+    {
+      "source": "For the bag example, gather the paid order line showing the pouch-inclusive combination, the warehouse photo showing the bag, and any photograph that lets you inspect its interior. If the bag is closed, describe the pouch as unconfirmed and ask for an open view if available. If a clear view of the contents and an item count confirms the pouch is absent, update the note. Your record now connects the specific option purchased to the specific feature you needed to verify.",
+      "source_sha256": "bc24626ff71d1c7008cdb8452d3b0917103d98337c03826160b18b57ff317c2a",
+      "raw_target_sha256": "ff65f88fb20b018135c961990069f31e4187b5e32505e699bba40ff583d58dc6",
+      "translation": "파우치 포함 결제 내역, 가방 입고 사진, 내부 사진을 모으세요. 가방이 닫혀 있으면 ‘파우치 미확인’으로 남기고 열어 찍을 수 있는지 물으세요. 내부 전체와 물품 수를 확인해 실제 빠진 것이 확인되면 기록을 갱신합니다."
+    },
+    {
+      "source": "An agent link is convenient for checkout. The original marketplace page gives you a separate reference for the seller, the listing identifier and the options you are researching.",
+      "source_sha256": "f157da3ad58d1085fc8b9cc837edf2891707414f07ce3815e4a4f8a33904a158",
+      "raw_target_sha256": "aa33cb4af3def0a517e9ebe92a86a37346d54252678d6b8d24b1117fc9d291b0",
+      "translation": "대행 링크는 주문하기 편하고 원본 마켓 페이지는 판매자, 상품 번호, 옵션을 확인하는 별도 근거가 됩니다."
+    },
+    {
+      "source": "Work from the item page",
+      "source_sha256": "1e17aa084fda4b44d23391c9361117e3bb97f8c740344f685b1f6b3e2854a2db",
+      "raw_target_sha256": "bad31adb4556a1a2f11f7723104a135260a8d2ccb9c6f3c67d6a7fdfda81bfc0",
+      "translation": "상품 상세 페이지에서 시작하기"
+    },
+    {
+      "source": "Start with the specific product rather than the platform homepage, an affiliate registration page or a search results page. Open the product normally and look for an original listing link. On this grid, use the source-link control on the detail page when it is available. Copy the resulting address to a private note. If the destination is simply a shop, return to the item and identify the product inside that shop before doing a QC lookup.",
+      "source_sha256": "c0744cb32c0bc35c3d0652769ecd31ed0c12c7e1e75a9fd12b32d1c32007ec77",
+      "raw_target_sha256": "7cd2d812a7bcc2d18b95871c8da301206b3ccbb79b0eaadfe1a883fc6869c395",
+      "translation": "홈이나 가입, 검색 결과가 아닌 해당 상품 상세 화면을 여세요. 이 목록에 원본 링크 버튼이 있으면 목적지 주소를 개인 메모에 저장합니다. 상점 첫 화면이라면 상점에서 정확한 상품을 찾은 뒤 검품 사진을 검색하세요."
+    },
+    {
+      "source": "Recognize an embedded URL",
+      "source_sha256": "adfd1e68c62534eac2b221349bebc612cc73ad2cabd6f5778a59346f1f65ce61",
+      "raw_target_sha256": "5d09660ed0222203df4221286a08cac9710cf02b3513f163a4059aefa099b0e3",
+      "translation": "링크 안에 들어 있는 주소 알아보기"
+    },
+    {
+      "source": "Some KakoBuy item links include an encoded marketplace address in a url parameter. Percent-encoded characters can make it look unfamiliar: an encoded question mark or equals sign still belongs to the embedded address. A finder may accept the complete agent link directly. Prefer an exposed original-link control when possible, and inspect the resulting destination rather than deleting punctuation until a URL happens to open.",
+      "source_sha256": "6d9f4cd15bb728d8219aa29538e356072f1f3294e9bdf748335b05c9c916c2eb",
+      "raw_target_sha256": "93e7515ac686d009fd07eb243aa66f6fde0b64753f3ce4793e3f9d500fdfb9b6",
+      "translation": "일부 KakoBuy 링크는 url 매개변수에 원본 마켓 주소를 인코딩해 넣습니다. 물음표나 등호가 퍼센트 코드여도 원래 주소의 일부입니다. 검색기가 대행 링크 전체를 받기도 합니다. 원본 보기 버튼을 먼저 쓰고 문장부호를 지워 주소를 추측하지 말고 실제 목적지를 확인하세요."
+    },
+    {
+      "source": "Verify the recovered destination",
+      "source_sha256": "708650ee103f660ad3d5d0e7d8810e55d1e092c6894df7264b37096a89a0c2d7",
+      "raw_target_sha256": "eae36da91862adfd01dfa7f7717392efaef3367d4a9faeb882031e5f0ace0949",
+      "translation": "최종 페이지 확인하기"
+    },
+    {
+      "source": "Compare the seller domain, item number, title, pictures and available options. A convincing title alone is insufficient when several shops sell similarly named items. An agent URL and its seller URL need not look alike, but the marketplace identity and item number should reconcile where both expose them. Save the pair under one note and give the note a recognizable label such as blue jacket with two-way zip.",
+      "source_sha256": "9ac56af9b5ad54f2f881cf820466f8b097f8772282e061ca69530c8b0a9c8ce8",
+      "raw_target_sha256": "26a30f62dc8fae22370f7a1405983c5f0492dea0dc0780d6b6d213a2fbfddd7a",
+      "translation": "도메인, 상품 번호, 제목, 사진, 옵션을 대조하세요. 여러 상점이 비슷한 이름을 쓰므로 제목만으로는 부족합니다. 대행과 판매자 URL 모양이 달라도 둘 다 마켓명과 번호를 표시하면 서로 맞아야 합니다. 차이가 있으면 기록하세요."
+    },
+    {
+      "source": "Distinguish useful metadata from private order information",
+      "source_sha256": "2450d8846d90974789bc93e01ec854661beea387a4dcbb361da63a568e8ff725",
+      "raw_target_sha256": "4c56bd9ee099242e188c8d51d2753ba02f8b2cfea0dad462c1af3499f84d9fb4",
+      "translation": "공개 식별자와 개인 주문 정보 나누기"
+    },
+    {
+      "source": "A public listing reference is usually sufficient for comparing a find. Do not share an account dashboard URL, a checkout page containing personal information or a screenshot with an address to prove a simple listing match. Crop any evidence you share to the item and option. An exchange or payment inquiry belongs in the official order channel, where the corresponding order reference can be supplied privately.",
+      "source_sha256": "6ff45467d53fcf8496b4b25c99c877078990e786eafe1957fea42946532325b3",
+      "raw_target_sha256": "62ba999cbddf4bf191b13c475df9390ff32b64ae2c91c752d9155455185d1c85",
+      "translation": "상품 대조에는 보통 공개 상품 번호면 충분합니다. 개인 계정 화면 주소, 결제 페이지, 배송지가 보이는 캡처를 공유하지 말고 상품과 옵션만 잘라 보이세요. 교환이나 결제 문의는 계정 내 지원 창구에서 처리하세요."
+    },
+    {
+      "source": "Deal with an unavailable listing",
+      "source_sha256": "8c7001aa99e8496bb69389f3614cca47e274e16ecb52d194ea68217602d326c8",
+      "raw_target_sha256": "aafe674a1c5f20f477b8a46cac0a86c648f4e5dc8809035da58eff01f1590bf8",
+      "translation": "판매 페이지를 볼 수 없을 때"
+    },
+    {
+      "source": "A seller may remove a product or restrict what an anonymous visitor can see. Record the page state and date. If a visual search returns another shop, create a new entry instead of replacing the old source link under the same name. The new listing needs its own price, size, option and QC checks. An old warehouse album attached to the first seller cannot establish what the second seller will deliver.",
+      "source_sha256": "5ddb4459b4ec9024b4753002d7f7dd1631154e84fc3a603cfed9b573cf9a7184",
+      "raw_target_sha256": "fdb2434bf34cdec712f1c0e4652cc1ef34267863193bd52cb076f6d1cfaebf9c",
+      "translation": "판매자가 삭제했거나 비로그인 조회를 제한했을 수 있으니 상태와 날짜를 남기세요. 이미지 검색으로 다른 매장이 나오면 새 후보로 등록하고 가격, 사이즈, 옵션, 검품 사진을 별도로 확인합니다. 첫 판매자의 입고 앨범으로 다른 판매자의 배송품을 알 수는 없습니다."
+    },
+    {
+      "source": "Give each address a purpose",
+      "source_sha256": "c792b403f31f291c3a9c0dcaf00a4846fe41e175eac09f099b13f3dcd50e1607",
+      "raw_target_sha256": "8f02ae7ffda95fe2356e53bbc283b6371382330a858276efd6c2e73f8aef3539",
+      "translation": "주소마다 쓰임 표시하기"
+    },
+    {
+      "source": "A public product find can generate several addresses that look plausible in isolation. The spreadsheet has its own page for the item, the agent can show a product detail page, and the original seller lists the product on a marketplace. A link to the product image opens a fourth destination. Use meaningful field names when you save them. “Spreadsheet discovery page,” “agent purchase page” and “original marketplace offer” are more useful a week later than three unlabeled links in a chat.",
+      "source_sha256": "771121fbb381151f4e0fbf7cd4ac34d5310f59ce817cc22d1b0f87759b1db503",
+      "raw_target_sha256": "b90e446a562a49946dbf9bec74f71322b6da1c5819137e75dc33278de18f3205",
+      "translation": "목록 소개 페이지, 대행 상품 화면, 판매자 원본 페이지, 이미지 파일은 서로 다른 목적지입니다. ‘발견한 목록’, ‘대행 구매 페이지’, ‘판매자 원본’처럼 이름을 붙이면 일주일 뒤에 채팅 속 주소만 보고 추측할 필요가 없습니다."
+    },
+    {
+      "source": "A common test is to imagine which page you would open to answer a question about the seller's current options. A standalone image can show the bag pictured in an advertisement. It cannot establish whether the merchant still offers a red version with a shoulder strap. A catalogue card can help you return to the find, but its short description may omit a seller option. Keep the sources that serve each purpose and record which one supplied a particular observation about the product.",
+      "source_sha256": "da0bd56fb2b09b1a9d2453151bcccd8e549fa5b8af74e2d71f62c02519558c0a",
+      "raw_target_sha256": "1f67dccd6ab49992c09c5780ee5197918ff90af99ee2b531d20017bc3b64c518",
+      "translation": "현재 옵션을 알고 싶을 때 어느 페이지를 열어야 할지 생각하세요. 가방 이미지로는 빨간색 어깨끈 포함 옵션이 지금도 판매되는지 알 수 없습니다. 목록 카드는 처음 발견한 곳을 찾는 데 쓰고 현재 옵션은 판매자 페이지에서 확인하세요."
+    },
+    {
+      "source": "Follow a normal redirect carefully",
+      "source_sha256": "c8e607e11e8e9a79e7be62ad0c11ac5f87868548123da46212f9c47f0bb62c21",
+      "raw_target_sha256": "14e775281ed97bc936efebb4a9ce2e97411cf3577223c95ba0ce6726732237d8",
+      "translation": "일반 링크의 리디렉션 확인하기"
+    },
+    {
+      "source": "A shared link may go through a redirect before reaching a product. Open it as an ordinary public listing and note the final destination. Read the address bar alongside the actual content on the page. A shop landing page featuring a similar product in a carousel does not identify that carousel entry as the original item. Look for a specific product title, item identifier and selection controls. If you reach a sign-in page, keep the original public reference and note that the destination could not be confirmed from that session.",
+      "source_sha256": "d1fb90f738a1a53f9dbc17343633baa460963a4d9fe7241d9b0f7cf15dc0bb5e",
+      "raw_target_sha256": "7a57ac5b6848592bf73539c7e4ba467290084657c9cfd17575ff2647c813dbd3",
+      "translation": "공유 주소를 일반 상품 링크처럼 열고 이동 후 주소창과 실제 내용을 확인하세요. 추천 목록에 비슷한 제품이 있는 상점 홈은 그 상품이 원래 링크의 대상이라는 증거가 아닙니다. 상세 페이지에서 번호와 옵션을 대조하세요."
+    },
+    {
+      "source": "Avoid sending an entire browser or order export to someone who only needs to identify a product. If the item link lives inside a purchase history, use the public product or original link control and check its destination before sharing. A screenshot of the whole order history may include unrelated products, names or payment details. The marketplace label and public item reference normally give another person a much cleaner starting point for an independent check of the seller listing.",
+      "source_sha256": "c609c7297bebd41ea9f75cf4c183279513b2343ae7b5eb9e6e06bb6387c26d32",
+      "raw_target_sha256": "ad008920a428f29b4612b0126a7726f44d40c71d495292dd0d5da964fb61d10c",
+      "translation": "상품 하나를 알아보려는 사람에게 브라우저나 주문 전체 내보내기 파일을 보낼 필요가 없습니다. 주문 이력의 공개 상품 링크를 꺼내 목적지를 확인해 공유하세요. 전체 화면에는 다른 상품과 배송·결제 정보가 들어갈 수 있습니다."
+    },
+    {
+      "source": "Recognize a link that opens at the wrong level",
+      "source_sha256": "ac31ed83a3da5bdc1c89d887ec70efb44fcf8797cd80547f16116f9247c0dc1b",
+      "raw_target_sha256": "da0bb678b4d218f3582315934cc9b6c4f92171f42b4254bd4fef7bee4802f6b1",
+      "translation": "상품이 아닌 상위 페이지에 도착했을 때"
+    },
+    {
+      "source": "Imagine a short link opens a seller's collection of storage boxes. The image of a green box looks familiar, but selecting it reveals a page with several sizes and lids sold separately. You have found a candidate, not yet a recovered link. Compare its marketplace number with any identifier in the original product record. Check whether the seller name and available configurations align with what you saved. If the original record has no identifier, describe the new link as a possible match and explain the basis.",
+      "source_sha256": "7095b5c7cf56f8743e55984973a6ba5ac3b87badcd3f383cb08e39d58dc7eec5",
+      "raw_target_sha256": "d9fbeb72f0d0858d1b34380fbb89ff225d398fba37f260dd72cbb960a2cc63a1",
+      "translation": "단축 링크가 수납함 모음으로 열리고 익숙한 초록 상자를 눌렀더니 크기가 여러 개고 뚜껑은 별매일 수 있습니다. 현재는 후보를 찾은 단계입니다. 원본의 마켓 번호와 선택한 구성으로 확인하고 부족하면 후보라고 표시하세요."
+    },
+    {
+      "source": "A seller can have more than one listing for nearly identical boxes. One might sell sample units, another bulk sets. A product photo can survive across both listings while prices, quantities and dimensions differ. Using the currently accessible offer as a substitute for the old one may be a reasonable buying decision after a fresh review. Replacing the saved original URL without noting the substitution, however, would assign older warehouse photographs and purchase details to a different commercial offer.",
+      "source_sha256": "e5f607b5e874f2d7d3e0708cc14930034bba97a548d83a186d9db98775ee5214",
+      "raw_target_sha256": "b680a02277d6444c7b106e1351d83a47a7a0598dfe264a504a799df68a416c76",
+      "translation": "한 매장이 비슷한 상자를 견본용과 묶음 판매용으로 나눠 올릴 수 있습니다. 같은 사진이어도 가격, 수량, 크기는 다릅니다. 현재 판매 중인 제안이 좋은 대안이라면 새 후보로 비교하고 원래 링크를 복구했다고 기록하지 마세요."
+    },
+    {
+      "source": "Check what survives when the link is shared",
+      "source_sha256": "3772834835379fd3ad03b5ac4d7b151756c4b097967d26a77d00ad0e2c8523f4",
+      "raw_target_sha256": "f456c59d39a6c47f728dca938f57e1984aa0b55341c401bc593620a7d704fe8b",
+      "translation": "공유했을 때 옵션이 유지되는지 확인하기"
+    },
+    {
+      "source": "If the item opens with a selected size in your session, copy its public address into a fresh tab. See whether it preserves the selected option or returns to a default page. A session can remember choices that are absent from the URL. Ask a collaborator to choose the exact option text in their own session if they need to confirm a price or photograph. Do not assume their first displayed option matches yours merely because the marketplace page has the same item number.",
+      "source_sha256": "827ac6656bdf34870a00eade6e4d4e47c755d0cbeb8c55a1405821c05fdb8499",
+      "raw_target_sha256": "5534f3747adef33e0d73d7ff6be8e9edb5c69a4acab62e16fdb3678859d99144",
+      "translation": "새 탭에서도 방금 고른 사이즈가 유지되는지 보세요. 세션이 기억한 내용은 URL에 없을 수 있습니다. 협업자는 본인 화면에서 정확한 옵션 원문을 선택해 대조해야 하며 처음 열린 기본값만 믿으면 안 됩니다."
+    },
+    {
+      "source": "For the storage box, keep the length, width, height and lid choice beside the link. If the seller uses a label such as “large with lid,” preserve that exact wording and add the dimensions separately. If the link later shows an amended size chart, the original observation remains traceable to a date. You can then decide whether the current offer still serves your purpose, without having to reconstruct why an earlier buyer associated a particular capacity or price with the shared address.",
+      "source_sha256": "0aea8c0b2ade58fdbbae55ea10c2b078084b127205918d0a8e4569660ead0fd3",
+      "raw_target_sha256": "67374de90f1feaa15dad92806da8510c523a7e005d9fae860e2ee89a79363c5d",
+      "translation": "수납 상자는 길이·너비·높이와 뚜껑 옵션을 링크 옆에 남기세요. ‘대형 뚜껑 포함’ 같은 원문과 치수를 함께 기록하면 표가 바뀌어도 확인 날짜의 상태를 알 수 있습니다. 예전 용량이나 가격을 추측하지 않고 현재 용도에 맞는지 판단하세요."
+    },
+    {
+      "source": "Leave a useful result when recovery fails",
+      "source_sha256": "208df5d5a637fa24961dd2f602ccdb5b7a063c4ebf8b7976f59b1617842cc968",
+      "raw_target_sha256": "62383e0f6615f783c3528b8a5690c7969594f08a9c7cff83bc0c71d48aebb2dc",
+      "translation": "원본을 못 찾았을 때 남길 정보"
+    },
+    {
+      "source": "A useful record can end with an unresolved source. Write down the last confirmed public location and what stopped the search, such as a removed product page or a redirect to a shop. Keep any item identifier you can independently read from the original link. Distinguish a seller claim that the item moved from a verified replacement link that the seller supplied. If you later receive that replacement, open a separate record and connect the two with the date and explanation.",
+      "source_sha256": "56551309977508d32909df0c4f919de0046f6141d3b2837ed52621b72787e70a",
+      "raw_target_sha256": "dbbcd065a6dc208e89f34cff5ccf96f2a8c405ba6c83a5b16d552630aeaa0ce1",
+      "translation": "마지막으로 확인한 공개 위치, 삭제나 상점 홈 이동 등 막힌 이유, 원래 링크에서 독립적으로 읽은 번호를 적으세요. ‘상품이 옮겨졌다’는 판매자 설명과 실제 번호나 사양으로 연결을 확인한 결과를 구분합니다."
+    },
+    {
+      "source": "Before using a recovered link to make a purchase, review the current price, package quantity and selected option. A recovered historical URL answers the question of where the original find pointed. The product offered there today still merits its own review. For a purchase already in progress, use the order's private support channel and attach only the relevant original and current product evidence. A public QC search and an account-specific order question can then be resolved independently.",
+      "source_sha256": "5fba3b79adbb529acef594b2c4419b836f67e0806b0e44b04b29db1147aec6f6",
+      "raw_target_sha256": "255efe72b41de938c3651e1a80f7c2b8c47a7ee473b7f30c2ba9bbfc686ef828",
+      "translation": "되찾은 링크로 주문하기 전 현재 가격, 포장당 수량, 선택 옵션을 확인하세요. 과거 추천의 목적지를 알아도 오늘 파는 제품은 다시 살펴야 합니다. 진행 중인 주문이라면 내 주문 확인서와 계정 내 지원 기록을 이용하세요."
     }
   ]
 }

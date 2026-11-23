@@ -1,0 +1,158 @@
+{
+  "site": "litbuygrid-com",
+  "locale": "ko",
+  "source_set_sha256": "50911bbaf8cb4e95c0ffaba18561fc7cfb1d06446f37b6a6715ee18e99d8182e",
+  "raw_dictionary_sha256": "992d62c0e4e625d83034097a6284722295eb2da7ba278eebd289848c8f9ce1be",
+  "effective_dictionary_sha256": "a286efc0e1783a8e9ac5641cb25ba4ce464a468bcae96985a924d233e6688fa6",
+  "checked_entries": 254,
+  "review_scope": "Checked all exact input keys and output structure with the project auditor. Compared actual localized price/quantity calculations, physical item and option identifiers, garment-measurement examples, warehouse and shipping stages, seller/return wording, and sampled FAQ/body passages with the English source. Personally edited all ten article titles and replaced risk passages as recorded. This coverage is an audit plus targeted bilingual review.",
+  "reviewed_flags": [
+    {
+      "issue": "new digit or localized conversion",
+      "source_sha256": "b1da472feba13ab6902e7d08c9d200b85f6a0e89994417d3afce1d7d3b79c97b",
+      "raw_target_sha256": "5e96b9d0c0c9738a2e1aedbc334e7a76e63258cb9a95c187a615e5fa54913a5c",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "new digit or localized conversion",
+      "source_sha256": "6c2cf1da00b6755c0fbe11bb1a9ab41f022a88aea10918036c84e81c6662038c",
+      "raw_target_sha256": "4fb4118f9ab2256b4058b4fa191726f59ed21337a0dcaf2a01ab068be10c476b",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "quantity unit or currency changed",
+      "source_sha256": "eaf59be39cecb484c06bdecb038b2dd13d89ea43d5f0fbd62755d961e7b6a04a",
+      "raw_target_sha256": "ad4c1675fd35b5efce3bd3c6c65f895b60d5cf3155b3af376001832e67e011c6",
+      "resolution": "corrected translation"
+    }
+  ],
+  "unresolved_material": [],
+  "corrections": [
+    {
+      "source": "Why the LitBuy listing price changes when you select an option",
+      "source_sha256": "4b737b6ff111d72dab970c0c3bd7ca9f0847111d95105d49bf90997e95dd7531",
+      "raw_target_sha256": "55f93e891167ab2dd70c721f916d16f68e74e88fffe355d7cce3bd9f0a91099b",
+      "translation": "LitBuy에서 옵션을 선택하면 상품 가격이 달라지는 이유"
+    },
+    {
+      "source": "Is this the colour I ordered? Reading LitBuy warehouse photos",
+      "source_sha256": "d51e75f73f2e018aa790b6ffe42244e3dda805d11dd6dea853b828b3cd410f8e",
+      "raw_target_sha256": "1c6065c73f43aba6a4e07f6dd8e33a635dd610cbac94ae4cddce211ba9b7c032",
+      "translation": "주문한 색상이 맞을까? LitBuy 창고 사진으로 확인하는 방법"
+    },
+    {
+      "source": "A strap, liner or spare part is missing from LitBuy QC photos. What should you check?",
+      "source_sha256": "41070bbef448d1a94e025e73ed209a3a3370bbe9f937b9897bb982fcbf30de6b",
+      "raw_target_sha256": "45ee73edb7e2272faa054811a59f770f7654051e8d69a3f352932b09abf3a718",
+      "translation": "LitBuy 검수 사진에 스트랩, 안감 또는 예비 부품이 보이지 않을 때 확인할 사항"
+    },
+    {
+      "source": "What to save when a LitBuy seller listing might change",
+      "source_sha256": "eb6e71e3773e96d86831f2a8c17d2c8a9a0909af8c75fd67c382fe7e828abf59",
+      "raw_target_sha256": "165005edb5bc7f004c0012f70ae423b56444e048eaf5fd7310b814892f8ffd59",
+      "translation": "판매자가 상품 페이지를 수정하기 전에 LitBuy 주문에서 보관할 정보"
+    },
+    {
+      "source": "How to check a hoodie body-length measurement in LitBuy QC photos",
+      "source_sha256": "3b8c083942635a36c7682386366f5732cc76c8a138890f3edca4d7b8b7148b22",
+      "raw_target_sha256": "8edf8655ac4045225ca9d2d41893f3c29485874e73bcccaac51efa2d90da373f",
+      "translation": "LitBuy 검수 사진으로 후드티의 총장을 확인하는 방법"
+    },
+    {
+      "source": "Mirrored photograph or reversed print? A LitBuy garment check",
+      "source_sha256": "4019721adb422b10c6ce3dafeedaefdb167b0002ff2636c6d8aebbe2aae60f91",
+      "raw_target_sha256": "18758f9eefc03d573f991bfacc88d04b87c5a810ff59d94e2463672af4809c69",
+      "translation": "사진이 좌우 반전된 걸까, 프린트가 거꾸로 된 걸까? LitBuy 의류 검수 방법"
+    },
+    {
+      "source": "Keep, clarify or exchange? A decision guide for a LitBuy warehouse item",
+      "source_sha256": "998b8a5811c2816b6898ad8fc706539fc271f7b458b1a66ab550ea7d7c675817",
+      "raw_target_sha256": "3d0397faaa0ad684eb57bf16f348f71f2e4f990c3c7150f9338bd3b7018aebc5",
+      "translation": "그대로 받을까, 문의할까, 교환할까? LitBuy 창고에 있는 상품의 처리 방법 정하기"
+    },
+    {
+      "source": "Building a LitBuy return evidence record that someone else can review",
+      "source_sha256": "0f8d28554bc71317e901d198de1a27e9e58abcf9f2829a8d5bfe8a4cb95d808e",
+      "raw_target_sha256": "1bcc775a24733a78d7a51490ab03f2367c7b9f60072134fdd0be7c908d3c07c4",
+      "translation": "LitBuy 반품 신청에 필요한 증빙을 다른 사람도 확인할 수 있도록 정리하는 방법"
+    },
+    {
+      "source": "Reading a LitBuy seller response: what was offered, and what is still pending?",
+      "source_sha256": "0eaf7b25748b8456ac2bcb5b765ee5f45e26e6f42025b50b7ef5cd673e87c1a1",
+      "raw_target_sha256": "ff4f2b97c918717587b541de89e2d4c55f88c170580516feeb1832bbf3956b55",
+      "translation": "LitBuy 판매자의 답변 읽는 법: 제안받은 조치와 아직 해결되지 않은 점 구분하기"
+    },
+    {
+      "source": "How to inspect a LitBuy replacement after an exchange",
+      "source_sha256": "e3fed6cd038a8df07fce179a1370edd6faaf10294dd5e62cd6e4bf8cfa2bbfba",
+      "raw_target_sha256": "c0b084e955fe7ed602793335b5176f4c4a509105c3acd0e7d38271d9856672d9",
+      "translation": "LitBuy에서 교환 후 새로 도착한 상품을 검수하는 방법"
+    },
+    {
+      "source": "For an example, suppose five pieces cost 28 yuan each but ten pieces cost 24 yuan each. Five would cost 140 yuan and ten would cost 240 yuan before separately listed charges. The larger purchase lowers the unit price by four yuan but increases the product outlay by one hundred. If you needed six units, compare six at the applicable tier with ten at the lower tier. A lower number under a large-quantity column has no intrinsic value to a buyer who cannot use, store or economically ship the extra pieces. These figures illustrate comparison only and do not represent a LitBuy rate.",
+      "source_sha256": "b1da472feba13ab6902e7d08c9d200b85f6a0e89994417d3afce1d7d3b79c97b",
+      "raw_target_sha256": "5e96b9d0c0c9738a2e1aedbc334e7a76e63258cb9a95c187a615e5fa54913a5c",
+      "translation": "예를 들어 5개를 살 때는 개당 28위안, 10개를 살 때는 개당 24위안이라고 가정해 보세요. 별도로 표시된 비용을 제외한 상품 금액은 5개에 140위안, 10개에 240위안입니다. 많이 주문하면 단가는 4위안 내려가지만 상품에 지출하는 총액은 100위안 늘어납니다. 6개가 필요하다면 그 수량에 적용되는 가격으로 6개를 사는 비용과 낮은 단가로 10개를 사는 비용을 비교하세요. 추가 물량을 쓰거나 보관하기 어렵거나 배송비가 과도하다면 대량 주문란의 낮은 숫자만으로는 이득이 아닙니다. 위 금액은 비교를 위한 예시이며 LitBuy의 요금이 아닙니다."
+    },
+    {
+      "source": "Compare the cost at the boundary of a tier before changing your basket. Imagine a seller advertises eight notebooks at a lower unit price than seven, while a second seller can supply the seven you actually need. Write down both complete amounts and include any separate domestic delivery on each offer. Then ask what practical use the eighth notebook has. If the extra one is a gift, the eight-pack might serve two purchases. If it is surplus that would also take room in your parcel, the smaller order can be preferable. Keeping the intended use next to the arithmetic makes a close choice easier to explain later.",
+      "source_sha256": "609284d04e0b2d958785f793f6feac559ec5a78c50b70ceb9491b01e0c253894",
+      "raw_target_sha256": "c6be364a4330c7e807ea5e4fb70c9c1459d7a3124a3ade4ca18b8bf5e5b3895b",
+      "translation": "장바구니 수량을 바꾸기 전에 할인 기준 바로 아래와 위의 총비용을 비교하세요. 한 판매자는 종이 공책을 일곱 권 살 때보다 여덟 권 살 때 권당 가격이 낮고, 다른 판매자는 필요한 일곱 권만 공급할 수 있다고 가정해 보세요. 각 제안의 전체 금액을 적고 별도 국내 배송비까지 더합니다. 여덟 번째 공책을 어디에 쓸지도 생각해 보세요. 선물로 쓸 수 있다면 여덟 권 묶음으로 두 가지 목적을 달성합니다. 쓸 일이 없고 소포 공간만 차지한다면 적게 사는 편이 나을 수 있습니다. 계산 옆에 용도를 함께 적으면 나중에 선택한 이유를 설명하기 쉽습니다."
+    },
+    {
+      "source": "Use a hypothetical example of a custom garment marked EAST 21. The saved proof reads EAST 21 on the back, with the number below the word. In a warehouse photo the whole word and number appear mirrored, while an adjacent paper card is readable. This suggests a local discrepancy worth checking. If both the card and print are reversed, request another unmirrored full view before raising a production claim. If EAST reads correctly but appears above 12 instead, the issue is number order. Explain the observed difference using the proof instead of calling it simply a mirror problem.",
+      "source_sha256": "175cb06f53b657e9a6e25383cd46fd7c4e9e08b51ea4dc485367d0392ba5b845",
+      "raw_target_sha256": "11c63df698a499438622acd01175e38e351db83154a7ea1b7366f33331a066ef",
+      "translation": "예를 들어 등에 EAST 21을 넣는 맞춤 의류를 생각해 보세요. 승인한 시안에서는 EAST 아래에 숫자 21이 있습니다. 창고 사진에서 글자와 숫자가 모두 좌우로 반전되어 있는데 옆에 둔 카드의 글자는 바르게 읽힌다면 프린트 부분만 따로 확인할 필요가 있습니다. 카드와 프린트가 모두 반전되어 있다면 제작 불량을 제기하기 전에 좌우 반전이 없는 전체 사진을 다시 요청하세요. EAST가 바른 방향이지만 아래에 12가 보이면 문제는 숫자의 순서입니다. 단순히 거울상이라고 하지 말고 시안과 다른 점을 구체적으로 설명하세요."
+    },
+    {
+      "source": "Consider two illustrative listings. One offers a pack of three pairs for 36 yuan and another offers an individual pair for 14 yuan. The first works out to 12 yuan per pair, but only if the buyer actually wants all three pairs in the offered size and colours. Someone needing a single pair faces different immediate spending and shipping requirements. Comparing only 12 with 14 misses that practical difference. Keep the cost of the usable quantity, the cash required now and any unwanted surplus on separate lines in the comparison.",
+      "source_sha256": "6df0b17ef77ac144f549711a76a349928dde1e7de06fbc73146c08b1b80b371f",
+      "raw_target_sha256": "7b6305cf197152db023149282df12c992a7c068effcb3bd72c7bacbcde072808",
+      "translation": "가상의 두 판매 조건을 비교해 보세요. 한 곳은 세 켤레 묶음을 36위안에 팔고 다른 곳은 한 켤레를 14위안에 팝니다. 묶음은 켤레당 12위안이지만, 제시된 크기와 색상으로 세 켤레 모두 필요할 때 의미가 있습니다. 한 켤레만 필요하다면 지금 내야 하는 총액과 배송 조건도 달라집니다. 12와 14라는 단가만 비교하지 말고 실제로 쓸 수량의 비용, 당장 낼 금액, 남는 수량을 따로 적으세요."
+    },
+    {
+      "source": "Imagine a listing offering stone G1 and moss G2. A warehouse overview makes the fabric look grey, but the small label reads G2 and the sleeve trim matches the moss option. That evidence supports the selected variant more strongly than a visual comparison to an edited seller picture alone. If the label clearly reads G1 and the trim also matches G1, an order confirmation for G2 supports a direct fulfilment question. If the code and trim disagree, ask the seller what the code represents on that model before treating it as proof of a wrong unit.",
+      "source_sha256": "06f7bdb525ae1665453276f2a070438ae0dbded5fc553a77ee168120affd7118",
+      "raw_target_sha256": "8e864488ad0b59b3235836d6845a84f3b6cad79a890b4126241a683ba5f48f26",
+      "translation": "판매 옵션이 스톤 색상 G1과 모스 색상 G2라고 가정해 보세요. 창고 전체 사진에서는 원단이 회색으로 보여도 작은 라벨에 G2라고 적혀 있고 소매 마감도 모스 옵션과 같다면, 보정된 판매자 사진 한 장과의 색상 비교보다 확실한 단서입니다. 반대로 라벨과 마감이 모두 G1인데 주문 확인서에는 G2라고 되어 있다면 다른 옵션을 보냈는지 물을 수 있습니다. 코드와 마감이 서로 맞지 않는다면 잘못 배송됐다고 단정하기 전에 해당 모델에서 코드가 무엇을 뜻하는지 확인하세요."
+    },
+    {
+      "source": "For a hypothetical padded coat, you might save the chosen colour code, selected size, chart showing back length, description of a removable hood and statement of the included belt. The photo of a model wearing boots adds no information about the coat's contents. A small record organized around four relevant claims is easier for another person to review later than thirty images with no explanation. Preserve original option terms alongside translations. A later translation engine can choose different words for the same seller label, and a translated nickname can lose a model suffix that distinguished two options.",
+      "source_sha256": "6c2cf1da00b6755c0fbe11bb1a9ab41f022a88aea10918036c84e81c6662038c",
+      "raw_target_sha256": "4fb4118f9ab2256b4058b4fa191726f59ed21337a0dcaf2a01ab068be10c476b",
+      "translation": "예를 들어 패딩 코트를 주문했다면 선택한 색상 코드와 사이즈, 등길이 측정표, 탈착식 후드 설명, 벨트 포함 여부를 보관하세요. 모델이 함께 신은 부츠 사진은 코트 구성품을 증명하지 않습니다. 중요한 설명 네 가지를 정리한 기록이 설명 없는 사진 30장보다 검토하기 쉽습니다. 번역문과 함께 판매자 옵션의 원문도 남겨 두세요. 나중에 번역 표현이 달라지거나 두 옵션을 구분하던 모델명의 뒷부분이 빠질 수 있습니다."
+    },
+    {
+      "source": "Consider a buyer researching a bag at 85 yuan and purchasing it later at 90 yuan after selecting a version with a long strap. If the seller subsequently displays 78 yuan for the version without that strap, none of the three numbers alone establishes that the payment was wrong. Look at the selected option, time and package contents. Record the original-currency values first and any currency conversion separately. A changing exchange rate can cause another visible difference without the seller changing the original item price. This precision helps both with budgeting and with explaining a genuine discrepancy.",
+      "source_sha256": "d3880f26e92841d1b96d5455d3cf6f6aca1aa0fe3a732795713f9dbdd1ddc0f1",
+      "raw_target_sha256": "e3036aa3983c6c661282c51b7336db82c13769f11e38fb15b746bc407ba84ad4",
+      "translation": "구매 당시 상황을 나누어 보세요. 처음 본 가방은 85위안이었고 긴 스트랩이 포함된 버전을 선택해 90위안에 샀습니다. 나중에 판매자가 그 스트랩이 없는 버전을 78위안으로 표시했다고 해서 세 금액 중 어느 하나만으로 잘못 청구됐다고 볼 수는 없습니다. 선택한 옵션, 확인 시점, 포함된 구성품을 함께 확인하세요. 원래 통화의 금액과 환산 금액은 따로 기록하세요. 판매 가격이 같아도 환율이 바뀌면 표시 금액이 달라질 수 있습니다."
+    },
+    {
+      "source": "A tape reading of 65 cm is only useful if you know where the tape began, where it ended and which hoodie was measured. For a cropped or oversized hoodie, the position of the hem can matter more than the letter printed on the size label. Use a garment you own, the seller's chart and a comparable warehouse picture to make the decision.",
+      "source_sha256": "eaf59be39cecb484c06bdecb038b2dd13d89ea43d5f0fbd62755d961e7b6a04a",
+      "raw_target_sha256": "ad4c1675fd35b5efce3bd3c6c65f895b60d5cf3155b3af376001832e67e011c6",
+      "translation": "줄자에 65cm라고 보여도 어느 후드티를 어디서 어디까지 쟀는지 알아야 의미가 있습니다. 크롭형이나 오버핏 후드티는 라벨의 사이즈 문자보다 밑단이 몸의 어느 위치에 오는지가 더 중요할 수 있습니다. 평소 입는 옷과 판매자의 치수표, 같은 방식으로 잰 창고 사진을 함께 비교해 판단하세요."
+    },
+    {
+      "source": "Suppose your preferred hoodie measures 66 cm down the centre back, and a warehouse photo shows 65.5 cm using the same method. A difference of half a centimetre may reflect the way the ribbing settled or how clearly the tape can be read. Compare that difference with your range of acceptable fit. Now suppose the seller's chart gives 70 cm from the high shoulder and the warehouse photo gives 65.5 cm from the centre back. These figures are not directly comparable. Ask for the corresponding high-shoulder measurement or repeat that method on your own reference garment before treating the difference as a shortfall.",
+      "source_sha256": "c6998f35d0ce130b23a047455770e3007cae1b2635163280e26517c2b55ab39d",
+      "raw_target_sha256": "1f9605e885c7f37f8f57caa421c362f24df8ba02e2e22f2c3e646a9523926a67",
+      "translation": "잘 맞는 후드티의 등 중앙 길이가 66cm이고 창고 사진에서 같은 방식으로 잰 값은 65.5cm라고 해 보세요. 0.5cm 차이는 밑단 시보리가 놓인 상태나 줄자 눈금이 보이는 정도 때문일 수 있습니다. 이 차이가 본인이 허용할 범위인지 판단하세요. 반대로 판매자 표의 70cm가 어깨 최고점에서 잰 길이이고 사진의 65.5cm가 등 중앙에서 잰 값이라면 그대로 비교하면 안 됩니다. 짧다고 판단하기 전에 같은 어깨 지점에서 잰 값을 요청하거나 참고할 옷을 같은 방법으로 다시 재세요."
+    },
+    {
+      "source": "Preserve the response and distinguish the stages it describes. “Return requested” records a request. A seller's acceptance records an agreed action. A domestic tracking number records a shipment, and a refund entry records a financial event. These milestones do not substitute for one another. Keep the case open in your notes until the agreed outcome has actually happened or until the platform tells you what remains pending. If a refund is issued, compare the amount, currency and destination with the agreement before recording the issue as resolved.",
+      "source_sha256": "1dece3626cccd390ed63d51bd8c524fb5f0ccf9fa81ccd3dde012ebe9908b6be",
+      "raw_target_sha256": "6f05bf7b883df0c8ba68f0c7335ae5bd8878b6a2aa460cbc92b59c38bfc1751e",
+      "translation": "답변을 보관하고 각 단계를 구분하세요. ‘반품 신청’은 요청을 냈다는 뜻이고, 판매자의 수락은 처리 방식에 합의했다는 뜻입니다. 국내 운송장 번호는 발송 내역이며, 환불 거래 내역은 실제 자금 처리에 관한 기록입니다. 하나가 다른 단계를 대신 증명하지 않습니다. 합의한 결과가 실제로 이루어지거나 플랫폼이 남은 절차를 알려 줄 때까지 기록을 열어 두세요. 환불된 경우에는 금액, 통화, 환불 수단이 합의와 같은지 확인한 뒤 마무리하세요."
+    },
+    {
+      "source": "Read the verbs carefully. “We can send another,” “we will send another,” and “we sent another under tracking number B” represent different stages. In the first case the buyer might need to accept the offer. In the second the seller has stated an intention. In the third there is a specific dispatch event that can be checked. None by itself establishes that the replacement has reached the warehouse or matches the agreed option. Record the current stage and the next event you expect rather than marking the case resolved at the first reassuring message.",
+      "source_sha256": "7f5f023c77d9d0f8cfb5c1a50ebd03db66bcfdcb924d1533c15da3b6757a1fae",
+      "raw_target_sha256": "e16fbdb7b9a1b1d88c93fc51acf6e5eb74fa0d5cb359c9859f6a14f05a1740bb",
+      "translation": "동사에 주목하세요. ‘다른 상품을 보내 드릴 수 있습니다’는 구매자가 수락해야 할 수도 있는 제안입니다. ‘다른 상품을 보내겠습니다’는 판매자의 계획입니다. ‘다른 상품을 발송했으며 운송장 번호는 B입니다’는 조회해 볼 수 있는 구체적인 발송 사실입니다. 어떤 표현도 그것만으로 교환품이 창고에 도착했거나 약속한 옵션에 맞는다는 뜻은 아닙니다. 안심되는 첫 답변만으로 끝내지 말고 현재 단계와 다음에 확인할 일을 적어 두세요."
+    }
+  ]
+}
