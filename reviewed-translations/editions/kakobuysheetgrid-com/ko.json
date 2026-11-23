@@ -3,7 +3,7 @@
   "locale": "ko",
   "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
   "raw_dictionary_sha256": "3d2e7d027a4e70636e329e3cca5b88a94648ace88348eea5aeccbf9e7d473a72",
-  "effective_dictionary_sha256": "f5bb2e81cf6c394201682638562db6ecf19567ac19f14d1fdc427ec992009f2a",
+  "effective_dictionary_sha256": "ca756a0a2b1e3817ee66e30431b6a843d7cf0fa825fcfb5624c4547a7e1f1273",
   "checked_entries": 317,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -50,7 +50,7 @@
       "source": "An album tied to the same marketplace identifier may show a version sold before the edit. Check the recording date, label, visible construction and package contents. Use it as a guide to the detail worth checking rather than evidence of the new offer. If your own current warehouse pictures become available, connect them to their order and option first and document any specific difference before deciding about shipping.",
       "source_sha256": "25c423befbf247d3ff24a467f8f8a596adeee1290c61b07e94ab378d61f6b862",
       "raw_target_sha256": "4c014df3c0efbc339a572aa2ef8b2e708d9e72677460b765a31ce6517b4368a9",
-      "translation": "마켓 상품 번호가 같아도 이전 사진은 판매자가 내용을 바꾸기 전의 버전을 보여 줄 수 있습니다. 촬영일, 라벨, 눈에 보이는 구조와 구성품을 확인하세요. 예전 사진은 다시 확인할 부분을 찾는 데 활용합니다. 내 주문의 창고 사진이 도착하면 먼저 주문과 선택한 옵션을 연결하고, 실제 차이를 기록한 다음 발송 여부를 결정하세요."
+      "translation": "같은 상품 번호의 앨범도 수정 전 버전일 수 있습니다. 날짜, 라벨, 보이는 구조와 구성품을 확인해 다시 볼 부분을 정하세요. 내 입고 사진은 주문·옵션과 연결하고 구체적인 차이를 기록한 뒤 발송을 결정합니다."
     },
     {
       "source": "Before purchase, decide whether the missing detail matters enough to ask the seller or leave the item on your shortlist. After purchase, use the photographs tied to your own order for decisions about the received unit. Retain the older album as a comparison and clearly label its origin. If the new unit differs, identify the specific feature and quote your selected option, rather than promising support that the historical picture describes every item now supplied.",
@@ -1611,6 +1611,312 @@
       "source_sha256": "6dbe2ef6e045e6912ff1988175abe23ef26e82f1e53783b98ed73ec768c3a4b6",
       "raw_target_sha256": "32c2984b99f442449791687c61f1a9194b6ca4b6db03e6c6d1c1487b9764e83b",
       "translation": "한 조건만 빠졌다면 원래 요청을 짚고 무엇이 보였는지 설명하세요. 지퍼 전체 길이는 보이지만 스토퍼 사이의 입구는 안 보일 수 있습니다. 결정에 중요할 때만 보완을 요청하고 사진으로 해결이 안 되면 서면 답변, 다른 옵션, 구매 보류를 검토하세요."
+    },
+    {
+      "source": "An exchange creates a second physical unit. Keep the original promise, the original problem and the replacement evidence connected without mixing their identifiers.",
+      "source_sha256": "9c04e875b9a644fce5bc3e1f0d497a0a65bff26dc0f402a39f61cfb6d26cbe0a",
+      "raw_target_sha256": "99153c98e7ec0947b09dd74a77f5e317584400440c1bf9b9d284566601ecfafb",
+      "translation": "교환품은 다른 실물입니다. 최초 약속, 원래 상품의 문제, 대체품 증거를 연결하되 두 상품의 번호는 나눠 보관하세요."
+    },
+    {
+      "source": "Preserve the starting point",
+      "source_sha256": "40060ebe0b1c2b6522a65f25ee7dfdb615164d588830dcf567afdfc04c1d74ee",
+      "raw_target_sha256": "e6be837e0967700b935578c64a7bda55a24a6b1bbf63d17f119e77dde600a670",
+      "translation": "최초 주문 상태 보관하기"
+    },
+    {
+      "source": "Save the seller option, quantity, price and original order reference. Keep the warehouse photographs that identify the problem. State the issue in terms another person could verify, such as the received size tag reading large when the paid selection was medium. A general statement that the item looks different is harder to act on when the seller page has multiple versions or a changing set of pictures.",
+      "source_sha256": "6f15e33d3f11b934bc4e8a94bc85a6fb0582338c5c9a2b906e4d2771a9a0c07d",
+      "raw_target_sha256": "68d6e5fd35ff3ba08432fb1047f81fba283f1c6d01e2df3629c242b01244306d",
+      "translation": "판매자 옵션, 수량, 가격, 원주문 번호와 문제를 보여 주는 입고 사진을 보관하세요. ‘M 주문, 입고 라벨은 L’처럼 다른 사람도 확인할 수 있게 적으세요."
+    },
+    {
+      "source": "Check the available remedy",
+      "source_sha256": "60fdf3de1b6bc40ca38a8d5ddee091a917c6fabeeedca3ef22fc79513308fa7d",
+      "raw_target_sha256": "6940f39a10bdc34be8770d20a2c13a6069f9708ed9a581a6cea917fa92886728",
+      "translation": "이 주문에서 가능한 해결책 확인하기"
+    },
+    {
+      "source": "Read the instructions on the actual order and ask what the seller or platform needs before the unit is moved. Note any requirement concerning packaging, tags, evidence or domestic return transport. Avoid assuming that storage time and exchange eligibility have the same deadline. A return agreement, a dispatched return and an accepted replacement are distinct events and may have separate references.",
+      "source_sha256": "cdb735255327eb08fa74eb52ce39ebc9ae5f9c360ed47641c92ac07b9a15a45f",
+      "raw_target_sha256": "098e72f4c6cadb44eed7ec269adc741a83fd047f971226fd118a7f1b848dbbfc",
+      "translation": "상품을 옮기기 전 주문 화면 안내와 판매자·대행사가 요구하는 내용을 확인하세요. 포장, 택, 증거, 중국 내 반송 조건을 적고, 보관 중이라고 교환이 보장된다고 가정하지 말고 주문별 기한을 확인하세요."
+    },
+    {
+      "source": "Record the original unit's movement",
+      "source_sha256": "dac156881180fa8162f9c77c92af8ab789ee574b7b3077252178b8fdeb9b1952",
+      "raw_target_sha256": "ce7f18d68b681be3c9019622fb80aad2b532a1ec609a987d40399b59a440c461",
+      "translation": "기존 상품의 이동 기록하기"
+    },
+    {
+      "source": "Retain the original warehouse entry even after the unit has left. Add the domestic tracking number if one is provided and record who supplied it. A carrier scan tells you about the physical delivery of a package. It cannot, on its own, show that a seller inspected the item, accepted the exchange or sent the replacement. Update each step only when its own evidence appears.",
+      "source_sha256": "1509896c9eca2c9abf9a0f625c38346f00a5fe884bb90b5546509535babd1707",
+      "raw_target_sha256": "3b52a9634c092383e6e672bf1991ac46cace06721df6555b899dbb5f37eabfdb",
+      "translation": "기존 상품이 창고를 떠나도 입고 기록을 남기세요. 중국 내 운송장을 받으면 번호와 제공자를 추가합니다. 배송 스캔은 상자가 이동한 정보이며 판매자 수령이나 대체품 출발은 따로 확인하세요."
+    },
+    {
+      "source": "Check the replacement without recycling the old pictures",
+      "source_sha256": "32d41228df85be20d8c3e791acd807ad5a30c9f6c2ac5e429aa51d9b1897cbb7",
+      "raw_target_sha256": "eddc01e27a3c6eff0202bbf03307f78b4e39cce1e7459adfdd0a9e7d83330193",
+      "translation": "대체품은 새 사진으로 확인하기"
+    },
+    {
+      "source": "Give the replacement a separate line with its warehouse intake reference and photographs. Verify the precise detail that prompted the exchange and check the rest of the unit as well. A corrected colour does not establish the right size, quantity or included accessories. When the photographs look identical to the original set, ask which images belong to the new intake before treating them as fresh evidence.",
+      "source_sha256": "542d63a0fb5382b88b0dbbc9595c2c4dec65aa3eb4d51c28f69c99b9e920c871",
+      "raw_target_sha256": "a2014f5ac59b39840a229e4b426437d3edd86a726730a17dbb207e5a71a549aa",
+      "translation": "대체품에 새 행, 입고 번호, 사진을 부여하세요. 교환을 요청한 원인을 다시 확인하고 다른 사양도 주문과 대조합니다. 기존 사진으로 새 상품의 치수나 구성을 확인한 것으로 처리하지 마세요."
+    },
+    {
+      "source": "Close both the item and payment records",
+      "source_sha256": "06799f7aaa5693fb1fa51904b6d2f790ee1f0d498fa84cdccaf553247533de9a",
+      "raw_target_sha256": "ab41ca4d3b576f5a62707ecd34eb1b06cdacec0c31bf1890243314e7e170fff0",
+      "translation": "상품과 결제 기록 모두 마무리하기"
+    },
+    {
+      "source": "Record any additional charge or credit using the amount, currency and payee actually shown. Match the amounts to the relevant order rather than quietly changing the old price. The item record can be resolved once the replacement has been checked and accepted, even if a separate credit remains pending. Keep both statuses visible to avoid submitting the wrong unit for international packing.",
+      "source_sha256": "28f50cc57a8fa0918c89ec172f53d41dd079bfeb21b3ec007589211d65fd7aca",
+      "raw_target_sha256": "a30e244be2213ba25ae40a9745593ea43474602953b2ba07dc20188ae5d359a3",
+      "translation": "추가 청구나 환급은 표시된 금액, 통화, 수취인과 함께 관련 주문에 연결하고 원래 가격을 고치지 마세요. 대체품 승인과 실제 정산 완료를 별도로 확인합니다."
+    },
+    {
+      "source": "Define the replacement you would accept",
+      "source_sha256": "25798ffdc66fa08a6e74e3da9f7adccb55a2d4cea1cc133764eb2b427cbd2daa",
+      "raw_target_sha256": "2704a9c6b317bfc2c39a20880d143e16de4f58c9fadb3924b91d306ed2e668ad",
+      "translation": "수락 가능한 대체 옵션 정하기"
+    },
+    {
+      "source": "Before requesting an exchange, write down the exact option that would resolve your problem. If a seller delivered a blue shirt in medium when you ordered navy in medium, the remedy may be the originally selected navy option. If you ordered medium and now decide you want large, describe that as a change of selection. The difference matters because the seller and agent need to understand what happened and what item you would accept. Preserve the original order wording in both situations.",
+      "source_sha256": "c7e41d866406c8e7d0ef98e7cadbd772d29da2f08765e13e9ae7c63ee4eb8772",
+      "raw_target_sha256": "6bf38954f40bac00bb44faf470284c79818979b977c64295bd589e64e007be00",
+      "translation": "남색 M을 주문했는데 파란 M이 왔다면 원래 남색 M이 해결책입니다. 주문한 M을 나중에 L로 바꾸고 싶은 경우라면 선택 변경이라고 설명하세요. 판매자와 대행사가 상황과 수락 조건을 알도록 원래 문구를 보관합니다."
+    },
+    {
+      "source": "Think through alternatives before someone offers a substitute. You might accept a larger size only if a measured chest width falls within a particular range. You might accept the same colour in a different fabric only after seeing the new specification and price. Keep these conditions private until relevant, then state them explicitly when agreeing to a change. A message saying another option is available is a proposal. Record your answer and make sure the order record or later confirmation describes the choice you actually approved.",
+      "source_sha256": "07cc340ca7fd1c21898bd36186e75bff9d11641862efc239022ae88000bccade",
+      "raw_target_sha256": "f658fe8a16ba0dd89173e8ebd9bb4d67390993e63e35f2f78adbfc80611346b2",
+      "translation": "한 사이즈 커도 가슴너비가 일정 범위면 수락하거나 특정 색은 바꿀 수 없는 등 대안의 조건을 먼저 생각하세요. 치수를 확인해야 한다면 승인하기 전에 어떤 자료가 필요한지 알려 주세요."
+    },
+    {
+      "source": "Build the timeline from events",
+      "source_sha256": "9cef1fc7bda80cbacea28fa9f9eb808746c97b1ab1db75ce9298465b75c554fd",
+      "raw_target_sha256": "a3c01f5233e022432e8ec31e957bb2a7150cec34a2cc2bae9b9342b9b7ddc143",
+      "translation": "확인된 사건으로 일정표 만들기"
+    },
+    {
+      "source": "Imagine the original garment arrived on Monday. On Tuesday you requested a different size. On Wednesday the agent asked the seller whether that size was in stock. At that point, the exchange has been requested and the seller response is outstanding. An estimate of when a replacement might arrive is not evidence that the original has been sent back or another garment dispatched. Keep the latest confirmed event and the next expected event on separate lines so you can follow up with a precise question.",
+      "source_sha256": "24533a5df66d888dbbf8388920dc4b3bfd9225b91fe612bfe82cc7065acac4b1",
+      "raw_target_sha256": "de3e039cb39e9894b1ae7af8c84983d6079e7d67797d752aa1d6eafe475cce29",
+      "translation": "월요일 원품 입고, 화요일 다른 사이즈 요청, 수요일 대행사가 판매자에게 재고 문의를 했다면 지금은 답변 대기입니다. 도착 예상일은 반송이나 대체품 발송의 증거가 아닙니다. 마지막 확인 사건과 다음 예상 사건을 분리하세요."
+    },
+    {
+      "source": "Useful event fields are date, actor, item or parcel reference, action and evidence. A support reply, tracking event, payment adjustment or new warehouse photograph may each support a different line. Where a time is important, retain the time zone shown in the original record. Do not count an estimate as an elapsed deadline unless the relevant order terms or a support message establish one. If a return or exchange option is time-sensitive, ask support which deadline applies to the specific order.",
+      "source_sha256": "e95cd1f1e38dab7e16b4a91bc1967eb8ea4e8f4cbd139efaae7de156899ab301",
+      "raw_target_sha256": "3c8241bd3879530ba6fbd310eb79ca05d0b9466a5bb84d67ac0cae036bc4d348",
+      "translation": "날짜, 담당자, 상품·택배 번호, 조치, 증빙을 기록하세요. 답변, 운송장, 결제 조정, 사진은 서로 다른 사건의 근거입니다. 필요하면 시간대도 남기세요. 예상일을 기한으로 단정하지 말고 이 주문의 반품·교환 마감을 문의하세요."
+    },
+    {
+      "source": "Keep outgoing and incoming tracking apart",
+      "source_sha256": "08d54cd04c7c912abd005d733478929887bdd8e9e788e338c5a249061dc6ea20",
+      "raw_target_sha256": "02466830bee68a1b99a147d741270258df90f4d4c1b6e60bfb5ccb2d6e3b246e",
+      "translation": "반송과 재발송 운송장 구분하기"
+    },
+    {
+      "source": "An exchange may involve an outgoing domestic parcel and an incoming replacement. They have different directions and can have different tracking references. Label each reference by direction. If an outgoing parcel shows delivered, that event can help establish that a parcel reached its domestic destination. It does not confirm that the seller inspected it, approved a replacement, dispatched the replacement or that the warehouse received the correct size. Ask about the first missing step instead of repeating the entire timeline.",
+      "source_sha256": "a39971deecc51d9967bc01d5c07eb4c3709e9b5d033277f6ed42e8d9da004be2",
+      "raw_target_sha256": "6dbef8a554c14c9e4451411e66e3e8303479b70647c76f80986548dece9b2dd9",
+      "translation": "기존 상품을 판매자에게 돌려보내는 상자와 대체품이 창고로 오는 상자는 방향과 운송장이 다를 수 있습니다. 각 번호에 실물, 출발지, 목적지를 적어 반송 스캔을 대체품 입고로 착각하지 마세요."
+    },
+    {
+      "source": "If a replacement is associated with a new order or warehouse number, connect it to the original using a dated note. Avoid changing the original number to the new one and losing the connection. The original record documents the paid selection and the first unit. The replacement record documents what arrived later. If the replacement is bundled with another item, make sure your note identifies which piece belongs to the exchange and which piece belongs to an unrelated purchase.",
+      "source_sha256": "8234fb29110072eddcdf1aba4ddaa37a13cb33a2288972dfee35f82a25ddb4d9",
+      "raw_target_sha256": "7497e5b65ed7ddbf215701df7562a303c2b6f9633c0094df3fc959623778df65",
+      "translation": "대체품에 새 주문·입고 번호가 붙으면 날짜가 있는 메모로 이전 번호와 연결하세요. 원래 번호를 교체해 버리면 과거 메시지와 사진이 어느 물건의 자료인지 알기 어렵습니다."
+    },
+    {
+      "source": "Follow the money separately",
+      "source_sha256": "713720b4fe9bb1a50d409a4a965d876f27d6c93705c029475b0da938e093038f",
+      "raw_target_sha256": "3799129c58ee661a622802927b6906ac6d0288fb5d792a3159250d265ee2cc19",
+      "translation": "금액은 별도로 추적하기"
+    },
+    {
+      "source": "A price difference, domestic delivery charge or service charge may be discussed during an exchange. Ask which amounts apply to the offered resolution, which currency they use and whether you need to approve them before work proceeds. A quoted amount is not a payment. Record a charge only when you see the corresponding transaction or confirmation. Likewise, a promised refund and a completed credit may appear on different dates. Tracking the money separately prevents unexplained changes to the item's original purchase price.",
+      "source_sha256": "1d592c7b9a520b66c95c5025a5692a65981b6499978f81a88b79cf5a5ab2f701",
+      "raw_target_sha256": "733a7b1ac1a950b7aea103a3a7fbf85b33390f0e3608a6d7e0d938adcc334caa",
+      "translation": "교환 때 상품 차액, 국내 배송비, 서비스 비용 중 실제로 무엇이 적용되는지, 통화와 사전 승인 여부를 확인하세요. 견적은 결제가 아닙니다. 거래나 확인이 있을 때만 지출을 적고 환불 약속과 실제 입금일도 나누세요."
+    },
+    {
+      "source": "Suppose a seller proposes a more expensive size variant and separately mentions delivery back to the warehouse. Record the item difference and delivery amount as separate fields, even if they later appear as one payment. Check what that payment covers before agreeing. If the transaction appears in another currency, preserve the original amount as well as the amount actually charged. The numbers remain attributable even if your card statement later includes a conversion or a fee outside the seller's quote.",
+      "source_sha256": "d96329b2ed0a21c391f5d44c83f1822c236071a2d488365b5ca12cfdc322f30a",
+      "raw_target_sha256": "99f2c0e1f21f73ecb03744bd0d286fcaa4eafd1c7a6dd44152e4f3bca6d00e0d",
+      "translation": "더 비싼 사이즈로 바꾸는 차액과 창고로 다시 보내는 비용은 한 번에 결제해도 별도 칸에 적으세요. 범위를 확인한 뒤 동의하고 통화가 다르면 원금과 청구액을 보존하세요. 카드 환산이나 판매자 견적 밖의 비용도 구분할 수 있습니다."
+    },
+    {
+      "source": "Inspect the replacement as a new unit",
+      "source_sha256": "967a5bf1192166422972c9190d930362fcc7f0f9b5a39c68106b0f48dbc601c2",
+      "raw_target_sha256": "f8b45624b374d823736cead9ec274ab9cb87d8f03b81d5ae11b90f300cbec775",
+      "translation": "대체품을 새 실물로 검품하기"
+    },
+    {
+      "source": "When a new garment arrives, repeat the checks that triggered the exchange. A warehouse status confirming receipt does not tell you whether the new size label or measurement meets your requirement. Compare the replacement against the written agreement and the photos attached to its own intake. If the original problem involved a crooked fastening, inspect that detail on the replacement instead of relying on the original unit's photos. Also confirm the basic option and quantity so a different mistake does not slip through.",
+      "source_sha256": "52eee64a64ea325d8224e5137135a732167c633b9e09422ed203c13fe8b1644d",
+      "raw_target_sha256": "241e24ee7516e7ae9b3be33ef1c8c3c70e90094af5c2e55d9a6dc90b6d4365cb",
+      "translation": "새 옷이 도착하면 교환 사유였던 부분을 다시 확인하세요. 입고 완료 상태로는 라벨이나 실측이 맞는지 알 수 없습니다. 대체품 사진을 승인한 옵션과 대조하고 판단에 쓴 특징이나 수치를 적으세요."
+    },
+    {
+      "source": "Once you have decided, record the result, remaining charges or credits and the warehouse reference intended for international dispatch. Check that the parcel selection uses the accepted replacement. If an old record still appears in your account, do not assume it represents an additional dispatchable item. Ask support which reference corresponds to the unit now held if anything is unclear. A completed timeline ends with a specific accepted item or another confirmed resolution and makes later parcel questions much easier to answer.",
+      "source_sha256": "f6b2570de660d6d918b703ab75b4e5e57edfe00c99185f5f26ef080617aa98ba",
+      "raw_target_sha256": "ec31371a9eae0065ee6cebb2aee60d873a7b48db455fd85e4701e91658fba5ae",
+      "translation": "결과, 남은 비용·환급, 해외 배송에 사용할 입고 번호를 적고 승인한 대체품을 선택했는지 확인하세요. 예전 기록이 보인다고 발송 가능한 물건 하나가 더 있는 것은 아닙니다. 모호하면 현재 보관품 번호를 문의하고 확정된 실물이나 해결책으로 기록을 마무리합니다."
+    },
+    {
+      "source": "A stable marketplace link can lead to a page whose option wording, photographs or price has changed. Compare dated records before deciding what the change means for your order.",
+      "source_sha256": "be2f60ae663eb6bac9383dad175f15515a51f2920a5a92438ab324504b0dedde",
+      "raw_target_sha256": "267da65fba37dd12ad8f69f6154e5741401bc3b093741b676a954d2ba13ae463",
+      "translation": "같은 URL이라도 옵션명, 사진, 가격은 달라질 수 있습니다. 날짜별 기록을 먼저 비교해 내 주문에 어떤 영향이 있는지 확인하세요."
+    },
+    {
+      "source": "Capture a useful snapshot",
+      "source_sha256": "0b9427cf47bdf3fcbf995a23c236aa8d889002a3e8078c349522fb99bd8b3bd9",
+      "raw_target_sha256": "971a4023ca73965480fd2d2e470809883e259a95e171f10ff65f9e7677384a35",
+      "translation": "나중에 비교할 화면 보관하기"
+    },
+    {
+      "source": "Save the seller page with the chosen option visible, the original option text, price, quantity and item ID. Include a date. For a set, make sure the included pieces are stated somewhere in the record. A screenshot of the hero image alone contains little information about which bundle was selected. Keep the agent purchase confirmation separately because it records the choice submitted through the order.",
+      "source_sha256": "9cd697caf8ecfb6c8e46d5d89c9462c562ab39be70827142ced40b6239d12870",
+      "raw_target_sha256": "8100802bbcc9326f228b36dfb4df7ef223336b995595f31f0468af8b4aa65dde",
+      "translation": "선택 옵션이 보이는 원본 페이지, 옵션 원문, 가격, 수량, 상품 번호와 날짜를 저장하세요. 세트라면 포함 부품도 기록합니다. 표지 이미지나 최저가만으로는 선택 내용을 재구성하기 어렵습니다."
+    },
+    {
+      "source": "Identify the layer that changed",
+      "source_sha256": "4babf1c0dbc70c5f1e1ad270baf39f9da6d3f9c6eb79196b97e52099cf23a7dc",
+      "raw_target_sha256": "aeb0ac6222700cf67d5a35f02032e46eb5038627899e44327aa6af9084968b37",
+      "translation": "변경된 부분 식별하기"
+    },
+    {
+      "source": "A change in translated wording may occur even when the original seller option is unchanged. Compare original text, option code if available, thumbnail, selected unit and live price. If the whole listing now opens at a different default, select the old option manually before drawing a conclusion. A changed default and a discontinued version call for different decisions.",
+      "source_sha256": "99db466afa5ca411eb145f927eb0281646db157c285b2cd2750c1b977fe39038",
+      "raw_target_sha256": "2dd867b66b53e2eaaaba312cfb42e9ca61720abda4279c377fa5424567f2430f",
+      "translation": "번역만 달라지고 판매자의 원문은 그대로일 수 있습니다. 원문, 옵션 코드, 썸네일, 판매 단위, 현재 가격을 대조하세요. 기본값만 바뀌었다면 예전 옵션을 직접 선택해 보고 단종과 구분합니다."
+    },
+    {
+      "source": "Reprice an unpaid shortlist entry",
+      "source_sha256": "f3d9b8d32202e71cb49dabb72abe4b30a6209f09b655a0e2c7c8e271e6211760",
+      "raw_target_sha256": "0ba677e17f5e59272354502d9681f46840ca94bf53de4ed59f58f3e61d90955c",
+      "translation": "미결제 후보의 가격 다시 계산하기"
+    },
+    {
+      "source": "If you have not paid, treat a changed quantity or bundle as a new comparison. Recalculate the unit cost for the included contents, check current stock and review the size chart for the new option. Do not force the old cost into your new shortlist because the listing number is unchanged. If the changed term was the feature you wanted, leave the entry unresolved until the seller confirms it.",
+      "source_sha256": "c3658672d60af8352c98d534f0a64ed30387a96c87d8cc58d0eea8552dee49f4",
+      "raw_target_sha256": "143004a521aea8f0e5036809a4a62515e78021d64a58253c445ecae744204837",
+      "translation": "아직 결제하지 않았고 수량이나 묶음이 달라졌다면 새로 비교하세요. 포함 수량당 가격, 재고, 새 옵션 치수표를 확인하고 번호가 같다는 이유로 옛 가격을 쓰지 마세요. 원한 특징이 바뀌었다면 판매자 확인을 기다리세요."
+    },
+    {
+      "source": "Compare a paid order to the agreement at payment",
+      "source_sha256": "8992f8a7aa343a502abf9285b6c6e97e2af3fc6818c12685ddc250eba6330b69",
+      "raw_target_sha256": "313e72e44a995d6aae4c83cc6b97d71284dc41313da8e30e4f13730fbf493909",
+      "translation": "결제한 주문은 결제 당시 약속과 대조하기"
+    },
+    {
+      "source": "Keep the new listing as evidence of its present state, but compare the received unit with your order-time selection. If your original record said jacket and detachable hood and the current page says jacket only, quote both versions with their dates when asking for a check. The fact that today’s page omits the hood does not independently prove what was selected earlier.",
+      "source_sha256": "1fb7ef412d8c3862d6b687545c2c675c48ac012da060179046c1386d10c9a295",
+      "raw_target_sha256": "be6fbee8ff58285377680f2dbecfadb8fce43fbaed11d718d7c24b1c94735835",
+      "translation": "새 페이지는 현 상태의 근거로 두고 실물은 주문 당시 선택과 비교하세요. 결제 때는 ‘탈착 후드 포함 재킷’, 지금은 ‘재킷만’이라면 확인 요청에 두 문구와 날짜를 함께 제시하세요. 페이지 수정만으로 발송된 옵션은 알 수 없습니다."
+    },
+    {
+      "source": "Reassess historical QC references",
+      "source_sha256": "81c3d19f70f3061efebf31ad16f90d7ca8ddc009a136ff2df77eaf701f57bfe8",
+      "raw_target_sha256": "6bbb56030a499d335f3ca6096119acfc7874266d4baf1c27da62bce41fee21d5",
+      "translation": "예전 검품 사진 다시 평가하기"
+    },
+    {
+      "source": "Save the offer as a dated selection",
+      "source_sha256": "df624e48a24910efdae4e5147f87a236c26a1651397e6319c1358d9e3a3238db",
+      "raw_target_sha256": "2690a99b9b36c3a4e50f37e36c0e51b1f0a1f6a9ce75f9e8b528395d044dc803",
+      "translation": "날짜와 선택 옵션을 한 묶음으로 보관하기"
+    },
+    {
+      "source": "A product link can continue working while its option names, photographs, price or package contents change. If a particular detail determines your choice, save that detail at the time you decide. For a travel pouch, keep the selected option wording, its dimensions, the included strap description and the quantity you are buying. A dated screenshot with the selected option and its price visible can support the note. Crop out private account information when sharing it outside the order support channel.",
+      "source_sha256": "a889e976fdcb8acdb207c6cbf3a05807c5d0493d5c3c0900f3bdfb25406a27c4",
+      "raw_target_sha256": "7561502cd8aa556009072478bb5da49ebba6c8f4382acab120df6887b6a063a0",
+      "translation": "링크가 계속 열려도 옵션명, 이미지, 가격, 패키지 구성이 달라질 수 있습니다. 구매에 중요한 특징은 당시 선택 옵션과 날짜를 함께 저장해 현재 조건과 구분하세요."
+    },
+    {
+      "source": "A seller's headline may continue to say “travel pouch with strap” when a newly added option sells the strap alone. Review the selected option and resulting subtotal instead of relying on the headline. If possible, capture both the seller's wording and your working translation. Revisit the selection just before submitting an order, particularly if it has remained in a cart for several days. A previous research note explains why you shortlisted the item; the current selection controls what you are about to submit.",
+      "source_sha256": "a357c54e7d82015dabbf2cf7bd2cfc6eefed85da69265ba65a0aa7c1fe7b3a51",
+      "raw_target_sha256": "ef0f72daddbd8f1f7421e0c69a80e9aecaed2c3b64bb5496307bc821d5c7ad50",
+      "translation": "‘끈 포함 여행 파우치’ 제목 아래 끈만 파는 새 옵션이 추가될 수 있습니다. 제목이나 최저가보다 선택 구성과 소계를 확인하고 세트인지 끈 단품인지 기록하세요. 나중에 기본값이 바뀌어도 비교할 수 있습니다."
+    },
+    {
+      "source": "Distinguish a renamed option from a different offer",
+      "source_sha256": "021dfbfe5d0e8365ebe6a513605ce7e3711a138bd9042f1a1604538a42e379c3",
+      "raw_target_sha256": "3013b990415d480736efd562883f254d63f45b3e7bcb65149b85e4e487093004",
+      "translation": "이름 변경과 다른 구성 구분하기"
+    },
+    {
+      "source": "Suppose an option once called “olive large” now appears as “green B.” The names alone do not establish whether the products match. Compare the seller's current dimensions, materials, quantity and included components with the original record. If the seller displays an internal option code, compare it as additional evidence, keeping the marketplace item identifier separate. A continuing item identifier establishes the listing reference. The seller may still have changed one or more choices inside that listing.",
+      "source_sha256": "70d217db6afb9a0092741c3135aa8b8705a94b5d11ee01a2c0d9c1f2090843f8",
+      "raw_target_sha256": "8d5bdc662a32c64b0f07923654f768c74f82be2241e608b869ab48b277e780d3",
+      "translation": "예전 ‘대형 올리브’가 지금 ‘그린 B’로 보인다고 같은 상품임이 보장되지는 않습니다. 현재 치수, 구성, 단위, 사진, 옵션 코드를 비교하세요. 근거가 없으면 기존 이름을 덮지 말고 연결 미확인으로 남기세요."
+    },
+    {
+      "source": "Look for the size chart heading and product diagram associated with the active option. A listing can share one gallery across multiple options, so scrolling past a familiar diagram does not always attach that diagram to your selected version. If the difference matters, ask the seller a question that identifies both old and new wording. A question about whether “green B” currently contains the large pouch and detachable strap gives a clearer target than asking whether the whole page is still the same.",
+      "source_sha256": "833d0beab7343245129f807330364c3c9a5db9ffc7437c09947007052de2ec50",
+      "raw_target_sha256": "9007eafb343ff0ba21a21b917662fc014c594adefd0a3cf5f0e85c5b6844b213",
+      "translation": "활성 옵션에 해당하는 치수표 제목과 도식을 보세요. 여러 옵션이 한 갤러리를 공유할 수 있어 익숙한 사진을 지나쳤다는 사실만으로는 부족합니다. 어느 옵션의 표인지와 단위·측정점을 확인하세요."
+    },
+    {
+      "source": "Handle a change before you pay",
+      "source_sha256": "f94cbff9930c1816904a44cf5990c029a0ffaa614a722c1dbf17a26a8d2e4532",
+      "raw_target_sha256": "cffb89bc31761ef8aae31ce4779da59efa83a02a5846e816e2b7a71caccd3bad",
+      "translation": "결제 전 변경 처리하기"
+    },
+    {
+      "source": "If you have only shortlisted the product, you can reassess its current terms without reconstructing an order dispute. Record the new option as a fresh observation, compare it with your original requirement and decide whether to keep it on your list. If the new selling unit is one pouch instead of a set of two, recalculate the quantity and subtotal before comparing it with another seller. A superficially unchanged item price can represent a different value when the number of pieces changes.",
+      "source_sha256": "fb7ddf8af8edf24cae9ea1513131e85955d3597bf87c1ebbc5fa860dd2ba263d",
+      "raw_target_sha256": "a29311411f89b659d9fd7ef6a7e92e599dcbb675a1a41f2d6e5862a7d6aa9d07",
+      "translation": "후보로만 저장했다면 주문 분쟁으로 볼 필요가 없습니다. 현재 옵션을 새 관찰로 남기고 구성, 치수, 전체 금액을 다시 비교하세요. 원래 기록은 처음 선택한 이유를 남기는 데 씁니다."
+    },
+    {
+      "source": "If a selector remains ambiguous, leave the purchase pending while you investigate. A product note saying “send the old version” does not give the seller the old stock or guarantee that an agent can select it. Ask whether the precise old version is available and how to identify it in the current order flow. Preserve any answer with the date. If the response points to a different listing, treat it as a new source and check the actual option text on that listing.",
+      "source_sha256": "57afbc00e2ab44a716ab25316c102331d968c8e627c047b3abc9fefa117c3c48",
+      "raw_target_sha256": "d4cc123b131cf80ac9a9abc8019d93f72dd3029b8cb7c142c8eb6f8e311a5a42",
+      "translation": "선택지가 모호하면 구매를 보류하세요. ‘예전 버전 보내 주세요’라는 메모가 판매자에게 옛 재고를 만들어 주거나 선택 옵션을 변경하지는 않습니다. 원하는 버전의 현재 주문 방법을 판매자에게 글로 확인하세요."
+    },
+    {
+      "source": "Handle a change after payment",
+      "source_sha256": "eafa55027b3202448b46a74a26b16aaeeb36881226cc9b529cf20f57594385a1",
+      "raw_target_sha256": "e98eac729bfc8f63accbf2b1c75a6b1588769ca444edcea329fdec599266df71",
+      "translation": "결제 후 변경 처리하기"
+    },
+    {
+      "source": "For an existing order, begin with the paid selection and confirmation, then compare the revised public offer. A listing edit alone does not establish what was ordered or what the seller shipped. If support asks whether you will accept a substitute, ask for its option wording, important differences and any price adjustment before answering. Keep your response paired with that proposal. A simple “yes” copied out of context may be difficult to interpret if multiple alternatives were discussed.",
+      "source_sha256": "673f7c0d9ecd0fe82d99e265da755e12aaf47e8cc10e5c09c7d4042e5af7ab3e",
+      "raw_target_sha256": "e7f45c60d4959e2f9727cda5509356a0ea050d15a5003a2dd160206a3474e89e",
+      "translation": "기존 주문은 결제 옵션과 확인서를 먼저 보고 현재 공개 페이지와 따로 비교하세요. 상품 수정만으로 주문하거나 발송한 내용을 증명하지 않습니다. 당시 약속, 페이지 변경, 받은 상품을 순서대로 구분합니다."
+    },
+    {
+      "source": "A practical support message can say that your paid order shows a large olive pouch with a detachable strap, while the current page describes green B without specifying a strap. Ask which version was purchased for your order and whether the strap is included. Provide the dated order reference privately and attach the relevant excerpts. If the answer depends on checking the incoming unit, record that as the next step and decide which warehouse photograph or contents check would settle the issue.",
+      "source_sha256": "ffd9339b8658c342fb31a08bac95c14124f0adca9979ce58a9b0dd056e01294a",
+      "raw_target_sha256": "c9ce79fa3ecf6b90222aeca3bc67f61da243af32394da30b8b1f8f2193ef0ee4",
+      "translation": "‘결제 내역은 탈착 끈이 포함된 큰 올리브 파우치입니다. 현재 그린 B는 끈을 명시하지 않습니다. 입고품의 버전과 끈을 확인해 주세요’처럼 주문 번호와 사진을 개인 문의에 첨부하세요."
+    },
+    {
+      "source": "Update shared finds without erasing the history",
+      "source_sha256": "5db86e1b8aa87f6eba2b74ea2553ea1b01076efe2f78766ccf357a6860548ba0",
+      "raw_target_sha256": "59c9bc2a55193ffdabd3eae7b706961f9bfc68be277a24e727da9ca4351c92c1",
+      "translation": "기록을 보존하면서 공유 내용 갱신하기"
+    },
+    {
+      "source": "If you share findings with others, keep the original dated note and add an update. Explain the particular change you observed and what you have yet to confirm. For example, the old label disappeared and the listing now offers green A and green B, while the correspondence with the former size remains unknown. A reader can then decide whether your older warehouse album is useful for the shape of the pouch or too uncertain for their current option decision.",
+      "source_sha256": "e94565d4a356f4b5ffd879e03876f3ad7469e03a710a61c205db557153d4839b",
+      "raw_target_sha256": "924bcf185373e23b478c9d51319b9585364013ffdcbf09d6fc762860c0a59b64",
+      "translation": "공유한 자료에는 기존 날짜를 남기고 업데이트를 붙이세요. 어떤 변경을 확인했고 무엇이 미확인인지 적습니다. 예를 들어 옵션 이름은 바뀌었지만 내부 치수는 확인 전이라고 쓰면 독자가 예전 정보를 적용할지 판단할 수 있습니다."
+    },
+    {
+      "source": "After a received unit is photographed, connect its observations to the paid selection and any approved substitution. Do not promote one order's outcome into a promise that every purchase from the edited listing will receive the same version. If the new option works for your own purpose, state the feature that made it acceptable and retain the related evidence. A future buyer may value a different detail and will be able to judge whether your dated comparison answers their question.",
+      "source_sha256": "2fed8237e1c448c90ef6a0920283e3b4c4f7ba47c191ead9baa038cf6deca267",
+      "raw_target_sha256": "7fe0b47e92a35627027fcad1eb415cf7df2dddc4e1d96fb455c5908442cc3b61",
+      "translation": "입고 실물 관찰을 결제 옵션과 승인한 변경에 연결하세요. 한 주문의 결과는 수정된 페이지에서 이후 구매자 모두가 같은 물건을 받는다는 약속이 아닙니다. 내가 수락한 특징과 근거를 남기면 다른 조건을 중시하는 구매자도 참고 여부를 판단할 수 있습니다."
     }
   ]
 }

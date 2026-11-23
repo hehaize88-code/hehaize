@@ -3,7 +3,7 @@
   "locale": "ro",
   "source_set_sha256": "d3fa9f46b8822e6121c5f5032ff51cfdb56efdc052db0b6c6c720b54b6f2d6ef",
   "raw_dictionary_sha256": "62b926bf52dc19ca1b9cdf58a83043396205de6a7e17f4125f08bdeef936ba8c",
-  "effective_dictionary_sha256": "fa03faee01b1c131cf90ab6e9452b9bebe6da325a7ba03808e3402d71d8783a5",
+  "effective_dictionary_sha256": "f50b71d6d689735c02c30b9e0049acfa9eac982235972a4e7e9bf5d6b7e2ca61",
   "checked_entries": 281,
   "review_scope": "Verified source coverage and reviewed FAQ, editorial headings, shipping estimates and garment size examples, all automated findings, and domain-specific parcel and price terminology.",
   "reviewed_flags": [
@@ -885,6 +885,54 @@
       "source_sha256": "cf38e7e1819c955877e07856967d0292cdf7b4a7fc3b142abc89944d7f21d97f",
       "raw_target_sha256": "a24a32397465a9106dfa3e7f952e1e8531083c1f59131b5ac93108a3cfd7883c",
       "translation": "La primire, compară eticheta cu numărul coletului expediat din depozit și verifică produsele față de lista atribuită lui. Dacă a sosit coletul, dar lipsește o haină, închide întrebarea privind livrarea și deschide una privind conținutul, cu dovezi despre ambalaj și produs. Dacă asistența confirmă alt rezultat, păstrează soluția scrisă și identifică exact coletul vizat. Din evidență trebuie să reiasă ce s-a livrat, ce problemă s-a verificat și dacă o altă achiziție este încă în tranzit."
+    },
+    {
+      "source": "If you would accept an alternative, define the limit in the same message. “Silver or grey fittings are acceptable; please ask before substituting the black bag” is a different instruction from “any similar colour is fine.” Check how the agent actually records the note and selection before paying. Save a copy of the confirmed option. The note and the selected line should agree; a note asking for olive beside a paid line for black creates avoidable uncertainty.",
+      "source_sha256": "c7ff32dd562936323cc70181502368fb6a57e83ed9d93756c065bc4cc47fd321",
+      "raw_target_sha256": "d251e26f6b30326b0f1c2616915fc56639f5804cc0fe405a0bee83a50f507b14",
+      "translation": "Dacă accepți o alternativă, precizează condițiile. „Accesoriile metalice argintii sau gri sunt în regulă. Întreabă-mă înainte să comanzi în schimb geanta neagră” este mai clar decât „orice culoare asemănătoare e bună”. Înainte să plătești, verifică varianta și observația înregistrate de agent și păstrează confirmarea. Dacă observația cere verde-oliv, iar produsul plătit este negru, neînțelegerea poate fi evitată din timp."
+    },
+    {
+      "source": "A dimension drawing, colour chart or instructions panel can appear between photographs with little explanation. Check the labels around it. The diagram may apply to the whole family, a named model or the packaging rather than the product. In the backpack example, outside dimensions do not give the exact dimensions of an internal laptop sleeve. Padding, rounded corners and an opening narrower than the body all matter. Ask for sleeve width and usable opening if you need to carry a specific object.",
+      "source_sha256": "89f695e49e9c84de5a39e41b2cc5f525944149b257ef60cd8d76b61e24aa370f",
+      "raw_target_sha256": "65bec3fa760d245597dc04e6ed8cfb64647896a147f095db25e30f2b98c2270f",
+      "translation": "Printre fotografii poate apărea un desen cu dimensiuni, un paletar sau o fișă cu instrucțiuni. Citește explicația pentru a afla dacă se referă la întreaga gamă, la un anumit model sau la ambalaj. Dimensiunile exterioare ale rucsacului nu dau dimensiunile interioare ale compartimentului pentru laptop. Căptușeala, colțurile rotunjite și o deschidere îngustă reduc spațiul util. Pentru un dispozitiv anume, cere lățimea interioară și lățimea utilă a deschiderii."
+    },
+    {
+      "source": "You do not need to annotate every image. List the contradictions that affect your requirements. For the backpack you might record three: the outside pocket appears only in the studio picture, the dark green option has no front view, and the sleeve drawing has no internal width. Beside each, identify the simplest evidence that would settle it. A front photograph of the selected bag answers two of those questions at once. A measurement of the sleeve opening addresses the third.",
+      "source_sha256": "9efdd97e512462f6604a6081b771468d71a729df65e2edafe6df8067d8d86e59",
+      "raw_target_sha256": "b236757af871bd572f2175d94c971bd260137ec56369f79eb60e17653f3e54b7",
+      "translation": "Notează doar contradicțiile care contează pentru tine. Buzunarul exterior poate apărea numai în fotografia de studio, varianta verde-închis poate să nu fie fotografiată din față, iar schița compartimentului pentru laptop poate omite lățimea interioară. O fotografie frontală a variantei alese răspunde la primele două întrebări. Pentru a treia, cere măsurarea deschiderii compartimentului."
+    },
+    {
+      "source": "Send the request with the seller option text and a description of the relevant location. “Please show the front of the dark green full-size bag, then the width of its laptop sleeve opening with the tape visible” gives the reader a reproducible task. If the item is in your order, add its reference in the private OOTDBuy order channel. For available inspection services and the stage at which you can request them, consult the official Help Center and the current order interface.",
+      "source_sha256": "d1177777af48dc313b5269aac9f434ec631ab96b436746f12da6c67b841e4ce3",
+      "raw_target_sha256": "30c10e8af84c73cefcad3b4cbb35eca579f9c5ce354449b7d739873cc45291d8",
+      "translation": "Include denumirea exactă a variantei și zona pe care vrei s-o vezi. „Vă rog să fotografiați din față rucsacul verde-închis, în varianta mare, apoi să arătați lățimea deschiderii compartimentului pentru laptop, cu centimetrul la vedere.” Dacă rucsacul apare deja în comandă, adaugă referința în canalul privat al comenzii OOTDBuy. Centrul de ajutor oficial și pagina comenzii arată ce verificări sunt disponibile și când le poți solicita."
+    },
+    {
+      "source": "When reviewing pictures of your own unit, bring back the same landmarks and the same contradiction list. Match the order option first. Then decide whether the photographs answer your essential requirements. A visible outside zip answers the pocket question; it does not establish laptop clearance. A sleeve measurement can support your size decision but does not settle whether a detachable organizer is included. Keep each conclusion with the evidence that supports it.",
+      "source_sha256": "4a042999ec35971f325f2259b52c38ae70263023e3bd228f1c58cba586906235",
+      "raw_target_sha256": "5633ea236dda58eb07e2f24368b01dc967ecdbe431383e724aa086c9a0a0761b",
+      "translation": "Când examinezi fotografiile exemplarului tău, revino la reperele și întrebările notate. Verifică mai întâi varianta comandată. Fermoarul exterior arată că există un buzunar, dar nu confirmă că încape laptopul. Dimensiunile compartimentului te ajută să evaluezi spațiul, fără a demonstra că organizatorul detașabil este inclus. Păstrează fotografia care susține fiecare concluzie."
+    },
+    {
+      "source": "At the end you should be able to explain the choice in plain terms. You might decide that the exact shade matters little, that a usable sleeve opening matters a great deal, and that the organizer can be purchased separately. Someone with different priorities can reasonably reach another conclusion from the same photographs. A good reading of an OOTDBuy gallery gives you that freedom. It turns a long, sometimes inconsistent collection of pictures into a short set of observations that actually changes what you do.",
+      "source_sha256": "ec85e35565aecba9d86987e6655ae45aea1840d880d10b7f6e0c745a2488a054",
+      "raw_target_sha256": "1001c65b1da8532de7baa264b16302cc80da839c279afdecb6cbf14e6c19ca37",
+      "translation": "La final ar trebui să poți explica alegerea. Poate că nuanța exactă contează puțin, lățimea deschiderii compartimentului pentru laptop este esențială, iar organizatorul poate fi cumpărat separat. Cineva cu alte priorități poate decide diferit pe baza acelorași fotografii. Așa poți reține dintr-o galerie OOTDBuy lungă și uneori contradictorie detaliile care îți influențează cumpărătura."
+    },
+    {
+      "source": "Examine what the original box or insert does. An insert can hold a rigid handle in position, keep two pieces apart or keep a small component from vanishing. A larger outer sleeve might mainly add empty volume. Treat them as separate decisions. “Keep the shaped insert and the accessory pouch; the outer display sleeve can be removed if permitted” is more informative than “remove boxes.” If the warehouse offers only broad choices, ask what the selected option actually removes.",
+      "source_sha256": "c79c0828539c4d22cf9e536ee8603f8387e7bfe0d52ea49ec5f0ecb86af97406",
+      "raw_target_sha256": "b714e218ed706732ebac15c7f9bda72d4b66d311326a5b0d404d55797b2b8f8b",
+      "translation": "Verifică rolul cutiei originale și al suportului interior. Suportul poate fixa un mâner rigid, ține două piese separate sau împiedica pierderea unui accesoriu mic. Un ambalaj exterior de prezentare prea mare poate adăuga mai ales spațiu gol. Decide separat pentru fiecare. „Păstrați suportul profilat și săculețul cu accesorii. Dacă este permis, puteți scoate ambalajul exterior de prezentare” este mai clar decât „scoateți cutiile”. Dacă depozitul oferă doar opțiuni generale, întreabă exact ce se îndepărtează."
+    },
+    {
+      "source": "When the parcel arrives, compare its label to your outbound reference. If something appears damaged, document the outer condition and internal protection as you uncover them. Keep the packaging while you consult the applicable after-sales instructions. If everything arrives as expected, write down what worked. A note such as “shaped insert preserved the bag; display sleeve was unnecessary for my use” is more transferable to your next mixed parcel than a bare freight total.",
+      "source_sha256": "b3145c2941a23a5654ddd5e50a29bd8c70e984d7c698d11fda3009c55824eae7",
+      "raw_target_sha256": "24155db52fe63d9a62dfe8a609d56402b13e90652a3ba3ea0016a06c63deacc7",
+      "translation": "La primire, compară eticheta coletului cu referința de expediere. Dacă observi deteriorări, documentează exteriorul și protecțiile interioare pe măsură ce desfaci coletul. Păstrează ambalajul până consulți instrucțiunile pentru sesizări. Dacă totul ajunge bine, notează ce a funcționat. „Suportul profilat a protejat geanta și nu aveam nevoie de ambalajul exterior de prezentare” te va ajuta la următorul colet cu produse diferite mai mult decât simplul cost al transportului."
     }
   ]
 }

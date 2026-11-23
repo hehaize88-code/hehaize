@@ -3,7 +3,7 @@
   "locale": "vi",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "1b03c9adee47bf66ea0475d6965577cc1c3c8df3f6deb8528f86fe0c97c6aebf",
-  "effective_dictionary_sha256": "e9395ceb2bdba5c8c6a2ec2a82be2d3630bfcb89e3e896246cbfce8a944ad138",
+  "effective_dictionary_sha256": "24c170203339476e90fc594b3c47389db3afbaef6d7b2f3f6146ced532570e45",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -38,7 +38,7 @@
       "source": "Multiply kilograms by 1,000 to enter grams. A parcel measured at 1.35 kg is 1,350 g. Keep length, width and height in centimetres on the same worksheet.",
       "source_sha256": "9fead998e848c9e940421e4f7aca5c4b8cd525d069238f5bafe41a7538b13e21",
       "raw_target_sha256": "e026dabe33f577a8d4ee759933e827ed01dfd7be9f93c66f15dcea7c9960d7d6",
-      "translation": "Để đổi từ kilôgam sang gam, hãy nhân với 1000. Ví dụ, kiện hàng nặng 1,35 kg thì nhập 1350 g. Trên cùng bảng tính, ghi chiều dài, chiều rộng và chiều cao bằng cm."
+      "translation": "Nhân số kilôgam với 1.000 để đổi ra gam. Kiện nặng 1,35 kg tương đương 1.350 g. Ghi ba kích thước trên cùng bảng bằng centimét."
     },
     {
       "source": "If one seller quotes in yuan and another amount already appears in your home currency, define a single comparison column. Convert each source amount into that column once. A simple note next to the source amount should give its unit and the conversion direction. Enter 150 CNY and 7.50 CNY per home unit as separate fields. Check that the converted result times 7.50 returns the source amount before any fees.",
@@ -128,7 +128,7 @@
       "source": "Record what changed and rerun the estimate using the revised outer dimensions and weight. Keep the old result as a reference instead of presenting it as a quote for the new parcel.",
       "source_sha256": "7d40c0fc412910959bb28d9eec446ad1c0d4a88b01ca8c25ce5b4b104685c628",
       "raw_target_sha256": "66fc10e73535411594429d0f208105b045201fc8196d725b603260601ecf7ef6",
-      "translation": "Ghi lại những gì đã thay đổi và chạy lại ước tính sử dụng kích thước và trọng lượng bên ngoài được sửa đổi. Giữ kết quả cũ như một tham chiếu thay vì trình bày nó như một báo giá cho gói mới."
+      "translation": "Ghi lại chỗ thay đổi rồi tính lại bằng kích thước ngoài và khối lượng mới. Giữ kết quả cũ để đối chiếu, ghi rõ nó dành cho cách đóng trước đó."
     },
     {
       "source": "Consider a hypothetical worksheet with three product entries, two inner cartons and one outer parcel. Assume the quoted service is 4 yuan per inner carton and an outer-packing option costs 7 yuan for the parcel. The worksheet should add 8 and 7, or 15 in total. Multiplying both charges by three because there are three item rows produces 33. This example illustrates the arithmetic only; read the actual service units and amounts on the live offer.",
@@ -309,6 +309,276 @@
       "source_sha256": "3515ed095ff9b262fd74d8ad6036b9eaf490e9bd8f910e96ff6a3d81039f457d",
       "raw_target_sha256": "d62d4edf0e968d659b71c9baea73bcbb7ef4e60f7a477df32883ec122273efb7",
       "translation": "Khi tuyến cuối cùng xuất hiện giống nhau theo tên, kiểm tra bất kỳ biến thể dịch vụ hoặc khu vực giao hàng nào được hiển thị. Hai tên tương tự có thể mô tả các sản phẩm giao hàng khác nhau. So sánh các bộ nhận dạng tuyến đường thực tế nếu tài khoản tiết lộ chúng. Lưu ảnh chụp màn hình liên quan với địa chỉ riêng và thông tin thanh toán cắt ra trước khi chia sẻ. Nếu một mã đã thay đổi nhưng ý nghĩa của nó không rõ ràng, hãy hỏi hỗ trợ để xác nhận liệu báo giá và tuyên bố đề cập đến cùng một dịch vụ."
+    },
+    {
+      "source": "A delivery estimate may refer to a stage starting at dispatch. Read the route description before promising someone a date based on it. Include unresolved purchasing, seller dispatch, warehouse intake or packing in a separate planning timeline. Avoid adding arbitrary days to manufacture a confident arrival date. If the use date matters, state which pending event creates uncertainty and check the latest confirmed status.",
+      "source_sha256": "0f2a0745dad887ac0537a2c286c171f834afc626189a9b4662dc221aa421ee3b",
+      "raw_target_sha256": "fefa093b90adeafdc6ab189e970edb6ada51cdb40c54f7652ebc9010b1a9af19",
+      "translation": "Thời gian vận chuyển dự kiến có thể chỉ tính từ lúc kiện được gửi đi. Đọc điều kiện của tuyến trước khi hẹn người nhận ngày giao. Lập tiến độ riêng cho các khâu còn dang dở như mua hàng, người bán gửi đi, nhập kho và đóng gói. Đừng tự cộng thêm một số ngày tùy ý. Nếu cần hàng vào một ngày cụ thể, xác định khâu nào còn chưa chắc và kiểm tra trạng thái mới nhất đã được xác nhận."
+    },
+    {
+      "source": "Sources",
+      "source_sha256": "caf85b0888d78f1f83771a07b25c3d30fa1210242f2fae6e5ae5d9a686602800",
+      "raw_target_sha256": "c76d57b348bd2310aa2a7979b8fba16d649d4ca686038820ea2f9023ea085c53",
+      "translation": "Nguồn tham khảo"
+    },
+    {
+      "source": "HubBuy shopping guides",
+      "source_sha256": "304881749701f023343da1ac05076b51d0e7238ac3ad1379f8bf539074fb5deb",
+      "raw_target_sha256": "304881749701f023343da1ac05076b51d0e7238ac3ad1379f8bf539074fb5deb",
+      "translation": "Hướng dẫn mua hàng qua HubBuy"
+    },
+    {
+      "source": "Work through the figures behind a HubBuy purchase, from domestic delivery charges to a final parcel statement.",
+      "source_sha256": "a310a4d24a802de1964b15943252d54d39904853bd0e058a241854e8462d5fc3",
+      "raw_target_sha256": "aa26efcd4249093240552f69782c09f955999b24f389339895ed95da46de21c7",
+      "translation": "Tìm hiểu từng khoản trong đơn HubBuy, từ phí vận chuyển nội địa đến bảng kê cuối cùng của kiện hàng."
+    },
+    {
+      "source": "HubBuy spreadsheet FAQ",
+      "source_sha256": "de11d14cd0f85a08738da5f9db76cb223c249add0840b8a2f9d41d0e64bb3cef",
+      "raw_target_sha256": "de11d14cd0f85a08738da5f9db76cb223c249add0840b8a2f9d41d0e64bb3cef",
+      "translation": "Câu hỏi thường gặp về bảng sản phẩm HubBuy"
+    },
+    {
+      "source": "Where do I estimate HubBuy international shipping?",
+      "source_sha256": "1ba85519eca7767016b0dee457ef4a612a582d50bed7d280875769ad0bc6bd4c",
+      "raw_target_sha256": "1f19898d101a0cbfc33948e73925d6cf0cfef9dfd1c64b7c2114e725f3caaf84",
+      "translation": "Tôi có thể ước tính phí vận chuyển quốc tế HubBuy ở đâu?"
+    },
+    {
+      "source": "Use the shipping estimator on hubbuy.com. Enter the destination, weight in grams, product category and outer dimensions in centimetres when available. Save the inputs with the displayed result.",
+      "source_sha256": "c8b271e0e38b97f31fac64118802118a5a11e3d159f72266277f3dc690c518a5",
+      "raw_target_sha256": "57321044ba72f8d5b34824aad612a84062dbbba7365b2acc41f9f75ec871ba80",
+      "translation": "Dùng công cụ ước tính cước tại hubbuy.com. Nhập nơi đến, khối lượng tính bằng gam, loại sản phẩm và kích thước ngoài tính bằng centimét nếu có. Lưu dữ liệu đã nhập cùng kết quả."
+    },
+    {
+      "source": "Do the preset product weights describe my purchased item?",
+      "source_sha256": "dfdb4ba54b27e3ed1ffc4171ed80d9aea0483bd3acc0965636a200486622e4c8",
+      "raw_target_sha256": "1d0f7af3bb9ef6182bd84b1b89023af5915b77454de86b57ecb0b0aca14669ba",
+      "translation": "Khối lượng sản phẩm có sẵn trong công cụ có đúng với món tôi mua không?"
+    },
+    {
+      "source": "HubBuy labels its quick-estimate examples as approximate. Use them while planning, then replace them with measured figures from your own order and its intended packing.",
+      "source_sha256": "eb9030e698dbe83716706bf395167a65e597e1addf6e71189002313c9796576d",
+      "raw_target_sha256": "7467d0760287b7d2ac5c18819d4bd98caa3cda14d8cf182907ce0ad292f099df",
+      "translation": "HubBuy ghi rõ các mẫu ước tính nhanh chỉ là số gần đúng. Dùng để lập kế hoạch ban đầu, rồi thay bằng số đo của đơn hàng thực tế và cách đóng gói dự kiến."
+    },
+    {
+      "source": "Why does the estimate ask for dimensions as well as weight?",
+      "source_sha256": "1aabc3bd6302918d5a0e88194f1a3ec38f7d9e14d5e061e5b7d80af1b7006531",
+      "raw_target_sha256": "3734318564bcfa848edf20a90222afc7c6bdc8506e76d902bf4d645f16f3892e",
+      "translation": "Vì sao công cụ cần cả kích thước lẫn khối lượng?"
+    },
+    {
+      "source": "A route can have size limits or consider parcel volume when billing. Enter the actual outer length, width and height when you have them, and read the terms for the route you select.",
+      "source_sha256": "6878e715c45b8681c3aa09353b842cb1bb4be1a6bc61d874dc796275de3b66d6",
+      "raw_target_sha256": "6497914d5e60c5ec5bbb4296eaefb045eddbb2769fe405ad74506a2d879ec949",
+      "translation": "Tuyến vận chuyển có thể giới hạn kích thước hoặc tính cước theo thể tích. Khi đã có số đo, nhập chiều dài, rộng, cao bên ngoài thực tế và đọc điều kiện của tuyến đã chọn."
+    },
+    {
+      "source": "What does seller-to-warehouse delivery pay for?",
+      "source_sha256": "8d0b4c629f3ad61bbd90c766e08c7287b22d9e382415395c2c922a8af27e9c7d",
+      "raw_target_sha256": "3f2a615d0bc23726301b47f983e0b3c1720e3d717683101dd3888033841bb9f1",
+      "translation": "Phí chuyển từ người bán đến kho áp dụng cho chặng nào?"
+    },
+    {
+      "source": "It covers the domestic movement from the seller to the receiving warehouse when such a charge applies. HubBuy lists the product purchase and China shipping before the later international parcel stage.",
+      "source_sha256": "07768ae8510ca6c90a9ace3f7440442a5d92c57e150953febdee66de34d8b16d",
+      "raw_target_sha256": "d6ebc78096f86228eaf04bac23398d88bc63c31139169d61f7c3c19b33d67c23",
+      "translation": "Nếu có thu phí, khoản này chi trả chặng nội địa từ người bán tới kho nhận. HubBuy liệt kê tiền mua hàng và phí vận chuyển trong Trung Quốc trước bước gửi kiện quốc tế."
+    },
+    {
+      "source": "How should I budget two items from the same seller?",
+      "source_sha256": "57e8143e9141de36ec02c9efc93c5aa715452c9f2382476a1ecab7bc0f9fdf8a",
+      "raw_target_sha256": "0386bad33bfa0fd86c3041f346a6b59001c837f1d202d38ccbf25630206b172e",
+      "translation": "Nên dự trù chi phí thế nào khi mua hai món cùng người bán?"
+    },
+    {
+      "source": "Read the final seller order summary to see whether domestic shipping is charged once or per item. Keep that amount on the seller order and allocate it only if you need per-item costs.",
+      "source_sha256": "ef36bb9d0e6a95923e3a507e1076f32a0d8c44d4851b23bdc3c7b209a5c53f29",
+      "raw_target_sha256": "f47d213f8aed9e699c9f87ec623a5a14da5f4a5eaae46e7f3908852e617e4229",
+      "translation": "Xem tổng kết cuối cùng của đơn người bán để biết phí nội địa tính một lần hay theo từng món. Ghi phí ở cấp đơn, chỉ phân bổ khi cần tính chi phí riêng từng món."
+    },
+    {
+      "source": "Can I assume separate sellers share one domestic charge?",
+      "source_sha256": "12ea1ae2d42d68a6eef2cccc2ff5e0bdbd8d2c1426cd316ed2ad640a504e1572",
+      "raw_target_sha256": "41f0611403386ae63011b2dc50b1bea44e5d36df7af1f41593e0bd466a9099a1",
+      "translation": "Có thể mặc định nhiều người bán dùng chung một khoản phí nội địa không?"
+    },
+    {
+      "source": "Keep a separate purchase record for each seller. Even when purchases later travel abroad together, the domestic deliveries may have separate charges and separate tracking numbers.",
+      "source_sha256": "3dc0d0a70f83265eb7d97d03a69ede7af43f3b2ed4a86e90404e036be615cf4b",
+      "raw_target_sha256": "7a6044dce083acd2401f09b61cb4c2204bb12d0f8835ab241eda260411588d42",
+      "translation": "Tách hồ sơ mua theo từng người bán. Dù sau này gom chung một kiện quốc tế, các chuyến nội địa vẫn có thể có phí và mã vận đơn riêng."
+    },
+    {
+      "source": "When should I use a packed weight rather than the seller's item weight?",
+      "source_sha256": "241cd961bff026ecdb525221835072c20a6144239d6110611666898643ea68f1",
+      "raw_target_sha256": "b312f325e99e8db4a3cc909d93decde29d189410924c94130301873967c11d02",
+      "translation": "Khi nào nên dùng khối lượng sau đóng gói thay cho số cân người bán ghi?"
+    },
+    {
+      "source": "Use the packed figure for the international parcel estimate once available. It includes the box and packing materials, whereas a seller's product figure may refer only to the unit.",
+      "source_sha256": "cdc8a1c8dde506ba039e6ec7567ea877aa6f81f9c35b4304d4cc9493062879c8",
+      "raw_target_sha256": "4c1bc3e1696c9c0f4aa361bfcde9e2b1486163d7d9342448a67b544d3abc9e14",
+      "translation": "Khi có số cân sau đóng gói, dùng số đó để ước tính kiện quốc tế. Nó gồm cả hộp và vật liệu bảo vệ, trong khi số của người bán có thể chỉ tính riêng món hàng."
+    },
+    {
+      "source": "How do I convert kilograms for the HubBuy calculator?",
+      "source_sha256": "becd25892fd109622d1024f320ccad035e6a10b9ec746d9194fe064e640f8efb",
+      "raw_target_sha256": "a413230196df4045635e783a3be8612ecfbee40293d084ae534c03526fe11e7d",
+      "translation": "Đổi kilôgam sang đơn vị của công cụ tính cước HubBuy thế nào?"
+    },
+    {
+      "source": "Can I add three product lengths to obtain my parcel length?",
+      "source_sha256": "f8962981d15f216ccb7913af3909fdf5112de453cc9431729f80654207fb2865",
+      "raw_target_sha256": "bb474da7afae64b304977ea14524e658bb42d75ab93466f77b1f17d9292b21a6",
+      "translation": "Có thể cộng chiều dài ba sản phẩm để tính chiều dài kiện không?"
+    },
+    {
+      "source": "Only if the items will actually be packed end to end. Decide on the proposed arrangement and measure its outer envelope. Leave room for protective material and confirm packed dimensions later.",
+      "source_sha256": "536b8b79fc83da8498e787cdf8d8ed4a9f798a2b9e0105b754be105d333bddd8",
+      "raw_target_sha256": "d9df76fee74cdd67bb56c6e6db79fa9d034f13b62c690d7dfa07a55c48f8a707",
+      "translation": "Chỉ khi ba món thực sự được đặt nối đuôi nhau. Xác định cách xếp, đo khoảng bao ngoài, chừa chỗ cho lớp bảo vệ rồi xác nhận kích thước sau đóng gói."
+    },
+    {
+      "source": "How do I compare a single box with two boxes?",
+      "source_sha256": "76cfc60ae9a97755e082c31bde14d943f39c77a482b304887776e45f1d201dc8",
+      "raw_target_sha256": "c4f85a6cb8821032ab97e1cd2e6e687098845bbd836d1876ec74025fc58c6e64",
+      "translation": "So sánh phương án một thùng và hai thùng như thế nào?"
+    },
+    {
+      "source": "Request or calculate each option using the same items, destination and protection requirements. Compare the combined charge for both smaller parcels with the charge for the single larger parcel.",
+      "source_sha256": "73435fbb52cb9ff042802da20cb9269d90a54a77100f3ef6133d3cd878751d7e",
+      "raw_target_sha256": "67779a7b66166ff4335be6f3647ecb3e00f7dd9738e057a08b575135dae7823d",
+      "translation": "Yêu cầu hoặc tính giá với cùng danh sách hàng, điểm đến và mức bảo vệ. Cộng phí của cả hai thùng nhỏ rồi so với phí của một thùng lớn."
+    },
+    {
+      "source": "Why should I keep the quote currency beside the amount?",
+      "source_sha256": "631b819117ee2d10a4eb20d1d388840c503d5fc0a66a8f42020fe1c919a9b6ca",
+      "raw_target_sha256": "2b55b8ad64068d60eca38e6f36557f7424b98569de7ce9f3aebd01c259e5e98e",
+      "translation": "Vì sao cần ghi đơn vị tiền tệ cạnh số tiền báo giá?"
+    },
+    {
+      "source": "A number without its currency is ambiguous. Record the currency code at quotation and at payment, along with any conversion rate and fee shown, before comparing two totals.",
+      "source_sha256": "112b03b11dbaf304c9d5efb600167d9a9cd85dca9db5bf9f8283ec7a69913399",
+      "raw_target_sha256": "a3ea6e2467a514cc369c5c7366d11b3831c5b1d8703058875dfe3d0e741d64f5",
+      "translation": "Một con số không có đơn vị tiền tệ dễ gây nhầm. Ghi mã đồng tiền lúc báo giá và lúc thanh toán, cùng tỷ giá và phí hiển thị, trước khi so hai tổng tiền."
+    },
+    {
+      "source": "How should an optional packing charge be recorded?",
+      "source_sha256": "e14a7de72ea69b1ad10d4769c47769648d9269ef41fc78e3ea0977f5d3208eb4",
+      "raw_target_sha256": "08c1a2224435d641792c19810c9dead80f9a6899e06cf2c3678ef0792bbe63bb",
+      "translation": "Nên ghi khoản đóng gói tùy chọn thế nào?"
+    },
+    {
+      "source": "Write down the exact service, amount and whether it applies to an item or parcel. Check if a quoted total already includes it before adding it separately.",
+      "source_sha256": "9e77b7abf0e39bd9fa9189dafb8eb2b07c3f49dca520ef95ec38323189c690cb",
+      "raw_target_sha256": "f7ebb24b7bcb5f9133562490656a58f9208db7803562ba05a6b1aef1f0a227bc",
+      "translation": "Ghi đúng dịch vụ, số tiền và đơn vị tính theo món hay theo kiện. Kiểm tra tổng báo giá đã gồm khoản đó chưa rồi mới cộng riêng."
+    },
+    {
+      "source": "Is the cheapest displayed route suitable for every parcel?",
+      "source_sha256": "2cfe086e948ed9f10c02d6d270dacfea5fd2049be4e5fcfedbcfa569ddd1d3da",
+      "raw_target_sha256": "d567c298b087d04a980dce4e0d269ff040aafa99ed60edd62c0ec708782e326c",
+      "translation": "Tuyến rẻ nhất đang hiển thị có phù hợp mọi kiện hàng không?"
+    },
+    {
+      "source": "Check destination coverage, size limits and acceptance of your actual contents. Compare delivery estimates and included services only among routes available for that parcel.",
+      "source_sha256": "53c93344f28c0396927cd3c658239f85333cc3467522fe9d1ce5963f1c7c50fd",
+      "raw_target_sha256": "27ff0f97822aebf084f1caa61c315078faa91bf80b0975f899c9e1c58e1f9a5a",
+      "translation": "Kiểm tra phạm vi giao, giới hạn kích thước và tuyến có nhận đúng loại hàng của bạn hay không. Chỉ so thời gian dự kiến và dịch vụ kèm theo giữa các tuyến thực sự dùng được."
+    },
+    {
+      "source": "What if I change the packing after obtaining a quote?",
+      "source_sha256": "28d21e1ca724c4ce67afa507d5a24a91a8db8606aa6a97562d251280ca194023",
+      "raw_target_sha256": "6bb9bfd43d6ec1156f8029841ec02f3e39d67d9549353ea51b00a5773b506463",
+      "translation": "Nếu đổi cách đóng gói sau khi có báo giá thì sao?"
+    },
+    {
+      "source": "Can I compare a product price converted by the spreadsheet directly with my card charge?",
+      "source_sha256": "0114b91de865d17bafcbccef4a5c40d220d63b7a956752696f1664d44243193b",
+      "raw_target_sha256": "f66bc19ef51b085bf84890c5dbe752533b8af9f17d0de483adb26ae94cdf9f01",
+      "translation": "Có thể so trực tiếp giá quy đổi trong bảng với khoản trừ trên thẻ không?"
+    },
+    {
+      "source": "Start with the source amount, selected option and quantity. Compare conversion rate, charged currency and any explicitly listed fee on the payment record. The catalogue display is a browsing reference.",
+      "source_sha256": "91d0f4eaeef04b2d12a01eac374463e1d9d1d6cdf76fb803132a4d82492e028d",
+      "raw_target_sha256": "8b88f11d529ed28463c6c16ffacecdc06ef80e9dc6d2d623607eb2d49d7790a2",
+      "translation": "Bắt đầu từ số tiền gốc, phân loại đã chọn và số lượng. Đối chiếu tỷ giá, đồng tiền bị trừ và khoản phí ghi rõ trên chứng từ. Giá hiển thị trong danh mục chỉ dùng để tham khảo khi xem hàng."
+    },
+    {
+      "source": "Where does a seller discount belong in the budget?",
+      "source_sha256": "cebe05093314ad346885d87aaa8471de6b705272e99a1571a0fc5590ed123408",
+      "raw_target_sha256": "3343bfe9777f2846d54995f57bbebc8a672109a15ed21b76aa325a58e5b03984",
+      "translation": "Chiết khấu của người bán nên ghi ở đâu?"
+    },
+    {
+      "source": "Record it beside the purchase to which it applies. Keep any outbound parcel discount separate, and check the conditions before subtracting a promotion from a planning estimate.",
+      "source_sha256": "c9d01427f5a1f5d28088f5b73e5bd94f83db45067c85ed48370f39a497afb212",
+      "raw_target_sha256": "22949af2877be601eab81212abab57fe7816178e1822e4db9406c88d0979f4de",
+      "translation": "Ghi cạnh đúng đơn mua được hưởng. Tách riêng giảm giá cước gửi kiện và kiểm tra điều kiện ưu đãi trước khi trừ vào dự toán."
+    },
+    {
+      "source": "Why does the final total differ from my first estimate?",
+      "source_sha256": "63d3b4bdfecd18af6e8aaba8e30f485004aff5579bdb0486c4f49e743f3b9c2c",
+      "raw_target_sha256": "74100b96962ce4a288d536b427a2e74e997e263180df1c020cdb3434a380b8a1",
+      "translation": "Vì sao tổng cuối cùng khác dự tính ban đầu?"
+    },
+    {
+      "source": "Compare destination, contents, route, weight, dimensions, currency, packing, discounts and service entries. Identify the first difference you can document before asking about the remaining balance.",
+      "source_sha256": "365eed70dee556fed658ed8c3462851ff623d6395ee6867addec71c6d3164530",
+      "raw_target_sha256": "407905a3e24d5107447e847cd96ed84b6052d5ef7945b4007ad679763f1cc04a",
+      "translation": "Đối chiếu nơi đến, hàng bên trong, tuyến, khối lượng, kích thước, tiền tệ, cách đóng gói, giảm giá và dịch vụ. Xác định điểm khác đầu tiên có chứng từ trước khi hỏi phần còn lại."
+    },
+    {
+      "source": "What should I save if a support question concerns two parcels?",
+      "source_sha256": "57a8342b7331ead16df58da107259e039991f315c92163300a2a6211ec7503bd",
+      "raw_target_sha256": "38fcc702279f4d8e23f6ca0698590642e82fc77d964035a02c1c27596396fc88",
+      "translation": "Cần lưu gì nếu câu hỏi gửi hỗ trợ liên quan đến hai kiện?"
+    },
+    {
+      "source": "Save both outbound parcel references, their item lists and their final charge statements. Mark the line you are comparing on each record so the question stays tied to the correct parcel.",
+      "source_sha256": "baa564c8afd6b6f139c54ca948290d096026e69c37baa603560efd436cf90c7c",
+      "raw_target_sha256": "55803b7573b764c2ce5c2034cff4c6996528279a91ead3087de410e53ace7127",
+      "translation": "Lưu mã xuất kho của cả hai kiện, danh sách hàng trong từng kiện và bảng kê phí cuối cùng. Đánh dấu dòng đang so trên từng chứng từ để câu hỏi luôn gắn đúng kiện."
+    },
+    {
+      "source": "Can a warehouse item photo show the final packing dimensions?",
+      "source_sha256": "ae47c298f96ad375ba0e82ddf61be4fd3396c95d0aec54b374d729051a80b1b9",
+      "raw_target_sha256": "b455be37391e050f258f865d6a0b574dd444ce44e286d849ccef60240fa6de25",
+      "translation": "Ảnh sản phẩm tại kho có cho biết kích thước kiện cuối cùng không?"
+    },
+    {
+      "source": "An image of the product can help identify it, but the final dimensions refer to the sealed outer parcel. Ask for the packed measurements if the decision depends on fitting a route limit.",
+      "source_sha256": "a8e11b265152422a00392c4a402608a6d0bf1436cecafe369d448b2f7a78a33e",
+      "raw_target_sha256": "551626a8c1ec7570624aa108d23ce891d533f778042f005d19968e489b6b62ba",
+      "translation": "Ảnh sản phẩm giúp nhận diện món hàng. Kích thước cuối cùng cần đo bên ngoài kiện đã đóng kín. Hãy xin số đo sau đóng gói nếu việc chọn tuyến phụ thuộc giới hạn kích thước."
+    },
+    {
+      "source": "What if my order contains a fragile accessory and soft clothing?",
+      "source_sha256": "87943750d247f1e1f74ecd5e2b21c1d5ad182cbda9b624fe97575103226e21cc",
+      "raw_target_sha256": "5a99f3f974f0ee16d63a991ca388d80a682ecfc753946595f2169f44bd6d2ccb",
+      "translation": "Nếu đơn có cả phụ kiện dễ vỡ và quần áo mềm thì sao?"
+    },
+    {
+      "source": "Ask which protective arrangement is available and whether the accessory requires a separate inner box. Compare combined and separate packing after allowing for that space.",
+      "source_sha256": "d98ee41d3c821189e642788cb7417b497268949dc614b3f148f987be74a386c9",
+      "raw_target_sha256": "0a15ec75c8699cad81a6affc61e09cd4f11ed20cfbf0353d1fad0aad62c50243",
+      "translation": "Hỏi cách bảo vệ hiện có và phụ kiện có cần hộp riêng bên trong hay không. Tính cả khoảng trống đó rồi so phương án đóng chung với đóng riêng."
+    },
+    {
+      "source": "Which support site matches the HubBuy links on this grid?",
+      "source_sha256": "57418be321e8630d5e638dd31447804aa64344dfc2d55d0302b662e853b613ed",
+      "raw_target_sha256": "a8638d23d8b7a9e2338aceed1aa294ccfdbb2f9d626763ae2fe7e1295fcb214a",
+      "translation": "Trang hỗ trợ nào tương ứng với các liên kết HubBuy trong bảng này?"
+    },
+    {
+      "source": "The purchase links on this grid lead to hubbuy.com. Use that site's current estimator, service information and customer support for a HubBuy quote or order-specific question.",
+      "source_sha256": "307742d9d113683f1c2b9e6f41100996b26980c38b90de456960b36480b491aa",
+      "raw_target_sha256": "428c75be98bf4580d2387f3608eaf7df5c6e286756b2b57874f1bbf284e7ef38",
+      "translation": "Các liên kết mua trên bảng này dẫn đến hubbuy.com. Khi cần báo giá hay hỏi về đơn riêng, dùng công cụ tính cước, thông tin dịch vụ và hỗ trợ hiện hành của chính trang đó."
     }
   ]
 }

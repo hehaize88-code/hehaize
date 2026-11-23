@@ -3,7 +3,7 @@
   "locale": "th",
   "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
   "raw_dictionary_sha256": "82e9344927ff51168bb2b8af1bd1d60cd6830bd41d8313511b7237b1ac7192c7",
-  "effective_dictionary_sha256": "6f7ce5db96dbe1abfcb9378bb3c605b2bf9e647deab8066b10f0cda68c1454a7",
+  "effective_dictionary_sha256": "8e31abc7f47c039680ed1ceb7237144311a4c0797e5ebf7461f9d5f1129e7ed8",
   "checked_entries": 317,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -86,7 +86,7 @@
       "source": "An exchange creates a second physical unit. Keep the original promise, the original problem and the replacement evidence connected without mixing their identifiers.",
       "source_sha256": "9c04e875b9a644fce5bc3e1f0d497a0a65bff26dc0f402a39f61cfb6d26cbe0a",
       "raw_target_sha256": "7a06a6ac50376e3affd55850b720fb8e5e2677d870e626c096ae6ecd79b917c0",
-      "translation": "เมื่อเปลี่ยนสินค้า คุณจะได้รับของอีกชิ้น เชื่อมสิ่งที่ร้านตกลงครั้งแรก ปัญหาของชิ้นเดิม และหลักฐานของชิ้นทดแทนไว้ด้วยกัน แต่แยกเลขอ้างอิงของสองชิ้นให้ชัด"
+      "translation": "การเปลี่ยนทำให้มีของจริงอีกหนึ่งชิ้น เชื่อมข้อตกลงเดิม ปัญหาของชิ้นแรก และหลักฐานชิ้นใหม่ โดยเก็บรหัสแต่ละชิ้นแยกกัน"
     },
     {
       "source": "If the seller offers to send a missing piece, record its promised description and new domestic tracking number. If an exchange is offered, retain the original item reference and the replacement reference separately. Do not mark the case complete simply because a message promises a shipment. Close the record when the received accessory can be identified and checked against the original option.",
@@ -1334,7 +1334,7 @@
       "source": "When all required views are available, close the inspection with a short statement about both shoes. For example, both labels display the ordered system and size, both outsoles show the same tread and the left heel has a visible mark that still needs clarification. This record is more useful than a single “QC passed” line because it explains the specific checks you completed. Keep the images with the order in case a later packing or exchange question refers to one shoe in particular.",
       "source_sha256": "56536e87099f2bd797aa99b8ddf139a43539fc18d42d5ab1ff68b2aa113939e5",
       "raw_target_sha256": "dd7e30290ddfc67c9e6c797eccfa86b54e5f2190741ef55e7bd5a175aa3f7b94",
-      "translation": "สรุปเมื่อได้ทุกมุม เช่น “ป้ายทั้งสองข้างตรงระบบและไซซ์ที่สั่ง ดอกยางตรงกัน ส่วนส้นซ้ายมีรอยรอยืนยัน” ข้อความนี้บอกสิ่งที่ตรวจจริงมากกว่าคำว่า QC ผ่าน เก็บภาพกับคำสั่งซื้อเผื่อต้องถามเรื่องรองเท้าข้างใดภายหลัง"
+      "translation": "สรุปเมื่อได้ทุกมุม เช่น “ป้ายทั้งสองข้างตรงระบบและไซซ์ที่สั่ง ดอกยางตรงกัน ส่วนส้นซ้ายมีรอยที่ยังต้องยืนยัน” ข้อความนี้บอกสิ่งที่ตรวจจริงมากกว่าคำว่า QC ผ่าน เก็บภาพกับคำสั่งซื้อเผื่อต้องถามเรื่องรองเท้าข้างใดภายหลัง"
     },
     {
       "source": "An accessory can be missing from a photograph, omitted from a selected option, packed out of view or genuinely absent from the received order. Resolve those possibilities in sequence.",
@@ -1635,6 +1635,312 @@
       "source_sha256": "6dbe2ef6e045e6912ff1988175abe23ef26e82f1e53783b98ed73ec768c3a4b6",
       "raw_target_sha256": "ca831fd5a6118153772571caf3603382510464b5f7595d4f75eaf79676bd4a08",
       "translation": "หากขาดข้อเดียวให้ยกคำขอนั้นและบอกสิ่งที่เห็น เช่น เห็นความยาวซิปแต่ไม่เห็นช่องว่างระหว่างตัวหยุด ขอเพิ่มเฉพาะเมื่อยังมีผลต่อคำสั่งซื้อ หากภาพตอบไม่ได้ให้พิจารณาคำตอบร้าน ตัวเลือกอื่น หรือไม่ซื้อ การขอภาพเดิมซ้ำไม่ได้สร้างหลักฐานใหม่"
+    },
+    {
+      "source": "Preserve the starting point",
+      "source_sha256": "40060ebe0b1c2b6522a65f25ee7dfdb615164d588830dcf567afdfc04c1d74ee",
+      "raw_target_sha256": "50c303d82f512d45ed711b6d2fc03b48b90c76342773457d1ec22cc20feb38b1",
+      "translation": "เก็บจุดเริ่มต้น"
+    },
+    {
+      "source": "Save the seller option, quantity, price and original order reference. Keep the warehouse photographs that identify the problem. State the issue in terms another person could verify, such as the received size tag reading large when the paid selection was medium. A general statement that the item looks different is harder to act on when the seller page has multiple versions or a changing set of pictures.",
+      "source_sha256": "6f15e33d3f11b934bc4e8a94bc85a6fb0582338c5c9a2b906e4d2771a9a0c07d",
+      "raw_target_sha256": "b91fbe2de1a0c2ccf48a713a75f431ae6ea014c264d6c1b1af1f423046675ce0",
+      "translation": "เก็บตัวเลือก จำนวน ราคา เลขสั่งซื้อเดิม และภาพคลังที่เห็นปัญหา เขียนให้ผู้อื่นตรวจได้ เช่น “สั่ง M แต่ป้ายที่รับเป็น L”"
+    },
+    {
+      "source": "Check the available remedy",
+      "source_sha256": "60fdf3de1b6bc40ca38a8d5ddee091a917c6fabeeedca3ef22fc79513308fa7d",
+      "raw_target_sha256": "ebe4f45b5047ab651bfac135c107fa649dda4c92775889e6e8b6bf0535745da2",
+      "translation": "ตรวจวิธีแก้ที่ใช้กับคำสั่งซื้อนี้"
+    },
+    {
+      "source": "Read the instructions on the actual order and ask what the seller or platform needs before the unit is moved. Note any requirement concerning packaging, tags, evidence or domestic return transport. Avoid assuming that storage time and exchange eligibility have the same deadline. A return agreement, a dispatched return and an accepted replacement are distinct events and may have separate references.",
+      "source_sha256": "cdb735255327eb08fa74eb52ce39ebc9ae5f9c360ed47641c92ac07b9a15a45f",
+      "raw_target_sha256": "9cdfee6811d0dedd0dd1a1c06c12f93c9a74759e6589454ffe6d6b2df77b3be3",
+      "translation": "ก่อนเคลื่อนของ อ่านคำแนะนำคำสั่งซื้อและถามสิ่งที่ร้านหรือตัวแทนต้องการ จดเงื่อนไขห่อ ป้าย หลักฐาน และการส่งคืนในจีน การเก็บในคลังไม่ได้แปลว่ายังเปลี่ยนได้เสมอ ให้ยืนยันกำหนดกับคำสั่งซื้อนี้"
+    },
+    {
+      "source": "Record the original unit's movement",
+      "source_sha256": "dac156881180fa8162f9c77c92af8ab789ee574b7b3077252178b8fdeb9b1952",
+      "raw_target_sha256": "9ce4f9f99c169acc34158e2325446b6876af5dda5f409659129b62dcb475f02e",
+      "translation": "จดการเคลื่อนของชิ้นเดิม"
+    },
+    {
+      "source": "Retain the original warehouse entry even after the unit has left. Add the domestic tracking number if one is provided and record who supplied it. A carrier scan tells you about the physical delivery of a package. It cannot, on its own, show that a seller inspected the item, accepted the exchange or sent the replacement. Update each step only when its own evidence appears.",
+      "source_sha256": "1509896c9eca2c9abf9a0f625c38346f00a5fe884bb90b5546509535babd1707",
+      "raw_target_sha256": "1e5b589ed615a524e261094eb1a2f8315bafafcd92b73cf47d6c644ada119f02",
+      "translation": "แม้ของเดิมออกคลังแล้วให้เก็บรายการรับเข้า ถ้าได้เลขติดตามในจีนให้จดเลขและผู้ให้ การสแกนของขนส่งบอกว่ากล่องเคลื่อน ไม่ยืนยันว่าร้านรับคืนแล้วหรือส่งชิ้นใหม่แล้ว"
+    },
+    {
+      "source": "Check the replacement without recycling the old pictures",
+      "source_sha256": "32d41228df85be20d8c3e791acd807ad5a30c9f6c2ac5e429aa51d9b1897cbb7",
+      "raw_target_sha256": "75bff8046a3c6a5eebab831c53feb70159c6f6394ccc4bcdbf0b44befd40dec8",
+      "translation": "ตรวจของใหม่ด้วยภาพของมันเอง"
+    },
+    {
+      "source": "Give the replacement a separate line with its warehouse intake reference and photographs. Verify the precise detail that prompted the exchange and check the rest of the unit as well. A corrected colour does not establish the right size, quantity or included accessories. When the photographs look identical to the original set, ask which images belong to the new intake before treating them as fresh evidence.",
+      "source_sha256": "542d63a0fb5382b88b0dbbc9595c2c4dec65aa3eb4d51c28f69c99b9e920c871",
+      "raw_target_sha256": "7c73a5a20acbc6ba68bf9a3bb51fe0103c05597353fca1d8b887904173ce83dd",
+      "translation": "ให้ชิ้นใหม่มีบรรทัด เลขรับเข้า และภาพของตัวเอง ตรวจจุดที่เป็นเหตุให้เปลี่ยนและส่วนอื่นตามคำสั่งซื้อ อย่าใช้รูปเดิมยืนยันไซซ์หรือของในชุดของชิ้นใหม่"
+    },
+    {
+      "source": "Close both the item and payment records",
+      "source_sha256": "06799f7aaa5693fb1fa51904b6d2f790ee1f0d498fa84cdccaf553247533de9a",
+      "raw_target_sha256": "2830861d9db2c09a79f0e8c016711535ee0327ba5d7a07fa493e08db9aeb0628",
+      "translation": "ปิดทั้งรายการของและการเงิน"
+    },
+    {
+      "source": "Record any additional charge or credit using the amount, currency and payee actually shown. Match the amounts to the relevant order rather than quietly changing the old price. The item record can be resolved once the replacement has been checked and accepted, even if a separate credit remains pending. Keep both statuses visible to avoid submitting the wrong unit for international packing.",
+      "source_sha256": "28f50cc57a8fa0918c89ec172f53d41dd079bfeb21b3ec007589211d65fd7aca",
+      "raw_target_sha256": "ed8d11f0080f2a4199a8d4e5c315655fd5c58c446d75c3dd330502d47eeb85d9",
+      "translation": "จดเงินเพิ่มหรือเครดิตตามจำนวน สกุลเงิน และผู้รับเงินจริง ผูกกับคำสั่งซื้อแทนการแก้ราคาเก่า ตรวจแยกว่ารับของทดแทนแล้วหรือยังและเงินเคลียร์หรือยัง"
+    },
+    {
+      "source": "Define the replacement you would accept",
+      "source_sha256": "25798ffdc66fa08a6e74e3da9f7adccb55a2d4cea1cc133764eb2b427cbd2daa",
+      "raw_target_sha256": "67296a815eda55b3ac897e669c22eb9a80c48b938257080a13f9f3797a100920",
+      "translation": "กำหนดของทดแทนที่ยอมรับได้"
+    },
+    {
+      "source": "Before requesting an exchange, write down the exact option that would resolve your problem. If a seller delivered a blue shirt in medium when you ordered navy in medium, the remedy may be the originally selected navy option. If you ordered medium and now decide you want large, describe that as a change of selection. The difference matters because the seller and agent need to understand what happened and what item you would accept. Preserve the original order wording in both situations.",
+      "source_sha256": "c7e41d866406c8e7d0ef98e7cadbd772d29da2f08765e13e9ae7c63ee4eb8772",
+      "raw_target_sha256": "acab6161d47080c8824b0e4cbcd90cf0c716930ee2054cf5ecf6ec27fbbdea13",
+      "translation": "หากสั่งกรมท่า M แต่ได้สีน้ำเงิน M สิ่งที่ต้องการอาจเป็นกรมท่า M ตามเดิม หากสั่ง M แล้วอยากได้ L ภายหลัง ให้แจ้งว่าเปลี่ยนตัวเลือก ทั้งสองกรณีเก็บข้อความที่สั่งจริงเพื่อให้ร้านเข้าใจว่าเกิดอะไรและจะรับของแบบไหน"
+    },
+    {
+      "source": "Think through alternatives before someone offers a substitute. You might accept a larger size only if a measured chest width falls within a particular range. You might accept the same colour in a different fabric only after seeing the new specification and price. Keep these conditions private until relevant, then state them explicitly when agreeing to a change. A message saying another option is available is a proposal. Record your answer and make sure the order record or later confirmation describes the choice you actually approved.",
+      "source_sha256": "07cc340ca7fd1c21898bd36186e75bff9d11641862efc239022ae88000bccade",
+      "raw_target_sha256": "c1bd229ca52e70755398d2032a8ba9923f2cf73cdfcac55fa60b53887a4616aa",
+      "translation": "คิดเกณฑ์ไว้ก่อนร้านเสนอทางเลือก เช่น ใหญ่ขึ้นได้ถ้าวัดกว้างอกอยู่ในช่วงที่รับได้ หรือสีเปลี่ยนไม่ได้ หากยังต้องดูค่าจริงให้แจ้งสิ่งที่ต้องยืนยันก่อนตกลง"
+    },
+    {
+      "source": "Build the timeline from events",
+      "source_sha256": "9cef1fc7bda80cbacea28fa9f9eb808746c97b1ab1db75ce9298465b75c554fd",
+      "raw_target_sha256": "82b020ca72e1a2bf43f95f4e549680eeb22674c4e2b92b7e1af834f57cda7217",
+      "translation": "เรียงเวลาจากเหตุการณ์ที่เกิดแล้ว"
+    },
+    {
+      "source": "Imagine the original garment arrived on Monday. On Tuesday you requested a different size. On Wednesday the agent asked the seller whether that size was in stock. At that point, the exchange has been requested and the seller response is outstanding. An estimate of when a replacement might arrive is not evidence that the original has been sent back or another garment dispatched. Keep the latest confirmed event and the next expected event on separate lines so you can follow up with a precise question.",
+      "source_sha256": "24533a5df66d888dbbf8388920dc4b3bfd9225b91fe612bfe82cc7065acac4b1",
+      "raw_target_sha256": "4a4e001b5590e92c5a091f4951514ecb3993de10256a40570f5783cd87937822",
+      "translation": "สมมติรับเสื้อเดิมวันจันทร์ ขอไซซ์อื่นวันอังคาร ตัวแทนถามสต็อกร้านวันพุธ ตอนนี้คือส่งคำขอแล้วและรอร้านตอบ วันคาดว่าของใหม่จะถึงไม่ใช่หลักฐานว่าส่งคืนหรือส่งใหม่ จดเหตุการณ์ยืนยันล่าสุดแยกจากสิ่งที่คาดถัดไป"
+    },
+    {
+      "source": "Useful event fields are date, actor, item or parcel reference, action and evidence. A support reply, tracking event, payment adjustment or new warehouse photograph may each support a different line. Where a time is important, retain the time zone shown in the original record. Do not count an estimate as an elapsed deadline unless the relevant order terms or a support message establish one. If a return or exchange option is time-sensitive, ask support which deadline applies to the specific order.",
+      "source_sha256": "e95cd1f1e38dab7e16b4a91bc1967eb8ea4e8f4cbd139efaae7de156899ab301",
+      "raw_target_sha256": "3e7f7870dcc60313cc84c70814367d888c7d58211a281a183c0c96189e607fe2",
+      "translation": "จดวัน ผู้ดำเนินการ เลขสินค้า/พัสดุ สิ่งที่ทำ และหลักฐาน คำตอบ การสแกน การปรับเงิน และภาพใหม่รองรับคนละเหตุการณ์ หากเวลาสำคัญให้เก็บเขตเวลา วันที่คาดไม่ใช่เส้นตาย เว้นเงื่อนไขหรือฝ่ายช่วยเหลือยืนยันกับคำสั่งซื้อนี้"
+    },
+    {
+      "source": "Keep outgoing and incoming tracking apart",
+      "source_sha256": "08d54cd04c7c912abd005d733478929887bdd8e9e788e338c5a249061dc6ea20",
+      "raw_target_sha256": "38a36756ae57156cc990be75b5eceefa0f7538c3b6f1f47e004349f02adb3cb1",
+      "translation": "แยกเลขส่งคืนกับรับของใหม่"
+    },
+    {
+      "source": "An exchange may involve an outgoing domestic parcel and an incoming replacement. They have different directions and can have different tracking references. Label each reference by direction. If an outgoing parcel shows delivered, that event can help establish that a parcel reached its domestic destination. It does not confirm that the seller inspected it, approved a replacement, dispatched the replacement or that the warehouse received the correct size. Ask about the first missing step instead of repeating the entire timeline.",
+      "source_sha256": "a39971deecc51d9967bc01d5c07eb4c3709e9b5d033277f6ed42e8d9da004be2",
+      "raw_target_sha256": "59ac90cb36330cd4e84cf17e89411c0a46030e35e1758f2f6889eba2d7508fec",
+      "translation": "พัสดุคืนของเดิมไปร้านกับพัสดุส่งของใหม่เข้าคลังเดินทางคนละทิศและอาจคนละเลข กำกับชิ้น ต้นทาง ปลายทางของแต่ละเลข อย่าอ่านการสแกนส่งคืนเป็นข่าวว่าของใหม่เข้าแล้ว"
+    },
+    {
+      "source": "If a replacement is associated with a new order or warehouse number, connect it to the original using a dated note. Avoid changing the original number to the new one and losing the connection. The original record documents the paid selection and the first unit. The replacement record documents what arrived later. If the replacement is bundled with another item, make sure your note identifies which piece belongs to the exchange and which piece belongs to an unrelated purchase.",
+      "source_sha256": "8234fb29110072eddcdf1aba4ddaa37a13cb33a2288972dfee35f82a25ddb4d9",
+      "raw_target_sha256": "64851a5494ac812f2d5ec87901877612a48e886ddd1fa561a85aa501ebb83e47",
+      "translation": "ถ้าของทดแทนมีเลขสั่งซื้อหรือเลขคลังใหม่ ให้เชื่อมกลับเลขเดิมพร้อมวัน อย่าเปลี่ยนเลขเก่าเป็นเลขใหม่ เพราะภายหลังจะจับคู่ภาพหรือข้อความเก่ากับชิ้นที่ถูกไม่ได้"
+    },
+    {
+      "source": "Follow the money separately",
+      "source_sha256": "713720b4fe9bb1a50d409a4a965d876f27d6c93705c029475b0da938e093038f",
+      "raw_target_sha256": "d3bcc209831f3bf7614d7c892f591c874d3d88cb75953a8512eb2fc687946218",
+      "translation": "ติดตามเงินต่างหาก"
+    },
+    {
+      "source": "A price difference, domestic delivery charge or service charge may be discussed during an exchange. Ask which amounts apply to the offered resolution, which currency they use and whether you need to approve them before work proceeds. A quoted amount is not a payment. Record a charge only when you see the corresponding transaction or confirmation. Likewise, a promised refund and a completed credit may appear on different dates. Tracking the money separately prevents unexplained changes to the item's original purchase price.",
+      "source_sha256": "1d592c7b9a520b66c95c5025a5692a65981b6499978f81a88b79cf5a5ab2f701",
+      "raw_target_sha256": "103227ba21df81b6323ac27f021134fb32f1aec72437448df05e35352b47e372",
+      "translation": "การเปลี่ยนอาจมีส่วนต่างสินค้า ค่าส่งในจีน หรือค่าบริการ ถามว่าข้อเสนอคำนวณรายการไหน สกุลใด และต้องอนุมัติก่อนไหม รายงานยอดจ่ายเมื่อมีธุรกรรมจริง วันที่สัญญาคืนกับวันที่เครดิตเข้าอาจต่างกัน แยกจากราคาเดิม"
+    },
+    {
+      "source": "Suppose a seller proposes a more expensive size variant and separately mentions delivery back to the warehouse. Record the item difference and delivery amount as separate fields, even if they later appear as one payment. Check what that payment covers before agreeing. If the transaction appears in another currency, preserve the original amount as well as the amount actually charged. The numbers remain attributable even if your card statement later includes a conversion or a fee outside the seller's quote.",
+      "source_sha256": "d96329b2ed0a21c391f5d44c83f1822c236071a2d488365b5ca12cfdc322f30a",
+      "raw_target_sha256": "2632b49e2c7b6917d2e3ec95c7d40c27784e26ed1db31a5368b63c8eae14b271",
+      "translation": "สมมติรุ่นไซซ์ใหม่แพงขึ้นและมีค่าส่งกลับคลัง แม้รวมจ่ายครั้งเดียวก็แยกส่วนต่างสินค้าและค่าส่ง ตรวจความครอบคลุมก่อนตกลง หากใช้คนละสกุลให้เก็บยอดเดิมและยอดตัดจริง เผื่อบัตรมีค่าแปลงหรือต้นทุนอื่นนอกใบเสนอราคา"
+    },
+    {
+      "source": "Inspect the replacement as a new unit",
+      "source_sha256": "967a5bf1192166422972c9190d930362fcc7f0f9b5a39c68106b0f48dbc601c2",
+      "raw_target_sha256": "7cd37b86101844352726d785a77d9a85b0a6360a12425b7498adf71fc16953aa",
+      "translation": "ตรวจชิ้นทดแทนเหมือนของเข้าใหม่"
+    },
+    {
+      "source": "When a new garment arrives, repeat the checks that triggered the exchange. A warehouse status confirming receipt does not tell you whether the new size label or measurement meets your requirement. Compare the replacement against the written agreement and the photos attached to its own intake. If the original problem involved a crooked fastening, inspect that detail on the replacement instead of relying on the original unit's photos. Also confirm the basic option and quantity so a different mistake does not slip through.",
+      "source_sha256": "52eee64a64ea325d8224e5137135a732167c633b9e09422ed203c13fe8b1644d",
+      "raw_target_sha256": "abb1f13baf5ba8c9cd2b984e5117dbfc94becb33a96f41e5a1f486a75a65724f",
+      "translation": "ของใหม่มาถึงแล้วให้ตรวจซ้ำจุดที่ทำให้เปลี่ยน สถานะรับเข้าไม่บอกว่าป้ายหรือขนาดตรง เชื่อมภาพใหม่กับรุ่นที่อนุมัติและจดผลตรวจที่ใช้ตัดสิน"
+    },
+    {
+      "source": "Once you have decided, record the result, remaining charges or credits and the warehouse reference intended for international dispatch. Check that the parcel selection uses the accepted replacement. If an old record still appears in your account, do not assume it represents an additional dispatchable item. Ask support which reference corresponds to the unit now held if anything is unclear. A completed timeline ends with a specific accepted item or another confirmed resolution and makes later parcel questions much easier to answer.",
+      "source_sha256": "f6b2570de660d6d918b703ab75b4e5e57edfe00c99185f5f26ef080617aa98ba",
+      "raw_target_sha256": "f2c5b7d93b642dca5562e33a7172311176b75363d60a4492121337dd82e38ae4",
+      "translation": "เมื่อได้ข้อยุติ จดผล ค่ายังต้องจ่ายหรือเครดิตรอ และเลขคลังที่จะส่งออก ตรวจว่าเลือกชิ้นทดแทนที่รับแล้ว บันทึกเก่าที่ยังเห็นไม่ได้แปลว่ามีของเพิ่มอีกชิ้น ถ้าไม่แน่ใจถามเลขของชิ้นที่ถืออยู่ จบด้วยชิ้นที่ยอมรับหรือวิธีแก้ที่ยืนยันแล้ว"
+    },
+    {
+      "source": "A stable marketplace link can lead to a page whose option wording, photographs or price has changed. Compare dated records before deciding what the change means for your order.",
+      "source_sha256": "be2f60ae663eb6bac9383dad175f15515a51f2920a5a92438ab324504b0dedde",
+      "raw_target_sha256": "52e76ef8099bd1dd3236e98a86b0a64a644a4e391b3a645f95072d3acbd9f2e7",
+      "translation": "URL เดิมยังเปิดได้แม้ชื่อตัวเลือก ภาพ หรือราคาเปลี่ยน เทียบบันทึกพร้อมวันที่ก่อนสรุปผลต่อคำสั่งซื้อ"
+    },
+    {
+      "source": "Capture a useful snapshot",
+      "source_sha256": "0b9427cf47bdf3fcbf995a23c236aa8d889002a3e8078c349522fb99bd8b3bd9",
+      "raw_target_sha256": "49c93c47d215caefe84d3322b148fc104c208a51a72207b429589d35c09eaa7d",
+      "translation": "เก็บภาพหน้าที่ใช้ตรวจย้อนหลังได้"
+    },
+    {
+      "source": "Save the seller page with the chosen option visible, the original option text, price, quantity and item ID. Include a date. For a set, make sure the included pieces are stated somewhere in the record. A screenshot of the hero image alone contains little information about which bundle was selected. Keep the agent purchase confirmation separately because it records the choice submitted through the order.",
+      "source_sha256": "9cd697caf8ecfb6c8e46d5d89c9462c562ab39be70827142ced40b6239d12870",
+      "raw_target_sha256": "a2e1739ffabedc11f014fb0867467be29a13503d0848ef1ba1bf970184b87429",
+      "translation": "เก็บหน้าร้านที่เห็นตัวเลือกพร้อมข้อความเดิม ราคา จำนวน รหัสสินค้า และวัน สำหรับชุดให้เก็บคำบอกชิ้นที่รวม ภาพปกหรือราคาต่ำสุดอย่างเดียวไม่พอใช้ย้อนดู"
+    },
+    {
+      "source": "Identify the layer that changed",
+      "source_sha256": "4babf1c0dbc70c5f1e1ad270baf39f9da6d3f9c6eb79196b97e52099cf23a7dc",
+      "raw_target_sha256": "c82f2ecae54191fde7cd294a0ae3532fb9c51fb9b76c9f060f8d67287b7ef9da",
+      "translation": "หาว่าอะไรเปลี่ยน"
+    },
+    {
+      "source": "A change in translated wording may occur even when the original seller option is unchanged. Compare original text, option code if available, thumbnail, selected unit and live price. If the whole listing now opens at a different default, select the old option manually before drawing a conclusion. A changed default and a discontinued version call for different decisions.",
+      "source_sha256": "99db466afa5ca411eb145f927eb0281646db157c285b2cd2750c1b977fe39038",
+      "raw_target_sha256": "b7a0503b4d9526363f0c17bef0d124ffe940c2629e80448efea7e29f3105869b",
+      "translation": "คำแปลอาจเปลี่ยนแต่ชื่อเดิมไม่เปลี่ยน เทียบต้นฉบับ รหัสตัวเลือก ภาพย่อ หน่วย และราคาปัจจุบัน หากเปลี่ยนเพียงค่าเริ่มต้น ให้เลือกตัวเลือกเดิมใหม่ แยกให้ออกจากการเลิกขายรุ่นนั้น"
+    },
+    {
+      "source": "Reprice an unpaid shortlist entry",
+      "source_sha256": "f3d9b8d32202e71cb49dabb72abe4b30a6209f09b655a0e2c7c8e271e6211760",
+      "raw_target_sha256": "dca604646fad0f42b05a153d87b9aade55a99b13b042fa2018b03beb12b0820e",
+      "translation": "คำนวณผู้สมัครที่ยังไม่จ่ายใหม่"
+    },
+    {
+      "source": "If you have not paid, treat a changed quantity or bundle as a new comparison. Recalculate the unit cost for the included contents, check current stock and review the size chart for the new option. Do not force the old cost into your new shortlist because the listing number is unchanged. If the changed term was the feature you wanted, leave the entry unresolved until the seller confirms it.",
+      "source_sha256": "c3658672d60af8352c98d534f0a64ed30387a96c87d8cc58d0eea8552dee49f4",
+      "raw_target_sha256": "21ef502286aa0ab663ccefe9509608e891f897cd1f169b8d0cd91e3a5808f66b",
+      "translation": "หากยังไม่จ่ายแล้วจำนวนหรือชุดเปลี่ยน ให้คำนวณราคาต่อสิ่งที่รวมใหม่ ตรวจสต็อกและตารางไซซ์รุ่นปัจจุบัน อย่าใช้ราคาเดิมเพียงเพราะเลขสินค้าคงเดิม ถ้าจุดที่ต้องการเปลี่ยนให้รอคำยืนยันร้าน"
+    },
+    {
+      "source": "Compare a paid order to the agreement at payment",
+      "source_sha256": "8992f8a7aa343a502abf9285b6c6e97e2af3fc6818c12685ddc250eba6330b69",
+      "raw_target_sha256": "d856e6065f1f8dbe0f61b973fb61dcf2d8fe2404c74b23b2100783db70ef1f60",
+      "translation": "สินค้าที่จ่ายแล้วให้เทียบตามข้อตกลงตอนจ่าย"
+    },
+    {
+      "source": "Keep the new listing as evidence of its present state, but compare the received unit with your order-time selection. If your original record said jacket and detachable hood and the current page says jacket only, quote both versions with their dates when asking for a check. The fact that today’s page omits the hood does not independently prove what was selected earlier.",
+      "source_sha256": "1fb7ef412d8c3862d6b687545c2c675c48ac012da060179046c1386d10c9a295",
+      "raw_target_sha256": "f90508b1f5037a31ef3e3a824a41777015514843586dd239a075830c597c8575",
+      "translation": "เก็บประกาศใหม่เพื่อแสดงสภาพปัจจุบัน แต่เทียบของที่รับกับตัวเลือกตอนซื้อ หากเดิมเขียน “แจ็กเก็ตพร้อมฮู้ดถอดได้” แต่ปัจจุบัน “แจ็กเก็ตเท่านั้น” ให้ยกข้อความและวันที่ทั้งคู่เมื่อขอตรวจ การแก้หน้าไม่ยืนยันของที่ส่งจริง"
+    },
+    {
+      "source": "Reassess historical QC references",
+      "source_sha256": "81c3d19f70f3061efebf31ad16f90d7ca8ddc009a136ff2df77eaf701f57bfe8",
+      "raw_target_sha256": "32ddb1492a616b970964db28e901fd5aabc834aa062b6aef14b4f9faaee2bc40",
+      "translation": "ทบทวนภาพ QC ในอดีต"
+    },
+    {
+      "source": "An album tied to the same marketplace identifier may show a version sold before the edit. Check the recording date, label, visible construction and package contents. Use it as a guide to the detail worth checking rather than evidence of the new offer. If your own current warehouse pictures become available, connect them to their order and option first and document any specific difference before deciding about shipping.",
+      "source_sha256": "25c423befbf247d3ff24a467f8f8a596adeee1290c61b07e94ab378d61f6b862",
+      "raw_target_sha256": "4bc9fafee878a27c7bf8f0c54d226c793046cd267921b07f53453fac24e11343",
+      "translation": "อัลบั้มที่ผูกเลขสินค้าเดิมอาจเป็นรุ่นก่อนแก้ ดูวัน ป้าย โครงสร้าง และของในชุด ใช้เป็นแนวว่าส่วนไหนควรตรวจ ไม่ใช่หลักฐานของข้อเสนอใหม่ เมื่อได้ภาพของตนให้ผูกคำสั่งซื้อและตัวเลือกแล้วจดความต่างก่อนส่ง"
+    },
+    {
+      "source": "Save the offer as a dated selection",
+      "source_sha256": "df624e48a24910efdae4e5147f87a236c26a1651397e6319c1358d9e3a3238db",
+      "raw_target_sha256": "ca7339c381b968a921e6d65427c005141628648b80ea69aa38bb491f7dd67b90",
+      "translation": "เก็บข้อเสนอเป็นตัวเลือกพร้อมวันที่"
+    },
+    {
+      "source": "A product link can continue working while its option names, photographs, price or package contents change. If a particular detail determines your choice, save that detail at the time you decide. For a travel pouch, keep the selected option wording, its dimensions, the included strap description and the quantity you are buying. A dated screenshot with the selected option and its price visible can support the note. Crop out private account information when sharing it outside the order support channel.",
+      "source_sha256": "a889e976fdcb8acdb207c6cbf3a05807c5d0493d5c3c0900f3bdfb25406a27c4",
+      "raw_target_sha256": "6a0dacf3a46c0277eb726638ad5ee793ae9a92b7766471fa7114c7739350c709",
+      "translation": "ลิงก์ยังใช้ได้แม้ชื่อ ภาพ ราคา หรือชุดเปลี่ยน หากรายละเอียดหนึ่งกำหนดว่าจะซื้อ ให้บันทึกเมื่อเลือกตัวไหนและวันใด เพื่อแยกสิ่งที่เห็นครั้งนั้นกับวันนี้"
+    },
+    {
+      "source": "A seller's headline may continue to say “travel pouch with strap” when a newly added option sells the strap alone. Review the selected option and resulting subtotal instead of relying on the headline. If possible, capture both the seller's wording and your working translation. Revisit the selection just before submitting an order, particularly if it has remained in a cart for several days. A previous research note explains why you shortlisted the item; the current selection controls what you are about to submit.",
+      "source_sha256": "a357c54e7d82015dabbf2cf7bd2cfc6eefed85da69265ba65a0aa7c1fe7b3a51",
+      "raw_target_sha256": "2a1ff27bb10e4beeed203d505bf7fd3460d90133b4d7836dc5e5914c03877bb1",
+      "translation": "หัวประกาศยังว่า “ซองเดินทางพร้อมสาย” แต่ตัวเลือกใหม่ขายสายเดี่ยว ดูตัวเลือกกับยอดย่อยแทนชื่อหรือราคาต่ำสุด เก็บให้ชัดว่าชุดพร้อมสายหรือสายอย่างเดียว แม้ค่าเริ่มต้นภายหลังเปลี่ยน"
+    },
+    {
+      "source": "Distinguish a renamed option from a different offer",
+      "source_sha256": "021dfbfe5d0e8365ebe6a513605ce7e3711a138bd9042f1a1604538a42e379c3",
+      "raw_target_sha256": "cb170ffe2c355623f9cec76fd9b168f4aa89a6872714050bbfe7a55be3a904ee",
+      "translation": "แยกเปลี่ยนชื่อออกจากเปลี่ยนสินค้า"
+    },
+    {
+      "source": "Suppose an option once called “olive large” now appears as “green B.” The names alone do not establish whether the products match. Compare the seller's current dimensions, materials, quantity and included components with the original record. If the seller displays an internal option code, compare it as additional evidence, keeping the marketplace item identifier separate. A continuing item identifier establishes the listing reference. The seller may still have changed one or more choices inside that listing.",
+      "source_sha256": "70d217db6afb9a0092741c3135aa8b8705a94b5d11ee01a2c0d9c1f2090843f8",
+      "raw_target_sha256": "02289cc7256f2b2a497689c0b81d5baf27ad718848de7e0d3db071cd658acfeb",
+      "translation": "เดิม “เขียวมะกอกขนาดใหญ่” ตอนนี้ “เขียว B” ชื่ออย่างเดียวบอกไม่ได้ว่าเหมือนเดิม เทียบขนาด หน่วย ของในชุด ภาพ และรหัสที่แสดง หากยังไม่ชัดให้จดความเกี่ยวข้องว่ารอยืนยันแทนการเขียนทับชื่อเก่า"
+    },
+    {
+      "source": "Look for the size chart heading and product diagram associated with the active option. A listing can share one gallery across multiple options, so scrolling past a familiar diagram does not always attach that diagram to your selected version. If the difference matters, ask the seller a question that identifies both old and new wording. A question about whether “green B” currently contains the large pouch and detachable strap gives a clearer target than asking whether the whole page is still the same.",
+      "source_sha256": "833d0beab7343245129f807330364c3c9a5db9ffc7437c09947007052de2ec50",
+      "raw_target_sha256": "41f871ae15d26ddeaa94316f1019d34f22439fbbcaecd431c1a331ee55729904",
+      "translation": "ดูหัวตารางขนาดและแผนภาพของตัวเลือกที่ใช้อยู่ หลายรุ่นอาจแชร์แกลเลอรีเดียว ภาพคุ้นจึงไม่ยืนยันว่าตารางนั้นตรงรุ่น ตรวจหน่วย จุดวัด และรุ่นที่ตารางอ้างถึง"
+    },
+    {
+      "source": "Handle a change before you pay",
+      "source_sha256": "f94cbff9930c1816904a44cf5990c029a0ffaa614a722c1dbf17a26a8d2e4532",
+      "raw_target_sha256": "d679d5b6ae1bcf41aa9f81113148c53f033ebd513f68e8c6545953286f670776",
+      "translation": "เมื่อเปลี่ยนก่อนจ่าย"
+    },
+    {
+      "source": "If you have only shortlisted the product, you can reassess its current terms without reconstructing an order dispute. Record the new option as a fresh observation, compare it with your original requirement and decide whether to keep it on your list. If the new selling unit is one pouch instead of a set of two, recalculate the quantity and subtotal before comparing it with another seller. A superficially unchanged item price can represent a different value when the number of pieces changes.",
+      "source_sha256": "fb7ddf8af8edf24cae9ea1513131e85955d3597bf87c1ebbc5fa860dd2ba263d",
+      "raw_target_sha256": "8b248a4182e8cffe2aaa3e30b61fd08de7e616bf2adaec25d57c5341b0773250",
+      "translation": "หากแค่เก็บในรายชื่อ ให้ประเมินเงื่อนไขปัจจุบันใหม่โดยไม่ต้องมองเป็นข้อพิพาท เก็บตัวเลือกใหม่พร้อมวันแล้วเทียบองค์ประกอบ ขนาด และยอด เก็บข้อมูลเก่าไว้อธิบายเหตุที่เคยสนใจ"
+    },
+    {
+      "source": "If a selector remains ambiguous, leave the purchase pending while you investigate. A product note saying “send the old version” does not give the seller the old stock or guarantee that an agent can select it. Ask whether the precise old version is available and how to identify it in the current order flow. Preserve any answer with the date. If the response points to a different listing, treat it as a new source and check the actual option text on that listing.",
+      "source_sha256": "57afbc00e2ab44a716ab25316c102331d968c8e627c047b3abc9fefa117c3c48",
+      "raw_target_sha256": "07aa34720bbf05c9bba7a88cd42ba74586fc81ede4ddd9e842f15dc970c7daa6",
+      "translation": "หากช่องเลือกกำกวมให้พักไว้ คำว่า “ขอรุ่นเก่า” ในหมายเหตุไม่ได้สร้างสต็อกหรือเปลี่ยนสิ่งที่เลือก ถามร้านว่าปัจจุบันต้องกดตัวไหนจึงได้รุ่นที่ต้องการ และเก็บคำตอบ"
+    },
+    {
+      "source": "Handle a change after payment",
+      "source_sha256": "eafa55027b3202448b46a74a26b16aaeeb36881226cc9b529cf20f57594385a1",
+      "raw_target_sha256": "42ec4e26cd49eabd37da8ef2a9e4b73dd3e2f4e0b420ad672e1a4eba2fee19a5",
+      "translation": "เมื่อเปลี่ยนหลังจ่าย"
+    },
+    {
+      "source": "For an existing order, begin with the paid selection and confirmation, then compare the revised public offer. A listing edit alone does not establish what was ordered or what the seller shipped. If support asks whether you will accept a substitute, ask for its option wording, important differences and any price adjustment before answering. Keep your response paired with that proposal. A simple “yes” copied out of context may be difficult to interpret if multiple alternatives were discussed.",
+      "source_sha256": "673f7c0d9ecd0fe82d99e265da755e12aaf47e8cc10e5c09c7d4042e5af7ab3e",
+      "raw_target_sha256": "7a5d88a232eac35239d600f03c2723f53b9c57326980051b366f6705699f3f57",
+      "translation": "คำสั่งซื้อที่มีแล้วให้เริ่มจากตัวเลือกที่จ่ายและใบยืนยัน จากนั้นค่อยเทียบประกาศที่ปรับ การแก้หน้าอย่างเดียวไม่ยืนยันของที่สั่งหรือส่ง แยกข้อตกลงเดิม การแก้ภายหลัง และของที่รับ"
+    },
+    {
+      "source": "A practical support message can say that your paid order shows a large olive pouch with a detachable strap, while the current page describes green B without specifying a strap. Ask which version was purchased for your order and whether the strap is included. Provide the dated order reference privately and attach the relevant excerpts. If the answer depends on checking the incoming unit, record that as the next step and decide which warehouse photograph or contents check would settle the issue.",
+      "source_sha256": "ffd9339b8658c342fb31a08bac95c14124f0adca9979ce58a9b0dd056e01294a",
+      "raw_target_sha256": "c255c9cd57f6661bfbba2c4fbc69a55ae6bbf1001ba86e98ad02edba4c481efe",
+      "translation": "ตัวอย่างข้อความ “ในใบจ่ายเป็นซองเขียวมะกอกใหญ่พร้อมสายถอดได้ แต่ตอนนี้เขียนเขียว B โดยไม่ระบุสาย ช่วยตรวจรุ่นและของในชุดที่คลังรับได้ไหม” แนบเลขสั่งซื้อและภาพผ่านช่องส่วนตัว"
+    },
+    {
+      "source": "Update shared finds without erasing the history",
+      "source_sha256": "5db86e1b8aa87f6eba2b74ea2553ea1b01076efe2f78766ccf357a6860548ba0",
+      "raw_target_sha256": "b7fefeb9dfed6bc26bada2c180d54229a1c11fdc1b232df3fac808a3e740b668",
+      "translation": "อัปเดตข้อมูลที่แชร์โดยเก็บประวัติเดิม"
+    },
+    {
+      "source": "If you share findings with others, keep the original dated note and add an update. Explain the particular change you observed and what you have yet to confirm. For example, the old label disappeared and the listing now offers green A and green B, while the correspondence with the former size remains unknown. A reader can then decide whether your older warehouse album is useful for the shape of the pouch or too uncertain for their current option decision.",
+      "source_sha256": "e94565d4a356f4b5ffd879e03876f3ad7469e03a710a61c205db557153d4839b",
+      "raw_target_sha256": "6c6434a5c6f1442cc92e71ae884d4b187811d28e348b7957b261ff9d59ad0bb0",
+      "translation": "เมื่อแชร์กับคนอื่น ให้เก็บโน้ตเดิมและเพิ่มข้อมูลพร้อมวัน ระบุความเปลี่ยนแปลงที่เห็นกับส่วนที่ยังไม่ยืนยัน เช่น ชื่อรุ่นเปลี่ยนแต่ขนาดภายในยังไม่ทราบ คนอ่านจึงตัดสินได้ว่าคำแนะนำเดิมยังใช้ได้ไหม"
+    },
+    {
+      "source": "After a received unit is photographed, connect its observations to the paid selection and any approved substitution. Do not promote one order's outcome into a promise that every purchase from the edited listing will receive the same version. If the new option works for your own purpose, state the feature that made it acceptable and retain the related evidence. A future buyer may value a different detail and will be able to judge whether your dated comparison answers their question.",
+      "source_sha256": "2fed8237e1c448c90ef6a0920283e3b4c4f7ba47c191ead9baa038cf6deca267",
+      "raw_target_sha256": "24c094ab4eab9ef575e39e9025014adaeca482cc072d5aa556523f4e9fa302d2",
+      "translation": "เมื่อมีภาพของจริง ให้เชื่อมกับตัวเลือกที่จ่ายและการทดแทนที่อนุมัติ ผลจากหนึ่งคำสั่งซื้อไม่รับรองทุกการซื้อภายหลังจากหน้าที่แก้ หากรุ่นใหม่นี้เหมาะกับคุณ ให้ระบุคุณสมบัติและเก็บหลักฐานเพื่อให้คนถัดไปตัดสินตามความต้องการของเขา"
     }
   ]
 }

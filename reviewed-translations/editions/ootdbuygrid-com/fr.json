@@ -3,7 +3,7 @@
   "locale": "fr",
   "source_set_sha256": "d3fa9f46b8822e6121c5f5032ff51cfdb56efdc052db0b6c6c720b54b6f2d6ef",
   "raw_dictionary_sha256": "d00ef567f420a3558158572a673478b3d8a3a0372452efcbbf000cd56bbc4470",
-  "effective_dictionary_sha256": "e47076bc83a1936631efe10e03feadcf57a01c1e2fae48f3587ef0475a738d94",
+  "effective_dictionary_sha256": "eb9407c6779d52aa8874010155ad685df6cb5eab37407f8d108720d0aaedece2",
   "checked_entries": 281,
   "review_scope": "Verified source coverage and reviewed FAQ, editorial headings, shipping estimates and garment size examples, all automated findings, and domain-specific parcel and price terminology.",
   "reviewed_flags": [],
@@ -848,6 +848,54 @@
       "source_sha256": "cf38e7e1819c955877e07856967d0292cdf7b4a7fc3b142abc89944d7f21d97f",
       "raw_target_sha256": "f4468ebfef6b12ae13a60bf202ed7c3ef2f8759802ea37be36b2662b7caa2bf8",
       "translation": "À la réception, comparez l’étiquette à la référence de l’envoi depuis l’entrepôt et le contenu aux articles qui devaient s’y trouver. Si le colis est arrivé mais qu’il manque un vêtement, clôturez la question de la livraison et ouvrez une demande sur le contenu, avec les preuves concernant l’emballage et l’article. Si l’assistance confirme une autre issue, conservez sa réponse écrite en précisant le colis concerné. Il doit être possible de distinguer la livraison achevée, le problème examiné et tout achat encore en transit."
+    },
+    {
+      "source": "If you would accept an alternative, define the limit in the same message. “Silver or grey fittings are acceptable; please ask before substituting the black bag” is a different instruction from “any similar colour is fine.” Check how the agent actually records the note and selection before paying. Save a copy of the confirmed option. The note and the selected line should agree; a note asking for olive beside a paid line for black creates avoidable uncertainty.",
+      "source_sha256": "c7ff32dd562936323cc70181502368fb6a57e83ed9d93756c065bc4cc47fd321",
+      "raw_target_sha256": "6e97c12136c8206cea7dbffa238262991cfc98551b49785da6eebae63da24494",
+      "translation": "Si vous acceptez une variante, précisez dans quelles limites. « Des ferrures argentées ou grises me conviennent. Demandez-moi avant de commander le sac noir à la place » est plus précis que « une couleur proche me convient ». Vérifiez l’option et la note enregistrées par l’agent avant de payer, puis gardez la confirmation. Si la note indique vert olive alors que le sac payé est noir, le malentendu peut être évité dès la commande."
+    },
+    {
+      "source": "A dimension drawing, colour chart or instructions panel can appear between photographs with little explanation. Check the labels around it. The diagram may apply to the whole family, a named model or the packaging rather than the product. In the backpack example, outside dimensions do not give the exact dimensions of an internal laptop sleeve. Padding, rounded corners and an opening narrower than the body all matter. Ask for sleeve width and usable opening if you need to carry a specific object.",
+      "source_sha256": "89f695e49e9c84de5a39e41b2cc5f525944149b257ef60cd8d76b61e24aa370f",
+      "raw_target_sha256": "d3c98ac6b1768fb8ab2fde49fe842033f7a0f30650a6ff5098cbee60733856c9",
+      "translation": "Un dessin coté, un nuancier ou une notice peuvent figurer parmi les photos. Lisez les légendes pour savoir s’ils décrivent toute la gamme, un modèle précis ou son emballage. Les dimensions extérieures d’un sac à dos ne donnent pas celles du compartiment pour ordinateur. Le rembourrage, les coins arrondis et une ouverture étroite réduisent l’espace utile. Pour un appareil précis, demandez la largeur intérieure du compartiment et la largeur de son ouverture."
+    },
+    {
+      "source": "You do not need to annotate every image. List the contradictions that affect your requirements. For the backpack you might record three: the outside pocket appears only in the studio picture, the dark green option has no front view, and the sleeve drawing has no internal width. Beside each, identify the simplest evidence that would settle it. A front photograph of the selected bag answers two of those questions at once. A measurement of the sleeve opening addresses the third.",
+      "source_sha256": "9efdd97e512462f6604a6081b771468d71a729df65e2edafe6df8067d8d86e59",
+      "raw_target_sha256": "bc2ca38fb27cc4cbf74395f54e5c0b1588fce6130aef96580cc73515bb70298b",
+      "translation": "Relevez seulement les contradictions qui comptent pour vous. Par exemple, la poche avant apparaît uniquement en studio, le sac vert foncé n’est pas montré de face et le schéma du compartiment pour ordinateur n’indique pas sa largeur intérieure. Une photo de face du modèle choisi répond aux deux premières questions. Il faut mesurer l’ouverture du compartiment pour répondre à la troisième."
+    },
+    {
+      "source": "Send the request with the seller option text and a description of the relevant location. “Please show the front of the dark green full-size bag, then the width of its laptop sleeve opening with the tape visible” gives the reader a reproducible task. If the item is in your order, add its reference in the private OOTDBuy order channel. For available inspection services and the stage at which you can request them, consult the official Help Center and the current order interface.",
+      "source_sha256": "d1177777af48dc313b5269aac9f434ec631ab96b436746f12da6c67b841e4ce3",
+      "raw_target_sha256": "7bac94a9674318c9249c6da96cd52a67f6d561b041f3da5d7aaaf1c845e0d909",
+      "translation": "Indiquez le libellé exact de la variante et l’endroit à photographier. « Montrez le sac vert foncé grand format de face, puis la largeur de l’ouverture de son compartiment pour ordinateur avec le mètre en place. » Si le sac est déjà commandé, ajoutez sa référence dans la messagerie privée de la commande OOTDBuy. Le centre d’aide officiel et la page de commande précisent quels contrôles sont proposés et à quel stade les demander."
+    },
+    {
+      "source": "When reviewing pictures of your own unit, bring back the same landmarks and the same contradiction list. Match the order option first. Then decide whether the photographs answer your essential requirements. A visible outside zip answers the pocket question; it does not establish laptop clearance. A sleeve measurement can support your size decision but does not settle whether a detachable organizer is included. Keep each conclusion with the evidence that supports it.",
+      "source_sha256": "4a042999ec35971f325f2259b52c38ae70263023e3bd228f1c58cba586906235",
+      "raw_target_sha256": "eeae9c3a07b3322ee5f6ce63ecec29e274fb8d5a6680aa29f42b1d1f23f76165",
+      "translation": "Reprenez vos points de repère et vos questions devant les photos de votre propre sac. Vérifiez d’abord la variante commandée. Une fermeture extérieure visible renseigne sur la poche, mais ne dit pas si l’ordinateur rentre. Les mesures du compartiment aident à le déterminer, sans prouver que l’organiseur amovible est fourni. Associez chaque conclusion à l’image qui la justifie."
+    },
+    {
+      "source": "At the end you should be able to explain the choice in plain terms. You might decide that the exact shade matters little, that a usable sleeve opening matters a great deal, and that the organizer can be purchased separately. Someone with different priorities can reasonably reach another conclusion from the same photographs. A good reading of an OOTDBuy gallery gives you that freedom. It turns a long, sometimes inconsistent collection of pictures into a short set of observations that actually changes what you do.",
+      "source_sha256": "ec85e35565aecba9d86987e6655ae45aea1840d880d10b7f6e0c745a2488a054",
+      "raw_target_sha256": "1800401cfe535ddb25da0b03431070470c9ab63ff669538f7d2982bd68274c46",
+      "translation": "À la fin, vous devez pouvoir expliquer votre choix. La nuance exacte vous importe peut-être peu, mais l’ouverture du compartiment pour ordinateur est indispensable, et l’organiseur peut s’acheter à part. Un autre acheteur peut tirer une conclusion différente des mêmes images. Examiner ainsi la galerie OOTDBuy permet de retenir, parmi des photos parfois contradictoires, les détails qui comptent pour votre achat."
+    },
+    {
+      "source": "Examine what the original box or insert does. An insert can hold a rigid handle in position, keep two pieces apart or keep a small component from vanishing. A larger outer sleeve might mainly add empty volume. Treat them as separate decisions. “Keep the shaped insert and the accessory pouch; the outer display sleeve can be removed if permitted” is more informative than “remove boxes.” If the warehouse offers only broad choices, ask what the selected option actually removes.",
+      "source_sha256": "c79c0828539c4d22cf9e536ee8603f8387e7bfe0d52ea49ec5f0ecb86af97406",
+      "raw_target_sha256": "69e0313f3b707225bf100fb3015d29bd0660a1f0ac8254a3ba9d292c0382e6cd",
+      "translation": "Examinez le rôle du carton d’origine et du calage intérieur. Une cale peut maintenir une poignée rigide, séparer deux pièces ou retenir un petit accessoire. Un étui de présentation extérieur beaucoup plus grand peut surtout ajouter du vide. Décidez pour chaque élément. « Gardez la cale moulée et la pochette d’accessoires. Vous pouvez retirer l’étui extérieur de présentation si c’est autorisé » est plus précis que « retirez les boîtes ». Si les options sont générales, demandez ce qui sera effectivement retiré."
+    },
+    {
+      "source": "When the parcel arrives, compare its label to your outbound reference. If something appears damaged, document the outer condition and internal protection as you uncover them. Keep the packaging while you consult the applicable after-sales instructions. If everything arrives as expected, write down what worked. A note such as “shaped insert preserved the bag; display sleeve was unnecessary for my use” is more transferable to your next mixed parcel than a bare freight total.",
+      "source_sha256": "b3145c2941a23a5654ddd5e50a29bd8c70e984d7c698d11fda3009c55824eae7",
+      "raw_target_sha256": "ebd7c2969a980672926505a30a2af5c10b4741e7c904b8727d7d9b0fe28fcaaf",
+      "translation": "À la réception, comparez l’étiquette à la référence d’expédition. Si vous constatez un dommage, photographiez l’extérieur puis les protections intérieures au fil du déballage. Gardez l’emballage pendant que vous consultez les consignes du service après-vente. Si tout est en bon état, notez ce qui a été utile. « La cale moulée a protégé le sac et je n’avais pas besoin de l’étui extérieur de présentation » vous aidera davantage pour un prochain colis de plusieurs articles que le seul montant du port."
     }
   ]
 }

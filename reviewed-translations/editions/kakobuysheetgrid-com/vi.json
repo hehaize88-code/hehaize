@@ -3,7 +3,7 @@
   "locale": "vi",
   "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
   "raw_dictionary_sha256": "9aa2e96fb4b8e29ce0c3c0245f96dc433930a7ce77aaa7de35fd23f441cc60ab",
-  "effective_dictionary_sha256": "5435c928f83270e125eb906e4c913c891c8031496416e979a242a7f6bdf9b4a1",
+  "effective_dictionary_sha256": "0f95742a12b08eac8995998ce70b9acf60cf8fbe2e311807ca5da1f8ab24fe4a",
   "checked_entries": 317,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -111,6 +111,294 @@
       "source_sha256": "1d592c7b9a520b66c95c5025a5692a65981b6499978f81a88b79cf5a5ab2f701",
       "raw_target_sha256": "a7e62e62c0b01e0421b616ce27e97840ae569e9c905feec7c8fa3aa53210f27c",
       "translation": "Khi đổi hàng, bạn có thể phải thanh toán chênh lệch giá, phí giao nội địa hoặc phí dịch vụ. Hỏi rõ khoản nào áp dụng cho phương án đang bàn, dùng loại tiền nào và có cần đồng ý trước khi xử lý không. Báo giá chưa phải là khoản đã thanh toán. Chỉ ghi nhận chi phí thực trả khi có giao dịch hoặc xác nhận tương ứng. Ngày hứa hoàn tiền cũng có thể khác ngày tiền thực sự về. Theo dõi các khoản này riêng để giữ nguyên giá mua ban đầu của món hàng."
+    },
+    {
+      "source": "Sources",
+      "source_sha256": "caf85b0888d78f1f83771a07b25c3d30fa1210242f2fae6e5ae5d9a686602800",
+      "raw_target_sha256": "c76d57b348bd2310aa2a7979b8fba16d649d4ca686038820ea2f9023ea085c53",
+      "translation": "Nguồn tham khảo"
+    },
+    {
+      "source": "KakoBuy shopping guides",
+      "source_sha256": "d73045cd66940b81c6a2c0f276876c11bb3447e9f14bfd7cdc17992a500f8d23",
+      "raw_target_sha256": "d73045cd66940b81c6a2c0f276876c11bb3447e9f14bfd7cdc17992a500f8d23",
+      "translation": "Hướng dẫn mua hàng qua KakoBuy"
+    },
+    {
+      "source": "Check a KakoBuy find against its original listing, selected option and warehouse photographs.",
+      "source_sha256": "0a494b3eb125e58347ed837e4a019a3b73b7e00697cd621403509a6114a5790e",
+      "raw_target_sha256": "ef611ac67fa69a01879b09d6a45fdfa1951fea84d0b406037c7728e779cb8544",
+      "translation": "Đối chiếu sản phẩm tìm thấy trên KakoBuy với tin bán gốc, phân loại đã chọn và ảnh thực tế tại kho."
+    },
+    {
+      "source": "What does a KakoBuy QC finder match?",
+      "source_sha256": "dd59c80329690c1ac2ae3e8d6c3d68fe1b9bb77c4d5c150bb6b3ecbc3ec11397",
+      "raw_target_sha256": "4c3bb565cf06f974b4c4cff75178719402fb10b4d445c69b80dd2cab7a1e5447",
+      "translation": "Công cụ tìm ảnh QC cho KakoBuy đối chiếu theo thông tin nào?"
+    },
+    {
+      "source": "A finder can use the underlying marketplace listing to locate photographs linked to earlier orders. First match the marketplace and item ID. Then check whether the pictures identify the same size, colour and version as the one you are considering.",
+      "source_sha256": "30b3c6536a91476b2dc570a0f5953f7d6a6ae4cd9d8b488781e3fe1c5bd39e62",
+      "raw_target_sha256": "4f53e7c1d00ffc274979c2b7edcb176ed84caa0ff822a03a5debc357b12bd726",
+      "translation": "Công cụ có thể dùng tin bán trên sàn để tìm ảnh gắn với đơn hàng trước. Hãy khớp đúng sàn và mã sản phẩm, sau đó xem ảnh có ghi rõ cùng kích cỡ, màu sắc và phiên bản bạn đang cân nhắc hay không."
+    },
+    {
+      "source": "Is the number in this catalogue page address the Weidian item ID?",
+      "source_sha256": "01743a345013914201d8f0d62df35dffe9c6f6655b31c019a36006925e612d27",
+      "raw_target_sha256": "721b732445ecdab4c5e2742cd93f6868f91876066856e60cc5630a7f4fb54a03",
+      "translation": "Dãy số trong địa chỉ trang danh mục này có phải mã sản phẩm Weidian không?"
+    },
+    {
+      "source": "The number in a Sheet Grid page address identifies that catalogue page. Open the original seller link and read the itemID value there before using a Weidian QC lookup.",
+      "source_sha256": "516328e62cd88a787b300af9a8d70729ba22c0e7aec5e7c938de05e15cd89e85",
+      "raw_target_sha256": "525553578296fada4f143ed80e1f1d5db08b470dffd6b5b79a73c556bc54cc56",
+      "translation": "Số trong địa chỉ Sheet Grid nhận diện trang của danh mục. Trước khi tra ảnh QC trên Weidian, hãy mở đường dẫn gốc của người bán và lấy giá trị itemID ở đó."
+    },
+    {
+      "source": "What should I do if an agent link contains an encoded seller URL?",
+      "source_sha256": "d73c3d29b8ddea2d90f15a01abd4682ebca6571bd8ac702dc49fac00962578a5",
+      "raw_target_sha256": "a06e8cc28f95865b70ad968b9dcdd78c8699848f2f2393491d86fed6ccc8dc79",
+      "translation": "Làm gì khi liên kết của đơn vị mua hộ chứa địa chỉ người bán đã mã hóa?"
+    },
+    {
+      "source": "Open the product normally and use its original marketplace link when available. Compare the destination, shop and item number with the saved row. Avoid guessing which digits in a long agent URL identify the product.",
+      "source_sha256": "8b1e11d464ed0b76ef35e5169ad5c92b29e54dd0073c14fafcd6eb285f0fac7d",
+      "raw_target_sha256": "1741cbefffa822cca953a7421f28f3cc1b7ebf2e0a9825a392abbc771e3594b3",
+      "translation": "Mở trang sản phẩm rồi dùng nút đến tin gốc trên sàn nếu có. So khớp trang đích, tên cửa hàng và mã hàng với dòng đã lưu. Đừng đoán mã sản phẩm từ những dãy số trong URL dài của đơn vị mua hộ."
+    },
+    {
+      "source": "Can an image match find the exact seller?",
+      "source_sha256": "1af00952e050fa11da394c4f4deee38b6e5c82543b92193d125a01296ec6ede5",
+      "raw_target_sha256": "d93be66369716cbddc35b4ffaf207e23c1732aff5ba5ac24cf7467a0d256505e",
+      "translation": "Tìm bằng ảnh có xác định được chính xác người bán không?"
+    },
+    {
+      "source": "An image match can suggest visually similar rows. Several shops can use the same photograph. Compare seller identity and marketplace item ID before assigning any historical warehouse photographs to the result.",
+      "source_sha256": "10e016718c7d3e91b51ac095be9a5593c0eb824778e675de20c02d075f85bce2",
+      "raw_target_sha256": "3eb0b51ed2c9a3ae12814d31a52a7238d84955d15cc5f5ad73e20378851853de",
+      "translation": "Kết quả có thể gợi ý các sản phẩm trông giống nhau. Nhiều cửa hàng dùng chung ảnh, vì vậy hãy đối chiếu người bán và mã sản phẩm trên sàn trước khi gắn ảnh kho cũ vào kết quả."
+    },
+    {
+      "source": "Do older QC photos show the item I will receive?",
+      "source_sha256": "a4cb1304c8de057f522fac2b57a67936de874123246da66c07aba7497d0458e1",
+      "raw_target_sha256": "418f802112747e1ecfbfe800afcb4f3046dde300d26db6aca6f676a2b80bbced",
+      "translation": "Ảnh QC cũ có chụp đúng món tôi sẽ nhận không?"
+    },
+    {
+      "source": "Earlier photos can reveal what someone received from a listing at that time. Only evidence tied to your own order can show the unit assigned to you. Record the age, option and visible limitations of a reference.",
+      "source_sha256": "38d7cc1c6439b74df30e8b02083a9831b73cbe71c57aead89e22788ac2d17fba",
+      "raw_target_sha256": "52b8d3f4d3339757f1470b56d8467c504a78750602e634781fa9fa3cb6891df0",
+      "translation": "Ảnh cũ cho biết người mua trước đã nhận gì tại thời điểm đó. Để xem món được phân cho bạn, cần ảnh hoặc hồ sơ gắn với chính đơn của bạn. Ghi thời điểm chụp, phân loại và những chỗ ảnh tham khảo chưa cho thấy."
+    },
+    {
+      "source": "What does a blank QC result mean?",
+      "source_sha256": "034ccd4277a08846b7785997282ec8ab1eab4073db92a5a660895d9d1143e5ab",
+      "raw_target_sha256": "85017ad15636b970509d34101950523ef33348c08ce0839af5f5daff54e0281a",
+      "translation": "Tra QC không có kết quả nghĩa là gì?"
+    },
+    {
+      "source": "It means that search produced no usable reference for your query. Check the marketplace, item number and link type. An empty search does not tell you whether an inspection exists in a private order or whether a product is in stock.",
+      "source_sha256": "131b2645a2d582758f779e9dbe1abe0b32459c97802771961b3f32a7c59cbcef",
+      "raw_target_sha256": "5ff8238ffa79b3053b8fb49960c10de270f2f40f91941593aa3fecea48004964",
+      "translation": "Lần tìm đó chưa cho ra ảnh tham khảo dùng được. Kiểm tra lại tên sàn, mã hàng và loại liên kết. Kết quả trống không cho biết trong đơn riêng có ảnh kiểm tra hay không, cũng không cho biết còn hàng hay không."
+    },
+    {
+      "source": "Can a copied item link preserve my selected size?",
+      "source_sha256": "be0f263119a0b1995193f10dff3c814e856895c3ace23e3b7e54556818675133",
+      "raw_target_sha256": "d3f1e8b539060b5282d85f8caf9b3a83aed6a18fb3975b2710265dd95da68a2a",
+      "translation": "Sao chép liên kết sản phẩm có lưu cả kích cỡ đã chọn không?"
+    },
+    {
+      "source": "Reopen the link and inspect the selectors. If it opens with a default size, save the original option text and your intended size separately. Verify them again in the order summary.",
+      "source_sha256": "e2fd050338e9c5cb1da242e2e2504b151c60773b9f10ca5557c976cc33f62e6c",
+      "raw_target_sha256": "0c1ec5405957142b8e9bb9b438dfc328e39bc066e0db93724af926730a246c9c",
+      "translation": "Mở lại liên kết và xem mục chọn phân loại. Nếu nó trở về cỡ mặc định, lưu riêng nguyên văn tùy chọn và cỡ bạn muốn. Đối chiếu lại trong phần tóm tắt đơn trước khi thanh toán."
+    },
+    {
+      "source": "How can I tell whether a row describes a set or a single piece?",
+      "source_sha256": "550dfcb1c108ad6f089643007b1b027220535a4789f09b63d110a06f0f695b52",
+      "raw_target_sha256": "2e8e8484f1ccb53cb320b3d3b4cd6a01e3cc42f3f78386acd2f7a9964c51df88",
+      "translation": "Làm sao biết một dòng bán cả bộ hay bán một món?"
+    },
+    {
+      "source": "Read the selected option beside its live price. Identify the pieces listed for that option and compare them with the summary. A photograph of a model in a matching outfit can represent items sold separately.",
+      "source_sha256": "af6f01d9e688b7ec4665de6401baa4ea7d01973a96ea0c0601a03ba8e86fb8fe",
+      "raw_target_sha256": "b2f96606714fa0d1f0eb2a1c56f06b9969b7d5c5ee583e3acd36ce7c846164c0",
+      "translation": "Đọc phân loại đang chọn bên cạnh giá hiện tại, xác định những món được liệt kê rồi so với tóm tắt đơn. Ảnh người mẫu mặc đồng bộ vẫn có thể minh họa các món bán riêng."
+    },
+    {
+      "source": "Why do two listings show exactly the same studio photograph?",
+      "source_sha256": "292443d1f0b83c1d6000aa011a734dc9c671e8cce973d42b7042deb792e279f2",
+      "raw_target_sha256": "6fccb684cad4f34a3772550d1f9e99c71958bae90ae71cea978eb9d114c27d0d",
+      "translation": "Vì sao hai tin bán dùng cùng một ảnh chụp tại studio?"
+    },
+    {
+      "source": "Sellers can use common imagery. Compare their shop names, IDs, option names and size charts separately. Keep a screenshot under the listing it came from even when another page shows the same garment.",
+      "source_sha256": "7d391a8c9b49b6d3b1d499648ca356e75bfb410e862ce6718a0638b20ca77d29",
+      "raw_target_sha256": "811dcde189ddc4d5a9b4072a6b50485f088e3aa4e6b48bba6db9b6d8549d47e8",
+      "translation": "Người bán có thể dùng chung hình ảnh. Hãy so riêng tên và mã cửa hàng, tên phân loại và bảng kích thước. Lưu ảnh chụp màn hình với đúng tin gốc dù trang khác cũng đăng cùng bộ quần áo."
+    },
+    {
+      "source": "Which clothing label should I ask to see?",
+      "source_sha256": "12bec290e8305b9c29bc679aefbde1ff27a3376fce88696a5a18f31091f3dce5",
+      "raw_target_sha256": "0ae538241ed4082ac7af9afc6049e13fadb4ac4c69bb20d93ff77ccb16fd653b",
+      "translation": "Nên yêu cầu chụp nhãn nào trên quần áo?"
+    },
+    {
+      "source": "Specify the purpose. A neckline size label shows the marked size; a care label may provide composition or care instructions. Ask for a full view in context and a close-up with legible text.",
+      "source_sha256": "9fd339ea163be9a23fc63aa66ac318f34f3576f42dc0e0422c207d9a5fed3ef4",
+      "raw_target_sha256": "7f0e19e4b81e90113fdb70df163da6face42e79db4a47f5ff9ffe559c0a12834",
+      "translation": "Nói rõ điều bạn muốn biết. Nhãn ở cổ có thể ghi cỡ, còn nhãn hướng dẫn giặt có thể ghi thành phần vải hoặc cách bảo quản. Xin một ảnh cho thấy vị trí nhãn và một ảnh cận đọc được chữ."
+    },
+    {
+      "source": "Does a size tag confirm fit?",
+      "source_sha256": "41dc1390270f69d82eeac05572f03f9735275fa59c4de4248d6fdeb2d97bc561",
+      "raw_target_sha256": "639ca0526eb577787bc77b7fb18f048ac980d4e8dae84ee7059af219674d807c",
+      "translation": "Nhãn cỡ có bảo đảm mặc vừa không?"
+    },
+    {
+      "source": "Compare the actual garment measurements with a piece that fits. Use the seller's measurement diagram and consistent endpoints. The same marked size can correspond to different patterns.",
+      "source_sha256": "6b3d45fb82a46b4e0dc63f30f793bc3192132481d9693d385d7c29ecff7450da",
+      "raw_target_sha256": "cb017cefc4e48801f6278119ba2afce053253132fe15ebb04ffd3f5669a6deb3",
+      "translation": "So số đo thực tế với một món bạn đang mặc vừa. Dùng sơ đồ đo của người bán và cùng hai điểm đầu cuối. Hai món cùng nhãn cỡ vẫn có thể khác rập."
+    },
+    {
+      "source": "How should a tape be positioned for an underarm-width photo?",
+      "source_sha256": "9e5630b3532b09a05b4c0508e024177f7c192d549060bd21d09034a9f1d51235",
+      "raw_target_sha256": "17e83a3c4b4a649941a5a1fd35a410d66fe7b1bc36b4b2d1486980a316dd5d45",
+      "translation": "Nên đặt thước thế nào để đo ngang từ nách này sang nách kia?"
+    },
+    {
+      "source": "Request the garment laid flat and relaxed, with the tape crossing between the corresponding underarm seam points. Both ends and the units should be visible in one frame.",
+      "source_sha256": "29d1cd26b66cf4ac5f1a4e798394c91c47ccdf8365067a5e531769c5286f2c2b",
+      "raw_target_sha256": "4ad9843e69fbebd8810a49fd3ec2a72a3802d7c772a41fdf37d5d53db677ffea",
+      "translation": "Nhờ đặt áo phẳng, không kéo căng rồi đặt thước nối hai điểm đường may tương ứng dưới nách. Một ảnh phải thấy được cả hai đầu và đơn vị đo."
+    },
+    {
+      "source": "How can I compare two shoes in a single pair?",
+      "source_sha256": "a6f647d8213f1ab575794c9cf92e82b98eacec61e25637039125591d3739e538",
+      "raw_target_sha256": "58721ed62cc4b9e5472820fdd9a62084622c4bb5de27db31eebfa7b881cc0be9",
+      "translation": "So hai chiếc trong cùng một đôi giày thế nào?"
+    },
+    {
+      "source": "Ask for both shoes together, aligned at their heels and photographed from above. Use additional views to check each label and the feature of concern. A single shoe cannot establish that its partner matches.",
+      "source_sha256": "5f86ba070b57fe4c0fc365a22f6a0f49fd87a47e9c77d5c3250e1a6a0f492290",
+      "raw_target_sha256": "6486f5117f5059f320179d046614401955e7811916fb5a6b408bccf5d02645dd",
+      "translation": "Nhờ đặt cả hai chiếc cạnh nhau, gót thẳng hàng rồi chụp từ trên xuống. Dùng ảnh bổ sung để xem nhãn từng chiếc và chỗ cần kiểm tra. Ảnh một chiếc không xác nhận được chiếc còn lại."
+    },
+    {
+      "source": "What makes a shoe-label photo readable?",
+      "source_sha256": "2fd8add50f2cb8bf89128dffe0ec0407d4e233477fbb72e31eb64c5fa408f3c4",
+      "raw_target_sha256": "b6b1dc94c9decc0a90684448e4230e9568d06fc0e098e43d8c2c94c3b5faa0a0",
+      "translation": "Ảnh nhãn giày cần chụp thế nào để đọc được?"
+    },
+    {
+      "source": "Ask for one label per shoe with the printed size and sizing system in focus. Save each picture under its left or right identifier. Watch for EU, US and UK sizes sharing one label.",
+      "source_sha256": "97e105f0a71503f52e373b49d8090c694ecf96bfe930813823bf4ae4b3f9b75a",
+      "raw_target_sha256": "06ba4c939f796066e10bf133b41be7b45826026a69488a10c34b2b1065e7dbbf",
+      "translation": "Xin chụp nhãn của từng chiếc, lấy nét vào số cỡ và hệ cỡ. Ghi rõ trái hoặc phải khi lưu. Một nhãn có thể in đồng thời cỡ EU, US và UK."
+    },
+    {
+      "source": "What should I do if an advertised accessory appears to be missing?",
+      "source_sha256": "bab55a23730aad47d07e1e19baacb7fca550101264458397d960ce3cdff25ead",
+      "raw_target_sha256": "8a6b484bf2bab9fcbd0e337b4216a6b2d50f4b33650d4d94faa04b36ee0c25e9",
+      "translation": "Nếu không thấy phụ kiện trong ảnh quảng cáo thì làm gì?"
+    },
+    {
+      "source": "Save the exact option description showing that it includes the accessory. Ask for an overview of the full contents and a check of pockets or inner packaging before reporting a shortage.",
+      "source_sha256": "08ea56fbe95aa3314d840f80d7fa049805864bb836a876b736e81107fe153a1f",
+      "raw_target_sha256": "e74cdd4a8b2c72a84b695df740f99568e7d1c006017f3044da5b6b61cab700c8",
+      "translation": "Lưu nguyên văn phân loại đã mua có ghi kèm phụ kiện. Trước khi báo thiếu, xin ảnh toàn bộ đồ nhận được và nhờ kiểm tra các ngăn hoặc bao bì bên trong."
+    },
+    {
+      "source": "Which details belong in a custom photo request?",
+      "source_sha256": "dd60608fb111b2c8e70209de2184c5382210e3aafdeb22d3b21c1d235c2cf14d",
+      "raw_target_sha256": "e7c3f390739b457ede90436d008e731fb9ba67dd8e5594c955d38ac4a9f29e84",
+      "translation": "Yêu cầu chụp ảnh riêng cần ghi gì?"
+    },
+    {
+      "source": "Give the order reference, selected option, view required and the decision it will resolve. For measurements, add endpoints and units. Check service availability and the displayed price before confirming.",
+      "source_sha256": "d3c6787298d4de8b080009e1ab93820c6efbafd9ac15c3407d674495101ee039",
+      "raw_target_sha256": "b540349555596095d6a3cf5d3dd3f555583d468c0bda7d260a343092d4e03590",
+      "translation": "Ghi mã đơn, phân loại, góc cần chụp và quyết định bạn sẽ đưa ra. Nếu đo, nêu hai điểm đầu cuối và đơn vị. Kiểm tra dịch vụ có sẵn và giá hiển thị trước khi xác nhận."
+    },
+    {
+      "source": "Can a warehouse photo confirm the true colour on my screen?",
+      "source_sha256": "7bfb512c278913e11025a9e526bcdf1cb34b8a6f1bae605afc3d1398fff320b1",
+      "raw_target_sha256": "38dfc84829960962a71b17618a86836d63b7b68e9f90931d1a40210b1661bf11",
+      "translation": "Ảnh kho có xác nhận màu thật giống hệt trên màn hình không?"
+    },
+    {
+      "source": "Lighting, white balance and screen settings influence appearance. Compare several views and the seller's colour label. If two options only differ by shade, ask for a view with the identifier visible.",
+      "source_sha256": "67ac455473c23ebf5b9d71c83aff10e09212a9dd79d298a846dbd620d5d804d3",
+      "raw_target_sha256": "7f08c7475c9261342a49b177d76f1bd4d04eed9f0160ddd9c9bfacdde8acd8a9",
+      "translation": "Ánh sáng, cân bằng trắng và cài đặt màn hình đều ảnh hưởng màu nhìn thấy. Đối chiếu vài góc với tên màu của người bán. Nếu hai mẫu chỉ lệch sắc độ, xin ảnh có mã hoặc nhãn phân loại trong khung hình."
+    },
+    {
+      "source": "How should I record a replacement order?",
+      "source_sha256": "5b834045dc919c6464069e52e2140285117ff6e987acefb762ebf90156996be2",
+      "raw_target_sha256": "8064b7ec627d2169cc165e38301cec979dcb0fea2af4e7ff39f60c837af56fff",
+      "translation": "Nên ghi nhận đơn đổi hàng thế nào?"
+    },
+    {
+      "source": "Keep the original case reference and give the replacement a separate entry. Record the replacement's option, intake reference and pictures. Recheck the original problem on the new unit.",
+      "source_sha256": "7c752f70cc71febc58621cdb76948c8f9c4333ff9be2403d731eb390bd336b08",
+      "raw_target_sha256": "70d93d0b73f0c0e01894ccd975ccb6c9013df83fa6d7e907668800f570477398",
+      "translation": "Giữ mã vụ việc ban đầu, lập mục riêng cho hàng thay thế với phân loại, mã nhập kho và ảnh của nó. Kiểm tra lại đúng vấn đề ban đầu trên món mới nhận."
+    },
+    {
+      "source": "What if the seller edits an option after I pay?",
+      "source_sha256": "bc0056172aca05fd6383d8896379e279cada1fae9c5591468c4bc1998ff4a9e7",
+      "raw_target_sha256": "47adfc62a2434f7708dcdc41e4d7d535dacfe2aeda680ee290516b8a5ee598dc",
+      "translation": "Nếu người bán sửa phân loại sau khi tôi thanh toán thì sao?"
+    },
+    {
+      "source": "Keep the dated selection screenshot and order confirmation from payment. Compare the received item against that record, then show the changed listing separately when asking for a check.",
+      "source_sha256": "d6bab1a4a506aa30eb697130a6352680af95c1a3e4ab8a460fddb5609ee3fc87",
+      "raw_target_sha256": "7f34bef96c945270209f04df1cb3e1b0e386579a9ff9161470e177fb0eefda55",
+      "translation": "Giữ ảnh chụp lựa chọn có ngày và xác nhận đơn tại lúc thanh toán. Đối chiếu hàng nhận với hồ sơ đó, rồi trình bày riêng tin đã sửa khi yêu cầu kiểm tra."
+    },
+    {
+      "source": "Should I discard the retail packaging before deciding about an exchange?",
+      "source_sha256": "570490a94809d186087718c1c687c3bb0479dbe6b8d87dae4003da58d86f84af",
+      "raw_target_sha256": "59fd7d7b5b6c89d4253005b8ed37d5d0cb908e593400e5b2c450eb4c68eb0a30",
+      "translation": "Có nên bỏ bao bì bán lẻ trước khi quyết định đổi hàng không?"
+    },
+    {
+      "source": "Ask the applicable service or seller which tags, bags and boxes must accompany the item. Keep those materials until you understand the conditions for the specific order.",
+      "source_sha256": "a6e2dca501e66200991da34893639db060a5491496580d5b9ee159e1df0898c6",
+      "raw_target_sha256": "77000f33ba96d96f17dc687dd026a0d8f5e2d41afcad23b3bdaf4ef9b9b4bd5a",
+      "translation": "Hỏi người bán hoặc dịch vụ phụ trách xem phải giữ những nhãn, túi và hộp nào đi kèm. Giữ chúng cho đến khi rõ điều kiện của chính đơn hàng này."
+    },
+    {
+      "source": "Where should I take a question about an actual KakoBuy order?",
+      "source_sha256": "b68997a1f2e91efa0ef203fadb024352b4dfecf1cfa0f9dc6a7e33e5eb15454c",
+      "raw_target_sha256": "5556b9ccb89e42c55f5a026f5b2df2187b5510b7957c26d7e84dbcc19168456a",
+      "translation": "Tôi nên hỏi ở đâu về một đơn KakoBuy cụ thể?"
+    },
+    {
+      "source": "Use the support channel in your KakoBuy account with the purchase or parcel reference. This independent catalogue can help identify a listing, while the account record contains the transaction details.",
+      "source_sha256": "bb536e01f90a1b9bfdad4ea535760994ee24ccd378c94ea964c7c6faea045ea7",
+      "raw_target_sha256": "57d13af663b812196dccf30b9831f7fd32d171e0f8da1c36dcf09b41c97e0a75",
+      "translation": "Liên hệ mục hỗ trợ trong tài khoản KakoBuy, kèm mã mua hàng hoặc mã kiện. Danh mục độc lập này giúp nhận diện tin bán, còn hồ sơ giao dịch nằm trong tài khoản của bạn."
+    },
+    {
+      "source": "Handle accessories packed separately",
+      "source_sha256": "33a43bca281493b3f3266d8d6a32aff51930d2c618ce2c9cf187d1254ae725bc",
+      "raw_target_sha256": "959d1c790e6da8e31879bad99d7d544d5387d86f124e55cbfe74c75b7918a66e",
+      "translation": "Khi phụ kiện được gửi trong một kiện riêng"
+    },
+    {
+      "source": "Check the available remedy",
+      "source_sha256": "60fdf3de1b6bc40ca38a8d5ddee091a917c6fabeeedca3ef22fc79513308fa7d",
+      "raw_target_sha256": "98b88e09fcf9dbb58b78fc7349d52227aeb1f10059b72a6a154a12813110ab1e",
+      "translation": "Kiểm tra phương án xử lý áp dụng cho đơn của bạn"
+    },
+    {
+      "source": "Reprice an unpaid shortlist entry",
+      "source_sha256": "f3d9b8d32202e71cb49dabb72abe4b30a6209f09b655a0e2c7c8e271e6211760",
+      "raw_target_sha256": "146681a585580a7374a36bb3e14b58eba01ee1f2d7e5deabfefed4dd4431eee9",
+      "translation": "Tính lại giá món bạn đang cân nhắc trước khi mua"
     }
   ]
 }
