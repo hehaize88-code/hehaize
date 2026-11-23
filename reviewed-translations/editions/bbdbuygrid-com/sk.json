@@ -3,34 +3,39 @@
   "locale": "sk",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "4fb9c81515eaf5edaef095af0b8c69789661f40fc47286033ef22e5262875551",
-  "effective_dictionary_sha256": "20699560705fd5d0aed1e05108ae7d5b6974cf465ce5425b38926eec5cd6e566",
+  "effective_dictionary_sha256": "9c8272d4e86d7ecb11e528ba351dbf52577f8a44ff99e2ba78d2bf31cf716d87",
   "checked_entries": 324,
-  "review_scope": "All dictionary keys and long-paragraph language, number, unit, brand, identifier and repetition checks. All ten article titles and flagged source/target pairs inspected. Two article paragraphs sampled separately.",
+  "review_scope": "All dictionary keys and long-paragraph language, number, unit, brand, identifier and repetition checks. All ten article titles and flagged source/target pairs inspected. Two article paragraphs sampled separately. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
       "source_sha256": "365c8efdcc8f3c14e3c09dc0448104ed063b55d009cca4a0935c5a0f946b6b1d",
-      "resolution": "corrected input-key translation"
+      "raw_target_sha256": "23ea1078cb74299b798d5ed110b3ebc9f5951e5c0277a8f368453e284f98c916",
+      "resolution": "corrected translation"
     },
     {
       "issue": "platform spelling or transliteration",
       "source_sha256": "9aca0fdddaddb22cb515f532d9731d5ac64e3ff054eedcb2f2aee067622a8490",
-      "resolution": "corrected input-key translation"
+      "raw_target_sha256": "0435cc8544e3de46e2d3dfacdf5643e6f21b28f13f6981a3117ef684d9cda449",
+      "resolution": "corrected translation"
     },
     {
       "issue": "platform spelling or transliteration",
       "source_sha256": "5eb842601780f729c12dbc6985b5fccdffe6c9d91d363bc669a4648e85503d61",
-      "resolution": "corrected input-key translation"
+      "raw_target_sha256": "136eb6f479bf68a123769f3a288973a0f82e79e52afd0b64aa6389d4add99067",
+      "resolution": "corrected translation"
     },
     {
       "issue": "example number omitted or reformatted",
       "source_sha256": "ceed2cd91c5115c79cbe57026abfe7036799f01c118ec1c51c3bf4ef66319661",
-      "resolution": "corrected input-key translation"
+      "raw_target_sha256": "5a47096db1c6a81a34016144bd525b2e132c57456c51546f547def3d6e942d7d",
+      "resolution": "corrected translation"
     },
     {
       "issue": "new digit or localized conversion",
       "source_sha256": "ceed2cd91c5115c79cbe57026abfe7036799f01c118ec1c51c3bf4ef66319661",
-      "resolution": "corrected input-key translation"
+      "raw_target_sha256": "5a47096db1c6a81a34016144bd525b2e132c57456c51546f547def3d6e942d7d",
+      "resolution": "corrected translation"
     }
   ],
   "unresolved_material": [],
@@ -106,6 +111,18 @@
       "source_sha256": "b42b6721749ed6cf7c7cd7115de70bf24b2972d1fde999657043aa20ade8fee9",
       "raw_target_sha256": "8fe90d328a711b37068e3515398bcc8810e87d084c79820121f140066dffe4f2",
       "translation": "Ak potvrdenie uvádza dve balenia po troch pároch a dorazilo len jedno balenie, uveďte, že chýba jedno celé balenie. Ak dorazili obe balenia, ale v jednom sú len dva páry, opíšte chýbajúci pár aj objednanú farbu. V oboch prípadoch vám chýba jeden alebo viac párov, no predajca alebo sklad musí v každom prípade overiť niečo iné."
+    },
+    {
+      "source": "Take an illustrative order for two medium work shirts and a separate order for a cap. Assume the confirmation lists the shirts at 75 each and a single domestic delivery charge of 12. The purchase subtotal is 162. The cap costs 38 with domestic delivery included, bringing the amount paid for the two purchases to 200 in the same currency. At this point both purchase records can be closed as paid even though there is no figure yet for the journey from the warehouse to your home.",
+      "source_sha256": "21cd8ec9cdc033be40fa29a6b7f3fc5473879babedda43400b722373cecd0db5",
+      "raw_target_sha256": "74a987dd82747261a4ba693ae3b4a7ae544b3fc384610ba5b4d0abe68bfb23f0",
+      "translation": "Vezmite ilustračnú objednávku na dve stredné pracovné košele a samostatnú objednávku na šiltovku. Predpokladajme, že v potvrdení je uvedená cena košieľ 75 za kus a jednorazový poplatok za doručenie v rámci krajiny vo výške 12. Medzisúčet nákupu je 162. Šiltovka stojí 38 vrátane vnútroštátneho doručenia, čím sa suma zaplatená za dva nákupy zvýši na 200 v tej istej mene. V tomto bode môžu byť obidva záznamy o nákupe uzavreté ako zaplatené, aj keď ešte nie je k dispozícii údaj o ceste zo skladu do vášho domova."
+    },
+    {
+      "source": "If you want to compare the cost of the cap with a local alternative, you still need to decide how to allocate the shared parcel cost. An equal split attributes 25 to the cap. A split by measured weight might attribute much less. Neither division appears on the carrier invoice unless the invoice actually itemizes freight per piece. Keep a column labelled personal allocation. It allows another person to understand how you reached the comparison without mistaking your method for a charge imposed by BBDBuy.",
+      "source_sha256": "6d74cd0af2705ef2674d0803d5cd5455ce671597134771f5fe0a3d679ea9df53",
+      "raw_target_sha256": "270a58059dc95c61a2fdeb6497a247996c93a0f231db359efab1d5d5a55344b9",
+      "translation": "Ak chcete porovnať cenu šiltovky s miestnou alternatívou, stále sa musíte rozhodnúť, ako prideliť náklady na zdieľaný balík. Rovnaké rozdelenie priraďuje šiltovke sumu 25. Rozdelenie nameranou hmotnosťou by mohlo pripísať oveľa menej. Ani jedno z týchto rozdelení sa neobjaví na faktúre prepravcu, pokiaľ faktúre nie je uvedená prepravná sadzba za kus. Udržujte stĺpec označený ako osobné priradenie. To umožňuje inej osobe pochopiť, ako ste sa dostali k porovnaniu bez toho, aby ste si vašu metódu pomýlili s poplatkom uloženým spoločnosťou BBDBuy."
     }
   ]
 }

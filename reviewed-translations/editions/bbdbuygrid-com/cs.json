@@ -3,34 +3,39 @@
   "locale": "cs",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "f124caa0f9748b1a1c2c6a6e4ce85c3bfbeea5b78d61be6b956082ea984de041",
-  "effective_dictionary_sha256": "49ae173b2c6dc319760c7167291f1894c32164b3c8045b3623b6c1484f64b5c4",
+  "effective_dictionary_sha256": "bef938b9e0357b671de7d85cc9d688ff74b3c79d6e3907017ecccf4f2fb591c3",
   "checked_entries": 324,
-  "review_scope": "All dictionary keys and long-paragraph language, number, unit, brand, identifier and repetition checks. All ten article titles and flagged source/target pairs inspected. Two article paragraphs sampled separately.",
+  "review_scope": "All dictionary keys and long-paragraph language, number, unit, brand, identifier and repetition checks. All ten article titles and flagged source/target pairs inspected. Two article paragraphs sampled separately. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
       "source_sha256": "365c8efdcc8f3c14e3c09dc0448104ed063b55d009cca4a0935c5a0f946b6b1d",
-      "resolution": "corrected input-key translation"
+      "raw_target_sha256": "10323b58d36c78fc4cacc167034df65c5cf93021d179e1a41a4470bdd1e9ee90",
+      "resolution": "corrected translation"
     },
     {
       "issue": "platform spelling or transliteration",
       "source_sha256": "9aca0fdddaddb22cb515f532d9731d5ac64e3ff054eedcb2f2aee067622a8490",
-      "resolution": "corrected input-key translation"
+      "raw_target_sha256": "67e5a766ee29f4394244ad7b4858aaee01ece58360d659e501bf46b543d4db5d",
+      "resolution": "corrected translation"
     },
     {
       "issue": "language uncertain",
       "source_sha256": "e8f4acadfcb919533f345d943c4e9b2f2d0bdb4e5e2dace3b06f30f8e56fab63",
-      "resolution": "corrected input-key translation"
+      "raw_target_sha256": "6f4d1685e5dcfa0c588c876e6b91b41ce6982b7120302eb3167c81a18ea7e975",
+      "resolution": "corrected translation"
     },
     {
       "issue": "new digit or localized conversion",
       "source_sha256": "a2694b46ba3f88beffce706125fcfdcb06ca44c5f75666ef3a824a9c3b7658c5",
-      "resolution": "corrected input-key translation"
+      "raw_target_sha256": "f129cd8a5c1c469fe9f6fabe0919d02f828c76c8504dbcde6d79e9ee300a5669",
+      "resolution": "corrected translation"
     },
     {
       "issue": "platform spelling or transliteration",
       "source_sha256": "5eb842601780f729c12dbc6985b5fccdffe6c9d91d363bc669a4648e85503d61",
-      "resolution": "corrected input-key translation"
+      "raw_target_sha256": "74e7bae9448ad5a9e727673113312621885ab2f34d51b3bfbdfd1021d4ee82f5",
+      "resolution": "corrected translation"
     }
   ],
   "unresolved_material": [],
@@ -106,6 +111,18 @@
       "source_sha256": "e8f4acadfcb919533f345d943c4e9b2f2d0bdb4e5e2dace3b06f30f8e56fab63",
       "raw_target_sha256": "6f4d1685e5dcfa0c588c876e6b91b41ce6982b7120302eb3167c81a18ea7e975",
       "translation": "Čtvrtou chybou je předpokládat, že stejně vypadající štítky označují zaměnitelné kusy. Dvě boty stejného modelu v různých velikostech mohou mít shodný kód modelu. U obou proto porovnejte také systém číslování a velikost uvedenou na štítku. Pátou chybou je zaměňovat fotografie od prodejce se snímky ze skladu. Fotografie prodejce ukazuje, co nabízel. Kontrolní snímek konkrétní objednávky zachycuje viditelné detaily dodaného zboží. Obojí si uložte a u každé fotografie si poznamenejte, odkud pochází."
+    },
+    {
+      "source": "Take an illustrative order for two medium work shirts and a separate order for a cap. Assume the confirmation lists the shirts at 75 each and a single domestic delivery charge of 12. The purchase subtotal is 162. The cap costs 38 with domestic delivery included, bringing the amount paid for the two purchases to 200 in the same currency. At this point both purchase records can be closed as paid even though there is no figure yet for the journey from the warehouse to your home.",
+      "source_sha256": "21cd8ec9cdc033be40fa29a6b7f3fc5473879babedda43400b722373cecd0db5",
+      "raw_target_sha256": "9301ad01c5c8483b3c826406cd15abad3f9cb4891480f42a424a544031d17ef3",
+      "translation": "Vezměte ilustrativní objednávku na dvě střední pracovní košile a samostatnou objednávku na čepici. Předpokládejme, že potvrzení uvádí košile za 75 za kus a jednorázový poplatek za vnitrostátní doručení ve výši 12. Mezisoučet nákupu je 162. Kšiltovka stojí 38 s domácím dodáním včetně, což přináší částku zaplacenou za dva nákupy na 200 ve stejné měně. V tomto okamžiku lze obě záznamy o nákupu uzavřít jako zaplacené, i když zatím není k dispozici údaj o cestě ze skladu do vašeho domova."
+    },
+    {
+      "source": "If you want to compare the cost of the cap with a local alternative, you still need to decide how to allocate the shared parcel cost. An equal split attributes 25 to the cap. A split by measured weight might attribute much less. Neither division appears on the carrier invoice unless the invoice actually itemizes freight per piece. Keep a column labelled personal allocation. It allows another person to understand how you reached the comparison without mistaking your method for a charge imposed by BBDBuy.",
+      "source_sha256": "6d74cd0af2705ef2674d0803d5cd5455ce671597134771f5fe0a3d679ea9df53",
+      "raw_target_sha256": "231405fb780f96b8e09329489eb69a4cfc5395068adc86dc6d17919316d1d54b",
+      "translation": "Pokud chcete porovnat cenu kšiltovky s místní alternativou, stále se musíte rozhodnout, jak přidělit náklady na sdílený balíček. Stejné rozdělení přiřadí kšiltovce částku 25. Rozdělení podle naměřené hmotnosti by mohlo připisovat mnohem méně. Žádné z těchto rozdělení se neobjeví na faktuře dopravce, pokud faktura skutečně neuvádí náklady na jednotlivé kusy. Udržujte sloupec označený osobní alokace. To umožňuje jiné osobě pochopit, jak jste dosáhli srovnání bez záměny vaší metody za poplatek uložený společností BBDBuy."
     }
   ]
 }
