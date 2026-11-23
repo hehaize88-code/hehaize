@@ -1,0 +1,97 @@
+name: Translate the 13 editorial sites
+run-name: Translate 13 sites · MADLAD400 · ${{ github.run_number }}
+on:
+  push:
+    branches: [editorial-full-mt-20261123]
+    paths:
+      - 'editorial-translation/**'
+      - '.github/workflows/editorial-full-mt*.yml'
+permissions:
+  contents: read
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      first: ${{ steps.plan.outputs.first }}
+      second: ${{ steps.plan.outputs.second }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: editorial-translation
+      - id: plan
+        run: python editorial-translation/plan.py
+      - uses: actions/cache@v4
+        id: cache
+        with:
+          path: .model
+          key: editorial-madlad-fd0b55729c074372-int8
+      - if: steps.cache.outputs.cache-hit != 'true'
+        run: python editorial-translation/download.py .model
+      - uses: actions/checkout@v4
+        with:
+          ref: editorial-full-mt-results-20261123
+          path: relative-results
+          sparse-checkout: translation-progress.json
+          sparse-checkout-cone-mode: false
+      - name: Record run identifier
+        working-directory: relative-results
+        run: |
+          git config user.name github-actions
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          echo "{\"run_id\":\"$GITHUB_RUN_ID\",\"source_commit\":\"$GITHUB_SHA\"}" > translation-current-run.json
+          git add --sparse translation-current-run.json
+          if ! git diff --cached --quiet; then git commit -m "Record editorial translation run $GITHUB_RUN_ID"; git push origin HEAD:editorial-full-mt-results-20261123; fi
+  first:
+    needs: prepare
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix: ${{ fromJSON(needs.prepare.outputs.first) }}
+    uses: ./.github/workflows/editorial-full-mt-worker.yml
+    with:
+      site: ${{ matrix.site }}
+      locale: ${{ matrix.locale }}
+  second:
+    needs: prepare
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix: ${{ fromJSON(needs.prepare.outputs.second) }}
+    uses: ./.github/workflows/editorial-full-mt-worker.yml
+    with:
+      site: ${{ matrix.site }}
+      locale: ${{ matrix.locale }}
+  collect:
+    needs: [prepare, first, second]
+    if: always() && needs.prepare.result == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: editorial-translation
+      - uses: actions/checkout@v4
+        with:
+          ref: editorial-full-mt-results-20261123
+          path: relative-results
+          sparse-checkout: |
+            dictionaries
+            translation-progress.json
+            translation-current-run.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: dictionary-*
+          path: artifacts
+      - run: python editorial-translation/collect.py artifacts relative-results "$GITHUB_RUN_ID"
+      - name: Save dictionaries to isolated results branch
+        working-directory: relative-results
+        run: |
+          git config user.name github-actions
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add --sparse dictionaries translation-progress.json
+          if ! git diff --cached --quiet; then git commit -m "Save verified editorial dictionaries from run $GITHUB_RUN_ID"; git push origin HEAD:editorial-full-mt-results-20261123; fi
+          python -c "import json; assert not json.load(open('translation-progress.json'))['pending'], 'Some locale dictionaries remain pending'"

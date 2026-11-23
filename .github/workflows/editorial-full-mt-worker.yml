@@ -1,0 +1,42 @@
+name: Translate one editorial pack
+on:
+  workflow_call:
+    inputs:
+      site:
+        type: string
+        required: true
+      locale:
+        type: string
+        required: true
+permissions:
+  contents: read
+jobs:
+  translate:
+    name: ${{ inputs.site }} · ${{ inputs.locale }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 320
+    env:
+      CT2_PACKED_GEMM: '0'
+      SITE: ${{ inputs.site }}
+      LOCALE: ${{ inputs.locale }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: editorial-translation
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install --disable-pip-version-check ctranslate2==4.9.1 sentencepiece==0.2.3
+      - uses: actions/cache/restore@v4
+        with:
+          path: .model
+          key: editorial-madlad-fd0b55729c074372-int8
+          fail-on-cache-miss: false
+      - run: python editorial-translation/download.py .model
+      - run: python editorial-translation/infer.py --input "editorial-translation/input/$SITE.json" --out out/dictionary.json --lang "$LOCALE" --model .model --threads 4 --batch 16 --beam 3
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dictionary-${{ inputs.site }}-${{ inputs.locale }}
+          path: out/dictionary.json
+          retention-days: 7
+          compression-level: 6
