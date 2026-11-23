@@ -3,9 +3,9 @@
   "locale": "hu",
   "source_set_sha256": "d3fc8a20c25fd682a0cbcf1d5165d69d8f33114365bd18ae1f508e92c28f82c5",
   "raw_dictionary_sha256": "1f1f4ffd710a38709e48c53eeadd1d0a7c33f395c96bef267b1d641513908207",
-  "effective_dictionary_sha256": "5ffd01f2d5835799cb71b7e916bb469d407d42195f72c941d340d4553c255ef7",
+  "effective_dictionary_sha256": "19d5f360c3c03a2862bbfda5bf038801a503ecca26d26d7735d97dfbeb0a65d4",
   "checked_entries": 277,
-  "review_scope": "Targeted bilingual QA of all flagged strings, FAQ questions, article and section titles, numerical and fee examples, physical organizer/dividers, overshirt fit and garment size terminology. Includes a numerical screen and independent overlay replay. This is not whole-edition line editing. Follow-up contextual check for parcel, freight quote and weight terminology.",
+  "review_scope": "Targeted bilingual QA of all flagged strings, FAQ questions, article and section titles, numerical and fee examples, physical organizer/dividers, overshirt fit and garment size terminology. Includes a numerical screen and independent overlay replay. This is not whole-edition line editing. Follow-up contextual check for parcel, freight quote and weight terminology. Follow-up check for computer cases, retail wrapping and packing inserts.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -759,6 +759,12 @@
       "source_sha256": "c6057698042bf0afe32b3b3bd0988f74f6384302d5bad384f63f35ea220fe974",
       "raw_target_sha256": "188e1742810576b4eb965416696d1121be20e28fffc9b9d32a1b6af0659e2914",
       "translation": "A kiválasztott változatot, a rendelési tételt, az áttekintő képet és a jól olvasható címkét mentse együtt. Írja le egy mondatban, mit igazolnak. Például: „Az A jelű raktári tétel bevarrt címkéje megfelel az M-es választásnak; a külső csomagolózacskón L szerepel; a ruhát nem próbáltuk fel.” Egy ilyen feljegyzés többet ér egy „QC rendben” nevű bélyegképnél, mert a megállapítás határát is jelzi."
+    },
+    {
+      "source": "For a sweatshirt, identify the dimension that would determine your decision. If chest room matters, ask for a flat measurement under the arms following the seller's method. If the concern is sleeve length on a dropped shoulder, name the endpoints carefully. Do not ask for “a photo of size” when what you need is the closed garment laid flat with a visible tape. The request for the label and the request for a measurement can both be valid, but they are not substitutes for each other.",
+      "source_sha256": "e29ce06b1ebcc85a54cc64762999c839b45cc70cf3e52c481e698859d740dc4a",
+      "raw_target_sha256": "29cd5b826c376baf7c5f7981daf49571eee03770d03ff64594bb6c54e5056e48",
+      "translation": "Pulóvernél azt a méretet válaszd, amelyen tényleg múlik a döntésed. Ha a mellkasi hely számít, az eladó módszerét követve kérj mérést a kiterített ruhán a hónaljak között. Ejtett vállú fazonnál az ujjhosszhoz pontosítsd a kezdő- és végpontot. Ha a zárt, kiterített felsőre helyezett mérőszalagot kell látnod, ne csak annyit írj, hogy „képet kérek a méretről”. A méretcímke fotója és az adott méret megmérése egyaránt hasznos lehet, de nem helyettesítik egymást."
     }
   ]
 }

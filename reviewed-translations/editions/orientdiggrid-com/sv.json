@@ -3,9 +3,9 @@
   "locale": "sv",
   "source_set_sha256": "1a57e35751202bc8722bffcd3d5a604d9b7ad9d180228c298103c9c8fded0947",
   "raw_dictionary_sha256": "d681787a20b5e5f7b772967dedeac09616d0b1ecc26adac3c34bcb66816d98a8",
-  "effective_dictionary_sha256": "8e11a3f1e03b276dd25abebb6617729234588a85b398097af482c2e8d4aeae30",
+  "effective_dictionary_sha256": "54a94b4afa090832dce6080514176a8d56f6557bdc51c7cc39c528a23046a596",
   "checked_entries": 295,
-  "review_scope": "Compared exact full source coverage and screened every pair for numeric/measurement, entity identity, copy-through, and key shopping senses. Checked revised article titles, storage, references, worked packing examples, retail sleeves, and apparel width/length. Localized source navigation labels and corrected erroneous packaging or garment terms.",
+  "review_scope": "Compared exact full source coverage and screened every pair for numeric/measurement, entity identity, copy-through, and key shopping senses. Checked revised article titles, storage, references, worked packing examples, retail sleeves, and apparel width/length. Localized source navigation labels and corrected erroneous packaging or garment terms. Corrected measuring tape terminology in garment measurement contexts.",
   "reviewed_flags": [],
   "unresolved_material": [],
   "corrections": [
@@ -170,6 +170,42 @@
       "source_sha256": "8a20dceeaa586042976c8fff9db7eab288b2b1d709c0fff366e19d1293693177",
       "raw_target_sha256": "29ed9316f211916257bebe21a7b96a77d8d55040a6e36c5de7f237c486e7322f",
       "translation": "OrientDigs tjänst för provpackning"
+    },
+    {
+      "source": "Name the item and option. Ask for the jacket closed, laid flat and measured from one underarm seam to the other, with both tape endpoints in the frame. Include the required unit.",
+      "source_sha256": "65478890cafb07d4b9da42c1bfa9cbaf2cbf7f3c260c178384cd2b3c2fad3354",
+      "raw_target_sha256": "98d1c92c54147c70ab5129a0d8258db6051b1be0b847893372d71f0f6d89a1da",
+      "translation": "Namnge objektet och alternativet. Be om jackan stängd, liggande platt och mätt från ena armhålan till den andra, med båda måttbandets ändar i ramen. Inkludera den önskade enheten."
+    },
+    {
+      "source": "A request for “jacket length” is especially easy to misinterpret. The centre back from the collar seam to the hem can produce a different figure from a measurement starting at the high shoulder point. A collar included in one measurement and excluded in another changes it again. If your reference chart uses a diagram, point to its specific path in your note. Write the unit. A precise request could say “please measure in centimetres from the centre back collar seam, excluding the collar itself, straight to the bottom hem, with the entire tape visible.”",
+      "source_sha256": "b2a5eb9fc38eed8dfd1c51a94187c3376de418193f80896add41eb5e20494155",
+      "raw_target_sha256": "847ffb43e2c88f197002a7016a13b0f4fa0b6d1216eed1b9552be24fecaaefe5",
+      "translation": "En förfrågan om ”jacklängd” är särskilt lätt att misstolka. Mitt bak från kragens söm till fållen kan ge en annan siffra än ett mått som börjar vid den höga axelpunkten. En krage som ingår i en mätning och utesluts i en annan ändrar den igen. Om referensdiagrammet använder ett diagram pekar du på dess specifika sökväg i anteckningen. Skriv enheten. En exakt begäran kan säga ”vänligen mät i centimeter från kragens söm mitt bak, exklusive själva kragen, rakt ner till nederkanten, med hela måttbandet synligt.”"
+    },
+    {
+      "source": "For a jacket with ordinary set-in sleeves, describe the measurement from the junction of one underarm seam to the junction of the other. Ask for the front closed, the garment flat and the tape straight without tension. If the armholes are unusually deep or the garment has a batwing shape, the conventional endpoints may be hard to locate. In that case, choose a reproducible point on the garment or ask for an overview first. Explain where you measured your own piece so the warehouse can decide whether the requested method is practical.",
+      "source_sha256": "555bef0f451438ef399c7bb7cd3715b82b5225cb885ef7ded1d727446f45c7d0",
+      "raw_target_sha256": "7869743a2904394c503e5ce80291707777536e679d11c19f95f33c5544cc2e2f",
+      "translation": "För en jacka med vanliga inställda ärmar, beskriv mätningen från korsningen av den ena armhålssömmen till korsningen av den andra. Be om att fronten ska vara stängd, plagget platt och måttbandet rakt utan spänning. Om ärmhålen är ovanligt djupa eller plagget har en fladdermusvingeform kan de konventionella ändpunkterna vara svåra att hitta. Välj i så fall en reproducerbar punkt på plagget eller be om en översikt först. Förklara var du mätte ditt eget plagg så att lagret kan avgöra om den begärda metoden är praktisk."
+    },
+    {
+      "source": "Review the resulting photo in three stages. First identify the correct warehouse item and marked size. Next trace the path of the tape across the garment. Finally inspect the zero mark and reading at the far end. A clear number on the right tells you little if the tape started several centimetres beyond the left seam. If one edge is outside the frame, state which one when requesting clarification. “Please include the left underarm and the zero mark” is easier to resolve than “the measurement looks wrong.”",
+      "source_sha256": "8c6016c5338c03c55d0d6b75d39cc5b9a9c535d6df32a8c681e487e2dd5c6310",
+      "raw_target_sha256": "dde4efa3a2fa730bb8adfa514817f22d818b42a5cc359a2e58cb5bcbac5ec484",
+      "translation": "Granska det resulterande fotot i tre steg. Identifiera först rätt lagerartikel och markerad storlek. Spår sedan måttbandets bana över plagget. Slutligen inspektera nollmärket och avläsningen i den bortre änden. En tydlig siffra till höger säger inte så mycket om måttbandet började flera centimeter bortom vänster söm. Om en kant är utanför ramen, ange vilken när du begär förtydligande. ”Vänligen inkludera vänster armhåla och nollmärket” är lättare att lösa än ”mätningen ser fel ut”."
+    },
+    {
+      "source": "One practical alternative is a neck-to-cuff measurement. Specify the neck point, whether the tape should follow the top edge or another path and whether the cuff should lie flat. Measure the comparable path on your own garment. If the sleeve is designed to curve, decide whether to follow the seam or draw a straight line; the two methods answer different questions. In your request, ask for the full route in one frame if readable, or an overview plus a second close view of the reading if that fits the available photo service.",
+      "source_sha256": "758ac910347a0bc002f5f931d90531b420f39d325e58a3a4b272f19d4704c888",
+      "raw_target_sha256": "9e455402958e58cf75fc678d52d8795af0b492f9e0cc0f7fcab7eab3453ca361",
+      "translation": "Ett praktiskt alternativ är en hals-till-manschett-mätning. Ange halspunkten, om måttbandet ska följa den övre kanten eller en annan bana och om manschetten ska ligga platt. Mät den jämförbara banan på ditt eget plagg. Om ärmen är utformad för att böja, bestämma om du ska följa sömmen eller dra en rak linje; de två metoderna svarar på olika frågor. I din förfrågan, be om hela rutten i en ram om det är läsbart, eller en översikt plus en andra närbild av avläsningen om det passar den tillgängliga fototjänsten."
+    },
+    {
+      "source": "Consider a hypothetical case in which your reference shorts measure 36 centimetres across the relaxed waistband and the warehouse photo seems to show 72 centimetres. Before deciding there is an enormous difference, verify whether one number refers to the full circumference. Also inspect where the tape begins and whether the garment is stretched. A chart may quote recommended body circumference instead of finished garment circumference. Name the measurement type when asking for clarification. Correcting a unit or endpoint misunderstanding can resolve a concern without changing the order.",
+      "source_sha256": "f027cf5ec61fa64e3032aa48923b112f01db44d9aa2096944718ddaf337e2e16",
+      "raw_target_sha256": "de527e2a9f2427a350091abaf8254bb8aae2e84b14b4ee691a4a62b4c35b234e",
+      "translation": "Tänk dig ett hypotetiskt fall där dina referensshorts mäter 36 centimeter över den avslappnade linningen och lagerfotot verkar visa 72 centimeter. Innan du bestämmer att det är en enorm skillnad, kontrollera om en siffra hänvisar till hela omkretsen. Kontrollera också var måttbandet börjar och om plagget är utsträckt. En tabell kan ange rekommenderad kroppsomkrets istället för färdigt plaggs omkrets. Ange mätningstyp när du ber om förtydligande. Att korrigera ett missförstånd om en enhet eller slutpunkt kan lösa ett problem utan att ändra ordningen."
     }
   ]
 }

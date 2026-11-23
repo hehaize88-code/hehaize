@@ -3,7 +3,7 @@
   "locale": "fi",
   "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
   "raw_dictionary_sha256": "a5bc4b33e42184512cacf671c6945b01d5ab60f2f15736e8ae03d46bfc933a43",
-  "effective_dictionary_sha256": "59aacc4ed26f058daf05dc1405faea66128090bdfa6b336fc1ecb7e61ef2359a",
+  "effective_dictionary_sha256": "d403ceb18a493eee832298d3b10273ae8d6dc02f849e8bed346b76936b7f3d5b",
   "checked_entries": 317,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -159,6 +159,54 @@
       "source_sha256": "b855867c5d08a3636cab4d3f72c3ad39e157a266eb2cddae19d3b54c0b82e1fe",
       "raw_target_sha256": "ada1e79ec1e8ec5f7dd58803b1002162adf363688cb204cad03c36dcb0e60411",
       "translation": "Kerro ensin, mitä haluat ratkaista: ”Haluan tietää, mahtuuko asiakirjakansioni suojataskuun.” Se auttaa valitsemaan kohteen, kuvauskulman ja mittauspisteet. Jos suojatasku avautuu yhdeltä reunalta, kuvassa pitäisi näkyä vapaa aukko vetoketjun päätyrajoittimien välissä. Koko laukun vieressä näkyvä viivain ei välttämättä auta, jos vetoketju tai kangastaitos peittää juuri tämän aukon."
+    },
+    {
+      "source": "What does a KakoBuy QC finder match?",
+      "source_sha256": "dd59c80329690c1ac2ae3e8d6c3d68fe1b9bb77c4d5c150bb6b3ecbc3ec11397",
+      "raw_target_sha256": "5c89dae773d78bf4a237cd7af8b3d4889a4b5e6ca014917b6759be89c9b86719",
+      "translation": "Mihin tietoihin KakoBuyn QC-kuvahaku perustuu?"
+    },
+    {
+      "source": "The number in a Sheet Grid page address identifies that catalogue page. Open the original seller link and read the itemID value there before using a Weidian QC lookup.",
+      "source_sha256": "516328e62cd88a787b300af9a8d70729ba22c0e7aec5e7c938de05e15cd89e85",
+      "raw_target_sha256": "c864430a74448cfd6580401622eb5ef6061b32eac41d5a00227da23062fc8523",
+      "translation": "Sheet Grid -sivun osoitteessa oleva numero yksilöi luettelosivun. Avaa myyjän alkuperäinen linkki ja tarkista sen itemID-arvo ennen Weidianin QC-kuvahakua."
+    },
+    {
+      "source": "How should a tape be positioned for an underarm-width photo?",
+      "source_sha256": "9e5630b3532b09a05b4c0508e024177f7c192d549060bd21d09034a9f1d51235",
+      "raw_target_sha256": "74a2885594d7d4f17c428f226e993bf3a9b0953277ad6f367fcbfc4a8d99312a",
+      "translation": "Miten mittanauha asetetaan kainalosta kainaloon otettavaa mittakuvaa varten?"
+    },
+    {
+      "source": "Request the garment laid flat and relaxed, with the tape crossing between the corresponding underarm seam points. Both ends and the units should be visible in one frame.",
+      "source_sha256": "29d1cd26b66cf4ac5f1a4e798394c91c47ccdf8365067a5e531769c5286f2c2b",
+      "raw_target_sha256": "70345f2975a822bda9558811892c442dcb2525162017a6611c97c7ae75de857c",
+      "translation": "Pyydä levittämään vaate tasolle venyttämättä sitä. Mittanauhan tulee kulkea toisen kainalon saumasta vastakkaisen kainalon vastaavaan saumakohtaan. Molempien päiden ja mittayksikön pitää näkyä samassa kuvassa."
+    },
+    {
+      "source": "Keep the original case reference and give the replacement a separate entry. Record the replacement's option, intake reference and pictures. Recheck the original problem on the new unit.",
+      "source_sha256": "7c752f70cc71febc58621cdb76948c8f9c4333ff9be2403d731eb390bd336b08",
+      "raw_target_sha256": "1ff1b9dd4396190d8998cc2ecc539678f312f505f8c9f62d58c78dae96917123",
+      "translation": "Säilytä alkuperäinen asianumero ja tee korvaavalle tuotteelle oma merkintä. Kirjaa sen vaihtoehto, varaston vastaanottotunnus ja kuvat. Tarkista uudesta kappaleesta kohta, jonka vuoksi pyysit vaihtoa."
+    },
+    {
+      "source": "If internal length matters and the insole is removable, ask whether removal is appropriate before requesting a measurement. A tape laid along the outside sole measures another object. Specify the endpoints, units and which shoe is measured. An insole length provides a physical dimension, but not an assurance of comfort: usable space also depends on shape, thickness and your own foot.",
+      "source_sha256": "d2651105a8e3efde36c429207aedd22c1f312d38af7ea10450cd2417e7b6f8fd",
+      "raw_target_sha256": "4141527ebd673e747ad046557e37f9ee7b3e8af6bbff97b7044ac01f2ca1c58b",
+      "translation": "Jos sisäpituudella on merkitystä ja pohjallinen on irrotettava, kysy, onko sen poistaminen asianmukaista ennen mittauksen pyytämistä. Ulkopohjaan asetettu mittanauha mittaa toisen kohteen. Määritä päätepisteet, yksiköt ja mikä kenkä mitataan. Pohjallisen pituus antaa fyysisen mittasuhteen, mutta ei takaa mukavuutta: käytettävissä oleva tila riippuu myös muodosta, paksuudesta ja omasta jalasta."
+    },
+    {
+      "source": "For a zipper, ask for a closed full-front view with both ends and any sliders visible. For a flat garment width, describe the seam points and ask that the tape's beginning and reading appear in one frame. For a print, ask for a straight-on view that shows placement and another view only if the text is too small. A tightly cropped image may improve legibility while removing the context needed to identify the unit.",
+      "source_sha256": "11e911fcb8f1db6a920af1e0b3ba290d5e32b4a4d3c59bb050c3d48acd832443",
+      "raw_target_sha256": "cc9a7ae8a5b790864f38a9525f93aee209b3b8dc71b5eec336ee463fbbef07aa",
+      "translation": "Jos kyseessä on vetoketju, pyydä suljettua kokonaisnäkymää, jossa molemmat päät ja mahdolliset liukusäätimet ovat näkyvissä. Jos haluat tasaisen vaatteen leveyden, kuvaile saumapisteet ja pyydä, että mittanauhan alku ja lukema näkyvät yhdessä kehyksessä. Jos haluat tulostaa, pyydä suoraa esikatselua, jossa näkyy sijoittelu ja toinen näkymä vain, jos teksti on liian pieni. Tiukasti rajattu kuva voi parantaa luettavuutta ja poistaa samalla yksikön tunnistamiseen tarvittavan kontekstin."
+    },
+    {
+      "source": "For a flat garment measurement, state the start point, end point and unit. If you want the width across a sweatshirt under the arms, ask to see the garment laid flat, the tape beginning at one underarm seam and ending at the other, with both ends visible. Avoid asking for a fit verdict from a picture. Compare the resulting measurement with a garment you own taken by the same method, and keep any material stretch or garment shape in mind.",
+      "source_sha256": "a60be411b8b02d5740a3d514373920e0446cd734f65013f4cb8cba0843fcd2b0",
+      "raw_target_sha256": "68722ecc5ec1c396b691e2ad27cfe74cb4d7a91401782274e93adda61b491b4b",
+      "translation": "Litteän vaatteen mittaamista varten ilmoita aloituspiste, loppupiste ja mittayksikkö. Jos haluat mitata collegepaidan leveyden kainaloiden alapuolelta, pyydä näkemään vaate, joka on asetettu tasaiselle pinnalle siten, että mittanauha alkaa toisesta kainalosaumasta ja päättyy toiseen, jolloin molemmat päät ovat näkyvissä. Vältä kysymästä sopivuustuomiota kuvasta. Vertaa saatua mittausta samalla menetelmällä otettuun omaan vaatekappaleeseesi ja pidä mielessä materiaalin joustavuus tai vaatteen muoto."
     }
   ]
 }

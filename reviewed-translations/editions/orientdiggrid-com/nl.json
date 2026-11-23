@@ -3,9 +3,9 @@
   "locale": "nl",
   "source_set_sha256": "1a57e35751202bc8722bffcd3d5a604d9b7ad9d180228c298103c9c8fded0947",
   "raw_dictionary_sha256": "9192fe17454ca35f722fe105193c268275d01f04b3f5d5cd9436063d40ffd6fc",
-  "effective_dictionary_sha256": "80e0b2ae61fa231a44d948f1cb5fd3528260da054357cb2f22e6da2ac8f036a7",
+  "effective_dictionary_sha256": "aecb0bbe80884ca087692fd642bd1568b8708b4df20ded586960b525999934e1",
   "checked_entries": 295,
-  "review_scope": "Compared exact full source coverage and screened every pair for numeric/measurement, entity identity, copy-through, and key shopping senses. Checked revised article titles, storage, references, worked packing examples, retail sleeves, and apparel width/length. Localized source navigation labels and corrected erroneous packaging or garment terms.",
+  "review_scope": "Compared exact full source coverage and screened every pair for numeric/measurement, entity identity, copy-through, and key shopping senses. Checked revised article titles, storage, references, worked packing examples, retail sleeves, and apparel width/length. Localized source navigation labels and corrected erroneous packaging or garment terms. Corrected measuring tape terminology in garment measurement contexts.",
   "reviewed_flags": [],
   "unresolved_material": [],
   "corrections": [
@@ -127,7 +127,7 @@
       "source": "Open the returned picture next to your note. Can you recognize the relevant unit? Is the requested part visible? Is the image sharp at the place where you need detail? If a measurement is involved, can you follow the tape continuously from the chosen start to the end and read the unit? If the answers are yes, record the observation rather than a general impression. For the jacket that might read “both sliders visible on the short navy unit.” That note gives a clear reason to proceed even if you later view the pictures out of order.",
       "source_sha256": "901223d7f428556cb6ea9955b034ca1ad9829873f11c0e47e78baeebea8eb4a5",
       "raw_target_sha256": "1b00bb385cba9cc8327ce7a95256930b98208e3ae98248f17e77d4929f26972d",
-      "translation": "Open de geretourneerde afbeelding naast je notitie. Herkent u de betreffende eenheid? Is het gevraagde onderdeel zichtbaar? Is het beeld scherp op de plek waar je detail nodig hebt? Als het om een meting gaat, kunt u de tape dan continu volgen van het gekozen begin tot het einde en de eenheid aflezen? Als de antwoorden ja zijn, noteer dan de waarneming in plaats van een algemene indruk. Voor de jas die zou kunnen lezen “beide ritsschuivers zichtbaar op de korte marineblauwe jas.” Die opmerking geeft een duidelijke reden om door te gaan, zelfs als u later de foto’s in de verkeerde volgorde bekijkt."
+      "translation": "Open de geretourneerde afbeelding naast je notitie. Herkent u de betreffende eenheid? Is het gevraagde onderdeel zichtbaar? Is het beeld scherp op de plek waar je detail nodig hebt? Als het om een meting gaat, kunt u het meetlint dan continu volgen van het gekozen begin tot het einde en de eenheid aflezen? Als de antwoorden ja zijn, noteer dan de waarneming in plaats van een algemene indruk. Voor de jas die zou kunnen lezen “beide ritsschuivers zichtbaar op de korte marineblauwe jas.” Die opmerking geeft een duidelijke reden om door te gaan, zelfs als u later de foto’s in de verkeerde volgorde bekijkt."
     },
     {
       "source": "OrientDig detailed photo guide",
@@ -224,6 +224,60 @@
       "source_sha256": "d91eb1bf0e521919e2cea894a14bce7e7ffc042637b0a7b47b7fe65a416495f8",
       "raw_target_sha256": "caa0ba6ca224ef5d09cd0e3ac6cd303bb7b3bc491b3eb5a60c1ad90392e0707f",
       "translation": "Detailfoto’s bij OrientDig na ontvangst in het magazijn"
+    },
+    {
+      "source": "Name the item and option. Ask for the jacket closed, laid flat and measured from one underarm seam to the other, with both tape endpoints in the frame. Include the required unit.",
+      "source_sha256": "65478890cafb07d4b9da42c1bfa9cbaf2cbf7f3c260c178384cd2b3c2fad3354",
+      "raw_target_sha256": "e9d013af0ed83c4b23b1e7c51654c4b532628ec9bca0969de23ef225e31db1bb",
+      "translation": "Geef het item en de optie een naam. Vraag om de jas gesloten, plat gelegd en gemeten van de ene okselsnaad tot de andere, met beide uiteinden van het meetlint in het frame. Voeg de gewenste eenheid toe."
+    },
+    {
+      "source": "A request for “jacket length” is especially easy to misinterpret. The centre back from the collar seam to the hem can produce a different figure from a measurement starting at the high shoulder point. A collar included in one measurement and excluded in another changes it again. If your reference chart uses a diagram, point to its specific path in your note. Write the unit. A precise request could say “please measure in centimetres from the centre back collar seam, excluding the collar itself, straight to the bottom hem, with the entire tape visible.”",
+      "source_sha256": "b2a5eb9fc38eed8dfd1c51a94187c3376de418193f80896add41eb5e20494155",
+      "raw_target_sha256": "52f2b5e59493faa137b08309ed7cbff812180670b715a91d350be8f575feabc7",
+      "translation": "Een verzoek om “jacklengte” is vooral gemakkelijk verkeerd te interpreteren. De middelste rug van de kraagnaad tot de zoom kan een ander figuur produceren dan een meting die begint bij het hoge schouderpunt. Een kraag opgenomen in de ene meting en uitgesloten in een andere verandert het weer. Als uw referentiegrafiek een diagram gebruikt, wijst u het specifieke pad in uw notitie aan. Schrijf de eenheid op. Een nauwkeurig verzoek zou kunnen zeggen: \"Meet in centimeters vanaf de kraagnaad in het midden van de rug, exclusief de kraag zelf, recht naar de onderste zoom, met het hele meetlint zichtbaar.\""
+    },
+    {
+      "source": "Two tape readings can disagree even when both are accurate. Use the seller's diagram and a garment you own to specify the path, endpoints and units of each warehouse measurement.",
+      "source_sha256": "918bafca6b0ce712ff99b834913340a4d6d003b97b5b8d2110a66e2d1f864b55",
+      "raw_target_sha256": "40c9737c73c4c51a64f1f1290742219195a9422db18185e746e3964185ef09bb",
+      "translation": "Twee metingen met het meetlint kunnen van elkaar verschillen, zelfs als ze allebei nauwkeurig zijn. Gebruik het diagram van de verkoper en een kledingstuk dat u bezit om het pad, de eindpunten en de eenheden van elke magazijnmeting op te geven."
+    },
+    {
+      "source": "Look for arrows or illustrations that show the start and finish of the measurement. A chart can report body measurements, finished garment measurements or a set of recommended sizes. A chest figure on a body chart can include intended ease in the garment design. A tape photographed across a flat garment measures the object itself. Even if the figures use the same unit, they do not necessarily describe the same thing. Keep the chart's heading and diagram in your reference note as well as the row of numbers.",
+      "source_sha256": "242c0b0b2e531644699dfb93599666529944e5c0201605b89f64af4a3f7b4bac",
+      "raw_target_sha256": "b368ab764796af3692b4b9226be0010472fc3a5bd5fe683840af5406ba1bdaaf",
+      "translation": "Zoek naar pijlen of illustraties die het begin en einde van de meting aangeven. Een grafiek kan lichaamsafmetingen, afmetingen van afgewerkte kledingstukken of een set aanbevolen maten rapporteren. Een borstfiguur op een lichaamsgrafiek kan bedoeld gemak in het kledingstuk ontwerp bevatten. Een meetlint gefotografeerd over een plat kledingstuk meet het object zelf. Zelfs als de cijfers dezelfde eenheid gebruiken, beschrijven ze niet per se hetzelfde. Bewaar de kop en het diagram van de grafiek in je referentienotitie, evenals de rij met cijfers."
+    },
+    {
+      "source": "For a jacket with ordinary set-in sleeves, describe the measurement from the junction of one underarm seam to the junction of the other. Ask for the front closed, the garment flat and the tape straight without tension. If the armholes are unusually deep or the garment has a batwing shape, the conventional endpoints may be hard to locate. In that case, choose a reproducible point on the garment or ask for an overview first. Explain where you measured your own piece so the warehouse can decide whether the requested method is practical.",
+      "source_sha256": "555bef0f451438ef399c7bb7cd3715b82b5225cb885ef7ded1d727446f45c7d0",
+      "raw_target_sha256": "8db4fe25497a4cdd8b9b6aabdeae9c776308534450bcb3844da07157b586d00d",
+      "translation": "Beschrijf voor een jas met gewone ingezette mouwen de meting van de verbinding van de ene okselsnaad tot de verbinding van de andere. Vraag om de voorkant gesloten, het kledingstuk plat en het meetlint recht zonder spanning. Als de armsgaten ongewoon diep zijn of het kledingstuk een vleermuisvleugelvorm heeft, kunnen de conventionele eindpunten moeilijk te vinden zijn. Kies in dat geval een reproduceerbaar punt op het kledingstuk of vraag eerst om een overzicht. Leg uit waar je je eigen stuk hebt gemeten, zodat het magazijn kan beslissen of de gevraagde methode praktisch is."
+    },
+    {
+      "source": "Review the resulting photo in three stages. First identify the correct warehouse item and marked size. Next trace the path of the tape across the garment. Finally inspect the zero mark and reading at the far end. A clear number on the right tells you little if the tape started several centimetres beyond the left seam. If one edge is outside the frame, state which one when requesting clarification. “Please include the left underarm and the zero mark” is easier to resolve than “the measurement looks wrong.”",
+      "source_sha256": "8c6016c5338c03c55d0d6b75d39cc5b9a9c535d6df32a8c681e487e2dd5c6310",
+      "raw_target_sha256": "82a3a160f7998104a2590422878bde38e87854b86778854bc2d6d0f99b32c9d4",
+      "translation": "Bekijk de resulterende foto in drie fasen. Identificeer eerst het juiste magazijnitem en de gemarkeerde maat. Traceer vervolgens het pad van het meetlint over het kledingstuk. Inspecteer ten slotte de nulmarkering en de aflezing aan het uiteinde. Een duidelijk getal aan de rechterkant zegt weinig als het meetlint enkele centimeters voorbij de linkernaad begon. Als een van de randen buiten het kader ligt, vermeld dan welke bij het aanvragen van verduidelijking. “Gelieve de linker oksel en de nulmarkering op te nemen” is gemakkelijker op te lossen dan “de meting ziet er verkeerd uit.”"
+    },
+    {
+      "source": "One practical alternative is a neck-to-cuff measurement. Specify the neck point, whether the tape should follow the top edge or another path and whether the cuff should lie flat. Measure the comparable path on your own garment. If the sleeve is designed to curve, decide whether to follow the seam or draw a straight line; the two methods answer different questions. In your request, ask for the full route in one frame if readable, or an overview plus a second close view of the reading if that fits the available photo service.",
+      "source_sha256": "758ac910347a0bc002f5f931d90531b420f39d325e58a3a4b272f19d4704c888",
+      "raw_target_sha256": "41442f4b19cef8e9ca5fde0ca48c6122d9af87d93c067dafde4b731ca55a159b",
+      "translation": "Een praktisch alternatief is een nek-tot-manchetmeting. Geef het nekpunt op, of het meetlint de bovenrand of een ander pad moet volgen en of de manchet plat moet liggen. Meet het vergelijkbare pad op uw eigen kledingstuk. Als de mouw is ontworpen om te buigen, beslis dan of je de naad volgt of een rechte lijn tekent; de twee methoden beantwoorden verschillende vragen. Vraag in uw aanvraag de volledige route in één frame indien leesbaar, of een overzicht plus een tweede close-up van de lezing indien dat past bij de beschikbare fotoservice."
+    },
+    {
+      "source": "Write one short line for each dimension you actually used. Include the item, size, date, endpoints, unit and observed result. Put the comparable measurement from your own garment beside it. Where the two methods disagree, mark the comparison unresolved rather than recording a difference as a defect. This becomes particularly useful when you have similar items from several sellers: the note tells you which tape photo belongs to which decision without relying on the order in a gallery.",
+      "source_sha256": "6b1e6c45e502cceb3a4d51e2e3a15df67e6573ff67a67fc3f708e9117af8161b",
+      "raw_target_sha256": "3ae9bb5d3bbd9f29114e7644615e5b4c949cef2640b55d425538359b1b04a441",
+      "translation": "Schrijf een korte regel voor elke dimensie die je daadwerkelijk hebt gebruikt. Vermeld het item, de grootte, de datum, de eindpunten, de eenheid en het waargenomen resultaat. Zet de vergelijkbare maat van uw eigen kledingstuk ernaast. Als de twee methoden niet overeenkomen, markeer dan de vergelijking als onopgelost in plaats van een verschil als een defect te registreren. Dit wordt vooral handig als u vergelijkbare items van verschillende verkopers hebt: de notitie vertelt u welke foto van het meetlint bij welke beslissing hoort zonder afhankelijk te zijn van de volgorde in een galerij."
+    },
+    {
+      "source": "Consider a hypothetical case in which your reference shorts measure 36 centimetres across the relaxed waistband and the warehouse photo seems to show 72 centimetres. Before deciding there is an enormous difference, verify whether one number refers to the full circumference. Also inspect where the tape begins and whether the garment is stretched. A chart may quote recommended body circumference instead of finished garment circumference. Name the measurement type when asking for clarification. Correcting a unit or endpoint misunderstanding can resolve a concern without changing the order.",
+      "source_sha256": "f027cf5ec61fa64e3032aa48923b112f01db44d9aa2096944718ddaf337e2e16",
+      "raw_target_sha256": "ffe227a57e98e2c46213d196e56d62a8308f3447f5607ede0d89cbe20398fdf5",
+      "translation": "Denk aan een hypothetisch geval waarin uw referentieshort 36 centimeter meet over de relaxte tailleband en de magazijnfoto 72 centimeter lijkt te tonen. Voordat u besluit dat er een enorm verschil is, controleert u of een getal verwijst naar de volledige omtrek. Controleer ook waar het meetlint begint en of het kledingstuk is uitgerekt. Een grafiek kan de aanbevolen lichaamsomtrek vermelden in plaats van de omtrek van het afgewerkte kledingstuk. Noem het type meting wanneer u om verduidelijking vraagt. Het corrigeren van een misverstand over een eenheid of eindpunt kan een probleem oplossen zonder de volgorde te wijzigen."
     }
   ]
 }

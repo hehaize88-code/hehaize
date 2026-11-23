@@ -3,7 +3,7 @@
   "locale": "bg",
   "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
   "raw_dictionary_sha256": "d6ae37294cff6679bc866de9a6aa70758b09cf62c77b52f457d9f01054f8b5b0",
-  "effective_dictionary_sha256": "54d3e454aa2c0af02d8c6fe7dbcdc7b46591e0fa54b4b4afb100a68cdc7ee197",
+  "effective_dictionary_sha256": "3b5db8780cd10c6aaae1c960a494ff26407f0f76191a4c4dcee4000dd8f1107b",
   "checked_entries": 317,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -140,7 +140,7 @@
       "source": "What does a KakoBuy QC finder match?",
       "source_sha256": "dd59c80329690c1ac2ae3e8d6c3d68fe1b9bb77c4d5c150bb6b3ecbc3ec11397",
       "raw_target_sha256": "98fde5f27ea904fe60b5e7757fab0f7340b9f2abde3987ced605aacf7eeda7d5",
-      "translation": "По какво търсачката за QC снимки на KakoBuy открива съвпадение?"
+      "translation": "По какво търсачката за QC снимки на KakoBuy намира съвпадения?"
     },
     {
       "source": "Where should I take a question about an actual KakoBuy order?",
@@ -291,6 +291,30 @@
       "source_sha256": "b855867c5d08a3636cab4d3f72c3ad39e157a266eb2cddae19d3b54c0b82e1fe",
       "raw_target_sha256": "3722a901b7da3071bf2859bb6b1d0215918b0fa4bd5b31efef08e06543aeea45",
       "translation": "Започнете с конкретната цел: „По тази снимка искам да преценя дали папката ми влиза в калъфа.“ Така ще определите предмета, ъгъла и точките за измерване. Ако калъфът се отваря по единия ръб, поискайте да се види свободното разстояние между двата ограничителя на ципа. Снимка на цялата чанта до линия може да остави точно този отвор скрит от ципа или от гънка на плата."
+    },
+    {
+      "source": "The number in a Sheet Grid page address identifies that catalogue page. Open the original seller link and read the itemID value there before using a Weidian QC lookup.",
+      "source_sha256": "516328e62cd88a787b300af9a8d70729ba22c0e7aec5e7c938de05e15cd89e85",
+      "raw_target_sha256": "78dd5bc9fbdb211d33d33879b638bb0c6a44f7ca7d69bf95e198cd590aad0fe6",
+      "translation": "Числото в адреса на страница в Sheet Grid е номер на каталожния запис. Отворете оригиналната обява на продавача и прочетете стойността на itemID там, преди да търсите QC снимки за Weidian."
+    },
+    {
+      "source": "How should a tape be positioned for an underarm-width photo?",
+      "source_sha256": "9e5630b3532b09a05b4c0508e024177f7c192d549060bd21d09034a9f1d51235",
+      "raw_target_sha256": "e2f7f9f7e9e5c2448137ca689d273a80114549f707488455551fd780ea9347f0",
+      "translation": "Как да се постави шивашкият метър за снимка на ширината под мишниците?"
+    },
+    {
+      "source": "Request the garment laid flat and relaxed, with the tape crossing between the corresponding underarm seam points. Both ends and the units should be visible in one frame.",
+      "source_sha256": "29d1cd26b66cf4ac5f1a4e798394c91c47ccdf8365067a5e531769c5286f2c2b",
+      "raw_target_sha256": "d275563d3bbcc9b20f375e4d3223593322bb93e9e865cb065bd7696e382c5f1e",
+      "translation": "Поискайте дрехата да бъде разстлана без опъване. Метърът трябва да минава от шева под едната мишница до съответния шев от другата страна. Двата края и мерната единица трябва да се виждат в един кадър."
+    },
+    {
+      "source": "Keep the original case reference and give the replacement a separate entry. Record the replacement's option, intake reference and pictures. Recheck the original problem on the new unit.",
+      "source_sha256": "7c752f70cc71febc58621cdb76948c8f9c4333ff9be2403d731eb390bd336b08",
+      "raw_target_sha256": "a67c80440d757a62689453b41367de18afd4aadd8b80109000da249f15e84f6c",
+      "translation": "Запазете номера на първоначалния случай и създайте отделен запис за замяната. Добавете варианта, номера за приемане в склада и снимките на новия артикул. Проверете върху него проблема, довел до замяната."
     }
   ]
 }

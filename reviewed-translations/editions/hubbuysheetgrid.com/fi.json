@@ -3,7 +3,7 @@
   "locale": "fi",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "295a0596657f023d2245966d1eeafa9a48be6adf06e6f45a1a947a7ef54ea633",
-  "effective_dictionary_sha256": "d70094395d63946fc6fb44bcf89687fc977f209214af8b267526e44ebe04e759",
+  "effective_dictionary_sha256": "6f702c11c4bffa3e802d2485db269ea93e2556f6588f0e4d89bd7a129f49cc56",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -110,7 +110,7 @@
       "source": "If both records supposedly refer to the same finished parcel, compare the orientation and endpoints. A tape starting at the bottom edge of a recessed panel and ending at the centre of a flat lid may miss protected corners that project farther. Ask for the longest outside span rather than the measurement across the central panel. Keep a generous uncertainty in a planning figure when the parcel sits close to an eligibility limit. Final acceptance depends on the carrier and the route's actual rule.",
       "source_sha256": "b4f4ebc02a22101ef0dce4b09e8e2d4c6e7c66837db80e8015d641cbde0ae583",
       "raw_target_sha256": "ba8d025e0bc4ae4247a8678c7cd0e8e333f19dd38f679b5e503f290f05b2b026",
-      "translation": "Jos molempien tietueiden oletetaan viittaavan samaan valmiiseen pakettiin, vertaa suuntaa ja päätepisteitä. Jos teippi alkaa upotetun paneelin alareunasta ja päättyy litteän kannen keskelle, suojatut kulmat, jotka ulottuvat kauemmas, saattavat jäädä huomaamatta. Pyydä pituutta, joka on pisin ulkopuolella, sen sijaan, että mittaisit keskellä olevan paneelin. Pidä suunnitteluluvussa runsaasti epävarmuutta silloin, kun paketti on lähellä tukikelpoisuusrajaa. Lopullinen hyväksyntä riippuu lentoyhtiöstä ja reitin varsinaisesta säännöstä."
+      "translation": "Jos molempien tietueiden oletetaan viittaavan samaan valmiiseen pakettiin, vertaa suuntaa ja päätepisteitä. Jos mittanauha alkaa upotetun paneelin alareunasta ja päättyy litteän kannen keskelle, suojatut kulmat, jotka ulottuvat kauemmas, saattavat jäädä huomaamatta. Pyydä pituutta, joka on pisin ulkopuolella, sen sijaan, että mittaisit keskellä olevan paneelin. Pidä suunnitteluluvussa runsaasti epävarmuutta silloin, kun paketti on lähellä tukikelpoisuusrajaa. Lopullinen hyväksyntä riippuu lentoyhtiöstä ja reitin varsinaisesta säännöstä."
     },
     {
       "source": "A delivery estimate may refer to a stage starting at dispatch. Read the route description before promising someone a date based on it. Include unresolved purchasing, seller dispatch, warehouse intake or packing in a separate planning timeline. Avoid adding arbitrary days to manufacture a confident arrival date. If the use date matters, state which pending event creates uncertainty and check the latest confirmed status.",
@@ -195,6 +195,12 @@
       "source_sha256": "536b8b79fc83da8498e787cdf8d8ed4a9f798a2b9e0105b754be105d333bddd8",
       "raw_target_sha256": "90ed33410c65359afa29e8d2d63ba842e16a708c12adec173c19c37320937e35",
       "translation": "Vain jos kolme tuotetta asetetaan pituussuunnassa peräkkäin. Mittaa suunnitellun kokonaisuuden ulkomitat, varaa tilaa suojamateriaalille ja varmista mitat pakkaamisen jälkeen."
+    },
+    {
+      "source": "Adding a corner protector or moving an item into another carton can change a dimension even when the overall weight scarcely moves. Keep one dated measurement record for each arrangement. A photograph showing a tape around the box's perimeter cannot establish the three separate side lengths on its own. If one figure looks implausible, ask to see the measurement from start to end before submitting numbers to the calculator.",
+      "source_sha256": "024b7205987dcc312bafa9989bc1696bcae0fc53fe2a72be75897b569b1b9b5d",
+      "raw_target_sha256": "596eb02cf27d09c57c0e570cdbaccbee41f2288c0355f7bfd4e63c6ad07930a6",
+      "translation": "Kulmasuojan lisääminen tai tuotteen siirtäminen toiseen laatikkoon voi muuttaa kokoa, vaikka kokonaispaino tuskin liikkuisi. Pidä yksi päivätty mittausrekisteri jokaista järjestelyä varten. Valokuva, jossa on mittanauha laatikon ympärillä, ei pysty yksin määrittämään kolmea erillistä sivupituutta. Jos jokin luku näyttää epätodennäköiseltä, pyydä näkemään mittaus alusta loppuun ennen kuin lähetät numerot laskuriin."
     }
   ]
 }
