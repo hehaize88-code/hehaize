@@ -1,0 +1,44 @@
+# Samodzielnie kupiona paczka nie pojawia się w Superbuy: jak poprosić magazyn o sprawdzenie przyjęcia
+Masz prośbę o przesyłkę, Twój sprzedawca mówi, że paczka dotarła, a Mój Magazyn nie pokazuje oczekiwanego przedmiotu. Najbardziej przydatnym pierwszym krokiem jest zbudowanie krótkiego dochodzenia z jednym jasno zdefiniowanym brakującym ogniwem. Określ, co sprzedawca wysłał, gdzie przewoźnik go zabrał i co pokazuje Twoje konto Superbuy. Każda ze stron może następnie sprawdzić, jaką część podróży faktycznie obsługiwała.
+
+## Stwierdzenie problemu bez określenia jego przyczyny
+Napisz zdanie zawierające obserwację i pytanie. „Przewoźnik krajowy rejestruje dostawę listu przewozowego X do wybranego magazynu we wtorek; nie mogę dopasować go do wpisu w magazynie. Czy możesz pomóc go zidentyfikować?” jest konkretne. Nie wymaga od Ciebie przedwczesnego decydowania, czy wina leży po stronie sprzedawcy, przewoźnika, magazynu czy wpisu na koncie.
+
+Unikaj traktowania brakujących wpisów jako dowodu na to, że paczka została zgubiona. Dostępne dowody mogą zamiast tego opisywać nieużywaną etykietę, dostawę do innego magazynu, nierozpoznanego nadawcę, niekompletny identyfikator konta lub produkt zarejestrowany pod nieoczekiwaną nazwą. Wymieniaj tylko możliwości poparte czymś we własnych zapisach. Jeśli sprzedawca nigdy nie dostarczył odbiorczego listu przewozowego, pierwszym nierozwiązanym krokiem jest wysyłka, a nie przyjęcie do magazynu.
+
+## Budowanie osi czasu z oryginalnych rekordów
+Utwórz jeden wiersz na zdarzenie z czasem, źródłem i dokładnym odniesieniem. Przydatne zdarzenia obejmują zakup na rynku, żądanie przesyłki, odpowiedź na recenzję, powiadomienie o wysyłce sprzedawcy, odbiór przewoźnika, ostatnie skanowanie przewoźnika i dowolną wiadomość magazynową. Zachowaj strefę czasową pokazaną przez każde źródło, gdy ma to znaczenie. Dwa zdarzenia oznaczone jako „wtorek” mogą wystąpić w różnych lokalnych terminach w kraju kupującego i w magazynie.
+
+Uporządkuj zdarzenia według tego, co się wydarzyło, a nie według kolejności, w jakiej powiadomienia pojawiły się w telefonie. Opóźniona wiadomość e-mail może dotrzeć po nowszej aktualizacji operatora. Strona zamówienia może wyświetlać edytowany numer śledzenia pod starszą datą wysyłki. Jeśli czas jest nieznany, pozostaw go nieznany. Oś czasu zbudowana z wyraźnych wydarzeń jest cenniejsza niż polerowana historia, która wymyśla brakujące przejście.
+
+## Sprawdź adres odbiorcy i identyfikator konta
+Otwórz własne instrukcje wysyłki Superbuy i porównaj je z adresem na potwierdzonym zamówieniu sprzedawcy. Dopasuj magazyn, region, ulicę i informacje o koncie używane do identyfikacji przesyłek przychodzących. Przewodnik Superbuy wyjaśnia cel numeru identyfikacyjnego pojawiającego się przy adresie odbiorcy. Sprzedawca mógł skopiować ulicę poprawnie, jednocześnie skracając ostatnie pole na wydrukowanej etykiecie.
+
+Jeśli znajdziesz różnicę, przechwyć oba rekordy prywatnie i opisz je dokładnie. „W paragonie sprzedawcy podana jest prawidłowa ulica, ale brakuje ostatecznego identyfikatora” daje zespołowi odbierającemu konkretną wskazówkę do wyszukiwania. Nie należy zastępować oryginalnego dowodu poprawionym adresem. Podobnie nie należy polegać na aktualizacji profilu, aby poprawić pakiet już w drodze. Zapytaj sprzedawcę lub przewoźnika, jaki adres widnieje na rzeczywistej przesyłce, jeśli potwierdzenie zamówienia jest niejednoznaczne.
+
+## Przetestuj numer śledzenia przed wysłaniem go
+Sprawdź, czy numer należy do kuriera, który fizycznie obsługiwał paczkę. Odróżnij go od zamówienia sprzedawcy, aplikacji spedycyjnej, numeru konsolidacji rynku lub międzynarodowego numeru śledzenia z poprzedniej przesyłki. Otwórz rekord wysyłki sprzedawcy i porównaj przewoźnika i pełny numer z tym, co wprowadziłeś w Superbuy. Wiodące zera, litery i transponowane cyfry mogą mieć wpływ na dopasowanie.
+
+Sprzedawca może wydać etykietę, a następnie ponownie wydrukować etykietę zastępczą. Zapytaj, który numer ma rzeczywiste zdarzenie zbierania. Jeśli zamiennik jest tym, który został przeniesiony, nazwij oryginał jako nieużywane lub zastąpione odniesienie w zapytaniu. To mówi wsparcie, dlaczego dwa numery pojawiają się w dokumentacji. Jeśli żaden z numerów nie ma zdarzenia odbioru, poproś sprzedawcę o dowód przekazania, zanim poprosisz magazyn o wyszukanie dostarczonego pudełka.
+
+## Określ pudełko i jego oczekiwaną zawartość
+W przypadku pojedynczej paczki podaj przydatne identyfikatory fizyczne: rodzaj przedmiotu, wybraną opcję, ilość, nazwę sprzedawcy i wszelkie podane informacje o opakowaniu. W przypadku podzielonej dostawy dostarcz mapę list przewozowy-do-zawartości. Unikaj zakładania, że wszystko na jednym zamówieniu sprzedawcy zostało zapakowane razem. Sprzedawca często może potwierdzić, które elementy towarzyszyły konkretnej etykiecie.
+
+Wyobraź sobie dwa kartony wymienione jako rama regału i opakowanie na półkę. Ramka pojawia się w Moim Magazynie, ale pakiet półek nie. Zapytanie o wsparcie powinno określać niezrównany pakiet półek, własny list przewozowy i jego oczekiwane elementy. Wysyłanie tylko oryginalnego tytułu zamówienia „biblioteka” mogło prowadzić do odpowiedzi identyfikującej już dopasowaną ramkę. Dołączenie znanego rekordu magazynowego dla pojedynczej pozycji jest przydatne, ponieważ pokazuje dokładnie, która część zakupu została rozliczona.
+
+## Porównaj dowody pobrania przed wyborem odbiorcy
+Jeśli ostatnim dowodem jest status na rynku mówiący, że sprzedawca przygotował zamówienie, sprzedawca może wyjaśnić faktyczną wysyłkę. Jeśli przewoźnik odnotuje próbę dostarczenia lub problem z adresem, zapytaj o nierozwiązane zdarzenie dostawy. Jeśli przewoźnik potwierdzi dostawę do oczekiwanego miejsca przeznaczenia, a szczegóły logistyczne zostały zarejestrowane, skorzystaj z trasy wsparcia Superbuy związanej z żądaniem przesyłki. Każde zapytanie powinno prosić o działanie, które odbiorca może wykonać.
+
+W przypadku zapytania dotyczącego magazynu należy podać numer referencyjny żądania, wybrany magazyn, krajowego przewoźnika i list przewozowy, zdarzenie dostawy, oczekiwaną zawartość i wszelkie istniejące rekordy magazynowe, które mogą być powiązane. Wyjaśnij, który widok konta został sprawdzony. Udostępnij pełne dane identyfikacyjne za pośrednictwem oficjalnego kanału prywatnego. Przycinanie niepowiązanych zamówień i informacji o płatnościach z pomocniczych zrzutów ekranu, przy jednoczesnym zachowaniu czytelności konkretnego odniesienia, daty i zdarzenia.
+
+## Zadaj jedno wyszukiwalne pytanie na raz
+Pierwsza wiadomość może brzmieć: „Proszę sprawdzić, czy karton pod tym krajowym listem przewozowym został dopasowany do mojej prośby o wysyłkę. Przewoźnik pokazuje dostawę do wybranego magazynu. Dołączam potwierdzenie wysyłki sprzedawcy i skan dostawy. Oczekiwaną zawartością jest jedno opakowanie półkowe; rama od tego samego sprzedawcy jest już w magazynie pod osobnym wpisem.” Dodaj prawdziwe referencje w odpowiednich polach prywatnych.
+
+Jeśli odpowiedź potwierdza odbiór, ale stwierdza, że treść była inna, dochodzenie zostało przeniesione do przodu. Zapytaj, który przedmiot został zarejestrowany z tego listu przewozowego i porównaj go z oświadczeniem o pakowaniu sprzedawcy. Jeśli magazyn potrzebuje zdjęcia etykiety fizycznej, poproś o nią sprzedawcę, zamiast wielokrotnie przesyłać zrzut ekranu samego produktu. Zachowaj pytanie i odpowiedź razem, aby następny krok opierał się na tym, co już zostało ustalone.
+
+## Zamknij sprawę dopiero po zidentyfikowaniu brakującego ogniwa
+Kiedy pojawi się wpis, porównaj jego fizyczny opis i ilość z tym, czego się spodziewano. Wpis z tym samym przetłumaczonym tytułem produktu może należeć do wcześniejszego zamówienia. Potwierdź połączenie za pomocą numeru referencyjnego spedycji, dowodu przewoźnika lub wyraźnej identyfikacji magazynu. Zapisz, co rozwiązało rozbieżność i zachowaj oddzielnie wszelkie pozostałe pytania dotyczące jakości lub ilości.
+
+Sprawdzenie dostawy może zakończyć się odnalezieniem pozycji, poprawieniem danych nadawcy, zgłoszeniem do przewoźnika lub innym udokumentowanym wynikiem. Zapisz rzeczywisty wynik. Jeśli później zlecisz wysyłkę zagraniczną, utwórz osobny wpis dla paczki wychodzącej. Zachowasz w ten sposób pełną historię identyfikacji paczki przychodzącej na wypadek pytań sprzedawcy lub przewoźnika.
+
+Jeśli w końcu odkryjesz, że paczka była przechowywana pod nieoczekiwanym opisem, zanotuj frazę użytą przez magazyn i dowody, które ustaliły dopasowanie. Może być przydatne, aby nagrać odniesienie do zdjęcia i oryginalny opis sprzedawcy obok tego wpisu. Tytuł magazynu może pozostać niezmieniony nawet po potwierdzeniu jego tożsamości przez wsparcie. Jeśli później zostanie ona podzielona na pakiety, zachowaj oryginalne odniesienie obok obu rekordów wychodzących, aby można było zidentyfikować właściwą część w momencie dostawy.

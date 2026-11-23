@@ -1,0 +1,44 @@
+# Een maat is niet beschikbaar bij CNShopper: zo beoordeel je een alternatief
+Een geselecteerde maat kan verdwijnen tussen het opslaan van een spreadsheet-item en het vragen van een agent om het te kopen. Het nuttige antwoord hangt af van wat er ontbreekt: de verkoper kan niet op voorraad zijn, de geïmporteerde selector kan een geldige optie weglaten of twee maattabelsystemen kunnen verschillend worden weergegeven. Stel vast welke situatie van toepassing is voordat u een andere maat accepteert of de koper vertelt om te annuleren.
+
+## Creëer de exacte combinatie
+Keer terug naar de huidige verkopersvermelding. Selecteer eerst de gewenste kleur, model of snit en bekijk vervolgens de maten voor die combinatie. Een medium beschikbaar in een blauwe regular fit bepaalt niet dat een medium in een zwarte short fit beschikbaar is. Sla de volledige originele optietekst en de huidige weergave op. Vergelijk het met uw eerdere notitie en de bestelling die u hebt ingediend.
+
+Als de maat wordt weergegeven op de verkoperspagina, maar ontbreekt in het geïmporteerde aankoopscherm, rapporteer dan de discrepantie met de verkoperslink en twee duidelijke schermafbeeldingen. Vraag of de exacte optie kan worden bevestigd. Als het op beide schermen niet wordt weergegeven, vraagt u de verkoper via het juiste kanaal naar de beschikbaarheid. Een schatting van de verkoper voor een toekomstige aanvulling van de voorraad verschilt van een bevestigde eenheid die nu beschikbaar is voor aankoop. Schrijf op wat voor antwoord je hebt gekregen.
+
+## Identificeer de pasvormvereiste achter het label
+Een label zoals M of EU 42 is een afkorting; het beschrijft niet alle relevante afmetingen. Bepaal wat de oorspronkelijke grootte aantrekkelijk maakte. Voor broeken heb je misschien een bepaalde taille, taillehoogte, dijbreedte en binnenbeenlengte nodig. Voor een overhemd kunnen borstwijdte, schouderpositie, mouwlengte en totale lengte onafhankelijk van elkaar van belang zijn. Schrijf de beperkende maat op in plaats van ervan uit te gaan dat een maat groter of kleiner werkt.
+
+Kies een vergelijkingskledingstuk met een vergelijkbare constructie dat voor hetzelfde gebruik past. Een los sweatshirt voor laagjes en een getailleerd jasje dat over een shirt wordt gedragen, dienen niet als uitwisselbare basislijnen. Leg het vergelijkingskledingstuk zoals het diagram van de verkoper aangeeft en noteer eenheden en eindpunten. Een tailleomtrek op een maattabel kan niet direct worden vergeleken met een ontspannen platte breedte zonder te controleren hoe beide zijn gemeten.
+
+## Bevestig wat het voorgestelde alternatief eigenlijk is
+Vraag naar de exacte optie van de verkoper, niet alleen de vertaalde woorden "vergelijkbare maat".Een voorgestelde vervanging kan de volgende maat van hetzelfde kledingstuk zijn, hetzelfde label in een andere snit, een andere kleur die op voorraad blijft of een volledig andere aanbieding. Elk vereist een andere vergelijking. Als de verkoper een vervanging van een andere aanbieding aanbiedt, verkrijg dan zijn eigen kaart, foto's, prijs en voorwaarden.
+
+Stel dat de jas in maat M in de korte lengte uitverkocht is. Je kunt kiezen uit een M met normale lengte of een korte L. De gewone M kan ongeveer dezelfde borstbreedte hebben, maar een langer lijf. De korte L kan de gewenste lengte houden en tegelijk breder zijn over borst en schouders. Geen van beide is altijd de beste vervanger. Bepaal welke maten gelijk moeten blijven en vergelijk beide opties daarmee. Zonder de benodigde afmetingen kun je geen betrouwbare maat adviseren.
+
+## Maattabellen lezen als metingen, niet als conversietabellen
+Kijk naar de meetmethode, eenheden, kledingstukpositie en of de cijfers het item of de drager beschrijven. Een lichaamsgrafiek die de aanbevolen meting rond de borst van de persoon toont, heeft een andere betekenis dan de werkelijke omtrek van het afgewerkte kledingstuk. Een elastische tailleband die plat en ontspannen wordt gemeten, kan aanzienlijk afwijken van de uitgerekte breedte. Vraag om verduidelijking wanneer een term zoals “taille” zonder diagram verschijnt.
+
+Stel dat je eigen jas plat op tafel van oksel tot oksel 54 cm meet. In de maattabel van de verkoper staat bij de borstmaat 108. De maten kunnen overeenkomen als 108 de volledige omtrek van de jas op dezelfde hoogte is. Gaat het om de aanbevolen borstomvang van de drager, dan zijn de getallen niet rechtstreeks vergelijkbaar. De berekening laat zien wat je moet navragen. Ook de snit, de mouwvorm en de stof bepalen hoe de jas valt.
+
+## Bepaal of een meting uw antwoord kan veranderen
+Als de verkoper voorafgaand aan de aankoop een meting kan geven, identificeer dan een of twee details die de onzekerheid zouden wegnemen. “Wat zijn alle afmetingen?” kan een andere generieke grafiek genereren. “Voor de short large in zwart, wat is de lengte middenachter van de kraagnaad tot de zoom?” geeft een exacte optie en maat aan. Vraag of het huidige aandeel de versie is die in de grafiek wordt weergegeven.
+
+Als de enige beschikbare meting na de opname in het magazijn komt, beslis dan of het aankooprisico en de huidige retourvoorwaarden aanvaardbaar zijn voordat u bestelt. CNShopper beschrijft magazijnfoto's als een visuele beoordeling en merkt op dat aanvullende inspectie afhankelijk kan zijn van beschikbaarheid. Een verwachting dat latere foto's uw vraag zullen beantwoorden is niet hetzelfde als een bevestigde toezegging van de verkoper om een geschikte maat te leveren of een retourzending te accepteren.
+
+## Geef de koper een expliciet besluit
+Zodra je een keuze hebt gemaakt, stuur je een instructie met de naam van de oorspronkelijke bestelling en de precieze actie. Als u de vervanger accepteert, geeft u de optie voor de vervangende verkoper, de hoeveelheid, de bevestigde prijs en eventuele vereiste voorwaarden op. Als u deze weigert, geef dan aan of u de bestelling wilt vasthouden voor verduidelijking of wilt annuleren volgens de daadwerkelijk beschikbare opties. Vermijd het mengen van “probeer de grote” met “koop alleen medium” in hetzelfde bericht.
+
+Bijvoorbeeld: "De gevraagde zwarte short M is niet beschikbaar. Bestel zwarte short L alleen als de verkoper de ruglengte op de overeengekomen meting bevestigt. Als het dat cijfer overschrijdt, neem dan contact met me op voordat u koopt.” Als u geen voorwaardelijke aankoop wilt, gebruik dan een eenvoudiger beslissing en wacht eerst op het antwoord. Bewaar de bevestiging van de koper naast uw bericht, zodat duidelijk is welke instructie is geaccepteerd.
+
+## Vergelijk het magazijnitem met de herziene bestelling
+Controleer bij binnenkomst in het magazijn de goedgekeurde vervangende uitvoering en niet alleen het oorspronkelijke artikel in je spreadsheet. Heb je een korte L geaccepteerd, dan kan het L-label kloppen ook al stond er eerst M op je lijst. Het label alleen bevestigt niet altijd de snit of afmeting die de doorslag gaf. Vraag, als de dienst het toestaat, om een foto waarop het openstaande punt te zien is.
+
+Houd de foto gekoppeld aan de specifieke order. Twee zwarte jassen gefotografeerd op hetzelfde oppervlak kunnen gemakkelijk worden verward. Zoek naar het optielabel, een overzicht en de relevante meting. Als het ontvangen item afwijkt van de herziene bevestiging, beschrijf dan dat exacte verschil om ondersteuning te bieden terwijl het apparaat beschikbaar is voor inspectie. Het oorspronkelijke verzoek en de geaccepteerde vervanging bieden de context voor de discrepantie.
+
+## Bewaar het oorspronkelijke resultaat voor toekomstige aankopen
+Houd de uitkomst kort bij, bijvoorbeeld “korte M niet beschikbaar, korte L geaccepteerd na controle van de ruglengte, werkelijke magazijnmaat genoteerd”. Als je een vervanger afwees, vermeld waarom, bijvoorbeeld een te grote lengte of een ongeschikte kruishoogte. Zo helpen je notities bij een volgende aankoop bij dezelfde verkoper zonder aan te nemen dat een maatlabel overal hetzelfde betekent.
+
+De beslissing is compleet wanneer u de daadwerkelijk beschikbare optie kunt identificeren, kunt uitleggen waarom de afmetingen al dan niet aan uw behoefte voldoen en kunt wijzen op de instructie die de koper heeft ontvangen. Een andere maat kan redelijk zijn, maar de geschiktheid ervan moet voortvloeien uit het kledingstuk en het gebruik dat u in gedachten heeft. Het mag nooit alleen afhangen van een bekende letter, een vergelijkbare thumbnail of een haastige suggestie om de volgende optie te kiezen.
+
+Houd zowel de optie die je hebt afgewezen als de optie die je hebt goedgekeurd bij. Als een verkoper zowel een andere kleur in de gevraagde maat als de gevraagde kleur in een andere maat aanbiedt, kan een antwoord dat verwijst naar de “tweede optie” onduidelijk worden wanneer berichten worden vertaald of doorgestuurd. Herhaal de geaccepteerde kleur, maat en model volledig en vraag bevestiging op de getroffen aankoopregel.

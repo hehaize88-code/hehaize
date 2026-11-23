@@ -1,0 +1,46 @@
+# Artikelen in het Superbuy-magazijn ordenen voordat je een pakket samenstelt
+Een magazijnlijst begint als een reeks aankomsten, waarna het geleidelijk een reeks beslissingen wordt. Het ene jasje is klaar, het andere moet nog opgemeten worden, een geschenk moet zijn doos behouden en een vervanging is aangekomen voor een oudere bestelling. Het selecteren van elke zichtbare vermelding kan deze beslissingen samenvoegen. Organiseer de vermeldingen rond wat u daadwerkelijk kunt verzenden.
+
+## Houd de magazijnreferentie als het anker
+Begin een rij voor elke relevante magazijnrecord voor een afzonderlijk artikel. Kopieer de referentie zoals deze wordt weergegeven, de bijbehorende aankoop- of doorstuurrecord en een beschrijving die u later kunt herkennen. Een vertaalde productnaam kan dubbelzinnig zijn. Een referentienummer in combinatie met een nauwkeurige beschrijving, zoals 'navy medium, plain cuffs', helpt u een eenheid te onderscheiden van een vergelijkbaar item dat enkele dagen eerder is gekocht.
+
+Laat de verkoper niet de enige sleutel in uw record bestellen. Een verkopersorder kan meerdere magazijnrecords voor afzonderlijke artikelen genereren. Een verzendpakket kan goederen van meer dan één aankoop bevatten. Een vervanging kan zoveel op het origineel lijken dat beide titels identiek lijken. Houd een apart veld aan voor de gebeurtenis die de items koppelt, zoals 'vervanging voor de oorspronkelijke vermelding' of 'tweede eenheid van dezelfde bestelling', in plaats van de naam van beide goederen te wijzigen alsof ze één waren.
+
+## Een beslissing, een onopgeloste vraag en een eigenaar vastleggen
+Geef elke vermelding een praktische status. Nuttige voorbeelden zijn klaar om te verzenden, in afwachting van een meting, in afwachting van informatie van de verkoper, retour onder bespreking en opzettelijk vastgehouden voor een ander object. Dit zijn uw persoonlijke werknotities; gebruik de werkelijke platformstatus apart. Het punt is om vast te leggen wat u persoonlijk nodig hebt voordat u dat item in een pakket laat verzenden vanuit het magazijn naar de klant.
+
+Noem voor elke open vraag wie deze kan beantwoorden. De verkoper kan weten of een accessoire tot een bepaalde bundel behoort. Het magazijnpersoneel kan mogelijk aantonen of dat accessoire fysiek aanwezig is. U kunt zelf bepalen of een kleine cosmetische vlek acceptabel is. Als een rij alleen maar “check” zegt, weet niemand wiens actie deze zal sluiten. Vervang dat woord door “wacht op een foto van het binnenlabel” of “vergelijk breedte met mijn eigen jas”.
+
+## Werken met een gemengde bestelling
+Stel je vier inzendingen voor. Het eerste is een marineblauw shirt waarvan je het maatlabel en de maten hebt geaccepteerd. Het tweede is weer een navy shirt, dit keer in de grotere maat besteld voor iemand anders. Het etiket is onleesbaar. De derde is een mok met een fragiel handvat. De vierde is een boek dat je in zijn originele slipcase wilt bewaren. Vier in voorraad zijnde items maken niet automatisch vier verzendklare items.
+
+Markeer het eerste shirt klaar. Houd de tweede vast voor identificatie. Voor de mok, noteer de huidige staat en de verpakkingsbescherming die u nodig hebt voordat het reist. Markeer het boek klaar onder voorbehoud van het behoud van de slipcase. Hierdoor blijft u met één item om te inspecteren en twee item-specifieke verpakkingsinstructies. Die resultaten zijn veel informatiever dan een lijst waarin alles staat “aangekomen”.
+
+## Zoek beperkingen voordat u goederen groepeert
+Controleer de live verzendopties die geschikt zijn voor de inhoud en bestemming voordat u ervan uitgaat dat alles samen moet reizen. Een item met een batterij, een breekbare vorm of ongebruikelijke afmetingen kan de bruikbare routelijst wijzigen. Identificeer deze eigenschappen aan de hand van de werkelijke iteminformatie. Een vage cataloguscategorie zoals accessoires geeft zelden voldoende details om te bepalen of het product in aanmerking komt voor verzending.
+
+Gebruik mogelijke groepen voor de planning. Een groep kan gewone kleding bevatten die nu klaar is; een andere kan het breekbare item bevatten waarvan de verpakking wordt besproken. Noteer welke items en verpakkingsveronderstellingen in elke schatting zijn opgenomen. Als een route verdwijnt nadat u een bepaalde vermelding hebt toegevoegd, onderzoekt u die wijziging voordat u vrachttotalen vergelijkt. Het toevoegen van een nieuw item garandeert niet dat de oorspronkelijke route en servicevoorwaarden ongewijzigd blijven.
+
+## Tijd bijhouden op itemniveau
+Controleer de huidige opslaginformatie voor elke vermelding in uw account. Aankomst, inname en de deadline die voor dat specifieke item wordt weergegeven, zijn nuttiger voor u dan de datum waarop u het product voor het eerst online hebt gevonden. Een ouder object kan een beslissingspunt naderen, terwijl een nieuw op voorraad gebracht object van dezelfde verkoper meer tijd beschikbaar heeft. Een enkele datum die aan het geplande pakket is gekoppeld, verbergt dat verschil.
+
+Als een verkopersprobleem nog steeds open is, registreer dan de eigen actiedeadline. Een opslagvergoeding en een verkopersretourmogelijkheid beantwoorden verschillende vragen. Het wachten op nog een bestelling om de vracht te consolideren kan redelijk zijn voor een bevestigd item en onverstandig voor een item met een onopgelost defect. Lees de voorwaarden die van toepassing zijn op uw aankoop voordat u een niet-gerelateerde retourbeslissing laat bepalen door een geplande verzenddatum.
+
+## Vermijd fouten bij identieke goederen
+Gebruik een consistente volgorde voor vergelijkbare eenheden. Vergelijk de eerste notitie met instructies voor de aankoop, de bijbehorende magazijnreferentie en de bijbehorende foto's. Maak die match af voordat je het volgende bijna identieke item opent. Als een foto een nuttige eigenschap mist, schrijf dan precies op welk bewijs er ontbreekt. Twee kledingstukken met dezelfde afbeelding op de voorkant hebben mogelijk verschillende etiketweergaven nodig om te bepalen welk kledingstuk van welke ontvanger is.
+
+Een praktisch voorbeeld zijn twee donkere sweatshirts besteld in medium en large. De ene magazijnfoto kan een gemarkeerd groot etiket tonen, terwijl de andere alleen een gevouwen voorkant toont. Etiketteer het gevouwen medium niet uitsluitend door het te verwijderen als de andere bestelling nog onderweg is of verkeerd verpakt kan zijn. Vraag naar de identificerende weergave die aan de dubbelzinnige vermelding is gekoppeld. Eenmaal bevestigd, noteer welke eenheid welk label heeft en de datum van die controle.
+
+## Vertaal artikelnotities naar pakketinstructies
+Voorafgaand aan het indienen, alleen de instructies die van toepassing zijn op het gekozen pakket overdragen. Bij het specifieke boek hoort een notitie om een collector's sleeve te behouden. Versterking van een buitenkarton betreft het gehele pakket. Beschrijf het object en de actie samen, zodat de ene instructie niet per ongeluk de andere overschrijft, vooral als je een deel van de verpakking verwijdert terwijl je andere delen intact laat.
+
+Voor het voorbeeld van de mok en het boek is "alle verpakking verwijderen" in strijd met het behouden van de hoes van het boek en kan de bescherming van de mok worden verwijderd. Een meer nuttige instructie identificeert de buitenste leveringsmaterialen die kunnen worden verwijderd, de detailhandelstukken die moeten blijven en het kwetsbare oppervlak dat bescherming vereist. Vraag of de gevraagde behandeling beschikbaar is. Bewaar de geaccepteerde instructie naast het eventuele verpakte pakketrecord.
+
+## Verzoen de ingediende selectie
+Wanneer u goederen voor levering indient vanuit Mijn magazijn, vergelijkt u de geselecteerde vermeldingen een laatste keer met uw klaarlijst. Controleer referentie, optie, aantal en verpakkingsinstructies. Sla de uitgaande referentie op wanneer deze is uitgegeven en voeg deze toe aan de geselecteerde vermeldingen. Laat de niet-geselecteerde items hun eigen status weergeven; het verplaatsen van drie items naar een pakket lost het uitstaande meetverzoek van een vierde item niet op.
+
+Gebruik na verzending het pakket dat vanuit het magazijn naar het klantrecord wordt verzonden voor internationale tracking. Houd de originele magazijn links tot de levering is voltooid. Als een pakket met drie items aankomt terwijl u er vier verwachtte, moet uw record u onmiddellijk vertellen of een vierde item daadwerkelijk is geselecteerd of opzettelijk is vastgehouden. Dat ene onderscheid kan een langdurige zoektocht door verkopersgeschiedenissen, carrierscans en bijna identieke foto's besparen.
+
+Een goede magazijnlijst is kort genoeg om bij te houden en specifiek genoeg om de volgende beslissing te beantwoorden. Als een rij een referentie, fysieke identiteit, gereedheid, open vraag en eventueel pakket bevat, kan het een item volgen van inname tot verzending zonder de details te verliezen die u ertoe hebben gebracht het te kiezen.
+
+Voor geschenken die naar verschillende ontvangers gaan, voegt u de bestemmingsgroep toe aan elke vermelding voordat u gecombineerde pakketten vergelijkt. Een enkele lage vrachtofferte naar uw adres zegt niets over de kosten van de herdistributie van de inhoud achteraf. Groeperen op beoogde ontvanger kan een verzendkeuze blootleggen die een eenvoudig totaal van magazijngewichten verbergt.

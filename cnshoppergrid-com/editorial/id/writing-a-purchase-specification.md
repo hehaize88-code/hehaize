@@ -1,0 +1,44 @@
+# Cara menulis petunjuk pembelian untuk pesanan manual di CNShopper
+Spesifikasi pembelian manual yang berguna menjawab pertanyaan praktis: dapatkah seseorang yang tidak pernah melihat spreadsheet Anda memesan unit yang benar dari penjual yang benar hanya menggunakan pesan Anda? Jika jawabannya tergantung pada mengenali gambar yang akrab, perbaiki spesifikasinya sebelum mengirimkannya. Instruksi singkat dan tidak ambigu lebih efektif daripada beberapa paragraf preferensi yang bertentangan dengan pilihan yang dipilih.
+
+## Namakan item dengan cara yang bertahan dari terjemahan
+Mulai dengan URL produk penjual dan kalimat opsi asli yang tepat. Tambahkan deskripsi bahasa sederhana dalam bahasa Anda sendiri. Bidang-bidang ini melayani fungsi yang berbeda. Ungkapan asli membantu pembeli memilih penjual yang tepat. Penjelasanmu memberitahu pembeli mengapa pilihan itu penting. Salah satunya tidak boleh secara diam-diam menggantikan yang lain.
+
+Bayangkan sebuah daftar untuk sebuah kotak makan siang di mana opsi-opsinya diterjemahkan sebagai “standar,” “diperbaiki,” dan “portabel.” Kata “portabel” terdengar seolah-olah dapat menggambarkan setiap kotak makan siang. Opsi asli penjual mungkin mengidentifikasi versi dua tingkat tertentu dengan pegangan. Rekam teks asli, tangkapan layar seleksi dan deskripsi seperti “dua kompartemen yang dapat ditumpuk dengan pegangan.” Jika halaman penjual dan interpretasi Anda tidak sepakat, tanyakan pertanyaan tersebut sebelum memerintahkan pembelian.
+
+## Tentukan unit sebelum kuantitas
+Menetapkan apa yang dihitung sebagai satu unit tersusun. Sebuah daftar perlengkapan tulis dapat menjual satu pensil, satu paket dua belas atau satu kotak display paket. Foto bisa menggambarkan ketiganya sekaligus. Kuantitas dua berarti hal-hal yang sangat berbeda tergantung pada selektor yang aktif. Tulis unit yang dipilih di samping angka yang diinginkan dan total fisik yang diharapkan.
+
+Misalnya, "dua paket dari dua belas kartu indeks kosong, total dua puluh empat kartu" dapat diperiksa pada saat pembelian dan saat tiba. “Dua set kartu indeks” meninggalkan ketidakpastian tentang kemasan dan penghitungan. Jika minimum penjual memerlukan kuantitas yang lebih besar dari yang Anda inginkan, tanyakan apakah kombinasi yang Anda butuhkan tersedia pada harga yang dinyatakan. Jangan menambah jumlah formulir sampai kau mengerti apa minimum yang berlaku.
+
+## Memisahkan atribut esensial dari preferensi
+Berikan pembeli deskripsi yang jelas tentang apa yang harus cocok. Atribut esensial mungkin termasuk dimensi, kode warna, jenis plug, bahan, teks personalisasi atau aksesoris yang disertakan. Sebuah preferensi adalah sesuatu yang akan Anda tukarkan untuk manfaat lain. Letakkan mereka dalam kalimat terpisah dan hindari memberi izin untuk berimprovisasi kecuali Anda berencana untuk menerima hasilnya.
+
+Pertimbangkan meja tray yang harus sesuai dengan rak 32-centimeter. Lebar eksternal sangat penting; warna pemisah yang dapat dilepas mungkin fleksibel. Instruksi yang berbunyi “32 cm tray prefer, gray please” mengaburkan prioritas. Tulis "lebar luar harus tidak lebih dari 32 cm; tanyakan sebelum membeli jika penjual hanya memberikan lebar dalam. Pemisah abu-abu lebih disukai; warna pemisah lain dapat diterima.” Hal ini memungkinkan pembeli untuk menolak tray yang terlihat serupa namun tidak cocok secara fisik.
+
+## Lampirkan tampilan kanan dari daftar
+Simpan tangkapan layar yang mencakup identitas produk, pilihan yang dipilih dan harga. Jika Anda perlu mengirim dua tangkapan layar, jelaskan bahwa mereka berasal dari daftar yang sama. Foto yang sangat dipotong dari sampel biru dapat membedakan warna pada layar Anda sendiri sementara tidak mengungkapkan apa-apa tentang penjual, produk atau versi yang dijelaskan.
+
+Untuk barang yang disesuaikan, menangkap instruksi tertulis terpisah dari mock-up desain. Sebuah mock-up dapat menunjukkan penempatan sementara gagal untuk menetapkan ejaan, kapitalisasi atau ruang. Ketik teks persis seperti yang diperlukan dan tentukan batas apapun yang penting, seperti satu baris di bagian luar. Tanya apakah penjual dapat mengkonfirmasi desain sebelum produksi jika itu mempengaruhi keputusan Anda. Jangan asumsikan kesempatan kembali biasa berlaku untuk potongan custom; baca kondisi penjual dan agen yang berlaku.
+
+## Katakan apa yang harus dilakukan jika penjual tidak dapat memenuhi permintaan
+Sebuah spesifikasi harus berisi kondisi keluar. Jika opsi yang tepat hilang, apakah Anda ingin pesan, proposal pembatalan atau penawaran tarif lain? Berikan izin hanya untuk penggantian yang Anda benar-benar akan menerima. “Tolong hubungi saya” berguna ketika alternatif yang salah akan meninggalkan Anda dengan item yang tidak dapat digunakan. Untuk atribut prioritas rendah, definisikan pengganti sempit secara eksplisit.
+
+Asumsikan Anda membutuhkan dua buku catatan dengan aturan yang sama untuk sebuah kursus. Baik sampul biru atau abu-abu dapat diterima, tetapi satu buku kosong dan satu buku bergaris tidak. Tulis warna sampul yang dapat diterima dan aturan penting untuk keduanya. Jika penjual menawarkan satu garis biru dan satu kosong abu-abu, pembeli dapat mengakui bahwa pasangan gagal persyaratan Anda meskipun kedua warna sampul diizinkan.
+
+## Buat kondisi anggaran yang dapat diukur
+Catat harga yang ditampilkan untuk opsi yang dipilih dan mata uang. Jika instruksi Anda berisi maksimum, katakan apa yang termasuk. Batas atas untuk barang saja berbeda dari batas atas yang mencakup pengiriman dari penjual ke gudang. Jaga kargo internasional terpisah kecuali Anda memiliki penawaran tarif yang sebenarnya untuk paket yang dikemas. Panduan pemesanan CNShopper memperlakukan konfirmasi pembelian dan pengiriman internasional sebagai tahapan yang berbeda.
+
+Sebagai contoh, seorang pembeli mungkin menyetujui satu unit pada 80 dalam mata uang penjual dan pengiriman domestik hingga 10. Jika pedagang mengubah harga satuan menjadi 85 dan pengiriman menjadi 5, totalnya masih 90, tetapi perlakuannya tergantung pada apa yang diizinkan pembeli. A plafon gabungan memungkinkan keputusan yang berbeda dari plafon terpisah. Ucapkan kondisi Anda sendiri dalam bentuk yang penting bagi Anda dan verifikasi apa CNShopper dapat bertindak sebelum pesanan dilanjutkan. Angka-angka contoh ini tidak mewakili biaya platform.
+
+## Gunakan tes baca-balik pada catatan yang disusun
+Baca permintaan seolah-olah foto asli tidak tersedia. Bisakah kau mengidentifikasi sumber penjualnya? Opsi mana yang akan Anda klik? Berapa banyak unit yang akan kau beli? Apakah daftar menunjukkan persyaratan yang paling penting, atau apakah Anda membutuhkan pedagang untuk mengkonfirmasinya? Perubahan mana yang harus ditanyakan kepada pembeli? Jika salah satu pertanyaan ini memiliki dua jawaban yang masuk akal, tulis ulang bagian itu.
+
+Sebuah permintaan yang kompakt dapat berbunyi: “Seller link attached. Pilih opsi dengan kalimat asli yang ditunjukkan pada gambar layar A. Satu kotak makan siang hijau dua tingkat dengan pegangan; satu unit. Kedua kompartemen harus dimasukkan. Tanya penjual apakah lebar yang terdaftar termasuk pegangan. Silakan hentikan jika lebar luar melebihi batas rak yang ditandai atau jika pedagang mengusulkan versi lain.” Tambahkan jumlah, mata uang dan referensi yang sebenarnya dalam pesanan. Contoh ini menggambarkan struktur; bidang-bidang pada formulir pembelian saat ini tetap menjadi tempat untuk memasukkan rincian transaksi.
+
+## Gunakan spesifikasi yang sama saat meninjau hasil
+Pertahankan versi yang diterima dari catatan dengan referensi pesanan Anda. Pada kedatangan gudang, bandingkan item yang terlihat dengan atribut esensial pertama. Pandangan depan dapat mengkonfirmasi warna dan bentuk umum. Sebuah foto dari kotak makan siang yang dibuka dapat mengkonfirmasi kompartemen kedua. Penampilan pita di sepanjang titik terluas dapat mengakomodasi persyaratan lebar rak. Hanya meminta bukti tambahan yang mengubah keputusan Anda, memeriksa layanan yang tersedia sebelum mengharapkan inspeksi tertentu.
+
+Jika item berbeda, laporkan atribut yang diminta, bukti apa yang tiba dan tindakan yang ingin Anda pertimbangkan. Pertahankan persyaratan asli berbeda dari preferensi ditambahkan setelah pembelian. Spesifikasi yang bersih membantu kedua belah pihak memahami apakah unit yang diterima berkonflik dengan perintah atau apakah Anda telah mengubah pikiran Anda. Hal ini tetap berguna lama setelah produk telah menghilang dari menu live penjual.
+
+Simpan salinan spesifikasi akhir yang bertanggal setelah penyuntingan apapun. Jika pesan pertama meminta biru dan penjual kemudian menawarkan biru laut, rekam apakah Anda menerima perubahan dan item mana yang diterapkan. Jawaban yang hanya mengatakan “ya” masuk akal dalam satu percakapan namun menjadi ambigu ketika beberapa baris pembelian ditinjau bersama-sama. Salin kata-kata penjual yang diterima ke rekaman akhir.

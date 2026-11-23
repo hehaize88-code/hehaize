@@ -1,0 +1,44 @@
+# Superbuy mobilon: ellenőrizze, melyik termékváltozat kerül a rendelésbe
+A mobil képernyő megkönnyíti a fénykép mentését, és nehéz látni a teljes vásárlást egy nézetben. A kép, a kiválasztott változat, a mennyiség és az ár külön paneleken jeleníthető meg. A Superbuy alkalmazás útmutatója leírja, hogyan kell megtalálni egy terméket, kiválasztani a lehetőségeket, és megkérni az ügynököt, hogy vásárolja meg. Használja ezeket a szakaszokat ellenőrzőpontként. A cél az, hogy a kívánt kiválasztást az eladói listától egészen a kifizetett megrendelésig eljuttassa.
+
+## Kezdje egy helyreállítható termékhivatkozással
+Az alkalmazások közötti váltás előtt mentse el az eredeti piactéri termékhivatkozást. Ha egy megosztási lap promóciós szöveget tartalmaz a cím körül, akkor lehetőség szerint őrizze meg a mögöttes adatcímet. Jegyezze fel röviden az eladót és a tétel azonosítóját. Így vissza tud térni, ha egy vásárlási hivatkozás megnyitásakor az aktív böngészőlap megváltozik, vagy ha egy piactér-alkalmazás visszatér a kezdőképernyőre.
+
+A képernyőkép hasznos társ, különösen egy megkülönböztető minta esetében. Ritkán tartalmazza az élő hirdetés azonosításához szükséges összes információt. Ugyanazt a stúdióképet több terméken is megjeleníthetik, vagy különböző eladók használhatják újra. Egy kék jegyzetfüzetet ábrázoló mentett kép nem állapítja meg, hogy melyik üzlet kínálja, milyen papír van benne, vagy hogy a fénykép csak a borítót ábrázolja-e. Először a linket, majd a képet mentsd el.
+
+## Ellenőrizd az átadást a Superbuy-nak
+A hivatalos app útmutató leírja a keresést a kezdőképernyőn, és felismeri bizonyos termék linkeket. Használja az eszközén elérhető beviteli módszert. Amikor megnyílik az ügynök oldala, hasonlítsa össze a termék és az eladó adatait azzal, amit importálni kívánt. Ne következtessen egyezésre pusztán azért, mert az első kép ismerősnek tűnik.
+
+Ha a készülék a keresési találatok listáját nyitja meg a pontos termék helyett, ezt új azonosítási lépésnek kell tekinteni. Hasonlítsa össze az eredeti cikkszámot, ha rendelkezésre áll, majd vizsgálja meg az opciók készletét és az eladó adatait. Egy másik eladónál található keresési eredmény és az alacsonyabb megjelenített ár külön vásárlási lehetőségnek minősül. Ha továbbra is szeretné, tekintse át új listaként, ahelyett, hogy csendben lecserélné a jegyzetek korábbi kijelölését.
+
+## Olvassa el a teljes beállítási panelt
+Nyissa meg a kiválasztót, és azonosítsa a választott méreteket. A terméknek lehet színe, mérete, csomag tartalma és mennyisége, melyek mindegyike külön szabályozható. Előfordulhat, hogy egyes kombinációk nem érhetők el, még akkor sem, ha maga a színminta kiválaszthatónak tűnik. Végezze el a teljes kiválasztást, majd keresse meg a végső összefoglalót. Görgessen vízszintesen vagy bővítse ki a szöveget, ahol a felület rövidíti a hosszú opciós címkét.
+
+A vázlatfüzet hirdetése például „fekete A5, pontozott lapok” és „fekete A5, üres lapok” változatot kínálhat. Az előnézeti kép azonos lehet, mert csak a csukott fedelet mutatja. Ha sima papírra van szüksége, a név utolsó része dönti el a választást. Mentse el a teljes megnevezést. A „fekete jegyzetfüzet” felirat éppen azt a részletet hagyja ki, amelyet a raktárnak később ellenőriznie kellhet.
+
+## Ellenőrizze a megrendelt egységet és a mennyiséget
+A mennyiségválasztó megszámolja a kiválasztott opció által képviselt egységet. Ha az opció azt mondja, hogy egy csomag három, a mennyiség beállítása kettő lehet hat fizikai darab. Amennyiben az ár egy csereborítóra vonatkozik, előfordulhat, hogy az nem tartalmazza az életstílusfotón látható könyvet. Olvassa el az egység leírását és a részösszeget a kiválasztás után.
+
+Egy szemléltető ellenőrzés az, hogy a pénztár előtt "két csomag, három darab csomagonként, hat darab várható". Hasonlítsa össze ezt az értéket a megjelenített mennyiséggel és a kereskedő opcióleírásával. Ha az egyik képernyő két egységet ír le, és egy másik hat darabot ír le, akkor következetesek lehetnek. Ha nem tudja megmagyarázni a különbséget, kérje meg az ügynököt, hogy tisztázza a vásárlás engedélyezése előtt. Ne próbáljon meg javítani egy ismeretlen egységet azzal, hogy nagyobb számot választ, és reméli, hogy az eladó helyesen értelmezi.
+
+## Használja a kosarat végső specifikációként
+Miután hozzáadta az elemet, nyissa meg újra a kosár sorát. Ellenőrizze a pontos opciót, mennyiséget, eladót és az aktuális árat. Egy korábban mentett kosárelem túlélheti a munkameneteket, és úgy néz ki, mint a mai elem második példánya. Hasonlítsa össze a dátumokat vagy a sor részleteit a mennyiségek módosítása előtt. Ha egy régi opciót egy új sorral helyettesít, mindkettő kiválasztható maradhat a fizetéshez.
+
+Olvassa el az egyes vádakat összefüggésben. A Superbuy vásárlási útmutatója elkülöníti a vásárlást és az esetleges belföldi szállítást a későbbi nemzetközi csomagfeldolgozástól. Mentse el a pénznemet és az összeget a vásárlási képernyőn. Ha egy katalógus átvált egy árat a kényelem érdekében, használja ezt a számot a durva összehasonlításhoz, és használja a tényleges fizetés összegét a fizetési nyilvántartáshoz. A kártya összegét feltüntető mobil értesítés más pénznemet használhat, és önmagában nem tudja azonosítani a kiválasztott elemet.
+
+## Írjon jegyzeteket, amelyek megoldják a döntést
+A rendelési megjegyzés olyan változatot nevezzen meg, amelyet a közvetítő ellenőrizni tud. A „mint a képen” helyett idézze az eladó eredeti megnevezését, majd adja meg a fontos részletet. Egy vázlatfüzetnél például: „Fekete borító, A5, üres lapok. Pontozott lapokra csak egyeztetés után cseréljék.” Ha kérhető személyre szabás, pontosan másolja át a szöveget a kis- és nagybetűkkel együtt, és fizetés előtt tisztázza a bizonytalanságot.
+
+Kerülje a megjegyzés használatát a kiválasztott opció ellentmondására anélkül, hogy ellenőrizné, hogy az eladó el tudja-e látni a kérést. Az olcsóbb borító kiválasztása és a „teljes könyvet kérem” megírása nem jelenti azt, hogy a teljes készletet megvásárolta. Ha egy kívánt kombináció hiányzik az élő választóból, kérdezze meg, hogy elérhető-e és mennyibe kerül. Mentse el a választ a megrendelés visszaigazolásával együtt.
+
+## Kövesse a bevásárló rendelést a raktárba
+Miután a fizetés befejeződött, mentse el a Superbuy rendelési hivatkozást. Az adott vásárlással kapcsolatos kérdések esetén használja a megrendelési érdeklődést vagy más megjelenített kapcsolatfelvételi utat. Egy nem elérhető színnel kapcsolatos kérdés a vásárlási nyilvántartáshoz tartozik; egy összeállított csomagnak a raktárból a vevőhöz történő szállítására vonatkozó szállítási árajánlat a folyamat későbbi szakaszához tartozik. A szakasz elnevezése segít a válaszadónak megérteni, hogy milyen műveletet vár el.
+
+Amikor a tárgy készleten van, a hivatalos útmutató a Raktáramba irányít. Nyissa meg újra a jegyzetet a raktárképek mellett. Ellenőrizze, hogy mi látható: egy zárt fekete borító lehet, hogy megfelel a színnek, de nem az oldalvonalnak. Ha a belső tér számít, kérje a megfelelő funkciót megjelenítő nézetet, és ellenőrizze az adott elemhez rendelkezésre álló ellenőrzési lehetőségeket. Tartsa meg a cikk hivatkozását a kérésben, így egy hasonló jegyzetfüzetről készült fénykép nem használható fel véletlenül a döntéshez.
+
+## Helyreállíthatja nyugodtan, ha egy alkalmazásváltó elveszíti a helyét
+Ha az alkalmazás bezáródik a fizetés során, ellenőrizze a megrendelés és a fizetés nyilvántartását, mielőtt megismételné a műveletet. A fizetési képernyő újbóli megnyitása az elején nem állapítja meg, hogy a fizetés sikeres volt-e. Keresse meg a rendelési hivatkozást, az összeget, a pénznemet és a legutóbbi fizetési állapotot. Ha nem értenek egyet, használja a hivatalos támogatási csatornát ezekkel az adatokkal. Ne hozzon létre egy második megrendelést csak azért, hogy megnézze, létezett-e az első.
+
+Végezetül tartson kompakt mobil nyilvántartást: eladói linket, teljes opciót, egységet és mennyiséget, fizetett megrendelésre vonatkozó hivatkozást és a beérkezéskor ellenőrizni kívánt funkciót. Ha már rendelkezik ezekkel a mezőkkel, az eszközök cseréje vagy a kosár újbóli megnyitása kezelhetővé válik. Pontosan elmagyarázhatja, hogy mit rendelt meg, felismerheti saját raktárcikkeit, és új döntésként kezelheti a szállítást, amikor a cikk készen áll. Ez a folytonosság értékesebb, mint az alkalmazásfrissítések gombjainak bármilyen különleges elrendezése.
+
+Ha valaki másnak vásárolt, küldje vissza a véglegesen kiválasztott opciót az adott személynek a fizetés előtt, ha a választás kétértelmű volt. Kérje meg őket, hogy erősítsék meg a kérdéses tulajdonságot, például a vonalat, az ujjhosszt vagy a mellékelt tartozékot. Egy egyértelmű írásos specifikációt jóváhagyó válasz később könnyebben használható, mint egy általános termékfotóhoz csatolt felfelé mutató hüvelykujj. Mentse a végleges visszaigazolást az eredeti rendelési rekord mellett.

@@ -1,0 +1,44 @@
+# Superbuy pe telefon: verifică ce variantă a produsului ajunge în comandă
+Un ecran mobil face ușor pentru a salva o fotografie și greu pentru a vedea achiziția completă într-o singură vizualizare. Imaginea, varianta selectată, cantitatea și prețul pot apărea pe panouri separate. Ghidul aplicației Superbuy descrie găsirea unui produs, selectarea opțiunilor sale și solicitarea agentului de a-l cumpăra. Utilizați aceste etape ca puncte de control. Scopul este de a transporta selecția dorită de la listarea vânzătorului la comanda plătită.
+
+## Începeți cu o referință de produs recuperabilă
+Înainte de a comuta aplicațiile, salvați linkul original al produsului din piață. Dacă o foaie de distribuire include text promoțional în jurul adresei, păstrați adresa de înregistrare de bază acolo unde este posibil. Faceți o scurtă notă a vânzătorului și a identificatorului articolului. Acest lucru vă oferă o cale de întoarcere dacă deschiderea unui link de cumpărături schimbă fila activă a browserului sau dacă o aplicație de piață revine la ecranul de pornire.
+
+O captură de ecran este un companion util, mai ales pentru un model distinctiv. Rareori conține toate informațiile necesare pentru a identifica o listă activă. Aceeași imagine de studio poate apărea pe mai multe produse sau poate fi reutilizată de diferiți vânzători. O imagine salvată care prezintă un caiet albastru nu stabilește care magazin îl oferă, ce hârtie este în interior sau dacă fotografia prezintă doar coperta. Salvați mai întâi linkul și apoi imaginea.
+
+## Verificați transferul către Superbuy
+Ghidul oficial al aplicației descrie căutarea de pe ecranul de pornire și recunoașterea anumitor link-uri de produse. Utilizați metoda de introducere disponibilă pe dispozitivul dvs. Când se deschide pagina agentului, comparați informațiile despre produs și vânzător cu ceea ce intenționați să importați. Nu deduceți o potrivire doar pentru că prima imagine pare familiară.
+
+Dacă dispozitivul deschide o listă de rezultate ale căutării în loc de produsul exact, tratați acest lucru ca un nou pas de identificare. Comparați numărul original al articolului, dacă este disponibil, apoi examinați setul de opțiuni și detaliile vânzătorului. Un rezultat al căutării cu un alt vânzător și un preț afișat mai mic este o opțiune de cumpărare separată. Dacă o doriți în continuare, revizuiți-o ca o listă nouă, mai degrabă decât să înlocuiți în tăcere selecția anterioară din note.
+
+## Citiți întregul panou de opțiuni
+Deschideți selectorul și identificați dimensiunile de alegere. Un produs poate avea culoare, dimensiune, conţinutul pachetului şi cantitatea, fiecare controlat separat. Este posibil ca unele combinații să nu fie disponibile, chiar dacă mostrele de culoare în sine par a fi selectabile. Faceți selecția completă, apoi căutați rezumatul final. Derulați orizontal sau extindeți textul în cazul în care interfața abreviază o etichetă lungă de opțiuni.
+
+Un anunț pentru caiete de schițe poate avea variantele „negru A5, pagini punctate” și „negru A5, pagini albe, neimprimate”. Imaginile mici pot fi identice, fiindcă arată coperta închisă. Dacă vrei hârtie fără puncte sau linii, contează ultima parte a denumirii. Păstrează textul întreg al opțiunii. Nota „caiet negru” pierde tocmai detaliul pe care s-ar putea să îl verifice depozitul.
+
+## Verificați unitatea și numărul pe care îl comandați
+Un selector de cantitate contorizează unitatea reprezentată de opțiunea aleasă. Dacă opțiunea spune un pachet de trei, stabilirea cantității la două poate însemna șase piese fizice. Dacă prețul se referă la o copertă de schimb, acesta poate omite cartea afișată într-o fotografie de stil de viață. Citiți descrierea unității și subtotal după ce ați făcut selecția.
+
+O verificare ilustrativă este să scrieți „două pachete, trei bucăți pe pachet, șase bucăți așteptate” înainte de finalizarea comenzii. Comparați această citire cu cantitatea afișată și descrierea opțiunii comerciantului. Dacă un ecran descrie două unități și altul descrie șase piese, acestea pot fi consecvente. Dacă nu puteți explica singur diferența, cereți-i agentului să clarifice înainte de a autoriza o achiziție. Nu încercați să reparați o unitate necunoscută alegând un număr mai mare și sperând că vânzătorul îl va interpreta corect.
+
+## Utilizați coșul ca o specificație finală
+După adăugarea articolului, redeschideți linia coșului său. Verificați opțiunea exactă, cantitatea, vânzătorul și prețul curent. Un articol din coș salvat anterior poate supraviețui între sesiuni și poate arăta ca o a doua copie a articolului de astăzi. Comparați datele sau detaliile liniilor înainte de a modifica cantitățile. Înlocuirea unei opțiuni vechi cu o linie nouă poate lăsa ambele selectate pentru plată.
+
+Citiți fiecare acuzație în context. Ghidul de cumpărături Superbuy separă achiziția și orice livrare internă aplicabilă de procesul de coletărie internațională ulterioară. Salvați moneda și totalul de pe ecranul de achiziție. Dacă un catalog convertește un preț pentru comoditate, utilizați acea cifră pentru comparație aproximativă și utilizați suma reală de plată pentru înregistrarea plății. O notificare mobilă care citează o sumă de pe card poate utiliza o monedă diferită și nu poate identifica singură elementul selectat.
+
+## Scrieți note care rezolvă o decizie
+Nota de comandă e mai utilă dacă descrie o variantă pe care agentul o poate verifica. În loc de „ca în poză”, copiază denumirea originală a vânzătorului și explică ce contează. Pentru un caiet de schițe: „Copertă neagră, A5, pagini albe fără marcaje. Întrebați-mă înainte să înlocuiți cu hârtie punctată”. Dacă produsul poate fi personalizat, copiază fidel ortografia și literele mari sau mici și clarifică nelămuririle înainte de plată.
+
+Evitați să utilizați o notă pentru a contrazice o opțiune selectată fără a verifica dacă vânzătorul poate furniza cererea. Selectarea coperții mai ieftine și scrierea „carte completă, vă rog” nu stabilește că setul complet a fost achiziționat. Dacă o combinație necesară lipsește din selectorul live, întrebați dacă este disponibilă și cât costă. Salvați răspunsul cu confirmarea comenzii.
+
+## Urmăriți comanda de cumpărături în depozit
+După finalizarea plății, salvați referința comenzii Superbuy. Utilizați solicitarea de comandă sau altă rută de contact afișată pentru întrebări cu privire la achiziția respectivă. O întrebare despre o culoare indisponibilă aparține înregistrării de cumpărare; o ofertă de transport pentru un pachet asamblat care este expediat din depozit către client aparține mai târziu în proces. Denumirea etapei ajută persoana care răspunde să înțeleagă ce acțiune vă așteptați.
+
+Când obiectul este în stoc, ghidul oficial te îndreaptă spre Depozitul meu. Redeschideți nota alături de imaginile depozitului. Verificați ce este vizibil: o copertă neagră închisă se poate potrivi cu culoarea, dar nu și cu linia paginii. Dacă interiorul contează, solicitați o vizualizare care arată caracteristica relevantă și verificați opțiunile de inspecție disponibile pentru acel articol. Păstrați referința articolului în cerere, astfel încât o fotografie a unui notebook similar să nu poată fi folosită din greșeală pentru a vă lua decizia.
+
+## Recuperarea calmă dacă un comutator de aplicații îți pierde locul
+Dacă aplicația se închide în timpul procesului de finalizare a comenzii sau de plată, inspectați înregistrările comenzii și ale plății înainte de a repeta acțiunea. Un ecran de checkout care se redeschide la început nu stabilește dacă plata a reușit. Căutați referința comenzii, suma, moneda și ultima stare a plății. Dacă nu sunt de acord, utilizați canalul oficial de asistență cu acele detalii. Evitați să creați o a doua comandă doar pentru a vedea dacă prima a existat.
+
+Terminați prin păstrarea unei înregistrări mobile compacte: link-ul vânzătorului, opțiunea completă, unitatea și cantitatea, referința comenzii plătite și caracteristica care trebuie verificată la intrare. Odată ce aveți aceste câmpuri, schimbarea dispozitivelor sau redeschiderea unui coș devine ușor de gestionat. Puteți explica exact ce ați comandat, puteți recunoaște propriul articol din depozit și puteți gestiona transportul ca o nouă decizie atunci când articolul este gata. Această continuitate este mai valoroasă decât orice aranjament particular de butoane într-o actualizare a aplicației.
+
+Pentru achizițiile făcute pentru altcineva, trimiteți opțiunea finală selectată înapoi persoanei respective înainte de finalizarea comenzii, dacă alegerea a fost ambiguă. Cereți-le să confirme atributul exact în cauză, cum ar fi linia, lungimea mânecii sau accesoriul inclus. Un răspuns care aprobă o specificație scrisă clară este mai ușor de utilizat mai târziu decât un degetul mare atașat unei fotografii generale a produsului. Salvați confirmarea finală alături de înregistrarea comenzii originale.

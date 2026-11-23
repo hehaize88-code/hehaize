@@ -1,0 +1,44 @@
+# Como comparar estimativas de frete da CNShopper para dois destinos
+Duas pessoas querem a mesma compra entregue em endereços diferentes. Uma cotação para um destino não pode dizer o que a segunda pessoa vai pagar. As rotas disponíveis, os requisitos de endereço e os serviços podem diferir, mesmo que a encomenda nunca mude de forma. Construa uma comparação controlada primeiro, depois decida se alguma diferença vem do destino, do pacote ou das escolhas anexadas à rota.
+
+## Defina o que você precisa que a comparação responda
+Você está decidindo para onde enviar um pacote ou comparando o custo de dois envios separados? Essas são questões diferentes. Enviar um pacote completo para o endereço A ou endereço B muda apenas o destino se cada outra entrada permanece constante. Enviar metade da mercadoria para cada endereço cria duas novas encomendas com conteúdos, dimensões e, possivelmente, requisitos de embalagem diferentes.
+
+Suponha que um comprador possa receber um pacote em casa ou enquanto estiver com a família no exterior. A comparação inicial pode usar as mesmas mercadorias e embalagens para ambos os pontos finais. Se o comprador também considerar enviar um presente separadamente para um parente, trate isso como um terceiro cenário. Misturar um pacote completo para um país com um pacote de presente menor para outro não isola o efeito do destino.
+
+## Descreva a encomenda para poder repetir a comparação
+Registre os registros de armazém incluídos para itens individuais, tipos de produtos, quantidades, dimensões externas e peso embalado real ou estimado. Marque o estado da embalagem explicitamente. As caixas de varejo são mantidas? Um item frágil está protegido? Os itens foram realmente medidos juntos, ou você está trabalhando a partir das dimensões do vendedor? Use os mesmos pressupostos para ambas as pesquisas de destino ou identifique cada alteração deliberada.
+
+Imagine um livro, duas camisas dobradas e um estojo rígido. Se a cotação inicial usa uma caixa de 35 por 25 por 15 centímetros a 1.800 gramas, copie esses valores para a segunda comparação nas unidades solicitadas. Não insira as dimensões do livro para a segunda pesquisa por engano. Trate esses valores como exemplos até ter as medidas reais da encomenda. Uma suposição consistente faz uma comparação significativa, mesmo antes da cotação final estar disponível.
+
+## Verifique as informações de destino exigidas pelo serviço
+Insira o país ou região de destino com precisão e forneça o código postal ou outro detalhe de endereço se o processo de cotação solicitar isso. Um nome de cidade pode descrever uma ampla área de serviço. A rota disponível para um endereço urbano importante pode ser diferente daquela disponível para um local remoto. Verifique as informações de serviço em tempo real em vez de inferir a disponibilidade a partir da presença do nome de um país em uma lista de exemplo.
+
+Verifique se o destinatário pode realmente receber no endereço escolhido. Uma estimativa é de pouca utilidade se um determinado serviço não aceitar o formato do endereço, se um detalhe de entrega necessário estiver faltando ou se o destinatário tiver saído antes que o pacote possa chegar razoavelmente. Mantenha detalhes confidenciais no serviço oficial em vez de uma tabela de comparação pública. Um rótulo privado como "casa" ou "endereço da família" é suficiente para sua própria planilha lado a lado.
+
+## Compare as condições da rota antes de comparar o número
+Para cada destino, registre o nome da rota, o custo estimado, a moeda, a estimativa de entrega publicada e quaisquer serviços incluídos ou opcionais que lhe interessam. Leia as condições para os tipos de itens e o tamanho da encomenda. Se uma rota estiver indisponível para um destino, marque-a como indisponível em vez de tratar um resultado em branco como um preço zero. Considere outros serviços elegíveis, mas identifique quando estiver comparando rotas diferentes.
+
+Uma rota com um valor exibido mais baixo pode usar um método de entrega ou nível de serviço diferente. Isso pode ser aceitável se ele satisfaz suas necessidades reais. Um presente sensível ao tempo e suprimentos domésticos comuns podem justificar trocas diferentes. Identifique qual condição é importante antes de escolher a linha mais baixa da tabela. Uma janela de trânsito estimada deve ser registrada como uma estimativa e interpretada juntamente com os termos atuais, não como uma promessa de uma data de entrega específica.
+
+## Mantenha as moedas e os serviços incluídos consistentes
+Registre a moeda original da cotação e use uma conversão claramente datada para uma comparação aproximada, se necessário. Verifique se cada figura inclui o mesmo tratamento opcional. Uma estimativa que inclui reforço e uma que o omite podem ser precisas ao responder a perguntas diferentes. Se for necessária a mesma proteção para ambos os destinos, adicione-a consistentemente onde o serviço permitir ou marque o preço em falta como desconhecido.
+
+Para uma ilustração numérica, suponha que uma cotação mostre 85 unidades de sua moeda de comparação para frete mais 5 para embalagem necessária, enquanto a segunda mostra 92, incluindo a mesma embalagem. Os valores comparáveis são 90 e 92. Comparar 85 e 92 exagera a diferença. Se a segunda cotação não indicar se a embalagem está incluída, deixe esse total sem resolver até que você possa verificá-lo. Estes números explicam a aritmética e não representam uma taxa CNShopper.
+
+## Compare os destinos separadamente da decisão de dividir a encomenda
+Se a alternativa real é enviar dois pacotes, obtenha estimativas para os dois pacotes propostos. Anote quais itens cada um contém e como cada um será embalado. Um item volumoso pode determinar a maior parte do tamanho externo de um pacote misto, enquanto um segundo pacote pequeno ainda pode incorrer em sua própria taxa de serviço. Dividir as dimensões ou o preço da caixa combinada pela metade não produz duas cotações confiáveis.
+
+Tome o exemplo com um livro, camisas e estojo de lápis. Um arranjo possível envia todas as quatro peças para o endereço A. Outro envia o livro para o endereço B e as camisas e o estojo para o endereço A. O segundo arranjo tem duas decisões de serviço e dois eventos de entrega reais. Adicione as cotações elegíveis e as quantidades de embalagem relevantes antes de comparar o total com a alternativa de pacote único. Considere também o que os destinatários pretendidos realmente precisam; a cotação combinada mais baixa pode entregar o item errado para um deles.
+
+## Registre o que a cotação pode e não pode liquidar
+Uma estimativa de envio pode ajudar a comparar opções de rota para as entradas fornecidas. Ele não pode garantir que as medidas permanecerão inalteradas após a embalagem ou determinar todos os possíveis custos de destino. Consulte a descrição atual da rota, os requisitos do destino e as orientações oficiais aplicáveis para questões específicas da entrega. Evite emprestar uma porcentagem de imposto, limite fixo ou promessa de entrega de uma planilha de um país não relacionado.
+
+O guia de pedidos do CNShopper coloca o envio internacional após o recebimento do armazém e a preparação do pacote. Use a comparação inicial para decidir se uma compra ainda se encaixa em um orçamento realista. Verifique novamente quando as medidas reais do armazém e o endereço final estiverem disponíveis. Se uma rota desaparecer nessa fase, compare as opções elegíveis restantes em vez de assumir que a linha original deveria estar disponível pelo preço antigo.
+
+## Preserve a decisão com suas suposições
+Salve as duas cotações, a data, a descrição da encomenda e escolha em um registro privado. Nomeie o fator que determinou o resultado. Por exemplo, “mesma caixa embalada, destinos diferentes; escolhi o endereço B porque o serviço elegível se encaixa na programação e no orçamento total do destinatário”. Se a escolha depender de um peso estimado, marque-o para revisão após a chegada dos dados reais da embalagem.
+
+Uma mudança posterior no preço é mais fácil de entender se você puder identificar qual entrada foi movida. Talvez o destino tenha permanecido o mesmo, mas a caixa se expandiu depois que a proteção foi adicionada. Talvez a caixa tenha permanecido a mesma, mas o serviço selecionado na nova cotação seja diferente. Uma comparação clara faz mais do que classificar dois números. Isso lhe dá uma maneira repetível de tomar uma decisão de destino com o pacote que você realmente enviará.
+
+Preserve as suposições com a cotação que você escolher. Quando a encomenda for embalada, atualize o seu peso e dimensões e verifique o serviço ainda oferecido para o endereço completo. Esta última verificação é particularmente importante se os dois endereços tiveram arranjos de entrega diferentes. Um pacote que parecia mais barato para enviar a um parente pode se tornar menos atraente se seu tamanho impedir a coleta no local pretendido.

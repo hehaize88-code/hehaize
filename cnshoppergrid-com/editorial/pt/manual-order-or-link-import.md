@@ -1,0 +1,44 @@
+# O link não abriu na CNShopper: vale importar o anúncio ou fazer um pedido manual?
+Você cola um link de vendedor em um agente de compras e o item não aparece como esperado. Às vezes, a página de origem desapareceu. Às vezes, a página existe, mas o agente não consegue capturar uma opção importante. Às vezes, o link errado foi copiado. Um pedido manual é útil quando um comprador pode identificar uma oferta real a partir das informações que você fornece. Ele não repara uma oferta que você não pode identificar a si mesmo.
+
+## Verifique se o link é uma página de produto
+Abra o link original do marketplace e inspecione seu destino. Ele mostra um produto com um vendedor e opções? Uma página de resultados de pesquisa, página inicial do vendedor, álbum promocional ou fotografia de mídia social pode conter o item sem identificar um anúncio para compra. Copie a página do produto em vez da página que o levou até ela. Preserve o nome do mercado e o identificador do item, se visível.
+
+Imagine salvar uma captura de tela de um organizador de mesa da galeria de um vendedor. Tocar no endereço compartilhado abre toda a coleção de papelaria da loja. Você pode reconhecer o produto em uma imagem, mas o comprador ainda precisa saber qual listagem e opção comprar. Encontre o organizador individual ou peça ao vendedor o seu link. Uma nota manual que diz "terceiro item na imagem" pode se tornar inutilizável quando o vendedor altera a ordem de exibição.
+
+## Entenda o que uma importação bem-sucedida deve estabelecer
+O guia de pedidos do CNShopper descreve começar com um link de mercado e confirmar o item, opção, quantidade e custo antes da compra. Use essa sequência para testar a importação. Combine o vendedor, a identidade do item, as opções de variante e o preço para a opção real que você deseja. Uma página carregando com sucesso é apenas o primeiro resultado. Se a opção mais barata é um acessório enquanto você quer o produto completo, o preço ao lado da primeira imagem não liquida a compra.
+
+Tente fazer a seleção completa antes de decidir que algo está faltando. Uma lista de tamanhos pode depender da cor que você escolheu primeiro. Um pacote pode expor outro seletor para seu conteúdo. Depois que todos os campos estiverem definidos, leia o resumo final juntos. Se ele descreve fielmente o item pretendido, um pedido normal baseado em link fornece um registro mais simples do que reinserir as mesmas informações manualmente.
+
+## Distinguir um problema de importação de um problema de vendedor
+Volte para a página do vendedor e verifique se a combinação existe lá. Se o vendedor oferece verde em médio, mas a página importada omite essa opção, você tem uma discrepância identificável para perguntar. Se o vendedor não tiver mais uma lista verde, um pedido manual não poderá estabelecer que o vendedor tem uma lista verde. Pergunte sobre a disponibilidade antes de autorizar o pagamento ou selecionar outra cor.
+
+Para uma listagem editada, mantenha a data de sua evidência. Uma captura de tela do mês passado pode explicar o que você estava procurando, mas pode não descrever mais a oferta atual. Salve a página do vendedor atual ao lado da referência mais antiga e identifique a diferença. Por exemplo, “a página mais antiga exibiu uma bandeja destacável; a opção de hoje só nomeia o corpo do organizador.” Uma pergunta clara sobre a bandeja é mais útil do que reenviar um link antigo e esperar que ele restaure o pacote anterior.
+
+## Criar uma solicitação manual a partir de identificadores positivos
+Se uma compra manual ou DIY for oferecida para o seu caso, indique o URL do vendedor, o nome do produto, o texto exato da opção original, a cor pretendida, o tamanho, a unidade e a quantidade. Adicione o preço conforme exibido para essa seleção e especifique sua moeda. Inclua uma captura de tela da opção selecionada onde ela resolve a ambiguidade. O pedido deve permitir que o comprador encontre a oferta, mesmo que a tradução do seu título mude.
+
+Separe as instruções das perguntas. “Compre o organizador cinza de 36 centímetros com bandeja removível, quantidade um, se a bandeja estiver incluída nesta opção” é uma instrução condicional. “O vendedor pode confirmar que a bandeja está incluída?” é a pergunta que deve ser respondida primeiro. Se a condição for importante para você, indique se deseja que a compra seja retida até receber uma resposta. Evite escolher uma opção mais barata e escrever o nome de um produto diferente nas notas.
+
+## Mantenha as substituições sob seu controle
+Uma solicitação manual às vezes se torna ambígua quando um vendedor não pode fornecer a seleção exata. Decida antecipadamente quais diferenças são aceitáveis. Alguns compradores aceitariam uma caixa exterior diferente mas insistem nas mesmas dimensões. Outros precisam de um tom exato para um conjunto correspondente. Indique o requisito e o que o comprador deve fazer se ele não puder ser atendido.
+
+Um exemplo é um par de caixas de armazenamento correspondentes. O tom azul mostrado em sua referência combina com uma prateleira existente, enquanto um vendedor também oferece azul-turquesa. As duas imagens de opção parecem iguais em um telefone, mas os nomes dos vendedores diferem. Se a cor determina a compra, escreva “por favor, pergunte antes de substituir o azul selecionado por outro tom.” Não escreva “qualquer coisa semelhante está bem” apenas para preencher o formulário, a menos que essa seja realmente a sua decisão.
+
+## Verifique os detalhes comerciais antes de pagar
+Para uma seleção manual, compare o preço confirmado do produto, a contagem de unidades e a entrega doméstica com a oferta original do vendedor. Se a figura mudar, identifique o porquê. Ele pode refletir uma variante de preço mais alto, um pedido mínimo, frete do vendedor ou um preço mais recente. Uma explicação que alinha o pedido com a listagem real permite que você tome uma decisão de compra. Uma razão adivinhada não.
+
+Considere uma quantidade listada de 30 para uma tampa de reposição e 110 para o recipiente completo. Se você solicitar o recipiente cheio, a diferença não é uma sobretaxa inexplicada. Por outro lado, se a quantidade confirmada for 110 para uma opção somente de tampa, essa discrepância precisa ser esclarecida. Use figuras ilustrativas apenas para entender a distinção. Seu pedido real deve manter o valor e a moeda atuais do vendedor, e o orçamento do pacote internacional deve permanecer separado do pagamento da compra.
+
+## Decida quando parar e olhar para outro lugar
+Se nem o anúncio nem o vendedor puderem identificar a opção solicitada, faça uma pausa em vez de converter a incerteza em um pedido. Um formulário manual pode comunicar uma intenção; ele não pode fornecer evidências em falta sobre disponibilidade, autorização para vender ou exatamente o que está incluído. Se você escolher um vendedor alternativo, inicie uma nova comparação. Não carregue a tabela de tamanhos do vendedor anterior, acessórios esperados ou fotografias como se descrevessem a substituição.
+
+Em alguns casos, um link de origem direta retorna depois que um vendedor atualiza a página ou envia um endereço corrigido. Verifique novamente o novo link em relação aos seus requisitos e decida se a importação de links agora fornece uma oferta completa. Se uma solicitação manual anterior ainda estiver aberta, identifique-a e evite dizer a dois compradores para comprarem a mesma unidade. Confirme qual solicitação irá prosseguir antes de pagar duas vezes ou cancelar o registro errado.
+
+## Leve a seleção através da revisão do armazém
+Uma vez que a ordem é confirmada, mantenha sua especificação final com a referência da ordem. Na entrada do armazém, use essa especificação para revisar o item real. Uma fotografia mostrando um organizador cinza pode estabelecer sua cor e forma geral, enquanto uma visão da tampa e da bandeja dispostas juntas pode ser necessária para confirmar o pacote. Pergunte sobre o recurso não resolvido enquanto o item ainda estiver acessível para inspeção.
+
+O teste prático é se o seu pedido pode ser lido por alguém que nunca viu a lista original. Eles devem ser capazes de nomear o vendedor, identificar o produto, reproduzir a opção, contar as unidades e dizer o que fazer se um recurso chave não estiver disponível. Quando a importação de links fornecer essa informação, use-a. Quando somente um pedido manual pode transportá-lo com precisão, dê ao comprador uma especificação que ele possa verificar. O fluxo de trabalho deve seguir a qualidade da oferta que você realmente encontrou.
+
+Se o anúncio original começar a ser importado corretamente, verifique seu histórico de compras antes de começar de novo. Uma solicitação enviada manualmente e uma nova linha de carrinho importada podem se referir à mesma unidade desejada. Marque qual solicitação deve prosseguir e resolver a outra através dos controles disponíveis do pedido.

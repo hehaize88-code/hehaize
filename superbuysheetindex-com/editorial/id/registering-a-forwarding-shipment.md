@@ -1,0 +1,44 @@
+# Cara mendaftarkan penerusan paket di Superbuy sebelum penjual mengirim barang
+Waktu yang paling mudah untuk menghubungkan item yang dibeli sendiri dengan rekaman gudangnya adalah sebelum penjual mencetak label. Anda masih bisa mengubah alamat, bertanya apa isi kotak dan memperbaiki deskripsi tanpa harus melacak paket dalam perjalanan. Gunakan panduan pengiriman Superbuy di samping instruksi di akun Anda sendiri. Urutan itu lebih penting daripada posisi dari setiap tombol individu.
+
+## Buat deskripsi yang akurat dari pesanan penjual
+Buka konfirmasi pembelian asli. Tulis nama pedagang, nama produk, pilihan yang dipilih, jumlah unit dan jenis item. Gunakan kata-kata yang membedakan hal yang sebenarnya di dalam kotak. “Case” dapat menggambarkan koper, penutup telepon atau kotak pelindung untuk kamera. “Tulis kantong kamera, kecil, kosong” berkomunikasi lebih kepada seseorang yang meninjau apa yang dikirimkan. Sama akuratnya ketika peralatan termasuk baterai, aksesoris atau komponen yang dapat dilepas.
+
+Untuk sebuah set, membedakan unit yang dijual dari jumlah potongan fisik. Satu set tenis meja mungkin berisi dua dayung dan beberapa bola. Satu pesanan penjual untuk dua set seperti itu adalah dua unit yang diminta dengan beberapa komponen di dalamnya. Beritahu gudang bagaimana penjual menggambarkan kuantitas dan simpan catatan komponen terpisah jika ada bagian yang hilang akan menjadi masalah. Sebuah foto katalog dari dua dayung tidak cukup sendiri untuk menentukan apa yang termasuk dalam pilihan yang dipilih.
+
+## Gunakan formulir yang sesuai dengan pengiriman Anda sendiri
+Superbuy menggambarkan pengiriman masukan untuk paket yang sudah disiapkan dan untuk produk yang terkait dengan daftar online. Ikuti pilihan yang sesuai dengan apa yang Anda sebenarnya punya. Jika seorang kerabat mengirimkan item yang digunakan, jangan menempelkan tautan pengecer yang berbeda hanya untuk membuat bidang terlihat lengkap. Deskripsikan item fisik dan konsultasikan formulir akun atau dukungan tentang informasi yang dibutuhkan.
+
+Sebuah tautan daftar berguna ketika ia cocok dengan item. Simpan pilihan serta alamat umum. Seorang penjual dapat mengedit daftar setelah pembelian Anda, atau satu daftar dapat menggabungkan model dasar dengan opsi yang lebih rumit. Orang yang meninjau permintaan pengiriman dapat melihat halaman saat ini; konfirmasi asli Anda mencatat apa yang Anda beli. Jaga keduanya bersama-sama dan tunjukkan perbedaan apapun yang mempengaruhi apa yang harus datang.
+
+## Periksa gudang penerima yang dipilih
+Gunakan gudang yang ditunjukkan untuk permintaan Anda dan instruksi penerimaan lengkap yang terkait dengan akun Anda. Foto gudang di forum, alamat dari pesanan sebelumnya dan alamat checkout teman yang tersimpan adalah pengganti yang buruk. Panduan Superbuy menjelaskan bahwa identifikator unik di akhir alamat pengguna dapat membantu mengidentifikasi paket. Perlakukannya sebagai bagian dari alamat saat mempersiapkan rincian pengiriman penjual.
+
+Pertimbangkan formulir pasar yang membagi alamat menjadi wilayah, kota, distrik, jalan dan rincian tambahan. Menyalin seluruh alamat ke dalam bidang jalan dapat duplikat distrik sementara menghindari identifikator akhir. Setelah menyimpan, baca alamat dengan cara yang akan dicetak pada label. Bandingkan setiap bagian dengan alamat Superbuy dari atas ke bawah. Jika penjual harus memasukkan alamat secara manual, minta mereka untuk mengkonfirmasi tujuan yang telah diselesaikan sebelum menyerahkan kotak kepada kurir.
+
+## Dapatkan hasil tinjauan sebelum menjanjikan pengiriman
+Proses pengiriman resmi menempatkan tinjauan sebelum mengirimkan paket. Tunggu hasil yang dilampirkan pada permintaan sebenarnya dan ikuti instruksi saat ini atau batas waktu yang ditampilkan di sana. Produk dari jenis yang sama yang telah melewati sebelumnya tidak menentukan apakah pengiriman ini dapat diterima. Item, asal, gudang dan layanan yang direncanakan dapat berbeda. Jika tinjauan meminta lebih banyak informasi, jawab pertanyaan seperti yang ditanyakan.
+
+Ini penting jika seorang pedagang menawarkan pengiriman cepat. Katakan pada penjual kapan Anda berharap untuk menyediakan tujuan yang disetujui daripada menebak alamat untuk memenuhi hitung mundur checkout. Jika penjual telah mengirim barang, jangan menyebutkan mereka sebagai masih menunggu pengiriman. Catat waktu, alamat yang digunakan dan waybill; tanyakan Superbuy langkah-langkah yang berlaku untuk paket masuk yang sudah pergi. Sebuah submission kedua tidak dapat secara fisik mengarahkannya kembali.
+
+## Tambahkan operator lokal dan nomor yang benar
+Ketika pedagang mengeluarkan pemberitahuan pengiriman, salin nama carrier dan waybill-nya. Pertahankan string karakter asli, termasuk nol awal. Nomor pembelian pasar dapat muncul di dekat nomor carrier dan terlihat sama masuk akal. Uji interpretasi Anda dengan membuka rincian pelacakan yang terkait dengan pemberitahuan pengiriman tertentu. Nomornya harus sesuai dengan kaki pengiriman itu.
+
+Jika toko pertama menciptakan satu label dan kemudian menggantinya, simpan kedua pemberitahuan tetapi tandai label mana yang sebenarnya digunakan. Tanya penjual yang mana carrier mengumpulkan kotak. Sebuah label lama dapat tetap ada pada invoice bahkan ketika tidak ada paket yang bergerak di bawahnya. Perbarui informasi logistik pengiriman seperti yang diizinkan oleh akun; jika sebuah bidang terkunci, berikan referensi yang diperbaiki melalui dukungan resmi.
+
+## Bersiaplah untuk penjual yang membagi pengiriman
+Sebuah permintaan yang menggambarkan tiga unit tidak menjamin satu karton. Seorang pedagang dapat mengirim apa yang tersedia pertama dan mengirim sisanya secara terpisah. Minta daftar yang cocok dengan nomor carrier. Jika ada dua kotak, label mereka dalam catatan Anda oleh waybills mereka sebenarnya. Hindari menyebut satu “paket kedua” tanpa nomor, karena kotak kedua yang dikirim bisa tiba terlebih dahulu.
+
+Bayangkan tubuh lampu dan shade dibeli bersama-sama. Penjual membungkus dasar logam dalam karton kecil dan warna rapuh dalam yang lebih besar. Pesawat pengangkut mengirimkan basis pada hari Senin dan shade pada hari Rabu. Kau bisa menyeimbangkan hasilnya jika catatanmu mengidentifikasi setiap kotak dan isinya yang diharapkan. Sebuah baris tunggal yang menyatakan "lamp diantar Senin" membuat kotak Rabu terlihat tidak terduga dan penerimaan Senin terlihat lengkap. Contoh ini menggambarkan pemeliharaan catatan; periksa informasi apa yang dibutuhkan formulir forwarding saat ini untuk setiap waybill.
+
+## Konfirmasi masukan tanpa mengasumsikan isinya
+Lihat catatan gudang setelah pengiriman domestik melaporkan pengiriman. Pemindaian pengiriman mengidentifikasi peristiwa carrier. Entri stok mengidentifikasi barang yang masuk ke dalam sistem gudang. Bandingkan referensi, nama, kuantitas dan semua foto yang tersedia. Jika paket masuk berisi dua item, periksa keduanya. Sebuah foto dari kotak yang dibuka dapat membuktikan bahwa sesuatu telah tiba tanpa menentukan apakah pesanan penuh ada.
+
+Jika entri berbeda dengan deskripsi pengiriman Anda, simpan permintaan asli dan tanyakan tentang ketidakcocokan spesifik. Misalnya, “Bill of lading kedua diharapkan berisi satu warna putih; rekaman gudang untuk item individu menunjukkan dasar logam. Bisakah Anda mencocokkan isi yang diterima dengan dua surat pengiriman ini?” lebih mudah dilaksanakan dibandingkan “Paket saya salah.” Masukkan cukup konteks untuk menemukan kotak tanpa berbagi rincian alamat pribadi di forum publik.
+
+## Tutup rekaman masuk sebelum mengatur pengiriman luar negeri
+Setelah unit yang diharapkan dicatat, rekam referensi gudang mereka di samping pesanan penjual. Jaga setiap ketidaksesuaian yang tidak terpecahkan terlihat sebelum memilih item untuk pengiriman internasional. Jika sebuah barang membutuhkan foto, sebuah label identifikasi membaca atau jawaban dari pedagang, selesaikan pemeriksaan itu sementara gudang masih bisa memeriksanya. Hanya barang yang dikonfirmasi yang harus masuk ke rencana pengemasan keluaranmu.
+
+Catatan terakhir Anda harus memungkinkan Anda untuk menjawab pertanyaan sederhana tanpa membuka kembali lima situs web: apa yang tiba, dibawah bill of lading domestik mana, untuk permintaan yang disetujui, dan apa yang akan terjadi selanjutnya? Simpan nomor paket keluar di bidang baru jika ada. Permintaan pengiriman, kotak masuk dan paket internasional mewakili tahapan yang berbeda. Melestarikan hubungan di antara mereka membuat pelacakan kemudian dan pertanyaan layanan pelanggan jauh lebih mudah.
+
+Jika penjual mengirimkan pengganti kemudian, perlakukan bill of lading baru sebagai pengiriman masuk lainnya dalam catatan Anda dan tanyakan apa yang dibutuhkan prosedur pengiriman saat ini. Melabelkan entri baru sebagai pengganti menjelaskan hubungannya dengan pembelian tanpa menyiratkan secara salah bahwa kedua unit tiba di kotak pertama.

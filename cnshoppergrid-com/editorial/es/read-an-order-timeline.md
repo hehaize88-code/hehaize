@@ -1,0 +1,45 @@
+# Cómo seguir un pedido de CNShopper desde la compra hasta la entrega
+
+Una línea de tiempo de pedido comienza a tener sentido cuando se pregunta qué objeto describe cada actualización. Un agente de compras puede comprar varios productos en su nombre. Un vendedor puede enviar varias cajas para una compra. El almacén puede combinar artículos seleccionados en un nuevo paquete internacional. Los eventos de seguimiento de esos objetos pertenecen a registros diferentes. La guía oficial de pedidos y la información de seguimiento de CNShopper describen el viaje a través de la compra, el almacén y el envío. Utilice esas etapas para localizar el último evento confirmado para el elemento en particular que le interesa.
+
+## Comience con la pregunta que la línea de tiempo necesita responder
+
+Supongamos que usted pidió una camisa azul y un bolso plegable. La camisa ha aparecido en tu inventario de almacén y la bolsa todavía aparece bajo pedidos. Su pregunta práctica es si la bolsa ha llegado al almacén. Una notificación de entrega en tu teléfono podría pertenecer solo a la camisa. Abre la línea de compra de la bolsa y anota el vendedor, la variante, la cantidad y el identificador del pedido. Siga cualquier número de seguimiento para el envío dentro del país adjunto a esa línea. Compruebe si la camisa tiene el mismo número antes de tratar la notificación como evidencia sobre ambos artículos.
+
+Escribe el último evento como una oración completa con un sujeto. “El vendedor proporcionó un número de envío nacional para la bolsa” registra exactamente lo que usted sabe. “Se ha enviado” deja espacio para tres interpretaciones, incluyendo que el agente envió su paquete internacional. Mantenga esta disciplina si le está pidiendo a otra persona que compruebe el estado. Una frase corta a menudo le da a un agente de soporte más información que una captura de pantalla en la que el identificador, el operador y la línea de productos están fuera de la pantalla.
+
+## Separa un pago exitoso de una compra completada
+
+Un registro de pago le indica que se realizó una transacción en su cuenta. Mira las líneas de compra individuales para averiguar si la opción de vendedor seleccionada realmente se pidió. Un agente puede necesitar aclaración sobre un color, tamaño, cantidad o precio cambiado. Lea los mensajes adjuntos al pedido incluso cuando el saldo de la cuenta y el registro de pago parezcan correctos. Si se requiere una respuesta, incluya el texto completo de la opción y especifique qué debe suceder si el vendedor ya no la ofrece.
+
+Diferentes líneas en la misma transacción pueden avanzar de forma independiente. Ponga el vendedor y la referencia del pedido al lado de cada línea en sus notas. Dos sombreros de aspecto idéntico de diferentes tiendas pueden tener historiales de compra, envíos nacionales y registros de almacén separados para artículos individuales. Si se cancela una línea, guarde el aviso asociado y compare la cantidad y la moneda con el registro de esa compra específica. El pago de la cesta original puede permanecer visible incluso después de que las líneas individuales hayan ido en diferentes direcciones.
+
+## Siga el seguimiento nacional hasta su punto final
+
+Después de que el vendedor entregue el envío a un transportista nacional, el destino en ese albarán es la dirección de recepción en China. Un evento del transportista que muestra la entrega en esa dirección marca el punto final del viaje nacional. La siguiente evidencia que necesita proviene del almacén receptor. Su personal debe ser capaz de asociar un paquete con su compra antes de que pueda inspeccionar el artículo correspondiente en su cuenta. Busque un nuevo registro de almacén para un artículo individual y compare sus fotografías y cantidad con la compra esperada.
+
+Si la línea de tiempo nacional se ha detenido, identifique el último evento y su emisor. Una carta de porte creada por un vendedor, un escaneo de recogida por el transportista y un escaneo de entrega son observaciones diferentes. Copie el texto exacto, la hora mostrada y el número de seguimiento. Pregunte si el vendedor entregó el paquete al transportista si la recogida es la pregunta abierta. Pídale al agente que compruebe la recepción contra el albarán si la entrega ya fue registrada. Esto dirige la investigación a quien pueda establecer el siguiente hecho.
+
+## Leer el registro de almacén junto con la compra
+
+El inventario te da la oportunidad de confirmar lo que llegó. Compruebe el número de unidades y las opciones visibles en las fotografías. Una fotografía de un paquete sellado etiquetado puede mostrar un código de tamaño y aún así dejar el contenido sin ver. Haga una solicitud específica si la observación que falta determina si usted se quedaría con el artículo. Por ejemplo, pida una vista clara de la etiqueta de talla en la prenda para la línea de almacén identificada. Compruebe cualquier cargo por servicio y si la solicitud está disponible antes de aprobarla.
+
+Si usted pidió dos unidades y ve solo una, inspeccione la línea de compra y las cartas de porte nacionales antes de fusionar cualquier cosa. Una segunda caja puede estar viajando por separado, o la unidad que falta puede haber sido empacada junto a la primera. Indica qué posibilidades quedan abiertas cuando escribas al soporte. Preserve las fotos originales del almacén con la referencia para que las actualizaciones posteriores del embalaje y el envío no dificulten la explicación de lo que era visible en la entrada.
+
+## Cambiar a la referencia internacional del paquete
+
+Cuando envía artículos del almacén para su envío, un nuevo paquete puede contener artículos de varias compras. Anote la referencia del paquete junto a los artículos que realmente incluyó. Los artículos que aún están en almacenamiento mantienen sus registros de almacén. Si posteriormente agrega otro pedido a su cuenta, su aparición en la misma cuenta no establece que se haya unido al paquete enviado. Utilice el contenido del paquete guardado y la información de embalaje para identificar qué productos representa el envío saliente.
+
+Un envío de paquete o un cargo de flete pagado puede preceder a la recogida física. Abra el registro de envío para encontrar el servicio elegido y su número de seguimiento cuando esté disponible. Consulte la página de seguimiento propia de ese servicio para el movimiento asociado con esta pierna. Si la página no tiene ningún evento, comprueba que has copiado el número saliente y que has seleccionado el servicio indicado. Copiar un número nacional en el formulario de un transportista internacional es una forma fácil de convertir una discrepancia de registro de rutina en un paquete aparente perdido.
+
+## Interpretar un traspaso entre operadores
+
+Algunos servicios muestran una referencia de seguimiento diferente una vez que un socio de destino se hace cargo. Busque los detalles del envío de un socio nombrado o un número vinculado. Registra de dónde vino esa información para que puedas conectar las dos historias más adelante. Compare las fechas con las ubicaciones y zonas horarias indicadas. Una actualización procesada en un país puede aparecer en un orden diferente a una actualización registrada localmente, especialmente si el sistema importa varios eventos juntos.
+
+Si el evento más reciente dice que se intentó la entrega, inspeccione el aviso real del transportista para ver la siguiente acción y los detalles de la dirección que puede mostrar. Un miembro de la familia, el mostrador de recepción o el casillero de paquetes pueden contener información que el agente de compras no puede ver. Utilice las páginas oficiales de la cuenta o los sitios web del transportista para buscar el paquete. Cuando solicite un seguimiento, proporcione la referencia de seguimiento a través del canal de soporte privado apropiado y mantenga los detalles de la dirección personal fuera de las capturas de pantalla públicas.
+
+## Cierre la línea de tiempo con un resultado observable
+
+Al recibir, compare el contenido con el registro de embalaje de salida, luego compare cada artículo con su registro de compra y almacén para un artículo individual. Esta comparación de dos pasos es importante cuando deliberadamente envió solo una parte de un pedido. Si falta algo, identifique el registro más antiguo donde la cantidad esperada y la cantidad observada difieren. Una fotografía de entrada que muestra dos unidades y un registro de embalaje que muestra una apunta a una pregunta diferente de un registro de almacén para un artículo individual que siempre mostraba una.
+
+Mantenga una breve nota de cierre con las referencias relevantes, la observación y cualquier acción sin resolver. Una nota que dice “bolsa recibida, camisa permaneció en almacenamiento por elección” preserva una decisión que un escaneo de entrega nunca podría capturar. Si el paquete tiene un problema, mueva la evidencia a una solicitud de posventa y haga una pregunta concreta sobre la línea afectada. La línea de tiempo hace entonces su trabajo más valioso. Muestra a la siguiente persona exactamente dónde terminó una secuencia verificada y qué queda por verificar.

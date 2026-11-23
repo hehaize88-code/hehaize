@@ -1,0 +1,44 @@
+# En pakke, du selv har købt, mangler hos Superbuy: sådan får du modtagelsen undersøgt
+Du har en anmodning om videresendelse, din sælger siger, at pakken er ankommet, og Mit lager viser ikke den forventede vare. Det mest nyttige første skridt er at opbygge en kort undersøgelse med et klart defineret manglende led. Find ud af, hvad sælgeren har sendt, hvor fragtmanden tog det hen, og hvad din Superbuy-konto viser. Hver part kan derefter tjekke, hvilken del af rejsen de rent faktisk har håndteret.
+
+## Angiv problemet uden at bestemme årsagen
+Skriv en sætning indeholdende en observation og et spørgsmål. "Den indenlandske transportør registrerer levering af fragtbrev X til det valgte lager tirsdag. Jeg kan ikke matche det med en lagerpostering. Kan du hjælpe med at identificere det?” er specifikt. Det kræver ikke, at du på forhånd skal afgøre, om det er forhandleren, transportøren, lageret eller kontoposteringen, der er skyld i fejlen.
+
+Undgå at behandle en manglende post som bevis for, at pakken er gået tabt. Den tilgængelige dokumentation kan i stedet beskrive en ubrugt etiket, en levering til et andet lager, en ukendt afsender, en ufuldstændig konto-id eller et produkt registreret under et uventet navn. Vis kun muligheder, der understøttes af noget i dine egne optegnelser. Hvis sælgeren aldrig har leveret en indsamlet fragtbrev, er det første uløste trin forsendelse, ikke lagermodtagelse.
+
+## Opbygge en tidslinje fra oprindelige poster
+Opret en række pr. begivenhed med tidspunkt, kilde og nøjagtig reference. Nyttige hændelser omfatter køb på markedspladsen, anmodning om videresendelse, svar på anmeldelse, sælgers forsendelsesmeddelelse, transportørafhentning, sidste transportørscanning og enhver lagermeddelelse. Bevar den tidszone, der vises af hver kilde, når det er vigtigt. To begivenheder, der er mærket "tirsdag", kan forekomme på forskellige lokale datoer i køberens land og på lageret.
+
+Bestil begivenhederne efter, hvad der skete i stedet for den rækkefølge, hvori meddelelserne dukkede op på din telefon. En forsinket e-mail kan ankomme efter en nyere operatør opdatering. En ordreside kan vise et redigeret sporingsnummer under en ældre forsendelsesdato. Hvis et tidspunkt er ukendt, skal du lade det være ukendt. En tidslinje bygget fra eksplicitte begivenheder er mere værdifuld end en poleret historie, der opfinder den manglende overgang.
+
+## Kontrollér modtageradressen og konto-id'et
+Åbn dine egne Superbuy forsendelsesinstrukser og sammenlign dem med adressen på sælgers bekræftede ordre. Match lager, region, gade og de kontospecifikke oplysninger, der bruges til at identificere indgående forsendelser. Superbuys vejledning forklarer formålet med det identifikationsnummer, der vises sammen med en modtageradresse. En sælger kan have kopieret gaden korrekt, mens han forkortede det sidste felt på den trykte etiket.
+
+Hvis du finder en forskel, skal du registrere begge poster privat og beskrive det præcist. “Sælgerkvitteringen viser den korrekte gade, men mangler den endelige identifikator” giver det modtagende team et konkret søgeled. Den rettede adresse må ikke erstatte det oprindelige bevis. På samme måde skal du ikke stole på en profilopdatering for at rette en pakke, der allerede er i transit. Spørg sælgeren eller fragtfirmaet, hvilken adresse der står på selve forsendelsen, når ordrebekræftelsen ikke er entydig.
+
+## Test sporingsnummeret, før du sender det
+Kontroller, at nummeret tilhører den kurer, der fysisk har håndteret pakken. Skelne det fra en sælger ordre, forwarding ansøgning, markedsplads konsolidering nummer eller et internationalt sporingsnummer fra en tidligere forsendelse. Åbn forhandlerens forsendelsesoptegnelse, og sammenlign fragtfirmaet og det fulde nummer med det, du har indtastet i Superbuy. Foranstillede nuller, bogstaver og transponerede cifre kan alle påvirke et match.
+
+En forhandler kan udstede en etiket og derefter genudskrive en erstatning. Spørg, hvilket nummer der har en faktisk indsamlingshændelse. Hvis erstatningen er den, der er flyttet, skal du angive originalen som en ubrugt eller erstattet reference i forespørgslen. Det fortæller støtte, hvorfor to numre vises i papirarbejdet. Hvis ingen af numrene har en afhentningshændelse, skal du bede sælgeren om bevis for aflevering, før du beder lageret om at søge efter en leveret kasse.
+
+## Angiv boksen og dens forventede indhold
+For en enkelt pakke skal du angive de nyttige fysiske identifikatorer: Varetype, valgt mulighed, mængde, sælgerens navn og eventuelle emballageoplysninger. Ved en opdelt levering skal du angive en oversigt over fragtbrev-til-indhold. Undgå at antage, at alt på en sælgers ordre blev pakket sammen. Købmanden kan ofte bekræfte, hvilke stykker der fulgte med en bestemt etiket.
+
+Forestil dig to kartoner, der er angivet som en reolramme og en hyldepakke. Rammen vises i Mit lager, men det gør hyldepakken ikke. Støtteforespørgslen skal nævne den uovertruffen hyldepakke, dens egen fragtbrev og dens forventede stykker. Hvis du kun sender den oprindelige ordretitel "reol", kan det føre til et svar, der identificerer den allerede matchede ramme. Det er nyttigt at medtage den kendte lagerpost for en enkelt vare, fordi den viser præcis, hvilken del af købet der er blevet bogført.
+
+## Sammenlign indtagelsesdokumentation, før du vælger modtageren
+Hvis det sidste bevis er en markedspladsstatus, der siger, at sælgeren har forberedt ordren, kan sælgeren afklare den faktiske forsendelse. Hvis et fragtfirma registrerer et leveringsforsøg eller et adresseproblem, skal du spørge om den uløste leveringshændelse. Hvis transportøren bekræfter leveringen til den forventede destination, og logistikoplysningerne blev registreret, skal du bruge Superbuy-supportruten, der er knyttet til anmodningen om videresendelse. Hver forespørgsel skal bede om en handling, som modtageren kan udføre.
+
+For en lagerforespørgsel skal du medtage anmodningsreferencen, det valgte lager, indenlandsk transportør og fragtbrev, leveringshændelse, forventet indhold og enhver eksisterende lagerpost, der kan være relateret. Forklar, hvilken kontovisning du har kontrolleret. Del alle identificerende oplysninger via den officielle private kanal. Beskær ikke-relaterede ordrer og betalingsoplysninger fra understøttende skærmbilleder, mens du holder den specifikke reference, dato og begivenhed læsbar.
+
+## Stil et søgbart spørgsmål ad gangen
+En første meddelelse kan lyde: "Tjek venligst, om kassen under denne indenrigs fragtbrev blev matchet til min forsendelse anmodning. Transportøren viser levering til det valgte lager. Jeg vedhæfter sælgers forsendelsesbekræftelse og leveringsscanningen. Det forventede indhold er en hyldepakke, rammen fra samme sælger er allerede på lager under en separat post.” Tilføj de rigtige referencer i de relevante private felter.
+
+Hvis svaret bekræfter modtagelsen, men siger, at indholdet var anderledes, er undersøgelsen gået videre. Spørg, hvilken vare der blev registreret fra fragtbrevet, og sammenlign det med sælgers pakkeopgørelse. Hvis lageret har brug for et billede af den fysiske etiket, skal du bede sælgeren om det i stedet for gentagne gange at sende et skærmbillede af selve produktet. Bevar spørgsmålet og svaret sammen, så det næste trin bygger på det, der allerede er etableret.
+
+## Luk først sagen, når det manglende led er identificeret
+Når en post vises, skal du sammenligne dens fysiske beskrivelse og mængde med, hvad der var forventet. En post med samme oversatte produkttitel kan tilhøre en tidligere ordre. Bekræft forbindelsen ved hjælp af forsendelsesreferencen, transportørens dokumentation eller lagerets eksplicitte identifikation. Registrer, hvad der løste uoverensstemmelsen, og behold udestående kvalitets- eller kvantitetsspørgsmål separat.
+
+En leveringsundersøgelse kan afsluttes med en matchet vare, en rettelse af afsenderens post, en forespørgsel til fragtfirmaet eller et andet dokumenteret resultat. Registrer det faktiske resultat i stedet for at tvinge hver sag til "leveret".Hvis du efterfølgende sender varerne til udlandet, skal du oprette en ny pakke, der sendes fra lageret til kundens indgang. Den indgående undersøgelse forbliver derefter en komplet redegørelse for, hvordan lageret identificerede pakken, klar til at konsultere, hvis sælgeren eller transportøren spørger om det senere.
+
+Hvis du i sidste ende opdager, at pakken blev opbevaret under en uventet beskrivelse, skal du notere den sætning, der blev brugt af lageret, og de beviser, der etablerede matchet. Det kan være nyttigt at registrere en billedreference og den oprindelige sælger beskrivelse ved siden af denne post. Lagertitlen kan forblive uændret, selv efter at support har bekræftet dens identitet. Hvis den senere opdeles på tværs af pakker, skal du beholde den oprindelige reference ud for begge udgående poster, så du kan identificere den rigtige del ved levering.

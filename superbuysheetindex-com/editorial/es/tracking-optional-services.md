@@ -1,0 +1,44 @@
+# Cómo seguir una solicitud de fotos o embalaje en Superbuy hasta comprobar el resultado
+Una nota pidiendo una medición, un servicio comprado y una fotografía en su cuenta son tres registros diferentes. Pueden referirse a la misma necesidad, pero la nota por sí sola no prueba que un servicio fue aceptado o que el artículo fue inspeccionado como se solicitó. Conecte cada servicio opcional con el objeto al que se refiere y el resultado que espera recibir.
+
+## Decida si la unidad es un artículo o un paquete
+Comience con lo que alguien necesita manejar. Si quieres una vista precisa del cuello de una camisa, esa es una solicitud de artículo. Si desea dos mercancías separadas dentro de un cartón, es una solicitud de embalaje que involucra un paquete. Reforzar una caja exterior y pedir un primer plano de una etiqueta de venta al por menor puede implicar diferentes servicios, cargos y etapas.
+
+Las guías de compras y envío de Superbuy describen tratamientos opcionales como quitar el embalaje o reforzar un paquete. El servicio ofrecido para un artículo en particular y sus términos aplicables deben ser verificados en su cuenta. Una sugerencia en un sitio independiente es una razón para preguntar acerca de una opción, no evidencia de que cualquier servicio en particular ha sido seleccionado, pagado o realizado.
+
+## Convierta una preocupación general en una solicitud observable
+Una instrucción útil establece el objeto, la acción y la evidencia necesaria. “Por favor, revise los zapatos cuidadosamente” le dice a una persona poco sobre la decisión que está tratando de tomar. “Por favor, muestre las etiquetas de talla en ambos zapatos del registro del almacén para un artículo individual A en una fotografía legible” describe una vista específica. Si la preocupación es el color bajo una iluminación neutra, pide eso en lugar de una colección genérica de primeros planos.
+
+Para una medición, defina ambos extremos y la unidad. Una solicitud para la "longitud" de un abrigo podría significar longitud del centro de la espalda, longitud del hombro al dobladillo o longitud de la manga. Nombra cuál es tu intención. Usa el mismo método en un abrigo que tengas si el ajuste es la decisión. Un número escrito en un mensaje puede ser útil, pero una cinta fotografiada con ambos extremos visibles puede responder a preguntas adicionales sobre el posicionamiento.
+
+## Separar las condiciones de las instrucciones
+Una nota puede incluir una preferencia y una condición. “Retire la caja de envío normal” es una instrucción. “Solo si la funda ilustrada puede permanecer intacta” es una condición. Si la condición no se puede cumplir, dígale al servicio qué resultado desea: mantener el embalaje original, hacer una pausa y ponerse en contacto con usted, u ofrecer una alternativa antes de hacer cambios. Pedir una aclaración es especialmente valioso cuando la eliminación de envases no se puede deshacer.
+
+Por ejemplo, es posible que desee enviar dos libros juntos. Uno es una copia de lectura ordinaria; el otro es un regalo con un estuche ilustrado. Una sola instrucción para reducir el embalaje podría afectar a ambos. Identifique el registro de almacén para un artículo individual para cada libro. Explique que la envoltura exterior lisa se puede quitar de la copia de lectura, mientras que el estuche para el regalo debe permanecer. Pregunte si el arreglo propuesto cambia el tamaño de la caja o el cargo por servicio antes de autorizarlo.
+
+## Registre lo que se le ofreció y lo que aceptó
+Mantenga una línea corta para cada solicitud con la referencia del almacén o paquete, fecha, acción solicitada, servicio seleccionado, cantidad y resultado esperado. Si usted hizo una pregunta pero no ha aceptado una opción, registre el estado como esperando una respuesta. Si se aceptó un servicio, guarde la confirmación que lo identifica. Estas notas son útiles cuando varios elementos son casi idénticos o cuando una conversación de soporte cubre más de un servicio.
+
+Un libro mayor útil podría mostrar “entrada A, se solicitaron dos fotografías de etiquetas de tallas, se registró la cantidad cotizada, pendiente de confirmación” y “paquete P, refuerzo exterior aceptado, pendiente de finalización”. Ninguna de las líneas debería decir completada simplemente porque se envió la solicitud. Del mismo modo, un cargo que aparece en un registro de pago le dice algo sobre la facturación; no por sí mismo establece que se fotografió el artículo correcto o que se siguieron las instrucciones de empaquetado.
+
+## Revisar el resultado en comparación con la pregunta original
+Cuando llegue una actualización de imagen o paquete, vuelva a abrir la solicitud antes de decidir si satisface sus necesidades. Pregunte si muestra el objeto correcto, resuelve la característica especificada y contiene suficiente contexto para interpretarlo. Un primer plano de una etiqueta puede ser perfectamente nítido mientras proviene del elemento equivocado. Una regla puede ser legible mientras la marca cero está oculta. Describa la brecha restante con precisión.
+
+Supón que pediste el ancho de pecho de una chaqueta cerrada y extendida sobre una superficie plana. En la foto recibida, la cinta rodea una chaqueta abierta que cuelga de una percha. Puede ser una medición válida, pero no permite compararla con tu prenda medida en plano. Explica la diferencia y pregunta si el servicio elegido incluye la foto que habías solicitado. Consulta las condiciones y espera la respuesta antes de dar por hecho un cargo adicional o un reembolso.
+
+## Mantenga un cambio de embalaje vinculado a su cotización
+Una solicitud de embalaje puede alterar el peso, las dimensiones exteriores o la elegibilidad de la ruta del paquete propuesto. Anote qué medidas corresponden a qué tratamiento. Una cotización basada en mantener cajas minoristas y otra basada en eliminarlas pertenecen a escenarios diferentes. Si el refuerzo se agregó más tarde, el paquete embalado puede cambiar de nuevo. No sobrescriba las figuras anteriores; róteles con el tratamiento que describen.
+
+Al comparar los costos, separe el servicio opcional del flete. Un cargo de embalaje adicional puede acompañar a una caja más grande, una caja más pequeña o ningún cambio mensurable en el tamaño. Si el total aumentó, compruebe tanto la línea de servicio como la línea de carga antes de atribuir toda la diferencia al embalaje. La decisión relevante puede incluir la protección y la presentación del regalo, así como el precio. Indique qué requisito justificó la elección para que pueda evaluar el resultado una vez que llegue el paquete.
+
+## Gestionar solicitudes duplicadas o en conflicto
+Revise las solicitudes abiertas antes de agregar otra. Dos instrucciones para el mismo elemento pueden duplicar un servicio o enviar mensajes opuestos. Si una solicitud anterior está incompleta, continúe la misma investigación cuando sea posible, identificando lo que aún falta. Si cambió de opinión, marque qué instrucción anterior reemplaza la nueva y pregunte si el trabajo ya ha comenzado.
+
+Imagínese inicialmente pidiendo quitar una caja de zapatos, luego descubriendo que puede necesitarla para un intercambio. Póngase en contacto con el soporte de inmediato con la entrada y la referencia de la solicitud. Pregunte si se ha producido la eliminación y si se puede detener en la etapa actual. Una nueva instrucción para mantener la caja no puede restaurar el material ya descartado. Por lo tanto, el momento y la secuencia de las dos solicitudes son tan importantes como su redacción.
+
+## Cerrar la solicitud con su evidencia
+Al final, guarde la solicitud, la confirmación, el resultado devuelto y su decisión juntos. Una línea de cierre corta podría decir: “La foto coincide con la entrada A y confirma ambas etiquetas; aceptada para el envío”. Una línea de paquete podría decir: “Refuerzo confirmado; dimensiones embaladas registradas; ruta de envío revisada contra la caja revisada”.
+
+Este registro se vuelve especialmente valioso después de recibir el paquete. Si falta la funda de regalo, puede mostrar qué unidad la requirió y qué instrucción se aceptó. Si un tratamiento de empaquetado funcionó bien, puede describir el arreglo exitoso en una solicitud futura en lugar de confiar en un nombre de servicio ambiguo. Los servicios opcionales son más fáciles de administrar cuando cada instrucción tiene un objeto identificable y cada solicitud completada tiene un resultado que puede inspeccionar.
+
+Si se rechaza un servicio, guarde el motivo junto con la solicitud y márquelo como cerrado y no disponible. Esto evita que un lector posterior confunda una preferencia escrita con una instrucción aceptada. Elija una opción de embalaje o inspección diferente por sus propios méritos en lugar de asumir que el tratamiento rechazado ocurrirá durante el envío ordinario. Esto es más importante cuando varios registros de almacén para artículos individuales se empaquetan juntos.

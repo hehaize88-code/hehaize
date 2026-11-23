@@ -1,0 +1,45 @@
+# Cum urmărești o comandă CNShopper de la cumpărare până la livrare
+
+O cronologie de ordine începe să aibă sens atunci când întrebați ce obiect descrie fiecare actualizare. Un agent de achiziții poate cumpăra mai multe produse în numele dvs. Un vânzător poate trimite mai multe cutii pentru o singură achiziție. Depozitul poate combina articolele selectate într-un nou colet internațional. Evenimentele de urmărire pentru acele obiecte aparțin înregistrărilor diferite. Ghidul oficial de comandă al CNShopper și informațiile de urmărire descriu călătoria prin achiziție, depozit și expediere. Utilizați aceste etape pentru a localiza ultimul eveniment confirmat pentru elementul specific care vă interesează.
+
+## Începeți cu întrebarea la care trebuie să răspundă cronologia
+
+Să presupunem că ați comandat o cămașă albastră și o geantă pliabilă. Cămașa a apărut în inventarul depozitului, iar geanta încă apare sub comenzi. Întrebarea dumneavoastră practică este dacă sacul a ajuns la depozit. O notificare de livrare pe telefon ar putea aparține doar cămășii. Deschideți linia de cumpărare a pungii și notați vânzătorul, varianta, cantitatea și identificatorul comenzii. Urmăriți orice număr de urmărire pentru expediere în țara atașată la linia respectivă. Verificați dacă cămașa are același număr înainte de a trata notificarea ca dovadă despre ambele articole.
+
+Scrieți ultimul eveniment ca o propoziție completă cu un subiect. „Vânzătorul a furnizat un număr de expediere intern pentru geantă” înregistrează exact ceea ce știți. “A fost expediat” lasă loc pentru trei interpretări, inclusiv că agentul a trimis coletul tău internațional. Păstrați această disciplină dacă cereți altcuiva să verifice starea. O propoziție scurtă oferă adesea unui agent de asistență mai multe informații decât o captură de ecran în care identificatorul, operatorul și linia de produse sunt în afara ecranului.
+
+## Separarea unei plăți reușite de o achiziție finalizată
+
+O înregistrare de plată vă spune că a avut loc o tranzacție în contul dvs. Uitați-vă la liniile individuale de achiziție pentru a afla dacă opțiunea vânzătorului selectată a fost de fapt comandată. Un agent poate avea nevoie de clarificări cu privire la o culoare, dimensiune, cantitate sau preț modificat. Citiți mesajele atașate comenzii chiar și atunci când soldul contului și înregistrarea plății par corecte. Dacă este necesar un răspuns, includeți formularea completă a opțiunii și specificați ce ar trebui să se întâmple dacă vânzătorul nu o mai oferă.
+
+Diferite linii din aceeași tranzacție pot progresa independent. Puneți vânzătorul și referința comenzii lângă fiecare rând din note. Două pălării cu aspect identic din magazine diferite pot avea istorice separate de achiziții, expedieri interne și înregistrări de depozit pentru articole individuale. Dacă o linie este anulată, salvați notificarea asociată și comparați suma și moneda cu înregistrarea achiziției respective. Plata pentru coșul original poate rămâne vizibilă chiar și după ce liniile individuale au mers în direcții diferite.
+
+## Urmăriți urmărirea internă până la punctul său final
+
+După ce vânzătorul predă expedierea unui transportator intern, destinația de pe respectivul document de transport este adresa de primire din China. Un eveniment al transportatorului care arată livrarea la acea adresă marchează punctul final al călătoriei interne. Următoarea dovadă de care aveți nevoie vine din depozitul de primire. Personalul său trebuie să poată asocia un pachet cu achiziția dvs. înainte de a putea inspecta articolul corespunzător în contul dvs. Căutați o nouă înregistrare de depozit pentru un articol individual și comparați fotografiile și cantitatea acestuia cu achiziția așteptată.
+
+Dacă cronologia internă s-a oprit, identificați ultimul eveniment și emitentul acestuia. O scrisoare de transport creată de un vânzător, o scanare de colectare de către transportator și o scanare de livrare sunt observații diferite. Copiați textul exact, ora afișată și numărul de urmărire. Întrebați dacă vânzătorul a dat coletul transportatorului dacă ridicarea este o întrebare deschisă. Cereți agentului să verifice recepția în raport cu avizul de transport dacă livrarea a fost deja înregistrată. Acest lucru direcționează ancheta către oricine poate stabili următorul fapt.
+
+## Citiți înregistrarea depozitului alături de achiziție
+
+Inventarul vă oferă o șansă de a confirma ceea ce a sosit. Verificați numărul de unități și opțiunile vizibile în fotografii. O fotografie a unui pachet sigilat etichetat poate arăta un cod de dimensiune și poate lăsa conținutul nevăzut. Faceți o cerere specifică dacă observația lipsă determină dacă ați păstra elementul. De exemplu, solicitați o vizualizare clară a etichetei de mărime de pe articolul de îmbrăcăminte pentru linia de depozit identificată. Verificați orice taxă de serviciu și dacă cererea este disponibilă înainte de a o aproba.
+
+Dacă ați cerut două unități și vedeți doar una, inspectați linia de achiziție și documentele de transport intern înainte de a îmbina orice. Este posibil ca o a doua cutie să călătorească separat sau ca unitatea lipsă să fi fost împachetată alături de prima. Indicați ce posibilități rămân deschise atunci când scrieți la suport. Păstrați fotografiile originale din depozit cu referința, astfel încât actualizările ulterioare privind ambalarea și expedierea să nu facă dificilă explicarea a ceea ce a fost vizibil la recepție.
+
+## Comutați la referința internațională a coletului
+
+Când trimiteți articole din depozit pentru expediere, un colet nou poate conține articole din mai multe achiziții. Înregistrați numărul de referință al coletului lângă articolele pe care le-ați inclus efectiv. Articolele încă în depozit păstrează înregistrările lor de depozit. Dacă adăugați ulterior o altă comandă în contul dvs., apariția acesteia în același cont nu stabilește că s-a alăturat coletului trimis. Utilizaţi conţinutul coletului salvat şi informaţiile de ambalare pentru a identifica ce bunuri reprezintă expedierea de ieşire.
+
+O predare a coletului sau o taxă de transport plătită poate precede colectarea fizică. Deschideți înregistrarea expedierii pentru a găsi serviciul ales și numărul său de urmărire atunci când este disponibil. Consultați propria pagină de urmărire a serviciului pentru mișcarea asociată acestui picior. Dacă pagina nu are niciun eveniment, verificați dacă ați copiat numărul de ieșire și dacă ați selectat serviciul indicat. Copierea unui număr intern în formularul unui transportator internațional este o modalitate ușoară de a transforma o neconcordanță de rutină într-un pachet aparent lipsă.
+
+## Interpretarea unei predări între transportatori
+
+Unele servicii afișează o altă referință de urmărire după ce un partener de destinație preia comanda. Căutați în detaliile expedierii un partener numit sau un număr asociat. Înregistrați de unde au venit aceste informații, astfel încât să puteți conecta cele două istorii mai târziu. Comparați datele cu locațiile și fusurile orare indicate. O actualizare procesată într-o țară poate apărea într-o ordine diferită de o actualizare înregistrată local, mai ales dacă sistemul importă mai multe evenimente împreună.
+
+Dacă cel mai recent eveniment indică faptul că s-a încercat livrarea, inspectați notificarea reală a transportatorului pentru următoarea acțiune și detaliile adresei pe care le poate afișa. Un membru al gospodăriei, biroul de recepție sau dulapul de colete pot deține informații pe care agentul de cumpărare nu le poate vedea. Utilizați paginile oficiale ale contului sau site-urile web ale transportatorului pentru a căuta coletul. Când solicitați o urmărire, furnizați referința de urmărire prin canalul de asistență privat corespunzător și păstrați detaliile adresei personale din capturile de ecran publice.
+
+## Închideți cronologia cu un rezultat observabil
+
+La primire, comparați conținutul cu înregistrarea de ambalare de ieșire, apoi comparați fiecare articol cu înregistrarea de achiziție și depozitare pentru un articol individual. Această comparație în doi pași contează atunci când ați expediat în mod deliberat doar o parte a unei comenzi. Dacă lipsește ceva, identificați cea mai veche înregistrare în care cantitatea așteptată și cantitatea observată diferă. O fotografie de recepție care arată două unități și o înregistrare de ambalare care arată una indică o întrebare diferită de o înregistrare de depozit pentru un articol individual care a arătat întotdeauna una.
+
+Păstrați o scurtă notă de încheiere cu referințele relevante, observația și orice acțiune nerezolvată. O notă care spune „geanta a fost primită, cămașa a rămas în depozit la alegere” păstrează o decizie pe care o scanare de livrare nu ar putea-o captura niciodată. Dacă coletul are o problemă, mutați dovezile la o cerere post-vânzare și puneți o întrebare concretă despre linia afectată. Cronologia își face apoi cea mai valoroasă treabă. Acesta arată următoarei persoane exact unde s-a încheiat o secvență verificată și ce rămâne de verificat.

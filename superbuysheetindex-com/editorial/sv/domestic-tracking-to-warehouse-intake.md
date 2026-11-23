@@ -1,0 +1,42 @@
+# Så kopplar du ett kinesiskt spårningsnummer till en lagerpost hos Superbuy
+En leveransavisering från en säljare kan vara korrekt medan din Superbuy-lagerlista fortfarande ser ofullständig ut. De två skivorna svarar på olika frågor. En rapporterar vad en transportör gjorde med ett paket. Den andra registrerar vad som tagits emot, identifierats och lagrats för ditt konto. Innan du bestämmer vilken part du ska kontakta, följ den särskilda rutan över den gränsen.
+
+## Rita den korta resan först
+Börja med resan inom det land där säljaren skickar varorna. Din marknadsplatsorder kopplar ihop en köpare och en handlare. Försäljaren överlämnar en låda till ett inrikes transportföretag som transporterar den till en mottagningsadress. Det mottagande lagret identifierar, inspekterar och registrerar sedan varorna. Internationell frakt är ett senare val. En spårningsuppdatering som nämner leverans på den inhemska sträckan kan inte fastställa att ett utländskt paket är på väg.
+
+Om du har köpt från en agent hittar du Superbuy-inköpsordern som hör till den ursprungliga artikeln. För ett köp som du har gjort själv, hitta fraktförfrågan och logistikinformationen som du har tillhandahållit. Superbuys vidarebefordringsguide instruerar användaren att ange inkommande fraktinformation efter att varan har granskats. Kontrollera vilken av dessa två utgångspunkter som beskriver ditt fall. Ett inköpsordernummer från ett liknande inköp kan leda till att du kontrollerar fel post.
+
+## Kopiera transportörsbeviset exakt
+Öppna säljarens avsändningsuppgifter och identifiera både transportören och fraktsedelsnumret. Kopiera hela numret som text så att eventuella inledande nollor finns kvar. Spara den senaste händelsen, datumet och platsen enligt uppgifterna. Ett skärmklipp där bara ”levererat” syns räcker inte för att koppla händelsen till en viss kartong. Om plattformen visar ett alternativt spårningsnummer, behåll också transportörens ursprungliga nummer när det finns.
+
+Anta att du har två köp med nästan identiska titlar, beställda två dagar i följd. Det ena fraktsedelsnumret slutar på 381 och det andra på 318. Om du bara tittar på de första siffrorna kan båda se ut att höra till paketet du just fick. Jämför hela numren. Klistra in hela numret när du skriver till kundtjänst och använd bara de tre sista siffrorna som förkortning i dina egna anteckningar.
+
+## Identifiera vad den senaste händelsen faktiskt säger
+Läs händelsetexten och statusfärgen. Etikett skapad, hämtad, ut för leverans, levererad och returnerad till avsändaren indikerar olika steg. En etikett kan finnas redan innan försäljaren överlämnar lådan. En out-for-delivery-uppdatering beskriver pågående arbete. En leveranshändelse anger en slutpunkt för transportörens rörelse. Den listar inte innehållet som räknats av lagerpersonalen.
+
+Titta på destinationen vid sidan av evenemanget. Stämmer staden och mottagningsadressen överens med det lager som valts på din förfrågan? En kontoinloggning eller intern mottagaridentifierare kan hjälpa till att koppla paketet till kunden efter leverans. Om marknadsplatsens kvitto visar en annan adress än den i Superbuy, behåll båda posterna och förklara skillnaden. "Korrigera" inte skärmdumpen innan du delar den med officiell support: den ursprungliga avvikelsen kan vara exakt vad som identifierar problemet.
+
+## Sök efter en intagningsmatchning i Mitt lager
+Öppna Mitt lager för det aktuella kontot. Superbuys officiella vägledning identifierar detta som platsen för att visa lagerförda artiklar. Granska lagerposterna för enskilda artiklar kring leveranshändelsen. Kontrollera artikelbeskrivning, inköps- eller fraktreferens, antal och tillgängliga bilder. En översatt titel kan skilja sig väsentligt från säljarens ursprungliga ordalydelse; använd identifierare när det är möjligt.
+
+Ett inkommande fraktpaket och en lagerpost behöver inte ha samma form i dina anteckningar. En kartong kan innehålla flera artiklar. En säljare köp kan producera två kartonger. Om lagret listar separata varor medan dina bevis beskriver en enda transportörslåda, gruppera dessa poster under fraktsedeln istället för att ta bort en som en dubblett. Omvänt kan två mottagna kartonger inte avstämmas enbart från en produkttitel utan att fastställa vad var och en innehöll.
+
+## Arbeta igenom ett exempel på delad leverans
+Tänk dig att du köper en skrivbordsförvaring och en pennhållare från en och samma säljare. Återförsäljaren utfärdar två inrikes fraktsedlar. Organisatören visar en leveransskanning medan facket fortfarande är i rörelse. Du ser en lagerpost för en enskild artikel som beskrivs som ett skrivbordstillbehör. Innan du rapporterar en saknad vara, jämför det första spårningsnumret med lagerreferensen och kontrollera fotot. Om den visar arrangören är de aktuella posterna konsekventa: en artikel finns i lager och den andra är fortfarande i transit.
+
+Ändra nu en detalj. Försäljaren säger att båda varorna fanns i den första kartongen och det andra numret var en annullerad ersättningsetikett. Lagerbilden visar fortfarande bara arrangören. Den öppna frågan har förändrats. Det handlar nu om innehållet i en levererad kartong och statusen för en andra oanvänd etikett. Be handlaren att bekräfta sin packlista. Fråga Superbuy vilka artiklar som registrerades under den första fraktsedeln. Håll skillnaden tydlig och undvik att be en transportör att hitta ett föremål som kanske aldrig har rest under sitt nummer.
+
+## Vidarebefordra förfrågan till den part som kan granska bevisningen
+Om transportören bara visar att en etikett har skapats kan säljaren oftast klargöra om de faktiskt har skickat kartongen. Om händelsen anger fel destination kan du fråga avsändaren och transportören vilken adress de använde. Om det korrekta paketet visar leverans till det avsedda lagret men du inte kan matcha det med en post kan Superbuy undersöka sina mottagningsregister. Förklara vilka av dessa kontroller du redan har slutfört.
+
+Använd en kortfattad inledande mening: ”Jag försöker matcha en inrikesleverans med min speditionspost.” Följ upp med speditions- eller inköpsreferens, transportör, fullständig fraktsedel, datum och plats för leveranshändelsen samt förväntad produkt och kvantitet. Ange exakt vad My Warehouse för närvarande visar. Ett svar som bekräftar mottagandet av lådan kan fortfarande lämna en separat fråga om innehållet; bekräfta den första punkten innan du frågar om den andra.
+
+## Undvik att multiplicera poster medan en kontroll är öppen
+Det är frestande att skriva in paketet igen med en något annorlunda produkttitel, särskilt om sökningen på ditt konto inte ger något resultat. Fråga först om den befintliga vidarebefordrings- eller inköpsposten kan uppdateras. Dubbla inlämningar kan göra det svårare att avgöra vilken post som beskriver den faktiska rutan. En ny titel kan inte ändra vilken adress som står på etiketten eller vilket transportföretag som utförde leveransen.
+
+Håll en kort aktivitetsanteckning med datum och referenser istället för att skicka bortkopplade meddelanden. Om supporten begär ett tydligare leveransbevis, bifoga det till samma förfrågan när det är möjligt. Om säljaren tillhandahåller en korrigerad fraktsedel ska du märka den gamla som ersatt. Detta bevarar vad som var känt vid tidpunkten för den första sökningen samtidigt som nästa sökning riktas till de bättre bevisen.
+
+## Vet när den inhemska frågan är avgjord
+Markera en inrikes försändelse som matchad när du kan koppla transportörsposten, den korrekta inköps- eller vidarebefordringsbegäran och den relevanta lagerposten för en enskild artikel eller poster. Märk innehållet separat om en bit förblir oidentifierad. Denna uppdelning håller statusen korrekt: ”kartong mottagen, bricka obekräftad” berättar mycket mer än bara ”levererad”.
+
+Om du senare skickar de lagerförda artiklarna för internationell leverans, spara paketet som skickas från lagret till kundnumret på sin egen plats. Titta under paketposten för den internationella resan. Behåll de inhemska referenserna kopplade till de inköp de ursprungligen beskrev. Om ett annat föremål dyker upp eller en säljare svarar på en fråga mycket senare, kan du lägga till det beviset utan att förväxla det med en annan leverans på väg till ditt hem. Om den slutliga lagerräkningen skiljer sig från säljarens faktura, håll räkningsavvikelsen öppen även efter matchning av fraktsedeln. Att hitta kartongen och bekräfta dess innehåll är separata resultat.

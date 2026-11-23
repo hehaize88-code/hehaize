@@ -1,0 +1,44 @@
+# Cara membandingkan estimasi ongkir CNShopper ke dua alamat tujuan
+Dua orang ingin membeli barang yang sama untuk dikirim ke alamat yang berbeda. Estimasi ongkir untuk alamat pertama belum tentu berlaku bagi orang kedua. Meskipun bentuk paket sama, pilihan rute, persyaratan alamat, dan layanan yang tersedia bisa berbeda. Samakan dulu dasar perbandingannya agar Anda dapat menentukan apakah selisih biaya berasal dari alamat tujuan, paket, atau layanan yang dipilih.
+
+## Tentukan apa yang Anda butuhkan perbandingan untuk menjawab
+Apakah Anda memutuskan di mana untuk mengirim satu paket, atau membandingkan biaya dua pengiriman terpisah? Itu pertanyaan yang berbeda. Mengirim satu paket lengkap ke alamat A atau alamat B hanya mengubah tujuan jika setiap masukan lainnya tetap konstan. Mengirim setengah barang ke setiap alamat menciptakan dua paket baru dengan isi yang berbeda, dimensi dan mungkin persyaratan pembungkus yang berbeda.
+
+Asumsikan seorang pembeli dapat menerima paket di rumah atau saat tinggal dengan keluarga di luar negeri. Perbandingan awal dapat menggunakan barang dan kemasan yang sama untuk kedua titik akhir. Jika pembeli juga mempertimbangkan untuk mengirimkan hadiah secara terpisah kepada kerabat, perlakukan itu sebagai skenario ketiga. Menggabungkan paket lengkap ke satu negara dengan paket hadiah yang lebih kecil ke negara lain tidak mengisolasi efek tujuan.
+
+## Catat rincian paket agar perbandingan dapat diulang
+Catat catatan gudang yang termasuk untuk item individu, jenis produk, kuantitas, dimensi luar dan berat yang sebenarnya atau diperkirakan dikemas. Tandai keadaan pembungkus secara eksplisit. Apakah kotak ritel dipelihara? Apakah barang yang rapuh dilindungi? Apakah item sebenarnya diukur bersama-sama, atau Anda bekerja dari dimensi penjual? Gunakan asumsi yang sama untuk kedua pencarian tujuan atau mengidentifikasi setiap perubahan yang sengaja.
+
+Bayangkan sebuah buku, dua kemeja terlipat, dan satu kotak pensil yang kaku. Jika penawaran awal didasarkan pada kardus 35 × 25 × 15 cm dengan berat 1.800 gram, masukkan kembali nilai itu pada perbandingan kedua dalam satuan yang diminta. Jangan memasukkan ukuran buku sebagai ukuran kardus. Anggap angka tersebut sebagai contoh sampai ada pengukuran paket yang sebenarnya. Asumsi yang sama memungkinkan perbandingan yang bermakna sebelum penawaran akhir tersedia.
+
+## Periksa informasi tujuan yang dibutuhkan oleh layanan
+Masukkan negara atau wilayah tujuan dengan benar. Sertakan kode pos atau rincian alamat lain jika diminta saat mengecek ongkir. Satu nama kota bisa mencakup wilayah layanan yang luas. Rute untuk alamat di pusat kota belum tentu tersedia di daerah terpencil. Periksa informasi layanan terkini untuk alamat tersebut. Munculnya nama negara di daftar contoh belum membuktikan bahwa alamat Anda terjangkau.
+
+Verifikasi bahwa penerima sebenarnya dapat menerima pada alamat yang dipilih. Perkiraan tidak berguna jika layanan tertentu tidak menerima format alamat, jika rincian pengiriman yang dibutuhkan hilang atau jika penerima akan meninggalkan sebelum paket dapat tiba. Simpan rincian sensitif dalam layanan resmi daripada tabel perbandingan publik. Label pribadi seperti “rumah” atau “alamat keluarga” cukup untuk lembar kerja berdampingan Anda sendiri.
+
+## Bandingkan kondisi rute sebelum membandingkan nomor
+Untuk setiap tujuan, rekam nama rute, perkiraan biaya, mata uang, perkiraan pengiriman yang dipublikasikan dan layanan yang termasuk atau opsional yang Anda pedulikan. Baca kondisi untuk jenis item dan ukuran paket Anda. Jika sebuah rute tidak tersedia untuk satu tujuan, tandai tidak tersedia daripada memperlakukan hasil kosong sebagai harga nol. Pertimbangkan layanan yang layak lainnya, namun identifikasikan ketika Anda membandingkan rute yang berbeda.
+
+Rute dengan jumlah yang ditampilkan lebih rendah dapat menggunakan handoff, metode pengiriman atau tingkat layanan yang berbeda. Itu bisa diterima jika memenuhi persyaratan yang sebenarnya. Hadiah yang sensitif terhadap waktu dan barang-barang rumah tangga biasa mungkin mencerminkan pilihan yang berbeda. Identifikasi kondisi yang penting sebelum memilih baris terendah dalam tabel. Perkiraan jendela transit harus dicatat sebagai perkiraan dan ditafsirkan bersamaan dengan kondisi saat ini, bukan sebagai janji untuk tanggal pengiriman tertentu.
+
+## Jaga mata uang dan layanan yang termasuk konsisten
+Catat mata uang penawaran tarif asli dan gunakan konversi dengan tanggal yang jelas untuk perbandingan kasar jika diperlukan. Periksa apakah setiap angka termasuk perlakuan opsi yang sama. Perkiraan yang mencakup penguatan dan yang menghindarinya dapat menjadi akurat saat menjawab pertanyaan yang berbeda. Jika perlindungan yang sama diperlukan untuk kedua tujuan, tambahkan secara konsisten di mana layanan mengizinkan atau tandai harga yang hilang sebagai tidak diketahui.
+
+Untuk ilustrasi numerik, asumsikan satu penawaran tarif menunjukkan 85 unit mata uang perbandingan Anda untuk kargo plus 5 untuk pembungkus yang dibutuhkan, sementara yang kedua menunjukkan 92 termasuk pembungkus yang sama. Jumlah yang sebanding adalah 90 dan 92. Membandingkan 85 dan 92 membesar-besarkan perbedaannya. Jika penawaran tarif kedua tidak menyatakan apakah pembungkus termasuk, biarkan total itu tidak terpecahkan sampai Anda dapat memverifikasinya. Angka-angka ini menjelaskan aritmetika dan tidak mewakili tarif CNShopper.
+
+## Bandingkan tujuan secara terpisah dari keputusan untuk membagi kiriman
+Jika alternatif yang sebenarnya adalah mengirim dua paket, dapatkan perkiraan untuk kedua paket yang diusulkan. Tulis barang-barang yang masing-masing berisi dan bagaimana masing-masing akan dikemas. Satu item berukuran besar dapat menentukan sebagian besar ukuran eksternal paket campuran, sementara paket kecil kedua masih dapat dikenakan biaya layanannya sendiri. Pembagian dimensi atau harga kotak gabungan menjadi dua tidak menghasilkan dua penawaran tarif yang dapat diandalkan.
+
+Ambil contoh buku, dua kemeja, dan kotak pensil. Salah satu pilihan mengirim keempat barang ke alamat A. Pilihan lain mengirim buku ke alamat B serta kemeja dan kotak pensil ke alamat A. Pilihan kedua melibatkan dua layanan dan dua pengantaran. Jumlahkan kedua penawaran yang dapat digunakan berikut biaya pengemasan masing-masing sebelum membandingkannya dengan opsi satu paket. Pertimbangkan juga kebutuhan setiap penerima. Kombinasi termurah bisa membuat barang tertentu sampai kepada orang yang salah.
+
+## Catat apa yang bisa dan tidak bisa diselesaikan
+Perkiraan pengiriman dapat membantu membandingkan pilihan rute untuk input yang disediakan. Ini tidak dapat menjamin bahwa pengukuran akan tetap tidak berubah setelah pengemasan atau menentukan setiap muatan tujuan yang mungkin. Konsultasikan deskripsi rute saat ini, persyaratan tujuan dan petunjuk resmi yang berlaku untuk isu-isu spesifik untuk pengiriman. Hindari meminjam persentase pajak, ambang batas tetap atau janji pelaksanaan dari spreadsheet negara yang tidak terkait.
+
+Panduan pemesanan CNShopper menempatkan pengiriman internasional setelah penerimaan gudang dan persiapan paket. Gunakan perbandingan awal untuk memutuskan apakah pembelian masih sesuai dengan anggaran yang realistis. Periksa lagi ketika ukuran gudang sebenarnya dan alamat akhir tersedia. Jika sebuah rute menghilang pada tahap itu, bandingkan opsi yang layak yang tersisa daripada mengasumsikan bahwa jalur asli harus tersedia pada harga lama.
+
+## Pertahankan keputusan dengan asumsinya
+Simpan pasangan penawaran tarif, tanggal, deskripsi paket dan pilihan dalam catatan pribadi. Namakan faktor yang menentukan hasil. Misalnya, “kardus terkemas yang sama, tujuan yang berbeda; pilih alamat B karena layanan yang layak sesuai dengan jadwal dan total anggaran penerima.” Jika pilihan tergantung pada perkiraan berat, tandai untuk ditinjau setelah data pengiriman yang sebenarnya tiba.
+
+Perubahan harga kemudian lebih mudah dipahami jika Anda dapat mengidentifikasi input mana yang bergerak. Mungkin tujuannya tetap sama tapi kotaknya membesar setelah perlindungan ditambahkan. Mungkin kotak tetap sama tapi layanan yang dipilih dalam penawaran tarif baru berbeda. Perbandingan yang jelas lebih dari sekedar rangking dua angka. Ini memberi Anda cara yang dapat diulang untuk membuat keputusan tujuan dengan paket yang Anda sebenarnya akan mengirim.
+
+Pertahankan asumsi dengan penawaran tarif yang Anda pilih. Ketika paket yang sebenarnya telah dikemas, perbarui berat dan dimensinya dan periksa layanan yang masih ditawarkan untuk alamat lengkap. Pemeriksaan terakhir ini sangat penting jika dua alamat memiliki pengaturan pengiriman yang berbeda. Sebuah paket yang terlihat lebih murah untuk dikirim ke kerabat mungkin menjadi kurang menarik jika ukurannya mencegah pengumpulan dari lokasi yang dimaksudkan.

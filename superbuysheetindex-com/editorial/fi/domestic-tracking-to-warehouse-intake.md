@@ -1,0 +1,42 @@
+# Näin yhdistät Kiinan sisäisen lähetyksen seurantatunnuksen Superbuyn varastomerkintään
+Myyjän lähetysilmoitus voi olla tarkka, vaikka Superbuy-varastolistasi näyttää edelleen epätäydelliseltä. Nämä kaksi levyä vastaavat eri kysymyksiin. Yksi raportoi, mitä kuljettaja on tehnyt paketille. Toinen tallentaa, mitä on vastaanotettu, tunnistettu ja varastoitu tilillesi. Ennen kuin päätät, mihin osapuoleen ottaa yhteyttä, seuraa tiettyä ruutua kyseisen rajan yli.
+
+## Piirrä lyhyt matka ensin
+Aloita sen maan sisäinen matka, josta myyjä lähettää tavarat. Markkinapaikkatilauksesi yhdistää ostajan ja kauppiaan. Kauppias luovuttaa laatikon kotimaan kuljetusliikkeelle, joka kuljettaa sen vastaanotto-osoitteeseen. Tämän jälkeen vastaanottava varasto tunnistaa, tarkastaa ja kirjaa tavarat. Kansainvälinen lähetys on myöhempi valinta. Seurantapäivityksessä, jossa mainitaan toimitus kotimaan reitillä, ei voida vahvistaa, että ulkomainen paketti on matkalla.
+
+Jos haluat ostaa tuotteen edustajan kautta, etsi alkuperäiseen tuotteeseen liittyvä Superbuy-ostotilaus. Jos olet tehnyt ostoksen itse, etsi huolintapyyntö ja logistiikkatiedot, jotka olet antanut. Superbuyn lähetysopas ohjeistaa käyttäjää antamaan saapuvan lähetyksen tiedot sen jälkeen, kun tuote on tarkistettu. Tarkista, kumpi näistä kahdesta lähtökohdasta kuvaa sinun tapaustasi. Samankaltaisen ostoksen ostostilauksen numero voi johtaa siihen, että tarkistat väärän tietueen.
+
+## Kopioi kuljettajatodistus täsmälleen
+Avaa myyjän lähetystiedot ja tunnista kuljetusliike ja rahtikirja yhdessä. Kopioi koko rahtikirja tekstimuodossa säilyttäen kaikki edessä olevat nollat. Tallenna viimeisin tapahtuma, sen päivämäärä ja sen ilmoitettu sijainti. Kuvakaappaus, joka on rajattu sanaan ”toimitettu”, jättää pois tiedot, joita tarvitaan tapahtuman yhdistämiseen tiettyyn laatikkoon. Jos alustalla näkyy seurantaalias, säilytä alkuperäinen kuljetusliikkeen numero, jos se on käytettävissä.
+
+Ostohistoriassa voi olla kaksi lähes samannimistä tuotetta, jotka tilasit peräkkäisinä päivinä. Toisen rahtikirjan numero päättyy numeroihin 381 ja toisen numeroihin 318. Samankaltaisen alun perusteella molemmat saattavat näyttää liittyvän juuri vastaanottamaasi lähetykseen. Vertaa koko numerosarjaa. Liitä asiakastuelle lähettämääsi viestiin koko numero. Kolme viimeistä numeroa sopivat lyhenteeksi omiin muistiinpanoihisi.
+
+## Tunnista, mitä viimeinen tapahtuma todella sanoo
+Lue tapahtuman teksti sekä tilaväri. Luotu, noudettu, toimitettavaksi lähetetty, toimitettu ja lähettäjälle palautettu etiketti osoittavat eri vaiheita. Etiketti voi olla olemassa jo ennen kuin myyjä luovuttaa laatikon. Out-for-delivery-päivitys kuvaa käynnissä olevaa työtä. Toimitustapahtuma nimeää kuljettajan liikkeen päätepisteen; se ei luetele varaston henkilökunnan laskemaa sisältöä.
+
+Tarkastele kohdetta tapahtuman rinnalla. Vastaavatko kaupunki ja vastaanotto-osoite pyynnössäsi valittua varastoa? Tilin kirjautuminen tai sisäinen vastaanottajan tunniste voi auttaa yhdistämään paketin asiakkaaseen toimituksen jälkeen. Jos kauppapaikan kuitilla näkyy eri osoite kuin Superbuyssa, säilytä molemmat tiedot ja selitä ero. Älä "korjaa" kuvakaappausta ennen kuin jaat sen virallisen tuen kanssa: alkuperäinen ero voi olla juuri se, mikä tunnistaa ongelman.
+
+## Etsi intake match Oma varasto -palvelusta
+Avaa asianomaisen tilin Oma varasto. Superbuyn viralliset ohjeet määrittelevät tämän paikaksi, jossa voit tarkastella varastossa olevia tuotteita. Tarkista yksittäisten tuotteiden varastotietueet toimitustapahtuman yhteydessä. Tarkista tuotteen kuvaus, osto- tai lähetysviite, määrä ja käytettävissä olevat kuvat. Käännetty otsikko voi poiketa merkittävästi myyjän alkuperäisestä sanamuodosta; käytä tunnisteita aina kun mahdollista.
+
+Saapuvan kuljetusliikkeen paketin ja varaston varaston merkinnän ei tarvitse olla muistiinpanoissasi samaa muotoa. Yksi laatikko voi sisältää useita tuotteita. Yksi myyjän osto voi tuottaa kaksi laatikkoa. Jos varastossa luetellaan erillisiä tavaroita, mutta todisteet kuvaavat yhtä kuljetusyhtiön laatikkoa, ryhmitä nämä merkinnät rahtikirjan alle sen sijaan, että poistaisit yhden kaksoiskappaleena. Sitä vastoin kahta vastaanotettua pakkausta ei voida sovittaa yhteen pelkästään yhden tuotenimikkeen perusteella määrittämättä, mitä kukin pakkaus sisälsi.
+
+## Käy läpi jaettu toimitus -esimerkki
+Kuvittele, että ostat yhdeltä myyjältä kirjoituspöydän järjestelyn ja kynätelineen. Jälleenmyyjä antaa kaksi kotimaan rahtikirjaa. Järjestäjä näyttää toimitusskannauksen, kun tarjotin on edelleen liikkeessä. Näet yhden varastotietueen yksittäiselle tuotteelle, joka on kuvattu työpöydän lisävarusteena. Ennen kuin ilmoitat puuttuvasta tuotteesta, vertaa ensimmäistä seurantanumeroa varaston viitteeen ja tarkista kuva. Jos se kuvaa järjestäjää, nykyiset tiedot ovat johdonmukaisia: yksi tuote on varastossa ja toinen on vielä kuljetuksessa.
+
+Muuta nyt yksi yksityiskohta. Kauppias sanoo, että molemmat tuotteet olivat ensimmäisessä laatikossa ja toinen numero oli peruutettu korvaava etiketti. Varastokuva näyttää edelleen vain järjestäjän. Avoin kysymys on muuttunut. Kyse on nyt toimitetun pakkauksen sisällöstä ja toisen käyttämättömän etiketin tilasta. Pyydä myyjää vahvistamaan pakkausluettelo. Kysy Superbuylta, mitkä tuotteet on merkitty ensimmäiseen rahtikirjaan. Pidä ero selkeänä ja vältä pyytämästä kuljettajaa paikantamaan tavaraa, joka ei ehkä ole koskaan matkustanut sen numerolla.
+
+## Ohjaa tiedustelu sille osapuolelle, joka voi tutustua todisteisiin
+Jos kuljetusliike näyttää vain etiketin luomisen, kauppias voi yleensä selvittää, onko se todella lähettänyt kyseisen laatikon. Jos tapahtumassa mainitaan väärä määränpää, kysy lähettäjältä ja kuljetusliikkeeltä heidän käyttämäänsä osoitetta. Jos oikeassa paketissa näkyy toimitus tarkoitettuun varastoon, mutta et voi yhdistää sitä merkintään, Superbuy voi tutkia vastaanottotietojaan. Selitä, mitkä näistä tarkistuksista olet jo suorittanut.
+
+Käytä tiivistä aloituslausetta: ”Yritän sovittaa kotimaan toimituksen huolintatietueeseeni.” Lisää sitten huolinta- tai ostoviite, kuljettaja, täydellinen rahtikirja, toimitustapahtuman päivämäärä ja paikka sekä odotettu tuote ja määrä. Ilmoita tarkalleen, mitä Oma Varasto tällä hetkellä näyttää. Vastaus, joka vahvistaa laatikon vastaanottamisen, voi silti jättää erillisen kysymyksen sisällöstä; vahvista ensimmäinen kohta ennen kuin kysyt toisesta.
+
+## Vältä tietueiden moninkertaistamista, kun tarkistus on avoinna
+On houkuttelevaa syöttää paketti uudelleen hieman eri tuotteen nimellä, varsinkin jos tilisi haku ei tuota tulosta. Kysy ensin, voidaanko olemassa olevaa edelleenlähetys- tai ostostietoa päivittää. Kaksoiskappaleet voivat vaikeuttaa sen selvittämistä, mikä tietue kuvaa varsinaista laatikkoa. Uusi otsikko ei voi muuttaa sitä, mikä osoite on lähetysetiketissä tai mikä kuljetusliike suoritti toimituksen.
+
+Pidä lyhyt muistiinpano päivämääristä ja viitteistä sen sijaan, että lähettäisit epäyhtenäisiä viestejä. Jos asiakastuki pyytää selkeämpää toimitustodistusta, liitä se samaan kyselyyn, jos mahdollista. Jos myyjä toimittaa korjatun rahtikirjan, merkitse vanha rahtikirja korvatuksi. Näin säilytetään se, mikä oli tiedossa ensimmäisen haun aikana, samalla kun seuraava haku ohjataan parempaan todistusaineistoon.
+
+## Tiedä, milloin kotimaan kysymys on ratkaistu
+Merkitse kotimaan lähetys täsmäytetyksi, kun voit yhdistää kuljettajatietueen, oikean osto- tai edelleenlähetyspyynnön ja asiaankuuluvan varastotietueen yksittäiselle tuotteelle tai merkinnöille. Merkitse sisältö erikseen, jos yksi pala jää tunnistamatta. Tämä jako pitää tilan tarkkana: ”laatikko vastaanotettu, lokero vahvistamaton” kertoo paljon enemmän kuin vain ”toimitettu”.
+
+Jos myöhemmin lähetät varastossa olevat tuotteet kansainvälistä toimitusta varten, tallenna varastosta asiakasnumeroon lähetettävä paketti sen omaan paikkaansa. Katso kansainvälistä matkaa koskevan pakettitiedon alta. Pidä kotimaiset viittaukset liitettyinä niihin ostoksiin, joita ne alun perin kuvasivat. Jos toinen esine ilmestyy tai myyjä vastaa kysymykseesi paljon myöhemmin, voit lisätä tämän todisteen ilman, että se sekoitetaan toiseen lähetykseen, joka on matkalla kotiisi. Jos lopullinen varastomäärä poikkeaa myyjän laskusta, pidä määräero avoinna myös sen jälkeen, kun rahtikirja on täsmennetty. Laatikon löytäminen ja sen sisällön vahvistaminen ovat erillisiä tuloksia.

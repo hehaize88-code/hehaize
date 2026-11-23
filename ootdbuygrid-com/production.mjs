@@ -1,3 +1,4 @@
+import {editorialPaths} from './editorial-pages.mjs';
 import app from './app.mjs';
 import {languages} from './locale.mjs';
 import {imageNames} from './image-data.mjs';
@@ -9,7 +10,7 @@ function sitemap(path){
  if(path==='/sitemap.xml')return xml('sitemapindex',codes.map(code=>'<sitemap><loc>'+origin+'/sitemap-'+code+'.xml</loc></sitemap>'));
  const code=path.match(/^\/sitemap-([a-z]+)\.xml$/)?.[1];
  if(!codes.includes(code))return new Response('Not found',{status:404});
- return xml('urlset',['','spreadsheet/','image-search/',...Object.keys(imageNames).map(p=>'p'+p)].map(p=>'<url><loc>'+origin+'/'+code+'/'+p+'</loc></url>'));
+ return xml('urlset',['','spreadsheet/','image-search/',...editorialPaths(code),...Object.keys(imageNames).map(p=>'p'+p)].map(p=>'<url><loc>'+origin+'/'+code+'/'+p+'</loc></url>'));
 }
 export default {async fetch(req,env,ctx){
  const u=new URL(req.url);

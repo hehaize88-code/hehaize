@@ -1,0 +1,44 @@
+# Wyszukiwanie w arkuszu CNShopper: kiedy użyć linku, a kiedy zdjęcia produktu
+Jeśli masz oryginalny link do produktu sprzedawcy, zacznij od niego. Jeśli masz tylko zdjęcie, wyszukiwanie obrazów może doprowadzić Cię do listy kandydatów. Dowody wymagane do identyfikacji oryginalnych zmian z punktem wyjścia. Identyfikator produktu może łączyć dwa rekordy na tym samym rynku. Wizualnie podobne zdjęcie pomaga zawęzić wyszukiwanie, ale nie może powiedzieć, który sprzedawca opublikował zdjęcie jako pierwszy lub którą opcję wybrał kupujący.
+
+## Zdecyduj, co chcesz odzyskać
+Istnieją dwa przydatne cele wyszukiwania. Możesz chcieć tej samej oferty sprzedawcy, ponieważ potrzebujesz kompatybilnej części zamiennej lub chcesz sprawdzić poprzednie zamówienie. Alternatywnie możesz po prostu chcieć produktu o podobnym wyglądzie. Zapisz, który cel ma zastosowanie. Wynik, który jest doskonały dla inspiracji wizualnej, może być niewystarczający do wymiany konkretnego komponentu.
+
+Załóżmy, że Twoje zdjęcie przedstawia przezroczystą szufladę na biurko z charakterystycznym zakrzywionym uchwytem. Jeśli chcesz po prostu podobnego organizera, warto porównać kilka pasujących kształtów. Jeśli potrzebujesz kolejnej szuflady do istniejącej ramy, decydująca jest dokładna szerokość zewnętrzna, rozstaw szyn i głębokość. W drugim przypadku fotografia jest początkiem identyfikacji, a nie wystarczającym dowodem do złożenia zamówienia.
+
+## Użyj linku źródłowego, jeśli taki istnieje
+Otwórz link do rynku i zapisz sprzedawcę, identyfikator przedmiotu i tekst opcji. Sprawdź, czy strona nadal oferuje odpowiednią kombinację. Przewodnik zamówień CNShopper opisuje przesyłanie linku do produktu z rozmiarem, kolorem, ilością i innymi szczegółami zakupu. Zapisany link jest dobrym punktem wyjścia, ale nadal może wskazywać na ofertę, której dostępne warianty uległy zmianie od czasu, gdy zobaczyłeś ją po raz pierwszy.
+
+Jeśli zapisany adres otwiera stronę docelową udostępniania, przejdź do produktu i porównaj jego ostateczną tożsamość. Jeśli otwiera sklep, wynik wyszukiwania lub wygasłą ofertę, nie traktuj strony generycznej jako oryginalnego produktu. Poszukaj identyfikatora w oryginalnym paragonie, rozmowie ze sprzedawcą lub tytule strony, jeśli jest dostępny. Zachowaj rynek z numerem; identycznie wyglądające numery wyciągnięte z różnych usług nie są automatycznie porównywalne.
+
+## Przygotuj zdjęcie, które zawiera przydatne dowody
+Przycinanie obrazu wyszukiwania do jednego głównego obiektu przy zachowaniu wystarczającej ilości jego kształtu, aby go odróżnić. Bliskie przycięcie zwykłego metalowego zamka błyskawicznego może zwrócić wiele niepowiązanych produktów. Szerszy widok pokazujący pozycję zamka błyskawicznego, nietypową kieszeń i ogólny zarys daje wyszukiwaniu bardziej istotne cechy. Zapisz nieprzycięty oryginał, ponieważ może on zawierać szczegóły potrzebne później, nawet jeśli odwracają one uwagę od początkowego wyszukiwania.
+
+Spróbuj innego kąta, gdy pierwszy obraz jest zdominowany przez ogólną drukowaną grafikę lub tło. W przypadku szuflady widok z przodu może pokazywać zakrzywiony uchwyt, podczas gdy widok z boku ujawnia profil szyny. Te dwa poglądy odpowiadają na różne pytania. Śledź, które zdjęcie wygenerowało którego kandydata, zamiast zakładać, że podobny pierwszy wynik w obu wyszukiwaniach dowodzi wspólnego źródła.
+
+## Porównaj strukturę przed kolorem
+Szukaj cech, które pozostają rozpoznawalne przy różnym oświetleniu: położenie śrub, liczba kieszeni, odstępy między otworami, kierunek szwu, cechy dolnej części lub kształt zawiasu. Sam kolor może się różnić w zależności od balansu bieli, edycji i ustawień ekranu. Użyj widocznych różnic, aby najpierw wykluczyć kandydatów; jeden niezgodny szczegół strukturalny może mieć większe znaczenie niż pięć ogólnych podobieństw.
+
+Wyobraź sobie dwie przezroczyste szuflady pokazane pod różnymi kątami. Oba mają zakrzywiony uchwyt i ten sam ogólny zarys. Jeden wykorzystuje pojedynczą szynę centralną, podczas gdy drugi ma dwie szyny boczne. Jeśli Twoja istniejąca rama wymaga wersji z podwójną szyną, kandydat z pojedynczą szyną jest nieodpowiedni, niezależnie od tego, jak zbliżony jest jego kolor. Zaznacz ten powód na swojej krótkiej liście. Zapobiega to ponownemu wprowadzeniu do decyzji tego samego atrakcyjnego, ale niezgodnego wyniku podczas późniejszego wyszukiwania.
+
+## Traktuj ponownie użyte zdjęcia jako słaby dowód tożsamości
+Wielu sprzedawców może wyświetlać to samo zdjęcie promocyjne. Fakt, że obrazy dokładnie pasują, może powiedzieć więcej o źródle obrazu niż o fizycznych zasobach. Otwórz każdą kandydującą ofertę i porównaj tożsamość sprzedawcy, dostępne warianty, wymiary, zawartość opakowania i aktualne warunki zamówienia. Jeśli produkt ma zdjęcia sprzedawcy lub magazynu, użyj ich do zbadania szczegółów, które widok promocyjny pozostawia niepewne.
+
+Unikaj twierdzenia, że przedmiot jest oryginalny, identyczny pod względem materiału lub wykonany przez określonego producenta, ponieważ dwa zdjęcia są zgodne. Wyszukiwanie obrazów porównuje widoczny wygląd. Nie może określić podstawowego łańcucha dostaw, funkcjonalności produktu ani tego, którą jednostkę sprzedawca wyśle. Jeśli te fakty mają znaczenie, poszukaj dowodów odpowiednich do pytania i wybierz, czy pozostała niepewność jest dopuszczalna.
+
+## Niezależne potwierdzenie wybranego wariantu
+Prawidłowa oferta nadal może wygenerować niewłaściwy przedmiot. Po zidentyfikowaniu kandydata wybierz dokładny rozmiar, kolor i opcję opakowania i sprawdź, czy obraz lub cena się zmienią. Zapisz oryginalne sformułowanie opcji wraz z notatkami. Oferta organizatora może łączyć ramę, zapasową szufladę i kompletną jednostkę. Zdjęcie pokazujące gotowy organizer nie stanowi, że wszystkie trzy opcje zawierają ramkę.
+
+W przypadku zakupu zamiennika napisz specyfikację zgodności. Rejestruj pomiary i szczegóły połączeń z istniejącego elementu przy użyciu nazwanych punktów końcowych. Porównaj je z rzeczywistymi informacjami sprzedawcy. Jeśli sprzedawca mierzy szerokość wewnętrzną, podczas gdy potrzebujesz szerokości zewnętrznej na szynach, liczby nie są bezpośrednio porównywalne. Poproś sprzedawcę lub agenta o wyjaśnienie konkretnego wymiaru, zamiast traktować wizualnie przekonujące dopasowanie jako dowód, że część będzie pasować.
+
+## Zbuduj krótką listę, która pokazuje, co pozostaje nieznane
+Użyj małej tabeli lub notatki z czterema polami: link do potencjalnego źródła, cechy, które pasują, cechy, które są sprzeczne i fakty, które są nadal potrzebne. Kandydat bez widocznej sprzeczności może nadal nie mieć jednego pomiaru, który kontroluje dopasowanie. Utrzymywanie nieznanych oddzielnie od meczów sprawia, że decyzja jest jaśniejsza. Pomaga również sformułować pytanie, na które ktoś może odpowiedzieć bez przeglądania całej historii wyszukiwania.
+
+Na przykład kandydat A może pasować do uchwytu i dwóch szyn, ale brakuje pomiaru szerokości. Kandydat B może mieć potwierdzoną szerokość i niekompatybilną szynę pojedynczą. Kandydat C może użyć dokładnego zdjęcia promocyjnego, ale nie oferuje żadnych użytecznych szczegółów opcji. Następną przydatną akcją jest zapytanie o zewnętrzną szerokość kandydata A. Poszukiwanie kolejnych kilkunastu nierozróżnialnych zdjęć z przodu raczej nie rozwiąże tej szczególnej niepewności.
+
+## Połącz ewentualne zamówienie z dowodami
+Po wybraniu oferty, zapisz rzeczywistą stronę sprzedawcy, wybraną opcję, wymagany pomiar i numer referencyjny zakupu. Przy przyjęciu do magazynu sprawdź cechę, która sprawiła, że kandydat był akceptowalny. Jeśli dopasowanie zależało od podwójnych szyn, samo zdjęcie z przodu nie może ich potwierdzić. Zapytaj, jakie opcje kontroli są dostępne i poproś o widok pokazujący odpowiednią lokalizację, zachowując obraz powiązany z poprawnym rekordem magazynowym dla poszczególnych elementów.
+
+Na koniec zarejestruj, czy odzyskałeś oryginalną ofertę, czy wybrałeś wizualnie podobną alternatywę. Oba mogą być rozsądne wyniki. Część zamienna korzysta z silniejszej tożsamości i łańcucha pomiarowego; estetyczna krótka lista może tolerować więcej odmian. Wyraźne określenie wyniku zapobiega przekształceniu się pomocnego wyniku wyszukiwania w niepotwierdzoną gwarancję dotyczącą sprzedawcy, wariantu lub produktu, której fotografia nigdy nie mogłaby ustalić.
+
+Jeśli wyszukiwanie rozpoczęło się od zdjęcia przedmiotu, który już posiadasz, zmierz cechę, która czyni go przydatnym dla Ciebie. Worek zastępczy może musieć pasować do istniejącej wkładki lub pokrywa może wymagać otworów w określonej pozycji. Zapisz ten wymiar lub układ przed przeglądaniem podobnych wizualnie modeli. Gdy zawęzisz wyniki do dwóch ofert, porównaj, jak wyraźnie każdy ze sprzedawców dokumentuje ten wymóg. Nieco mniej podobne zdjęcie może prowadzić do lepiej uzasadnionego wyboru, jeśli jego szczegóły odpowiadają na praktyczne pytanie, które motywowało do poszukiwań.
