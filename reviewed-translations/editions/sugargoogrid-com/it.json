@@ -3,7 +3,7 @@
   "locale": "it",
   "source_set_sha256": "7b8bf397ce0bb7e1ebf77a03a07fac795fafadde6c651ecf497362774610be7b",
   "raw_dictionary_sha256": "6f259b582c19f4c1dcca0e432002d4a38fd6f530aebf7883d4f89450cf3eeae7",
-  "effective_dictionary_sha256": "dc71634d6b756bbfa7165ec4b246529cb928f51cef478f2bcd02a9307c0829af",
+  "effective_dictionary_sha256": "5260619b3235710fa2eaad04e503b2874127edc245cd299e8f945dca360e26c3",
   "checked_entries": 297,
   "review_scope": "Source-based edits for all 10 article titles, article section headings, 21 full FAQ pairs, and high-risk paragraphs about garment sizes, tracking, freight, actual/volumetric weight and optional fees. Compared numerical examples and inspected sampled surrounding text and the full detected raw flag queue.",
   "reviewed_flags": [],
@@ -872,6 +872,36 @@
       "source_sha256": "fef6627dc43845821517bf19b0cbed9f714903bf692c613637bd87cf33cf0ba2",
       "raw_target_sha256": "9e1a1b2d8d4b5989a2a96feb59cf9e9f40755f585e11acde3f51653a3ce943fa",
       "translation": "Chiudi il confronto con un calcolo che si possa ripetere"
+    },
+    {
+      "source": "One compact record is enough. For each unit, write the seller reference and option, domestic shipment number, warehouse reference and eventual parcel number. Add a date only when you know what happened on that date. “Seller marked dispatched” and “warehouse entry created” are more useful than two unexplained dates beside a product name. If an entry refers to several units, note the count. If a unit is held back, leave its outbound field blank with a reason.",
+      "source_sha256": "900629621687ece01666b803e41f67636b487fa205f0bb9ba736e375c4889dcf",
+      "raw_target_sha256": "019df09618bdeee2dd8e0db29597aff893caeb946771e007a62138ce18893f70",
+      "translation": "Basta una scheda sintetica. Per ogni unità annota il riferimento del venditore e la variante, il numero della spedizione nazionale, il codice di magazzino e infine quello del pacco internazionale. Inserisci una data solo se puoi indicare l’evento: «il venditore segna come spedito» e «creata la voce di magazzino» sono più chiari di due date senza spiegazione. Se una voce comprende più unità, annotane il numero. Per un pezzo trattenuto, lascia vuoto il campo della spedizione in uscita e spiega il motivo."
+    },
+    {
+      "source": "If measurements determine the decision, define one test for each disputed unit. Request flat chest width using the same endpoints, with the size label identifiable or clearly tied to the entry. Compare each result with the right reference garment. Do not average the two widths or infer that the larger-looking photograph must show the larger shirt; camera angle and distance can easily mislead. If one unit is still unresolved, mark it as held in your parcel plan so that an otherwise routine consolidation does not include it prematurely.",
+      "source_sha256": "bb046083bb35938b34e52a11d8145a908281aa1f893a728310c56b8c3f02c771",
+      "raw_target_sha256": "6640d38969c12675b5cf407dd98548ecd7c48f6cafdc80b39ada34240b42f4c2",
+      "translation": "Se per decidere servono misure, stabilisci una verifica per ogni capo dubbio. Chiedi la larghezza del torace in piano, dagli stessi punti, con l’etichetta della taglia visibile o collegata chiaramente alla registrazione. Confronta ogni risultato con il giusto capo di riferimento. Evita di fare la media delle due larghezze o di assegnare la taglia L soltanto perché un capo appare più grande in foto: angolo e distanza possono ingannare. Se un capo resta da verificare, indica che va trattenuto per evitare che sia riunito agli altri troppo presto."
+    },
+    {
+      "source": "Sugargoo's estimator guide describes entering parcel characteristics and inspecting the conditions attached to individual results. Its package-simulation guide explains why weight and dimensions estimated before packing can differ from the result after consolidation. You can use that distinction without guessing a fixed packing allowance. At the shopping stage, build a range. At the warehouse stage, replace assumptions with observations. Once packed measurements are available, revisit the quote using the actual parcel you intend to submit and the current available route.",
+      "source_sha256": "702208f24bc2e2fe22f6ab4d03e702595420826134e968d8bdb4adeb9f4dbb76",
+      "raw_target_sha256": "03057b2006ca6cf10d2a3b54e6dbe285c43874e5e20fb9daad024c9ff8e02425",
+      "translation": "La guida al calcolatore Sugargoo spiega come inserire le caratteristiche del pacco ed esaminare le condizioni associate a ogni risultato. La guida alla simulazione spiega perché il peso e le dimensioni stimati prima dell’imballaggio possono cambiare una volta riuniti gli articoli. Non occorre ipotizzare un’aggiunta fissa per l’imballaggio. Durante gli acquisti prepara un intervallo di stime; in magazzino sostituisci le ipotesi con le misure osservate. Quando hai i dati definitivi, aggiorna il preventivo per il pacco reale e la linea disponibile."
+    },
+    {
+      "source": "If you have a question, send the two quote records with their dates, route names and parcel reference. State what stayed constant and which field changed. A message asking why an amount rose from one value to another is easier to answer when both values describe the same currency and parcel. After dispatch, save the final record with the actual contents. It gives you a more useful starting comparison for a future shipment than an isolated price per kilogram, because you know what was in the box, how it was packed and which conditions applied.",
+      "source_sha256": "e8fc397e23214dbe85019a737ce04cea1f2346545c4c0cbe33cf6efbf2c3f562",
+      "raw_target_sha256": "70133ab19b296dd3590a6db0d0d50eed16c4a6f573b1ec55bb361c11af96b964",
+      "translation": "Se hai dubbi, invia entrambi i preventivi con le rispettive date, i nomi delle linee e il riferimento del pacco. Specifica quali dati sono rimasti uguali e quale voce è cambiata. La variazione di prezzo si interpreta più facilmente se i due importi si riferiscono alla stessa valuta e allo stesso pacco. Dopo la partenza conserva il riepilogo finale con il contenuto effettivo. Per il prossimo invio sarà un riferimento più utile del solo prezzo al chilo, perché indica merce, imballaggio e condizioni applicate."
+    },
+    {
+      "source": "If several people share an international parcel, an optional service may benefit one buyer or the entire shipment. A measurement photo requested for one person's jacket can reasonably go against that item. A parcel-level reinforcement charge may be split equally, allocated by item value or assigned under another agreement. None of those internal methods changes what the platform charged. Agree on the method before distributing the cost and keep the original parcel-wide charge visible for reconciliation.",
+      "source_sha256": "1ce9ccf82be56bac8245f8acd70739a6e57373c202342057d502f7016c4e995a",
+      "raw_target_sha256": "65e7a7c0a5ebdafa230ceafdbc07df416f8467e32cc3a0eaeb2e30e34cf8c1dc",
+      "translation": "Se più persone condividono il pacco internazionale, un servizio facoltativo può servire a una sola persona o a tutti. La foto di una misura richiesta per una giacca può essere imputata a quel capo. Il rinforzo dell’intero pacco si può invece ripartire in parti uguali, in proporzione al valore o secondo un altro accordo. Questa ripartizione non cambia la somma addebitata dalla piattaforma. Concorda la regola prima di suddividere i costi e conserva il costo originario per la verifica finale."
     }
   ]
 }

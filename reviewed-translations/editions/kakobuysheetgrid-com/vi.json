@@ -3,9 +3,9 @@
   "locale": "vi",
   "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
   "raw_dictionary_sha256": "9aa2e96fb4b8e29ce0c3c0245f96dc433930a7ce77aaa7de35fd23f441cc60ab",
-  "effective_dictionary_sha256": "68536230443c554091da93497bee65b5f114ddc4c4bc3cf03776b39fa289f1f1",
+  "effective_dictionary_sha256": "cddac75ba94a3a7241243f4f921cd35e4a7aac85373357220eace0eeaf16caf9",
   "checked_entries": 317,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "Every English source field and its final localized replacement reviewed, including all ten articles, section headings, numeric examples, FAQ questions and answers, and navigation labels. Source and raw target hashes verified when creating corrections.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -32,19 +32,19 @@
       "source": "An internal SKU is helpful when the seller actually exposes one. It might identify a particular combination even when two translated option names look alike. Treat it as a literal identifier, including any leading zeroes or letters. A spreadsheet that interprets the value as a number can discard part of it. Store the value as text and reopen the file to confirm it survived. If the seller never displays an internal code, the marketplace link plus the precise option text and dated order confirmation can still be an adequate record.",
       "source_sha256": "b9a5de4e4d0d810cd1aef5d557b0a8e506c2ae591c4e189ea44fbca4754efae3",
       "raw_target_sha256": "c25aba987432689496e6e32d17b0787b26a1d06e8c28161f89d23bcbf326ee36",
-      "translation": "Nếu người bán công khai mã SKU nội bộ, mã đó có thể giúp phân biệt hai tổ hợp có tên gần giống nhau sau khi dịch. Hãy chép nguyên mã, kể cả số 0 ở đầu và các chữ cái. Lưu dưới dạng văn bản rồi mở lại bảng để kiểm tra, vì định dạng số có thể làm mất một phần mã. Nếu không có SKU, hãy lưu đường dẫn gốc, nguyên văn tên tùy chọn và xác nhận đơn hàng kèm ngày."
+      "translation": "SKU nội bộ có ích nếu người bán thực sự hiển thị. Hai tên phân loại dịch giống nhau vẫn có thể mang mã khác. Giữ nguyên chữ cái và số 0 ở đầu. Lưu dưới dạng văn bản trong bảng tính rồi mở lại kiểm tra. Nếu không có SKU, đường dẫn tin, nguyên văn lựa chọn và xác nhận đơn có ngày vẫn có thể đủ để đối chiếu."
     },
     {
       "source": "Some details can be shown by rotating an item. Others require opening packaging, removing a tag or disassembling a component. Identify what the photo would require and check whether the service can perform that action. If it would affect a seal or condition important to your purchase, stop and decide whether the evidence is worth that change. A request to show a manufacturer's printed seal from the outside may answer part of the question with less handling.",
       "source_sha256": "50b7c53cdec957944ccfccfa6b0ab216c47eeffad543b4195c1c2d4a8a8bdb1a",
       "raw_target_sha256": "1464e961a6e96ffb43de7d628f5399d75763f1b806f158c0654e83d21dfe37eb",
-      "translation": "Có chi tiết chỉ cần xoay món hàng để chụp, nhưng cũng có chi tiết phải mở bao bì, tháo nhãn hoặc tháo rời một bộ phận. Hãy xác định thao tác cần thiết và hỏi xem kho có hỗ trợ hay không. Nếu phải làm hỏng niêm phong hoặc ảnh hưởng đến tình trạng hàng mà bạn muốn giữ, hãy cân nhắc trước khi đồng ý. Đôi khi chỉ cần chụp dấu niêm phong của nhà sản xuất từ bên ngoài là đã trả lời được một phần câu hỏi."
+      "translation": "Có chi tiết chỉ cần xoay món, có chi tiết phải mở bao bì, tháo thẻ hay tháo bộ phận. Hỏi dịch vụ có thực hiện được không. Nếu ảnh hưởng niêm phong hoặc tình trạng bạn cần giữ, hãy cân nhắc. Ảnh dấu niêm phong của nhà sản xuất từ bên ngoài đôi khi đã đủ."
     },
     {
       "source": "Packing paper can create an apparent bulge and a loose lace can make one opening look larger. For something you suspect to be a physical mismatch, note whether the feature persists across another angle. A shadow at the sidewall in a front view may disappear in a side image. A clearly different tread pattern visible across the whole outsole is a different kind of observation. State the visible feature and ask the person handling the order to check it directly if necessary.",
       "source_sha256": "a863e7ca2d3986dfab7668f66b65124ecd4c77274081dea1a2c4860d26148b1a",
       "raw_target_sha256": "da815823fd5bb2aa6c45ef78244c16eb85ba087efd713aad1037d320c845bd0e",
-      "translation": "Giấy chèn có thể làm một bên giày trông phồng hơn, còn dây giày lỏng có thể khiến miệng giày có vẻ rộng hơn. Nếu nghi ngờ hai chiếc thực sự khác nhau, xem đặc điểm đó có còn xuất hiện từ góc chụp khác hay không. Bóng trên thành đế khi nhìn thẳng có thể biến mất ở góc nghiêng. Ngược lại, hai hoa văn khác nhau trên toàn bộ mặt đế là một dấu hiệu cụ thể. Mô tả đúng phần nhìn thấy và nhờ người đang cầm đôi giày kiểm tra trực tiếp nếu cần."
+      "translation": "Giấy chèn có thể tạo chỗ phồng; dây lỏng làm miệng một chiếc trông rộng hơn. Xem đặc điểm đó còn xuất hiện ở góc khác không. Bóng trên thành đế có thể mất khi chụp ngang. Vân khác rõ trên toàn bộ đế là một quan sát vật lý khác."
     },
     {
       "source": "KakoBuy QC lookup: matching a photograph by marketplace and item ID",
@@ -110,7 +110,7 @@
       "source": "A price difference, domestic delivery charge or service charge may be discussed during an exchange. Ask which amounts apply to the offered resolution, which currency they use and whether you need to approve them before work proceeds. A quoted amount is not a payment. Record a charge only when you see the corresponding transaction or confirmation. Likewise, a promised refund and a completed credit may appear on different dates. Tracking the money separately prevents unexplained changes to the item's original purchase price.",
       "source_sha256": "1d592c7b9a520b66c95c5025a5692a65981b6499978f81a88b79cf5a5ab2f701",
       "raw_target_sha256": "a7e62e62c0b01e0421b616ce27e97840ae569e9c905feec7c8fa3aa53210f27c",
-      "translation": "Khi đổi hàng, bạn có thể phải thanh toán chênh lệch giá, phí giao nội địa hoặc phí dịch vụ. Hỏi rõ khoản nào áp dụng cho phương án đang bàn, dùng loại tiền nào và có cần đồng ý trước khi xử lý không. Báo giá chưa phải là khoản đã thanh toán. Chỉ ghi nhận chi phí thực trả khi có giao dịch hoặc xác nhận tương ứng. Ngày hứa hoàn tiền cũng có thể khác ngày tiền thực sự về. Theo dõi các khoản này riêng để giữ nguyên giá mua ban đầu của món hàng."
+      "translation": "Hỏi chênh lệch giá, phí nội địa, phí dịch vụ, đơn vị tiền và có cần duyệt trước không. Báo phí chưa phải giao dịch. Chỉ ghi là đã trả khi có khoản thu hoặc xác nhận. Lời hứa hoàn và khoản ghi có thực nhận cũng có thể khác ngày."
     },
     {
       "source": "Sources",
@@ -386,49 +386,49 @@
       "source": "Handle accessories packed separately",
       "source_sha256": "33a43bca281493b3f3266d8d6a32aff51930d2c618ce2c9cf187d1254ae725bc",
       "raw_target_sha256": "959d1c790e6da8e31879bad99d7d544d5387d86f124e55cbfe74c75b7918a66e",
-      "translation": "Khi phụ kiện được gửi trong một kiện riêng"
+      "translation": "Theo dõi phụ kiện được gửi riêng"
     },
     {
       "source": "Check the available remedy",
       "source_sha256": "60fdf3de1b6bc40ca38a8d5ddee091a917c6fabeeedca3ef22fc79513308fa7d",
       "raw_target_sha256": "98b88e09fcf9dbb58b78fc7349d52227aeb1f10059b72a6a154a12813110ab1e",
-      "translation": "Kiểm tra phương án xử lý áp dụng cho đơn của bạn"
+      "translation": "Kiểm tra cách xử lý hiện có"
     },
     {
       "source": "Reprice an unpaid shortlist entry",
       "source_sha256": "f3d9b8d32202e71cb49dabb72abe4b30a6209f09b655a0e2c7c8e271e6211760",
       "raw_target_sha256": "146681a585580a7374a36bb3e14b58eba01ee1f2d7e5deabfefed4dd4431eee9",
-      "translation": "Tính lại giá món bạn đang cân nhắc trước khi mua"
+      "translation": "Tính lại giá món đang cân nhắc và chưa thanh toán"
     },
     {
       "source": "Check fit independently",
       "source_sha256": "166e2b25a8922b7e088ee11f5b3a06dd962ae65b66a372dc57d4c33761123e15",
       "raw_target_sha256": "d8852bd970edc740693d99efa1f16c905a29690b89273726af660b2fa346369e",
-      "translation": "Đánh giá độ vừa vặn bằng số đo thực tế của quần áo"
+      "translation": "Kiểm tra độ vừa bằng số đo thực tế"
     },
     {
       "source": "Request an inventory view",
       "source_sha256": "dfb025a756660ba154daac1f47a55630170119172f2b3c5444a1c5d44e75d878",
       "raw_target_sha256": "d5dec54675e044a2cef06594c13c082231126ba0ee22477cedfa9c2aa6dbb53a",
-      "translation": "Xin ảnh toàn bộ sản phẩm và các phụ kiện đi kèm"
+      "translation": "Xin ảnh kiểm đếm toàn bộ thành phần"
     },
     {
       "source": "Record the original unit's movement",
       "source_sha256": "dac156881180fa8162f9c77c92af8ab789ee574b7b3077252178b8fdeb9b1952",
       "raw_target_sha256": "2b8562e09a497201e5076cdb7baaebe6ea78120eb4fc0c591fa9d2b22228f4ac",
-      "translation": "Ghi lại hành trình gửi trả món hàng ban đầu"
+      "translation": "Ghi lại quá trình chuyển món ban đầu"
     },
     {
       "source": "Close both the item and payment records",
       "source_sha256": "06799f7aaa5693fb1fa51904b6d2f790ee1f0d498fa84cdccaf553247533de9a",
       "raw_target_sha256": "82dfcf96ac1ab3994698e52d3de83f6bb1ea78def698a7f9f4316db48c21f828",
-      "translation": "Đối soát xong cả hàng hóa và các khoản thanh toán"
+      "translation": "Khép riêng hồ sơ sản phẩm và thanh toán"
     },
     {
       "source": "Begin by finishing a sentence such as “I need this photo to decide whether the folder will fit inside the sleeve.” A question with a concrete decision helps you choose the subject, angle and reference point. If the sleeve opens along one edge, the useful view might show the clear opening between the two zipper stops. A photo of the entire bag laid beside a ruler can look informative while leaving that exact opening hidden by the zipper or by folded fabric.",
       "source_sha256": "b855867c5d08a3636cab4d3f72c3ad39e157a266eb2cddae19d3b54c0b82e1fe",
       "raw_target_sha256": "0ef7341854c9627bcfc5de7f86980bed005047c41fae880630615f0b85e62288",
-      "translation": "Hãy bắt đầu từ quyết định cần đưa ra, chẳng hạn: “Tôi cần ảnh để biết bìa hồ sơ có lọt vào túi đựng hay không.” Mục tiêu đó giúp chọn vật, góc chụp và điểm đo. Nếu túi mở dọc một cạnh, hãy xin ảnh khoảng mở thông thoáng giữa hai chốt chặn khóa kéo. Ảnh chụp cả chiếc túi cạnh thước có thể trông rõ nhưng phần mở cần đo lại bị dây kéo hoặc nếp vải che mất."
+      "translation": "Hãy hoàn chỉnh câu “Tôi cần ảnh để biết bìa hồ sơ có lọt vào bao bảo vệ không”. Nếu bao mở dọc một cạnh, cần thấy khoảng mở sử dụng được giữa hai chốt chặn khóa kéo. Ảnh toàn túi cạnh thước có thể trông hữu ích nhưng chưa cho biết bìa có đi qua đúng khe đó không."
     },
     {
       "source": "A number can narrow a search from thousands of similar product photographs to one seller listing. It is most useful when you also retain the marketplace, the selected option and the date of the reference.",
@@ -585,6 +585,1338 @@
       "source_sha256": "e750d7efb539eb2aad7831eac9ace3265062871dba70bf07debd19c736168ae9",
       "raw_target_sha256": "b1d476a9167ac3d08e85fbbf850617b04ceab4548a38ad578decc6192c6c4493",
       "translation": "Khi hỏi hỗ trợ, gửi mã đơn qua kênh riêng, nêu phân loại cùng chi tiết đang thấy rồi yêu cầu góc chụp cụ thể. Ví dụ: “Vui lòng mở cổ tay trái của áo khoác sơ mi nâu và chụp giúp để tôi xem áo có dùng cúc thường không.” Khi ảnh đã giải đáp, ghi kết quả cùng ngày."
+    },
+    {
+      "source": "A seller can place many combinations on one product page. The marketplace identifier finds that page; a saved selection explains which one of those combinations you wanted.",
+      "source_sha256": "18246cac84856870c1636dd13c592b4b4ca981c3eb311127262bdff1a79ef87e",
+      "raw_target_sha256": "bd56f64f9a5bcfedee365b2405f72805a8fddd88827d43faa961347e395eb2be",
+      "translation": "Một trang bán có thể chứa nhiều tổ hợp. Mã hàng dẫn đến trang đó; thông tin phân loại đã lưu cho biết bạn muốn mua tổ hợp nào."
+    },
+    {
+      "source": "Separate three records",
+      "source_sha256": "efa48977e1995b32fba39bd62896468e8264f5e4a78b2bf63af99c6b7f0d73e0",
+      "raw_target_sha256": "aacb36cf8bb2bdfe65761035398654a7828d5180fd1fcabb47001208c7109953",
+      "translation": "Tách ba loại thông tin"
+    },
+    {
+      "source": "Keep the seller listing, the selected option text and the paid order summary. The first record identifies an offer, the second identifies a choice within it, and the third shows what was submitted. An internal stock keeping unit may be visible for some selections. When no SKU is displayed, do not manufacture one by inventing a number or appending a colour name to the item link.",
+      "source_sha256": "eb05d514c5b5400c8219884759593a4a2c52d74b71c68ca3951fa723107e5ae2",
+      "raw_target_sha256": "f884fe6d90329f950e39c6c82ff226ca7aae8e3cc3d0ae62161483f4cfe8526c",
+      "translation": "Lưu tin bán, nguyên văn phân loại và dòng đơn đã thanh toán. Ba phần lần lượt cho biết người bán chào gì, bạn chọn gì và đơn đã gửi gồm gì. Nếu có mã SKU, chép nguyên mã. Nếu không thấy, đừng tự đặt số hoặc thêm tên màu vào liên kết để tạo mã."
+    },
+    {
+      "source": "Change one selector at a time",
+      "source_sha256": "c30591a785988c209a7e3a330987e0fbfe8bb07776aa530f085b6e55b2d987dd",
+      "raw_target_sha256": "1454d23668267959808ff6e025b8291b14bb9d75d93f0750c3f707f56e51dee5",
+      "translation": "Thay từng lựa chọn một"
+    },
+    {
+      "source": "Open the listing and choose a colour while holding size constant. Observe whether the image, available sizes, price or quantity changes. Now change size and repeat. Two almost identical labels can refer to different fabric, an earlier model or a version sold without accessories. Keep the original seller wording as well as any translation. The word black alone rarely distinguishes two black choices if the seller uses a suffix to separate them.",
+      "source_sha256": "699eb003d97919885ef49f85fa99552cd96e507f63e3405fc3fcc4045d8dca7e",
+      "raw_target_sha256": "ec56dd28a7e64cf11c13008c30decde11374a42dff02695200013bc50b26ca2b",
+      "translation": "Giữ nguyên cỡ, đổi màu và quan sát ảnh, cỡ còn hàng, giá hay số lượng có đổi không. Sau đó thử đổi cỡ. Hai nhãn gần giống có thể chỉ chất liệu khác nhau, mẫu cũ hoặc bản không phụ kiện. Lưu nguyên văn và bản dịch. Nếu có hai lựa chọn màu đen, phần đuôi của tên có thể chính là dấu hiệu phân biệt."
+    },
+    {
+      "source": "Reopen the copied link",
+      "source_sha256": "f8cd29da92076a77989e6dd0da6c817f8c76c0a2dc697fa20fd707baf351871c",
+      "raw_target_sha256": "41a84233e06a27fcccd74d1ce3d884ccc3b156bcee712ee0fa97bf57080a08c6",
+      "translation": "Mở lại liên kết đã chép"
+    },
+    {
+      "source": "Copy the source link and open it in a fresh tab. If the page starts at a default selection, the link is useful for finding the listing but does not preserve your choice. Keep the option notes beside it. If a link appears to restore a choice, still confirm the order summary before payment. A prior selection in a shopping session or an edited listing can affect what a returning visitor sees.",
+      "source_sha256": "f25add19326f78acc6bcf3ba69b15833ab1ca304ded892dc7929a6fa4165474a",
+      "raw_target_sha256": "cdc0fb6d4fbbc1050970852d27e581e65c7f7d5ea49ca90d3ffdddcdecdc9e91",
+      "translation": "Mở liên kết gốc trong thẻ mới. Nếu trang hiện phân loại mặc định, liên kết chỉ dẫn đến sản phẩm. Lưu phân loại riêng bên cạnh. Ngay cả khi thấy đúng lựa chọn cũ, hãy kiểm tra tóm tắt đơn trước khi trả tiền. Phiên mua trước hoặc tin vừa chỉnh sửa có thể ảnh hưởng nội dung hiển thị."
+    },
+    {
+      "source": "Compare options as complete combinations",
+      "source_sha256": "fd6c015143b207705c0742f1114fdd46f4e4ca1ed94902c37475cad679bb9d9d",
+      "raw_target_sha256": "fea76eb8864c73316b9cfadbe74ee40dfebc0d2b5fe09706b2e2857db534ec86",
+      "translation": "So sánh đủ tổ hợp"
+    },
+    {
+      "source": "Imagine one row showing trousers, a jacket and a complete suit. The cheapest price could correspond to the trousers. Add the exact jacket-and-trousers option before comparing its subtotal with a different shop's full suit. For quantities, record complete sets separately from pieces. Two units of a suit and two individual garments represent different orders even when a cart shows the number two in both cases.",
+      "source_sha256": "65231a70dbf8b5eebc24dc1f34b1c0c0a053e6c6324b71b98fc5ab68d4ec2da8",
+      "raw_target_sha256": "b2aec37bbd501ddb02b35331b7d8901e9e9a5c8cfc26e39a6ab0c8fa23059c23",
+      "translation": "Một tin có thể bán quần, áo vest và cả bộ. Giá thấp nhất có thể chỉ là giá quần. Chọn đúng bộ áo và quần trước khi so tổng phụ với bộ đầy đủ ở cửa hàng khác. Ghi riêng số bộ và số món lẻ. Hai bộ vest khác hai món quần áo dù giỏ hàng đều hiện số hai."
+    },
+    {
+      "source": "Match the warehouse entry to the selection",
+      "source_sha256": "bd65ef37d041b5ad6093a1695df1a2881396be9b85e8fa58cc5da4d65d224f51",
+      "raw_target_sha256": "546fabffc638644822d46d6232c7cc013b66214e780ff5e32bd1860ec9603c8c",
+      "translation": "Đối chiếu hồ sơ nhập kho với phân loại"
+    },
+    {
+      "source": "When photographs arrive, identify the order and the option on the received unit. A size label can support a size check, while a picture showing both pieces helps confirm a set. Ask for the missing feature in a new view if the existing picture does not resolve the question. An item ID match is a necessary link in the evidence chain, but it cannot select a colour or count an accessory for you.",
+      "source_sha256": "4051f673eddcd1fa3d2127b0f5aad3d0533f17c221cc6bc8cb6e610888c7c4c6",
+      "raw_target_sha256": "d961678adb5673bf9f419e8a3ba2c05747cd20143c8fdfb436e14a9c1b0243ff",
+      "translation": "Khi có ảnh, xác định đơn và phân loại của món đã nhận. Nhãn cỡ giúp đối chiếu kích thước ghi trên áo; ảnh có đủ hai món giúp kiểm tra bộ. Nếu chưa rõ, yêu cầu đúng góc còn thiếu. Mã hàng liên kết các hồ sơ nhưng không tự xác nhận màu hoặc số phụ kiện."
+    },
+    {
+      "source": "Read a listing as a collection of choices",
+      "source_sha256": "22730e5fc8106503b31d336b9d184988f414ffdac55b1ace659a3d30b9f7a45d",
+      "raw_target_sha256": "aa7686e6fc6f93fcf62d419b08763081d0bbb81f109f07556ef0d3e90f0f177c",
+      "translation": "Đọc hết lựa chọn trên cùng tin"
+    },
+    {
+      "source": "Suppose you are comparing two canvas bags that share one marketplace link. The seller offers short and long handles in two colours, then a separate choice between a bag alone and a bag with a removable pouch. Choosing green does not settle the handle length or whether you are buying a pouch. Read through all visible selectors after making a colour choice. Some combinations may disappear or change names as a result of the preceding selection. Save the complete final wording in the order the seller displays it.",
+      "source_sha256": "ec4ccf8f705910eea793d7460ad75cd040ad0ae606218529cc85c87d1c4426a0",
+      "raw_target_sha256": "5fd9b792a0877d3c3191710108718fc2f1afd120fa15358c0e3f51477c87aa3c",
+      "translation": "Hai túi vải có thể dùng chung liên kết. Người bán cho chọn quai ngắn hoặc dài, hai màu, rồi chọn túi đơn hoặc kèm túi nhỏ tháo rời. Chọn màu xanh chưa quyết định độ dài quai hay có túi nhỏ. Xem lại mọi mục sau khi chọn màu vì một số tổ hợp có thể biến mất hoặc đổi tên. Lưu đầy đủ nội dung cuối theo thứ tự hiển thị."
+    },
+    {
+      "source": "Observe what the selected price buys",
+      "source_sha256": "9c6eb28444c6e5bd2a97e5c1fe4cdb3527bcd8b2e7dbfa0ee61ddeb40ead5d11",
+      "raw_target_sha256": "3760e4d3b269367cd04fa5b6b58234bfb2ec6a7720e7b5c7e0b4e7d4218bdd3d",
+      "translation": "Kiểm tra mức giá bao gồm những gì"
+    },
+    {
+      "source": "At the top of a multi-option listing, a displayed price may be a starting point. Select the exact components you want, then note the amount and quantity alongside that selection. In the canvas bag example, a photo might show the pouch clipped inside the bag while the cheapest choice sells the pouch alone. Copying the headline price beside a photo of the set would produce a misleading comparison. A row labelled “green bag, long handles, pouch included, one set” gives the price a defined unit.",
+      "source_sha256": "390be2ff21ba198caf06531aed15472192122c37c0a3b40680160ac045c57279",
+      "raw_target_sha256": "24898772d6e604df90e4668d18f1f48ea92581649dc7e4c8c05dfc5809c49445",
+      "translation": "Giá ở đầu tin có thể chỉ là giá khởi điểm. Chọn đúng thành phần rồi ghi giá và số lượng. Ảnh túi vải có thể cho thấy túi nhỏ móc bên trong trong khi giá thấp nhất chỉ mua được túi nhỏ. Dòng “túi xanh, quai dài, kèm túi nhỏ, một bộ” xác định rõ đơn vị dùng để so giá."
+    },
+    {
+      "source": "Quantity deserves a separate check. If you want two people to receive one complete set each, first confirm how many bags and pouches one unit of the selected option contains. Place the desired quantity in the cart and inspect the resulting selection and subtotal before deciding. A free-text instruction about including a pouch does not establish that you paid for the option containing it. If the combination you want has disappeared, ask which listing currently offers it and start a new comparison for that listing.",
+      "source_sha256": "9b3f43174a545a6f6ca822497fd130a78b3e3192ccbc873c2575a0f39dae763a",
+      "raw_target_sha256": "0dc0ca181614206d5533cbddcaf7ce7c14eb1205696c556786090502f719cfa8",
+      "translation": "Muốn tặng hai người mỗi người một bộ, trước hết kiểm tra một đơn vị phân loại chứa mấy túi chính và túi nhỏ. Nhập số lượng vào giỏ rồi xem lại phân loại và tổng phụ. Ghi chú nhờ thêm túi nhỏ chưa chứng minh bạn đã mua bộ có túi. Nếu tổ hợp biến mất, hỏi tin nào còn bán rồi so sánh lại từ đầu."
+    },
+    {
+      "source": "Use translations without losing distinguishing details",
+      "source_sha256": "16ea49d3e81eef75fc10aeeeb33c60496a996f93bd154a66ef7487d32c76cf67",
+      "raw_target_sha256": "c866b9b916e38e6cd3f82a57547d5d01039576ecdbcd18ef18b3f6197d363ce5",
+      "translation": "Dịch mà vẫn giữ chi tiết phân biệt"
+    },
+    {
+      "source": "Machine translation can make two option strings read identically even when the original includes an extra character, a model suffix or a different unit. Save both original labels and your working translations, with the original spelling intact. Note the option order only as a temporary aid. A seller can rearrange choices, so “third tile from the left” may describe the wrong product when you return. An image thumbnail can help locate a choice, but its colour or pictured accessories need confirmation from the selected option text.",
+      "source_sha256": "4b9a1871f7da6024373c9bae4d04b73018e0e5407eadf952756abc168a84aa6c",
+      "raw_target_sha256": "939c3c885d6a893464e7efe8bdc2c2b304bce9fbc344d333644cec1a563a4a5c",
+      "translation": "Hai nhãn có thể dịch giống nhau dù bản gốc khác một ký tự, hậu tố mẫu hoặc đơn vị. Lưu nguyên cách viết kèm bản dịch. “Ô thứ ba từ trái” chỉ hỗ trợ tạm thời vì người bán có thể đảo thứ tự. Ảnh thu nhỏ giúp tìm lựa chọn nhưng vẫn cần xác nhận màu và phụ kiện bằng nội dung phân loại."
+    },
+    {
+      "source": "If the language difference affects a practical decision, make the question concrete. For example, ask whether the two green long-handle options differ in pouch inclusion or in bag dimensions. Include their original option text so the respondent can distinguish them. A broad question asking which version is better may produce an opinion without resolving the specific difference. Keep the answer with its source and date. If it refers to one colour, avoid applying it to every colour on the listing.",
+      "source_sha256": "348db9ff046a1da4004a7ac03a2a9dfbdfec29ead37b72acffe72b291ada234c",
+      "raw_target_sha256": "f43776819a2f473b5e86e24e379f67d5853918e06d68f53b819a2683eae1603c",
+      "translation": "Hỏi đúng điểm ảnh hưởng quyết định: hai bản túi xanh quai dài khác ở kích thước hay ở việc kèm túi nhỏ? Gửi nguyên văn hai phân loại. Câu hỏi “bản nào tốt hơn?” có thể chỉ nhận được ý kiến. Lưu câu trả lời cùng nguồn và ngày. Câu trả lời về một màu chưa chắc áp dụng cho màu khác."
+    },
+    {
+      "source": "Distinguish the selection from a customer's note",
+      "source_sha256": "d8ff75193a523158380bd298fcfd9fe9ecb79c879ae2960b6a117e84815aa67c",
+      "raw_target_sha256": "a8b9fa070b60cbc144ee756fcafd24bfe92efe785486b93db44b8d2fdecbdd4c",
+      "translation": "Phân biệt phân loại đã chọn với lời nhắn"
+    },
+    {
+      "source": "A configurable product sometimes invites a buyer to leave instructions. The instruction and the selected item perform different jobs. The selected option establishes what the cart and receipt describe; a note communicates something you have requested. If you select a short-handle bag and type “long handle please” in a message, the records may point in different directions. Before paying, choose the exact available option or seek a written explanation of how the seller handles the requested combination.",
+      "source_sha256": "da657ea632e2982d3683fb5b3eeb6a04c07e40b279414ffbe373f905b9d520ac",
+      "raw_target_sha256": "2a3fe92c83d0e01ca84ff19c8090cbb6424603d790d8495296c4a4fd3416518a",
+      "translation": "Ở sản phẩm tùy chọn, phân loại trong giỏ và lời nhắn có chức năng khác nhau. Phân loại xuất hiện trên biên nhận; lời nhắn thể hiện yêu cầu. Chọn quai ngắn rồi ghi “xin quai dài” khiến hồ sơ mâu thuẫn. Trước khi trả tiền, chọn đúng bản hoặc yêu cầu giải thích bằng văn bản cách đặt tổ hợp đó."
+    },
+    {
+      "source": "For a gift with several components, create a short record for each intended recipient. Record their chosen colour, handle length, pouch choice and quantity, even if the marketplace URL is identical for everyone. Confirm the final order has the expected number of distinct lines. Two identical green bags may legitimately appear on one line with quantity two. Green bags with different handle lengths need a way to distinguish those selections in the record you will use at warehouse intake.",
+      "source_sha256": "2a69d00faba871ae2ac71de3de2978762e35c5959b2f32ccfb42bf39e83cc695",
+      "raw_target_sha256": "3f0d7b53af2f371cc58057b859ea02ee13db6fea9513614080de2ae03357e4f0",
+      "translation": "Khi mua quà, ghi riêng màu, độ dài quai, lựa chọn túi nhỏ và số lượng cho từng người dù dùng một URL. Kiểm tra các dòng đơn cuối. Hai túi xanh giống hệt có thể trên một dòng số lượng hai. Hai túi xanh khác độ dài quai cần dấu hiệu phân biệt để kiểm tra lúc nhập kho."
+    },
+    {
+      "source": "Resolve mismatches at the right level",
+      "source_sha256": "9d256bf6d49b2807e74d33ff7922aadcb52f2f53dd19a19ffb7fb76fcb02ed7a",
+      "raw_target_sha256": "7d71b0b681fb64798ed80279bd132f3be3ea17664154effddae8e0cf06d9f9d5",
+      "translation": "Xác định chênh lệch ở đâu"
+    },
+    {
+      "source": "When a received item differs, ask first whether the listing, the selected combination or the received unit is in question. A correct item number with the wrong colour points to an option-level issue. A correct colour with a missing pouch raises a package-content question. An entirely different seller item number is a source-link discrepancy. Each needs different evidence, and naming the precise difference makes a follow-up easier for the person handling the order.",
+      "source_sha256": "4c9ff46e6354edbcd686821a749b6e0a7ed4221b7853f13f4d5ae26b06febc7a",
+      "raw_target_sha256": "6b6ff011551f72e7e5b5698ec5be47ab2b584b9d60fc5d4cf0e81bbe61665d9f",
+      "translation": "Xác định vấn đề ở tin bán, tổ hợp đã chọn hay món nhận được. Mã hàng đúng mà sai màu là sai phân loại. Đúng màu nhưng thiếu túi nhỏ là vấn đề về thành phần gói hàng. Mã sản phẩm người bán hoàn toàn khác là chênh lệch liên kết nguồn. Nêu chính xác điểm khác để nhân viên biết cần đối chiếu bằng chứng nào."
+    },
+    {
+      "source": "For the bag example, gather the paid order line showing the pouch-inclusive combination, the warehouse photo showing the bag, and any photograph that lets you inspect its interior. If the bag is closed, describe the pouch as unconfirmed and ask for an open view if available. If a clear view of the contents and an item count confirms the pouch is absent, update the note. Your record now connects the specific option purchased to the specific feature you needed to verify.",
+      "source_sha256": "bc24626ff71d1c7008cdb8452d3b0917103d98337c03826160b18b57ff317c2a",
+      "raw_target_sha256": "888053e1f06f52ffaadbaebaa2e52e981a5c6a6b505c2e289942bcb6c505c111",
+      "translation": "Tập hợp dòng đơn đã trả tiền ghi bộ kèm túi nhỏ, ảnh túi chính tại kho và ảnh bên trong nếu có. Nếu túi còn đóng, ghi “chưa xác nhận túi nhỏ” và xin ảnh mở túi. Khi ảnh rõ cùng số lượng thực tế xác nhận thiếu, cập nhật ghi chú. Như vậy phân loại đã mua được nối với đúng thành phần cần kiểm tra."
+    },
+    {
+      "source": "An agent link is convenient for checkout. The original marketplace page gives you a separate reference for the seller, the listing identifier and the options you are researching.",
+      "source_sha256": "f157da3ad58d1085fc8b9cc837edf2891707414f07ce3815e4a4f8a33904a158",
+      "raw_target_sha256": "4040a841f99990bc852e3f3eecd1771f7cf75b17526f735f68c2e4eafe81cb23",
+      "translation": "Liên kết đại lý thuận tiện khi thanh toán. Trang gốc trên sàn cho bạn một nguồn riêng để kiểm tra người bán, mã sản phẩm và các phân loại đang cân nhắc."
+    },
+    {
+      "source": "Work from the item page",
+      "source_sha256": "1e17aa084fda4b44d23391c9361117e3bb97f8c740344f685b1f6b3e2854a2db",
+      "raw_target_sha256": "754deaf349303d162179a401b056e197c69814088c7d83becd023d223fa5fce5",
+      "translation": "Bắt đầu ở trang sản phẩm"
+    },
+    {
+      "source": "Start with the specific product rather than the platform homepage, an affiliate registration page or a search results page. Open the product normally and look for an original listing link. On this grid, use the source-link control on the detail page when it is available. Copy the resulting address to a private note. If the destination is simply a shop, return to the item and identify the product inside that shop before doing a QC lookup.",
+      "source_sha256": "c0744cb32c0bc35c3d0652769ecd31ed0c12c7e1e75a9fd12b32d1c32007ec77",
+      "raw_target_sha256": "16d38cf30c3245eede06e5323b18bcbe091173d2d1e29f1a1830ff633d061601",
+      "translation": "Mở đúng sản phẩm, tránh nhầm với trang chủ, trang đăng ký giới thiệu hoặc danh sách kết quả. Tìm liên kết gốc trên trang chi tiết. Trong Sheet Grid, dùng nút liên kết nguồn rồi kiểm tra xem trang vừa mở có đúng sản phẩm không."
+    },
+    {
+      "source": "Recognize an embedded URL",
+      "source_sha256": "adfd1e68c62534eac2b221349bebc612cc73ad2cabd6f5778a59346f1f65ce61",
+      "raw_target_sha256": "3840ead08108d20d4d049c0010fce82e0c69c9b2fef2cf9b7fd2893d4226098f",
+      "translation": "Nhận biết URL được lồng trong liên kết"
+    },
+    {
+      "source": "Some KakoBuy item links include an encoded marketplace address in a url parameter. Percent-encoded characters can make it look unfamiliar: an encoded question mark or equals sign still belongs to the embedded address. A finder may accept the complete agent link directly. Prefer an exposed original-link control when possible, and inspect the resulting destination rather than deleting punctuation until a URL happens to open.",
+      "source_sha256": "6d9f4cd15bb728d8219aa29538e356072f1f3294e9bdf748335b05c9c916c2eb",
+      "raw_target_sha256": "8d88f599864bce8443a4dd908ac3e37d8d313503f4b99c21bdf7dcc3ef27d1df",
+      "translation": "Một số liên kết sản phẩm KakoBuy chứa địa chỉ sàn đã mã hóa trong tham số url. Dấu hỏi hoặc dấu bằng có thể hiện thành mã phần trăm nhưng vẫn thuộc URL gốc. Dùng công cụ nhận liên kết đầy đủ hoặc mở nút nguồn. Tự xóa ký tự có thể làm mất mã hàng hay tham số quan trọng."
+    },
+    {
+      "source": "Verify the recovered destination",
+      "source_sha256": "708650ee103f660ad3d5d0e7d8810e55d1e092c6894df7264b37096a89a0c2d7",
+      "raw_target_sha256": "49a9cbcdc8a56f0c3f12afc0a7f2eb4dd084e98f45103c6f9019643ef740eedb",
+      "translation": "Xác minh trang đích tìm lại được"
+    },
+    {
+      "source": "Compare the seller domain, item number, title, pictures and available options. A convincing title alone is insufficient when several shops sell similarly named items. An agent URL and its seller URL need not look alike, but the marketplace identity and item number should reconcile where both expose them. Save the pair under one note and give the note a recognizable label such as blue jacket with two-way zip.",
+      "source_sha256": "9ac56af9b5ad54f2f881cf820466f8b097f8772282e061ca69530c8b0a9c8ce8",
+      "raw_target_sha256": "e2926092ede02a2f4aa727c5edfc2e1214747e1e87164fde3c3c1c002e57014c",
+      "translation": "Đối chiếu tên miền người bán, mã hàng, tiêu đề, ảnh và phân loại. Nhiều cửa hàng dùng tên hàng gần giống nhau. URL đại lý và URL người bán có thể khác hình thức nhưng phải dẫn đến cùng món. Ví dụ, kiểm tra itemID trên trang Weidian cùng các chi tiết nhìn thấy."
+    },
+    {
+      "source": "Distinguish useful metadata from private order information",
+      "source_sha256": "2450d8846d90974789bc93e01ec854661beea387a4dcbb361da63a568e8ff725",
+      "raw_target_sha256": "a8ca59128c71b2db3929376a8e3b062dc4236883e84fe92d08cdd5b9a3c04edc",
+      "translation": "Tách dữ liệu sản phẩm công khai khỏi thông tin đơn cá nhân"
+    },
+    {
+      "source": "A public listing reference is usually sufficient for comparing a find. Do not share an account dashboard URL, a checkout page containing personal information or a screenshot with an address to prove a simple listing match. Crop any evidence you share to the item and option. An exchange or payment inquiry belongs in the official order channel, where the corresponding order reference can be supplied privately.",
+      "source_sha256": "6ff45467d53fcf8496b4b25c99c877078990e786eafe1957fea42946532325b3",
+      "raw_target_sha256": "5ac714f902efa8655bdbde9e753eff0907affbbac22ab10c6906894336865be8",
+      "translation": "Liên kết tin bán công khai thường đủ để so sánh. Tránh chia sẻ bảng tài khoản, trang thanh toán có thông tin riêng hoặc ảnh chụp lộ địa chỉ nhà. Cắt bỏ dữ liệu cá nhân và lưu chứng từ thanh toán ở chỗ riêng."
+    },
+    {
+      "source": "Deal with an unavailable listing",
+      "source_sha256": "8c7001aa99e8496bb69389f3614cca47e274e16ecb52d194ea68217602d326c8",
+      "raw_target_sha256": "df7828f358a8b09987b7b1d6c216deb4307dfe03c28ed94beecf40ab232f7040",
+      "translation": "Khi tin bán không còn mở được"
+    },
+    {
+      "source": "A seller may remove a product or restrict what an anonymous visitor can see. Record the page state and date. If a visual search returns another shop, create a new entry instead of replacing the old source link under the same name. The new listing needs its own price, size, option and QC checks. An old warehouse album attached to the first seller cannot establish what the second seller will deliver.",
+      "source_sha256": "5ddb4459b4ec9024b4753002d7f7dd1631154e84fc3a603cfed9b573cf9a7184",
+      "raw_target_sha256": "ceb7c9cdfc1515c39fccfa1971ab03a59a0f6f049107355f7ed095c00a1a49af",
+      "translation": "Người bán có thể gỡ hàng hoặc hạn chế nội dung cho khách chưa đăng nhập. Ghi tình trạng trang và ngày. Nếu tìm bằng ảnh ra cửa hàng khác, tạo mục mới. Hàng trông giống nhau chưa chắc cùng nguồn gốc, cùng phân loại hay điều kiện bán như tin cũ."
+    },
+    {
+      "source": "Give each address a purpose",
+      "source_sha256": "c792b403f31f291c3a9c0dcaf00a4846fe41e175eac09f099b13f3dcd50e1607",
+      "raw_target_sha256": "ea3e07b1089f0d90444cc8c3b415cee617e69a6c3952471f1c708611839044a4",
+      "translation": "Ghi rõ công dụng của từng địa chỉ"
+    },
+    {
+      "source": "A public product find can generate several addresses that look plausible in isolation. The spreadsheet has its own page for the item, the agent can show a product detail page, and the original seller lists the product on a marketplace. A link to the product image opens a fourth destination. Use meaningful field names when you save them. “Spreadsheet discovery page,” “agent purchase page” and “original marketplace offer” are more useful a week later than three unlabeled links in a chat.",
+      "source_sha256": "771121fbb381151f4e0fbf7cd4ac34d5310f59ce817cc22d1b0f87759b1db503",
+      "raw_target_sha256": "253c494457523f464bdccb1022462ce6b17ed742ffa7663a5cdd71d7f52031fd",
+      "translation": "Một sản phẩm có thể có trang danh mục, trang chi tiết của đại lý, tin gốc người bán và địa chỉ tệp ảnh. Lưu từng liên kết kèm nhãn. Danh mục giúp tìm lại mục đã xem, trang đại lý dẫn đến lựa chọn mua, tin người bán thể hiện chào bán gốc, còn URL ảnh chỉ hiển thị hình."
+    },
+    {
+      "source": "A common test is to imagine which page you would open to answer a question about the seller's current options. A standalone image can show the bag pictured in an advertisement. It cannot establish whether the merchant still offers a red version with a shoulder strap. A catalogue card can help you return to the find, but its short description may omit a seller option. Keep the sources that serve each purpose and record which one supplied a particular observation about the product.",
+      "source_sha256": "da0bd56fb2b09b1a9d2453151bcccd8e549fa5b8af74e2d71f62c02519558c0a",
+      "raw_target_sha256": "c95b1e7845cb414faf652ec1bf372379fa9a45e788b71485d79ed4b2ed52cd3d",
+      "translation": "Tự hỏi trang nào cho biết người bán đang có những phân loại gì. Ảnh rời có thể cho thấy chiếc túi trong quảng cáo nhưng không xác nhận cỡ hoặc màu đó còn bán. Mở tin sản phẩm và xem lựa chọn hiện có. Lưu ảnh riêng làm tư liệu hình ảnh."
+    },
+    {
+      "source": "Follow a normal redirect carefully",
+      "source_sha256": "c8e607e11e8e9a79e7be62ad0c11ac5f87868548123da46212f9c47f0bb62c21",
+      "raw_target_sha256": "20ba543a76be3c9a4eab318e38c477ca1a5dd365fe84601340dc781bfd27c43e",
+      "translation": "Theo dõi đường dẫn chuyển hướng"
+    },
+    {
+      "source": "A shared link may go through a redirect before reaching a product. Open it as an ordinary public listing and note the final destination. Read the address bar alongside the actual content on the page. A shop landing page featuring a similar product in a carousel does not identify that carousel entry as the original item. Look for a specific product title, item identifier and selection controls. If you reach a sign-in page, keep the original public reference and note that the destination could not be confirmed from that session.",
+      "source_sha256": "d1fb90f738a1a53f9dbc17343633baa460963a4d9fe7241d9b0f7cf15dc0bb5e",
+      "raw_target_sha256": "63971e66d64c97519648dc73d0964b1e9837a944c937d269fe9269207e361d34",
+      "translation": "Liên kết chia sẻ có thể chuyển hướng trước khi đến sản phẩm. Mở như khách bình thường rồi ghi địa chỉ cuối cùng và nội dung trang. Trang cửa hàng trưng bày món tương tự chưa phải tin bán cụ thể. Tìm mã sản phẩm và các phân loại trước khi xác nhận nguồn."
+    },
+    {
+      "source": "Avoid sending an entire browser or order export to someone who only needs to identify a product. If the item link lives inside a purchase history, use the public product or original link control and check its destination before sharing. A screenshot of the whole order history may include unrelated products, names or payment details. The marketplace label and public item reference normally give another person a much cleaner starting point for an independent check of the seller listing.",
+      "source_sha256": "c609c7297bebd41ea9f75cf4c183279513b2343ae7b5eb9e6e06bb6387c26d32",
+      "raw_target_sha256": "350f97d34e5eda4328305cc48c988eb8e6300f3f53ca3156212e19219de35988",
+      "translation": "Khi người khác chỉ cần nhận diện sản phẩm, hãy chia sẻ tin công khai. Nếu tìm thấy trong lịch sử mua, mở nút sản phẩm hoặc liên kết gốc và kiểm tra đích đến trước. Không cần gửi tệp xuất toàn bộ trình duyệt hay danh sách đơn hàng."
+    },
+    {
+      "source": "Recognize a link that opens at the wrong level",
+      "source_sha256": "ac31ed83a3da5bdc1c89d887ec70efb44fcf8797cd80547f16116f9247c0dc1b",
+      "raw_target_sha256": "b3054200e9aa8982edced88566a34d589537d3b88debf3628305c5e905a00378",
+      "translation": "Nhận ra liên kết mới dẫn đến bộ sưu tập"
+    },
+    {
+      "source": "Imagine a short link opens a seller's collection of storage boxes. The image of a green box looks familiar, but selecting it reveals a page with several sizes and lids sold separately. You have found a candidate, not yet a recovered link. Compare its marketplace number with any identifier in the original product record. Check whether the seller name and available configurations align with what you saved. If the original record has no identifier, describe the new link as a possible match and explain the basis.",
+      "source_sha256": "7095b5c7cf56f8743e55984973a6ba5ac3b87badcd3f383cb08e39d58dc7eec5",
+      "raw_target_sha256": "0d694e2211d60f44e95b48827e9a0551a6439aa8d55ae5797160f781d75e7528",
+      "translation": "Ví dụ, liên kết rút gọn mở bộ sưu tập hộp đựng. Hộp xanh trông quen nhưng khi mở lại có nhiều cỡ và nắp bán riêng. Bạn mới tìm ra một ứng viên. So mã hàng, cỡ và thành phần gói với hồ sơ cũ trước khi xác nhận đúng nguồn."
+    },
+    {
+      "source": "A seller can have more than one listing for nearly identical boxes. One might sell sample units, another bulk sets. A product photo can survive across both listings while prices, quantities and dimensions differ. Using the currently accessible offer as a substitute for the old one may be a reasonable buying decision after a fresh review. Replacing the saved original URL without noting the substitution, however, would assign older warehouse photographs and purchase details to a different commercial offer.",
+      "source_sha256": "e5f607b5e874f2d7d3e0708cc14930034bba97a548d83a186d9db98775ee5214",
+      "raw_target_sha256": "b527d9bd047beea6dc2b205757a95bd3f7a60fbc2c9c822305a1ba4de4f459bb",
+      "translation": "Cùng người bán có thể đăng hai tin hộp gần như giống hệt: một bán mẫu lẻ, một bán theo lô. Hai tin có thể dùng chung ảnh nhưng khác giá, số lượng và kích thước. Dùng mã tin đang mở để kiểm tra và ghi là phương án khác nếu chưa chứng minh được cùng nguồn."
+    },
+    {
+      "source": "Check what survives when the link is shared",
+      "source_sha256": "3772834835379fd3ad03b5ac4d7b151756c4b097967d26a77d00ad0e2c8523f4",
+      "raw_target_sha256": "2b44cddd71cd224d185c9b2972ad10d09f03f24f81522e4e1d0b43a1a970973f",
+      "translation": "Kiểm tra liên kết giữ lại thông tin nào"
+    },
+    {
+      "source": "If the item opens with a selected size in your session, copy its public address into a fresh tab. See whether it preserves the selected option or returns to a default page. A session can remember choices that are absent from the URL. Ask a collaborator to choose the exact option text in their own session if they need to confirm a price or photograph. Do not assume their first displayed option matches yours merely because the marketplace page has the same item number.",
+      "source_sha256": "827ac6656bdf34870a00eade6e4d4e47c755d0cbeb8c55a1405821c05fdb8499",
+      "raw_target_sha256": "20d95446deebba3b70f7fb614f9e79747af5c7e62da55235703b9fac177cb288",
+      "translation": "Chép địa chỉ công khai sang thẻ mới. Trang có giữ cỡ bạn vừa chọn hay quay về mặc định? Phiên mua có thể nhớ lựa chọn không có trong URL. Lưu tên phân loại riêng và kiểm tra lại trước khi trả tiền."
+    },
+    {
+      "source": "For the storage box, keep the length, width, height and lid choice beside the link. If the seller uses a label such as “large with lid,” preserve that exact wording and add the dimensions separately. If the link later shows an amended size chart, the original observation remains traceable to a date. You can then decide whether the current offer still serves your purpose, without having to reconstruct why an earlier buyer associated a particular capacity or price with the shared address.",
+      "source_sha256": "0aea8c0b2ade58fdbbae55ea10c2b078084b127205918d0a8e4569660ead0fd3",
+      "raw_target_sha256": "421bc5d6a1af3ded741afdc6b7ab453d7b79a1c5cfa2935030e02e8cb71777ab",
+      "translation": "Với hộp đựng, ghi dài, rộng, cao và lựa chọn nắp bên cạnh liên kết. Nếu tên phân loại là “cỡ lớn kèm nắp”, giữ nguyên cách ghi rồi bổ sung số đo riêng. Khi trang đổi lựa chọn nắp, bạn vẫn phân biệt được lựa chọn trước với tin hiện tại."
+    },
+    {
+      "source": "Leave a useful result when recovery fails",
+      "source_sha256": "208df5d5a637fa24961dd2f602ccdb5b7a063c4ebf8b7976f59b1617842cc968",
+      "raw_target_sha256": "0128b9f6a92bfa8d56737200a7feea36217a9702887e64088fabc71e787648fe",
+      "translation": "Ghi kết quả ngay cả khi chưa khôi phục được nguồn"
+    },
+    {
+      "source": "A useful record can end with an unresolved source. Write down the last confirmed public location and what stopped the search, such as a removed product page or a redirect to a shop. Keep any item identifier you can independently read from the original link. Distinguish a seller claim that the item moved from a verified replacement link that the seller supplied. If you later receive that replacement, open a separate record and connect the two with the date and explanation.",
+      "source_sha256": "56551309977508d32909df0c4f919de0046f6141d3b2837ed52621b72787e70a",
+      "raw_target_sha256": "617acaef42d428d1da2e9f4a00e83078dfde2755ced49e2abe531d666ce3647a",
+      "translation": "Hồ sơ vẫn hữu ích dù nguồn chưa rõ. Ghi vị trí công khai cuối cùng đã xác nhận cùng lý do phải dừng, chẳng hạn tin đã gỡ hoặc chuyển đến trang cửa hàng. Giữ mã hàng có thể đối chiếu độc lập. Đánh dấu sản phẩm trông giống ở nơi khác là ứng viên thay thế."
+    },
+    {
+      "source": "Before using a recovered link to make a purchase, review the current price, package quantity and selected option. A recovered historical URL answers the question of where the original find pointed. The product offered there today still merits its own review. For a purchase already in progress, use the order's private support channel and attach only the relevant original and current product evidence. A public QC search and an account-specific order question can then be resolved independently.",
+      "source_sha256": "5fba3b79adbb529acef594b2c4419b836f67e0806b0e44b04b29db1147aec6f6",
+      "raw_target_sha256": "6cdd4220095ca2c73fd62b1da0b0cf652366cc210f15d893e31aef39c5c638fe",
+      "translation": "Trước khi mua qua liên kết tìm lại được, kiểm tra giá hiện tại, số lượng trong gói và phân loại. URL cũ giải đáp tin ban đầu dẫn đến đâu. Món đang bán có thể đã thay đổi, vì vậy hãy lưu thông tin tại thời điểm mua."
+    },
+    {
+      "source": "Identical studio images can lead to different shops, sizes and packages. Compare what each seller actually offers before using a visual match as evidence about the goods.",
+      "source_sha256": "643ae932ea9db0242756a243231461b464b0d470127f053f9ec5f4f3aa2f3fa7",
+      "raw_target_sha256": "607259f4e3b88bbf4f5c0c3992da98eefaee33f0b55cac7ce9cb62137ce25f1d",
+      "translation": "Ảnh studio giống hệt có thể dẫn đến cửa hàng, cỡ và gói hàng khác nhau. So sánh nội dung chào bán của từng nơi trước khi kết luận về sản phẩm."
+    },
+    {
+      "source": "Start with the source pair",
+      "source_sha256": "f6057d83490cefc614dfcb4ffac4642b9cab91f5ed55756389068e41396b76c7",
+      "raw_target_sha256": "59a6561de4510d09608ce9356f3b25e429717b4985440ce0f16207722d06a9bf",
+      "translation": "Bắt đầu bằng hai liên kết nguồn"
+    },
+    {
+      "source": "Save both seller links and identify their marketplace listing numbers. A repeat of the same listing across two catalogue pages is different from two separate sellers reusing a studio image. If the links point to one listing, investigate whether your notes refer to different options or snapshots taken at different dates. If the listings differ, keep two independent evidence records even if the thumbnail is identical down to the background.",
+      "source_sha256": "3bf9aea431643690bb4c58bdba9ac625167e828992c67a9a7bb78b6b3d9e9d71",
+      "raw_target_sha256": "e50e985ea4b24d01533d91b0bb1bcd975ad6e5caca733150c9987298ff773b07",
+      "translation": "Lưu hai liên kết cùng mã sản phẩm trên sàn. Hai mục danh mục trỏ vào cùng tin khác với hai người bán dùng chung ảnh. Nếu mã trùng, hãy đối chiếu phân loại, ngày và số lượng trước khi tìm khác biệt ở sản phẩm."
+    },
+    {
+      "source": "Look past the most recognizable feature",
+      "source_sha256": "b5ab3b4f19ae1e6aafcc43e12c4d65d8dc7fe5863d2a45bbf9c2b937a89cf997",
+      "raw_target_sha256": "b15e7ff890b434d77c73e0b1dfbd96bd69a89f1aa49867a37787bc5f652c3c15",
+      "translation": "Nhìn xa hơn điểm dễ nhận diện"
+    },
+    {
+      "source": "A front graphic, colour or model pose works well for finding candidates. It is less useful for deciding whether the construction is the same. Compare objective features such as pocket shape, number of seams, lining, fastening direction and the position of a label. A wide shot establishes where that feature sits; a close detail view can then show its construction. Mark an unseen feature as unknown.",
+      "source_sha256": "0647fd4db405e016a1c57d0ff88d6d4939a7d4c273472afbb664c8a6c1cf0298",
+      "raw_target_sha256": "245b6daa4d92c93083cdf1e284f9193044824683ac1b3a85b3fe868dbd289f5e",
+      "translation": "Hình in phía trước, màu và dáng mẫu giúp tìm ứng viên. Khi so cách may, hãy xem hình túi, số đường ráp, lớp lót và kiểu khóa. Ghi phần không thấy. Thiếu góc chụp chưa chứng minh sản phẩm thiếu đặc điểm đó."
+    },
+    {
+      "source": "Compare the selling unit and size system",
+      "source_sha256": "6bdb5419b532ddecb09a244947f5d5420016abe6e59a266ccdfb5de9e5d143be",
+      "raw_target_sha256": "e1ffa7709fc1a7ad2094cde133c7e599146299a9458b2b65b12e2872c7570b7d",
+      "translation": "So đơn vị bán và hệ thống cỡ"
+    },
+    {
+      "source": "One listing might offer a single sweatshirt while the other offers a sweatshirt and matching trousers. Read the option description, quantity and subtotal after making the intended selection on both pages. Then compare size charts using the same measurement paths. A medium in one seller's pattern can differ from a medium on another page even when the photograph displays the same model.",
+      "source_sha256": "b348482bd5fa5dd69852b7e16f308864c23378b561fc35f36e79bfb838797e59",
+      "raw_target_sha256": "51e5532e9eaba7110f6362bf9b164b3d648c73bb9e6eb3223e3fc299f8fc6b69",
+      "translation": "Một tin có thể chỉ bán áo nỉ; tin kia bán áo kèm quần cùng bộ. Chọn đúng tổ hợp ở cả hai rồi xem mô tả, số lượng và tổng phụ. So bảng cỡ cùng đơn vị. Cỡ M của người bán này chưa chắc giống cỡ M của người bán khác."
+    },
+    {
+      "source": "Keep warehouse pictures with their source",
+      "source_sha256": "7c986f901a8adbc824cfd3079ec43e3fba51fe59ed5b4af1dae206e9b29fcf8d",
+      "raw_target_sha256": "202ca2e0eb58c1d09e01dab23cceedc4d6e0da1f737cb590771f8e7b99b3170b",
+      "translation": "Lưu ảnh kho theo nguồn riêng"
+    },
+    {
+      "source": "A warehouse image found for seller A is evidence about the photographed unit from that listing. Do not move it into seller B's folder simply because the studio photographs match. If a gallery does not identify its source or option, keep its status clear. It might help you recognize a design detail to investigate, but does not resolve whether the seller you are considering currently supplies that detail.",
+      "source_sha256": "a2ba05ce1ce8eddc32c50adcb1df04fd43c249301e5be676afe63e71d34ecb8f",
+      "raw_target_sha256": "40d996e2bd8f4bba677fdc5fffc89bc61edc42bba8bd2f9e1048ab4c54249db0",
+      "translation": "Ảnh kho gắn với người bán A là bằng chứng về món được chụp từ tin A. Không chuyển ảnh sang hồ sơ người bán B chỉ vì trùng ảnh studio. Nếu chưa rõ nguồn hoặc phân loại, đánh dấu là tư liệu chưa xác nhận."
+    },
+    {
+      "source": "Decide what further evidence would change your choice",
+      "source_sha256": "6e6e9ef1133789d0aa3fed0470497d497d93decbb6b80e16f60e603f03b2dc67",
+      "raw_target_sha256": "527154df7d576bb355e9376a688dbed5cf8a52a6cd1e192edab43467307a0261",
+      "translation": "Xác định bằng chứng có thể làm bạn đổi lựa chọn"
+    },
+    {
+      "source": "Identify the one difference that matters. If you need a lined garment, a picture of the inside of the chosen version may settle the question. If you care about sleeve length, ask for the measurement and defined endpoints. Keep the two offers separate until the evidence answers that decision. A lower displayed price has little meaning until both columns describe the same contents, options and units.",
+      "source_sha256": "5f067f1f3ec149e7e1e9b73f4c64da91c909d5ff9c267189a5741cef033dd8bf",
+      "raw_target_sha256": "8fe499c914ec652f77aea053af4b3a6be88780c56c0fa425f15691f1615241a3",
+      "translation": "Chọn một khác biệt có ý nghĩa. Nếu cần lớp lót, xin ảnh bên trong đúng phân loại. Nếu cần chiều dài tay áo, hỏi số đo và hai đầu đo. Tách câu hỏi còn mở khỏi điều ảnh đã cho thấy."
+    },
+    {
+      "source": "Classify what kind of image you are comparing",
+      "source_sha256": "c5d7d379010c6f27caebcd2dc50f6deb0fb9b227146f21684b1ad10827d05cbb",
+      "raw_target_sha256": "c51f6128aedccd7d22fb0bc5780a124609984b4dda3f04c313fabbb6175f4bdd",
+      "translation": "Phân biệt loại hình đang so sánh"
+    },
+    {
+      "source": "A studio image usually tries to communicate an overall look. It may include a model, decorative props, coordinated garments or multiple colourways. A diagram can communicate dimensions or show a feature from a useful angle. A warehouse picture can show a particular unit after it was received. When comparing listings with the same thumbnail, write the origin of each image beside your observation. A denim jacket photographed with a matching belt does not establish that the belt ships with every version of the jacket.",
+      "source_sha256": "17f6ceceadde035447ef7678d59d2895df47447bb627842d0b180934460170cb",
+      "raw_target_sha256": "c65831c0741c9e1669bed485c364d6f6954e914314512e343dca755345779e92",
+      "translation": "Ảnh studio giới thiệu diện mạo chung và có thể gồm người mẫu, đạo cụ, đồ phối hay nhiều màu. Sơ đồ thể hiện kích thước hoặc một bộ phận. Ảnh kho ghi nhận sản phẩm thực nhận. Chọn loại ảnh phù hợp câu hỏi, tránh suy ra mọi đạo cụ trong ảnh đều được bán kèm."
+    },
+    {
+      "source": "A recognisable background can help you see that two images share the same underlying photograph. The same crease on a sleeve or identical reflection on a buckle gives you a clue. The clue relates to the image, not automatically to the identity of a supplier or the construction of the goods. Two shops may make different claims beside the same photograph. Compare those claims on their own terms and give more weight to evidence attached to the exact option being considered.",
+      "source_sha256": "1ef153d39a5090e55d445572ae2b032ca2d91ef5794aa8447175e5bb42c38227",
+      "raw_target_sha256": "456d6fc819dcd9c840848ba73f9b1844342748f7a55faca0ee3ff8985fb22b01",
+      "translation": "Nếp gấp trên tay áo hoặc ánh phản chiếu giống hệt ở khóa có thể cho thấy hai tin dùng cùng ảnh gốc. Dấu hiệu ấy nói về bức ảnh. Để kết luận hàng hóa hay nơi sản xuất giống nhau, vẫn cần bằng chứng về sản phẩm."
+    },
+    {
+      "source": "Pick details that change your buying decision",
+      "source_sha256": "b237a26735691925346eada21f8b94aa1e314356502c72124bcab12ce79ad0e3",
+      "raw_target_sha256": "54aa9f07c8ba5ba7487d428b3f7f1cd9c8856857a230b1179695f8ab9f3dce63",
+      "translation": "Chọn chi tiết có ảnh hưởng đến quyết định mua"
+    },
+    {
+      "source": "Suppose you need a work bag that fits a document folder without folding it. A side-by-side view of two matching front graphics will do little to answer your question. Look for internal opening width, usable depth, zipper shape and the position of any central divider. A listed exterior width might include thick sides or tapered corners. Ask for the particular dimension that controls whether the folder slides through the opening. Keep the folder dimensions beside your notes so the question has a defined purpose.",
+      "source_sha256": "ff17d64946b55058b93c1e31cc215d671c4bc3ccc3500a3bbfc0d4903ffb2b52",
+      "raw_target_sha256": "6b10602832ac6be60bab2796c55ebdff337f9739205cc77d831238fcdd1bb9a7",
+      "translation": "Nếu cần túi công sở đựng vừa bìa hồ sơ mà không gấp, hai mặt trước giống nhau ít có giá trị. Kiểm tra độ rộng miệng túi, chiều sâu sử dụng, kiểu khóa kéo và lớp lót có thu hẹp khoang không. So bìa hồ sơ với miệng túi thay vì chỉ nhìn kích thước ngoài."
+    },
+    {
+      "source": "A different buyer may care primarily about strap attachment. For that buyer, an image of a metal ring stitched through a reinforced tab is more useful than a close view of the front graphic. Check both attachment points where possible and identify which listing supplied each view. The most helpful comparison depends on the intended use. A longer checklist of unrelated visual similarities can make two listings seem well researched while leaving the one purchasing requirement completely unanswered.",
+      "source_sha256": "6e6968cc1923808db81cddc844f0c8ab45c51faaef72b59381e047326883f0db",
+      "raw_target_sha256": "99936d4ee5978752350185275c4f660509b4f728c728de1c8e2fd5757e7381d5",
+      "translation": "Nếu quan tâm đến dây đeo, ảnh vòng kim loại khâu qua miếng vải gia cố hữu ích hơn ảnh hình in phía trước. Xem cả hai điểm gắn nếu thấy được và ghi dây có tháo rời không. Một góc chụp chưa xác nhận kết cấu ở phía còn lại."
+    },
+    {
+      "source": "Read the specific seller commitments",
+      "source_sha256": "d9b3987b936edb463b369b2fb0ce8b422c65879d7873151cc16b2283a1777950",
+      "raw_target_sha256": "fe608f5bc9ddb6b1cd23baf0de4ecb22cd31482cc742845222b50f94482892e7",
+      "translation": "Đọc cam kết cụ thể của từng người bán"
+    },
+    {
+      "source": "Open both selected options and compare the words describing the contents. One seller may explicitly list a woven strap and an internal pouch, while the second shows both in a product photograph without specifying inclusion. Record the second listing's package contents as unclear. Contact that seller if the difference determines your choice. A positive answer from the first shop cannot resolve the second shop's offer, even if the same photograph and nearly identical product name appear on both pages.",
+      "source_sha256": "7ea0a731b9698da816714213fdeaaacf7dfbec11e257076650b4f0123f963c86",
+      "raw_target_sha256": "78d10519cc7ccc56a6769cd5d5a3401330d8c4456143a85ac440b1dedbec34e6",
+      "translation": "Mở phân loại đã chọn ở cả hai bên. Người bán thứ nhất có thể ghi kèm dây dệt và túi nhỏ bên trong; người thứ hai chỉ đưa chúng vào ảnh. Ghi rõ thứ được cam kết, thứ chỉ xuất hiện trên hình và thứ cần hỏi thêm."
+    },
+    {
+      "source": "Read measurements with similar care. A chart headed “approximate outer size” describes a different measurement from “usable opening.” If a screenshot cuts off the chart heading or its unit, obtain the full chart before comparing numbers. The better documented listing might offer fewer illustrations and still answer more of your actual questions. Conversely, a detailed specification can identify a potential fit problem even when every photograph looks visually identical to a product you previously purchased from another source.",
+      "source_sha256": "72878bfedf549f60904ca98303c3d2328d61eb1fa0c1da4392ba20f8df0fd5d0",
+      "raw_target_sha256": "aaf90b84265785aea4befd43810702d9bd8672e98946b1062a308ea191af25f5",
+      "translation": "Đọc tiêu đề và đơn vị của bảng. “Kích thước ngoài ước tính” khác “độ rộng miệng túi sử dụng được”. Nếu ảnh chụp cắt mất tiêu đề hoặc đơn vị, tìm cả bảng trước khi so để tránh ghép hai số đo khác nghĩa."
+    },
+    {
+      "source": "Distinguish a seller change from a product difference",
+      "source_sha256": "23c026999600a10add42992368d8d453e99cc1fa7292b681b6f764a3cff49da7",
+      "raw_target_sha256": "333c446057d864a540661f48b5d72a99aaecb6367a67fe5e0fef842d3a2374dc",
+      "translation": "Tách thay đổi trong tin khỏi khác biệt sản phẩm"
+    },
+    {
+      "source": "If both links lead to the same marketplace and item identifier, compare the selected options and the dates the pages were captured. A difference in price may arise because one capture shows an accessory, a different quantity, or an earlier version of the offer. If the identifiers differ, keep separate records even when the shop name matches. A seller may create multiple offers with different package quantities or terms while reusing studio assets. Those are different buying choices until the specific details reconcile.",
+      "source_sha256": "362d367fcb8e5259eb30365fe0304187b68550083679638c32e72fee776db6e2",
+      "raw_target_sha256": "af86b6f7f9634041d99506ddff0a8489c3aa00fe29f629a3c6d380570cd6b021",
+      "translation": "Nếu cùng sàn và mã sản phẩm, so phân loại và ngày chụp. Giá khác có thể do một ảnh hiện phụ kiện, số lượng khác hoặc tin tại thời điểm khác. Ghi nhận các khả năng này trước khi kết luận hai món khác cấu tạo."
+    },
+    {
+      "source": "A duplicate spreadsheet entry is a further possibility. If both grid cards link through to the same source listing with the same selected option, one set of current seller checks may serve both discoveries. Preserve their discovery links if you want to revisit the categories where you found them. Where the original listing is inaccessible, describe the relationship as unresolved. Guessing from two visually similar cards risks merging unrelated references and makes later order questions harder to reconstruct.",
+      "source_sha256": "118cf8b0bbcd624a299d10f825c2ae162dac554fff598743e7666c44dfcdd3fd",
+      "raw_target_sha256": "43583406f1844df22d47027e9664c4772e711f0143a5b91917a6ca1a964e76e8",
+      "translation": "Hai thẻ trong bảng tính có thể dẫn đến cùng tin và phân loại. Một lần kiểm tra chào bán hiện tại khi đó có thể dùng cho cả hai. Giữ dấu vết của hai mục để biết bạn đã tìm thấy tin theo đường nào."
+    },
+    {
+      "source": "Write a conclusion that another buyer could check",
+      "source_sha256": "79862bea39d393b6fc6a87ef30b408843b1688ad025d7d57b3bf3bdd2e0d2c8d",
+      "raw_target_sha256": "20165aadfc1b763848a9697fcf5a59052dea3e4e41be054e9eb592ff9aea31f2",
+      "translation": "Viết kết luận người khác có thể kiểm tra lại"
+    },
+    {
+      "source": "An actionable comparison might read as follows. Both listings show the same green bag on a wooden stool. Seller A gives an opening width and includes an adjustable strap in the chosen option. Seller B gives exterior dimensions and does not describe the strap. The folder fit and strap inclusion are therefore unresolved for seller B. This note identifies the shared visual, the facts attributable to each seller and the remaining questions without rating either seller or making claims about stock quality.",
+      "source_sha256": "250ebd6b449bc85f8d97c9683ca2b0fe7c97c30203d8b8e5a142ed04d8a1b94f",
+      "raw_target_sha256": "1224d7bd22864eab4a6b3b256ebaf3c8b988d9f7c27ff24007256d6c3a526068",
+      "translation": "Ví dụ, hai tin đều có ảnh túi xanh trên ghế gỗ. Người bán A ghi độ rộng miệng túi và kèm dây điều chỉnh ở phân loại đã chọn. Người bán B chỉ nêu kích thước ngoài. Ghi câu hỏi còn thiếu trước khi so hai lựa chọn để mang bìa hồ sơ."
+    },
+    {
+      "source": "If you purchase one version, add an observation about your own received unit beneath that seller's record. A photograph of the bag open with the stated contents visible can answer questions about the unit you received. It does not retrospectively verify another listing. Over time, this practice produces a small collection of comparable evidence with dates and option labels. When someone asks whether a visually similar find is the same product, you can point to the precise features established and the comparisons still missing.",
+      "source_sha256": "8b5a71ad600b3ad3ce0f43bbb5ab447f72765388f28118b63266d91ef3f987e3",
+      "raw_target_sha256": "9cf4e030018c4efbebaf7120a367cbefe9989e61748aba271d7029245cad6e03",
+      "translation": "Sau khi mua, bổ sung quan sát về sản phẩm nhận được vào hồ sơ đúng người bán. Ảnh mở túi cho thấy các thành phần có thể xác nhận đơn bạn nhận. Bằng chứng thuộc về món và đơn đó; chào bán ở cửa hàng khác vẫn cần được kiểm tra riêng."
+    },
+    {
+      "source": "A label can answer the question printed on it. Separate marked size, garment measurements and care information so a single tiny picture does not have to carry three different conclusions.",
+      "source_sha256": "524344e2f8aa7a7e8c8339de508f0af55390d4378692d4fe7436e4261a50d608",
+      "raw_target_sha256": "68cee4d7c2860af5cdf176915b4ac53f3c80cdfe9efc16c858d285e86a988c25",
+      "translation": "Tách cỡ ghi trên nhãn, số đo thực tế và hướng dẫn bảo quản. Một ảnh nhãn nhỏ chưa chắc giải đáp được cả ba."
+    },
+    {
+      "source": "Identify which label you need",
+      "source_sha256": "a88afa5ad8135536f9f41ad6ac115d344b265ed5ddbcca669779026b250de95c",
+      "raw_target_sha256": "c1fba074cf911484c98d90f01e216f2a3275bf1c5b05cac905b7af6216e30b66",
+      "translation": "Xác định loại nhãn cần xem"
+    },
+    {
+      "source": "For a marked size, request the neckline, waistband or other label showing the garment's size. For care instructions or a stated fibre composition, ask for the relevant sewn-in information label, including the reverse if text continues there. A paper hangtag may contain the shop's stock number but can become detached. A label photographed alone is harder to associate with a specific piece than a view that also shows its position on the garment.",
+      "source_sha256": "935d9169ebccda6d03653c539b145beadc613ecec7b28c84460e51259aadc3db",
+      "raw_target_sha256": "4a59893fca3cc0b7adaf9b20b7be6daacf40b62fc1372f51a12141e55800c783",
+      "translation": "Muốn kiểm tra cỡ ghi trên áo, xin ảnh nhãn cổ, cạp hoặc vị trí ghi cỡ. Với thành phần vải và hướng dẫn giặt, xin nhãn may liền và cả mặt sau nếu có chữ. Thẻ giấy có thể mang mã kho nhưng dễ tháo rời. Cần thêm ảnh cho thấy nhãn thuộc đúng món."
+    },
+    {
+      "source": "Ask for readable evidence",
+      "source_sha256": "d495077dedff84f7f80583b679862d09dfe0dfc17a1861d9d39333cb754fe7d0",
+      "raw_target_sha256": "1962281f58b129f6a43c63c861c5ca53f823e6ca82119eddced3f98b6b87d0e5",
+      "translation": "Yêu cầu ảnh có chữ đọc được"
+    },
+    {
+      "source": "Describe what must be legible. A photograph taken square to the label under even lighting can reveal more than a high-resolution picture taken at a steep angle. Ask that folds are opened without tearing stitching. If the print is tiny, request a contextual photograph and one close view. Make sure both belong to the same warehouse entry, especially when your order includes two nearly identical colours.",
+      "source_sha256": "c5f1b0a383f57bb3f177df557fc7038ae2df179efc17aec051939af40baa55ea",
+      "raw_target_sha256": "4094aa922069eec254f204ec778dae1302fe4db36a43bdf059df7aff795af621",
+      "translation": "Nêu phần chữ cần đọc. Ảnh chụp vuông góc với ánh sáng đều có thể rõ hơn ảnh độ phân giải cao chụp xiên. Nhờ mở nếp gấp nhẹ tay để giữ đường may. Với chữ nhỏ, xin một ảnh toàn cảnh và một ảnh cận. Kiểm tra cả hai thuộc cùng hồ sơ kho."
+    },
+    {
+      "source": "Read size systems carefully",
+      "source_sha256": "42717f9e5ebaa0946f180dee5b3ccc1e0fcb4d06e1ac154c8d32e16a6fb0644d",
+      "raw_target_sha256": "2e7549d42444796606310555864dac6356809b114b2fdf53c0244a202eee7309",
+      "translation": "Đọc đúng hệ thống cỡ"
+    },
+    {
+      "source": "Some labels show multiple size systems or a combination of a letter and numbers. Copy the full line before translating it. Compare the seller's selected option and size chart with that line. A reference photo marked XL from an earlier order tells you what was printed on that photographed unit only. It does not establish the fit of the medium currently assigned to your order.",
+      "source_sha256": "260903139f45fd0a296d01748e86219154a60780a60c4dff6976ce2f77b71a56",
+      "raw_target_sha256": "98597a74a8e5edffd0d83007b14844348c63da22b043705c43f8ddef1d864c19",
+      "translation": "Nhãn có thể ghi nhiều hệ cỡ hoặc kết hợp chữ và số. Chép cả dòng rồi mới dịch. Đối chiếu với phân loại đã đặt và bảng cỡ của người bán. Ảnh cũ có chữ XL chỉ cho biết món trong ảnh ghi XL; chưa cho biết cỡ M bạn đang cân nhắc mặc có vừa không."
+    },
+    {
+      "source": "Use a garment you already own as a physical comparison. For a shirt laid flat, you might measure underarm to underarm and back length from a named seam. Record the units and the way the garment was laid out. If the warehouse measurement uses a different endpoint or stretches a knit, repeat the measurement consistently before judging a discrepancy. Do not expect matching letters on two labels to eliminate pattern differences.",
+      "source_sha256": "2351285ce45be59412cd3217a6739659917518757d99ac707d55b61289220689",
+      "raw_target_sha256": "291a02c8da6b01d22109ec11e96aaff7f43321e81726f88511554331110f775b",
+      "translation": "Lấy áo đang mặc vừa để so. Trải áo phẳng, đo từ nách này sang nách kia và đo dài lưng từ đường may đã xác định. Ghi đơn vị và cách đặt áo. Nếu kho lấy mốc khác hoặc kéo giãn vải dệt kim, cần đo lại cùng cách trước khi kết luận sai số."
+    },
+    {
+      "source": "Present a clear mismatch",
+      "source_sha256": "56aafd20d1f8742d30d70b13a3cfe95fb8b43d718b260caa6da7c3bc908a9965",
+      "raw_target_sha256": "92a4dacab4241fe62aa5133058aadd475cbbba35d5699e7c8045b39c3bc3ca3c",
+      "translation": "Trình bày chênh lệch cụ thể"
+    },
+    {
+      "source": "If you ordered a particular size and a photograph seems to show a different one, send the selected option and the image together. Explain exactly which marking is unexpected and ask the agent to check the actual unit. A label image cannot establish authenticity, the truth of a composition claim or the durability of a seam by itself. Report the observable difference and retain the response with the item record.",
+      "source_sha256": "0f8b1287cd9178cd7ab84bc3032c3b9024fc2749e72ad62fa4fed43deb61cd70",
+      "raw_target_sha256": "c94945733feac609680624c6dcadca35bfff117d1081298a93651d3a7435baa8",
+      "translation": "Nếu nhãn có vẻ khác cỡ đặt, gửi cùng lúc dòng phân loại đã trả tiền và ảnh. Chỉ đúng ký hiệu bất thường rồi nhờ kiểm tra sản phẩm thực. Ảnh nhãn riêng lẻ không xác thực được hàng chính hãng, thành phần sợi thực tế hay độ bền đường may. Nêu điều quan sát được."
+    },
+    {
+      "source": "Identify the label that answers your question",
+      "source_sha256": "8c6d49da353e0e7a1a4383152c05941e8fb4f0a6c4029d6e9163a63392064366",
+      "raw_target_sha256": "a9e3bd0094cdfeb94bd81d4ccf9b5d34726481d56b8fbe5cc0ca850cc94dfdf4",
+      "translation": "Chọn nhãn phù hợp câu hỏi"
+    },
+    {
+      "source": "A garment can carry several labels. A neck label can show a brand or a letter size. A sewn-in side label may carry composition and care information. A removable hangtag may show a merchant's stock code, price or barcode. Start by identifying the question and where its answer might actually appear. If your concern is whether a jacket is the ordered size, a clear photograph of a promotional hangtag may be less useful than a readable view of the size marking sewn into the received garment.",
+      "source_sha256": "5a090caa11867eeb15cbd72eec1737dadac13b999d85188571ec13e210862ba3",
+      "raw_target_sha256": "b306381a726c693df141b827eac0280e6b38753c3b6c720239eee23b3b6d90cd",
+      "translation": "Một món có thể có nhãn cổ ghi thương hiệu hoặc cỡ, nhãn sườn ghi thành phần và cách giặt, còn thẻ treo ghi giá, mã kho hay mã vạch. Nếu cần xác nhận cỡ áo khoác, hãy tìm ký hiệu cỡ trên áo thay vì chỉ xem giá trên thẻ rời."
+    },
+    {
+      "source": "Labels can refer to different parts of one garment. A coat may have an outer shell, lining and padding identified on separate lines. If a photograph shows one percentage but crops out the part name, resist applying that figure to the entire coat. Request a view that includes both the part description and its composition line. Keep the seller's written specification beside the photo so a difference can be described precisely, for example a discrepancy affecting the lining rather than a general claim about the coat.",
+      "source_sha256": "e262127fce033d943a74312ad49ea2363de530367efbfbeb1994a3774854b858",
+      "raw_target_sha256": "7df744aed669097790a63077ccc4e8699b41768659225abe46ba79bbf090831e",
+      "translation": "Thân ngoài, lớp lót và ruột áo khoác có thể có thành phần ghi trên từng dòng. Nếu ảnh chỉ lộ tỷ lệ phần trăm mà mất tên bộ phận, đừng áp dụng tỷ lệ đó cho cả áo. Xin ảnh có cả tên phần và thành phần. Lưu thông số người bán ở chỗ riêng."
+    },
+    {
+      "source": "Preserve characters that are easy to misread",
+      "source_sha256": "e85b9a9fe1c5c3c0c50769fd7aab40993b10363f91d7f1e03c243e54ad227ba2",
+      "raw_target_sha256": "454006ffe05768bd0d695ac1797cad8b5a90097ec67b60b8b5de32a7f3fbc293",
+      "translation": "Giữ nguyên ký tự dễ đọc nhầm"
+    },
+    {
+      "source": "The difference between a small and a medium can be a single letter. The difference between two style numbers can be a leading zero, a dash or the final digit. Zoom in on the original file when possible. Upscaling an already blurred screenshot may make text look smoother without revealing the missing character. Transcribe only what you can actually read and mark an unclear position with a question mark. Someone checking later can then focus on that position in a replacement photograph.",
+      "source_sha256": "f58d4787529cc269dcdade2c1552d7cc1257b91b152ea2b453136faf1f8b717a",
+      "raw_target_sha256": "5a714b23e155b4615f8db67a26832950fe72c423b38e51446c0a2fc6a4011727",
+      "translation": "Cỡ S và M khác nhau một chữ. Hai mã mẫu có thể khác số 0 đầu, dấu gạch nối hoặc chữ số cuối. Phóng to tệp gốc nếu có. Làm mịn ảnh mờ chưa chắc khôi phục ký tự mất. Chỉ chép phần đọc được và đánh dấu phần còn nghi ngờ."
+    },
+    {
+      "source": "A folded label can bring two unrelated lines next to each other. For a useful second view, ask to see the label unfolded on a flat surface with the complete text visible, subject to what the warehouse can provide. If the garment has several language blocks, look for a complete block rather than assembling percentages from fragments of different ones. Save the original image alongside any personal translation or cropped reference. This keeps the source available if a later reader questions a character or interpretation.",
+      "source_sha256": "25bdc73d9d469d43a5358de960215f6925d4eaca6f4fdba9137e1139b8f80dbc",
+      "raw_target_sha256": "3bdb03147f40671b6c546849af913f5352fa440096fafa5b0b18becf1716666d",
+      "translation": "Nhãn gấp có thể đặt hai dòng không liên quan sát nhau. Nếu kho hỗ trợ, nhờ trải phẳng và chụp trọn chữ. Khi có nhiều khối ngôn ngữ, đọc một khối hoàn chỉnh thay vì ghép tỷ lệ từ các mảnh khác nhau. Lưu cả hai ảnh để đối chiếu."
+    },
+    {
+      "source": "Use a size label together with a measurement",
+      "source_sha256": "32d1abf8806d85a2d20757d1be9c31a36418fe41cccfc1bec2c27664ddd8f88b",
+      "raw_target_sha256": "d52916cbaed74f88cc57474d3b18c341e82e4b43284e8c14124e03142313ed45",
+      "translation": "Kết hợp nhãn cỡ với số đo"
+    },
+    {
+      "source": "Suppose your order says medium and the sewn-in label also reads medium. That resolves the label comparison. It does not yet answer whether the garment will fit over your usual sweater. Compare the seller's size chart with the measurement you need, observing whether the chart describes garment width laid flat or a body circumference. For a jacket, a tape photograph running straight between underarm points can answer a practical fit question that a perfectly legible size label leaves open.",
+      "source_sha256": "080e94108406a41dfed3c1671fe4d85d03936ef5a70e4e54e13ac9cd582d2a58",
+      "raw_target_sha256": "d591ab05490b7aaf3ba0ec621f798b21128de461dc8064a3ace1e9d857e4ad39",
+      "translation": "Đơn ghi M và nhãn ghi M xác nhận ký hiệu khớp nhau. Để biết áo khoác đủ rộng mặc ngoài áo len, hãy xem bảng và đo áo. Phân biệt chiều ngang áo trải phẳng với vòng cơ thể. Ảnh thước có đủ hai mốc cho biết nhiều hơn nhãn M."
+    },
+    {
+      "source": "If the label says large while the order says medium, save both before deciding how to proceed. A seller may offer a written explanation or an order confirmation may show a different selected option from the one you recall. Record the explanation separately from your initial observation. Avoid overwriting the original selection in your notes simply because someone describes the items as fitting similarly. You may decide a measured garment works for you, but that is a separate decision from whether the label matches the order.",
+      "source_sha256": "88a459d7feac7af9421678fad17740cf855ff337f7fbeb50563e17ac9a440627",
+      "raw_target_sha256": "b1762d78d551a7c67434a79c15be80b5540e2fd20bb8ec75597fdb3b3d9b453c",
+      "translation": "Nếu nhãn ghi L còn đơn đã lưu ghi M, giữ cả hai. Người bán có thể giải thích hoặc tóm tắt đơn cho thấy lựa chọn khác trí nhớ. Ghi lời giải thích vào mục riêng và giữ quan sát ban đầu để không mất diễn biến."
+    },
+    {
+      "source": "Consider what a label can actually prove",
+      "source_sha256": "152c9b848f1ebeea3765381d7060ca39f7a1c8d7dd456fb3281a77f348bc12a2",
+      "raw_target_sha256": "b28b7408a6a5c4a20248db3226d16c8bc74b7d0b1cd7fb5a02209723881319af",
+      "translation": "Hiểu giới hạn của bằng chứng từ nhãn"
+    },
+    {
+      "source": "A photo can establish what is printed or sewn onto the photographed item when the connection between image and garment is clear. It cannot independently verify a fibre blend, an origin claim or authenticity. For a purchase that depends on a particular material, record both the seller's written description and the wording on the garment. Where the two conflict, ask for clarification before treating either as a confirmed material test. A missing label also leaves the relevant claim unverified in the available photos.",
+      "source_sha256": "e596d1487e2c289bee185a1a5fe4c3ccdce14ebe05544ac219575bdf6c878a0c",
+      "raw_target_sha256": "407e348f96ab20e748ed7438fbe3cf5b3acf1f05ea1274ef93a58362c0ad1450",
+      "translation": "Nếu ảnh nối rõ nhãn với sản phẩm, bạn có thể xác định nội dung in hoặc may trên đó. Một bức ảnh không tự kiểm chứng được hỗn hợp sợi, xuất xứ hay tính chính hãng. Nếu chất liệu quyết định việc mua, lưu cả mô tả của người bán và chữ trên nhãn. Hỏi đúng điểm mâu thuẫn nếu có."
+    },
+    {
+      "source": "The context is particularly important with multipacks. One photo of a label on a black T-shirt cannot confirm the labels on two white T-shirts packed alongside it. Decide whether the same evidence is needed for each item. If the order contains mixed sizes, separate each garment by colour and ordered size in the request. A group overview plus a close view linked to each relevant garment can prevent a clear but isolated label image from being assigned to the wrong piece.",
+      "source_sha256": "e7cbe47afa9c49a54c0d2861927983bd880a70e0eee0d5a6cc9c3ef2529e2926",
+      "raw_target_sha256": "0a863c85394f7d47101aa01e9ed1f2850d14b405b6853b7220bbe5662ca75a3f",
+      "translation": "Trong gói nhiều món, ảnh nhãn áo phông đen không xác nhận được nhãn của hai áo trắng bên cạnh. Xác định món nào cần kiểm tra. Nếu đơn lẫn cỡ, nêu màu và cỡ từng món. Ảnh chung kèm ảnh cận từng nhãn giúp nối đúng món với đúng ký hiệu."
+    },
+    {
+      "source": "Build a clean note for the next decision",
+      "source_sha256": "b06e75160874a871fb85610c308353f65d196b88a57ec289200be8f0e1c87e69",
+      "raw_target_sha256": "6a5d563e659f35b9af35f939c7163dc425c64f31ce8ee590f65e1429b5a76812",
+      "translation": "Ghi thông tin cho quyết định tiếp theo"
+    },
+    {
+      "source": "A useful clothing-label note can be just a few sentences. Identify the garment and selected option, state the visible wording, identify the unresolved question and specify whether it affects your decision. For example, the paid order says navy jacket, size medium. The label appears to read medium. A number at the bottom is cut off, but you only needed to confirm size. In that case the missing number need not generate another photo request or delay your decision.",
+      "source_sha256": "1a5015376685ea91644f7e226199f7de47a199e340f2a6ab210e022f106ad80c",
+      "raw_target_sha256": "dbf34ff79baba2b2cdc704899c54c00bcdf3313ee6b0d8392727e43d4d6e8855",
+      "translation": "Ghi món đồ, phân loại, chữ thấy trên nhãn và điều còn bỏ ngỏ. Ví dụ, đơn là áo khoác xanh navy cỡ M; nhãn có vẻ cũng ghi M. Một số ở cuối bị cắt nhưng nếu chỉ cần xác nhận chữ cỡ, có thể ghi rằng câu hỏi đó đã được giải đáp."
+    },
+    {
+      "source": "When the missing text does matter, keep the request narrow. Ask for the full composition label on the navy jacket, including the shell and lining headings, with the tag unfolded enough to read both sections. Check any available service terms or price before requesting a paid detail view. After the new image arrives, add it beside the original rather than deleting the first image. The pair documents what prompted your question and which detail eventually resolved it.",
+      "source_sha256": "c55089eb23f1d63f6a4246c9ba05474c755af72922c717032a192d42a793e7c6",
+      "raw_target_sha256": "cc71daf74b47976d5f3530d70906ba4a2c9306b1c9d421efecc5dd87e2c87a0e",
+      "translation": "Nếu chữ bị khuất có ý nghĩa, xin ảnh nhãn thành phần trên áo xanh navy được mở đủ để đọc tiêu đề vải ngoài và lớp lót. Xem điều kiện và giá nếu ảnh chi tiết là dịch vụ tính phí. Lưu ảnh mới cạnh ảnh đầu thay vì ghi đè."
+    },
+    {
+      "source": "A picture of one well-presented shoe cannot establish what is in the other half of the box. A paired inspection starts with identity and finishes with the specific features that affect your decision.",
+      "source_sha256": "ad636437d270c7d002472e69099e18dfd0871446e46da94a7f2abcaa5eb8d3dd",
+      "raw_target_sha256": "e15ec8832995b3adb69366f91e8e545e7e47f41161398f4b3a7952ebb273cbc1",
+      "translation": "Ảnh một chiếc giày được bày đẹp chưa cho biết chiếc còn lại trong hộp ra sao. Hãy xác định đúng cả đôi rồi kiểm tra những chi tiết ảnh hưởng đến quyết định mua."
+    },
+    {
+      "source": "Start with the pair you ordered",
+      "source_sha256": "834232940c40c7b7ed06de49d1ea80f4854eec5846207a220d0a1fe4f502b9d3",
+      "raw_target_sha256": "641ac10246f2b794376502ceefe492589a926437c78d13b8c5da20da01da56a3",
+      "translation": "Bắt đầu từ đôi đã đặt"
+    },
+    {
+      "source": "Write down the seller's size system, colour option and quantity. Keep that information with the warehouse entry. The carton label can be a useful cross-check, but it describes the carton. Ask to see the actual left and right shoes together in a frame. If several pairs arrived in one order, do not infer that every image in a gallery belongs to the first row of the purchase summary.",
+      "source_sha256": "6b53d2a6129bcba2d1590a61965dc0432162458cc06e3cf16b7ccce0ac90647c",
+      "raw_target_sha256": "8ee3727291fb5d6d498f656df81cf59c4377f5e46468beb7db60ff9c08feedd2",
+      "translation": "Ghi hệ cỡ của người bán, màu và số lượng cạnh hồ sơ kho. Nhãn hộp giúp đối chiếu nhưng chỉ mô tả chiếc hộp. Xin ảnh cả giày trái lẫn phải trong một khung. Nếu nhiều đôi về cùng đơn, nối từng ảnh với đúng đôi và mã nhập kho."
+    },
+    {
+      "source": "Use a paired view for symmetry",
+      "source_sha256": "76810a3748169f6e31a315c8000246e0aa4d47e7fbb714afda3dd257d3c2de08",
+      "raw_target_sha256": "e2d9f4d1cd805c0021a7dabea5240c4055c59eea13a76a5faf54af497bb92a99",
+      "translation": "So độ cân đối bằng ảnh cả đôi"
+    },
+    {
+      "source": "For a useful top view, ask for the shoes side by side on the same level surface, heels aligned and toes facing the same direction. Comparing a near shoe with a far shoe in an angled picture can exaggerate apparent size differences. A full back view gives a different comparison of heel height, seam position and colour. Decide which arrangement best displays the suspected issue before requesting more photographs.",
+      "source_sha256": "b802d0078e0b3b0ea3bb4207583568436a188e7d8011b93162f543d6c1bd603a",
+      "raw_target_sha256": "8b60ac23bca2d40470084305c081f01728b35fa1b34a8f2578c5debaf975e37d",
+      "translation": "Khi chụp từ trên, đặt hai chiếc cạnh nhau trên mặt phẳng, gót ngang nhau và mũi cùng hướng. Góc xiên có thể làm chiếc gần máy trông lớn hơn. Góc sau phù hợp để so chiều cao gót, đường may và màu. Chọn góc theo điều cần kiểm tra."
+    },
+    {
+      "source": "Check each label independently",
+      "source_sha256": "11bb5ce8454591005d09f7daf4d47b332a3190baa1955c64f353d167457adcc1",
+      "raw_target_sha256": "4b8fc541457805a0169d2d66433a854257625ebf115cb82a3a5684a3563f76a8",
+      "translation": "Đọc nhãn từng chiếc"
+    },
+    {
+      "source": "A single readable size label establishes a marking on one shoe. Ask for each label if size mismatch is the concern, and note the sizing system rather than comparing bare numbers. A US marking and a UK marking on the same label can be different without showing a mismatch. Compare the equivalent line on the left and right shoes against the option recorded in the order.",
+      "source_sha256": "797ebd88af1853f96f09a0d73b886a93fde1ad791041ff93905b6d674a3ac1ba",
+      "raw_target_sha256": "281a55ceabf304d25a8327a16e52a5a83ba98043cb7ff9b86c44eec5dabd6b63",
+      "translation": "Một nhãn đọc được chỉ xác nhận ký hiệu trên một chiếc. Nếu nghi lệch cỡ, xem từng nhãn trái phải và ghi hệ cỡ. Số US và UK trên cùng nhãn có thể khác nhau bình thường. So cùng dòng hệ cỡ giữa hai chiếc rồi đối chiếu với đơn."
+    },
+    {
+      "source": "Define a length question precisely",
+      "source_sha256": "3f19a81c8c55a5bed9b6121fcd900586e6e13769bc7c9840c105510490348d1d",
+      "raw_target_sha256": "199c6986577e28f367b6f9c1754c862af61245054d68f63cd78dd11fda371447",
+      "translation": "Nêu chính xác chiều dài cần đo"
+    },
+    {
+      "source": "If internal length matters and the insole is removable, ask whether removal is appropriate before requesting a measurement. A tape laid along the outside sole measures another object. Specify the endpoints, units and which shoe is measured. An insole length provides a physical dimension, but not an assurance of comfort: usable space also depends on shape, thickness and your own foot.",
+      "source_sha256": "d2651105a8e3efde36c429207aedd22c1f312d38af7ea10450cd2417e7b6f8fd",
+      "raw_target_sha256": "f0d2cf7d0c24a1818022baa306a5d725b1f8806b023cf79a3e16c88f36536b3f",
+      "translation": "Nếu cần chiều dài trong và lót giày tháo được, hỏi trước xem có phù hợp để lấy ra không. Thước dọc đế ngoài cho một số đo khác. Nêu hai mốc đo, đơn vị và chiếc cần đo. Chiều dài lót là kích thước vật lý; độ thoải mái còn phụ thuộc phom và khoảng trống."
+    },
+    {
+      "source": "Distinguish design from damage",
+      "source_sha256": "14a4b9bacbb71b27d746414c5747b599230461e3f75d578b9c7dcc3e423ac163",
+      "raw_target_sha256": "984232b9595bd3e747946458eafcfcff665ed74c790ab51608d10873bb2d07c4",
+      "translation": "Phân biệt thiết kế và hư hỏng"
+    },
+    {
+      "source": "Some shoes deliberately have asymmetrical panels or different markings on left and right. Compare the official seller option pictures for the specific design rather than assuming every colour patch should mirror its partner. If the concern is a split seam or a scuff, request a focused close-up plus a wider picture identifying its location. Save both beside the purchase record and check the applicable next steps before dispatch.",
+      "source_sha256": "394d1fa4aff7ba9c693d80423030ee7589c3253502e7d0a737ae68f2eca8cb03",
+      "raw_target_sha256": "fb0bd7dd035c3fdec633d6b43e6a1f85222670f48ff9e38e0a485f20c82b4b9e",
+      "translation": "Một số mẫu cố ý có mảng ghép hoặc ký hiệu khác nhau ở hai bên. So với ảnh của người bán cho đúng thiết kế. Nếu nghi bung chỉ hay trầy, xin một ảnh cận và một ảnh rộng nhận ra vị trí. Giữ cả hai cùng hồ sơ đơn."
+    },
+    {
+      "source": "Establish which shoe is which",
+      "source_sha256": "815629e4336f8aae8994eda55c27b7c08d08f3e6933fc0655fa8b517f8c070a4",
+      "raw_target_sha256": "3d7a368af1d9a49e644762a5ee781bb7da64ad52a9d06adb556149b56915e7c2",
+      "translation": "Xác định rõ chiếc trái và chiếc phải"
+    },
+    {
+      "source": "Two pictures in a gallery do not necessarily show a pair. One could be the same shoe turned around. Begin with a view of both shoes together, with their toes pointing in the same direction. The inside and outside edges should then be easier to distinguish. If one shoe is partly inside the other or the heels are hidden behind packing paper, write down the missing view. A photograph of one excellent lateral profile gives little information about the second shoe.",
+      "source_sha256": "087b463b767898f764becfadd38a8461a4824ea40f9e483e165c5a378bfb012d",
+      "raw_target_sha256": "c65ca1f044870f2f93ae488ed11feca92c7fab35523e7b54dfc009c7dbd2b713",
+      "translation": "Hai ảnh có thể chỉ là một chiếc được xoay lại. Bắt đầu bằng ảnh cả đôi, mũi cùng hướng để phân biệt mép trong và ngoài. Nếu gót bị giấy che hoặc một chiếc đè lên chiếc kia, ghi phần chưa nhìn thấy."
+    },
+    {
+      "source": "If the order contains two identical-looking pairs in different sizes, keep their warehouse records separate. A shoe box label can provide context if it is clearly tied to the pair in the picture, but boxes and shoes are distinct objects. For a size-sensitive order, ask for the visible size marking inside each shoe and connect the photographs to the correct pair. A combined image showing the two heel openings can help, provided both labels remain legible when viewed at their original resolution.",
+      "source_sha256": "bde96802de4576e838a835e31f4d5b8de20ad959c44bdd57cee67b859e56fb1c",
+      "raw_target_sha256": "7293006f19c85aa2224fad22446766a83d306f2eaba9fb1b9cd0f50ac79d61be",
+      "translation": "Nếu hai đôi giống nhau nhưng khác cỡ, tách hồ sơ kho. Nhãn hộp có giá trị tham khảo khi biết đúng hộp của đôi trong ảnh. Với đơn nhạy về cỡ, xin ảnh ký hiệu bên trong từng chiếc và gắn với đúng dòng nhận hàng."
+    },
+    {
+      "source": "Choose matched views for comparison",
+      "source_sha256": "5fdacdfac70fdea18f6828000464f6aae7271f9d87e0638e0ef3b5543844878b",
+      "raw_target_sha256": "dbf9730809440a116549e320b33ff0234c96a75c510b01d21c11350267eabb14",
+      "translation": "Dùng góc chụp tương ứng để so"
+    },
+    {
+      "source": "A photograph taken very close to one toe can make it look larger than the other. When comparing toe or heel shape, a matched overhead view with the pair side by side is more informative than two unrelated close-ups. Check whether the shoes sit equally far from the camera and both rest on the same flat surface. Differences in stuffing, lacing and angle can change the outline. Describe the feature you observe before guessing at a manufacturing or handling cause.",
+      "source_sha256": "3b58edbffbdab573a6c807d5d724417a1832f02612fe662ecb1c01e6bd9978ad",
+      "raw_target_sha256": "0161b60f4f6187e82a5da7501dd5d7b86e46418c542ae3ef4bc5972c95950a36",
+      "translation": "Chụp thật sát một mũi giày có thể làm nó trông to hơn. Để so dáng mũi hoặc gót, đặt hai chiếc cạnh nhau trên cùng mặt phẳng, cách máy như nhau. Giấy chèn, độ siết dây và góc chụp đều có thể làm dáng trông khác."
+    },
+    {
+      "source": "Use an overhead view for alignment, a rear view for heel height and a view of both outsoles for tread pattern. The same camera angle rarely answers all three questions. If the first images already show the tread and shape clearly, a request for another front view adds little. Request the single angle that could change your decision. For an apparent mismatch in heel colour, a view under the same light can be more helpful than a close-up taken in a different room.",
+      "source_sha256": "427ad55465f733f01dbcf0d060fb2c1ae9f5f17851b38ed21bd0f89c0e3fa158",
+      "raw_target_sha256": "7fbd6e9352ab7da880f2bd3b60f49cfc78540892ba59f5b74a5d6b9b3fa8b8a5",
+      "translation": "Góc trên giúp xem độ thẳng, góc sau cho thấy chiều cao gót, còn ảnh hai đế ngoài cho thấy vân đế. Chọn góc còn thiếu có thể thay đổi quyết định. Nếu vân đã rõ, xin thêm một ảnh mặt trước thường không giải đáp chênh lệch ở đế."
+    },
+    {
+      "source": "Read size markings without inventing conversions",
+      "source_sha256": "6257d0cd9e609a96778a1d630dfcc52d07b1c0c94c74b6311d31f4186b34ccb9",
+      "raw_target_sha256": "62cdc263ed387f47453c7fc7d0aa75d2699da972b7a257ff12cc7e6cc8b3ffb3",
+      "translation": "Đọc cỡ mà không tự quy đổi"
+    },
+    {
+      "source": "A shoe label may list several regional size systems on separate lines. Transcribe the whole relevant line with its unit or system. A numerical marking from one system and another marking from a different system can look unequal while describing the same paired product. Compare like with like across both shoes and against the seller's selected option. If a label is hidden by the tongue, ask for a view of the label face rather than guessing from the visible end of the number.",
+      "source_sha256": "c2a02c94adef2e4320f88f43099860932767845f0ce0648dd8ce6a605d5b836d",
+      "raw_target_sha256": "a34db22b97e863d0aa559a968106a53981990b191ec61a175d91756543e5f597",
+      "translation": "Chép cả dòng cỡ cùng hệ khu vực. Hai số khác nhau thuộc hai hệ vẫn có thể mô tả một đôi đúng cỡ. So cùng hệ trên hai chiếc rồi so với phân loại đã đặt. Nếu người bán chưa nêu rõ hệ, hãy hỏi thay vì tự đổi cỡ."
+    },
+    {
+      "source": "For practical fit, compare a reference pair you own using the same measurement method the seller describes. A removable insole length and an outsole length are different measurements. A buyer who knows the insole of a comfortable shoe should ask for an equivalent measurement only if the item and service permit it. A photo where a ruler begins outside the heel or follows a visibly curved path can give a misleading comparison. Specify where the measurement should start and finish when the difference matters.",
+      "source_sha256": "9d290c3876ac1fd0c6b6116107dbd6b5d6a22b3239362852ebd9c97dff342a18",
+      "raw_target_sha256": "bb150f24a043d61e9aaa4d812dec00399ad5c678fca3f57f9bd2f8703bfe4fa0",
+      "translation": "Để ước lượng độ vừa, đo đôi đang đi thoải mái bằng cùng phương pháp. Chiều dài lót tháo rời khác chiều dài đế ngoài. Chỉ xin số đo tương ứng khi sản phẩm và dịch vụ cho phép. Thước bắt đầu lệch khỏi mép khiến kết quả khó so."
+    },
+    {
+      "source": "Distinguish presentation from a physical difference",
+      "source_sha256": "f43120f3a70c5f6c76fb47462a9929c270ab706235739ff9d5f96f4727d918d8",
+      "raw_target_sha256": "c099bda6e70783f7add316f4d61df4b233892523f59750c87d975547cd7d636e",
+      "translation": "Tách ảnh hưởng của cách bày khỏi khác biệt thực"
+    },
+    {
+      "source": "Consider an example where one shoe has a dark mark near the heel. Record which shoe and whether the mark appears on the material or only on nearby wrapping. A second image with the wrapping moved away could resolve that ambiguity. It may not identify what the mark is or whether it can be removed. Avoid promising that brushing or washing will solve it. If surface condition affects your purchase, obtain a sufficiently clear view and ask what options are available for this order.",
+      "source_sha256": "aa3e8106b30d46dcc150cee50478cfea10bbfddb58d2494c291e4861dda8ec65",
+      "raw_target_sha256": "c652a29d6b1073ff5db6e79ebdaf6c28179ed63c63a3c0a044885305ac115e01",
+      "translation": "Nếu có vệt sẫm gần gót, ghi rõ chiếc nào và vệt nằm trên chất liệu hay giấy bọc. Ảnh sau khi dời giấy có thể xác định vị trí. Ảnh chưa chắc xác định vệt là gì hay có tẩy được không. Tránh khẳng định chải hoặc giặt sẽ sạch."
+    },
+    {
+      "source": "Keep pair condition and box condition separate",
+      "source_sha256": "d39f492ab5c088eee0a6959aa803826302e98353b4ee0570c181f20628534a6d",
+      "raw_target_sha256": "74acca2eea88ffbfbed7ac4562a6012b32b99886a855e4ecf94368a904b0c415",
+      "translation": "Ghi riêng tình trạng hộp và giày"
+    },
+    {
+      "source": "A crushed box lid can matter for gifting or storage even if the shoes appear intact. Torn wrapping can be visible without revealing whether either shoe is damaged. Record package condition and item condition separately. If the box is essential, check whether the exact option included the box and whether requested packing services address it before international dispatch. A retailer-style studio photo of a branded box is weaker evidence of inclusion than a written option description or the warehouse's record of what arrived.",
+      "source_sha256": "77cda47533e6bd202297e327aba87ead4bce8e9c1f541cc04694305b3fb43a16",
+      "raw_target_sha256": "1b9efeb379995d29b05c0c03888303a433a9a1c69ce245a6cd39dbe53e6daec9",
+      "translation": "Nắp hộp bẹp có thể quan trọng khi làm quà dù giày trông nguyên. Giấy gói rách cũng chưa chứng minh giày hỏng. Ghi hai tình trạng riêng. Nếu cần giữ hộp, kiểm tra phân loại có gồm hộp và dịch vụ đóng gói đã yêu cầu có bảo vệ hộp trước khi gửi quốc tế không."
+    },
+    {
+      "source": "When all required views are available, close the inspection with a short statement about both shoes. For example, both labels display the ordered system and size, both outsoles show the same tread and the left heel has a visible mark that still needs clarification. This record is more useful than a single “QC passed” line because it explains the specific checks you completed. Keep the images with the order in case a later packing or exchange question refers to one shoe in particular.",
+      "source_sha256": "56536e87099f2bd797aa99b8ddf139a43539fc18d42d5ab1ff68b2aa113939e5",
+      "raw_target_sha256": "bb18ed4902175d5d60a160434bbc4db6d82cfda428e778123cb986798c692f95",
+      "translation": "Kết thúc bằng ghi chú cụ thể cho cả đôi. Ví dụ, hai nhãn cùng đúng hệ và cỡ đã đặt, hai đế có cùng vân, còn vệt ở gót trái cần làm rõ. Ghi như vậy cho biết chính xác phần đã kiểm tra và câu hỏi chưa có đáp án."
+    },
+    {
+      "source": "An accessory can be missing from a photograph, omitted from a selected option, packed out of view or genuinely absent from the received order. Resolve those possibilities in sequence.",
+      "source_sha256": "62c6ce5663255e56ea93a72495bd41743daf7cd09417c0417f760d9c684ba414",
+      "raw_target_sha256": "d861003b43525385d40b153b94180afb95b4e1be5475edd1ff854d12ac468f91",
+      "translation": "Phụ kiện có thể khuất trong ảnh, không thuộc phân loại đã chọn, được gói bên trong hoặc thực sự bị thiếu. Hãy lần lượt kiểm tra từng khả năng."
+    },
+    {
+      "source": "Establish what the option included",
+      "source_sha256": "687a11276a84edcdbd06c88adfc913d804c8077376483797d7ea52937cde9f45",
+      "raw_target_sha256": "6bd08a7e83a12c00ef486679d7f018194d4870942343d3dab165bb6154f48f3f",
+      "translation": "Xác định phân loại đã thanh toán gồm gì"
+    },
+    {
+      "source": "Find the order confirmation and the selected seller description. Highlight the wording that identifies the accessory, quantity and version. A shoulder bag worn with a decorative strap in a studio photograph might have separate options with and without that strap. A product title saying kit could describe more than one package. Start the inquiry with what the seller offered for the option you purchased.",
+      "source_sha256": "e2ea4b62a71ffb4a4717c930504539364de89a0bdec419f0207238afdf8189a8",
+      "raw_target_sha256": "887191dbc365453e3f6b776862ba1944ef73abad1e84894a0ee21323f01d0599",
+      "translation": "Tìm xác nhận đơn và mô tả đúng phân loại, đánh dấu tên phụ kiện, số lượng và phiên bản. Dây trang trí trên ảnh túi có thể chỉ thuộc một lựa chọn khác. Tên “bộ” cũng có thể chỉ nhiều gói. Bắt đầu từ thành phần người bán ghi cho phân loại bạn đã mua."
+    },
+    {
+      "source": "Inspect what the available photo actually shows",
+      "source_sha256": "9577c7f204bc2d15116f861eb309509d72ec8fb1f8409e73059969deed254ed8",
+      "raw_target_sha256": "816cb04a3c58d42ecd51c5586237830d10777c1871c0f5bbe0b38577955df2b4",
+      "translation": "Kiểm tra đúng phần ảnh cho thấy"
+    },
+    {
+      "source": "A closed box or zipped bag is an incomplete view of its contents. Note whether the packaging is open, which compartments are visible and whether an accessory could be wrapped separately. A small cable can sit under a cardboard insert; detachable clips can be inside an inner pocket. Avoid asking the warehouse to break seals or dismantle an item before you understand whether this affects its condition or return eligibility.",
+      "source_sha256": "4be52f8dea61e9007d2346053fd747a73761f6a04222692bbc07dddcd161331d",
+      "raw_target_sha256": "3e2e2dd9ce9435e120f3d9e5548c8616e321b16bf4e22d0ba3bdf66deeaf3301",
+      "translation": "Hộp đóng hoặc túi còn kéo khóa chưa cho thấy toàn bộ bên trong. Ghi ngăn nào đã nhìn thấy và phụ kiện có thể được gói riêng không. Cáp nhỏ có thể nằm dưới miếng bìa, kẹp tháo rời có thể nằm trong túi con. Tìm hiểu ảnh hưởng đến tình trạng và điều kiện trả trước khi yêu cầu phá niêm phong hay tháo bộ phận."
+    },
+    {
+      "source": "Name the missing piece and describe where it may be packed. Ask for an overview with the unit and all loose contents together, followed by a detail view if the shape or connector matters. Give the warehouse entry number so the inspection concerns the unit you actually bought. If another box from the same seller is still in transit, ask whether the accessory is supposed to travel separately.",
+      "source_sha256": "41a0cac2b5ca9165ed1eedb19b482cd324cb9414fdcc776e1338b049adde0716",
+      "raw_target_sha256": "44dd2b7263fd902a655911636b740803083f790263e0f73eac3dc647d6285114",
+      "translation": "Nêu tên bộ phận và chỗ có thể được cất. Xin một ảnh toàn cảnh sản phẩm cùng mọi thành phần rời; nếu cần xem đầu nối hay hình dạng, xin ảnh cận. Gửi mã nhập kho đúng. Nếu còn hộp khác đang vận chuyển, hỏi phụ kiện có được gửi riêng không."
+    },
+    {
+      "source": "Write down an evidence-based conclusion",
+      "source_sha256": "89056d3675ab47f4d9e3435f4d2a6a288e078e652587e9f7424533c03804b42c",
+      "raw_target_sha256": "4a8b358324c2d19d3580a3b43cc3e3a227f8c7741e94cdae545d4738f8a6c1ae",
+      "translation": "Kết luận theo số lượng kiểm đếm được"
+    },
+    {
+      "source": "Suppose your order names a pouch and two clips. The overview shows one pouch, one loose clip and a second clip attached to the bag. That photograph supports a complete count even though only one clip appears loose. In another case a photograph might show unopened packaging and no clips, leaving the count unresolved. Describe what can be counted and what remains hidden.",
+      "source_sha256": "f2e8854fc3c84545df7401e0783bac99f0b23d9b2c7d224106a5c5bd5441a10a",
+      "raw_target_sha256": "dbadfddfe52499b84c0340118bd21a24586b138daba61841a828194faa386309",
+      "translation": "Ví dụ, đơn ghi một túi nhỏ và hai kẹp. Ảnh có một túi nhỏ, một kẹp rời và một kẹp vẫn gắn trên túi chính. Như vậy đủ số dù chỉ thấy một kẹp nằm rời. Nếu gói chưa mở và không thấy kẹp, số lượng vẫn chưa rõ. Ghi riêng phần đếm được và phần bị khuất."
+    },
+    {
+      "source": "Keep the resolution tied to the original purchase",
+      "source_sha256": "cd78da943c82fe262f7c2536cef8ffd0a189dd5ce5fff34d4a8a1322a75fed1d",
+      "raw_target_sha256": "38b517110265c636979e39daea2d5350a834047b918bd096fcf8ad2e42cc037b",
+      "translation": "Nối cách xử lý với giao dịch ban đầu"
+    },
+    {
+      "source": "If the seller offers to send a missing piece, record its promised description and new domestic tracking number. If an exchange is offered, retain the original item reference and the replacement reference separately. Do not mark the case complete simply because a message promises a shipment. Close the record when the received accessory can be identified and checked against the original option.",
+      "source_sha256": "85bc1a95185c403de1788b0747fff198f6bca560369c80a7c038d7e25c344339",
+      "raw_target_sha256": "988eb00ab382aeacbaa0136051191c6fac3fe27176515119fbe42800db509c33",
+      "translation": "Nếu người bán hứa gửi bù, ghi mô tả phụ kiện và mã vận đơn nội địa mới. Nếu đổi hàng, tách mã món gốc và món thay thế. Lời hứa giao chưa xác nhận phụ kiện đã tới. Chỉ khép hồ sơ khi có thể nhận diện món nhận được và đối chiếu với phân loại ban đầu."
+    },
+    {
+      "source": "Establish whether the accessory was included",
+      "source_sha256": "968537e97f65ff7cb747387088431492fbde863c8fa3ad0f88db14e6b43ba6cf",
+      "raw_target_sha256": "48eddec8428de04082728020cd3a49cda570f3d2c4ff59db9e93598e136a03c1",
+      "translation": "Xem phụ kiện có thực sự được bán kèm"
+    },
+    {
+      "source": "A practical accessory check starts with the wording attached to your paid selection. Suppose a bag appears in a studio photograph beside a leather strap, a decorative charm and a dust cover. The actual option might describe only the bag and shoulder strap. Save the option text and any written seller confirmation you relied on. Treat the charm and dust cover separately unless you have evidence that the seller included them in that particular offer. This makes an inquiry clearer and avoids claiming that every photographed prop was purchased.",
+      "source_sha256": "405c2d6d2b5c1fda767ade8e44cb50d7ee80477d48a861ee5c18a5270d0c68b3",
+      "raw_target_sha256": "67d60e4e08df56c3f12a760ac7b642c6c6c6195b5f29511f5d85ad7a979c5609",
+      "translation": "Ảnh quảng cáo có thể bày túi cùng dây da, móc trang trí và túi chống bụi. Phân loại đã trả tiền có thể chỉ ghi túi và dây đeo vai. Lưu nội dung ấy cùng xác nhận bằng văn bản. Xem móc và túi chống bụi là hai mục riêng cho tới khi có bằng chứng được bán kèm."
+    },
+    {
+      "source": "Read the units carefully. A listing might offer a set of replacement clips, a strap sold without clips or a bundle containing both. The order quantity tells you how many units of the chosen offer you purchased. It does not by itself define the number of components inside each unit. Make a short expected-contents list in plain language. For example, one bag, one detachable shoulder strap and two clips already attached to the ends of that strap. Such a description gives the warehouse specific objects to look for.",
+      "source_sha256": "417c108ad2aee28e1a5661c72c05c311fc5d96c049945d4fa37490dd22a84d5d",
+      "raw_target_sha256": "e00e4870adcea4c682c75cb26e9659af0706cacd55192d45a653ddf6f43a6dce",
+      "translation": "Kiểm tra đơn vị. Tin có thể bán bộ kẹp thay, dây không kẹp hoặc cả dây và kẹp. Số lượng trong đơn cho biết số đơn vị của lựa chọn đã mua, chưa cho biết số thành phần mỗi đơn vị. Lập danh sách, ví dụ một túi, một dây vai tháo rời và hai kẹp gắn sẵn trên dây."
+    },
+    {
+      "source": "Separate an unseen item from a confirmed shortage",
+      "source_sha256": "06f6b04af7edc5a9076194aaf75b37a1942c868abe9953b3e84ca25b8db6a99c",
+      "raw_target_sha256": "c9225099f577b324cc2517cfeff83e0e5b6cb2910e7acaadd2d0d846db469eb3",
+      "translation": "Phân biệt chưa nhìn thấy với thiếu đã xác nhận"
+    },
+    {
+      "source": "In a first warehouse overview, a strap might be inside the bag, under tissue paper or attached behind the handle. A single photograph of the closed bag cannot establish a shortage. Ask whether the contents can be checked and, if permitted, request a view that shows the open bag and the loose components beside it. Avoid requesting removal of sealed packaging until you understand the implications for that order and have decided that opening it is appropriate.",
+      "source_sha256": "6378933c2d525fb40fc21250ada9b4e89305c812c00b44fafabec7118fe4f594",
+      "raw_target_sha256": "34c5cb1081dbee9150511f4b3b9ebee7d46ab1851ecbffaa089dc3540fb348e2",
+      "translation": "Dây có thể nằm trong túi, dưới giấy lót hoặc móc sau quai. Ảnh túi đóng chưa xác nhận thiếu dây. Nếu được phép, nhờ kiểm tra và chụp túi mở cùng các thành phần đặt cạnh. Hiểu ảnh hưởng đến đơn và điều kiện của người bán trước khi yêu cầu mở bao bì niêm phong."
+    },
+    {
+      "source": "If an accessory is visible but its identity is unclear, describe it by location and appearance. A narrow black strip seen behind a bag could be a handle, a shoulder strap or a piece of packaging. A photograph of its attachment clips or its full length might distinguish those possibilities. Where access or image quality still prevents confirmation, leave the status as unresolved. The accuracy of the record matters more than reaching a confident conclusion from an ambiguous view.",
+      "source_sha256": "d411e42244a610686777cb360dea17c75b372a71dfa312c710c0659155751470",
+      "raw_target_sha256": "49589774335dd8e8425fe2f35868fa534b84202ea45ca93e6e11a176e0b69525",
+      "translation": "Nếu chỉ thấy một dải đen sau túi, mô tả vị trí và hình dạng. Đó có thể là quai, dây vai hoặc vật liệu đóng gói. Ảnh cả chiều dài hay đầu kẹp có thể phân biệt. Nếu không thể tiếp cận hoặc ảnh chưa rõ, giữ trạng thái chưa xác nhận."
+    },
+    {
+      "source": "A seller might send more than one parcel for a purchase. Before assuming a component has been omitted, check the records the order shows for expected domestic deliveries and warehouse intake. Distinguish a seller message saying an item will follow from a shipment reference or intake entry that actually identifies it. If a second package exists, record the reference and what it is expected to contain. Keep the purchase open for the outstanding component until you can evaluate the evidence relevant to your decision.",
+      "source_sha256": "8aee86224b3ea08e3cca1ba0fe5f9671add2f21f9f1d9c1f2de58e222a407a4f",
+      "raw_target_sha256": "abb266ff0470d095d2f528d78ae949616f4b78026b1cb06114a30c50e303758f",
+      "translation": "Một giao dịch có thể được tách thành nhiều kiện. Kiểm tra các chuyến nội địa dự kiến và hồ sơ nhập kho. Tin “sẽ gửi sau” khác với mã vận đơn hay lượt nhận xác định món cụ thể. Nếu có kiện thứ hai, ghi mã và thành phần dự kiến, liên kết với đơn ban đầu."
+    },
+    {
+      "source": "A second domestic tracking event also does not prove the missing accessory is inside. The event identifies movement of a package. The received contents require a corresponding intake record or confirmation. For a bag with a detachable chain strap, you might note that the main bag arrived on one date and the seller described a separate parcel for the chain on another date. Link the second intake to the purchase only once the order record or support response gives you a basis to do so.",
+      "source_sha256": "d9c7693db4988fbf3ee22cd4cfcc3d0c731b863d34a26a2bd8b745bbe6f2c8bd",
+      "raw_target_sha256": "f75ecc1f8fa950860f67f594f1d5ed35501c937d7906f1861c53752d60998202",
+      "translation": "Lần quét vận chuyển nội địa thứ hai chỉ cho thấy một kiện đã di chuyển. Cần hồ sơ nhập hoặc xác nhận nội dung để biết phụ kiện ở trong. Ví dụ, túi chính về trước còn người bán báo gửi dây xích bằng kiện khác. Chỉ gắn lượt nhận thứ hai khi đối chiếu được mã và món nhận."
+    },
+    {
+      "source": "Ask for a specific next action",
+      "source_sha256": "2015dfe68f32bbb5b2b0145ef7c625728a1939fb3ddfc760d88c99edf805cc5e",
+      "raw_target_sha256": "a9adb94c16f043d1f759eda2306f319c06e5ccbf807f9333fb360ad42f21a22c",
+      "translation": "Yêu cầu một bước xử lý cụ thể"
+    },
+    {
+      "source": "A useful message includes the selected option, the privately supplied order reference, the component expected and the evidence currently available. You might write that the paid selection says bag with long strap, the overview shows the bag closed and the strap is not visible. Ask whether someone can check inside the bag and confirm the strap before dispatch. This describes a gap and requests a specific action without accusing the seller or warehouse of losing an item.",
+      "source_sha256": "a58c50efb856c16a85bf178d4607012c3f320e3a050bd67f1f57e4159aa9c2c9",
+      "raw_target_sha256": "1aa36309392b97178f43f98d6dcc4adca92cb87afb59f8b68c1d6ce0872d4ef5",
+      "translation": "Gửi phân loại, mã đơn qua kênh riêng, bộ phận cần có và bằng chứng hiện tại. Chẳng hạn, đơn ghi “túi kèm dây dài” nhưng ảnh chỉ có túi đóng. Hỏi nhân viên có thể kiểm tra bên trong và xác nhận dây trước khi xuất không. Cách hỏi nêu đúng chỗ thiếu thông tin mà không quy kết."
+    },
+    {
+      "source": "If support confirms the item was absent, ask which resolution options apply to this order and whether each one involves a deadline, charge or separate shipment. A replacement accessory, a seller inquiry and a return can have different consequences. Record what you actually request and any confirmation received. Avoid combining the missing-strap question with unrelated complaints about colour or packaging in one long paragraph. Separate observations make it easier to see which issues have been addressed and which remain open.",
+      "source_sha256": "f55bfe168aa994636066b6ed2679b53945d689779a896ab37de8a4d33f42c6fd",
+      "raw_target_sha256": "d45fb27e6415464239d15f091ba055f909886e747c93771833a927f97af3c2a7",
+      "translation": "Khi hỗ trợ xác nhận thiếu, hỏi cách xử lý áp dụng cho đơn cùng thời hạn, chi phí hay chuyến giao riêng. Gửi bù, hỏi lại người bán và trả hàng có hệ quả khác nhau. Ghi yêu cầu thực tế và câu trả lời. Tách vấn đề dây thiếu khỏi phản ánh về màu hoặc bao bì."
+    },
+    {
+      "source": "Close the record with evidence of the outcome",
+      "source_sha256": "4171eb56adc854283f8a5d629e1db64c4d998fa9bf90375ae5ba93aa36ebcad4",
+      "raw_target_sha256": "0f3c5a50653cf6eb8dde4304fdb1fa835fcd280f9151354d8e746c9d1a14f597",
+      "translation": "Khép hồ sơ bằng bằng chứng kết quả"
+    },
+    {
+      "source": "A promise to send an accessory resolves the seller's intended next step. The actual shortage remains open until the promised item arrives or you accept another resolution. Keep the follow-up intake, photograph or adjustment alongside the original order. If an adjustment is offered, record the amount, currency and scope in the private order notes. A statement about one accessory does not automatically explain other charges or establish a general policy for future orders.",
+      "source_sha256": "5ce8734689a7ab853d15a80c1de76406b559ce7ea47b81849677a60d49d85c70",
+      "raw_target_sha256": "47fdf351470407805fb515602ecfbfcf38f16577805c041a78b4ba78181068a3",
+      "translation": "Lời hứa gửi bù cho biết bước tiếp của người bán. Vấn đề vẫn mở đến khi phụ kiện tới hoặc bạn chấp nhận cách xử lý khác. Lưu ảnh, lượt nhập bổ sung hay khoản điều chỉnh cạnh đơn gốc. Nếu có điều chỉnh tiền, ghi số tiền, đồng tiền và phạm vi trong hồ sơ riêng."
+    },
+    {
+      "source": "At the packing stage, check that the final parcel request still includes every warehouse item needed for the complete set. If a replacement strap has a separate warehouse reference, attach or select it as the current interface requires. If support says it was already placed inside the bag, save that confirmation. A precise final note can be very short: the black long strap arrived separately, the clips are visible in the new image, and the bag and strap now belong to the same intended parcel.",
+      "source_sha256": "1ea9a43d1c9a2471ecdbeb6718389cad9068fd6676961a635139847a53efbdac",
+      "raw_target_sha256": "acf905faccd0652b355d761a9a0de4a13d0057a0bc7af2fb435c1b9c09d45299",
+      "translation": "Khi đóng kiện, kiểm tra yêu cầu xuất có đủ mọi món trong kho để thành bộ. Chọn hoặc gắn mã nhập riêng của dây thay theo giao diện. Nếu nhân viên cho biết đã đặt dây vào túi, giữ xác nhận đó. Ghi ngắn rằng dây đen dài về riêng, thấy các kẹp và đã đối chiếu đủ."
+    },
+    {
+      "source": "A useful request tells a person holding the item what to photograph, how to position it and which question the resulting frame should answer.",
+      "source_sha256": "2d65b2df7718d2f7dacf2d58b22659c773b0b0b2ed79a69baafd20326eb01f50",
+      "raw_target_sha256": "9f80df911ac70ec5e4fc1cdf5ec59d46b09f29fb6a15fbed3202221141637d45",
+      "translation": "Một yêu cầu hữu ích cho người cầm món hàng biết cần chụp gì, đặt ra sao và ảnh phải trả lời câu hỏi nào."
+    },
+    {
+      "source": "Write the decision first",
+      "source_sha256": "0da8b62efdd7341a40c049107f28879f21f35b68e5cb054246710f5918c48722",
+      "raw_target_sha256": "ad6f8304800872d519a7557b06d14aa86d4dee9e6f6aee747b119f6cd5a5450a",
+      "translation": "Bắt đầu bằng quyết định cần đưa ra"
+    },
+    {
+      "source": "Explain what changes depending on the result. You might need to decide whether a jacket has a two-way zipper, whether a printed name is spelled correctly, or whether a sleeve is long enough. The phrase more pictures leaves the photographer to choose an angle. Starting with the decision helps you ask for one informative view rather than several attractive views that repeat the original gallery.",
+      "source_sha256": "cc862a441ffa87d6cd5900d5014cf57bfc495e041c93c33edba6f89baed4651b",
+      "raw_target_sha256": "9910046aa98e38a4d10d1f1e1382f69dfead1de9e70cead0f51596e22496c832",
+      "translation": "Xác định bạn cần biết khóa có mở hai chiều, tên in đúng chính tả hay tay áo đủ dài. Lời nhắn “chụp thêm ảnh” để nhân viên tự đoán góc. Nêu quyết định giúp lấy một ảnh có ích thay vì lặp lại những góc đẹp đã có."
+    },
+    {
+      "source": "Identify the object unambiguously",
+      "source_sha256": "060c1fcb69ea637c0338dee731f9d75c318d06fcd4d1004d6a3afdd8c9fbbfdb",
+      "raw_target_sha256": "2ebee88058c7d0365249a44dd9244416c2c3c6d843698d4e29cbf9ef2bfd7edd",
+      "translation": "Chỉ rõ chính xác sản phẩm"
+    },
+    {
+      "source": "Give the item or order reference and exact option. When two navy jackets differ only in size, a colour name is insufficient. Ask that the item remains identifiable in the picture. For a personalisation check, provide the exact text from the order and specify whether front, back or sleeve should be visible. Avoid including unrelated personal or payment information in the request.",
+      "source_sha256": "a7520529013e27430019015132ce0b2f7690037861f054603849e16c9a136fca",
+      "raw_target_sha256": "f0c7164224134e1333e0a835db2fd4182a47754e82ecba70a65c880cab972c54",
+      "translation": "Gửi mã hàng hoặc đơn và phân loại đầy đủ. Hai áo xanh navy có thể chỉ khác cỡ. Nhờ chụp sao cho vẫn nhận ra đúng món. Khi kiểm tra chữ cá nhân hóa, gửi nguyên văn trong đơn và nêu vị trí trước, sau hay tay áo. Bỏ thông tin cá nhân hoặc thanh toán không liên quan."
+    },
+    {
+      "source": "Specify composition and endpoints",
+      "source_sha256": "bd9c2066d273a2a7820dfb11fed384b2f435cd689f332fc9f59a11dcda5475b4",
+      "raw_target_sha256": "9917e8808bb238a14cbe7f3f344f4472da0883db566eebbb1bdac8dd346b97a5",
+      "translation": "Nêu bố cục và hai mốc đo"
+    },
+    {
+      "source": "For a zipper, ask for a closed full-front view with both ends and any sliders visible. For a flat garment width, describe the seam points and ask that the tape's beginning and reading appear in one frame. For a print, ask for a straight-on view that shows placement and another view only if the text is too small. A tightly cropped image may improve legibility while removing the context needed to identify the unit.",
+      "source_sha256": "11e911fcb8f1db6a920af1e0b3ba290d5e32b4a4d3c59bb050c3d48acd832443",
+      "raw_target_sha256": "2513b2058e8b53d108643ec734f88675cf4fe6036d1d743b336eb7646f16e658",
+      "translation": "Với khóa kéo, xin ảnh mặt trước đóng kín thấy hai đầu và các đầu kéo. Với chiều ngang áo trải phẳng, nêu hai đường may và nhờ chụp cùng lúc điểm đầu, số cuối trên thước. Với hình in, chụp thẳng để thấy vị trí; chỉ thêm ảnh cận nếu chữ nhỏ. Cắt quá sát có thể mất dấu hiệu nhận diện món."
+    },
+    {
+      "source": "Check the response against the question",
+      "source_sha256": "d0faa0571e78d2c976577f7942ce0e8bc843dfbc759f9f63652f5a14c39a0e28",
+      "raw_target_sha256": "0cbff0a5afb088d776df1b12964071e351f6a55d0d993441183c7d96d827f8d2",
+      "translation": "Đối chiếu ảnh với câu hỏi ban đầu"
+    },
+    {
+      "source": "Look at the requested feature before scanning the rest of the photograph. Can you see both endpoints? Is the label readable? Is the unit laid flat, or held at an angle that distorts the apparent length? If the image leaves a gap, describe that gap in a follow-up. Asking for the lower slider to be visible is more actionable than saying that the first picture was bad.",
+      "source_sha256": "04dc73a1603213c88839edbf512ba4b9de73e34bb4b2816460c10b00591a0035",
+      "raw_target_sha256": "b8d8696e72fe5a65431099a72cc43eae0ca1b725f579fd250e1d3a83a8b56278",
+      "translation": "Xem chi tiết đã yêu cầu trước. Có thấy hai mốc, đọc được nhãn và áo được trải phẳng không? Nếu chưa đủ, chỉ rõ phần bị khuất. Yêu cầu để lộ đầu kéo phía dưới dễ thực hiện hơn lời phàn nàn chung rằng ảnh đầu chưa tốt."
+    },
+    {
+      "source": "Budget the service and retain the result",
+      "source_sha256": "2ec032fddef99bc2e247b3e947de25b5c884df5dc9dbbff9ad753f1f80379eb8",
+      "raw_target_sha256": "002001f046247352771a0e432fac6825067a5fceff1b826407a06b225c18fa28",
+      "translation": "Kiểm tra phí dịch vụ và lưu kết quả"
+    },
+    {
+      "source": "Check availability, fees and processing information in the current KakoBuy order flow. A third-party article can suggest useful angles, but the conditions attached to your own order decide which request can be fulfilled. Once the image arrives, keep it with the original request and the decision you made. A dated note explaining the accepted measurement remains useful if the item later becomes part of a multi-item parcel.",
+      "source_sha256": "3ca6d6bc596c9fe8f803c4e0c6ea38a15b849cd14a1babc9285b3dc269ed882e",
+      "raw_target_sha256": "4ca6016939c08391bfc2e9bc1306e36839724dbc751f9c18b15b2216b683b9d1",
+      "translation": "Xem dịch vụ còn được cung cấp không, phí và thời gian ngay trong quy trình đơn KakoBuy hiện tại. Bài hướng dẫn gợi ý góc chụp; điều khoản của đơn quyết định việc có thể làm. Lưu ảnh, yêu cầu và quyết định cùng nhau. Ghi số đo có ngày vẫn hữu ích khi ghép hàng thành kiện."
+    },
+    {
+      "source": "Write the question before selecting the view",
+      "source_sha256": "db185ad5f978383e2792f1c26d030c43dbc668801e8c1ee74b57d3dd60dd1868",
+      "raw_target_sha256": "107492278dabfc8777c06ab81859764a57c76e1753921c32bed2cc8ac14a708f",
+      "translation": "Viết câu hỏi trước khi chọn góc ảnh"
+    },
+    {
+      "source": "An item can invite many interesting close-ups. Prioritise the one detail that determines whether you will accept it. For a garment bought for layering, the flat chest width may be more important than a logo close-up. For a bag bought to replace a lost part, the attachment clip and its inner width may matter most. Use the available gallery to eliminate questions already answered. A focused request takes less interpretation and makes it easier to recognise whether the resulting photo actually satisfies your purpose.",
+      "source_sha256": "1d2f85c324b492055e6d11cb1175441ebc52ed6f9509d89ed8196c5292472cb3",
+      "raw_target_sha256": "4d88ff70b9df23f8c21cd374827d72629c00a17868db8859085ce0af86b44153",
+      "translation": "Ưu tiên chi tiết quyết định bạn có nhận món không. Với áo mặc nhiều lớp, chiều ngang ngực có thể quan trọng hơn logo. Với bộ phận túi thay thế, kiểu và độ rộng trong của kẹp có thể mang tính quyết định. Xem trước album để bỏ những câu hỏi đã có đáp án."
+    },
+    {
+      "source": "Describe a location anyone can find",
+      "source_sha256": "f3ea640e8ec4d9175559602b760b8bd3179e65a079618ac13e14e77fb76a5e60",
+      "raw_target_sha256": "f69ebce2c87903a18482e7efe64991ba1b9fd527731ccdf74953cdc11353ce5c",
+      "translation": "Mô tả vị trí ai cũng xác định được"
+    },
+    {
+      "source": "Use an object and a landmark instead of ambiguous directions. “The inside seam below the left arm when the jacket is worn” identifies a different spot from “the seam on the left of my screen.” Where possible, attach a cropped reference with the area circled and retain a wider view that establishes its location. A close crop of two black seams can be hard to locate on a dark garment. The wide view gives the photographer a way to identify the correct area.",
+      "source_sha256": "85a02fd5e79009d4ea196aa31f630c86693a3ccd3162fffadda5aaa165804aa2",
+      "raw_target_sha256": "11286b6e2b79aeaf90c5cfeeca58ac12ab524c55358a6cedc59168040559e9ea",
+      "translation": "Dùng mốc trên món, chẳng hạn “đường may trong dưới nách trái khi mặc áo”. Vị trí này khác bên trái màn hình. Nếu được, khoanh vùng trên ảnh cắt và kèm một ảnh rộng. Hai đường may đen chụp cận trên áo tối dễ bị nhầm khi thiếu ảnh định vị."
+    },
+    {
+      "source": "For a pair or a set, name the component as well. A request for the tongue label can produce a clear image of the right shoe while your question concerns the left. If both need checking, say so explicitly and explain what must be readable. A request for a bag buckle should specify which strap and whether the buckle should be shown open, closed or from the inside. Each detail serves an actual comparison and helps avoid a repetition of the existing overview.",
+      "source_sha256": "85dd80a581e9c7c949ca0a2dc1dac66994523d08ee867f2e0a4ebff53015a96a",
+      "raw_target_sha256": "2b459e1612df574da3659e8d3e8dc099f0385d6290410a016808954747710f81",
+      "translation": "Với một đôi hoặc bộ, nêu cả thành phần. Ảnh nhãn lưỡi giày phải không giải đáp câu hỏi về chiếc trái. Nếu cần cả hai, ghi rõ và nêu chữ cần đọc. Với khóa túi, chỉ dây nào và cần chụp khi khóa mở, đóng hay từ phía trong."
+    },
+    {
+      "source": "Specify how a measurement should be taken",
+      "source_sha256": "354f63f2eb7b551c1ecac9b7fc32a6580f59900676018025d3d379ea0247b51f",
+      "raw_target_sha256": "9f079338553707f7a052feb6334a0e9b0793dfc8d91366effe3cb6147a30fe4b",
+      "translation": "Mô tả cách lấy số đo"
+    },
+    {
+      "source": "For a flat garment measurement, state the start point, end point and unit. If you want the width across a sweatshirt under the arms, ask to see the garment laid flat, the tape beginning at one underarm seam and ending at the other, with both ends visible. Avoid asking for a fit verdict from a picture. Compare the resulting measurement with a garment you own taken by the same method, and keep any material stretch or garment shape in mind.",
+      "source_sha256": "a60be411b8b02d5740a3d514373920e0446cd734f65013f4cb8cba0843fcd2b0",
+      "raw_target_sha256": "c12afa54cf3ffda657c66029a7c05296cc44b0b877bace86e741bdfaac299101",
+      "translation": "Nêu điểm đầu, điểm cuối và đơn vị. Với chiều ngang áo nỉ, nhờ trải phẳng và đặt thước từ đường may nách này sang nách kia, thấy cả hai đầu. So với áo của bạn đo cùng cách. Tính đến độ co giãn và phom thay vì nhờ kết luận mặc vừa chỉ từ ảnh."
+    },
+    {
+      "source": "For a small opening, a wide view with both ends of a ruler readable may be more useful than a very tight close-up. A cropped photograph of the number at the far end does not establish the starting point. If a rigid object needs to pass through the opening, distinguish the usable gap from the overall length of the closing hardware. In your note, state which measurement you received. Keep an approximate reading separate from any conclusion about whether the object will fit comfortably.",
+      "source_sha256": "a8410710eecfede469acd3027a55970880f8f2fc3c1e17ca8922462a94207e3a",
+      "raw_target_sha256": "9eb5b5a1178bd88a08e7343435bd9cfb0492a07596fc2bce19487298ec034e6f",
+      "translation": "Với khe nhỏ, góc rộng đủ thấy hai mốc thước thường hữu ích hơn ảnh thật sát. Chỉ thấy số cuối chưa biết thước bắt đầu ở đâu. Nếu vật cứng cần đi qua, phân biệt khoảng mở dùng được với tổng chiều dài khóa. Ghi loại số đo và đánh dấu nếu chỉ là ước lượng."
+    },
+    {
+      "source": "Adapt the request to realistic handling",
+      "source_sha256": "c949872cd5fca44faf42e818dac22bea2b9c52779b0917d3e71994cad84c4a30",
+      "raw_target_sha256": "e439edd016029b890c527dd57af12976688d3c67af4b24dfeccc6b8efddde9fd",
+      "translation": "Điều chỉnh theo cách xử lý khả thi"
+    },
+    {
+      "source": "If the available service offers a priced photo option, check the displayed scope before using it. Confirm whether you are ordering a single image, a requested angle or another defined service. Avoid assuming that adding five unrelated instructions to one message guarantees five separate results. If you have a fixed budget for inspection, choose the detail with the greatest impact on your decision and specify what would count as a readable answer. Save the confirmation with your order evidence.",
+      "source_sha256": "0ce3c594dee13cef1290cb60e888d475c19ee91d2308fcb8f73e26603431bb9d",
+      "raw_target_sha256": "51626b04b318f3535f3923db84a3b5415f6505f3cc1a7b72ce8a03ec47b85d50",
+      "translation": "Với dịch vụ ảnh có phí, đọc phạm vi hiển thị. Phí áp dụng cho một ảnh, một góc hay một dịch vụ khác? Năm chỉ dẫn trong một tin nhắn chưa bảo đảm có năm ảnh. Nếu ngân sách hạn chế, chọn chi tiết ảnh hưởng nhất và mô tả kết quả cần nhận."
+    },
+    {
+      "source": "Evaluate the result and decide whether to follow up",
+      "source_sha256": "6bf636e88ba539865bd822e4b694a16591d22b700e32b2670aca552f566675e8",
+      "raw_target_sha256": "1bd55857f7c20ad44a4368cd6d0e1f32c9c395d8b1867cc5126eaeeb30fdf63b",
+      "translation": "Đánh giá kết quả và cân nhắc hỏi tiếp"
+    },
+    {
+      "source": "Open the original result rather than judging it from a thumbnail. Check three things: whether it is the correct item, whether it shows the specified area and whether the detail is readable or measurable. If it answers your question, write down the observation and date. A concise note such as “zip opening is visible between both stops, measured across the usable gap” preserves the basis of your decision more clearly than a generic acceptance mark.",
+      "source_sha256": "a29c614768ff41172088eb1e033eb79dc7b73edb276d436373c8a8fe789cd466",
+      "raw_target_sha256": "82a271fbe02a6fd106c8720300940a2759dc5a2357630af2bfc1211a25723008",
+      "translation": "Mở tệp gốc thay vì chỉ xem ảnh thu nhỏ. Kiểm tra đúng món, đúng vùng và chi tiết đọc hoặc đo được. Khi đã có đáp án, ghi quan sát cùng ngày. Ví dụ: “Thấy hai chốt khóa, số đo lấy trên khoảng mở sử dụng được.”"
+    },
+    {
+      "source": "If the result misses one requirement, quote that requirement and identify what the image did show. For example, the photograph shows the zipper's total length, while the usable opening between the stops remains hidden. Ask for that specific change only if it still matters to the order. If photography cannot settle the issue, consider the seller's written answer, the available order options or declining the purchase. Repeating the same unanswerable request is unlikely to produce stronger evidence.",
+      "source_sha256": "6dbe2ef6e045e6912ff1988175abe23ef26e82f1e53783b98ed73ec768c3a4b6",
+      "raw_target_sha256": "098639221a3ae82386c6b2b9eb1289b2e7543b51b4b0645d0996ed541a79f959",
+      "translation": "Nếu thiếu một yêu cầu, nhắc lại yêu cầu ấy và nêu ảnh đã cho thấy gì. Ví dụ, ảnh cho thấy tổng chiều dài khóa nhưng chưa thấy khe giữa hai chốt. Chỉ xin thay đổi đó nếu còn ảnh hưởng đến đơn. Nếu ảnh không thể giải đáp, cân nhắc trả lời bằng văn bản, các lựa chọn trong đơn hoặc dừng mua."
+    },
+    {
+      "source": "An exchange creates a second physical unit. Keep the original promise, the original problem and the replacement evidence connected without mixing their identifiers.",
+      "source_sha256": "9c04e875b9a644fce5bc3e1f0d497a0a65bff26dc0f402a39f61cfb6d26cbe0a",
+      "raw_target_sha256": "52c38b760a30fa9494606df8bfaaa9132f6734b04ddd2bf846f709853577f80e",
+      "translation": "Đổi hàng tạo ra một sản phẩm vật lý thứ hai. Giữ cam kết ban đầu, vấn đề của món đầu và bằng chứng món thay liên kết với nhau, nhưng tách rõ từng mã."
+    },
+    {
+      "source": "Preserve the starting point",
+      "source_sha256": "40060ebe0b1c2b6522a65f25ee7dfdb615164d588830dcf567afdfc04c1d74ee",
+      "raw_target_sha256": "54babd4b7ba0c9f633f83fc06475e63c85c0e158fcdbafdda47aa06450fec7c1",
+      "translation": "Lưu bằng chứng ban đầu"
+    },
+    {
+      "source": "Save the seller option, quantity, price and original order reference. Keep the warehouse photographs that identify the problem. State the issue in terms another person could verify, such as the received size tag reading large when the paid selection was medium. A general statement that the item looks different is harder to act on when the seller page has multiple versions or a changing set of pictures.",
+      "source_sha256": "6f15e33d3f11b934bc4e8a94bc85a6fb0582338c5c9a2b906e4d2771a9a0c07d",
+      "raw_target_sha256": "7527c0b8a917cc7373bb964e65622d08bc1870029032b7a626732075d68163b1",
+      "translation": "Lưu phân loại, số lượng, giá, mã đơn gốc và ảnh kho thể hiện vấn đề. Mô tả điều có thể đối chiếu, chẳng hạn nhãn trên món nhận ghi L trong khi đơn đã trả tiền ghi M. Nói chung “trông khác” khó xử lý khi tin có nhiều bản hoặc ảnh đã đổi."
+    },
+    {
+      "source": "Read the instructions on the actual order and ask what the seller or platform needs before the unit is moved. Note any requirement concerning packaging, tags, evidence or domestic return transport. Avoid assuming that storage time and exchange eligibility have the same deadline. A return agreement, a dispatched return and an accepted replacement are distinct events and may have separate references.",
+      "source_sha256": "cdb735255327eb08fa74eb52ce39ebc9ae5f9c360ed47641c92ac07b9a15a45f",
+      "raw_target_sha256": "97af8edb46220c43983fd63603178c74a4fa90ea7a4dd5678bfe0599aafa437d",
+      "translation": "Đọc hướng dẫn của đơn và hỏi cần gì trước khi di chuyển món hàng. Ghi điều kiện bao bì, nhãn, bằng chứng và vận chuyển trả nội địa. Thời hạn lưu kho có thể khác hạn đổi. Đồng ý trả, gửi kiện trả và chấp nhận món thay là các sự kiện riêng."
+    },
+    {
+      "source": "Retain the original warehouse entry even after the unit has left. Add the domestic tracking number if one is provided and record who supplied it. A carrier scan tells you about the physical delivery of a package. It cannot, on its own, show that a seller inspected the item, accepted the exchange or sent the replacement. Update each step only when its own evidence appears.",
+      "source_sha256": "1509896c9eca2c9abf9a0f625c38346f00a5fe884bb90b5546509535babd1707",
+      "raw_target_sha256": "7185103155781efdfdd59b4dce3ba9f615adccd79be1f589c88148ad839d1549",
+      "translation": "Giữ lượt nhập kho gốc kể cả sau khi hàng đã rời kho. Bổ sung mã vận đơn nội địa và người cung cấp. Lượt quét của hãng chỉ ghi chuyển động kiện, chưa chứng minh người bán đã kiểm tra, duyệt đổi hay gửi món thay. Cập nhật từng bước khi có bằng chứng tương ứng."
+    },
+    {
+      "source": "Check the replacement without recycling the old pictures",
+      "source_sha256": "32d41228df85be20d8c3e791acd807ad5a30c9f6c2ac5e429aa51d9b1897cbb7",
+      "raw_target_sha256": "1b520f0bfb031b559bbc0cf36625a55d6abf8feac7b358f39027b67efef3f223",
+      "translation": "Kiểm tra món thay bằng ảnh mới"
+    },
+    {
+      "source": "Give the replacement a separate line with its warehouse intake reference and photographs. Verify the precise detail that prompted the exchange and check the rest of the unit as well. A corrected colour does not establish the right size, quantity or included accessories. When the photographs look identical to the original set, ask which images belong to the new intake before treating them as fresh evidence.",
+      "source_sha256": "542d63a0fb5382b88b0dbbc9595c2c4dec65aa3eb4d51c28f69c99b9e920c871",
+      "raw_target_sha256": "d427870cbdc57aeb31cfb9ebddc924dbb874cdf157c76b9620d3853eade8b767",
+      "translation": "Tạo dòng mới cho mã nhập và ảnh của món thay. Kiểm tra chi tiết khiến bạn đổi cùng những phần còn lại. Đúng màu chưa xác nhận đúng cỡ, số lượng hay phụ kiện. Nếu bộ ảnh giống hệt ảnh cũ, hỏi ảnh thuộc lượt nhập nào trước khi coi là bằng chứng mới."
+    },
+    {
+      "source": "Record any additional charge or credit using the amount, currency and payee actually shown. Match the amounts to the relevant order rather than quietly changing the old price. The item record can be resolved once the replacement has been checked and accepted, even if a separate credit remains pending. Keep both statuses visible to avoid submitting the wrong unit for international packing.",
+      "source_sha256": "28f50cc57a8fa0918c89ec172f53d41dd079bfeb21b3ec007589211d65fd7aca",
+      "raw_target_sha256": "101323a6d0b3ed89fb14468072f98a938aee346f8a0392d2444130a90ab24864",
+      "translation": "Ghi phụ phí hoặc khoản ghi có theo đúng số, tiền tệ và bên nhận hiển thị. Gắn giao dịch với đơn liên quan mà vẫn giữ giá cũ. Hồ sơ món có thể khép khi đã chấp nhận hàng thay dù khoản hoàn còn chờ. Giữ hai trạng thái rõ để chọn đúng món gửi quốc tế."
+    },
+    {
+      "source": "Define the replacement you would accept",
+      "source_sha256": "25798ffdc66fa08a6e74e3da9f7adccb55a2d4cea1cc133764eb2b427cbd2daa",
+      "raw_target_sha256": "2c363232ee113c19bd48636dcc2484070e1667df1fe420c8661edf19feedba01",
+      "translation": "Xác định món thay bạn chấp nhận"
+    },
+    {
+      "source": "Before requesting an exchange, write down the exact option that would resolve your problem. If a seller delivered a blue shirt in medium when you ordered navy in medium, the remedy may be the originally selected navy option. If you ordered medium and now decide you want large, describe that as a change of selection. The difference matters because the seller and agent need to understand what happened and what item you would accept. Preserve the original order wording in both situations.",
+      "source_sha256": "c7e41d866406c8e7d0ef98e7cadbd772d29da2f08765e13e9ae7c63ee4eb8772",
+      "raw_target_sha256": "b37f32af3e60259dadc8b5a6b4cfa592cd9b95c323679c88f291ba93e335ddfa",
+      "translation": "Nếu đặt áo xanh navy cỡ M mà nhận xanh lam cỡ M, cách giải quyết có thể là đúng bản xanh navy M ban đầu. Nếu đặt M nhưng nay muốn L, hãy nói đây là thay đổi lựa chọn. Người bán và đại lý cần biết việc gì xảy ra và món nào bạn sẽ chấp nhận."
+    },
+    {
+      "source": "Think through alternatives before someone offers a substitute. You might accept a larger size only if a measured chest width falls within a particular range. You might accept the same colour in a different fabric only after seeing the new specification and price. Keep these conditions private until relevant, then state them explicitly when agreeing to a change. A message saying another option is available is a proposal. Record your answer and make sure the order record or later confirmation describes the choice you actually approved.",
+      "source_sha256": "07cc340ca7fd1c21898bd36186e75bff9d11641862efc239022ae88000bccade",
+      "raw_target_sha256": "053aa05285ce5dd54a361ae6c4fac157e17a788f75861889f751b5ecf3925c40",
+      "translation": "Nghĩ trước phương án thay. Cỡ lớn hơn có thể chỉ chấp nhận khi số đo ngang ngực nằm trong khoảng nhất định. Cùng màu nhưng khác vải có thể cần xem thông số và giá trước. Nêu điều kiện lúc đồng ý thay. Tin báo có bản khác mới là đề xuất; lưu riêng phản hồi của bạn."
+    },
+    {
+      "source": "Build the timeline from events",
+      "source_sha256": "9cef1fc7bda80cbacea28fa9f9eb808746c97b1ab1db75ce9298465b75c554fd",
+      "raw_target_sha256": "82a13209e8f839359f00ed308a645c5ee59629c3f32ee4d16ef433506e899e28",
+      "translation": "Lập dòng thời gian theo sự kiện thực"
+    },
+    {
+      "source": "Imagine the original garment arrived on Monday. On Tuesday you requested a different size. On Wednesday the agent asked the seller whether that size was in stock. At that point, the exchange has been requested and the seller response is outstanding. An estimate of when a replacement might arrive is not evidence that the original has been sent back or another garment dispatched. Keep the latest confirmed event and the next expected event on separate lines so you can follow up with a precise question.",
+      "source_sha256": "24533a5df66d888dbbf8388920dc4b3bfd9225b91fe612bfe82cc7065acac4b1",
+      "raw_target_sha256": "0862396dbfeb66a495490fa700811be9a8d838b90287395160fcf3a7bdeccba9",
+      "translation": "Ví dụ, món gốc về thứ Hai. Thứ Ba bạn xin cỡ khác. Thứ Tư đại lý hỏi người bán còn cỡ đó không. Lúc này yêu cầu đã gửi nhưng còn chờ trả lời. Ước tính ngày nhận chưa chứng minh món gốc đã trả hoặc món thay đã gửi. Tách sự kiện xác nhận gần nhất khỏi bước dự kiến."
+    },
+    {
+      "source": "Useful event fields are date, actor, item or parcel reference, action and evidence. A support reply, tracking event, payment adjustment or new warehouse photograph may each support a different line. Where a time is important, retain the time zone shown in the original record. Do not count an estimate as an elapsed deadline unless the relevant order terms or a support message establish one. If a return or exchange option is time-sensitive, ask support which deadline applies to the specific order.",
+      "source_sha256": "e95cd1f1e38dab7e16b4a91bc1967eb8ea4e8f4cbd139efaae7de156899ab301",
+      "raw_target_sha256": "e68709ece83de14305f24b166782447098c86a538c80335e8b7eee80578ad299",
+      "translation": "Ghi ngày, bên thực hiện, mã món hoặc kiện, hành động và bằng chứng. Trả lời hỗ trợ, lượt quét, điều chỉnh thanh toán và ảnh kho có thể xác nhận các bước khác nhau. Giữ múi giờ nếu cần. Kiểm tra hạn thực trong điều khoản hay tin hỗ trợ trước khi coi một mốc ước tính đã quá hạn."
+    },
+    {
+      "source": "Keep outgoing and incoming tracking apart",
+      "source_sha256": "08d54cd04c7c912abd005d733478929887bdd8e9e788e338c5a249061dc6ea20",
+      "raw_target_sha256": "0269042331233c195f417f4eac82f0c7b2fb22d29f546bdf200ba1976da5cf25",
+      "translation": "Tách mã vận đơn đi và về"
+    },
+    {
+      "source": "An exchange may involve an outgoing domestic parcel and an incoming replacement. They have different directions and can have different tracking references. Label each reference by direction. If an outgoing parcel shows delivered, that event can help establish that a parcel reached its domestic destination. It does not confirm that the seller inspected it, approved a replacement, dispatched the replacement or that the warehouse received the correct size. Ask about the first missing step instead of repeating the entire timeline.",
+      "source_sha256": "a39971deecc51d9967bc01d5c07eb4c3709e9b5d033277f6ed42e8d9da004be2",
+      "raw_target_sha256": "07e0c7ba3ceb0776ea03909e552f7a287335cb4f898ce891fce2a9f2f9148496",
+      "translation": "Kiện trả đi từ kho tới người bán, còn kiện thay về kho. Ghi chiều vận chuyển trên từng mã. Trạng thái đã giao của kiện trả giúp xác nhận kiện đến điểm nội địa. Nó chưa chứng minh người bán đã kiểm tra, duyệt đổi hay gửi hàng thay, cũng chưa xác nhận kho nhận hàng mới."
+    },
+    {
+      "source": "If a replacement is associated with a new order or warehouse number, connect it to the original using a dated note. Avoid changing the original number to the new one and losing the connection. The original record documents the paid selection and the first unit. The replacement record documents what arrived later. If the replacement is bundled with another item, make sure your note identifies which piece belongs to the exchange and which piece belongs to an unrelated purchase.",
+      "source_sha256": "8234fb29110072eddcdf1aba4ddaa37a13cb33a2288972dfee35f82a25ddb4d9",
+      "raw_target_sha256": "12b05c2ab052e8cbd8bbc10bb316577717e3c08596011f5a04dde0d6901026b0",
+      "translation": "Nếu món thay có mã đơn hoặc mã kho mới, nối về mã cũ bằng ghi chú có ngày. Giữ mã gốc làm bằng chứng cho phân loại đã trả tiền và món đầu. Mã mới ghi món đến sau. Nếu nhận kèm món khác, chỉ rõ phần nào thuộc việc đổi hàng."
+    },
+    {
+      "source": "Follow the money separately",
+      "source_sha256": "713720b4fe9bb1a50d409a4a965d876f27d6c93705c029475b0da938e093038f",
+      "raw_target_sha256": "e066e4995b5b578f114f61a3029824efea03b52da0ae64dde0cf5cb15cd603a5",
+      "translation": "Theo dõi tiền riêng"
+    },
+    {
+      "source": "Suppose a seller proposes a more expensive size variant and separately mentions delivery back to the warehouse. Record the item difference and delivery amount as separate fields, even if they later appear as one payment. Check what that payment covers before agreeing. If the transaction appears in another currency, preserve the original amount as well as the amount actually charged. The numbers remain attributable even if your card statement later includes a conversion or a fee outside the seller's quote.",
+      "source_sha256": "d96329b2ed0a21c391f5d44c83f1822c236071a2d488365b5ca12cfdc322f30a",
+      "raw_target_sha256": "e657a2237de2ab0ed34e381b7e29a49e0acfb9d8e9931cba306511d3e7108ef1",
+      "translation": "Nếu người bán đề xuất cỡ đắt hơn và báo riêng phí gửi lại kho, ghi chênh lệch hàng và tiền vận chuyển ở hai mục. Xem giao dịch bao gồm gì trước khi đồng ý dù cuối cùng trả chung. Nếu thanh toán bằng đồng tiền khác, giữ cả số gốc và số thực thu để so với sao kê."
+    },
+    {
+      "source": "Inspect the replacement as a new unit",
+      "source_sha256": "967a5bf1192166422972c9190d930362fcc7f0f9b5a39c68106b0f48dbc601c2",
+      "raw_target_sha256": "faf4c9d23b65bbceeac1cdeab9fb54c65b9abe12fbe212cbe864ebf78ced1ab8",
+      "translation": "Kiểm tra hàng thay như một món mới nhận"
+    },
+    {
+      "source": "When a new garment arrives, repeat the checks that triggered the exchange. A warehouse status confirming receipt does not tell you whether the new size label or measurement meets your requirement. Compare the replacement against the written agreement and the photos attached to its own intake. If the original problem involved a crooked fastening, inspect that detail on the replacement instead of relying on the original unit's photos. Also confirm the basic option and quantity so a different mistake does not slip through.",
+      "source_sha256": "52eee64a64ea325d8224e5137135a732167c633b9e09422ed203c13fe8b1644d",
+      "raw_target_sha256": "a08cbf439ed4de10c18b01a1cd8c0cae4dc0f4812d7ea80e74cb3b188635829d",
+      "translation": "Khi món mới về, lặp lại phép kiểm tra đã dẫn đến yêu cầu đổi. Trạng thái kho đã nhận chưa cho biết nhãn cỡ hay số đo đạt yêu cầu. So với thỏa thuận và ảnh riêng của lần nhập mới. Nếu lỗi gốc là khóa bị lệch, kiểm tra khóa trên món thay."
+    },
+    {
+      "source": "Once you have decided, record the result, remaining charges or credits and the warehouse reference intended for international dispatch. Check that the parcel selection uses the accepted replacement. If an old record still appears in your account, do not assume it represents an additional dispatchable item. Ask support which reference corresponds to the unit now held if anything is unclear. A completed timeline ends with a specific accepted item or another confirmed resolution and makes later parcel questions much easier to answer.",
+      "source_sha256": "f6b2570de660d6d918b703ab75b4e5e57edfe00c99185f5f26ef080617aa98ba",
+      "raw_target_sha256": "5dd80f33118d6ab207256406fa6ad6538a83dda5077a8db1f745bda5f1515273",
+      "translation": "Ghi kết quả, phí hoặc khoản hoàn còn lại và mã kho sẽ gửi quốc tế. Kiểm tra yêu cầu đóng kiện chọn đúng món thay đã chấp nhận. Hồ sơ cũ còn trên tài khoản chưa chứng minh có thêm món để gửi. Nếu chưa rõ, hỏi mã nào ứng với hàng đang nằm tại kho."
+    },
+    {
+      "source": "A stable marketplace link can lead to a page whose option wording, photographs or price has changed. Compare dated records before deciding what the change means for your order.",
+      "source_sha256": "be2f60ae663eb6bac9383dad175f15515a51f2920a5a92438ab324504b0dedde",
+      "raw_target_sha256": "a53158a3461796e778ebd3db36e0b16a363ab0cc9ffd70fd16398bf9ae987f95",
+      "translation": "Liên kết sản phẩm có thể vẫn mở được dù tên phân loại, ảnh hoặc giá đã thay đổi. So các hồ sơ có ngày trước khi kết luận tác động lên đơn."
+    },
+    {
+      "source": "Capture a useful snapshot",
+      "source_sha256": "0b9427cf47bdf3fcbf995a23c236aa8d889002a3e8078c349522fb99bd8b3bd9",
+      "raw_target_sha256": "8be72384584cd2dffb87d5c7f3752de23da4a0dff6d93f1c1ccb3568fcaf36e6",
+      "translation": "Lưu ảnh chụp có đủ thông tin"
+    },
+    {
+      "source": "Save the seller page with the chosen option visible, the original option text, price, quantity and item ID. Include a date. For a set, make sure the included pieces are stated somewhere in the record. A screenshot of the hero image alone contains little information about which bundle was selected. Keep the agent purchase confirmation separately because it records the choice submitted through the order.",
+      "source_sha256": "9cd697caf8ecfb6c8e46d5d89c9462c562ab39be70827142ced40b6239d12870",
+      "raw_target_sha256": "8fe5b92f1b175d38267208b27b6742f1c6204da7a5d7b376848f396f249d0975",
+      "translation": "Lưu trang có phân loại đã chọn, nguyên văn, giá, số lượng, mã hàng và ngày. Với bộ hàng, giữ thông tin thành phần được bán kèm. Chỉ ảnh đầu trang chưa xác định được gói nào đã chọn. Lưu xác nhận mua của đại lý riêng vì đó là bằng chứng lựa chọn thực gửi trong đơn."
+    },
+    {
+      "source": "Identify the layer that changed",
+      "source_sha256": "4babf1c0dbc70c5f1e1ad270baf39f9da6d3f9c6eb79196b97e52099cf23a7dc",
+      "raw_target_sha256": "3b16685bd4f3f28b5ade5a21c26dd93cd46576d6b2ad8d80b9bc7e659bc60313",
+      "translation": "Xác định lớp thông tin đã đổi"
+    },
+    {
+      "source": "A change in translated wording may occur even when the original seller option is unchanged. Compare original text, option code if available, thumbnail, selected unit and live price. If the whole listing now opens at a different default, select the old option manually before drawing a conclusion. A changed default and a discontinued version call for different decisions.",
+      "source_sha256": "99db466afa5ca411eb145f927eb0281646db157c285b2cd2750c1b977fe39038",
+      "raw_target_sha256": "5245df3a7ad2395993269cf851ddf8a2065a313e9141e2d3808ea6c14f542e24",
+      "translation": "Bản dịch có thể đổi dù chữ gốc của người bán giữ nguyên. So nguyên văn, mã phân loại nếu có, ảnh thu nhỏ, đơn vị bán và giá hiện tại. Nếu trang mở phân loại mặc định mới, chọn lại phân loại cũ trước khi kết luận. Đổi mặc định khác với ngừng bán bản cũ."
+    },
+    {
+      "source": "If you have not paid, treat a changed quantity or bundle as a new comparison. Recalculate the unit cost for the included contents, check current stock and review the size chart for the new option. Do not force the old cost into your new shortlist because the listing number is unchanged. If the changed term was the feature you wanted, leave the entry unresolved until the seller confirms it.",
+      "source_sha256": "c3658672d60af8352c98d534f0a64ed30387a96c87d8cc58d0eea8552dee49f4",
+      "raw_target_sha256": "cedfd48a547f797318e08d057a911ecf8005aeb917207615d2368c2d43d384eb",
+      "translation": "Nếu số lượng hay gói đổi trước lúc trả tiền, hãy so lại từ đầu. Tính giá mỗi đơn vị, kiểm tra tồn hiện tại và bảng cỡ của lựa chọn mới. Mã hàng không đổi chưa phải lý do giữ giá cũ. Nếu đặc điểm quan trọng đã đổi, chờ xác nhận của người bán."
+    },
+    {
+      "source": "Compare a paid order to the agreement at payment",
+      "source_sha256": "8992f8a7aa343a502abf9285b6c6e97e2af3fc6818c12685ddc250eba6330b69",
+      "raw_target_sha256": "d0a6bd80704b82b00d0483f0c917fee3c7828938f4907b672a8fc451f9095668",
+      "translation": "So đơn đã trả tiền với cam kết lúc mua"
+    },
+    {
+      "source": "Keep the new listing as evidence of its present state, but compare the received unit with your order-time selection. If your original record said jacket and detachable hood and the current page says jacket only, quote both versions with their dates when asking for a check. The fact that today’s page omits the hood does not independently prove what was selected earlier.",
+      "source_sha256": "1fb7ef412d8c3862d6b687545c2c675c48ac012da060179046c1386d10c9a295",
+      "raw_target_sha256": "4776ec8ca693d91ded516f2e560b48ec629b1cf546fc5a917e611282ffc367dc",
+      "translation": "Lưu tin mới làm bằng chứng cho hiện trạng, nhưng so món nhận với phân loại lúc đặt. Nếu hồ sơ cũ ghi “áo khoác và mũ tháo rời” còn trang nay ghi “chỉ áo”, trích cả hai cùng ngày khi hỏi. Trang hiện tại không nhắc mũ chưa chứng minh phân loại đã đặt trước đây."
+    },
+    {
+      "source": "Reassess historical QC references",
+      "source_sha256": "81c3d19f70f3061efebf31ad16f90d7ca8ddc009a136ff2df77eaf701f57bfe8",
+      "raw_target_sha256": "3fe1a4a2290458ff98727391a4f97e82b36a83d5c737921e14a7fac92a4be06e",
+      "translation": "Đánh giá lại ảnh QC cũ"
+    },
+    {
+      "source": "An album tied to the same marketplace identifier may show a version sold before the edit. Check the recording date, label, visible construction and package contents. Use it as a guide to the detail worth checking rather than evidence of the new offer. If your own current warehouse pictures become available, connect them to their order and option first and document any specific difference before deciding about shipping.",
+      "source_sha256": "25c423befbf247d3ff24a467f8f8a596adeee1290c61b07e94ab378d61f6b862",
+      "raw_target_sha256": "6cee11df83cf4539190a01c647a1b8b771e19ddb19c74721cbca95ab90db11d8",
+      "translation": "Album cùng mã hàng có thể chụp phiên bản trước khi sửa tin. Kiểm tra ngày, nhãn, cấu tạo nhìn thấy và thành phần gói. Dùng ảnh để xác định chi tiết cần hỏi. Khi có ảnh kho của mình, nối với đúng đơn và phân loại rồi ghi điểm khác trước khi quyết định gửi."
+    },
+    {
+      "source": "Save the offer as a dated selection",
+      "source_sha256": "df624e48a24910efdae4e5147f87a236c26a1651397e6319c1358d9e3a3238db",
+      "raw_target_sha256": "d6c4421413e42ff70f80fe449dfc3d3563656214b5819491202bc2c324c1cd94",
+      "translation": "Lưu chào bán theo phân loại và thời điểm"
+    },
+    {
+      "source": "A product link can continue working while its option names, photographs, price or package contents change. If a particular detail determines your choice, save that detail at the time you decide. For a travel pouch, keep the selected option wording, its dimensions, the included strap description and the quantity you are buying. A dated screenshot with the selected option and its price visible can support the note. Crop out private account information when sharing it outside the order support channel.",
+      "source_sha256": "a889e976fdcb8acdb207c6cbf3a05807c5d0493d5c3c0900f3bdfb25406a27c4",
+      "raw_target_sha256": "e9227e7d59c0f282f99578534023c80db9067191d59e918d677dede2e21d6cea",
+      "translation": "Liên kết vẫn có thể hoạt động khi tên, ảnh, giá hoặc thành phần đổi. Khi quyết định mua túi đựng đồ du lịch, lưu phân loại, kích thước, mô tả dây kèm và số lượng. Ảnh chụp có ngày với phân loại và giá giúp đối chiếu. Cắt bỏ thông tin tài khoản riêng."
+    },
+    {
+      "source": "A seller's headline may continue to say “travel pouch with strap” when a newly added option sells the strap alone. Review the selected option and resulting subtotal instead of relying on the headline. If possible, capture both the seller's wording and your working translation. Revisit the selection just before submitting an order, particularly if it has remained in a cart for several days. A previous research note explains why you shortlisted the item; the current selection controls what you are about to submit.",
+      "source_sha256": "a357c54e7d82015dabbf2cf7bd2cfc6eefed85da69265ba65a0aa7c1fe7b3a51",
+      "raw_target_sha256": "451ec714eeb53af57bf9fdb03e589429d22b7abdd0bd543895af0096d5350228",
+      "translation": "Tiêu đề “túi du lịch kèm dây” có thể giữ nguyên khi người bán thêm lựa chọn chỉ có dây. Kiểm tra phân loại và tổng phụ thay vì chỉ nhìn tiêu đề. Lưu chữ gốc và bản dịch. Nếu món nằm trong giỏ nhiều ngày, xem lại ngay trước khi gửi đơn."
+    },
+    {
+      "source": "Distinguish a renamed option from a different offer",
+      "source_sha256": "021dfbfe5d0e8365ebe6a513605ce7e3711a138bd9042f1a1604538a42e379c3",
+      "raw_target_sha256": "ff1ecf7e16f2fdd7bff9816ac849d2fdf5f3c5650b9c6357f9b09d69e2f97e50",
+      "translation": "Phân biệt đổi tên với thay đổi chào bán"
+    },
+    {
+      "source": "Suppose an option once called “olive large” now appears as “green B.” The names alone do not establish whether the products match. Compare the seller's current dimensions, materials, quantity and included components with the original record. If the seller displays an internal option code, compare it as additional evidence, keeping the marketplace item identifier separate. A continuing item identifier establishes the listing reference. The seller may still have changed one or more choices inside that listing.",
+      "source_sha256": "70d217db6afb9a0092741c3135aa8b8705a94b5d11ee01a2c0d9c1f2090843f8",
+      "raw_target_sha256": "e875760df50a470e1f8469f35a6f45b27d46b0530e168ee319c09df13e3cce7d",
+      "translation": "Ví dụ, “ô liu cỡ lớn” nay thành “xanh B”. Hai tên chưa đủ để xác định món giống nhau. So kích thước, vật liệu, số lượng và thành phần với hồ sơ ban đầu. Nếu có mã phân loại nội bộ, so cả mã này. Tách mã đó khỏi mã sản phẩm trên sàn vốn chỉ nhận diện tin bán."
+    },
+    {
+      "source": "Look for the size chart heading and product diagram associated with the active option. A listing can share one gallery across multiple options, so scrolling past a familiar diagram does not always attach that diagram to your selected version. If the difference matters, ask the seller a question that identifies both old and new wording. A question about whether “green B” currently contains the large pouch and detachable strap gives a clearer target than asking whether the whole page is still the same.",
+      "source_sha256": "833d0beab7343245129f807330364c3c9a5db9ffc7437c09947007052de2ec50",
+      "raw_target_sha256": "fa807ffb9ddff2d898ddd5a39c6f1c9cd3c45087a380da3d4a793c8a609dc940",
+      "translation": "Kiểm tra tiêu đề bảng cỡ và sơ đồ áp dụng cho phân loại đang chọn. Nhiều phân loại có thể dùng chung album. Nếu cần xác nhận, nêu cả hai tên khi hỏi, chẳng hạn xanh B hiện gồm túi lớn và dây tháo rời không. Lưu câu trả lời chỉ rõ lựa chọn hiện tại."
+    },
+    {
+      "source": "Handle a change before you pay",
+      "source_sha256": "f94cbff9930c1816904a44cf5990c029a0ffaa614a722c1dbf17a26a8d2e4532",
+      "raw_target_sha256": "7ffaa4c3bb8438d815e5d3ea36eec1aea879f3aaf836da3cba0618aaa56f9e36",
+      "translation": "Xử lý thay đổi trước thanh toán"
+    },
+    {
+      "source": "If you have only shortlisted the product, you can reassess its current terms without reconstructing an order dispute. Record the new option as a fresh observation, compare it with your original requirement and decide whether to keep it on your list. If the new selling unit is one pouch instead of a set of two, recalculate the quantity and subtotal before comparing it with another seller. A superficially unchanged item price can represent a different value when the number of pieces changes.",
+      "source_sha256": "fb7ddf8af8edf24cae9ea1513131e85955d3597bf87c1ebbc5fa860dd2ba263d",
+      "raw_target_sha256": "f21b77a653297eb6cf04b1aa351a5deaf2446f11a658afac819e307fc19b6ca7",
+      "translation": "Nếu mới lưu sản phẩm, ghi chào bán hiện tại rồi so với nhu cầu ban đầu. Khi đơn vị nay là một túi thay vì bộ hai túi, tính lại số lượng và tổng phụ trước khi so người bán. Giá nhìn không đổi vẫn có thể mua được lượng khác."
+    },
+    {
+      "source": "If a selector remains ambiguous, leave the purchase pending while you investigate. A product note saying “send the old version” does not give the seller the old stock or guarantee that an agent can select it. Ask whether the precise old version is available and how to identify it in the current order flow. Preserve any answer with the date. If the response points to a different listing, treat it as a new source and check the actual option text on that listing.",
+      "source_sha256": "57afbc00e2ab44a716ab25316c102331d968c8e627c047b3abc9fefa117c3c48",
+      "raw_target_sha256": "7d6c64ba2d512a5f1d03fd1e1e55af89011400e76bf397b5afcd9a11914be60d",
+      "translation": "Nếu phân loại còn mơ hồ, để đơn chờ trong khi kiểm tra. Ghi chú “gửi bản cũ” không tạo ra tồn kho cũ hoặc bảo đảm đại lý chọn được. Hỏi bản cụ thể còn không và chọn thế nào trong quy trình hiện tại. Lưu trả lời kèm ngày. Nếu được dẫn sang tin khác, kiểm tra như nguồn mới."
+    },
+    {
+      "source": "Handle a change after payment",
+      "source_sha256": "eafa55027b3202448b46a74a26b16aaeeb36881226cc9b529cf20f57594385a1",
+      "raw_target_sha256": "bd505505e66050ecd2b147b3b25e2da7904a48a203bd64132ce3c7cafc34fbd4",
+      "translation": "Xử lý thay đổi sau thanh toán"
+    },
+    {
+      "source": "For an existing order, begin with the paid selection and confirmation, then compare the revised public offer. A listing edit alone does not establish what was ordered or what the seller shipped. If support asks whether you will accept a substitute, ask for its option wording, important differences and any price adjustment before answering. Keep your response paired with that proposal. A simple “yes” copied out of context may be difficult to interpret if multiple alternatives were discussed.",
+      "source_sha256": "673f7c0d9ecd0fe82d99e265da755e12aaf47e8cc10e5c09c7d4042e5af7ab3e",
+      "raw_target_sha256": "dfe3983f2af883e59dcaa6eb36dc36de9bd439e50502b3b2dc69f4b6d88294a1",
+      "translation": "Bắt đầu từ phân loại đã thanh toán và xác nhận đơn rồi so với tin mới. Sửa tin chưa chứng minh người bán đã gửi gì. Nếu được đề xuất món thay, hỏi tên phân loại, điểm khác biệt và điều chỉnh giá trước khi trả lời. Giữ câu trả lời của bạn cạnh đúng đề xuất."
+    },
+    {
+      "source": "A practical support message can say that your paid order shows a large olive pouch with a detachable strap, while the current page describes green B without specifying a strap. Ask which version was purchased for your order and whether the strap is included. Provide the dated order reference privately and attach the relevant excerpts. If the answer depends on checking the incoming unit, record that as the next step and decide which warehouse photograph or contents check would settle the issue.",
+      "source_sha256": "ffd9339b8658c342fb31a08bac95c14124f0adca9979ce58a9b0dd056e01294a",
+      "raw_target_sha256": "fda52b7b397d4008d89f3e6beb0a9cfed5afd9863db9c4a73fb3f7498af81654",
+      "translation": "Ví dụ, đơn ghi túi ô liu lớn kèm dây tháo rời còn trang nay ghi xanh B mà không nhắc dây. Hỏi đơn đã mua bản nào và có kèm dây không. Gửi mã đơn và ngày qua kênh riêng cùng trích đoạn liên quan. Nếu phải chờ hàng về, ghi bước kiểm tra và góc ảnh cần xem."
+    },
+    {
+      "source": "Update shared finds without erasing the history",
+      "source_sha256": "5db86e1b8aa87f6eba2b74ea2553ea1b01076efe2f78766ccf357a6860548ba0",
+      "raw_target_sha256": "0eca26abed696b594a07152b1d5d44568d34709f28c7ff021ec003b824a831c7",
+      "translation": "Cập nhật thông tin chia sẻ mà vẫn giữ lịch sử"
+    },
+    {
+      "source": "If you share findings with others, keep the original dated note and add an update. Explain the particular change you observed and what you have yet to confirm. For example, the old label disappeared and the listing now offers green A and green B, while the correspondence with the former size remains unknown. A reader can then decide whether your older warehouse album is useful for the shape of the pouch or too uncertain for their current option decision.",
+      "source_sha256": "e94565d4a356f4b5ffd879e03876f3ad7469e03a710a61c205db557153d4839b",
+      "raw_target_sha256": "b882bc5d05e9599f7f756e6b2c537dc17bb432a3f77e7f83f1d70e2712ce47b2",
+      "translation": "Giữ ghi chú ban đầu có ngày rồi thêm cập nhật. Ví dụ, nhãn cũ biến mất và nay có xanh A, xanh B, nhưng chưa rõ tương ứng thế nào với cỡ cũ. Người đọc có thể tự cân nhắc album kho cũ còn ích cho việc xem dáng túi hay chưa đủ cho lựa chọn hiện tại."
+    },
+    {
+      "source": "After a received unit is photographed, connect its observations to the paid selection and any approved substitution. Do not promote one order's outcome into a promise that every purchase from the edited listing will receive the same version. If the new option works for your own purpose, state the feature that made it acceptable and retain the related evidence. A future buyer may value a different detail and will be able to judge whether your dated comparison answers their question.",
+      "source_sha256": "2fed8237e1c448c90ef6a0920283e3b4c4f7ba47c191ead9baa038cf6deca267",
+      "raw_target_sha256": "1abad1fe7d4e04f4636f6b296611961421de8c8197f9b0c5e2d230406645e5bf",
+      "translation": "Gắn quan sát từ ảnh món nhận được với phân loại đã trả tiền và thay thế đã duyệt. Kết quả một đơn chưa bảo đảm mọi lần mua từ tin đã sửa đều nhận cùng bản. Nếu bản mới phù hợp, ghi đặc điểm khiến bạn chấp nhận và giữ bằng chứng để người mua sau tự so với nhu cầu của họ."
     }
   ]
 }
