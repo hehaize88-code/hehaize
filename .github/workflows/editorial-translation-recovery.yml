@@ -1,0 +1,131 @@
+name: Recover incomplete editorial dictionaries
+run-name: Repair editorial dictionary batch · ${{ github.run_number }}
+on:
+  push:
+    branches: [editorial-mt-recovery-20261123]
+    paths:
+      - 'translation-recovery/**'
+      - '.github/workflows/editorial-translation-recovery.yml'
+permissions:
+  contents: read
+jobs:
+  select:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      matrix: ${{ steps.select.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            editorial-translation
+            translation-recovery
+      - id: select
+        run: |
+          python - <<'PY'
+          import json,os,pathlib
+          data=json.load(open('translation-recovery/targets.json'));rows=data['include']
+          assert 0<len(rows)<=256
+          assert len(rows)==len({(r['site'],r['lang']) for r in rows})
+          for r in rows:
+            site,lang=r['site'],r['lang']
+            assert site.replace('-','').replace('.','').isalnum() and lang.isalpha()
+            assert lang in json.load(open(f'editorial-translation/input/{site}.json'))['languages']
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:print('matrix='+json.dumps(data,separators=(',',':')),file=f)
+          PY
+      - uses: actions/cache@v4
+        with:
+          path: .model
+          key: recovery-madlad-fd0b55729c074372-int8
+      - run: python editorial-translation/download.py .model
+      - uses: actions/checkout@v4
+        with:
+          ref: editorial-full-mt-results-20261123
+          path: relative-results
+          sparse-checkout: recovery-runs
+      - name: Record recoverable run ID
+        working-directory: relative-results
+        run: |
+          mkdir -p recovery-runs
+          echo "{\"run\":\"$GITHUB_RUN_ID\",\"primary_run\":\"45151418588\",\"source_commit\":\"$GITHUB_SHA\",\"status\":\"running\"}" > "recovery-runs/$GITHUB_RUN_ID.json"
+          git config user.name github-actions
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add recovery-runs
+          git commit -m "Record recovery run $GITHUB_RUN_ID"
+          git pull --rebase origin editorial-full-mt-results-20261123
+          git push origin HEAD:editorial-full-mt-results-20261123
+  repair:
+    needs: select
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix: ${{ fromJSON(needs.select.outputs.matrix) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 320
+    env:
+      SITE: ${{ matrix.site }}
+      LANG_CODE: ${{ matrix.lang }}
+      CT2_PACKED_GEMM: '0'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            editorial-translation
+            translation-recovery
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install --disable-pip-version-check ctranslate2==4.9.1 sentencepiece==0.2.3
+      - uses: actions/cache/restore@v4
+        with:
+          path: .model
+          key: recovery-madlad-fd0b55729c074372-int8
+      - run: python editorial-translation/download.py .model
+      - run: |
+          args=()
+          file="translation-recovery/overrides/$SITE/$LANG_CODE.json"
+          if [[ -f "$file" ]]; then args+=(--overrides "$file"); fi
+          python translation-recovery/infer.py --input "editorial-translation/input/$SITE.json" --out out/dictionary.json --lang "$LANG_CODE" --model .model --threads 4 --batch 16 --beam 3 "${args[@]}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: repair-${{ matrix.site }}-${{ matrix.lang }}
+          path: out/dictionary.json
+          retention-days: 7
+  save:
+    needs: [select, repair]
+    if: always() && needs.select.result == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: editorial-repair-results-write
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            editorial-translation
+            translation-recovery
+      - uses: actions/checkout@v4
+        with:
+          ref: editorial-full-mt-results-20261123
+          path: relative-results
+          sparse-checkout: |
+            dictionaries
+            recovery-runs
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: repair-*
+          path: artifacts
+      - run: python translation-recovery/persist.py
+      - name: Commit verified dictionaries
+        working-directory: relative-results
+        run: |
+          git config user.name github-actions
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m "Save reviewed recovery outputs from $GITHUB_RUN_ID"
+          git pull --rebase origin editorial-full-mt-results-20261123
+          git push origin HEAD:editorial-full-mt-results-20261123
+          python -c "import json;assert not json.load(open('recovery-runs/$GITHUB_RUN_ID.json'))['pending']"
