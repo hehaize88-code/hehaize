@@ -3,7 +3,7 @@
   "locale": "pt",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "4a14c03d78048b87349fd31f853ca76a310b041226f50f5b0e73d1d46fe2fa5e",
-  "effective_dictionary_sha256": "88d3406525533ea51d17ae4572be0994ce093bd31f16156ed56b8f2ec8bf0baa",
+  "effective_dictionary_sha256": "fda7d3272571bb00a080bbddf33a22a9d73a7280470bfb1802216045fbf3af4d",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -105,6 +105,138 @@
       "source_sha256": "741207c84e0bd3ef447ae75a2145fd7d36c817a82eb76cf43eb36c8e464ad48a",
       "raw_target_sha256": "a53d42ba36449b2faee669fd74402caca4840f65b34413974ba4fa4b1b8825c8",
       "translation": "Transforme uma incógnita em uma pergunta de suporte. Em vez de perguntar se toda a estimativa está correta, especifique que você inseriu um destino nomeado e mediu o pacote, recebeu uma cotação para uma rota específica e precisa saber se o serviço de embalagem selecionado já está dentro do total exibido. Salve a resposta com a data e a versão da cotação. Evite aplicar uma resposta sobre uma rota a um serviço diferente com termos diferentes."
+    },
+    {
+      "source": "Request or calculate each option using the same items, destination and protection requirements. Compare the combined charge for both smaller parcels with the charge for the single larger parcel.",
+      "source_sha256": "73435fbb52cb9ff042802da20cb9269d90a54a77100f3ef6133d3cd878751d7e",
+      "raw_target_sha256": "f1461273293df31a83f3d5fe15222ef771862a39562e05ab6a8d58c94a3efdff",
+      "translation": "Solicite ou calcule cada opção usando os mesmos itens, destino e requisitos de proteção. Compare a taxa combinada para as duas encomendas menores com a taxa para a única encomenda maior."
+    },
+    {
+      "source": "Write down the exact service, amount and whether it applies to an item or parcel. Check if a quoted total already includes it before adding it separately.",
+      "source_sha256": "9e77b7abf0e39bd9fa9189dafb8eb2b07c3f49dca520ef95ec38323189c690cb",
+      "raw_target_sha256": "236cca7f1c600b784ac9f98f6dc52a3424930713e52d5fb869aab6eaa9d290db",
+      "translation": "Anote o serviço exato, o valor e se ele se aplica a um item ou encomenda. Verifique se um total citado já o inclui antes de adicioná-lo separadamente."
+    },
+    {
+      "source": "Record what changed and rerun the estimate using the revised outer dimensions and weight. Keep the old result as a reference instead of presenting it as a quote for the new parcel.",
+      "source_sha256": "7d40c0fc412910959bb28d9eec446ad1c0d4a88b01ca8c25ce5b4b104685c628",
+      "raw_target_sha256": "5f8116cb33f43079866e9f62b8437655867ad5ad5f8c8976a56e4bc1ac809cbb",
+      "translation": "Registre o que mudou e execute novamente a estimativa usando as dimensões externas e o peso revisados. Mantenha o resultado antigo como referência em vez de apresentá-lo como uma cotação para a nova encomenda."
+    },
+    {
+      "source": "Save both outbound parcel references, their item lists and their final charge statements. Mark the line you are comparing on each record so the question stays tied to the correct parcel.",
+      "source_sha256": "baa564c8afd6b6f139c54ca948290d096026e69c37baa603560efd436cf90c7c",
+      "raw_target_sha256": "6e9e00e52cd791aa6e0f36808613ce02a8c5444f83c83ea1d98120a418d6693b",
+      "translation": "Salve as referências do pacote que está sendo enviado do armazém para os clientes, suas listas de itens e seus extratos de cobrança finais. Marque a linha que você está comparando em cada registro para que a pergunta permaneça vinculada à encomenda correta."
+    },
+    {
+      "source": "Read an adjustment without erasing the original quote",
+      "source_sha256": "e0936a2d0afd23a83899a9b5f9612d756693ae1c1ddbda43aea31d5385bab116",
+      "raw_target_sha256": "b608b950f9600bd90c04cdc306f74bd9be01573daf977d9af1905c76afdac9a6",
+      "translation": "Ler um ajuste sem apagar a cotação original"
+    },
+    {
+      "source": "Use separate rows for quoted, paid and credited amounts. If a charge was removed, enter the credit with its reference. When a final invoice rolls services into a parcel subtotal, place that subtotal in a comparison column rather than adding it to the detailed entries. Check that your reconstructed total agrees with the payment record within ordinary rounding. Write down the remaining difference and ask support which invoice line explains it.",
+      "source_sha256": "b4f3dede9df755627787afff51d746f3d3c31eba0df484be2406fa0ed8db27b7",
+      "raw_target_sha256": "9f0be8bae6a8506777a24e4f1d638fead6f547bbb357c37d06320f7016d23c35",
+      "translation": "Use linhas separadas para valores cotados, pagos e creditados. Se uma cobrança foi removida, insira o crédito com sua referência. Quando uma fatura final inclui serviços em um subtotal de encomenda, coloque esse subtotal em uma coluna de comparação em vez de adicioná-lo às entradas detalhadas. Verifique se o total reconstruído concorda com o registro de pagamento dentro do arredondamento comum. Anote a diferença restante e pergunte ao suporte qual linha da fatura explica isso."
+    },
+    {
+      "source": "Here is a fictional receipt to practise with. Two fragile pieces require individual protective wrapping at 3 yuan per piece. One outer box uses a 9-yuan reinforcement option. The quoted base freight is 118. A screen then shows a parcel total of 133. The numbers reconcile because 118 plus six plus nine is 133. The words per piece and per parcel make the arithmetic reproducible. Without them, two buyers could look at the same three numbers and arrive at different totals.",
+      "source_sha256": "d022cf8612acda86bc16391f7edac14f4562874968528f52aa5f0a26ad21a47b",
+      "raw_target_sha256": "c736ba4f724cb19ca3e6f306ea82ad5cb2d6951afc53e9a4cbdb349a2740a0ba",
+      "translation": "Aqui está uma receita fictícia para praticar. Duas peças frágeis requerem embalagem protetora individual a 3 yuan por peça. Uma caixa exterior usa uma opção de reforço de 9 yuans. O frete base citado é 118. Uma tela então mostra um total de 133 pela encomenda. Os números se reconciliam porque 118 mais seis mais nove é 133. As palavras por peça e por encomenda tornam a aritmética reprodutível. Sem eles, dois compradores poderiam olhar para os mesmos três números e chegar a totais diferentes."
+    },
+    {
+      "source": "The service description should tell you what will be done to the object. A request to protect a bag could mean filling its interior to retain shape, keeping its original box or placing it in a larger outer carton. Each choice may affect the parcel differently. Specify the object, the result you need and any condition such as keeping detachable handles together. Then read what the selected service actually promises. If it covers only an outer carton, do not count it as individual protection for every item inside.",
+      "source_sha256": "a7c0dd5d5d2f0f04c6f92888f9bd3873535979fd58271fb749068251da42535c",
+      "raw_target_sha256": "5f751a5fc542d98ff9494697d68c5e6f0b4e61d9ffb0881730263dfca6b66e8f",
+      "translation": "A descrição do serviço deve dizer o que será feito com o objeto. Um pedido para proteger um saco pode significar encher o seu interior para manter a forma, manter a sua caixa original ou colocá-lo numa caixa exterior maior. Cada escolha pode afetar a encomenda de forma diferente. Especifique o objeto, o resultado que você precisa e qualquer condição, como manter as alças destacáveis juntas. Em seguida, leia o que o serviço selecionado realmente promete. Se ele cobre apenas uma caixa exterior, não conta como proteção individual para cada item dentro."
+    },
+    {
+      "source": "Finish by checking arithmetic in stages. Sum retained merchandise by shop. Add domestic delivery shown on the relevant purchases. Apply confirmed seller credits. Add final parcel payments and separately billed services only once. Reconcile any friend-to-friend allocation to the result. The resulting total can then be traced to records the people involved can inspect, including the reason the final basket differs from the first shortlist.",
+      "source_sha256": "1d9e3df29cc43d20091966013a7c0a98a085b9968b225f5c87d60105d639dbf8",
+      "raw_target_sha256": "14ab6f74dddbb9200f4a48316f8d880cb58eb0450391bb37d2d6b02b09b24b4e",
+      "translation": "Termine verificando a aritmética em etapas. Total de mercadorias retidas por loja. Adicione a entrega nacional mostrada nas compras relevantes. Aplique créditos de vendedor confirmados. Adicione pagamentos finais de encomendas e serviços faturados separadamente apenas uma vez. Reconciliar qualquer alocação de amigo para amigo para o resultado. O total resultante pode então ser rastreado para registros que as pessoas envolvidas podem inspecionar, incluindo o motivo pelo qual a cesta final difere da primeira lista."
+    },
+    {
+      "source": "For a parcel, keep packed measurements and route consistent as well. If the first screenshot was a quick estimate for one jacket and the second a final all-in payment for a larger consolidated package, no exchange-rate calculation can make them a fair pair. Mark the physical change first. If useful, obtain a new estimate for the same parcel inputs in the current display currency and state its date. An old figure can explain the history even when it cannot answer the present comparison.",
+      "source_sha256": "4b2401952fde90aa1f6fe0c31a294994432a010bd75cf8fc62c5a896c88e1248",
+      "raw_target_sha256": "0e322d352d2acafe9271f5bf2bb86762e693b98c00a3c48ff44107b0d8080dee",
+      "translation": "Para um pacote, mantenha as medidas e a rota consistentes também. Se a primeira captura de tela foi uma estimativa rápida para um casaco e a segunda um pagamento final para um pacote consolidado maior, nenhum cálculo de taxa de câmbio pode torná-los um par justo. Marque a mudança física primeiro. Se for útil, obtenha uma nova estimativa para as mesmas entradas de encomendas na moeda de exibição atual e indique sua data. Uma figura antiga pode explicar a história mesmo quando não pode responder à comparação presente."
+    },
+    {
+      "source": "Comparing two versions of a mixed parcel",
+      "source_sha256": "09fb668c8b8cfc520c197f2a6e843121a837efd907f1a1d17dd5392700b48dea",
+      "raw_target_sha256": "8ac92a801203416d0b6cd8c2a94e5efda0e5a7a404700e916b4df795d37af8a1",
+      "translation": "Comparando duas versões de uma encomenda mista"
+    },
+    {
+      "source": "Identify the parcel being measured",
+      "source_sha256": "8772b99b45f378d180dca46c262bd3b068448a27badd0c36b6a588cc6bed5a69",
+      "raw_target_sha256": "1453143a56095d6804ab6097f62d6c364e6567f9b7ad8c1530feb5595e2cb6ca",
+      "translation": "Identifique a encomenda que está sendo medida"
+    },
+    {
+      "source": "Measure length, width and height perpendicular to each other, including protruding parts of the packaging. Do not use the interior dimensions printed on an empty carton when a packed lid bulges. Place the package on a stable surface. If asking someone else to measure, request centimetres, the outside of the sealed parcel and a note identifying which box they measured. Save the figures with the parcel reference.",
+      "source_sha256": "e2de2eaa38c41cf57e17329a43c27a0443528b1c7eeac0144f1edafcb7ee1689",
+      "raw_target_sha256": "379a398cf3ff8c6ce779ac0d8af7f0fc4aa42f60656571f4ff583baf73a93e91",
+      "translation": "Meça o comprimento, a largura e a altura perpendiculares entre si, incluindo as partes salientes da embalagem. Não use as dimensões interiores impressas em uma caixa vazia quando uma tampa embalada inchar. Coloque o pacote em uma superfície estável. Se pedir a outra pessoa para medir, peça centímetros, o exterior do pacote selado e uma nota identificando qual caixa foi medida. Salve as figuras com a referência da encomenda."
+    },
+    {
+      "source": "A soft parcel can change dimensions depending on how it rests. Measure the maximum outer span as it would travel, including a thick pocket of material or protective padding. If it is later enclosed in a rigid carton, use the carton dimensions instead. Avoid pressing a soft measurement flat to obtain an attractive number unless the actual packing method keeps it that way. A parcel that expands after measuring no longer corresponds to the estimate.",
+      "source_sha256": "c721b0e5d83dcf2868a3a8af854c96d8c267a439d409006e87672b904784c6b9",
+      "raw_target_sha256": "9549ac390e028e4021ba7a4afecfdeed773d7fc7bfd36f62241553001a50e05c",
+      "translation": "Um pacote macio pode mudar as dimensões dependendo de como ele descansa. Meça a extensão externa máxima à medida que ele viaja, incluindo um bolso grosso de material ou estofamento protetor. Se ele for posteriormente fechado em uma caixa rígida, use as dimensões da caixa. Evite pressionar uma medição suave plana para obter um número atraente, a menos que o método de embalagem real o mantenha dessa forma. Uma encomenda que se expande após a medição não corresponde mais à estimativa."
+    },
+    {
+      "source": "If both records supposedly refer to the same finished parcel, compare the orientation and endpoints. A tape starting at the bottom edge of a recessed panel and ending at the centre of a flat lid may miss protected corners that project farther. Ask for the longest outside span rather than the measurement across the central panel. Keep a generous uncertainty in a planning figure when the parcel sits close to an eligibility limit. Final acceptance depends on the carrier and the route's actual rule.",
+      "source_sha256": "b4f4ebc02a22101ef0dce4b09e8e2d4c6e7c66837db80e8015d641cbde0ae583",
+      "raw_target_sha256": "7b98ff0f415d8b0390b2732018793c6012c49e6f213933f610f7a6d98348ac63",
+      "translation": "Se ambos os registros supostamente se referem ao mesmo lote acabado, compare a orientação e os pontos finais. Uma fita que começa na borda inferior de um painel embutido e termina no centro de uma tampa plana pode perder cantos protegidos que se projetam mais longe. Pergunte para o período externo mais longo em vez da medida através do painel central. Mantenha uma incerteza generosa em uma figura de planejamento quando a encomenda estiver próxima de um limite de elegibilidade. A aceitação final depende da transportadora e da regra real da rota."
+    },
+    {
+      "source": "Write the reason for the choice in ordinary language. It might be that the cheaper combined service satisfies all requirements, or that paying more for two boxes lets the urgent item leave before a later intake. Save the estimated difference separately from the eventual outcome. Once both parcels have been billed, compare each final entry against the estimate for the correct arrangement and explain any changed input.",
+      "source_sha256": "96251b515d07eebcc7ee2cfbd1f0ac7852330bea766fe26aa54a76a1bdec9e93",
+      "raw_target_sha256": "2cb1435c5c0fd613857cd89a450992ca5f4aa738c594293c95f82e9ee3d410f0",
+      "translation": "Escreva o motivo da escolha em linguagem comum. Pode ser que o serviço combinado mais barato satisfaça todos os requisitos, ou que pagar mais por duas caixas permita que o item urgente saia antes de uma entrada posterior. Salve a diferença estimada separadamente do resultado final. Uma vez que ambas as encomendas tenham sido faturadas, compare cada entrada final com a estimativa para o arranjo correto e explique qualquer entrada alterada."
+    },
+    {
+      "source": "Now add a condition: the quoted combined arrangement relies on removing the retail case, which the buyer needs as part of a gift. The 185 quote no longer describes an acceptable solution. Obtain a comparable combined quote that keeps the case, or mark that arrangement as unsuitable. The earlier numerical comparison still teaches something about what created the saving, but it cannot justify selecting a packing method that defeats the purpose of the purchase.",
+      "source_sha256": "91a9a3605abdcb2946c24630dcf5de4ccb7c8a21a632e62b601299095c305e76",
+      "raw_target_sha256": "05b451f6ddbffbe94aaf7012a42bcae22d0cd4cffd7cf378c36f179c7fd0ef7e",
+      "translation": "Agora adicione uma condição: o arranjo combinado citado depende da remoção da caixa de varejo, que o comprador precisa como parte de um presente. A cotação 185 já não descreve uma solução aceitável. Obtenha uma cotação combinada comparável que mantenha o caso, ou marque esse arranjo como inadequado. A comparação numérica anterior ainda ensina algo sobre o que criou a economia, mas não pode justificar a seleção de um método de embalagem que derrota o propósito da compra."
+    },
+    {
+      "source": "Compare two routes on one parcel",
+      "source_sha256": "6abbea692de48ad4d459e851dc7f34f22557d4a3859921769c98b3066fc3936e",
+      "raw_target_sha256": "98a52396cd8f0c92ba43a4bddf4b388284635a677889f2b428e7bbf8b34bbf0e",
+      "translation": "Compare duas rotas em uma encomenda"
+    },
+    {
+      "source": "Use actual parcel changes to explain an apparent price change",
+      "source_sha256": "8622e8ef5e5779511a9f31048414891df3016a519c4bd2e41729fccfd0c80f01",
+      "raw_target_sha256": "241ad6c41dfd59eb85b627253413f3f70ec055d06d2235b729b59465f16f4843",
+      "translation": "Use mudanças reais de encomenda para explicar uma aparente mudança de preço"
+    },
+    {
+      "source": "The buyer may initially quote a single pair of shoes using a quick-estimate preset. Later the seller's box is retained, then a belt is added before international submission. The resulting packed measurements no longer describe the same shipment as the preset. Compare the revised quote with the final parcel statement, while keeping the original as evidence of how the budget developed. A difference between the first and last amounts is not automatically a new fee.",
+      "source_sha256": "10ec70bbae6b9a7c22fe16e97239c46b035d424eb2c54f4181e1741356e9a670",
+      "raw_target_sha256": "cabcf63dc9b037088a80b0a1ea838efd94fbe058aaf0412b4e49a54c99d36406",
+      "translation": "O comprador pode inicialmente citar um único par de sapatos usando uma predefinição de estimativa rápida. Mais tarde, a caixa do vendedor é mantida, em seguida, um cinto é adicionado antes da apresentação internacional. As medidas de embalagem resultantes não descrevem mais a mesma remessa que a predefinida. Compare a cotação revisada com a declaração final da encomenda, mantendo o original como evidência de como o orçamento se desenvolveu. Uma diferença entre o primeiro e o último valor não é automaticamente uma nova taxa."
+    },
+    {
+      "source": "A useful quote summary fits into a short paragraph: name the destination, contents, dimensions, scale weight, route, currency and the date of the estimate. Add a sentence identifying any fee that is known to be separate and any part still unresolved. Keep private delivery and payment details out of shared screenshots. Another buyer can then reproduce the estimate for the same inputs or identify why their own parcel differs.",
+      "source_sha256": "ba5fa4c4188d13fde99181875f36934ff3ce18f1d0801a5f2fa940444f7c4b38",
+      "raw_target_sha256": "95d8005b1970e071a5876749a7c6088eb797b17c89170b7a21d81806354cb1c3",
+      "translation": "Um resumo de cotação útil cabe em um parágrafo curto: nomeie o destino, conteúdo, dimensões, peso da balança, rota, moeda e a data da cotação. Adicione uma frase identificando qualquer taxa que seja conhecida como separada e qualquer parte ainda não resolvida. Mantenha os detalhes de entrega e pagamento privados fora das capturas de tela compartilhadas. Outro comprador pode então reproduzir a estimativa para os mesmos insumos ou identificar por que sua própria encomenda difere."
+    },
+    {
+      "source": "Suppose the planning sheet contains an old seller subtotal of 220, domestic delivery of 10 and an outbound estimate of 145. The initial overall figure is 375. During packing the buyer adds a separately purchased accessory. Its purchase and domestic movement have already been recorded elsewhere. The outbound box also changes: the final freight line is 153 and the packing service line is 9. The new outbound total is 162. Comparing 162 with 145 gives a 17-unit change on the parcel side.",
+      "source_sha256": "9c1a40111580ea305b7a37933c57096d7fa261c27e35750c2e58fc4ecc3f5584",
+      "raw_target_sha256": "6382a499becff24186c1290224be96cb77cb0738d096ef8726035920526fbfc4",
+      "translation": "Suponha que a planilha de planejamento contenha um subtotal de vendedor antigo de 220, entrega doméstica de 10 e uma estimativa de saída de 145. O número total inicial é de 375. Durante a embalagem, o comprador adiciona um acessório comprado separadamente. Sua compra e movimento doméstico já foram registrados em outros lugares. A caixa de saída também muda: a linha de frete final é 153 e a linha de serviço de embalagem é 9. O novo total de saída é 162. Comparar 162 com 145 dá uma mudança de 17 unidades no lado da encomenda."
     }
   ]
 }

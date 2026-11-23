@@ -3,7 +3,7 @@
   "locale": "el",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "e595a800f1694bca78304b24327ffc5c868d28e649a73c44ee6a83f7bd8eb038",
-  "effective_dictionary_sha256": "8e7ed87aa14b19d21bfd17b7af3a1b246939ed89f59beb6901a4cc389e13c4a9",
+  "effective_dictionary_sha256": "da071c2be9eb139ca86700fab2cc13076d9f46b53f73e5866e2443309f08f6c4",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -416,7 +416,7 @@
       "source": "Take a fictional payment in which the base amount is 300 yuan and the comparison rate is 7.50 yuan per home-currency unit. The base conversion gives 40.00. One hypothetical payment method adds a fixed fee of 1.30 home units. Another has no fixed fee but quotes a conversion that results in 41.00. For this amount, the second method would cost 0.30 less, provided both figures are final and cover the same goods and services. The lower quoted exchange figure alone does not determine the result.",
       "source_sha256": "0c3db5328050fabbc9b5052a42801e535861af27e07a7b916137cdc9e792ed84",
       "raw_target_sha256": "f3b44926d76b5eec64b9dc84950d53904c4ea6f469d1fb4287a727d67d954f91",
-      "translation": "Πάρτε μια πλασματική πληρωμή στην οποία το ποσό βάσης είναι 300 γιουάν και το ποσοστό σύγκρισης είναι 7,50 γιουάν ανά μονάδα εγχώριου νομίσματος. Η μετατροπή βάσης δίνει 40,00. Μια υποθετική μέθοδος πληρωμής προσθέτει μια σταθερή χρέωση 1,30 μονάδων του νομίσματός σας. Ένας άλλος δεν έχει σταθερή χρέωση, αλλά παραθέτει μια μετατροπή που έχει ως αποτέλεσμα 41,00. Για το ποσό αυτό, η δεύτερη μέθοδος θα κόστιζε 0,30 λιγότερο, υπό την προϋπόθεση ότι και τα δύο ποσά είναι τελικά και καλύπτουν τα ίδια αγαθά και υπηρεσίες. Η χαμηλότερη τιμή συναλλάγματος από μόνη της δεν καθορίζει το αποτέλεσμα."
+      "translation": "Έστω πληρωμή 300 γιουάν με ισοτιμία 7,50 γιουάν ανά μονάδα του νομίσματός σας. Η μετατροπή δίνει 40,00 μονάδες. Η πρώτη μέθοδος προσθέτει πάγιο τέλος 1,30 μονάδων. Η δεύτερη δεν έχει πάγιο τέλος, αλλά με τη δική της ισοτιμία το τελικό ποσό είναι 41,00 μονάδες. Εφόσον και τα δύο ποσά είναι τελικά και καλύπτουν τις ίδιες υπηρεσίες και τα ίδια αγαθά, η δεύτερη επιλογή κοστίζει 0,30 μονάδες λιγότερο. Η ισοτιμία μόνη της δεν αρκεί για την απόφαση."
     },
     {
       "source": "Now change the purchase to 75 yuan using the same illustrative conditions. The first method gives 10.00 plus 1.30, while an equally sized percentage difference on the second method might have a very different effect in absolute terms. Recalculate instead of assuming the method that won on the first purchase also wins here. Fixed fees matter proportionally more on small payments. These invented numbers explain comparison mechanics only and make no claim about the methods, rates or fees offered to any HubBuy account.",
@@ -525,6 +525,60 @@
       "source_sha256": "9a4641881e57be3b6c26da181b86ed2d763deadcd8e3fb11fd79d3d7275e41e4",
       "raw_target_sha256": "82a18f4967f5ec1365a1e45344890c7727dd54f8fd8a1e6b82d3a7578affe315",
       "translation": "Πώς να αντιπαραβάλετε την τελική χρέωση ενός δέματος HubBuy με την αρχική προσφορά"
+    },
+    {
+      "source": "Save both outbound parcel references, their item lists and their final charge statements. Mark the line you are comparing on each record so the question stays tied to the correct parcel.",
+      "source_sha256": "baa564c8afd6b6f139c54ca948290d096026e69c37baa603560efd436cf90c7c",
+      "raw_target_sha256": "568483649cc929625658871a37f3f4442b9da4a67d466d28f7d9c6ce93906bf9",
+      "translation": "Αποθηκεύστε και τα δύο πακέτα που αποστέλλονται από την αποθήκη στις αναφορές πελατών, τους καταλόγους στοιχείων τους και τις τελικές δηλώσεις δαπανών τους. Σημειώστε τη γραμμή που συγκρίνετε σε κάθε εγγραφή, έτσι ώστε η ερώτηση να παραμένει συνδεδεμένη με το σωστό δέμα."
+    },
+    {
+      "source": "Comparing two versions of a mixed parcel",
+      "source_sha256": "09fb668c8b8cfc520c197f2a6e843121a837efd907f1a1d17dd5392700b48dea",
+      "raw_target_sha256": "7906d55d0a93b40fe713ff4f69aa0e57945886e2118d98dc2a57c7d941c5de38",
+      "translation": "Σύγκριση δύο εκδόσεων ενός μικτού δέματος"
+    },
+    {
+      "source": "A soft parcel can change dimensions depending on how it rests. Measure the maximum outer span as it would travel, including a thick pocket of material or protective padding. If it is later enclosed in a rigid carton, use the carton dimensions instead. Avoid pressing a soft measurement flat to obtain an attractive number unless the actual packing method keeps it that way. A parcel that expands after measuring no longer corresponds to the estimate.",
+      "source_sha256": "c721b0e5d83dcf2868a3a8af854c96d8c267a439d409006e87672b904784c6b9",
+      "raw_target_sha256": "9c5685721036d58297a3c99dfd1e58dd289806e088900ee8591dc3e9c5b92f46",
+      "translation": "Ένα μαλακό δέμα μπορεί να αλλάξει διαστάσεις ανάλογα με το πώς στηρίζεται. Μετρήστε τη μέγιστη εξωτερική έκταση καθώς θα ταξίδευε, συμπεριλαμβανομένης μιας παχιάς τσέπης του υλικού ή της προστατευτικής επένδυσης. Εάν περικλείεται αργότερα σε ένα άκαμπτο χαρτοκιβώτιο, χρησιμοποιήστε τις διαστάσεις χαρτοκιβωτίων αντ' αυτού. Αποφύγετε να πιέσετε ένα μαλακό επίπεδο μέτρησης για να λάβετε έναν ελκυστικό αριθμό εκτός αν η πραγματική μέθοδος συσκευασίας το κρατά με αυτόν τον τρόπο. Ένα δέμα που επεκτείνεται μετά τη μέτρηση δεν αντιστοιχεί πλέον στην εκτίμηση."
+    },
+    {
+      "source": "If both records supposedly refer to the same finished parcel, compare the orientation and endpoints. A tape starting at the bottom edge of a recessed panel and ending at the centre of a flat lid may miss protected corners that project farther. Ask for the longest outside span rather than the measurement across the central panel. Keep a generous uncertainty in a planning figure when the parcel sits close to an eligibility limit. Final acceptance depends on the carrier and the route's actual rule.",
+      "source_sha256": "b4f4ebc02a22101ef0dce4b09e8e2d4c6e7c66837db80e8015d641cbde0ae583",
+      "raw_target_sha256": "9cbb0fb526512b8e5ca2d249461c375397b37b6c95dc3c17c9144f9ff1d2b8fa",
+      "translation": "Αν και οι δύο εγγραφές υποτίθεται ότι αναφέρονται στο ίδιο ολοκληρωμένο δέμα, συγκρίνετε τον προσανατολισμό και τα τελικά σημεία. Μια ταινία που ξεκινά από την κάτω άκρη ενός εσοχευμένου πάνελ και τελειώνει στο κέντρο ενός επίπεδου καπακιού μπορεί να χάσει προστατευμένες γωνίες που προεξέχουν πιο μακριά. Ζητήστε για τη μακρύτερη εξωτερική έκταση παρά τη μέτρηση πέρα από την κεντρική επιτροπή. Κρατήστε μια γενναιόδωρη αβεβαιότητα σε ένα σχήμα σχεδιασμού όταν το δέμα βρίσκεται κοντά σε ένα όριο επιλεξιμότητας. Η τελική αποδοχή εξαρτάται από τον αερομεταφορέα και τον πραγματικό κανόνα της διαδρομής."
+    },
+    {
+      "source": "Use actual parcel changes to explain an apparent price change",
+      "source_sha256": "8622e8ef5e5779511a9f31048414891df3016a519c4bd2e41729fccfd0c80f01",
+      "raw_target_sha256": "74104228674bdac850e78a53e7af9ad6ae3fc81c0cb672ce71d2fb3e4b0da9b8",
+      "translation": "Χρησιμοποιήστε πραγματικές αλλαγές δεμάτων για να εξηγήσετε μια προφανή αλλαγή τιμής"
+    },
+    {
+      "source": "The buyer may initially quote a single pair of shoes using a quick-estimate preset. Later the seller's box is retained, then a belt is added before international submission. The resulting packed measurements no longer describe the same shipment as the preset. Compare the revised quote with the final parcel statement, while keeping the original as evidence of how the budget developed. A difference between the first and last amounts is not automatically a new fee.",
+      "source_sha256": "10ec70bbae6b9a7c22fe16e97239c46b035d424eb2c54f4181e1741356e9a670",
+      "raw_target_sha256": "1f4bfd3f7354cb3748af1a4f1cbf4062570ff5412644dec74e45754a3ba34429",
+      "translation": "Ο αγοραστής μπορεί αρχικά να προσφέρει ένα μόνο ζευγάρι παπουτσιών χρησιμοποιώντας μια προκαθορισμένη γρήγορη εκτίμηση. Αργότερα διατηρείται το κουτί του πωλητή, στη συνέχεια προστίθεται μια ζώνη πριν από τη διεθνή υποβολή. Οι προκύπτουσες συσκευασμένες μετρήσεις δεν περιγράφουν πλέον την ίδια αποστολή με την προκαθορισμένη. Συγκρίνετε την αναθεωρημένη προσφορά με την τελική δήλωση δέματος, διατηρώντας το πρωτότυπο ως απόδειξη του τρόπου με τον οποίο εξελίχθηκε ο προϋπολογισμός. Η διαφορά μεταξύ του πρώτου και του τελευταίου ποσού δεν αποτελεί αυτόματα νέα χρέωση."
+    },
+    {
+      "source": "A useful quote summary fits into a short paragraph: name the destination, contents, dimensions, scale weight, route, currency and the date of the estimate. Add a sentence identifying any fee that is known to be separate and any part still unresolved. Keep private delivery and payment details out of shared screenshots. Another buyer can then reproduce the estimate for the same inputs or identify why their own parcel differs.",
+      "source_sha256": "ba5fa4c4188d13fde99181875f36934ff3ce18f1d0801a5f2fa940444f7c4b38",
+      "raw_target_sha256": "45d631ce639df29fed6119d39e15d9537ddbdd68f337b300edcbaa55a8493503",
+      "translation": "Μια χρήσιμη περίληψη προσφοράς χωράει σε μια σύντομη παράγραφο: ονομάστε τον προορισμό, το περιεχόμενο, τις διαστάσεις, το βάρος της κλίμακας, τη διαδρομή, το νόμισμα και την ημερομηνία της εκτίμησης. Προσθέστε μια πρόταση που προσδιορίζει οποιαδήποτε αμοιβή που είναι γνωστό ότι είναι ξεχωριστή και οποιοδήποτε τμήμα που εξακολουθεί να μην έχει επιλυθεί. Κρατήστε τα προσωπικά στοιχεία παράδοσης και πληρωμής μακριά από τα κοινόχρηστα στιγμιότυπα οθόνης. Ένας άλλος αγοραστής μπορεί στη συνέχεια να αναπαράγει την εκτίμηση για τις ίδιες εισροές ή να προσδιορίσει γιατί το δικό του δέμα διαφέρει."
+    },
+    {
+      "source": "Suppose the planning sheet contains an old seller subtotal of 220, domestic delivery of 10 and an outbound estimate of 145. The initial overall figure is 375. During packing the buyer adds a separately purchased accessory. Its purchase and domestic movement have already been recorded elsewhere. The outbound box also changes: the final freight line is 153 and the packing service line is 9. The new outbound total is 162. Comparing 162 with 145 gives a 17-unit change on the parcel side.",
+      "source_sha256": "9c1a40111580ea305b7a37933c57096d7fa261c27e35750c2e58fc4ecc3f5584",
+      "raw_target_sha256": "39dcec6b75e83f2a16d4104d857ce560b867c403dff2f73fef3ea5f2b96aeb10",
+      "translation": "Ας υποθέσουμε ότι το φύλλο σχεδιασμού περιέχει ένα παλιό μερικό σύνολο πωλητή 220, εγχώρια παράδοση 10 και μια εξερχόμενη εκτίμηση 145. Ο αρχικός συνολικός αριθμός είναι 375. Κατά τη διάρκεια της συσκευασίας ο αγοραστής προσθέτει ένα ξεχωριστά αγορασμένο αξεσουάρ. Η αγορά και η εγχώρια μετακίνησή του έχουν ήδη καταγραφεί αλλού. Το εξερχόμενο κιβώτιο αλλάζει επίσης: η τελική γραμμή φορτίου είναι 153 και η γραμμή υπηρεσίας συσκευασίας είναι 9. Το νέο σύνολο εξερχόμενων κλήσεων είναι 162. Η σύγκριση 162 με 145 δίνει μια αλλαγή 17 μονάδων στην πλευρά του δέματος."
+    },
+    {
+      "source": "Suppose a hypothetical quote rises from 150 to 166 after a service is selected. If the service itself is listed at 10 and the packing changes the freight line by 6, record both changes. If the quote shows only an all-in increase of 16, report that observed difference and leave its composition unresolved. Do not present the whole 16 as the service fee or add the visible 10 on top of the already updated total.",
+      "source_sha256": "68d8bad3107f5a52d9eb1c9de2dd4cc24e04d841758b08975d4c56726f9d30a7",
+      "raw_target_sha256": "9d661acfdf893778a351e4904f835dfcb1485a47665af95ae6e3313c8dff0a76",
+      "translation": "Ας πούμε ότι η εκτίμηση αυξάνεται από 150 σε 166 όταν επιλέγετε μια υπηρεσία. Αν η υπηρεσία χρεώνεται 10 και η νέα συσκευασία ανεβάζει τα μεταφορικά κατά 6, καταγράψτε τις δύο μεταβολές χωριστά. Αν φαίνεται μόνο η συνολική αύξηση 16, σημειώστε τη διαφορά χωρίς να μαντέψετε την ανάλυση. Μην καταχωρίσετε ολόκληρο το 16 ως τέλος υπηρεσίας και μην προσθέσετε το 10 στο ήδη ενημερωμένο σύνολο."
     }
   ]
 }

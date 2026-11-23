@@ -3,7 +3,7 @@
   "locale": "hu",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "304d237323cd334c8ca10f1775ba369c62a5dfeb99c3a123bd5f3bea8d356123",
-  "effective_dictionary_sha256": "be98e3b97cf2038d3687723b414db100e3c6a8274b78c7ce23d1049b546378da",
+  "effective_dictionary_sha256": "f86001f0cd93e58e94b2795304836beac506343b0a342284ee429659b77ff804",
   "checked_entries": 324,
   "review_scope": "Scoped bilingual review of the FAQ, article and section titles, platform labels, numerical examples and automated flags. Corrected shipping quotations, paper-notebook and cap examples, route and dimensional-weight terminology; remaining prose was screened for numerical changes, not line-edited throughout. Follow-up contextual check for parcel, freight quote and weight terminology.",
   "reviewed_flags": [
@@ -393,6 +393,12 @@
       "source_sha256": "e7426d5c2b685a0707d08d203ffcc78f1dffbd22c708fedbf00efd216e6547c2",
       "raw_target_sha256": "a039b41226ae2e5104d7e6b9c36770f0da6f349a30847ec0b9962c231a26e99c",
       "translation": "Ellenőrizze, hogy az adott szállítási módnál az egyes méreteket, a végső tömeget vagy mindkettőt kerekítik-e. Ha például a tömeget felfelé, félkilós lépésekben kerekítik, akkor a 2,01 és a 2,49 kilogrammos csomagot egyaránt 2,5 kilogrammosként számolják el. A tömeg 2,49-ről 2,10 kilogrammra csökkentése nem viszi lejjebb a díjsávot. Pontosan 2,00 kilogrammnál már más lehet a helyzet, ha a tényleges tömeg számít és nincs magasabb minimum. Mindig nézze meg a kalkulátort vagy a szállítási mód szabályait."
+    },
+    {
+      "source": "Now change one input deliberately. If the parcel is lighter after repacking, check whether both lines use the lower actual weight or whether dimensional billing or a minimum charge still governs. Recapture both quotes. A saving on one route does not automatically transfer to the other. When only one remains eligible, keep a note of why the other disappeared. This can explain the result if support later reproduces it using the old dimensions.",
+      "source_sha256": "17c8e613676ec8768a58f1d66c1e750362c538222b5fba239c361c3b655a062b",
+      "raw_target_sha256": "b4a3fcff802c1dae0ac50614906609b043353ee1c88b51000a424d4356da1680",
+      "translation": "Ezután változtasson meg egyetlen adatot. Ha az újracsomagolt küldemény könnyebb, ellenőrizze, hogy mindkét szállítási mód az új tényleges tömeget veszi-e alapul, vagy továbbra is a térfogatsúly, illetve a minimumdíj számít. Mentse el újra mindkét árajánlatot. Ami az egyik útvonalon megtakarítást eredményez, a másikon nem feltétlenül teszi ezt. Ha csak az egyik marad választható, jegyezze fel, miért szűnt meg a másik lehetőség. Ez segíthet, ha az ügyfélszolgálat később a régi méretekkel számol."
     }
   ]
 }

@@ -3,7 +3,7 @@
   "locale": "vi",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "1b03c9adee47bf66ea0475d6965577cc1c3c8df3f6deb8528f86fe0c97c6aebf",
-  "effective_dictionary_sha256": "b5ab33f4c1685faa0cd78893160aaf1a02186dafd0e792ad130f8e2957797e96",
+  "effective_dictionary_sha256": "e9395ceb2bdba5c8c6a2ec2a82be2d3630bfcb89e3e896246cbfce8a944ad138",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -249,6 +249,66 @@
       "source_sha256": "c58c367b30785c5aaf6492b78162ffa4354e0168c946faffd5d8b2b4e2ca5c75",
       "raw_target_sha256": "9f605eaae2b466f1968f31255af7097e27ac6ead80f73416e5c8d0d0e09024dc",
       "translation": "Thu thập ước tính ban đầu, hồ sơ kho và hồ sơ thanh toán cuối cùng. Kiểm tra xem chúng liên quan đến cùng một gói hàng và cùng một địa điểm. Một báo giá cho hai bộ quần áo và một hóa đơn cho hai bộ quần áo cộng với một hộp giày không thể được giải thích bằng cách kiểm tra số học một mình. Giữ danh sách cũ hiển thị và tạo một cột riêng cho danh sách cuối cùng được gửi."
+    },
+    {
+      "source": "Work through a quotation with mixed units",
+      "source_sha256": "86c7122c9336ab643f1dd40ee79ebf0a9504135d774226fe19872d5111de7677",
+      "raw_target_sha256": "a27e3cd9e35c11f38840dc7fe3fd2fe8fbc55d2ada43b446421a3bbf0b6ffdf2",
+      "translation": "Làm việc qua một báo giá với các đơn vị hỗn hợp"
+    },
+    {
+      "source": "Use separate rows for quoted, paid and credited amounts. If a charge was removed, enter the credit with its reference. When a final invoice rolls services into a parcel subtotal, place that subtotal in a comparison column rather than adding it to the detailed entries. Check that your reconstructed total agrees with the payment record within ordinary rounding. Write down the remaining difference and ask support which invoice line explains it.",
+      "source_sha256": "b4f3dede9df755627787afff51d746f3d3c31eba0df484be2406fa0ed8db27b7",
+      "raw_target_sha256": "24016a09ea0e0eac4f39bc797822800ea6f2fcc36f4d3fee2105c08f80ae104a",
+      "translation": "Dùng các hàng riêng biệt cho số tiền được báo giá, trả và ghi nợ. Nếu một khoản phí đã được gỡ bỏ, nhập danh hiệu với tham chiếu của nó. Khi một hóa đơn cuối cùng cuộn các dịch vụ vào tổng phụ của một gói, đặt tổng phụ đó trong một cột so sánh thay vì thêm nó vào các mục chi tiết. Kiểm tra xem tổng số được tái tạo của bạn phù hợp với hồ sơ thanh toán trong vòng tròn thông thường. Ghi lại sự khác biệt còn lại và hỏi hỗ trợ dòng hóa đơn nào giải thích nó."
+    },
+    {
+      "source": "A catalogue conversion helps with browsing. A merchant quotation shows an amount offered in a particular currency. A card statement shows what was actually posted. Write which of those three you have beside every number. Do not replace the source currency when you translate a quote into your home currency. Keep the original information available so you can recalculate later without relying on a rounded display.",
+      "source_sha256": "db352828918454dfdaef6d19fe36e7227f04f4c8d896efbdd387c93fd87b9c0e",
+      "raw_target_sha256": "55c2b83528af8656f105e3f535c6bd0ccd411e4ea12e684a9ff90cff043cead5",
+      "translation": "Một chuyển đổi danh mục giúp với việc lướt web. Một báo giá thương nhân cho thấy một số tiền được cung cấp trong một loại tiền tệ nhất định. Một báo cáo thẻ cho thấy những gì thực sự đã được đăng. Hãy viết tên của 3 người đó bên cạnh mỗi con số. Đừng thay thế tiền tệ nguồn khi bạn dịch một báo giá sang tiền tệ của bạn. Giữ thông tin gốc sẵn sàng để bạn có thể tính toán lại sau này mà không cần phụ thuộc vào màn hình tròn."
+    },
+    {
+      "source": "Keep the final parcel statement next to your selected services and measured outer dimensions. If the outbound charge changes, compare the final dimensions with the size assumed earlier. If the invoice shows an additional service, identify which piece and which instruction it corresponds to. If there is no clear match, ask support to explain the line and supply the quote you were comparing.",
+      "source_sha256": "1724744fec3bd6f6c43deadcc8353df61b8b03091e65d292b9d04250ca2ca386",
+      "raw_target_sha256": "55898a92dbefba197fc1ee31eda24809809a9bd6e5467bfc0a3fb0f52fdcf91d",
+      "translation": "Giữ bản báo cáo cuối cùng bên cạnh các dịch vụ đã chọn và đo kích thước bên ngoài. Nếu điện tích ra thay đổi, so sánh kích thước cuối cùng với kích thước giả định trước đó. Nếu hóa đơn cho thấy một dịch vụ bổ sung, xác định mảnh nào và hướng dẫn nào nó tương ứng. Nếu không có sự trùng khớp rõ ràng, hãy yêu cầu hỗ trợ giải thích dòng và cung cấp báo giá mà bạn đang so sánh."
+    },
+    {
+      "source": "A good final check takes less time than investigating a mistaken quote. Read the three dimensions and their unit aloud, read the weight and its unit, confirm the destination, then confirm that every measurement describes the same physical box. Only at that point is the estimator result useful for comparing an offered service. If one measurement is still missing, state that explicitly when you share the result and keep the next decision conditional on obtaining it.",
+      "source_sha256": "1e5043cab651dcb56b9ce6e06fa89aaa7a5a0da0722d86bf8a9926242810e2fb",
+      "raw_target_sha256": "05101241b1c0710cfc5ecf9aea142b0afb4c7e4f7a0ee47582485161357a26a2",
+      "translation": "Một kiểm tra cuối cùng tốt hơn sẽ tốn ít thời gian hơn là điều tra một báo giá sai. Đọc ba chiều và đơn vị của chúng lớn tiếng, đọc trọng lượng và đơn vị của nó, xác nhận điểm đến, sau đó xác nhận rằng mỗi phép đo mô tả cùng một hộp vật lý. Chỉ tại thời điểm đó kết quả ước tính là hữu ích để so sánh một dịch vụ được cung cấp. Nếu một phép đo vẫn còn thiếu, nêu rõ rõ ràng khi bạn chia sẻ kết quả và giữ quyết định tiếp theo có điều kiện để có được nó."
+    },
+    {
+      "source": "Suppose the combined option in a worked example is quoted at 164 units. The split option has one box quoted at 105 and a second at 72. The split total is 177 before any separately listed packing services. Looking only at the 105 would reverse the result. Add optional charges that apply twice and remove any charge shown as already included. Record the currency and timestamp for all quotations.",
+      "source_sha256": "d2c09fbbee9f0d1007f6a17e1a10db961bfd5a5bd76da9e031ced51c59d88e25",
+      "raw_target_sha256": "a4eec535f3b437e79850a640a1b70f2734ee429b074aa98cb12f760e7464ece5",
+      "translation": "Giả sử tùy chọn kết hợp trong một ví dụ làm việc được báo giá tại 164 đơn vị. Tùy chọn chia có một hộp được đưa ra ở mức 105 và một hộp thứ hai ở mức 72. Tổng số phân chia là 177 trước bất kỳ dịch vụ đóng gói nào được liệt kê riêng biệt. Chỉ nhìn vào 105 sẽ đảo ngược kết quả. Thêm các phí tùy chọn áp dụng hai lần và loại bỏ bất kỳ phí nào đã được bao gồm. Ghi lại tiền tệ và dấu thời gian cho tất cả các báo giá."
+    },
+    {
+      "source": "Now add a condition: the quoted combined arrangement relies on removing the retail case, which the buyer needs as part of a gift. The 185 quote no longer describes an acceptable solution. Obtain a comparable combined quote that keeps the case, or mark that arrangement as unsuitable. The earlier numerical comparison still teaches something about what created the saving, but it cannot justify selecting a packing method that defeats the purpose of the purchase.",
+      "source_sha256": "91a9a3605abdcb2946c24630dcf5de4ccb7c8a21a632e62b601299095c305e76",
+      "raw_target_sha256": "d47ede2f4139b80578a6d5fe3522a1836215ae8ca4a03b394333938d85da7ba7",
+      "translation": "Bây giờ thêm một điều kiện: sự sắp xếp kết hợp được báo giá dựa trên việc loại bỏ trường hợp bán lẻ, mà người mua cần là một phần của món quà. Câu báo giá 185 không còn mô tả một giải pháp chấp nhận được nữa. Lấy một câu kết hợp so sánh để giữ trường hợp, hoặc đánh dấu sự sắp xếp đó là không phù hợp. So sánh số liệu trước đây vẫn dạy một điều gì đó về những gì tạo ra sự tiết kiệm, nhưng nó không thể biện minh cho việc chọn một phương pháp đóng gói đánh bại mục đích của việc mua."
+    },
+    {
+      "source": "When an item changes after quotation",
+      "source_sha256": "e3a9ac352c98cfaf77ceb712b26621433e6333dd16a0eeaed9141dc69de852c5",
+      "raw_target_sha256": "ddd949b10c9c7117138ac84e4cf28e2106f26442a4205a76633b7346494779d8",
+      "translation": "Khi một mục thay đổi sau báo giá"
+    },
+    {
+      "source": "If you want to learn which change drove the difference, vary one input at a time in your own planning worksheet, provided the estimator supports the comparison. Keep the original destination and category, replace the assumed weight with the packed weight and record the result. Then apply the new dimensions. Label intermediate results as analytical scenarios rather than quotes for parcels you intend to send. If package category or eligibility changed, that can invalidate a direct one-input comparison.",
+      "source_sha256": "5f8584b005f53740c8815cd5f5e3efcb6e8e36dc95d0bd275b5033c759c1282e",
+      "raw_target_sha256": "6eaf2840fd9ac35bc0dd516731abab1929f0c8c3a15bc706e9fe486cfe9e7c6e",
+      "translation": "Nếu bạn muốn biết sự thay đổi nào dẫn đến sự khác biệt, thay đổi một đầu vào một lúc trong bảng kế hoạch của bạn, miễn là ước tính hỗ trợ so sánh. Giữ mục đích và loại gốc, thay thế trọng lượng giả định bằng trọng lượng gói và ghi lại kết quả. Sau đó áp dụng kích thước mới. Đánh dấu kết quả trung gian như kịch bản phân tích hơn là báo giá cho các gói mà bạn dự định gửi. Nếu loại gói hoặc khả năng thay đổi, điều đó có thể vô hiệu hóa một so sánh một đầu vào trực tiếp."
+    },
+    {
+      "source": "When the final route appears identical by name, check any displayed service variation or delivery zone. Two similar names may describe different delivery products. Compare actual route identifiers if the account exposes them. Save relevant screenshots with private addresses and payment information cropped out before sharing. If a code has changed but its meaning is unclear, ask support to confirm whether the quote and statement refer to the same service.",
+      "source_sha256": "3515ed095ff9b262fd74d8ad6036b9eaf490e9bd8f910e96ff6a3d81039f457d",
+      "raw_target_sha256": "d62d4edf0e968d659b71c9baea73bcbb7ef4e60f7a477df32883ec122273efb7",
+      "translation": "Khi tuyến cuối cùng xuất hiện giống nhau theo tên, kiểm tra bất kỳ biến thể dịch vụ hoặc khu vực giao hàng nào được hiển thị. Hai tên tương tự có thể mô tả các sản phẩm giao hàng khác nhau. So sánh các bộ nhận dạng tuyến đường thực tế nếu tài khoản tiết lộ chúng. Lưu ảnh chụp màn hình liên quan với địa chỉ riêng và thông tin thanh toán cắt ra trước khi chia sẻ. Nếu một mã đã thay đổi nhưng ý nghĩa của nó không rõ ràng, hãy hỏi hỗ trợ để xác nhận liệu báo giá và tuyên bố đề cập đến cùng một dịch vụ."
     }
   ]
 }

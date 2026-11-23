@@ -3,9 +3,9 @@
   "locale": "it",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "c50e4cacf97ee5e638c6502f5d8b46750aae3fa9651ad01207a21a712718d260",
-  "effective_dictionary_sha256": "872bf13ecb628f28d3e82b2e009e782ebc40f76521a5cbbcc6ceb8b87296be9d",
+  "effective_dictionary_sha256": "f495b21d728740711c03198879b599604315bb7bdee81f506aec54808756ce89",
   "checked_entries": 324,
-  "review_scope": "All dictionary keys and long-paragraph language, number, unit, brand, identifier and repetition checks. All ten article titles and flagged source/target pairs inspected. Two article paragraphs sampled separately. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries. Cross-checked the follow-up suggestions in the notebook example.",
+  "review_scope": "All dictionary keys and long-paragraph language, number, unit, brand, identifier and repetition checks. All ten article titles and flagged source/target pairs inspected. Two article paragraphs sampled separately. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries. Cross-checked the follow-up suggestions in the notebook example. Follow-up contextual check for parcel, freight quote and weight terminology.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -123,6 +123,18 @@
       "source_sha256": "dd7dbc83be0357a055968ae5bf8b1035741b50106313a0468cf12e63bab783ea",
       "raw_target_sha256": "5f66051beaa8ee52a4af583be3ece15540e13d7f8999395ff6b4c607d2b8c7f6",
       "translation": "Nell'esempio dei quaderni, una risposta utile potrebbe affermare che hai richiesto tre unità in un colore, che la nuova offerta sembra coprire due, e che desideri la conferma del prezzo unitario e della tariffa nazionale. Aggiungere cosa dovrebbe accadere se la terza unità non è disponibile. Questo dà all'agente un'azione limitata piuttosto che chiedere loro di indovinare se la quantità, il colore o il prezzo contano di più."
+    },
+    {
+      "source": "Keep the quote reproducible",
+      "source_sha256": "56bd03dff5d82ca50922d04e1b2be8dad1b369e2e6d314cd12221fd2092255f6",
+      "raw_target_sha256": "355b1d2a39dc430707c956a2823ee11031d64b6000f638e8780da47187025989",
+      "translation": "Conservare i dati per poter ricostruire il preventivo"
+    },
+    {
+      "source": "Now change one input deliberately. If the parcel is lighter after repacking, check whether both lines use the lower actual weight or whether dimensional billing or a minimum charge still governs. Recapture both quotes. A saving on one route does not automatically transfer to the other. When only one remains eligible, keep a note of why the other disappeared. This can explain the result if support later reproduces it using the old dimensions.",
+      "source_sha256": "17c8e613676ec8768a58f1d66c1e750362c538222b5fba239c361c3b655a062b",
+      "raw_target_sha256": "2b8ae461b61dd2e0334efaef51e4bfa392f47ef8252c0b7eca598b269dff6b26",
+      "translation": "Modifica ora un solo dato. Se dopo il nuovo imballaggio il pacco è più leggero, controlla se entrambi i servizi usano il peso reale inferiore o se prevalgono ancora il peso volumetrico o una tariffa minima. Salva entrambi i nuovi preventivi. Un risparmio su una tratta non si applica automaticamente all’altra. Se resta disponibile un solo servizio, annota perché l’altro è stato escluso. Potrai così spiegare eventuali differenze se l’assistenza ripete il calcolo con le vecchie misure."
     }
   ]
 }

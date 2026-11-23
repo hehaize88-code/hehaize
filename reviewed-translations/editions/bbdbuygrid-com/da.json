@@ -3,9 +3,9 @@
   "locale": "da",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "595b8bc70d31b40c8113edeedd17a0034f667fc7af3e4aa94cf7376cc63fafd3",
-  "effective_dictionary_sha256": "3d6e4600be11d513b8fbf3bf2632e12141d911a2a71b2e7fafe3ff0760e3e884",
+  "effective_dictionary_sha256": "72b8ee149e6e56aaa7c6488bacc3b0585394582d8163068b473a216b3dcb4eae",
   "checked_entries": 324,
-  "review_scope": "All English keys checked automatically; all ten article titles and every flagged passage inspected. Read paired long-passage samples; checked volumetric examples and pricing terminology. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries. Cross-checked the follow-up suggestions in the notebook example.",
+  "review_scope": "All English keys checked automatically; all ten article titles and every flagged passage inspected. Read paired long-passage samples; checked volumetric examples and pricing terminology. Additional source-specific inspection of price allocation, freight estimates, cubic volume, transport quotes and recurring incorrect senses of cap or parcel. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries. Cross-checked the follow-up suggestions in the notebook example. Follow-up contextual check for parcel, freight quote and weight terminology.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -141,6 +141,18 @@
       "source_sha256": "3e9b77d857808f1a7567ef6463c7a745dbb051766ebc1192c67c1dc77a63e59c",
       "raw_target_sha256": "43f1c4f6c4f64535cb1ec6dff20ef6493d0f0f4ce33ed71b934c94d6cc3861d7",
       "translation": "Hvis erstatningstilbuddet i stedet omfatter tre forskelligt indbundne notesbøger til 20 pr. stk. inkl. fragt, er det også i alt 60. Der matcher den oprindelige pris nøjagtigt, mens du ændrer, hvad der blev købt. Kig på den nye tykkelse, binding, farve og mængde, før du bliver enig. At matche et nummer kan ikke kompensere for tabet af den funktion, der fik dig til at vælge det oprindelige emne. Behandle et tilbud med en anden mulighed som en ny købsbeslutning i sig selv."
+    },
+    {
+      "source": "Read whether a route rounds individual dimensions, final weight or both. Consider two weights of 2.01 and 2.49 kilograms. Under an illustrative rule rounding upward to half-kilogram steps, both become 2.5 kilograms. Reducing a parcel from 2.49 to 2.10 under that rule would not move it into a lower band. Reducing it to exactly 2.00 could do so if actual weight governs and there are no other minimums. Check the interface or route description before applying that reasoning to your own case.",
+      "source_sha256": "e7426d5c2b685a0707d08d203ffcc78f1dffbd22c708fedbf00efd216e6547c2",
+      "raw_target_sha256": "7d97399b40a0941085fcf8f26040a6f6143ffc39b4d3ff41d8584475dd0765bb",
+      "translation": "Tjek, om fragtfirmaet afrunder de enkelte mål, slutvægten eller begge dele. Med en tænkt regel om oprunding til næste halve kilo bliver både 2,01 og 2,49 kg til 2,5 kg. En pakke, der går fra 2,49 til 2,10 kg, skifter derfor ikke vægttrin. Ved præcis 2,00 kg kan den gå et trin ned, hvis den faktiske vægt er afgørende, og der ikke gælder et andet minimum. Tjek reglen i beregneren eller rutebeskrivelsen."
+    },
+    {
+      "source": "Use independent arithmetic as an error check, not a substitute for a carrier quote. When you obtain a seemingly improbable number, check for mixed units, a missing decimal, length repeated in place of height, or a product dimension copied instead of the packed dimension. A result that becomes sensible after correcting one input is a reason to preserve the revised calculation, not a reason to enter a more favourable figure than the parcel actually measures.",
+      "source_sha256": "5fcb636100b66eefe28ef6b4c2f039c72a09ba92a39721a05a116365d66c1458",
+      "raw_target_sha256": "00e15963e735be3663317bafba5b7393ba1d5ca531605b0dad4e13dbd30a52af",
+      "translation": "Regn selv efter for at fange fejl, og sammenhold resultatet med fragtfirmaets tilbud. Hvis tallet ser usandsynligt ud, så tjek enhederne, kommaet, om længden er gentaget i stedet for højden, og om du har brugt varens mål i stedet for den færdige pakkes. Gem den rettede beregning, og indtast altid pakkens faktisk målte størrelse."
     }
   ]
 }

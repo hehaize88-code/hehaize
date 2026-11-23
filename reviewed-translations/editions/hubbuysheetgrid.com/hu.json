@@ -3,7 +3,7 @@
   "locale": "hu",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "c436e2f5efefc3142a756f55557c99681570a9fadf908adaeb8be690535bf15a",
-  "effective_dictionary_sha256": "b1bbccf5449189827f4c8efd9e82fa5b84e4d2b78c66ee99487a0866fbdeb53b",
+  "effective_dictionary_sha256": "c1e95d5b88a193c2fe42e914953a05f4a1850427c2797281cfd250ef8e4fa0a3",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -35,7 +35,7 @@
       "issue": "quantity unit or currency changed",
       "source_sha256": "d69a5da514621e530a2052e5742f1a2b8c367baec6ee1bbd4fe41739c8216408",
       "raw_target_sha256": "5e32cd0742966c7ca662ce9e486b8da5984ec77a3d47025d84b8400d8b815149",
-      "resolution": "The two inner boxes at 4 yuan plus the outer service at 7 correctly total 15. Multiplying by three is identified as the 33 error."
+      "resolution": "corrected translation"
     },
     {
       "issue": "quantity unit or currency changed",
@@ -255,6 +255,96 @@
       "source_sha256": "9a4641881e57be3b6c26da181b86ed2d763deadcd8e3fb11fd79d3d7275e41e4",
       "raw_target_sha256": "8ec7bb60e3fa832f0dc273636d23254fde4842cb3f412c778534f751ccabb8fe",
       "translation": "A HubBuy-csomag végső elszámolásának egyeztetése az eredeti árajánlattal"
+    },
+    {
+      "source": "Write down the exact service, amount and whether it applies to an item or parcel. Check if a quoted total already includes it before adding it separately.",
+      "source_sha256": "9e77b7abf0e39bd9fa9189dafb8eb2b07c3f49dca520ef95ec38323189c690cb",
+      "raw_target_sha256": "18eebb18a4923646568b070c54fb455dd2077c4eaa039f7cdd112cf1d960757e",
+      "translation": "Jegyezze fel a pontos szolgáltatást, az összeget és azt, hogy egy tételre vagy csomagra vonatkozik-e. Ellenőrizze, hogy egy az ajánlatban szereplő összeg már tartalmazza-e, mielőtt külön hozzáadná."
+    },
+    {
+      "source": "Save both outbound parcel references, their item lists and their final charge statements. Mark the line you are comparing on each record so the question stays tied to the correct parcel.",
+      "source_sha256": "baa564c8afd6b6f139c54ca948290d096026e69c37baa603560efd436cf90c7c",
+      "raw_target_sha256": "d2cb6e1161b37cdbf0cb38b88c07e03db651eea3f586392b2882a55268b9dbbe",
+      "translation": "Mentse el mind a raktárból az ügyfelekhez szállítandó csomagok hivatkozásait, az ügyfelek cikklistáját, mind pedig a végső számlakivonataikat. Jelölje meg az összehasonlítani kívánt sort minden egyes rekordon, hogy a kérdés a megfelelő csomaghoz kötődjön."
+    },
+    {
+      "source": "Consider a hypothetical worksheet with three product entries, two inner cartons and one outer parcel. Assume the quoted service is 4 yuan per inner carton and an outer-packing option costs 7 yuan for the parcel. The worksheet should add 8 and 7, or 15 in total. Multiplying both charges by three because there are three item rows produces 33. This example illustrates the arithmetic only; read the actual service units and amounts on the live offer.",
+      "source_sha256": "d69a5da514621e530a2052e5742f1a2b8c367baec6ee1bbd4fe41739c8216408",
+      "raw_target_sha256": "5e32cd0742966c7ca662ce9e486b8da5984ec77a3d47025d84b8400d8b815149",
+      "translation": "Tekintsünk egy feltételezett munkalapot, amely három termékbejegyzést, két belső kartont és egy külső csomagot tartalmaz. Tegyük fel, hogy az az ajánlatban szereplő szolgáltatás 4 jüan belső kartononként, és egy külső csomagolási lehetőség 7 jüanba kerül a csomagért. A munkalapon össze kell adni 8 és 7, vagy összesen 15. Ha mindkét tételt megszorozzuk hárommal, mert három tételsor van, akkor 33-at kapunk. Ez a példa csak az aritmetikát szemlélteti; olvassa el a tényleges szolgáltatási egységeket és összegeket az élő ajánlatban."
+    },
+    {
+      "source": "Read an adjustment without erasing the original quote",
+      "source_sha256": "e0936a2d0afd23a83899a9b5f9612d756693ae1c1ddbda43aea31d5385bab116",
+      "raw_target_sha256": "1a447d87ef3f916091f7c38acfaf7d5c0cb7052581bfbea8bc00d4765ee03eb4",
+      "translation": "Módosítás olvasása az eredeti árajánlat törlése nélkül"
+    },
+    {
+      "source": "Use separate rows for quoted, paid and credited amounts. If a charge was removed, enter the credit with its reference. When a final invoice rolls services into a parcel subtotal, place that subtotal in a comparison column rather than adding it to the detailed entries. Check that your reconstructed total agrees with the payment record within ordinary rounding. Write down the remaining difference and ask support which invoice line explains it.",
+      "source_sha256": "b4f3dede9df755627787afff51d746f3d3c31eba0df484be2406fa0ed8db27b7",
+      "raw_target_sha256": "a4632025222fa8410258612b8f822c14e6c826f33a4ae4c85fe11b9214bee0fc",
+      "translation": "Használjon külön sorokat az az ajánlatban szereplő, a kifizetett és a jóváírt összegekhez. Ha egy terhelést eltávolítottak, írja be a jóváírást a hivatkozásával együtt. Ha egy zárószámla a szolgáltatásokat egy csomag részösszegébe sorolja, akkor ezt a részösszeget egy összehasonlító oszlopba helyezze, ahelyett, hogy hozzáadná a részletes bejegyzésekhez. Ellenőrizze, hogy a rekonstruált összeg megegyezik-e a kifizetési rekorddal a szokásos kerekítésen belül. Írja le a fennmaradó különbözetet, és kérdezze meg az ügyfélszolgálatot, hogy melyik számlasor magyarázza meg."
+    },
+    {
+      "source": "Keep the old quote and add a revised quote under it. If the larger amount was already paid, track the credit process separately from the recalculated cost. Do not enter 202 as the only payment when the account shows 274 collected and a credit still pending. The two records answer different questions: what the retained merchandise should cost, and which funds have actually moved. Keep the same line names so that a friend reviewing the change can tell which item became unavailable.",
+      "source_sha256": "d934b1be832ea7a829823f1f235cb216308d04f4d58e293696e5f10aa1b5a6b9",
+      "raw_target_sha256": "c5e82273f139ee1e9941316c5d6140084334568109dfbb80b240767de9ab0166",
+      "translation": "Tartsa meg a régi árajánlatot, és adjon hozzá egy módosított árajánlatot. Ha a nagyobb összeget már kifizette, a jóváírási folyamatot az újraszámított költségtől elkülönítve kövesse nyomon. Ne adja meg a 202-t az egyetlen kifizetésként, ha a számla 274 összegyűjtött és még függőben lévő jóváírást mutat. A két nyilvántartás különböző kérdésekre ad választ: mennyibe kell kerülnie a visszatartott árunak, és mely pénzeszközök mozogtak ténylegesen. Tartsa meg ugyanazokat a sorneveket, hogy a módosítást áttekintő ismerőse meg tudja mondani, hogy melyik elem nem érhető el."
+    },
+    {
+      "source": "A soft parcel can change dimensions depending on how it rests. Measure the maximum outer span as it would travel, including a thick pocket of material or protective padding. If it is later enclosed in a rigid carton, use the carton dimensions instead. Avoid pressing a soft measurement flat to obtain an attractive number unless the actual packing method keeps it that way. A parcel that expands after measuring no longer corresponds to the estimate.",
+      "source_sha256": "c721b0e5d83dcf2868a3a8af854c96d8c267a439d409006e87672b904784c6b9",
+      "raw_target_sha256": "8499fcd601b9d546d239a7baa2124c520c4bf140dd75528f93cc862719867b0f",
+      "translation": "Egy puha csomag megváltoztathatja a méreteket attól függően, hogy hogyan nyugszik. Mérje meg a maximális külső fesztávolságot, ahogy haladna, beleértve egy vastag zseb anyagot vagy védő párnázást. Ha később merev kartondobozba csomagolják, akkor használja a kartondoboz méreteit. Kerülje a puha mérési lapos nyomást, hogy vonzó számot kapjon, kivéve, ha a tényleges csomagolási módszer így tartja. A mérés után kibővülő csomag már nem felel meg a becslésnek."
+    },
+    {
+      "source": "Suppose the combined option in a worked example is quoted at 164 units. The split option has one box quoted at 105 and a second at 72. The split total is 177 before any separately listed packing services. Looking only at the 105 would reverse the result. Add optional charges that apply twice and remove any charge shown as already included. Record the currency and timestamp for all quotations.",
+      "source_sha256": "d2c09fbbee9f0d1007f6a17e1a10db961bfd5a5bd76da9e031ced51c59d88e25",
+      "raw_target_sha256": "2d85b1a672a86195c9ae34c15be99971e11a0b270d127d52d37a8fc624a94265",
+      "translation": "Tegyük fel, hogy a kombinált opciót egy működő példában 164 egységre jegyezték. Az osztott opciónak van egy 105-ös és egy második 72-es doboz. A megosztott összeg 177 a külön felsorolt csomagolási szolgáltatások előtt. Ha csak a 105-öst néznénk, az megfordítaná az eredményt. Adja hozzá a kétszer felszámított opcionális díjakat, és távolítson el minden olyan díjat, amely már benne van az árban. Rögzítse a pénznemet és az időbélyeget az összes árajánlathoz."
+    },
+    {
+      "source": "Now add a condition: the quoted combined arrangement relies on removing the retail case, which the buyer needs as part of a gift. The 185 quote no longer describes an acceptable solution. Obtain a comparable combined quote that keeps the case, or mark that arrangement as unsuitable. The earlier numerical comparison still teaches something about what created the saving, but it cannot justify selecting a packing method that defeats the purpose of the purchase.",
+      "source_sha256": "91a9a3605abdcb2946c24630dcf5de4ccb7c8a21a632e62b601299095c305e76",
+      "raw_target_sha256": "d7d8e0e6e958affc39094adb4e141da6af3c92ac4f43a48a4e9629b202b3d0e6",
+      "translation": "Most adjunk hozzá egy feltételt: az az ajánlatban szereplő kombinált elrendezés a kiskereskedelmi tok eltávolítására támaszkodik, amelyre a vevőnek ajándék részeként van szüksége. A 185-ös árajánlat már nem ír le elfogadható megoldást. Szerezzen be egy összehasonlítható kombinált árajánlatot, amely megtartja az esetet, vagy jelölje meg az elrendezést nem megfelelőnek. A korábbi számszerű összehasonlítás még mindig tanít valamit arról, hogy mi teremtette meg a megtakarítást, de nem igazolhatja egy olyan csomagolási módszer kiválasztását, amely legyőzi a vásárlás célját."
+    },
+    {
+      "source": "Take another fictional quote with a combined option at 214. The smaller boxes cost 112 and 94, for a total of 206, and their protective needs are already included. This time the arithmetic favours splitting by eight. Before deciding, verify whether there are additional services charged separately per parcel or any destination-specific conditions that were absent from the recorded totals. Two boxes can produce two delivery events and two references to monitor.",
+      "source_sha256": "239058dbeb8f1615ded6fedec96d428f4b199ca25a6647a2ec624d5e2cf05558",
+      "raw_target_sha256": "5275f9b65f3c69ec28a18226e841033a4aa0fb499e1db5dcbf15a2fd1ca012ee",
+      "translation": "Vegyünk egy másik fiktív árajánlatot egy kombinált opcióval 214-nél. A kisebb dobozok ára 112 és 94, összesen 206, és a védelmi igényeiket már tartalmazzák. Ezúttal az aritmetikai előnyök nyolccal osztva. Mielőtt döntést hozna, ellenőrizze, hogy vannak-e olyan kiegészítő szolgáltatások, amelyeket csomagonként külön számolnak fel, vagy olyan rendeltetési hely-specifikus feltételek, amelyek hiányoztak a rögzített összegekből. Két doboz két kézbesítési eseményt és két figyelendő hivatkozást eredményezhet."
+    },
+    {
+      "source": "Suppose each smaller box also needs an explicitly quoted service costing five, while the combined option already includes it. The separate total becomes 216, two more than the combined quote. Such a narrow difference may be less important than arrival timing or how easily a recipient can receive two packages. Record the non-price reason for any choice so that a later invoice comparison is not mistaken for proof that the earlier decision was irrational.",
+      "source_sha256": "2667bb99764137d2dd5c056559d7b304dd88b253c59df6a378cdbf8725616d50",
+      "raw_target_sha256": "98abf168cfd4363e3ef9fc08b443d2651ba9d8d59bd58ea98d78a67f439202f5",
+      "translation": "Tegyük fel, hogy mindegyik kisebb dobozhoz szükség van egy explicit szolgáltatásra is, amely ötbe kerül, míg a kombinált opció már tartalmazza azt. A különálló összeg 216 lesz, kettővel több, mint a kombinált árajánlat. Az ilyen kis különbség kevésbé fontos lehet, mint az érkezés időzítése vagy az, hogy egy címzett milyen könnyen kaphat két csomagot. Jegyezze fel a választás nem áralapú okát, hogy a későbbi számla-összehasonlítás során ne tévesszék össze a korábbi döntés irracionális voltának bizonyítékával."
+    },
+    {
+      "source": "Put the route's displayed freight figure on one line. Beneath it, list each other cost you expect to encounter: seller price, domestic delivery, packing services and any other item actually named on the offer. Mark each one as included, separately quoted, already paid or unknown. Treat an omitted entry as unknown unless the live terms tell you otherwise. An estimate showing only international delivery cannot settle the price of seller-side goods.",
+      "source_sha256": "037c7ba2b966ad7f1d3675e7960ccc475b9952fa7c092c4d72b80ba15747980c",
+      "raw_target_sha256": "04218d145d5a2109c746e28f3978c83ca65fc94eefc2921c23e82a34e0f45671",
+      "translation": "Helyezze az útvonal kijelzett fuvardíját egy sorra. Az alábbiakban sorolja fel a várható költségeket: az eladó ára, a belföldi szállítás, a csomagolási szolgáltatások és bármely más tétel, amely ténylegesen szerepel az ajánlatban. Jelölje meg mindegyiket, mint benne van, külön az ajánlatban szereplő, már kifizetett vagy ismeretlen. A kihagyott bejegyzést ismeretlenként kezeljük, hacsak az élő feltételek másként nem rendelkeznek. A csak nemzetközi szállítást tartalmazó becslés nem tudja kiegyenlíteni az eladói áruk árát."
+    },
+    {
+      "source": "Changing the contents, packing, measurements or selected services calls for a fresh estimate. Keep the old result because it can help explain a later difference. Mark the revised input with the reason for the change, such as a retained shoebox or a removed accessory. Ask HubBuy support about a specific line if the conditions appear identical but the quoted result still differs.",
+      "source_sha256": "5404359e370df79f7003ee10774e8d4b3ec30d27335d5e5784413cdd5c77cf08",
+      "raw_target_sha256": "3eae877e665fc147a18318a0b4624dd1ffe9dcb665ce7423db46fdd39823f567",
+      "translation": "A tartalom, a csomagolás, a méretek vagy a kiválasztott szolgáltatások módosítása új árajánlatot igényel. Őrizze meg a régi eredményt, mert ez segíthet megmagyarázni egy későbbi különbséget. Jelölje meg a módosított bejegyzést a változás okával, például egy megtartott cipődobozzal vagy egy eltávolított tartozékkal. Kérdezze meg a HubBuy ügyfélszolgálatát egy adott sorral kapcsolatban, ha a feltételek azonosnak tűnnek, de az az ajánlatban szereplő eredmény továbbra is eltérő."
+    },
+    {
+      "source": "Turn one unknown into one support question. Instead of asking whether the whole estimate is correct, specify that you entered a named destination and measured parcel, received a quote for a particular route, and need to know whether the selected packing service is already inside the displayed total. Save the answer with the date and the quote version. Avoid applying a reply about one route to a different service with different terms.",
+      "source_sha256": "741207c84e0bd3ef447ae75a2145fd7d36c817a82eb76cf43eb36c8e464ad48a",
+      "raw_target_sha256": "e9e08cab85ea77a56a01d190ac2bf6f42df055aaff8f941e10be21a3de607ca6",
+      "translation": "Változtasson egy ismeretlent egy támogatási kérdéssé. Ahelyett, hogy megkérdezné, hogy a teljes becslés helyes-e, adja meg, hogy megadott egy nevesített rendeltetési helyet és mért csomagot, kapott egy árajánlatot egy adott útvonalra, és tudnia kell, hogy a kiválasztott csomagolási szolgáltatás már benne van-e a megjelenített összegben. Mentse el a választ a dátummal és az árajánlat verziójával. Kerülje el, hogy egy útvonallal kapcsolatos választ egy másik szolgáltatásra alkalmazzon eltérő feltételekkel."
+    },
+    {
+      "source": "A seller may display several quantity tiers. Read whether quantities can be mixed across colours and whether the minimum is per style or total. For a hypothetical offer priced at 55 per piece for four or more, a basket of three may still use the lower-volume price. Count complete selling units. Two pairs in a two-pair pack can be one selling unit even though the warehouse receives four individual articles.",
+      "source_sha256": "0d2d86499fcaf39c2e03ff9f733772c1273f24b7d1804f5dbc7b07cde7d52db0",
+      "raw_target_sha256": "77e1bc40f71a96e4a54b849d097de495e12ca8e953b74540d0ee12698b19ca87",
+      "translation": "A kereskedő az egyszerre rendelt mennyiségtől függően többféle egységárat adhat meg. Ellenőrizze, hogy a különböző színek összeadhatók-e, és a minimum típusonként vagy az egész rendelésre vonatkozik-e. Ha például négy értékesítési egységtől 55 az egységár, három egységre még a kisebb mennyiséghez tartozó ár lehet érvényes. Mindig az értékesítési egységeket számolja. Egy két párból álló csomag egyetlen értékesítési egység lehet, bár a raktárban négy külön darab érkezik."
     }
   ]
 }

@@ -3,7 +3,7 @@
   "locale": "hr",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "b248191358e1d86ec6a6550a5b4279e387dbb2bf2220adb452ad8195be7a2a09",
-  "effective_dictionary_sha256": "3b01ccdebd916f9821ba024cd996d48dd272dfa024c36d8902ef017d5bb5b615",
+  "effective_dictionary_sha256": "5cf8dd94369e22771253ecb152c2207d6cd583c0778f2c36f4c3d21ba8ca1555",
   "checked_entries": 324,
   "review_scope": "All article titles, machine-flagged strings, deterministic paragraph samples, freight prices and volume examples inspected. Checked the three-notebook purchase example, including the difference between a domestic shipping fee and the number of deliveries. Cross-checked the follow-up suggestions in the notebook example. Additional review of Croatian administrative hallucinations in cost examples. Follow-up contextual check for parcel, freight quote and weight terminology.",
   "reviewed_flags": [
@@ -237,6 +237,12 @@
       "source_sha256": "1a27700b75fb40b871a2fc8cf57fc1a73b14dc0bc9892be662225234646a04aa",
       "raw_target_sha256": "c03951aff6a5a5fdae5e9ab753b4aa1eb6d45bc7818cbbd16cf404462cb23c28",
       "translation": "Pri prvoj usporedbi zadržite isti način pakiranja. Ako jedna ponuda uključuje ojačanje, a druga podrazumijeva mekanu omotnicu za slanje, zabilježite ih kao dvije različite mogućnosti pakiranja. Ako istodobno promijenite način dostave i pakiranje, teško je utvrditi što je uzrokovalo razliku u cijeni."
+    },
+    {
+      "source": "Keep the quote reproducible",
+      "source_sha256": "56bd03dff5d82ca50922d04e1b2be8dad1b369e2e6d314cd12221fd2092255f6",
+      "raw_target_sha256": "c4fa915d1acc07c6cd2d0f650012e518ad683eff7989e318250ade271ac94e0f",
+      "translation": "Sačuvajte podatke za ponovnu provjeru ponude prijevoznika"
     }
   ]
 }

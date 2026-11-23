@@ -1,0 +1,410 @@
+{
+  "site": "hubbuysheetgrid.com",
+  "locale": "ko",
+  "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
+  "raw_dictionary_sha256": "41236654ddd3c752e222771e5a84931769d20b5151d0cc0909d80a26bc6bf3bc",
+  "effective_dictionary_sha256": "a41e8da21c7cb47a29bad86d9c076f8d676d36f39a325a1613b4264392ff4529",
+  "checked_entries": 326,
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "reviewed_flags": [
+    {
+      "issue": "example number omitted or reformatted",
+      "source_sha256": "c8fa34368d856acb77aa7d33d132356348f2e37dd6c5201e3feb4eb0797241ae",
+      "raw_target_sha256": "91592a9e006b3e31a8b80f63f766f8dec6b861c7ace80e6320f7dec5c2525575",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "example number omitted or reformatted",
+      "source_sha256": "d69a5da514621e530a2052e5742f1a2b8c367baec6ee1bbd4fe41739c8216408",
+      "raw_target_sha256": "0fb804783930bbdf737f043f163230a437c5eff0edb092b295c2bf40a8dc6710",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "example number omitted or reformatted",
+      "source_sha256": "7bc43873a27eb0d92dfa1cdef4e0394173271bcd39f5ef80b6a7ba87827d57d2",
+      "raw_target_sha256": "66ac0e2e9386e2a43198f4f8ff95172311c7535ca061acf6de8027f0077a3761",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "new digit or localized conversion",
+      "source_sha256": "ecbf510c57fc6f7be8e8efef09a48759fab167d4f43b398fa9b457f73d0421e8",
+      "raw_target_sha256": "775b690ae625713e763cf9083574c2a795ece27c705915660f33d17e51a1727a",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "new digit or localized conversion",
+      "source_sha256": "9201275407c5ee12dabdb2f9d8e710f295c967c60f9ff4daaee57d63148981f9",
+      "raw_target_sha256": "509aeb0d4a3824c084158f59274f2d7ec6e73f9e484d1d298ecfd49255ba95b7",
+      "resolution": "corrected translation"
+    }
+  ],
+  "unresolved_material": [],
+  "corrections": [
+    {
+      "source": "Consider a buyer choosing between two offers for the same packs of plain socks. Shop Green lists the selected packs at 24 yuan each and shows 8 yuan domestic delivery for the order. Shop Blue lists them at 26 each with domestic delivery included in the displayed checkout. At a quantity of one, Green costs 32 and Blue costs 26. At a quantity of three, the totals are 80 and 78. At a quantity of four, both cost 104. These break-even figures assume the prices and delivery conditions remain fixed as quantity changes. Open each checkout again at the intended quantity before basing a purchase on the calculation.",
+      "source_sha256": "c8fa34368d856acb77aa7d33d132356348f2e37dd6c5201e3feb4eb0797241ae",
+      "raw_target_sha256": "91592a9e006b3e31a8b80f63f766f8dec6b861c7ace80e6320f7dec5c2525575",
+      "translation": "같은 무지 양말 묶음을 판매하는 두 가게를 비교해 보세요. Green은 한 묶음이 24위안이고 주문 전체에 중국 국내 배송비 8위안을 받습니다. Blue는 배송비를 포함해 한 묶음에 26위안입니다. 한 묶음씩 사면 각각 32위안과 26위안, 세 묶음이면 80위안과 78위안입니다. 네 묶음이면 두 곳 모두 104위안입니다. 수량에 따라 단가나 배송 조건이 바뀌면 손익분기점도 달라지므로 각 가게의 결제 화면에서 실제 구매 수량으로 다시 확인하세요."
+    },
+    {
+      "source": "Consider a hypothetical worksheet with three product entries, two inner cartons and one outer parcel. Assume the quoted service is 4 yuan per inner carton and an outer-packing option costs 7 yuan for the parcel. The worksheet should add 8 and 7, or 15 in total. Multiplying both charges by three because there are three item rows produces 33. This example illustrates the arithmetic only; read the actual service units and amounts on the live offer.",
+      "source_sha256": "d69a5da514621e530a2052e5742f1a2b8c367baec6ee1bbd4fe41739c8216408",
+      "raw_target_sha256": "0fb804783930bbdf737f043f163230a437c5eff0edb092b295c2bf40a8dc6710",
+      "translation": "상품 세 가지를 속상자 두 개에 나눠 넣고 겉상자 한 개에 담는다고 가정해 보겠습니다. 속상자 서비스는 상자당 4위안, 겉포장은 소포당 7위안이라면 합계는 8 + 7 = 15위안입니다. 상품 행이 세 개라고 해서 두 요금을 각각 세 배로 계산하면 잘못된 33위안이 나옵니다. 이는 계산 예시이므로 실제 견적에서 서비스 단위와 금액을 확인하세요."
+    },
+    {
+      "source": "Suppose the live representative figures you write down for an illustrative exercise are 130 for freight and 4 for the basic packing in A, compared with 136 for freight and 11 for the more protective service in B. The totals are 134 and 147. The extra cost of B is 13, consisting of six more in freight and seven more in selected packing. If the 136 already includes the protective service, the calculation changes. The wording of the line matters as much as the numbers, which are fictional and do not describe HubBuy's price list.",
+      "source_sha256": "7bc43873a27eb0d92dfa1cdef4e0394173271bcd39f5ef80b6a7ba87827d57d2",
+      "raw_target_sha256": "66ac0e2e9386e2a43198f4f8ff95172311c7535ca061acf6de8027f0077a3761",
+      "translation": "예를 들어 A안의 운임은 130, 기본 포장은 4이고 B안의 운임은 136, 강화 포장은 11이라고 가정합니다. 총액은 각각 134와 147입니다. B안이 13 더 비싼 이유는 운임이 6, 포장비가 7 높기 때문입니다. 다만 136에 강화 포장이 이미 포함됐다면 계산도 달라집니다. 견적의 항목 설명을 함께 확인하세요. 이 예시의 숫자는 HubBuy의 실제 요금표가 아닙니다."
+    },
+    {
+      "source": "Some buyers compare packing by dividing the invoice by the scale weight. A heavier but better protected version may appear cheaper per kilogram even though it costs more overall. Conversely, a lighter parcel with a larger outer box may cost more on a route that considers volume. Use the total charge for the parcel that actually fulfills your requirements. Keep a per-kilogram calculation only when it helps answer a secondary comparison.",
+      "source_sha256": "ecbf510c57fc6f7be8e8efef09a48759fab167d4f43b398fa9b457f73d0421e8",
+      "raw_target_sha256": "775b690ae625713e763cf9083574c2a795ece27c705915660f33d17e51a1727a",
+      "translation": "청구액을 실측 무게로 나눠 포장 방법을 비교하는 경우가 있습니다. 포장을 보강하면 더 무거워져 총비용은 늘어도 kg당 비용은 낮아 보일 수 있습니다. 반대로 가벼워도 상자가 크면 부피를 반영하는 노선에서 운임이 높아질 수 있습니다. 필요한 보호 조건을 충족하는 소포의 총비용을 기준으로 고르고, kg당 금액은 보조 지표로 이용하세요."
+    },
+    {
+      "source": "A hypothetical box measuring 40 by 30 by 20 centimetres has an outer rectangular volume of 24,000 cubic centimetres. A second box measuring 40 by 30 by 15 has 18,000. The reduced height removes a quarter of that geometric volume. Whether it changes freight depends on the chosen route's limits and billing rules, which must be checked on the actual offer. Avoid assigning a general dimensional divisor to every route.",
+      "source_sha256": "9201275407c5ee12dabdb2f9d8e710f295c967c60f9ff4daaee57d63148981f9",
+      "raw_target_sha256": "509aeb0d4a3824c084158f59274f2d7ec6e73f9e484d1d298ecfd49255ba95b7",
+      "translation": "외부 치수가 40 × 30 × 20cm인 직육면체 상자의 부피는 24,000cm³입니다. 40 × 30 × 15cm인 상자는 18,000cm³이므로 높이를 줄이면 부피가 4분의 1 감소합니다. 실제 배송비도 변할지는 선택한 노선의 크기 제한과 요금 산정 규칙을 확인해야 합니다. 모든 노선에 같은 부피 무게 환산계수를 적용하지 마세요."
+    },
+    {
+      "source": "A common mistake occurs when a friend pastes a displayed conversion into a column that ordinarily contains original yuan amounts. The sheet then converts an amount that has already been converted, creating an implausibly low total. Use clear column names and keep screenshots or payment references close to the corresponding row. If you cannot tell which currency a pasted number uses, leave it out of the combined total until you can identify its unit.",
+      "source_sha256": "4347ad0f8751f966fb8d3e5b956089dabb9a6b8cea582e2595dd518d6f90d103",
+      "raw_target_sha256": "90a10668167e24587d3125358657cb1c925b7d4e87ea1e043281b2916b7e7be6",
+      "translation": "이미 다른 통화로 환산된 표시 가격을 원래 위안화 금액을 넣는 열에 붙여 넣으면 시트가 다시 환산해 합계가 지나치게 낮아질 수 있습니다. 열 이름에 통화를 표시하고 화면 캡처나 결제 번호를 해당 행에 연결하세요. 붙여 넣은 숫자의 통화를 알 수 없다면 확인될 때까지 합계에서 제외합니다."
+    },
+    {
+      "source": "Suppose shop A has confirmed a 90-yuan jacket and 8 yuan delivery. Shop B still shows a 54-yuan scarf with domestic delivery unknown. Shop C has cancelled a 30-yuan accessory and its refund has not arrived. Show 98 as the confirmed purchase cost for A, 54 plus an unresolved amount as the estimate for B and 30 as a pending credit if it was actually paid. Adding everything into one definite subtotal would hide three different states.",
+      "source_sha256": "37f5222e9db2b2bf15e89543147df12df5c923a18373e7ba4e9032b85a64c179",
+      "raw_target_sha256": "8095e7f7bfbcef7049e7bc58bca434c39432bf05490127b34cd1e4751b0b28d1",
+      "translation": "A점에서 재킷 90위안과 배송비 8위안이 확정됐다고 가정합니다. B점의 목도리는 54위안이지만 국내 배송비는 아직 모르고, C점에서 산 30위안짜리 부속품은 취소됐지만 환불 전입니다. A점은 확정 구매액 98위안, B점은 54위안에 미확정 배송비를 더한 예상액으로 표시합니다. C점에 이미 결제했다면 30위안은 환불 대기 항목에 둡니다. 서로 다른 상태를 확정 금액 하나로 묶지 마세요."
+    },
+    {
+      "source": "A seller may display several quantity tiers. Read whether quantities can be mixed across colours and whether the minimum is per style or total. For a hypothetical offer priced at 55 per piece for four or more, a basket of three may still use the lower-volume price. Count complete selling units. Two pairs in a two-pair pack can be one selling unit even though the warehouse receives four individual articles.",
+      "source_sha256": "0d2d86499fcaf39c2e03ff9f733772c1273f24b7d1804f5dbc7b07cde7d52db0",
+      "raw_target_sha256": "52eb0c48e42dcfe184452ee826924cbadfe81b4bbc90c907088fa2d6d96020d0",
+      "translation": "판매자는 주문 수량별로 다른 단가를 적용할 수 있습니다. 색상을 섞어 합산할 수 있는지, 최소 수량이 스타일별인지 주문 전체 기준인지 확인하세요. 예를 들어 네 판매 단위 이상 주문하면 단가가 55여도 세 단위에는 소량 주문 가격이 적용될 수 있습니다. 판매 단위 전체를 기준으로 세세요. 두 켤레가 한 세트라면 창고에 낱개 네 짝이 도착해도 판매 단위는 하나일 수 있습니다."
+    },
+    {
+      "source": "HubBuy domestic shipping: where a seller's charge belongs in your budget",
+      "source_sha256": "eab3836733510b7a99cb55148e5e1b68a8629cabb4ee5b538abeae065f56a312",
+      "raw_target_sha256": "5fb3cb5b86af7dd5a333be00e925e1e547d028e8b0d14d6f6a63646f31d17dae",
+      "translation": "HubBuy 중국 내 배송비를 예산에 반영하는 방법"
+    },
+    {
+      "source": "How to read a HubBuy service or packing charge on a quote",
+      "source_sha256": "222dfa464ad2abb7057c2a96d95e68d875cb97401e526a46b881ec4a1068708a",
+      "raw_target_sha256": "79dc58056aa9ef7090d3d6976449f79dbe6eeb34f84ce2f4f3453dc3c2561ac8",
+      "translation": "HubBuy 견적서에서 서비스 수수료와 포장비를 읽는 방법"
+    },
+    {
+      "source": "Pricing a HubBuy order with several options from the same seller",
+      "source_sha256": "7fb9278702bf2e09253f22bbddee44200ca797400782ed4b7d2a0ccbeedc8923",
+      "raw_target_sha256": "294bfb3a183ecadcb58374f88dd41557b410fdc80e35752fe2b4c85ec65df12f",
+      "translation": "HubBuy에서 같은 판매자의 여러 옵션을 주문할 때 총액 계산하기"
+    },
+    {
+      "source": "Budgeting a HubBuy basket supplied by different sellers",
+      "source_sha256": "423273c3c007c9862f2e7f34924969be1678f9acf51bab03c0c9218d12598025",
+      "raw_target_sha256": "23b7e540062d6dfbe34ccae65937a6003f30ffc2ba687473b949fc6a13ec3804",
+      "translation": "여러 판매자의 상품을 담은 HubBuy 장바구니 예산 짜기"
+    },
+    {
+      "source": "Comparing HubBuy quotes when the currencies differ",
+      "source_sha256": "338af70e4daa52606a92f6225bafefe344190b0c999fcc3a8166869df0a0bee4",
+      "raw_target_sha256": "8ed14f6b0d66bbff4144c9a1c67ec9c86d68305691ecf54d28faf746fe668da8",
+      "translation": "HubBuy 견적의 표시 통화가 다를 때 비교하는 방법"
+    },
+    {
+      "source": "HubBuy packing choices: comparing protection and base freight",
+      "source_sha256": "8ef88cd08cae21126861c4b2c5d919a81777298e119e49faf90a98c92be0f32d",
+      "raw_target_sha256": "0e02549b702d02e2b6e90911796493b5d45937ec64672542167970e62dca6f9b",
+      "translation": "HubBuy 포장 선택 시 보호 조치와 기본 운임을 구분해 비교하기"
+    },
+    {
+      "source": "How to measure a packed parcel for the HubBuy shipping estimator",
+      "source_sha256": "44e243bf152024c7aba3b8f106b699b20441e654578c832e3cc671be2072c987",
+      "raw_target_sha256": "7d2a127ffffc104a50f0239c4b7d3b713b82341122016d1e34298ec6976f243a",
+      "translation": "HubBuy 배송비 계산기에 입력할 포장 완료 소포의 치수 재기"
+    },
+    {
+      "source": "One HubBuy parcel or two? A like-for-like consolidation comparison",
+      "source_sha256": "bd5603c5d65a1a510f37ec7ee0dac5f93c28a565008c6c507e8606fd8632b5c2",
+      "raw_target_sha256": "2108268ef3b0ec7fe9cf6662f8c6ad3496810b7e31d2734c707bf9c4af16d347",
+      "translation": "HubBuy 소포를 하나로 합칠까 둘로 나눌까? 같은 조건에서 비용 비교하기"
+    },
+    {
+      "source": "What does a HubBuy shipping estimate actually cover?",
+      "source_sha256": "dd7b597e479c531dd3d112e29bb093556ab3f3c23abf162caeba849f2efe93ad",
+      "raw_target_sha256": "6daf59aa7cc7ce2f436d07ef03edb16eed1c5a34bf59764ef2af9a46e2293559",
+      "translation": "HubBuy 예상 배송비에는 어떤 항목이 포함될까?"
+    },
+    {
+      "source": "How to reconcile a HubBuy parcel statement with your first quote",
+      "source_sha256": "9a4641881e57be3b6c26da181b86ed2d763deadcd8e3fb11fd79d3d7275e41e4",
+      "raw_target_sha256": "f8db4d0620cea4aacdb39b0f57df34b769ff869e56c50fda7506b5014e8b1ab3",
+      "translation": "HubBuy 소포 정산 내역을 최초 견적과 대조하는 방법"
+    },
+    {
+      "source": "Where do I estimate HubBuy international shipping?",
+      "source_sha256": "1ba85519eca7767016b0dee457ef4a612a582d50bed7d280875769ad0bc6bd4c",
+      "raw_target_sha256": "1b7dd4d11499ba410a2095b68475db97e07a0923ec4aeed4bc8f807245136683",
+      "translation": "HubBuy 국제 배송비는 어디에서 예상할 수 있나요?"
+    },
+    {
+      "source": "Use the shipping estimator on hubbuy.com. Enter the destination, weight in grams, product category and outer dimensions in centimetres when available. Save the inputs with the displayed result.",
+      "source_sha256": "c8b271e0e38b97f31fac64118802118a5a11e3d159f72266277f3dc690c518a5",
+      "raw_target_sha256": "fe981ee59143112ef30d6967a4f85a09032dfb5befd6f70fa756721dd2d59aae",
+      "translation": "hubbuy.com의 배송비 계산기에 목적지, 무게(g), 상품 유형을 입력하세요. 포장 후 바깥 치수를 알면 가로·세로·높이도 cm 단위로 입력합니다. 조회 조건을 결과와 함께 저장해 두세요."
+    },
+    {
+      "source": "Do the preset product weights describe my purchased item?",
+      "source_sha256": "dfdb4ba54b27e3ed1ffc4171ed80d9aea0483bd3acc0965636a200486622e4c8",
+      "raw_target_sha256": "693290193d1de023d795ae97bbee9fdc4f18a8bde5c3ac14fdb25b40db0798a8",
+      "translation": "빠른 견적에 표시된 무게는 제가 산 상품의 실제 무게인가요?"
+    },
+    {
+      "source": "HubBuy labels its quick-estimate examples as approximate. Use them while planning, then replace them with measured figures from your own order and its intended packing.",
+      "source_sha256": "eb9030e698dbe83716706bf395167a65e597e1addf6e71189002313c9796576d",
+      "raw_target_sha256": "ad3195b73f660bdba326ee845dee76f1d75e3d13891a0d8d57e6f6b774395e65",
+      "translation": "HubBuy의 빠른 견적에 나오는 예시 무게는 대략적인 값입니다. 예산을 잡을 때 임시로 쓰고, 실측값이 나오면 예정한 방식으로 포장한 뒤 잰 무게로 바꾸세요."
+    },
+    {
+      "source": "Why does the estimate ask for dimensions as well as weight?",
+      "source_sha256": "1aabc3bd6302918d5a0e88194f1a3ec38f7d9e14d5e061e5b7d80af1b7006531",
+      "raw_target_sha256": "ff8b386dd0d996760da5283b5a27081dd21345d16eaa278dceba810bbcef5d6c",
+      "translation": "배송비를 계산할 때 무게 외에 치수도 묻는 이유는 무엇인가요?"
+    },
+    {
+      "source": "A route can have size limits or consider parcel volume when billing. Enter the actual outer length, width and height when you have them, and read the terms for the route you select.",
+      "source_sha256": "6878e715c45b8681c3aa09353b842cb1bb4be1a6bc61d874dc796275de3b66d6",
+      "raw_target_sha256": "10933309713874e272d586b15bac86428ce4a6fb915b61c71589f7dcf29e0d07",
+      "translation": "배송 방식에 따라 상자 크기에 제한이 있거나 부피가 요금에 반영될 수 있습니다. 최종 상자의 가로·세로·높이를 재서 입력하고 해당 배송 방식의 요금 조건을 확인하세요."
+    },
+    {
+      "source": "What does seller-to-warehouse delivery pay for?",
+      "source_sha256": "8d0b4c629f3ad61bbd90c766e08c7287b22d9e382415395c2c922a8af27e9c7d",
+      "raw_target_sha256": "7d734cd0f6cb787775df33ee6a414238f42c546a9a8efc51abff3328fa7c294d",
+      "translation": "판매자에서 창고까지의 배송비는 어느 구간에 해당하나요?"
+    },
+    {
+      "source": "It covers the domestic movement from the seller to the receiving warehouse when such a charge applies. HubBuy lists the product purchase and China shipping before the later international parcel stage.",
+      "source_sha256": "07768ae8510ca6c90a9ace3f7440442a5d92c57e150953febdee66de34d8b16d",
+      "raw_target_sha256": "014b4e19c953b888e946d96e28020f2fc9ffea2159dbfb615b094bc32843f9e7",
+      "translation": "해당 요금이 있다면 판매자가 수취 창고로 보내는 중국 국내 구간의 비용입니다. HubBuy는 상품 구매와 중국 국내 배송을 국제 발송 전 단계로 안내합니다. 두 구간을 구분해서 기록하세요."
+    },
+    {
+      "source": "How should I budget two items from the same seller?",
+      "source_sha256": "57e8143e9141de36ec02c9efc93c5aa715452c9f2382476a1ecab7bc0f9fdf8a",
+      "raw_target_sha256": "57a12f3e044f89c9891f48dc29bf8940e246d8a91303ca1d282e0c5c07ccff45",
+      "translation": "한 판매자에게 상품 두 개를 살 때 중국 국내 배송비는 어떻게 계산하나요?"
+    },
+    {
+      "source": "Read the final seller order summary to see whether domestic shipping is charged once or per item. Keep that amount on the seller order and allocate it only if you need per-item costs.",
+      "source_sha256": "ef36bb9d0e6a95923e3a507e1076f32a0d8c44d4851b23bdc3c7b209a5c53f29",
+      "raw_target_sha256": "d89bf89511cde92136fa11654b020b4986014961794e4710c0327d1bf24ceb63",
+      "translation": "판매자의 최종 주문 내역에서 주문당 한 번인지 상품별 부과인지 확인합니다. 실제 배송비는 그 판매자의 주문에 기록하고, 상품별 원가가 필요할 때만 나누어 배분하세요."
+    },
+    {
+      "source": "Can I assume separate sellers share one domestic charge?",
+      "source_sha256": "12ea1ae2d42d68a6eef2cccc2ff5e0bdbd8d2c1426cd316ed2ad640a504e1572",
+      "raw_target_sha256": "fa9988fc0605ce6f4792fd8d55e058c719e6a3f45233a93bd9ad7862bb8c0eb1",
+      "translation": "서로 다른 판매자의 주문에 중국 국내 배송비 한 건을 적용할 수 있나요?"
+    },
+    {
+      "source": "Keep a separate purchase record for each seller. Even when purchases later travel abroad together, the domestic deliveries may have separate charges and separate tracking numbers.",
+      "source_sha256": "3dc0d0a70f83265eb7d97d03a69ede7af43f3b2ed4a86e90404e036be615cf4b",
+      "raw_target_sha256": "d0e9de2f4b1a755eb45f84a5648e2832ecea03dd27390d73a1c6c918cdeea35f",
+      "translation": "판매자별로 주문을 따로 기록하세요. 나중에 국제 택배 한 상자로 합쳐도 판매자에서 창고까지의 배송비와 운송장 번호는 각각 다를 수 있습니다."
+    },
+    {
+      "source": "When should I use a packed weight rather than the seller's item weight?",
+      "source_sha256": "241cd961bff026ecdb525221835072c20a6144239d6110611666898643ea68f1",
+      "raw_target_sha256": "fec335b90f955b253ab7083d30f1f68ea364751c385d4c3b9127c2888df75429",
+      "translation": "판매자가 표시한 상품 순중량 대신 포장 후 무게를 써야 할 때는 언제인가요?"
+    },
+    {
+      "source": "Use the packed figure for the international parcel estimate once available. It includes the box and packing materials, whereas a seller's product figure may refer only to the unit.",
+      "source_sha256": "cdc8a1c8dde506ba039e6ec7567ea877aa6f81f9c35b4304d4cc9493062879c8",
+      "raw_target_sha256": "85068c6370142b16eb6709b8fa87a08ee5e2a64cabffc2ffcdcab6153403caed",
+      "translation": "국제 배송비를 예상할 때 포장 후 실측값이 있으면 그 값을 쓰세요. 상자와 포장재도 함께 잰 무게입니다. 판매자 표시 무게에는 상품 자체만 포함될 수 있습니다."
+    },
+    {
+      "source": "How do I convert kilograms for the HubBuy calculator?",
+      "source_sha256": "becd25892fd109622d1024f320ccad035e6a10b9ec746d9194fe064e640f8efb",
+      "raw_target_sha256": "a69ece5ffc3086ad21a787c63c610b63f5f7877f554a19a803f19a2a93ecddc6",
+      "translation": "HubBuy 배송비 계산기에 kg을 g으로 바꾸어 입력하려면 어떻게 하나요?"
+    },
+    {
+      "source": "Multiply kilograms by 1,000 to enter grams. A parcel measured at 1.35 kg is 1,350 g. Keep length, width and height in centimetres on the same worksheet.",
+      "source_sha256": "9fead998e848c9e940421e4f7aca5c4b8cd525d069238f5bafe41a7538b13e21",
+      "raw_target_sha256": "e1dd1e18f861c68b7fd3767b9a290281083f63b5b25bbb52cbcfa5eff07040ae",
+      "translation": "kg 단위 무게에 1000을 곱하세요. 예를 들어 실측 무게가 1.35kg이면 1350g을 입력합니다. 같은 기록에서 가로·세로·높이는 cm로 표기하세요."
+    },
+    {
+      "source": "Can I add three product lengths to obtain my parcel length?",
+      "source_sha256": "f8962981d15f216ccb7913af3909fdf5112de453cc9431729f80654207fb2865",
+      "raw_target_sha256": "f2fac284252a463671513bbded1897d5467d1575acc701cfd75686eb97b38220",
+      "translation": "상품 세 개의 길이를 더하면 상자의 길이가 되나요?"
+    },
+    {
+      "source": "Only if the items will actually be packed end to end. Decide on the proposed arrangement and measure its outer envelope. Leave room for protective material and confirm packed dimensions later.",
+      "source_sha256": "536b8b79fc83da8498e787cdf8d8ed4a9f798a2b9e0105b754be105d333bddd8",
+      "raw_target_sha256": "6c36ce9f78ba5630a883e4cb62cb230e5bc09b57c958fbf3a5f597c3d8bd1245",
+      "translation": "세 상품을 끝과 끝이 닿도록 한 줄로 넣는 경우에만 해당합니다. 실제 배치를 정하고 전체 바깥 치수와 완충재 공간을 확인한 뒤 최종 상자의 외부 치수를 재세요."
+    },
+    {
+      "source": "How do I compare a single box with two boxes?",
+      "source_sha256": "76cfc60ae9a97755e082c31bde14d943f39c77a482b304887776e45f1d201dc8",
+      "raw_target_sha256": "5730ccecde744ebbec2e631aa98c20dc5139716846e0afc5fb42e891f6198279",
+      "translation": "큰 상자 한 개와 작은 상자 두 개의 비용은 어떻게 비교하나요?"
+    },
+    {
+      "source": "Request or calculate each option using the same items, destination and protection requirements. Compare the combined charge for both smaller parcels with the charge for the single larger parcel.",
+      "source_sha256": "73435fbb52cb9ff042802da20cb9269d90a54a77100f3ef6133d3cd878751d7e",
+      "raw_target_sha256": "d862b36e22c874891d1131cec712f23a7d5fec01e4c1986809e152e82272a8c2",
+      "translation": "상품, 목적지, 필요한 보호 수준을 같게 두고 각각 견적을 냅니다. 작은 상자 두 개는 두 운임을 먼저 더한 뒤 큰 상자 한 개의 견적과 비교하세요."
+    },
+    {
+      "source": "Why should I keep the quote currency beside the amount?",
+      "source_sha256": "631b819117ee2d10a4eb20d1d388840c503d5fc0a66a8f42020fe1c919a9b6ca",
+      "raw_target_sha256": "70bb4365bb0dde9315f2582f2b06bd1e43317cfe81c1f96e995d916b2e82b4dc",
+      "translation": "견적 금액 옆에 통화를 적는 이유는 무엇인가요?"
+    },
+    {
+      "source": "A number without its currency is ambiguous. Record the currency code at quotation and at payment, along with any conversion rate and fee shown, before comparing two totals.",
+      "source_sha256": "112b03b11dbaf304c9d5efb600167d9a9cd85dca9db5bf9f8283ec7a69913399",
+      "raw_target_sha256": "037bc7cc70b83b01b0bc1e4ac04e253a869b611c52fb43cbddbaa4b5b298487d",
+      "translation": "숫자만으로는 실제 가치를 비교할 수 없습니다. 견적 통화와 결제 통화, 결제 내역에 표시된 환율과 수수료를 적고 나서 합계를 비교하세요."
+    },
+    {
+      "source": "How should an optional packing charge be recorded?",
+      "source_sha256": "e14a7de72ea69b1ad10d4769c47769648d9269ef41fc78e3ea0977f5d3208eb4",
+      "raw_target_sha256": "81427aa5644c4f4cb3d21581247f969471b021e16e427d33172fab4ea15e7194",
+      "translation": "선택형 포장 서비스 요금은 어떻게 기록하나요?"
+    },
+    {
+      "source": "Write down the exact service, amount and whether it applies to an item or parcel. Check if a quoted total already includes it before adding it separately.",
+      "source_sha256": "9e77b7abf0e39bd9fa9189dafb8eb2b07c3f49dca520ef95ec38323189c690cb",
+      "raw_target_sha256": "6c3441e0afc074f7fb218204dc0d5c9817413ffebd9115024b6385d0cca3c245",
+      "translation": "서비스 이름과 요금, 상품당 부과인지 상자당 부과인지를 적으세요. 총견적에 이미 포함된 비용인지 확인한 후 별도로 더합니다."
+    },
+    {
+      "source": "Is the cheapest displayed route suitable for every parcel?",
+      "source_sha256": "2cfe086e948ed9f10c02d6d270dacfea5fd2049be4e5fcfedbcfa569ddd1d3da",
+      "raw_target_sha256": "f2669fa832de464463e1684cc5a518b70535a24d80e44075c460a78c0eb3a319",
+      "translation": "화면에 뜬 가장 저렴한 배송 방식을 어떤 소포에나 쓸 수 있나요?"
+    },
+    {
+      "source": "Check destination coverage, size limits and acceptance of your actual contents. Compare delivery estimates and included services only among routes available for that parcel.",
+      "source_sha256": "53c93344f28c0396927cd3c658239f85333cc3467522fe9d1ce5963f1c7c50fd",
+      "raw_target_sha256": "8dbe4d5c333ee796ac90faf04cf942fb6d6014d8731e03c661e29ff0bf2de178",
+      "translation": "먼저 목적지까지 배송하는지, 포장 크기가 제한에 맞는지, 해당 품목을 받는지 확인하세요. 실제로 이용 가능한 방식만 골라 예상 기간과 포함 서비스를 비교합니다."
+    },
+    {
+      "source": "What if I change the packing after obtaining a quote?",
+      "source_sha256": "28d21e1ca724c4ce67afa507d5a24a91a8db8606aa6a97562d251280ca194023",
+      "raw_target_sha256": "141b52210b1025e5d37898eefa1069cf09d2cde57b956b76ab16f22e207f4988",
+      "translation": "견적을 받은 뒤 포장을 바꾸면 어떻게 하나요?"
+    },
+    {
+      "source": "Record what changed and rerun the estimate using the revised outer dimensions and weight. Keep the old result as a reference instead of presenting it as a quote for the new parcel.",
+      "source_sha256": "7d40c0fc412910959bb28d9eec446ad1c0d4a88b01ca8c25ce5b4b104685c628",
+      "raw_target_sha256": "6d166722b4c9fcb3dbe7adf7fcf4c654ddb0ffb0c8eef7022c0c3344201a2dfd",
+      "translation": "무엇이 달라졌는지 적고 새 외부 치수와 무게로 다시 조회하세요. 기존 견적은 비교용으로 보관하고 변경 후 소포에는 새 견적을 적용합니다."
+    },
+    {
+      "source": "Can I compare a product price converted by the spreadsheet directly with my card charge?",
+      "source_sha256": "0114b91de865d17bafcbccef4a5c40d220d63b7a956752696f1664d44243193b",
+      "raw_target_sha256": "817a28ef1754344dab7c2e611cd2408f953ccac2b89f9b00f1e54a643977e600",
+      "translation": "상품 목록의 환산 가격을 카드 청구액과 바로 비교해도 되나요?"
+    },
+    {
+      "source": "Start with the source amount, selected option and quantity. Compare conversion rate, charged currency and any explicitly listed fee on the payment record. The catalogue display is a browsing reference.",
+      "source_sha256": "91d0f4eaeef04b2d12a01eac374463e1d9d1d6cdf76fb803132a4d82492e028d",
+      "raw_target_sha256": "728376b845d724323a01e3c20d32fe69aa275391f973f4aa36875701f8c6b803",
+      "translation": "먼저 원래 통화 기준 가격, 선택 옵션, 수량을 맞춰 보세요. 그런 다음 결제 통화, 환율, 명시된 수수료를 실제 결제 기록에서 확인합니다. 목록의 환산액은 상품을 살펴볼 때 참고하는 값입니다."
+    },
+    {
+      "source": "Where does a seller discount belong in the budget?",
+      "source_sha256": "cebe05093314ad346885d87aaa8471de6b705272e99a1571a0fc5590ed123408",
+      "raw_target_sha256": "134972847731a8b7c790647f0c0cb6dc9a971f0a02bbe50e9ac3764ce39c8c30",
+      "translation": "판매자 할인은 어느 항목에 기록하나요?"
+    },
+    {
+      "source": "Record it beside the purchase to which it applies. Keep any outbound parcel discount separate, and check the conditions before subtracting a promotion from a planning estimate.",
+      "source_sha256": "c9d01427f5a1f5d28088f5b73e5bd94f83db45067c85ed48370f39a497afb212",
+      "raw_target_sha256": "eaf2f6df010e78ebf6f553231ec2d29e1157bdfe48cfee37bcce1046a5575083",
+      "translation": "할인이 적용된 구매 항목에 기록하세요. 국제 배송 할인은 따로 적고, 예산에서 차감하기 전에 적용 조건을 확인합니다."
+    },
+    {
+      "source": "Why does the final total differ from my first estimate?",
+      "source_sha256": "63d3b4bdfecd18af6e8aaba8e30f485004aff5579bdb0486c4f49e743f3b9c2c",
+      "raw_target_sha256": "bb5aa4582d676a9a6f573b099ce4ac4c73c2a61311298e0fb60b6da1cc21dc86",
+      "translation": "최종 금액이 최초 견적과 달라진 이유는 어떻게 찾나요?"
+    },
+    {
+      "source": "Compare destination, contents, route, weight, dimensions, currency, packing, discounts and service entries. Identify the first difference you can document before asking about the remaining balance.",
+      "source_sha256": "365eed70dee556fed658ed8c3462851ff623d6395ee6867addec71c6d3164530",
+      "raw_target_sha256": "306a68dacafbfad24926d94ea2debd1755cced7455b734bdcdbc86e74d0a0a8c",
+      "translation": "목적지, 내용물, 배송 방식, 무게와 치수, 통화, 포장, 할인, 추가 서비스를 차례로 대조하세요. 기록으로 설명되는 차액을 빼고 남는 금액에 관해 문의하면 됩니다."
+    },
+    {
+      "source": "What should I save if a support question concerns two parcels?",
+      "source_sha256": "57a8342b7331ead16df58da107259e039991f315c92163300a2a6211ec7503bd",
+      "raw_target_sha256": "4b08a6e0537c56794959091775a8ef18f4508ba0058726452fa91ec7c88d8d5c",
+      "translation": "소포 두 개의 비용을 함께 문의할 때 무엇을 보관해야 하나요?"
+    },
+    {
+      "source": "Save both outbound parcel references, their item lists and their final charge statements. Mark the line you are comparing on each record so the question stays tied to the correct parcel.",
+      "source_sha256": "baa564c8afd6b6f139c54ca948290d096026e69c37baa603560efd436cf90c7c",
+      "raw_target_sha256": "6d6f085ad65a7e1c39ef80baec901e61a93c8477e109773600f7a8396b770862",
+      "translation": "각 국제 소포의 번호, 내용물 목록, 최종 청구 명세를 보관하세요. 두 내역에서 비교할 항목을 각각 표시해 서로 다른 소포의 요금이 섞이지 않게 합니다."
+    },
+    {
+      "source": "Can a warehouse item photo show the final packing dimensions?",
+      "source_sha256": "ae47c298f96ad375ba0e82ddf61be4fd3396c95d0aec54b374d729051a80b1b9",
+      "raw_target_sha256": "2b0f880dc0f21ec00daa028c4d13f2149216c021be24d89d289df3f1295e7ec0",
+      "translation": "창고에서 찍은 상품 사진으로 최종 포장 크기를 확인할 수 있나요?"
+    },
+    {
+      "source": "An image of the product can help identify it, but the final dimensions refer to the sealed outer parcel. Ask for the packed measurements if the decision depends on fitting a route limit.",
+      "source_sha256": "a8e11b265152422a00392c4a402608a6d0bf1436cecafe369d448b2f7a78a33e",
+      "raw_target_sha256": "c6e8b6dbcdc0b55a7cab8ccc9ef334ffad363e72676facfff035a12ae11c7028",
+      "translation": "사진은 상품을 식별하는 데 도움이 됩니다. 최종 치수는 상자를 닫은 상태의 바깥 치수입니다. 크기 제한 때문에 배송 방식이 달라지면 포장 완료 후 실측값을 요청하세요."
+    },
+    {
+      "source": "What if my order contains a fragile accessory and soft clothing?",
+      "source_sha256": "87943750d247f1e1f74ecd5e2b21c1d5ad182cbda9b624fe97575103226e21cc",
+      "raw_target_sha256": "bd93b23ceb6ee81030b6808d5a28d7132f0e917d0d4fddadaaac95e8178b7711",
+      "translation": "깨지기 쉬운 부속품과 부드러운 옷을 같이 살 때 포장은 어떻게 고르나요?"
+    },
+    {
+      "source": "Ask which protective arrangement is available and whether the accessory requires a separate inner box. Compare combined and separate packing after allowing for that space.",
+      "source_sha256": "d98ee41d3c821189e642788cb7417b497268949dc614b3f148f987be74a386c9",
+      "raw_target_sha256": "99e88019648bb63a5f3e76786efdf59c5ee85e8c758c5e2f579dfabe60663dae",
+      "translation": "이용 가능한 보호 포장과 부속품용 속상자가 필요한지 먼저 확인하세요. 보호재가 차지할 공간까지 반영해 합배송과 분할 배송을 비교합니다."
+    },
+    {
+      "source": "Which support site matches the HubBuy links on this grid?",
+      "source_sha256": "57418be321e8630d5e638dd31447804aa64344dfc2d55d0302b662e853b613ed",
+      "raw_target_sha256": "d32fd19da882c9b14364ec0829efeca679e2afb8b29c64962efaf5e1e3d272a3",
+      "translation": "이 상품 목록에서 연결하는 HubBuy 고객지원 사이트는 어디인가요?"
+    },
+    {
+      "source": "The purchase links on this grid lead to hubbuy.com. Use that site's current estimator, service information and customer support for a HubBuy quote or order-specific question.",
+      "source_sha256": "307742d9d113683f1c2b9e6f41100996b26980c38b90de456960b36480b491aa",
+      "raw_target_sha256": "955f389dae4fcb3f700ba829b596c58bb6a42d0fe10ee0e9ec423ae0f2d3a0e4",
+      "translation": "이 사이트의 구매 링크는 hubbuy.com으로 연결됩니다. HubBuy 견적이나 개별 주문은 해당 사이트의 최신 배송비 계산기, 서비스 안내 및 고객지원 창구를 이용하세요."
+    },
+    {
+      "source": "Keep the old quote and add a revised quote under it. If the larger amount was already paid, track the credit process separately from the recalculated cost. Do not enter 202 as the only payment when the account shows 274 collected and a credit still pending. The two records answer different questions: what the retained merchandise should cost, and which funds have actually moved. Keep the same line names so that a friend reviewing the change can tell which item became unavailable.",
+      "source_sha256": "d934b1be832ea7a829823f1f235cb216308d04f4d58e293696e5f10aa1b5a6b9",
+      "raw_target_sha256": "b21eaf879671d3e27fb995a3a77457f82ca38f16351cb5f695a51f05ae7a6043",
+      "translation": "이전 견적서을 유지하고 그 아래에 개정된 견적서을 추가합니다. 더 큰 금액이 이미 지불된 경우, 재계산된 비용과 별도로 크레딧 프로세스를 추적합니다. 계정이 274 수집하고 아직 미결제 크레딧을 보여주는 경우 유일한 지불로 202를 입력하지 마십시오. 두 기록은 서로 다른 질문에 답합니다: 보유 상품의 비용은 무엇이며 어떤 자금이 실제로 이동되었는지. 변경 사항을 검토하는 친구가 어떤 항목이 사용할 수 없게 되었는지 알 수 있도록 동일한 줄 이름을 유지하십시오."
+    }
+  ]
+}

@@ -3,9 +3,9 @@
   "locale": "pl",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "8ec89124bb61c75c5942d366f42ca03878f7b1f60f0976a99cdbfa81a90c427a",
-  "effective_dictionary_sha256": "d9962f262567ffd7e83d913a26ec1ca130b97dde94069822e280debc260f105b",
+  "effective_dictionary_sha256": "97e8fb129f44e18f4a48bda6f95577df044dc242fdcc8584275860419ef1d4f9",
   "checked_entries": 324,
-  "review_scope": "All automated flags, ten article titles and worked examples for prices, quantities, volumetric weight, rounding and centimetre/metre conversions. Additional lexical sweep for mistranslated parcel, cubic seconds, and invented currency. Targeted review; not full line-by-line copyediting.",
+  "review_scope": "All automated flags, ten article titles and worked examples for prices, quantities, volumetric weight, rounding and centimetre/metre conversions. Additional lexical sweep for mistranslated parcel, cubic seconds, and invented currency. Targeted review; not full line-by-line copyediting. Follow-up contextual check for parcel, freight quote and weight terminology.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -273,6 +273,18 @@
       "source_sha256": "a77e4b237101f7296cc230bd6cd6384b0bfa9fdab124ff7e547a67ed61d666bb",
       "raw_target_sha256": "0815a2d3a5fb6848556c0ac523c79a5cdd437c95d6fa0e3e87a3eba3e5e5fede",
       "translation": "W kolejnej wiadomości zacznij od tego, co pozostało do wyjaśnienia i jakiej odpowiedzi potrzebujesz. Możesz na przykład zapytać, gdzie zaksięgowano zatwierdzony zwrot 15 za wskazane zamówienie, i podać datę zatwierdzenia. Dołącz odpowiedni fragment uzgodnienia i historii transakcji. Zdjęcia innych produktów lub cały wyciąg z konta utrudniają odczytanie pytania i mogą niepotrzebnie ujawnić prywatne dane."
+    },
+    {
+      "source": "Keep the quote reproducible",
+      "source_sha256": "56bd03dff5d82ca50922d04e1b2be8dad1b369e2e6d314cd12221fd2092255f6",
+      "raw_target_sha256": "eb65e395f297652d02bd3a21b769cd6ee656e7af92d50402a1b0dbb884d2c78d",
+      "translation": "Zapisz dane potrzebne do odtworzenia wyceny"
+    },
+    {
+      "source": "Now change one input deliberately. If the parcel is lighter after repacking, check whether both lines use the lower actual weight or whether dimensional billing or a minimum charge still governs. Recapture both quotes. A saving on one route does not automatically transfer to the other. When only one remains eligible, keep a note of why the other disappeared. This can explain the result if support later reproduces it using the old dimensions.",
+      "source_sha256": "17c8e613676ec8768a58f1d66c1e750362c538222b5fba239c361c3b655a062b",
+      "raw_target_sha256": "7f682240147a7cb24950c5a48a2b65c427d2d70a4268a055d4a0323fd0b8a667",
+      "translation": "Zmień teraz jeden parametr. Jeśli po przepakowaniu paczka waży mniej, sprawdź, czy na obu trasach liczy się niższa masa rzeczywista, czy nadal decyduje masa objętościowa lub stawka minimalna. Zapisz obie nowe wyceny. Oszczędność na jednej trasie nie musi wystąpić na drugiej. Jeśli pozostaje tylko jedna dostępna trasa, zanotuj powód wykluczenia drugiej. Przyda się to, gdy obsługa spróbuje odtworzyć wycenę na podstawie dawnych wymiarów."
     }
   ]
 }

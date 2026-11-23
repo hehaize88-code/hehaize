@@ -3,9 +3,9 @@
   "locale": "sv",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "8e0051f6d346baa4bd2c7e0ac69810e6a6a309b9b8d94c53e49089247642839f",
-  "effective_dictionary_sha256": "e52ff358ec3e0f5050bb713b2ec3e2923b786cd9055721e304a507ed8a51c39a",
+  "effective_dictionary_sha256": "304f1f4382b2dd67204ae591d660f1412027b0f03defcce3ed9b38cdff295c7c",
   "checked_entries": 324,
-  "review_scope": "Inspected all ten article titles, all automated flags, examples containing arithmetic, quantity, carton volume and purchase records. Read deterministic passage samples and reviewed copied English headings and terminology. Cross-checked the follow-up suggestions in the notebook example.",
+  "review_scope": "Inspected all ten article titles, all automated flags, examples containing arithmetic, quantity, carton volume and purchase records. Read deterministic passage samples and reviewed copied English headings and terminology. Cross-checked the follow-up suggestions in the notebook example. Follow-up contextual check for parcel, freight quote and weight terminology.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -141,6 +141,12 @@
       "source_sha256": "3e9b77d857808f1a7567ef6463c7a745dbb051766ebc1192c67c1dc77a63e59c",
       "raw_target_sha256": "15ae9b0bbd9efe7b5122eb43c543836e5c6ce147e83bbfaeb5e2453aed67ec8d",
       "translation": "Om ersättningserbjudandet istället innehåller tre olika inbundna anteckningsböcker för 20 styck inklusive frakt, blir det också totalt 60. Det matchar det ursprungliga priset exakt samtidigt som du ändrar vad som köptes. Titta på den nya tjockleken, bindningen, färgen och mängden innan du går med på det. Att matcha ett nummer kan inte kompensera för förlusten av funktionen som fick dig att välja det ursprungliga objektet. Behandla ett erbjudande med ett annat alternativ som ett nytt köpbeslut i sig."
+    },
+    {
+      "source": "Use independent arithmetic as an error check, not a substitute for a carrier quote. When you obtain a seemingly improbable number, check for mixed units, a missing decimal, length repeated in place of height, or a product dimension copied instead of the packed dimension. A result that becomes sensible after correcting one input is a reason to preserve the revised calculation, not a reason to enter a more favourable figure than the parcel actually measures.",
+      "source_sha256": "5fcb636100b66eefe28ef6b4c2f039c72a09ba92a39721a05a116365d66c1458",
+      "raw_target_sha256": "bdfb7d8275b220718081b713a9fb474daf0d72a2ceac771f3305d4c2676a5e8e",
+      "translation": "Räkna gärna själv för att hitta fel och jämför med transportörens prisuppgift. Om resultatet verkar orimligt, kontrollera enheter, decimaltecken, om längden råkat skrivas i höjdfältet och om du har angett varans mått i stället för det färdigpackade paketets. Spara den rättade beräkningen och ange alltid paketets faktiska yttermått."
     }
   ]
 }

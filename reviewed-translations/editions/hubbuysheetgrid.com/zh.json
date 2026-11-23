@@ -3,7 +3,7 @@
   "locale": "zh",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "1c2c2bc2a5ac0409560a7ea21fdcbfd1b384d0814f5898764491cac0b230ed55",
-  "effective_dictionary_sha256": "a31e857fdebe1699dbab9c49446f8622048778250073698d3f74dc2e0678b723",
+  "effective_dictionary_sha256": "ef202678118bab8e9ee5ea762b14dfe1dcfa372265f91c2cbfc3d2fd05bd89d1",
   "checked_entries": 326,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -374,37 +374,1591 @@
       "source": "Keep the old quote and add a revised quote under it. If the larger amount was already paid, track the credit process separately from the recalculated cost. Do not enter 202 as the only payment when the account shows 274 collected and a credit still pending. The two records answer different questions: what the retained merchandise should cost, and which funds have actually moved. Keep the same line names so that a friend reviewing the change can tell which item became unavailable.",
       "source_sha256": "d934b1be832ea7a829823f1f235cb216308d04f4d58e293696e5f10aa1b5a6b9",
       "raw_target_sha256": "e9bb64a17edc66de86139256a8188c18804702f5856810023f9aff228aa6cb41",
-      "translation": "保留旧的报价,并在下面添加一个修改后的报价。 如果已经支付了较大的金额,请单独跟踪信用流程和重新计算的成本。 当账户显示收到274并且还有一个贷项待处理时,不要将202作为唯一的付款。 这两个记录回答了不同的问题：保留的商品应该花多少钱，哪些资金实际上已经移动。 保留相同的行名,以便查看更改的朋友可以知道哪个项目变得不可用。"
+      "translation": "保留旧报价，在下面另列修改后的版本。如果已经支付了 274、退款还没到账，就不能把 202 记为唯一一次付款。保留商品价值多少与账户实际收付多少，需要各自核对。沿用每个商品行原来的名称，朋友也能看懂哪件商品不能供货，以及哪笔钱仍需等卖家退回。"
     },
     {
       "source": "If both records supposedly refer to the same finished parcel, compare the orientation and endpoints. A tape starting at the bottom edge of a recessed panel and ending at the centre of a flat lid may miss protected corners that project farther. Ask for the longest outside span rather than the measurement across the central panel. Keep a generous uncertainty in a planning figure when the parcel sits close to an eligibility limit. Final acceptance depends on the carrier and the route's actual rule.",
       "source_sha256": "b4f4ebc02a22101ef0dce4b09e8e2d4c6e7c66837db80e8015d641cbde0ae583",
       "raw_target_sha256": "9ec81d62055770eaf78f7ad9f0b93e90691bb92b365c88270d308df2c2fc18e7",
-      "translation": "如果两个记录似乎指的是同一个完成的包裹,比较方向和终点。 从凹面板底部边缘开始并在平盖中心结束的胶带可能会错过更远处的受保护角落。 询问最长的外部跨度,而不是中央面板的测量值。 当包裹接近资格限制时,在规划图中保留大量的不确定性。 最终接受取决于承运人和路线的实际规则。"
+      "translation": "如果两份记录据称都是同一个成箱，则核对软尺方向与起止位置。从凹进去的侧板下缘量到箱盖中央，可能漏掉更突出、加有护角的部位。要求量整个包裹最外侧之间的距离，而不是只量中央面板。尺寸接近线路上限时，应给预算留出不确定空间；实际是否收寄由承运方及线路条件决定。"
     },
     {
       "source": "Take another fictional quote with a combined option at 214. The smaller boxes cost 112 and 94, for a total of 206, and their protective needs are already included. This time the arithmetic favours splitting by eight. Before deciding, verify whether there are additional services charged separately per parcel or any destination-specific conditions that were absent from the recorded totals. Two boxes can produce two delivery events and two references to monitor.",
       "source_sha256": "239058dbeb8f1615ded6fedec96d428f4b199ca25a6647a2ec624d5e2cf05558",
       "raw_target_sha256": "fb1f099ae40f2e14c541d3a9dcea123365578bfd29e610b5ce81f21b3cbddb11",
-      "translation": "以另一个虚拟报价与组合期权在214. 较小的箱子成本112和94,共206,他们的保护需求已经包括在内。 这一次算术偏好分割为八。 在做出决定之前,核实是否有额外的服务单独收取每个包裹或任何目的地特定的条件,从记录的总数中缺失。 两个框可以产生两个交付事件和两个需要跟踪的运单号。"
+      "translation": "另一组假设报价是合箱 214，两只小箱分别 112 和 94，合计 206，所需保护均已计入。表面上分箱便宜 8。决定前先确认是否还有按每包裹单收的服务，或某个目的地才适用的条件没有算上。分两箱意味着可能要收两次货，也需要跟踪两个运单号。"
     },
     {
       "source": "Changing the contents, packing, measurements or selected services calls for a fresh estimate. Keep the old result because it can help explain a later difference. Mark the revised input with the reason for the change, such as a retained shoebox or a removed accessory. Ask HubBuy support about a specific line if the conditions appear identical but the quoted result still differs.",
       "source_sha256": "5404359e370df79f7003ee10774e8d4b3ec30d27335d5e5784413cdd5c77cf08",
       "raw_target_sha256": "b64c2a77abe707594aba92bbfbc843755ee53e6bb3bdaf954b61f32cf79da91b",
-      "translation": "更改内容、包装、尺寸或选择的服务需要新的估算。 保留旧的结果,因为它可以帮助解释后来的差异。 标记修改后的输入,并说明更改的原因,例如保留鞋盒或移除配件。 如果条件看起来相同,但重新估出的费用仍然不同,请咨询 HubBuy 支持 关于特定行。"
+      "translation": "内容物、包装、尺寸或所选服务发生改变，都应重新估算。保留旧报价，便于以后解释差额；在新输入旁注明原因，例如保留了鞋盒或去掉了一件配件。如果看起来条件完全相同却出现不同报价，将具体差异所在的项目发给 HubBuy 客服核实。"
     },
     {
       "source": "Turn one unknown into one support question. Instead of asking whether the whole estimate is correct, specify that you entered a named destination and measured parcel, received a quote for a particular route, and need to know whether the selected packing service is already inside the displayed total. Save the answer with the date and the quote version. Avoid applying a reply about one route to a different service with different terms.",
       "source_sha256": "741207c84e0bd3ef447ae75a2145fd7d36c817a82eb76cf43eb36c8e464ad48a",
       "raw_target_sha256": "8ed6c05b99f7b7fd111bb8cec74e4b86f7e1eb6c3f60caacb6c5be8720a0222a",
-      "translation": "将一个未知数变成一个支持问题。 与其询问整个估算是否正确,不如指明您输入了指定的目的地和测量的包裹,收到了特定路线的报价,并需要知道所选的包装服务是否已在显示的总数中。 保存带有日期和报价版本的答案。 避免将关于一条路线的回复应用于具有不同条款的不同服务。"
+      "translation": "针对一项未知费用提一个问题，比笼统问“这个估价对不对”更容易得到答复。说明输入了哪个目的地、包裹实测数据，以及哪条线路给出报价，再问所选包装是否已计入当前总额。将答复日期与报价版本一起保存。一条线路下的解释不要直接套给条款不同的另一项服务。"
     },
     {
       "source": "Take the example of two medium shirts and a set. If the seller confirms only one medium shirt, the original 274 no longer describes the goods available. One shirt at 72 plus the set at 130 gives a merchandise total of 202. Check whether a quantity threshold, domestic delivery condition or discount has changed as well. A cancellation can affect more than the removed unit if the promotion depended on the original basket.",
       "source_sha256": "3494235e91bdc6cd07e43652ea5d572b4d6a899a65c0773c1026ba361e7c36b0",
       "raw_target_sha256": "1b90cee0401177047c414e3bacebec77f9118f0f22bd777ca86cd452ab2c5ceb",
       "translation": "继续看两件 M 码上衣和一套套装的例子。如果卖家只能供一件 M 码上衣，原先的商品小计 274 就不再适用。保留一件单价 72 的上衣和一套价格 130 的套装，新的商品小计为 202。再核对起订数量、国内运费和折扣条件。若优惠要求购物车达到原先的数量，取消一件商品也可能改变其余商品的价格。"
+    },
+    {
+      "source": "Now add a condition: the quoted combined arrangement relies on removing the retail case, which the buyer needs as part of a gift. The 185 quote no longer describes an acceptable solution. Obtain a comparable combined quote that keeps the case, or mark that arrangement as unsuitable. The earlier numerical comparison still teaches something about what created the saving, but it cannot justify selecting a packing method that defeats the purpose of the purchase.",
+      "source_sha256": "91a9a3605abdcb2946c24630dcf5de4ccb7c8a21a632e62b601299095c305e76",
+      "raw_target_sha256": "f0045eed43e967d2af89445625223ade8c946f88bd0a8a469f1734dfb0793590",
+      "translation": "现在加入一个条件：合箱报价 185 要求拆掉零售盒，而买家要把它作为礼物的一部分。此时 185 已不是可接受的报价。应重新获取保留零售盒的合箱报价，或把这个打包方案标为不合适。先前的算例仍然说明节省来自哪里，却不能用来支持一个破坏送礼目的的方案。"
+    },
+    {
+      "source": "Sources",
+      "source_sha256": "caf85b0888d78f1f83771a07b25c3d30fa1210242f2fae6e5ae5d9a686602800",
+      "raw_target_sha256": "a488e93d69cc12961ea26e97b7d246d03a9af7334d2d84881dd7f702e801bf74",
+      "translation": "资料来源"
+    },
+    {
+      "source": "Work through the figures behind a HubBuy purchase, from domestic delivery charges to a final parcel statement.",
+      "source_sha256": "a310a4d24a802de1964b15943252d54d39904853bd0e058a241854e8462d5fc3",
+      "raw_target_sha256": "9e29b8734474f117a0da49c33e751fa02890da4e7bd5364132fe3a45a0050c7a",
+      "translation": "从卖家寄往仓库的国内运费，到国际包裹的最终账单，逐笔算清 HubBuy 购物成本。"
+    },
+    {
+      "source": "HubBuy spreadsheet FAQ",
+      "source_sha256": "de11d14cd0f85a08738da5f9db76cb223c249add0840b8a2f9d41d0e64bb3cef",
+      "raw_target_sha256": "4d2391a6b020efb698111ccba0b7eb80294afa0a3333abcdb0747add658ee0ba",
+      "translation": "HubBuy 商品表常见问题"
+    },
+    {
+      "source": "A delivery line can disappear from your budget or appear twice, depending on where you write it. Follow one seller order to the warehouse before assigning any part of that charge to an international parcel.",
+      "source_sha256": "029ec3c45a2f13f549d09e00301d073e5b6f24435908e58b95913013fd513816",
+      "raw_target_sha256": "dcc08e90db27ae5bf8f704f9acd7da574a93c9d271e38e85070d2bec79bb7e74",
+      "translation": "如果只在表格里写一栏“运费”，就容易漏记一段，也可能把同一笔钱记两次。先沿着一张卖家订单查清从店铺到仓库的费用，再判断哪些费用该记到国际包裹名下。"
+    },
+    {
+      "source": "Follow the physical delivery",
+      "source_sha256": "6f38e856425121670f73b0afb8929e63bf8e241bbe29d59d475548adde34dee4",
+      "raw_target_sha256": "c0e580670ff4efd4332632e9b0a92b6ea6bdda64ef4eda644c363c4cbc1104e7",
+      "translation": "看清货物经过的两个运输区间"
+    },
+    {
+      "source": "HubBuy's public purchase guide describes paying for the product and shipping within China at the ordering stage. International shipping appears later, after warehousing and the selection of items to send abroad. Draw the journey on a scrap of paper. Put the shop on the left, the receiving warehouse in the middle and your address on the right. Mark which leg the delivery charge on your screen actually covers. A seller's promise of free delivery may answer the first question while leaving the last leg entirely open.",
+      "source_sha256": "76356a0ef9250143fdf37008abbaa9ef5da4bda9e018cc560f6f53154a050f07",
+      "raw_target_sha256": "f9aba4e14a61a5b95fadede3e16006d2b9e68685ae511d5c8572756a723584cd",
+      "translation": "HubBuy 的公开购买指南把货款和中国国内运费列在下单阶段。商品入库、选好准备寄往海外的货物后，才进入国际寄送环节。可以在纸上依次写下“店铺、收货仓库、我的地址”，在两个区间旁各留一处记账。看页面上的运费究竟对应哪一段。卖家写着“包邮”，可能只说明寄到仓库免费，并未说明国际包裹怎么收费。"
+    },
+    {
+      "source": "Read one order before dividing the charge",
+      "source_sha256": "903a1fc53a8db06a0cf818462fecff8464844850837a2e9cc34d7c4f09c7ff71",
+      "raw_target_sha256": "24813f8030fe49c8cac02eb4274f301ab6eb39f3e1c88cbe52c6e2c122292704",
+      "translation": "先看整张卖家订单，再分摊运费"
+    },
+    {
+      "source": "Suppose one shop supplies two T-shirts at 68 yuan each and a cap at 42 yuan. The checkout shows a single domestic charge of 10 yuan. The seller order totals 188 yuan. Three separate rows in your shortlist should not turn that into three charges of 10. Keep the 10 on a summary line until you have a reason to calculate the cost of an individual piece. Record who collected the payment and which seller order number appears beside it.",
+      "source_sha256": "a49bc81c389a89fb7ca84e8fca7a62ce968a0254d720913cafdbfe33e51e9aba",
+      "raw_target_sha256": "2273887089943421d662b90b1bd9241d246a38219f68168860d3ef2a6d6a364c",
+      "translation": "假设同一家店卖两件单价 68 元的 T 恤和一顶 42 元的帽子，结算页对整单收取 10 元国内运费，总额就是 188 元。商品表里有三行，并不代表每行都该加 10 元。暂时把这 10 元放在订单汇总行，只有需要看单件成本时才做分摊。记下收款方和付款记录旁的卖家订单号，以便复核。"
+    },
+    {
+      "source": "Choose an allocation method suited to your question",
+      "source_sha256": "e54446e18d129d8ed2d4b8a3b0f3ca8bb6e7af64e7bf5cd5545332b81c531530",
+      "raw_target_sha256": "a81d89c4cc92d32e0027c8eae5368990a541ef0ed6c94666ce521d1940333c22",
+      "translation": "按要解决的问题选择分摊方式"
+    },
+    {
+      "source": "If two people share the order, agreeing on a split matters more than producing a falsely precise cost per item. A simple split across three units gives approximately 3.33 yuan per piece with a one-cent rounding adjustment. Another method assigns the 10 in proportion to product value. Each 68-yuan shirt gets about 3.82 and the cap about 2.36. Both methods reproduce 188. Neither method can establish the seller's actual transport cost for the cap.",
+      "source_sha256": "b3af22d1adab7c597bf95d231fa0fc28c58b1677335d4b87d35137200ec48af2",
+      "raw_target_sha256": "814bf04de69db207189de5c677d46466a600898c7f47c8e3f251fedc7fd3a22b",
+      "translation": "两个人拼单，先约定怎么分比追求看似精确的单件成本更重要。10 元运费按三件商品平摊，每件约 3.33 元，尾差 0.01 元要调到其中一件；若按货值分，两件 68 元的 T 恤各约 3.82 元，帽子约 2.36 元。无论哪种，当订单合计都还是 188 元。分摊金额不能证明卖家实际为单寄这顶帽子花了多少钱。"
+    },
+    {
+      "source": "When one seller sends two boxes",
+      "source_sha256": "14b67c30ea838c73965bb8a7454b364e081d8256fc2b508b0a0191d46bf0fbfc",
+      "raw_target_sha256": "198b32d063c6d94ade31f011adea9706e14f7af930f7f0a7106d55a6dc846e22",
+      "translation": "同一卖家分两个包裹发货"
+    },
+    {
+      "source": "A second domestic tracking number can appear if the shop sends items separately. Look for a new payment line before adding a second shipping cost. One seller order can have two deliveries, just as one delivery can contain multiple garments. Track the boxes separately for receipt but keep the financial record tied to what was actually charged. If an item has not arrived, a delivery scan for the first box tells you very little about the location of the second.",
+      "source_sha256": "461143de9e250e7bf965927b466b136b482da537bdbdb15b2ba48bed096c1337",
+      "raw_target_sha256": "7595c0e0bb43bea583bb210284662cf881138801729121f9053059a616fa2863",
+      "translation": "同一家店分开发货时可能会出现第二个国内运单号。先查有没有新增扣款，再决定是否增加第二笔运费。一张订单可以分两箱，也可能多件衣服装同一箱。物流按箱跟踪，费用按实收记录。如果还有一件没到，第一箱的签收扫描无法说明第二箱在哪里。"
+    },
+    {
+      "source": "What changes after a cancellation",
+      "source_sha256": "84663a436715a643ee0e3dc49cbe4603d1d8869512e21e25bd91ce48b2785eae",
+      "raw_target_sha256": "5e7d357d1e795a7855b0d881468448141ba5c18c6202089219b544369eda08ab",
+      "translation": "取消一件商品后怎样改账"
+    },
+    {
+      "source": "If the cap is cancelled, avoid immediately subtracting 42 from the old total and treating the result as settled. Check the refund statement for the product amount and any domestic adjustment. The original allocation may now describe goods that never travelled together. Keep the original order and add a dated credit row, then calculate the remaining cost from the surviving items. Ask for clarification with the purchase reference if the domestic charge has no corresponding adjustment explanation.",
+      "source_sha256": "c3a8b7ab92509d5424e46381383e6e99391ff4e40466eb6b974124c35b573907",
+      "raw_target_sha256": "d198cbc31134f3a8ea9506442e7714373ddbb2a2ef1a8e77911b925a0d703617",
+      "translation": "如果取消那顶帽子，不要直接从原总额减去 42就认定已经结清。查看退款明细，分别核对货款和国内运费有没有调整。原来的分摊是假设这些商品一起发货，取消后未必仍适用。保留原订单，另加一行带日期的退款，再计算保留商品的净成本。若看不出运费如何处理，带上采购编号询问。"
+    },
+    {
+      "source": "A worked comparison with two sellers",
+      "source_sha256": "a748b3d920a72078db9c0a2d0a1d606b1e460abb3eeadfc7fa89a46427cb61c6",
+      "raw_target_sha256": "89414df186d3283fb506db10752d03557f598d16fc94e1830dd1ab190e52e0eb",
+      "translation": "用两个卖家的报价算一次"
+    },
+    {
+      "source": "Consider a buyer choosing between two offers for the same packs of plain socks. Shop Green lists the selected packs at 24 yuan each and shows 8 yuan domestic delivery for the order. Shop Blue lists them at 26 each with domestic delivery included in the displayed checkout. At a quantity of one, Green costs 32 and Blue costs 26. At a quantity of three, the totals are 80 and 78. At a quantity of four, both cost 104. These break-even figures assume the prices and delivery conditions remain fixed as quantity changes. Open each checkout again at the intended quantity before basing a purchase on the calculation.",
+      "source_sha256": "c8fa34368d856acb77aa7d33d132356348f2e37dd6c5201e3feb4eb0797241ae",
+      "raw_target_sha256": "6fc603cedb0b8ce5d0b747217f4653ce2ecbbfb6c24cd56f5253009a40f72d53",
+      "translation": "假设 Green 店每包普通袜子卖 24 元，每单国内运费 8 元；Blue 店同款袜子每包 26 元，结算价已经包国内运费。买一包，两家的总价分别是 32 元和 26 元；买三包是 80 元和 78 元；买四包都是 104 元。这个交点以单价和运费规则不随数量改变为前提。下单前要在两家结算页分别填入真正想买的数量。"
+    },
+    {
+      "source": "Now imagine that the seller applies a five-pack price tier. That changes the comparison because one of the inputs has moved. A spreadsheet formula that extrapolated the four-pack comparison would miss it. Write the observed totals for one, three, four and five packs as separate scenarios, with the exact option used in each. Keep the marketplace address beside each result. A shop's price for a short pack of socks is no evidence about the price of a longer pack, even when the picture shows the same colour assortment.",
+      "source_sha256": "449a765dcabc1aa466dcd56a88c1e7654051e7df9558a232667b8d6ec041119b",
+      "raw_target_sha256": "9183ab19b3f7dbc95e980d42a6ffe41266719d008c5cac125a3a72a690c7995d",
+      "translation": "如果卖家从五包开始给批量价，四包时的计算条件就变了。用公式按四包的价格往上推，会错过新的阶梯价。把买一包、三包、四包和五包时看到的总额分开记录，注明各自选的规格，并保存对应的电商商品页链接。即使搭配图中的颜色一样，短款袜子的价格也不能证明长款袜子的价格。"
+    },
+    {
+      "source": "Splitting the cost of a group order",
+      "source_sha256": "584a3dd2342b2d9ef71dee8db71b20e947ac728eae3bfd9ae7140a011d753516",
+      "raw_target_sha256": "71e3625c22c280cda4436b351508edd37c1512ec8e497a871176cb4408acd82c",
+      "translation": "拼单时怎样分摊"
+    },
+    {
+      "source": "Put that agreement in the note accompanying the order before asking either friend to settle. Record the original 12 as the amount on the seller order. Then display the chosen allocation in a separate column. If you later need to ask HubBuy about the domestic charge, send the seller-order figure. Sending one friend's allocated share as if it were the amount charged would create a discrepancy that exists only in your own accounting.",
+      "source_sha256": "a37ee2124a69cdb04acd03c0ecb8c04099c78845285c07f3b6210e9bebc0b7a2",
+      "raw_target_sha256": "eb887977a32eeb45d1f5ed1c1ad0abb3bc140c567f4dd9ab3fa6c4e545fcabdd",
+      "translation": "两人结算前，先把约定写在订单备注里。卖家订单上的国内运费仍记为 12，分到个人的金额另放一栏。以后如果要请 HubBuy 核对这笔国内运费，应提供卖家实收的总数。若把其中一人的分摊额当成卖家扣款，就会制造一笔实际不存在的差额。"
+    },
+    {
+      "source": "Separating a seller's refund from a delivery refund",
+      "source_sha256": "a3b9ab0c273febb0ae57afac81d46065f81131c9811768c9903c54adddd5d5fa",
+      "raw_target_sha256": "c68553450e858b579f1270dc298b64a9c5ec77cbdcf56180b88caec58b26518d",
+      "translation": "区分退货款和退运费"
+    },
+    {
+      "source": "Consider a seller that receives payment for two 65-yuan pieces and one 12-yuan domestic charge. One piece cannot be supplied. The transaction history then shows a confirmed refund of 65. The net payment is 77. That total is consistent with one remaining piece and the original delivery charge, but it does not tell you whether a revised shipping arrangement was discussed. Check the refund description and the terms for the seller order before attributing a reason to it.",
+      "source_sha256": "e4a058ab39cf0263e31fea6c47ca020f1b54787d8ffc80a5771854dd77155438",
+      "raw_target_sha256": "0db55b4ae4c5626ecadf1b68fa92476e3f05c111969bf314122f240b151793c4",
+      "translation": "假设卖家收到两件各 65 元的货款和一笔 12 元国内运费。后来一件缺货，交易历史显示已退 65 元。实际净支出是 77 元，恰好等于留下的一件商品加原运费，但这不能说明双方讨论过或同意调整运费。先查退款说明及该卖家订单的条款，再判断这笔钱为何这样退。"
+    },
+    {
+      "source": "If a second credit of 6 appears later, record it on the date it posts and retain its reference. Your final net becomes 71. Do not retroactively change the original 12 to 6 and also include the six-unit credit; that would reduce your ledger twice. In a group order, decide whether a changed charge requires a revised split. The person who cancelled may still have agreed to share domestic delivery. That is a settlement choice among buyers and separate from the seller's accounting.",
+      "source_sha256": "7d927c1cae5b4fa9d50cdf281004715e95f6e68cf0536a29ef492a80c202b5f6",
+      "raw_target_sha256": "440f1963bed467fae0550df6175db5dc274ee8b9ac46252b87a3c39cdd814fcf",
+      "translation": "如果之后又收到 6退款，在入账日另记一行并保留流水编号，最终净支出就变成 71。不要既把原先的 12运费改为 6，又把后来的 6作为退款扣一次。多人拼单时，还要按先前约定决定是否重新分摊。取消商品的人可能仍同意分担送仓运费；这是买家之间的结算，与卖家如何记账是两回事。"
+    },
+    {
+      "source": "Reading common pieces of evidence",
+      "source_sha256": "4d7ba87517a05cbf86ac4fe76aba0ebbdd3fc2e4212ac20b2592b610a99abde1",
+      "raw_target_sha256": "b51b487034eee84ae9146c1c0f0a130a2641163fbc3fa994c2058e1865c72fe3",
+      "translation": "不同凭证能说明什么"
+    },
+    {
+      "source": "A listing screenshot is useful for identifying the offer and the date. It may show a shipping statement for a default address, a default option or a promotional threshold that your order does not meet. A checkout screenshot with the exact options and receiving destination provides a better estimate. A payment confirmation tied to the seller order establishes what was actually collected. A refund record establishes a later movement. Preserve this sequence rather than replacing every earlier document with the latest one.",
+      "source_sha256": "7f2e4873f0c703d7f2fdb0cbfef8af526f18a7d92eaf1c41e7a52a4c9f3bf458",
+      "raw_target_sha256": "d9abb8fa2b3d2ef3ef6752c958a0eb07f1f36911b201824e335786a65afeb4b8",
+      "translation": "商品页截图能说明当时看到了什么报价，却可能用的是默认地址、默认规格或尚未达到门槛的促销价。选择了实际规格和收货仓库的结算页更适合估算。与卖家订单对应的支付凭证才能说明实际收款，退款流水则说明后来又有资金变动。按顺序保留这些记录，不要拿最后一张截图替换掉前面的证据。"
+    },
+    {
+      "source": "Warehousing evidence answers a different question. A courier label can identify which package travelled. A warehouse entry can identify the items recorded as received. Neither document independently tells you how the seller calculated the price. If you need to connect a missing piece to a cost question, include the order summary and the delivery references together. For example, state that order X showed one domestic charge and two packages were received, and ask whether a second charge shown elsewhere belongs to this seller. Give support an identifiable line to investigate.",
+      "source_sha256": "4f3302b0dab867d948842c4b5b87ff1ad55de5870105f7aa04804fd4c3a640e1",
+      "raw_target_sha256": "1a4b0ea4da779ecb46a0301dfd8be20cefb491917287b846e6994fd3cf7b5a22",
+      "translation": "快递标签能识别是哪一箱在运输，入库记录能说明仓库登记收到了哪些商品，但二者都不能单独解释卖家怎样定价。如果缺件同时伴随费用疑问，将订单摘要和国内运单号一并提供。例如可以写“订单 X 只列了一笔国内运费，却收到了两个包裹；另一处显示的费用是否也属于这家店？”这样客服能查到具体项目。"
+    },
+    {
+      "source": "A quick check before accepting the total",
+      "source_sha256": "51f38b53432fd58ffd8d61fa8a39f914b12778d0e3314fcf31aba34127bc1a9f",
+      "raw_target_sha256": "51ebf32932cbe37d807f66ebe0471a9b65485a8f1094e1817f68226a6526c26c",
+      "translation": "接受总额前做一次复核"
+    },
+    {
+      "source": "Read your worksheet from left to right. Can you point to the selected selling unit, the number purchased, the seller-level subtotal, the domestic charge collected, any later credit and the resulting net? Mark any estimate that still rests on an unconfirmed delivery price. If the merchandise is already paid for and a friend only needs an approximate per-item share, explain the allocation method and its rounding. If you are comparing two live sellers, use their full domestic totals at the same quantity. Save international shipping for the parcel comparison, where its own inputs can be checked.",
+      "source_sha256": "70feb8e41a81d7781ead387be1ed85a41b33212aa1dcae1572835b718fea5ea9",
+      "raw_target_sha256": "455704a4a568179e076b1fc50f8f9ce4ad331e8d37c75c0b76a8e34fc035f1c2",
+      "translation": "从左到右读一遍表格，确认能找到销售单位、实购数量、卖家小计、实收国内运费、后续退款和最终净额。凡是依赖未确认运费的数字都注明“预估”。商品已付款、朋友只需参考单件分摊时，说明分摊办法和尾差如何处理。若比较两家正在销售的店铺，用相同购买数量下包含国内运费的总价核对。国际运费等包裹条件明确后另算。"
+    },
+    {
+      "source": "Before comparing the size of two charges, identify what each service does, which object it applies to and whether it has already entered the amount due.",
+      "source_sha256": "97821d4f88c98c64a4ff1f9853cb3b1c31abacc949aa0cb221be080722010a43",
+      "raw_target_sha256": "4a5f882c13fe0220b9f8f87e30f8a87a7369def12ca9fc4f80fecccd3d1f65a8",
+      "translation": "比较两笔费用的高低前，先弄清每项服务会对哪件物品做什么，以及报价总额是否已经含了这笔钱。"
+    },
+    {
+      "source": "Give each charge a unit",
+      "source_sha256": "4e4c1ddf7e82fa5b03d033fb9d851d493354630e64731f7c5a88512483715b90",
+      "raw_target_sha256": "978854fba1226b5ef9b6fc9f0ba69a92f5238f15644356dc23f4dde8e20a42c5",
+      "translation": "给每笔收费注明计价单位"
+    },
+    {
+      "source": "HubBuy links separately to Service & Fees and Logistics Shipping Fees. Open the current description that matches the stage you are reviewing. Copy the name as it appears on your statement. Write a unit beside it: one purchased unit, one order, one packed box or one international parcel. A figure of six beside a packing option means something different if it is applied once per parcel than if it is applied to each item.",
+      "source_sha256": "0a6c1f2d3f4b573f0942ff8cbf1b2e65d85e5c2ff7e6c6bfcad82865b3046886",
+      "raw_target_sha256": "5b39c7c350b025c8a7f3b6dff2a23f6f5f53d6a2215d62f0857f44ad37af5472",
+      "translation": "HubBuy 将服务与收费和物流运费分成不同的说明页。打开与你正在核对的环节相符的说明，照账单抄下服务名称，在旁边写清计价单位，例如每件商品、每张订单、每个包装箱或每个国际包裹。某项包装旁边显示“6”，按每个包裹收一次和按每件商品收取，两者可能差很多。"
+    },
+    {
+      "source": "Work through a quotation with mixed units",
+      "source_sha256": "86c7122c9336ab643f1dd40ee79ebf0a9504135d774226fe19872d5111de7677",
+      "raw_target_sha256": "b00b0625b3393b3cb7e29940c993418fa471b2f0a48063bb5d64070097cb22b5",
+      "translation": "不同计价单位怎样合计"
+    },
+    {
+      "source": "Consider a hypothetical worksheet with three product entries, two inner cartons and one outer parcel. Assume the quoted service is 4 yuan per inner carton and an outer-packing option costs 7 yuan for the parcel. The worksheet should add 8 and 7, or 15 in total. Multiplying both charges by three because there are three item rows produces 33. This example illustrates the arithmetic only; read the actual service units and amounts on the live offer.",
+      "source_sha256": "d69a5da514621e530a2052e5742f1a2b8c367baec6ee1bbd4fe41739c8216408",
+      "raw_target_sha256": "9d9bfa77031859efa9d1791b60690e5d198f025dd9d113afe23637bc42e0a136",
+      "translation": "假设表中有三件商品、两个内盒和一个外箱。内盒服务每盒 4 元，外包装服务每个包裹 7 元，正确计算是 4 × 2 + 7 = 15 元。若看见三行商品就把两种服务都乘三，则会错误地得到 33 元。这里只演示算法，具体价格和收费单位仍以当前报价为准。"
+    },
+    {
+      "source": "Separate optional and included services",
+      "source_sha256": "6682a7d679e77fcac6d8b7650808aeeb13768db52163e7723afef996f239bdcb",
+      "raw_target_sha256": "62d0ab5826c5c550c1e5d89d41b1e9a4d1d00c03ecd95c2c6f1777c29820c9ea",
+      "translation": "区分可选服务和已含服务"
+    },
+    {
+      "source": "Read the quote in the state in which you intend to purchase it. A checkbox with a price beside it describes a possible selection. A selected checkbox and corresponding subtotal tell you more. Record the initial base, activate the desired service and compare the new amount, currency and named lines. Keep a note if the price display already bundles the service. Adding the visible price again outside the quote would inflate the apparent cost.",
+      "source_sha256": "27c2808907831ab1f14d90cd32f8ef0809e44b2a7993c096848e21708788726f",
+      "raw_target_sha256": "d6a64f8432ccd48620f6b730cc5312baee2a7b6a994b5b869078f068a80fab76",
+      "translation": "按自己准备购买的状态查看报价。未勾选的选项旁标有价格，只能说明可以加购。先记下基础报价，勾选所需服务，再比较新的合计、币种和项目小计。如果总额已经捆绑了这项服务，就在表里注明“已含”。把旁边显示的服务价再加一次，会高估实际费用。"
+    },
+    {
+      "source": "Keep evidence of the requested work",
+      "source_sha256": "29693d7faa82db6f1a77c2937f3362b7a4c71a1ab5899b6863fb11440c54d01c",
+      "raw_target_sha256": "eeae652d993e34d8177f1e34a587e157db800b2e1a6a35fea00c31b915178bb1",
+      "translation": "保留能证明包装要求的记录"
+    },
+    {
+      "source": "A service name alone may be ambiguous after dispatch. If you need a bag protected from crushing, write down whether you asked for an inner box, corner protection or to keep the original packaging. Retain the confirmation attached to the parcel. If the result differs, show what was requested and which visible feature is missing. Support can investigate a specific operation more readily than a general complaint about expensive packing.",
+      "source_sha256": "c2718958abd8c7e6b790fbf73ea3e75f3f16848b9d2173c9611b8318d831ad24",
+      "raw_target_sha256": "d3f1d9ddcd987aa5acb6d0b8549e5fffbcf21e1912e91d8b86454b0fd1906033",
+      "translation": "货物发出后，单看服务名称可能已无法判断具体做了什么。比如要防止包袋受压，应写明要求加内盒、加护角，还是保留原包装，并保存与该包裹关联的确认信息。如果实际收到的包装不同，指出当时要求的操作以及照片中缺少的措施。客服更容易核查一个具体操作，而不是笼统的“包装太贵”。"
+    },
+    {
+      "source": "Read an adjustment without erasing the original quote",
+      "source_sha256": "e0936a2d0afd23a83899a9b5f9612d756693ae1c1ddbda43aea31d5385bab116",
+      "raw_target_sha256": "19a54a4aad4f4eff3e29cf0a465ec36987ed3007c8d124e972b19dc2fc3007b2",
+      "translation": "调整费用时保留原报价"
+    },
+    {
+      "source": "Use separate rows for quoted, paid and credited amounts. If a charge was removed, enter the credit with its reference. When a final invoice rolls services into a parcel subtotal, place that subtotal in a comparison column rather than adding it to the detailed entries. Check that your reconstructed total agrees with the payment record within ordinary rounding. Write down the remaining difference and ask support which invoice line explains it.",
+      "source_sha256": "b4f3dede9df755627787afff51d746f3d3c31eba0df484be2406fa0ed8db27b7",
+      "raw_target_sha256": "25e1a8048624dbd221f124b169fd1034d49e79d23edf121e5e40fcfca2686796",
+      "translation": "报价、实付和退款分别列行。若取消某笔费用，登记退款并注明对应流水。碰到最终账单将各项服务并入包裹小计，可把小计放进核对栏，不能再把小计和明细相加。在一般舍入误差范围内，将重新相加的结果与支付记录对照；若仍有差额，写明金额，请客服指出对应的账单项目。"
+    },
+    {
+      "source": "Reconstructing a service total from a receipt",
+      "source_sha256": "e43dcc8b1cb70bb23f99012efbe6fa8881b412962d0abf0af596e54b5461727e",
+      "raw_target_sha256": "0b49bb52ff155dfdc149729cab5a4a3c80c338ba035b575106530dbc09e5664c",
+      "translation": "从收据还原服务费总额"
+    },
+    {
+      "source": "Here is a fictional receipt to practise with. Two fragile pieces require individual protective wrapping at 3 yuan per piece. One outer box uses a 9-yuan reinforcement option. The quoted base freight is 118. A screen then shows a parcel total of 133. The numbers reconcile because 118 plus six plus nine is 133. The words per piece and per parcel make the arithmetic reproducible. Without them, two buyers could look at the same three numbers and arrive at different totals.",
+      "source_sha256": "d022cf8612acda86bc16391f7edac14f4562874968528f52aa5f0a26ad21a47b",
+      "raw_target_sha256": "046eb521aedf2e2ca481e978f25ce59f5746ccee203f28e88f17a30ac80f9384",
+      "translation": "假设两件易碎物各需单独防护，每件 3 元，一个外箱另收加固费 9 元，基础运费 118 元。结算页面列出包裹总额 133 元，计算正好是 118 + 6 + 9 = 133。这里“每件”和“每包裹”决定一笔钱要加几次。不注明单位，两人看着同样的三个价格也可能算出不同结果。"
+    },
+    {
+      "source": "Suppose the final invoice shows 124 as freight including the two protective wraps and 9 on a separate line. The total is still 133. It would be misleading to report a new six-yuan increase merely because the value called freight rose from 118 to 124. Compare the composition of each displayed figure before comparing its magnitude. If the final description does not make clear whether the wraps are inside the 124, ask for the breakdown. Record an unresolved question instead of changing a line description to make the numbers fit.",
+      "source_sha256": "69043cd9a59e9998cafa0fa0e9fa3916f28e7ffc49f60cc4e55e86b24c925e56",
+      "raw_target_sha256": "b2bc61dc2f64d3e1289f93d44b07481b3ba53c44864aff09f3aeb539efa90d86",
+      "translation": "如果最终账单把两份单独防护并入运费，运费一栏变成 124 元，外箱加固仍单列 9 元，总额依旧是 133 元。运费栏由 118 变为 124 并不代表又加收了 6 元。先拆清两个数字包含什么，再谈涨跌。若账单没有说明 124 元是否含防护，就向客服索取明细，在答复前把这项标为待核实。"
+    },
+    {
+      "source": "What to do when the same service appears twice",
+      "source_sha256": "3acf70b08c980f60ae57427ddeb06898af689db13958971712d988f0c18af65c",
+      "raw_target_sha256": "24cd8011ee02552e1afa3f86bca19d1b82d076a74a8239995048a3bd14e12f91",
+      "translation": "同名服务出现两次怎样判断"
+    },
+    {
+      "source": "A familiar label can denote two legitimate operations. An item-level service can prepare one fragile object before it enters a parcel, while a parcel-level service can reinforce the outer box. Open the details of each entry and compare the object being handled, the quantity and the stated purpose. If one charge is attached to a purchase reference and another to an outbound parcel, save both references. A shared word such as protection does not establish a duplicate.",
+      "source_sha256": "69744db6115f961585d64decaaeee545438e666ae0dad88100a3f15799305b8f",
+      "raw_target_sha256": "4a6139cc87caa861408bdcf2e6d751308cbb9f302443ebbaf57251af5d882b8b",
+      "translation": "两个名称近似的项目也可能代表两道工序。商品层面的防护可以是在入箱前包好一件易碎品，包裹层面的防护则可能是加固外箱。打开每一项详情，对比处理对象、数量和目的。一笔连着采购订单，另一笔连着国际包裹时，把两个编号都保留。仅凭都写了“防护”还不能判定重复收款。"
+    },
+    {
+      "source": "Conversely, a service can appear in a list of selected options and again in a payment summary because the summary repeats its components. Compare the amount due with and without the charge included once. If including it once already reproduces the payment, the second display is probably a different view of the same amount. State what your arithmetic demonstrates and leave the internal accounting explanation to the provider. The goal is to identify a real mismatch, not to infer a duplicate from typography.",
+      "source_sha256": "214e02c6b68580776dce2d9b5738d90f5576a77cf6a55d48b6958a3c7dcb1975",
+      "raw_target_sha256": "0345d4ce8a5abcc060618fca592ebddb63eee0166663089970eaec0556728080",
+      "translation": "反过来，同一服务可能同时列在已选项和付款摘要里，因为摘要会重新展示总额的组成。先不加该项算一遍，再只加一次算一遍。如果加一次已经等于扣款，两处显示很可能只是账单的两种视图。向服务方说明你能核对出的结果，请对方解释内部入账办法，不要仅从页面排版推断收费次数。"
+    },
+    {
+      "source": "Ask for an outcome you can identify",
+      "source_sha256": "1dc4bf0cf5e343b3f30a302e8866aa7272ba125a055016f1731133f88cd4c745",
+      "raw_target_sha256": "82b5049fb743e3f1260a99f7a3aaaa7d9bf1af93020c2e4a4672dc4e5ab621e5",
+      "translation": "把预期结果写成能核对的要求"
+    },
+    {
+      "source": "The service description should tell you what will be done to the object. A request to protect a bag could mean filling its interior to retain shape, keeping its original box or placing it in a larger outer carton. Each choice may affect the parcel differently. Specify the object, the result you need and any condition such as keeping detachable handles together. Then read what the selected service actually promises. If it covers only an outer carton, do not count it as individual protection for every item inside.",
+      "source_sha256": "a7c0dd5d5d2f0f04c6f92888f9bd3873535979fd58271fb749068251da42535c",
+      "raw_target_sha256": "1a13a38ce517547316140d4bcabf50ad254e3bcc35d04b7965619e55f2328a37",
+      "translation": "保护一个包袋，可能是往包内填充以保持包型，也可能是保留原盒，或装入较大的外箱。不同做法会带来不同尺寸和费用。说明保护对象、预期效果和特殊条件，例如可拆卸提手必须跟包放在一起。再核对选购的服务承诺了什么。如果只包含外箱加固，不能当作每件内装商品都单独包好了。"
+    },
+    {
+      "source": "If the request changes, keep the first quotation and add the new one. Record which service was removed and whether its replacement has a different unit. Consider replacing one outer-box option costing ten with individual protection costing four for each of three units. The new selected services total twelve, a difference of two. Adding twelve to the old ten would describe buying both alternatives, which was never the instruction. A dated note beside each version helps later if the two appear in separate account messages.",
+      "source_sha256": "b2df154738381dd4b1ce130ee4367c86c9129518b3b785cf80dba8e8641aa850",
+      "raw_target_sha256": "37e73aa8a0dfdfe157d1b8c45e5627a75f869743958fde193ec3ee25a8196475",
+      "translation": "更改要求时保留旧报价，新增一份报价并标注撤销了哪项服务、新服务按什么单位收费。比如取消一次收费 10 的外箱服务，改为三个商品分别做单价 4 的防护，新服务合计 12，比旧方案贵 2。把 12 和 10 相加则意味着同时购买两个方案，与实际指令不符。给每个版本记上日期，方便对应账户中分散的消息。"
+    },
+    {
+      "source": "Distinguish a cost comparison from a quality judgment",
+      "source_sha256": "97edc42033fd44dd4ace35497890d6924feb39521be40eebd502ab58466d67a8",
+      "raw_target_sha256": "62d559c4a420fec01cea77e565a02751dc3ca4beb67ec36ee12fc816dfb3f4cf",
+      "translation": "先问服务是否解决实际问题，再比价格"
+    },
+    {
+      "source": "A lower service price is useful only if it addresses the actual concern. Someone sending replacement parts may care that small components stay bundled. Someone sending a gift might care that the retail carton remains intact. These people can receive identical freight quotes yet make different rational decisions about optional work. Write a one-sentence acceptance condition for each service you consider. For a loose accessory, it could be that it remains with its known parent item inside the package.",
+      "source_sha256": "6e3258363b4c5e16e5dd89775f275e925f370e02ad189edbccffaa54796e3e1b",
+      "raw_target_sha256": "54f5f11f6a96fb985ed4e56f43513a09bcf399e7ec59122194a508b301eea17b",
+      "translation": "寄替换零件的人可能最在意小部件和主件保持成组，寄礼物的人则可能要求零售包装完整。两人收到同样的基础运费报价，对加购服务也可能作出不同选择。为每个候选服务写一句验收条件，例如“零散配件应与对应主件放在同一袋内”。只有满足所需条件的低价服务才具有可比性。"
+    },
+    {
+      "source": "After delivery, compare that condition with what you can observe. A well-protected outer corner is not evidence that an internal accessory was separately wrapped. If an instruction appears to have been missed, show the order acknowledgement, the selected service and a picture of the relevant part of the received package. Avoid attributing damage to a particular event without evidence. State the requested outcome and what you found, then ask which next step applies.",
+      "source_sha256": "200b97e253e9d1efd47c50b17442d1394d2059acd4442ed3eca795b9548c8420",
+      "raw_target_sha256": "0b7306faff1310fccf20b0d2994b18677730aabf97d78d45ccdadc3ed3d70c76",
+      "translation": "到货后，对照要求看能观察到哪些结果。外箱护角完整，并不能证明内装配件得到单独包裹。如果某项指令似乎没有执行，保留订单确认、所选服务和收货后的对应部位照片。没有证据时不要把损坏归因于某一次搬运。先说明要求和实况，再询问应怎样处理。"
+    },
+    {
+      "source": "A support message that isolates an unexplained amount",
+      "source_sha256": "0da33059789bb8691e4e2badbc88d69fce386c320bbc57a0bd039a6b78b12647",
+      "raw_target_sha256": "791531a6df463b9102378a5d35ab3c8f27c3c627316ab9b7adc358cc4fced370",
+      "translation": "把差额写成一条客服能查的问题"
+    },
+    {
+      "source": "Begin with the parcel reference, currency and exact service label. State the amount you can reconcile and the remaining difference. For instance: my summary shows two wraps at three each and a carton at nine, totalling fifteen; my service subtotal is eighteen; please identify the remaining three. Add the relevant quote date and a cropped image of the service lines if necessary. Exclude unrelated orders and personal payment details. One concrete arithmetic question gives support a practical starting point.",
+      "source_sha256": "9ce58a9c023de868738ad732765a02c074877ee80b6aa6865e77e4b522325f3b",
+      "raw_target_sha256": "a7051ff3ab4a1c2ab53c18811467f4a6cac6df819bed0a3e44f303a52350ff2f",
+      "translation": "先给出包裹编号、币种和账单原始服务名称，再写能核对的金额及剩余差额。例如：“单独防护两件，每件 3，外箱加固 9，合计 15；服务小计显示 18。请问余下的 3 对应哪项？”按需附上报价日期和只含服务明细的截图，遮去无关订单及付款隐私。"
+    },
+    {
+      "source": "When a reply comes back, enter the provider's explanation beside the line it concerns. If the difference is a previously unseen quantity, correct the quantity column. If it is an already established charge, link it to the earlier entry rather than creating another. Once the detailed services, freight and credits reproduce the statement, your worksheet can serve two purposes: checking the present transaction and building a more realistic estimate for a future parcel with similar requirements.",
+      "source_sha256": "9789a2df087805f76c6c97aedff0adbc452751e73a4fa67e1b98bba4abe7785d",
+      "raw_target_sha256": "60fe2a0355d7ff423c139f3322c9523fe532f5842e3e36da9778631bacda4055",
+      "translation": "收到答复后，把解释写在对应行旁。若先前没看到实际服务数量，就修正数量栏；若该笔费用早已入账，就连回原有记录，避免重复建项。等服务明细、运费和退款相加能还原账单，这张表既能核对本次交易，也能为下一件保护需求相似的包裹提供更可靠的预算依据。"
+    },
+    {
+      "source": "Multiple choices on one marketplace listing can mean different units, quantities and prices. Build the estimate from confirmed options before applying delivery or discounts.",
+      "source_sha256": "bf19ebd5a93821a8db0044997102efc8a88811985010a7635c5b3610f9f9f8b0",
+      "raw_target_sha256": "773aca78e36b0b431f246b718a428b027a7633740cce959686ffc3ef12bf8658",
+      "translation": "同一件商品页可能同时出售不同规格、数量和单价的商品。先按卖家确认的选项算出货款，再把运费和折扣计入。"
+    },
+    {
+      "source": "Make the seller's selling unit explicit",
+      "source_sha256": "b9d22755e40f809bc7fd7ad19576782f241329cb95cc8a3b060315470fbf944d",
+      "raw_target_sha256": "2ac783e4df88124d4b6c4a9c9d5284ef5e598460ecfbe8b8ab46c1a965f5aa07",
+      "translation": "明确卖家按什么单位销售"
+    },
+    {
+      "source": "Read each option before copying the lowest displayed price. A listing can offer a complete set, a single piece, a replacement part or more than one pack size. Save the seller's option text in its original language as well as your translation. If you are buying two shirts in one colour and another in a different size, give them separate lines. An entry saying only three shirts gives you no way to check which line changed when the seller confirms part of the order.",
+      "source_sha256": "bb73e0fac1e00161c31bd0f7f7e539a5b33494af246067ef24a8219922eda100",
+      "raw_target_sha256": "d28ff86bba3a0a89dc4085147ff172d0143ca4294568aff2d01519b7edd0a393",
+      "translation": "不要直接复制页面上最低的价格。逐个查看选项，确认卖的是一整套、一件单品、一个配件，还是不同装量的组合。保留卖家的规格原文和自己的翻译。比如要两件相同颜色的衬衫，又要一件不同尺码的衬衫，应分别列行。若只写“三件衬衫”，卖家只确认部分商品时就难以确定哪一行变了。"
+    },
+    {
+      "source": "Build the merchandise subtotal first",
+      "source_sha256": "54717411ad08c8a7c32948f0d2b19a06be3ba5f2555b7793866eaf6ead4b63e4",
+      "raw_target_sha256": "5907fad3e0fa611f1c41fb0ad2a3e9bd6cb0b18dbff96ebe133997d4af3d9715",
+      "translation": "先算商品小计"
+    },
+    {
+      "source": "For example, assume the selected medium shirt costs 72 yuan, the large costs 76 and the two-piece set costs 130. Selecting two medium shirts and one set costs 274 before delivery. Accidentally using the 72-yuan shirt price for the set gives 216. The 58-yuan difference comes from selecting the wrong unit, not from a hidden freight charge. Keeping pack type, option, unit price and quantity in separate columns makes the error visible.",
+      "source_sha256": "e693a04247cb69da69145d2095f6229501229efe4c4a154929e716ea691d8378",
+      "raw_target_sha256": "00f7f61942a27dd2f0bf9fe9a39c54495f5ea165975f9620c4c181cf00cbb6eb",
+      "translation": "假设 M 码上衣 72 元，L 码 76 元，两件套 130 元。两件 M 码加一套套装，运费前小计为 274 元。若错把套装按单件上衣的 72 元计算，就只有 216 元。少算的 58 元来自选错销售单位，不是什么隐藏运费。把包装类型、规格、单价和数量分列，错误会更容易发现。"
+    },
+    {
+      "source": "Check minimums and tiers against the selected mix",
+      "source_sha256": "e5485bdbf64bf2782f1dd61781895e70fa6cd44e84e88b298d2d5bae33ffda20",
+      "raw_target_sha256": "b3783a932a0798cb0e084055d6f56af2b1affa0fbb3e28002ac78457bcfc7693",
+      "translation": "用实际的规格组合核对起订量和阶梯价"
+    },
+    {
+      "source": "Split a discount using the rule printed on the order",
+      "source_sha256": "cad037304293c308ee2ebfb7e7dff405b72639f16d9abf30365c9165310f7887",
+      "raw_target_sha256": "f7848b7278cf1beb889c873ac8b2a18075c742df73df786e7927f513e7692b38",
+      "translation": "按订单写明的适用规则分配优惠"
+    },
+    {
+      "source": "Look at the seller summary before allocating the saving. A promotion may apply only to certain items or may change when a unit is cancelled. Keep the eligibility conditions with the order. When you simply need to share a bill, state your allocation method separately from the seller's calculation. For example, proportional distribution among eligible items may be fair among friends but does not describe which refund the seller will approve later.",
+      "source_sha256": "7cb3b049b2b0eb5106fa2e69dc079f3142cfc8dd6da7da144a9b847f6fc55ad4",
+      "raw_target_sha256": "282ddccdcc0c2b389127067fdd4874edb90e2d4f217b3245f6b6b4ed23d456fe",
+      "translation": "分配优惠前先看卖家订单摘要。促销可能只适用于部分商品，也可能在取消一件后失效，须将参加条件与订单一起保留。如果只是朋友之间分账，应另行说明分配原则。例如按符合条件的商品金额比例分优惠，对参与者来说可能公平，却不能据此推算卖家以后会批准多少退款。"
+    },
+    {
+      "source": "Carry item identities into the warehouse",
+      "source_sha256": "ae1a80f5af7e651d6097fa54c8a0ced4617a2cd54875ae4c75837a831405a19e",
+      "raw_target_sha256": "3f165fa8ab858fa544bc0c9268589dbb9f7cf54f69bbc39cc9d8da8e1aa03ab3",
+      "translation": "将每件商品的身份信息带到入库环节"
+    },
+    {
+      "source": "Give each line a stable name, such as navy shirt medium or blue set large. When two deliveries appear, match warehouse entries to those names and counts. Keep one cancelled line in the ledger as cancelled rather than reusing its identifier for another piece. Before submitting a parcel, compare the count of completed entries against what you paid for. A total that balances financially can still conceal a missing colour or an incomplete set.",
+      "source_sha256": "9150f3dd5695c41777ce2e7027972927b71a5cf2c9447dfef09f2203a5a9936e",
+      "raw_target_sha256": "4c424cebb62181e30347616690be8b7dc519b199d95529e42cb181e0b44f821e",
+      "translation": "给每个订单行起一个固定名称，例如“藏青色衬衫 M 码”“蓝色套装 L 码”。两件包裹到仓时，分别将入库名称和数量与这些记录对应。取消的行保留并标注取消，不要把原编号拿来代表另一件商品。提交国际包裹前，对照实付清单核对已入库数量；即使金额完全相符，也可能缺了一种颜色或少了套装中的部件。"
+    },
+    {
+      "source": "Buying for three people from one option grid",
+      "source_sha256": "d0239f170664023a33e05e743d2915e2084e89a30eb72da8bec7df19440078a4",
+      "raw_target_sha256": "48aa8f03219969096ce8b92fceebc6477431859e634bfc518f9535767e28c55d",
+      "translation": "三个人在同一规格表里选商品"
+    },
+    {
+      "source": "Imagine three friends choosing trousers from one listing. One selects the unlined version in size medium, another selects the lined version in medium and the third selects the unlined version in large. The listing title and seller number are identical on all three records. The information that distinguishes them lives in the option columns. Write one complete selection per line and name the recipient in your private sheet. If the seller option names are translated alike, keep the original wording and thumbnail beside the selections.",
+      "source_sha256": "b6195535c1b6d1f8909444dac3ebdce40b2f17eebf3ff4ff85561c73bb911eb4",
+      "raw_target_sha256": "16cad1c21961ea8a1f3c137dd6f01ade236cf8e3a84074cf407062761c8f284b",
+      "translation": "三人从同一页面买裤子，一人选无里衬 M 码，一人选有里衬 M 码，另一人选无里衬 L 码。三份记录的商品标题和卖家编号都一样，真正区分三条裤子的是选项栏。每行记一套完整规格，在自己的表里写明收件人。若两个选项翻译相同，把中文原文和对应缩略图一并保留。"
+    },
+    {
+      "source": "Suppose the confirmed unit prices are 80, 94 and 80 yuan and the order has one 9-yuan domestic charge. The merchandise total is 254 and the order total is 263. If the payment request shows 269, inspect its components before calling the extra six a service charge. The seller may have changed the price of one variant, added an explicit charge or applied a different quantity. Compare each option, quantity and line subtotal in order. A three-line purchase is small enough to reconcile without guessing which part changed.",
+      "source_sha256": "879e2b7ba4be9a7c213ab9df34a1d3abede9aded719a2068d319e29df0372041",
+      "raw_target_sha256": "c7f32afacf247bcaf6463b8d923bd6463ddd35dd4577e1159415debb7d0fa659",
+      "translation": "若确认单价分别为 80、94 和 80 元，加一笔 9 元国内运费，商品小计是 254 元，订单总额是 263 元。支付请求如果显示 269 元，请先核对组成，不要马上把多出的 6 元归为服务费。卖家可能改了一个规格的价格或数量，也可能明确新增了费用。只要三行货物逐项对照规格、数量和小计，就能找出哪些信息变了。"
+    },
+    {
+      "source": "Checking a multi-pack against single units",
+      "source_sha256": "17affab70e67217c2d82d365b3fe78708364d730301be9c3fe8194cf1d5d3786",
+      "raw_target_sha256": "a9f245ca58efb806a4ebaa5b9f7dfa9862c3533802907af17153e0eb20662cf6",
+      "translation": "把组合装与单独购买放在一起比较"
+    },
+    {
+      "source": "A second shop offers a pair of plain socks individually or as a five-pair pack. Four single pairs at 12 each cost 48. A five-pair pack at 55 costs 11 per pair, yet requires a larger outlay and leaves an extra pair. The cheaper per-pair price does not automatically answer which option suits a buyer who needs exactly four. Compare both the total cash required and the number of useful units that will actually be used.",
+      "source_sha256": "64fe169f330e752544c2c965b0d946d64a48a9d496b10b67f2e7d6ab46eddbd6",
+      "raw_target_sha256": "324bf0d8a43ad64096ce3215bba9571d2f7fac37ba203119acbd94ac7afac299",
+      "translation": "假设另一家店的素色袜子既可按双单买，也有五双装。单买每双 12，买四双要 48；五双装卖 55，平均每双 11，但需要多付钱，也多出一双。如果只需要四双，较低的平均单价本身不能决定买哪种。综合比较当下总支出和自己真正用得上的数量。"
+    },
+    {
+      "source": "Read the size and colour assortment on the pack. A five-pack may contain an assortment chosen by the seller rather than five duplicates of a selected colour. If only two pairs match the need, dividing by five is a misleading measure of value to that buyer. Before paying, write a sentence describing exactly what should arrive: five wearable pairs in size X, with the colours distributed as stated in option Y. This sentence becomes a usable warehouse count instead of a number with no physical meaning.",
+      "source_sha256": "659d2708aed2ca1d3b1aaa2ebb9630f632ce45792596566408dff924f148962f",
+      "raw_target_sha256": "72525ac53e37242ccd1d0edbc7eb97449bca574e70a61d9b532d5b3121470ac6",
+      "translation": "再看组合装的尺码和配色。五双装可能是卖家配好的颜色组合，而非五双同色。如果只有两双符合需要，把价格除以五就不能说明这笔购买对你的真实价值。付款前写下期望收到的内容，例如“五双 X 码可穿着的袜子，配色按选项 Y 的说明”。入库时就能按这个标准验货，而不只是对一个没有具体含义的数字。"
+    },
+    {
+      "source": "Handling a partial stock confirmation",
+      "source_sha256": "ec2a38211bb19954b12facc9fe4fdfd9b1b598217be4251ac1c0b6bde89d5db5",
+      "raw_target_sha256": "e4d0d5c4dee62c6a57a715c8f15a2c7f3da315ce6c8d0b6036c60e23bebbc9b3",
+      "translation": "遇到部分缺货怎样更新预算"
+    },
+    {
+      "source": "Identifying a quantity mistake before it travels",
+      "source_sha256": "e5e96f0a394458d8d064dc4c3ff7d0ff0deaee03d187b89230197270fa967f32",
+      "raw_target_sha256": "e476acfc009ea4d2339897e4eceac214fa56fb94d7b3a1e78aa898911a727ba6",
+      "translation": "发出前识别数量错误"
+    },
+    {
+      "source": "A photograph of three unopened packets can confirm that three packets are present. It may not confirm the number of units inside each. For a set with different contents per package, ask for a view or label that distinguishes the package versions without damaging packaging the seller may require. For separate garment sizes, match each readable size tag to a line on the paid order, especially when two colours differ only slightly under warehouse lighting.",
+      "source_sha256": "840e6b972c99347c2a0ae150a95b7b52ee14750b759757412aa832e62663563e",
+      "raw_target_sha256": "c3f06f087a1cbe36c40f08edb8ae03a5f3e56e4773057d2be647bb2b8cf9932b",
+      "translation": "三个未拆封的小包能证明现场有三个包，不能证明每个包里有几件。不同版本的套装可能装有不同部件，可以请仓库拍到能区分版本的标签或外观，同时避免损坏卖家可能要求保留的包装。如果是相同款式、不同尺码的衣服，把能读清的尺码标与已付订单逐行对照。仓库光线下相近颜色尤其容易混淆。"
+    },
+    {
+      "source": "If you receive one packet with a handwritten count of four, compare that with the seller's stated packing unit before reporting a shortage. Four accessories inside one bag may fulfill four units, whereas four empty protective sleeves do not. Describe the observable fact in your message and ask a concrete question. For instance, the order includes three two-piece sets and the warehouse entry shows three sealed packages; could you verify whether each package contains both listed pieces?",
+      "source_sha256": "d9a1135eb39fabf48de181196255c6fe57d364e19d33b64f8b401e7c35242a89",
+      "raw_target_sha256": "a1794fe22ba44f5606d729025dc8518673360165d7da1ed6aa3b0e540c948a6e",
+      "translation": "某个包上手写了“四”，报告缺件前先确认卖家的销售单位。一个袋子里装四个配件，可能已经交齐四件；四只空保护套却不能说明商品已收齐。请用能看见的事实提出明确问题，例如“订单买了三套，每套两件；入库照片只见三个封口包。能否确认每个包里都有列出的两件？”"
+    },
+    {
+      "source": "Keeping product mathematics separate from outbound freight",
+      "source_sha256": "7c8890fd16fcf419d225256248706176f898e8a4724bf3c17f3ec77db9470465",
+      "raw_target_sha256": "e106ea1fee3e7594fb71577aee9e952172afc3fa47cc7d1db14c3f65e2b15f48",
+      "translation": "不把商品核算和国际运费混在一起"
+    },
+    {
+      "source": "The price per usable item can be useful before purchase, but do not silently add a future international fee to each seller line and treat the result as confirmed. Once the goods arrive, a shared parcel may contain items from several purchases and use packing that was unknown earlier. Retain the confirmed seller costs and add a separate outbound comparison when measured figures become available. If you later allocate freight among recipients, document that policy separately.",
+      "source_sha256": "d04fb0dec019f09eabeecc5f1251b12807962689aeb293be54012553528eb888",
+      "raw_target_sha256": "b6fca4a033a927ecc6db9974a2cae3024316c3de5b1b7a77819e1bff48519711",
+      "translation": "按实际可用件数计算单价可以辅助下单，但不宜把尚未发生的国际运费静悄悄分配到卖家订单的每一行，再当作已确认成本。货到后，一个国际包裹可能合并数张订单，还会使用先前未知的包装。保留卖家确认的成本，等有实测数据再单独比较国际运输。如果之后向不同收件人分摊运费，另存分摊规则。"
+    },
+    {
+      "source": "A complete record lets you answer three questions without recalculating from memory. Which version and quantity did the seller agree to supply? How much was actually collected or returned on the purchase? Which items are ready for international submission? A purchase line can be financially complete while one piece is still waiting for identification, so close each line only when its contents and its payment history are both clear.",
+      "source_sha256": "68a3468359044a5e26abfda966207f326649659dd8d42d33b3ecd37b282cee25",
+      "raw_target_sha256": "6116be32e90c9955faa7c4afcd1b28428ff08b5eab34035f3f4f908ad231e2c1",
+      "translation": "完整的记录应能回答三个问题：卖家确认交付什么规格和数量？实际收了多少钱、退了多少钱？哪些商品可以提交国际寄送？已完成付款的采购行，仍可能有一件商品等待识别。只有实物与资金记录都明确，再将这一行标为完成。"
+    },
+    {
+      "source": "A multi-shop shortlist can look like one cart, while costs and delivery events still originate with different sellers. Organize the purchase by shop first and the international shipment by parcel later.",
+      "source_sha256": "f97eaf1e81454d8f51fe0cbf00fae7d6447d2866fe0af64cdef551c0d1dbc361",
+      "raw_target_sha256": "210b0000164856005714b6d7edd1bd4c5ee084c3311797226b209e3c2b2344af",
+      "translation": "不同店铺的商品可以出现在同一个购物清单里，但费用由各家卖家分别产生，入库时间也可能不同。买商品时按店铺整理，寄往海外时再按包裹核算。"
+    },
+    {
+      "source": "Create a small register for each seller",
+      "source_sha256": "f68f726587f807f9c2fc0a39b5739a99422de9ed512a323b17002bc8c1c8b2c4",
+      "raw_target_sha256": "c99d1d6cde0c87c46e8cdbb6a76b61c108e6fc1869ebcfec4c7f90d8430167b3",
+      "translation": "给每位卖家留一份采购记录"
+    },
+    {
+      "source": "Save the original listing, chosen option, quantity, product amount and domestic delivery shown for that particular purchase. Put discounts under the shop where they apply. Two listings sharing the same studio photo can still be offered by different sellers. Use the shop identity and the marketplace listing number to distinguish them, and give the lines names you will recognize even if the seller edits the title.",
+      "source_sha256": "ef47bf2754d504526e0df933100a1bdf34e0c9b97d507842474d3d4468f2c73f",
+      "raw_target_sha256": "0b6061f70b13f0c79ff89fe1c2b86f3e81ce6877624361908c241cbdb59e046c",
+      "translation": "保存商品原始链接、所选规格、数量、货款和这笔采购对应的国内运费，折扣记在实际参加活动的店铺下。两家店即使使用同一张棚拍图，也可能是不同卖家。用店铺身份和平台商品编号区分商品，再给每个采购行起一个自己能辨认的名字，这样卖家以后改了标题也找得到。"
+    },
+    {
+      "source": "Keep committed costs separate from intentions",
+      "source_sha256": "7e642cdca349f2e12a1052f1d01f89b2097f543f5392b74ba3b237aa8bbe2679",
+      "raw_target_sha256": "c86b958d14979668fc012e8f812544df617af9d1cb3c09fe56fca2916c42842b",
+      "translation": "把已确认支出和购物意向分开"
+    },
+    {
+      "source": "Suppose shop A has confirmed a 90-yuan jacket and 8 yuan delivery. Shop B still shows a 54-yuan scarf with domestic delivery unknown. Shop C has cancelled a 30-yuan accessory and its refund has not arrived. Show 98 as the confirmed purchase cost for A, 54 plus an unresolved amount as the estimate for B and 30 as a pending credit if it was actually paid. Adding everything into one definite subtotal would hide three different states.",
+      "source_sha256": "37f5222e9db2b2bf15e89543147df12df5c923a18373e7ba4e9032b85a64c179",
+      "raw_target_sha256": "26a1f3cfa98246d1ebcbe6774ebeb8c7906a1f19a848b106504a8bf09946911b",
+      "translation": "假设 A 店确认夹克 90 元和运费 8 元；B 店的围巾 54 元，国内运费未知；C 店 30 元的配件已取消，退款尚未到账。A 店可记为确认支出 98 元。B 店写“54 元加待确认运费”。如果 C 店的 30 元确实已经支付，就记为待退款。直接报一个确定的购物车合计，会掩盖三种完全不同的状态。"
+    },
+    {
+      "source": "Track arrivals without changing the accounting basis",
+      "source_sha256": "021ab5c0697b2ad4b273cc8e66a52a87e647a47d2b78f87de338198a16000acf",
+      "raw_target_sha256": "0a1b5c5e916ac37af2a4254a57cd52e96c43e8bac0b8c571bcdc835e3c6b25ea",
+      "translation": "到货状态变化，不一定代表新增费用"
+    },
+    {
+      "source": "The parcel that reaches the warehouse first may belong to the last shop you ordered from. An arrival changes what you can inspect or submit for shipping, but does not automatically create an additional seller charge. Record the domestic tracking reference against the purchase and the warehouse reference against the received unit. If two tracking numbers arrive for one seller order, confirm the contents of each before treating either shipment as complete.",
+      "source_sha256": "585ad28963b7a25777a4ee1105243d61da2d12da743143a9cf224a3b8e3ea5f7",
+      "raw_target_sha256": "54a0911a76a7c88cf724ad5bdc54d2dd708b593fb877a61773ccd7b5cc12e22a",
+      "translation": "最先到仓的可能恰好是最后下单的店铺。入库改变了可以检查或提交寄送的商品，但不会自动带来新的卖家收费。把国内运单号与采购记录关联，再把入库号与收到的实物关联。一个卖家订单如果对应两个运单，先核实每箱内容，再判断是否全部到货。"
+    },
+    {
+      "source": "Decide what waiting for the last item costs",
+      "source_sha256": "04652bc8096065146e19945d63e4cfcd70c3be6f6f601332517e922fa5f1fb59",
+      "raw_target_sha256": "6cc22e0fb55cd3f4a1d9cadfd3aa181998a028be0835836783bba3fa561edae1",
+      "translation": "等最后一件商品会影响什么"
+    },
+    {
+      "source": "Write down the warehouse deadlines for the items already stored and the latest confirmed information for the missing piece. Compare a combined parcel when all items arrive with sending the ready items now. Do not assign an invented cost to waiting. If a storage charge or packing service could matter, check the current account information. If the item has a firm use date, represent that constraint separately from the freight comparison.",
+      "source_sha256": "74cf45bac0fbb7c75262c1b0a0b5fb9c715437325c190acacc3550ee94c0cda3",
+      "raw_target_sha256": "b4db6b98c5a642075f1529d16f08e9f4f9b38ed576358ceb2414ad3423324e17",
+      "translation": "记录现有库存的仓储期限以及未到商品的最新确认消息。比较“等货齐后合包”与“先寄已到商品”的方案，不要凭空给等待时间加上费用。若可能涉及仓储或额外包装收费，应查账户里的现行说明。商品有明确使用日期时，将时间要求单列；单纯比较运费不能反映晚到的影响。"
+    },
+    {
+      "source": "Rebuild the final total from its records",
+      "source_sha256": "07f7dd3240d9f20e50ebe8c86e66693dc6f3c495f1c8b012fd29fb9e344c1cb1",
+      "raw_target_sha256": "8760eb5d1745c0f66211875b5d0ba271f23009b854fd708589da9e33fd9f1343",
+      "translation": "按凭证还原最终总额"
+    },
+    {
+      "source": "Start with net merchandise across sellers. Add the domestic amounts actually charged once each, then add outbound parcel payments and any separately shown services. Subtract refunds only when you can match them to the correct purchase, currency and destination. A refund returned to an account balance may affect your usable balance differently from a credit to your original payment method. Keep both the economic cost and the payment history visible.",
+      "source_sha256": "f7c9ee3c7ea5e76b5c681c4ce312a76b6cbe7092aae501f0a40549310e7f6293",
+      "raw_target_sha256": "d736924a9a3afd85d8e1de9c4e2d5c311e3deeaf9277e874c3d0c741a8eb0aba",
+      "translation": "从各家卖家的净货款开始，逐笔加入实收的国内运费，每笔加一次；再加入国际包裹实付费用和单列服务。只有能对应上正确的采购、币种和退回渠道时才冲抵退款。退到账户余额与原路退回，在能否立即动用这笔钱方面并不一样。净成本和支付流水都要保留。"
+    },
+    {
+      "source": "A basket that changes while the first item is in storage",
+      "source_sha256": "38b41bfcafdb2e3e445cfff1b702f284fd55a1eeb5ff58a25f8ee0b063d3da52",
+      "raw_target_sha256": "0f2957820d4026ba25b5fc5252c3256ea7f1ad742fa3dad1489c53643c55bf49",
+      "translation": "第一件货已入库，其他采购却有变动"
+    },
+    {
+      "source": "Imagine you have chosen a coat from one shop, a scarf from another and two bags from a third. The coat is received first. The scarf seller confirms the original colour is unavailable, and the bag seller sends two domestic tracking numbers. On your sheet you now have one ready item, one unresolved purchase and two shipments linked to one purchase. Listing all four items as ready would result in a parcel plan the warehouse cannot yet fulfill.",
+      "source_sha256": "ec2c76dbf50bff3666e70e40f637b3fc7a828f35c13dbea1483b5a7c5b7a019f",
+      "raw_target_sha256": "8670e6a579798515ac8107d5504b3dd3f9f14614d18d6c65e998cec1d8281fb0",
+      "translation": "假设你从三家店分别购买了一件大衣、一条围巾和两个包。大衣先入库，围巾卖家通知原选颜色缺货，卖包的店发来了两个国内运单号。合理的记录是“一件已就绪、一笔采购待处理、两箱货对应同一笔采购”。若把四件商品都标记为可寄，就会制定出仓库目前无法执行的装箱计划。"
+    },
+    {
+      "source": "Work out two possible shopping baskets. In the first, the scarf is cancelled and the coat and both bags are retained. In the second, you accept a different scarf and wait for its arrival. Show confirmed costs shared by both scenarios once and note the costs and risks that differ. The first option may change freight by removing an item; the second may change warehouse timing. Neither estimate is complete until you have the measurements and services for the parcel you actually intend to submit.",
+      "source_sha256": "29bcff69400db3f03598c6e8b936514a30fd09d3b5b544ede96cfe480aeb4c0a",
+      "raw_target_sha256": "c047e67cbc851a0cab04dd4ccf7413e7b66edd2c4cd7bc66d23a69da55534f4b",
+      "translation": "可以各列一个方案：取消围巾，只保留大衣和两个包；或者接受别的围巾，等它到仓。两个方案共用的确认成本只记一次，再注明会变化的开支与风险。取消可能改变包裹运费，等待可能改变出库时间。只有确定实际准备提交的包裹、相应尺寸和服务后，这两份估价才完整。"
+    },
+    {
+      "source": "Deciding who owes what in a shared basket",
+      "source_sha256": "1fefa08cff11aa78c65e5f72997f611167444f4184522c35c4bd07972be47b3b",
+      "raw_target_sha256": "f56fe7d0897e9d93613b0cedbdd51e12005f168b5d665ebc49f09d051721f472",
+      "translation": "多人拼单时谁该付多少"
+    },
+    {
+      "source": "Suppose one friend buys from shop A only and another friend buys from shops B and C. Individual seller charges belong to the appropriate purchase first. The friends might then agree to divide the international shipping equally, by weight or according to another rule. Keep that private agreement separate from the charges the sellers or HubBuy applied. A buyer's contribution can change when the packing plan changes even if no seller has altered its own amount.",
+      "source_sha256": "265b9fe1db59015eac328c404442c99cf9edd3fdd48811a3af257aebbdf19358",
+      "raw_target_sha256": "282eb47987b03e87867adc4989b0fa1a34371d2e1a7b3f5bf8afa804a03474fd",
+      "translation": "如果一位朋友只买 A 店的商品，另一位买 B 店和 C 店的商品，先把各家的卖家费用归到对应采购，再商定国际运费按人头、按重量或其他规则分。朋友间的分账约定和卖家或 HubBuy 的实际收费分开保存。装箱方案变了，个人应承担的份额可能改变，即使卖家的报价并没有变化。"
+    },
+    {
+      "source": "For example, three purchases might have net totals of 106, 64 and 180 yuan. Their combined purchase cost is 350. If one purchase later gets a 20-yuan credit, the new cost is 330. Assign that credit to the purchase it belongs to before splitting anything else. Subtracting it from the international parcel total would make it harder to explain either the net seller cost or the eventual outbound charge. Show a pending credit separately until it actually appears.",
+      "source_sha256": "ab342c0afda44335355e4e5e7a855ff40e5422befbe40fe8f44f0b58629114e8",
+      "raw_target_sha256": "d6742e73e3b7acd2be326d46cf295fb8febe1ecfecfe3e0ae43232c755ab8f15",
+      "translation": "比如三张订单净额分别是 106、64 和 180 元，货款共计 350 元。其中一笔后来收到 20 元退款，净成本就变为 330 元。先把退款登记在对应订单下，再分摊其他费用。若从国际运费里抵扣，日后既难说明卖家净成本，也难解释包裹的实际收费。退款没有到账前，应单独标为待入账。"
+    },
+    {
+      "source": "Inventory matching across deliveries",
+      "source_sha256": "2fbeb030411731a369612a453a21fd5254a15a5587924d17f3508fdff545895e",
+      "raw_target_sha256": "8d823fc6c0bf4cc16c26a73f4797791327640c5184451b1fd7a2f6fe26a4065f",
+      "translation": "对应不同批次抵达的实物"
+    },
+    {
+      "source": "Use a unique row identifier for each chosen option. A short name such as coat-A-small is enough in a personal worksheet if it also points to the underlying order reference. When an intake notification arrives, match the item to a row using the seller, domestic tracking and identifying details. If two similar bags came from different shops, a studio picture shared by both shops is weaker evidence than the corresponding delivery record.",
+      "source_sha256": "659dd75865e850482d5c1bf696b472c1371d457d905c195243074c18aba56aba",
+      "raw_target_sha256": "15d213d99de1ff1ecc42468c4b5b7460f52b7a0de217dd09df969ed480263834",
+      "translation": "为每项已选规格设定独立的行标识。自己的表格里用“A 店大衣 S 码”就可以，只要同时能追溯到订单号。收到入库通知时，利用卖家、国内运单号和商品特征定位记录。若两家店出售相似的包，国内配送凭证往往比两店共用的宣传照更能说明实物来自哪里。"
+    },
+    {
+      "source": "If a delivery appears without an obvious match, do not immediately reassign it to whichever row is still blank. Check how many pieces each seller was expected to send, the last known tracking events and any note about a split delivery. Contact support with the specific unresolved record and the candidate orders. A clear inquiry might say that two domestic numbers were expected from shop C, one has an identifiable bag in stock, and you need help matching the second number to its intake.",
+      "source_sha256": "4841d13ea7b2fb0302bd935bd67a6828518530cec14e5acdf1cbb71823c7dd6c",
+      "raw_target_sha256": "d11231543c5316ac126937f79e7e94ac0ca9e14fcbf530ac65cfdc9297c1cc16",
+      "translation": "某条入库记录暂时找不到对应项，不宜把它随手填进剩下的空行。核对每家店预计寄出的件数、最近物流记录及分批发货备注，再把待查记录和候选订单一同发给客服。例如可以说明“C 店应有两个国内运单号，其中一个对应的包已经入库，请协助核对另一个运单对应哪条入库记录。”"
+    },
+    {
+      "source": "Planning the outbound comparison with unresolved costs",
+      "source_sha256": "e7dfee6be33be5ba847c17730d92d5115bbbdc8c72368e0974c8d411f938a642",
+      "raw_target_sha256": "07562bbc97ee21a6d508e8111fe383e506e41ca9e622f08b44e84121623d8859",
+      "translation": "金额尚未确认时怎样比较寄送方案"
+    },
+    {
+      "source": "Keep unknown amounts visibly unknown. A blank field frequently gets treated as zero when a spreadsheet sums a column. Add a status such as awaiting domestic quote to flag a missing charge. If the seller confirms a range instead of a final amount, preserve both endpoints for planning and mark the calculation as conditional. Use the exact amount on the confirmed payment record when it becomes available.",
+      "source_sha256": "f67d0f02b785405902e45c3949788c0803465744a05e066453832b9305b4e070",
+      "raw_target_sha256": "e91fa143a8acee5521402ab72011a9e90103733bfabcc73c7185b49c19b47bcb",
+      "translation": "未知费用应明确写为未知。表格自动求和时，空白常被当作零，因此可以另设“待确认国内运费”等状态。如果卖家只提供区间，做预算时保留上下限，并注明合计是条件估算。找到实付凭证后再填入确切金额。"
+    },
+    {
+      "source": "You can still make a useful decision with one missing number. Assume the confirmed items total 250 yuan and the preferred basket has a hard merchandise budget of 300. There is 50 left for the unresolved item plus any remaining seller charges. If the item's selected price alone exceeds 50, you already know this plan will exceed that budget, even before international freight. If the selected item costs 40, the decision turns on the remaining conditions. The calculation identifies what you need to ask next.",
+      "source_sha256": "b9328892921c2f0b25868d0f4ecf22ab90dcfe2c80423050d47ba1c8c873abdf",
+      "raw_target_sha256": "a5ff83696746c175ba6a130b11027b0953eabb3272134968c40113f39c20abc8",
+      "translation": "已确认商品合计 250 元，货款预算上限是 300 元，则剩下 50 元需要同时覆盖待定商品和卖家的其他收费。若该商品选定规格本身就超过 50 元，不计国际运费也会超预算；若只需 40 元，则取决于剩余条件。这样即使缺一个数，也能知道接下来最值得问哪一项。"
+    },
+    {
+      "source": "Closing the basket without losing its history",
+      "source_sha256": "81fb1c9516dcdc8451ecede3e4508ace422bfedab2ed2a684bde26662c269b38",
+      "raw_target_sha256": "17b57e2a918556d57a62e3cad0236bdc14b2f52eabf9dd74806924fd93e5d581",
+      "translation": "结清购物清单，同时保留变更历史"
+    },
+    {
+      "source": "After delivery, keep a final list of which purchases ended up in which parcel. Some may be returned, sent later or accepted as replacements. If you sent the coat earlier and the two bags later, the original one-box estimate is useful historical information, not the final transport bill. Enter two outbound references and their confirmed amounts. Where an amount is in another currency, retain its original value and the actual converted payment entry.",
+      "source_sha256": "ad019ffc062501eadc4c70c50a31bbfe5e33044099d585329f54e4b9974be4db",
+      "raw_target_sha256": "eadb478e45776357af383eb90d4d49c9ef196efaf5c09e41a0438b7391dd53a7",
+      "translation": "到货后保存一份每张采购订单最终归入哪个包裹的清单，包括退回、延后单寄或换货的商品。如果大衣先寄、两个包后寄，最初的一箱估价仍有参考价值，但它不是最终运输账单。记下两个国际包裹编号及各自的实付金额。遇到不同币种，同时保留原币金额和实际换算后的付款记录。"
+    },
+    {
+      "source": "Finish by checking arithmetic in stages. Sum retained merchandise by shop. Add domestic delivery shown on the relevant purchases. Apply confirmed seller credits. Add final parcel payments and separately billed services only once. Reconcile any friend-to-friend allocation to the result. The resulting total can then be traced to records the people involved can inspect, including the reason the final basket differs from the first shortlist.",
+      "source_sha256": "1d9e3df29cc43d20091966013a7c0a98a085b9968b225f5c87d60105d639dbf8",
+      "raw_target_sha256": "02325f8aaaa1f25e1befdb3a02d4088bbea9a7f16d06b7ccc5ae1bdbfbe0c395",
+      "translation": "最后分阶段核算：按店铺合计保留商品的货款，加上相关订单列明的国内运费，扣除确已到账的退款，再把各包裹的实际支付和单列服务各加一次。朋友间的分摊合计应与总额相符。这样既能逐笔查回凭证，也能说明最终收到的商品为什么和最初清单不同。"
+    },
+    {
+      "source": "Two screenshots can show different numbers for the same purchase without showing a different underlying price. Work from a common currency, a stated conversion direction and an identical set of included charges.",
+      "source_sha256": "6bf28f42334c0e7b34f483760d5104fd7c5b05ed922c6e733e6e1ce02b4db573",
+      "raw_target_sha256": "2731815d8897fa0d97e012ddaf08b0f90c868923c377f7cbfff1b1cd385244e7",
+      "translation": "同一笔购物的两张截图可能显示不同数字，即使商品原价根本没变。想判断哪个报价更低，先统一币种和换算方向，再确认两边包含相同的费用。"
+    },
+    {
+      "source": "Decide what you are comparing",
+      "source_sha256": "a08b7fb5edcbd61099d08e9e65b631b12da71a079d9165c14c43a0d4bd023c72",
+      "raw_target_sha256": "527c87048db068089ffde959e2813bc6551b5e245e0d52fe99c30f5395ac655a",
+      "translation": "先确认手里的数字是什么"
+    },
+    {
+      "source": "A catalogue conversion helps with browsing. A merchant quotation shows an amount offered in a particular currency. A card statement shows what was actually posted. Write which of those three you have beside every number. Do not replace the source currency when you translate a quote into your home currency. Keep the original information available so you can recalculate later without relying on a rounded display.",
+      "source_sha256": "db352828918454dfdaef6d19fe36e7227f04f4c8d896efbdd387c93fd87b9c0e",
+      "raw_target_sha256": "a22bfef3d07de8dc16a14e715b11c115726a4ece05529ccbfccb00cbd67bdb6e",
+      "translation": "商品目录的换算价方便浏览，商家报价说明卖家愿意用哪种货币收多少钱，银行卡账单则显示实际入账金额。每个数字旁都注明属于哪一种。把报价折为常用货币时，不要覆盖原币和原价。保留这些数据，即使网页显示金额经过舍入，日后也能按新的假设复算。"
+    },
+    {
+      "source": "Make the exchange-rate direction readable",
+      "source_sha256": "e4fa0a63cfae68b6e0d25d376ab920ebd9569586cf46adae98db2fcd3a9d36f5",
+      "raw_target_sha256": "5e1a7a3c65ab54ed687b05cf44f22b25edc32bb3bd5585d81edf40abeb6f641d",
+      "translation": "把汇率写成不易用反的形式"
+    },
+    {
+      "source": "Imagine a teaching example in which one home-currency unit buys 7.20 yuan. A 360-yuan quote corresponds to 50 units before fees because 360 is divided by 7.20. If you instead record the rate as home units per yuan, multiply by that number. Write out both currency codes with the rate. A single bare value such as 7.20 is especially easy to use backwards when a sheet mixes several quotations.",
+      "source_sha256": "670c82e94d3b8b3e94b14ada36ed532920913817bc2e6e2ca975eae7f7ae0edb",
+      "raw_target_sha256": "8b6a9c9d7be467db93b7672e75a7b5382561e62c2c660828beef07a6a6bb94c5",
+      "translation": "假设你使用的货币每一单位可以兑换 7.20 元人民币。报价 360 元时，手续费前相当于 50 单位，因为 360 ÷ 7.20 = 50。如果把汇率写成“每元人民币换多少本币”，则要用乘法。把两个币种代码和汇率写在一起。同一张表记录多份报价时，单独一个“7.20”很容易让人把换算方向弄反。"
+    },
+    {
+      "source": "Normalize inclusions before the rate",
+      "source_sha256": "028e5d3bd32b448cc0a6e0199ab6cd55c5584e999f28fcac1d1c207608f6998c",
+      "raw_target_sha256": "4dba0670078862f45f0b547ee875b265bafd8d5f5604b05037ac45b5f889cb38",
+      "translation": "先统一收费项目，再比汇率"
+    },
+    {
+      "source": "Suppose quote A covers the same merchandise and domestic delivery as quote B, but only A includes protective packing. Compare the contents before worrying about exchange-rate rounding. Either add the confirmed packing amount to B or label the quotes as different offers. If a missing charge has no confirmed amount, leave a gap instead of filling it with an attractive guess. A conversion cannot repair two quotes that describe different services.",
+      "source_sha256": "33bb436a69ded2e9ee3771159ed02b69551edba9744747c51ac8ee084fcc54fa",
+      "raw_target_sha256": "e462160a78133d2a381da792d9df334bda6ffd4f1fc45fef40faec129ad6b161",
+      "translation": "假设 A 和 B 都含相同商品及国内运费，只有 A 含防护包装。先核对组成，再谈汇率舍入。可以把已经确认的包装费加到 B，也可以注明“两份报价包含的服务不同”。缺项没有确切价格时就写待查，不要填一个看起来优惠的猜测值。服务范围不同的报价，单靠换汇不能公平比较。"
+    },
+    {
+      "source": "Include payment fees exactly once",
+      "source_sha256": "98683f4e7520fd644357d39598d9b861f9af700da3a749c0ca6593198131d7b3",
+      "raw_target_sha256": "9ffb07e1fc4923a5734fe9d3c80147be8be37bed9126084cfc66bae75889e4b6",
+      "translation": "支付手续费只计一次"
+    },
+    {
+      "source": "A card might show one all-in home-currency debit, or separate conversion and service entries. Record what the statement actually shows. If the statement amount is already converted and includes a fee, treating that total as a new source amount and applying another conversion repeats the adjustment. When comparing a live quote with a posted charge, document the quote time and posting date. A later rate can differ even when the merchandise price is identical.",
+      "source_sha256": "aa280a057cbda53a0e7cfd1bdb063010f7cbd44a16be23276779ebd260caf2ea",
+      "raw_target_sha256": "03a71865465507f6e610b84417cd3e1790c272dd6e8c05250b6c77a23f55c3ce",
+      "translation": "有的卡账单只显示一笔本币总扣款，有的会把换汇和服务收费分列。照账单实际显示的方式记账。金额已经换成本币并含手续费时，不能拿它再次作为原币金额换算。比较即时预估与实际入账时，还需记录报价时刻和入账日期，即使商品原价没变，之后采用的汇率也可能不同。"
+    },
+    {
+      "source": "Round at the point where payment rounds",
+      "source_sha256": "e6c4dc2923c5d7106126101284b046fddd8614bf7140e37bc798324a87828292",
+      "raw_target_sha256": "47553515a0f966828374a52c816a9bfade794efab7df4b36f519752e0e8d0aa0",
+      "translation": "跟实际付款的舍入位置保持一致"
+    },
+    {
+      "source": "When a seller summary collects several lines into one payment, convert the original-currency subtotal for your comparison. Rounding every small item first can create a few cents of difference from converting the order once. For a reimbursement sheet you may still need per-person figures. State which line absorbs the rounding remainder so that the sum of the allocations matches the amount actually paid.",
+      "source_sha256": "c59cf691180c32d61209d8865a0a86d2a39e916fc71178bcdf50c87f55e10d76",
+      "raw_target_sha256": "6903d98696d7cb385be68978812969ac07728509b2f4c31ec30e4e30abdefe6a",
+      "translation": "如果卖家将几行商品汇总成一笔支付，核算时可以先求原币小计，再整体换汇。若每个小件先舍入后相加，结果可能与整单换算相差几分。报销或多人分账仍然可以列个人金额，但要注明舍入尾差由哪一行承担，确保个人合计等于实付金额。"
+    },
+    {
+      "source": "Worked example with a fixed fee",
+      "source_sha256": "4d49b34d0fec809f05d0d2aee85a66cb402f5e3e8a83572c22074f5f83056ffd",
+      "raw_target_sha256": "c97b3d74f53cbde987f6ba43a46c1ab656abae6ac45c8cae0d7ea9a08ac07960",
+      "translation": "加入固定手续费算一次"
+    },
+    {
+      "source": "Take a fictional payment in which the base amount is 300 yuan and the comparison rate is 7.50 yuan per home-currency unit. The base conversion gives 40.00. One hypothetical payment method adds a fixed fee of 1.30 home units. Another has no fixed fee but quotes a conversion that results in 41.00. For this amount, the second method would cost 0.30 less, provided both figures are final and cover the same goods and services. The lower quoted exchange figure alone does not determine the result.",
+      "source_sha256": "0c3db5328050fabbc9b5052a42801e535861af27e07a7b916137cdc9e792ed84",
+      "raw_target_sha256": "36357f61d62aad5bb3f969ad924997f51d625ae4f02b4897ba2f1718cb37a67b",
+      "translation": "假设付款 300 元人民币，比较汇率为每一本币单位兑 7.50 元，基础换算结果为 40.00 单位。第一种支付方式另收固定手续费 1.30 单位，第二种不收固定费，但按它提供的汇率算出 41.00 单位。如果两者都是同一组商品、同一服务的最终价，第二种便宜 0.30 单位。只看谁标出的汇率更低，无法得出同样结论。"
+    },
+    {
+      "source": "Now change the purchase to 75 yuan using the same illustrative conditions. The first method gives 10.00 plus 1.30, while an equally sized percentage difference on the second method might have a very different effect in absolute terms. Recalculate instead of assuming the method that won on the first purchase also wins here. Fixed fees matter proportionally more on small payments. These invented numbers explain comparison mechanics only and make no claim about the methods, rates or fees offered to any HubBuy account.",
+      "source_sha256": "8dd32c88b37adfdc43fb41d2844babc87a700d5c9c56733200ac5b534391ab68",
+      "raw_target_sha256": "3a2c67dfb5db92a58b1ee31adb81156779842add82339b663168266adfe65ee5",
+      "translation": "如果改买 75 元的商品，仍按上述条件，第一种方式会产生 10.00 加 1.30 的费用。另一种方式的比例差即使不变，换算成实际金额后效果也可能不同。固定手续费在小额支付中占比更高，不要沿用上次的选择，应该再算一次。这些数字只演示比较方法，并不代表 HubBuy 账户实际可用的支付渠道、汇率或收费。"
+    },
+    {
+      "source": "Keep a consistent direction in a mixed-currency worksheet",
+      "source_sha256": "718304e88caca3d4ac1e63da41042e9174b8ff37903c992a09773499a2ad8aff",
+      "raw_target_sha256": "78b726befbfbdae875c3491239269c87ea54d7db9407755b4d972f89d5926c6b",
+      "translation": "在多币种表格中统一换算方向"
+    },
+    {
+      "source": "If one seller quotes in yuan and another amount already appears in your home currency, define a single comparison column. Convert each source amount into that column once. A simple note next to the source amount should give its unit and the conversion direction. Enter 150 CNY and 7.50 CNY per home unit as separate fields. Check that the converted result times 7.50 returns the source amount before any fees.",
+      "source_sha256": "4bb2c9449ba1cb6aac59545b33a886dbce2ef89cf575933f4ed475cada7220dd",
+      "raw_target_sha256": "1596c5793b4d601459c993a3c0c4a842445a2686ae71a92f20a61b5a9c33b4f3",
+      "translation": "如果一家店报人民币，另一项已经以本币显示，建立一个统一的比较栏，每笔原始金额只换入那一栏一次。原数旁注明单位和方向，例如把 150 CNY 与“每一本币单位兑 7.50 CNY”填入不同格子。换算后再乘回 7.50，应还原为手续费前的人民币金额。"
+    },
+    {
+      "source": "A common mistake occurs when a friend pastes a displayed conversion into a column that ordinarily contains original yuan amounts. The sheet then converts an amount that has already been converted, creating an implausibly low total. Use clear column names and keep screenshots or payment references close to the corresponding row. If you cannot tell which currency a pasted number uses, leave it out of the combined total until you can identify its unit.",
+      "source_sha256": "4347ad0f8751f966fb8d3e5b956089dabb9a6b8cea582e2595dd518d6f90d103",
+      "raw_target_sha256": "9e6635b4e89363fdfd93fdfec51ddaf90dfa2c8e8088037c11fcc681b0b24e05",
+      "translation": "朋友把页面上已换算的价格粘贴到原本只填人民币原价的列，表格就会再次换算，导致总价低得不合理。用清楚的列名标明币种，并把截图或付款流水放在对应行附近。如果看不出一个粘贴进来的数字用哪种货币，先不要把它加入合计。"
+    },
+    {
+      "source": "Compare estimates at the same point in the transaction",
+      "source_sha256": "c37bc766a5a7a39cb7fe1324f12fe8ebf5d217b655d249cf41c54bfdbfccd5ce",
+      "raw_target_sha256": "6f7faf3003608ac5ff824adadc9a425b3cdd7a9e709bd6fa2c72f544293856ed",
+      "translation": "在交易的同一阶段比较"
+    },
+    {
+      "source": "A product card viewed in the morning and a payment statement issued days later are different observations. Changes in selected variant, quantity, discounts or payment method can alter the result before exchange rates are considered. Begin by reconstructing the original-currency merchandise subtotal. Add domestic shipping and any services the relevant screen includes. Only once both source subtotals describe the same purchase should you compare conversion rates.",
+      "source_sha256": "2de528059d188a69c46e10b9456f3baebd7f010c578f63d2f8be3b6902c14751",
+      "raw_target_sha256": "7c788caa67b629f7db25c9bde6d684bef89b47a523a5aef4862abb1c87548e61",
+      "translation": "上午浏览的商品卡与几天后出具的账单记录的是两个不同时间点。即使还没考虑汇率，规格、数量、折扣或支付方式的改变也能影响总额。先还原商品的原币小计，再加上两张图各自明确包含的国内运费与服务费。只有原币小计对应同一笔购买，才适合比较汇率。"
+    },
+    {
+      "source": "For a parcel, keep packed measurements and route consistent as well. If the first screenshot was a quick estimate for one jacket and the second a final all-in payment for a larger consolidated package, no exchange-rate calculation can make them a fair pair. Mark the physical change first. If useful, obtain a new estimate for the same parcel inputs in the current display currency and state its date. An old figure can explain the history even when it cannot answer the present comparison.",
+      "source_sha256": "4b2401952fde90aa1f6fe0c31a294994432a010bd75cf8fc62c5a896c88e1248",
+      "raw_target_sha256": "aa776b0e706ce9a23a597419bd73e8fdade11e91080c4b84ed0b536bab77d99a",
+      "translation": "比较包裹时也要统一封箱后的尺寸和线路。如果第一张图是一件夹克的快速估价，第二张是更大合箱包裹的最终实付，没有哪个汇率能让它们成为同条件报价。先标明实物发生的变化，必要时用同一包裹条件和当前显示币种重新估价，注明日期。旧截图仍可解释来龙去脉，只是不一定能回答眼下的价格问题。"
+    },
+    {
+      "source": "What a refund can and cannot tell you",
+      "source_sha256": "0ea1144439a5040a1775d24f07fe78055bef72f3431428105af67182b673efd9",
+      "raw_target_sha256": "932aa35a462858cae4f69b9daee38ee18be26cd2a4d57b55bd7bd829bf720cce",
+      "translation": "退款记录能说明哪些变化"
+    },
+    {
+      "source": "A refund statement may show the original currency even when your card posts a home-currency credit. Record the two values in their own columns, matched by reference where possible. A different home-currency credit from the original debit can reflect several factors. Check the amount refunded in the original currency, the payment destination, any stated fee and the dates of the transactions before attributing a difference to exchange.",
+      "source_sha256": "d66e06b520387362ee8e94a89f10f83061ac4559e1b58acdf05747ba8ac8e19b",
+      "raw_target_sha256": "d665ff4d9d80ccce711b00a2bc497b1892709b100d2d2da155004a3ef7a4b1d0",
+      "translation": "退款明细可能以原币列示，银行卡却将退款按本币入账。分别记录两个金额，并尽量用流水号对应。原本币扣款与后来的本币退款不同，原因可能不止汇率。下结论前，先看原币退回多少、退到哪里、有没有明示的手续费，以及两笔交易各是哪天入账。"
+    },
+    {
+      "source": "Suppose a 150-yuan line was originally included within a larger payment. The later credit may refer to that one line only, not a proportion of every service on the initial order. Domestic delivery or optional work may have separate terms. Use the explicit refund breakdown or ask about the named purchase. Applying an old per-item estimate that included an allocated share of freight can create a supposed shortfall that the actual refund statement never promised to cover.",
+      "source_sha256": "3661b3c3bab7892ddab70d2d7638bd9d938a94446f0ff29a88e52ad85c7244c9",
+      "raw_target_sha256": "81720aa470c8ec764f41798ecbcaf4cac871cc98513be5aaf0db17dfed8ad66c",
+      "translation": "如果初次大额付款中含一行 150 元的商品，之后退款可能只对应这件商品，并不按比例退回原订单的所有服务。国内运费与可选包装可能有各自条件。应查退款明细，或按购买编号询问。若用早先包含分摊运费的单件预算作基准，就可能误以为少退了一笔，而实际退款记录从未承诺退还该部分。"
+    },
+    {
+      "source": "Use a range when today's decision precedes payment",
+      "source_sha256": "6df8b197185cfeab250ab30149e5581ac21d77041a081cb42e4c8440a74ebcd0",
+      "raw_target_sha256": "120767ee2357cb16cca6da95c3c79db9a9b6913278825d39d1f36029351e7396",
+      "translation": "付款前先给预算一个区间"
+    },
+    {
+      "source": "Sometimes a buyer needs a planning figure before the exact transaction rate is known. Show a sensitivity range using clearly labelled hypothetical rates instead of presenting a single amount as guaranteed. For a 450-yuan amount, 7.50 yuan per home unit produces 60.00, while 7.20 produces 62.50, before any additional charges. That 2.50 spread identifies how much the assumption matters for this hypothetical budget. It does not predict the rate available at checkout.",
+      "source_sha256": "ad285f62a7567d96977ce069436772b8c5c9eede0f9a1916d96625e07ad3a66a",
+      "raw_target_sha256": "1dee0b8fa4de631d77321a61182af1fce155674b689ee5a29fab6bd592f9c31a",
+      "translation": "还不知道结算汇率时，可在清楚标注假设的前提下计算区间。以 450 元人民币为例，每一本币单位兑 7.50 元时为 60.00 单位，兑 7.20 元时为 62.50 单位，都未计额外收费。2.50 单位的差额说明汇率假设对这份预算的影响，并不预测结算页最终会提供什么汇率。"
+    },
+    {
+      "source": "When you receive the actual payment record, preserve your range and add the posted result beside it. State which differences came from the observed conversion and which came from changed contents or services. Share the source currency, the conversion used and the total amount due together whenever you discuss the quote with another person. This way the comparison can be reproduced without relying on a symbol such as a dollar sign that might refer to several different currencies.",
+      "source_sha256": "23632af94c649e3db9efe6cba01b1cb653c884d299ae239da11d268e125d90a3",
+      "raw_target_sha256": "4f38f0649f3f9aa2ccd0a2cb242223e813003f34b898efd1c742faf520771a5d",
+      "translation": "拿到实际支付记录后，保留原区间，在旁边加上真正入账的结果。哪些差额来自实际换汇，哪些来自商品或服务变化，应分别注明。与别人讨论报价时，一起提供原币、采用的换率和总应付金额。这样即使同一种货币符号可代表多个币种，对方仍能复算你的结果。"
+    },
+    {
+      "source": "A practical final check",
+      "source_sha256": "dcd0d041eef8234123b8342f2e794cf142c229fb7b3de2806ec9d7f6b43a24a9",
+      "raw_target_sha256": "abfded841ca26ac84b50647ce4578dc953977e3d68bc9c0edda34b437a4b3198",
+      "translation": "核对截图前的最后一步"
+    },
+    {
+      "source": "Before accepting a number from a screenshot, identify the currency code and whether the price covers one unit, the selected quantity or the entire parcel. Save any quoted conversion alongside the original amount. Someone reviewing the purchase later should be able to reproduce the converted value using those saved inputs, even after the currency selector displays a different rate.",
+      "source_sha256": "423e0cf302192f1b93d8247a3d7a30edf2c3b6f841c8e50c494acd9696851ff5",
+      "raw_target_sha256": "9b5cd45d6770ce534346cf2127a802849e796d7d3cbef641236bf7ee7b33b243",
+      "translation": "先找出币种代码，再确定金额对应单件、已选数量，还是整个包裹。把页面标明的换算价和原价一同保存。日后即使页面的货币选择器已经改用另一个汇率，其他人也应能凭这些记录还原当时的换算金额。"
+    },
+    {
+      "source": "A service can change the parcel twice: once through its own price and again through its effect on the finished box. Capture those effects separately before choosing how to pack.",
+      "source_sha256": "d759ce1bfb07d977c0825b09619554547fd2c32f923abbe6050ede0fb1637153",
+      "raw_target_sha256": "e281b6c7a9e0ea01958e43eb3bbf4824ee80f7f4d91d9c7e749d59ed0a3d21e0",
+      "translation": "加购包装可能从两处改变费用：一是服务本身的收费，二是成箱尺寸或重量变化引起的运费调整。确定怎么包之前，分别记录这两个影响。"
+    },
+    {
+      "source": "Start with what needs protection",
+      "source_sha256": "a192b4e015990b2fc4b8f286e652a73d4495828f36e6ac5c0b357370f39bf72b",
+      "raw_target_sha256": "27c9cf97181761f8e5586ec624dc5175a6189f8028c72db5a8984291e6326507",
+      "translation": "先明确什么部位需要保护"
+    },
+    {
+      "source": "Decide which part of the purchase must arrive in a particular condition. The concern might be a thin handle, vulnerable corners or a retail box needed as a gift. A request for the cheapest packing leaves the warehouse guessing about your priorities. Identify the item and the feature that matters. If keeping a retail box affects your decision, ask before authorizing its removal, particularly while any exchange question remains open.",
+      "source_sha256": "665a16fb5b4245d870ac0beb061033792568bad5b598f54ce65ce4f163db6b3a",
+      "raw_target_sha256": "e3972bbbe8ec5c44f24fc8df72ba81fe79016b98461dd0af977ba4dfa89d8b6c",
+      "translation": "你可能希望细提手不被压弯、尖角不受损，或作为礼物的零售盒保持完整。只说“用最便宜的包装”，仓库很难判断你最在意什么。说明商品以及必须保护的具体部位。原盒若影响是否接受商品，应在授权拆除前问清楚，尤其是换货事项仍在处理时。"
+    },
+    {
+      "source": "Define comparable packing options",
+      "source_sha256": "16d6fe7c0acf97b6f6dcbe23a1807a4c817dd39c634cf24d782215c8d02c9baa",
+      "raw_target_sha256": "9c048d0e1e8f6005ebf8dcb448aff8d570d0e4f4c76c73636bf1305e992e20fb",
+      "translation": "选出可以公平比较的包装方案"
+    },
+    {
+      "source": "In a teaching example, option A uses an existing carton and simple padding. Option B adds an inner protective shell. Write the cost of each quoted service, then measure or request the external weight and dimensions of the finished parcel under each arrangement. The shell may change the size available to a route, even if it adds little weight. Enter the same destination and product category for both estimates.",
+      "source_sha256": "6da576fcb0a7235baf38dc2ed0405705168582f5db95b54c441787ab58f23df7",
+      "raw_target_sha256": "3114dc8f7d36da2658fb3c1153fcd91c9344b4ec019305ed9d9b5642b9f23af7",
+      "translation": "假设 A 方案沿用现有纸箱，只加普通缓冲材料，B 方案另加一层内保护壳。记下每项服务的报价，量取或向仓库索取两种包装方案完成后的总重与外尺寸。即使保护壳不重，也可能让箱子超过某条线路的尺寸限制。估算两案时使用相同的目的地和商品分类。"
+    },
+    {
+      "source": "Separate the two price effects",
+      "source_sha256": "1d3ee03edce2a739feae90e809737ebff82394ecfa14ae9454ec7e9bab0f470b",
+      "raw_target_sha256": "974d8f5d59f9fc767945c0e37680830c56f524e563bfd40433cd7d790d5e28c3",
+      "translation": "分开记录服务价和运费变化"
+    },
+    {
+      "source": "Suppose a hypothetical quote rises from 150 to 166 after a service is selected. If the service itself is listed at 10 and the packing changes the freight line by 6, record both changes. If the quote shows only an all-in increase of 16, report that observed difference and leave its composition unresolved. Do not present the whole 16 as the service fee or add the visible 10 on top of the already updated total.",
+      "source_sha256": "68d8bad3107f5a52d9eb1c9de2dd4cc24e04d841758b08975d4c56726f9d30a7",
+      "raw_target_sha256": "f0c00eaa4b2755c840178756ad88f67c632c8e12d468505e25a375a56cf707a8",
+      "translation": "假设勾选一项服务后，报价从 150 变为 166。如果账单明确列出服务费 10，包装变化使运费增加 6，就分别记下。如果只看到总额多出 16，只能确认总差额，不能断定全部 16 都是服务费，也不能在已变为 166 的总价上再加一次 10。"
+    },
+    {
+      "source": "Look at packaging removal as a trade-off",
+      "source_sha256": "a45e85d82da589fcb6f640ecf33dfe33b3835a1f9ff7e81db98698c8edd687bf",
+      "raw_target_sha256": "349ad6873cdaf15b7ced875e0cbd8bd3aa4d5f60971fbdf3f8e303cd98ef4af5",
+      "translation": "拆包装时要考虑保留什么"
+    },
+    {
+      "source": "Removing an empty spacer can reduce volume without changing the protection needed. Removing a rigid box from an item that depends on it for shape is a different decision. Identify what will replace the original protection. Ask whether parts such as cards, straps, wrapping or detachable pieces will be retained. If your concern is size rather than weight, check the finished longest side instead of assuming that discarding a box always changes the available routes.",
+      "source_sha256": "3fbe0abe0fdaeca2e6f6ac41f23759d0b0a6d1355fac8083bafa52fb53fe3321",
+      "raw_target_sha256": "3bbc0ce48d3a5514f53785ab54ca7252cc901e577c3258f8d5f0b9a6566c182d",
+      "translation": "拿掉占空间的空填料，与拆掉给商品定形的硬盒，对保护效果的影响完全不同。先说明用什么替代原有防护。确认卡片、肩带、包裹物或可拆卸部件是否保留。如果主要卡在尺寸限制，应检查打包后最长边；扔掉一个盒子不保证能改走另一条线路。"
+    },
+    {
+      "source": "Before accepting the packing result",
+      "source_sha256": "4dc1799623e2f944d80e1b911bc525aa334e8b93ab3b489141ce01e12d4b9ead",
+      "raw_target_sha256": "eccd993f6dcd15f71eff991c4c927c07998b0b9ce1e9e60a21aced8924638c00",
+      "translation": "验收前对照仓库确认的指令"
+    },
+    {
+      "source": "Compare the warehouse's confirmed instructions with the quote, the selected content list and any submitted measurement request. If an item has been removed from the parcel, update your old comparison. Keep the record of what was requested separate from what was observed. A final packed weight is evidence of the weight; it does not reveal whether a delicate edge was padded internally.",
+      "source_sha256": "8a1aef7bd552a17b171310260813899efb2f7b77f1ebbb4f529816db45e12f04",
+      "raw_target_sha256": "128e3bdebc5ca0b188ad8559fad60d1def9c1b362acbb56fddaa174698b77dc2",
+      "translation": "将仓库确认的包装指令、报价、所选物品清单和测量要求放在一起核对。若有商品已移出包裹，就更新早先的比较。把“要求怎样做”与“实际看到什么”分开保留。封箱后的秤重能证明总重，不能证明内部的脆弱边缘是否单独垫了缓冲材料。"
+    },
+    {
+      "source": "Comparing two versions of a mixed parcel",
+      "source_sha256": "09fb668c8b8cfc520c197f2a6e843121a837efd907f1a1d17dd5392700b48dea",
+      "raw_target_sha256": "934f5033eb6f84637b08af7fc02bbb3e37addaea1ee0a71586d4f3d92340bc58",
+      "translation": "比较同一组商品的两种包装"
+    },
+    {
+      "source": "Imagine a rigid accessory case and two soft shirts. The accessory case has a latch that should not bear pressure. In arrangement A, all three items sit in one tight carton with the shirts around the case. In arrangement B, the case has a separate padded sleeve within a larger outer box. Ask what protection each service actually supplies and whether the packed dimensions are confirmed or estimated. The second arrangement can provide different protection while also changing the available freight route.",
+      "source_sha256": "0bfd4b366ea6686dcc6725e9b7a93f9547ee8034c4440abe349c3db0195de886",
+      "raw_target_sha256": "15adad14201fbe028309011ad2c273809ce0db60067fbe8883310151fea65b8f",
+      "translation": "假设要寄一个硬质配件盒和两件柔软的衬衫。盒扣不能承受挤压。A 方案把三件东西装进紧凑纸箱，用衬衫围住配件盒；B 方案先给配件盒加带衬垫的保护套，再装入较大外箱。询问各服务实际提供什么保护，列出的外尺寸是预估还是已实测。B 方案的保护效果可能不同，可用线路也可能随之改变。"
+    },
+    {
+      "source": "Suppose the live representative figures you write down for an illustrative exercise are 130 for freight and 4 for the basic packing in A, compared with 136 for freight and 11 for the more protective service in B. The totals are 134 and 147. The extra cost of B is 13, consisting of six more in freight and seven more in selected packing. If the 136 already includes the protective service, the calculation changes. The wording of the line matters as much as the numbers, which are fictional and do not describe HubBuy's price list.",
+      "source_sha256": "7bc43873a27eb0d92dfa1cdef4e0394173271bcd39f5ef80b6a7ba87827d57d2",
+      "raw_target_sha256": "178017039542fb7e98ae65a219209b5fd1e0188ef34af5d4f799a7d43e665d07",
+      "translation": "假设 A 的运费为 130、普通包装为 4，总额 134；B 的运费为 136、更强的防护服务为 11，总额 147。B 多花 13，其中 6 是运费差，7 是所选包装的差额。但如果 136 已包含防护，算法就要随之改变。因此要连项目说明一起读。这组数字只是演示，不是 HubBuy 的实际价目。"
+    },
+    {
+      "source": "Decide what information is worth obtaining",
+      "source_sha256": "adeb6320a0d5fc95a70925d0e8557f1d911df65cddca31f7bc0d288e76e7a325",
+      "raw_target_sha256": "893c9402042de8554de6e804610321e606bb94ee69e1b27fd9e2600ba92f824a",
+      "translation": "只为真正影响决定的信息花时间"
+    },
+    {
+      "source": "Before asking a warehouse to prepare two complete alternatives, identify which uncertainty drives your decision. If keeping a retail carton is essential, comparing a box-free arrangement wastes time. If a route has a maximum outer dimension, the useful question may be whether the existing carton fits once protection is added. If the estimator shows a result for only one product category, clarify route acceptance for all contents instead of treating cheap packing as the deciding factor.",
+      "source_sha256": "254440eda071087f0d64c6badc7572c3f8baa83d27b5963cbc080d80615b6cc4",
+      "raw_target_sha256": "38aa6b911e58be45d4ee55d55e9707de88801a28b567ffe4bf3b2b07780282b3",
+      "translation": "让仓库试装两套完整方案前，先找出哪项未知条件会决定选择。必须保留零售箱，就没必要花时间比较拆箱方案。某条线路有外尺寸上限时，应优先问原盒加保护后能否符合限制。估算器只对一种商品类别给出结果时，先确认线路能否接收整箱内容，不要仅凭包装便宜就下决定。"
+    },
+    {
+      "source": "Ask about any service charge for a change or for obtaining additional measurements. Do not assume that an alternative packing arrangement can be trialled, reversed and photographed without cost. Record what the account actually offers. A sensible short message identifies the current parcel, the protection that must remain and the measurement you need. For example, a buyer could ask whether the shortest eligible box that retains the protective insert will stay below a stated route limit. A useful answer concerns that precise plan.",
+      "source_sha256": "71b6105bfa7fb445f6addc6feecb14034004809838efbe51c7a34ad199822b1f",
+      "raw_target_sha256": "1f8ed89d2ed8ad2455ca16f155654d47f2a47bbf48d1250131ec6bb4c3570986",
+      "translation": "询问改装或加测尺寸是否收费，不要默认可以免费试装、拆回、再拍照。以账户实际可选服务为准。给仓库的信息可以很短：说明包裹编号、必须留下的保护和需要的测量结果。例如：“保留这个护垫的前提下，可用的最短外箱能否满足该线路的长度上限？”对方才能针对这一种实际方案答复。"
+    },
+    {
+      "source": "Recognize when cost per kilogram is the wrong measure",
+      "source_sha256": "35fd419ba362eed0fbdb93cb1410e8ac58029d334a337d5c83bde1c9a28bd311",
+      "raw_target_sha256": "69c00e0721a0d00d3ca29386a731490a1b537f1451f054dda402cabe1f944d6f",
+      "translation": "识别每公斤成本的局限"
+    },
+    {
+      "source": "Some buyers compare packing by dividing the invoice by the scale weight. A heavier but better protected version may appear cheaper per kilogram even though it costs more overall. Conversely, a lighter parcel with a larger outer box may cost more on a route that considers volume. Use the total charge for the parcel that actually fulfills your requirements. Keep a per-kilogram calculation only when it helps answer a secondary comparison.",
+      "source_sha256": "ecbf510c57fc6f7be8e8efef09a48759fab167d4f43b398fa9b457f73d0421e8",
+      "raw_target_sha256": "627a95cfd181eb34df4de9772dc97c703e66bfb7e33a446537c03922fbf02c60",
+      "translation": "有人用账单总额除以过秤重量来比包装。保护更好的方案如果更重，可能总价更高、每公斤却更便宜。反过来，包裹变轻但外箱变大，按体积计费的线路也可能更贵。优先比较满足保护条件的包裹总额，每公斤成本只作补充参考。"
+    },
+    {
+      "source": "Separate removable packaging from essential components",
+      "source_sha256": "1166812fb456a10affbdb839ddd1b7fccfb6dbaabe0898e49be953c84ba07e2b",
+      "raw_target_sha256": "fa9028c70c409bde5063b091385bd28fb378f465385e8b413c63245b42e64871",
+      "translation": "区分可丢弃的包装和商品组成部分"
+    },
+    {
+      "source": "A cloth bag inside a box might be disposable packing, a dust cover included with the merchandise or a separately paid accessory. Specify which you mean before asking for removal. Where several items carry loose parts, list the pieces that must remain together. Save the original option description if the item's completeness or potential return depends on a particular pouch or box. If the identity of a component is unclear, request clarification before allowing disposal.",
+      "source_sha256": "d401b3e27fa33c54f987cc9b0884f41f9e10a7b6502e3e9a056df474ef492cbc",
+      "raw_target_sha256": "08771904445fced681e34aa8a9920ac81d7d960b6188b0a4b835152cd18f6bfc",
+      "translation": "箱里的布袋可能只是包材，也可能是随商品附送的防尘袋，甚至是另付费购买的配件。要求拆除前应指明是哪一个。有多个散件时，列出哪些必须随主件保留。如果商品完整性或潜在退货要求取决于某个袋子、盒子，保存原始规格说明。无法识别时先问，再决定能否丢弃。"
+    },
+    {
+      "source": "A useful packing record can be short. Write one line per item stating retain, remove or ask, followed by the physical object concerned. For example, retain the protective insert around the handle, remove the empty seller dispatch carton if permitted, and ask before discarding the outer retail box. This makes the instruction understandable even when two boxes have similar dimensions. It also helps you interpret a photograph of the contents before sealing.",
+      "source_sha256": "af2a1fa1139d083102afbbd0c7836ba022a74f008a4348b3f2c5ed710c235c1f",
+      "raw_target_sha256": "ffd4ec86a0f23111878ed3a19472317d088990301d6b1065de59fff55f69bf53",
+      "translation": "包装记录不一定很长。每件物品写成“保留、移除或先问”加实物名称即可。例如：保留提手护垫；条件允许时去掉卖家发货用的空纸箱；零售外盒丢弃前先询问。即使有两个大小相近的盒子，这样的指令也不易混淆。之后查看封箱前照片，还能逐项核对。"
+    },
+    {
+      "source": "Compare the result with the instruction",
+      "source_sha256": "e59d15d3bca4c4afa991d106b466d786f19312b5b8356461c905293bf51fdec3",
+      "raw_target_sha256": "a654bea6c8912ec6fdbf2f3b74d959bce8c245cb0a1075ac9d3f35b25b2fc035",
+      "translation": "将最终结果与原要求对照"
+    },
+    {
+      "source": "Keep the final parcel statement next to your selected services and measured outer dimensions. If the outbound charge changes, compare the final dimensions with the size assumed earlier. If the invoice shows an additional service, identify which piece and which instruction it corresponds to. If there is no clear match, ask support to explain the line and supply the quote you were comparing.",
+      "source_sha256": "1724744fec3bd6f6c43deadcc8353df61b8b03091e65d292b9d04250ca2ca386",
+      "raw_target_sha256": "369aa63d3ebb11834c35e05782aba6920d3f922ed40399686ccbc36cfaffd81d",
+      "translation": "将最终包裹账单、购买的服务及实测外尺寸放在一起。国际运费发生变化时，先对比最终外尺寸与预估尺寸。若账单出现新服务，找出它具体对应哪件商品、哪条要求。没有明确对应关系时，把用于比较的原报价发给客服，请其解释账单中的那一行。"
+    },
+    {
+      "source": "At receipt, preserve photographs of the box and its internal arrangement if you need to report a problem. Document the visible condition; a photograph cannot establish where along the journey an impact occurred. Link the parcel reference, requested protection and observed outcome. Keep financial reconciliation and a condition complaint distinct even when both arise from the same shipment. One concerns which services were paid for, while the other concerns the condition in which the goods arrived.",
+      "source_sha256": "69e1d9b7d19f2f08abcff2169c6972a74e69ed73a590ebf1f5ac1c856c014962",
+      "raw_target_sha256": "da6c6c4351bb736c373d90d2ed85e015205805522de1d9566c2c4224b1b113a2",
+      "translation": "如需报告到货问题，保存外箱和内部摆放的照片，记录肉眼可见的状况。仅凭一张照片通常无法证明在哪一段运输中发生碰撞。把运单号、要求的保护形式和实际结果关联起来。即使都来自同一个包裹，也应分别处理“付了哪些服务费”和“收到时物品状况怎样”这两个问题。"
+    },
+    {
+      "source": "Three lengths and one weight are useful only if they describe the same finished box. Measure in the units the estimator expects and record how you obtained each number.",
+      "source_sha256": "a0f9be81a5409b24845d73bee37dd85ee9d15dffd46e522ef7612ef2fcf417bb",
+      "raw_target_sha256": "985ba49c5fd0c1f153e726c8dbf34bf54b32139b83c877fdefac1080fdbf5c1f",
+      "translation": "长、宽、高和重量只有在测量同一个已包装好的箱子时才有参考价值。用计算器要求的单位填入，并注明每个数字是如何量到的。"
+    },
+    {
+      "source": "Identify the parcel being measured",
+      "source_sha256": "8772b99b45f378d180dca46c262bd3b068448a27badd0c36b6a588cc6bed5a69",
+      "raw_target_sha256": "9584e04183354eb8775ab1fda1b203d2ed886693b4ae13adf8a6c83ccb6e8368",
+      "translation": "先标明测量的是哪个包裹"
+    },
+    {
+      "source": "Write down its contents and whether retail boxes and extra protection are included. Measure the outer package that would travel, not the folded garment or its original product box alone. If you only have measurements supplied by a seller, label them accordingly. HubBuy's estimator offers approximate product presets as starting points and also accepts manual information. Use the more specific measurement when it genuinely describes your parcel.",
+      "source_sha256": "b9649929103ae14fd5628390d2c026ba251a754ef14bb4323744aa93dde483ea",
+      "raw_target_sha256": "fbf7c7cb4e5e5056cd789cde078c513c9df2d85cc394ac531beaaf5e231ef691",
+      "translation": "写下内容物、是否保留零售盒、是否已放入防护材料。要测的是实际寄出的外箱，而不是折叠衣物或原商品盒。如果只有卖家提供的尺寸，应注明来源。HubBuy 估算器既有按品类预设的参考值，也允许手填数据。有真实包裹的实测数据时，优先使用它。"
+    },
+    {
+      "source": "Capture the largest outer spans",
+      "source_sha256": "36b931469b031e5d1defde8c982fc8b56f45dd6e87a347a955c00246431ab3ce",
+      "raw_target_sha256": "a137819a643c8249ae0e5b952e0f908e81909ba67e05300b154a8bc29001d724",
+      "translation": "量取最突出的三个外尺寸"
+    },
+    {
+      "source": "Measure length, width and height perpendicular to each other, including protruding parts of the packaging. Do not use the interior dimensions printed on an empty carton when a packed lid bulges. Place the package on a stable surface. If asking someone else to measure, request centimetres, the outside of the sealed parcel and a note identifying which box they measured. Save the figures with the parcel reference.",
+      "source_sha256": "e2de2eaa38c41cf57e17329a43c27a0443528b1c7eeac0144f1edafcb7ee1689",
+      "raw_target_sha256": "f8c020eba58c406442ff4dc7b7df1ffa1e61aa812960a40cd39d4cb3477af452",
+      "translation": "从相互垂直的三个方向量长、宽、高，包装突起也算在内。装满后箱盖鼓起，就不能沿用空箱标注的内尺寸。把包裹放在稳定的平面上。请别人代量时，明确说“请测封箱后的外尺寸，单位用厘米”，并说明是哪一个箱子。将结果连同包裹号一起保存。"
+    },
+    {
+      "source": "Keep the scale reading in the right unit",
+      "source_sha256": "22c4af2e9abc409fd861a0311fdf276c5acf1a7e6081952b574a25bfa0de81b7",
+      "raw_target_sha256": "5d7ab3b54bddc51ff63c419548a040a3e57d29ee47c6b83ab5f93625038912d9",
+      "translation": "把秤上的读数换成正确单位"
+    },
+    {
+      "source": "The HubBuy form asks for grams. A reading of 1.45 kilograms is 1,450 grams; a reading of 145 grams is an entirely different parcel. Include the packaging and contents on the scale together. A seller's weight for one unit multiplied by the number ordered gives only an initial idea. The finished carton, protection and any original boxes can change the final figure.",
+      "source_sha256": "26580367e25b9b4617a943f40095f7a88dc35d6c049f325a8b31d02972b78ca1",
+      "raw_target_sha256": "3e78c9679bc80647c5e7c2a9ce7add7057dfb800338c25b657a95b6520e9d40d",
+      "translation": "HubBuy 表单要求填克。秤显示 1.45 千克时应填 1450 克；145 克只相当于前者的十分之一。内容物、外箱和包装材料要一起上秤。卖家标出的单件重量乘购买数量只能作为起点，最终外箱、缓冲材料以及保留的原盒都可能改变总重。"
+    },
+    {
+      "source": "Understand what volume tells you",
+      "source_sha256": "e135b405d8febc9f47653624449bd7988098cf8735da3592afadcace420c5b3b",
+      "raw_target_sha256": "758492b333d754e0878dff0511840f6a2b9fb4c865afb9c3afb440cf02b4bf43",
+      "translation": "看懂体积变化代表什么"
+    },
+    {
+      "source": "A hypothetical box measuring 40 by 30 by 20 centimetres has an outer rectangular volume of 24,000 cubic centimetres. A second box measuring 40 by 30 by 15 has 18,000. The reduced height removes a quarter of that geometric volume. Whether it changes freight depends on the chosen route's limits and billing rules, which must be checked on the actual offer. Avoid assigning a general dimensional divisor to every route.",
+      "source_sha256": "9201275407c5ee12dabdb2f9d8e710f295c967c60f9ff4daaee57d63148981f9",
+      "raw_target_sha256": "bae4af0ae2810643fb2dda5dbfbdf040c6b97f365753191daa8408ab1d9377fa",
+      "translation": "假设外尺寸为 40 × 30 × 20 厘米，按长方体计算是 24,000 立方厘米。另一个箱子为 40 × 30 × 15 厘米，体积是 18,000 立方厘米。高度减少 5 厘米，体积下降四分之一。运费是否随之变动，要查所选线路的限制和计费规则。不要给所有线路套同一个体积重除数。"
+    },
+    {
+      "source": "Recheck after the final modification",
+      "source_sha256": "0b1464bdad6ffdc6e2d1b14e77456b0da02e2ed62c759b8b132127ac0181e98a",
+      "raw_target_sha256": "2e54613ce9cb6fe910011e6f5582032050915daa7a67a95c85b34f3089422517",
+      "translation": "最后一次调整后重新测量"
+    },
+    {
+      "source": "Adding a corner protector or moving an item into another carton can change a dimension even when the overall weight scarcely moves. Keep one dated measurement record for each arrangement. A photograph showing a tape around the box's perimeter cannot establish the three separate side lengths on its own. If one figure looks implausible, ask to see the measurement from start to end before submitting numbers to the calculator.",
+      "source_sha256": "024b7205987dcc312bafa9989bc1696bcae0fc53fe2a72be75897b569b1b9b5d",
+      "raw_target_sha256": "41cc9492e3806f725ea70d5e025f23f588a9b58fd65f759af7373f481876479d",
+      "translation": "加装护角或改用另一个纸箱，哪怕总重变化很小，也可能改变某条边的长度。每种方案各留一份带日期的测量记录。照片里只看到软尺绕箱一圈，无法分别确认三条边长。某个数字看起来不合理时，应请对方拍到测量起点和终点，再填入计算器。"
+    },
+    {
+      "source": "A dimensional comparison you can reproduce",
+      "source_sha256": "c8fb2f6bf55487783f193ae6f1dd51f0a8bb736b92d6ca4ca3b6b8da321de8de",
+      "raw_target_sha256": "966985d9c2e6f5a85307d18e10baadd9e10de5c5d7637af60bdd6b3313784f90",
+      "translation": "比较内外尺寸的完整算例"
+    },
+    {
+      "source": "The two numbers answer different questions. Internal volume helps you reason about what might fit. External volume describes the space the packed box occupies. For a route comparison based on outer dimensions, keep the latter. The percentage change in geometric volume is about 21 percent, yet it would be a mistake to predict a 21 percent change in freight. The current route defines the billing method and restrictions. A volume comparison is a measurement exercise, not a complete price calculation.",
+      "source_sha256": "a42233dee7625daf05ed039beeb16e2a092855ceb5f26a3751d81e03c133649e",
+      "raw_target_sha256": "9c3d073962405af10b7e4b2b5b90a37e87414ca51b732b0c8aefc6853392ac9d",
+      "translation": "内体积说明大概能放多少东西，外体积说明打好包后占多少运输空间。比较按外尺寸筛选的线路时，应使用后者。在这个例子里，几何体积增加约 21%，但不能据此预判运费也会上升 21%。实际线路另有计费方法和限制，体积比较只是核查测量值，不是完整的运价计算。"
+    },
+    {
+      "source": "Handling soft and irregular shapes",
+      "source_sha256": "f3053e036d982e08b10918855ff0a1d6ac43005713b5e6e67f72e045b67de3aa",
+      "raw_target_sha256": "c1fb3ec1b39c201c152b6d70e8b01e16d3689819dba72a0ccbea97805c4987e0",
+      "translation": "软包和不规则外形怎样量"
+    },
+    {
+      "source": "A soft parcel can change dimensions depending on how it rests. Measure the maximum outer span as it would travel, including a thick pocket of material or protective padding. If it is later enclosed in a rigid carton, use the carton dimensions instead. Avoid pressing a soft measurement flat to obtain an attractive number unless the actual packing method keeps it that way. A parcel that expands after measuring no longer corresponds to the estimate.",
+      "source_sha256": "c721b0e5d83dcf2868a3a8af854c96d8c267a439d409006e87672b904784c6b9",
+      "raw_target_sha256": "ea6e1aa257f712e8dbaef8a82882bfcb3f0ecde5096bfcf5c9ccdd2edd41034e",
+      "translation": "软包摆放方向改变，外尺寸也可能变。按实际运输状态量取最宽处，较厚的袋口、堆叠的衣料或凸出的缓冲垫都要算上。若之后还要装进硬纸箱，改用外箱尺寸。除非包装结构能一直保持压平状态，否则不要用手压住软包以求更小的数字；量完后恢复膨胀的包裹已经不符合原估价条件。"
+    },
+    {
+      "source": "For an irregular object, record the length, width and height of its enclosing package rather than tracing curves around the object. A tape following the arc of a handle produces a distance along a curve. It does not show how wide the finished parcel is. Where the longest projection is hard to identify, request a wide view of the completed package and the measured spans. Label any estimate based on an unpacked object as provisional until the outer dimensions are known.",
+      "source_sha256": "a898c44c234e769560f09826ac1e7852c13dc1bf7815455cafdc081c0a7df50b",
+      "raw_target_sha256": "339978d5e8ff9b1b4751c5a2eb2f64090ae109a4dd3f07fda2e6bfa71874aba0",
+      "translation": "不规则物品要测包住它的外包装长、宽、高，而非用软尺沿物品的弧线绕量。顺着提手弧度量出来的是曲线长度，不能代表成品包裹的宽度。确定不了最突出的地方，可请仓库提供整箱全景和标示测量区间的照片。还没打包时测出的估价注明“临时”，等有外尺寸再确认。"
+    },
+    {
+      "source": "Comparing two readings from different people",
+      "source_sha256": "c93b239d39dba55250d93cdf3e7cd6086bd302007179eb1058a0f264d46e65bb",
+      "raw_target_sha256": "8ddbeb6d9022736c17b80c31da19b83f71696fd579b2bbfd4c5562da86c46c78",
+      "translation": "两个人量出的数字不同怎么办"
+    },
+    {
+      "source": "A warehouse message might give 17 centimetres for height while an older seller diagram showed 14. Before asking which figure is wrong, identify what each person measured. The diagram could refer to the product, a folded product, an inner carton or the package before reinforcement. Ask for the outer parcel reference and the time of measurement. A difference can be completely reasonable when the objects measured are different.",
+      "source_sha256": "83e0912bb087973834903c67218e5ed6fb166373de26fd369f13835d1e53ccc5",
+      "raw_target_sha256": "73be735d4cb7a4d8f20c1ab920faec0d56aa09609561747361bd0f2ef53d540b",
+      "translation": "仓库说高度 17 厘米，卖家旧图标的是 14 厘米时，先问两边量的是哪件东西。旧图可能显示商品本体、折叠后的商品、内盒，或未加固前的包裹。请仓库注明外箱对应的包裹号和测量时间。测量对象不同，两个数值即使不同也可能都正确。"
+    },
+    {
+      "source": "Protecting the unit conversion",
+      "source_sha256": "2ce312de0412c199caf20643359629cec1cb89c72ccfeb3f4f446971d844141c",
+      "raw_target_sha256": "7d8a02392e09bc39999c8193cb00a44811ef63bc5c234aea3552700eaacd9959",
+      "translation": "在表格中防止单位填错"
+    },
+    {
+      "source": "Create three input fields whose names include cm, then a separate weight field labelled g. If your scale reports ounces or pounds, convert before entering the number and retain the original reading beside the converted value. For a conversion from kilograms, a simple check is to divide the entered grams by 1,000 and confirm you recover your starting reading. A suspiciously tiny value should prompt a unit check before a search for cheaper routes.",
+      "source_sha256": "15bfea15a2bbaa3de6659730bf61287c319893c2d85d4082ef755eabcc207765",
+      "raw_target_sha256": "de23d9d1003d47ea41c07575f3582360dd11a9554dbb3e4170f7b360a7c67d99",
+      "translation": "给三个尺寸栏分别注明“厘米”，给重量栏注明“克”。秤上若显示盎司或磅，换算后再填，并在旁边保留原读数。若从千克换算，将填入的克数除以 1000，应正好得到起始读数。看到异常小的数字，应先检查单位，而非马上寻找更便宜的运输线路。"
+    },
+    {
+      "source": "Several items can arrive with individually recorded weights. Adding those figures provides a starting estimate for contents, but the sum omits the final outer packaging and may include packaging that will later be removed. If there are two outbound boxes, do not enter their total weight alongside the dimensions of only the smaller one. Run the estimator once for each box, with that box's own dimensions, then combine the actual quote totals for your comparison.",
+      "source_sha256": "30095fd9155644341c0e09c266b6905ed9d726ba6975754d878f6c66132afea8",
+      "raw_target_sha256": "c86bfa72ccf253794665faf2cc68036985ef1bde6710885c7cb6b4c162cc38f9",
+      "translation": "各件商品入库时可能分别称重。将这些重量相加可初步估算内容物，但算不到最终外箱，也可能包含之后会移除的原包装。若分成两箱寄，不能用两箱合计重量配其中较小一箱的尺寸。应分别按每箱自己的尺寸与重量估算，再把两份报价相加。"
+    },
+    {
+      "source": "Retaining measurements that remain useful",
+      "source_sha256": "bee213fe497334277c6fa7a4658ebd778b55c46319e2666b62e07fc42dc13b10",
+      "raw_target_sha256": "59d9bf652e47d8f7884d228e6ffd5bb109fabf4aeb5f33db4cdc96786d2a5a5a",
+      "translation": "给测量结果留下可追溯的背景"
+    },
+    {
+      "source": "Attach a short contents description to each measurement set. For example, record that the photograph shows the parcel containing the jacket and both accessory cases after corner protection was added. If an item is removed the following day, create another record rather than overwriting the first. When the final statement differs from the initial estimate, you can then identify whether the difference belongs to a changed route, a changed parcel or a changed pricing input.",
+      "source_sha256": "6af92a3b4bce45eb99303eabf0ce291dd6b09eedc63db6af5e49e7d527ccf110",
+      "raw_target_sha256": "ec38b1198b003684454bc84401c4da7e414e627ff161faa682af2130a31624f6",
+      "translation": "每组数据配一条内容说明，例如“照片为夹克和两个配件盒装入同一箱、加完护角后的状态”。隔天拿掉一件商品，另建新记录，不要覆盖先前状态。这样最终账单不等于初次估价时，就能找出差异来自线路变化、包裹变化还是其他计价条件。"
+    },
+    {
+      "source": "A good final check takes less time than investigating a mistaken quote. Read the three dimensions and their unit aloud, read the weight and its unit, confirm the destination, then confirm that every measurement describes the same physical box. Only at that point is the estimator result useful for comparing an offered service. If one measurement is still missing, state that explicitly when you share the result and keep the next decision conditional on obtaining it.",
+      "source_sha256": "1e5043cab651dcb56b9ce6e06fa89aaa7a5a0da0722d86bf8a9926242810e2fb",
+      "raw_target_sha256": "ae8664ec2b135c5044abcd248da952389f74b9cdfe45315ce11d437b07222542",
+      "translation": "查错常比提前复核更费时。依次读出三条边长及单位、重量及单位，核对目的地，再确认这些数字确实来自同一个已经封好的箱子。某一项仍缺数据，就在分享估算结果时说清楚，等拿到该项再做受它影响的决定。"
+    },
+    {
+      "source": "When the box has already left the warehouse",
+      "source_sha256": "6a4a77f5aea1965496c2544b6d168982128678178bb0e72b33e88e1e6762190d",
+      "raw_target_sha256": "32636e75b207a92abcf59770bb3f8865e2527b5509c17be5a42eb1cd51ae41b4",
+      "translation": "包裹已经离仓后怎样核对"
+    },
+    {
+      "source": "Once the parcel has been dispatched, use the dimensions listed on the actual parcel record for reconciliation. A later measurement taken after the box has been opened or flattened describes a different condition. If you question a recorded dimension, save the label and photographs of the unopened parcel before changing its shape.",
+      "source_sha256": "8150a91405ffe1d9b1df86c5e4d635f92fb43fad368f936713c89bcbba8d6695",
+      "raw_target_sha256": "58472ada1c1c1948389cb3ba51f57a7af24292d19a91e4c21b8bad31a7e30869",
+      "translation": "发出后，用实际包裹记录上的尺寸对账。收货后开箱、压平再量，已经不是寄出时的状态。若对记录的某条边长有疑问，先保存运单标签，给尚未打开的包裹拍照，再改变箱子形状。"
+    },
+    {
+      "source": "A combined shipment is worth comparing when it remains eligible for a suitable route and protects every item. Price the entire alternative, including every box, before acting on a single attractive quote.",
+      "source_sha256": "373c020b0c02bdbe73c6a9baea8374a8df9e6261bd8b2f7efe67f91c680792a4",
+      "raw_target_sha256": "95b8d1a7ba5a7a72d8856607cc09c062aa2d30b37972b4ca159506bef25e47e2",
+      "translation": "合包的前提是仍能走合适的线路，也能妥善保护每件物品。看到某个箱子的低报价先不要决定，把备选方案中每个箱子都算上，再比总价。"
+    },
+    {
+      "source": "Start with the same list on both sides",
+      "source_sha256": "2d8c8aba299f9d170beb39a0fe37dc5194ecc34ee841d3ca0e3b2d5e9ca5a3d6",
+      "raw_target_sha256": "e573b9b0b9ed9d1e2876da8164b1c0521f9b2b9293c8836b3ab02fe614ab0e51",
+      "translation": "两份方案共用同一份清单"
+    },
+    {
+      "source": "Write the warehouse identifiers and quantities for all items under consideration. Copy that list before building your two scenarios. In the combined option, assign all selected items to one box. In the split option, assign each item to exactly one of two boxes. Check the totals: a missing accessory can make a split option appear artificially cheap, while a duplicated garment makes it seem expensive.",
+      "source_sha256": "4793d015ed5c9e97f8cfe3046e9988f34aa362c887f0c22519c72d08a7f93da6",
+      "raw_target_sha256": "3e0e56270fbefce2dae909b796a01e3795239121a152570d20164d3cd08b651f",
+      "translation": "列出所有候选商品的入库编号和数量，复制清单后分别建立合包与分包方案。合包时把所选物品都放进一箱；分包时每件只归入其中一箱。核对数量是否完整。漏掉一个配件会让分包显得格外便宜，同一件衣服两边都算又会人为抬高价格。"
+    },
+    {
+      "source": "Establish why splitting might help",
+      "source_sha256": "2eb8c4fe8d804a618a9266c80b5fbfb1e5bcd64250cb968932faa485a84774f9",
+      "raw_target_sha256": "39f243884c2dccbcfe0da890a77317f588fec6ffd343a1a92a82d5397d443839",
+      "translation": "明确分开寄送解决什么问题"
+    },
+    {
+      "source": "Perhaps only one item needs a rigid box, one piece must go to a different address, or a category affects route eligibility. Those are practical differences worth recording. If the two boxes go to different countries, you are evaluating a different delivery plan, not simply a cheaper arrangement for the same destination. Keep any urgency or special handling requirement visible alongside money.",
+      "source_sha256": "9cb8eed07275aaf3cefce9de5dfd5e1849b42234224faf6040409197f3b12652",
+      "raw_target_sha256": "4499b57a45a0eb2878b4abb00aa741d5b714bd7fa3dcce7b9ef24da1640c3c07",
+      "translation": "可能只有一件物品需要硬盒，某件要寄往另一处地址，或某个品类影响可用线路。这些都是值得单列的实际条件。如果两箱寄往不同国家，比较的其实是两套不同的交付计划，不能笼统称为“同目的地下分包更便宜”。还应在金额旁注明急用时限或特别保护要求。"
+    },
+    {
+      "source": "Compare the full international cost",
+      "source_sha256": "33624e04f13bc564be934ba928f125380f7e6b9a6be19f19d04de2a8c2c005e2",
+      "raw_target_sha256": "dbb3322aa81e72feae448e7673f168c0ced6faad5964bb67566c5a80df675303",
+      "translation": "比较完整的国际寄送费用"
+    },
+    {
+      "source": "Suppose the combined option in a worked example is quoted at 164 units. The split option has one box quoted at 105 and a second at 72. The split total is 177 before any separately listed packing services. Looking only at the 105 would reverse the result. Add optional charges that apply twice and remove any charge shown as already included. Record the currency and timestamp for all quotations.",
+      "source_sha256": "d2c09fbbee9f0d1007f6a17e1a10db961bfd5a5bd76da9e031ced51c59d88e25",
+      "raw_target_sha256": "4497e5bcb64e62f933f283f018a10cdbd6ae8db3534a1e529df5818cee0d0e0e",
+      "translation": "假设合箱报价为 164，分箱分别报价 105 和 72。在另计包装前，分箱合计 177，只看其中的 105 就会得出相反结论。若某项服务两箱都需要，应计两次；已包含的收费不要另加。各份报价都留下币种与获取时间。"
+    },
+    {
+      "source": "Check whether the estimates remain eligible",
+      "source_sha256": "1cc54a7f44703181d015106a4dbdb7f03ba15349d339528ac45759c4254a31e1",
+      "raw_target_sha256": "2ecbbe80ba1045e8634582d3a4a52a60a010594ee3ec401bb86b62c5fc4979ff",
+      "translation": "确认两种组箱方式都符合线路条件"
+    },
+    {
+      "source": "Use each box's own actual or proposed outer dimensions, weight and product category. If the combined package exceeds a route limit, strike out that route for that scenario. Never substitute the lighter box's weight for the combined box simply to obtain a result. Compare realistic packing arrangements and check that the selected service accepts all contents, including components that might be easy to forget in an accessory pocket.",
+      "source_sha256": "2560ea1a1ae4e771166616ab7ef9b594aa873a7518dd6e3f55444e2d915a601c",
+      "raw_target_sha256": "0162c8686b5bd29ab26068f4b1247e070a874998f9d1668da45eea5238c32c63",
+      "translation": "每箱分别填入真正或拟定的外尺寸、重量和物品分类。合箱超出某条线路限制时，在合箱方案里划掉该线路；不要为了看到结果而拿较轻小箱的重量代替合箱重量。比较的是能实现的包装方式，也要检查线路能否收整箱物品，包括配件袋里容易漏记的小零件。"
+    },
+    {
+      "source": "Make a decision you can audit",
+      "source_sha256": "e2b6f6cb4cdfe9a848468c5e486f292585e4ed1249eac6575af9e34c51fb105b",
+      "raw_target_sha256": "e6ee5dd1a9518f196529f0f57b136fd193e56b9fd6a3c69f3b6d1f126c581b49",
+      "translation": "将选择理由写到日后也能看懂"
+    },
+    {
+      "source": "Write the reason for the choice in ordinary language. It might be that the cheaper combined service satisfies all requirements, or that paying more for two boxes lets the urgent item leave before a later intake. Save the estimated difference separately from the eventual outcome. Once both parcels have been billed, compare each final entry against the estimate for the correct arrangement and explain any changed input.",
+      "source_sha256": "96251b515d07eebcc7ee2cfbd1f0ac7852330bea766fe26aa54a76a1bdec9e93",
+      "raw_target_sha256": "c44df7172d831e2bb017984ac626c7764c77e281ee2fd945c9b9e2c8bce51ab2",
+      "translation": "用平实的话写明理由。例如，合箱较便宜且能满足全部条件；或者愿意多付两箱运费，以便急用的物品不必等下一批入库。将预估差额与最终结果分开。账单出来后按实际使用的分箱或合箱方案逐一核对，注明哪个输入条件改变了。"
+    },
+    {
+      "source": "An example where the larger box wins",
+      "source_sha256": "907c1875061c58bbe2c209ab5859eb2724b2c9631ad61ea9586ed04afc3fecb4",
+      "raw_target_sha256": "247359919d705c28b9cb39605d557042b6a1d9db37dfb5be9f807287e8b06ed5",
+      "translation": "大箱更划算的例子"
+    },
+    {
+      "source": "An example where smaller boxes remain worth considering",
+      "source_sha256": "2112782d9873f6c04e59cd8b717390171edde6ddbc8ef151f190e7aa77714c83",
+      "raw_target_sha256": "84170e2256b20309a22786b17b7e8753eb2f8d4f87ad9d854b819bba4f7bdccc",
+      "translation": "哪些情况下仍值得考虑分箱"
+    },
+    {
+      "source": "Suppose each smaller box also needs an explicitly quoted service costing five, while the combined option already includes it. The separate total becomes 216, two more than the combined quote. Such a narrow difference may be less important than arrival timing or how easily a recipient can receive two packages. Record the non-price reason for any choice so that a later invoice comparison is not mistaken for proof that the earlier decision was irrational.",
+      "source_sha256": "2667bb99764137d2dd5c056559d7b304dd88b253c59df6a378cdbf8725616d50",
+      "raw_target_sha256": "156151a36d8b4e9447c21b63a5ed3f67958abc775d2319b3e82a8336bd3b1800",
+      "translation": "假设两只小箱各需另加一项价格为 5 的服务，而合箱已经包含。分箱总额会变为 216，比 214 多 2。这种差距可能没有到达时间或收件人能否方便地签收两箱重要。应把非价格因素也记下来，日后才不会只看最终差价就误判最初的决定。"
+    },
+    {
+      "source": "How placement changes the measurement",
+      "source_sha256": "8e5955003ded0976c10624c349e09cae57452e571c177aae1cb1f0c756a632a3",
+      "raw_target_sha256": "8c58e7813de0d1fdff277b591d853f18ab4dc04e791f63307d32f09c836fb84d",
+      "translation": "摆放方式会改变外箱尺寸"
+    },
+    {
+      "source": "A rectangular case can set the minimum width of a combined parcel. Soft clothing may fill empty space around it, or may require an increase in height once protection is included. Do not calculate a combined box by adding the item lengths, adding widths and adding heights independently. That describes a much larger imagined arrangement in most cases. Sketch how the pieces could sit and ask for relevant packed measurements or a realistic packing estimate.",
+      "source_sha256": "35d1e230b329d312f27d646d02fec3f148da14fd5baaebf668d884e5eff3defd",
+      "raw_target_sha256": "bef2de56efd3740d79388052fd28f380ae6710811fb5635407cb3c65430cbc55",
+      "translation": "硬质长方形配件盒可能直接决定合箱的最小宽度。衣物有时能填在空隙里，有时加完缓冲物后又会增加箱高。不能把各件的长、宽、高分别相加，直接当成一个大箱尺寸，那往往描述了一个远比实际大的虚构排列。先画出可以摆放的方式，再请仓库提供成箱尺寸或可信的试估。"
+    },
+    {
+      "source": "The estimated split arrangement deserves the same care. A padded case may fit into one small carton, while the garments can use another shape. Give each box its intended packing and dimensions. Using a generous measured combined box alongside separate dimensions guessed from bare product photographs biases the result against consolidation. State the quality of your evidence for both scenarios. If a decision turns on a small difference, obtaining equivalent measurements can matter more than refining the arithmetic.",
+      "source_sha256": "87decf73b8d810625c40bdf2cc6e2e511e2e539ab5863751da37429bee327de5",
+      "raw_target_sha256": "5c658f4c949d8ddf5ca07ef27537a4446274e9aef667e58b6f14644346cd7c8a",
+      "translation": "估算分箱也要采用同样标准。加了软垫的配件盒可能用一种小箱，衣物可以用另一种外形。分别写明预计包装和尺寸。如果合箱用的是留有保护空间的实测尺寸，分箱却按裸商品照片猜尺寸，比较就会偏向分箱。两边注明数据来源。差价不大时，拿到同等可靠的测量值通常比继续细算更有意义。"
+    },
+    {
+      "source": "Organizing decisions around timing",
+      "source_sha256": "91141294401b01348e8eed18358ef88b0b901f93fbbea070e6dc3a85a4037482",
+      "raw_target_sha256": "4819a11be9424a70e6f551d8a5d8230a6d7fe506c451f97209bde9496c22348f",
+      "translation": "把出库和到货时间单独纳入决定"
+    },
+    {
+      "source": "A buyer might have one item already checked and another still waiting for a seller response. The combined quote assumes both will become eligible for shipment together. Record what you know about the later item and the storage status of the earlier one. A decision to split can address timing even if the combined quote has a small price advantage. State the timing requirement separately, for example that one item must leave before another has been inspected.",
+      "source_sha256": "38c13f196a407ff5be9b6fd327e41a107143c88a50462282702abf459f1060b0",
+      "raw_target_sha256": "f81d4eaa094fb921f404f7a0a6024f9f48e9e516ed24d5ef038a60284e6eb37c",
+      "translation": "有的商品已经验完，另一件还在等卖家答复。合箱报价默认两件届时都能一同寄出。记下较晚商品的确认情况，以及已入库商品的仓储状态。即使合箱稍便宜，分箱仍可能有时间价值。明确写出要求，例如“第一件必须在第二件验货前出库”。"
+    },
+    {
+      "source": "Avoid promising a delivery date on the basis of the number of boxes alone. A route estimate, seller delay, warehouse intake and final delivery can each describe a different stage. If the two pieces are needed as one matching set, splitting also creates a practical risk that one arrives earlier than its partner. If the pieces serve different recipients, the timing difference might be entirely acceptable. The right comparison includes how the items will actually be used.",
+      "source_sha256": "01464ddeeac80eb2c568613dea33fc9918fea0d0bc0a4034f32fdb5af5bd6656",
+      "raw_target_sha256": "d3b366e2e472606a3f02ef2d450409198b5bcd6ebd330641dd4dfba9c7f12127",
+      "translation": "不能只凭箱数承诺到货日期。卖家备货、仓库入库、线路估计和末端投递对应不同阶段。如果两件物品必须配套使用，分箱存在先到一件、另一件未到的风险。如果分给不同收件人，时间差又可能完全可以接受。比较时要考虑实物最终怎样使用。"
+    },
+    {
+      "source": "Verify the plan after the warehouse acts",
+      "source_sha256": "267b13e2acaaa1878536e013bb9595f623cc4a9ae022e4d7b1d8af758eb4b72e",
+      "raw_target_sha256": "c8b1e7e73e5e48b20f8112fe1a9f974cf1f7bedb0416087755a7381e89f17dc0",
+      "translation": "依据仓库实际操作复核"
+    },
+    {
+      "source": "Once a packing decision has been confirmed, compare the assigned item list with the original scenario. Check that any separate accessory travelled with its intended parent item. In a split shipment, label the two parcel records clearly enough that the first delivery does not accidentally close the second. Keep the tracking number and payment for each box together. A notification about a single parcel can otherwise be mistaken for completion of the entire purchase.",
+      "source_sha256": "cc1b8e6d84d3623f735f79d2db38e90995343bd356dcd57801802074126ea70a",
+      "raw_target_sha256": "e97800e6c4e813207b05af3b0a3f2008aabe697f502f1de84656427b60e77f40",
+      "translation": "确定包装后，对比实际分配清单与原方案，检查分离的配件是否跟着对应主件走。分两箱时明确标记，两箱各自保存运单号和付款记录。第一箱的签收不能被误记为第二箱也完成了，否则一条通知就可能意外结束整笔购物的跟踪。"
+    },
+    {
+      "source": "When the actual charges arrive, compare them with the quote for the same configuration. If the courier or route differs, document that change before calculating a saving or overrun. Add the final charges for all boxes in the split option before stating its cost. The result becomes a useful comparison for this shipment. Retain the measured details with it rather than generalizing that consolidation, or splitting, will always be cheaper for a future order.",
+      "source_sha256": "4d47375010ac86c4d7c1f738efb3d94ed75b784d003b4f6a5c67bc14cfe9b741",
+      "raw_target_sha256": "042d0cc6f793ceefa958d4c1ca7e36d95f196b32c7649d32897355b5398e7db6",
+      "translation": "实际收费应与相同包装配置的报价比较。如果承运方或线路换了，先登记变动，再算节省或超支。分箱方案必须把所有箱子的最终收费相加。保留本次成箱测量数据和条件，这个结论只对当次寄件有参考价值，不能推断以后总是合包或总是分包更便宜。"
+    },
+    {
+      "source": "A second address changes the question",
+      "source_sha256": "c0a4f021ec02c7436f3c78c87b8e81b31bf03aa5bf2a4c8e886ed615c414f721",
+      "raw_target_sha256": "44b13cfbd29abf8dbebe9efb7318dc9518023ec15b0057b3e3f74f9ecd6670a1",
+      "translation": "第二个收件地址改变了比较范围"
+    },
+    {
+      "source": "If one box will go directly to another person, include the cost and feasibility of forwarding an item locally under the combined arrangement. Compare delivery to both intended recipients, not simply delivery to the first address. Record which additional domestic leg is confirmed and which is hypothetical before making a claim about total savings.",
+      "source_sha256": "5cb97076580f3fca382b1ae29f7054ea017cd35e5a2055d9087b45d9f1d8a344",
+      "raw_target_sha256": "8002974a546336a0872450814b7e26af6ff53c83e53cca8fd34b37c4fe1d0771",
+      "translation": "若其中一箱直接寄给另一位收件人，比较合箱方案时还要考虑先寄到一个地址、再在当地转寄的可行性和费用。比较基准应是两位真正的收件人都收到各自物品，而不是只算到第一处地址。说明追加的本地运费哪些已经确认、哪些还只是假设，再谈能省多少。"
+    },
+    {
+      "source": "Read a freight result as a quotation for a named parcel, route and destination. Use it to answer the transport question it was calculated for, then check the remaining parts of your purchase separately.",
+      "source_sha256": "2cd882f31d23dff41843fa37f4d719ea88f49530f4d5f8743111a2b1883a6c13",
+      "raw_target_sha256": "500b407087fe8d47976916b697c128cdc6905026b91e8f197708700a458cdffc",
+      "translation": "一份运费结果是基于某个包裹、线路和目的地算出的报价。它回答的是这一段运输需要多少钱，购物过程中的其他费用仍要分别核对。"
+    },
+    {
+      "source": "Read the inputs before the result",
+      "source_sha256": "fadf01a958b2e76aca3b969dcb1a687f2663fd03de0272dfbc255c776794f78a",
+      "raw_target_sha256": "20da58a8d5c3efd58b14d16f34d91c1bfe7ae1af854b2c10382417fdffb7a06a",
+      "translation": "先看估算条件，再看结果"
+    },
+    {
+      "source": "The HubBuy estimator accepts a destination and weight in grams and provides fields for product category and centimetre dimensions. An estimate based on a preset hoodie and one based on a measured packed box describe different evidence. Record which you used. A result without its inputs is difficult to reuse because you may later forget whether it covered a single garment or the full shipment.",
+      "source_sha256": "e21cfbef201266db79f7fa2ed14432937dc30d4c2f53373e808f5ac78ab41d76",
+      "raw_target_sha256": "6114c2f1b86bf42cfadc8d8abf5a19d577df134975fd6eaa1b52dcd62b2b957d",
+      "translation": "HubBuy 计算器要求选目的地、填写以克为单位的重量，同时提供商品分类和以厘米为单位的尺寸栏。套用一件连帽衫的预设重量，与拿已打包纸箱的实测数据估算，依据并不相同。将输入和结果一起保存，否则日后可能记不清当时算的是一件衣服还是整箱货。"
+    },
+    {
+      "source": "Build an inclusion list",
+      "source_sha256": "516c7c8edf582f72463d187709443adaf54e33affa696d8e9caad293af0ced3f",
+      "raw_target_sha256": "115b6b773e6ae769aae5c4c88648938a5d3e2ac51fc9f1c239aed085a6345c70",
+      "translation": "列出“报价包含什么”"
+    },
+    {
+      "source": "Put the route's displayed freight figure on one line. Beneath it, list each other cost you expect to encounter: seller price, domestic delivery, packing services and any other item actually named on the offer. Mark each one as included, separately quoted, already paid or unknown. Treat an omitted entry as unknown unless the live terms tell you otherwise. An estimate showing only international delivery cannot settle the price of seller-side goods.",
+      "source_sha256": "037c7ba2b966ad7f1d3675e7960ccc475b9952fa7c092c4d72b80ba15747980c",
+      "raw_target_sha256": "41c6679b93a1ce8451ee0393dbe9d795f0b8edde123f67452074ff1d53ed28e8",
+      "translation": "把线路显示的运费写在第一行，下面依次列出卖家货款、中国国内运费、包装服务，以及报价实际提到的其他收费。每项注明“已含、单独报价、已付款或未知”。当前条款未说明时，页面没写不等于免费。只展示国际运输的估价，不能代替卖家商品订单的价格。"
+    },
+    {
+      "source": "Compare timing on the same basis",
+      "source_sha256": "a5e664b56a88c9e7b65e33025b88db1c29d8b226ebdc0c1fad07ace44ba92007",
+      "raw_target_sha256": "0845302a4e001ee5e0f3f58df5aa03568f284464addb231f0c6ae6bb20e96c00",
+      "translation": "比较时效时统一起算点"
+    },
+    {
+      "source": "A delivery estimate may refer to a stage starting at dispatch. Read the route description before promising someone a date based on it. Include unresolved purchasing, seller dispatch, warehouse intake or packing in a separate planning timeline. Avoid adding arbitrary days to manufacture a confident arrival date. If the use date matters, state which pending event creates uncertainty and check the latest confirmed status.",
+      "source_sha256": "0f2a0745dad887ac0537a2c286c171f834afc626189a9b4662dc221aa421ee3b",
+      "raw_target_sha256": "b966b19f30662f58c94db70c0f88c25480fbd262ca6c25f14f38f00e7919ec27",
+      "translation": "预计运输天数可能从交给承运方时才开始计算。拿它向别人承诺日期前，先读线路说明。尚未购买、卖家未发货、仓库待入库或待包装的环节，应在另一条时间线上标出。不要随意补几个天数制造确定感。如果有明确使用日期，说明哪项尚未完成，并核实最近一次可确认的状态。"
+    },
+    {
+      "source": "Recheck destination details privately",
+      "source_sha256": "42a0a1a181dd827b9911d0a7e97c649e712e2a420ab93a2e8d4b504c7f9ecb94",
+      "raw_target_sha256": "e659018d3e55c40246d1a2e0d101129488980de78e54a94afceb7f2d6571a0f8",
+      "translation": "核对目的地，同时保护地址隐私"
+    },
+    {
+      "source": "The destination is part of the quote. Use the correct country and any region or postal information the estimator requests on the official page. If you share a comparison with someone, retain enough information to identify the route while removing the full delivery address. A screenshot of two prices cannot establish identical coverage when the destination fields are out of view.",
+      "source_sha256": "772b6852b6b8df80c857ccfed55f46417b780bc273629e0bf89a7dd966bb25aa",
+      "raw_target_sha256": "fd8173e13007f5780064dcf2d7039d4c56d3d45927e8ec8879b7f45b2234ed5e",
+      "translation": "目的地本身就是报价条件。按官方页面要求填入正确国家、地区或邮编。向别人分享比较时，可保留足以辨认线路的区域信息，遮掉完整收货地址。如果截图只截到两个金额，却看不到目的地，就不能确定它们提供相同覆盖范围。"
+    },
+    {
+      "source": "When an item changes after quotation",
+      "source_sha256": "e3a9ac352c98cfaf77ceb712b26621433e6333dd16a0eeaed9141dc69de852c5",
+      "raw_target_sha256": "4fab9e3477c8e9d7c8bca0af87980044d543c83a66331027fa3597e4458af3a5",
+      "translation": "报价后更改了商品怎么办"
+    },
+    {
+      "source": "Mark the boundary of the estimate with an example",
+      "source_sha256": "dbc6edb49e3b7fa7912c1c30435ee70040d6a63e27c0a01fdf2d53227d0c18da",
+      "raw_target_sha256": "6260022135d5e7a92c0022ca521d4df5034bb0fb30d060b12b71c712ba77452e",
+      "translation": "用一个例子厘清估算边界"
+    },
+    {
+      "source": "Imagine a buyer who has a confirmed merchandise total of 280 yuan, a domestic delivery charge of 12 and a screen showing an illustrative international freight estimate of 135. The cost recorded so far is 427, provided the freight estimate holds and there are no other separately applied charges. The 135 is not the price of the entire purchase. Equally, adding the 280 and 12 again to a consolidated budget that already includes those entries would overstate the amount.",
+      "source_sha256": "8d50523044e945bafff091c275202b8b8ae2bfa9be2c34e7bcc93a3f527230e3",
+      "raw_target_sha256": "de43ef6abac8d54ccda2f7b25c405107719cd37a09fdcc270942d7b4fc1df816",
+      "translation": "假设商品确认总价 280 元，卖家寄到仓库的运费 12 元，国际运费的示例估值为 135 元。若国际估值最终成立且没有其他单收项目，目前预计的整体成本就是 427 元。135 元只是国际运费；反过来，若总预算里已经含 280 元和 12 元，也不要再次把二者加进去。"
+    },
+    {
+      "source": "Suppose the buyer keeps a separate running budget containing 292 already paid. To evaluate cash still needed, start with the prospective 135 and any other unpaid components that can be documented. To evaluate the total cost of acquiring and receiving the goods, include paid and unpaid components. Both calculations are valid, but they answer different questions. Label the output remaining payment or total purchase budget rather than presenting a single unexplained figure.",
+      "source_sha256": "e2424e9a4b33216e0e03f53764fc50e1b4e01f6b508c607d9fac81e67ef2ad90",
+      "raw_target_sha256": "f7c15c80da89203566cad3d06dc02dbb2f506ced564f2641c232e1d68bf496d9",
+      "translation": "如果收支表中已经记下实付的 292 元，问“还要准备多少钱”时，应从待付的 135 元和其他有凭据的待付项目算起。问“买到并收到这些商品总共花多少钱”则应同时包含已付和待付。这是两道不同的问题。把结果分别标为“剩余应付”和“购物总预算”，不要只留下一个没有说明的数字。"
+    },
+    {
+      "source": "Compare two routes on one parcel",
+      "source_sha256": "6abbea692de48ad4d459e851dc7f34f22557d4a3859921769c98b3066fc3936e",
+      "raw_target_sha256": "c6d8646a531eeff4aab1083797177dbd2fa0a17d333ff9d8610a19450250514a",
+      "translation": "同一包裹比较两条线路"
+    },
+    {
+      "source": "A route summary can show an estimated duration, price and brief notes, while a detail page may describe eligibility and service conditions. For a fair comparison, run both routes against the same parcel. Keep the destination, category, weight, outer dimensions, packing and declared contents consistent. Check what the figures include and whether one service shown in the summary becomes a separate charge later. If a route does not accept the contents, remove it from the usable comparison.",
+      "source_sha256": "6e4f6dbd9b279632ad1a8b6d80cd5340d6c12d9f5517c37235576fdcb113d4fc",
+      "raw_target_sha256": "e5a790958ebcebf3a87a278fcb104f28bacc42910acc8a99975427de4e8b4d2f",
+      "translation": "线路摘要可能只列价格、预计天数及简短说明，是否收寄与具体条件通常还要看详情。两条线路使用相同的目的地、分类、重量、外尺寸、包装和实际申报内容。核对摘要所示服务是否已经包含，有无项目稍后另收。不能接收箱中物品的线路应从可选方案排除。"
+    },
+    {
+      "source": "In a teaching exercise, route A displays 150 and route B displays 166. If A requires a separately quoted 12-unit service that B includes, the comparable amounts are 162 and 166. If B includes something you do not need and A needs nothing additional, the original 150 and 166 may be the relevant comparison. The example does not represent a real HubBuy route or a real price. Its purpose is to show why a service description can change which arithmetic belongs beside the price.",
+      "source_sha256": "f441673ba26fdcb6014c194f593f2f715aaccc25da7bebd3937adbc0ea6216cb",
+      "raw_target_sha256": "bb4a296de1ad4a931d74d561a38362deed050a10a6da8ab3d1233276cd19b7c8",
+      "translation": "假设 A 线路显示 150，B 线路显示 166。若 A 另需一项价格为 12 的必要服务，而 B 已含，应比 162 与 166。若 B 多含的是你不需要的项目，A 又不需加购，比较 150 与 166 就合理。这不是 HubBuy 的真实线路或定价，只说明为什么要先看服务范围再算差价。"
+    },
+    {
+      "source": "Translate uncertain components into clear questions",
+      "source_sha256": "cf0fbf457645bd5cf729b85c17026792fac5983bc4cd31fdee5be47cb1cca807",
+      "raw_target_sha256": "20b0a52e77429f6843daae29236e1017a38f572a469ae86d033a48d6b59017c7",
+      "translation": "把未知项目变成明确问题"
+    },
+    {
+      "source": "Use a short list with four statuses: included, already paid separately, confirmed additional cost, and unknown. Place each disputed component into one category only. For example, if an invoice confirms payment of domestic delivery with the seller order, do not also treat it as an unknown outbound fee. If the estimator does not explain how a particular optional service is handled, record the uncertainty beside that service.",
+      "source_sha256": "1c712d402d0db8850d4730e0a54275b3145f12eb3b7c709970844b94b786094f",
+      "raw_target_sha256": "f0b7b68838fc5745678c8984e0d23cd1b2db51d0fe8757d91b8d98f40b3958ad",
+      "translation": "一项费用只归为四种状态之一：报价已包含、已经单独支付、已确认需另加、尚不清楚。比如付款凭证已经显示向卖家支付国内运费，就不要再把同一笔费用当作国际发货时的未知开支。某种选配服务如何计费未讲明，就在它旁边标记待确认。"
+    },
+    {
+      "source": "Use actual parcel changes to explain an apparent price change",
+      "source_sha256": "8622e8ef5e5779511a9f31048414891df3016a519c4bd2e41729fccfd0c80f01",
+      "raw_target_sha256": "277e34f53a34c682e92a5fa997ab30e537f014ad4de2919f3a4f62e45f18c4b6",
+      "translation": "用包裹的实际变化解释价格差"
+    },
+    {
+      "source": "The buyer may initially quote a single pair of shoes using a quick-estimate preset. Later the seller's box is retained, then a belt is added before international submission. The resulting packed measurements no longer describe the same shipment as the preset. Compare the revised quote with the final parcel statement, while keeping the original as evidence of how the budget developed. A difference between the first and last amounts is not automatically a new fee.",
+      "source_sha256": "10ec70bbae6b9a7c22fe16e97239c46b035d424eb2c54f4181e1741356e9a670",
+      "raw_target_sha256": "320676bb818c5866dcb579213c3f89bbd7a371f22fc9e3f390b8f857aa27a1db",
+      "translation": "买家最初可能按一双鞋的预设重量快速估价，后来保留了卖家鞋盒，寄送前又添了一条腰带。最终打好的箱子显然与最初的预设不是同一条件。用修订报价核对最终包裹账单，最早那份则留作预算演变的记录。两次金额不同不一定代表新增收费。"
+    },
+    {
+      "source": "If you want to learn which change drove the difference, vary one input at a time in your own planning worksheet, provided the estimator supports the comparison. Keep the original destination and category, replace the assumed weight with the packed weight and record the result. Then apply the new dimensions. Label intermediate results as analytical scenarios rather than quotes for parcels you intend to send. If package category or eligibility changed, that can invalidate a direct one-input comparison.",
+      "source_sha256": "5f8584b005f53740c8815cd5f5e3efcb6e8e36dc95d0bd275b5033c759c1282e",
+      "raw_target_sha256": "3a103eea0f3dfadbd69da007ada6f7ee70109231f70f2dc03e48bb118c2bf62d",
+      "translation": "如果估算器允许，可在自己的预算表里逐项改变条件，看哪个因素带来差额。先固定原目的地与分类，用打包后实重替换预估重量，记录结果，然后再填新尺寸。中间结果写明“分析情形”，不是打算照此寄件的正式报价。如果商品分类或资格条件都发生变化，单变量直接比较可能不再成立。"
+    },
+    {
+      "source": "Hand the result to another buyer clearly",
+      "source_sha256": "7d29d29748598b972a745cb73e53cd521a3bb7a1d824ef18fb136178e7e116af",
+      "raw_target_sha256": "3b44483a35778f1ff03a0aa7b15ebfcb787749880968b8c32cb22733b11b6653",
+      "translation": "怎样把结果清楚地告诉别人"
+    },
+    {
+      "source": "A useful quote summary fits into a short paragraph: name the destination, contents, dimensions, scale weight, route, currency and the date of the estimate. Add a sentence identifying any fee that is known to be separate and any part still unresolved. Keep private delivery and payment details out of shared screenshots. Another buyer can then reproduce the estimate for the same inputs or identify why their own parcel differs.",
+      "source_sha256": "ba5fa4c4188d13fde99181875f36934ff3ce18f1d0801a5f2fa940444f7c4b38",
+      "raw_target_sha256": "d929d94bacca3b45dca200370c7c0745729bf06d2c627db0b90a9071d3a813e1",
+      "translation": "用一小段写清目的地、内容物、外尺寸、秤重、线路、币种和估价日期，再说明哪些收费已知另计、哪些尚未解决。分享截图时遮住私人地址和支付细节。这样其他人可以用相同条件复算，也容易看出为什么自己的包裹结果不同。"
+    },
+    {
+      "source": "When the parcel is ready, revisit the paragraph. Replace assumed measurements with confirmed ones, check that the route still appears and compare the actual payment request with the latest estimate. If an input is still provisional, say so before approving the expense. Keep the final payment record for reconciliation. The value of an estimate is its ability to support a decision under specified conditions, not its ability to guarantee a number after those conditions have changed.",
+      "source_sha256": "ceb695ccc6ed47b07bfe359ad8c4c364cc28d20c79a2bf55e254573894714fef",
+      "raw_target_sha256": "a191286292dcf8867558fd056e5148eb61cad4296554d6e8377ebeea7de28df0",
+      "translation": "包裹准备就绪后，回看这段记录，用实测结果替换预设值，确认线路仍可用，再将实际付款请求与最新估价对照。仍有临时输入的，应在同意付款前标明。保存最终支付凭证以便核对。估价的作用是帮助你在特定条件下选择，不是保证条件改变后价格依旧相同。"
+    },
+    {
+      "source": "Record who provided each figure",
+      "source_sha256": "37ad54d19fadab80ecf36fb42f1b658f7192531b19996b6c7149076024e199ce",
+      "raw_target_sha256": "d3d20e70b4d5b693d4af0b7ec4fa45233f79ff15fe7071786ccfd7f094829166",
+      "translation": "注明每个数字由谁提供"
+    },
+    {
+      "source": "Put the source beside each amount when the seller, warehouse, and carrier all appear in one comparison. A seller’s approximate packed weight can be enough for an early screening decision. Once a warehouse measurement arrives, retain the seller figure in a separate column so a reader can see why the estimate changed and which measurement supported the eventual booking.",
+      "source_sha256": "0fa92a04f2f2920d7f416075cf761327cdcc393bb5b9eb1461b1adc76c248a8b",
+      "raw_target_sha256": "c84976603b755bebe7aab2a52582d115353e5bc183c4821be9480f3e2d5399d0",
+      "translation": "卖家、仓库和承运方的数据放在同一张表时，在金额与重量旁写上来源。早期筛选方案可以暂用卖家提供的打包重量；仓库给出实测数据后，将旧值保留在单独一栏。别人就能看懂估算为什么改变，以及最后订舱或发货用的是哪一次测量。"
+    },
+    {
+      "source": "A good reconciliation tells you where a difference first appeared. Work in the original currency and parcel reference before looking at exchange effects or assuming a fee was added.",
+      "source_sha256": "672a7805192a6ba58cf8b65f83376d075d928a576304bfcb1e9c11235c0a8731",
+      "raw_target_sha256": "16c1d05416a204b07b54f7ee0c65e36a526d8d621fe9391c032925fe2f4dd806",
+      "translation": "核账的目的，是找出差额最先出现在哪一环。先沿用原币金额和包裹编号核对，再考虑汇率影响或新增收费的可能性。"
+    },
+    {
+      "source": "Reconstruct the original comparison",
+      "source_sha256": "585a341f53b71b3427894cd711b1550be9beedd01e81f062caa67b1048d81bb4",
+      "raw_target_sha256": "722e4f3a101a40ffb7c636b30a2386deaeca8ae1c537a80c3f8bff75e1904834",
+      "translation": "还原首次估价时的条件"
+    },
+    {
+      "source": "Gather the original estimate, the warehouse submission and the final payment record. Confirm they refer to the same parcel contents and destination. A quote for two garments and a bill for two garments plus a box of shoes cannot be explained by checking the arithmetic alone. Keep the old list visible and make a separate column for the list eventually sent.",
+      "source_sha256": "c58c367b30785c5aaf6492b78162ffa4354e0168c946faffd5d8b2b4e2ca5c75",
+      "raw_target_sha256": "a500ab30cf33c8c301941240b52fd8ba1b095d22826c02b4cfcd063111e27ff3",
+      "translation": "找出原估价、仓库提交记录和最终付款凭证，确认内容物与目的地是否一致。如果初次只估了两件衣服，结算时却多了一盒鞋，只查算术不能解释全部差异。保留原清单，另设一栏列出实际寄走的物品。"
+    },
+    {
+      "source": "Compare physical inputs before money",
+      "source_sha256": "280a3c623c455d7633eb184062d503db7ddf4b76302481b0c1f032910a359b4e",
+      "raw_target_sha256": "1083807e65e9d1100238c49020597cf81565acb3f766d26a74fc32e6cd5747af",
+      "translation": "先比较实物条件，再比较金额"
+    },
+    {
+      "source": "Write the initial and final weight beside the initial and final outer dimensions. Record which inputs came from product presets, seller figures, proposed packing or an actual completed parcel. Put the route and service choice on the same row. If the original option disappeared because of a size limit, compare the final route's charge with a revised quote for that route rather than blaming every difference on the weight change.",
+      "source_sha256": "0590b52a4c0802cfdba04363c9d0fc6ee3b4845acc370899a7f3c395de81352f",
+      "raw_target_sha256": "b3697b1b421da96d150afa9c30a459d8ac60b347280adbd6e1469f41a84996bc",
+      "translation": "把初估与最终重量、初估与最终外尺寸并排写下，注明哪些来自品类预设、卖家数据、计划中的包装，哪些是封箱后实测。线路和服务也放在同一行。如果原线路因尺寸限制无法使用，应把实际线路的账单与这条线路的更新报价比较，不要把线路变化造成的差额全部归因于重量。"
+    },
+    {
+      "source": "Separate displayed totals from independent charges",
+      "source_sha256": "acffd07d3485b23f842c3a800d8719b79d2156222e07f88d5433164965a0c19d",
+      "raw_target_sha256": "391a7c9033d30e3e41702ca7a8b532a8d60ab24256b103fc673c982d1f651b34",
+      "translation": "区分费用总计和应单加的项目"
+    },
+    {
+      "source": "Reconcile the payment destination",
+      "source_sha256": "6d44efb3c0b973e92fba97fe2dcf4b0e024044882015ddc71703e3b0d3189f20",
+      "raw_target_sha256": "12617c5e3da24829d10d28303db63c959a9f5fd92a1d3ed92ad88a590f9d21ca",
+      "translation": "核对钱从哪个账户付出"
+    },
+    {
+      "source": "A coupon, account credit or refund can change the amount paid from an external card without changing the invoice subtotal. Record invoice total, balance used, external payment and credits as separate fields. When converting to your home currency, keep the original values intact and state the rate or posted amount used. If a promised credit has not posted, label it as pending instead of deducting it from the confirmed payment history.",
+      "source_sha256": "99c44293144f828d2a0ff6efcd386004ff6dd9739a80723b263e9fcd0effdaea",
+      "raw_target_sha256": "d6bfaad29631b346f74e721ce2c047bc8fe223827b61bf49d66d6d64e9c00599",
+      "translation": "优惠券、账户余额或退款会影响外部银行卡的实际扣款，而账单小计不一定改变。分列账单总额、使用余额、外部实付和退款。换算本币时保留原币，注明采用的汇率或真实入账额。承诺退款尚未到账时标为“待到账”，不要先从确认支付记录中扣除。"
+    },
+    {
+      "source": "Ask one question with the relevant evidence",
+      "source_sha256": "abbbb28812a26e51834af9d19afeee2c14a1fed37cc288506dc0ac3b56399da1",
+      "raw_target_sha256": "f6f841de012d27589ec4fbce9f8e30c20b5b0b8b9ec6c88a339f84b27043810c",
+      "translation": "提一个有凭据的具体问题"
+    },
+    {
+      "source": "If a difference remains, identify the charge and both records where you expected it to match. For example, ask which input changed the base freight between a named quote and a named parcel. Include the route, measurement date and currency, and omit unrelated payment details. HubBuy's public support page lists parcel submission, orders and shipping among its support topics. Use that channel for an explanation specific to your account.",
+      "source_sha256": "83e7626e367cbcfb1564e0cf0042f3344cac38061405501350cf549334019df8",
+      "raw_target_sha256": "b1f3e4a7af0e702892dcd5613206a3103dce3de544aeb3c50a7244b8f2e1d85a",
+      "translation": "仍有差额时，指出具体费用和原本预期应当相符的两份记录。例如：“这份报价与这个包裹的基础运费不同，哪个输入条件改变了？”附线路、测量日期、币种，省去无关付款资料。HubBuy 的公开帮助页列有提交包裹、订单和配送等主题；涉及实际账户的差额，可通过其官方支持渠道核实。"
+    },
+    {
+      "source": "A complete fictional reconciliation",
+      "source_sha256": "e92e67bcbd9109ee3bba9caa76b2012a1807f7dbc279a9aea46d3733712569ae",
+      "raw_target_sha256": "e41b8cc13d0b4c97f1ec4e853bdb38e17362d7335729ad3660ecd3fc9f087067",
+      "translation": "用一组虚构数字核对全程"
+    },
+    {
+      "source": "Suppose the planning sheet contains an old seller subtotal of 220, domestic delivery of 10 and an outbound estimate of 145. The initial overall figure is 375. During packing the buyer adds a separately purchased accessory. Its purchase and domestic movement have already been recorded elsewhere. The outbound box also changes: the final freight line is 153 and the packing service line is 9. The new outbound total is 162. Comparing 162 with 145 gives a 17-unit change on the parcel side.",
+      "source_sha256": "9c1a40111580ea305b7a37933c57096d7fa261c27e35750c2e58fc4ecc3f5584",
+      "raw_target_sha256": "a6278f2d26b64a1fa6e9c10ed019f51548f9bdebed61ef51e2132f7cff989766",
+      "translation": "假设最早预算是卖家商品小计 220、国内运费 10、国际段预估 145，共 375。装箱时，买家又加入另行购买的一件配件；配件的货款和国内运费已记在别处。实际外箱也改变了，最终国际运费 153，包装服务 9，国际包裹合计 162。只比较国际段，162 与 145 之间相差 17。"
+    },
+    {
+      "source": "That 17 consists of eight more in the freight line and nine in the selected service under these example assumptions. It does not measure the cost of the accessory itself and should not be compared with the earlier all-purchase total of 375. Add the accessory's actual purchase entries separately if the question is total cost for the entire basket. Keep the same currency and identify whether any discount applies to freight, merchandise or the charge as a whole. The purpose is to reach an explanation for every difference without counting anything twice.",
+      "source_sha256": "416a611b06f6fcbb91f4881f16daf863f251becb1224d994d38b3793cf0ab96f",
+      "raw_target_sha256": "746118b7d5d94c0abf18e0c745ac520ca9d9ceb377b8372ee92e459f063a242e",
+      "translation": "按这些假设，17 可以拆为基础运费增加 8、所选包装增加 9。它既没计算配件商品本身的价格，也不能直接与早先整体购物预算 375 比。如果要核对全购物车总成本，应另行加入配件已实际发生的采购记录。统一币种，并说明折扣适用的是运费、商品还是整单。每一笔差额都应可以解释，且不会重复扣加。"
+    },
+    {
+      "source": "Distinguish invoice totals from sources of payment",
+      "source_sha256": "fa813dd61f243c3913f549d775bfca28833759a7094f67225534a2f24abd705e",
+      "raw_target_sha256": "51d5bc7b37395b6a8f0e8d7ad7bd40cb1b79a6f5e4b0c9bc48a666696dfa7847",
+      "translation": "区分账单总额与支付来源"
+    },
+    {
+      "source": "The distinction also matters after a refund. Suppose six units are returned to the account balance later. Preserve the original 162 invoice, the original combination of payments and the separate six-unit credit with its destination. You can calculate a net cost when the refund is confirmed. If it has merely been requested, keep it in a pending column. That way one person reviewing the sheet for available funds and another reviewing it for net cost can both understand the figures.",
+      "source_sha256": "fa0728631d1847c51f92a7f569e17ce57d20ab9b52d74e8b57cf129b1fad61f1",
+      "raw_target_sha256": "a7e33b4886a8961fc3f4a94ac76c66568f1cb38d5daa626ecc6d6182b9fcd4eb",
+      "translation": "退款之后，这一区分仍然重要。例如后来有 6 个金额单位退回账户余额，应同时保留原来的 162 账单、余额与银行卡各自的付款记录，以及新增的 6 单位退款和去向。确认到账后才能据此计算净成本；若只是申请退款，先单列“处理中”。这样查当前可用余额和查最终花费的人都能读懂数值。"
+    },
+    {
+      "source": "Account for a route change before comparing rates",
+      "source_sha256": "aad8d93c3e66bf0232035b2833d8aa842faa3f8be7363daef870bb033862ef85",
+      "raw_target_sha256": "77e95b55c649ea0c0d4f229825364a7aa23f0041baff1f28a8af8ee5159bfa6e",
+      "translation": "比较费率前先确认线路是否换了"
+    },
+    {
+      "source": "If the originally chosen route could not take the final parcel, compare the final statement with an estimate for the route that was actually used. Keep the old option separately and note why it became unavailable if the platform supplies a reason. A rate difference between two routes does not prove an unexpected change in the price of either route. Likewise, a change of destination or declared category can produce a different service set before weight and volume are even considered.",
+      "source_sha256": "6c0a52c36f462c6515f96a1dd82935a2a58341b27445f8608dd698bc18f5a91e",
+      "raw_target_sha256": "37760b48ac9a150447ec9d7aff534147571b04f5eb5a0785a43835fe02ebfc48",
+      "translation": "最终包裹如果不能使用原先选的线路，把最终账单与实际线路的估价作比较。原方案独立保存，平台有说明时记下为什么不能用。两条线路价格不同，不等于其中一条曾经涨价。目的地或申报品类有变时，运力与服务选择甚至可能在考虑重量、体积之前就已不同。"
+    },
+    {
+      "source": "When the final route appears identical by name, check any displayed service variation or delivery zone. Two similar names may describe different delivery products. Compare actual route identifiers if the account exposes them. Save relevant screenshots with private addresses and payment information cropped out before sharing. If a code has changed but its meaning is unclear, ask support to confirm whether the quote and statement refer to the same service.",
+      "source_sha256": "3515ed095ff9b262fd74d8ad6036b9eaf490e9bd8f910e96ff6a3d81039f457d",
+      "raw_target_sha256": "fd050403c30ff38c8e550dd6d52ac01a050dae44aa6ef248029387ff5788cecd",
+      "translation": "即使两边显示的线路名字相像，也要核对具体服务版本和配送分区。若账户显示线路编号，可比对编号。在向别人分享截图前，遮住私人地址与付款信息。编号发生变化、含义又不明确时，应请客服确认初次报价与最终账单是否对应同一项服务。"
+    },
+    {
+      "source": "Reconcile several outbound packages against one original quote",
+      "source_sha256": "2610325b3730cea649019d0b72d34aadc7cb635008b6b964191fc2ff85929043",
+      "raw_target_sha256": "51ba72f906455cabdce8073a312dd5f7c979c60007cfa39aa5f89bf5c77e01eb",
+      "translation": "初次只估一箱，实际分多箱怎样核账"
+    },
+    {
+      "source": "A single initial estimate might turn into two shipments after an item is delayed. Compare their combined final cost with the original estimate only after identifying what changed. For example, two final parcels costing 88 and 76 have a combined cost of 164. Comparing only the 88 with the original estimate would leave the second box out; comparing each final box independently with the entire original estimate would count the same baseline twice.",
+      "source_sha256": "f421844ec70dcd8587f29f9fc6d7e0cc0397f3900e49d455738030450dab661c",
+      "raw_target_sha256": "4727a06086ecb689999e646bbcd83469f1a33cd8eed646aea315aae9b6721277",
+      "translation": "一件商品延迟入库，原计划的一箱可能变为两箱。先标明改变的内容，再把两箱实际费用合计与原估价比较。例如两箱分别花 88 和 76，总共是 164。只用 88 和原估价比会漏掉第二箱；每箱分别与整份原估价比较，又会把同一个基准重复用了两次。"
+    },
+    {
+      "source": "Build a one-line contents list for each final parcel and match each original item exactly once. Identify excluded, returned or later-added items. If the contents have changed substantially, also retain a separate estimate calculated for the revised two-box arrangement. This new comparison is often better for checking the final charge, while the original estimate remains useful for understanding why the shopping plan exceeded the initial budget.",
+      "source_sha256": "0ba44aeee9236a3d8c1afd090c9fcccde45464eb5bc58aba71337cafaa07a71b",
+      "raw_target_sha256": "8382043feac77feab87524dc7f3e271cf9309751f38481a715d13cae3d9f2e89",
+      "translation": "给每个最终包裹写一行内容清单，核对原计划每件物品都恰好归入一个包裹，另标出移除、退回或后来加上的商品。内容变化很大时，保留一份按新两箱方案算出的估价。新估价更适合检查最终收费，而最初那份仍然能说明购物计划为什么超过原预算。"
+    },
+    {
+      "source": "Decide whether the remaining difference is actionable",
+      "source_sha256": "f5622605da33b051a5b790a2040f8712f49e07fa0d42c7f36ab6fbf189b2161a",
+      "raw_target_sha256": "75e15fab8f60268eced02e6bf3fd48142523542d7a9ac0c8297e46245917e2aa",
+      "translation": "决定剩余差额要不要追查"
+    },
+    {
+      "source": "A small difference can come from rounding after currency conversion. It can also identify a real missing service line. Reconstruct the original-currency amounts first. Check whether rounding at the invoice level instead of at the item level accounts for the difference. If both the currency and all inputs match and a residual remains, do not create an unnamed miscellaneous charge just to make the sheet total agree. Preserve the residual and ask about it.",
+      "source_sha256": "1c0e45e369c2ccb8b8391e59e0367c503734a9dca7c4b138dfc361f9226c61db",
+      "raw_target_sha256": "f156e2006f534912b80713165ac77b953ae1ed0e3495a7bd86eb40a7cef86a09",
+      "translation": "小额差异可能来自换汇舍入，也可能是真实服务费漏记。先还原各项原币金额，检查是否因为账单按整单舍入、表格却按单件舍入。如果币种、条件和输入都一样，差额仍存在，不要为了凑平总数就随手记一笔“杂费”。保留原差额，询问它的来源。"
+    },
+    {
+      "source": "Send a message containing the parcel reference, original quote date, input measurements, final amount and arithmetic that remains unexplained. If the answer identifies an existing line, correct its classification instead of adding a duplicate. If a new credit is promised, follow it through to the account record. Close the reconciliation when both the invoice composition and the actual payment movements can be traced. Keep the dated comparison with the parcel documents for the next time you budget a similar shipment.",
+      "source_sha256": "8703ace3ef2d7e2fc013ae16841626fc20b2a78154da3c7d127de28b8327a5be",
+      "raw_target_sha256": "35df9326f0b62e1f08edbbbd4536519275f4d187e4a01e5b7ca94b3b0431a36a",
+      "translation": "联系客服时附包裹编号、初次估价日期、测量数据、实付金额和仍解释不了的算式。若回复指出某一现有项目，只需纠正归类，不要再添一笔。若承诺退款，要追踪到账户流水。直到账单组成和实际资金流向都能追溯，再结束核对。把带日期的比较和寄件凭证放在一起，方便以后为相似包裹估算。"
+    },
+    {
+      "source": "Keep a readable closing note",
+      "source_sha256": "4df428e7a3b004f4cbbeff95d9f12e7050010e7a55f5d9fad427851b472ebeb4",
+      "raw_target_sha256": "d5ae2b1f2a348f4818a784bdb518c3404ee56127dd1e772c78c940e8a5bcf7f2",
+      "translation": "给每个已解决的差额留一句结论"
+    },
+    {
+      "source": "Write a one-sentence conclusion next to each resolved difference. For example, a previously unexplained charge might match a packing service on an earlier confirmation. Record that confirmation date and amount. Someone checking your records later can follow that connection even if the original transaction description was abbreviated.",
+      "source_sha256": "95c223af7a7e468996befdd5dd8634bccbb3fdcd082c40ccc2a0ce53ddcd08c9",
+      "raw_target_sha256": "11322ea021747b3186c05462f8e5f852c54d4148c8a570687de4a3b85208e924",
+      "translation": "比如原来不知为何收取的一笔费用，最后对应上了早先确认的包装服务。就在差额旁写一句结论，附确认日期与金额。即使交易简述过短，之后查账的人仍能沿这条记录找到凭据。"
     }
   ]
 }

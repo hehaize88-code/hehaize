@@ -3,7 +3,7 @@
   "locale": "ja",
   "source_set_sha256": "183cdd13e77f4bc0d9bacfff4053a77030e1d1d60961680b11843f9cea7248c5",
   "raw_dictionary_sha256": "6b7f7329ae3334f84ed64a2104620ae0ee0e9d5ddff58b466d05ffd13de91865",
-  "effective_dictionary_sha256": "e160c8b49194124ac75592624b52317d8a7471f32b2acb00ca82a313f6d6513c",
+  "effective_dictionary_sha256": "f4fc8a715cf3af454f3e8b3a5bf6e7adaf17939534b2bb3de58fcb1af2432c6d",
   "checked_entries": 305,
   "review_scope": "All dictionary keys and language, figure, URL, brand, identifier and repetition checks. All ten article headings, flagged full passages, two sampled paragraphs, and financial and garment-measurement examples reviewed against the English originals. Material terminology and numerical-example errors in the inspected passages corrected.",
   "reviewed_flags": [
@@ -639,6 +639,30 @@
       "source_sha256": "5503222297f8edd5f59247083a3e2f93244bcdc628730a2b4eb9f2a6a575125d",
       "raw_target_sha256": "204fdd51dff4726d7d9aa991e197746afbb72e0bcdba14ec77bc28699855ad7c",
       "translation": "配送先の比較と、荷物を分けて発送する判断は別に行う"
+    },
+    {
+      "source": "Take the example with a book, shirts and pencil case. One possible arrangement sends all four pieces to address A. Another sends the book to address B and the shirts and case to address A. The second arrangement has two service decisions and two actual delivery events. Add both eligible quotes and relevant packing amounts before comparing the total with the single-parcel alternative. Also consider what the intended recipients actually need; the lowest combined quote may deliver the wrong item to one of them.",
+      "source_sha256": "5095930601411f385deb21900008342a8eb5d375f03e5a0c0529416d9c1687ce",
+      "raw_target_sha256": "26c01d3ab4229ef30aadaed6895dc2b1b42f79ad6b2028c40cca5fb2abf0e9cc",
+      "translation": "本1冊、シャツ2枚、筆箱1個を例にします。住所Aに全部送る場合は1個口です。本だけ住所Bに送り、シャツと筆箱を住所Aに送るなら、配送方法を2件選び、受け取りも2回になります。別送案で利用可能な2件の見積もりと必要な梱包料を足し、1個口の総額と比較します。安い案でも、必要な物が別の人に届いては困ります。誰が何を受け取るかも確認してください。"
+    },
+    {
+      "source": "Preserve the assumptions with the quote you choose. When the actual parcel is packed, update its weight and dimensions and check the service still offered for the complete address. This last check is particularly important if the two addresses had different delivery arrangements. A parcel that looked cheaper to send to a relative may become less attractive if its size prevents collection from the intended location.",
+      "source_sha256": "da1512090fab0899a783ac2fb64e8b0e3f695b7f62d53a1c91034d8a21e3b20c",
+      "raw_target_sha256": "2a04eb3b683c0c3c386111fec20c000b5431a771d30e5c283343c607a435d55e",
+      "translation": "選んだ見積もりには、前提にした荷物と配送先の条件を添えて保存します。実際に梱包したら重量と外寸を更新し、番地まで含めた住所で選んだ配送方法をまだ使えるか確認してください。配送先によって受け取り方法が違うときは特に重要です。親戚宅向けが安く見えても、最終サイズのために希望した受取場所で引き取れない場合があります。"
+    },
+    {
+      "source": "A useful last check is to add the domestic charges at the same level at which they were quoted. If three lines share one seller shipment and the seller gave one combined figure, enter it once in the purchase total. If the account ultimately records separate domestic entries, reconcile those against the combined quote. Save the seller's explanation if different fulfillment locations or separate waybills changed how the goods were sent.",
+      "source_sha256": "9e619d9d0d4194b7b9dcd99b6cca4490eefce4422fb070612ddc63d399227da4",
+      "raw_target_sha256": "4f58152b0a165c3986ff7dad5b314e7cdb8fbf3c7436b14dc968f28437fd0319",
+      "translation": "最後に、中国国内送料を見積もりと同じ単位で足しているか確認します。同じ店から同梱する商品が3行あり、店が送料をまとめて提示したなら、注文の合計に1回だけ加えます。後からアカウントに個別の送料が記載された場合は、その合計を当初の見積もりと照合します。出荷拠点が異なったり運送状が分かれたりしたことが変更理由なら、出品者の説明も保存してください。"
+    },
+    {
+      "source": "A specification should contain an exit condition. If the precise option is missing, would you like a message, a cancellation proposal or another quote? Give permission only for the substitutions you would actually accept. “Please contact me” is useful when a wrong alternative would leave you with an unusable item. For low-priority attributes, define a narrow substitute explicitly.",
+      "source_sha256": "618fbcf2233f23f7ae2f6d0029f84ea9cfed07d2286545e288920669554cd3d8",
+      "raw_target_sha256": "a3dac269423887f52aa0a60a569c0be55ed3b488af95960e291b6dd122f1411d",
+      "translation": "指定の仕様が手に入らないときの対応も書きます。連絡を待つのか、キャンセルを提案してもらうのか、それとも別の見積もりがほしいのかを伝えます。実際に受け入れられる代替品だけを許可してください。別の仕様では使えないなら「代わりの商品を選ぶ前に連絡してください」と書き、こだわらない点に限って代替可能な範囲を具体的に示します。"
     }
   ]
 }

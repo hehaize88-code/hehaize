@@ -3,7 +3,7 @@
   "locale": "vi",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "048ff52d6ab53002212a2fbcd5d18a84b02aab1f4eeb83fe8951248ced3d35d1",
-  "effective_dictionary_sha256": "627fe202bd0621f455d1c3683309f82f58c7e20579a752fb4df23c77d1675506",
+  "effective_dictionary_sha256": "4c4112c620d01e04d07ef0d622d1f03c8331e26ad66f435abe3cd86871dde6ea",
   "checked_entries": 324,
   "review_scope": "Inspected all ten article titles, all automated flags, examples containing arithmetic, quantity, carton volume and purchase records. Read deterministic passage samples and reviewed copied English headings and terminology. Cross-checked the follow-up suggestions in the notebook example. Follow-up contextual check for parcel, freight quote and weight terminology.",
   "reviewed_flags": [
@@ -297,6 +297,48 @@
       "source_sha256": "ae0a25ea011396fc890e0944b7080d412f2cf45e7002f120e55fea697c2b9447",
       "raw_target_sha256": "6aa084b636bfb86afa87aece21dab751274c5be42ba697ddfe70fbcf2a867b2c",
       "translation": "Ghi ngày báo giá và loại tiền trên từng dòng. Nếu trang thanh toán thu tiền sau khi quy đổi, lưu cả báo giá gốc lẫn tổng tiền thanh toán. Chênh lệch có thể đến từ cước vận chuyển, tỷ giá hoặc dịch vụ tùy chọn. Thời gian giao dự kiến và việc tuyến có nhận kiện hay không cũng phụ thuộc điều kiện hiện hành. Ảnh chụp cũ chỉ ghi lại thông tin tại thời điểm chụp."
+    },
+    {
+      "source": "Keep the original seller documentation for a self-purchased item. If that seller sent the wrong version, you may need the order under your own marketplace account when discussing a remedy. For an agent purchase, quote the BBDBuy purchase reference instead. In either case, preserve the warehouse evidence while it is still possible to identify the item and its packaging.",
+      "source_sha256": "f21b78af7a07c2cc8d0edb2c70c52e8c8228eba971c130e97e8dcc36944ffec9",
+      "raw_target_sha256": "75e5b4f0e8d8ba703927ae034c7eafe4f2627181587bb6eb020c0e65fd4050b9",
+      "translation": "Giữ chứng từ gốc của người bán cho món tự mua. Nếu người bán giao sai phiên bản, khi yêu cầu xử lý có thể bạn cần dùng đơn hàng trong chính tài khoản mua sắm của mình. Với món do đại lý mua hộ, hãy cung cấp mã mua hàng BBDBuy. Trong cả hai trường hợp, hãy lưu bằng chứng từ kho khi vẫn còn xác định được món hàng và bao bì của nó."
+    },
+    {
+      "source": "After packing, compare the final dimensions and items with the agreed plan. Keep a copy of the instruction beside the parcel reference. The question to close is concrete: are the shoes protected, the wanted packaging present, and the quoted route still suitable for the actual parcel?",
+      "source_sha256": "48a76df45cebf626dfd6faef73c79aae20b74c2f37e1ca964d6e451751f8ee9c",
+      "raw_target_sha256": "ed4f3268cb766d5aec86d00af78c640b712a8a97fe546de03fef33ec6deb8d9b",
+      "translation": "Sau khi đóng gói, đối chiếu kích thước cuối cùng và hàng bên trong với phương án đã thống nhất. Giữ bản sao hướng dẫn cạnh mã kiện hàng. Kiểm tra xem giày có được bảo vệ, phần bao bì muốn giữ có còn đủ và tuyến đã báo giá có phù hợp với kiện thực tế hay không."
+    },
+    {
+      "source": "Consider a combined carton measured at 44 by 34 by 30 centimetres. It occupies 44,880 cubic centimetres. If a hypothetical line uses 6,000 as its centimetre-to-kilogram divisor, the dimensional figure is 7.48 kilograms. If a second hypothetical line uses 5,000, its figure is 8.976 kilograms. Those differences arose from the route rules while the physical box remained identical. Compare the rules displayed with the current quote rather than treating either example divisor as a default for all BBDBuy shipments.",
+      "source_sha256": "9fec52b7abdb4b14a2ab5bb839f84a7d5f8060c65db407fb3e1f5cd62bec195e",
+      "raw_target_sha256": "6de804736f2c2f29da2b15b5df15314bc68d17130eaad7c16087fdef55daad6c",
+      "translation": "Giả sử thùng hàng gộp có kích thước 44 × 34 × 30 cm, thể tích 44.880 cm³. Nếu một tuyến giả định chia thể tích tính bằng cm³ cho 6.000, trọng lượng quy đổi là 7,48 kg. Nếu tuyến khác dùng hệ số chia 5.000, kết quả là 8,976 kg. Thùng không đổi nhưng quy tắc của hai tuyến khác nhau. Hãy xem quy tắc đi kèm báo giá hiện tại, không mặc định một hệ số cho mọi kiện BBDBuy."
+    },
+    {
+      "source": "Keep the quote reproducible",
+      "source_sha256": "56bd03dff5d82ca50922d04e1b2be8dad1b369e2e6d314cd12221fd2092255f6",
+      "raw_target_sha256": "de326088cdbe465e75375dba16007d76168aa61a804664d339bc6f7e6781fa91",
+      "translation": "Lưu đủ thông số để có thể tính lại báo giá"
+    },
+    {
+      "source": "Write why you picked the line in terms you can verify later. For example, it accepted the item and size, the quoted total included the wanted feature, and its tracking matched your needs. Save the route name, timestamp and parcel details together.",
+      "source_sha256": "b4a11032652d0cf712599be53a14f889a1aa6a5adda9a3ebd0ac8732a9afcd31",
+      "raw_target_sha256": "1cd0ba00984288a0c91ec2db45f9d705cc8b12e5471a112b86b01db08e6cf11a",
+      "translation": "Ghi lý do chọn tuyến bằng những thông tin có thể kiểm tra lại. Chẳng hạn, tuyến nhận loại hàng và kích thước của kiện, tổng cước đã báo bao gồm tính năng cần thiết, và thông tin theo dõi phù hợp nhu cầu. Lưu tên tuyến, thời điểm báo giá và thông tin kiện cùng nhau."
+    },
+    {
+      "source": "If a parcel later needs a larger box or a previously missing item arrives, rerun the comparison. Reusing an old screenshot would ignore the new shipment. When asking support to explain a quote, send the two sets of inputs as well as the totals so the comparison can be reproduced.",
+      "source_sha256": "7c1df573e1d9ec6e6bbfc1c41f3307630a1de422fe2ed9a23e0549d7eccd4c88",
+      "raw_target_sha256": "3f5eb8dc806359e3698eb42965b68f1f76007d42141fb447b227d332fadf2614",
+      "translation": "Nếu sau đó phải dùng thùng lớn hơn hoặc một món trước đây chưa tới nay đã vào kho, hãy so sánh lại. Ảnh chụp cũ không phản ánh kiện mới. Khi nhờ bộ phận hỗ trợ giải thích mức cước, hãy gửi cả hai bộ thông số đầu vào và hai tổng tiền để họ có thể lặp lại phép so sánh."
+    },
+    {
+      "source": "If one quote is for postal delivery and another includes a collection point, decide whether you can actually use both options. The full comparison includes collection convenience, the address accepted by the service and any requirements stated for receiving the parcel. Record which choice you can realistically complete.",
+      "source_sha256": "9c8fce794fa67777ee67ae6497b45860d33dfc28dc2412cb67ac698fc1da259d",
+      "raw_target_sha256": "4c73c0dcfcbbe11183d49a53de87d481eaeadc9044bc246dcb907e10be627f45",
+      "translation": "Nếu một báo giá áp dụng cho giao qua bưu điện còn báo giá kia dùng điểm nhận hàng, hãy xác định bạn có thực sự sử dụng được cả hai hay không. Khi so sánh, xét việc đến lấy hàng có thuận tiện, dịch vụ chấp nhận địa chỉ nào và cần đáp ứng yêu cầu gì khi nhận. Ghi rõ phương án bạn có thể thực hiện."
     }
   ]
 }
