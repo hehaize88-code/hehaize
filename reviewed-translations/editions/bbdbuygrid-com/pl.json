@@ -3,9 +3,9 @@
   "locale": "pl",
   "source_set_sha256": "0e44712c18dc50b998c52bbd25f7820990111c18b383d72ecd3263b50aabbaee",
   "raw_dictionary_sha256": "8ec89124bb61c75c5942d366f42ca03878f7b1f60f0976a99cdbfa81a90c427a",
-  "effective_dictionary_sha256": "97e8fb129f44e18f4a48bda6f95577df044dc242fdcc8584275860419ef1d4f9",
+  "effective_dictionary_sha256": "d39459b447d3a456d418a536b3eab94608c48b2fa4d0d0f006d3ff89b50874ac",
   "checked_entries": 324,
-  "review_scope": "All automated flags, ten article titles and worked examples for prices, quantities, volumetric weight, rounding and centimetre/metre conversions. Additional lexical sweep for mistranslated parcel, cubic seconds, and invented currency. Targeted review; not full line-by-line copyediting. Follow-up contextual check for parcel, freight quote and weight terminology.",
+  "review_scope": "All automated flags, ten article titles and worked examples for prices, quantities, volumetric weight, rounding and centimetre/metre conversions. Additional lexical sweep for mistranslated parcel, cubic seconds, and invented currency. Targeted review; not full line-by-line copyediting. Follow-up contextual check for parcel, freight quote and weight terminology. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -285,6 +285,12 @@
       "source_sha256": "17c8e613676ec8768a58f1d66c1e750362c538222b5fba239c361c3b655a062b",
       "raw_target_sha256": "7f682240147a7cb24950c5a48a2b65c427d2d70a4268a055d4a0323fd0b8a667",
       "translation": "Zmień teraz jeden parametr. Jeśli po przepakowaniu paczka waży mniej, sprawdź, czy na obu trasach liczy się niższa masa rzeczywista, czy nadal decyduje masa objętościowa lub stawka minimalna. Zapisz obie nowe wyceny. Oszczędność na jednej trasie nie musi wystąpić na drugiej. Jeśli pozostaje tylko jedna dostępna trasa, zanotuj powód wykluczenia drugiej. Przyda się to, gdy obsługa spróbuje odtworzyć wycenę na podstawie dawnych wymiarów."
+    },
+    {
+      "source": "In the notebook example a useful reply would state that you requested three units in one colour, that the new offer appears to cover two, and that you want confirmation of the unit price and domestic charge. Add what should happen if the third unit is unavailable. That gives the agent a bounded action rather than asking them to guess whether quantity, colour or price matters most.",
+      "source_sha256": "dd7dbc83be0357a055968ae5bf8b1035741b50106313a0468cf12e63bab783ea",
+      "raw_target_sha256": "20b4a7cc2b755d0b11781780585efdf3ac3673af59060e9b6b1574026282b5c7",
+      "translation": "W przykładzie z zeszytami warto napisać, że zamówiono trzy sztuki w jednym kolorze, nowa oferta najwyraźniej obejmuje dwie i potrzebne jest potwierdzenie ceny jednostkowej oraz kosztu dostawy krajowej. Dodaj, jak postąpić, jeśli trzeci zeszyt jest niedostępny. Pośrednik otrzyma jasne polecenie i nie będzie musiał sam odgadywać, czy najważniejsze są liczba sztuk, kolor czy cena."
     }
   ]
 }
