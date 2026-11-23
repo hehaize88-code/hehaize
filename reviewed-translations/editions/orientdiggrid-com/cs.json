@@ -3,7 +3,7 @@
   "locale": "cs",
   "source_set_sha256": "1a57e35751202bc8722bffcd3d5a604d9b7ad9d180228c298103c9c8fded0947",
   "raw_dictionary_sha256": "d51cd793bf2c37ada21844cf63aed2fccf1164d7ac63e9f4bc0f0cc888af010a",
-  "effective_dictionary_sha256": "c8b7a9181e67279127a728bced10a6dd2fad044f96827d7240b288a5e4bed305",
+  "effective_dictionary_sha256": "60068609c1bd2089024f253f18d86920ebe56c35a251b99f0692f73e39fd0b4a",
   "checked_entries": 295,
   "review_scope": "Checked all 295 source keys and rendered text, 10 SEO titles, all FAQ entries, shipping and garment measures, retail wrapping examples, and all automated language and numeric findings.",
   "reviewed_flags": [
@@ -153,6 +153,426 @@
       "source_sha256": "7ca13bbf3ad3d2528d12bcdbb7f8ff157adb7d3be7fb49a950b39c7ec3b840a6",
       "raw_target_sha256": "5f8339263240cdfcb3aad0c11d29ad20d60d62dee3e96b577bc502007cafb255",
       "translation": "V modelovém příkladu má pevná prodejní krabice délku 48 cm a zvolená služba povoluje nejvýše 50 cm. Na obal a výplň na obou koncích tak zbývají dohromady 2 cm. Není jisté, že to stačí. Získejte vnější rozměr hotového balíku nebo porovnejte označenou alternativu. Než povolíte vyhození krabice, zvažte její ochrannou a prezentační funkci."
+    },
+    {
+      "source": "Decide what would make you accept or question the item",
+      "source_sha256": "2aca7faacaabd9255cef17b4f0e51d766f018e4ce906edf15eb14ba85060c5bb",
+      "raw_target_sha256": "5cb9592210505dca3e2ee630e95695c5120b5349654efa64c64d88d9fd0b8667",
+      "translation": "Ujasněte si, podle čeho výrobek přijmete"
+    },
+    {
+      "source": "Identify the physical unit before describing the shot",
+      "source_sha256": "1bce138fdfa2af65878021e0e996e8674acf0f2a1f6827f327382bdac78b161d",
+      "raw_target_sha256": "7f8107ea4a12286c229861740242d42908681f50f82a5c0d95a0da78bd25dc3f",
+      "translation": "Před popisem snímku určete přesný kus"
+    },
+    {
+      "source": "Specify the angle and the feature in ordinary language",
+      "source_sha256": "03557f4dee65382e8666d620eda04cb715f882f2eaf7886706cb6929db14503f",
+      "raw_target_sha256": "8c9112f9371a7765a996dec108c113edaa9dd5371d9ec1adcc1c409936703519",
+      "translation": "Popište úhel a detail běžnými slovy"
+    },
+    {
+      "source": "Give a measurement two endpoints and a unit",
+      "source_sha256": "8fcdec3d32009f5e21654516225c5f593996bb9a6a4ad6230550d12a92ba5fba",
+      "raw_target_sha256": "48fa5e744f96b5abf2c9217575a93ac8e24c955c7bf28bcf1fdea22aafd3a2e7",
+      "translation": "Uveďte oba měřicí body a jednotku"
+    },
+    {
+      "source": "Use a reference image to clarify rather than prove",
+      "source_sha256": "7abeed4267e4414c83015bc73cfcb691f045678a40ee2dd87903f467a33ee2ef",
+      "raw_target_sha256": "15900783f6789b728128cf2a49bda63df9cffe0db2e67d6a226399b984192cd4",
+      "translation": "Upřesněte požadavek referenční fotografií"
+    },
+    {
+      "source": "Review the result against the request line by line",
+      "source_sha256": "fe910e16c6ff46f6c0da7b851dfa9433ce84587e4de75b01fa5afa315491258a",
+      "raw_target_sha256": "bec0107f5171d702cd6f484aeb40a7ad40b58d7657e6387560568ec7f95c635c",
+      "translation": "Srovnejte výsledek s každým bodem žádosti"
+    },
+    {
+      "source": "Stop when you have enough evidence for the decision",
+      "source_sha256": "ca8c3aedee588d78c2d4aa91c395d4d028484012f3ad7d931d51f1a6640e6a89",
+      "raw_target_sha256": "82eb5e094d2d05533afa8111777865f625f5d3c3926208a0558ffa8e78f37366",
+      "translation": "Ukončete kontrolu, jakmile máte dost podkladů"
+    },
+    {
+      "source": "Choose a comparison garment with a similar shape",
+      "source_sha256": "8cacdd5aae85922ff6007103d1e299a8ea2e3b5dd7c71844ecd31ca0e8f4d5c5",
+      "raw_target_sha256": "48b271b3e1261f357913b4296b6092f2b30d7b1463dc3a8e1a4e212d213858a4",
+      "translation": "Vyberte si k porovnání oděv podobného střihu"
+    },
+    {
+      "source": "Read the seller's diagram before naming a dimension",
+      "source_sha256": "7aa3a1dec19f33d2e5b20b99d5680af95df4e1446305a4c1adb893526831e776",
+      "raw_target_sha256": "5207cb8647d05bf1c2fbda82cde3bde0b450f4bc69ef809936f84a01a31d101a",
+      "translation": "Nejprve si přečtěte nákres prodejce"
+    },
+    {
+      "source": "Request chest width in one continuous view",
+      "source_sha256": "a3a39382c535c0e07088ad9ad8e4d45022c7ef2c53d2f2b827f81b93ac822479",
+      "raw_target_sha256": "572b804bba00fbe51868b9ac4dd9d1cc93ce4352f1ba57bc4171d33a01cc9d7a",
+      "translation": "Nechte si šířku přes hrudník ukázat v jednom záběru"
+    },
+    {
+      "source": "Distinguish centre-back length from high-shoulder length",
+      "source_sha256": "51b85f3732e66ad247430534da8c032e348e46d08a551a7cc510149da5867551",
+      "raw_target_sha256": "99de510be99f8fd665a6e36db8c050cbf747dc1f57142137c4a77e04b7b3ffcb",
+      "translation": "Rozlišujte délku středem zad a délku od ramene"
+    },
+    {
+      "source": "Match sleeve measurements to the construction",
+      "source_sha256": "51349d99eeafc2170919b10c5ab2bb0b18c7fbcd02da395aae23148d3d7778b4",
+      "raw_target_sha256": "7c323755f6f32a80c7780d23445934f1c5ee41e2b4a532d41dad08d515f93cd3",
+      "translation": "Přizpůsobte měření rukávu střihu"
+    },
+    {
+      "source": "Evaluate elastic, cuffs and layered construction",
+      "source_sha256": "6d89e1d1334e4375c8e3df8219fb481b2ebc6b65d2602dcb5d53cbf4975a5c2c",
+      "raw_target_sha256": "00138d539a88c86e091ee1e0f8e5408a8b8ce1f10cfa7e739914821197d4f589",
+      "translation": "Zohledněte pružnost, manžety a vrstvy"
+    },
+    {
+      "source": "Make a decision the evidence can support",
+      "source_sha256": "804ee25bf0fec84678fdc6485d9248d089097f2ed8b487421bf2ec90629f306c",
+      "raw_target_sha256": "2adea50238baf578daba8f5286158d3ad29f2a440f8e3f4cd4468cc8213f94a0",
+      "translation": "Rozhodněte podle ověřených údajů"
+    },
+    {
+      "source": "Start with the part most likely to suffer damage",
+      "source_sha256": "ae660b381615524d5b9a1e72908e73e7300ef24bb72c8ea9a6f999df33336dde",
+      "raw_target_sha256": "a68239d5175c5c15640b29904fe9a68011c7ad2071a5714e9fe79a6d6a9b64fc",
+      "translation": "Začněte nejzranitelnější částí"
+    },
+    {
+      "source": "Decide what role the seller's packaging plays",
+      "source_sha256": "d0f6721f61451ac58798245ec8fe848e6ee3e319ab5351d8776dda99d29f3502",
+      "raw_target_sha256": "52f5ed6e322b69a4d13b6e26c3aebc0a3a2ba3f75021a418ce4e3d19c9fea077",
+      "translation": "Určete úlohu obalu od prodejce"
+    },
+    {
+      "source": "Check how the fragile piece interacts with the other contents",
+      "source_sha256": "d395889d8655f2fbff5766d838826b9907113c56efd709bbe1f5e9c9eb8fd379",
+      "raw_target_sha256": "de545e1e3938c7cd28abb72f4aeb9bfaf93f16d4c4641f3cc57b7619004bb28f",
+      "translation": "Prověřte kontakt křehkého předmětu s ostatním obsahem"
+    },
+    {
+      "source": "Ask for evidence at the point when it can still help",
+      "source_sha256": "ff0056051ea2f58defd4816751949515c9b3ea72ae9c164aefb287a556119645",
+      "raw_target_sha256": "0a2338871ad8da4259414080a1b24cf77dbce31f0839e9dbd73951e085ce4732",
+      "translation": "Vyžádejte si snímek, dokud má pro rozhodnutí význam"
+    },
+    {
+      "source": "Account for the space that protection requires",
+      "source_sha256": "be70b9e734f3dfdd7cbdc495436f67f0ae8fa6fb890e5248faacdef641c5432a",
+      "raw_target_sha256": "ba171fc920cc6b7fb868fa2acc43d44c530c36c51f4ff78cf4a001209d676249",
+      "translation": "Počítejte s místem pro ochrannou výplň"
+    },
+    {
+      "source": "Read the service conditions in terms of your particular object",
+      "source_sha256": "ed308a328f1eceb37419be0b72197bb43104e45b498e9952d03fd058fa7f1efc",
+      "raw_target_sha256": "24d623f38e03d77b2a9720ff576bea3143e00a672cc261d7aa19f2e66029553c",
+      "translation": "Ověřte podmínky služby pro svůj konkrétní výrobek"
+    },
+    {
+      "source": "Examine the delivered parcel before discarding its packaging",
+      "source_sha256": "f13945c344e46b02434266afe85d02852da54fa0bba882511e9cc7be06e5b50f",
+      "raw_target_sha256": "4fc6e9f2dba9dbb62491c0506cfc7b6c0335d0305a57e9ae8beb033700db8ac6",
+      "translation": "Prohlédněte zásilku, než vyhodíte obal"
+    },
+    {
+      "source": "Give the purchase a unit list before tracking starts",
+      "source_sha256": "8c9ead747b4ce8320d6488e7bec9792eaeb522b9ce51942ffe5f1c8c9a29361d",
+      "raw_target_sha256": "0b2b184403e73117ac88a3b2251ad625efe2be1fc191aa85f5c2fa8c5f7abb06",
+      "translation": "Před sledováním sepište kupované kusy"
+    },
+    {
+      "source": "Separate the marketplace identifier from both tracking numbers",
+      "source_sha256": "78c7599ef3f9ae3d918c12041a44f80d04e2882a82dfc8df0ca593377c961c3c",
+      "raw_target_sha256": "eed9341d13d4b1c169181c84f2f218bee2fb0893d55228307077c842a18be95d",
+      "translation": "Odlište kód nabídky od obou sledovacích čísel"
+    },
+    {
+      "source": "Map one seller to several domestic shipments",
+      "source_sha256": "74654303f99868fbc9f50f133f880e0ab9e4b48dd8a6b350f415df203061ddcc",
+      "raw_target_sha256": "876a6ea2e07a4cd28c38029566127b18957672009825a5cc1bde9a0662538488",
+      "translation": "Přiřaďte jednomu prodejci více vnitrostátních zásilek"
+    },
+    {
+      "source": "Check the strongest identifying details first",
+      "source_sha256": "4bbd30c93a9c36e8bc58a5bdc5deec23aa592869b9059ca30f8653ee4002f10d",
+      "raw_target_sha256": "e81a48afebfb3e69c2c8172f6936f4a69342794e06cf7676c913f2d95727ec44",
+      "translation": "Nejdřív zkontrolujte nejsilnější rozpoznávací znaky"
+    },
+    {
+      "source": "Distinguish three kinds of missing-item question",
+      "source_sha256": "b3ac374b2d93395451759ca6c33334a0aedc832833925ad2010f6802fa346459",
+      "raw_target_sha256": "dc9b6fa55eacadb79ba3e868dfd02a78d1c2a88fb5afce02a7381f7f13b5c01f",
+      "translation": "Rozlište tři situace, kdy zboží zdánlivě chybí"
+    },
+    {
+      "source": "Reconcile a corrected or exchanged unit without losing the history",
+      "source_sha256": "8a82b87b1d3f939fe4f46b401850415fbce60c5221b8bfc3562a6cb3371170d9",
+      "raw_target_sha256": "8760ca1577fe404b20e3f4cf7c88f33f2ed9d0e698a7029410bf9a85076d014a",
+      "translation": "Propojte opravu či výměnu s původním záznamem"
+    },
+    {
+      "source": "Submit the international parcel from the reconciled list",
+      "source_sha256": "2c799e1b94d4bfe40d8ccdddf0e172cf94d02088b0f3136a9d9e80cd276e5239",
+      "raw_target_sha256": "292c07886c5bb89352fb79df539a8824bd6da8547a2c819347c7d344125b867f",
+      "translation": "Připravte mezinárodní zásilku podle ověřeného seznamu"
+    },
+    {
+      "source": "Read the selected offer one piece at a time",
+      "source_sha256": "791d539989337cb4cbfd549fd6f53c41863ff9cb75aa793352764fba7666ca2e",
+      "raw_target_sha256": "4a2528d0dac47241c438249d7d98725507d391d9a41f7f0201b64d557a9e4710",
+      "translation": "Čtěte vybranou nabídku po jednotlivých dílech"
+    },
+    {
+      "source": "Match the ordered size combination to the set",
+      "source_sha256": "69830b56162bbc9ee158e82595f91728e0f57142fce9662dabc9bf269254198f",
+      "raw_target_sha256": "6d76270a5456a3e74fbbca19e06f77f30eb2b6c41e9652f74c306c963e013706",
+      "translation": "Zkontrolujte objednanou kombinaci velikostí"
+    },
+    {
+      "source": "Establish that the parts belong together",
+      "source_sha256": "2e722849d035db8822281e4585a64d9b0ea306f1e25f0395540e79a4b6cf9791",
+      "raw_target_sha256": "39924ea96e45dcd74b2ccfe3f9b2adc73b45880865f816ab0d6d3c898da092a3",
+      "translation": "Ověřte, že oba díly patří k sobě"
+    },
+    {
+      "source": "Request the one missing piece of evidence",
+      "source_sha256": "4fda4674fbf8c2e12ef5b34e71bd690f8c2334b03126ba6791c005a7ccda8575",
+      "raw_target_sha256": "b303aac3e0d124c2ff186b85b37b446ef211c00cf550600f417da2d2e2494e4d",
+      "translation": "Vyžádejte si chybějící údaj"
+    },
+    {
+      "source": "Evaluate fit without mixing body and garment figures",
+      "source_sha256": "5369e7c4912411d88f116c1587a008624638cde061eaece9f7a5a4088f52b846",
+      "raw_target_sha256": "57164c2fa2b4ddb16b21986c4f2fd84f765eeaf61420a99001724a77b214ca27",
+      "translation": "Posuďte střih bez záměny tělesných měr a rozměrů oděvu"
+    },
+    {
+      "source": "Handle a partial mismatch as a set-level question",
+      "source_sha256": "9733926e20b35abcee608f4e7206714b1b27e63ca11db699d6f44ea0c4bec576",
+      "raw_target_sha256": "6a96587105fec9488a1d20fe179e35ca30c4a83a5819cac1134b3bf607308c06",
+      "translation": "Řešte nesrovnalost jednoho dílu v kontextu celého setu"
+    },
+    {
+      "source": "Check both pieces at packing and receipt",
+      "source_sha256": "89090f31e11caa1eef61c191019405ba85c04b160e32dba1b44f039fbc22d84c",
+      "raw_target_sha256": "058a0f85cdd61fbcad442d78cb795caa571b4bf8152875aa323cfdfeee32f2a8",
+      "translation": "Zkontrolujte oba díly při balení i převzetí"
+    },
+    {
+      "source": "Identify the packaging layer you are talking about",
+      "source_sha256": "c63cd70be88ac9a366533c0fb0180a69080c9c1762a63dd84c9adb8907f13add",
+      "raw_target_sha256": "1220ae27dcf8deb4d82953b66c1927c7afc73e208e9b51d370372bd20df2fec3",
+      "translation": "Pojmenujte konkrétní vrstvu obalu"
+    },
+    {
+      "source": "Separate protection, presentation and evidence",
+      "source_sha256": "bc543ed1f95383d6424600222070dd3f1ead35096617e2774753b0c1f699fac6",
+      "raw_target_sha256": "38fe2107b4c4d5a97681b4824bb37eaebb8d8ea32a02891eedf5f39375b640e0",
+      "translation": "Rozlište ochranu, prezentaci a doklad o variantě"
+    },
+    {
+      "source": "Compare actual mass with the space the box uses",
+      "source_sha256": "bb6c0ef07ab2f6cf6e02523da4542ae97ab49cc1d7bc2cb8e3c2ba38b87437c1",
+      "raw_target_sha256": "8909214fd3852ff75675ff52dfbe97f8f908955c831a2f36b6b341b070653cdb",
+      "translation": "Porovnejte skutečnou hmotnost s objemem krabice"
+    },
+    {
+      "source": "Compare scenarios for the entire parcel",
+      "source_sha256": "e22c456801da60e152334fc86f5321d25308ed568bbab989152ba4a1172ff427",
+      "raw_target_sha256": "3279bf90566787fde9159b089d0bc9ccf3896783c0257804b4438961c33d2b38",
+      "translation": "Porovnejte možnosti pro celou zásilku"
+    },
+    {
+      "source": "Avoid exchanging a known benefit for a speculative saving",
+      "source_sha256": "6e87cb02dafaf78a71265aa3264ddab8e2c0e3195dffdc7a34f53b925d1749ce",
+      "raw_target_sha256": "dcef208e070dbe66a038fa06e473564cf56c34144446d0eadb3df2a209448136",
+      "translation": "Zvažte ověřenou výhodu i nejistou úsporu"
+    },
+    {
+      "source": "Write instructions that a packer can distinguish",
+      "source_sha256": "2c7263a65ab4ee2cbfa7a13400057bb202faa40d30d945d16df1a428b98a226e",
+      "raw_target_sha256": "df297e859524422b743e131ad72926071adfd5e6ffe9b3f93549d05682e0e22f",
+      "translation": "Napište pokyny pro každou část obalu"
+    },
+    {
+      "source": "Record the decision and check the result at delivery",
+      "source_sha256": "862a7d48ab0f8b052382153d4d25ea91e3872dd3180a115006cb43f6e736a8e1",
+      "raw_target_sha256": "8bf20db619c9cad57349283d4b683d2a3f2caad403c63d7cad459e3999894744",
+      "translation": "Zaznamenejte volbu a po doručení ji ověřte"
+    },
+    {
+      "source": "Name the two arrangements you are comparing",
+      "source_sha256": "27e4bed65d3dcbd546be7a2f282c1d421d2f97e61172251a40e60ade8030c3f3",
+      "raw_target_sha256": "e19e1c0ea247fc2904920b86b350621a30309cb983e05662d398f4164632d056",
+      "translation": "Pojmenujte obě porovnávaná uspořádání"
+    },
+    {
+      "source": "Work in consistent units before using any formula",
+      "source_sha256": "ce294d6794ae158b8de00c6234a882f192aea976fbe1b9a35d001660ba7ccbdf",
+      "raw_target_sha256": "f06f386926e170483750507e52e896b3fb421a3b9c24089976052f6e09f64226",
+      "translation": "Před výpočtem sjednoťte jednotky"
+    },
+    {
+      "source": "Understand which weight the route uses",
+      "source_sha256": "53bf210855c64e4894924cbc0caa1a7f0ca1b4eddb02a2493c043846a110a4e2",
+      "raw_target_sha256": "e3e948d0a877d71500fd7b737e3cc7d8459cf1d2fa1a234a1eb0a7c8d230b9e1",
+      "translation": "Zjistěte, podle které hmotnosti se účtuje"
+    },
+    {
+      "source": "Test the longest side separately from volume",
+      "source_sha256": "bdf58ac6ba04293fae976daa2f1529b9524d6860cd072d749756b234bfa56ca0",
+      "raw_target_sha256": "c1dd92fdd685e1789c754d73a01ee4687ba3be17d4f6794e8a15b92b5079ec8a",
+      "translation": "Nejdelší stranu ověřte zvlášť od objemu"
+    },
+    {
+      "source": "Estimate only the variables you cannot yet measure",
+      "source_sha256": "43dea86d2918c57c5df24018b76568874dbeedf65d6d138f901e4d0067953ffc",
+      "raw_target_sha256": "2f058501aa1900a06d235563c1ebfec9d34597cd6d7a97240c5d05f2815acc3d",
+      "translation": "Odhadujte pouze to, co ještě nelze změřit"
+    },
+    {
+      "source": "Recalculate after protection and optional services",
+      "source_sha256": "3d737d62b04b33e638a060fa3a8942db6e1c2855e8773782d5cdd868930ce84b",
+      "raw_target_sha256": "c7a2fe149464f92a3539acecb40ea7c34ead85a2a41376343e370a43fe48e688",
+      "translation": "Přepočítejte výsledek po přidání ochrany a služeb"
+    },
+    {
+      "source": "Save a record another person could reproduce",
+      "source_sha256": "73502a16f10da5b401843fb78fd48967bb9162ccd44933d88315028434d50cc7",
+      "raw_target_sha256": "802f13068cf1c57d4dc75920b13ec862cc48bb7f3ff77d55fdc75af571b7d171",
+      "translation": "Uložte údaje potřebné k zopakování výpočtu"
+    },
+    {
+      "source": "Describe the goods as they really are",
+      "source_sha256": "6802a5e74638bf374df39875982410f10de74763d772768a77a814c261de6ad7",
+      "raw_target_sha256": "9c595eccddaade0945c1fcf57533cd21bcc0e033d9b70771bef87ec4f836b8c7",
+      "translation": "Popište skutečný obsah zásilky"
+    },
+    {
+      "source": "Separate four kinds of restriction",
+      "source_sha256": "14cdbbbe359c4a2a5728fb556e729bdbe0ace84a3852f1f8079d2f360fdbb858",
+      "raw_target_sha256": "5d60cb8dd034c7b182e08638ab0fa766860b761cb9cee4e489f5efe999eba29b",
+      "translation": "Rozlišujte čtyři druhy omezení"
+    },
+    {
+      "source": "Compare the dimensions against the exact rule",
+      "source_sha256": "01a868d3313cfe5fd209584ac6e75e08f3de39c3ea16aeeb4b1773e26812cec7",
+      "raw_target_sha256": "e86d422a29b83c5baeea04ee0b483bacbc4f9afa207ce21531a7deeec4fa644c",
+      "translation": "Porovnejte rozměry s přesným zněním pravidla"
+    },
+    {
+      "source": "Read billing conditions independently of acceptance",
+      "source_sha256": "b5dd69b6974f8b4f09d46cff5df4a33a3d8437f259357c767345121ffc7a2eff",
+      "raw_target_sha256": "fc0a9891e82cbaa43a3d3fa51ff3a6e56f01f4782899b009ebccc25a0b672573",
+      "translation": "Posuďte cenu odděleně od přípustnosti zásilky"
+    },
+    {
+      "source": "Check destination and delivery service requirements",
+      "source_sha256": "acf7f88711e7190e949a59666d3863fd99c53e59fb485c5077531852771ddc9d",
+      "raw_target_sha256": "e28433876d9dfd1c38d476ec3ae5c56ab19bceab498fed4ee370e20c69673253",
+      "translation": "Ověřte požadavky na destinaci a způsob doručení"
+    },
+    {
+      "source": "Check protection and exclusions before interpreting a price difference",
+      "source_sha256": "8ec4ea1de364a2363c921b4f73377f67ce653366dcc2f469706f32560ca54211",
+      "raw_target_sha256": "9e812d3bd9a61c653644409f96dc79f5d88eae62ff312d3c443d6f40553aeab4",
+      "translation": "Před porovnáním cen ověřte ochranu a výluky"
+    },
+    {
+      "source": "Choose a route only after resolving decisive uncertainties",
+      "source_sha256": "04502c537121b780ed138625fdd5504b0eb9a74d98417aa2c2a1d339e4d59f5c",
+      "raw_target_sha256": "475951c15fac21e6d9e294d9cd8265ced62534db90900916bd37c997ffa9e14e",
+      "translation": "Způsob přepravy vyberte po vyjasnění zásadních otázek"
+    },
+    {
+      "source": "Identify the outbound shipment before interpreting a scan",
+      "source_sha256": "772f53df6dfec906b9e43121ac4af9cfa2aba4b4655a270dcb26c11f3f40c54c",
+      "raw_target_sha256": "ebea1a1d6287e18cfeef1cdd6bd397931ebf7770e50c5805a378af37c512a5d6",
+      "translation": "Nejprve přiřaďte záznam ke správné zahraniční zásilce"
+    },
+    {
+      "source": "Put the displayed event into the delivery sequence",
+      "source_sha256": "774aff695cbdcf16ed2b612dc624351ecd5888b74a51e54f3055bdd2c928c824",
+      "raw_target_sha256": "6db784a90507c47c2a77329196c90c62f2c13feb0f87f3ce4a89b20c63b75a2a",
+      "translation": "Zařaďte událost do průběhu přepravy"
+    },
+    {
+      "source": "Understand the transition to a delivery partner",
+      "source_sha256": "74b0db8a5d7765e1872b460454117d3166aa164b860366d808c47f254eacef74",
+      "raw_target_sha256": "3e5e37ed62461801ce90f894ccf334ecd8b2bbbcc63bf0326ffc300588ecab48",
+      "translation": "Prověřte předání místnímu partnerovi"
+    },
+    {
+      "source": "Compare times, not just the order of lines on screen",
+      "source_sha256": "bc5c8ad625ee334c46eec43e83f51b881ad01e555c1a13dfc79c39e7656234f5",
+      "raw_target_sha256": "ae7a8eb7ef7d4914fb980e127e6fab7f5195570332e71756a00215688dedd853",
+      "translation": "Porovnejte časy včetně časových pásem"
+    },
+    {
+      "source": "Distinguish an estimated interval from a service guarantee",
+      "source_sha256": "2a6cce9719953ec887bf9c48dc8c4f35c838d2d0f963a6b6be9f41a0a28696a4",
+      "raw_target_sha256": "a99842551d435105fe0afbed0843ffc8a30245ccb6f9d2db57305d968ac7ddc1",
+      "translation": "Odlište odhadovaný termín od záruky služby"
+    },
+    {
+      "source": "Prepare a useful tracking inquiry",
+      "source_sha256": "99d6af4f099ef3571a223528b9ff9a327478272bd757a5fc9f8467d5fbc43dd7",
+      "raw_target_sha256": "852c1e7449ec4356b56e63f366bf5aaefe913d85ca6fc46a8ed5b80619710857",
+      "translation": "Připravte konkrétní dotaz ke sledování"
+    },
+    {
+      "source": "Close the handoff record at receipt",
+      "source_sha256": "cbc5ac79dd74819bc9f23c254706902d22781ecc1dba9fa0759d2ed6658ffec4",
+      "raw_target_sha256": "ebeb818d1a66475db1e6f3ed0be70518604b97f714baaee15204b4bd6e0d850a",
+      "translation": "Po převzetí doplňte záznam o předání"
+    },
+    {
+      "source": "Decide what information the assistant needs to place this purchase",
+      "source_sha256": "a6caf1690a22639e469ee3c1af42e01c706ee7dabf95dc57edb4c590e0b50d0f",
+      "raw_target_sha256": "1d09efcac0a6bea3d75556923aff1a209af97ecaeda29ee06204dab47fd68135",
+      "translation": "Upřesněte, co asistent potřebuje k nákupu"
+    },
+    {
+      "source": "Capture the original option wording",
+      "source_sha256": "8ad622c4077f8ec9e1d3cd9bbdc39b668838d958c925f0ec078d2a8eb2a587af",
+      "raw_target_sha256": "5f3d2ab0d8b50cc67ce6643cdd3cbc91405b1b78fdedc5325ea783de6bc4f2af",
+      "translation": "Zachyťte přesné znění zvoleného provedení"
+    },
+    {
+      "source": "Define the unit and the count",
+      "source_sha256": "de50455c410278c6c41e194ecae627c4e095c9ebc1d1c8edb63211c70caca6e3",
+      "raw_target_sha256": "7063f155f7820484d82ed6363a3e36c2884055f0e2db48beb17765803b7974fa",
+      "translation": "Určete prodejní jednotku a počet"
+    },
+    {
+      "source": "State what to do if the exact option is unavailable",
+      "source_sha256": "86522dae92f37762732fa35b70ae3d7a1165dc4cdbc50276488c4db201c8ef3a",
+      "raw_target_sha256": "9cccf82c76228564b077b606dd1d2b742b9482337b2b370f0595032d4c8df325",
+      "translation": "Uveďte postup při nedostupnosti varianty"
+    },
+    {
+      "source": "Attach only evidence that resolves ambiguity",
+      "source_sha256": "2910e4f7fd249d3fa6bdfdd6426adc5181839fc391586fb6973bcc12bce25f3e",
+      "raw_target_sha256": "d74601b14575cccc7823a4e95c669682555aa6bbad332b6647a4c0c68132f37e",
+      "translation": "Přiložte podklady, které objasní nejasnost"
+    },
+    {
+      "source": "Review the confirmation as a separate document",
+      "source_sha256": "c8641cce9c2d035232ffc9e64b68d0b12df1eb6b7d0d69dbd172e944bf3f6cea",
+      "raw_target_sha256": "c5e4e9461eaddb2e1636ae7039e8aadac7329606dd93fd131476fe32eb9d76d2",
+      "translation": "Zkontrolujte potvrzení samostatně"
+    },
+    {
+      "source": "Carry the request forward into a practical warehouse check",
+      "source_sha256": "76658e2a0f8b2526b14d95b16986afd34636dab837dfe6a5b18ec24d938f3f51",
+      "raw_target_sha256": "995afdc992600b67e9893e3c5f1529770bd7fa720db20215f3d7526ece4e5a33",
+      "translation": "Využijte původní požadavek i při kontrole ve skladu"
     },
     {
       "source": "OrientDig lists detailed-photo requests at product ordering and after warehouse intake. Choose the item and specify the exact view needed, then check the service offered for that order.",

@@ -3,7 +3,7 @@
   "locale": "da",
   "source_set_sha256": "1a57e35751202bc8722bffcd3d5a604d9b7ad9d180228c298103c9c8fded0947",
   "raw_dictionary_sha256": "3599f6f53bd6d4beb1b9e503f5064df709f1d8e9179c529e070b07da66fff920",
-  "effective_dictionary_sha256": "1bb79ba6d34a910ba5b4d4183fb402dbeca57ef2ece07f2f6ba4feca61b29eb9",
+  "effective_dictionary_sha256": "1dc1658681615e79e2722777b551edc31b40a8744db2b8b58522c467d275fd4f",
   "checked_entries": 295,
   "review_scope": "Checked all 295 source keys and rendered text, 10 SEO titles, all FAQ entries, shipping and garment measures, retail wrapping examples, and all automated language and numeric findings.",
   "reviewed_flags": [],
@@ -146,6 +146,426 @@
       "source_sha256": "7ca13bbf3ad3d2528d12bcdbb7f8ff157adb7d3be7fb49a950b39c7ec3b840a6",
       "raw_target_sha256": "d842ae5332faa8515999692b6c5052630d66ee16a76bd847c6d4598135ca3350",
       "translation": "Antag, at en stiv salgsæske måler 48 cm, og en rute accepterer højst 50 cm på længste led. Så er der kun 2 cm i alt til yderemballage og beskyttelse ved begge ender. Det er ikke sikkert, at det rækker. Bed om det faktiske pakkemål, eller sammenlign med en tydeligt beskrevet mulighed. Før du lader salgsæsken kassere, så overvej dens betydning for beskyttelse eller præsentation."
+    },
+    {
+      "source": "Decide what would make you accept or question the item",
+      "source_sha256": "2aca7faacaabd9255cef17b4f0e51d766f018e4ce906edf15eb14ba85060c5bb",
+      "raw_target_sha256": "1ba1f3bb3b7d2b964f83578110b1170fa7592bb660363380e40568bf09c7d96c",
+      "translation": "Afgør, hvad der skal til for at godkende varen"
+    },
+    {
+      "source": "Identify the physical unit before describing the shot",
+      "source_sha256": "1bce138fdfa2af65878021e0e996e8674acf0f2a1f6827f327382bdac78b161d",
+      "raw_target_sha256": "71e9984fbe8177c1103e5b56280ea587578631df5a9f98c78f972ff2a6d6213f",
+      "translation": "Identificér eksemplaret, før du beskriver billedet"
+    },
+    {
+      "source": "Specify the angle and the feature in ordinary language",
+      "source_sha256": "03557f4dee65382e8666d620eda04cb715f882f2eaf7886706cb6929db14503f",
+      "raw_target_sha256": "4f8f7f9337a6da41d63c5f1e19b163d7cdc138124e3c63f7018175e315b2fe31",
+      "translation": "Beskriv vinklen og detaljen med almindelige ord"
+    },
+    {
+      "source": "Give a measurement two endpoints and a unit",
+      "source_sha256": "8fcdec3d32009f5e21654516225c5f593996bb9a6a4ad6230550d12a92ba5fba",
+      "raw_target_sha256": "c69764c73d08c085ca68c9a63d955dd7a29138c8ef9e352704a8ad25c1842766",
+      "translation": "Angiv begge målepunkter og enheden"
+    },
+    {
+      "source": "Use a reference image to clarify rather than prove",
+      "source_sha256": "7abeed4267e4414c83015bc73cfcb691f045678a40ee2dd87903f467a33ee2ef",
+      "raw_target_sha256": "f280c16915255619f9337675b11af079a758ae4821b9cc0b8a4ae8cd3e218c27",
+      "translation": "Brug et referencefoto til at præcisere ønsket"
+    },
+    {
+      "source": "Review the result against the request line by line",
+      "source_sha256": "fe910e16c6ff46f6c0da7b851dfa9433ce84587e4de75b01fa5afa315491258a",
+      "raw_target_sha256": "d58de470ee9f4bc8adbf917f228d8570e3730af50229f6a2f184ed6f8f501ac4",
+      "translation": "Hold resultatet op mod hvert punkt i anmodningen"
+    },
+    {
+      "source": "Stop when you have enough evidence for the decision",
+      "source_sha256": "ca8c3aedee588d78c2d4aa91c395d4d028484012f3ad7d931d51f1a6640e6a89",
+      "raw_target_sha256": "ece2bcb5f66b74106dfc78290e35c867b4736d1115b8c3765838e3059b8e355c",
+      "translation": "Stop, når du har tilstrækkeligt grundlag"
+    },
+    {
+      "source": "Choose a comparison garment with a similar shape",
+      "source_sha256": "8cacdd5aae85922ff6007103d1e299a8ea2e3b5dd7c71844ecd31ca0e8f4d5c5",
+      "raw_target_sha256": "8d4cf6dc3be357e6aac0e4b87507691fa9811111b93d9bbec7e0005bcc37f6f6",
+      "translation": "Vælg tøj med et lignende snit til sammenligning"
+    },
+    {
+      "source": "Read the seller's diagram before naming a dimension",
+      "source_sha256": "7aa3a1dec19f33d2e5b20b99d5680af95df4e1446305a4c1adb893526831e776",
+      "raw_target_sha256": "49ea93bcb5a406b140d81b7567e82f3304d53e9ece075cc3c3b3bb421b2b97b5",
+      "translation": "Læs sælgerens målskitse, før du angiver målet"
+    },
+    {
+      "source": "Request chest width in one continuous view",
+      "source_sha256": "a3a39382c535c0e07088ad9ad8e4d45022c7ef2c53d2f2b827f81b93ac822479",
+      "raw_target_sha256": "ba471098e9d62cb6743253887ff81efe08c5a3f20c9fb5633b606ead7f000d30",
+      "translation": "Bed om hele brystmålingen på ét billede"
+    },
+    {
+      "source": "Distinguish centre-back length from high-shoulder length",
+      "source_sha256": "51b85f3732e66ad247430534da8c032e348e46d08a551a7cc510149da5867551",
+      "raw_target_sha256": "1677f82c01fb56c03038e1d96c9a17eb8750468586211f36bc21b8616753d96a",
+      "translation": "Skeln mellem længde midt bag og fra skulderpunktet"
+    },
+    {
+      "source": "Match sleeve measurements to the construction",
+      "source_sha256": "51349d99eeafc2170919b10c5ab2bb0b18c7fbcd02da395aae23148d3d7778b4",
+      "raw_target_sha256": "dfe0c08b7445340f9364cefc2df280d7ee919fb6086e0be46246383cc2c17d34",
+      "translation": "Tilpas ærmemålet til snittet"
+    },
+    {
+      "source": "Evaluate elastic, cuffs and layered construction",
+      "source_sha256": "6d89e1d1334e4375c8e3df8219fb481b2ebc6b65d2602dcb5d53cbf4975a5c2c",
+      "raw_target_sha256": "780303222d74dcd1665dcdd7224c4170537c82a2b9bf5cdfa90363de9cb16102",
+      "translation": "Tag højde for elastik, manchetter og lag"
+    },
+    {
+      "source": "Make a decision the evidence can support",
+      "source_sha256": "804ee25bf0fec84678fdc6485d9248d089097f2ed8b487421bf2ec90629f306c",
+      "raw_target_sha256": "7087f2b9f941d6b7f704aa34313459fcfe6e9d47141d7c427a3dc84a068e831b",
+      "translation": "Træf beslutningen ud fra det, du har fået bekræftet"
+    },
+    {
+      "source": "Start with the part most likely to suffer damage",
+      "source_sha256": "ae660b381615524d5b9a1e72908e73e7300ef24bb72c8ea9a6f999df33336dde",
+      "raw_target_sha256": "73dfd1a5d721457a2cbe03f7bee59bc2ef165c472f9f417eba42ed5060a29cd5",
+      "translation": "Begynd med den mest udsatte del"
+    },
+    {
+      "source": "Decide what role the seller's packaging plays",
+      "source_sha256": "d0f6721f61451ac58798245ec8fe848e6ee3e319ab5351d8776dda99d29f3502",
+      "raw_target_sha256": "1629c7e321898378a6ee0b6f9e3b68d8d420cfdcc024c4f184dc48d5d8f90a3a",
+      "translation": "Find ud af, hvad sælgerens emballage beskytter"
+    },
+    {
+      "source": "Check how the fragile piece interacts with the other contents",
+      "source_sha256": "d395889d8655f2fbff5766d838826b9907113c56efd709bbe1f5e9c9eb8fd379",
+      "raw_target_sha256": "a6853f648a423c178a9a94c649f3813ec02a58c4371ebecef1673541ee2d7cb3",
+      "translation": "Se, om den skrøbelige vare berører andre varer"
+    },
+    {
+      "source": "Ask for evidence at the point when it can still help",
+      "source_sha256": "ff0056051ea2f58defd4816751949515c9b3ea72ae9c164aefb287a556119645",
+      "raw_target_sha256": "c8bbea4f44e0e9da211b2f73a21b05a1aa24a25127ceaea23aab25530af28ca3",
+      "translation": "Bed om dokumentation, mens den stadig kan bruges"
+    },
+    {
+      "source": "Account for the space that protection requires",
+      "source_sha256": "be70b9e734f3dfdd7cbdc495436f67f0ae8fa6fb890e5248faacdef641c5432a",
+      "raw_target_sha256": "f261dcd2084909ed4691ed52f4c3f8bb0f4d924c4a93c317ed03bb79fa8b9e86",
+      "translation": "Medregn pladsen til beskyttelse"
+    },
+    {
+      "source": "Read the service conditions in terms of your particular object",
+      "source_sha256": "ed308a328f1eceb37419be0b72197bb43104e45b498e9952d03fd058fa7f1efc",
+      "raw_target_sha256": "6cdecc1cc298e49571f8c567c6a684df5d2cb252d7aac13b680e209d1aded642",
+      "translation": "Læs betingelserne med netop din vare for øje"
+    },
+    {
+      "source": "Examine the delivered parcel before discarding its packaging",
+      "source_sha256": "f13945c344e46b02434266afe85d02852da54fa0bba882511e9cc7be06e5b50f",
+      "raw_target_sha256": "5591789e5355f7a99cb249daded7ea91226d20f9c8a277ac1b2cd59239a529ae",
+      "translation": "Undersøg pakken, før du kasserer emballagen"
+    },
+    {
+      "source": "Give the purchase a unit list before tracking starts",
+      "source_sha256": "8c9ead747b4ce8320d6488e7bec9792eaeb522b9ce51942ffe5f1c8c9a29361d",
+      "raw_target_sha256": "bc2528dce0dcb712d5b8102de565dd6e056fbcb0268d600ee085b70a9d516aa5",
+      "translation": "Lav en vareliste, før du følger forsendelsen"
+    },
+    {
+      "source": "Separate the marketplace identifier from both tracking numbers",
+      "source_sha256": "78c7599ef3f9ae3d918c12041a44f80d04e2882a82dfc8df0ca593377c961c3c",
+      "raw_target_sha256": "44e892c938055f740de7909e2b94f8940eca10dd1f35b0e6b8c3c2583b348194",
+      "translation": "Skeln mellem annonce-ID og de to sporingsnumre"
+    },
+    {
+      "source": "Map one seller to several domestic shipments",
+      "source_sha256": "74654303f99868fbc9f50f133f880e0ab9e4b48dd8a6b350f415df203061ddcc",
+      "raw_target_sha256": "83e5b60034a766c24726f2463232cb05fa71f5ef472f1e49b5b0bb71c2b8c212",
+      "translation": "Knyt flere indenrigsforsendelser til samme sælger"
+    },
+    {
+      "source": "Check the strongest identifying details first",
+      "source_sha256": "4bbd30c93a9c36e8bc58a5bdc5deec23aa592869b9059ca30f8653ee4002f10d",
+      "raw_target_sha256": "4610bb6bd77ef183e0d74e34de8290662c978bf357b397048c561068681d3cd5",
+      "translation": "Kontrollér først de mest entydige kendetegn"
+    },
+    {
+      "source": "Distinguish three kinds of missing-item question",
+      "source_sha256": "b3ac374b2d93395451759ca6c33334a0aedc832833925ad2010f6802fa346459",
+      "raw_target_sha256": "fcdd7becbc7c5e1daaa74645158333f8ddfe8fad87d4d1ea65f6cf74bb64b8be",
+      "translation": "Skeln mellem tre slags spørgsmål om en manglende vare"
+    },
+    {
+      "source": "Reconcile a corrected or exchanged unit without losing the history",
+      "source_sha256": "8a82b87b1d3f939fe4f46b401850415fbce60c5221b8bfc3562a6cb3371170d9",
+      "raw_target_sha256": "891e2dd27b6126e33773fd77a7dd0fbf0ccdda2490e936eb97e29518767ecd04",
+      "translation": "Bevar historikken ved rettelse eller ombytning"
+    },
+    {
+      "source": "Submit the international parcel from the reconciled list",
+      "source_sha256": "2c799e1b94d4bfe40d8ccdddf0e172cf94d02088b0f3136a9d9e80cd276e5239",
+      "raw_target_sha256": "16a3074e2f178a24d9a43f447a16a845c9742f343cf40dc125ec6fb4bdea09fd",
+      "translation": "Brug den afstemte liste til udlandsforsendelsen"
+    },
+    {
+      "source": "Read the selected offer one piece at a time",
+      "source_sha256": "791d539989337cb4cbfd549fd6f53c41863ff9cb75aa793352764fba7666ca2e",
+      "raw_target_sha256": "dce3bb4c53b22459a5bbe2c9330ac49fdfd34c454b7290dac5e8eb65602a1201",
+      "translation": "Gennemgå det valgte tilbud én del ad gangen"
+    },
+    {
+      "source": "Match the ordered size combination to the set",
+      "source_sha256": "69830b56162bbc9ee158e82595f91728e0f57142fce9662dabc9bf269254198f",
+      "raw_target_sha256": "e47e8df2791c9205d86a59255134c010db394d37a273fb844a07619244076165",
+      "translation": "Kontrollér sættets bestilte størrelseskombination"
+    },
+    {
+      "source": "Establish that the parts belong together",
+      "source_sha256": "2e722849d035db8822281e4585a64d9b0ea306f1e25f0395540e79a4b6cf9791",
+      "raw_target_sha256": "957ec0847426f3c69532967b2c40e1ddc0abae15e9147d0f2239c6a6b24b475d",
+      "translation": "Bekræft, at delene hører sammen"
+    },
+    {
+      "source": "Request the one missing piece of evidence",
+      "source_sha256": "4fda4674fbf8c2e12ef5b34e71bd690f8c2334b03126ba6791c005a7ccda8575",
+      "raw_target_sha256": "e8d98d38beae995151f82d9fdc9fd1701bf392f43dfd1741c478f620e74d8892",
+      "translation": "Bed om netop den dokumentation, der mangler"
+    },
+    {
+      "source": "Evaluate fit without mixing body and garment figures",
+      "source_sha256": "5369e7c4912411d88f116c1587a008624638cde061eaece9f7a5a4088f52b846",
+      "raw_target_sha256": "de91028d53ec1cde51d0a1215cd0d2c93acee11ededc267e159a8b3e73aa0d79",
+      "translation": "Vurdér pasformen uden at blande krops- og tøjmål"
+    },
+    {
+      "source": "Handle a partial mismatch as a set-level question",
+      "source_sha256": "9733926e20b35abcee608f4e7206714b1b27e63ca11db699d6f44ea0c4bec576",
+      "raw_target_sha256": "9dc58529d42adea2c0d1a4b06feb615b2417a60dcc589c1d925b90f8b1ba363b",
+      "translation": "Se en afvigelse på én del i sammenhæng med hele sættet"
+    },
+    {
+      "source": "Check both pieces at packing and receipt",
+      "source_sha256": "89090f31e11caa1eef61c191019405ba85c04b160e32dba1b44f039fbc22d84c",
+      "raw_target_sha256": "63efe0b615da789a4f8ce530f12b67194e12c725092919cf9c5178be95fceb9c",
+      "translation": "Kontrollér begge dele ved pakning og modtagelse"
+    },
+    {
+      "source": "Identify the packaging layer you are talking about",
+      "source_sha256": "c63cd70be88ac9a366533c0fb0180a69080c9c1762a63dd84c9adb8907f13add",
+      "raw_target_sha256": "834c5cb0df970048a6277e6bd6ede275410beaf63f019609fef801b8567339fa",
+      "translation": "Angiv det konkrete emballagelag"
+    },
+    {
+      "source": "Separate protection, presentation and evidence",
+      "source_sha256": "bc543ed1f95383d6424600222070dd3f1ead35096617e2774753b0c1f699fac6",
+      "raw_target_sha256": "12c2530b076cbf2910bf854d9ab642c867381494123d66b702228d8b55984bde",
+      "translation": "Skeln mellem beskyttelse, præsentation og dokumentation"
+    },
+    {
+      "source": "Compare actual mass with the space the box uses",
+      "source_sha256": "bb6c0ef07ab2f6cf6e02523da4542ae97ab49cc1d7bc2cb8e3c2ba38b87437c1",
+      "raw_target_sha256": "a82f9e727c0dfd9debb3656237355104d6525d427797ce8773db68beb4dcfaa9",
+      "translation": "Sammenlign den faktiske vægt med kassens pladsforbrug"
+    },
+    {
+      "source": "Compare scenarios for the entire parcel",
+      "source_sha256": "e22c456801da60e152334fc86f5321d25308ed568bbab989152ba4a1172ff427",
+      "raw_target_sha256": "d159ff123eac4c15681d20c86a43c079506a91c6c83d650c3fdf96f84ca7663b",
+      "translation": "Sammenlign muligheder for hele pakken"
+    },
+    {
+      "source": "Avoid exchanging a known benefit for a speculative saving",
+      "source_sha256": "6e87cb02dafaf78a71265aa3264ddab8e2c0e3195dffdc7a34f53b925d1749ce",
+      "raw_target_sha256": "d1bd8aff57a6472788eadc5e18e75f162860bc1650fa29610188a01d1abda340",
+      "translation": "Vej en kendt fordel op mod en usikker besparelse"
+    },
+    {
+      "source": "Write instructions that a packer can distinguish",
+      "source_sha256": "2c7263a65ab4ee2cbfa7a13400057bb202faa40d30d945d16df1a428b98a226e",
+      "raw_target_sha256": "ad4a506ec11aa8bc479b61778f94f2c11c657544a8e75a38e9ef60383a3b13c9",
+      "translation": "Skriv pakkeinstruktioner, der tydeligt skelner mellem delene"
+    },
+    {
+      "source": "Record the decision and check the result at delivery",
+      "source_sha256": "862a7d48ab0f8b052382153d4d25ea91e3872dd3180a115006cb43f6e736a8e1",
+      "raw_target_sha256": "6ed690b02a2b0847e2f1d6e2c7c30b5b0e308b7c7db746adb9dd4b91bd03c643",
+      "translation": "Notér valget, og kontrollér resultatet ved levering"
+    },
+    {
+      "source": "Name the two arrangements you are comparing",
+      "source_sha256": "27e4bed65d3dcbd546be7a2f282c1d421d2f97e61172251a40e60ade8030c3f3",
+      "raw_target_sha256": "7d94dc0620f45826bb91e5d7a8656fdc202b9b9127da6b9a757bf532905e739f",
+      "translation": "Beskriv de to pakninger, du sammenligner"
+    },
+    {
+      "source": "Work in consistent units before using any formula",
+      "source_sha256": "ce294d6794ae158b8de00c6234a882f192aea976fbe1b9a35d001660ba7ccbdf",
+      "raw_target_sha256": "431647f9f1c3766d5d977e69fdb9550b8bbf1f2e076a3f26586449abff0ade8a",
+      "translation": "Brug ens enheder inden beregningen"
+    },
+    {
+      "source": "Understand which weight the route uses",
+      "source_sha256": "53bf210855c64e4894924cbc0caa1a7f0ca1b4eddb02a2493c043846a110a4e2",
+      "raw_target_sha256": "0262d15897a575fca7a7f54dbbde5e51cf11c4c3e9f34275cd9c1da0cf831d7a",
+      "translation": "Find ud af, hvilken vægt ruten afregner efter"
+    },
+    {
+      "source": "Test the longest side separately from volume",
+      "source_sha256": "bdf58ac6ba04293fae976daa2f1529b9524d6860cd072d749756b234bfa56ca0",
+      "raw_target_sha256": "053bacd1eea00d5b98b7fadad4e3c4a0db4448c3b06d50bbfc1e5983ef29259a",
+      "translation": "Kontrollér længste side uafhængigt af rumfanget"
+    },
+    {
+      "source": "Estimate only the variables you cannot yet measure",
+      "source_sha256": "43dea86d2918c57c5df24018b76568874dbeedf65d6d138f901e4d0067953ffc",
+      "raw_target_sha256": "30956b326ebe3e8bf0817c67daa8e2d59ed870ac5ac2fc9ce44df66e138112ea",
+      "translation": "Skøn kun de størrelser, du endnu ikke kan måle"
+    },
+    {
+      "source": "Recalculate after protection and optional services",
+      "source_sha256": "3d737d62b04b33e638a060fa3a8942db6e1c2855e8773782d5cdd868930ce84b",
+      "raw_target_sha256": "47567c2d067375811ee90c0382632ac6abd6fb68ed9b23a4823b0f8eed78af65",
+      "translation": "Genberegn efter tilvalg af beskyttelse og service"
+    },
+    {
+      "source": "Save a record another person could reproduce",
+      "source_sha256": "73502a16f10da5b401843fb78fd48967bb9162ccd44933d88315028434d50cc7",
+      "raw_target_sha256": "2a5d7e2f54740e614ff247c4bb555be6c4f688b4c0cc6a39bc442f13a9444531",
+      "translation": "Gem de oplysninger, der gør beregningen efterprøvbar"
+    },
+    {
+      "source": "Describe the goods as they really are",
+      "source_sha256": "6802a5e74638bf374df39875982410f10de74763d772768a77a814c261de6ad7",
+      "raw_target_sha256": "636b77ef632f1a443a88ca4f9c1871154edb1fdb349765c3d76ce5c414c4ed4b",
+      "translation": "Beskriv varerne, som de faktisk er"
+    },
+    {
+      "source": "Separate four kinds of restriction",
+      "source_sha256": "14cdbbbe359c4a2a5728fb556e729bdbe0ace84a3852f1f8079d2f360fdbb858",
+      "raw_target_sha256": "0b3b19c4cb18ef570078d1c12db0220ce1e4c58de60226784cdee9146bc2eaa1",
+      "translation": "Skeln mellem fire slags begrænsninger"
+    },
+    {
+      "source": "Compare the dimensions against the exact rule",
+      "source_sha256": "01a868d3313cfe5fd209584ac6e75e08f3de39c3ea16aeeb4b1773e26812cec7",
+      "raw_target_sha256": "d695b3323c4e503d124b235442a4980f554581ca9588780d6639a7bdbdfaeec3",
+      "translation": "Hold målene op mod den præcise regel"
+    },
+    {
+      "source": "Read billing conditions independently of acceptance",
+      "source_sha256": "b5dd69b6974f8b4f09d46cff5df4a33a3d8437f259357c767345121ffc7a2eff",
+      "raw_target_sha256": "8751734e1d27c145614932c9db10f7bd3db677f9f8d0c319c9204ac48482f598",
+      "translation": "Vurdér prisvilkårene uafhængigt af, om pakken kan modtages"
+    },
+    {
+      "source": "Check destination and delivery service requirements",
+      "source_sha256": "acf7f88711e7190e949a59666d3863fd99c53e59fb485c5077531852771ddc9d",
+      "raw_target_sha256": "7d17e9c6b9bdf3cbb711cb8014dfc7fb44acc6b6c2449479209fe0857152ea3b",
+      "translation": "Kontrollér krav til destination og levering"
+    },
+    {
+      "source": "Check protection and exclusions before interpreting a price difference",
+      "source_sha256": "8ec4ea1de364a2363c921b4f73377f67ce653366dcc2f469706f32560ca54211",
+      "raw_target_sha256": "ab6341ea3ba132419e7dc280fbbe02529bce9c6db91e95fe95b23ea9676423d5",
+      "translation": "Tjek beskyttelse og undtagelser, før du sammenligner priser"
+    },
+    {
+      "source": "Choose a route only after resolving decisive uncertainties",
+      "source_sha256": "04502c537121b780ed138625fdd5504b0eb9a74d98417aa2c2a1d339e4d59f5c",
+      "raw_target_sha256": "838596e0af2854a2610f6584b8166c6d9734fa0436e9c71f573c5d96690381e9",
+      "translation": "Vælg først rute, når afgørende spørgsmål er afklaret"
+    },
+    {
+      "source": "Identify the outbound shipment before interpreting a scan",
+      "source_sha256": "772f53df6dfec906b9e43121ac4af9cfa2aba4b4655a270dcb26c11f3f40c54c",
+      "raw_target_sha256": "f7afea3b598aa8b730bc5df5924a65d0447624a68e389dada75dc6d8148fa694",
+      "translation": "Identificér udlandsforsendelsen, før du tolker en scanning"
+    },
+    {
+      "source": "Put the displayed event into the delivery sequence",
+      "source_sha256": "774aff695cbdcf16ed2b612dc624351ecd5888b74a51e54f3055bdd2c928c824",
+      "raw_target_sha256": "ec5c512d747e1f5d6ae4ca0cc58c10f2055576d343d008acfce080b5cfcf92f2",
+      "translation": "Placér hændelsen i leveringsforløbet"
+    },
+    {
+      "source": "Understand the transition to a delivery partner",
+      "source_sha256": "74b0db8a5d7765e1872b460454117d3166aa164b860366d808c47f254eacef74",
+      "raw_target_sha256": "b1c8de4ca92b5f17f46a8cf4816514db41721b18a222f98448bac89c6c6ac71f",
+      "translation": "Følg overdragelsen til en lokal leveringspartner"
+    },
+    {
+      "source": "Compare times, not just the order of lines on screen",
+      "source_sha256": "bc5c8ad625ee334c46eec43e83f51b881ad01e555c1a13dfc79c39e7656234f5",
+      "raw_target_sha256": "1f293b2f4ca774d4be6c383e19a12d97e75689e224e32e056b16b57f7bbc5149",
+      "translation": "Sammenlign tidspunkterne med deres tidszoner"
+    },
+    {
+      "source": "Distinguish an estimated interval from a service guarantee",
+      "source_sha256": "2a6cce9719953ec887bf9c48dc8c4f35c838d2d0f963a6b6be9f41a0a28696a4",
+      "raw_target_sha256": "91aa0fb891f5ab52ca7a51589309f1c16a226a2091e8998746c6723371aea6b8",
+      "translation": "Skeln mellem et anslået tidsrum og en servicegaranti"
+    },
+    {
+      "source": "Prepare a useful tracking inquiry",
+      "source_sha256": "99d6af4f099ef3571a223528b9ff9a327478272bd757a5fc9f8467d5fbc43dd7",
+      "raw_target_sha256": "0a7e5e6be6c452c8823cc9b9cccb41db4fde904ae235d3a28e159b72cc171f30",
+      "translation": "Forbered en præcis forespørgsel om sporingen"
+    },
+    {
+      "source": "Close the handoff record at receipt",
+      "source_sha256": "cbc5ac79dd74819bc9f23c254706902d22781ecc1dba9fa0759d2ed6658ffec4",
+      "raw_target_sha256": "9023854359258c540ecb2a69b0822ad2439f8dcce65c5a87d94646054f4ed3a5",
+      "translation": "Afslut notatet om overdragelsen ved modtagelsen"
+    },
+    {
+      "source": "Decide what information the assistant needs to place this purchase",
+      "source_sha256": "a6caf1690a22639e469ee3c1af42e01c706ee7dabf95dc57edb4c590e0b50d0f",
+      "raw_target_sha256": "776b9350dadd494eba2bae0e3cd56fbf319b93e7ccbde003a0a15f142dc5cce0",
+      "translation": "Find de oplysninger, assistenten skal bruge til købet"
+    },
+    {
+      "source": "Capture the original option wording",
+      "source_sha256": "8ad622c4077f8ec9e1d3cd9bbdc39b668838d958c925f0ec078d2a8eb2a587af",
+      "raw_target_sha256": "185f7e64d5fc32d7f34e86665854a4b49439ceb5ac94986cbc3a7b3a90230bba",
+      "translation": "Gem variantens oprindelige ordlyd"
+    },
+    {
+      "source": "Define the unit and the count",
+      "source_sha256": "de50455c410278c6c41e194ecae627c4e095c9ebc1d1c8edb63211c70caca6e3",
+      "raw_target_sha256": "141a3e6516d3431de71a239d395f2e34b3bfa2b6539a1f50bb1bdc6561902cf2",
+      "translation": "Angiv salgsenhed og antal"
+    },
+    {
+      "source": "State what to do if the exact option is unavailable",
+      "source_sha256": "86522dae92f37762732fa35b70ae3d7a1165dc4cdbc50276488c4db201c8ef3a",
+      "raw_target_sha256": "f16b00f1921900be46ec7dce4f76208d4761dbbd91ceb52b6ea3d413a6c73e21",
+      "translation": "Angiv, hvad der skal ske, hvis varianten er udsolgt"
+    },
+    {
+      "source": "Attach only evidence that resolves ambiguity",
+      "source_sha256": "2910e4f7fd249d3fa6bdfdd6426adc5181839fc391586fb6973bcc12bce25f3e",
+      "raw_target_sha256": "b1f6fba1398fe77a5d5c5fafb03d005a3a73dcff6dc7d591d791cc23fae9335b",
+      "translation": "Vedhæft kun materiale, der afklarer tvivlen"
+    },
+    {
+      "source": "Review the confirmation as a separate document",
+      "source_sha256": "c8641cce9c2d035232ffc9e64b68d0b12df1eb6b7d0d69dbd172e944bf3f6cea",
+      "raw_target_sha256": "6fa3e1ab85a126ad71a574c28baace7126ec4c9e71b64c0da7ce15b680ab851e",
+      "translation": "Gennemgå bekræftelsen som et særskilt dokument"
+    },
+    {
+      "source": "Carry the request forward into a practical warehouse check",
+      "source_sha256": "76658e2a0f8b2526b14d95b16986afd34636dab837dfe6a5b18ec24d938f3f51",
+      "raw_target_sha256": "dc9ab2c211b3f94d918fb0732ff3a8d66204c8caf519cc3a374626c1a91d66ea",
+      "translation": "Brug den oprindelige anmodning ved lagerkontrollen"
     },
     {
       "source": "OrientDig lists detailed-photo requests at product ordering and after warehouse intake. Choose the item and specify the exact view needed, then check the service offered for that order.",

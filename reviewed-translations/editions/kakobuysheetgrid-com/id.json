@@ -3,7 +3,7 @@
   "locale": "id",
   "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
   "raw_dictionary_sha256": "a9a0c8b0fefcf5264088b21b9dfb9cff82eaa8439db832155644c6945a0a5d94",
-  "effective_dictionary_sha256": "f74b0db7f34eef6c7469fd69ef6832a4131a75e338e95ef2c1de6abcc3a57471",
+  "effective_dictionary_sha256": "24f1dbc97dc2f2cfdf75a996061209c3cbb0e7505140e7d61d26c95fd6bc121e",
   "checked_entries": 317,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -230,7 +230,7 @@
       "source": "Choose a detail before opening a gallery. For the overshirt, the relevant question might be whether a button sits on each cuff or whether the cuff closes with a snap. Look for an angle where the closure is open and the inside surface is visible. A front photograph with the sleeves folded underneath may show the cloth colour and approximate cut while telling you nothing about either cuff. Describe what is visible separately from what you infer from the seller description.",
       "source_sha256": "c7353b5cd8eae57e4560459f55eef63a611f4983fdab453848265182d9621436",
       "raw_target_sha256": "6c815f5a731cc3d210c861aa4d14568bf85756ed123ba656b1046c00ae83e9a3",
-      "translation": "Sebelum membuka galeri, pilih detail yang ingin Anda pastikan. Misalnya, apakah manset kemeja luar memakai kancing biasa atau kancing tekan? Cari foto dengan manset terbuka sehingga sisi dalamnya terlihat. Foto depan dengan lengan terlipat di bawah badan hanya memperlihatkan warna dan perkiraan potongan. Catat apa yang tampak di foto secara terpisah dari dugaan berdasarkan deskripsi penjual."
+      "translation": "Tentukan dahulu apa yang ingin Anda lihat. Apakah manset kemeja luar memakai kancing biasa atau kancing tekan? Cari sudut yang memperlihatkan manset terbuka dan bagian dalamnya. Foto depan dengan lengan terlipat di bawah baju mungkin menunjukkan warna dan potongan, tetapi tidak menjawab pertanyaan mengenai manset. Pisahkan pengamatan dari perkiraan berdasarkan deskripsi penjual."
     },
     {
       "source": "Open the listing and choose a colour while holding size constant. Observe whether the image, available sizes, price or quantity changes. Now change size and repeat. Two almost identical labels can refer to different fabric, an earlier model or a version sold without accessories. Keep the original seller wording as well as any translation. The word black alone rarely distinguishes two black choices if the seller uses a suffix to separate them.",
@@ -741,6 +741,156 @@
       "source_sha256": "06799f7aaa5693fb1fa51904b6d2f790ee1f0d498fa84cdccaf553247533de9a",
       "raw_target_sha256": "1c598967629fdfd6a4659f62edd5626dd80203c8a4137c2fbe9452269c27b584",
       "translation": "Tuntaskan pencatatan barang dan pembayarannya"
+    },
+    {
+      "source": "A number can narrow a search from thousands of similar product photographs to one seller listing. It is most useful when you also retain the marketplace, the selected option and the date of the reference.",
+      "source_sha256": "af5e81d9243611c1e390d1a639ac3de720415f691c140d5b9bc10d599445979e",
+      "raw_target_sha256": "fce7815292b163a65e1ffa9a6348f9d8bb58665930cc14e2c3189211587974c7",
+      "translation": "Nomor produk mempersempit pencarian ribuan foto serupa ke satu halaman penjual. Catat juga lokapasar, varian yang dipilih, dan tanggal Anda melihat referensinya."
+    },
+    {
+      "source": "Identify the number you actually have",
+      "source_sha256": "683d9d094177ce98a0e1db11ded7a8f0771abe2b3c17e7bb8fe9a87e6191eed0",
+      "raw_target_sha256": "4df33cfb2e30c1419a879208a7aeb1438e970adae95f0320430aff55ced10260",
+      "translation": "Kenali nomor yang Anda pegang"
+    },
+    {
+      "source": "Start on the purchase page for the product you mean to investigate. Follow the original seller link and record its marketplace. A Weidian listing can carry an itemID value in the seller URL. The smaller number at the end of a Sheet Grid catalogue page identifies a different record. An agent order reference, domestic tracking number and warehouse intake reference also serve different purposes. Keep their names beside them when copying numbers to your notes.",
+      "source_sha256": "13a9cbcc8de0ea599e6f8055b329439d6bd35327bb3066b33d8838c4eb7a0b62",
+      "raw_target_sha256": "ef79a6d2be8dd9d284f5955ad7cc648cc95207b77496ac40b5d35383fb84f25c",
+      "translation": "Buka halaman pembelian produk, ikuti tautan ke penjual asli, lalu catat nama lokapasarnya. URL Weidian dapat memuat itemID. Angka di akhir alamat katalog Sheet Grid merujuk pada entri lain. Nomor pesanan agen, resi domestik, dan nomor penerimaan gudang juga berbeda fungsi. Tulis jenis nomor di sebelah angkanya."
+    },
+    {
+      "source": "Run a lookup with the source attached",
+      "source_sha256": "132e36893c50b48c2cbd140c7b017184bdec39dfe79194061f92e5f7bffb05ab",
+      "raw_target_sha256": "2be88ecf4ebe65f8d934f90108dac277a0eebd7792eedb29df0b0f22581ef6c7",
+      "translation": "Sertakan sumber saat mencari"
+    },
+    {
+      "source": "Use the complete source product link where a QC finder accepts it. If a service asks for a marketplace and number separately, use the pair from the same original listing. Save both the search input and the result so another person can reproduce your comparison. A result reached only by typing a broad garment name is a candidate for review. Compare its original seller identifier before attaching the photos to your intended order.",
+      "source_sha256": "622575c874c4c7cc4805592c7402d07977364da2b716748cdb4f40dffbdbd4c5",
+      "raw_target_sha256": "35444e303084938782944079c37578c1fee4d3d72f47a78b5dabb0388570938d",
+      "translation": "Masukkan tautan produk lengkap jika alat pencari foto QC mendukungnya. Bila lokapasar dan nomor diminta secara terpisah, ambil keduanya dari halaman produk yang sama. Simpan masukan dan hasil agar orang lain dapat mengulang pencarian. Jika foto ditemukan lewat kata kunci umum, cocokkan dahulu kode barang asli sebelum mengaitkannya dengan pesanan."
+    },
+    {
+      "source": "Test what the album can establish",
+      "source_sha256": "b77c23dd1b3a3f286748939ad6dcd50326dfdafd37ec6b510219185e9ab32d51",
+      "raw_target_sha256": "9911813f0c9d1b8ffefd20c094bc1d3d36eca88c76e10aa7bd4c9c92828349fb",
+      "translation": "Tentukan apa yang terlihat di album"
+    },
+    {
+      "source": "Suppose the listing has a black jacket and a navy version with a different lining. An old front photograph might confirm the shape of the pockets. Without the option label or a visible lining it cannot settle which version was photographed. Describe the strongest observation you can make, such as two flap pockets visible. Keep a separate note for the unresolved question, such as the material on the inside of the navy version.",
+      "source_sha256": "5ec4739de5ac287db1ae890db015c06536b9aff52e17a857b125e2c5dd408105",
+      "raw_target_sha256": "cf027de50ac75edbff670d433672977669854f7be62f03f7665e934b17c61b31",
+      "translation": "Misalnya, jaket tersedia dalam warna hitam dan biru dongker dengan lapisan dalam berbeda. Foto lama dari depan mungkin menunjukkan dua saku bertutup. Jika label varian maupun lapisan dalam tidak terlihat, foto itu belum membuktikan varian mana yang dipotret. Pisahkan pengamatan tentang saku dari pertanyaan mengenai bahan pelapis jaket biru dongker."
+    },
+    {
+      "source": "Handle empty and conflicting results",
+      "source_sha256": "86f0f8ed4ebcea434b348040451090dd1eaaf99121ff8acb48b391ea3fb13808",
+      "raw_target_sha256": "85efdc28a948f11a8e1a3b83877aec585d8e47432094a1d26a05f3850bc3a7f0",
+      "translation": "Jika hasil kosong atau bertentangan"
+    },
+    {
+      "source": "Check the marketplace, the intact item number and whether you copied an item link rather than a shop homepage or an image URL. A finder may have no public album for an otherwise valid listing. If two albums conflict, compare dates, options, packaging and the particular detail visible. A seller can update a listing over time, or a gallery may mix options. Do not average inconsistent evidence into a confident claim.",
+      "source_sha256": "1a489ea249154b07f2fcf271a7e73a766a2e8ce217a8c8fddf19e59101f984ff",
+      "raw_target_sha256": "0521e85417e5ad6decddefb3a1d02069726540ec886f862632b81418233a40eb",
+      "translation": "Periksa nama lokapasar, nomor barang lengkap, dan tujuan tautan. Anda memerlukan halaman produk; beranda toko atau alamat gambar mengarah ke tempat lain. Produk yang sah pun belum tentu punya album publik. Jika album berbeda, bandingkan tanggal, varian, kemasan, dan detail yang tampak. Halaman bisa berubah atau galeri bisa mencampur beberapa varian. Catat perbedaan sampai ada bukti yang menjelaskannya."
+    },
+    {
+      "source": "Move from reference to order evidence",
+      "source_sha256": "9ed065b23590b45f6beb8c1ccf8daeb98e2dd522748aa623df49a679eb5b80d6",
+      "raw_target_sha256": "d4df8643abaa3ef87e64bc23ea5a0150414e2a6fb864798b3589e80548955dda",
+      "translation": "Gunakan bukti dari pesanan sendiri"
+    },
+    {
+      "source": "Before purchase, decide whether the missing detail matters enough to ask the seller or leave the item on your shortlist. After purchase, use the photographs tied to your own order for decisions about the received unit. Retain the older album as a comparison and clearly label its origin. If the new unit differs, identify the specific feature and quote your selected option, rather than promising support that the historical picture describes every item now supplied.",
+      "source_sha256": "c5c0445fa667385723420119717be5caa752fbae6333e27fa682002141e07d82",
+      "raw_target_sha256": "740606afad20a19d9311dfebf9c5965703dfa88cfda899dbfeb5f0fdf43259fc",
+      "translation": "Sebelum membeli, putuskan apakah detail yang belum jelas perlu ditanyakan atau barang cukup disimpan dalam daftar pilihan. Sesudah membeli, gunakan foto yang terhubung dengan pesanan untuk menilai unit yang diterima. Beri album lama keterangan asal. Jika berbeda, tunjukkan bagian tertentu dan sebutkan varian pilihan Anda saat menghubungi layanan pelanggan."
+    },
+    {
+      "source": "Make the search repeatable",
+      "source_sha256": "41fe2a015405703a0ba5cb2de2274c2cd8b536bd76c6c2f86e57f22dc6c8b1f3",
+      "raw_target_sha256": "a55dea26003d86a9995fdeffca71ed966aece79541d0f212c941973afcbb0d71",
+      "translation": "Simpan data agar pencarian dapat diulang"
+    },
+    {
+      "source": "Imagine a friend sends a cropped photo of a brown overshirt. The corner shows part of an item number. Searching that partial number might produce a page with an overshirt, but several digits or even the marketplace could be missing. Ask for the product link that accompanied the photo. If your friend only has the image, create a visual-reference note and leave its seller blank. The distinction matters weeks later when you are deciding whether to buy a listing that happens to resemble the picture.",
+      "source_sha256": "f0f32d1cf7da340badd62ae005f1e5371d7835c49eacba4c11290d36ffefbc9b",
+      "raw_target_sha256": "6fb7f02781bcf38476a3d84ffd05c856daafb810e195523187f0088bcfaa4192",
+      "translation": "Seorang teman mengirim potongan foto kemeja luar cokelat. Hanya sebagian nomor terlihat di sudut foto. Pencarian bisa menemukan kemeja serupa meski beberapa digit atau bahkan nama lokapasar masih hilang. Mintalah tautan yang semula menyertai foto. Jika hanya ada gambar, simpan sebagai referensi visual dan kosongkan nama penjual. Beberapa minggu kemudian Anda masih dapat membedakannya dari penawaran yang kebetulan mirip."
+    },
+    {
+      "source": "A repeatable lookup has a simple test. A second person, given only the public listing reference, should be able to follow the same route to the same offer or report that the offer has since changed. Record the date, marketplace name, complete identifier and public gallery address where available. A friend should never need your account password or access to your payment history to reproduce a public product search. Keep purchase-specific checks in your private order record instead.",
+      "source_sha256": "417a0e455eb2208f94b218f42ddde1f00fcc10890200381b7a10d4e1d3053498",
+      "raw_target_sha256": "584542c294cbbdd29eec8ae3c8b2afe4ba18f5635b342ed184cec77489f717b0",
+      "translation": "Minta orang lain membuka penawaran yang sama dari referensi publik tersebut. Ia semestinya dapat menemukannya atau melihat bahwa penawaran sudah berubah. Catat tanggal, nama lokapasar, kode lengkap, dan alamat galeri publik jika tersedia. Pencarian publik tidak memerlukan kata sandi ataupun riwayat pembayaran Anda. Simpan data pesanan pribadi secara terpisah."
+    },
+    {
+      "source": "Check the gallery against a feature you can distinguish",
+      "source_sha256": "51a9fec978d350cc53c4aa47db713c962ded333ff3642e63ddb2c02e75b4bea1",
+      "raw_target_sha256": "ee241546173156a10c1ab2e1d9e826e8d1b4dc95060549b682ae477884b153ae",
+      "translation": "Pilih detail yang bisa dibedakan di foto"
+    },
+    {
+      "source": "Consider how two photos could disagree without either being altered. A photograph of the brown option may show dark fasteners and one of the cream option may show pale fasteners. The gallery could then contain two visually different cuffs under one marketplace item ID. Check the option tag if one exists. Where it is missing, use the photos to formulate a more precise question for the seller, such as whether the brown option currently has dark buttons at both cuffs.",
+      "source_sha256": "3e19c01c5d5b57e727f7082d9824422816925b99e276db063967d65d80cc8963",
+      "raw_target_sha256": "ffc83eca8442097b3fed859819c551de2e0ac1c05a8ffeed33d31415a9c3102d",
+      "translation": "Dua foto yang berbeda belum tentu disunting. Varian cokelat mungkin berkancing gelap dan varian krem berkancing terang, meski keduanya memakai itemID yang sama. Periksa label varian. Jika tidak ada, tanyakan secara khusus apakah kemeja cokelat yang sekarang dijual memiliki kancing gelap di kedua manset."
+    },
+    {
+      "source": "Read dates in context",
+      "source_sha256": "ca11afc383ed65afb16ea4db456936b0b0ca52c8acc93ab989217a58d37a73a2",
+      "raw_target_sha256": "34318ce56feb5214826402ae9c14c7041526cf6e3d0a6ae857bef6485a868ccd",
+      "translation": "Perhatikan arti tanggal yang tercantum"
+    },
+    {
+      "source": "A photograph's publication date and the date a buyer received the item need not coincide. When a finder supplies only one date, write down the label beside the date. Avoid assigning the image to a particular production run unless the source actually supplies that information. If the seller page recently acquired a new colour name, an old gallery result is still a reference for the listing, but the connection to the new option needs separate evidence. Do not rename an older image to match the newer choice.",
+      "source_sha256": "ec42f7cd62a6c76d97ecddc0af1fbbb8a058f5352c7d307e560d67c24e56e947",
+      "raw_target_sha256": "317b1868260658151e0225c616cae47700c7e6307e3b569bf1ea3988abdde700",
+      "translation": "Tanggal publikasi foto bisa berbeda dari tanggal pembeli menerima barang. Jika hanya satu tanggal ditampilkan, salin juga keterangan di sebelahnya. Kaitkan foto dengan periode produksi tertentu hanya bila sumber mengatakannya. Jika nama warna berubah, galeri lama masih berguna untuk menelusuri halaman, tetapi kaitannya dengan pilihan baru perlu dibuktikan. Pertahankan nama asli foto lama."
+    },
+    {
+      "source": "For a simple comparison, write two dated lines. One could say that the album seen on Monday showed a brown overshirt with two visible chest pockets. The other could say that on Thursday the seller offered a brown option whose description mentioned one chest pocket. The two lines preserve the disagreement precisely. A support question can now ask which pocket arrangement applies to the presently selected brown option without arguing about whether the entire listing is accurate.",
+      "source_sha256": "c4186b9c0601979a287ace8e07e28767f16d6506c06270dbecee9e9c60c40663",
+      "raw_target_sha256": "4d260e6a5df136713de1906dc1da4f564c647a3850b1736db733957e9dc102b4",
+      "translation": "Buat dua catatan bertanggal. Misalnya, pada Senin album memperlihatkan kemeja luar cokelat dengan dua saku dada. Pada Kamis, deskripsi penjual menyebut satu saku dada untuk warna cokelat. Anda dapat menanyakan jumlah saku varian cokelat yang sekarang dipilih tanpa mempertanyakan semua informasi di halaman."
+    },
+    {
+      "source": "Read the gaps in an otherwise convincing album",
+      "source_sha256": "b61d26d1b11a51c0bc0fded93daf0f475eddf88dee3843d059e999f71934599b",
+      "raw_target_sha256": "346f9c03a30c58e20faba8e089e75c4a952a0c8bfb1341c5aaa18845e17994a9",
+      "translation": "Cari bagian yang belum terlihat"
+    },
+    {
+      "source": "Several photographs can all originate from the same unit. Five angles of a garment spread on a green table give more information about that garment, but they do not establish that five buyers received it. Look for shared folds, identical tags and repeated packing labels when assessing the range of examples. Count distinct units only when the source gives you a basis for doing so. Otherwise describe the number of useful views and avoid implying that you assessed a larger sample.",
+      "source_sha256": "0230afc08ed90755faad17db31268eba54929a931853cc4285b16de5d7ac32f7",
+      "raw_target_sha256": "7958e296a7e8984bb6fa18cf32be36b67a07034731022ca7d764abe10625d2fa",
+      "translation": "Lima sudut foto pakaian di atas meja hijau mungkin berasal dari satu unit. Anda tahu lebih banyak tentang pakaian itu tetapi belum dapat mengatakan lima pembeli menerimanya. Cari kesamaan pada lipatan kain, label pakaian, dan stiker kemasan. Hitung unit terpisah hanya bila sumber menyediakan dasar. Jika tidak, sebutkan jumlah sudut yang membantu pemeriksaan."
+    },
+    {
+      "source": "A series can also omit precisely the feature that matters. A bag might be shown from the front, back and both sides while its interior remains closed. The gallery could resolve whether it has external side pockets and leave the number of interior compartments unanswered. Save the picture that best shows the external pockets. Write down the interior question beside it so the next stage of your research addresses that missing detail instead of repeating a search that has already yielded all it can.",
+      "source_sha256": "bc86be88a6bf01f9f3c220ce01f4b148c8deed1c6d686fb006bb3972ea12e8aa",
+      "raw_target_sha256": "8db03ea48f5ea894415ff8daae10f12b2b570eba1e2829eace4f5718ae154286",
+      "translation": "Foto tas dari depan, belakang, dan kedua sisi dapat memperlihatkan saku luar, sedangkan bagian dalam tetap tertutup. Simpan foto yang paling jelas menunjukkan saku luar. Catat pertanyaan mengenai jumlah kompartemen dalam agar langkah berikutnya menyasar detail yang belum terjawab."
+    },
+    {
+      "source": "Bring the correct comparison back to your order",
+      "source_sha256": "0b3abd1cab83b94882571827a47acc28b9e21cd2db59cf2b5408c26a808178ee",
+      "raw_target_sha256": "7dd101f909948d680a967cfdf56186192781144e698e66fd95a3431a4b337dd0",
+      "translation": "Bawa pembanding yang tepat ke pesanan Anda"
+    },
+    {
+      "source": "Once your own warehouse record is available, start a separate folder or note for the received item. Include the selected option as it appeared on the order, then add your observations about the received unit. If the newly photographed garment has an unexpected cuff, compare its label and the specific closure against the saved seller option. The old public image can illustrate what prompted your initial question. Your paid selection and your own photographs explain the actual order difference.",
+      "source_sha256": "5c2d2819dccb841b75a3f7666c9bb056c5bcb7273f89943b7af7ec12118d6b5e",
+      "raw_target_sha256": "228664e2deaa802dbdfcf06a973dcc712b99498913271a7f1c14297b334b2e0c",
+      "translation": "Begitu catatan gudang tersedia, buat berkas tersendiri untuk barang yang diterima. Simpan nama varian persis seperti pada pesanan, lalu tambahkan pengamatan. Jika manset berbeda dari dugaan, bandingkan label dan pengancingnya dengan pilihan penjual yang disimpan. Foto publik lama menjelaskan alasan bertanya; pilihan yang dibayar dan foto barang sendiri menunjukkan perbedaan dalam pesanan."
+    },
+    {
+      "source": "For a message requesting clarification, supply only the pieces someone needs to act. Identify the order privately, name the selected option, describe the visible detail and ask for the missing view or confirmation. A message such as “Please show the open left cuff of the brown overshirt so I can see whether it closes with a button” gives the reader a clear action. If the current photo answers the question, close the note with that observation and its date.",
+      "source_sha256": "e750d7efb539eb2aad7831eac9ace3265062871dba70bf07debd19c736168ae9",
+      "raw_target_sha256": "e3d83a5571e01adac3442bc42e337308d2ae24c71055ad8e1690e084ebbd27bb",
+      "translation": "Kirim nomor pesanan melalui saluran pribadi, sebutkan varian dan detail yang tampak, lalu minta foto yang memberi jawaban. Misalnya, “Tolong tunjukkan manset kiri kemeja luar cokelat dalam keadaan terbuka agar saya dapat melihat apakah pengancingnya memakai kancing biasa.” Setelah terjawab, catat hasil dan tanggal."
     }
   ]
 }

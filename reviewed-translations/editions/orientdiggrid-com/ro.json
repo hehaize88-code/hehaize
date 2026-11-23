@@ -3,7 +3,7 @@
   "locale": "ro",
   "source_set_sha256": "1a57e35751202bc8722bffcd3d5a604d9b7ad9d180228c298103c9c8fded0947",
   "raw_dictionary_sha256": "f796133b71ff38670bce099e2207ab479f3423757e44054bbbe34302bff9a93f",
-  "effective_dictionary_sha256": "d5f572eb6e95cd4ae576f6dbfcdd2a049e54b5230de08a71f5d84d642240f2f4",
+  "effective_dictionary_sha256": "23971f04ca649a9a8a7d3168f6ff57eee11e2340f099c49caecb5b53a8da2939",
   "checked_entries": 295,
   "review_scope": "Checked all 295 source keys and rendered text, 10 SEO titles, all FAQ entries, shipping and garment measures, retail wrapping examples, and all automated language and numeric findings.",
   "reviewed_flags": [],
@@ -146,6 +146,426 @@
       "source_sha256": "7ca13bbf3ad3d2528d12bcdbb7f8ff157adb7d3be7fb49a950b39c7ec3b840a6",
       "raw_target_sha256": "4afcc0cee70fdb849ba69713fe8495802113f7d4ef6d144e6e747bfde2f93b82",
       "translation": "În acest exemplu, cutia rigidă a produsului are 48 cm, iar ruta ar permite o latură de cel mult 50 cm. Pentru ambalajul exterior și protecția de la ambele capete rămân în total doar 2 cm. S-ar putea să nu ajungă. Cere dimensiunea finală sau compară o variantă clar identificată. Dacă renunțarea la cutie pare singura soluție, decide mai întâi dacă ai nevoie de ea pentru protecție ori prezentare."
+    },
+    {
+      "source": "Decide what would make you accept or question the item",
+      "source_sha256": "2aca7faacaabd9255cef17b4f0e51d766f018e4ce906edf15eb14ba85060c5bb",
+      "raw_target_sha256": "57b10f8b8bd3082c937f642aa8a2dacfab39dbe9bb5ebfc115f78faa78c8088d",
+      "translation": "Ce trebuie să vezi ca să accepți produsul?"
+    },
+    {
+      "source": "Identify the physical unit before describing the shot",
+      "source_sha256": "1bce138fdfa2af65878021e0e996e8674acf0f2a1f6827f327382bdac78b161d",
+      "raw_target_sha256": "782e3ff4f73f537c32532a8196ffd6baf8fac95cd40e9e48f90db5402251dd04",
+      "translation": "Identifică exemplarul înainte să descrii fotografia"
+    },
+    {
+      "source": "Specify the angle and the feature in ordinary language",
+      "source_sha256": "03557f4dee65382e8666d620eda04cb715f882f2eaf7886706cb6929db14503f",
+      "raw_target_sha256": "0ef09ae48b6553dfef0eafe5cebd11b59df25901a7bc9bc72eebb4496081794f",
+      "translation": "Descrie simplu unghiul și detaliul dorit"
+    },
+    {
+      "source": "Give a measurement two endpoints and a unit",
+      "source_sha256": "8fcdec3d32009f5e21654516225c5f593996bb9a6a4ad6230550d12a92ba5fba",
+      "raw_target_sha256": "572d643353aa0514a9113020f00fe24da756827ed967e0111b5d7bed8382175d",
+      "translation": "Precizează capetele măsurătorii și unitatea"
+    },
+    {
+      "source": "Use a reference image to clarify rather than prove",
+      "source_sha256": "7abeed4267e4414c83015bc73cfcb691f045678a40ee2dd87903f467a33ee2ef",
+      "raw_target_sha256": "c6d2bf6b31a2ed9570fe3b98c759d7301b3dc6087b911ced4b008a3b32a0e005",
+      "translation": "Folosește imaginea de referință pentru a lămuri cererea"
+    },
+    {
+      "source": "Review the result against the request line by line",
+      "source_sha256": "fe910e16c6ff46f6c0da7b851dfa9433ce84587e4de75b01fa5afa315491258a",
+      "raw_target_sha256": "5a1a808e7dc4448dd2e91ac1f61bdb923137a7e26f7aa60e3a63cd1fada79017",
+      "translation": "Compară rezultatul cu fiecare punct al cererii"
+    },
+    {
+      "source": "Stop when you have enough evidence for the decision",
+      "source_sha256": "ca8c3aedee588d78c2d4aa91c395d4d028484012f3ad7d931d51f1a6640e6a89",
+      "raw_target_sha256": "a23d68a9fa1491ea94a3aa48f6c80e0c61254be07c996c516701b230dc2f432b",
+      "translation": "Oprește verificarea când poți lua o decizie"
+    },
+    {
+      "source": "Choose a comparison garment with a similar shape",
+      "source_sha256": "8cacdd5aae85922ff6007103d1e299a8ea2e3b5dd7c71844ecd31ca0e8f4d5c5",
+      "raw_target_sha256": "7353b4b20677c112efd63bb1fe62280cc49d2689ac59867da8847719167d9703",
+      "translation": "Alege pentru comparație o haină cu o croială asemănătoare"
+    },
+    {
+      "source": "Read the seller's diagram before naming a dimension",
+      "source_sha256": "7aa3a1dec19f33d2e5b20b99d5680af95df4e1446305a4c1adb893526831e776",
+      "raw_target_sha256": "e708bdbd0d4fdad1447146e8bb48d38512eceda4a7cc32b4651b235dc0baebb1",
+      "translation": "Consultă schița vânzătorului înainte să ceri o măsură"
+    },
+    {
+      "source": "Request chest width in one continuous view",
+      "source_sha256": "a3a39382c535c0e07088ad9ad8e4d45022c7ef2c53d2f2b827f81b93ac822479",
+      "raw_target_sha256": "7e1ae7e1d8f3cb52c1920307e57205b4a60b316d5d157dfab681cde810c39d42",
+      "translation": "Cere ca lățimea la piept să fie vizibilă într-un singur cadru"
+    },
+    {
+      "source": "Distinguish centre-back length from high-shoulder length",
+      "source_sha256": "51b85f3732e66ad247430534da8c032e348e46d08a551a7cc510149da5867551",
+      "raw_target_sha256": "a3bd55e3f26ffa640a919ed87bf6053ecf27e212a2bb20f995719126dd8f7288",
+      "translation": "Deosebește lungimea pe mijlocul spatelui de cea de la umăr"
+    },
+    {
+      "source": "Match sleeve measurements to the construction",
+      "source_sha256": "51349d99eeafc2170919b10c5ab2bb0b18c7fbcd02da395aae23148d3d7778b4",
+      "raw_target_sha256": "75d08b5492079044285aebb4479b0d382211ce381382b8bf55422f35f4f96624",
+      "translation": "Măsoară mâneca în funcție de croială"
+    },
+    {
+      "source": "Evaluate elastic, cuffs and layered construction",
+      "source_sha256": "6d89e1d1334e4375c8e3df8219fb481b2ebc6b65d2602dcb5d53cbf4975a5c2c",
+      "raw_target_sha256": "e39914cf13a135c379d4670a80036e35b3ffea2e02bcbdc6171ec17796ba4b7c",
+      "translation": "Verifică elasticitatea, manșetele și straturile"
+    },
+    {
+      "source": "Make a decision the evidence can support",
+      "source_sha256": "804ee25bf0fec84678fdc6485d9248d089097f2ed8b487421bf2ec90629f306c",
+      "raw_target_sha256": "6153e289b977378ee6d64a38abf083464cc22248159cbd095eeabda8fe11afa8",
+      "translation": "Bazează decizia pe ce poți verifica"
+    },
+    {
+      "source": "Start with the part most likely to suffer damage",
+      "source_sha256": "ae660b381615524d5b9a1e72908e73e7300ef24bb72c8ea9a6f999df33336dde",
+      "raw_target_sha256": "66283bab78c9e477ab335f95894a03b3e09fa7ef99c7b4e79503808d7fa0e4e6",
+      "translation": "Începe cu partea cea mai vulnerabilă"
+    },
+    {
+      "source": "Decide what role the seller's packaging plays",
+      "source_sha256": "d0f6721f61451ac58798245ec8fe848e6ee3e319ab5351d8776dda99d29f3502",
+      "raw_target_sha256": "0f4b090946f38138de184132ba1a7d968439f16c4de7eb1196ec75c5ec409ab8",
+      "translation": "Stabilește rolul ambalajului vânzătorului"
+    },
+    {
+      "source": "Check how the fragile piece interacts with the other contents",
+      "source_sha256": "d395889d8655f2fbff5766d838826b9907113c56efd709bbe1f5e9c9eb8fd379",
+      "raw_target_sha256": "7b25eb438924de4bbf9edd7965794f3c2115e49c92f242dc2fb4af5da782a959",
+      "translation": "Verifică dacă obiectul fragil atinge celelalte produse"
+    },
+    {
+      "source": "Ask for evidence at the point when it can still help",
+      "source_sha256": "ff0056051ea2f58defd4816751949515c9b3ea72ae9c164aefb287a556119645",
+      "raw_target_sha256": "49ed31d3b9653479c93d594a7d8f8df9d0e50f204677a2b7fe14c82c260d7184",
+      "translation": "Cere dovezile cât încă poți schimba decizia"
+    },
+    {
+      "source": "Account for the space that protection requires",
+      "source_sha256": "be70b9e734f3dfdd7cbdc495436f67f0ae8fa6fb890e5248faacdef641c5432a",
+      "raw_target_sha256": "1c7eb9ff5c068f65e3313b5d1b54af26a5ae2c859a82b3e6444ae18d98bafa90",
+      "translation": "Ia în calcul spațiul de protecție"
+    },
+    {
+      "source": "Read the service conditions in terms of your particular object",
+      "source_sha256": "ed308a328f1eceb37419be0b72197bb43104e45b498e9952d03fd058fa7f1efc",
+      "raw_target_sha256": "98db3ee678df9aaaaf3cd5ead79da9eff94347501eeb29fff7431aca86bebca9",
+      "translation": "Verifică regulile serviciului pentru obiectul tău"
+    },
+    {
+      "source": "Examine the delivered parcel before discarding its packaging",
+      "source_sha256": "f13945c344e46b02434266afe85d02852da54fa0bba882511e9cc7be06e5b50f",
+      "raw_target_sha256": "2eba757f2e69f1b6e27762d2aca48639e07e67dbfac2e585ddf0db7a4be62f77",
+      "translation": "Verifică pachetul primit înainte să arunci ambalajul"
+    },
+    {
+      "source": "Give the purchase a unit list before tracking starts",
+      "source_sha256": "8c9ead747b4ce8320d6488e7bec9792eaeb522b9ce51942ffe5f1c8c9a29361d",
+      "raw_target_sha256": "31f03f072c23da56ca16d3752bfd8e6915ccdcc4d5204044132bc5c761eadf7a",
+      "translation": "Notează piesele cumpărate înainte de urmărire"
+    },
+    {
+      "source": "Separate the marketplace identifier from both tracking numbers",
+      "source_sha256": "78c7599ef3f9ae3d918c12041a44f80d04e2882a82dfc8df0ca593377c961c3c",
+      "raw_target_sha256": "739b7a89e603b72c2b5663888b5105e0a68b85b238987236cea89b7cecc60e08",
+      "translation": "Separă codul anunțului de cele două numere de urmărire"
+    },
+    {
+      "source": "Map one seller to several domestic shipments",
+      "source_sha256": "74654303f99868fbc9f50f133f880e0ab9e4b48dd8a6b350f415df203061ddcc",
+      "raw_target_sha256": "7838d08ab839b9889a0f8399cdf36888a061062831cba6d6a81692d6c1eab32f",
+      "translation": "Leagă mai multe expedieri interne de același vânzător"
+    },
+    {
+      "source": "Check the strongest identifying details first",
+      "source_sha256": "4bbd30c93a9c36e8bc58a5bdc5deec23aa592869b9059ca30f8653ee4002f10d",
+      "raw_target_sha256": "a7476477951eca4d0e4a16ed386f2482dd0c8e59a6ca25105c6dc33e6a8198be",
+      "translation": "Verifică mai întâi indiciile de identificare cele mai precise"
+    },
+    {
+      "source": "Distinguish three kinds of missing-item question",
+      "source_sha256": "b3ac374b2d93395451759ca6c33334a0aedc832833925ad2010f6802fa346459",
+      "raw_target_sha256": "9935626cbfe57bdf1a8708b2b1496660865a9412adc8568154087a6c7cc731b0",
+      "translation": "Deosebește trei situații în care pare să lipsească un produs"
+    },
+    {
+      "source": "Reconcile a corrected or exchanged unit without losing the history",
+      "source_sha256": "8a82b87b1d3f939fe4f46b401850415fbce60c5221b8bfc3562a6cb3371170d9",
+      "raw_target_sha256": "c3d34afddadbebd2eeac6c39f8836e8e186e47d38bd0828b109c88f1e480085f",
+      "translation": "Păstrează istoricul când produsul este corectat ori schimbat"
+    },
+    {
+      "source": "Submit the international parcel from the reconciled list",
+      "source_sha256": "2c799e1b94d4bfe40d8ccdddf0e172cf94d02088b0f3136a9d9e80cd276e5239",
+      "raw_target_sha256": "54fc0db59a8c0ee9480165e9a9de8edfae196d1f3c1e1505db209bab73ecbf43",
+      "translation": "Pregătește expedierea internațională din lista verificată"
+    },
+    {
+      "source": "Read the selected offer one piece at a time",
+      "source_sha256": "791d539989337cb4cbfd549fd6f53c41863ff9cb75aa793352764fba7666ca2e",
+      "raw_target_sha256": "338cd9101820edc0a36521fd16e7701be3455b6bda035c80557cf21808a98ea3",
+      "translation": "Verifică oferta aleasă piesă cu piesă"
+    },
+    {
+      "source": "Match the ordered size combination to the set",
+      "source_sha256": "69830b56162bbc9ee158e82595f91728e0f57142fce9662dabc9bf269254198f",
+      "raw_target_sha256": "6f5a331ac4f103ef69d315b27304b24091b61f74a07e57ff0700289257806502",
+      "translation": "Confirmă combinația de mărimi comandată"
+    },
+    {
+      "source": "Establish that the parts belong together",
+      "source_sha256": "2e722849d035db8822281e4585a64d9b0ea306f1e25f0395540e79a4b6cf9791",
+      "raw_target_sha256": "212968a9860765915fe110186b39a3d30a2d9dcb474828efd5a582f7a9254bcc",
+      "translation": "Verifică dacă piesele aparțin aceluiași set"
+    },
+    {
+      "source": "Request the one missing piece of evidence",
+      "source_sha256": "4fda4674fbf8c2e12ef5b34e71bd690f8c2334b03126ba6791c005a7ccda8575",
+      "raw_target_sha256": "76d41d8ed21cd2953c801ee1870a0ada3e490b2671602a3ac936c25a112650f6",
+      "translation": "Cere dovada care încă lipsește"
+    },
+    {
+      "source": "Evaluate fit without mixing body and garment figures",
+      "source_sha256": "5369e7c4912411d88f116c1587a008624638cde061eaece9f7a5a4088f52b846",
+      "raw_target_sha256": "5c834ce198510bf978ae89cd5bc09357314331c08800a36e710c8a1325d28982",
+      "translation": "Evaluează potrivirea fără să amesteci măsurile corpului și ale hainei"
+    },
+    {
+      "source": "Handle a partial mismatch as a set-level question",
+      "source_sha256": "9733926e20b35abcee608f4e7206714b1b27e63ca11db699d6f44ea0c4bec576",
+      "raw_target_sha256": "ba2d3b0a5a15485a08955381d57ebcf0bc6bb28d5148c8ca67c80fc7935218d3",
+      "translation": "Tratează nepotrivirea unei piese în contextul întregului set"
+    },
+    {
+      "source": "Check both pieces at packing and receipt",
+      "source_sha256": "89090f31e11caa1eef61c191019405ba85c04b160e32dba1b44f039fbc22d84c",
+      "raw_target_sha256": "bb2db2fa8a9d84a1861ad03c73fdfcaa6f3ba0d80916044c9e88bbb874e0215c",
+      "translation": "Verifică ambele piese la ambalare și la primire"
+    },
+    {
+      "source": "Identify the packaging layer you are talking about",
+      "source_sha256": "c63cd70be88ac9a366533c0fb0180a69080c9c1762a63dd84c9adb8907f13add",
+      "raw_target_sha256": "f054c6141b39b85de93e41e92d736544ab9472f6ecce04f982509fe4cf1b7006",
+      "translation": "Numește exact stratul de ambalaj vizat"
+    },
+    {
+      "source": "Separate protection, presentation and evidence",
+      "source_sha256": "bc543ed1f95383d6424600222070dd3f1ead35096617e2774753b0c1f699fac6",
+      "raw_target_sha256": "c83daba0ba65a93ffacd8d61a27ce385025c2e928b0a20a0ab7828f0bb21d3c6",
+      "translation": "Separă protecția, prezentarea și rolul de dovadă"
+    },
+    {
+      "source": "Compare actual mass with the space the box uses",
+      "source_sha256": "bb6c0ef07ab2f6cf6e02523da4542ae97ab49cc1d7bc2cb8e3c2ba38b87437c1",
+      "raw_target_sha256": "e0d4718f72a8ae0830fa7b999ae5e78295417e657a27b7f2923afa7720185db0",
+      "translation": "Compară masa reală cu spațiul ocupat de cutie"
+    },
+    {
+      "source": "Compare scenarios for the entire parcel",
+      "source_sha256": "e22c456801da60e152334fc86f5321d25308ed568bbab989152ba4a1172ff427",
+      "raw_target_sha256": "13f1e63e7a43086a224b9bdf47e70b2554caf685048e78a52ab40068ecffef17",
+      "translation": "Compară variante pentru întregul colet"
+    },
+    {
+      "source": "Avoid exchanging a known benefit for a speculative saving",
+      "source_sha256": "6e87cb02dafaf78a71265aa3264ddab8e2c0e3195dffdc7a34f53b925d1749ce",
+      "raw_target_sha256": "0015a56c6978e866847a704d1c4d39cb5167eeaf527727a5c240c3f1054dbb30",
+      "translation": "Cântărește beneficiul sigur și economia incertă"
+    },
+    {
+      "source": "Write instructions that a packer can distinguish",
+      "source_sha256": "2c7263a65ab4ee2cbfa7a13400057bb202faa40d30d945d16df1a428b98a226e",
+      "raw_target_sha256": "5901a2c3d7572125367aa6bf9a894352b6db1589a6fe4d996a115dffdfdf7b39",
+      "translation": "Dă instrucțiuni distincte pentru fiecare parte"
+    },
+    {
+      "source": "Record the decision and check the result at delivery",
+      "source_sha256": "862a7d48ab0f8b052382153d4d25ea91e3872dd3180a115006cb43f6e736a8e1",
+      "raw_target_sha256": "68c9d19ee0947d70da99ee1c8f57be13048607adae5d5ba50aaad9fa5b57fa46",
+      "translation": "Notează alegerea și verifică rezultatul la livrare"
+    },
+    {
+      "source": "Name the two arrangements you are comparing",
+      "source_sha256": "27e4bed65d3dcbd546be7a2f282c1d421d2f97e61172251a40e60ade8030c3f3",
+      "raw_target_sha256": "c40b0dd8bd3743d51e100aca8be6a240beedee0eb5344f1d59d38c8a71adaf97",
+      "translation": "Descrie cele două configurații comparate"
+    },
+    {
+      "source": "Work in consistent units before using any formula",
+      "source_sha256": "ce294d6794ae158b8de00c6234a882f192aea976fbe1b9a35d001660ba7ccbdf",
+      "raw_target_sha256": "af3abcae7d9deb4cdafd87731d976a42a0f9417b9e26cadc431888aafec983c8",
+      "translation": "Folosește aceleași unități înainte de calcul"
+    },
+    {
+      "source": "Understand which weight the route uses",
+      "source_sha256": "53bf210855c64e4894924cbc0caa1a7f0ca1b4eddb02a2493c043846a110a4e2",
+      "raw_target_sha256": "ff7d4a2cfb6c49d5a0ea6c3923c8e97dadc0e35b18b545725d9d1300487d0dfb",
+      "translation": "Află ce greutate folosește ruta la tarifare"
+    },
+    {
+      "source": "Test the longest side separately from volume",
+      "source_sha256": "bdf58ac6ba04293fae976daa2f1529b9524d6860cd072d749756b234bfa56ca0",
+      "raw_target_sha256": "ef2125942dcb2ef9f50ece5775d44b0e91118c201bec96c0fe6dc2d25616c7a3",
+      "translation": "Verifică latura cea mai lungă separat de volum"
+    },
+    {
+      "source": "Estimate only the variables you cannot yet measure",
+      "source_sha256": "43dea86d2918c57c5df24018b76568874dbeedf65d6d138f901e4d0067953ffc",
+      "raw_target_sha256": "e19e5bc4a93aecc86fbf81464cd693cc9a2f2f67c2e9b986affa4b14b2bc0457",
+      "translation": "Estimează doar ce nu poți măsura încă"
+    },
+    {
+      "source": "Recalculate after protection and optional services",
+      "source_sha256": "3d737d62b04b33e638a060fa3a8942db6e1c2855e8773782d5cdd868930ce84b",
+      "raw_target_sha256": "3bcc85d54de14b07cf99c0fb51d244cc4840e221ec7d543fab758af0b54c578f",
+      "translation": "Recalculează după alegerea protecției și a serviciilor"
+    },
+    {
+      "source": "Save a record another person could reproduce",
+      "source_sha256": "73502a16f10da5b401843fb78fd48967bb9162ccd44933d88315028434d50cc7",
+      "raw_target_sha256": "40d7200242d4ede9445779573ed375f432218f4fb3d5a839d524ed069b8f5adb",
+      "translation": "Salvează datele necesare pentru repetarea calculului"
+    },
+    {
+      "source": "Describe the goods as they really are",
+      "source_sha256": "6802a5e74638bf374df39875982410f10de74763d772768a77a814c261de6ad7",
+      "raw_target_sha256": "82f6b599be2dfe256e8d604335b6c4021d34ad60d4b9adf9d8be7a9f5dfd1882",
+      "translation": "Descrie conținutul real al coletului"
+    },
+    {
+      "source": "Separate four kinds of restriction",
+      "source_sha256": "14cdbbbe359c4a2a5728fb556e729bdbe0ace84a3852f1f8079d2f360fdbb858",
+      "raw_target_sha256": "1e7f8c0ad43d3ec3e13e3312cee719cd982cad5ae1094fd953e43f5ac3551c83",
+      "translation": "Deosebește patru tipuri de restricții"
+    },
+    {
+      "source": "Compare the dimensions against the exact rule",
+      "source_sha256": "01a868d3313cfe5fd209584ac6e75e08f3de39c3ea16aeeb4b1773e26812cec7",
+      "raw_target_sha256": "ac848061ec331ff3051bd833ff38b9d70df3a00a11dae443adb5fe0feb9be34a",
+      "translation": "Compară dimensiunile cu regula exactă"
+    },
+    {
+      "source": "Read billing conditions independently of acceptance",
+      "source_sha256": "b5dd69b6974f8b4f09d46cff5df4a33a3d8437f259357c767345121ffc7a2eff",
+      "raw_target_sha256": "6342a15665a3b7b51f2dda2f86685ee0efa70ea9ad182e2b4941e507215726f7",
+      "translation": "Verifică separat taxarea și acceptarea coletului"
+    },
+    {
+      "source": "Check destination and delivery service requirements",
+      "source_sha256": "acf7f88711e7190e949a59666d3863fd99c53e59fb485c5077531852771ddc9d",
+      "raw_target_sha256": "8c06c7fc4b82fa1a40cdf3bca28f4f0a9a8baaf25da70769c55ff0d2801a7a86",
+      "translation": "Verifică cerințele pentru destinație și livrare"
+    },
+    {
+      "source": "Check protection and exclusions before interpreting a price difference",
+      "source_sha256": "8ec4ea1de364a2363c921b4f73377f67ce653366dcc2f469706f32560ca54211",
+      "raw_target_sha256": "bdfde1946fc6c603e2c64f24f82620fe99c3f946ed464214a202f2f5213b9651",
+      "translation": "Verifică protecția și excluderile înainte să compari prețurile"
+    },
+    {
+      "source": "Choose a route only after resolving decisive uncertainties",
+      "source_sha256": "04502c537121b780ed138625fdd5504b0eb9a74d98417aa2c2a1d339e4d59f5c",
+      "raw_target_sha256": "46482377c9871734c0cd81db01bc24119704057b815f0a834bf7110dd03112e6",
+      "translation": "Alege ruta după lămurirea incertitudinilor decisive"
+    },
+    {
+      "source": "Identify the outbound shipment before interpreting a scan",
+      "source_sha256": "772f53df6dfec906b9e43121ac4af9cfa2aba4b4655a270dcb26c11f3f40c54c",
+      "raw_target_sha256": "c885093f6dde955d29f2a621fbee79c026a7d84fe0435b8aceb22c87604c7ecd",
+      "translation": "Identifică expedierea internațională înainte să interpretezi scanarea"
+    },
+    {
+      "source": "Put the displayed event into the delivery sequence",
+      "source_sha256": "774aff695cbdcf16ed2b612dc624351ecd5888b74a51e54f3055bdd2c928c824",
+      "raw_target_sha256": "c5a631cc07cadba6768ea3ecf975f23bd411b39dcee6329d4ecc7b3343424718",
+      "translation": "Plasează evenimentul în succesiunea livrării"
+    },
+    {
+      "source": "Understand the transition to a delivery partner",
+      "source_sha256": "74b0db8a5d7765e1872b460454117d3166aa164b860366d808c47f254eacef74",
+      "raw_target_sha256": "64da2a12b271a735f13970e4f62a6b5b9febb0e67824bd5df09c92951b3da5b1",
+      "translation": "Înțelege predarea către partenerul local"
+    },
+    {
+      "source": "Compare times, not just the order of lines on screen",
+      "source_sha256": "bc5c8ad625ee334c46eec43e83f51b881ad01e555c1a13dfc79c39e7656234f5",
+      "raw_target_sha256": "c0fc30e58b9aaa2c2aed4df9904fb50ee89c1638e139ad6c484891cdb4edd055",
+      "translation": "Compară orele, ținând cont de fusurile orare"
+    },
+    {
+      "source": "Distinguish an estimated interval from a service guarantee",
+      "source_sha256": "2a6cce9719953ec887bf9c48dc8c4f35c838d2d0f963a6b6be9f41a0a28696a4",
+      "raw_target_sha256": "dbf48e6943a85ac4743c1b3cbae8602d74d42b2619f1e87ef3c936bb3289dfb1",
+      "translation": "Deosebește intervalul estimat de o garanție a serviciului"
+    },
+    {
+      "source": "Prepare a useful tracking inquiry",
+      "source_sha256": "99d6af4f099ef3571a223528b9ff9a327478272bd757a5fc9f8467d5fbc43dd7",
+      "raw_target_sha256": "82cd43a9f52e3f6c6a10f534ee4c9c3de84e6fb13c618d0e2c631268f690479f",
+      "translation": "Pregătește o întrebare precisă despre urmărire"
+    },
+    {
+      "source": "Close the handoff record at receipt",
+      "source_sha256": "cbc5ac79dd74819bc9f23c254706902d22781ecc1dba9fa0759d2ed6658ffec4",
+      "raw_target_sha256": "f0b7f87d5724f27d63ce4fddb0ddb0e842898c980fa70af3f7b83205185811a2",
+      "translation": "Închide evidența predării la primire"
+    },
+    {
+      "source": "Decide what information the assistant needs to place this purchase",
+      "source_sha256": "a6caf1690a22639e469ee3c1af42e01c706ee7dabf95dc57edb4c590e0b50d0f",
+      "raw_target_sha256": "4b1f008927212884e98a340afc31556e0d7378c5313cbea3e50d1ff2e8edd5f8",
+      "translation": "Stabilește ce informații îi trebuie asistentului pentru cumpărare"
+    },
+    {
+      "source": "Capture the original option wording",
+      "source_sha256": "8ad622c4077f8ec9e1d3cd9bbdc39b668838d958c925f0ec078d2a8eb2a587af",
+      "raw_target_sha256": "d8ba02442feaf7d544a980e252e4a8a7e44bbdd52c9477a3337a6bc2bd13c025",
+      "translation": "Salvează denumirea originală a variantei"
+    },
+    {
+      "source": "Define the unit and the count",
+      "source_sha256": "de50455c410278c6c41e194ecae627c4e095c9ebc1d1c8edb63211c70caca6e3",
+      "raw_target_sha256": "d3633344ccb196f51551a4dda8aaf77832cd3b61610ce58e7f94617a45d2ab8d",
+      "translation": "Precizează unitatea de vânzare și cantitatea"
+    },
+    {
+      "source": "State what to do if the exact option is unavailable",
+      "source_sha256": "86522dae92f37762732fa35b70ae3d7a1165dc4cdbc50276488c4db201c8ef3a",
+      "raw_target_sha256": "097e625133995baa0cfe790549c1fd25dc124ec05b195b90535dceffce48c538",
+      "translation": "Spune ce se întâmplă dacă varianta nu este disponibilă"
+    },
+    {
+      "source": "Attach only evidence that resolves ambiguity",
+      "source_sha256": "2910e4f7fd249d3fa6bdfdd6426adc5181839fc391586fb6973bcc12bce25f3e",
+      "raw_target_sha256": "12a197f00b514b87f788fe5449135094b3e878926a5b04bb4601b7c6a6e08839",
+      "translation": "Atașează doar dovezile care lămuresc neclaritatea"
+    },
+    {
+      "source": "Review the confirmation as a separate document",
+      "source_sha256": "c8641cce9c2d035232ffc9e64b68d0b12df1eb6b7d0d69dbd172e944bf3f6cea",
+      "raw_target_sha256": "75476197dfdba5b8fca74c831acb8ead313bf3dea70badcf5d30abf24018e467",
+      "translation": "Verifică separat confirmarea"
+    },
+    {
+      "source": "Carry the request forward into a practical warehouse check",
+      "source_sha256": "76658e2a0f8b2526b14d95b16986afd34636dab837dfe6a5b18ec24d938f3f51",
+      "raw_target_sha256": "035524a2d0dcd6a6e2e005add592ddd0a8359fe22e2658340c21fc1f0691f4b7",
+      "translation": "Folosește cererea inițială la verificarea în depozit"
     },
     {
       "source": "OrientDig lists detailed-photo requests at product ordering and after warehouse intake. Choose the item and specify the exact view needed, then check the service offered for that order.",

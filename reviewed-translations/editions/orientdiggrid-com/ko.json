@@ -1,0 +1,1784 @@
+{
+  "site": "orientdiggrid-com",
+  "locale": "ko",
+  "source_set_sha256": "1a57e35751202bc8722bffcd3d5a604d9b7ad9d180228c298103c9c8fded0947",
+  "raw_dictionary_sha256": "adef8c834b1f0b78c98ea8ab256386477c384e3eb75c8d8714d083c7f094ca3d",
+  "effective_dictionary_sha256": "ba20910179625e70bbad2747c8127112df6e5799bd974cc87b7c50febf7e6720",
+  "checked_entries": 295,
+  "review_scope": "Hand-translated the complete English OrientDig editorial corpus into Korean, checked measurements, examples, inclusive garment measurements, service terms and every source title against the new edition. Worker paths and structured data checked separately.",
+  "reviewed_flags": [
+    {
+      "issue": "quantity unit or currency changed",
+      "source_sha256": "98d397840f6468ae85d3f2dda39f81e01970c82e42ed9d3372fc3a0e55adeded",
+      "raw_target_sha256": "e6eab711d36dadf7c852fd19c2273819ca2f8e01e14442bb5e383f1283c58e2c",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "new digit or localized conversion",
+      "source_sha256": "107f4c5d3bc0480b29bad7aff12cea24f9f87a929074a8bb77738565626655ca",
+      "raw_target_sha256": "2f556ba3497793b78fc85ab784048c962e408a24c0fc8af528268acf6ab66362",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "example number omitted or reformatted",
+      "source_sha256": "7ca13bbf3ad3d2528d12bcdbb7f8ff157adb7d3be7fb49a950b39c7ec3b840a6",
+      "raw_target_sha256": "2cd649c6053de05b5deb6dd8f0362c77785407556661f7f2b25981a38c645bac",
+      "resolution": "corrected translation"
+    },
+    {
+      "issue": "new digit or localized conversion",
+      "source_sha256": "7ca13bbf3ad3d2528d12bcdbb7f8ff157adb7d3be7fb49a950b39c7ec3b840a6",
+      "raw_target_sha256": "2cd649c6053de05b5deb6dd8f0362c77785407556661f7f2b25981a38c645bac",
+      "resolution": "corrected translation"
+    }
+  ],
+  "unresolved_material": [],
+  "corrections": [
+    {
+      "source": "How to request an OrientDig detailed photo that answers your QC question",
+      "source_sha256": "7a2191a553b646e55c48ea4e27dd0e53f398e8d881337cff089a7842f8671983",
+      "raw_target_sha256": "421f1f8fb9a46c46d3e51df0afbf24d3357ae112c6739475a13f37b627510f27",
+      "translation": "OrientDig에서 검품할 부위가 분명하게 보이는 상세 사진을 요청하는 방법"
+    },
+    {
+      "source": "How to measure a garment from OrientDig warehouse photos",
+      "source_sha256": "64f7ca4fda45b16b3136d16fce94908ad229b827ded04525abf2110abf27a7e6",
+      "raw_target_sha256": "32b723f8dbcfd0ea3908c46e498cc5e422b618836a7a6b7f1d8cd0faedef4735",
+      "translation": "OrientDig 창고 사진으로 옷의 실측을 확인하는 방법"
+    },
+    {
+      "source": "Planning an OrientDig parcel around a fragile find",
+      "source_sha256": "3fc7f21819d619f346fe1229bf0db40d94e40f48d323472b115774e85c6132f8",
+      "raw_target_sha256": "1e4bee3f940a8cecda610e601f94108b1dd4ae33f8942bcf609725773b92b34a",
+      "translation": "깨지기 쉬운 상품을 담은 OrientDig 소포의 포장을 계획하는 방법"
+    },
+    {
+      "source": "Matching an OrientDig warehouse arrival to the right seller order",
+      "source_sha256": "2cc883123cf8650b665e6d50b3f56d9cd8ac40f6d72a8dbde36c05cc19d5fdb1",
+      "raw_target_sha256": "2a2988e97a0f9b593aadfa8120356c2bc0d5063d297554b23a642d6779ebf202",
+      "translation": "OrientDig 창고 입고 건을 해당 판매자 주문과 연결하는 방법"
+    },
+    {
+      "source": "Checking an OrientDig two-piece set before sending it overseas",
+      "source_sha256": "16968d67e33aeaabcdeccd74647c3b1a2abe82620ffe0fb6a281a781fcb8f989",
+      "raw_target_sha256": "745c336e89df4827a98ff742106f704c4b852baa7d10c1fdb13b0eb543514a55",
+      "translation": "OrientDig 두 점 세트의 국제 출고 전 구성 확인 방법"
+    },
+    {
+      "source": "Which retail packaging should you keep for an OrientDig parcel?",
+      "source_sha256": "b9474e2b28a378f8c5a0aea8c07e53ca75b4fe7794ebdfed799822ccf86cca5c",
+      "raw_target_sha256": "9364929554dec54d7f5ea6dc2605d439a8fc11659588ebd7478830ffa95bb989",
+      "translation": "OrientDig 소포에서 어떤 판매 포장을 남겨야 할까?"
+    },
+    {
+      "source": "Comparing OrientDig packed dimensions before you choose a route",
+      "source_sha256": "64b5d014174e8132c41400ca8fabb4c2ccec364bb043715206cebc7b7cac0963",
+      "raw_target_sha256": "f8e8bdd9614ae1feadf724cd1fcd5f0759268a55d30e6c7965023e0be30b136f",
+      "translation": "OrientDig 배송 노선을 고르기 전에 포장 후 치수를 비교하는 방법"
+    },
+    {
+      "source": "Reading OrientDig route exclusions before parcel submission",
+      "source_sha256": "48ab43072aa93935d70a6172880d44db7511bde6ad9153485aebea11e15d2dcc",
+      "raw_target_sha256": "1b3cf21c88d059ccc67c69b8880d7defeb967fd089f9d021615455ac1beca987",
+      "translation": "OrientDig 소포를 제출하기 전에 노선별 제한을 읽는 방법"
+    },
+    {
+      "source": "Following an OrientDig parcel when tracking passes to a local carrier",
+      "source_sha256": "13565a1c97b34251b5d925a54850ae953877d4f8d3c98ca174ab83b30e4844ee",
+      "raw_target_sha256": "efbde41ec47fa2f126d86472f37e0e08f1e48e23b3de4ef95fb0d0190b46e2aa",
+      "translation": "OrientDig 소포가 현지 배송사로 넘어간 뒤 추적하는 방법"
+    },
+    {
+      "source": "Writing an OrientDig shopping assistant request for an exact seller option",
+      "source_sha256": "5ebd81e10d795d6920bec4f2867cff56ff3166ead3df525a32fb9824d9fdade7",
+      "raw_target_sha256": "7c3d65e341f8274cdd38986a01092904c15adde6271097ee0baf4caa8fb113df",
+      "translation": "OrientDig 구매대행 담당자에게 판매자의 정확한 옵션을 지정하는 방법"
+    },
+    {
+      "source": "Articles",
+      "source_sha256": "b14ac78a46e90b7137f90518d51ce3677cf078db540d60d17097b6c40e25abf2",
+      "raw_target_sha256": "f77a9ef73a92993883d42f60d8c7076a0b4a219a99e5b2501489babd2ccb2418",
+      "translation": "글 목록"
+    },
+    {
+      "source": "Sources",
+      "source_sha256": "caf85b0888d78f1f83771a07b25c3d30fa1210242f2fae6e5ae5d9a686602800",
+      "raw_target_sha256": "ffa449b1814256e31b7673468aed0e3267bfb080fdc00fa6a1b3395b113d0d30",
+      "translation": "출처"
+    },
+    {
+      "source": "When can I ask OrientDig for a detailed photo?",
+      "source_sha256": "978c92e6cbd660228bdd345d7b66597489b7d2b7c28961fc12145cf689766d52",
+      "raw_target_sha256": "1221283fc290db339819706c44d9e11556b8bb8f11458cf5f3e11936560b0070",
+      "translation": "OrientDig에 상품 상세 사진을 언제 요청할 수 있나요?"
+    },
+    {
+      "source": "OrientDig lists detailed-photo requests at product ordering and after warehouse intake. Choose the item and specify the exact view needed, then check the service offered for that order.",
+      "source_sha256": "1e366e88542d78bc929f3a26e1fc553b0f447c40c8b138fb3068d68064c85967",
+      "raw_target_sha256": "c16ba69a8a5788d2ba036a460ed9bb5f592f8d4dc4c2e21eb43f9cde23e6fd31",
+      "translation": "OrientDig는 상품 주문 시점과 창고 입고 후의 상세 사진 요청을 안내합니다. 품목과 필요한 구도를 지정하고 해당 주문에서 제공하는 서비스를 확인하세요."
+    },
+    {
+      "source": "Which service shows my parcel before dispatch?",
+      "source_sha256": "a329492f86349e9d76aa54f95781d1b28dde36be5958da7e40fc64ab8a9822f3",
+      "raw_target_sha256": "3bf8c32fc8badb50107c0e2eaaddb5f02920da0272b51b7e2833454a3230e07a",
+      "translation": "출고 전 소포 포장 상태를 보려면 어떤 서비스를 선택하나요?"
+    },
+    {
+      "source": "OrientDig lists parcel photography separately from item photography. Choose a parcel view to inspect packing. Choose a detailed item photo when the question concerns a seam, label or measurement.",
+      "source_sha256": "675aaca2bcc292150f5c7af0cc04340114b592edeed4b7efb3ffde8f367514e3",
+      "raw_target_sha256": "cd33e2d65e652d432bd4f24d359b015f584548968a10b11b57e72a2e20d239ef",
+      "translation": "OrientDig는 소포 촬영과 상품 촬영을 별도로 안내합니다. 포장 상태는 소포 사진을, 솔기·라벨·실측은 해당 상품 상세 사진을 선택하세요."
+    },
+    {
+      "source": "What should a chest measurement request say?",
+      "source_sha256": "4ca518fdbfb46d50fb4524aa9dc4da980258e5c17dc1948ba4aa2e9d1ef85b63",
+      "raw_target_sha256": "aa2944f0f1bcfd02542b75eb0465f0c49d2631b09fec71f106b33216f74c1e81",
+      "translation": "가슴 단면 측정을 요청할 때 어떻게 써야 하나요?"
+    },
+    {
+      "source": "Name the item and option. Ask for the jacket closed, laid flat and measured from one underarm seam to the other, with both tape endpoints in the frame. Include the required unit.",
+      "source_sha256": "65478890cafb07d4b9da42c1bfa9cbaf2cbf7f3c260c178384cd2b3c2fad3354",
+      "raw_target_sha256": "3bf6cdd3c6c9bc8e8d771fbbbeab0ce3aef2b45d7561cb65d232d9b84982ebfd",
+      "translation": "상품과 옵션을 밝히고 재킷 앞을 여민 채 평평하게 놓아 한쪽 겨드랑이 솔기에서 반대편까지 직선으로 재 달라고 하세요. 줄자 양 끝이 사진에 나오게 하고 단위도 지정하세요."
+    },
+    {
+      "source": "How can I check whether a shirt has a curved hem?",
+      "source_sha256": "d6105094c4658f17801c6b3ffcf18de15102895a6515c5c674c3f090f13207c1",
+      "raw_target_sha256": "bdb0cf32c8c69125d73866ac6a5eb874ed18c5e45071f79452e3c0933d50a9ed",
+      "translation": "셔츠 밑단이 곡선인지 어떻게 확인하나요?"
+    },
+    {
+      "source": "Ask for the full front and side laid flat with the hem visible. A close crop can hide the difference between front and back length. Compare against the construction shown for the selected option.",
+      "source_sha256": "d75370e5809467671bf91d09d5c20925fd9dfd63cf31bfbab8c86329d5fad9a3",
+      "raw_target_sha256": "82d8579a4202d643bf1542d03f645c2302e77ddbaaa400ff812bf1ab02af14f2",
+      "translation": "셔츠를 평평하게 펴고 밑단 전체가 드러나는 정면과 옆면을 요청하세요. 잘린 사진은 앞뒤 길이 차이를 가릴 수 있습니다. 선택한 버전의 구조와 비교하세요."
+    },
+    {
+      "source": "How do I request the most useful picture of a fragile item?",
+      "source_sha256": "0633b5279651e7aff2a548dfb3a0c6fb2f81e7deea3ed50d58ebf54d1cdc307a",
+      "raw_target_sha256": "761e12ef3377fae7ae6c255958bd70a439cc3e0f0ecddad069d215c344dbe9ba",
+      "translation": "깨지기 쉬운 물건의 상태를 잘 보여 주는 사진은 어떻게 요청하나요?"
+    },
+    {
+      "source": "Specify the component and the possible problem, such as the handle joint or a chipped rim. Ask for enough of the whole piece to identify it and a close view that resolves the concern.",
+      "source_sha256": "4b332ca89fe0f8d02bd7b40b48db2ffcd2c4c7f06dc237b3df53d37016d5666e",
+      "raw_target_sha256": "f8db496db9c1f9640fbc73e3e912b5553d506a2073322d4416dbc4a762a34c8c",
+      "translation": "손잡이 접합부나 가장자리 이 빠짐처럼 부위와 우려를 특정하세요. 어떤 상품인지 알 수 있는 전체 사진과 해당 부분을 확인할 접사를 요청하세요."
+    },
+    {
+      "source": "Should I request a parcel photo to measure an individual shoe?",
+      "source_sha256": "83948a4d6628c76baea21c489d806cdc1a5ed3062bd8af90b04341366963e12c",
+      "raw_target_sha256": "0632069061bea6ffe83caeda2ee1461fa528d163999e28ccf993686985cae85c",
+      "translation": "개별 신발을 재려면 소포 사진을 요청해야 하나요?"
+    },
+    {
+      "source": "A parcel view documents packing. Ask for an item-level photo showing the specified shoe and measurement endpoints if your decision depends on fit.",
+      "source_sha256": "826f0c026054e20cf1e3d15fba2c0222459540a1f6ab47d03daf24c643a7cf76",
+      "raw_target_sha256": "229c5e8510a00c2c97fcd8f4e11c41c3bd50cc739953cfc19f3b22b4af3c0f33",
+      "translation": "소포 사진은 포장 상태를 기록합니다. 착용 여부를 판단해야 한다면 지정한 신발과 측정 양 끝점이 보이는 상품 사진을 요청하세요."
+    },
+    {
+      "source": "What does rehearsal packing help me check?",
+      "source_sha256": "caa4474f079a97288b75532f5d5a2022bee9dd0c01c1ba58a5b596f29f83cf51",
+      "raw_target_sha256": "4bdda841e8368e00dd6e00a784451e194105c00daf8fe39920da969133bf25a6",
+      "translation": "사전 포장으로 무엇을 확인할 수 있나요?"
+    },
+    {
+      "source": "OrientDig describes packing the selected items to obtain a parcel weight before submission. Keep the selected contents and packing instructions with the result, especially if you may change the parcel later.",
+      "source_sha256": "c6828d04a7ed1140db7c55ed9954c376bd5ddf42cc885765facbba5c09322932",
+      "raw_target_sha256": "8d178161667050b879c362ccd0109771b70a170de236472c6031a54c2178fcc4",
+      "translation": "OrientDig는 선택한 상품을 미리 포장해 정식 신청 전 소포 무게를 구하는 방법을 안내합니다. 특히 나중에 구성을 바꿀 수 있으면 선택한 내용물과 포장 지시를 결과와 함께 보관하세요."
+    },
+    {
+      "source": "Which result becomes stale if I add another item after rehearsal?",
+      "source_sha256": "d8ce7f7e45d6c3afaab6474af0c61e1f26fd9957cacdb89756b3846ccdd985c7",
+      "raw_target_sha256": "48ada00fbee508b63660a70b9db7959b9bcdc69d6415cdd848a95766616532a8",
+      "translation": "사전 포장 후 상품을 추가하면 어떤 결과를 다시 확인해야 하나요?"
+    },
+    {
+      "source": "The prior packed weight applies to the earlier contents. Recheck dimensions, weight and available routes for the revised parcel before relying on the earlier comparison.",
+      "source_sha256": "02c2d52f782c398e63d12833563fd519e266b9cac20bb0a91196998bd8353f72",
+      "raw_target_sha256": "785196950c896ea82c2fb3bfff57e10b48b2e4c1173427c90261b7ad75b53714",
+      "translation": "이전 포장 무게는 원래 내용물에만 해당합니다. 예전 견적 비교를 적용하기 전에 변경된 소포의 치수, 무게, 이용 가능한 노선을 다시 확인하세요."
+    },
+    {
+      "source": "How can I verify both pieces of a matching set?",
+      "source_sha256": "8d19665109b9e2c6318f53651225bf0b35fbf8b235e6bb13e958834b54e4ac3b",
+      "raw_target_sha256": "eb50b61ed6cd0a860e664d73f90c8b74ca8b39d2e68ad87dcdeec06924e9e1fa",
+      "translation": "세트 두 점이 모두 도착했는지 어떻게 확인하나요?"
+    },
+    {
+      "source": "Give the warehouse the selected seller option and name each included piece. Request a single overview showing both together before requesting detail photos of a particular piece.",
+      "source_sha256": "0129fbd4be138f2f85586520ebcb27709241d0325dbcedce160e0fb1e198ed0e",
+      "raw_target_sha256": "ef51f0ac79d302408b6f7eda7bcc2eceb5964c7f242601b4791e8947dc7be259",
+      "translation": "선택한 판매 옵션과 포함된 두 품목의 이름을 알려 주세요. 먼저 둘을 함께 보여 주는 전체 사진을 받고 필요한 경우 해당 품목의 상세 사진을 요청하세요."
+    },
+    {
+      "source": "What information helps identify two nearly identical orders?",
+      "source_sha256": "1718929ed3490d7e52bb754990e2cf8e013baafc1af8a659c6cd5f1e27d5eb31",
+      "raw_target_sha256": "c20315ec0141a8a0d0abf7c9b8dfb7e398a13512e560f21879202a067ff68391",
+      "translation": "거의 같은 두 주문의 상품은 어떤 정보로 구분하나요?"
+    },
+    {
+      "source": "Give the order references and each exact size or colour. Ask for separate views with the identifying label visible so that measurements do not get assigned to the wrong garment.",
+      "source_sha256": "bc83fa947e8440d11b951d0a3a9d5823e1a4ed6297bc7be91d6dfb5c4db83ae3",
+      "raw_target_sha256": "707f24205e99b31e41fa5a5bc6162ce638a8da266590e05bce464fc7df429247",
+      "translation": "각 주문번호와 정확한 색상·사이즈를 주세요. 식별 라벨이 보이게 각각 찍어 달라고 해 다른 옷에 측정값을 잘못 붙이지 않도록 하세요."
+    },
+    {
+      "source": "What if I cannot see the start of the tape in a detailed photo?",
+      "source_sha256": "1d4a8ad9255a6cd5696d2800389fee419a09e5510b6e1dee78ccbc432b3ea916",
+      "raw_target_sha256": "ba097bf79aaee8346a7ee9e563c106c885c3ff5a1188886203a7da0db3c364e4",
+      "translation": "상세 사진에서 줄자 시작점이 보이지 않으면 어떻게 하나요?"
+    },
+    {
+      "source": "Explain which endpoint is missing and request a full measurement view. A number at the far end is insufficient when the start may be folded, offset or outside the frame.",
+      "source_sha256": "12fad944808c6ef4f039d3eac3a4bfa21202b05e894c5930e4edae52780ebd2c",
+      "raw_target_sha256": "512c2279fa446460b6a5e73298c02bc59d7b263197365e97b285e9e67e2727c1",
+      "translation": "어느 끝이 빠졌는지 말하고 측정 전체 사진을 요청하세요. 시작점이 접혔거나 빗나갔거나 화면 밖일 수 있어 끝의 숫자만으로는 길이를 알 수 없습니다."
+    },
+    {
+      "source": "When should I look into a storage extension?",
+      "source_sha256": "d3aa29b485e647ec47326e23b6364c37c78b22fd844b3aa91b846be6aecd3c6b",
+      "raw_target_sha256": "2caa10340a877ce0303f51a441e2951ccaf6e5f2b4aa316a2be8e3ddaed84824",
+      "translation": "언제 창고 보관 연장을 검토해야 하나요?"
+    },
+    {
+      "source": "Check the intake date and deadline of each individual item. OrientDig's service page gives eligibility conditions for extensions. Confirm the item qualifies before waiting for a different order.",
+      "source_sha256": "3cb61fd23efa713771da88d9c863aca74e4a52158022cb931cd7d2057612df42",
+      "raw_target_sha256": "2f03d3dbcdca30e3df4a75bc29ed69134d5c7c57a78f948dab7cbde180af5145",
+      "translation": "상품별 입고일과 기한을 확인하세요. OrientDig 서비스 페이지에서 연장 조건을 안내하므로 다른 주문을 기다리기 전에 해당 품목이 대상인지 보세요."
+    },
+    {
+      "source": "How do I compare packing around two fragile components?",
+      "source_sha256": "591b149cab9a29c01b6418d7cc2651401061dafc1313c2d1db10295686418d40",
+      "raw_target_sha256": "64b213e18e1157e6a675ea31e016e7d84f1adaf6a174f3c98d45ebd2d0020b58",
+      "translation": "깨지기 쉬운 부품 두 개의 포장 배치를 어떻게 확인하나요?"
+    },
+    {
+      "source": "Describe which surfaces must not touch and which accessories should remain separate. Ask for a view before sealing if the arrangement affects your decision to dispatch.",
+      "source_sha256": "cecdcd4bc12204522d57588638573af71a87c0f08ba7b5b53ac8b39cf48e5cf8",
+      "raw_target_sha256": "ebb31c911b15b149257be5789463aa66573a5c208a8966e80dad708c3e9c575a",
+      "translation": "서로 닿으면 안 되는 면과 분리할 부속품을 알려 주세요. 배치가 출고 결정에 영향을 주면 밀봉 전에 배치가 보이는 사진을 요청하세요."
+    },
+    {
+      "source": "Can I compare seller measurements given from different starting points?",
+      "source_sha256": "538d6278abf3db43208e75c5982d3aba0d73227d54b78085196d35716cbe175b",
+      "raw_target_sha256": "8115e71f178aa92df12ef928513cc349ebe945d5ba208a544e61ded7d5229334",
+      "translation": "판매자별 측정 시작점이 다르면 그대로 비교할 수 있나요?"
+    },
+    {
+      "source": "First repeat both methods on a garment you own. For example, back length from the collar seam differs from length measured from the high shoulder point, even on the same jacket.",
+      "source_sha256": "0202543d38a8b4068fc072992d24f44108af4f610387eaee8de7a4b4691d9c37",
+      "raw_target_sha256": "81c5e79e73fbca6ac088d011b83897e8138064268625180822ae7578645fd75c",
+      "translation": "먼저 가진 옷 한 벌을 두 방법으로 각각 재 보세요. 같은 재킷이라도 뒤 목깃 솔기에서 잰 등길이와 어깨의 가장 높은 지점에서 잰 길이는 다릅니다."
+    },
+    {
+      "source": "What should I save when the warehouse confirms a request?",
+      "source_sha256": "5c88cd0a8089cb322dc15561fa128e173d29625d8474eb29fa96fa09139e6ab3",
+      "raw_target_sha256": "dbca992913559e38fe3b0ed46396322a30f46bf19a052dca8863053a4f0481ec",
+      "translation": "창고가 요청을 확인하면 무엇을 보관하나요?"
+    },
+    {
+      "source": "Save the item reference, your request and the returned image or result together. A parcel weight in a message can be hard to interpret later unless its list of contents is recorded.",
+      "source_sha256": "b6d5de727fd42fda4c2b500da08987384d2003b71c6383eefd56bf8d836c4991",
+      "raw_target_sha256": "e40cc322d9e87b90ad4f001d9b57776796a58ead840a35d706defeb981865f26",
+      "translation": "상품번호, 요청 내용, 받은 사진이나 결과를 함께 저장하세요. 구성 목록이 없으면 나중에 메시지에 적힌 무게가 어떤 소포의 것인지 해석하기 어렵습니다."
+    },
+    {
+      "source": "Which page lists prices for extra pictures and packing services?",
+      "source_sha256": "f27759207688f13590c51bd931d6558d08371b082fda4c30ec1d2d6627ccbc84",
+      "raw_target_sha256": "e5fa0087170c59d6488483cfa1e6000b0579b6bffc641dcab585774fd7a911a6",
+      "translation": "추가 사진과 포장 서비스의 요금은 어디서 보나요?"
+    },
+    {
+      "source": "Open OrientDig's Value Added Services page, then check the service and charge offered in your account. Distinguish charges per item, photograph and parcel when assembling a budget.",
+      "source_sha256": "e8e24fe2160300700bf4bed55d4daebc1fb92f64a05306aa8d24d49017fa1001",
+      "raw_target_sha256": "2c9039d650322aae45530b922ae4f4acc6be6998ae6bd71da3f53ab9605fd3d9",
+      "translation": "OrientDig의 Value Added Services 페이지를 열고 계정 안에서 제공되는 서비스와 요금을 확인하세요. 예산을 짤 때 상품당, 사진당, 소포당 요금을 구분하세요."
+    },
+    {
+      "source": "How can I keep the original retail box without confusing it with the outer carton?",
+      "source_sha256": "86ba00e78f676357006854952e638d03313e1b78a8dd4c458b8bed0d53dd8df1",
+      "raw_target_sha256": "0a67ada8ce6d7b1b5eaad5dee22fb807e7eb3965dcaedb81fc27ddc0a7e8bcb5",
+      "translation": "상품 원래 상자와 겉 배송 상자가 혼동되지 않게 보관을 요청하려면 어떻게 하나요?"
+    },
+    {
+      "source": "Identify the product box by the item and warehouse reference. State whether the branded box should remain with the item, then describe the separate protective shipping carton. Ask the warehouse to confirm the instruction before repacking.",
+      "source_sha256": "38da4ed7e0bbf4e7c10173125456a004b4288ce2b81ba222c8372eacc4fc72db",
+      "raw_target_sha256": "21dc54cd26535f158b7b42142c5ce884328354c317ae4ded8db58c3d654e82f1",
+      "translation": "상품과 입고번호로 소매 상자를 특정하세요. 브랜드 상자를 상품과 함께 남길지 쓰고 바깥 보호 배송 상자는 따로 설명하세요. 재포장 전에 지시를 이해했는지 확인받으세요."
+    },
+    {
+      "source": "Can I use a laid-flat chest reading as a circumference?",
+      "source_sha256": "59db4b27663c3168425a88f258ae6ceed26faee6a62b527401d389b588d83017",
+      "raw_target_sha256": "5f6c86dd882d1317986c0200b5727046d7947a9b306736c685323db426f4cf69",
+      "translation": "평평하게 잰 가슴 단면을 그대로 가슴둘레로 볼 수 있나요?"
+    },
+    {
+      "source": "The photograph records the distance between the two endpoints shown. Doubling a straight pit-to-pit reading gives an approximate circumference for comparison, provided the garment lies flat and you compare it with a garment measured the same way.",
+      "source_sha256": "cdff0e1dd57f814d88ba31b115fdac590172badea663158f6356e72675fe5154",
+      "raw_target_sha256": "e20ad9e52f1613fd5b37a6625cd0ec503e5a2a4bfc7ed6d81b2145573b1bd006",
+      "translation": "사진은 보이는 두 끝 사이 거리를 기록합니다. 옷을 평평하게 두고 겨드랑이 사이의 직선 단면을 두 배 하면 옷 둘레의 대략적인 비교값을 얻을 수 있습니다. 비교할 옷도 같은 방법으로 재세요."
+    },
+    {
+      "source": "Which tracking update confirms a local carrier has received my parcel?",
+      "source_sha256": "8861f82af4b5f0a1867390d3b0604356c10d28d269392ead291714889eba9270",
+      "raw_target_sha256": "9ccfe263e4066c0d68619c9da06f117922e662da84b93238f9469a286d392600",
+      "translation": "현지 배송사가 소포를 실제로 인수했는지 어떤 이력으로 확인하나요?"
+    },
+    {
+      "source": "Look for an acceptance or physical scan by the named carrier. An electronic notification can appear before that handoff. Save the tracking numbers for both legs so you can compare the two carrier histories.",
+      "source_sha256": "34c97d09b99da6130e9e98e5116cbca0532e090cc738cd7a1948c6cdc42da0ef",
+      "raw_target_sha256": "a62d2fb35d60035e468830a551038507c7627a4bda1a6d748b8bf5a33f4ec21b",
+      "translation": "해당 배송사의 인수 기록이나 실물 스캔을 찾으세요. 전자 통지는 실제 인계 전에 표시될 수 있습니다. 두 구간 번호를 보관해 각각의 배송사 이력을 비교하세요."
+    },
+    {
+      "source": "What details belong in a shopping assistant request for a multicolour listing?",
+      "source_sha256": "dc320e6f252f8433bf5febb0e3fe2e995cb4bc5fd288472664e0518704f13ac6",
+      "raw_target_sha256": "a4b963ffa4243ddef7c3e4f22ecaaeda830528775bc752a2362890fd2129ea8d",
+      "translation": "여러 색상이 있는 페이지를 구매대행에 요청할 때 무엇을 쓰나요?"
+    },
+    {
+      "source": "Provide the seller URL, exact option text, requested quantity and the colour shown in the selected variant. State whether substitutions are acceptable. A picture of the whole listing can show colours that are unavailable in your size.",
+      "source_sha256": "d1b89e013ec17af789c4cc948eea3d25a27469cd8062b4f2f067328d163b617e",
+      "raw_target_sha256": "bd1fdfbdf57fab2a759edb670b2a06a6b9c6c41c7a427f15cc1505d6362b2f56",
+      "translation": "판매자 주소, 정확한 옵션 원문, 수량, 선택 버전의 색을 쓰고 대체 가능 여부를 밝히세요. 전체 출품 사진에는 원하는 사이즈에서 선택할 수 없는 색도 보일 수 있습니다."
+    },
+    {
+      "source": "What should I compare when a logistics route disappears after repacking?",
+      "source_sha256": "8d771838c3aa1cb85072e5820aa8fc5050fab5d2e1a3e457c8dfddc05854b5eb",
+      "raw_target_sha256": "462972082e5af1e1eb49b1a90e979a566ee2c7bc1ca3f332fa4594e4ed8f49dd",
+      "translation": "재포장 후 배송 노선이 사라지면 무엇을 비교해야 하나요?"
+    },
+    {
+      "source": "Compare the destination, declared contents, packed length, width, height and weight before and after the change. Check the selected route’s published conditions and ask support about the specific changed field if the estimator gives no explanation.",
+      "source_sha256": "1f404efb07aa8cdb1ff8ec880dbe7eda80f0caf3225251eb10862d090443a7eb",
+      "raw_target_sha256": "a088561f175a16ee3e132cac01fa2f76f70e0ab38fb3c32e6b9e5d4ad7429c19",
+      "translation": "전후의 목적지, 신고 내용물, 포장 길이·폭·높이·무게를 대조하세요. 해당 노선의 공개 조건을 보고 견적 화면에 이유가 없다면 바뀐 입력 항목을 특정해 문의하세요."
+    },
+    {
+      "source": "Consider a hypothetical chart with a chest figure of 110 centimetres. If it describes the full circumference of a finished, symmetrical garment laid flat, a width near 55 centimetres may be consistent. If it describes the body for which the garment was designed, simply halving the value does not tell you the finished width. Pleats, layering, thickness and style can all change the relationship. When the chart is ambiguous, request an observable flat width and compare it directly with your own reference. Avoid treating an inferred conversion as a confirmed specification.",
+      "source_sha256": "d7f2d42545c1900401b8bcb3da28ae121866479b5a48efc982b92cba5f698671",
+      "raw_target_sha256": "76b3790d636ad03e0635a08e336990f795f7707ae2fbf00801dad8b284757613",
+      "translation": "치수표에 가슴 110센티미터라고 가정하세요. 대칭인 완성 옷의 전체 둘레라면 펼친 단면 약 55센티미터와 맞을 수 있습니다. 권장 착용자의 몸둘레라면 절반으로 나눠도 옷의 단면은 알 수 없습니다. 주름·겹·두께·재단이 관계를 바꿉니다. 모호하면 실제 평평한 단면을 요청해 가진 옷과 직접 비교하고 추정치를 확정 사양으로 보지 마세요."
+    },
+    {
+      "source": "Suppose your reference measures 62 centimetres from the back collar seam while the seller lists 66 centimetres from the high shoulder point. These hypothetical numbers do not demonstrate a four-centimetre error. Before making a decision, measure your reference by both methods or request the seller's path on the new piece. If you particularly need to know how far a jacket reaches in the back, prioritize the centre-back result even if the seller's chart uses the shoulder. The purpose is a usable comparison, not forcing two unlike measurements to match.",
+      "source_sha256": "79f8485f9483a6e0aeabe6a714baeeff2781fe76811f8d6107bc57a9a70c5fb6",
+      "raw_target_sha256": "87e9326e9e2738d59abd561b36280e8c34c8df7d62da5d1218b7e266ae35115e",
+      "translation": "내 옷은 뒤 목깃 솔기에서 62센티미터, 판매자 표는 높은 어깨점에서 66센티미터라면 4센티미터 오류를 입증하지 않습니다. 내 옷을 두 방법으로 재거나 새 옷에서 판매자 방식을 확인하세요. 뒤에서 어디까지 내려오는지가 중요하면 판매자 표가 어깨 기준이어도 등 중앙 길이를 우선하세요. 서로 다른 측정을 억지로 같게 만들 필요는 없습니다."
+    },
+    {
+      "source": "Imagine a hypothetical retail carton measuring 18 by 15 by 14 centimetres. An outer shipment box needs to be larger if space is used to protect the original carton. Entering the retail dimensions into a route comparison would understate that scenario. There is no need to invent a standard allowance for every parcel. Mark the figure as unknown until you have a plausible outer size, and test several clearly labelled possibilities if you need an early budget. Use the actual billing rules shown for each route rather than assuming a single volume formula applies everywhere.",
+      "source_sha256": "049adff8756716fd8294a2f5e8b27fe34b2d1e24dd5d592eb819e854cf1b7214",
+      "raw_target_sha256": "cf01f5a662fbdbb096aa884ed86dc3b2a337792735d049d9fdcd3d0ba6118bc8",
+      "translation": "소매 상자가 18×15×14센티미터라고 가정하세요. 원래 상자를 보호할 여백이 필요하면 배송 겉상자는 더 큽니다. 소매 상자 치수만 입력하면 해당 안을 과소평가합니다. 모든 소포의 여백을 일률적으로 가정하지 말고 타당한 외부 치수가 나올 때까지 미확인으로 적으세요. 이른 예산은 가정을 밝힌 몇 가지 안으로 시험하고 각 노선의 실제 과금 규칙을 사용하세요."
+    },
+    {
+      "source": "Consider a hypothetical case in which your reference shorts measure 36 centimetres across the relaxed waistband and the warehouse photo seems to show 72 centimetres. Before deciding there is an enormous difference, verify whether one number refers to the full circumference. Also inspect where the tape begins and whether the garment is stretched. A chart may quote recommended body circumference instead of finished garment circumference. Name the measurement type when asking for clarification. Correcting a unit or endpoint misunderstanding can resolve a concern without changing the order.",
+      "source_sha256": "f027cf5ec61fa64e3032aa48923b112f01db44d9aa2096944718ddaf337e2e16",
+      "raw_target_sha256": "d50187e61b2e5e6c12962ba184e63be5c51c88395ac8c7533b4876a2b263d6c7",
+      "translation": "기준 반바지의 늘리지 않은 허리 단면이 36센티미터인데 창고 사진은 72센티미터로 보인다면 큰 차이라고 단정하기 전에 하나가 전체 둘레인지 보세요. 줄자 시작점과 옷을 늘렸는지도 확인하세요. 표는 완성 옷의 둘레가 아닌 권장 신체 둘레일 수도 있습니다. 측정 유형·단위·끝점을 명시하면 주문을 바꾸지 않고도 의문을 풀 수 있습니다."
+    },
+    {
+      "source": "As an illustration, compare a rectangular box measuring 32 by 22 by 13 centimetres with a flatter arrangement of 32 by 22 by 8. Their external volumes are 9,152 and 5,632 cubic centimetres respectively. That difference of 3,520 cubic centimetres is a change in physical volume. It is not a guaranteed monetary saving. The shipping carton may have different dimensions, another item may already determine its height or the selected route may bill on actual weight. Use the example to identify a question for the estimator, not a discount to subtract from your budget.",
+      "source_sha256": "d59ce237e674d3e68df546a662a2a369c8d5d79e728da0756d55090686784373",
+      "raw_target_sha256": "8b2b70ff3577ece8b031be52a8c68290f6e323452494abcb5740be30024b4c5a",
+      "translation": "32×22×13센티미터 상자와 높이를 낮춘 32×22×8센티미터 배치를 비교하면 외부 부피는 각각 9,152와 5,632세제곱센티미터로 차이는 3,520세제곱센티미터입니다. 이는 공간 차이지 보장된 금액 절감이 아닙니다. 겉상자 치수가 다르거나 다른 물건이 높이를 결정하거나 노선이 실중량 기준일 수 있습니다. 견적에서 확인할 조건으로 쓰고 예산에서 임의의 할인을 빼지 마세요."
+    },
+    {
+      "source": "Enter all external dimensions in the units the selected calculator expects. A box measuring 0.4 metres in length is 40 centimetres, and 400 millimetres is the same length again. A typo can move a route outside its size limits by a factor of ten. Confirm that the numbers describe the outer packed carton rather than the product itself or the internal space. Write the units next to every dimension and the actual mass. When sharing measurements with another person, a bare sequence such as “40, 30, 20, 3” is too easy to misread.",
+      "source_sha256": "2b5065e1bf6f02deefe0ce12f8e6b254ceeb37c39943118b318876f2cc29af3a",
+      "raw_target_sha256": "ea5ce668fd45487db55074ce44d05a3ac5f77e62aec749d6e5e1043944e5bf63",
+      "translation": "계산기가 요구하는 단위로 각 외부 치수를 입력하세요. 길이 0.4미터는 40센티미터이고 400밀리미터입니다. 오타 하나로 수치가 열 배 달라져 노선 제한을 벗어난 것처럼 보일 수 있습니다. 제품이나 내부 공간이 아닌 포장 완료 겉상자를 재고 각 치수와 실중량에 단위를 붙이세요. ‘40, 30, 20, 3’만 전달하면 오해하기 쉽습니다."
+    },
+    {
+      "source": "Multiply the three external dimensions to obtain the parcel volume, keeping the cubic unit. For example, a hypothetical 42 by 30 by 20 centimetre box occupies 25,200 cubic centimetres. Reducing its height to 16 centimetres gives 20,160 cubic centimetres, a reduction of 5,040 or one fifth of the original volume. This describes space, not money. The route's billing method and rounding determine whether the reduction changes the charge at all. The same difference in volume can matter differently across routes.",
+      "source_sha256": "107f4c5d3bc0480b29bad7aff12cea24f9f87a929074a8bb77738565626655ca",
+      "raw_target_sha256": "2f556ba3497793b78fc85ab784048c962e408a24c0fc8af528268acf6ab66362",
+      "translation": "세 외부 치수를 곱하고 세제곱 단위를 붙이세요. 42×30×20센티미터 상자는 25,200세제곱센티미터이고 높이를 16센티미터로 줄이면 20,160세제곱센티미터로 5,040세제곱센티미터, 즉 원 부피의 5분의 1이 감소합니다. 줄어든 것은 공간입니다. 요금은 과금 방식과 올림 규칙에 따라 달라져 같은 부피 차이도 노선마다 결과가 다릅니다."
+    },
+    {
+      "source": "Use a calculation only when its assumptions are explicit. Suppose an illustrative route divided the example box's cubic centimetres by 6,000. The larger arrangement would yield 4.2 kilograms and the smaller 3.36 kilograms before any rounding. If the real parcel weighed 5 kilograms and the hypothetical rule charged the higher value, the physical mass would exceed both dimensional figures. In that example, a one-fifth reduction in volume would not reduce the comparison weight. With a much lighter parcel, the same dimensional change could matter. These figures illustrate the decision, not OrientDig tariffs.",
+      "source_sha256": "dacc41c52a8289a61bb1b6616867653808b11c3500b73fb22429849faf17a7cd",
+      "raw_target_sha256": "9b21408984afb3956ca872220312302ca4dc124b2650b07064eb7bd635a503a8",
+      "translation": "예시 상자의 세제곱센티미터를 6,000으로 나눈다는 조건이라면 큰 배치는 4.2킬로그램, 작은 배치는 3.36킬로그램의 부피무게가 됩니다. 실중량 5킬로그램이고 둘 중 큰 값을 쓰는 가상 노선이면 실중량이 둘 다보다 커서 부피를 5분의 1 줄여도 비교 중량은 낮아지지 않습니다. 훨씬 가벼운 소포라면 다를 수 있습니다. 이는 판단 예시이며 OrientDig 요율이 아닙니다."
+    },
+    {
+      "source": "Imagine comparing a 60 by 20 by 15 centimetre box with a 40 by 30 by 15 centimetre box. Each occupies 18,000 cubic centimetres. If a hypothetical route accepts a maximum side of 50 centimetres, the first shape would fail that single condition and the second would pass it. Passing one rule does not establish complete eligibility, because contents, weight, destination and other size limits may still apply. This is why the three individual sides belong in your saved comparison, not just the computed volume.",
+      "source_sha256": "d305fd6bf23df4ab18cc96b5827cfadf0f50bd05e16523c11bc3f3faf37dddaf",
+      "raw_target_sha256": "b8a71bb835edaf54fae732327df979752bb3a6051985c6f5d293ed3feb9af353",
+      "translation": "60×20×15센티미터 상자와 40×30×15센티미터 상자는 모두 18,000세제곱센티미터입니다. 가상 노선의 한 변 상한이 50센티미터라면 첫 상자는 이 조건을 넘고 두 번째는 충족합니다. 내용물·무게·목적지·다른 치수 제한도 적용될 수 있으므로 한 조건을 통과했다고 전체 이용 가능이 확정되지는 않습니다. 비교 기록에 부피와 세 변을 모두 쓰세요."
+    },
+    {
+      "source": "For a hypothetical illustration, suppose an item sits in a rigid 48-centimetre retail box and a candidate route lists a 50-centimetre maximum side. Entering 48 gives only two centimetres for outer packaging and protective space across both ends. That may or may not be feasible. Rather than assuming the carton will fit, ask for the outer packed dimension or compare a clearly identified alternative. If discarding the retail box is the only apparent solution, decide whether it is required for protection or presentation before authorizing any change.",
+      "source_sha256": "7ca13bbf3ad3d2528d12bcdbb7f8ff157adb7d3be7fb49a950b39c7ec3b840a6",
+      "raw_target_sha256": "2cd649c6053de05b5deb6dd8f0362c77785407556661f7f2b25981a38c645bac",
+      "translation": "딱딱한 소매 상자의 길이가 48센티미터이고 후보 노선의 한 변 한도가 50센티미터라면, 48을 입력했을 때 외부 포장과 양 끝 완충 공간에 남는 것은 합계 2센티미터입니다. 실제로 가능할지는 모릅니다. 포장 후 외부 치수를 요청하거나 분명히 표시한 대안을 비교하세요. 소매 상자 제거가 유일해 보이면 보호나 선물 포장에 필요한지 살핀 뒤 변경을 승인하세요."
+    },
+    {
+      "source": "Decide what would make you accept or question the item",
+      "source_sha256": "2aca7faacaabd9255cef17b4f0e51d766f018e4ce906edf15eb14ba85060c5bb",
+      "raw_target_sha256": "bf0fbd96ff8352b2cc7a7b99d30d6be925fcf12303fadcae0052bccdf0879edb",
+      "translation": "어떤 결과가 수락 또는 추가 확인으로 이어질지 정하세요"
+    },
+    {
+      "source": "Identify the physical unit before describing the shot",
+      "source_sha256": "1bce138fdfa2af65878021e0e996e8674acf0f2a1f6827f327382bdac78b161d",
+      "raw_target_sha256": "f7c95f26e9ffe1a4575fed30fc08a8fe599f4861f3930ece3db510cd456796d0",
+      "translation": "사진 구도보다 먼저 대상 현품을 특정하세요"
+    },
+    {
+      "source": "Specify the angle and the feature in ordinary language",
+      "source_sha256": "03557f4dee65382e8666d620eda04cb715f882f2eaf7886706cb6929db14503f",
+      "raw_target_sha256": "4d32b567e5c2e25de6c2d69a51ce994c873f58e605fba3eec1dc88fe005734f6",
+      "translation": "일상적인 표현으로 각도와 확인할 특징을 밝히세요"
+    },
+    {
+      "source": "Give a measurement two endpoints and a unit",
+      "source_sha256": "8fcdec3d32009f5e21654516225c5f593996bb9a6a4ad6230550d12a92ba5fba",
+      "raw_target_sha256": "21bb1baf9a49b4e2bc6366c4bbc312fc1b9bbcb116fab828a7b63ddeee17e313",
+      "translation": "측정 양 끝과 단위를 지정하세요"
+    },
+    {
+      "source": "Use a reference image to clarify rather than prove",
+      "source_sha256": "7abeed4267e4414c83015bc73cfcb691f045678a40ee2dd87903f467a33ee2ef",
+      "raw_target_sha256": "6c4fc85b03a0f03abf5856bb720ef4cf2ab6d987ce6c2c15520ad4793b8d6d9c",
+      "translation": "참고 이미지는 확인할 부분을 설명하는 데 쓰세요"
+    },
+    {
+      "source": "Review the result against the request line by line",
+      "source_sha256": "fe910e16c6ff46f6c0da7b851dfa9433ce84587e4de75b01fa5afa315491258a",
+      "raw_target_sha256": "7db87047a139784e6c67a6c63be54e1123c23c7348eb9c46c726018c48e88009",
+      "translation": "받은 결과를 요청 내용과 항목별로 대조하세요"
+    },
+    {
+      "source": "Stop when you have enough evidence for the decision",
+      "source_sha256": "ca8c3aedee588d78c2d4aa91c395d4d028484012f3ad7d931d51f1a6640e6a89",
+      "raw_target_sha256": "03d1e867f9c5eabb34e9f1bea16c28e00ab0bca799213407e20a1dcc50b82a12",
+      "translation": "판단에 필요한 증거가 모이면 점검을 마무리하세요"
+    },
+    {
+      "source": "OrientDig detailed photo guide",
+      "source_sha256": "5f0f2a75ead15a2b6df52011b034c95819509be61b58fac80110deae3ad2cf3e",
+      "raw_target_sha256": "c3ad41e72f1a1ec88580b72708ab25ca35a60915c3ff78996ed05d758d89e4e9",
+      "translation": "OrientDig 상세 사진 안내"
+    },
+    {
+      "source": "OrientDig value-added services",
+      "source_sha256": "05c6c176193721f3c3f945bd542310d01fb7eaec38bebe0ab5685b28ebf68d1d",
+      "raw_target_sha256": "6747d0103d1c7b034dfaec481616f46dc44343313a203faf8fed5bb03d732951",
+      "translation": "OrientDig 부가 서비스"
+    },
+    {
+      "source": "Choose a comparison garment with a similar shape",
+      "source_sha256": "8cacdd5aae85922ff6007103d1e299a8ea2e3b5dd7c71844ecd31ca0e8f4d5c5",
+      "raw_target_sha256": "09cb2144f9f0c3ad2d8ba4431aa633a23fa302ef80aec0ab0829dfaf9dd7e903",
+      "translation": "비슷한 형태의 기준 옷을 선택하세요"
+    },
+    {
+      "source": "Read the seller's diagram before naming a dimension",
+      "source_sha256": "7aa3a1dec19f33d2e5b20b99d5680af95df4e1446305a4c1adb893526831e776",
+      "raw_target_sha256": "744a56d074666b8742b039bf2da9d90ce50464a2bbf2f4d54a439c484f0550f2",
+      "translation": "치수 이름을 정하기 전에 판매자 측정 도식을 읽으세요"
+    },
+    {
+      "source": "Request chest width in one continuous view",
+      "source_sha256": "a3a39382c535c0e07088ad9ad8e4d45022c7ef2c53d2f2b827f81b93ac822479",
+      "raw_target_sha256": "9be8a885dd319e751a038e4d27a973b0e72f7403759ea3ab2963f5de8f0745cf",
+      "translation": "가슴 단면의 양 끝을 한 장에 담아 달라고 하세요"
+    },
+    {
+      "source": "Distinguish centre-back length from high-shoulder length",
+      "source_sha256": "51b85f3732e66ad247430534da8c032e348e46d08a551a7cc510149da5867551",
+      "raw_target_sha256": "1b3f651ccbfe087c0c1c5eec888cf6175a2da38b5cb6ec5fdecc67aacd4e8523",
+      "translation": "등 중앙 길이와 높은 어깨점 기준 길이를 구분하세요"
+    },
+    {
+      "source": "Match sleeve measurements to the construction",
+      "source_sha256": "51349d99eeafc2170919b10c5ab2bb0b18c7fbcd02da395aae23148d3d7778b4",
+      "raw_target_sha256": "dd94ccb606dd88bb80bb7f9a7c32aebcf9cf48a9431cfc249535eff262b58086",
+      "translation": "소매 구조에 맞춰 측정 지점을 선택하세요"
+    },
+    {
+      "source": "Evaluate elastic, cuffs and layered construction",
+      "source_sha256": "6d89e1d1334e4375c8e3df8219fb481b2ebc6b65d2602dcb5d53cbf4975a5c2c",
+      "raw_target_sha256": "362d98cb96362cefd684b2c6cd69380a14ebcb0ecc1dd9068e80579d77499b8f",
+      "translation": "고무밴드·소맷단·겹 구조를 살펴보세요"
+    },
+    {
+      "source": "Make a decision the evidence can support",
+      "source_sha256": "804ee25bf0fec84678fdc6485d9248d089097f2ed8b487421bf2ec90629f306c",
+      "raw_target_sha256": "dfb65a8750b897308546d1c9ce676ce3fe48b79ac97356859ebb92d6e30ff715",
+      "translation": "확인된 증거에 맞게 판단하세요"
+    },
+    {
+      "source": "OrientDig detailed photo instructions",
+      "source_sha256": "89f521122f759c9da69b9640784081845a686cabd45679bf3087c473c5dfcaec",
+      "raw_target_sha256": "ab9f059eb73dde9406c7abfbcfb7f7225b48443d49f960432bf1f15d7421b368",
+      "translation": "OrientDig 상세 사진 신청 방법"
+    },
+    {
+      "source": "OrientDig services for measurements",
+      "source_sha256": "30b2d966a513ab0d56e910c1f1e92ee60e2798816d82ff811cad08b578afc590",
+      "raw_target_sha256": "9727e24ccd22d7f01a81fc0508c36ee9aa803786c4abbdd756a4a5b9b328c9e6",
+      "translation": "OrientDig 실측 관련 서비스"
+    },
+    {
+      "source": "Start with the part most likely to suffer damage",
+      "source_sha256": "ae660b381615524d5b9a1e72908e73e7300ef24bb72c8ea9a6f999df33336dde",
+      "raw_target_sha256": "dd4ea1213259ee3b6da6d57ff0a03ffbd73b677c8722bc931a5c13563b7e13c4",
+      "translation": "가장 손상되기 쉬운 부분부터 찾으세요"
+    },
+    {
+      "source": "Decide what role the seller's packaging plays",
+      "source_sha256": "d0f6721f61451ac58798245ec8fe848e6ee3e319ab5351d8776dda99d29f3502",
+      "raw_target_sha256": "4c25144233506b380df47be576711ed4b4d3ab76fd513f2ca99c02d8023fda7d",
+      "translation": "판매자 포장의 역할을 확인하세요"
+    },
+    {
+      "source": "Check how the fragile piece interacts with the other contents",
+      "source_sha256": "d395889d8655f2fbff5766d838826b9907113c56efd709bbe1f5e9c9eb8fd379",
+      "raw_target_sha256": "3165b399439c2bb5beadad81a44c35e85bd002fda3a24e1d37d6650ce8998b2b",
+      "translation": "깨지기 쉬운 물건과 다른 내용물의 접촉을 살펴보세요"
+    },
+    {
+      "source": "Ask for evidence at the point when it can still help",
+      "source_sha256": "ff0056051ea2f58defd4816751949515c9b3ea72ae9c164aefb287a556119645",
+      "raw_target_sha256": "0ce49970c2e241b2b4ef4d8a1e5eaa4de4f10b7f37c42400b9f7c5bd4c1768e8",
+      "translation": "아직 조치할 수 있을 때 증거를 요청하세요"
+    },
+    {
+      "source": "Account for the space that protection requires",
+      "source_sha256": "be70b9e734f3dfdd7cbdc495436f67f0ae8fa6fb890e5248faacdef641c5432a",
+      "raw_target_sha256": "d4452c94d534f6bba874b43d17ade290a5a74395af4c782cda93ccb9ea6ce1e3",
+      "translation": "보호재가 차지할 공간을 고려하세요"
+    },
+    {
+      "source": "Read the service conditions in terms of your particular object",
+      "source_sha256": "ed308a328f1eceb37419be0b72197bb43104e45b498e9952d03fd058fa7f1efc",
+      "raw_target_sha256": "99b0a1e558343461c9335ecad2b323faf9cc4e73c0f2f8404b229e45e568b5e2",
+      "translation": "해당 물건에 맞춰 서비스 조건을 읽으세요"
+    },
+    {
+      "source": "Examine the delivered parcel before discarding its packaging",
+      "source_sha256": "f13945c344e46b02434266afe85d02852da54fa0bba882511e9cc7be06e5b50f",
+      "raw_target_sha256": "74cdf2cebbcd4865eee2f641721092db697bcda5377f349444dc5aa08e3f4899",
+      "translation": "포장을 버리기 전에 받은 소포를 점검하세요"
+    },
+    {
+      "source": "OrientDig logistics stages",
+      "source_sha256": "aff5a89784afd082f0df28c7894ed838b3ca266f12fc42e201f11713761ef7b4",
+      "raw_target_sha256": "ce9a14ad69ad52b37ac4e2634363f431a034e9643cb00f57837644d5728c0f4c",
+      "translation": "OrientDig 물류 단계 안내"
+    },
+    {
+      "source": "Give the purchase a unit list before tracking starts",
+      "source_sha256": "8c9ead747b4ce8320d6488e7bec9792eaeb522b9ce51942ffe5f1c8c9a29361d",
+      "raw_target_sha256": "4ecd1c528c316657628903fedc925b96beee289ccf9cc9158d1aa2078cdd8987",
+      "translation": "추적 전에 구매한 현품 목록을 만드세요"
+    },
+    {
+      "source": "Separate the marketplace identifier from both tracking numbers",
+      "source_sha256": "78c7599ef3f9ae3d918c12041a44f80d04e2882a82dfc8df0ca593377c961c3c",
+      "raw_target_sha256": "bc005c8bcc92b69bc4b58b946350b15ffd2461332e231ac11b8cdf8d55a753e6",
+      "translation": "상품 페이지 번호와 국내·국제 운송장을 구분하세요"
+    },
+    {
+      "source": "Map one seller to several domestic shipments",
+      "source_sha256": "74654303f99868fbc9f50f133f880e0ab9e4b48dd8a6b350f415df203061ddcc",
+      "raw_target_sha256": "83edc6d9316823e41405fb2fcf8e63aae173ad698b93953c1467f5adc55e40ed",
+      "translation": "한 판매자의 여러 국내 발송을 연결하세요"
+    },
+    {
+      "source": "Check the strongest identifying details first",
+      "source_sha256": "4bbd30c93a9c36e8bc58a5bdc5deec23aa592869b9059ca30f8653ee4002f10d",
+      "raw_target_sha256": "76b0734b3fb52da85ea92d88d037bf29569fa5b26eda14008931c343fb727344",
+      "translation": "식별력이 높은 특징부터 확인하세요"
+    },
+    {
+      "source": "Distinguish three kinds of missing-item question",
+      "source_sha256": "b3ac374b2d93395451759ca6c33334a0aedc832833925ad2010f6802fa346459",
+      "raw_target_sha256": "4a649b19d6816c69eb7fe949bd0d4645beeac7602491636fe4fb722366fda711",
+      "translation": "상품이 보이지 않는 세 가지 경우를 구분하세요"
+    },
+    {
+      "source": "Reconcile a corrected or exchanged unit without losing the history",
+      "source_sha256": "8a82b87b1d3f939fe4f46b401850415fbce60c5221b8bfc3562a6cb3371170d9",
+      "raw_target_sha256": "510f4417e2ef528e8aba4deecc2a8a4a2e58fa051c929a4e6055cf1e2e7a89ff",
+      "translation": "정정·교환품을 이전 이력과 함께 대조하세요"
+    },
+    {
+      "source": "Submit the international parcel from the reconciled list",
+      "source_sha256": "2c799e1b94d4bfe40d8ccdddf0e172cf94d02088b0f3136a9d9e80cd276e5239",
+      "raw_target_sha256": "5d6c1b363cca8c881d0c00007dd404e4afd1e0973b58a97127eab72f35735839",
+      "translation": "대조를 마친 목록으로 국제 출고를 신청하세요"
+    },
+    {
+      "source": "OrientDig shopping assistant guidance",
+      "source_sha256": "586fdbf96b4d59a64a1704b24f3c4d586c88645ff5ef78219ffe84e1474a51d1",
+      "raw_target_sha256": "9cfd3e306c1c638a933a57e919d4c19210890b21a3be55d7d4abb400ffcac63a",
+      "translation": "OrientDig 구매대행 설명"
+    },
+    {
+      "source": "Read the selected offer one piece at a time",
+      "source_sha256": "791d539989337cb4cbfd549fd6f53c41863ff9cb75aa793352764fba7666ca2e",
+      "raw_target_sha256": "5bdf3d85d7190509f2336a6411d8bdd59d514939ae4a5adbd3e6abeb72b9b1e5",
+      "translation": "선택한 판매 구성에서 품목을 하나씩 확인하세요"
+    },
+    {
+      "source": "Match the ordered size combination to the set",
+      "source_sha256": "69830b56162bbc9ee158e82595f91728e0f57142fce9662dabc9bf269254198f",
+      "raw_target_sha256": "b99a8afaec611c3876a03404c98d4d5178d2e3c72382d593368a995f8933f64d",
+      "translation": "주문한 사이즈 조합이 세트와 맞는지 보세요"
+    },
+    {
+      "source": "Establish that the parts belong together",
+      "source_sha256": "2e722849d035db8822281e4585a64d9b0ea306f1e25f0395540e79a4b6cf9791",
+      "raw_target_sha256": "7aee4a09e8ee06064a728480688afc9bebbc260b2f52d839b14a651c021e5a16",
+      "translation": "각 부품이 같은 세트에 속하는지 확인하세요"
+    },
+    {
+      "source": "Request the one missing piece of evidence",
+      "source_sha256": "4fda4674fbf8c2e12ef5b34e71bd690f8c2334b03126ba6791c005a7ccda8575",
+      "raw_target_sha256": "0c238c82a4bfc11d91545c7630f6c2aff41c7c57c71136a5816f539e6237d8d1",
+      "translation": "빠진 증거를 하나씩 구체적으로 요청하세요"
+    },
+    {
+      "source": "Evaluate fit without mixing body and garment figures",
+      "source_sha256": "5369e7c4912411d88f116c1587a008624638cde061eaece9f7a5a4088f52b846",
+      "raw_target_sha256": "2104456d4842b08332b717ab5da4baf8de79cdcb4437dc167a0e7dc7ab82bdb3",
+      "translation": "신체 치수와 옷 실측을 구분해 착용감을 판단하세요"
+    },
+    {
+      "source": "Handle a partial mismatch as a set-level question",
+      "source_sha256": "9733926e20b35abcee608f4e7206714b1b27e63ca11db699d6f44ea0c4bec576",
+      "raw_target_sha256": "36ce478dc11c751dbca6ca227d8ef7221eaa9cf5a860d45677fabcb0f0754b39",
+      "translation": "일부 불일치라도 세트 전체의 처리 조건을 확인하세요"
+    },
+    {
+      "source": "Check both pieces at packing and receipt",
+      "source_sha256": "89090f31e11caa1eef61c191019405ba85c04b160e32dba1b44f039fbc22d84c",
+      "raw_target_sha256": "24598d2c1b5fa8ed02938206466dddb72ef9a6779d5b829336b28c955a507090",
+      "translation": "포장 시점과 수령 시점에 두 점 모두 확인하세요"
+    },
+    {
+      "source": "OrientDig shopping assistant guide",
+      "source_sha256": "aefb7382c4836ff505eb10a7f3bed8e63f86b075afae81534fed49fd13c6719c",
+      "raw_target_sha256": "b36b146e704042dc4fd4e2bff559190d95fbc33367a677d463d2f95a0384d209",
+      "translation": "OrientDig 구매대행 안내"
+    },
+    {
+      "source": "OrientDig detailed photo service",
+      "source_sha256": "8dfa00ee9a7c77ed9d7834ef2573cb30e8beead435c23999df77c530b1c1e6c2",
+      "raw_target_sha256": "320baf95efcfe9c27e77274c6db748ab37ea19c2d5bd71ef304d1480fa6db3a9",
+      "translation": "OrientDig 상품 상세 사진 서비스"
+    },
+    {
+      "source": "Identify the packaging layer you are talking about",
+      "source_sha256": "c63cd70be88ac9a366533c0fb0180a69080c9c1762a63dd84c9adb8907f13add",
+      "raw_target_sha256": "0d787928ab5c3fab657711bf09c835ae7a9ea7904c490d6342329351b4772dc1",
+      "translation": "어느 포장 층을 말하는지 특정하세요"
+    },
+    {
+      "source": "Separate protection, presentation and evidence",
+      "source_sha256": "bc543ed1f95383d6424600222070dd3f1ead35096617e2774753b0c1f699fac6",
+      "raw_target_sha256": "7c6759ce266527182f410030d5215d86e03cb35a3402e0ec066bf9ec292b8a17",
+      "translation": "보호·선물 포장·증빙 역할을 구분하세요"
+    },
+    {
+      "source": "Compare actual mass with the space the box uses",
+      "source_sha256": "bb6c0ef07ab2f6cf6e02523da4542ae97ab49cc1d7bc2cb8e3c2ba38b87437c1",
+      "raw_target_sha256": "8b4d8769d549ce83e9813242d481b7d239fb6477c3bbc8554bae06abe81155f5",
+      "translation": "실중량과 상자가 차지하는 공간을 비교하세요"
+    },
+    {
+      "source": "Compare scenarios for the entire parcel",
+      "source_sha256": "e22c456801da60e152334fc86f5321d25308ed568bbab989152ba4a1172ff427",
+      "raw_target_sha256": "2d48bd7a91e23dba99e123b696941c9833ce3c1da3698b193d025c61cf693189",
+      "translation": "소포 전체를 기준으로 포장안을 비교하세요"
+    },
+    {
+      "source": "Avoid exchanging a known benefit for a speculative saving",
+      "source_sha256": "6e87cb02dafaf78a71265aa3264ddab8e2c0e3195dffdc7a34f53b925d1749ce",
+      "raw_target_sha256": "ac0b79106110f6792d1a0393ce594a08034bad536facf9e5b8f186d4db8ddd66",
+      "translation": "불확실한 절감을 위해 확인된 보호 기능을 포기하지 마세요"
+    },
+    {
+      "source": "Write instructions that a packer can distinguish",
+      "source_sha256": "2c7263a65ab4ee2cbfa7a13400057bb202faa40d30d945d16df1a428b98a226e",
+      "raw_target_sha256": "358ac4717adb887f6a4b0d2b3aef9a0102f9205c6b2850f0ef42dc8634b8b45a",
+      "translation": "작업자가 각 포장을 구분할 수 있게 지시하세요"
+    },
+    {
+      "source": "Record the decision and check the result at delivery",
+      "source_sha256": "862a7d48ab0f8b052382153d4d25ea91e3872dd3180a115006cb43f6e736a8e1",
+      "raw_target_sha256": "7dbc259fb8cecc744928c97b4bfdccd2e5b7912c4f0e2251c56be37ac1e96cbe",
+      "translation": "결정을 기록하고 수령 시 결과를 확인하세요"
+    },
+    {
+      "source": "OrientDig packing and parcel-photo services",
+      "source_sha256": "2576309d4080beb720eba3b7bed94fe9da9ab1d4860abad6e1ae950cb4f3e610",
+      "raw_target_sha256": "85684e3898618533ee06c625b90c762117dbc7782f981406d57ed463a7f37e44",
+      "translation": "OrientDig 포장 및 소포 촬영 서비스"
+    },
+    {
+      "source": "OrientDig actual and volumetric weight guidance",
+      "source_sha256": "0f315cbc5d15df4aa756e8bb89d8154c2ddc1f633911b41396c064fff62e49c4",
+      "raw_target_sha256": "6d1df5c319af5f34398dd17d863a57ec0e71d0866133ac5ba8b7b907a308e1a8",
+      "translation": "OrientDig 실중량·부피무게 안내"
+    },
+    {
+      "source": "Name the two arrangements you are comparing",
+      "source_sha256": "27e4bed65d3dcbd546be7a2f282c1d421d2f97e61172251a40e60ade8030c3f3",
+      "raw_target_sha256": "9cd87801c04dc21bb4931c79dd4410ca1923b39884543d494ca15f60901605d5",
+      "translation": "비교할 두 포장 구성을 명시하세요"
+    },
+    {
+      "source": "Work in consistent units before using any formula",
+      "source_sha256": "ce294d6794ae158b8de00c6234a882f192aea976fbe1b9a35d001660ba7ccbdf",
+      "raw_target_sha256": "074ec822eaaf38665f896ee92848befd5b8975c294df692a29ac528a612f5dd6",
+      "translation": "계산식을 적용하기 전에 단위를 통일하세요"
+    },
+    {
+      "source": "Understand which weight the route uses",
+      "source_sha256": "53bf210855c64e4894924cbc0caa1a7f0ca1b4eddb02a2493c043846a110a4e2",
+      "raw_target_sha256": "956622c82d981f30484eaa792a10d2475163ef76dfde953b9f0bd7517bee34b0",
+      "translation": "노선이 어떤 무게를 적용하는지 확인하세요"
+    },
+    {
+      "source": "Test the longest side separately from volume",
+      "source_sha256": "bdf58ac6ba04293fae976daa2f1529b9524d6860cd072d749756b234bfa56ca0",
+      "raw_target_sha256": "5cdd42a4429109068e9885cb892e1f2184d14230c3eb859c9bc76ad7efb05b93",
+      "translation": "부피와 별도로 최장변을 확인하세요"
+    },
+    {
+      "source": "Estimate only the variables you cannot yet measure",
+      "source_sha256": "43dea86d2918c57c5df24018b76568874dbeedf65d6d138f901e4d0067953ffc",
+      "raw_target_sha256": "cef829713583e3f8a107823133bba66e7f81f1dd308b9175fe61f691a6b569c7",
+      "translation": "아직 잴 수 없는 값만 추정하세요"
+    },
+    {
+      "source": "Recalculate after protection and optional services",
+      "source_sha256": "3d737d62b04b33e638a060fa3a8942db6e1c2855e8773782d5cdd868930ce84b",
+      "raw_target_sha256": "071bfade7e283d0f661724eb9a1b145e7d373b283c2c4e965d438d5e94c2816c",
+      "translation": "보호재와 선택 서비스를 추가한 뒤 다시 계산하세요"
+    },
+    {
+      "source": "Save a record another person could reproduce",
+      "source_sha256": "73502a16f10da5b401843fb78fd48967bb9162ccd44933d88315028434d50cc7",
+      "raw_target_sha256": "0f84e5c7ac2b8a14497599ffc99c3558ddc997785c851074de3c264a2833b6a9",
+      "translation": "다른 사람이 재현할 수 있는 기록을 보관하세요"
+    },
+    {
+      "source": "OrientDig actual and volumetric weight",
+      "source_sha256": "0c2a67be94de2c618fd72301ca4d64aee88e9070e60d211034799aec0ca19f1e",
+      "raw_target_sha256": "b049f06445376bc7f7eea19eeb7ada744ba49c3d91bbd4b8b9c0b6c57c9ea444",
+      "translation": "OrientDig 실중량과 부피무게"
+    },
+    {
+      "source": "OrientDig rehearsal packing service",
+      "source_sha256": "8a20dceeaa586042976c8fff9db7eab288b2b1d709c0fff366e19d1293693177",
+      "raw_target_sha256": "125c7968091c857e5c3bc921e672b5c4a307dfbc6d2024ba3e98c311a64447a1",
+      "translation": "OrientDig 사전 포장 서비스"
+    },
+    {
+      "source": "Describe the goods as they really are",
+      "source_sha256": "6802a5e74638bf374df39875982410f10de74763d772768a77a814c261de6ad7",
+      "raw_target_sha256": "ec2519fd1ba181863d776e3af166990c8be3ef925d62270837ab236fc88508f6",
+      "translation": "상품을 실제 그대로 설명하세요"
+    },
+    {
+      "source": "Separate four kinds of restriction",
+      "source_sha256": "14cdbbbe359c4a2a5728fb556e729bdbe0ace84a3852f1f8079d2f360fdbb858",
+      "raw_target_sha256": "b8551e2b8213d6e0eaa4f92a581477046886f646cb418037bb18bc20d8f087a8",
+      "translation": "네 가지 제한을 구분하세요"
+    },
+    {
+      "source": "Compare the dimensions against the exact rule",
+      "source_sha256": "01a868d3313cfe5fd209584ac6e75e08f3de39c3ea16aeeb4b1773e26812cec7",
+      "raw_target_sha256": "954d5b5dfaafba1b52fc8aca5abbdf8d839fa03616cd38e13328cfeeefceb8eb",
+      "translation": "노선의 정확한 규칙과 치수를 대조하세요"
+    },
+    {
+      "source": "Read billing conditions independently of acceptance",
+      "source_sha256": "b5dd69b6974f8b4f09d46cff5df4a33a3d8437f259357c767345121ffc7a2eff",
+      "raw_target_sha256": "5c025a70b9d7ecbec57a479a446641ac5c941b7e5ede0ae3033559b23ca22228",
+      "translation": "인수 조건과 과금 조건을 따로 읽으세요"
+    },
+    {
+      "source": "Check destination and delivery service requirements",
+      "source_sha256": "acf7f88711e7190e949a59666d3863fd99c53e59fb485c5077531852771ddc9d",
+      "raw_target_sha256": "cf7ee621290ef6ed5d0a051d2c136d8e9a1b1b2d46de1885a36adbca2f13d59a",
+      "translation": "목적지와 배달 서비스의 요구 사항을 확인하세요"
+    },
+    {
+      "source": "Check protection and exclusions before interpreting a price difference",
+      "source_sha256": "8ec4ea1de364a2363c921b4f73377f67ce653366dcc2f469706f32560ca54211",
+      "raw_target_sha256": "6df561d9a54461ebdb80a1fe99c8679c8a75df43920062e6adeb0884c8ff6ea5",
+      "translation": "가격 차이를 해석하기 전에 보장 범위와 제외 조건을 보세요"
+    },
+    {
+      "source": "Choose a route only after resolving decisive uncertainties",
+      "source_sha256": "04502c537121b780ed138625fdd5504b0eb9a74d98417aa2c2a1d339e4d59f5c",
+      "raw_target_sha256": "be4dab426140b795906f75521ecc272029d6caa7f6be2e67841448381a6bb105",
+      "translation": "결정을 좌우하는 의문을 해소한 뒤 노선을 고르세요"
+    },
+    {
+      "source": "Identify the outbound shipment before interpreting a scan",
+      "source_sha256": "772f53df6dfec906b9e43121ac4af9cfa2aba4b4655a270dcb26c11f3f40c54c",
+      "raw_target_sha256": "e293d102c0c38fb409d2671073cb9050a8b9f737c18ba274a24d1dce8f7990f6",
+      "translation": "조회 이력을 해석하기 전에 해당 출고 소포를 특정하세요"
+    },
+    {
+      "source": "Put the displayed event into the delivery sequence",
+      "source_sha256": "774aff695cbdcf16ed2b612dc624351ecd5888b74a51e54f3055bdd2c928c824",
+      "raw_target_sha256": "be3098852e6fd62808cd9094a1a6cbbc861f66bc66c7bf257b47f62420c2e506",
+      "translation": "표시 이벤트를 실제 배송 순서에 놓아 보세요"
+    },
+    {
+      "source": "Understand the transition to a delivery partner",
+      "source_sha256": "74b0db8a5d7765e1872b460454117d3166aa164b860366d808c47f254eacef74",
+      "raw_target_sha256": "ed96b5a5e971b1e0bbf201e4f5b961a9cd2d69fb9ded2583ebb5c527b3591a52",
+      "translation": "현지 배달사로 넘어가는 단계를 파악하세요"
+    },
+    {
+      "source": "Compare times, not just the order of lines on screen",
+      "source_sha256": "bc5c8ad625ee334c46eec43e83f51b881ad01e555c1a13dfc79c39e7656234f5",
+      "raw_target_sha256": "ff11b3e5239200dd7bcedfc783f73ca8296b2e1ae36cc504d27714ec9bb9f66c",
+      "translation": "화면의 줄 순서뿐 아니라 발생 시각을 비교하세요"
+    },
+    {
+      "source": "Distinguish an estimated interval from a service guarantee",
+      "source_sha256": "2a6cce9719953ec887bf9c48dc8c4f35c838d2d0f963a6b6be9f41a0a28696a4",
+      "raw_target_sha256": "216a54059dd18fab891a709dce31475e2fe4e8b6faf1f5a929ab87b86772fbc2",
+      "translation": "예상 기간과 서비스 보장을 구분하세요"
+    },
+    {
+      "source": "Prepare a useful tracking inquiry",
+      "source_sha256": "99d6af4f099ef3571a223528b9ff9a327478272bd757a5fc9f8467d5fbc43dd7",
+      "raw_target_sha256": "0bfc15b3d6ed13d4a609799d77e5c1d8123ca0bca2114ff72e3adb1bd8c9037a",
+      "translation": "조사에 필요한 정보를 담아 배송 문의를 준비하세요"
+    },
+    {
+      "source": "Close the handoff record at receipt",
+      "source_sha256": "cbc5ac79dd74819bc9f23c254706902d22781ecc1dba9fa0759d2ed6658ffec4",
+      "raw_target_sha256": "18c690514372e31038ea680ca5dfb321efcd6d8c51f1ae1e9bace484825d6205",
+      "translation": "수령 시 인계 기록을 마무리하세요"
+    },
+    {
+      "source": "Decide what information the assistant needs to place this purchase",
+      "source_sha256": "a6caf1690a22639e469ee3c1af42e01c706ee7dabf95dc57edb4c590e0b50d0f",
+      "raw_target_sha256": "dd1b8a64eb72f5e385d1ba5a2382c92d6bf6786a9b0d1aa7c10d300a99143200",
+      "translation": "이 구매를 진행하는 데 필요한 정보를 정하세요"
+    },
+    {
+      "source": "Capture the original option wording",
+      "source_sha256": "8ad622c4077f8ec9e1d3cd9bbdc39b668838d958c925f0ec078d2a8eb2a587af",
+      "raw_target_sha256": "e53c52e66d6db07b244730306b268d09039ffcec699a03a92072d86118e99c38",
+      "translation": "선택 옵션의 원문을 보관하세요"
+    },
+    {
+      "source": "Define the unit and the count",
+      "source_sha256": "de50455c410278c6c41e194ecae627c4e095c9ebc1d1c8edb63211c70caca6e3",
+      "raw_target_sha256": "8260fd1d7765304775f00d162f2fff7272c3de196bab11e3465a0073e9df36a1",
+      "translation": "판매 단위와 구매 수량을 밝히세요"
+    },
+    {
+      "source": "State what to do if the exact option is unavailable",
+      "source_sha256": "86522dae92f37762732fa35b70ae3d7a1165dc4cdbc50276488c4db201c8ef3a",
+      "raw_target_sha256": "711ae3afd0f5c79d954ee38e58f27a46b9f31023c6f0a00bbe45d27281077195",
+      "translation": "정확한 옵션이 없을 때 조치를 지정하세요"
+    },
+    {
+      "source": "Attach only evidence that resolves ambiguity",
+      "source_sha256": "2910e4f7fd249d3fa6bdfdd6426adc5181839fc391586fb6973bcc12bce25f3e",
+      "raw_target_sha256": "00b9e239f67f10e926c878e736bff0355964257193b06d4b059d470262184cf3",
+      "translation": "모호한 점을 해소할 증거만 첨부하세요"
+    },
+    {
+      "source": "Review the confirmation as a separate document",
+      "source_sha256": "c8641cce9c2d035232ffc9e64b68d0b12df1eb6b7d0d69dbd172e944bf3f6cea",
+      "raw_target_sha256": "8949ddb10c633b0bf95854d4b4d0a7c2cd054b0c5d4c590d8729f235349ccfce",
+      "translation": "구매 확인을 별도 기록으로 다시 대조하세요"
+    },
+    {
+      "source": "Carry the request forward into a practical warehouse check",
+      "source_sha256": "76658e2a0f8b2526b14d95b16986afd34636dab837dfe6a5b18ec24d938f3f51",
+      "raw_target_sha256": "c3ac15c8c3e0b1cfbb0650ef745389e25054b7ab5eb9b8a47ab4d3d3c1b8bc26",
+      "translation": "구매 조건을 창고에서 확인할 목록으로 이어가세요"
+    },
+    {
+      "source": "OrientDig detailed photos after warehouse intake",
+      "source_sha256": "d91eb1bf0e521919e2cea894a14bce7e7ffc042637b0a7b47b7fe65a416495f8",
+      "raw_target_sha256": "ad92be64c82c088c1232fe0e70c63c9c24f505bcd835f46d9772858daaae835e",
+      "translation": "OrientDig 입고 후 상세 촬영"
+    },
+    {
+      "source": "An extra warehouse picture is worth requesting when it changes a decision. Pick the feature, angle and scale before you send the request, then check whether the returned image actually shows them.",
+      "source_sha256": "bd34fa4639df7a51fc546f3fde5a9f7360a465b33c19e9bcdce8cc913c395b2b",
+      "raw_target_sha256": "442c64b72cc4c5d473385cc561a4a0301ba14f1b7a080445099c6d986b9209c0",
+      "translation": "추가 사진은 결정을 바꿀 수 있을 때 유용합니다. 확인할 특징과 각도, 촬영 범위를 정해 요청하고 받은 사진에서 실제로 보이는지 확인하세요."
+    },
+    {
+      "source": "Suppose a jacket has reached the OrientDig warehouse. The standard pictures show its front and back, but you ordered it for a particular reason: the two-way front zip should open from the bottom when you sit down. You can see a silver pull near the collar. You cannot see what is attached at the hem. Asking for “better QC” gives the photographer little direction. Asking for a front photograph of the fully closed zip, with the lower end and both sliders in focus, turns the same uncertainty into a job somebody can complete.",
+      "source_sha256": "d901d676293d9ceda72963464fd0f73e3b594d822aaa258cbe3cc66a567fe504",
+      "raw_target_sha256": "43635644814a4e57d184426465f7b767f833bb42e60d22f95c273b52806fc636",
+      "translation": "OrientDig 창고에 도착한 재킷의 앞뒤 사진에서 목 쪽 은색 손잡이는 보여도 앉을 때 아래로 열 수 있는 양방향 지퍼인지 알기 어려울 수 있습니다. ‘검수를 더 잘해 주세요’보다 ‘지퍼를 끝까지 잠근 상태에서 아래 끝과 두 슬라이더가 모두 선명하게 보이도록 정면 촬영해 주세요’라고 요청하세요."
+    },
+    {
+      "source": "OrientDig's detailed photo page distinguishes the usual warehouse views from pictures taken to a customer's specification. It asks buyers to identify a stored item by number and match the number of purchased photographs to their requirements. Use that distinction before spending time on a request. If an existing picture is simply blurred, read the page's guidance on retakes. If the existing photo is clear but shows the wrong angle for your question, a custom detail request may be appropriate. Check the available option and price on the specific order.",
+      "source_sha256": "1f1c7937389403acc042e4118da30ae62cd9247e2eff59fcfbe68839ce0f649d",
+      "raw_target_sha256": "58a3041376cd631c665b50a63b391e6242a7821afdd56a466412512bb91eb689",
+      "translation": "OrientDig 상세 사진 안내는 기본 입고 사진과 맞춤 촬영을 구분하고 보관 물품 번호와 필요한 사진 수를 지정하도록 합니다. 기본 사진이 흐리면 재촬영 안내를 먼저 읽고, 선명해도 필요한 각도가 없다면 맞춤 촬영을 고려하세요. 실제 주문의 선택지와 요금을 확인하세요."
+    },
+    {
+      "source": "The seller's marketplace item number can describe a listing containing several colours and sizes. The warehouse reference identifies the unit being handled. Give both when they serve different purposes. If two jackets from the same listing have arrived, say which warehouse entry you want photographed and which selection you expect it to contain. For example, “warehouse item [number], short navy jacket, size L” is a much better starting point than a screenshot of the listing with no reference. Replace the placeholder with your actual record inside the private order channel.",
+      "source_sha256": "01df1aaf9f8919eaf0d37efc952c1ee62992550c38cd6fc1abcca5b8b47279df",
+      "raw_target_sha256": "d8a02d7dd1f8b5714cb7da81b39ec072b4b70fa26d57fc81fa5d44546012f16b",
+      "translation": "판매자 상품 번호는 여러 색상·치수가 있는 페이지 전체를 가리킬 수 있고 창고 번호는 실제 물품을 식별합니다. 필요하면 둘 다 주세요. 같은 링크의 재킷 두 벌 중 하나라면 비공개 주문 창구에 ‘입고 번호 [실제 번호], 남색 짧은 재킷 L’로 적는 편이 번호 없는 상품 화면보다 정확합니다."
+    },
+    {
+      "source": "Look over your original selection before telling the warehouse what you expect to find. A seller's model picture might show the jacket with a belt even though one option is sold without it. Asking the photographer to confirm that a belt is missing already assumes the answer. A more useful request is “please show the jacket and all included detachable pieces laid out together.” Save the paid option wording beside the returned picture. You can then decide whether the visible contents match the purchase, independently of what appeared on the listing's first image.",
+      "source_sha256": "a905a41d6995979401a726cacf2459be4c9b22fe2f28af0c52348a7036921326",
+      "raw_target_sha256": "493a51c407c53225b58796dc11d1512b7d59deb1d0979db97a9cd657ab2b8760",
+      "translation": "모델 사진에 벨트가 있어도 선택한 옵션에는 빠질 수 있으니 결제한 옵션 문구를 먼저 보세요. ‘벨트 누락 확인’이라고 단정하지 말고 ‘재킷과 동봉된 모든 탈착 부품을 함께 펼쳐 촬영해 주세요’라고 하세요. 선택 문구와 실물 사진을 나란히 두면 첫 상품 사진과 관계없이 주문과 대조할 수 있습니다."
+    },
+    {
+      "source": "Describe what should remain inside the frame. For a zip, that might be both ends of the fastening in one front view. For a printed number, ask for the entire print and enough of the surrounding panel to show placement. For a bag clasp, ask for the open clasp and the point where it attaches. Instructions like “best angle” leave the photographer to guess which aspect matters. Use a short sentence naming the side, part and desired state: open or closed, flat or upright, with or without an attached accessory.",
+      "source_sha256": "be15f7ace1b18fa2212f301f7057ee40a2f5e641565bc29a3200de9d9293e0a5",
+      "raw_target_sha256": "fe17ffe266aef807be9d8752d406cfb3b398aa00677445dee09401b728d2ade1",
+      "translation": "화면에 무엇을 넣을지 지정하세요. 지퍼라면 양 끝이 한 정면 사진에, 인쇄 번호라면 전체와 주변 위치가, 가방 잠금장치라면 열린 장치와 연결점이 보여야 합니다. ‘좋은 각도’라고만 하지 말고 어느 면·부위인지, 개폐 상태와 눕힘·세움, 부속품 연결 여부를 짧게 적으세요."
+    },
+    {
+      "source": "Consider scale. A close crop can show a chipped button but leave you unable to tell which button it is. A whole-garment image can identify the button but compress the chip into a few pixels. If both questions affect the decision, request two clearly different views. In the first, identify the button's location relative to a pocket or seam. In the second, show the surface in focus. OrientDig's guidance links the requested content to the photo quantity. Check whether the views you describe fit the service you select.",
+      "source_sha256": "b2381a1b81c3dc529b6a3d12fd6cf441a83977b06cb603a78426942d84fd31aa",
+      "raw_target_sha256": "b61ed8b168a781c9d7fb8e408e498adf9c3cfaece300036e9c9e64457642f7e5",
+      "translation": "단추 흠집은 근접 사진에서 보여도 어느 단추인지 알기 어렵고 전체 사진에서는 위치만 보일 수 있습니다. 둘 다 중요하다면 주머니나 솔기와 단추의 위치가 보이는 사진, 표면에 초점을 맞춘 사진을 따로 요청하세요. OrientDig 안내에 따라 요청 내용이 선택한 사진 수에 맞는지 확인하세요."
+    },
+    {
+      "source": "A tape measure sitting on a garment is not automatically evidence of the dimension you need. Decide where the measurement should begin and end. For a flat chest width, that usually means naming the underarm seams on a garment laid flat with the front closed. Ask for both ends of the tape and its reading in the same photograph. Explain if the item should be relaxed rather than stretched. The important point is consistency with the garment or diagram you are using as your comparison.",
+      "source_sha256": "cbc62debc210c64dc89c0b54b8e5c34bbf7877138c2c6ee44055a55a68acd532",
+      "raw_target_sha256": "c26fad8a92bf8ddade04f92c7bb81847226c02824589941dfe64a14a960cbc08",
+      "translation": "옷에 줄자를 올려놓기만 해서는 필요한 치수를 확인할 수 없습니다. 가슴 단면이면 앞을 여미고 펼친 상태에서 양쪽 겨드랑이 솔기를 시작점과 끝점으로 지정하세요. 한 사진에 줄자 양 끝과 눈금이 보이게 하며 늘이지 않고 놓을지도 밝힙니다. 기준 옷이나 도표와 방법을 맞추세요."
+    },
+    {
+      "source": "A request for “jacket length” is especially easy to misinterpret. The centre back from the collar seam to the hem can produce a different figure from a measurement starting at the high shoulder point. A collar included in one measurement and excluded in another changes it again. If your reference chart uses a diagram, point to its specific path in your note. Write the unit. A precise request could say “please measure in centimetres from the centre back collar seam, excluding the collar itself, straight to the bottom hem, with the entire tape visible.”",
+      "source_sha256": "b2a5eb9fc38eed8dfd1c51a94187c3376de418193f80896add41eb5e20494155",
+      "raw_target_sha256": "7594f82f2546b0f2ec21b78f8a90f23c264e95d108a488f2eb40873842c6a40f",
+      "translation": "‘재킷 기장’은 등 중심 목 솔기에서 잰 값과 어깨 최고점에서 잰 값이 다르고 칼라 포함 여부로도 달라집니다. 기준표의 경로와 단위를 지정하세요. 예를 들어 ‘칼라는 제외하고 등 중심 목 솔기에서 밑단까지 직선으로 센티미터 단위로 재며 줄자 전체가 보이게 해 주세요’라고 씁니다."
+    },
+    {
+      "source": "A seller image or another buyer's picture can help you indicate the detail you mean. Explain its role: “this image shows which seam I mean,” or “the two arrows mark the endpoints I use.” Do not assume that the reference photograph shows the same batch, version or size as your order. The photograph you need for your decision is the one of your actual warehouse item. Keep the original source and the returned photographs separate in your notes so their origins remain clear after several orders.",
+      "source_sha256": "fc5f367dd3829ec92c8b16e649f6ee1f22a5be3cb7a848943dc8de7245bdfeb9",
+      "raw_target_sha256": "8ddce6ec507541749ab51b8817d8ea78ffafadd18f4d261e8c08c621c3828f5b",
+      "translation": "판매자나 다른 구매자의 사진은 ‘어느 솔기인지 보여 주는 예’ 또는 ‘두 화살표가 측정 시작·끝점’처럼 역할을 밝히세요. 같은 생산분·버전·치수라고 가정할 수 없습니다. 결정에는 내 입고 물품 사진을 사용하고 참고 이미지와 창고 사진을 따로 보관하세요."
+    },
+    {
+      "source": "For a colour question, a reference can be less conclusive than it appears. A phone display, studio lighting and warehouse lighting can all make dark navy look black. Ask for the colour or option label and, if offered, a wider picture under neutral lighting with another identifiable object in view. The label can support the identity of the purchased option. The picture can help you judge appearance. Neither can guarantee the exact shade you will perceive outdoors. Decide whether the remaining uncertainty matters enough to delay a parcel.",
+      "source_sha256": "e57fcc633e16514ad8e25208a27522fbe1cec136efbb1d2c137f29ceebf63ad7",
+      "raw_target_sha256": "39e98810af1c255db2afba1c346379c59f8be6282cee61592c5267362c875e0a",
+      "translation": "휴대폰 화면이나 스튜디오·창고 조명에서 짙은 남색이 검게 보일 수 있습니다. 색상·옵션 표기를 찍어 달라고 하고 가능하면 중립적인 조명 아래 식별 가능한 사물과 함께 넓게 촬영해 달라고 하세요. 표기는 옵션을, 사진은 외관을 확인하는 데 도움이 되지만 야외에서 보일 정확한 색까지 보장하지 않습니다. 이 불확실성 때문에 발송을 미룰지 판단하세요."
+    },
+    {
+      "source": "Open the returned picture next to your note. Can you recognize the relevant unit? Is the requested part visible? Is the image sharp at the place where you need detail? If a measurement is involved, can you follow the tape continuously from the chosen start to the end and read the unit? If the answers are yes, record the observation rather than a general impression. For the jacket that might read “both sliders visible on the short navy unit.” That note gives a clear reason to proceed even if you later view the pictures out of order.",
+      "source_sha256": "901223d7f428556cb6ea9955b034ca1ad9829873f11c0e47e78baeebea8eb4a5",
+      "raw_target_sha256": "cb0472f7c9f146b0c1ece3d0433d85462abf35d5d5578229982b426330418fb2",
+      "translation": "요청 내용과 사진을 나란히 두고 해당 실물인지, 부위가 선명한지, 실측이면 줄자의 시작부터 끝까지 이어지고 단위가 보이는지 확인하세요. ‘남색 짧은 재킷에 슬라이더 두 개가 보임’처럼 관찰을 적으면 나중에 사진 순서가 섞여도 출고 결정의 이유를 압니다."
+    },
+    {
+      "source": "If the result misses something important, identify exactly what is unresolved. “The photograph shows the top slider, but the lower ten centimetres of the zip are outside the frame” gives a photographer a concrete correction. A cropped tape reading without its starting point is a different problem from a tape that follows the wrong seam. OrientDig's detailed photo instructions discuss requesting another view when requirements have not been met. Refer to the original instruction and the actual image when raising the issue, and check the service conditions shown for your order.",
+      "source_sha256": "98d397840f6468ae85d3f2dda39f81e01970c82e42ed9d3372fc3a0e55adeded",
+      "raw_target_sha256": "e6eab711d36dadf7c852fd19c2273819ca2f8e01e14442bb5e383f1283c58e2c",
+      "translation": "빠진 점은 ‘위 슬라이더는 보이지만 지퍼 아래쪽 십 센티미터가 화면 밖입니다’처럼 짚으세요. 줄자의 시작점이 잘린 것과 잘못된 솔기를 잰 것은 다른 문제입니다. OrientDig 상세 촬영 안내에서 요구를 충족하지 못했을 때의 추가 요청 방법을 보고 원래 지시와 실제 사진, 해당 주문의 서비스 조건을 함께 확인하세요."
+    },
+    {
+      "source": "More images can be distracting when they revisit a question already settled. Once you know which version arrived, which visible feature it has and how its measured dimensions compare with yours, write down the outstanding issue, if any. A photo cannot establish long-term durability or show how an item feels after wearing it for a day. Separate those uncertainties from questions a warehouse photographer can realistically resolve. That keeps a request proportionate to the decision you need to make before shipment.",
+      "source_sha256": "9234b9bcb2937a5d7a9ffeb1d817a41dca834f7d8944a6df73d9b9d06fc0f3f2",
+      "raw_target_sha256": "77fef2ca50f6e0d1265b6d8ad6069c21f37a65b8ec40cb6b0597f25ec12e8dcc",
+      "translation": "버전·눈에 보이는 특징·비교 치수를 확인했다면 남은 질문만 적으세요. 사진으로 장기 내구성이나 하루 종일 입은 느낌은 검증할 수 없습니다. 창고 사진으로 해결할 수 있는 의문을 구분해 발송 전 결정에 필요한 만큼만 요청하세요."
+    },
+    {
+      "source": "Finally, keep the item pictures tied to their warehouse reference when preparing your parcel. OrientDig lists parcel photography separately from detailed item photography. A photograph of the packed parcel can be valuable for checking the arrangement of several pieces, but by that stage the zip or measurement may no longer be accessible. Resolve the item-level decision while the individual unit can still be inspected, then use any parcel-level service for the distinct question it is designed to answer.",
+      "source_sha256": "035840796467cdd16f6ae860812622772436ca773ece40a1f5e21a0eeb264d62",
+      "raw_target_sha256": "4e30569a47ad3fba6eaf6f82769d5a584291ca3e80790a1c55c0ab686b137ccf",
+      "translation": "출고 준비 때도 단품 사진과 입고 번호를 연결하세요. OrientDig는 소포 촬영과 상품 상세 촬영을 별도 서비스로 안내합니다. 포장 사진은 여러 물품의 배치를 보여 주지만 그때는 지퍼나 실측 부위가 가려질 수 있습니다. 단품을 확인할 수 있을 때 상품 문제를 해결하고 포장 관련 질문에 소포 촬영을 활용하세요."
+    },
+    {
+      "source": "Two tape readings can disagree even when both are accurate. Use the seller's diagram and a garment you own to specify the path, endpoints and units of each warehouse measurement.",
+      "source_sha256": "918bafca6b0ce712ff99b834913340a4d6d003b97b5b8d2110a66e2d1f864b55",
+      "raw_target_sha256": "4b6db49254d5377f4d6563c20ab14870386a013b81c34088dc7550b7cba280aa",
+      "translation": "두 값이 모두 정확해도 재는 방법이 다르면 결과는 달라집니다. 판매자 도표와 내 옷을 기준으로 창고에 경로·양 끝점·단위를 지정하세요."
+    },
+    {
+      "source": "A tape-measure photo becomes useful when you have something meaningful to compare it with. Choose a garment you already wear in the way you intend to wear the new piece. A fitted shirt worn alone gives a poor reference for a jacket intended to fit over a sweatshirt. Button or zip the reference as you normally would. Lay it on a flat surface, smooth major folds and avoid pulling stretchy fabric tight. Record how you positioned it. Repeating that setup is more valuable than trying to measure every dimension on the garment.",
+      "source_sha256": "59b562934d24ef523f2aa2052105886383b4a747b38fa2a67202e2f4088219f8",
+      "raw_target_sha256": "8ad0807e6b02a1d8e67982ac54ffd373b3f39e6869ffbdcd7802eeb5b0d42af8",
+      "translation": "새 옷과 같은 방식으로 입는 옷을 기준으로 고르세요. 맨투맨 위에 걸칠 재킷을 단독으로 입는 몸에 붙는 셔츠와 비교하면 부정확합니다. 평소처럼 여미고 평평하게 놓아 큰 주름만 펴되 신축성 있는 원단을 당기지 마세요. 배치를 기록해 같은 상태를 재현하는 것이 모든 부위를 재는 것보다 유용합니다."
+    },
+    {
+      "source": "Start with the question that matters for your purchase. If sleeves routinely come up short, concentrate on sleeve construction and cuff position. If a jacket must fit a particular layer underneath, concentrate on chest width with the front closed. If you care where the hem sits, define length carefully. OrientDig describes detailed photos as a way to request views of specific features and measurements. One carefully chosen measurement can resolve a buying decision better than several numbers taken by methods you cannot identify.",
+      "source_sha256": "67244c7ae9b4d1c6c04bdda8f88d7923f550c66c4ab4bce59a27934908867ba8",
+      "raw_target_sha256": "8757253abe7e44c50430fabea57fdf827942a0e8044edb95a2c2f28f784a4fd7",
+      "translation": "소매가 자주 짧으면 소매 구조와 끝 위치를, 특정 옷 위에 입어야 한다면 앞을 여민 가슴 단면을, 밑단 위치가 중요하면 기장 기준을 정하세요. OrientDig 상세 사진은 특정 부위와 치수 촬영을 요청할 수 있습니다. 재는 법이 불분명한 여러 숫자보다 결정에 필요한 한 값을 정확히 보는 편이 낫습니다."
+    },
+    {
+      "source": "Look for arrows or illustrations that show the start and finish of the measurement. A chart can report body measurements, finished garment measurements or a set of recommended sizes. A chest figure on a body chart can include intended ease in the garment design. A tape photographed across a flat garment measures the object itself. Even if the figures use the same unit, they do not necessarily describe the same thing. Keep the chart's heading and diagram in your reference note as well as the row of numbers.",
+      "source_sha256": "242c0b0b2e531644699dfb93599666529944e5c0201605b89f64af4a3f7b4bac",
+      "raw_target_sha256": "cf4aa477914dc6790f91dc879fdf11fe902b153fc2032ea73d4c5b867eb73c3f",
+      "translation": "도표의 시작점과 끝점 화살표를 보세요. 표가 신체 치수인지 완성 의류 실측인지 권장 치수인지 구분합니다. 신체 가슴둘레를 기준으로 한 옷에는 여유분이 있을 수 있고 평평하게 놓고 재면 옷 자체의 값입니다. 단위가 같아도 대상은 다르므로 숫자 행뿐 아니라 제목과 그림도 저장하세요."
+    },
+    {
+      "source": "For a jacket with ordinary set-in sleeves, describe the measurement from the junction of one underarm seam to the junction of the other. Ask for the front closed, the garment flat and the tape straight without tension. If the armholes are unusually deep or the garment has a batwing shape, the conventional endpoints may be hard to locate. In that case, choose a reproducible point on the garment or ask for an overview first. Explain where you measured your own piece so the warehouse can decide whether the requested method is practical.",
+      "source_sha256": "555bef0f451438ef399c7bb7cd3715b82b5225cb885ef7ded1d727446f45c7d0",
+      "raw_target_sha256": "487bb94618b4df5c3988995aaa851bffbff3999686573787a867eb99671ac774",
+      "translation": "일반적인 셋인 소매 재킷은 양쪽 겨드랑이 솔기가 만나는 점을 지정합니다. 앞을 여미고 평평하게 놓은 뒤 줄자를 당기지 않고 곧게 댑니다. 진동이 깊거나 가오리형이면 표준 지점을 찾기 어려우므로 전체 사진을 먼저 요청하거나 재현할 지점을 고르세요. 내 옷을 어떻게 쟀는지 설명해야 창고에서도 실행 가능성을 판단합니다."
+    },
+    {
+      "source": "Review the resulting photo in three stages. First identify the correct warehouse item and marked size. Next trace the path of the tape across the garment. Finally inspect the zero mark and reading at the far end. A clear number on the right tells you little if the tape started several centimetres beyond the left seam. If one edge is outside the frame, state which one when requesting clarification. “Please include the left underarm and the zero mark” is easier to resolve than “the measurement looks wrong.”",
+      "source_sha256": "8c6016c5338c03c55d0d6b75d39cc5b9a9c535d6df32a8c681e487e2dd5c6310",
+      "raw_target_sha256": "9cb865293a184e7112d46954052d8b616d607ad30ee32bd052ea5a9e03e2d9a6",
+      "translation": "먼저 물품과 치수표를 확인하고, 줄자의 경로를 본 뒤 영점과 반대 끝 눈금을 읽으세요. 왼쪽 솔기에서 몇 센티미터 벗어나 시작했다면 오른쪽 숫자만 선명해도 폭을 확인할 수 없습니다. 잘린 쪽을 지목해 ‘왼쪽 겨드랑이와 영점을 포함해 주세요’라고 하세요."
+    },
+    {
+      "source": "Place your reference garment face down. For a centre-back measurement, decide whether to begin at the seam where the collar joins the back or at the top of the collar itself. Follow the centre line to the hem. For a high-shoulder measurement, begin at the high shoulder point near the neck and follow the specified path to the hem. On a garment with a shaped neckline or curved hem, these paths can produce different numbers. Write down which hem point matters if the sides and centre differ.",
+      "source_sha256": "7a07c7ce513841aab96ea1f114061492d13d1cbcea9cb362970062e9497d277f",
+      "raw_target_sha256": "9631c8d75c5bd17ddd5204343ce4569cdb40600b95fdb7f9d9aa277d98dc1934",
+      "translation": "기준 옷의 앞면을 아래로 놓으세요. 등 중심 기장은 칼라와 등판의 솔기 또는 칼라 맨 위 중 시작점을 정하고 등 중심선을 따라 밑단까지 잽니다. 어깨 최고점 기준이라면 목에 가까운 어깨점에서 지정 경로로 내려갑니다. 목선이나 밑단이 곡선이면 값이 달라지므로 옆과 중앙 중 어느 밑단을 택할지 적으세요."
+    },
+    {
+      "source": "Set-in sleeves have a recognizable shoulder seam. A request from shoulder seam to cuff can work when the shoulder falls in roughly the same place on both garments. Dropped shoulders move that seam down the arm, shortening the apparent sleeve segment despite a similar overall reach. Raglan sleeves start at the neckline and have no conventional shoulder endpoint. Check the construction in the standard photograph before deciding how to describe the path. Comparing a dropped-shoulder sleeve length with a fitted shirt sleeve can produce a misleading impression of fit.",
+      "source_sha256": "70a1866d2cf0c609416b9af77b43ba18c29f0335de97bd66dc585b0715e44830",
+      "raw_target_sha256": "e7e44be0e844e5c45a106d96c2b74ba362e13508112111458a8d91d9a7cb861e",
+      "translation": "셋인 소매는 어깨 솔기가 뚜렷해 두 옷의 솔기 위치가 비슷할 때 솔기부터 소맷단까지 비교할 수 있습니다. 드롭 숄더는 솔기가 팔 쪽으로 내려가 전체 도달 길이가 비슷해도 소매 구간은 짧아 보입니다. 래글런 소매는 목선에서 시작해 일반 어깨점이 없습니다. 기본 사진으로 구조를 본 뒤 경로를 정하고 다른 구조의 소매 수치를 직접 비교하지 마세요."
+    },
+    {
+      "source": "One practical alternative is a neck-to-cuff measurement. Specify the neck point, whether the tape should follow the top edge or another path and whether the cuff should lie flat. Measure the comparable path on your own garment. If the sleeve is designed to curve, decide whether to follow the seam or draw a straight line; the two methods answer different questions. In your request, ask for the full route in one frame if readable, or an overview plus a second close view of the reading if that fits the available photo service.",
+      "source_sha256": "758ac910347a0bc002f5f931d90531b420f39d325e58a3a4b272f19d4704c888",
+      "raw_target_sha256": "17486b0bea509740d059a7e8bc07245a8ac1cd0aac212487178aeb298aca70c6",
+      "translation": "대안으로 목에서 소맷단까지 잴 수 있습니다. 목의 지점, 위 가장자리나 다른 경로, 소맷단을 펼칠지를 정하고 내 옷도 같은 경로로 재세요. 곡선 소매의 솔기를 따라 재는 것과 직선으로 재는 것은 다릅니다. 눈금이 보이면 한 장에 전체 경로를, 사진 수가 허용되면 전체와 눈금 확대를 따로 요청하세요."
+    },
+    {
+      "source": "An elastic waistband has more than one meaningful width. A relaxed flat width describes it at rest. A stretched measurement depends on the force applied and can be hard to reproduce. Decide which information is necessary and avoid requesting an extreme stretch that might damage an item. For a ribbed cuff, measure the opening the same way on your own garment. A doubled flat width is only an approximation of circumference for a thick or irregular opening. Label it accordingly in your notes.",
+      "source_sha256": "73fd67fa43cdf705efee4b10ccd60a9dcea7746f9ee12dfd398be2354524ac47",
+      "raw_target_sha256": "45dc9c0d8afd2aad192d5bcd54fa7606ca5210e706159d0937e0da4b00d7bf89",
+      "translation": "고무 허리는 힘을 빼고 잰 단면과 늘려 잰 단면이 다르며 늘린 값은 힘에 따라 재현하기 어렵습니다. 필요한 값만 요청하고 옷이 손상될 만큼 늘리게 하지 마세요. 시보리 소맷단도 내 옷과 같은 방식으로 잽니다. 두껍거나 불규칙한 입구에서 단면을 두 배 한 값은 둘레의 근삿값으로 표시하세요."
+    },
+    {
+      "source": "A lined coat can have a generous outer width while the interior or sleeve opening limits movement. A photo cannot fully recreate how it feels over the clothing you plan to wear. Identify which measurements can reduce uncertainty and which questions remain about fabric, movement or comfort. If the decisive question is whether a cuff accommodates a particular glove, ask for the relevant opening measurement rather than a general front width. Keep the result tied to the exact option because other versions within the same listing may have different construction.",
+      "source_sha256": "5dfb068631c4ab0a3405731145cb6e369cf9d7b1ec79afae5e64c5b1a1726617",
+      "raw_target_sha256": "e5da71d188265532b7991ad4035a84419b31a14778fc0f5b997721a9726a1dee",
+      "translation": "안감 코트는 바깥 폭이 넉넉해도 안쪽이나 소매 입구가 움직임을 제한할 수 있습니다. 입으려는 속옷 위의 착용감은 사진만으로 재현하기 어렵습니다. 치수로 줄일 수 있는 의문과 원단·움직임·편안함을 구분하세요. 특정 장갑이 소맷단을 통과하는지가 중요하면 가슴너비 대신 입구를 잽니다. 같은 페이지의 다른 버전은 구조가 다를 수 있어 정확한 옵션에 연결하세요."
+    },
+    {
+      "source": "Write one short line for each dimension you actually used. Include the item, size, date, endpoints, unit and observed result. Put the comparable measurement from your own garment beside it. Where the two methods disagree, mark the comparison unresolved rather than recording a difference as a defect. This becomes particularly useful when you have similar items from several sellers: the note tells you which tape photo belongs to which decision without relying on the order in a gallery.",
+      "source_sha256": "6b1e6c45e502cceb3a4d51e2e3a15df67e6573ff67a67fc3f708e9117af8161b",
+      "raw_target_sha256": "ca163055c4859b9e06598214eb26e85a9099dc55ba34488bbf960971e1e03cab",
+      "translation": "실제 결정에 쓴 치수마다 물품·치수·날짜·측정 양 끝·단위·결과를 한 줄에 적고 내 옷의 비교값을 나란히 두세요. 측정법이 다르면 결함이 아니라 비교 미확정으로 적습니다. 여러 판매자의 유사 상품도 사진 순서에 기대지 않고 어느 결정에 썼는지 알 수 있습니다."
+    },
+    {
+      "source": "If a result appears to conflict with the seller's stated measurement, keep the chart and photo together and ask a precise question before dispatch. Point out the relevant size row and the endpoints visible in the returned picture. A difference in method may explain it. If the method matches and the difference affects your decision, use the order's current support process while the item can still be inspected. Your final decision should describe what you learned about this garment, with its own construction and measurements, rather than making a general claim about how a labelled size will fit every buyer.",
+      "source_sha256": "276e7a7bf1e8a2d290dc8a1a4bdbf5a81ad84cfc79877ca126489643646e6d24",
+      "raw_target_sha256": "3fdb63bca38e22c264790e36d5384a6319a0fe8ff0332d8e18069f7423e58720",
+      "translation": "판매자 표와 실측이 충돌하면 출고 전에 표와 사진을 함께 보내 해당 치수 행과 사진의 양 끝점을 짚으세요. 방법 차이일 수 있습니다. 같은 방법인데도 결정에 영향을 준다면 실물을 확인할 수 있을 때 현재 주문 상담 절차를 이용하세요. 결론은 해당 옷의 구조와 치수에 한정하고 같은 표기 치수의 모든 구매자에게 일반화하지 마세요."
+    },
+    {
+      "source": "A photograph of an intact item and a photograph of its packing answer different questions. Decide what needs protection, which evidence to request and which route conditions still require confirmation.",
+      "source_sha256": "332c5a73a78d4e10c7c40995750a56a24f374043f5e3da05d9c63a1d2585a026",
+      "raw_target_sha256": "c174b343fbbac10a9d8ed00796179df718330680ccf9bd6513c01e4180f0cd97",
+      "translation": "멀쩡한 상품 사진과 포장 사진은 서로 다른 질문에 답합니다. 보호할 부분과 요청할 증거, 아직 확인할 배송 조건을 정하세요."
+    },
+    {
+      "source": "Take an ordinary ceramic cup with a curved handle. The main body can look substantial while the handle projects beyond it and joins at two narrow points. A product photograph taken from the front may show a perfect printed design and hide one of those joints. If the reason you would reject the cup is a cracked handle, your first question belongs to the individual warehouse item. Ask for a clear view of the handle and its attachment points while the cup is accessible. Save that view beside the purchase option and item reference.",
+      "source_sha256": "b971e47bdfe95ec2297c4447953a7f3320963b08c4b4ee9b0f281740ca891801",
+      "raw_target_sha256": "11cc9861895d4a0e379c2f24164ac53dfb82fc3fdd937f8e55985f8f6d2198cd",
+      "translation": "굽은 손잡이의 도자기 컵은 몸체가 튼튼해 보여도 손잡이가 좁은 두 지점에서 연결됩니다. 정면 사진에는 무늬만 잘 보이고 연결점 하나가 가려질 수 있습니다. 손잡이 균열이 구매 판단의 기준이라면 실물을 꺼낼 수 있을 때 손잡이와 두 연결점을 선명하게 찍어 구매 옵션·입고 번호와 보관하세요."
+    },
+    {
+      "source": "Make a short list of the parts whose condition matters. On a presentation box it could be the corners and closure. On a framed piece it could be the glass edge and surface. On the cup, add the rim and base if a chip would affect your use. The list should drive a small number of useful inspections. A large gallery of decorative details can still miss the vulnerable part. OrientDig lists detailed item photography and parcel photography separately. Choose the former to examine the item itself and the latter to document how the parcel is prepared.",
+      "source_sha256": "615e45e40b55dcff97823bf4de6763e8b62458953f7ab257dacafcc1f9eb1269",
+      "raw_target_sha256": "4101ab7cc38d9f415225cbfa4d2d15c5d79ee296eaeb6f0a54218e608466d70e",
+      "translation": "선물 상자의 모서리와 잠금부, 액자의 유리 가장자리와 표면, 컵의 입구와 바닥처럼 상태가 중요한 곳을 추려 검수하세요. 장식 사진이 많아도 취약 부위는 놓칠 수 있습니다. OrientDig의 상품 상세 촬영은 실물 확인에, 소포 촬영은 포장 준비 기록에 사용합니다."
+    },
+    {
+      "source": "Before authorizing disposal of any original packing, ask what the components do. A fitted insert might keep the cup from moving, while a decorative sleeve merely improves presentation. A retail carton might be part of a gift you intend to give. Another carton might be damaged already or unsuitable for the next journey. Photograph the item and existing packaging together, then decide whether you need protection, presentation, a record for an after-sales inquiry or all three. Removing a piece is much easier than restoring it.",
+      "source_sha256": "05f0d202ae626391b253db32bb40908b84dd64c4d5ba1ef2cc21724a52737ce3",
+      "raw_target_sha256": "a53d830239aabf521d51e8ea769bbf374d518c71d45816dee79292b51f5ef2ab",
+      "translation": "원포장 폐기에 동의하기 전 각 부분의 역할을 보세요. 맞춤 받침은 컵을 고정하고 장식 슬리브는 외관용일 수 있으며 판매 상자도 선물의 일부일 수 있습니다. 다른 상자는 이미 손상됐거나 다음 운송에 부적합할 수 있습니다. 실물과 포장을 함께 찍고 보호·진열·사후 문의 증거 중 무엇이 필요한지 정하세요. 제거한 포장은 복구하기 어렵습니다."
+    },
+    {
+      "source": "A request to “remove all boxes and pack safely” can contain conflicting intentions. If the fitted insert is the only feature that supports a fragile handle, stripping it out solely to reduce volume may work against your priority. Describe the functional requirement instead. For example: “Please confirm whether the cup can remain supported in its fitted insert and whether the outer retail sleeve can be omitted without exposing the handle.” Ask about available services and any return implications before authorizing the change. The warehouse can respond more usefully to a concrete arrangement than a general request for maximum safety.",
+      "source_sha256": "34ff00dee9e5eec43115c2865dd44e602f0bfe21df8fa8289cb2550882ead402",
+      "raw_target_sha256": "48a6eb5af81e62dfcf88abfa56c344588689e6013db17ec745bd04cc9d2f8137",
+      "translation": "‘상자는 전부 빼고 안전하게 포장’은 충돌하는 지시일 수 있습니다. 손잡이를 지탱하는 유일한 맞춤 받침까지 제거하면 부피는 줄어도 목적에 어긋납니다. ‘컵 받침을 유지하고 손잡이가 노출되지 않게 겉 장식 슬리브만 뺄 수 있나요?’처럼 기능을 설명하세요. 승인 전 가능 서비스와 반품에 미칠 영향도 물으세요."
+    },
+    {
+      "source": "A cup travelling with a sweatshirt poses a different packing question from a cup travelling with metal hardware. Soft clothing in the same parcel is not automatically adequate cushioning. A hard object can move or press against a protruding part if it is positioned carelessly. Write down the exact warehouse entries intended for the parcel and identify any surfaces that should remain separate. If a heavy accessory can move, say so before the parcel is sealed. Avoid specifying a construction you cannot assess; explain the risks you want the packer to address.",
+      "source_sha256": "c954c45629a5c686ca4e2dcabb24bd2b9434b27ae0c3d5bf04e32425a19b3437",
+      "raw_target_sha256": "975883274a6f27b3517c5d8e701431674dfd00bbf61e154ebb2b5cfc2242455f",
+      "translation": "컵을 맨투맨과 보낼 때와 금속 부속품과 보낼 때는 포장 조건이 다릅니다. 부드러운 옷이 충분한 완충재라는 보장은 없고 단단한 물건이 움직여 돌출부를 누를 수 있습니다. 입고 항목과 분리해야 할 면을 적고 움직일 수 있는 무거운 부품을 봉하기 전에 알려 주세요. 직접 판단하기 어려운 구조를 지시하기보다 해결할 위험을 설명하세요."
+    },
+    {
+      "source": "Compare the combined shipment with a separate parcel for the fragile piece. Separation can simplify protection, but another parcel may carry its own minimum charges and packing costs. The combined parcel may be larger or have fewer eligible routes. Price and protection are different columns in this decision. Compare eligible options for the same destination and real contents. Check carrier and platform conditions for that type of item. A route appearing for general merchandise does not settle whether a particular fragile object is accepted or covered for breakage.",
+      "source_sha256": "cf224e0736190d240ecfeae1b511e500fdfd7f2bc9fbb43c9fe2237d7f03077b",
+      "raw_target_sha256": "be60c0ef26e0efbca80f9897f1e704d48824ee9d3b0fe6fd0a249b9de317b23a",
+      "translation": "파손 우려 품목을 따로 보내는 경우와 합배송을 비교하세요. 분리하면 보호가 쉬워도 별도 최저 요금과 포장비가 생길 수 있고, 합치면 크기가 커져 배송편이 줄 수 있습니다. 같은 목적지·실제 내용물에서 가격과 보호를 따로 비교합니다. 일반 상품 배송편이 보인다고 해당 파손품의 접수나 보상이 보장되지는 않으므로 운송사와 플랫폼 조건을 읽으세요."
+    },
+    {
+      "source": "OrientDig's service list describes photographs before and after sealing for its parcel-photo service. A pre-seal image can help show where the cup sits relative to a heavy accessory and whether the original insert appears to be present. A sealed-box image can help identify the outside condition or parcel markings. Neither image can prove what happened between carrier handoffs, nor can it establish every hidden layer of protective material. Decide what you expect to see in the open view before choosing the service.",
+      "source_sha256": "cc4bb214047ebf021955311c20b60e6f8baa0314082a268faad480b119e54f77",
+      "raw_target_sha256": "5564a8008be38c72efe747bdab648485f5521f5b3d30c9c398c1dbfce6a040f2",
+      "translation": "OrientDig 소포 촬영 안내에는 봉하기 전후 사진이 나옵니다. 봉하기 전에는 컵과 무거운 부품의 위치, 원래 받침이 보이는지 확인하고 봉한 뒤에는 외관과 표시를 볼 수 있습니다. 운송사 사이 인계 시 상황이나 가려진 모든 완충재 층은 입증할 수 없습니다. 서비스 선택 전에 열린 상태에서 볼 부분을 정하세요."
+    },
+    {
+      "source": "A useful note might read: “For parcel [reference], the cup is warehouse item [number]. If the available service allows, show that the handle is supported and that the metal accessory is in a separate area before sealing.” If your question needs a close item-level inspection, resolve it earlier. A wide photograph of four packed pieces will seldom make a fine crack visible. If the returned image cannot resolve the concern, identify the missing view without assuming that the absence of visible cushioning means no cushioning exists behind the item.",
+      "source_sha256": "9768bd09e7e883e8907abe9c8d5f60f7622393c98e6dd421a2e509d49c8768f6",
+      "raw_target_sha256": "ff4c5ec2dad01dd659dd729e75b362d1ca7b57ad8ddbdfced2bd7062bc4e4a9a",
+      "translation": "‘소포 [번호]의 컵은 입고 [번호]입니다. 가능하면 봉하기 전 손잡이가 지지되고 금속 부속품이 분리된 사진을 주세요’라고 쓰세요. 미세한 균열은 네 물건을 담은 전체 사진에 잘 보이지 않아 단품 단계에서 확인해야 합니다. 사진으로 해결되지 않으면 필요한 각도를 지목하고, 완충재가 안 보인다고 뒤에도 없다고 단정하지 마세요."
+    },
+    {
+      "source": "Protective packing can change a box's external dimensions more than it changes its actual weight. Measure or obtain all three external dimensions and the packed mass for the arrangement you intend to use. OrientDig describes rehearsal packing as a way to obtain a parcel weight before submission. Confirm which measurements are available for your parcel and whether later changes require a revised estimate. Keep the list of included items with the measurement record. A result for a cup and two shirts cannot conclusively price a later parcel that also contains a large box.",
+      "source_sha256": "2168517d42943ad8e58354a68950a1beb87c8bfaeabd15911be31c5a670d4ed1",
+      "raw_target_sha256": "8e6727fa03873bf602cd8fa23d0a85059bbf413e11081606eeb273e0cf46ffd6",
+      "translation": "보호 포장은 실중량보다 외부 치수를 더 크게 바꿀 수 있습니다. 예정한 구성에서 겉상자 세 변과 포장 실중량을 확인하세요. OrientDig는 출고 신청 전 무게를 확인하는 방법으로 사전 포장을 안내합니다. 받을 수 있는 치수와 변경 뒤 재견적 필요 여부를 물어보고 내용물 목록을 함께 저장하세요. 컵과 셔츠 두 벌의 결과로 나중에 큰 상자를 더한 소포의 요금을 확정할 수 없습니다."
+    },
+    {
+      "source": "Before paying, check whether the selected service lists restrictions for fragile contents, requirements about original packaging or exclusions for particular damage. Record the current wording beside the route name and date. A general statement that a parcel service offers protection does not identify what evidence is needed or whether a specific chip is covered. Ask the platform a narrow question when the written conditions leave a decisive point unresolved. Include the item material and packing proposal so the response addresses the right case.",
+      "source_sha256": "c5623223b1d19b8e0a0d9265526aecb08ed544173d9560a969b0e0354b8e7d7e",
+      "raw_target_sha256": "4b4be8198e35073746cbf9ef8a052e3a4e7d70c934811616fefbf3de63ae4b3d",
+      "translation": "결제 전에 파손 우려 물품 제한·원포장 요건·특정 파손 제외 사항을 읽고 최신 문구와 배송편 이름, 날짜를 저장하세요. ‘보호 제공’이라는 설명만으로는 증빙 요건이나 특정 깨짐의 보상 여부를 알 수 없습니다. 중요한 점이 남으면 재질과 포장안을 밝혀 구체적으로 문의하세요."
+    },
+    {
+      "source": "If you decide to send the parcel, keep the seller description, warehouse item photo, packing instructions and parcel reference in one place. Record what the photographs actually show. “Handle and both joints visible before packing” is stronger documentation than “item checked.” “Outer box visibly closed” describes the post-seal photo accurately. Avoid writing “unbreakable packing” or “fully insured” unless a specific service statement really supports that conclusion. A clear record is useful whether the item arrives intact or there is an issue to investigate.",
+      "source_sha256": "bd8ff3386ce7118820fbbdaca306a7809b2ca681f683ff3d449d15614be5583a",
+      "raw_target_sha256": "09b78a272f6cba23bddbb50389c74973974afbf5815e23bca97154d88469a1c0",
+      "translation": "발송한다면 판매자 설명·입고 사진·포장 지시·소포 번호를 함께 보관하세요. ‘포장 전 손잡이와 양 연결점이 보임’, ‘봉한 뒤 겉상자가 닫혀 있음’처럼 구체적으로 적습니다. 명확한 조건 없이 ‘파손 불가 포장’이나 ‘전액 보험’이라고 쓰지 마세요. 무사히 도착하거나 문제가 생겨도 기록을 활용할 수 있습니다."
+    },
+    {
+      "source": "At delivery, identify the correct parcel by its label and check the exterior for signs relevant to the item. If you discover damage, keep the packaging, inserts and affected pieces. Photograph the outer carton, arrangement and precise damaged area. Use the parcel reference for the delivery and the warehouse item reference for the cup. Look at the current reporting process promptly. Dates, evidence requirements and available remedies depend on the applicable terms, so a screenshot from a previous order should not be your sole guide.",
+      "source_sha256": "1ff2e836464f9fb0ac775246b4351913f9574200060ba37e43a2cc5c217515d5",
+      "raw_target_sha256": "1db7628355ba9bcc33ac516838d433128c8e3c74e118bb42c4fd6a2b9bd9a4c3",
+      "translation": "수령할 때 송장으로 소포를 확인하고 겉면을 보세요. 파손을 발견하면 포장·받침·해당 물품을 보관하고 겉상자, 배치, 파손 부위를 찍으세요. 배송 건에는 소포 번호를, 컵에는 입고 번호를 사용합니다. 기한·증빙·가능한 조치는 적용 조건에 따라 다르므로 과거 화면에만 기대지 말고 현재 신고 절차를 바로 확인하세요."
+    },
+    {
+      "source": "When the parcel arrives intact, the same records still have value. Compare the actual packing with your instructions and the amount you paid. Identify which features were useful and which created bulk without answering a need. Next time you can describe the exact protective function you want, ask for the right photograph at the right stage and compare quotes using more realistic dimensions. That specific knowledge is more useful than a general rating of an entire shipping route based on a single parcel.",
+      "source_sha256": "0ebab220b42120f1d99cc6eccf152d42e0d908a01026b82192ab84870570fde4",
+      "raw_target_sha256": "6d9f6372b9ec73eb08fff26bfbe1e24a1afff3d0231b76204c6b4625a390a3d6",
+      "translation": "무사히 도착해도 실제 포장을 지시·지불액과 비교하고 유용했던 부분과 부피만 늘린 부분을 적으세요. 다음에는 필요한 보호 기능과 촬영 단계를 정확히 말하고 현실적인 치수로 견적을 비교할 수 있습니다. 한 소포로 배송편 전체를 평가하는 것보다 활용도가 높습니다."
+    },
+    {
+      "source": "One seller can split a purchase into two domestic shipments, and one delivery can contain several variants. Reconcile the original order, carrier record and warehouse entry before deciding a piece is missing.",
+      "source_sha256": "c663bab49cc070a9f3f819139ea20741ae8074f6bf7c9a1116c94b269132b594",
+      "raw_target_sha256": "6e2943aa494fab258e3a5627830b309ecdff12640722e4f73b469aac553485ab",
+      "translation": "한 판매자가 주문을 국내 택배 두 개로 나누거나 한 번의 배송에 여러 옵션을 담을 수 있습니다. 누락으로 판단하기 전에 원주문·운송 기록·입고 내역을 대조하세요."
+    },
+    {
+      "source": "Imagine a purchase containing a cap and two belts, one brown and one black. The seller calls the whole thing “accessories” and the confirmation fits on one screen. You will have a much easier time checking arrival if you write down three physical units before the first parcel is shipped. Include the seller name, original listing, selected option text and quantity for each. If a belt includes a detachable buckle or comes as a gift set, record what the purchased option actually includes. The seller's display photo can show pieces sold separately.",
+      "source_sha256": "bb5888f968d0b663182d7509dbb11cd644f1ee1d242d298ca931f25bad71a901",
+      "raw_target_sha256": "f64c6ba1087a7b0857a93ce56da3ef22b87912887f96b3684368950d043034db",
+      "translation": "모자 하나와 갈색·검정 벨트 한 개씩을 판매자가 ‘액세서리’로 묶어도 첫 발송 전에 실물 세 개로 나눠 판매자·원래 링크·옵션 원문·수량을 적으세요. 탈착 버클이나 선물 세트 구성은 결제한 옵션 기준으로 기록합니다. 진열 사진에는 별매품도 함께 나올 수 있습니다."
+    },
+    {
+      "source": "OrientDig's shopping-assistant guide begins with the original product link or a search result from which the buyer selects an item. Preserve that selection when moving from shopping to tracking. A warehouse photo may identify an object as a belt but still leave open whether it is the narrow or wide version from your order. A seller option label, a model code or a stated width gives you something specific to match. Without it, a later disagreement becomes an argument about whether two similar photographs look alike.",
+      "source_sha256": "9962847af9fa686a01638fa59ae85107ad65ed8e36ab6afff64c8b529c2f033a",
+      "raw_target_sha256": "2aba15409f781a46c6b697a090c3b53f646c3a2160fead184a6744931a121ab7",
+      "translation": "OrientDig 쇼핑 도우미 안내는 원래 상품 링크나 검색 결과에서 상품을 고르는 단계부터 시작합니다. 추적 기록에도 그 선택을 남기세요. 입고 사진에서 벨트인 것은 보여도 좁은형과 넓은형은 구분이 안 될 수 있습니다. 판매자 옵션 표기·모델 코드·명시된 폭을 남기면 비슷한 사진만 보고 판단할 필요가 없습니다."
+    },
+    {
+      "source": "A marketplace product identifier identifies a listing. A domestic courier number identifies a particular trip to the warehouse. An international tracking number, if you later submit a parcel, concerns a different journey. Give each field its own label. If you paste all three into a note under “order number,” the longest string can easily be mistaken for the number a support form is requesting. Also retain the OrientDig purchase or warehouse reference displayed for the item. The platform uses its own records to locate what it is handling.",
+      "source_sha256": "07b528125d83f0915409f48530b2f3de015649af47a49da46d2b901db7f23237",
+      "raw_target_sha256": "1d3c0e01f39ba5008b836f6ef5b1f8486276d805ce7abaf78a0064544dfb171a",
+      "translation": "상품 번호는 판매 페이지, 국내 운송장은 창고까지의 운송, 출고 신청 후 국제 운송장은 해외 구간을 가리킵니다. 모두 ‘주문 번호’로 적어 가장 긴 번호를 양식에 넣지 말고 칸을 나누세요. OrientDig가 자체 기록을 찾는 구매 번호나 입고 번호도 보관합니다."
+    },
+    {
+      "source": "Look at the destination as well as the event. If a domestic carrier says the package was delivered to a location in China, the event may concern seller delivery to the warehouse. It is not evidence that a parcel has reached your overseas address. OrientDig describes its international logistics chain separately, beginning with warehouse packing and collection by a logistics provider. Unless you have submitted an outbound shipment and can identify its parcel record, do not jump from a domestic delivery scan to an international delivery conclusion.",
+      "source_sha256": "79bfe59afebe003ee1689161c1b57c61007c546cea430f0158348eaf695f2ac1",
+      "raw_target_sha256": "2bbdcac594f19758b64d7c3b9988f73392e1ec8946fdf98f0b8bb7f6e54be253",
+      "translation": "배송 이벤트와 목적지를 함께 보세요. 중국 국내 주소에서 배달 완료라면 판매자에서 창고로 보낸 택배일 수 있으며 해외 주소 도착을 뜻하지 않습니다. OrientDig는 창고 포장과 물류사 집하로 시작하는 국제 구간을 따로 안내합니다. 출고를 신청하지 않았고 해당 기록이 없다면 국내 배달을 국제 배달 완료로 읽지 마세요."
+    },
+    {
+      "source": "Suppose the cap is dispatched on Monday and the two belts on Wednesday. Record each tracking number with the items the seller says it covers, if that information is available. Mark the assignment as reported rather than physically verified until the warehouse evidence appears. When the first shipment is delivered, the outstanding list should still contain the belts. If the seller provides no contents breakdown, enter both tracking numbers against the purchase and wait to assign units until you have better evidence.",
+      "source_sha256": "fc744a422103935bc39305111acc19de3e37f41c41ed80275d39053a3e374c44",
+      "raw_target_sha256": "e91d98e6722de065a84e1b6b9058c0f8dac88ee94d52fa66a6ee5bf1331f520b",
+      "translation": "모자는 월요일, 벨트 두 개는 수요일 발송이라면 운송장별로 판매자가 밝힌 내용물을 적고 입고 증거 전에는 ‘판매자 안내’로 표시하세요. 첫 소포가 도착해도 벨트는 대기 목록에 남깁니다. 내역을 주지 않았다면 두 운송장을 구매 건에 연결한 뒤 증거가 생길 때 품목을 배정하세요."
+    },
+    {
+      "source": "A single delivery can also cover items shown on different purchase lines. A seller may pack both belts together, while the warehouse later creates separate item references for the colours. That difference in grouping is not an error by itself. Count physical units and map them across the stages. One domestic parcel, two belts and two warehouse entries can describe the same transaction accurately. Conversely, two warehouse images do not prove that there are two belts; they could show both sides of one belt. Ask which object a count describes before treating the numbers as inconsistent.",
+      "source_sha256": "001b37ee598d7fb112384ae69a889de3e0d0cabb24123baa5f0e94bef5052b53",
+      "raw_target_sha256": "0c66bb002802d95342d9cf50caa31aa07df9458701205ef4f6de3566ab804887",
+      "translation": "다른 구매 항목도 한 소포로 올 수 있습니다. 벨트 두 개를 한 봉투로 보내고 창고는 색상별 번호 두 개를 부여해도 이상하지 않습니다. 국내 택배 하나, 실물 두 개, 입고 내역 두 줄은 양립합니다. 반대로 사진 두 장은 벨트 하나의 앞뒤일 수 있습니다. 수가 어긋난다고 보기 전에 무엇을 센 값인지 보세요."
+    },
+    {
+      "source": "At intake, read the available labels and order-specific markings. For the belts, compare buckle shape, strap width and selected colour. For the cap, compare size or fastening type if these differ across the listing. A large photo of a plain black accessory might be visually correct but not distinctive enough to assign to one of two similar sellers. A visible model code, option label or unusual feature carries more identifying information. Keep that evidence attached to the warehouse reference rather than just saving a picture named “black.”",
+      "source_sha256": "f14e6584cd0714a54813b5723dd8963567d64e8d76c8cd5e873b77b064fd78b1",
+      "raw_target_sha256": "00321dcf6de965294fc10ce6627057a4f254d904e226be65130c6ac9591eb98b",
+      "translation": "입고 시 옵션 표기와 주문 고유 표시를 읽으세요. 벨트는 버클 모양·폭·색상, 모자는 치수나 여밈 방식을 비교합니다. 평범한 검은 액세서리의 큰 사진만으로는 비슷한 두 판매자를 구분하기 어렵습니다. 모델 코드·옵션 표기·특징적인 구조를 ‘검정’이라는 파일명 대신 입고 번호에 연결하세요."
+    },
+    {
+      "source": "When the existing view leaves an important detail unclear, consider what additional observation would resolve it. OrientDig's detailed-photo instructions ask for the stored item's number and allow the buyer to specify a view. A useful request might ask for both belt buckles and a close view of the width label on the brown one. If you need a measurement, state the endpoints and unit. A general request to photograph “everything again” may produce a clearer image of the same uninformative surface while leaving the identity unresolved.",
+      "source_sha256": "25daa6a5e3381f6a9ee900bfee34e40ede07d7421684f1ba4c30edbcfabaa735",
+      "raw_target_sha256": "f3460f9d5a2f428160f7f41b65b4a407e07f191caebe592593b5745f2a229a1c",
+      "translation": "추가로 무엇을 보면 식별할지 정하세요. OrientDig 상세 사진은 보관 물품 번호를 주고 각도를 지정할 수 있습니다. 버클 두 개와 갈색 벨트 폭 표기의 확대 사진을 요청하고 실측이면 양 끝점과 단위를 적으세요. ‘전부 다시 촬영’만으로는 같은 면만 더 선명해질 수 있습니다."
+    },
+    {
+      "source": "First, a piece may still be on the seller side. Check the purchase status and any domestic tracking information before asking the warehouse to search for something that has not been dispatched. Second, a domestic shipment may have a delivery scan but no warehouse record you can match. In that case, supply the seller tracking reference, destination information and expected contents to the order channel. Third, a warehouse entry may exist but its visible contents may conflict with the order. Give the item reference and identify exactly which expected piece or variation is absent.",
+      "source_sha256": "ab80f7fa7627e83b66197a9fadcbe405d2692c9bad152a486e9faf0471b39178",
+      "raw_target_sha256": "bcf2272d5209dce5688eaf9a4876e409ad405845326991e6e810a277fa996a4d",
+      "translation": "판매자가 아직 보내지 않았다면 구매 상태와 국내 추적부터 확인하세요. 배달 완료인데 입고 내역을 찾을 수 없다면 판매자 운송장·목적지·예상 내용물을 상담에 보냅니다. 입고 내역은 있으나 사진이 주문과 다르면 물품 번호와 빠진 품목 또는 옵션을 특정하세요."
+    },
+    {
+      "source": "For example, “missing brown belt” could mean the seller shipped only the cap, two belts arrived in one packet but only the black one is visible, or you found two black belts despite ordering different colours. Each case calls for a different next check. A short support message should contain the last confirmed stage and the first unresolved one. “Domestic carrier marks package [reference] delivered; warehouse entry [reference] shows the black belt; I expected the brown belt in that same shipment” gives a clearer starting point than “my order did not arrive.”",
+      "source_sha256": "41a3a8e0cc65617545106609c5ce4d3920aaabddae413eeff658c3ac3abdcb4c",
+      "raw_target_sha256": "b2366fb6d41b2c82ff81bc52525978c0f08387eb4a7fa43c5a5a16eadcaf2fe5",
+      "translation": "‘갈색 벨트가 없다’는 말은 모자만 발송됐거나 두 벨트 중 검정만 보이거나 주문과 달리 검정 두 개가 왔다는 뜻일 수 있습니다. 마지막 확인 단계와 첫 미해결 지점을 밝혀 ‘국내 운송장 [번호]는 배달 완료, 입고 [번호]에는 검정만 보이며 갈색도 같은 소포로 예상했습니다’라고 적으세요."
+    },
+    {
+      "source": "If a seller later sends a replacement, add it as a new shipment linked to the original purchase. Do not overwrite the old tracking number with the new one. Retain the reason for the replacement and the promised option. Otherwise, when two warehouse entries appear over time, it may look as if you bought two units intentionally. Mark whether the original item is awaiting return, held for inspection or otherwise accounted for according to your actual order record.",
+      "source_sha256": "42e9a8ec0782e8c2f462482a5ab284bd779fb61f9f4120399fafcf5a5864db5f",
+      "raw_target_sha256": "0b71a2a63653d3f26e1dc314c43aa9a1f06c4e5e799c25f10f4c5fc0242cc532",
+      "translation": "판매자가 교환품을 보내면 원구매에 새 배송을 연결하고 기존 운송장을 덮어쓰지 마세요. 교환 이유와 약속한 옵션을 남겨야 입고 내역 두 개가 의도한 중복 구매로 보이지 않습니다. 원래 물품은 반품 대기·검사 보류 등 실제 상태를 표시하세요."
+    },
+    {
+      "source": "When the replacement arrives, repeat the specific check that motivated the exchange. If the issue was width, examine the width or measurement on the replacement. If it was the colour code, look for that code and the selected order text. An improved photograph of an unrelated feature cannot establish that the earlier issue was corrected. Record the result against the replacement reference, not the original. This separation becomes essential if the two units are present in the warehouse during overlapping periods and you later choose one for shipment.",
+      "source_sha256": "1554b677621d82ad262df3c781531fc72c9d033a11682e1c555fe21661681520",
+      "raw_target_sha256": "e6d03c8eba42312d62f68afca3fed214d8531ce890acab274cac15aa5aca9a6c",
+      "translation": "교환품이 도착하면 교환 사유 자체를 다시 보세요. 폭이면 실측이나 표기, 색상 코드이면 해당 코드와 주문 원문을 대조합니다. 다른 부위의 선명한 사진으로는 해결을 입증할 수 없습니다. 결과는 교환품 번호에 적어 신구 물품이 동시에 창고에 있을 때 올바른 것을 출고하도록 하세요."
+    },
+    {
+      "source": "Before you send anything overseas, mark each intended unit as matched, disputed or still expected. Select warehouse references for the matched pieces and compare their count with the outbound list. If you knowingly ship the cap now and wait for the belts, record that choice. A later difference between purchase count and parcel count can then be explained immediately. Check dates and storage conditions for pieces held behind; a deliberate hold still needs a review date.",
+      "source_sha256": "6219aaa3dadd9cdf2813a83dfd10aeceae4f06f9e969c34e6a86468d55f0474e",
+      "raw_target_sha256": "75bc8e9b9cfc274d011e1e8acbd5c5af170c8b732382f21f5bb845d8321e85b4",
+      "translation": "해외 출고 전에 각 물품을 대조 완료·분쟁 중·도착 대기로 표시하세요. 확인된 입고 번호를 골라 출고 목록 수량과 맞춥니다. 모자만 먼저 보내고 벨트를 기다리면 그 선택을 적으세요. 창고에 둘 물품은 보관 조건·날짜와 다음 확인 시점도 살펴봅니다."
+    },
+    {
+      "source": "Once the outbound record exists, associate its reference with those selected units. Use its tracking information for the journey overseas. Keep the domestic references for questions about seller shipment or warehouse intake. If the parcel arrives and something is missing, compare the contents first with the outbound selection, then with the purchase history. That order of comparison prevents a piece left in storage from being described as lost in international transit, while preserving the evidence needed if a confirmed selected unit genuinely cannot be accounted for.",
+      "source_sha256": "fea278a767bd25ee19a87a82f93a217e2e17cba29ab32bef591a8464b0d12f75",
+      "raw_target_sha256": "55d1a83c0550155661967febd7e273197734281b582d0253ff4ce27672d62144",
+      "translation": "출고 소포 번호를 선택한 물품에 연결하고 해외 구간은 그 운송장으로 조회하세요. 국내 번호는 판매자 발송이나 입고 문의에 사용합니다. 수령 때 빠진 것이 있으면 출고 선택 내역을 먼저, 구매 이력을 다음으로 대조합니다. 의도적으로 남긴 물건을 국제 운송 분실로 오해하지 않으면서 실제 누락의 증거도 보존합니다."
+    },
+    {
+      "source": "A model wearing a complete outfit does not identify the option you paid for. Verify set contents, component sizes and shared details while the individual pieces are still at the warehouse.",
+      "source_sha256": "e3f5404cc69345831bae99d53ce02c600ea5bf7006fc09a2da17e726b330e4ec",
+      "raw_target_sha256": "ba7775176a36226641e18c07a4700731c75c13b20caafc3978fc1897cf7172b4",
+      "translation": "모델이 세트를 입었다고 세트를 결제한 것은 아닙니다. 각 물품이 창고에 있을 때 구성품·개별 치수·공통 세부 요소를 확인하세요."
+    },
+    {
+      "source": "Imagine you are buying a matching overshirt and shorts. The first seller photograph shows the two together; the option list offers shirt, shorts and a set. Before looking at the warehouse images, find the actual selected option on your purchase record. Save its original wording, quantity and size. An order for one shirt and one pair of shorts on separate purchase lines is different from an order for one set sold as a single unit. Both can produce two garments, but the seller's obligations and available exchange options may differ.",
+      "source_sha256": "fdae23fc94ee4793ceb09fb0ca1b205278682b157b85f52ad2649855b1befc3a",
+      "raw_target_sha256": "aaeb42d3bec42727e017552ac9563f76f0d30985de42d96e5cb2c43dbe35cb14",
+      "translation": "셔츠 재킷과 반바지가 첫 사진에 함께 있어도 선택지는 상의·하의·세트일 수 있습니다. 입고 사진을 보기 전 구매 내역의 옵션 원문·수량·치수를 저장하세요. 상하의를 따로 산 것과 한 판매 단위의 세트를 산 것은 둘 다 옷 두 벌이지만 판매자의 제공 의무와 교환 단위가 다를 수 있습니다."
+    },
+    {
+      "source": "Now check whether any additional accessory is part of the selected offer. A belt visible on the model may be included, removable but sold separately, or part of the styling. If the listing is ambiguous, ask a specific question before paying or authorizing shipment. “Does the selected navy set include the belt shown in image three?” is precise. “Is everything included?” leaves the answer dependent on what each person understands by everything. Keep the seller or agent response beside the option rather than relying on the original marketing picture alone.",
+      "source_sha256": "3cda926d3c379ee351fd48737d9fb85ef3578f3e15cddf73ef4980e7c4e2ee32",
+      "raw_target_sha256": "5d402ddc7f203dbd08c6a253552df3866a5d6ca18c03ee6f8b51643c5c07bcb9",
+      "translation": "모델의 벨트가 포함품인지, 탈착 가능하지만 별매인지, 단순 코디용인지 확인하세요. 모호하면 결제나 출고 승인 전에 ‘선택한 남색 세트에 세 번째 사진의 벨트가 포함되나요?’처럼 묻습니다. ‘전부 들어가나요?’보다 정확하며 판매자나 대행사 답변을 옵션과 함께 보관하세요."
+    },
+    {
+      "source": "Some listings present one size for the entire set, while others let the buyer select top and bottom independently. Read the actual selectors. If you need medium on top and large on the bottom, a quantity field cannot communicate that combination by itself. Do not assume a note can override the way the seller stocks a prepacked set. Ask whether a mixed-size combination is available and obtain confirmation if it is essential. Retain the source selection and any agreed changes within the purchase record.",
+      "source_sha256": "cb12dc2ea5aff4a6f1dbe1e05f27f805cd759ac8207b7ba3dff69995d7553490",
+      "raw_target_sha256": "b5c66e74759859a6b8ff26bea85cebdb5c56c57861d05b20a45e7d1e4e54ee9c",
+      "translation": "세트 전체 치수 하나만 고르는지 상하의를 따로 고르는지 실제 선택란을 보세요. 상의 M·하의 L은 수량란만으로 지정되지 않으며 메모가 사전 포장된 구성을 바꿀 수 있다는 보장도 없습니다. 혼합 치수가 필수라면 가능 여부를 확인받고 원래 선택과 합의한 변경을 기록하세요."
+    },
+    {
+      "source": "Define the measurements that matter for each piece. A shirt's flat chest width and back length describe different questions from the shorts' relaxed waistband width and rise. A single “fits medium” statement is too vague to compare the outfit. Choose a comparable top and bottom that you own and record the same endpoints as the seller's diagrams. If your decision depends more on the bottom than the top, prioritize that detail in any warehouse photo request rather than asking for a large collection of general pictures.",
+      "source_sha256": "1d4c173481df4084ef71d9eef37f25370fce10665448d50387f6015732afcd22",
+      "raw_target_sha256": "ea3afe6b50d28a821258d4018c044bd34949879e3c0edb8689fa73f27c0440ff",
+      "translation": "상의는 가슴 단면과 등 길이, 반바지는 힘을 뺀 허리 단면과 밑위처럼 각자 필요한 값을 정하세요. ‘M이 맞음’만으로는 비교하기 어렵습니다. 내 비슷한 상하의를 판매자 도표와 같은 지점에서 재고 하의가 결정적이라면 일반 사진 여러 장보다 해당 부위를 먼저 요청하세요."
+    },
+    {
+      "source": "When warehouse pictures become available, begin with an overview showing all pieces laid out together if available. It helps count the garments and see whether one is obviously a different colour or pattern. Compare labels, model codes and distinguishing features where possible. The same shade name can apply to several versions. A navy overshirt with a fine stripe and plain navy shorts may be intentional or may indicate two unrelated pieces, depending on the purchased option. Check the seller description before declaring a mismatch.",
+      "source_sha256": "4444cdb83abdea1b7625b11004c72bf806930ca616df867af3f873eeb70da18a",
+      "raw_target_sha256": "bc91436388293ffd403fbe27e8e4e63518aa1cfbccf6a4975e9771d31f8f9670",
+      "translation": "구성품을 함께 펼친 사진으로 수량과 눈에 띄는 색·무늬 차이를 보고 표기·모델 코드·특징을 대조하세요. 같은 남색 이름에도 여러 버전이 있습니다. 가는 줄무늬 상의와 민무늬 반바지가 원래 조합인지 다른 상품인지는 결제한 옵션과 판매 설명을 확인한 뒤 판단하세요."
+    },
+    {
+      "source": "Be careful with camera exposure. Two separately photographed dark garments can appear different under changing light. A single shot under common lighting gives a more useful comparison, especially if colour coordination is central to the set. Look at texture and pattern spacing as well as apparent shade. A photograph can reveal a visible difference; it cannot fully establish how fabrics will look outdoors or after washing. Record what the picture actually shows, for example “both pieces in one frame, same visible stripe spacing,” instead of making a promise about identical fabric composition.",
+      "source_sha256": "f005fc73faa7f6f80ed99bf25409a71f44fa8157fd8fdcde60df131b02ff2e9a",
+      "raw_target_sha256": "78a93092b9a7ac1c8b5abca1b8841138f9d1d6cb439043ca770ad88d84236ead",
+      "translation": "짙은색 옷을 따로 찍으면 노출 차이로 색이 달라 보입니다. 배색이 중요하면 같은 조명 아래 한 장에 놓고 질감과 줄무늬 간격도 비교하세요. 사진은 현재 보이는 차이만 보여 주며 야외나 세탁 후 모습까지 보장하지 않습니다. ‘같은 화면에서 줄 간격이 같아 보임’처럼 적고 섬유 조성이 동일하다고 단정하지 마세요."
+    },
+    {
+      "source": "OrientDig's detailed-photo guidance allows instructions about a particular angle, feature or measurement. Give the stored item's reference and state what you need to decide. If the overview shows both garments but no size labels, ask for a view identifying each label and the corresponding piece. If the seller promised a detachable belt, ask for both pieces and the belt laid out together. If the top has a distinctive embroidered cuff, request that cuff specifically. Choose a number of views consistent with the service you select.",
+      "source_sha256": "4ff2cf6ce4a7b57bf55bce097cba1bafc7dc4510e42d5bcad767491b090202cd",
+      "raw_target_sha256": "9387455249b74bc56b6602fa644658b98ed3aee03cbd53ce4830bb1253eaaecb",
+      "translation": "OrientDig 상세 촬영은 각도·특징·실측을 지정할 수 있습니다. 입고 번호와 결정할 점을 밝히세요. 치수표가 없다면 각 표와 해당 옷이 연결돼 보이게, 벨트가 약속됐다면 상하의와 함께 펼치게, 자수 소맷단이 중요하면 바로 그 부위를 요청하세요. 선택한 서비스의 사진 수에 맞춥니다."
+    },
+    {
+      "source": "For example, a two-view request might ask for the whole set with the visible accessories, followed by an image of the shorts' waistband tape measurement. That gives one count check and one fit check. If you also need a readable top label, consider whether it can be shown clearly in the first frame or needs its own view. Avoid packing several incompatible requests into one close-up. A photograph wide enough to show an entire outfit will often make a small printed label unreadable on a phone.",
+      "source_sha256": "68348237c375456b83b41a5a784c4a61bf495863ba5fbf9b8c57e74e20ce5f57",
+      "raw_target_sha256": "0a54fdb7707b4d6472a986575c5694eda43fab1bf6cd04e6ee81e2d4c5ce1576",
+      "translation": "두 장이라면 첫 장은 세트와 부속품 전체, 둘째는 반바지 허리 실측으로 수량과 착용 기준을 하나씩 확인하세요. 상의 표기도 필요하면 첫 장에서 읽을 수 있을지, 별도 확대가 필요한지 보세요. 전체 옷을 담은 사진은 휴대폰에서 작은 라벨을 읽기 어려워 양립하기 힘든 요청을 한 장에 몰지 않는 편이 낫습니다."
+    },
+    {
+      "source": "For the top, close buttons or zips if that matches the seller's measurement method. Ask for a straight flat width at named seams or a named length path. For the shorts, distinguish relaxed elastic width from a measurement under tension. A stretched elastic result depends on the force applied and can be difficult to reproduce. Measure your own garment with the same method. Compare the two observations rather than assuming an identical size label means identical dimensions across different sellers or styles.",
+      "source_sha256": "777b9c7c34ecbc8a9beda3e1b84589717c7cadd01d4f93cf05d88fbc140d2c16",
+      "raw_target_sha256": "3c6a451bd0ea726bbaba06029fa00ee079e89e20553a2e66c8cf682aa9d91381",
+      "translation": "상의는 판매자 방식에 맞게 단추나 지퍼를 닫고 지정한 솔기 사이의 직선 폭 또는 지정 경로의 길이를 잽니다. 반바지는 힘을 뺀 허리 단면과 늘린 단면을 구분하세요. 늘린 값은 당기는 힘에 따라 달라 재현하기 어렵습니다. 내 옷도 같은 방법으로 재고 같은 표기 치수보다는 실측끼리 비교하세요."
+    },
+    {
+      "source": "Suppose the shirt is correct and the shorts are the wrong size. Record expected and observed sizes separately. Save the purchase option showing whether the set was sold together and ask the order channel what options apply. Do not assume the seller will exchange the shorts alone or require both pieces back; that depends on the actual terms and item. Keep packaging and tags while the issue is being assessed. If any service could alter return condition, such as removing labels or discarding a presentation box, hold that decision until you understand the consequences.",
+      "source_sha256": "9740ba573b1cd45e757a5a54556970c949195a736600770dd224b1a3b4417ecb",
+      "raw_target_sha256": "02a90c7dc4e7ffbd600be0ee76b16a840119971fbd7e5940cb19071ea3b5681d",
+      "translation": "상의는 맞고 반바지 치수가 다르면 예상·실측 표기 치수를 따로 적으세요. 세트 판매 여부가 보이는 구매 옵션을 저장하고 주문 상담에 적용 조건을 물으세요. 하의만 교환할지 전체를 돌려줄지는 실제 조건과 상품에 달려 있습니다. 확인 중에는 포장과 택을 보관하고 택 제거·선물 상자 폐기는 영향을 안 뒤 결정하세요."
+    },
+    {
+      "source": "If a replacement is offered, clarify what will be sent and what must be returned. If only the bottom is replaced, the colour match may need another check when it arrives. Keep the original set reference and replacement reference distinct. Ask for evidence of the specific corrected feature before combining the pieces again. A second photograph showing the correct shorts size does not identify whether the replacement matches the fabric of the retained top, so revisit the questions that originally made the coordinated set worth buying.",
+      "source_sha256": "2ff690e1fa5b528d57836972152dc5c5732bc66341067d818ff4b39d7256007c",
+      "raw_target_sha256": "e09d49ac8ce28e03712931a6d30a5b5c687111d5e5722c3ef8de88daecf3ab37",
+      "translation": "교환이 제안되면 돌려줄 것과 다시 받을 것을 명확히 하세요. 하의만 교환하면 도착 후 색 조합도 다시 봅니다. 원래 세트 번호와 교환품 번호를 구분하고 문제가 해결된 증거를 본 뒤 합치세요. 반바지 치수가 맞는 사진만으로 남긴 상의와 원단이 어울리는지는 알 수 없습니다."
+    },
+    {
+      "source": "When the set is ready, look at how its warehouse records are represented in the parcel selection. Two components might appear together under one entry or separately. Match the selected entries with your completed unit list. If you intentionally send the top in one parcel and leave the bottom behind, document that choice. Otherwise, verify that both pieces are accounted for before dispatch. A parcel count of one can be correct for a complete set sold and stored together, but it cannot prove the physical count without context.",
+      "source_sha256": "04352071a4f068373fa405e97e213aa8d8bcf9c389ceb3849b053e172c6c43ce",
+      "raw_target_sha256": "54d71f485bb39d7e30d01cdc6899771b2fbba0a2a7238889c6f3058386fd8a4f",
+      "translation": "출고 화면에서 상하의가 한 내역으로 묶였는지 따로 등록됐는지 보고 실물 목록과 선택 번호를 대조하세요. 상의만 보내고 하의를 남기면 그 결정을 적고 그렇지 않다면 둘 다 포함됐는지 확인합니다. 한 세트로 판매·보관돼 표시 수량이 하나여도 맥락 없이 실물 개수를 증명하지는 못합니다."
+    },
+    {
+      "source": "At delivery, keep the set together while comparing its contents with your saved overview and options. If a question arises, give both the original purchase reference and the outbound parcel reference. Explain which component is affected and what the earlier warehouse evidence showed. This gives support a meaningful timeline rather than a general complaint about an outfit. When everything matches, retain the measurements alongside the seller information for future sizing decisions. Your own verified comparison of this cut will be much more useful than a general claim that every set from a platform runs large or small.",
+      "source_sha256": "ea9f772f2288a6a5cfc1fed6c4ef45170cf40230f13051c6e675569e99c23a84",
+      "raw_target_sha256": "cb24fca4eb7daca4ea95ca7fa48053bc3b16f83b1caef26af791de9921ea9770",
+      "translation": "수령 후 세트를 함께 두고 저장한 전체 사진과 옵션을 대조하세요. 문제가 있으면 원구매 번호와 출고 번호, 해당 구성품, 이전 입고 사진에서 보인 상태를 알려 주세요. 모두 맞으면 실측과 판매 정보를 남기세요. 확인된 특정 핏의 값이 플랫폼의 모든 세트가 크거나 작다는 일반화보다 다음 선택에 유용합니다."
+    },
+    {
+      "source": "A retail box may protect a product, complete a gift or preserve an unresolved return option. Decide what it does before comparing the cost of keeping or removing it.",
+      "source_sha256": "b36d6275811aaf9c3bbbef035858551d49b78650c0f25e589ba14341ddf77932",
+      "raw_target_sha256": "ee1f6aecd95b29e2cd6f65813bd007b59f332e57ac98d348ca8c50265a86067c",
+      "translation": "소매 상자는 상품을 보호하거나 선물 구성을 완성하거나 미결 반품에 필요할 수 있습니다. 유지·제거 비용을 비교하기 전에 역할을 확인하세요."
+    },
+    {
+      "source": "An item can arrive inside a protective bag, a fitted insert, a retail box, a seller transport carton and another layer used for outbound international shipping. “Remove the box” is ambiguous when several boxes are involved. Ask which layer the warehouse means and describe it in plain language. For example, “the brown seller delivery carton outside the printed shoebox” identifies a different object from “the printed box holding the shoes.” Preserve photographs of the packaging arrangement when a distinction matters to your decision.",
+      "source_sha256": "e2bb6311e00e18a02d58e59b06e8548ce8f65534951350290ca24140d635d83e",
+      "raw_target_sha256": "127533588a6e5e6cdeba51bdb43f581b676b3655e84b382015ab8850d503af43",
+      "translation": "보호 봉투·맞춤 받침·소매 상자·판매자 국내 배송 상자·국제 출고 상자가 겹칠 수 있어 ‘상자 제거’만으로는 모호합니다. ‘인쇄된 신발 상자 바깥의 갈색 국내 택배 상자’와 ‘신발이 담긴 인쇄 상자’를 구분하세요. 결정에 중요하다면 포장 구조가 보이는 사진도 남기세요."
+    },
+    {
+      "source": "Begin with why you want a change. Perhaps the retail box is empty space around a soft accessory. Perhaps you want it intact because it is part of a present. Perhaps the corner of the box is damaged and you are deciding whether to return the item. Each reason suggests a different course. Do not authorize disposal before settling a return or exchange question. The seller's conditions and the handling already performed can affect the available options. Seek a specific answer for your actual order while the relevant materials still exist.",
+      "source_sha256": "84ed91e0f2d6759bc036473fda3cb28a24b31364c83c76108bca55635d318615",
+      "raw_target_sha256": "e5828371b5b523b972987367553168db3a168ff9576068146b3cf1f6dc795ad4",
+      "translation": "부드러운 액세서리 상자가 공간만 차지하는지, 선물이라 원형이 필요한지, 모서리 파손으로 반품을 고민하는지에 따라 선택이 다릅니다. 반품·교환 문제가 해결되기 전에 폐기에 동의하지 마세요. 판매자 조건과 이미 한 작업이 선택지에 영향을 주므로 포장이 남아 있을 때 이 주문에 대해 확인하세요."
+    },
+    {
+      "source": "A fitted insert can keep a fragile object away from the sides of a carton. A decorative sleeve may improve presentation while adding little structural protection. A printed label may identify the version or ingredients of an item even if the container itself is thin. Write a short note for each part: protects a projecting piece, holds small accessories together, identifies the purchased version, or matters to the recipient. This gives the warehouse a clearer description of what must be preserved than asking to retain “important packaging.”",
+      "source_sha256": "fee2252fc1cee3a6fd8dfed859587706e9baf2ce4f69626d0d26e541873ddfec",
+      "raw_target_sha256": "d2b2ed12744fe2b39e979131f2b7667a7df6b745b319e2a4861aac0daad6cc3b",
+      "translation": "맞춤 받침은 깨지기 쉬운 물건을 상자 벽에서 떼고 장식 슬리브는 외관을 꾸미며 얇은 용기의 표기도 버전이나 성분을 식별할 수 있습니다. ‘돌출부 지지’, ‘작은 부품 보관’, ‘구매 버전 식별’, ‘받는 이에게 필요’처럼 적으면 ‘중요한 포장 유지’보다 분명합니다."
+    },
+    {
+      "source": "Think about who will receive the goods. A replacement item for personal use may be acceptable in plain protective packing. A gift set meant to be handed over as presented may be incomplete without the display carton. If a box is part of the product's value to you, include its condition in your warehouse review. Ask for photographs of the relevant surfaces and corners before the item enters an outbound parcel. A later image of a sealed shipping box will tell you little about a dented presentation carton inside it.",
+      "source_sha256": "354b0aa7ba93a8d494cc82c0b871f9a9af415cf249e6fdb0967d1151debf1d0d",
+      "raw_target_sha256": "edbad68a10cab62b8c101550a48a6b11fb2c78af66ee831e12c3a7809c74ccec",
+      "translation": "개인용 교체품은 일반 보호 포장으로 충분해도 그대로 건넬 선물은 진열 상자가 빠지면 불완전할 수 있습니다. 상자가 가치의 일부라면 입고 때부터 상태를 확인하고 출고 전 필요한 면과 모서리 사진을 요청하세요. 봉한 겉상자 사진에서는 안쪽 선물 상자의 찌그러짐을 보기 어렵습니다."
+    },
+    {
+      "source": "A light box can matter to international freight because of its dimensions. OrientDig's billing-weight guidance describes estimating parcel packing and applying volumetric weight on applicable routes when it exceeds actual weight. Use the route's own terms for any calculation. Dimensions taken from a seller's retail box do not necessarily describe the outer international parcel; additional protection may increase them. Record which object you measured and whether the figures are observed, estimated or supplied after packing.",
+      "source_sha256": "0fae1755ea48ca0dfca174f9cb3cff796a599c6aa4017832bd3ba5728f037b98",
+      "raw_target_sha256": "b63c151a700c0075d1cd80ac4a10d587a78bddae377f4e7fa6698a0d42541317",
+      "translation": "가벼운 상자도 크기 때문에 국제 운임에 영향을 줍니다. OrientDig 청구중량 안내는 포장 추정과 해당 배송편에서 부피중량이 실중량보다 클 때의 적용을 설명합니다. 계산은 그 배송편 규칙을 따르세요. 소매 상자와 추가 보호를 포함한 국제 겉상자는 다르므로 어느 상자의 실측·추정·포장 후 제공값인지 적으세요."
+    },
+    {
+      "source": "Create a keep scenario and a remove scenario with the same contents, destination and relevant route assumptions. In each, identify the outer dimensions you expect and the protection the item would receive. If the shoe box would be placed beside another rigid carton of the same height, discarding it may leave the outer parcel's dimensions unchanged. If it is the longest or tallest piece, the effect could be greater. The packing arrangement matters as much as the volume of the individual box.",
+      "source_sha256": "2ff51833237d957a9888335deae7ddd3a78a558d2240cf6818140ce434c66dd8",
+      "raw_target_sha256": "2f415f34e8b672542714f7cca65c5a6c526b0736fc84aa5618aee6ce44b1c4bc",
+      "translation": "내용물·목적지·배송편 조건을 같게 두고 상자 유지와 제거 각각의 외부 치수와 보호 방식을 예상하세요. 같은 높이의 단단한 상자 옆에 있던 신발 상자는 빼도 겉상자 크기가 그대로일 수 있고 가장 길거나 높다면 영향이 클 수 있습니다. 개별 부피만큼 전체 배치가 중요합니다."
+    },
+    {
+      "source": "If you request rehearsal packing, specify the actual list of items and which packaging layers must remain. OrientDig lists rehearsal packing as an optional way to get a packed parcel weight before submission. Check what figures are returned for your order. Changing the contents, discarding a box afterwards or asking for stronger outer protection can make the earlier result less applicable. Keep the record of which scenario was measured. A number without its contents and instructions is difficult to compare with the final parcel.",
+      "source_sha256": "cb80cbfd214143ea5209b2fa0479ab7c31a4271989ccd5d71de1189bdcd42fcf",
+      "raw_target_sha256": "71e73bc414624ce292e1f2dcb56a514df41ca0214bf9053f522752f79aef6eef",
+      "translation": "사전 포장을 요청하면 실제 물품 목록과 유지할 포장 층을 명시하세요. OrientDig는 출고 전 포장 무게를 확인하는 선택 서비스로 안내하며 이번 주문에서 어떤 값을 받는지 확인해야 합니다. 이후 물품 변경·상자 제거·겉보강은 이전 결과의 적용 범위를 바꿉니다. 측정한 구성과 지시를 함께 남기세요."
+    },
+    {
+      "source": "A shoebox may protect the shape of the shoes or separate them from other contents. A jewellery box may keep small parts in one place. An electronics package may contain a fitted support tray that holds components apart. Removing these layers might be reasonable, but replacement protection should be considered. Describe which surfaces must remain separated and which small accessories need to travel together. Ask what packing options are actually offered rather than assuming that clothes elsewhere in the parcel will provide sufficient cushioning.",
+      "source_sha256": "433c134339b78a3b929055856cae3982d5bb42a853b8adb47c9e12403a089b79",
+      "raw_target_sha256": "97d98498726323e5f184a9473d04f92aeefd0fbbbd3d97f785d5861401145bc5",
+      "translation": "신발 상자는 모양을 유지하고 다른 물건과 분리하며 보석함은 작은 부품을 모으고 전자제품 받침은 구성품끼리 떨어뜨립니다. 제거한다면 대체 보호를 고려하세요. 분리할 면과 함께 가야 할 작은 부품을 밝히고 제공 가능한 포장을 물어보세요. 같은 소포 속 옷이 충분한 완충재라고 단정하지 마세요."
+    },
+    {
+      "source": "Evaluate the trade in concrete terms. Suppose preserving a box keeps a gift ready to present, while removing it might allow a smaller outer carton. If neither the final dimensions nor the route charge is known, the gift value is established and the freight saving is uncertain. You can investigate the uncertainty with a quote, choose to retain the box, or decide that the box has no value to the recipient. The right choice depends on the purchase. General statements such as “always remove shoe boxes” ignore the reason somebody bought that particular item.",
+      "source_sha256": "49b39f48669a239be89219175e2ccfbe42d46b11c22b189d50e71e0fa8e49701",
+      "raw_target_sha256": "7e1a0f95d2ddae200f9f3a92e56326baaaab5cb333c45084fba750c925dc1576",
+      "translation": "상자를 두면 바로 선물할 수 있지만 빼면 겉상자가 작아질 수 있습니다. 최종 치수와 운임이 없다면 선물 가치는 확실하고 절감액은 추정입니다. 견적을 더 보거나 상자를 남기거나 받는 이에게 가치가 없다고 판단할 수 있습니다. ‘신발 상자는 무조건 제거’ 대신 이번 구매 목적을 기준으로 삼으세요."
+    },
+    {
+      "source": "Use the warehouse item reference and name the packaging to keep and remove. One example: “For item [reference], keep the printed gift carton, fitted tray and accessory envelope together. The plain seller courier carton may be omitted if suitable outer protection is available. Please ask if this is unclear.” Adjust the instruction to the choices the service actually allows. A concise positive description of the pieces to retain is safer than a long list of materials that might all be called packaging.",
+      "source_sha256": "4d9627237cf179430c1b237173176f96732891b8087db962c2b3ebfc423e6ca8",
+      "raw_target_sha256": "d1392ca90868f7131de46806dcab2f5eb044e1b49f59a50fdea190c47f0bd6b5",
+      "translation": "입고 번호와 유지·제거 부분을 적으세요. 예를 들어 ‘[번호]의 인쇄 선물 상자·맞춤 받침·부속품 봉투는 함께 보존하세요. 적절한 겉보호가 가능하면 무지 국내 택배 상자는 빼도 됩니다. 불분명하면 확인해 주세요.’ 실제 선택지에 맞추고 보존할 부분을 구체적으로 지정합니다."
+    },
+    {
+      "source": "If you need a visual record, distinguish item-level detailed photos from parcel photos. An item photo can document the condition of the printed box before packing. A pre-seal parcel view can help identify its placement relative to other goods. A sealed view can show exterior condition. OrientDig's published value-added services describe these different stages. Check the service description and order screen rather than assuming every photograph is included. Request the view that can still answer your question at that stage.",
+      "source_sha256": "e8028a3282572efc21f132a58ca356121df6d820cd7c5aef3521fcbd5368bf8a",
+      "raw_target_sha256": "c1838a93eec7a28623aa5adf171d620513412b69440302c39760fa25cbfc10d7",
+      "translation": "단품 상세 사진은 포장 전 인쇄 상자의 상태를, 봉하기 전 소포 사진은 다른 물품과의 배치를, 봉한 사진은 겉면을 보여 줍니다. OrientDig 부가 서비스는 단계가 나뉘므로 모든 사진이 포함됐다고 가정하지 말고 설명과 주문 화면을 확인하세요. 그 단계에서 질문에 답할 각도를 요청합니다."
+    },
+    {
+      "source": "Before submission, save your chosen scenario, the reasons for keeping or removing each layer and any agreed service charge. Confirm the route accepts the actual contents. If your decision relied on keeping material intact for an exchange, verify that the exchange question has genuinely been resolved before authorizing an irreversible packing change. Once the parcel is sent, keep its reference with those instructions. If you need to ask about a discrepancy, cite the particular item and packaging layer rather than describing the whole shipment as incorrectly packed.",
+      "source_sha256": "ec1ee3bd42dccfcf7b3ebed7f3b884df5c580cea7d35fb46377b581062a32ebf",
+      "raw_target_sha256": "b71df4f086e5498e223a57b2ca56a307d3c853db985bbfed34665c350e7f83d1",
+      "translation": "신청 전에 선택한 구성, 각 층의 유지·제거 이유, 합의 요금을 저장하고 실제 내용물이 해당 배송편에 맞는지 보세요. 교환 때문에 포장을 보존했다면 문제가 해결된 뒤에만 되돌릴 수 없는 변경을 승인하세요. 발송 후 소포 번호와 지시를 연결하고 차이가 있으면 물품과 포장 층을 특정해 문의합니다."
+    },
+    {
+      "source": "At delivery, compare the packaging you received with the instruction and the visible condition documented earlier. If damage is present, retain the outer carton, internal protection and item packaging while you check the reporting procedure. If the trade worked well, save the actual dimensions and final charge for context when planning a similar parcel. That experience can improve your next estimate, but changes in contents, routes and pricing still deserve a fresh comparison. A good packaging decision can be explained in terms of the item it protected and the cost evidence available when you made it.",
+      "source_sha256": "f06773a1b306c7de99a755cc7aa88d09394f9ff84f5d3341c6e4d089ea9011c5",
+      "raw_target_sha256": "bd2706c4c24da96857bd6837df3a24421ddd8455f40352f597669293070aecab",
+      "translation": "수령 시 받은 포장을 지시와 앞서 기록한 상태에 대조하세요. 파손이면 겉상자·내부 보호재·상품 포장을 보관하고 신고 절차를 보세요. 효과가 좋았다면 실측과 최종 요금을 다음 소포의 참고로 남기되 내용물·배송편·가격이 달라지면 다시 비교합니다. 무엇을 보호했고 당시 어떤 비용 근거가 있었는지 설명할 수 있어야 합니다."
+    },
+    {
+      "source": "A shorter box can matter more than a lighter one, or make no price difference at all. Compare two packing arrangements using the current route rules and the same actual contents.",
+      "source_sha256": "939cc43d1f0418b0a074543f8890117b7865169d5ef3c4e7351ad631bc0625be",
+      "raw_target_sha256": "81fba163a7950b94e8762c8ee298a90d9724674ccadc7c78a3d8e2b1e7edd058",
+      "translation": "상자를 줄이는 것이 무게를 줄이는 것보다 중요할 수도, 가격에 전혀 영향이 없을 수도 있습니다. 같은 실제 내용물과 현재 배송편 규칙으로 두 포장안을 비교하세요."
+    },
+    {
+      "source": "Start with a concrete decision. Perhaps you want to keep the printed retail box around a pair of shoes but are willing to remove an oversized seller carton. Or you have a jacket that can be folded more compactly if doing so will not damage its shape. Give the proposed arrangements short descriptions tied to the actual physical changes. “Shoes in retail box beside folded jacket” and “shoes protected separately, jacket folded flat” say more than “large parcel” and “small parcel.”",
+      "source_sha256": "d0a1589dd05247f0e8ed5cfa8754f621361d4a55225c5a04d39c25ed8611c789",
+      "raw_target_sha256": "a8ac81e6f2c1f9da7daffed2da22baf2e6ff658c0727bd56453ab2d00d977246",
+      "translation": "인쇄 신발 상자는 유지하고 과하게 큰 판매자 상자만 빼거나 재킷 형태를 해치지 않는 선에서 더 작게 접는 등 구체적 결정을 정하세요. ‘소매 상자의 신발 옆에 접은 재킷’과 ‘신발은 따로 보호하고 재킷은 평평하게 접음’이 단순한 대형·소형보다 명확합니다."
+    },
+    {
+      "source": "Keep a list of the warehouse item references in both scenarios. The goods, quantity, destination and required protection should be the same unless the decision explicitly concerns changing them. If one scenario omits a second jacket altogether, it answers a different question: whether to send that jacket now or later. You can compare that too, but include the eventual second shipment in the cost analysis. An immediate low charge for a smaller package does not automatically mean the whole purchase will cost less to deliver.",
+      "source_sha256": "3ddcdd1044ab65a79c13e02cb42e7aea8e17461ddbb296a97d6de493f8946ac7",
+      "raw_target_sha256": "328828cf97065420ae5edaca378ecf8ba9501a978b38580e77d38b0c0b26eb1e",
+      "translation": "두 안에 들어가는 입고 번호를 모두 적고 변경 자체가 목적이 아니라면 물품·수량·목적지·필요 보호를 같게 두세요. 한 안에서 두 번째 재킷을 빼면 지금 보낼지 나중에 보낼지의 비교입니다. 나중의 두 번째 소포 비용까지 포함해야 하며 이번 작은 소포가 저렴하다고 전체 배송비도 줄지는 않습니다."
+    },
+    {
+      "source": "OrientDig's guide distinguishes estimated billing weight from packed results. It explains that stored goods have a recorded weight with their original packaging and that the system estimates packaging when preparing a parcel. On routes applying volume weight, a volumetric figure can govern when larger than actual weight. Read the current line's conditions for its divisor, unit requirements and other limits. A divisor seen in a forum example or a quote to a different destination cannot establish the terms of your own shipment.",
+      "source_sha256": "d03561cca30e1b805874de7097bb7bde2164487f4027a9575d09b368e28611c1",
+      "raw_target_sha256": "f502664e3f143ee408e098a31ed77b0b15345eb2e645e4384a02f949eec2591f",
+      "translation": "OrientDig 안내는 원포장을 포함해 기록한 입고 무게와 출고 시 포장재를 추정한 청구중량, 포장 후 실제 결과를 구분합니다. 해당 배송편은 부피중량이 더 크면 이를 적용할 수 있습니다. 현재 배송편의 나눗수·단위·제한을 읽으세요. 게시판 사례나 다른 목적지 견적의 나눗수로 이번 조건을 확정할 수 없습니다."
+    },
+    {
+      "source": "Two boxes can have the same volume and very different shapes. A long narrow box can exceed a route's allowed side length even when its actual mass is low. Calculate or note the longest side in each arrangement. Check any combined-dimension requirements displayed by the route as well. Use the formula specified by the carrier if one appears; length plus girth and a simple sum of dimensions are different expressions. Do not interchange them because both happen to produce a number measured in centimetres.",
+      "source_sha256": "69cfd28b68e2d49f5ed16ad49f99235bfd3edb1c892875f3fc3d6dc26fdd0986",
+      "raw_target_sha256": "8a0cfee9322b1ad100855b6076339a8eb512a8d61db5cf430535991f26334419",
+      "translation": "부피가 같아도 길고 좁은 상자는 가벼우면서 한 변의 상한을 넘을 수 있습니다. 두 안의 최장 변과 여러 변을 조합한 제한을 확인하세요. 운송사가 지정한 ‘길이+둘레’는 단순 세 변의 합과 다른 공식이며 둘 다 센티미터라고 바꿔 쓸 수 없습니다."
+    },
+    {
+      "source": "Early in the buying process, item weights may be seller descriptions or warehouse observations rather than final packed measurements. Keep them labelled. If a rigid item determines the minimum outer length, use that as a constraint on both scenarios. If a soft piece can fold, avoid assuming it can be compressed without affecting its condition. A range with a clear reason is better than an implausibly precise figure. You can update it when the warehouse supplies more information.",
+      "source_sha256": "989c1de71aa3a047aafa35bf31037d781dda4c72bdc6817575c4308d63921ac0",
+      "raw_target_sha256": "f1742008293e654721be02fbf0bd54d9d7bc719d80eb0279f52b873177e3c527",
+      "translation": "초기의 무게가 판매자 설명인지 입고 관측값인지 표시하세요. 단단한 물건이 겉상자의 최소 길이를 정한다면 두 안 모두 그 제약을 따릅니다. 부드럽다고 상태 변화 없이 마음껏 압축할 수 있는 것은 아닙니다. 지나치게 정밀한 추정보다 이유 있는 범위를 쓰고 창고 정보로 갱신하세요."
+    },
+    {
+      "source": "Decide whether uncertainty near a threshold is consequential. If both arrangements comfortably fit the route's visible limits and the quoted comparison barely changes, it may not be worth altering valued packaging. If one dimension is close to a listed maximum or a significant charge step, confirm the actual packed measurements before choosing. OrientDig lists rehearsal packing for buyers seeking a packed weight before submission. Ask what additional size information is provided or available for your parcel, and verify the service cost before using it for the comparison.",
+      "source_sha256": "6e498304d7002dfe6ec6cf905a4f34eb7121973d579a3c850dcce9590dae03e8",
+      "raw_target_sha256": "68a00c865d20944eda014f452c1dd0878faebe0babcdf6ce7f26f2c8947299f2",
+      "translation": "두 안이 모두 제한 안에 넉넉히 들어가고 요금 차이가 작다면 가치 있는 포장을 바꿀 필요가 적습니다. 한 변이 상한이나 큰 요금 경계에 가깝다면 결정 전 포장 실측을 확인하세요. OrientDig의 사전 포장은 신청 전 무게를 확인하는 서비스이므로 추가 치수 제공 여부와 비용을 먼저 물으세요."
+    },
+    {
+      "source": "External padding, reinforcement and a stronger outer carton may change several inputs at once. A thinner arrangement that requires extra protective spacing may end up nearer the original size than expected. A compact heavy package can cross an actual-weight threshold even when it fits a dimensional limit. Preserve the exact packing instruction used for each quote. A warehouse result for a protected parcel is more informative than a bare product measurement, but only for the goods and protection actually measured.",
+      "source_sha256": "c80d4175b84b1f08b982e67d62c84db0ae8bd7f8785225762735ce4fc8597760",
+      "raw_target_sha256": "3422e5e4056606b9de3848af7ed5cfc74671e0c5dc3067abd5d9d059155ed50a",
+      "translation": "겉완충재·보강·두꺼운 상자는 여러 입력을 함께 바꿉니다. 얇은 배치도 보호 간격이 필요하면 원래 크기에 가까워질 수 있고 작고 무거운 소포는 크기 제한 안에서도 실중량 경계를 넘을 수 있습니다. 각 견적의 정확한 포장 지시를 보관하세요. 보호 후 실측은 상품만 잰 값보다 유용하지만 실제 잰 구성에만 해당합니다."
+    },
+    {
+      "source": "For a valuable presentation carton, make its preservation an explicit requirement in both candidate arrangements. If the only way to fit a route is to discard it, the comparison becomes a choice between different deliverables. Record that in words rather than presenting the cheaper route as an unqualified improvement. Some buyers value the box; others do not. Your comparison should make the personal trade-off visible and leave the actual carrier rules to the current quote. Avoid authorizing irreversible disposal based solely on an early estimate.",
+      "source_sha256": "40b44d5e5edbbe7d8c5be39fc0738f39ffdc0eb3212720dffadaa7edbee801d7",
+      "raw_target_sha256": "6ce97188007272215ccca987011a398183b0d1a9837e886d7e7fb28c329b0439",
+      "translation": "진열 상자가 중요하다면 두 후보 모두 보존을 명시하세요. 버려야만 가능한 배송편이라면 가격뿐 아니라 받는 구성 자체가 달라지므로 그 차이를 적습니다. 상자의 가치는 사람마다 다르고 운송 규칙은 현재 견적에 따릅니다. 초기 추정만으로 되돌릴 수 없는 폐기를 승인하지 마세요."
+    },
+    {
+      "source": "For each scenario, keep its contents, destination, packing description, external dimensions, actual mass, billing basis, currency, quote time and route name. Mark figures that remain estimated. If two quotes differ substantially, isolate the change: did eligibility change, did billing weight change, did a different route become available, or did a service line change? Asking those questions in order makes it easier to spot input mistakes and avoids blaming a price increase on a dimension that never affected the applicable rule.",
+      "source_sha256": "ceece919d9cb2cf52c8393abad3d17d94f5b2d9f3e5a1b2e4f60f75c2ec02604",
+      "raw_target_sha256": "cbedfe180d54745b3c4956dadf0cdadcbd1e22097a226c45a71ca1a983e67e06",
+      "translation": "각 안의 내용물·목적지·포장 설명·외부 치수·실중량·청구 기준·통화·견적 시각·배송편명을 기록하고 추정값은 표시하세요. 차이가 크면 이용 가능 여부, 청구중량, 다른 배송편 등장, 서비스 항목 변경 순으로 보세요. 입력 오류를 찾고 실제 규칙과 무관한 치수를 인상 원인으로 오해하는 일을 줄입니다."
+    },
+    {
+      "source": "When you finally choose, retain the result and its reason. “Kept the retail box because the actual mass determined the quote in both measured scenarios” is a reproducible decision. “Split the parcel because the measured longest side exceeded this route's current maximum” is another. At dispatch, check that the recorded outer measurements correspond to the final contents you actually send. Use the result as one reference for a future package, while remembering that a new destination, different item mix or updated carrier conditions can change the conclusion.",
+      "source_sha256": "34928cee754dbe42721ac7d6fd2901f14c6b1d6f6d0f6affb0399c649f1694d2",
+      "raw_target_sha256": "1bca3e88cfddc3f28e4931f431fe9d7efc57036a0c2c04281231436ed693a09d",
+      "translation": "‘두 실측안 모두 실중량 기준이라 소매 상자를 유지함’, ‘실측 최장 변이 현 한도를 넘어 분할함’처럼 결과와 이유를 적으세요. 출고 때 외부 치수가 최종 내용물과 맞는지 확인합니다. 다음에 참고하되 목적지·물품 조합·운송 조건이 달라지면 결론도 달라질 수 있습니다."
+    },
+    {
+      "source": "A long box can also be easy to misread when a photo is rotated. Identify the longest physical edge before transcribing a photograph, then enter the remaining two edges with their units in the same record.",
+      "source_sha256": "f5cb7b9e0ded3d1274e2b8144eb1a7681f1b42f946ccb58de2b950c921d975ce",
+      "raw_target_sha256": "85f2b3f12f33aacd3c967debdbf03acb19600940a44056ceca31e4aa7cb131f4",
+      "translation": "긴 상자 사진이 회전돼 있으면 변을 바꿔 적기 쉽습니다. 실물의 최장 변부터 확인한 뒤 나머지 두 변과 단위를 같은 기록에 적으세요."
+    },
+    {
+      "source": "The cheapest displayed line is useful only if it accepts the actual goods, dimensions and destination. Read restrictions in a deliberate order and keep a record of the case you checked.",
+      "source_sha256": "cc89bf3e1afe3900a9f82a340e31c80f82d963bc1693d1f345c129e947f44337",
+      "raw_target_sha256": "0bd4c8f7fd489445d69e98e4d6e93a53d31570a306afbdd681611d7aafb59165",
+      "translation": "가장 싸게 표시된 배송편도 실제 물품·치수·목적지를 받아야 의미가 있습니다. 제한을 차례로 확인하고 어떤 소포 조건을 검토했는지 남기세요."
+    },
+    {
+      "source": "Start route research with a contents list precise enough for somebody else to assess. “Accessories” might cover textile items, metal fittings, a battery-operated device or a container with liquid. These can raise different carrier questions. Record material, function, quantity and any feature the current service asks about. If you genuinely do not know whether an item contains a particular component, ask the seller or agent before proceeding. A vague category can make an estimate look attractive while leaving the actual eligibility question unanswered.",
+      "source_sha256": "f1ef17b6b89544f6850e5fd253605fa18bff7231d355e7464d88d8514120dd14",
+      "raw_target_sha256": "20933cd057453df217ef3ec56162d6ac84a037574da17c956165a9b89228d6fd",
+      "translation": "‘액세서리’만으로는 섬유 제품·금속 부속품·배터리 기기·액체 용기 중 무엇인지 알 수 없습니다. 재질·기능·수량·서비스가 요구하는 특징을 적고 특정 부품 포함 여부를 모르면 판매자나 대행사에 물으세요. 모호한 분류로 싼 견적이 나와도 실제 접수 가능 여부는 확인되지 않습니다."
+    },
+    {
+      "source": "Keep this record tied to the item or warehouse references. If one parcel contains several different goods, a rule affecting one piece can affect the whole combination. Do not relabel a restricted item as an ordinary garment or omit it to obtain a quote. Ask which service can accept the correctly described contents or whether the shipment needs a different arrangement. The point of reading exclusions early is to avoid paying or packing around a route that cannot handle what you plan to send.",
+      "source_sha256": "e7f9be622659006d818bfa368c1a801fd0bdee8c916c3de56ce4a0ab9dd6828a",
+      "raw_target_sha256": "edc7e405d09c49e3997b4bef4a9841af99079d4de8040fffc9d41af750ac5282",
+      "translation": "목록을 상품·입고 번호와 연결하세요. 한 품목의 제한이 합배송 전체에 영향을 줄 수 있습니다. 제한품을 일반 의류로 쓰거나 견적에서 빼지 말고 정확한 설명으로 이용 가능한 배송편이나 다른 구성을 문의하세요. 제외 사항을 먼저 보면 보낼 수 없는 배송편에 맞춰 포장하거나 결제하는 일을 줄입니다."
+    },
+    {
+      "source": "One restriction concerns what a platform or service will handle. Another concerns the selected route's contents or packing conditions. Physical limits concern weight and dimensions, and geographic limits concern destination and delivery area. These categories can overlap, but checking one does not resolve them all. A small parcel that fits the weight limit might still contain an ineligible item. An item eligible in principle may have no available service to your particular address. A general logistics introduction cannot override a condition displayed on the actual route.",
+      "source_sha256": "744cdd3d0477add18f474e3f407b91b3994798b559c18c301d5b8e40de968297",
+      "raw_target_sha256": "ab9508a93d1f9259a1f04926fe9a3bf1935d275919e123f29f02ab9ee9cda4d0",
+      "translation": "플랫폼 취급 범위, 해당 배송편의 내용물·포장 조건, 무게·크기 한도, 지리적 서비스 범위를 구분하세요. 가벼운 소포라도 내용물이 제외될 수 있고 원칙상 가능한 상품도 특정 주소에는 배송편이 없을 수 있습니다. 일반 물류 소개보다 실제 배송편의 조건을 확인합니다."
+    },
+    {
+      "source": "When reading a restriction, identify the object it describes. Is the limit per item, per parcel, per side, per shipment value or per destination? If a condition says that a feature requires specific packing, ask whether that packing is available for your order. If a term is unclear, keep the exact wording and route name in your notes and request clarification for the real contents. Avoid turning one buyer's successful shipment into evidence that the written restriction will be ignored for yours.",
+      "source_sha256": "728ff319b9e00c26f8313295408d9f3dfc991cfc07d654ba2bb95d3390ba26d5",
+      "raw_target_sha256": "6921dffa932112d4e139a37ce0762fad41c023d7efc696a26ec480451644fc89",
+      "translation": "제한이 물품당·소포당·한 변당·신고 가치별·목적지별 중 어디에 해당하는지 보세요. 특수 포장이 필요하면 이번 주문에 가능한지 묻습니다. 불명확한 문구와 배송편명을 보관하고 실제 내용물 기준으로 확인하세요. 다른 사람의 발송 성공이 내 소포에 규칙이 적용되지 않는다는 증거는 아닙니다."
+    },
+    {
+      "source": "Use the finished outer box where possible. Write down length, width, height and actual mass with their units. Check which side is longest. Read whether the route states a maximum single side, a sum of dimensions or another formula. A sum of three sides and a length-plus-girth formula are not interchangeable. If final packing is unknown, mark your measurements as estimates and leave a margin for protection. A retail box measured at a maximum length before adding an outer carton deserves particular caution.",
+      "source_sha256": "ccc99c5cdf568d33bcec1396e5aa3183176f905fd72209a8794d13a4cad14ad1",
+      "raw_target_sha256": "67ce84069c88212e5af8b4e892aaa0d590deb8f1329d38063a18139a06dde523",
+      "translation": "완성된 겉상자의 세 변·실중량·단위와 최장 변을 적으세요. 한 변 상한인지 세 변의 합인지 다른 공식인지 읽습니다. 세 변의 합과 길이+둘레는 다릅니다. 포장 전이면 추정으로 표시하고 보호재 여유를 두세요. 소매 상자만으로 길이 상한에 닿으면 겉상자 추가 후 특히 주의해야 합니다."
+    },
+    {
+      "source": "OrientDig's weight guide describes actual and volumetric considerations for applicable lines. A parcel can be physically accepted and still be billed on a weight different from its scale reading. Conversely, a calculated dimensional figure below a headline weight limit does not prove the parcel meets every separate size rule. In your comparison, give eligibility and pricing their own columns. Establish acceptance first. Then estimate the amount using the billing basis, unit rules and current charges of the eligible route.",
+      "source_sha256": "de0516b9896a754c7a66332e20b0ee253c9a38b2e0620cd235a2358ba0a8318c",
+      "raw_target_sha256": "f77657371c80f09cfa9c8b35a750f6d6269ae7cfa4b6b2d65ae3f0fa6bf26f3a",
+      "translation": "OrientDig 무게 안내는 해당 배송편의 실중량과 부피중량을 설명합니다. 접수 가능한 소포도 저울값과 다른 무게로 청구될 수 있고 계산한 부피중량이 무게 상한보다 낮아도 별도 치수 규정을 만족한다는 뜻은 아닙니다. 접수 여부와 가격을 다른 칸에 두고 접수 확인 뒤 그 배송편의 청구 기준·단위·현 요율로 계산하세요."
+    },
+    {
+      "source": "Suppose you have a lightweight but bulky soft item. A route with an attractive rate per kilogram may use volume when it exceeds actual mass. A different line may impose a longest-side condition. Folding the item could make the physical dimensions smaller, but extra protection may partly offset the change. Build two complete scenarios with honest dimensions instead of mixing the lowest weight from one with the smallest box from another. A quote based on a combination you cannot actually ship has little value as a decision tool.",
+      "source_sha256": "e2034d6b710f5a7bd3c710ff7c285a15487b6d0987561c01b003d94ffe10e300",
+      "raw_target_sha256": "6bed3d9de81d26e3d4f33ba08aea9f45067f797853c8e3bba8be1f4204bba008",
+      "translation": "가볍고 부피가 큰 물품은 킬로그램당 단가가 낮은 배송편이 더 큰 부피중량을 쓸 수 있고 다른 편은 최장 변을 제한할 수 있습니다. 접어 줄인 크기도 추가 보호재로 일부 상쇄됩니다. 한 안의 최저 무게와 다른 안의 최소 상자를 섞지 말고 실제 발송 가능한 두 구성을 통째로 비교하세요."
+    },
+    {
+      "source": "Use the intended destination and address details that the estimator or route asks for. A route offered to one country, region or type of delivery point may be conditional for another. Check any destination restrictions or special handling notes shown with the result. If delivery timing matters, record whether the displayed interval is described as estimated and when it begins. OrientDig's logistics overview describes multiple stages after warehouse packing, including carrier collection and local delivery. A single date on a shopping plan cannot bypass those stages.",
+      "source_sha256": "57f8588f24155e7421e3c2b4f71d39be432a617cc047e59e815bf52fd1f0623f",
+      "raw_target_sha256": "7330f0fa6670ad1654828fe97cc259a4b4912a863215a0acb0c867033c3d7836",
+      "translation": "계산기가 요구하는 실제 목적지와 주소 정보를 넣으세요. 국가·지역·수령 지점 유형에 따라 조건이 달라질 수 있으므로 결과의 지역 제한과 특수 취급 안내를 봅니다. 시간이 중요하면 표시 기간이 추정인지와 기산점을 적으세요. OrientDig 안내처럼 포장 후 집하와 현지 배송이 이어져 구매 계획의 날짜만으로 생략할 수 없습니다."
+    },
+    {
+      "source": "If the route description discusses recipient actions or supporting information, determine what is expected before submitting. For legal or customs questions specific to a destination, use the responsible official authority and current platform or carrier guidance for the actual shipment. An independent spreadsheet cannot determine an individual's legal requirements or guarantee clearance. Keep any relevant communication with the shipment record so that a request received later can be related to the parcel you actually sent.",
+      "source_sha256": "f4bf0d60644d172090b33f3c2a1be268b24276c9f8c44dd6303b08e21cec65ec",
+      "raw_target_sha256": "8ba5b559c1cd80c1ad9d9c8aa91f70ffc5ad2c9bbb06aa2c0c8a1b8607292b9d",
+      "translation": "수취인 조치나 자료 제출이 필요하면 신청 전에 무엇인지 확인하세요. 목적지별 법률·통관 문제는 관할 공식 기관과 이번 운송에 관한 플랫폼·운송사의 최신 안내를 따르세요. 독립된 시트가 개인의 법적 요건이나 통관을 보장하지는 않습니다. 관련 연락은 소포 기록에 묶어 추후 요청과 연결하세요."
+    },
+    {
+      "source": "A service may accept an object while limiting the circumstances under which loss or damage can be claimed. Acceptance is not the same as comprehensive cover. Read the route's applicable service terms, packing requirements, reporting process and any exclusions relevant to the contents. If an optional protection service appears, identify what is added and what conditions remain. A price difference can reflect different included services, but a higher price alone does not establish more extensive protection.",
+      "source_sha256": "9bd4954e13ce2d26467e890ee60b31929938bfaca5f1a2303ff35a458cea5b14",
+      "raw_target_sha256": "614345400a37c1d04cda696743777d5856248abc385252884db49e82010c4b60",
+      "translation": "접수가 가능해도 분실·파손 청구에는 제한이 있을 수 있습니다. 배송편 약관·포장 요건·신고 절차·해당 제외 사항을 읽으세요. 선택형 보호가 있으면 추가되는 내용과 남는 조건을 확인합니다. 가격 차이가 서비스 차이를 반영할 수 있지만 비싸다는 사실만으로 보장이 넓지는 않습니다."
+    },
+    {
+      "source": "For a fragile decorative item, ask about the material and how it will be packed instead of asking only whether the line is “safe.” If the rule is ambiguous, a written question naming the item, proposed packing and route can produce an answer you can use. Save that answer and date it. Avoid restating the answer as a general policy for other products or destinations. Conditions can depend on the particular case and may change. The relevant record is the one connected to your actual parcel selection.",
+      "source_sha256": "8eac5c45c390cae67b8b2cfc0317599217033d0e46063bf42e43207bd5b6a585",
+      "raw_target_sha256": "d5148caf1022600d67cccf4810c5b041c793ca7d72251d74448af21e44278649",
+      "translation": "깨지기 쉬운 장식품은 단순히 ‘안전한가요?’보다 재질·포장안·배송편을 명시해 불확실한 규정을 서면으로 문의하세요. 답변과 날짜를 실제 소포 기록에 보관합니다. 상품·목적지·시점에 따라 달라질 수 있으므로 이를 다른 경우의 일반 정책으로 확대하지 마세요."
+    },
+    {
+      "source": "Create a short decision list for each line. Mark each relevant condition as satisfied, unresolved or failed. A failed condition removes that route for the current parcel. An unresolved one tells you exactly what to ask or measure. If a different packing arrangement or split shipment could make a route available, treat that as a new scenario with its own costs and implications for the remaining items. Retain the original so you can see why the change was proposed.",
+      "source_sha256": "4ee31260d35ccb93fd12746b66ce40f5d946ba00c82b6a36787c3438b17b4ff1",
+      "raw_target_sha256": "e862243331a800049f6101ec085d850d36d0f98eb427755af99284c86b13d803",
+      "translation": "배송편마다 조건을 ‘충족·미확인·미충족’으로 적으세요. 미충족이면 현 소포 후보에서 제외하고 미확인이면 꼭 필요한 질문이나 실측을 정합니다. 재포장이나 분할로 가능해지면 새 안으로 비용과 남은 물품 영향을 계산하고 원래 안도 남겨 변경 이유를 보여 주세요."
+    },
+    {
+      "source": "Before payment, check that the selected route, contents and final packed dimensions match the conditions you assessed. If an excluded piece was removed, verify it remains correctly recorded in storage and review its own options. If packaging changed, revisit the physical limits. Save the final route name, quote and reason for selection with the outbound reference. Later, if the service changes or a shipment query arises, you will be able to explain which restrictions you checked, what evidence you used and what the platform confirmed for your particular parcel.",
+      "source_sha256": "4060f39cafac0331f903c46ae897eac7b09bc4ed74310889160de83ce73be435",
+      "raw_target_sha256": "17fb80875338d6a5689d3077f5729f439dd79f19d5f3ef10a93150371ad4d258",
+      "translation": "결제 전 선택 배송편·내용물·최종 포장 치수가 검토한 조건에 맞는지 보세요. 제외한 물품은 창고에 제대로 남았는지 확인하고 별도 방법을 살피며 포장이 바뀌면 치수 제한을 다시 봅니다. 배송편명·견적·선택 이유·출고 번호를 저장해 검토한 규정과 증거, 플랫폼 확인 내용을 설명할 수 있게 하세요."
+    },
+    {
+      "source": "If you are ordering a bundle, check its smallest accessories separately. A listing for a lamp may also show a battery or a power adapter. Ask the seller what actually ships in the selected option, then give that description to the agent before comparing available routes again.",
+      "source_sha256": "357774aa818e58a0492fe109325c17f932d75d6dda92b267e239e99282854fe3",
+      "raw_target_sha256": "c88401032dfe9cb771d5e0e5b57c8a29bf7c5cf800134fc15be1a67f902f76be",
+      "translation": "묶음의 작은 부속품도 따로 확인하세요. 조명 사진에 배터리나 전원 어댑터가 함께 보일 수 있습니다. 선택 옵션에 실제로 무엇이 들어가는지 판매자에게 확인하고 그 설명을 대행사에 전달해 배송편을 다시 비교하세요."
+    },
+    {
+      "source": "International tracking can switch providers and use more than one reference. Read the event, location and carrier together to find the last confirmed movement and the right next question.",
+      "source_sha256": "e6b213d9937b65e134845894c269fc1802f3bd59086af22f2e48d34c5bd5c211",
+      "raw_target_sha256": "cb3825917c72967ba5539e9e5c3029da2dd54137d35b15c88f556047c57a2536",
+      "translation": "국제 배송은 업체나 번호가 바뀔 수 있습니다. 이벤트·위치·기록한 운송사를 함께 읽어 마지막으로 확인된 이동과 다음에 물어볼 지점을 찾으세요."
+    },
+    {
+      "source": "Open the OrientDig parcel record associated with the goods you actually submitted for international shipment. Record its reference, selected route and the tracking number shown for that journey. Keep domestic seller tracking elsewhere. A domestic number can show a delivery to the warehouse in China long before your international parcel is packed. Seeing “delivered” against the seller number is therefore not evidence of delivery at your home. First establish which journey, provider and destination each number describes.",
+      "source_sha256": "3c911174b4d207af88c70d2c1e3535d7d221c5e81c9a465e768f51aa4bfcddcf",
+      "raw_target_sha256": "16494f0a47ee26dd0cf538aaac1aa70d2485371aee9a7a2622637f4cb8bc4959",
+      "translation": "실제 국제 출고한 OrientDig 소포를 열어 번호·배송편·해당 구간 운송장을 적으세요. 판매자 국내 번호는 따로 보관합니다. 국제 소포 포장 전에 중국 창고로 배달 완료될 수 있어 집에 도착했다는 뜻이 아닙니다. 번호마다 운송 구간·업체·목적지를 먼저 확인하세요."
+    },
+    {
+      "source": "Imagine that you bought a backpack and several accessories from two sellers. Their domestic parcels reached the warehouse on separate dates, but you selected the goods for one international package. Your purchase history may now contain two domestic tracking numbers, several warehouse references and one outbound parcel record. If the local delivery company later assigns a replacement number, that is another tracking identity for the outbound journey, not a new shopping order. Make a small map linking the numbers before contacting anyone about a missing update.",
+      "source_sha256": "43bad66157aa0a6a350dc20f9c83e487c12b9efee95e7713c32994c2a7e19210",
+      "raw_target_sha256": "c5ed7e2e4e53c767c858da47a4644eb5b0d8c8a44b18a92a8f1be0463bd6596b",
+      "translation": "두 판매자의 배낭과 액세서리가 다른 날 입고되어 한 국제 소포가 됐다면 국내 번호 둘, 입고 번호 여러 개, 출고 내역 하나가 있습니다. 현지 배송사의 새 번호도 같은 출고 여정의 다른 번호이지 새 주문이 아닙니다. 조회 누락을 문의하기 전에 대응표를 만드세요."
+    },
+    {
+      "source": "OrientDig's logistics overview describes warehouse packing, collection by a logistics provider, security processing, flight arrangement, possible transit, destination processing, clearance and local delivery. Use that broad sequence as context rather than a promise that every event will appear as a public scan. A shipment may pass through a stage without displaying the exact wording you expect. A service label or account status can also be created before the carrier records physical acceptance of the parcel.",
+      "source_sha256": "3562a46040499d89d81cdd42e2d42354ab4727b7fc37a100072535c664c2dad3",
+      "raw_target_sha256": "fcde89579d88f4a86c2935d8aa91c230ccc43795cccb02abe3afe4161ae91b3c",
+      "translation": "OrientDig 물류 안내는 포장·집하·보안 처리·항공편 배정·가능한 경유·목적지 처리·통관·현지 배송 순서를 설명합니다. 모든 단계에 예상 문구의 공개 스캔이 뜬다는 뜻은 아닙니다. 서비스 라벨이나 계정 상태가 먼저 생기고 운송사의 실제 인수 기록은 나중에 뜰 수도 있습니다."
+    },
+    {
+      "source": "Write the latest confirmed event in plain language. “Carrier received electronic information” usually conveys less than a physical acceptance scan, but read the carrier's actual wording rather than relying on a guessed code translation. “Arrived at sorting facility” describes a facility event and may not establish departure toward the next country. Include the timestamp and location exactly as shown, plus the source of the event. A combined tracking service may summarize several carriers, whereas a provider's own record can clarify which company generated a particular update.",
+      "source_sha256": "07c11da6aa1233f9cdc4af4302dfba78c7d40618a6ee0dee4985acf57721874a",
+      "raw_target_sha256": "c3576227593f1249cfe2da62051fbcdfea25a61e50745c98dbcd3823bd7030c3",
+      "translation": "최근 확인된 이벤트를 쉬운 말로 적으세요. ‘전자 정보 수신’은 보통 실물 인수보다 제한적이므로 코드를 추측하지 말고 운송사의 원문을 봅니다. ‘분류 시설 도착’은 다음 나라로 출발했다는 뜻이 아닙니다. 표시 시각·위치·출처를 그대로 적고 통합 조회와 운송사 자체 기록을 구분하세요."
+    },
+    {
+      "source": "An international logistics provider may carry the shipment for one portion and use a destination delivery partner for the final portion. A handoff can involve a different tracking number or the same number recognized by another service. Look for a named local carrier, alternate reference or explicit handoff information in the parcel or carrier record. Where one is supplied, save it beside the original number. If none is supplied, avoid guessing a provider from the format of the digits alone.",
+      "source_sha256": "d965ccd92223b4a4609ba142db4a785455ec4fa97982158dfe2b89f1b30f5029",
+      "raw_target_sha256": "b95e5d2c06318a8b65b5f75c4251ae3dbe49a65084266014dddf6b660e6df856",
+      "translation": "국제 운송사가 앞 구간을 맡고 목적지 제휴사가 최종 배송할 수 있습니다. 새 번호가 생기거나 다른 업체가 같은 번호를 인식할 수도 있습니다. 소포나 운송 기록의 현지 업체명·대체 번호·명시적 인계 정보를 찾아 원래 번호와 저장하세요. 없으면 숫자 형식만으로 업체를 추측하지 마세요."
+    },
+    {
+      "source": "A common point of confusion is an alternate number that exists before the local carrier records receiving the parcel. The existence of a local label can identify a planned delivery relationship without proving physical handover. Look for the strongest subsequent observation available, such as a scan recorded by the local provider. If the international record says handed over but the local record shows only electronic information, preserve both statements with their times. This is a useful specific discrepancy to ask about if the expected interval passes.",
+      "source_sha256": "68dd3b57f270b10093e2bd7f1ef3fb6a6908ce02d1666c8f5b60ce270504df01",
+      "raw_target_sha256": "0b7b84d2fffaecbd8d530e33f16b2c388409b9b9f2ede2c071f0e42dd053f1de",
+      "translation": "현지 번호가 생겨도 실물 인계 전 예정된 배송 라벨일 수 있습니다. 현지 업체의 실물 스캔 등 후속 증거를 보세요. 국제 기록은 인계 완료인데 현지에는 전자 정보만 있다면 양쪽 문구와 시간을 보관합니다. 예상 기간이 지난 뒤 물어볼 구체적인 차이입니다."
+    },
+    {
+      "source": "Tracking feeds can use local times, different time zones or translated summaries. Check whether a displayed time includes a zone or identifies the facility location. An event posted later on your screen may describe an earlier physical movement. A flight-related status in one country and a facility update in another may appear out of sequence if you compare clock times without their zones. If the time basis is unavailable, mark it unknown and avoid precise claims about how many hours the parcel spent between events.",
+      "source_sha256": "5e70fec1b814e8f67b8fef899afb0e90834589fe084f6bdf6c809f4ff6c2c885",
+      "raw_target_sha256": "52476edfc3d174b651c817fb7d6c4d676cfbc8cc4ec0a16c3dd21342c82217cf",
+      "translation": "추적 자료는 현지 시각·다른 시간대·번역 요약을 쓸 수 있습니다. 시간대와 시설 위치를 확인하세요. 뒤늦게 게시된 이벤트가 더 이른 이동일 수 있고 서로 다른 나라의 항공·시설 이벤트는 시계 숫자만 비교하면 순서가 뒤집힙니다. 기준 시각이 없으면 미상으로 적고 머문 시간을 정밀하게 단정하지 마세요."
+    },
+    {
+      "source": "Keep an event log short and meaningful. For each change that affects your next action, write the date, event, provider and what it actually establishes. You rarely need to copy every repeated transit message. A useful sequence might identify physical acceptance, the last international facility, a named handoff and the first destination-carrier scan. That evidence allows you to ask about a specific gap rather than simply stating that tracking is slow. Avoid sharing a full address or label publicly when discussing a route with other buyers.",
+      "source_sha256": "0b92be0003483b6d61568c8eab1a312c1034dc7ba15a399be2d6992af493b13b",
+      "raw_target_sha256": "3cff6628681822abfa23b03de08cef08f166c732c175afdbe03e859a4166eae5",
+      "translation": "다음 행동에 영향을 주는 변화만 날짜·이벤트·업체·확인된 사실로 적으세요. 반복되는 이동 중 문구를 전부 옮길 필요는 없습니다. 실물 인수·마지막 국제 시설·명시적 인계·현지 첫 스캔을 연결하면 구체적인 공백을 문의할 수 있습니다. 공개 논의에서는 전체 주소나 라벨을 공유하지 마세요."
+    },
+    {
+      "source": "OrientDig notes that the delivery estimate shown after dispatch is indicative and that events such as weather, processing or provider delays can affect progress. Use the estimate displayed for your selected service and the date from which it is measured. It does not necessarily start on the day you paid for the merchandise. Seller fulfillment and domestic delivery precede the international shipment. Count the relevant interval from the appropriate parcel event and check whether the estimate uses business days or calendar days if specified.",
+      "source_sha256": "fde2365232d0ebf1efbe7505e25369bf8af492279950c1973b3a25279aecfb0f",
+      "raw_target_sha256": "e9948cb584dea3aff7afff3d5c74ae3cdab9abea6375c5bba3bee31f90977d8b",
+      "translation": "OrientDig는 출고 후 기간이 참고용이며 날씨·처리·업체 지연이 영향을 줄 수 있다고 설명합니다. 선택한 서비스의 표시 기간과 시작 이벤트를 기준으로 하세요. 판매자 준비와 국내 배송은 국제 발송 전이므로 상품 결제일이 시작일은 아닐 수 있습니다. 영업일인지 달력일인지도 확인하세요."
+    },
+    {
+      "source": "An unchanged scan within the displayed estimate can be inconvenient without proving a parcel is lost. Equally, an actionable request for address clarification or collection should not be ignored merely because the estimated end date has not arrived. Read the latest event for an action, deadline or named contact channel. Use the platform and carrier's independently verified services to check the request. Do not send personal information or payment to a contact merely because an unsolicited message repeats a familiar-looking tracking number.",
+      "source_sha256": "f2fcdaebfeeb29d2d736994de456fe75fe02ac10017a923ffd718fafc3b5c5bc",
+      "raw_target_sha256": "39170f600c1460baf2bc462f2e74a95e35cf42e9bc94f4747e958100e7328542",
+      "translation": "예상 기간 안에 조회가 그대로여도 분실 증거는 아니지만 주소 확인이나 수령 요청이 있다면 기한 전이라도 확인해야 합니다. 최신 이벤트의 조치·마감·연락 창구를 읽고 독립적으로 확인한 플랫폼·운송사 공식 서비스로 검증하세요. 낯선 메시지에 익숙한 번호가 있어도 그 연락처로 개인정보나 돈을 보내지 마세요."
+    },
+    {
+      "source": "If the status needs clarification, provide the outbound parcel reference, route, original number, verified alternate number and last confirmed event with time and location. State what you expected to see next and which records you checked. “The international provider reports handoff on [date], but the named local provider shows only label information under [reference]” is concise and specific. It gives the platform a concrete relationship to investigate. A screenshot of your entire cart mostly adds unrelated product information.",
+      "source_sha256": "d79f9eee311a49a1dea05df05ed66409db2376dbd3c56c952686c6ae6e1d7b59",
+      "raw_target_sha256": "98ef2d8e947c0d822f26c59bc134880822e48238fb02e6382975958927774d0e",
+      "translation": "문의할 때 출고 번호·배송편·원래 번호·검증된 현지 번호·마지막 이벤트의 시각과 위치를 주세요. 확인한 기록과 기대한 후속 단계를 ‘국제 업체는 [날짜] 인계 완료이나 지정 현지 업체는 [번호]에서 전자 라벨만 보임’처럼 적으세요. 장바구니 전체 화면은 불필요한 정보가 많습니다."
+    },
+    {
+      "source": "Where the event says a delivery attempt was made, check the local provider's actual notice before requesting redelivery or collection. Identify the address or pickup instructions privately through the relevant official channel. If the record says delivered but you cannot locate the parcel, check the stated delivery details and any authorized receiving location, then follow the current reporting procedure promptly. Preserve the parcel reference and visible evidence. Do not infer the exact recipient or delivery location solely from a generic “delivered” label.",
+      "source_sha256": "d9060747812535dc8ca9d9ae7800d099aec90984be0f385c0a102499b3503c6e",
+      "raw_target_sha256": "8c338bbed2bee18beefe39cc5cb618b45d6f62c8a22c78cbc6956a061bddba79",
+      "translation": "배송 시도 표시가 뜨면 현지 업체의 실제 안내를 본 뒤 재배송·수령을 신청하고 공식 창구에서 주소와 수령 지침을 비공개로 확인하세요. 완료인데 찾을 수 없으면 세부 배송 기록과 승인한 수령 장소를 본 뒤 번호와 증거를 남겨 현 절차에 따라 신속히 신고합니다. 단순 ‘배달 완료’만으로 수취인과 위치를 확정하지 마세요."
+    },
+    {
+      "source": "Once the parcel arrives, match the label or verified local reference to the outbound record. This matters if several packages were travelling at the same time. Compare contents with the selected parcel, not with every purchase on your account. If an item is absent, first establish whether it was supposed to be in this particular shipment. Tracking can support the movement of a parcel; it does not by itself establish what the warehouse packed inside it or the condition of each piece.",
+      "source_sha256": "ddf6eb2a9d33796834b32677f66ab211398a4ef7d4aa9b12d91394f83f71ce32",
+      "raw_target_sha256": "018cf309d0f7426885efa603fc00016cb9501d2ac7dc770ba81f5d2a77fa2aa7",
+      "translation": "수령 뒤 라벨이나 검증된 현지 번호를 출고 기록과 맞추세요. 여러 소포가 동시에 이동했다면 특히 중요합니다. 내용물은 전체 구매가 아니라 그 소포 선택 내역과 비교합니다. 빠진 상품이 애초 이 소포에 포함됐는지 확인하세요. 추적은 소포 이동을 보여 줄 뿐 실제 포장 내용과 각 상태를 증명하지 않습니다."
+    },
+    {
+      "source": "Keep the final local number linked to the original until any delivery issue is resolved. If everything arrives as expected, preserve the useful route information for your own future planning, including the time at which the local reference became recognizable. Treat that as an observation from one shipment. It can tell you what records were useful to follow, but it cannot guarantee that a future carrier will use the same partner, publish the same scans or take the same time. The dependable habit is linking the references and reading each event according to the provider that actually recorded it.",
+      "source_sha256": "1059444eb7e8f91d29689d657a89a98805de7b4981a7bbabefa407760de644e3",
+      "raw_target_sha256": "39a705434b255cd0828cccc482876d8b8c9375725b274c3b117bacd9d20fdf27",
+      "translation": "문제가 해결될 때까지 현지 최종 번호와 원래 번호를 연결해 두세요. 무사히 받았다면 현지 번호가 언제 조회되기 시작했는지도 기록할 수 있습니다. 이번 사례일 뿐 다음에 같은 업체·스캔·기간이 보장되지는 않습니다. 반복할 수 있는 방법은 번호를 연결하고 실제 이벤트를 기록한 업체 기준으로 읽는 것입니다."
+    },
+    {
+      "source": "When sharing the timeline with a recipient, include the latest confirmed location and the name of the carrier that supplied it. A guess based on the next planned stop may send someone to a local collection point before the parcel has arrived.",
+      "source_sha256": "4ab18373284635543a23dd1f3b1098d54235258e86c427052ad9c0a6259f3c6e",
+      "raw_target_sha256": "f2a5a0dd579da260deae6e8260d80d267f8ecdde71a9ce4cb2d3a39a85aa7c25",
+      "translation": "수취인에게 경과를 전할 때 마지막 확인 위치와 이를 기록한 운송사 이름을 넣으세요. 다음 예정지를 현재 위치로 추측하면 소포가 오기 전에 수령점으로 가게 할 수 있습니다."
+    },
+    {
+      "source": "A usable request lets the purchasing team identify one live offer and one acceptable selection. Prepare the seller link, original option text, unit count and substitution instructions before submitting it.",
+      "source_sha256": "401359f5e4aad295c827dd426180f0fbb8d92e4adeca10c6abf7f24f0000afe8",
+      "raw_target_sha256": "90b46216eacf43e7ef50e0988222f39325abb63220662d6e955793cdb2edde92",
+      "translation": "구매 담당자가 현재 판매 중인 상품과 허용된 옵션을 특정할 수 있게 하세요. 제출 전 판매자 링크·옵션 원문·수량·대체 지시를 준비합니다."
+    },
+    {
+      "source": "A shopping assistant cannot reliably infer your preferred version from a picture of a model wearing several pieces. Start with one sentence describing what you intend to buy. It should identify the object, version, size or dimensions, colour and quantity. If an accessory matters, state whether it is included in the selected offer or something you need confirmed. “One navy cropped overshirt in size large, with the detachable collar shown for option B” gives a purchasing assistant a much clearer target than “buy this outfit.”",
+      "source_sha256": "cdc74ec59c4c6ac5a3ab5d1f7b88778e90b5ddac68a8f58f829386a3fb3fc5d5",
+      "raw_target_sha256": "177788bd014b8f2c8a3ba1a8e1dad0923628449674d727c3d0378e87a31facad",
+      "translation": "모델이 여러 물품을 착용한 사진만으로는 대행자가 원하는 버전을 알기 어렵습니다. 물품·버전·치수·색상·수량을 한 문장으로 적고 중요 부속품은 포함인지 확인할 사항인지 밝히세요. ‘B 옵션의 탈착 칼라가 포함된 남색 크롭 셔츠 재킷 L 한 벌’이 ‘이 코디 구매’보다 명확합니다."
+    },
+    {
+      "source": "OrientDig's shopping-assistant guide describes pasting an original seller link or searching for an item and choosing from available results. Use those routes to identify the exact offer first. The stable item identifier and seller information are useful when a short link or translated result is ambiguous. A product page and a shop home page are different kinds of source. If your saved link opens a shop or app promotional screen, recover the individual product page before treating the request as ready for purchase.",
+      "source_sha256": "a2c8223190519a0c05bfc33a598999e48037daccccb89bec361e89bace392601",
+      "raw_target_sha256": "4176fc2b49f984c2b93f7d8a3f193241706f7c323dc952e89268628460edec6e",
+      "translation": "OrientDig 안내에 따라 판매자 원본 링크를 붙이거나 검색 결과에서 정확한 판매 상품을 고르세요. 단축 링크나 번역이 모호하면 상품 번호와 판매자 정보가 유용합니다. 상점 홈이나 앱 홍보 화면은 개별 상품 페이지가 아니므로 그런 곳이 열리면 실제 상품 링크를 찾아야 합니다."
+    },
+    {
+      "source": "Open the live offer and select the version you want. Copy or save the exact option wording alongside any translation. A translation that converts two labels to “dark blue” may hide suffixes distinguishing thickness, cut, season or bundle contents. A single letter, number or short phrase can change what the seller will ship. Record the option code exactly as shown and attach a clear selection screenshot if the available order flow permits. Point out which part of the original wording distinguishes your choice.",
+      "source_sha256": "96f38b34f99f9492019d8734913d0842c3da4dc283de4450e7a8d16db41b5c7a",
+      "raw_target_sha256": "c98262a279c3ccb72f350f3d6b2e3423764f26f77975cb09083b1aa4ba324083",
+      "translation": "현재 페이지에서 버전을 고르고 옵션 원문과 번역을 함께 저장하세요. 둘 다 ‘진한 파랑’으로 번역돼도 접미사가 두께·핏·계절·세트 구성을 구분할 수 있습니다. 한 글자나 숫자로 발송품이 달라질 수 있어 코드를 그대로 적고 가능하면 선택 화면과 구분되는 원문을 첨부하세요."
+    },
+    {
+      "source": "Try reopening the link in a separate tab. If it restores the same listing but resets the selected options, the link identifies the product rather than the complete purchase. Keep the option text in the request even when the thumbnail looks right. If the seller's listing has changed since you saved it, use the current live wording and decide whether it still meets your requirements. An old screenshot can explain what you originally wanted. It cannot make an unavailable option orderable or establish a historical price at checkout.",
+      "source_sha256": "74024d3d73e00230f01c1d18c495db7ec611d2a04277a60dff94a6664845d65c",
+      "raw_target_sha256": "d7db7dc415a5986a85310b682d0f3b08ea6aeb8af235ea12cbbdf35d5cd638dc",
+      "translation": "새 탭에서 다시 열어 같은 페이지지만 옵션이 초기화된다면 링크는 상품만 지정합니다. 썸네일이 맞아도 옵션 문구를 요청에 넣으세요. 페이지가 바뀌었다면 현재 문구도 요구에 맞는지 판단합니다. 옛 화면은 원래 의도를 설명하지만 사라진 옵션을 주문 가능하게 하거나 과거 가격을 보장하지 않습니다."
+    },
+    {
+      "source": "Specify what one unit includes, especially for sets, multipacks and items sold in pairs. Suppose a seller offers a shirt only, shorts only and a two-piece set. Asking for quantity two can mean two complete sets, one top and one bottom, or two copies of the default single garment. State the selected seller option and expected physical contents. For example, “one complete two-piece set, one top and one bottom” is unambiguous if the seller actually offers that choice. Ask first if a desired combination is absent from the listing.",
+      "source_sha256": "8d4bae225e9f840d373289612613959ef46f5cda14e05af76d675977e1c044f5",
+      "raw_target_sha256": "99f58b6e4c32175ff93038baec7f89199cbab78ea593f201f6927e784c7a5f6b",
+      "translation": "세트·묶음·쌍 단위 상품은 하나의 구성물을 명시하세요. 상의·반바지·두 벌 세트가 있을 때 ‘수량 둘’은 두 세트, 상하의 하나씩, 기본 단품 두 벌로 읽힐 수 있습니다. 실제 옵션을 지정해 ‘상하의 두 벌 세트 한 개, 상의와 반바지 각 하나’라고 적고 없는 조합은 먼저 문의하세요."
+    },
+    {
+      "source": "If different colours or sizes are needed, use separate lines in your request. Keep the quantity on each line and add an overall count for your own check. “One navy M and one grey L” lets you compare the confirmation line by line. “Two shirts, navy and grey, M and L” leaves room for the colours and sizes to be paired incorrectly. If the seller has a minimum quantity or different price tiers, ask about the conditions for the exact mix you intend to buy rather than assuming that any combination satisfies the requirement.",
+      "source_sha256": "2f15a6fce29f11688f57139a090d71f2c840945d748e147437f713bec4034212",
+      "raw_target_sha256": "1491f1dcb18083b3a8794fcefb4fe4d99df9c91ed29bb32d6710d5c7102fc16c",
+      "translation": "색·치수별로 줄을 나눠 수량을 적고 합계를 확인하세요. ‘남색 M 한 벌, 회색 L 한 벌’이면 줄마다 맞출 수 있지만 ‘셔츠 둘, 남색·회색, M·L’은 짝이 바뀔 수 있습니다. 최소 수량이나 구간 가격은 아무 조합이나 된다고 보지 말고 그 구성에 적용되는지 물으세요."
+    },
+    {
+      "source": "A good request distinguishes essential specifications from flexible preferences. Decide in advance whether you accept a different shade, neighbouring size or delayed dispatch. If only the exact version is acceptable, say that the assistant should contact you before purchasing any substitute. If you are open to an alternative, define the condition precisely. “Please show me the brown option if navy is unavailable” asks for information; it does not authorize an automatic switch to brown. Make the difference explicit when the decision matters.",
+      "source_sha256": "469e7f814d994d6c5aa18a1017a4e5e63fe5da41f73ac06215a7da9fcede0935",
+      "raw_target_sha256": "0359e4f46a40d3f2a2ce6fccec3002ca9764580a52c928efae8abda386e3ffd2",
+      "translation": "필수 사양과 유연한 선호를 나누고 다른 색조·인접 치수·발송 지연 허용 여부를 미리 정하세요. 정확한 버전만 가능하면 대체품 구매 전에 연락하도록 적습니다. ‘남색이 없으면 갈색을 보여 주세요’는 정보 요청이지 자동 변경 승인이 아님을 분명히 하세요."
+    },
+    {
+      "source": "Price changes deserve the same treatment. Preserve the product price shown for the selected option and any domestic delivery line visible at the time of the request. If the order requires your approval for an adjustment, review whether it replaces an amount or adds a new charge. A row with a higher price may represent a different selected variant rather than a seller price increase. Compare seller, option, quantity and included pieces before attributing the change to one cause. Keep any accepted changes with the original request.",
+      "source_sha256": "0b4aaa9645c4b142d0a6316509af21d5c9726568a0ec56c5ad92021b0a178bc0",
+      "raw_target_sha256": "52bb597022ab7bf09e82cd22add397466c28266e6e39a5ed9f4d8658e4207bdc",
+      "translation": "요청 시 선택 옵션 가격과 표시된 국내 운임을 보관하세요. 조정 승인이 필요하면 기존 금액 대체인지 추가 요금인지 봅니다. 높은 가격은 판매자 인상이 아니라 다른 옵션일 수 있습니다. 판매자·옵션·수량·구성품을 먼저 대조하고 승인한 변경을 원래 요청에 연결하세요."
+    },
+    {
+      "source": "An annotated image can help identify a particular cuff, badge, pocket or accessory. Explain what it shows and whether it comes from the seller listing, another buyer or your own comparison. A reference from a different seller can illustrate a feature you want, but it cannot prove that your chosen seller offers it. Highlight a specific point rather than attaching a dozen unlabelled pictures. The purchasing assistant should be able to tell which image identifies the option and which merely explains a preference.",
+      "source_sha256": "dd08f07996c15fdc29fb3bf213ac641e6e3caeea7f50133ced9a32a90d8ab666",
+      "raw_target_sha256": "f85cf3ce5323588603d5d9f09d5381f250014a68604d28f01e6597ffe5173313",
+      "translation": "주석 사진은 소맷단·배지·주머니·부속품을 특정하는 데 쓰세요. 판매자·다른 구매자·내 비교품 중 출처와 역할을 밝힙니다. 다른 판매자의 사진은 원하는 특징을 설명해도 선택한 판매자가 제공한다는 증거는 아닙니다. 무표시 사진 여러 장보다 한 지점을 짚고 옵션 식별용과 선호 설명용을 구분하세요."
+    },
+    {
+      "source": "For a measurement question, include the chart attached to the exact version and define the endpoints you care about. Ask whether the seller can confirm them before purchase if the information is essential. Some questions are better answered after a physical item reaches the warehouse. OrientDig's detailed-photo guide describes requesting specific angles and measurements on stored items. Decide whether post-purchase inspection is acceptable for your situation. Do not assume that every uncertainty discovered after buying necessarily creates a right to return or exchange the item.",
+      "source_sha256": "17b68b17dcc99890df16fa604b7f2df6ec826859fff4e2e4090dc7eb976c2243",
+      "raw_target_sha256": "8af5d549bcbc46d634b665be53e9cd95b37513b099bb52b245765b916b49dfcd",
+      "translation": "치수 질문에는 정확한 버전의 표와 측정 양 끝을 넣으세요. 구매에 필수면 판매자에게 구매 전 확인할 수 있는지 묻습니다. 일부는 입고 후 OrientDig 상세 촬영으로 각도나 실측을 지정하는 편이 낫습니다. 구매 후 확인을 감수할지 판단하고 구매 뒤 생긴 모든 의문이 곧 반품·교환 권리를 뜻한다고 보지 마세요."
+    },
+    {
+      "source": "When the purchase confirmation appears, cover your request and read the confirmation on its own. Does it identify the correct listing, selected model, colour, size, units and quantity? Compare the amount and any domestic delivery or service entries that actually apply. Then uncover your original note and resolve any difference. This check catches errors that a familiar product thumbnail can hide. If the confirmation only says “blue,” verify that the distinguishing version code appears somewhere else before assuming the correct shade and cut were selected.",
+      "source_sha256": "0e5890b3c27189d80a0eeab0e03a89080e3841aad31b17bc137a8ba65020e9d5",
+      "raw_target_sha256": "b62195f66d3c5f4d13d6d66fbef8880e19f13743f067e7b6deeb7ebb8563a925",
+      "translation": "구매 확인서를 원래 요청을 가리고 먼저 읽어 상품·모델·색상·치수·단위·수량과 금액, 해당 국내 운임·서비스비를 보세요. 그 뒤 원래 요청과 대조합니다. ‘파랑’만 나오면 올바른 색조와 핏인지 확인할 버전 코드가 다른 곳에 있는지 보고 익숙한 썸네일만 믿지 마세요."
+    },
+    {
+      "source": "For a mistake, send one focused correction with the purchase reference and the exact field to change. “Please confirm the cropped navy B version; the confirmation currently displays the long A version” is easier to act on than “the order is wrong.” Check the current order status because the available remedy can change after purchase or seller shipment. If a correction is agreed, save the revised confirmation rather than relying on a chat message alone. The revised record will be your basis for warehouse inspection.",
+      "source_sha256": "2e28a134afd586abf409eed3a2bb4da68aa738cf4b6e3e3e00fed1102cf6c560",
+      "raw_target_sha256": "ef4d6cd4c4807c58360aef880f50877f23fca478d3e374b6415b092501e16234",
+      "translation": "오류가 있으면 구매 번호와 고칠 항목을 좁혀 ‘남색 크롭 B를 확인해 주세요. 확인서에는 긴 A가 표시됩니다’라고 보내세요. 구매·판매자 발송 단계에 따라 조치가 달라질 수 있어 현재 상태도 보세요. 합의 뒤에는 대화만이 아니라 수정 확인서를 저장해 입고 검수 기준으로 씁니다."
+    },
+    {
+      "source": "When the goods arrive, use the original essential specifications as a short inspection list. For the overshirt, identify the size label, check the cropped shape and verify the detachable collar if it was part of the confirmed option. A full overview can establish the pieces present; a close photograph can establish a particular fastening or label. Tie each observation to the warehouse reference so it remains distinguishable from historical pictures or another item from the same listing.",
+      "source_sha256": "45b40d6309b6c40113a26f0a6638516830799ecb7e92e9713247c45f0f831052",
+      "raw_target_sha256": "eb9b74ede71e70428b2e906f5eeb16b8f277d0ade7c09abf0462a92e43773fb9",
+      "translation": "입고 뒤 원래 필수 사양을 짧은 검수표로 쓰세요. 셔츠 재킷은 치수표·크롭 형태·약속한 탈착 칼라를 확인합니다. 전체 사진은 구성품을, 확대 사진은 여밈이나 표기를 보여 줍니다. 각 관찰을 입고 번호에 묶어 과거 사진이나 같은 링크의 다른 물품과 구분하세요."
+    },
+    {
+      "source": "If the evidence matches, record why the item is ready for the next stage. If it does not, identify the first disagreement between your request, the confirmed purchase and the observed unit. That tells you whether the problem concerns an ambiguous request, a purchase selection error, seller fulfillment or a photograph that simply cannot answer the question. An exact shopping-assistant request thus does more than help someone buy the item. It creates a reference that remains useful through inspection, parcel selection and any later inquiry about what you actually agreed to purchase.",
+      "source_sha256": "1bf63a0926913dcf48105e7d4b8bfe25619391e30af9c0f7fde2145d8af2a2a4",
+      "raw_target_sha256": "f1f1a44fe120609ba5c10b449f543ca37aa252e0eeca5c1a9ff134af8d70d225",
+      "translation": "일치하면 다음 단계로 진행할 이유를 적고, 다르면 요청·구매 확인·실물 관찰 중 처음 어긋난 곳을 찾으세요. 모호한 요청, 선택 오류, 판매자 이행 문제, 답을 주지 못하는 사진을 구분할 수 있습니다. 정확한 요청은 구매뿐 아니라 검수·출고 선택·추후 합의 내용 확인에도 기준이 됩니다."
+    },
+    {
+      "source": "If another buyer is paying for the order, send them the selected option and agreed total in writing before purchase so that they can check the same version.",
+      "source_sha256": "807d8b605b0735b1515a19ce60706ddf4e1c79d2d9d499fb137590e01dbd2be5",
+      "raw_target_sha256": "3178ff9695e6ba2d18fcc09342ebad04a08c48a0948fb4739fd225b86a1bd973",
+      "translation": "다른 구매자가 결제한다면 구매 전에 선택 옵션과 합의 총액을 글로 보내 같은 버전을 확인하게 하세요."
+    }
+  ]
+}
