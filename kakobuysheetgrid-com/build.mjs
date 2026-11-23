@@ -9,7 +9,7 @@ await build({
   }}]
 });
 
-const {default: site, locales} = await import('./dist/server/index.js');
+const {default: site, locales, editorialPaths} = await import('./dist/server/index.js');
 const origin = 'https://kakobuysheetgrid.com';
 const directory = 'dist/public';
 const namespace = 'http://www.sitemaps.org/schemas/sitemap/0.9';
@@ -18,7 +18,7 @@ const corePaths = ['', 'spreadsheet/', 'categories/', 'image-search/', 'guide/']
 const xml = (root, body) => '<?xml version="1.0" encoding="UTF-8"?>\n<' + root + ' xmlns="' + namespace + '">\n' + body.join('\n') + '\n</' + root + '>\n';
 const entry = (tag, url) => '<'+tag+'><loc>'+url+'</loc></'+tag+'>';
 fs.mkdirSync(directory+'/sitemaps', {recursive:true});
-const core = languages.flatMap(lang => corePaths.map(path => entry('url',origin+'/'+lang+'/'+path)));
+const core = languages.flatMap(lang => [...corePaths,...editorialPaths(lang)].map(path => entry('url',origin+'/'+lang+'/'+path)));
 fs.writeFileSync(directory+'/sitemaps/pages.xml',xml('urlset',core));
 const children = ['/sitemaps/pages.xml'];
 for (const lang of languages) {

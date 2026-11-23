@@ -1,7 +1,7 @@
 {
   "reviewed": "2026-11-23",
-  "method": "Topic discovery from public platform and competitor pages. Proposed angles are editorial ideas. No search volumes measured.",
-  "platform": "HubbuyCN",
+  "method": "Public platform tools and competitor headings informed keyword selection. Competitor policies and prices do not establish HubBuy terms. Search volumes were not measured.",
+  "platform": "HubBuy",
   "sources": [
     {
       "title": "hubbuy - Shop Everything From China With Guaranteed Service.",
@@ -16,12 +16,24 @@
       "url": "https://hubbuy.com/de/about/support"
     },
     {
-      "title": "Hubbuycn - Buy from China,Business form China!",
-      "url": "https://www.hubbuycn.com/helpCenter/service-and-fees.html"
+      "title": "HubBuy shipping fee estimation",
+      "url": "https://hubbuy.com/estimation"
     },
     {
-      "title": "Hubbuycn - Buy from China,Business form China!",
-      "url": "https://hubbuycn.com/shopping-guide"
+      "title": "HubBuy ordering and logistics resources",
+      "url": "https://www.hubbuy.com/en"
+    },
+    {
+      "title": "Superbuy Fee Structure",
+      "url": "https://login.superbuy.com/en/page/guide/feecomposition/"
+    },
+    {
+      "title": "Superbuy Shopping Agent and Parcel Forwarding user guide",
+      "url": "https://www.superbuy.com/en/page/newguide/userguide/"
+    },
+    {
+      "title": "Exchange rates and fees – Gilly Finds",
+      "url": "https://gillyfinds.com/money/"
     }
   ],
   "proposed_angles": [
@@ -35,5 +47,67 @@
     "choosing between two consolidation scenarios",
     "understanding what a quote actually covers",
     "reconciling a parcel invoice with the original estimate"
+  ],
+  "keyword_mapping": [
+    {
+      "slug": "domestic-shipping-per-seller",
+      "research_keyword": "China domestic shipping fee",
+      "evidence_url": "https://login.superbuy.com/en/page/guide/feecomposition/",
+      "editorial_angle": "calculating seller-to-warehouse shipping"
+    },
+    {
+      "slug": "hubbuy-service-fee-lines",
+      "research_keyword": "purchasing service fee",
+      "evidence_url": "https://login.superbuy.com/en/page/guide/feecomposition/",
+      "editorial_angle": "reading the components of a service fee"
+    },
+    {
+      "slug": "price-multiple-items-one-seller",
+      "research_keyword": "domestic shipping fee",
+      "evidence_url": "https://login.superbuy.com/en/page/guide/feecomposition/",
+      "editorial_angle": "pricing multiple items from one seller"
+    },
+    {
+      "slug": "budget-several-sellers",
+      "research_keyword": "domestic shipping cost",
+      "evidence_url": "https://www.superbuy.com/en/page/newguide/userguide/",
+      "editorial_angle": "budgeting orders from different sellers"
+    },
+    {
+      "slug": "compare-hubbuy-quotes-one-currency",
+      "research_keyword": "exchange rates and fees",
+      "evidence_url": "https://gillyfinds.com/money/",
+      "editorial_angle": "comparing quotes in the same currency"
+    },
+    {
+      "slug": "optional-packing-vs-base-freight",
+      "research_keyword": "value-added service fee",
+      "evidence_url": "https://login.superbuy.com/en/page/guide/feecomposition/",
+      "editorial_angle": "separating optional packaging from base freight"
+    },
+    {
+      "slug": "measure-a-packed-hubbuy-parcel",
+      "research_keyword": "international shipping cost",
+      "evidence_url": "https://www.superbuy.com/en/page/newguide/userguide/",
+      "editorial_angle": "recording final packed dimensions"
+    },
+    {
+      "slug": "compare-consolidation-scenarios",
+      "research_keyword": "parcel forwarding",
+      "evidence_url": "https://www.superbuy.com/en/page/newguide/userguide/",
+      "editorial_angle": "choosing between two consolidation scenarios"
+    },
+    {
+      "slug": "what-hubbuy-estimate-includes",
+      "research_keyword": "international shipping fee",
+      "evidence_url": "https://login.superbuy.com/en/page/guide/feecomposition/",
+      "editorial_angle": "understanding what a quote actually covers"
+    },
+    {
+      "slug": "reconcile-hubbuy-parcel-statement",
+      "research_keyword": "fee structure",
+      "evidence_url": "https://login.superbuy.com/en/page/guide/feecomposition/",
+      "editorial_angle": "reconciling a parcel invoice with the original estimate"
+    }
   ]
 }

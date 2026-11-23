@@ -1,0 +1,667 @@
+export const editorialContent = {
+  "en": {
+    "label": "Articles",
+    "faq": [
+      [
+        "Does an old VigorBuy QC photo show my current purchase?",
+        "A public lookup can show earlier warehouse observations associated with a seller listing. Compare the selected option and date. Use photographs attached to your current order to decide whether your own delivery contains the right unit."
+      ],
+      [
+        "What does an empty QC lookup tell me?",
+        "The search did not return a reference for that input. Retest with the original marketplace listing and confirm the item identifier. A missing public photograph gives no measurement or quality information about the item."
+      ],
+      [
+        "Can I look for references from a screenshot?",
+        "Crop to one clearly visible item and use the image search. Treat its results as candidates. Compare the seller, original listing and option as well as physical details before attaching a reference to your order."
+      ],
+      [
+        "How do I compare a close visual match from another seller?",
+        "Look for a feature that would distinguish the versions, such as pocket opening, cuff shape or handle attachment. Even an exact match in a studio picture leaves the supplier and selected option unconfirmed."
+      ],
+      [
+        "How can I identify the correct colour when option translations are similar?",
+        "Record the seller's original option text, colour swatch and any model suffix. Compare those details with the actual order confirmation. A general colour such as blue may cover several distinct options."
+      ],
+      [
+        "Which jacket measurement should I ask the warehouse to show?",
+        "Start with a jacket that fits. Choose the dimension most likely to affect your decision, such as underarm width or back length. Name the endpoints and ask for the whole tape reading on the garment laid flat."
+      ],
+      [
+        "Can I compare a chest circumference with a flat width?",
+        "Check the chart's definition first. A garment circumference can correspond approximately to twice its flat width; a recommended body chest range describes the wearer instead. Use a comparison garment measured the same way."
+      ],
+      [
+        "How can lighting affect a colour comparison?",
+        "Compare photographs under more than one light and look for a neutral surface in the same frame. If the difference affects your decision, request a view with the option label and item together under neutral lighting."
+      ],
+      [
+        "Why is a close crop insufficient for a measurement check?",
+        "A crop might show the final number but hide the zero mark, measurement path or item identity. Request an overview showing the item reference and both endpoints, then use a close-up to read the scale."
+      ],
+      [
+        "What should I ask when only the front of a backpack is visible?",
+        "Name the feature that matters, such as a rear pocket, strap attachment or laptop compartment. Ask for a view that can answer that question. Another front image is unlikely to resolve it."
+      ],
+      [
+        "Can a photograph of two shoes establish they are a matching size?",
+        "Ask to see both internal size labels and compare their size system and model markings with the order. An overview establishes that two shoes are present but may not reveal a mismatched size."
+      ],
+      [
+        "How do I check the pieces in a two-part clothing order?",
+        "Match the selected seller option to the expected top and bottom. Ask for both pieces in one overview and check each size label if the sizes can be selected independently."
+      ],
+      [
+        "How do I compare a bulky lightweight carton with a compact heavy one?",
+        "Record actual weight and outside packed dimensions for each scenario. Apply the current route's billing rules separately. A smaller scale reading does not guarantee a lower charge on a route that also considers volume."
+      ],
+      [
+        "What should I keep with an estimate if I may change the parcel later?",
+        "Save the items included, packing choice, destination, route, quoted amount, currency and date. If you add an item or change the protection, obtain a revised quote against those new assumptions."
+      ],
+      [
+        "The tracking says delivered, but I have no parcel. Which journey ended?",
+        "First identify the tracking number and destination. Domestic delivery can mean an arrival at the agent warehouse. If the international number shows delivery, compare its destination and contact the relevant carrier or support channel."
+      ],
+      [
+        "What makes a useful message about an unexplained tracking gap?",
+        "Provide the outbound parcel reference, tracking number, last dated event and destination country. Ask what the next expected handoff is. A screenshot without the reference is harder to associate with the right shipment."
+      ],
+      [
+        "Which product link should I save after finding a match by image?",
+        "Save the candidate seller's original listing URL and the exact option you are considering. Keep the image-search result separately so you can later distinguish how you found the item from where you intend to order it."
+      ],
+      [
+        "Can a warehouse photo confirm that a zipper works smoothly?",
+        "A still image can show a pull, teeth or an open zipper. If operation matters, ask whether the warehouse can perform the particular check. Avoid assuming movement from a static view."
+      ],
+      [
+        "What if a jacket chart lists the sleeve from the collar?",
+        "Measure your reference jacket from the same collar point to the cuff. A measurement taken from the shoulder seam describes a different span, especially on a raglan sleeve."
+      ],
+      [
+        "Should I treat a dust bag in the sample photos as included?",
+        "Read the selected option and the seller's description of included pieces. If the bag is essential, request confirmation before ordering and look for it separately in your warehouse photographs."
+      ],
+      [
+        "Why does my new freight estimate differ after removing an item?",
+        "Review the packed dimensions, weight, route and services in both calculations. Removing an item may change the box or eligible routes. Keep both estimates with their respective packing assumptions."
+      ],
+      [
+        "Which tracking number should I give the local carrier?",
+        "Use the local delivery number if the shipment record supplies one, and include the original outbound number as a cross-reference. Confirm that the destination shown belongs to your parcel before relying on its delivery scan."
+      ]
+    ],
+    "articles": [
+      {
+        "slug": "vigorbuy-qc-finder-source-link",
+        "title": "Use a seller link to research VigorBuy QC photos before ordering",
+        "intro": "A QC search has two stages. First identify the seller listing. Then decide which photographs of that listing actually help with the option you plan to buy. A successful lookup settles the first question only.",
+        "sections": [
+          [
+            "Recover a usable starting link",
+            "Open the saved spreadsheet product and look for the underlying marketplace address. Save the marketplace name together with the item identifier. A number copied without its marketplace can be ambiguous. An agent link and a seller link may refer to the same item even though their domains differ.",
+            "An independent VigorBuy QC finder describes accepting seller URLs and agent URLs for lookup. If an agent link opens an unrelated result, retry with the seller listing you have verified. If all you have is a picture, use visual search to identify candidates first. Treat every visual match as a lead until you have connected it to the right seller or product specification."
+          ],
+          [
+            "Read the results in context",
+            "Look at the date, complete image sequence and any available option information. Earlier photographs can show details of units received by other buyers. A newer date alone does not make the photographed garment the colour or version you selected.",
+            "Take a backpack listing with plain and printed colourways. A recent reference can clearly show the shape of the bag, but it may hide the inside of the printed version. State what the image supports. An exterior profile can help identify proportions; an open bag photograph is needed to inspect a divider. A screenshot that has been cropped to the front panel cannot settle both questions."
+          ],
+          [
+            "Make a short evidence record",
+            "For each reference, save the seller URL, image source and one specific observation. For example, the zip extends beyond the side pocket, or the inner pocket is visible but its closure is hidden. Avoid impressions such as looks fine when the outstanding question concerns a detail.",
+            "Separate an observed feature from an assumption. If the seller lists two capacities but the picture has no label or scale, record capacity unknown. Compare the seller specifications and ask for clarification before ordering if the capacity matters. A large number of nearly identical front pictures adds little evidence about a concealed feature."
+          ],
+          [
+            "Use the current order for your final inspection",
+            "Once your purchase is associated with a warehouse entry, compare your own order's information with the paid option and observations. Use an overview to establish identity and a close view for the detail that affects your decision. If you cannot link the image to your unit, ask for that connection explicitly.",
+            "An empty public search is also a result you can interpret carefully. It means no relevant photographs appeared for the input you used. Verify the link, look at independent references if available and decide whether the missing evidence changes your purchase decision. Avoid converting an absence of public images into a claim about the seller's reliability."
+          ],
+          [
+            "Follow one reference from a short link to a usable observation",
+            "Imagine a friend sends you a screenshot of a brown backpack and an agent product link. You care about two things: whether a large tablet fits in the rear sleeve and whether the shoulder straps can be detached. The screenshot shows the exterior and the agent link still opens. A previous buyer's gallery would be interesting, but it will help only if you can tie the photographs to the same version of the backpack and to one of those two questions.",
+            "Open the linked product and look for the actual seller source. Record its marketplace name and identifier. The word brown in the title is less useful for identifying the seller than that combination. If the page presents several sizes, select the version you intend to order and save the source wording. Note whether the seller assigns a separate identifier to the option. Keep the information for the option alongside the listing identifier rather than replacing one with the other.",
+            "Submit the verified link to a reference lookup and inspect the results. Suppose the first sequence shows a backpack matching the front profile, followed by a close photograph of a metal buckle. The buckle view might support the possibility of a detachable strap, but it does not show the connection at both ends. Another sequence shows the inside of a blue bag with a narrow sleeve. If the seller offers both colours in the same size and model, the blue interior may be a useful lead. Without a way to identify its size, it cannot tell you whether your tablet fits.",
+            "Record these as two different findings. One is about the type of hardware observed on a historical item. The other raises a question about sleeve width. Save the source and date beside each. Keeping such observations separately prevents a later note from gradually turning into a much stronger claim that all brown backpacks from the listing have detachable straps and a large rear compartment."
+          ],
+          [
+            "Check a failed lookup without losing track of the original item",
+            "First see whether the pasted input is a link to one product or a link to a store, search result or collection. A single shop can list multiple backpacks with similar names. Opening a store index and choosing whichever product looks closest changes the object of your research. If the seller link no longer opens, preserve the old identifier before investigating visual alternatives. Label a visually similar live listing as a new candidate.",
+            "If an agent wrapper opens a generic page, try the original product URL you actually observed. Do not build a seller URL by copying a number from an unrelated part of a screen. Quantity, internal catalogue number and seller item identifier can all be numeric. A mistaken identifier can turn a lookup returning plausible pictures into a more serious error than an empty result because you may begin trusting the wrong gallery.",
+            "When the correct link returns no photos, check the current seller images and written product specifications directly. Decide whether a current order inspection could resolve the outstanding question at a stage that still works for you. If a dimension is critical to the purchase itself, ask before ordering. A feature you cannot confirm until after intake may affect whether you are comfortable proceeding under the current seller terms."
+          ],
+          [
+            "Turn historical evidence into a precise current-order request",
+            "Return to the tablet example and measure the device with its normal case. The product page may describe a maximum screen size, which is a diagonal measurement and can conceal differences in width or thickness between devices. Identify the actual sleeve opening and usable depth you need. If you ask for one internal width measurement, specify where the tape should run and whether the opening narrows at the top. A ruler placed across the outside of the backpack would answer a different question.",
+            "For the detachable straps, request an overall view showing both attachment points on the current unit and a close view of the fastening if necessary. The historical buckle picture served a useful purpose: it helped you identify the exact inspection needed. It remains separate from the evidence used to accept the current delivery.",
+            "After the current photos arrive, update the notes under the actual order reference. A complete entry can say that the hardware attaches at both ends, that the compartment opening was measured from seam to seam and that the depth remains unmeasured. You can then decide whether the remaining uncertainty matters. The result is a practical buying decision supported by identifiable observations, not a count of how many attractive reference images the lookup returned.",
+            "A final check is whether somebody else can reproduce the lookup from your notes. Send yourself the plain listing URL without signing in, reopen it, and check whether it still names the seller and item you intended. Preserve the selected option separately if that choice disappears outside your session."
+          ]
+        ],
+        "sources": [
+          [
+            "VigorBuy QC finder methodology",
+            "https://vigorbuywithqc.com/qc"
+          ],
+          [
+            "VigorBuy buyer tutorial",
+            "https://www.cnbuypilot.com/vigorbuy/tutorial"
+          ]
+        ]
+      },
+      {
+        "slug": "vigorbuy-image-search-false-match",
+        "title": "When VigorBuy image search returns a similar product from the wrong listing",
+        "intro": "A photo search can recognize the broad shape of a jacket without distinguishing two sellers offering nearly identical versions. Use its results to uncover candidates, then test the details that could prove a candidate wrong.",
+        "sections": [
+          [
+            "Crop for the item you want to identify",
+            "Use a picture containing one item. A complete outfit against a busy background can produce matches for the shoes, trousers or surrounding colours. Crop to the relevant garment while keeping a useful outline. When identifying a jacket, the collar, hem, sleeve shape and pocket positions often carry more information than one large front graphic.",
+            "Try two different crops if the first result is unclear. Use the full garment for silhouette and a second crop that contains a distinctive construction feature. If both lead to the same candidate, open that listing. Agreement between two searches is a reason to inspect it, not proof of identity."
+          ],
+          [
+            "Look for a disqualifying detail",
+            "List the features visible in your original picture before you study the results closely. Count pockets, identify zip direction and compare where a panel meets the side seam. A different number of eyelets or an absent sleeve pocket can rule out a candidate even when its principal colours match.",
+            "Distinguish actual differences from changes in view. A pocket concealed by a model's arm is unobserved. A flat front photograph with a clear uninterrupted panel where the pocket should be is stronger evidence of a mismatch. Note which observation led you to discard the candidate so that a second listing using the same photograph does not restart your search."
+          ],
+          [
+            "Follow the seller link and option",
+            "Check marketplace, seller and item number after opening a candidate. If the original picture came from a known listing, compare the identifiers directly. The same promotional image can travel between sellers or be reused on multiple variants. A link that leads to a different seller calls for a fresh evaluation of the offer.",
+            "Select the intended option and watch which image changes. Some listings retain the same main photo while the option text changes. Save the selected original wording where colour translations are close. If the option cannot be connected to the reference image, keep the match provisional."
+          ],
+          [
+            "Decide what to do with uncertainty",
+            "Write a one-line conclusion naming the strongest match and the unresolved feature. For example, the jacket has the right pocket layout, but the cuff fastening is hidden. That statement tells you what photograph or seller specification to seek next.",
+            "If the distinguishing detail matters, ask for a view that reveals it before treating the result as the intended product. When no seller identity is available, describe it as a similar alternative. That distinction is valuable when comparing price or warehouse photos because another shop's reference cannot show what a different supplier will dispatch."
+          ],
+          [
+            "Compare three candidates from the same original image",
+            "Consider a phone screenshot of a dark-blue jacket worn at an angle. A striped cuff, one diagonal chest pocket and the bottom of a zip are visible. The sleeve partly covers the side of the jacket. Before searching, write down those three visible details and note what cannot be seen, such as the back panel and the full hem. Treating hidden features as unknown prevents you from rejecting an otherwise plausible candidate for the wrong reason.",
+            "Suppose the first search returns three visually close jackets. Candidate A shares the blue colour and striped cuff but has two horizontal chest pockets clearly visible in its front photograph. Candidate B appears to have the correct pocket and cuff, yet its alternate view shows a snap fastening where the original visibly has a zip. Candidate C has the visible cuff, diagonal pocket and zip, but its seller page groups four jacket options together. The first two can be set aside for an identified reason. The third remains a candidate while you determine which option the picture represents.",
+            "A crop focused only on the cuff might return A again. That does not overturn the conflicting pocket evidence. The search has answered a narrower question about cuff similarity. Try a second crop including the pocket and zip together. If C appears again, inspect the seller page and option text. Do not rely on the order of the search results as a ranking of seller accuracy, product condition or available stock.",
+            "Now imagine that C's seller page uses the same studio photograph as the original screenshot. That is strong evidence that the photographs share an origin; it is weaker evidence that the current seller delivers the same physical variant. Check its seller identity and available option. If these details cannot be traced back to the screenshot, describe C as a closely matching alternative. The distinction matters if you later use older QC pictures tied to the original source to judge C's stock."
+          ],
+          [
+            "Separate photographic effects from construction differences",
+            "Compare images at a similar angle. The edge of a pocket can disappear when a jacket is open, and a mirrored promotional image can reverse the side on which a logo appears. Look for text or another known orientation cue before treating left and right as decisive. A different count of visible fasteners on two fully opened cuffs is usually easier to interpret than the apparent width of a sleeve viewed from different angles.",
+            "Remember that close-ups change scale. A chest patch can fill the same area of the screen on a small bag and a large bag. Use its placement relative to seams, zip stops and corners rather than comparing pixel widths from different images. A neutral background can clarify silhouette, but it does not identify the seller or prove the item was photographed recently.",
+            "Avoid bringing conclusions from one candidate into the next. Keep a separate note for C's marketplace, seller, selected option and evidence. A label visible on A tells you nothing about C. Similarly, a measurement printed on a chart from B must not be reused to choose a size on C merely because all three jackets look similar. Each seller page has its own option definitions and order conditions."
+          ],
+          [
+            "Decide whether to buy an alternative or keep looking",
+            "List what you need the product to do. If you simply need a jacket with a diagonal pocket and striped cuff, C may satisfy your requirements even without proof that it is the original listing. Evaluate its own price, measurements, contents and seller terms. If you need the exact version with a particular lining, the unresolved interior is a reason to collect more evidence before selecting it.",
+            "Ask one focused question that distinguishes the remaining possibilities. For example, request a view of the inside back panel of the selected blue option, with the style identifier visible. Compare the answer with your original requirements and retain both references. A new picture showing a plain rear lining can be enough to reject C if the version you need has an internal pocket, even if the outer appearance matches perfectly.",
+            "Keep the source photograph and candidate record with any later order. When the warehouse photos arrive, compare the actual received item to the version you purchased, not to a different candidate discarded early in the search. That last switch in reference point is important: once you knowingly choose an alternative seller, your strongest order evidence is that seller's actual selected offer and confirmation.",
+            "One reasonable outcome of a search is an empty shortlist. Suppose three promising thumbnails all resolve to retailers using the same promotional image and none identifies the item underneath. Saving all three as corroboration would make your file look stronger than it is. Record the shared photograph once and write down the feature you still need to see. That gives the next search a purpose."
+          ]
+        ],
+        "sources": [
+          [
+            "VigorBuy QC finder methodology",
+            "https://vigorbuywithqc.com/qc"
+          ],
+          [
+            "VigorBuy buyer tutorial",
+            "https://www.cnbuypilot.com/vigorbuy/tutorial"
+          ]
+        ]
+      },
+      {
+        "slug": "vigorbuy-qc-model-option",
+        "title": "Match a VigorBuy QC reference to the selected model on a multi-option listing",
+        "intro": "One seller listing can contain several products that look alike. A QC photograph associated with its item number may show any one of them. Work down from listing identity to the specific feature that distinguishes your selected model.",
+        "sections": [
+          [
+            "Map the choices before examining photos",
+            "Write the available models in the seller's own terms and record the translated descriptions separately. If you see short, long and lined versions, list them as three products for this comparison. The same colour and size can appear on all three.",
+            "Select each candidate and note changes to its swatch, image, price and option code. A price difference can signal different contents but cannot identify which feature caused it. Save the wording and the version shown in your checkout record. A link reopened later may start on the first option instead of the last one selected."
+          ],
+          [
+            "Choose a feature that actually separates models",
+            "Study the written description for something that should vary between the versions. A removable inner layer, a rear vent or a second zip can distinguish two jackets whose fronts look identical. Do not spend time comparing marks common to every version when the model difference is elsewhere.",
+            "For a long and short version, a complete side view or a defined back measurement could distinguish them. For two lined models, ask for a view inside the jacket with the lining attachment visible. Name the required feature when requesting a photograph so the recipient understands which view matters."
+          ],
+          [
+            "Connect the feature to the item",
+            "A close-up can show a fastening clearly and still leave open which jacket it belongs to. Ask for a wider view linking the feature to the complete garment. For two near-identical pieces in one order, keep separate references with their respective colour and size labels.",
+            "Read older public photos as examples of what has previously been photographed. They help you discover useful checks and possible differences. A historical image of a zip-in lining on one dark jacket says little about whether the current seller still includes the lining with your chosen option."
+          ],
+          [
+            "Make an actionable comparison",
+            "Write the outcome in three parts. Identify the paid option, the evidence on the current warehouse entry and the remaining uncertainty. For instance, the order calls for the lined medium; the warehouse label shows medium; the lining attachment remains hidden. This invites one directed photograph instead of a broad request to check everything again.",
+            "If the feature is absent, connect your observation to the saved seller option in the message. If the picture simply does not show it, say so. Those two statements lead to different next steps and avoid turning a missing angle into an unsupported defect claim."
+          ],
+          [
+            "Work through a model comparison when every colour is called black",
+            "Suppose a seller offers three black rain jackets under a single listing. The first is an unlined shell, the second has a fixed fabric lining and the third has a removable inner layer. The pictures at the top of the page show a model wearing a black jacket with the front closed. You need the removable layer for alternating temperatures. The seller item number and the word black identify three possible units, only one of which meets the main requirement.",
+            "Make a small model key from the actual seller options. Copy the original wording for the shell, fixed lining and removable lining. Note any model letters, price differences and size ranges. If the translation calls both lined versions insulated, keep the original names as separate entries rather than merging them. Take a screenshot of the removable version selected in your intended size. The buyer can now describe the purchase without relying on a visually ambiguous front picture.",
+            "Review an older public QC sequence. A clear view of a lining at the collar shows that a photographed jacket had an inner layer. It does not establish whether the layer is removable. A close-up of a zip in a different sequence might show the main front zip instead of the attachment. Look for a view establishing the position and purpose of the zip, such as the inner layer partly detached from the outer shell. The distinction follows the original decision, which was about removal rather than the mere presence of fabric.",
+            "If the historical photo shows the layer detached but no model identifier is visible, record that one version previously photographed had that construction. The next task is linking that construction to the current option selected. The seller's written option definition, a dated ordering screenshot and the current unit's label each supply different parts of that link. None should be treated as a substitute for the others when two versions are sold side by side."
+          ],
+          [
+            "Use measurements carefully when distinguishing a model",
+            "Two jacket lengths can differ by only a few centimetres. One image might show the short size medium while another shows the long version in small. A length difference could reflect both the size and the cut. Compare the seller size chart for the same marked size across the two versions, and check whether the chart specifies a different starting point. A measurement taken from the collar seam should not be compared directly with one taken from the highest shoulder point.",
+            "When the model difference concerns construction, choose a construction observation over a size proxy. A photograph showing the detachable layer and attachment hardware is more direct than a weight difference that could arise from size, packaging or fabric. For a shell and a lined version, an internal view can be more informative than trying to judge thickness from a folded stack in a warehouse photo. State which evidence would resolve the actual question with the least ambiguity.",
+            "With multiple units in one order, assign a separate record to each. Mark one as the medium removable-lining option and another as the large shell, for example. If the warehouse posts a series of pictures against a combined entry, identify which wide shot belongs to which close view. Request an overview showing each unit with its distinguishing feature when a cropped photograph cannot establish the assignment."
+          ],
+          [
+            "Decide what the buyer can responsibly conclude",
+            "Imagine the current item has the correct size and colour label, an interior layer visible and a concealed attachment near the collar. If the available photograph does not show whether the layer detaches at the sides and hem, describe that uncertainty. A useful message would ask for the layer partly detached with its connection visible on the medium jacket. It does not need a repeat of every front and back photograph.",
+            "If the seller confirms the layer is sewn in, compare that reply with the saved option. A mismatch between a documented removable version and a fixed lining is an issue to raise through the order before making further packing decisions. If the original wording never described a detachable layer, the question may instead concern your interpretation of the listing. Those situations require different conversations, and keeping the model key makes the difference visible.",
+            "Store the outcome as a plain description, not just a check mark. Fixed lining confirmed from the sewn side seam, or removable lining confirmed in the current unit's open picture, remains meaningful weeks later. When a similar listing appears in the spreadsheet, that description also tells you which identifying feature to look for without assuming two sellers with the same main picture are offering the same jacket.",
+            "At the end of the comparison, try writing the order in plain language without borrowing the seller's model nickname. Include the feature that changed your choice and the exact variant text displayed at checkout. If another reader could use that description to select two different options, your note needs one more distinguishing detail."
+          ]
+        ],
+        "sources": [
+          [
+            "VigorBuy QC finder methodology",
+            "https://vigorbuywithqc.com/qc"
+          ],
+          [
+            "VigorBuy buyer tutorial",
+            "https://www.cnbuypilot.com/vigorbuy/tutorial"
+          ]
+        ]
+      },
+      {
+        "slug": "vigorbuy-jacket-comparison-measurements",
+        "title": "Choose VigorBuy jacket measurements using a jacket you already own",
+        "intro": "The letters on a size label are a poor comparison when two jackets are cut differently. A garment you already wear gives you an actual baseline, provided you measure both pieces in the same way.",
+        "sections": [
+          [
+            "Choose the right comparison garment",
+            "Pick a jacket serving the same purpose. A fitted spring jacket worn over a shirt gives a different reference from a winter shell worn over a thick sweater. Try your comparison garment with the layer you intend to wear. Note which dimensions feel right and where you would like more room.",
+            "Fasten it as normally worn, lay it on a flat surface and smooth it gently. Stretching fabric to its limit produces a measurement that says little about comfort at rest. Keep the measuring tape straight and write down the unit beside every number."
+          ],
+          [
+            "Define the measurements precisely",
+            "For flat chest width, measure from one underarm seam to the corresponding point on the opposite side. For back length, choose a starting point such as the centre seam where the collar attaches. Write the endpoint too. A seller measuring from the high shoulder point could obtain another number on the very same jacket.",
+            "Sleeve length requires particular care. A jacket with a dropped shoulder can have a short seam-to-cuff measurement despite reaching the same place on your wrist. For a raglan sleeve, a neck-to-cuff measurement may be more useful. Photograph your measuring method so it can be repeated on the warehouse item."
+          ],
+          [
+            "Compare like with like",
+            "Imagine a reference jacket is 55 centimetres across the chest when laid flat. A seller chart showing 110 centimetres might describe full garment circumference. It could also be a body-size recommendation. Read the chart's legend before dividing or doubling anything. Ask which measurement it represents when that is unclear.",
+            "Avoid choosing a size solely because one dimension matches. A jacket can match the chest and still be too short across the back or tight at the upper arm. Choose the few measurements that would actually change your decision. A clearly measured critical dimension is worth more than several figures taken from unknown endpoints."
+          ],
+          [
+            "Ask for a readable warehouse view",
+            "State the order, selected size, garment position and endpoints in a short request. Ask that both the zero mark and final reading be visible. A close view may also be needed to read the tape, but the wide shot establishes the path it followed.",
+            "Compare the result with your baseline and note measurement uncertainty. A small discrepancy could come from positioning, garment construction or rounding. If it is close enough to affect your choice, ask for the specific measurement to be repeated before deciding. Retain the reference photograph and your own garment measurements alongside the selected size for future comparisons."
+          ],
+          [
+            "Build a measurement card for one jacket you know",
+            "Find a jacket that performs the job you expect from the new one. If the purchase is for cycling over a sweater, wear the reference jacket with that sweater, reach forward as you would on the bicycle and note what happens to the sleeves and back hem. A garment that feels right standing still can feel restrictive when reaching. Write down the problem in everyday language before translating it into a measurement request.",
+            "For this example, imagine your reference jacket has enough chest room but the back hem rides slightly high. You want roughly the same chest width and a longer back, not a universally larger garment. Write down the desired changes separately. Choosing a larger labelled size simply to gain length could increase the body width beyond what you need while still leaving the sleeves or hem unsuitable.",
+            "Lay the reference flat with the normal fastening closed. Measure from one underarm seam to the other and note any padding or elastic that makes the seam hard to locate. Measure the centre-back length from the collar attachment to the hem. For reach, measure from the centre back of the neck across the shoulder and down the sleeve if that path matches the seller's chart. Take a simple picture of each tape position on your own garment. These pictures are useful instructions for a later warehouse request.",
+            "Suppose your readings are 56 centimetres flat chest, 66 centimetres centre-back length and 84 centimetres from centre neck to cuff. These are invented examples, not recommended sizes. A chart showing 56 centimetres chest width and 70 centimetres back length could be promising. Before using it, check whether it describes the exact model, whether the length is from the same starting point and whether the chest number refers to the garment rather than the person meant to wear it."
+          ],
+          [
+            "Compare two candidate sizes without averaging away an important difference",
+            "Imagine one option lists a 55-centimetre flat chest and a 69-centimetre back. Another lists a 58-centimetre chest and a 71-centimetre back. The first is close to the chest you like, while the second adds more back length and room. The correct choice depends on how much change you want in each dimension. There is no useful average of chest and length that can establish fit because the two measurements address different needs.",
+            "Check construction before translating the figures directly into comfort. A thickly padded lining can occupy space inside a jacket whose outside flat width matches a thinner shell. A stiff fabric behaves differently when you bend your arms than one with stretch. Photographs and outer measurements give partial evidence. If the deciding issue is ease of movement over a thick layer, describe that limitation rather than presenting a number as a fit guarantee.",
+            "For a jacket with a curved rear hem, ask the warehouse where the longest point is measured. A side-seam length could be several centimetres shorter than the centre back on the same unit. Likewise a collar included in a vertical measurement can make one jacket appear longer on paper without adding coverage at the hem. State whether the collar is included in your reference measurement and request the same method on the new item."
+          ],
+          [
+            "Interpret a warehouse measurement with honest precision",
+            "When reviewing the picture, inspect whether the tape starts exactly at the seam, runs flat and follows the path requested. If the final reading lies between marks, note an approximate value instead of converting it into a spurious exact size. A small discrepancy can arise from a folded hem, compressed padding or different positioning. Ask for a repeat when that uncertainty could change the decision.",
+            "If an image shows a stated 70 centimetres but the starting point is hidden behind the collar, ask specifically for the collar attachment and hem in the same frame. A tighter close-up on the number 70 will not solve the missing endpoint. If the full frame is clear but the markings are too small, request a second close view in addition to the overview. Together they establish what was measured and what the result was.",
+            "Return to your original fit priorities. If the chest is sufficiently close and the back is longer by the amount you sought, the evidence points toward keeping the option under those assumptions. If the chest has narrowed beyond what works for your normal sweater, the longer hem alone may not address your main use case. Record the actual jacket, layers, measurement method and reason for the decision. A future chart becomes much easier to interpret when you know how the earlier numbers related to a garment you wore.",
+            "Keep one copy of the reference garment measurements even if you abandon the listing. Next time you compare a jacket, check whether its cut and intended layering resemble that reference before relying on the figures. A lightweight cardigan that fits under a coat may need less room than the insulated layer you actually intend to wear."
+          ]
+        ],
+        "sources": [
+          [
+            "VigorBuy QC finder methodology",
+            "https://vigorbuywithqc.com/qc"
+          ],
+          [
+            "VigorBuy buyer tutorial",
+            "https://www.cnbuypilot.com/vigorbuy/tutorial"
+          ]
+        ]
+      },
+      {
+        "slug": "vigorbuy-qc-colour-lighting",
+        "title": "Read VigorBuy colour references under warehouse and studio lighting",
+        "intro": "Two photographs can make one garment appear charcoal and blue-black. Begin by separating colour naming, option identity and photographic appearance. Only one of these can usually be settled by reading a seller's label.",
+        "sections": [
+          [
+            "Check the selected colour first",
+            "Copy the original colour text, any model suffix and the swatch visible when the order was placed. Dark green, army green and olive can be translated inconsistently. If a listing calls them colour A and colour B, preserving the code can be more reliable than inventing a descriptive name later.",
+            "Look at how the option changes on the seller page. A common main image may remain visible for every colour. A specific swatch attached to the selected option is better evidence of what was selected, but screens and image processing still affect how it appears."
+          ],
+          [
+            "Look for clues in the frame",
+            "Check a neutral surface within the same image. If white paper, a grey background and the garment all look unusually warm, lighting or white balance may explain part of the shift. Compare different pictures of the same unit before treating one warm-looking sleeve as a mismatch.",
+            "Shadow, fabric texture and angle matter. Velvet, satin and reflective fabric can change visibly as the surface turns. A close-up of a fold may look quite different from a broad, evenly lit front panel. Compare equivalent areas facing the light in a similar way."
+          ],
+          [
+            "Ask for a photograph that answers the decision",
+            "Specify the item and selected colour. Request a view with the label visible and the garment spread enough to show an uninterrupted area. If possible, ask for neutral lighting and a neutral surface within the same frame. One wide view can connect the colour impression to the correct physical item.",
+            "If two variants are physically available together, a side-by-side image under the same lighting can help distinguish them. It still cannot guarantee an exact screen-to-fabric match. Decide whether your concern is identifying the ordered option or matching an exact shade to something you already own."
+          ],
+          [
+            "Document an actual disagreement",
+            "If the order says dark blue but the received option label identifies black, save both references. That is stronger documentary evidence than saying a photograph looks wrong. If the label matches and only the appearance differs, describe the visual concern and request the missing evidence.",
+            "A buyer coordinating pieces from separate sellers faces additional uncertainty even if both listings use the same colour name. Record that risk before relying on a historical QC image. When the colour match is essential, decide whether the available evidence is good enough while the item can still be inspected, and check the current order-specific options with support."
+          ],
+          [
+            "Separate three colour decisions using a green jacket as an example",
+            "Imagine the seller offers olive, dark green and khaki. You want a replacement jacket that will be worn with trousers purchased months ago. There are three different decisions here. First, establish what option you ordered. Second, establish which option the warehouse received. Third, decide how closely its appearance is likely to match the trousers in ordinary use. A single photograph can contribute evidence to all three, but seldom settles them all.",
+            "For the first decision, save the seller's original option text and selected swatch at checkout. When comparing translations, check any model code beside the colour. A translation might display khaki for two options that differ in green or brown undertone. If the order confirmation contains only a model code, keep the seller option mapping that connects that code to the swatch. If you did not save it and the page later changes, ask for clarification instead of reconstructing the mapping from a similar listing.",
+            "For the second decision, inspect the current unit's label, packaging sticker or identifiable option details. A seller label matching the confirmed option gives stronger evidence about nominal colour than a guess based purely on screen appearance. It still cannot prove that two batches look identical. A photograph of the unit and its identifying information in the same frame helps ensure that the label belongs to the pictured jacket rather than another green item in the order.",
+            "For the third decision, describe how close a match you actually require. Complementary tones may be perfectly acceptable for separate garments worn casually. A replacement panel for an existing outfit could need a much closer match. An online photograph cannot establish an exact match under every light. Identifying the decision threshold keeps you from asking for several extra images that still cannot resolve a requirement for a physically exact shade."
+          ],
+          [
+            "Understand how the scene changes the apparent colour",
+            "A neutral wall behind the jacket can help reveal a strong colour cast when the wall itself appears yellow or blue. It is not a calibrated reference unless you know its real colour and lighting. A cream floor can be genuinely cream; correcting every picture until it looks white can introduce a new error. Look for consistent changes affecting several objects in the frame before attributing a difference solely to the garment.",
+            "Fabric surface changes the comparison. A shiny synthetic shell reflects the warehouse lights and can produce bright highlights on its folds. A brushed textile can look lighter on one portion because the pile faces another direction. Compare broad panels under similar lighting angles before interpreting the lightest highlight or deepest shadow as the base colour. The smooth panel, lining and ribbed cuff may also be made of different materials and legitimately appear different.",
+            "Cameras and screens add another layer of variation. A phone can adjust exposure when a dark jacket fills most of the frame, making dark green look lighter than it appeared in a wider shot. Your display brightness and colour mode can affect what you see. Looking at the same image on a second device can expose a large display difference, but two screens agreeing is still not a physical comparison with your trousers."
+          ],
+          [
+            "Ask the question that evidence can answer",
+            "If option identity is uncertain, request the jacket laid out beside its colour label. If the concern is a patch or uneven panel, request a wider view and one close view under consistent neutral lighting, identifying the exact area. If the concern is the difference between olive and dark green, ask whether the two available variants can be compared under the same light. These are different requests because they test different explanations.",
+            "For an apparent local stain, compare the same area from more than one angle. A bright streak that moves with the reflection has a different interpretation from a mark fixed relative to a seam. Explain which you observed without demanding that someone confirm a conclusion the image cannot support. A short request to inspect the left sleeve beside the pocket is more actionable than a general statement that the whole colour looks wrong.",
+            "End the decision with a record of what is confirmed and what remains subjective. For the green jacket, that might be the correct seller code visible, no persistent patch across the main panel, and an exact match to your existing trousers still unknown. Keep this note with the order. If you later choose another item from the same gallery, you can reuse the comparison method while treating its colour, seller and batch as a new question.",
+            "If the intended use involves pairing two items, photograph your reference item in the room where you normally see it. The picture helps describe which difference bothers you, such as a blue cast beside a warm grey scarf. A supplier still cannot guarantee a match between photographs. Give the warehouse a concrete comparison to photograph and decide whether you can accept the remaining uncertainty."
+          ]
+        ],
+        "sources": [
+          [
+            "VigorBuy QC finder methodology",
+            "https://vigorbuywithqc.com/qc"
+          ],
+          [
+            "VigorBuy buyer tutorial",
+            "https://www.cnbuypilot.com/vigorbuy/tutorial"
+          ]
+        ]
+      },
+      {
+        "slug": "vigorbuy-warehouse-photo-request",
+        "title": "Request a missing VigorBuy warehouse photo angle with a question someone can answer",
+        "intro": "A request for more pictures is easy to fulfil without answering the question that matters. A good request names the item, the feature and the view that would change what you do next.",
+        "sections": [
+          [
+            "Define the missing information",
+            "Read the original seller option and the image set already available. Write one sentence starting with what you need to know. Examples include whether the lining can be detached, whether a shoulder strap is included or whether the left shoe has the same label as the right. Avoid starting with a camera instruction until you know the decision.",
+            "Check whether the existing pictures already settle the issue. The answer may be visible in a wide view rather than the closest image. Enlarge the original when possible. Repeated screenshots can obscure labels even if the underlying file was readable."
+          ],
+          [
+            "Match the angle to the feature",
+            "A front view cannot establish whether a backpack has an internal sleeve. Ask for the main compartment open with the rear wall visible. An exterior detail shot cannot settle a question about a detachable lining; ask for its attachment point inside the garment.",
+            "If fit matters, describe both measurement endpoints and the position of the item. A request to measure sleeve length is ambiguous on a raglan or dropped-shoulder jacket. A request from the centre-back neck seam to the cuff along the sleeve gives the person measuring an instruction they can follow."
+          ],
+          [
+            "Preserve the connection to the correct unit",
+            "Include the warehouse entry or order reference in your request. For multiple similar pieces, name the colour and size. When practical, ask for one overview that identifies the unit and one detail view that reveals the feature. A tiny crop may show a buckle well while obscuring which bag it came from.",
+            "Check any available inspection options, charges and conditions in your account before ordering additional services. Ask whether the proposed view requires opening sealed retail packaging. That decision can affect how you intend to present, use or return the item."
+          ],
+          [
+            "Review the answer against your question",
+            "Compare the new picture with the sentence you wrote at the beginning. If it shows a strap but not its attachment hardware, say exactly what remains unresolved. Ask for a different view only when the additional evidence changes your decision.",
+            "Finish with an observation someone else can check. For example, the lining is attached by a zip visible at the collar and hem. Avoid claiming that a photo verifies long-term durability, water resistance or an internal component that was never shown. An effective QC decision states both the visible result and the limits of the inspection."
+          ],
+          [
+            "Convert an unhelpful request into three practical views",
+            "Imagine you ordered a laptop backpack with a hidden rear pocket. You plan to keep a small tablet in that pocket and use the main compartment for a laptop. The seller picture shows the back panel closed. Your warehouse photographs show the front, side and a readable size label. Asking whether the bag is good quality gives the person inspecting it no particular feature to verify. Instead, name the missing evidence: the rear pocket opening, its usable depth and the relationship between that pocket and the item you ordered.",
+            "Begin with an overview of the back panel with the relevant pocket unzipped. This establishes that the photographed opening belongs to the bag rather than to a separate pouch or another compartment. Ask for enough context to see the seams surrounding it. A close photograph of a zip without the surrounding panel can confirm a zip exists while leaving its location unknown.",
+            "For the second view, ask for a measurement across the usable opening between the points that actually limit insertion. Explain that the exterior pocket seam may be wider than the zip opening. For the third, specify a depth measurement from the inside base to the usable top if this is possible without damaging the bag. Neither measurement by itself establishes whether a rigid object with a thick case fits; the thickness, lining, corners and shape also matter. Make that limitation explicit in the decision.",
+            "If the inspector can provide only one additional view, decide which observation carries most value. When the tablet is clearly too wide for the opening, depth no longer determines the decision. If opening width is already shown but the pocket's existence is uncertain, an overview is more important than another measurement. Ranking these questions saves effort and can avoid paying for several photographs that answer essentially the same thing."
+          ],
+          [
+            "Phrase a measurement request to reduce ambiguity",
+            "Use a simple order of details: identify the unit, name the feature, describe the position, specify the endpoints and say what must remain visible. A request such as measure the bag can produce its outside height. A more precise request would name the rear pocket of the black medium backpack, ask for its zip opened, and request a tape across the unobstructed opening with zero and the final reading visible. The extra words only describe choices that could otherwise lead to the wrong measurement.",
+            "Mention the unit you need, but keep any conversion in your own record. If the warehouse returns centimetres and your comparison item is measured in inches, convert consistently before deciding. Avoid comparing a tablet's advertised screen diagonal with an opening width. Measure the actual object in its case across the dimension that must pass through the opening. Check its depth and corner shape as well.",
+            "For fragile or sealed products, ask what inspection is possible before requesting physical manipulation. If the original retail packaging matters to the purchase, opening it simply to photograph a concealed feature may change the condition you intend to receive. Record that decision explicitly. Sometimes the appropriate answer is that the feature cannot be verified from the outside and you must decide whether that uncertainty is acceptable."
+          ],
+          [
+            "Evaluate the returned view as evidence",
+            "On receipt, ask whether the photo identifies the unit, exposes the feature and makes the requested observation readable. If two of the three are satisfied, identify the single remaining gap. A clear measurement against an unidentified black bag leaves unit identity uncertain. A well-identified bag with the zero mark hidden leaves the measurement uncertain. These are concise follow-up questions that a person at the warehouse can act on.",
+            "If the evidence contradicts the original offer, quote the exact part of the paid option or seller description that conflicts. If it merely falls short of your own preferred dimension, describe the fit issue and consult the current purchase terms. Those situations can have different available remedies, and an accurate message makes it easier for support to respond appropriately.",
+            "Save the final photographs with the original request and order reference. If the pocket later proves too shallow despite an apparently adequate measurement, you can review which depth was measured, what packing or lining altered the fit and whether the tablet case changed. That record improves your next inspection much more than a gallery of unlabelled close-ups.",
+            "When the additional picture arrives, reply in the same thread with the decision it supports. An example is that the new close-up shows both zipper pulls and resolves your question about the pockets, while the lining remains outside the photograph. This closes the current request without accidentally treating the lining as checked. If you need a different question answered, describe it separately and verify whether the warehouse can still access the item. Several unlabeled replies on a single image can leave the person reading your case unsure which issue is open. Saving the answer with the corresponding photograph keeps the evidence useful after the parcel leaves the warehouse."
+          ]
+        ],
+        "sources": [
+          [
+            "VigorBuy QC finder methodology",
+            "https://vigorbuywithqc.com/qc"
+          ],
+          [
+            "VigorBuy buyer tutorial",
+            "https://www.cnbuypilot.com/vigorbuy/tutorial"
+          ]
+        ]
+      },
+      {
+        "slug": "vigorbuy-package-contents-check",
+        "title": "Verify the contents of a VigorBuy order before combining warehouse items",
+        "intro": "Before combining purchases, verify what each warehouse entry is supposed to contain. A photographed parcel holding two jerseys is complete for one order and incomplete for another. The seller's selected option determines which comparison makes sense.",
+        "sections": [
+          [
+            "Build an expected contents list",
+            "Copy each paid line with its unit, selected option, quantity and any explicitly included components. A bag might include a shoulder strap, a set might include matching shorts and a jacket might have a removable hood. Record only what the selected offer actually describes.",
+            "If the listing shows a range of choices, return to the paid order. A promotional image of a complete outfit does not establish that the option sold every piece. Save screenshots if the seller later edits the listing, but keep the payment confirmation as your anchor for what you requested."
+          ],
+          [
+            "Compare the item with what is visible",
+            "Sort photographs by warehouse entry and start with a full overview. Identify pieces that are present, pieces obscured by wrapping and pieces not seen. A missing image is different from a missing part. If a small accessory could be inside a pocket or protective pouch, ask for a check before declaring a shortage.",
+            "For a pair of shoes, count left and right and look for matching model and size labels. For a belt set, check the number of straps and buckles. For clothing ordered in different sizes, match each piece to its own line rather than ticking the entire order as soon as one label is visible."
+          ],
+          [
+            "Separate boxes from purchase lines",
+            "A seller may send one line in several boxes or several lines in one. Compare domestic tracking and warehouse entries before arranging international shipment. The first intake photograph can be complete for its carton while another carton remains in transit.",
+            "Consider a jacket and trousers ordered from the same listing but dispatched separately. If only the jacket is stored, shipping it immediately may defeat your goal of receiving a complete outfit together. Compare storage and return conditions for the first piece when deciding whether to wait. Check the actual conditions attached to your order."
+          ],
+          [
+            "Close or escalate each discrepancy",
+            "For a short delivery, describe expected and observed counts in the same units. One missing pack of three pairs differs from one pair missing inside a pack. Name the exact item, order reference and supporting photograph when asking for assistance.",
+            "After agreeing to dispatch, retain the record of what went into the parcel. If something is missing on delivery, your last warehouse overview and parcel packing information identify where evidence stops. Combine them with delivery and unpacking evidence rather than relying on memory of what a shopping cart once contained."
+          ],
+          [
+            "Reconcile three purchase lines with two warehouse entries",
+            "Consider a hypothetical order for a backpack with a detachable strap, two shirts in different sizes and a pack of three headbands. The seller of the bag ships separately. A second seller sends the shirts and headbands together. You have several purchase lines but only two outer shipments. If you make a checklist of outer boxes alone, both boxes can arrive while a shirt is still the wrong size or the small accessory pack remains unverified.",
+            "Give the bag a line for the main piece and one for the strap. Write down where the seller option says the strap is included. Give each shirt its own line with its size and colour. Give the headbands a line with the pack count and expected number of pieces. This preparation is easier before the warehouse images arrive, because it directs your attention toward the things most likely to be hidden or confused. It also prevents a new assumption, such as expecting an extra belt visible only on the model, from creeping into the inspection.",
+            "Open the bag's current warehouse entry. Suppose the overview shows the bag and protective wrapping while the internal pockets remain closed. You can confirm the main bag is visible. You cannot yet say whether the strap is missing. Ask whether it is stored inside the bag and request a view of the strap and its attachment hardware if that matters. If a photograph shows the strap but hides one clip, decide whether the clip affects your decision before requesting another view.",
+            "Now inspect the mixed carton. Two folded shirts are visible with labels facing down, plus one sealed headband pouch. The picture can establish the number of shirts, but not the requested size combination. A label on the pouch can establish what its packaging claims, but not necessarily its internal count or the exact colours. Record the difference between directly observed, label only and not visible. This prevents a fully ticked checklist from implying more verification than the photographs provide."
+          ],
+          [
+            "Ask for confirmation without disturbing the wrong item",
+            "If the shirts are readily accessible, a view of the two size labels together with each garment distinguishable can settle the outstanding question. If an unopened pouch matters as a gift, decide whether a packaging label is sufficient rather than automatically asking for it to be opened. If the actual headband colours matter more than sealed presentation, ask what inspection can be performed and confirm the consequences of opening it through the order account.",
+            "Do not ask for the entire mixed shipment to be unpacked again without identifying the missing observation. A message that mentions the two shirt sizes and the sealed headband pack allows the inspector to target the relevant pieces. The broader question are all my products correct could receive an answer based on carton count when your concern is a size label.",
+            "If the second shirt is the wrong size and the other pieces are correct, keep the affected line open while marking the unaffected pieces confirmed. Ask what the current options are for the one shirt before submitting the whole parcel. Retain its tags and packaging if a return or exchange may be considered. Avoid assuming the entire carton must be returned or that part of a set can always be separated; ask for the conditions tied to the actual seller purchase."
+          ],
+          [
+            "Reconcile the outbound packing plan",
+            "After checking the contents, create a list of warehouse entries selected for the outbound parcel. If the wrong shirt is held back, remove it from this list while keeping it on the original purchase record. A combined parcel quote that originally included both shirts may need to be revised. If a corrected shirt later arrives, decide whether to send it separately or wait based on the current costs and conditions.",
+            "Preserve the final packing evidence with the parcel reference. If an accessory is absent at delivery, compare the last incoming overview, any combined packing photograph and what you actually received. If the accessory was never directly observed at the warehouse, say so in your report. If it was observed immediately before sealing, include that evidence as well as photographs of the box on arrival. These details help identify the stage that requires investigation without claiming a cause you cannot substantiate.",
+            "For repeated purchases, the finished checklist can be a template for the types of evidence to seek. Replace all seller options, counts, dates and tracking references with the new order's information. A previous successful order is a useful reminder to check a concealed strap; it is not evidence that the next one has already been supplied.",
+            "For a gift, make the recipient's needs part of your decision. If a bag comes with both a short handle and an optional longer strap, the absence of the long strap may change how the recipient can use it. Identify which strap was included in the selected listing option before considering whether to buy a separate accessory."
+          ]
+        ],
+        "sources": [
+          [
+            "VigorBuy QC finder methodology",
+            "https://vigorbuywithqc.com/qc"
+          ],
+          [
+            "VigorBuy buyer tutorial",
+            "https://www.cnbuypilot.com/vigorbuy/tutorial"
+          ]
+        ]
+      },
+      {
+        "slug": "vigorbuy-bulky-versus-heavy",
+        "title": "Compare a bulky light parcel and a compact heavy parcel on VigorBuy",
+        "intro": "A down jacket and a box of books can have very different relationships between weight and space. The route's actual billing rules determine which difference affects cost. Use two fully described parcels instead of comparing product weights alone.",
+        "sections": [
+          [
+            "Measure the same object at each stage",
+            "Record the actual packed weight and the outer packed dimensions for both parcels. Keep product-only figures in a separate column. An apparel listing may show the weight of a garment without its box, while a warehouse entry might already include the seller's inner package. Mixing those stages creates a misleading comparison.",
+            "Suppose a light parcel weighs 1.5 kilograms and measures 45 by 35 by 25 centimetres. Its volume is 39,375 cubic centimetres. A dense 4-kilogram parcel measuring 25 by 20 by 15 centimetres occupies 7,500 cubic centimetres. The light parcel uses more than five times as much space despite weighing less than half as much."
+          ],
+          [
+            "Apply only the rule stated for the route",
+            "If a hypothetical service divides cubic centimetres by 6,000 and compares that result in kilograms with scale weight, the light parcel has a dimensional figure of about 6.56 kilograms. The dense parcel has a dimensional figure of 1.25 kilograms. Under that example's higher-of-two rule, the light parcel would have the larger billing base.",
+            "These numbers illustrate a method, not a VigorBuy tariff. A service may set a different divisor, threshold, minimum or rounding increment. Read the route description returned for your own contents and destination. Identify both the governing figure and how it becomes the final billed weight."
+          ],
+          [
+            "Evaluate a packing change in context",
+            "Reducing the large parcel's height to 20 centimetres while keeping the other sides fixed gives a volume of 31,500 cubic centimetres. With the same hypothetical divisor its dimensional figure falls to 5.25 kilograms. That may alter a quote governed by volume but tells you nothing by itself about the charge on an actual-weight-only route.",
+            "Check whether the changed packing is acceptable for the item. Compression may be unsuitable for a rigid shape, fragile component or presentation box. Ask about alternatives and, when size matters to the outcome, obtain dimensions for the final packed arrangement."
+          ],
+          [
+            "Compare routes after establishing eligibility",
+            "Enter the same destination and accurately described contents for each scenario. A service that excludes an item or cannot accept its dimensions is not an available price. Keep optional services and currency consistent across the quotes.",
+            "Record the result beside its assumptions. A cheaper quote for the compact parcel cannot prove that one route is cheaper for all your future purchases. The useful finding is narrower: for these packed measurements, on the displayed routes and date, one combination produced a particular total."
+          ],
+          [
+            "Work through a packing decision with a real constraint",
+            "Take the light hypothetical parcel from the earlier example and imagine it contains a soft jacket and a rigid gift box. The buyer needs the presentation box to arrive intact. Compressing only the jacket may save space, but crushing the gift box would defeat the purpose of the purchase. Begin with permissible packing options rather than calculating the lowest theoretical volume and asking the warehouse to force the goods into it.",
+            "Compare three descriptions. Plan A keeps both retail packages inside the original outer carton. Plan B removes only a disposable seller shipping carton while preserving the gift box. Plan C discards the gift box too. If the gift box is essential, Plan C is not an acceptable alternative even if it produces the smallest dimensions. Record which options actually satisfy the buyer before comparing route prices. This prevents a planning sheet from recommending a cheaper shipment the recipient does not want.",
+            "Assume Plan B changes the outer dimensions from 45 by 35 by 25 to 42 by 34 by 22 centimetres. The new volume is 31,416 cubic centimetres, compared with 39,375 before. At the illustrative 6,000 divisor, those volumes produce dimensional figures of about 5.24 and 6.56 kilograms respectively. Compare them with the measured scale weights under the actual route rule. These calculations establish a possible difference in billed weight; they do not establish a particular monetary saving.",
+            "Now apply an illustrative upward half-kilogram billing increment. A governing figure of 6.56 becomes 7.0 kilograms, while 5.24 becomes 5.5. The change in billing bands is larger than a comparison of just the first decimal place might suggest. If a route instead has a minimum of 7 kilograms for this service, the lower figure could still be priced at the same minimum. That is why the entire route rule, including any minimum and how billing increments are calculated, must be checked."
+          ],
+          [
+            "Inspect the compact heavy parcel on its own terms",
+            "For the 4-kilogram parcel of books, the earlier 7,500-cubic-centimetre carton has a 1.25-kilogram dimensional result under the example divisor. Removing a thin layer of outer packing would make that volume slightly smaller, but scale weight would still govern under a higher-of-two rule. If weight remained above the same actual-weight billing threshold, the cheaper-looking volume could have no effect on the quoted freight.",
+            "A dense parcel introduces different packing questions. The buyer may need the exterior strong enough to protect corners and prevent heavy contents from shifting. Removing structural protection to save a small amount of weight can be a poor trade if it changes the condition in which the books arrive. Ask what can be removed without compromising the wanted protection. Compare the complete packed alternatives rather than treating every gram as equally disposable.",
+            "Combining the two parcels creates a third scenario. Adding scale weights gives a rough goods total, but the combined outer dimensions must be measured or estimated separately. The dense books could fit beside the jacket, or they could require a different carton and additional protection to avoid crushing the gift box. The combined volume does not simply equal one old carton plus another. Calculate against the proposed outer package that will actually enter the carrier network."
+          ],
+          [
+            "Identify which change could move the final quote",
+            "Write down the single governing condition for each scenario if the route provides it. For the light bulky parcel it may be dimensional weight. For the compact books it may be actual weight. For an oversized combined carton it may be a maximum side length that removes the route entirely. Different governing conditions explain why the same packing change can have different results on different parcels.",
+            "When a final quote seems surprising, compare its inputs with the estimate before assuming a mistake. Check whether a dimension changed, the scale was measured after reinforcement, the route applies a different billing unit or an optional service was added. Ask about the specific line that remains unexplained. For example, ask which exterior dimension and divisor led to the displayed billed weight instead of asking why a small jacket is expensive.",
+            "Keep the calculation, actual packed measurements and selected route with the parcel reference. Reuse the method for a future parcel, but update every current dimension and tariff condition. The lasting lesson concerns the relationship between scale weight, exterior volume and route rules; none of the illustrative values here promises a VigorBuy rate for any particular destination.",
+            "To compare cartons after repacking, record all three external dimensions again. A narrower side can come with a longer side if the item was rotated, and measuring just the original problem dimension can hide that change. Put the new length, width, height and scale reading on one line with the packing revision. Bring that complete line to the route estimator, then keep the previous result beside it so you can explain any difference."
+          ]
+        ],
+        "sources": [
+          [
+            "VigorBuy shipping calculator",
+            "https://vigorbuywithqc.com/shipping"
+          ],
+          [
+            "VigorBuy buyer tutorial",
+            "https://www.cnbuypilot.com/vigorbuy/tutorial"
+          ]
+        ]
+      },
+      {
+        "slug": "vigorbuy-freight-estimate-record",
+        "title": "Keep a VigorBuy freight estimate you can still explain after packing",
+        "intro": "A saved amount without a route, date or parcel description is difficult to use when the final charge arrives. Save the inputs that produced the estimate and distinguish the original shopping budget from the later warehouse quote.",
+        "sections": [
+          [
+            "Start with a dated scenario",
+            "List the items you intend to send and whether each has arrived. Record the destination, expected packing method, scale weight and exterior dimensions with units. Mark every figure as measured or assumed. A parcel you have not yet packed can still be estimated, but uncertainty should remain visible.",
+            "Give each scenario a short descriptive name such as jacket and shoes with the retail box. Avoid names such as cheapest or best, which describe your reaction rather than the parcel. When you add another item or remove packaging, create a new scenario rather than modifying the only copy of the original."
+          ],
+          [
+            "Capture the route and included services",
+            "Save the route name exactly as displayed and the date the result appeared. Record the quoted total, currency, billing weight if shown and optional services selected. Keep any displayed limits or conditions relevant to your shipment with the estimate.",
+            "Two results produced on different days may reflect a changed route offer as well as a change in the parcel. If you want to isolate the effect of removing a box, run both alternatives with the same destination and route close together. Keep any protection, insurance and signature choices consistent unless those are the changes you intend to compare."
+          ],
+          [
+            "Work through a changed estimate",
+            "Imagine an early estimate used a 2.0-kilogram parcel and the warehouse later reports 2.4 kilograms. If the route uses upward half-kilogram increments and actual weight governs, the second observation would enter a different band. If volumetric weight already governed both quotes, the scale change might make no difference. You need the route rule to interpret the numbers.",
+            "If the quote changes currency between the two screenshots, return to an underlying currency comparison where possible. The amount converted into your home currency can move even when the underlying freight cost stays constant. Keep any payment conversion charge separate from a freight change."
+          ],
+          [
+            "Reconcile or ask for clarification",
+            "Make a short comparison of old and new values for contents, packing choice, dimensions, scale weight, route, currency and services. Circle the first difference that can explain the change. If several inputs changed together, obtain fresh like-for-like quotes before assigning the difference to one cause.",
+            "When contacting support, send the parcel reference and relevant quote details together. Ask a question it can answer, such as which packed dimension determined the billing weight. Keep the final confirmation after payment. It gives your next purchase a realistic comparison point without treating a previous price as a permanent tariff."
+          ],
+          [
+            "Reconstruct four versions of the same planned shipment",
+            "Imagine a buyer saves a screenshot showing 35 in their chosen currency for a clothing parcel. Weeks later the payment screen shows 46. That eleven-unit difference could arise from weight, packing, route, services or conversion. Without the original inputs it cannot be explained. Recreate the event with four dated entries instead: the shopping estimate before purchase, the warehouse item estimate, the packed parcel quote and the amount actually paid.",
+            "For the shopping entry, list the items you plan to purchase and any assumed weights or sizes. Label them estimates. At the warehouse stage, replace assumptions with measured information where available but keep the first entry intact. Some warehouse weights may include seller packaging while the final parcel can include additional outer protection. Record what was measured rather than treating each new number as proof that the earlier estimate was dishonest.",
+            "For the packed quote, record the specific item entries selected, the route offered for the actual destination and the packed dimensions. If an item is left behind for inspection, remove it from this version of the plan even though it remains part of the original purchase. A packed quote for three items and an early estimate for two do not describe the same object. If a service such as reinforcement was added, keep its line distinct from the freight figure.",
+            "At payment, note the paid currency and any separately displayed payment or conversion lines. Keep a record of the quote and the final amount together. If the underlying freight figure stayed constant but the payment currency changed, calculate the conversion effect separately before attributing the difference to shipping. Where the rate or fee is not shown, mark it as unverified and ask for the missing detail rather than reverse-engineering a precise explanation from rounded totals."
+          ],
+          [
+            "Use a controlled comparison when only one thing interests you",
+            "Suppose the buyer wants to know whether keeping the retail shoe box changes the available route. Create two scenarios with the same shoes, destination, date and services. Change only the packing choice and its associated measured or estimated exterior dimensions and actual weight. Capture eligible routes for both. If the final parcel is still unmeasured, label this an exploratory result rather than a quote guaranteed to survive packing.",
+            "If route A appears for the smaller carton but disappears for the larger one, inspect any displayed size or weight criteria. A small change in the longest side can affect eligibility. Avoid comparing route A in one scenario with an unrelated route B in the other and calling the whole price difference the cost of the box. Report it more precisely: preserving the box produced this parcel description and changed which quoted services were available at the time of comparison.",
+            "A second controlled comparison can isolate the effect of services. Use the same packed parcel and route, then capture the total with and without the optional feature you actually care about. Where the page permits, note whether the additional service is charged once per parcel or according to another unit. Comparing like this is more informative than attempting to allocate every optional fee equally across all products by default."
+          ],
+          [
+            "Handle missing records without inventing the old inputs",
+            "Sometimes the buyer already has only the screenshot of 35. Read any visible route name, date, currency or destination from it and list the unknowns. Retrieve a warehouse entry, purchase confirmation or note that independently establishes one of those details. Do not fill a missing weight with the current packed weight and claim to have reproduced the old quote. The old screenshot can still show that a figure was observed while leaving its basis uncertain.",
+            "If the discrepancy matters, ask support for the billing inputs used on the current parcel. That is an answerable request even when the original estimate cannot be recovered. Then compare the authenticated current inputs with whatever earlier observations remain. A concise conclusion might state that the final packed dimensions are known and the route changed, while the original packing choice is unavailable. Such a conclusion is more trustworthy than attributing the entire difference to one guess.",
+            "Keep the final version as a reference for the next order. A later parcel with similar products may still have a different exterior box, destination charge or route offer. Reuse the columns and the comparison process, not the historic amount. The value of the record is that another person can tell what was shipped, under which conditions the quote was produced and which uncertainties remain after payment.",
+            "Before choosing a route, look for any assumptions the calculator supplied automatically. Record the destination region if the page inferred it and check whether the currency selector resets on another device. A quotation that looks lower when reopened may simply use a different display currency. Repeating the comparison with the same saved inputs is often enough to expose the difference."
+          ]
+        ],
+        "sources": [
+          [
+            "VigorBuy shipping calculator",
+            "https://vigorbuywithqc.com/shipping"
+          ],
+          [
+            "VigorBuy buyer tutorial",
+            "https://www.cnbuypilot.com/vigorbuy/tutorial"
+          ]
+        ]
+      },
+      {
+        "slug": "vigorbuy-tracking-handoffs",
+        "title": "Read VigorBuy tracking after dispatch and identify the next carrier handoff",
+        "intro": "Tracking events describe observations of a particular parcel at particular points. A status can look alarming when you have opened the seller's domestic tracking instead of the international parcel record. Identify the journey before interpreting the text.",
+        "sections": [
+          [
+            "Match the reference to its destination",
+            "Keep the purchase number, domestic tracking number, warehouse entry, outbound parcel number and international tracking reference separate. When several purchases share one international box, they can still have different domestic numbers. Copy the reference from the outbound confirmation when following the journey to your address.",
+            "Read the destination shown beside any delivered status. A delivery at the warehouse closes the seller-to-warehouse leg. It does not mean the international delivery failed. If the number belongs to an outbound parcel and the destination matches, the same word requires a different investigation."
+          ],
+          [
+            "Read each event literally",
+            "Distinguish a shipping label being created from the carrier confirming physical receipt. A handoff from one carrier to another may produce a gap between visible scans. Note the last dated observation and its location instead of interpreting every quiet interval as a separate problem.",
+            "Look for a local delivery reference supplied by the carrier or agent. Save it beside the original number rather than replacing the record. A second number may describe the same parcel under a destination delivery partner. Compare the date, destination and sequence before assuming two independently shipped boxes exist."
+          ],
+          [
+            "Resolve common apparent contradictions",
+            "A tracking page can display a newer update in a different time zone. Keep the date, time and zone where provided. A local carrier's first public scan may appear later than an upstream handoff notice. Those events can agree even if the order in a combined feed looks odd.",
+            "If a parcel shows out for delivery, verify which carrier and locality reported it. Check the instructions presented by that carrier. A generic delivery estimate is less specific than a failure notice asking for a particular action. Use the official carrier or order account to review that action."
+          ],
+          [
+            "Open a focused enquiry",
+            "Record the outbound parcel reference, carrier number, last confirmed scan, destination country and the particular discrepancy. If the parcel is marked delivered at the right destination but you have not received it, preserve that scan and any delivery proof provided. Contact the relevant carrier or agent through its normal support channel.",
+            "For a physical arrival with missing or damaged contents, preserve the label, outer packaging, internal packing and item. Tracking can establish a delivery event but does not prove every piece arrived intact. Connect the delivery record with the warehouse evidence kept for the items inside."
+          ],
+          [
+            "Read a tracking timeline as a sequence of evidence",
+            "Consider an illustrative order for shoes and a jacket from two sellers. The shoes reach the warehouse on the third day after seller dispatch, while the jacket arrives later. These dates describe a hypothetical sequence, not a VigorBuy delivery promise. Until you select the stored entries and an outbound parcel is created, the two seller tracking numbers belong to independent domestic journeys. A delivered event against the shoes can therefore be entirely correct even though the buyer has not received anything at home.",
+            "Now suppose you submit one international parcel containing both pieces. Record the outbound parcel reference and carrier tracking number against the two purchase lines. The first carrier event might concern electronic shipment information. Read whether it actually says that a physical parcel was received. A label can be created before collection. In your notes, write label recorded or parcel accepted according to what the carrier displayed instead of treating the two as interchangeable milestones.",
+            "A later event might show departure from a facility, followed by a period with no visible change. A carrier has reported an event at a facility; the absence of a later public event does not identify the parcel's precise location in the intervening period. Look for an additional tracking number or named partner linked by the carrier or the agent. Avoid entering random similar numbers into unrelated delivery sites in the hope of finding a better-looking status.",
+            "When the destination carrier records an event, compare the parcel reference, destination and what the upstream carrier said about the handoff. It is possible for two systems to use different wording for related events. Preserve the original text and date when contacting support. Rewriting arrived at destination facility as delivered to recipient changes the meaning and can send an investigation down the wrong path."
+          ],
+          [
+            "Investigate a delivered scan using the right identifiers",
+            "If the number really does belong to the international delivery and shows delivered, verify the listed destination and delivery partner. Check any available proof, recipient instructions or collection location through the normal carrier or agent account. Some statuses concern delivery to a pickup location or partner rather than presentation at a home address. Read the full event before reporting that a package was delivered to an unknown person.",
+            "Compare the address information on the confirmed outbound order with the intended destination. Preserve the original confirmation if a correction is needed. Share private address details only through the relevant account or official support channel. A public forum can be helpful for general tracking terminology but cannot verify what an individual carrier did with your particular parcel.",
+            "If someone else accepted the delivery, examine the parcel label and package before treating the matter as closed. Confirm that the box bears the expected reference and contains the goods assigned to it. A carrier delivery event and correct contents are different questions. If there is physical damage or an apparent shortage, keep the outer packaging and internal protection while recording the condition in which the parcel arrived."
+          ],
+          [
+            "Write a support message that distinguishes delay from an exception",
+            "Begin with the relevant outbound reference and carrier number. State the last confirmed dated event, then describe the exact uncertainty. For example, ask whether a local tracking number was issued after the recorded handoff or ask which delivery point is meant by a displayed collection notice. That is more actionable than asking where an item is while attaching only a marketplace purchase number.",
+            "If the carrier requests action, inspect the message through the carrier's published service or normal order account. Identify what is being requested, by whom and for which reference. An unsolicited message containing a familiar brand name is not enough to link it to your parcel. Check its demand against the actual tracking information before responding. Retain the confirmed notice and any response you submit so the subsequent event can be interpreted in context.",
+            "For a continuing gap, keep each follow-up in the same record with the date and answer received. Avoid opening separate enquiries for the jacket and shoes when both are known to share one missing outbound box. Conversely, if the two units were dispatched in different parcels, investigate each separate international number. The aim is a precise account of the physical shipment under investigation. It makes a difference whether the outstanding issue is seller dispatch, warehouse intake, international handoff, local delivery or the condition of the contents after arrival.",
+            "If two people at the destination may contact support, agree who will own the enquiry. Duplicate reports can produce separate reference numbers and conflicting updates about the same parcel. Give the other person the destination carrier name, the locally recognised tracking number and the last confirmed scan, plus the time you last checked. If a new status appears under one number, keep the original record as well. Later it may help the shipper identify the partner that accepted the parcel before its local number began showing events."
+          ]
+        ],
+        "sources": [
+          [
+            "VigorBuy parcel tracking guide",
+            "https://www.cnbuypilot.com/vigorbuy/tracking"
+          ],
+          [
+            "VigorBuy buyer tutorial",
+            "https://www.cnbuypilot.com/vigorbuy/tutorial"
+          ]
+        ]
+      }
+    ]
+  }
+};

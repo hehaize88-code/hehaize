@@ -40,5 +40,5 @@ function productionRoute(u, ctx) {
   if (!lang || !Object.hasOwn(locales, lang)) return;
   updateSitemapPaths(ctx);
   const prefix = '<url><loc>' + siteRoot + '/' + lang + '/';
-  return sitemapResponse('urlset', [...mainPages.map(path => prefix + path + '</loc></url>'), ...currentPaths.map(path => prefix + 'product' + path + '</loc></url>')]);
+  return sitemapResponse('urlset', [...[...mainPages,...editorialPaths(lang)].map(path => prefix + path + '</loc></url>'), ...currentPaths.map(path => prefix + 'product' + path + '</loc></url>')]);
 }

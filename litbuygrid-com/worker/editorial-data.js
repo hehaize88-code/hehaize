@@ -1,0 +1,641 @@
+export const editorialData = {
+  "en": {
+    "articles": [
+      {
+        "slug": "compare-product-price-tiers",
+        "keyword": "litbuy compare product price tiers",
+        "title": "Why the LitBuy listing price changes when you select an option",
+        "description": "The low figure on a spreadsheet card can be a perfectly genuine price for something other than the item you meant to buy. Trace one selection from the seller page into the order summary before comparing two offers. The method works even when the prices appear in different currencies or the seller uses quantity breaks.",
+        "sections": [
+          {
+            "heading": "Find the offer that produced the initial number",
+            "paragraphs": [
+              "Open the product page and record the marketplace, seller and item identifier. Then find the component or style selected when the listing first loads. A page showing a bag, matching strap and accessory pouch in one photograph can sell each component separately. The cheapest option may be the strap. A title describing the whole collection does not establish the contents of a single purchase. Select the exact item you want and see whether the displayed price, quantity unit or photo changes. Save the selected state as well as the URL, since reopening the link can restore the default option.",
+              "Read any price range as the bounds of the displayed offer until you know which choice maps to which price. The smallest size may be discounted, a sample may carry a different rate, or the seller may distinguish materials under what looks like a colour selector. If the listing changes price when choosing a swatch, expand the option text and compare model codes before assuming the colour alone explains the difference. A marketplace item number identifies the product family; the option controls which part of that family the seller is being asked to supply."
+            ]
+          },
+          {
+            "heading": "Establish the sale unit before multiplying",
+            "paragraphs": [
+              "Ask what quantity one actually purchases. A quantity of one might be one garment, one pair, a set containing two garments or a pack with several identical pieces. Write the unit in words next to the number. For example, write “one pack containing three pairs” rather than “one.” If the page uses several pictures to show the available colours, distinguish the number of colours on offer from the number of colours included in a pack. A variety photograph can illustrate choice without promising an assortment.",
+              "Consider two illustrative listings. One offers a pack of three pairs for 36 yuan and another offers an individual pair for 14 yuan. The first works out to 12 yuan per pair, but only if the buyer actually wants all three pairs in the offered size and colours. Someone needing a single pair faces different immediate spending and shipping requirements. Comparing only 12 with 14 misses that practical difference. Keep the cost of the usable quantity, the cash required now and any unwanted surplus on separate lines in the comparison."
+            ]
+          },
+          {
+            "heading": "Read quantity breaks as conditions",
+            "paragraphs": [
+              "A price tier applies only when its conditions are met. Check the minimum quantity, the quantities that qualify for each rate and whether the seller counts mixed options together. A ten-piece break across one style is different from a ten-piece break per size and colour. If the displayed table is missing from the imported LitBuy view or appears unclear, consult the live seller offer and ask for the price of the exact mix you intend. Keep the seller response with the order rather than reconstructing the rule from the lowest price later.",
+              "For an example, suppose five pieces cost 28 yuan each but ten pieces cost 24 yuan each. Five would cost 140 yuan and ten would cost 240 yuan before separately listed charges. The larger purchase lowers the unit price by four yuan but increases the product outlay by one hundred. If you needed six units, compare six at the applicable tier with ten at the lower tier. A lower number under a large-quantity column has no intrinsic value to a buyer who cannot use, store or economically ship the extra pieces. These figures illustrate comparison only and do not represent a LitBuy rate."
+            ]
+          },
+          {
+            "heading": "Separate seller prices from delivery and conversion",
+            "paragraphs": [
+              "Look at the selected item's unit price and subtotal in its original currency. Record any seller-to-warehouse delivery charge separately. Then check whether a displayed conversion gives an estimate in your preferred currency and which currency is actually requested at payment. A price conversion can change between visits even if the seller's original figure is unchanged. Keep the observation time and original amount, especially when comparing a saved spreadsheet row with a later checkout. Round only at the end of a comparison if possible, since individually rounded unit amounts can add up differently from a converted subtotal.",
+              "International parcel delivery is a later question. The item price cannot establish the packing method, destination, route or eventual packed measurements. Save a separate freight estimate with the inputs used rather than adding an unexplained allowance to each product price. If two items share domestic delivery or an outbound parcel charge, count the shared amount once in the order total. For a personal budget you can allocate that charge across items by a chosen method, but keep that allocation visibly separate from the charges the seller or agent actually billed."
+            ]
+          },
+          {
+            "heading": "Compare two offers for the same purchase",
+            "paragraphs": [
+              "Make each comparison line describe the intended physical result. An example might read “two medium grey shirts, version B with pocket, delivered from the seller to the warehouse.” Check that both sellers offer the same count, model, size and included components. If one seller includes a detachable liner or spare strap, record the difference and decide whether the buyer values it. Two products styled to resemble each other in photographs can have different construction. An inexpensive offer lacking the feature that drove the search is an alternative product rather than a discount on the same one.",
+              "Review stock and the current seller terms before choosing. A price shown on an unavailable colour may remain visible on a listing with other options still in stock. Likewise a discount might apply only to a preset bundle that cannot be split. If a seller proposes a substitution after the order is placed, recheck the price tier, total quantity and domestic delivery for the revised mix. A substitution that seems minor can change the minimum or remove a package component. Ask for the revised total in the original currency before authorizing the changed order."
+            ]
+          },
+          {
+            "heading": "Reconcile the price against the purchase record",
+            "paragraphs": [
+              "At checkout, read the original option wording, unit, count, unit amount, subtotal and delivery line together. Calculate the result once from the selected values. If the arithmetic fails, identify the exact difference rather than challenging a broad total. A useful inquiry says that the price table shows one rate at the specified quantity, the cart appears to use another, and the chosen options are listed in the attached confirmation. If the unresolved amount is material to your budget, wait for a clear answer through the current order channel before payment.",
+              "Once the seller accepts the order, save the paid confirmation, option text and supporting listing image. Keep the earlier comparison as a dated research record. If the price subsequently changes, the live listing will describe the new offer while the paid confirmation still identifies what you agreed to buy. If an item arrives missing a separately priced accessory, this same record shows whether the accessory was among the paid selections. A few exact details captured during price comparison can therefore help you check the warehouse delivery as well as the amount you spent.",
+              "Compare the cost at the boundary of a tier before changing your basket. Imagine a seller advertises eight notebooks at a lower unit price than seven, while a second seller can supply the seven you actually need. Write down both complete amounts and include any separate domestic delivery on each offer. Then ask what practical use the eighth notebook has. If the extra one is a gift, the eight-pack might serve two purchases. If it is surplus that would also take room in your parcel, the smaller order can be preferable. Keeping the intended use next to the arithmetic makes a close choice easier to explain later."
+            ]
+          }
+        ],
+        "sources": [
+          "https://litbuy.com/help"
+        ]
+      },
+      {
+        "slug": "identify-a-warehouse-photo-colour",
+        "keyword": "litbuy identify a warehouse photo colour",
+        "title": "Is this the colour I ordered? Reading LitBuy warehouse photos",
+        "description": "A warehouse image that looks green on a phone can show a grey fabric under warm light. It can also show a genuinely different option. Start with evidence of what was ordered and photographed, then decide whether a new picture, a label check or an after-sales inquiry would answer the question.",
+        "sections": [
+          {
+            "heading": "Identify the specific order and the expected colour",
+            "paragraphs": [
+              "Open the paid order and note the seller, listing, base model, size, colour wording and any option code. A product listing can keep one marketplace identifier across many colourways. The number that identifies the family does not necessarily tell you which colour was purchased. Compare the exact saved selection with the text in the order confirmation. A saved product link reopening to its default swatch may show a different choice from the one the buyer actually paid for. Keep a screenshot of both when they disagree and label which came from the confirmed order.",
+              "Find the warehouse entry tied to that order. If several similar garments arrived together, identify which photograph belongs to which entry before comparing colours. A useful reference includes the complete item and the visible option or packaging label where available. A close crop shared in a message can lose that connection. When two units of the same garment were ordered in different colours or sizes, mark each separately. This avoids attributing an image of the correct second unit to an allegedly incorrect first unit, which would send a support case in the wrong direction."
+            ]
+          },
+          {
+            "heading": "Understand the limits of photographs from different sources",
+            "paragraphs": [
+              "Seller studio photographs, pictures uploaded by previous buyers and images of your received unit answer different questions. Seller photographs describe the marketed appearance and may involve controlled lighting or editing. Historical QC photographs can show how an earlier unit looked under other conditions. The photographs attached to your warehouse order give evidence about the unit being handled for you. LitBuy-focused QC guides distinguish these sources; keep their roles separate when collecting images. A match to a previous buyer's photograph can be an encouraging reference while leaving the identity of your own selected option unresolved.",
+              "Look at how the light affects other objects in the image. A white label appearing yellow suggests that the picture has a warm cast, but a label photographed at a different angle may reflect light differently from fabric. A bright camera flash can flatten texture, while a shadow near a fold can make adjacent areas appear to be different shades. Compare more than one view and look for a change that remains visible when the angle changes. If the garment is shiny, brushed or metallic, the direction of the fibres and light can noticeably alter the apparent colour within a single photograph."
+            ]
+          },
+          {
+            "heading": "Use construction and codes to distinguish similar options",
+            "paragraphs": [
+              "Look beyond hue for features that separate the seller's options. Navy version A might have a white logo while navy version B has a matching dark logo. A cream bag might have tan edging while its ivory counterpart has white edging. These details can remain recognizable under varying lighting. Compare the exact combination in the order with the combination visible on the received unit. If the seller's option code is printed on a tag or clear packaging, photograph it and compare it character by character. Note an unreadable character as uncertain rather than guessing from the colour you expected.",
+              "Imagine a listing offering stone G1 and moss G2. A warehouse overview makes the fabric look grey, but the small label reads G2 and the sleeve trim matches the moss option. That evidence supports the selected variant more strongly than a visual comparison to an edited seller picture alone. If the label clearly reads G1 and the trim also matches G1, an order confirmation for G2 supports a direct fulfilment question. If the code and trim disagree, ask the seller what the code represents on that model before treating it as proof of a wrong unit."
+            ]
+          },
+          {
+            "heading": "Ask for a photograph designed to resolve the difference",
+            "paragraphs": [
+              "Frame the request around the unresolved observation. For example, ask for one picture of the garment with the order's option label visible, and one full view under neutral light showing the contrast trim. Ask through the current LitBuy order channel whether the requested view is available and whether any additional charge applies. Include the warehouse reference so the handler can find the correct unit. A specific request avoids spending time on another close picture of the same ambiguous patch of fabric from the initial photograph.",
+              "For matching garments, ask whether both pieces can be photographed together under the same conditions where practical. Include the relevant references and name the areas to compare, such as the jacket sleeve and trouser thigh. This can help establish whether two physical fabrics look consistent relative to one another. It does not establish a colour standard across screens. If a sealed item would have to be opened, clarify whether opening is permitted and whether it would affect return conditions. A new photograph is helpful only when the information gained is worth the handling involved."
+            ]
+          },
+          {
+            "heading": "Separate an option mismatch from a preference",
+            "paragraphs": [
+              "After reviewing the evidence, write your conclusion in two parts. First state the ordered option and the evidence for which option arrived. Then state whether the appearance meets your personal expectation. A buyer may dislike a shade even when the order and label agree. Conversely, a buyer may be willing to keep a different shade that was supplied by mistake. These situations lead to different questions for the seller. A precise description is more constructive than a broad statement that the colour is “wrong” without identifying the basis for the claim.",
+              "If the option appears to be different, put the paid confirmation, relevant seller option description and warehouse label together. Explain the exact disagreement and ask what can be done before international dispatch. If the option appears correct but the shade remains uncertain, check the applicable return or exchange conditions in the current LitBuy order and Help Center. Decisions about eligibility or time limits depend on the actual purchase. Avoid relying on an unrelated buyer's deadline or treating a storage date as the deadline for resolving an appearance question."
+            ]
+          },
+          {
+            "heading": "Record the decision before choosing a parcel",
+            "paragraphs": [
+              "Mark the affected entry as accepted, awaiting a new view, or under inquiry. Keep it separate from other accepted items when choosing what to ship. For a two-piece outfit, consider whether shipping the confirmed piece separately would complicate a possible set return or make a final colour comparison impossible. Ask the agent about the current conditions before splitting the pieces or discarding packaging. If time matters, record the relevant deadline and the date you opened the inquiry rather than assuming the act of sending a message automatically changes the order terms.",
+              "When a final decision is made, retain the order reference, image date and reason. A note such as “label G2 matches, same-frame jacket and trousers look coordinated, accepted” is more useful than saving a thumbnail called green. If a replacement is ordered, record its new reference and repeat the comparison on its own photographs. When the item finally arrives, a short note about how it looked in ordinary daylight can improve future choices from that seller. It remains a personal observation about that unit, alongside the more objective record of which option was ordered and received.",
+              "A useful secondary clue is the construction shared by colours in the same series. Imagine that the navy jacket has a matching dark drawcord while the black version in the saved listing has a light flecked cord. If the received photo shows a dark drawcord, you have one additional clue to record, alongside the hangtag and seller option. Check that the detail actually differs across the two current options before relying on it. Manufacturers may also change trims between runs. Explain which details agree, which one still looks uncertain and whether the distinction matters when the garment is worn alongside the rest of your clothing."
+            ]
+          }
+        ],
+        "sources": [
+          "https://litbuy.com/help",
+          "https://litbuy.tools/en/qc-photos/"
+        ]
+      },
+      {
+        "slug": "document-a-missing-accessory",
+        "keyword": "litbuy document a missing accessory",
+        "title": "A strap, liner or spare part is missing from LitBuy QC photos. What should you check?",
+        "description": "A missing accessory can mean several things. It may never have been included in the paid option, it may be packed out of sight, it may be travelling separately, or the seller may have omitted it. Test these explanations in an order that preserves the evidence and prevents a premature international shipment.",
+        "sections": [
+          {
+            "heading": "Establish whether the accessory was part of the purchase",
+            "paragraphs": [
+              "Read the paid selection, not just the product title. A handbag listing might display a decorative strap under studio lighting while selling the strap as a separately priced option. A winter jacket may be photographed with a removable liner that belongs only to the insulated version. Find the seller's description of the exact model and option you paid for. Look for a component list, a package description or a seller response specifically confirming the accessory. Save the marketplace link and an image of the selected state with the date. The live default option can change after purchase.",
+              "Separate different kinds of evidence. A paid option named “bag plus long strap” directly supports the expectation of a long strap. A product family photograph of the model wearing a long strap supports a weaker inference. A message from the seller confirming that your particular colour and size includes it is stronger. A picture from another buyer shows what an earlier unit contained but may concern a different version or promotion. Record the strongest evidence available and label uncertainty honestly. This helps an order inquiry ask the right question, whether it concerns promised contents or clarification of an ambiguous offer."
+            ]
+          },
+          {
+            "heading": "Locate the warehouse entry and count visible units",
+            "paragraphs": [
+              "Match the paid item to the LitBuy warehouse entry using the order reference, seller option and visible identifier when possible. If several similar items arrived, identify each before inspecting accessories. A detachable strap visible next to one bag could belong to a second item photographed in the same group. Conversely, a strap folded inside protective wrapping could be part of the correct item while remaining invisible in an overview. Record what can actually be seen, including the packaging arrangement, rather than writing “missing” as soon as an expected component is absent from one angle.",
+              "Make a short inventory using the physical units appropriate to the order. For a camera bag, it might read one main bag, one long strap, two removable dividers and one rain cover. A photo showing the outer bag and a bundle of folded material does not settle the count of dividers or the identity of the bundle. Identify which components are confirmed, which are uncertain and which have evidence of absence. Use the seller's terms alongside your own description if the same translated word could refer to a handle, wrist loop or shoulder strap."
+            ]
+          },
+          {
+            "heading": "Check the places a component could legitimately be packed",
+            "paragraphs": [
+              "Small accessories are often placed inside pockets, protective sleeves or the main packaging. Ask whether the warehouse can check a specific location when it is safe and permitted to do so. A request identifying the inner zip pocket and the expected folded strap is more useful than a general demand to search the entire warehouse. If a retail seal, tag or protective wrap would need to be broken, ask what the order conditions allow. Some packaging may need to remain intact for the buyer to use available return options. Do not give irreversible handling instructions merely to improve the first photograph.",
+              "Consider how the component normally attaches. A removable hood might already be zipped onto the jacket and concealed by the way it is folded. A bag charm might be clipped inside for transit. A spare cable could sit beneath a cardboard insert. Use the seller's assembly photo or package diagram as a reference to explain where to look. A single new overview with the main item and loose contents laid out can answer multiple count questions. A focused follow-up photo is most useful after that overview establishes which component still needs identification."
+            ]
+          },
+          {
+            "heading": "Rule out a separate seller shipment",
+            "paragraphs": [
+              "Check the domestic tracking information attached to the seller order. The seller may ship an accessory separately, particularly if an additional option was bought on another listing. One warehouse entry can therefore represent only part of an order. Ask for the corresponding domestic carrier and tracking number if the seller claims a second package exists. A promise to send the piece later is different from dispatch information for a package already in transit. Keep both possibilities distinct in your record so that you know which update to request next.",
+              "For example, a buyer orders a bag and a separately listed strap from the same shop. The bag arrives in warehouse entry A. The seller says the strap is in package B but gives only the original order number. Ask for B's delivery or tracking reference when it is available. If B later arrives, match its option and fittings to the bag before closing the inquiry. A strap in the right colour with the wrong type of clasp does not resolve the original compatibility requirement. If the seller confirms everything was packed in A, return to the remaining evidence about the contents of that package."
+            ]
+          },
+          {
+            "heading": "Send an inquiry with one specific resolution request",
+            "paragraphs": [
+              "Use the current order channel and give the purchase reference, warehouse reference, component description, paid option and relevant photograph. State what has been checked. An example would be “The paid option includes a detachable crossbody strap; the warehouse overview shows the short handle only. Could you confirm whether the long strap is inside the bag's protective sleeve?” This leaves room for a simple check before escalating the matter. LitBuy's Help Center lists after-sales requests for missing or damaged items. Consult the terms relevant to the actual order and stage.",
+              "If the component is confirmed absent, ask what remedy is available and what each option covers. The seller might propose sending the missing part, exchanging a whole set, or making another arrangement. Check whether an accessory resend would have its own shipping cost or affect the timing of the main item. If a return is proposed, establish which components and packaging need to go back together. Preserve any evidence of the received condition. A request is easier to handle when it distinguishes the value and function of the absent part from the condition of everything that did arrive."
+            ]
+          },
+          {
+            "heading": "Check the resolution against the original purpose",
+            "paragraphs": [
+              "Before approving an international parcel, decide whether the item remains usable without the accessory. A spare decorative charm and an essential load-bearing shoulder strap have different consequences. If the seller offers a partial refund, record the amount, currency and whether accepting it closes the case. Compare that outcome with the actual cost and feasibility of obtaining a compatible replacement where you live. If a resend is agreed, wait for the new warehouse entry or consciously decide whether sending the main item separately is worth the extra handling and possible freight.",
+              "Mark the case closed only when the replacement component has been checked or another agreed outcome has occurred. Photograph the fittings and size if compatibility matters, then list both the main item and accessory in the final packing record. If you accept a refund instead, mark the accessory as refunded and absent. This prevents a second support inquiry when you later open the international parcel and cannot find a part you already agreed would not travel. The final record should explain exactly what you expected, what the warehouse found and how the difference was resolved.",
+              "When the missing piece attaches to a particular point, photograph that connection as well as the pieces received. For example, two metal rings on a bag show where a shoulder strap could fit. They do not establish that a strap was sold with this option. Combine that view with the purchase selection and a photograph showing everything taken from the package. If the seller sends a strap separately, compare its clip shape and length with those attachment points before treating the order as complete. Receiving a physically similar spare can still leave the bag unusable in the way that motivated the purchase."
+            ]
+          }
+        ],
+        "sources": [
+          "https://litbuy.com/help",
+          "https://litbuy.tools/en/qc-photos/"
+        ]
+      },
+      {
+        "slug": "save-a-listing-before-it-changes",
+        "keyword": "litbuy save a listing before it changes",
+        "title": "What to save when a LitBuy seller listing might change",
+        "description": "A seller can update a hero photograph, remove a colour option or reuse a listing for a revised product. A bookmark lets you revisit the page as it exists today. To compare an eventual warehouse delivery with what you actually ordered, keep a small, dated record of the offer as you accepted it.",
+        "sections": [
+          {
+            "heading": "Preserve the selected state rather than a generic thumbnail",
+            "paragraphs": [
+              "Open the live seller page and choose the exact model, colour, size and package you intend to buy. Check whether the page changes the main photograph, quantity unit, price or stock status after each selection. Save a view with the selected option visible and the related picture or description in context. If the page has a long scrolling layout, separate captures may be clearer than one unreadably small image. Keep them together with a short note explaining how the chosen option connects to the pictured product.",
+              "Save the marketplace, shop name, item identifier and URL in plain text. Keep the LitBuy product or order link separately. These identifiers serve different purposes. A marketplace link identifies the seller offer, a selected option identifies a purchase choice within that offer, and an agent order reference points to the transaction in your account. A seller can reuse a single item identifier across several versions. For example, the black short jacket and navy long jacket can share a listing while having different construction and size charts. The item ID alone cannot settle which version was purchased."
+            ]
+          },
+          {
+            "heading": "Capture only the claims that matter to the decision",
+            "paragraphs": [
+              "Identify the features that would make you keep or refuse the item. They might include a detachable strap, a particular fabric composition, a measured garment length or a two-piece set. Save the seller's specific description of each relevant feature. A general gallery of attractive images has less evidential value than one clearly labelled option table. When a feature appears only in a promotional photograph, record that limitation. If the seller confirms it in a message especially for your selected option, preserve the answer with enough surrounding text to show what question it addressed.",
+              "For a hypothetical padded coat, you might save the chosen colour code, selected size, chart showing back length, description of a removable hood and statement of the included belt. The photo of a model wearing boots adds no information about the coat's contents. A small record organized around four relevant claims is easier for another person to review later than thirty images with no explanation. Preserve original option terms alongside translations. A later translation engine can choose different words for the same seller label, and a translated nickname can lose a model suffix that distinguished two options."
+            ]
+          },
+          {
+            "heading": "Separate the advertised figure from the paid amount",
+            "paragraphs": [
+              "Record the selected unit price, quantity, currency and any domestic delivery amount shown at checkout. If a discount depends on a quantity tier, save the applicable tier and the actual selected mix. Then preserve the paid confirmation. The price available when researching the product may differ from the price accepted when ordering. Distinguishing the two dates prevents a later price drop from being confused with a billing error. A marketplace page revised after payment describes the current offer; the confirmation records the amount paid on your order.",
+              "Consider a buyer researching a bag at 85 yuan and purchasing it later at 90 yuan after selecting a version with a long strap. If the seller subsequently displays 78 yuan for the version without that strap, none of the three numbers alone establishes that the payment was wrong. Look at the selected option, time and package contents. Record the original-currency values first and any currency conversion separately. A changing exchange rate can cause another visible difference without the seller changing the original item price. This precision helps both with budgeting and with explaining a genuine discrepancy."
+            ]
+          },
+          {
+            "heading": "Make evidence readable without oversharing",
+            "paragraphs": [
+              "Give files descriptive names containing a date, a short item reference and what the image shows. Use local labels for personal organization and keep the full order reference in a private record. If sharing a case with the official order support channel, include the specific order and warehouse references necessary to identify it. If asking a community for general advice, remove names, addresses, parcel labels, account identifiers and payment details. The same screenshot can have very different privacy implications depending on its audience. A crop showing the option description is usually enough for a general question about what it means.",
+              "Write a brief accompanying note in your own words while the purchase is fresh. For example, “Selected navy B because it includes the inner liner; seller chart measured from the collar seam, not the shoulder.” Keep the original seller image unedited and create a separate annotated copy if arrows or highlights help explain a detail. Annotations should direct attention to evidence rather than obscure nearby conditions or exclusions. If the description is in another language, keep the original wording beside your interpretation and clearly identify which is which."
+            ]
+          },
+          {
+            "heading": "Compare a revised listing without rewriting the past",
+            "paragraphs": [
+              "If the seller changes the page, save the new version with a new date. Compare model, option text, chart, quantity unit and included pieces. A change of hero image with identical option details might be purely presentational. A changed code or new component description can materially affect what a new buyer receives. Do not silently replace the original capture with the new one. Keep the two versions side by side and write a one-sentence summary of the difference. This makes the point in dispute visible without requiring support to reconstruct the entire listing history.",
+              "When a seller says an item “was always supplied this way,” refer to the actual saved claim and paid selection. Avoid arguing from a remembered impression. A statement that “the capture dated at checkout lists one removable hood under option C and the received unit has no attachment” is specific and checkable. If your evidence only shows the hood in an unlabelled gallery picture, ask whether it belonged to that option rather than presenting inclusion as settled. A fair distinction between what was promised and what was inferred makes genuine mismatches easier to identify."
+            ]
+          },
+          {
+            "heading": "Use the record at inspection and after delivery",
+            "paragraphs": [
+              "When warehouse photographs arrive, inspect the features that justified the purchase in the first place. Compare the received option and visible details with the dated record. If the key feature is hidden by folding or wrapping, ask for the relevant view through the LitBuy order channel and check the current available services and deadlines. For an item issue, the LitBuy Help Center directs users to after-sales information. Preserve packaging while clarifying whether the item or full set would need to be returned. A clear comparison gives the seller or agent a practical question to resolve.",
+              "Once the order is accepted, keep the final warehouse photograph and any agreed changes with the original offer. If the seller supplied a different version with your consent, record that consent and the revised price or contents. If a component was refunded, mark it accordingly. When the international parcel arrives, the end-to-end record can distinguish a seller listing change, an agreed substitution, a packing omission and damage in transit. A small number of carefully labelled records can answer those questions long after the live listing has been redesigned or removed.",
+              "Imagine that a bookmarked listing opens next week with a fresh identifier because the seller has moved the product. Preserve the original record and make a second entry for the replacement listing. Compare the features important to your order, particularly package contents and option wording. If support points to the new page, ask whether it is intended to describe what you previously bought or only what the seller offers today. Keep that answer with the two links. An old bookmark and a new page with the same headline can describe separate offers, and a reviewer needs to see how the current page entered your case."
+            ]
+          }
+        ],
+        "sources": [
+          "https://litbuy.com/help"
+        ]
+      },
+      {
+        "slug": "measure-hoodie-body-length",
+        "keyword": "litbuy measure hoodie body length",
+        "title": "How to check a hoodie body-length measurement in LitBuy QC photos",
+        "description": "A tape reading of 65 cm is only useful if you know where the tape began, where it ended and which hoodie was measured. For a cropped or oversized hoodie, the position of the hem can matter more than the letter printed on the size label. Use a garment you own, the seller's chart and a comparable warehouse picture to make the decision.",
+        "sections": [
+          {
+            "heading": "Define what you mean by length",
+            "paragraphs": [
+              "Look at the hoodie as it will be worn. Do you care where the back hem finishes, whether the front covers a waistband, or how the body looks under a jacket? These can be different measurements on a garment with a curved or dropped hem. Decide on the feature that affects your purchase. A hoodie can have the right back length but a shorter front. Another can look shorter when worn because a tight ribbed waistband gathers the body above the hips. Write the practical requirement in a sentence before looking at the size chart.",
+              "Now locate the seller's measurement diagram for the exact version. The chart may measure down the centre back from the base of the hood, or from the high point of the shoulder near the neckline. The upper edge of the hood itself is a different starting point. Some charts include the ribbed waistband and others do not make that clear. If the figure appears without a diagram, ask how the seller measured it. A numerical comparison made with two different starting points can produce a misleading difference even when both measurements were recorded accurately."
+            ]
+          },
+          {
+            "heading": "Choose a useful reference hoodie",
+            "paragraphs": [
+              "Pick a hoodie you wear for the same purpose and with a similar layer underneath it. A lightweight gym layer and a thick fleece worn over a shirt can sit differently at the same flat length. Close any zip, empty bulky pockets and lay the garment flat on a level surface. Straighten folds gently while letting the fabric and ribbing rest naturally. Avoid pulling the hem downward to reach a preferred number. Record whether you measured the front or the back and whether the waistband is included.",
+              "Take a full photograph of your reference measurement. Place the tape at the defined starting seam, run it straight along the intended path and keep both endpoints visible. Note the units and the exact reference garment. If the seller's diagram starts at the high shoulder point while your first measurement began at the centre back, take a second measurement using the seller's method. Do not apply a guessed correction between the two. The seam shape, neck width and shoulder construction determine the difference, which can vary between garments and is often precisely where the uncertainty arises."
+            ]
+          },
+          {
+            "heading": "Match the chart to the item that arrived",
+            "paragraphs": [
+              "A marketplace listing can contain a standard pullover, a cropped version and a zip-through model under the same product title. Check that the selected seller option, order confirmation, warehouse entry and chart all refer to the model you want. Keep any model suffix next to the size. A chart labelled only with a seller's internal code can be easy to misassign if the translated title omits it. If photos from an earlier order show the same colour, verify their model and size before using them even as a reference.",
+              "Compare body width and length together when evaluating an oversized style. A medium with a wide body and short hem can be an intentional boxy cut. Sizing up to gain length can also increase width or change the shoulder placement. Read across the relevant chart rows before assuming the next size solves the problem. Record a comfortable length interval based on garments you own when possible. That interval describes your preference rather than a seller tolerance. Check both the preferred length and any other important measurement, such as cuff position, before making a decision based solely on body length."
+            ]
+          },
+          {
+            "heading": "Request a photograph that can settle a real question",
+            "paragraphs": [
+              "When the LitBuy warehouse images do not show a usable measurement, specify the garment, warehouse reference, side, start, end and units in your inquiry. An example would be “Please lay the navy medium pullover flat, back facing up, and measure from the centre seam where the hood joins the back to the lowest back hem, including the ribbed band. Please show the entire tape in centimetres.” Check through the current order whether that view is available and whether the service carries a charge. The person handling the garment then knows exactly what arrangement will answer the question.",
+              "Inspect the response before reading the final number. The tape should begin at its zero mark, run straight along the garment and end at the requested edge. If the picture is angled sharply, the scale can be difficult to read. A photograph showing the end of the tape but hiding the start inside the hood does not establish the defined length. Ask for the missing part of the view rather than requesting an unrelated gallery of more pictures. If the garment remains sealed, check the applicable handling and return conditions before authorizing any action that changes its packaging."
+            ]
+          },
+          {
+            "heading": "Interpret the difference rather than chasing false precision",
+            "paragraphs": [
+              "Suppose your preferred hoodie measures 66 cm down the centre back, and a warehouse photo shows 65.5 cm using the same method. A difference of half a centimetre may reflect the way the ribbing settled or how clearly the tape can be read. Compare that difference with your range of acceptable fit. Now suppose the seller's chart gives 70 cm from the high shoulder and the warehouse photo gives 65.5 cm from the centre back. These figures are not directly comparable. Ask for the corresponding high-shoulder measurement or repeat that method on your own reference garment before treating the difference as a shortfall.",
+              "If the result remains outside your acceptable range with matching methods, state the evidence precisely. Say which version and size were ordered, which chart row applies, where each measurement was taken and what the photographs show. A seller may specify a manufacturing tolerance or a particular measurement method. Check the current listing and after-sales terms for the actual order before claiming a particular remedy. If the paid size and visible label differ, flag that as a separate fulfilment question. A wrong label and an unexpected garment measurement do not necessarily have the same explanation."
+            ]
+          },
+          {
+            "heading": "Decide while the hoodie is still accessible",
+            "paragraphs": [
+              "Before international parcel submission, mark the warehouse entry accepted or awaiting clarification. Keep the measurement record with the order and note any relevant deadline. Storage time, return eligibility and the time needed for a photo inquiry can follow different conditions. Use the live account and LitBuy Help Center to check available options for the specific item. Where a replacement is possible, verify the target version and size in writing; a second hoodie selected from the same broad product family may otherwise reproduce the exact uncertainty that led to the exchange.",
+              "When you eventually try the garment on, note how the measured length translated into actual wear. Did the waistband rest where expected? Did the weight of the fabric change the drape? Did a layer underneath lift the hem? This first-hand note is useful on a future purchase, particularly if you buy similar cuts. Keep it distinct from the measurable facts a warehouse can confirm. The result is a practical fit record combining the original chart, an identifiable unit, reproducible measurements and the wearer's own preference, rather than a size letter expected to do all that work by itself.",
+              "A split hem makes a single body-length figure particularly easy to misread. Suppose the back panel visibly extends below the front, and you intend to wear the hoodie underneath a shorter jacket. Measure the centre back on a hoodie you already own and record how much fabric shows below the jacket when worn. For the warehouse item request that same centre-back span, with both endpoints visible. You can then judge whether the longer panel creates the look you want. A front-only measurement might be accurate for the seller's chart yet leave your personal layering question unanswered, especially where the hem curves at the sides."
+            ]
+          }
+        ],
+        "sources": [
+          "https://litbuy.com/help",
+          "https://litbuy.tools/en/qc-photos/"
+        ]
+      },
+      {
+        "slug": "check-a-reversed-garment-print",
+        "keyword": "litbuy check a reversed garment print",
+        "title": "Mirrored photograph or reversed print? A LitBuy garment check",
+        "description": "Lettering looks backwards in the warehouse picture. Before reporting a printing error, establish whether the whole photograph was mirrored, whether you are looking through the inside of the fabric, or whether the design really was applied in a different orientation. The right comparison can save an unnecessary exchange and still catch a genuine defect before shipment.",
+        "sections": [
+          {
+            "heading": "Identify exactly which part appears reversed",
+            "paragraphs": [
+              "Open the photograph attached to your specific LitBuy order and save a copy. Note the seller option, garment size, side shown and location of the questioned design. Determine whether letters read in reverse order, individual characters are mirrored, a graphic faces the opposite direction, or an element appears on the opposite sleeve. These observations have different explanations. “The print is backwards” can describe all of them without identifying the problem. A more precise description, such as “the word on the front panel reads from right to left,” makes the next check easier to choose.",
+              "Review the selected seller description and available order evidence. The listing may intentionally show a mirrored design or use asymmetric lettering as part of the artwork. If the buyer ordered custom printing, identify the particular proof or written specification that the seller accepted. An unrelated image of another product can show a design the buyer prefers while saying little about what was agreed. Save the original seller image or approved proof alongside the warehouse photo, retaining both in their original orientation. Annotate copies later if necessary so that the raw evidence remains available."
+            ]
+          },
+          {
+            "heading": "Look for another readable object in the same frame",
+            "paragraphs": [
+              "Examine labels, packing marks, rulers or ordinary text visible in the warehouse photograph. A readable reference printed in its normal direction can help distinguish a locally reversed design from an entirely flipped image. When every piece of text, including an ordinary label, appears mirrored, the image itself is a likely explanation. When the package label is legible but the garment print is mirrored, a simple full-image flip would not explain both observations. Check that the reference and garment are genuinely in the same photograph rather than separate images combined into a collage.",
+              "A reference must itself have a known orientation. An abstract symbol or stylized logo can be ambiguous, especially if you only recognize it from other edited pictures. Numbers such as 8 or 0 can look identical after a horizontal flip. Prefer distinctive text with several characters and a confirmed reading direction. A second view in which the photographer holds a readable warehouse card near the garment can be informative if available. Avoid using a private delivery label in public discussions; a cropped, non-sensitive reference or a warehouse-provided neutral object can serve the same purpose."
+            ]
+          },
+          {
+            "heading": "Confirm which surface the camera shows",
+            "paragraphs": [
+              "Thin or translucent fabric can show a reversed version of a correctly printed design when viewed from the inside. Look for seams, neck labels, hem finishes and pocket orientation to determine which surface is facing the camera. A garment laid partially inside out for inspection can make one panel appear incorrect while its exterior is fine. If the photo shows a transfer backing, protective film or a transparent accessory, determine whether the print is intended to be viewed through another surface. Ask the seller or warehouse for the normal worn view if the setup is uncertain.",
+              "For sleeve placement, describe sides as worn by the person rather than left or right on the screen. A front-facing garment naturally places the wearer's left on the viewer's right. A back-facing garment changes that relationship. Compare the design to a stable feature such as a pocket or fastening whose location is clear in the agreed version. In a message, write “wearer's left sleeve when the shirt is worn,” and name the mark being compared. This removes a source of confusion without requiring the recipient to infer your viewpoint from a screenshot."
+            ]
+          },
+          {
+            "heading": "Compare the exact artwork instead of general impression",
+            "paragraphs": [
+              "Read the design character by character and note which elements match the approved version. Check spelling, character order, alignment, line breaks and which direction the image faces. A wrong letter, rotated graphic and mirror-reversed transfer are three different problems. For a symmetrical graphic with a short word underneath, the word may provide a stronger orientation clue than the graphic. If the product uses two deliberately different side panels, make sure the reference image corresponds to the same panel and model variant as the received piece.",
+              "Use a hypothetical example of a custom garment marked EAST 21. The saved proof reads EAST 21 on the back, with the number below the word. In a warehouse photo the whole word and number appear mirrored, while an adjacent paper card is readable. This suggests a local discrepancy worth checking. If both the card and print are reversed, request another unmirrored full view before raising a production claim. If EAST reads correctly but appears above 12 instead, the issue is number order. Explain the observed difference using the proof instead of calling it simply a mirror problem."
+            ]
+          },
+          {
+            "heading": "Request one controlled follow-up photograph",
+            "paragraphs": [
+              "Ask through the current order channel for the garment laid flat, correct side out, with the full affected area visible. Specify whether you need the front, back or particular sleeve. If orientation remains the question, request a readable neutral card in the same frame or another reliable orientation cue. A second close-up cropped to the exact same graphic may reproduce the uncertainty. For placement as well as orientation, an overview is particularly valuable because it shows the relationship to the collar, side seams and hem. Check the service and any charge available on the actual order.",
+              "Review the new image alongside the original and the seller reference. If they resolve the issue, record why. A note such as “first image mirrored entirely; second image has readable card and correct artwork” can prevent the same question resurfacing during parcel preparation. If they appear to confirm a discrepancy, keep all original images and annotate a separate copy to show the one or two relevant details. A heavy markup covering letters or hiding the surrounding garment makes it harder for support to verify the orientation independently."
+            ]
+          },
+          {
+            "heading": "Send an evidence-based request before international dispatch",
+            "paragraphs": [
+              "Identify the order and warehouse reference, the agreed artwork or seller option, and the exact observed difference. Ask what remedy is available for that purchase while the garment remains accessible. LitBuy's Help Center includes after-sales guidance. Consult the current terms for custom and standard items and do not assume a specific refund, exchange deadline or result from another buyer's experience. Keep the tags and packaging until the seller or agent clarifies any return requirements. If several pieces share the same custom print, specify exactly which units have been checked and which are affected.",
+              "If a replacement or correction is agreed, preserve the approved orientation as a dated reference. Confirm the intended side, spelling, number and model again before new work begins. At warehouse receipt, repeat the orientation check on the replacement itself rather than treating the seller's promise as proof of the completed result. If you choose to accept the original piece despite the difference, document that decision and any agreed adjustment. A clear record separates a camera artefact from an actual production issue and makes the eventual purchase decision understandable even after the shirt and its photos have left the warehouse.",
+              "A photograph taken through thin fabric can resemble a mirrored image for another reason. The camera may be looking at the reverse of the printed panel. Locate the neck label, seam allowances and any pocket to establish which side faces the camera before asking the warehouse to assess the artwork. If you still cannot tell, request a picture of the garment laid with the front facing upward and the collar and side seams in view. Include your initial observation as a question. This gives the warehouse a straightforward way to resolve the orientation without assuming that the seller printed the entire production run incorrectly."
+            ]
+          }
+        ],
+        "sources": [
+          "https://litbuy.com/help",
+          "https://litbuy.tools/en/qc-photos/"
+        ]
+      },
+      {
+        "slug": "decide-whether-to-exchange",
+        "keyword": "litbuy decide whether to exchange",
+        "title": "Keep, clarify or exchange? A decision guide for a LitBuy warehouse item",
+        "description": "A disappointing warehouse photograph creates pressure to act quickly, but the first useful action depends on what is actually wrong. Separate an unresolved question about the image from a confirmed difference in the item, then compare the remedies available for that specific order.",
+        "sections": [
+          {
+            "heading": "Put the concern into a testable sentence",
+            "paragraphs": [
+              "Name the feature that makes you reluctant to ship the item. “The jacket looks off” is an understandable reaction but gives the agent little to investigate. “The paid option shows a two-way zip and the received jacket seems to have only one slider” identifies a check that can be made. Other examples include a size label differing from the paid selection, an accessory absent from a set, embroidery positioned on the wrong panel or a visible tear near a seam. Keep fit preferences, product identification and physical damage as separate issues when several arise at once.",
+              "Gather the seller's description of the exact option, your paid confirmation and warehouse images tied to the order. Distinguish material facts from interpretation. A label clearly marked small alongside a confirmation showing large is a direct discrepancy. A grey fabric looking slightly green in a single warm-lit image is an uncertain appearance question. A garment matching the seller's chart but sitting outside your preferred measurement may be a fit preference rather than an order fulfilment error. These distinctions affect how you communicate the issue and which current terms you should consult before choosing a remedy."
+            ]
+          },
+          {
+            "heading": "Check whether another observation would change the decision",
+            "paragraphs": [
+              "A clarification is worthwhile when one specific observation could change what you do. For the zip example, an unobstructed picture of the bottom and top sliders could settle the matter. For a suspected shortage, a full view of the empty packaging and accessory pockets might help. For a fit decision, a measurement with defined endpoints could be more useful than another photograph on a hanger. Write down the two possible outcomes before requesting anything. If you would exchange the item regardless of the answer, a new photograph might add delay without improving your decision.",
+              "Ask whether the requested check is available, what it involves and whether any fee or handling condition applies. An unopened retail package may need to stay intact for certain returns. If checking the issue would require breaking a seal, ask about the condition first. Also note any live deadline for an inquiry or requested action. Storage time describes how long an item can remain in the warehouse; return or exchange eligibility can depend on other conditions. Consult the current LitBuy help information and your specific order rather than assuming the longest visible timer governs every decision."
+            ]
+          },
+          {
+            "heading": "Establish which alternatives really exist",
+            "paragraphs": [
+              "An exchange means obtaining another unit under agreed terms. Clarify whether the seller has the exact replacement in stock, whether the whole set must be returned and whether a different option affects the price. A replacement in the same labelled size may not solve a fit problem caused by the cut. A larger size could add width while changing the length too little. Check the intended result against the seller's current chart and the buyer's requirements before choosing an alternative merely because it is the next available size or colour.",
+              "Other possibilities can include keeping the supplied item, seeking clarification, requesting a return, or considering a specific seller proposal. The available choices depend on the order and applicable terms. Ask what each proposal would actually do. A “refund” could refer to the item price, a particular missing component or another amount. A request submitted to the seller may still be awaiting approval. Keep the wording and date of each response. Treat an inquiry, approval, dispatch of a replacement and receipt of that replacement as separate events rather than one vaguely defined exchange."
+            ]
+          },
+          {
+            "heading": "Compare the practical costs of each choice",
+            "paragraphs": [
+              "List the costs and consequences that differ between the choices. These may include domestic return delivery, replacement delivery, a new service charge, waiting time, the cost of obtaining a missing part elsewhere or the cost of shipping an item internationally that you already know you cannot use. Distinguish confirmed amounts from estimates. Use the original currency first. Shared outbound freight for a parcel containing other items is a separate issue from a new domestic charge for this single item. Ask about any unresolved cost instead of assuming the seller or agent will cover it.",
+              "Consider a hypothetical bag supplied with a short handle but without the long strap expected from the paid option. If the seller can send the correct strap separately, that could preserve a suitable bag without requiring a full exchange. Check the clasp, width, colour and delivery arrangement before accepting. If the missing strap is the only practical way for the buyer to carry the bag, a modest partial refund may not restore its usefulness. If the buyer already owns a compatible strap, the same proposal could be acceptable. The right decision depends on the item's intended use and the actual offer made."
+            ]
+          },
+          {
+            "heading": "Keep the order's timing and dependencies visible",
+            "paragraphs": [
+              "An exchange can affect more than one item. A buyer may be waiting to send a coordinated outfit or gifts needed together. Identify which other warehouse entries depend on the replacement and their own storage or decision deadlines. Compare waiting for a combined parcel with sending accepted items earlier, using current packing and route estimates. A seller's optimistic dispatch estimate is a forecast, not evidence that the replacement has been received. Keep contingency plans tied to actual milestones instead of accepting an unsuitable original item solely because the rest of the parcel is ready.",
+              "If a full set may need to go back, keep every component, label and protective package together. Do not discard the outer box or send the unaffected piece internationally until the return instructions are clear. For a personalised item, keep the accepted proof and production messages; a mistake in the submitted specification and a deviation from an approved proof are different questions. Keep the current warehouse entry clearly marked as pending. Selection mistakes are easier to avoid when a parcel manifest identifies each accepted or unresolved entry by warehouse reference rather than by a short product nickname."
+            ]
+          },
+          {
+            "heading": "Make and document one clear decision",
+            "paragraphs": [
+              "When requesting an exchange, state the original option, the proven issue and the exact desired replacement. Give the size, colour, model code and package contents, together with any condition under which you want to be contacted again. Ask which unit should be returned, what must accompany it and when you should expect a new reference or tracking update. Save any approval and confirm what it covers. If the issue remains unresolved, identify the single question still needing an answer and the last time you checked the order conditions.",
+              "When keeping the item, record why the available evidence or seller arrangement made that choice acceptable. If waiting for more information, write down what will trigger a decision. If a replacement arrives, inspect its own label and images against the agreed selection before releasing it for dispatch. A short case note can state what was ordered, what was observed, what the seller agreed and what the buyer ultimately received. That record gives a practical ending to the inquiry and helps distinguish a genuinely resolved exchange from an order that merely changed status on a screen.",
+              "It can help to decide what answer would actually change your mind before requesting another picture. A person choosing a jacket for a uniform may have little flexibility over the designated colour and pocket layout. Another person considering the same jacket for weekend wear might care much more about sleeve length. In the first case a clear view of the pocket and option code may settle the decision. In the second case a photograph with a tape along the sleeve offers better evidence. Define the decision in those terms before spending time on an issue that would leave your preference unchanged either way."
+            ]
+          }
+        ],
+        "sources": [
+          "https://litbuy.com/help"
+        ]
+      },
+      {
+        "slug": "prepare-a-return-evidence-record",
+        "keyword": "litbuy prepare a return evidence record",
+        "title": "Building a LitBuy return evidence record that someone else can review",
+        "description": "A support reviewer needs to identify the transaction, understand the agreed item, see the condition received and know what outcome you are asking about. A small, well-labelled set of records can answer those questions more effectively than a folder of unexplained screenshots.",
+        "sections": [
+          {
+            "heading": "Start with the transaction and its current stage",
+            "paragraphs": [
+              "Record the agent order reference, seller listing, selected option, quantity and payment date. Add the warehouse reference if the item has arrived there. Add an international parcel reference only if an outbound parcel is relevant. A seller item number, an agent order number and a carrier tracking number identify different things. Label each explicitly rather than sending an uncaptioned series of numbers. If several units share one order, identify the affected colour, size or component so support can distinguish it from similar pieces that are satisfactory.",
+              "State where the item currently is. An issue visible while the item remains at the warehouse can require different evidence from damage first discovered after international delivery. If the item is with the buyer, keep the external parcel label and packaging until the case instructions are clear. If it remains at the warehouse, avoid authorizing changes to tags, seals or packaging while clarifying return conditions. LitBuy's Help Center separates cancellation, returns and after-sales topics. Use the current order and relevant help category to identify the appropriate channel and any applicable reporting requirement."
+            ]
+          },
+          {
+            "heading": "Establish what the seller agreed to supply",
+            "paragraphs": [
+              "Keep the paid order confirmation and the seller description for the exact option. A general photograph of an outfit can show components sold separately. A family-level size chart can differ from the chart for a cropped or insulated variant. Mark the specific text or option code that supports the expectation in question. If the seller confirmed a feature in a message, save the question and response together so that the context is visible. A single “yes” is difficult to interpret when the preceding message asked about both pocket placement and colour availability.",
+              "List expected contents in physical terms. For a hypothetical bag order, write “one black model B bag, detachable long strap and two internal dividers.” For a customised shirt, write the exact spelling, number, placement and applicable approved proof revision. Distinguish these commitments from personal preferences or assumptions. A buyer who expected a particular shade from gallery photography may still have a legitimate inquiry, but the evidence differs from a confirmed colour code appearing differently on the received label. A clear statement of the expectation avoids overstating what the original seller material establishes."
+            ]
+          },
+          {
+            "heading": "Show what actually arrived",
+            "paragraphs": [
+              "Collect an overview that connects the item to the order, then a closer view of the issue. A close-up of a cracked buckle can show the defect while leaving the viewer unable to identify which of several bags it belongs to. A full photograph of the bag and a second picture showing the buckle in context connect the evidence. Retain original files and create separate annotated copies if helpful. A small arrow can highlight a hard-to-see detail. Heavy drawing or cropping that hides nearby seams, labels or packaging can make the evidence less useful.",
+              "For a measurement discrepancy, show both tape endpoints, units, garment position and the seller's method. For a missing piece, show the received contents together and the seller option naming the missing component. For a printing issue, show the full orientation and a readable reference when a mirrored photograph might explain it. For transit damage, record the external box, label, internal protection and damaged area. These examples concern different evidence. Sending a picture of the parcel label alone will not establish a sizing difference, and a studio photograph of a perfect item will not establish when physical damage occurred."
+            ]
+          },
+          {
+            "heading": "Build a compact chronology",
+            "paragraphs": [
+              "Use dated entries with the event, source and reference. A useful timeline could include purchase confirmation, seller dispatch, warehouse intake, first image showing the discrepancy, inquiry submission and seller response. If there was a later replacement or additional shipment, give it a separate tracking reference. Keep domestic tracking events distinct from international ones. When an exact event time is unknown, label it unknown or state when you first observed the event. Do not turn the time you downloaded a picture into a claimed time of damage.",
+              "The chronology should clarify who observed what at each stage. Suppose an accessory is absent from a warehouse overview, the seller says it was packed separately and a second domestic parcel later arrives. The chronology can show that the initial image did not settle the matter, that a later statement introduced a testable explanation and that the second package eventually did or did not contain the correct part. This protects both sides from a distorted account based on a single image. If an earlier interpretation proves wrong, keep the correction so the current reviewer can understand why the request changed."
+            ]
+          },
+          {
+            "heading": "Prepare a short support message",
+            "paragraphs": [
+              "Open with the affected order and one sentence describing the discrepancy. Then provide the strongest expected-versus-received evidence and the requested next action. An example would be “Order [reference], warehouse entry [reference], was paid as navy model B with a long strap. The seller confirmation names the strap and the warehouse has checked the packaging. The strap is absent. Please advise whether the seller can send it or what return options apply.” Attach the relevant images with short captions. This gives the reviewer a concrete question without forcing them to infer meaning from attachment order.",
+              "Ask any unresolved logistical questions explicitly. Which item must be sent back? Must tags and the retail box be included? Who arranges domestic return shipping and what charge applies? Is an offered refund for the item, a component or another amount? Which currency and destination are stated? If there is a deadline, ask which action must occur by that time. A deadline to submit an inquiry and a deadline for a seller to receive returned goods can be different obligations. Rely on the current order conditions and written instructions for your case rather than a time quoted by another shopper."
+            ]
+          },
+          {
+            "heading": "Close the case using an observable outcome",
+            "paragraphs": [
+              "Preserve the response and distinguish the stages it describes. “Return requested” records a request. A seller's acceptance records an agreed action. A domestic tracking number records a shipment, and a refund entry records a financial event. These milestones do not substitute for one another. Keep the case open in your notes until the agreed outcome has actually happened or until the platform tells you what remains pending. If a refund is issued, compare the amount, currency and destination with the agreement before recording the issue as resolved.",
+              "Protect your private records when seeking outside advice. Order references and full parcel labels may be appropriate in the official support channel but unnecessary on a public forum. Redact names, addresses and payment information from public examples while retaining the originals privately. If sharing a cropped photograph, keep enough visible context to explain what it shows. A useful final case file should answer four questions without speculation: what was ordered, what evidence showed the problem, what the seller or platform agreed to do, and which observable event completed that agreement. Those answers remain valuable even after a listing changes or a support thread closes.",
+              "Before sharing images from an order screen, check what else appears around the relevant item. A screenshot can show another purchase, someone else's gift, your delivery address or account details. Keep a complete private original and crop a working copy for the specific enquiry. Leave the order reference, selected option and evidence of the disputed feature readable in the copy you send through the order channel. If the agent genuinely needs another part of the record, supply it there in context. This also improves readability because the person checking your case can immediately see which line of a busy receipt matters."
+            ]
+          }
+        ],
+        "sources": [
+          "https://litbuy.com/help"
+        ]
+      },
+      {
+        "slug": "interpret-a-seller-support-response",
+        "keyword": "litbuy interpret a seller support response",
+        "title": "Reading a LitBuy seller response: what was offered, and what is still pending?",
+        "description": "A short message such as “can replace” may confirm that a seller is willing to discuss an exchange while leaving the size, cost, return requirement and dispatch date unresolved. Translate a response into concrete actions before accepting a proposal or submitting the item for international delivery.",
+        "sections": [
+          {
+            "heading": "Read the answer alongside the question that prompted it",
+            "paragraphs": [
+              "Find the original message, any accompanying images and the order reference. Identify which question the seller was answering. Buyers often ask several questions at once: whether a replacement is available, whether the missing component is included, and who pays domestic postage. A one-word answer can appear to resolve all three while referring to just one. Quote the relevant question and ask the unresolved points separately. Keep the original wording and its translation together where language is involved. A translated “will handle” can express an intention without specifying the actual remedy.",
+              "Identify which party supplied the information. A seller can describe stock and fulfilment, a warehouse can describe what it physically received, and an agent can relay information or explain the current order process. A tracking record describes a carrier event. Each source has a different basis for its statement. A seller saying a strap was included does not establish what can be seen in a warehouse photograph. A warehouse noting that a strap was not visible does not necessarily prove it was never packed. Keep both observations and ask what check would resolve the difference."
+            ]
+          },
+          {
+            "heading": "Separate a proposal from an action already taken",
+            "paragraphs": [
+              "Read the verbs carefully. “We can send another,” “we will send another,” and “we sent another under tracking number B” represent different stages. In the first case the buyer might need to accept the offer. In the second the seller has stated an intention. In the third there is a specific dispatch event that can be checked. None by itself establishes that the replacement has reached the warehouse or matches the agreed option. Record the current stage and the next event you expect rather than marking the case resolved at the first reassuring message.",
+              "The same distinction applies to refunds. “Refund available” invites a decision. “Refund approved” describes authorization. An amount visible in the account or payment channel is evidence of the resulting transaction. Check the amount, currency and destination described for the actual case. If the seller offers a partial refund, establish the component or defect it covers and whether acceptance settles the issue. Do not infer a specific arrival time or payment destination from another buyer's story. Use the current LitBuy order information and relevant help guidance where a platform process is involved."
+            ]
+          },
+          {
+            "heading": "Identify the exact replacement or remedy",
+            "paragraphs": [
+              "For an exchange, repeat the replacement specification in full. Include seller option code, model, colour, size, quantity and contents. “Same item” can mean the same general listing, even when the original problem was the wrong colour within that listing. If the first item arrived with a wrong label, ask how the replacement will be identified. If the issue concerned a missing accessory, clarify whether the seller intends to send the accessory itself, replace the whole set, or offer a different compatible part. Each proposal requires a different warehouse check.",
+              "Suppose a buyer ordered model B with a removable grey strap and received model A with a fixed black handle. The seller replies “can send strap.” A loose strap may not solve the problem if model A lacks attachment points. Ask whether the supplied bag has the required fittings and whether the offered strap matches them. An offer to replace the bag with model B could be a different solution. State the underlying requirement in practical terms: a bag with the agreed attachment points and the corresponding strap. This keeps the conversation focused on the useful outcome rather than the superficial presence of an extra part."
+            ]
+          },
+          {
+            "heading": "Resolve costs, deadlines and return conditions",
+            "paragraphs": [
+              "Read which actions the buyer must perform and which the seller or agent will arrange. Does the seller need the original item returned before dispatching the replacement? Must every component of a set be included? Are tags, protective film and retail packaging required? Ask before instructing the warehouse to remove packaging or combining unaffected pieces with another outbound parcel. Save the return reference and instructions when supplied. A return address without a clear order connection or an instruction applying to another item can create a new problem.",
+              "If any costs are mentioned, attach them to a specific leg or service. Domestic return freight, domestic delivery of a replacement, international parcel freight and an optional warehouse service are different charges. A seller offering “free shipping” may mean just one of these. Confirm the relevant currency and amount where available. A date also needs a verb: dispatch by Friday, expected warehouse receipt on Friday, and buyer response required by Friday are three entirely different commitments. Ask which one the seller means before shifting a parcel plan or allowing an order deadline to pass."
+            ]
+          },
+          {
+            "heading": "Reply with a concise restatement",
+            "paragraphs": [
+              "When a proposal seems workable, restate what you understand in one short message. Include the order reference, affected unit, agreed action and unresolved condition. An example might be “I understand you will send one model B grey strap for order [reference], with no additional domestic charge. The bag stays at the warehouse. Please confirm the clasp matches model B and send the domestic tracking reference when dispatched.” This gives the seller an opportunity to correct a misunderstanding while the action is still reversible. If the proposal is unacceptable, identify which element does not meet the original requirement.",
+              "Avoid adding unrelated evidence each time the seller responds. Link back to the paid selection or warehouse image only when it clarifies the point currently disputed. If two orders have a similar issue, keep their references separate even if the same seller handles both. Do not allow a reply about one size to be treated as approval for all sizes. For several identical garments, record how many units the seller agrees to replace or refund. A response covering one defective piece and a response covering the full order have different practical consequences."
+            ]
+          },
+          {
+            "heading": "Verify the result before closing the thread",
+            "paragraphs": [
+              "After an agreed replacement dispatch, follow its domestic shipment and match the new warehouse entry to the original case. Inspect the particular feature that prompted the exchange and check that the basic model, size, colour and count are correct. For an agreed refund, match the transaction record to the amount and currency. For a promised additional inspection, review the returned photograph or written check. Mark the case complete only after the observable event actually resolves the issue you identified. If the result differs from the proposal, reply with the exact remaining discrepancy.",
+              "Keep a final note summarizing the seller's position, what you accepted and the completed outcome. This can be as short as “strap resent separately, grey model B confirmed in warehouse photo, parcel now ready.” If the answer remained uncertain and you chose to keep the original item, record that conscious decision instead. A clear final note prevents old promises from being mistaken for new warehouse inventory and preserves the distinction between a helpful seller reply, a binding decision on an order and the physical or financial outcome the buyer ultimately received.",
+              "Sometimes the seller's message contains two offers with different conditions. For example, keeping the current item for a small price adjustment and returning it for a replacement are separate choices. Write each on its own line with what you would receive, what would happen to the item already in the warehouse and who still needs to act. If the message leaves one of those points open, quote just the relevant phrase when asking for clarification. Once you decide, name the chosen option explicitly. A short reply such as “okay” can be interpreted as agreement to either outcome and may require another round of messages."
+            ]
+          }
+        ],
+        "sources": [
+          "https://litbuy.com/help"
+        ]
+      },
+      {
+        "slug": "inspect-a-replacement-order",
+        "keyword": "litbuy inspect a replacement order",
+        "title": "How to inspect a LitBuy replacement after an exchange",
+        "description": "A replacement reaching the warehouse is an important milestone. The exchange is resolved when the new unit satisfies the agreed specification and the original item's status is understood. Link the two records, check the feature that triggered the exchange and then inspect the rest of the replacement as a new delivery.",
+        "sections": [
+          {
+            "heading": "Reconstruct the agreement before opening the photos",
+            "paragraphs": [
+              "Read the paid seller option, the original warehouse finding and the seller or agent response that approved the exchange. Write down what was supposed to change and what was supposed to remain the same. A jacket exchanged from medium to large should still have the chosen colour and construction. A bag replaced because its zip failed should still include the agreed strap. A seller who agreed to resend only a belt has not necessarily agreed to replace a full outfit. Establish the scope before interpreting photographs of the new arrival.",
+              "Keep separate identifiers for the original purchase, original warehouse entry, return shipment, replacement delivery and new warehouse entry. Not every case will have a distinct reference at every stage. Record the references that actually exist and label missing information as pending. A seller's reuse of the original order number does not prove that the new unit is the same physical item. A new domestic tracking number can identify a replacement shipment without identifying which variant was packed. The goal is to connect each record to an observable event rather than merge every identifier into one ambiguous order note."
+            ]
+          },
+          {
+            "heading": "Identify which physical unit the new images show",
+            "paragraphs": [
+              "Start with the warehouse entry and its intake information. Compare the attached seller, option text, arrival sequence and any visible label. If you have several similar orders, a newly added photograph in an old conversation may concern a different unit from the one you expect. Ask which warehouse reference the image belongs to when that connection is unclear. Save a full view with the order association and a separate detail view for the particular issue. Keep the original photographs beside them with clearly different file names.",
+              "Look for features that distinguish the original and replacement. A label changing from M to L is direct evidence of a marked size change. A close-up of a different piece of black fabric is weak evidence of a whole-garment replacement. A corrected print should show the relevant lettering in its proper context. If a seller corrected the original item rather than sending another unit, ask what work was done and inspect that specific area. The difference matters when deciding which unit remains in the warehouse and whether a duplicate or unresolved return still needs attention."
+            ]
+          },
+          {
+            "heading": "Repeat the original test using the same method",
+            "paragraphs": [
+              "Return to the concrete reason for the exchange. If the original hoodie was too short relative to a seller chart, use the same garment side, seam endpoints and units on the replacement. Comparing the original centre-back length to the replacement's high-shoulder length may create the appearance of improvement without measuring the same thing. If the first pair of shoes had the wrong marked size, start with the new pair's label before interpreting an insole photograph. If the original concern was colour, compare the replacement option code and identifying trim as well as its overall appearance.",
+              "A practical example is a jacket ordered with two zip sliders but received with one. One photograph of the replacement showing a closed zip from a distance does not settle the issue. Request or inspect a view covering the top slider and lower end in context. Confirm it is the intended jacket and model before marking the zip requirement satisfied. If the seller's remedy involved adding a separate slider, check whether the completed closure operates as agreed rather than accepting the presence of a loose piece of hardware as equivalent evidence. Ask what inspection is available for that particular order."
+            ]
+          },
+          {
+            "heading": "Check unaffected features too",
+            "paragraphs": [
+              "Treat the replacement as a full incoming unit. Confirm its quantity, model, colour, marked size and included pieces, then check visible condition. Correcting one problem can introduce another: a seller may send the right size in the wrong colour, or return a replacement bag without the detachable strap that accompanied the first one. An exchange focused on a garment print still deserves a basic check of fabric, seams, packaging and any included accessories. The purpose is to ensure the replacement functions as the purchase the buyer approved, not to search endlessly for microscopic differences.",
+              "When only a component is replaced, check compatibility with the part you kept. A strap of the correct colour may have the wrong clasp width. A liner may use different attachment points even when it carries the same size label. A replacement belt might match the fabric but be too wide for the loops. Ask for the relevant dimensions or an appropriate same-frame view when available and permitted. If both pieces are accessible at the warehouse, an inspection that links the specific parts can be more valuable than a beautiful image of the replacement component alone."
+            ]
+          },
+          {
+            "heading": "Reconcile inventory, packaging and charges",
+            "paragraphs": [
+              "Check where the original item now stands. If it was returned, retain the domestic tracking or other confirmation. If the seller allowed you to keep it, make sure the warehouse entries accurately distinguish the original from the replacement. If a return is still pending, follow the instructions and preserve any required components or packaging. Do not automatically submit both items for international delivery. A second unit in the inventory can represent a replacement alongside an original awaiting resolution, not a second unit that the buyer owns and intends to export.",
+              "Review any amounts connected to the exchange. Identify the original product charge, any approved price difference, domestic return or replacement shipping and any refund or adjustment. Keep the currency and payment destination clear. If the seller agreed to cover a specific charge, compare the recorded outcome with the agreement. An amount still showing in the transaction history may relate to an older stage rather than a new bill. Ask about the specific line and reference if it remains unexplained. The current LitBuy Help Center and order channel are the right starting points for an unresolved after-sales question."
+            ]
+          },
+          {
+            "heading": "Release the correct unit for shipping",
+            "paragraphs": [
+              "Write a short acceptance note when the replacement is satisfactory. For example, “New warehouse entry B shows the large navy jacket, both sliders visible, original entry A returned under domestic tracking R.” Add only B to the outbound manifest. If the replacement still differs from the agreement, send the original specification, exchange approval and new evidence together. Describe the remaining difference precisely and ask which options are now available under the actual order conditions. Avoid making irreversible packing decisions while a further return or inspection might require the retail box or all set components.",
+              "When the international parcel arrives, use the replacement's own photographs for the final comparison. An image of the original defective unit can confuse a later damage report if the two sets of records have been merged. Keep the seller's agreement and resolution history privately until you have reconciled the package and any financial adjustment. Then close the case with a note of what physically arrived and which issue was resolved. This final step turns an exchange from a vague chain of messages into a traceable record of one agreed change and the particular replacement that fulfilled it.",
+              "A replacement can resolve the original concern while introducing a different one. Suppose the first bag arrived with the wrong strap, and the replacement has the correct strap but a zipper pull that appears bent. Record the original strap issue as resolved and photograph the new concern separately, with the replacement reference visible in your notes. That distinction prevents the seller from looking for the old fault again. If the warehouse can obtain a clearer angle, check whether the pull is physically deformed or simply resting sideways. Make the next decision using the replacement itself, even if the first exchange took more time than expected."
+            ]
+          }
+        ],
+        "sources": [
+          "https://litbuy.com/help",
+          "https://litbuy.tools/en/qc-photos/"
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "Where can I check LitBuy's current after-sales rules?",
+        "Open the LitBuy Help Center and choose After-sales Request for a missing or damaged item. For a change of mind before international dispatch, read Cancel Order and the terms linked from your order."
+      ],
+      [
+        "What evidence should I keep if a seller changes the listing?",
+        "Save your selected option, the description at checkout and the purchase confirmation. A later screenshot may describe a revised listing. Identify which version was visible when you paid."
+      ],
+      [
+        "How can I tell whether my set is missing a piece?",
+        "Read the option on the paid order. A styled photograph can show a complete outfit even if the option covers only a top. Compare the stated contents with a photograph showing all received pieces together."
+      ],
+      [
+        "The warehouse photographed another colour. What should I send?",
+        "Put the ordered colour text beside a picture that shows the received option label. If lighting could explain the difference, request another view before describing the item as the wrong colour."
+      ],
+      [
+        "How do I report lettering printed backwards?",
+        "Compare the lettering to a second object in the same frame to rule out a mirrored image. Send a photograph where both the print and a readable label are visible, together with the seller reference."
+      ],
+      [
+        "Should I discard a shoebox while deciding on an exchange?",
+        "Keep the packaging and tags until the seller or agent confirms what must be returned. Photograph any damage before asking the warehouse to alter the packaging."
+      ],
+      [
+        "What if the replacement is the same wrong version?",
+        "Compare the replacement warehouse reference and its new pictures against the original order note. Quote both references in the same support thread so the second delivery is distinguishable from the first."
+      ],
+      [
+        "Does the storage deadline tell me how long I can wait to return something?",
+        "Read the return conditions separately. Storage concerns how long the warehouse holds a unit. Seller acceptance and the stage of the individual purchase can affect the return decision earlier."
+      ],
+      [
+        "How can I distinguish a missing delivery from a warehouse mismatch?",
+        "Compare the domestic tracking number, destination warehouse and item record. Identify the last confirmed event. A carrier delivery scan and a warehouse inventory entry describe different steps."
+      ],
+      [
+        "Which reference should I give LitBuy after the international parcel arrives?",
+        "Use the outbound parcel reference for delivery damage, plus the purchase reference for the affected item. Photograph the shipping label, outer box, internal packing and item before removing more packaging."
+      ],
+      [
+        "How should I measure a hoodie if sleeve length is disputed?",
+        "Look at how the seller defines sleeve length. A drop-shoulder sleeve measured from its seam gives a different result from a neck-to-cuff measurement. Request the same endpoints used in the chart."
+      ],
+      [
+        "How do I document a missing detachable strap?",
+        "Save the option description that lists the strap and request a photograph of the bag beside the contents of its pockets or protective wrapping. Identify whether another accessory was supplied in its place."
+      ],
+      [
+        "Can I rely on a previously saved freight estimate after removing an item?",
+        "Enter the revised items and packing assumptions. Removing one piece can change both weight and box dimensions, so the old quote cannot establish the new final charge."
+      ],
+      [
+        "What should I compare before accepting a partial refund?",
+        "Read the amount, currency, refund destination and whether accepting closes the case. Keep a copy of the proposed settlement and check which item and quantity it covers."
+      ],
+      [
+        "What details belong in a damage report for a two-piece order?",
+        "Name the affected piece and show it beside the unaffected piece for identification. Record whether the issue was visible in the warehouse images or first noticed after delivery."
+      ],
+      [
+        "Which details should I save before cancelling a LitBuy order?",
+        "Save the status, seller option, amount already paid and displayed cancellation conditions. Check whether the seller has dispatched the order before choosing the relevant support route."
+      ],
+      [
+        "What if the label shows my size but the garment looks too short?",
+        "Compare one defined measurement with the seller's chart and a garment you own. Ask for the tape's starting and ending points in the same image. A size label identifies the option, while the measured length helps you decide whether it will fit."
+      ],
+      [
+        "Can a close-up tell me which of two similar items has a stain?",
+        "Keep a wider view that identifies the item and a close-up of the affected area. Link both to the receiving or order reference. If the mark could be a shadow, request another angle before attributing it to the fabric."
+      ],
+      [
+        "Which details help distinguish a zip problem from a misleading QC angle?",
+        "Name the part you are concerned about, such as the pull, teeth or seam beside the zipper. Ask for a clear view of that part. If your concern is movement, ask whether someone can check the action on the received item."
+      ],
+      [
+        "How can I check a pair of shoes when only one tongue label is visible?",
+        "Compare the order selection with both shoes. Ask for one view showing the two tongue labels together if a mixed pair is your concern. Keep the original full-pair view to establish which shoes the labels came from."
+      ],
+      [
+        "Can an earlier buyer's QC image settle a dispute about my LitBuy item?",
+        "Use earlier photos to identify a detail worth checking. For a dispute, show the selected seller option and the corresponding photo of your own received item. A previous purchase may involve another size, colour or production run."
+      ],
+      [
+        "How do I compare stitching when the seller and warehouse photos use different angles?",
+        "Choose a fixed point such as the corner of a pocket, then compare the seam on the same side of the garment at a similar scale. If the fold obscures it, request that particular section laid flat before deciding whether the seam is defective."
+      ]
+    ]
+  }
+};

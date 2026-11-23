@@ -1,5 +1,4 @@
-import * as guide from './qc-guide.mjs';
-import {questions} from './editorial.mjs';
+import {articleLabel, editions, editorialPage, hasEdition} from './editorial-pages.mjs';
 import {brandImage, faviconTag, currencyControl, currencyScript, fxRoute} from './brandfx.mjs';
 import {productBody} from './product.mjs';
 import {imageRoute} from './images.mjs';
@@ -31,7 +30,7 @@ function cameraLink(lang){
  const label=escape(labels(lang).imageSearch);
  return '<a class="camera" href="/'+lang+'/image-search/" aria-label="'+label+'" title="'+label+'">'+cameraIcon+'</a>';
 }
-function page(lang,heading,body,url){
+function page(lang,heading,body,url,description){
  const analytics = url.origin === 'https://ootdbuygrid.com'
    ? `<script async src="https://www.googletagmanager.com/gtag/js?id=G-FQ40MHDX1T"></script><script>
 window.dataLayer = window.dataLayer || [];
@@ -41,16 +40,25 @@ gtag('config', 'G-FQ40MHDX1T');
 </script>` : '';
  const t=labels(lang);
  const home='/'+lang+'/';
- const langs=Object.entries(languages).map(([code,name])=>{
+ const editorial = Boolean(description);
+ const pageLanguages = editorial ? editions : Object.keys(languages);
+ const localizedPath = code => '/' + code + url.pathname.slice(lang.length+1);
+ const alternates = editorial ? [...pageLanguages, 'x-default'].map(code =>
+   '<link rel="alternate" hreflang="'+code+'" href="https://ootdbuygrid.com'+escape(localizedPath(code==='x-default'?'en':code))+'">'
+ ).join('') : '';
+ const meta = editorial ? '<meta name="description" content="'+escape(description)+'">'+alternates : '';
+ const langs=pageLanguages.map(code=>{
+   const name=languages[code];
    const next=new URL(url);
-   next.pathname=/^\/en\/(faq|articles)\//.test(url.pathname) && code!=='en'?'/'+code+'/':'/'+code+next.pathname.slice(lang.length+1);
+   next.pathname=localizedPath(code);
    return '<option value="'+escape(next.pathname+next.search)+'" '+(code===lang?'selected':'')+'>'+escape(name)+'</option>';
  }).join('');
- const nav=[[home+'spreadsheet/',t.catalog],[home+'#categories',t.categories],[home+'image-search/',t.imageSearch],[lang==='en'?home+'faq/':home+'#faq',t.faq],...(lang==='en'?[[home+'articles/','Articles']]:[])]
+ const nav=[[home+'spreadsheet/',t.catalog],[home+'#categories',t.categories],[home+'image-search/',t.imageSearch],[hasEdition(lang)?home+'faq/':home+'#faq',t.faq],...(hasEdition(lang)?[[home+'articles/',articleLabel(lang)]]:[])]
    .map(([link,label])=>'<a href="'+link+'">'+escape(label)+'</a>').join('');
- return '<!doctype html><html lang="'+lang+'"><head>'+analytics+'<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="canonical" href="'+escape(new URL(url.pathname+url.search,'https://ootdbuygrid.com').href)+'">'+faviconTag()+'<title>'+escape(heading)+' · OOTDBuy</title><style>'+css+theme+'</style></head><body><header><div class="wrap"><a class="word" href="'+home+'" aria-label="OOTDBuy">'+brandImage()+'</a><nav class="nav">'+nav+'</nav><div class="tools"><select aria-label="'+escape(t.language)+'" onchange="location.href=this.value+location.hash">'+langs+'</select>'+currencyControl(lang)+'<a class="btn signup" href="https://ootdbuy.com/register">'+escape(t.register)+'</a></div></div></header><main class="wrap">'+body+'<footer class="foot"><a href="'+home+'">OOTDBuy</a> · '+escape(t.catalog)+'</footer></main>'+currencyScript(lang)+'<script>'+titleTranslationClient()+'</script></body></html>';
+ return '<!doctype html><html lang="'+lang+'"><head>'+analytics+'<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="canonical" href="'+escape(new URL(url.pathname+(editorial?'':url.search),'https://ootdbuygrid.com').href)+'">'+meta+faviconTag()+'<title>'+escape(heading)+' · OOTDBuy</title><style>'+css+theme+'</style></head><body><header><div class="wrap"><a class="word" href="'+home+'" aria-label="OOTDBuy">'+brandImage()+'</a><nav class="nav">'+nav+'</nav><div class="tools"><select aria-label="'+escape(t.language)+'" onchange="location.href=this.value+location.hash">'+langs+'</select>'+currencyControl(lang)+'<a class="btn signup" href="https://ootdbuy.com/register">'+escape(t.register)+'</a></div></div></header><main class="wrap">'+body+'<footer class="foot"><a href="'+home+'">OOTDBuy</a> · '+escape(t.catalog)+'</footer></main>'+currencyScript(lang)+'<script>'+titleTranslationClient()+'</script></body></html>';
 }
 const theme=`
+.editorial,.guide{max-width:74ch;margin:2rem auto 4rem}.editorial p{line-height:1.7}.editorial h2{line-height:1.28;margin-top:1.7em}.editorial a,.guide a{text-decoration:underline}.guide summary{cursor:pointer}.guide details{padding:1rem 0;border-bottom:1px solid var(--line)}
 :root{--ink:#171b23;--accent:#a64208;--line:#e2e5e5}body{background:#fff;color:var(--ink);font-family:Inter,"Helvetica Neue",Arial,sans-serif}header{position:sticky;top:0;z-index:10;border-color:var(--line)}[id]{scroll-margin-top:90px}@media(max-width:940px){[id]{scroll-margin-top:120px}}.hero-search{display:flex;gap:4px;align-items:center;max-width:38em;background:white;border:1px solid var(--line);border-radius:10px;padding:5px}.hero-search input{min-width:0;width:100%;border:0;padding:8px;font:inherit}.hero-search .camera{border:none;flex:none}.hero-search button{color:white}.copy{padding:clamp(18px,3vw,46px)}.word img{display:block;width:118px;max-height:44px;object-fit:contain}header .wrap{gap:18px}.nav{gap:22px}.tools{gap:8px}.tools select{max-width:9em;font-size:.925rem;border-color:var(--line)}.btn,button,.chip.on{background:var(--accent)}.hero{background:#fff5e9;color:var(--ink);border-radius:16px;grid-template-columns:1fr 1fr}.copy p{color:#49534e}.copy .btn{background:var(--accent);color:white}.mosaic{height:310px;grid-template-columns:1.4fr 1fr;gap:4px}.mosaic a{height:100%;min-height:0}.mosaic a:first-child{grid-row:span 2}.mosaic img:first-child{grid-row:auto}.camera{width:44px;height:44px;display:inline-grid;place-items:center;border:1px solid #cbd3d0;border-radius:6px;background:white;color:#873604}.fields{flex-wrap:nowrap}.fields .camera{flex:none}.fields input{min-width:0}.card img{border-radius:9px}.nav a{font-size:.94rem}.nav,.chips{scrollbar-width:thin}header .wrap{max-width:1420px}.tools select{background:white}.catalog-count{margin:0 0 14px;color:#4a504e}.paging{flex-wrap:wrap}.foot{font-size:.9rem;color:#4a504e}
 @media(max-width:940px){header .wrap{display:grid;grid-template-columns:auto 1fr;gap:0;padding-top:9px}.tools{justify-content:flex-end;min-width:0}.nav{display:flex;grid-column:1/-1;order:3;overflow:auto;white-space:nowrap;padding:8px 0;gap:18px}.word img{width:92px}.tools select{padding:6px 1px;max-width:8em}.tools .signup{padding:6px 10px}}
 @media(max-width:760px){.hero{display:flex;flex-direction:column-reverse}.hero .mosaic{display:grid;min-height:0;height:105px;grid-template-columns:repeat(3,1fr);grid-template-rows:105px}.hero .mosaic a,.hero .mosaic a:not(:first-child){display:block;grid-row:auto}.hero .copy{width:100%}.hero{grid-template-columns:1.3fr .75fr;border-radius:9px}.mosaic{height:100%;grid-template-columns:1fr;grid-template-rows:1fr}.mosaic a:not(:first-child){display:none}.copy{padding:18px}.fields{display:grid;grid-template-columns:minmax(0,1fr) auto auto}.fields select{grid-row:2;grid-column:1/-1;max-width:none;justify-self:start}.fields .camera,.fields button,.fields input[type=search]{grid-row:1}.fields button{grid-column:3}.fields .camera{grid-column:2}.tools select{max-width:6em}.tools{gap:4px}.word img{max-width:20vw}.card strong{overflow-wrap:anywhere}}
@@ -66,20 +74,9 @@ export default {async fetch(req,env,ctx){
  const t=labels(lang),home='/'+lang+'/',params=u.searchParams,sec=sections.includes(params.get('cat'))?params.get('cat'):'AllProducts';
  const sheet=home+'spreadsheet/';
 
- if(lang==='en' && u.pathname===home+'articles/'){
-   const body='<section><h1>OOTDBuy articles</h1><h2><a href="'+home+'articles/'+guide.slug+'/">'+escape(guide.title)+'</a></h2><p>'+escape(guide.introduction)+'</p></section>';
-   return response(page(lang,'Articles',body,u));
- }
- if(lang==='en' && u.pathname===home+'articles/'+guide.slug+'/'){
-   const sections=guide.sections.map(([heading,paragraphs])=>'<section><h2>'+escape(heading)+'</h2>'+paragraphs.map(p=>'<p>'+escape(p)+'</p>').join('')+'</section>').join('');
-   const schema={'@context':'https://schema.org','@type':'Article',headline:guide.title,description:guide.introduction,mainEntityOfPage:'https://ootdbuygrid.com'+u.pathname};
-   const body='<article style="max-width:72ch;margin:auto"><a href="'+home+'articles/">Articles</a><h1>'+escape(guide.title)+'</h1><p>'+escape(guide.introduction)+'</p>'+sections+'<p>Further reading: <a href="https://ootdbuy.com/helpcenter">OOTDBuy inspection and after-sales help</a> · <a href="https://repsheet.net/spreadsheet/ootdbuy">Repsheet OOTDBuy spreadsheet and historical QC references</a> · <a href="'+home+'faq/">Spreadsheet FAQ</a></p></article><script type="application/ld+json">'+JSON.stringify(schema)+'</script>';
-   return response(page(lang,guide.title,body,u));
- } if(u.pathname==='/en/faq/'){
-   const entries=questions.map(([q,a])=>'<details><summary>'+escape(q)+'</summary><p>'+escape(a)+'</p></details>').join('');
-   const schema={'@context':'https://schema.org','@type':'FAQPage',mainEntity:questions.map(([name,text])=>({'@type':'Question',name,acceptedAnswer:{'@type':'Answer',text}}))};
-   const body='<section><h1>OOTDBuy spreadsheet FAQ</h1>'+entries+'<p><a href="https://ootdbuy.com/helpcenter">OOTDBuy Help Center</a></p></section><script type="application/ld+json">'+JSON.stringify(schema).replaceAll('<','\\u003c')+'</script>';
-   return response(page(lang,'Spreadsheet FAQ',body,u));
+ if(parts[2]==='articles'||parts[2]==='faq'){
+   const result=editorialPage(lang,u.pathname.slice(home.length),'https://ootdbuygrid.com');
+   return result ? response(page(lang,result.title,result.body,u,result.description)) : response('404',404);
  }
 
  const link=(changes,hash='catalog')=>{const v=new URLSearchParams(params);for(const [k,value] of Object.entries(changes))value?v.set(k,value):v.delete(k);return sheet+'?'+escape(v.toString())+'#'+hash};
