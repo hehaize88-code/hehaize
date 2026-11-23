@@ -3,9 +3,9 @@
   "locale": "fr",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "2c3cc7ad281506edf7e575eba3494d6560055cd7a85de4a0ba2a4c086cface91",
-  "effective_dictionary_sha256": "58b591b090109dd4b7b4b74c53fd9ae0b6b649c7225518a6a13f4047eca9f1ac",
+  "effective_dictionary_sha256": "aa9c492e30e250745bc4108a7cf713c9dd50d0c163aa29fc4bd2ec809663e906",
   "checked_entries": 326,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately. All 21 FAQ question/answer pairs were additionally checked with independent back-translation and cross-language semantic comparison, with targeted revisions. The full localized text was screened for packaging, clothing, measurement and commercial terminology. All passages containing numeric examples were independently back-translated and screened; discrepancies in amounts, units, merchandise, charge scope and price quotations were checked in the actual source and target.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -261,6 +261,36 @@
       "source_sha256": "536b8b79fc83da8498e787cdf8d8ed4a9f798a2b9e0105b754be105d333bddd8",
       "raw_target_sha256": "b56fb40bf4ab0760907038ae4670a9667b5309fdfd98884a37a4880b496c74c5",
       "translation": "Seulement si les trois articles sont réellement disposés bout à bout dans le sens de la longueur. Mesurez les dimensions extérieures de l’ensemble, prévoyez l’espace nécessaire à la protection et vérifiez après emballage."
+    },
+    {
+      "source": "Where does a seller discount belong in the budget?",
+      "source_sha256": "cebe05093314ad346885d87aaa8471de6b705272e99a1571a0fc5590ed123408",
+      "raw_target_sha256": "17bb2413ea42597a7721c6e9d5c3e1d99bd6da1f7c81102756c34d276a8e7496",
+      "translation": "Où inscrire une remise du vendeur dans mon budget ?"
+    },
+    {
+      "source": "Record it beside the purchase to which it applies. Keep any outbound parcel discount separate, and check the conditions before subtracting a promotion from a planning estimate.",
+      "source_sha256": "c9d01427f5a1f5d28088f5b73e5bd94f83db45067c85ed48370f39a497afb212",
+      "raw_target_sha256": "b87d2d7542aede5eb121862c414ff4a18ab8806d392c06b3306a508026987b04",
+      "translation": "Inscrivez-la en regard de l’achat concerné. Comptabilisez séparément toute remise sur l’expédition ultérieure du colis depuis l’entrepôt. Vérifiez les conditions de la promotion avant de la déduire d’une estimation."
+    },
+    {
+      "source": "If the cap is cancelled, avoid immediately subtracting 42 from the old total and treating the result as settled. Check the refund statement for the product amount and any domestic adjustment. The original allocation may now describe goods that never travelled together. Keep the original order and add a dated credit row, then calculate the remaining cost from the surviving items. Ask for clarification with the purchase reference if the domestic charge has no corresponding adjustment explanation.",
+      "source_sha256": "c3a8b7ab92509d5424e46381383e6e99391ff4e40466eb6b974124c35b573907",
+      "raw_target_sha256": "4fa95ca4749978e21798d653b12825742c43cc1eff3109a748935a34ae32e14f",
+      "translation": "Si la casquette est annulée, ne soldez pas le calcul en retranchant simplement 42 de l’ancien total. Vérifiez sur le relevé de remboursement le montant de l’article et l’éventuel ajustement de la livraison intérieure. La répartition initiale peut concerner des produits qui n’ont finalement pas voyagé ensemble. Conservez la commande d’origine, ajoutez l’avoir sur une ligne datée et recalculez le coût des articles restants. Si le port reste inexpliqué, posez la question avec la référence d’achat."
+    },
+    {
+      "source": "For example, assume the selected medium shirt costs 72 yuan, the large costs 76 and the two-piece set costs 130. Selecting two medium shirts and one set costs 274 before delivery. Accidentally using the 72-yuan shirt price for the set gives 216. The 58-yuan difference comes from selecting the wrong unit, not from a hidden freight charge. Keeping pack type, option, unit price and quantity in separate columns makes the error visible.",
+      "source_sha256": "e693a04247cb69da69145d2095f6229501229efe4c4a154929e716ea691d8378",
+      "raw_target_sha256": "c6c3379350431fde90a90e7283771b50d01f707bd342b3a09127edc9b1bbad2c",
+      "translation": "Dans cet exemple, la chemise en M coûte 72 yuans, celle en L 76 et l’ensemble de deux pièces 130. Deux chemises en M et un ensemble coûtent 274 avant livraison. Attribuer par erreur à l’ensemble le prix de 72 donne 216. L’écart de 58 vient de la mauvaise unité de vente. Des colonnes distinctes pour le conditionnement, la variante, le prix unitaire et la quantité font ressortir l’erreur."
+    },
+    {
+      "source": "Take the example of two medium shirts and a set. If the seller confirms only one medium shirt, the original 274 no longer describes the goods available. One shirt at 72 plus the set at 130 gives a merchandise total of 202. Check whether a quantity threshold, domestic delivery condition or discount has changed as well. A cancellation can affect more than the removed unit if the promotion depended on the original basket.",
+      "source_sha256": "3494235e91bdc6cd07e43652ea5d572b4d6a899a65c0773c1026ba361e7c36b0",
+      "raw_target_sha256": "03f7be5cfae3dc888a63ee3e270e87f5d22e1011c31e2cfdc6cbaa2b2aac8c35",
+      "translation": "Si le vendeur confirme une seule des deux chemises en M, le montant initial de 274 ne correspond plus aux articles disponibles. Une chemise à 72 et l’ensemble à 130 donnent 202 de marchandise. Vérifiez les seuils de quantité, les conditions de livraison intérieure et la remise. L’annulation peut aussi faire perdre une promotion qui dépendait du panier initial."
     }
   ]
 }

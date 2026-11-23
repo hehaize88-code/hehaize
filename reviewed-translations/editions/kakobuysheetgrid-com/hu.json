@@ -3,9 +3,9 @@
   "locale": "hu",
   "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
   "raw_dictionary_sha256": "b821fd0a96cfa38b8eeb1ef3c5607d4c67192ee614d9f82372787cbf40bb1a57",
-  "effective_dictionary_sha256": "54488059686cd17ea49fdae55a02c2ac4be85237eccc854d94a8b8a586a0a3ba",
+  "effective_dictionary_sha256": "0a82a83de84a86cbde420087c5ece6679ee4b8d9a35f6d0a55088d2a0a21eb21",
   "checked_entries": 317,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately. All 21 FAQ question/answer pairs were additionally checked with independent back-translation and cross-language semantic comparison, with targeted revisions. The full localized text was screened for packaging, clothing, measurement and commercial terminology.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -207,6 +207,12 @@
       "source_sha256": "5b834045dc919c6464069e52e2140285117ff6e987acefb762ebf90156996be2",
       "raw_target_sha256": "db1e1c18ef6ed44104f1f1eefe89f5e43e2ad3eb6c592656df830f0a6a8887a4",
       "translation": "Hogyan dokumentáljam a csereként kapott terméket?"
+    },
+    {
+      "source": "Specify the purpose. A neckline size label shows the marked size; a care label may provide composition or care instructions. Ask for a full view in context and a close-up with legible text.",
+      "source_sha256": "9fd339ea163be9a23fc63aa66ac318f34f3576f42dc0e0422c207d9a5fed3ef4",
+      "raw_target_sha256": "ee11028370d4dc978a2c2df76aca33321cf7b585fe5ada34901e0dc5e145e2a3",
+      "translation": "Mondja meg, mit szeretne ellenőrizni. A nyaknál lévő méretcímkén a ruhadarab jelzett mérete szerepelhet, a kezelési címkén pedig az anyagösszetétel és a mosási útmutató. Kérjen egy áttekintő képet a címke helyéről és egy olvasható közelképet."
     }
   ]
 }

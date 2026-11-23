@@ -3,9 +3,9 @@
   "locale": "sk",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "d975fafc927396beb4ecc2625c632084b0ac6cea84848dfc0c3684968f8489c4",
-  "effective_dictionary_sha256": "03b8e1c8de9ee76a744105b8fd55b46f4be7f0c4f06aaf06c0db3ec469173ca4",
+  "effective_dictionary_sha256": "3b63e224f7d5454fff615c1e2667e7ec16fa14af96f846935dbc202d48620683",
   "checked_entries": 326,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately. All 21 FAQ question/answer pairs were additionally checked with independent back-translation and cross-language semantic comparison, with targeted revisions. The full localized text was screened for packaging, clothing, measurement and commercial terminology. All passages containing numeric examples were independently back-translated and screened; discrepancies in amounts, units, merchandise, charge scope and price quotations were checked in the actual source and target.",
   "reviewed_flags": [
     {
       "issue": "quantity unit or currency changed",
@@ -363,6 +363,36 @@
       "source_sha256": "baa564c8afd6b6f139c54ca948290d096026e69c37baa603560efd436cf90c7c",
       "raw_target_sha256": "20bfad339ee8ece7064899f6a7a69abbd31f8e0a56bc0529caf88b954aa7f5ee",
       "translation": "Uložte si čísla oboch odosielaných zásielok, zoznam položiek v každej a konečné vyúčtovania poplatkov. V každom doklade označte porovnávaný riadok, aby sa otázka priradila k správnemu balíku."
+    },
+    {
+      "source": "Where does a seller discount belong in the budget?",
+      "source_sha256": "cebe05093314ad346885d87aaa8471de6b705272e99a1571a0fc5590ed123408",
+      "raw_target_sha256": "a68cf2cea175bed29527f7de2e2c983afebdca2e8ad7638f1fa90a7fc4e5261b",
+      "translation": "Kam v rozpočte zapísať zľavu od predajcu?"
+    },
+    {
+      "source": "Record it beside the purchase to which it applies. Keep any outbound parcel discount separate, and check the conditions before subtracting a promotion from a planning estimate.",
+      "source_sha256": "c9d01427f5a1f5d28088f5b73e5bd94f83db45067c85ed48370f39a497afb212",
+      "raw_target_sha256": "d2c64edbc15bc8a395b53b68f29e88c9aea55867ff22c1794151cc90b8898ecb",
+      "translation": "Zapíšte ju k nákupu, na ktorý sa vzťahuje. Zľavu na neskoršie odoslanie balíka zo skladu evidujte samostatne. Pred odpočítaním akciovej zľavy od odhadu si overte jej podmienky."
+    },
+    {
+      "source": "If the cap is cancelled, avoid immediately subtracting 42 from the old total and treating the result as settled. Check the refund statement for the product amount and any domestic adjustment. The original allocation may now describe goods that never travelled together. Keep the original order and add a dated credit row, then calculate the remaining cost from the surviving items. Ask for clarification with the purchase reference if the domestic charge has no corresponding adjustment explanation.",
+      "source_sha256": "c3a8b7ab92509d5424e46381383e6e99391ff4e40466eb6b974124c35b573907",
+      "raw_target_sha256": "da3d8698f44538660bad699d076f48571c92b157da21f532d86adb3d44c26de0",
+      "translation": "Ak sa objednávka šiltovky zruší, neuzatvárajte výpočet jednoduchým odpočítaním 42 od starej sumy. Na doklade o vrátení peňazí skontrolujte cenu výrobku aj prípadnú úpravu vnútroštátnej dopravy. Pôvodné rozdelenie sa mohlo týkať tovaru, ktorý nakoniec necestoval spolu. Ponechajte pôvodnú objednávku, pridajte samostatný riadok s dátumom dobropisu a prepočítajte náklady na zvyšné položky. Pri nejasnej doprave požiadajte o vysvetlenie s uvedením čísla nákupu."
+    },
+    {
+      "source": "For example, assume the selected medium shirt costs 72 yuan, the large costs 76 and the two-piece set costs 130. Selecting two medium shirts and one set costs 274 before delivery. Accidentally using the 72-yuan shirt price for the set gives 216. The 58-yuan difference comes from selecting the wrong unit, not from a hidden freight charge. Keeping pack type, option, unit price and quantity in separate columns makes the error visible.",
+      "source_sha256": "e693a04247cb69da69145d2095f6229501229efe4c4a154929e716ea691d8378",
+      "raw_target_sha256": "71764abd2ab2cc9697330c7bdd998bc5c7f61c0c84ba0ff343f7dda621d348c9",
+      "translation": "V príklade stojí košeľa M 72 jüanov, košeľa L 76 a dvojdielna súprava 130. Dve košele M a jedna súprava stoja pred dopravou 274. Ak súprave omylom priradíte cenu košele 72, vyjde 216. Rozdiel 58 vznikol zámenou predajnej jednotky. Typ balenia, variant, jednotkovú cenu a množstvo uveďte v osobitných stĺpcoch."
+    },
+    {
+      "source": "Take the example of two medium shirts and a set. If the seller confirms only one medium shirt, the original 274 no longer describes the goods available. One shirt at 72 plus the set at 130 gives a merchandise total of 202. Check whether a quantity threshold, domestic delivery condition or discount has changed as well. A cancellation can affect more than the removed unit if the promotion depended on the original basket.",
+      "source_sha256": "3494235e91bdc6cd07e43652ea5d572b4d6a899a65c0773c1026ba361e7c36b0",
+      "raw_target_sha256": "84a689a871de626bbdc00cbae206d9f8a45741f8d883f236cb939554e35d5c03",
+      "translation": "Ak predajca potvrdí len jednu z dvoch košieľ M, pôvodných 274 nezodpovedá dostupnému tovaru. Košeľa za 72 a súprava za 130 majú spoločnú hodnotu 202. Overte aj množstevné hranice, podmienky vnútroštátnej dopravy a zľavu. Zrušenie jedného kusa môže ovplyvniť akciu viazanú na pôvodný košík."
     }
   ]
 }

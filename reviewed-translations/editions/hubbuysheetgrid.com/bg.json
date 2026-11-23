@@ -3,9 +3,9 @@
   "locale": "bg",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "1d943039eabc516badfa883ed9132eca32ab3f81106168069f636dae25753953",
-  "effective_dictionary_sha256": "7715e9ba510d8b00148e446c5a5f5a70fa5851d46d29eb09666aae0c9cb47ed2",
+  "effective_dictionary_sha256": "68ee31bb4deb0b917b7e81641d32f7660890c81f70c9b201be9899a6fe93a75e",
   "checked_entries": 326,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately. All 21 FAQ question/answer pairs were additionally checked with independent back-translation and cross-language semantic comparison, with targeted revisions. The full localized text was screened for packaging, clothing, measurement and commercial terminology. All passages containing numeric examples were independently back-translated and screened; discrepancies in amounts, units, merchandise, charge scope and price quotations were checked in the actual source and target.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -131,7 +131,7 @@
       "issue": "quantity unit or currency changed",
       "source_sha256": "e693a04247cb69da69145d2095f6229501229efe4c4a154929e716ea691d8378",
       "raw_target_sha256": "1836ae136d35361a43af657e28506ac441cf8be0a9817ed31bb55ee97f7a342b",
-      "resolution": "For M/L shirts and the two-piece set, 72/76/130 are retained, giving 274 versus 216 and difference 58."
+      "resolution": "corrected translation"
     },
     {
       "issue": "quantity unit or currency changed",
@@ -687,6 +687,36 @@
       "source_sha256": "536b8b79fc83da8498e787cdf8d8ed4a9f798a2b9e0105b754be105d333bddd8",
       "raw_target_sha256": "6d71a7ab05476152cd5bd7aa82a0a09d9d2db08921887d4256586e0ac9b59df0",
       "translation": "Само ако трите артикула са подредени един след друг по дължина. Измерете общите външни размери при избраната подредба, оставете място за защитните материали и потвърдете след опаковането."
+    },
+    {
+      "source": "Where does a seller discount belong in the budget?",
+      "source_sha256": "cebe05093314ad346885d87aaa8471de6b705272e99a1571a0fc5590ed123408",
+      "raw_target_sha256": "6b6cb658c01ca982c0404b6e0ffe6fbccdf609f75df218565906a9276b963ff4",
+      "translation": "Къде да впиша отстъпката от продавача в бюджета?"
+    },
+    {
+      "source": "Record it beside the purchase to which it applies. Keep any outbound parcel discount separate, and check the conditions before subtracting a promotion from a planning estimate.",
+      "source_sha256": "c9d01427f5a1f5d28088f5b73e5bd94f83db45067c85ed48370f39a497afb212",
+      "raw_target_sha256": "0eb03216b4e06793f7d00ddd024dfa62b80f42abeebffa13fce318073bd00382",
+      "translation": "Запишете я при покупката, за която се отнася. Отделете отстъпките за изпращане на пакета от склада. Проверете условията на промоцията, преди да я приспаднете от прогнозната сума."
+    },
+    {
+      "source": "If the cap is cancelled, avoid immediately subtracting 42 from the old total and treating the result as settled. Check the refund statement for the product amount and any domestic adjustment. The original allocation may now describe goods that never travelled together. Keep the original order and add a dated credit row, then calculate the remaining cost from the surviving items. Ask for clarification with the purchase reference if the domestic charge has no corresponding adjustment explanation.",
+      "source_sha256": "c3a8b7ab92509d5424e46381383e6e99391ff4e40466eb6b974124c35b573907",
+      "raw_target_sha256": "051b66557c98a9a0343d4d722eb3e2fbdb172579f14dcb0eb8c5722fa34e91e3",
+      "translation": "Ако отмените шапката, не изваждайте автоматично 42 от стария сбор. Проверете в извлечението сумата за възстановения продукт и евентуалната корекция на вътрешната доставка. Предишното разпределение може да включва стоки, които не са пътували заедно. Запазете първоначалната поръчка, добавете отделен ред с датата на възстановяването и пресметнете стойността на останалите стоки. Ако таксата за доставка е неясна, попитайте, като посочите номера на покупката."
+    },
+    {
+      "source": "For example, assume the selected medium shirt costs 72 yuan, the large costs 76 and the two-piece set costs 130. Selecting two medium shirts and one set costs 274 before delivery. Accidentally using the 72-yuan shirt price for the set gives 216. The 58-yuan difference comes from selecting the wrong unit, not from a hidden freight charge. Keeping pack type, option, unit price and quantity in separate columns makes the error visible.",
+      "source_sha256": "e693a04247cb69da69145d2095f6229501229efe4c4a154929e716ea691d8378",
+      "raw_target_sha256": "1836ae136d35361a43af657e28506ac441cf8be0a9817ed31bb55ee97f7a342b",
+      "translation": "В този пример риза M струва 72 юана, риза L — 76, а комплектът от две части — 130. Две ризи M и един комплект струват 274 преди доставката. Ако по погрешка оцените комплекта по 72, ще получите 216. Разликата от 58 идва от неправилната продажна единица. Отделни колони за вида опаковка, варианта, единичната цена и количеството показват грешката."
+    },
+    {
+      "source": "Take the example of two medium shirts and a set. If the seller confirms only one medium shirt, the original 274 no longer describes the goods available. One shirt at 72 plus the set at 130 gives a merchandise total of 202. Check whether a quantity threshold, domestic delivery condition or discount has changed as well. A cancellation can affect more than the removed unit if the promotion depended on the original basket.",
+      "source_sha256": "3494235e91bdc6cd07e43652ea5d572b4d6a899a65c0773c1026ba361e7c36b0",
+      "raw_target_sha256": "14f4b6830f54d4b504f135ec1492898af2b01cc9a0db2d6a130e907b72f06752",
+      "translation": "Ако продавачът потвърди само една от двете ризи M, първоначалните 274 вече не отговарят на наличната стока. Една риза за 72 и комплект за 130 струват общо 202. Проверете дали са се променили минималното количество, вътрешната доставка или отстъпката. Отпадането на една бройка може да засегне промоцията за цялата поръчка."
     }
   ]
 }

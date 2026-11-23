@@ -3,9 +3,9 @@
   "locale": "it",
   "source_set_sha256": "1a57e35751202bc8722bffcd3d5a604d9b7ad9d180228c298103c9c8fded0947",
   "raw_dictionary_sha256": "4f29379e5ce48f4a25332cd6825e5ff71d941b761f80be6ddfb8af60ef0cb1e9",
-  "effective_dictionary_sha256": "d93ee9451dfb3c0b9cf82242ceb4b82369faf2ab5952be2b9a47f5aa6f329224",
+  "effective_dictionary_sha256": "6593beb2247c757a849571361df9f19e4eda130c81b6f5fcc747454d68335be4",
   "checked_entries": 295,
-  "review_scope": "Checked exact source keys and candidate pairs with full-corpus digit/unit, identity, length, copied-language and domain-term checks; inspected FAQs, titles, numeric examples and flagged buying, garment, tracking and packaging paragraphs. Replaced lexical errors including test packing, width/measurement tape, cap and belt, packaging wrap, shipment and carrier events.",
+  "review_scope": "Checked exact source keys and candidate pairs with full-corpus digit/unit, identity, length, copied-language and domain-term checks; inspected FAQs, titles, numeric examples and flagged buying, garment, tracking and packaging paragraphs. Replaced lexical errors including test packing, width/measurement tape, cap and belt, packaging wrap, shipment and carrier events. Checked contextual parcel, quote and paper-stationery terms.",
   "reviewed_flags": [],
   "unresolved_material": [],
   "corrections": [
@@ -218,6 +218,24 @@
       "source_sha256": "fee2252fc1cee3a6fd8dfed859587706e9baf2ce4f69626d0d26e541873ddfec",
       "raw_target_sha256": "80ac9e73016caceda3ea4b60d1435f693d537ba1d5a4d132f3bc8062819553f2",
       "translation": "Un inserto montato può tenere un oggetto fragile lontano dai lati di un cartone. Una fascia decorativa della confezione può migliorare la presentazione aggiungendo poca protezione strutturale. Un'etichetta stampata può identificare la versione o gli ingredienti di un articolo anche se il contenitore stesso è sottile. Scrivi una breve nota per ogni parte: protegge un pezzo sporgente, tiene insieme piccoli accessori, identifica la versione acquistata o interessa al destinatario. Questo dà al magazzino una descrizione più chiara di ciò che deve essere conservato piuttosto che chiedere di conservare “imballaggi importanti”."
+    },
+    {
+      "source": "External padding, reinforcement and a stronger outer carton may change several inputs at once. A thinner arrangement that requires extra protective spacing may end up nearer the original size than expected. A compact heavy package can cross an actual-weight threshold even when it fits a dimensional limit. Preserve the exact packing instruction used for each quote. A warehouse result for a protected parcel is more informative than a bare product measurement, but only for the goods and protection actually measured.",
+      "source_sha256": "c80d4175b84b1f08b982e67d62c84db0ae8bd7f8785225762735ce4fc8597760",
+      "raw_target_sha256": "1dc4918e6c44286ca08b377b43e2cb97a42081668f185a0daf2086966e475ee3",
+      "translation": "L'imbottitura esterna, il rinforzo e un cartone esterno più forte possono cambiare diversi input contemporaneamente. Una disposizione più sottile che richiede una spaziatura protettiva aggiuntiva potrebbe risultare più vicina alle dimensioni originali del previsto. Un pacchetto pesante compatto può superare una soglia di peso effettivo anche quando rientra in un limite dimensionale. Conservare l'esatta istruzione di imballaggio utilizzata per ogni preventivo. Un risultato di magazzino per un pacco protetto è più informativo di una misurazione del prodotto nudo, ma solo per le merci e la protezione effettivamente misurate."
+    },
+    {
+      "source": "Before payment, check that the selected route, contents and final packed dimensions match the conditions you assessed. If an excluded piece was removed, verify it remains correctly recorded in storage and review its own options. If packaging changed, revisit the physical limits. Save the final route name, quote and reason for selection with the outbound reference. Later, if the service changes or a shipment query arises, you will be able to explain which restrictions you checked, what evidence you used and what the platform confirmed for your particular parcel.",
+      "source_sha256": "4060f39cafac0331f903c46ae897eac7b09bc4ed74310889160de83ce73be435",
+      "raw_target_sha256": "1c4d04166c2ea6771c62781b5de4b71f5f42a96720978b9cd61e917944c5fdee",
+      "translation": "Prima del pagamento, controlla che il percorso selezionato, il contenuto e le dimensioni finali dell'imballo corrispondano alle condizioni che hai valutato. Se un pezzo escluso è stato rimosso, verificare che rimanga correttamente registrato nello stoccaggio e rivedere le proprie opzioni. Se la confezione è cambiata, riesaminare i limiti fisici. Salvare il nome del percorso finale, il preventivo e il motivo della selezione con il riferimento in uscita. In seguito, se il servizio cambia o si verifica una richiesta di spedizione, sarai in grado di spiegare quali restrizioni hai controllato, quali prove hai utilizzato e cosa ha confermato la piattaforma per il tuo particolare pacco."
+    },
+    {
+      "source": "Evaluate the trade in concrete terms. Suppose preserving a box keeps a gift ready to present, while removing it might allow a smaller outer carton. If neither the final dimensions nor the route charge is known, the gift value is established and the freight saving is uncertain. You can investigate the uncertainty with a quote, choose to retain the box, or decide that the box has no value to the recipient. The right choice depends on the purchase. General statements such as “always remove shoe boxes” ignore the reason somebody bought that particular item.",
+      "source_sha256": "49b39f48669a239be89219175e2ccfbe42d46b11c22b189d50e71e0fa8e49701",
+      "raw_target_sha256": "f1149f42e2809e4b4b383318bc149f78ec90b2e95c1ec9bc4c130bb62b047f33",
+      "translation": "Valutare il commercio in termini concreti. Supponiamo che la conservazione di una scatola mantenga un regalo pronto da presentare, mentre la sua rimozione potrebbe consentire una scatola esterna più piccola. Se non si conoscono né le dimensioni finali né il costo del percorso, il valore del regalo viene stabilito e il risparmio di trasporto è incerto. Puoi indagare l'incertezza con un preventivo, scegliere di mantenere la scatola o decidere che la scatola non ha alcun valore per il destinatario. La scelta giusta dipende dall'acquisto. Affermazioni generali come “rimuovere sempre le scatole delle scarpe” ignorano il motivo per cui qualcuno ha acquistato quel particolare articolo."
     }
   ]
 }

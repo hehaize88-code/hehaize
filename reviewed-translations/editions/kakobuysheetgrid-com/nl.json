@@ -3,9 +3,9 @@
   "locale": "nl",
   "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
   "raw_dictionary_sha256": "3e56e62f3e9076eb4a25adef4d1740dc3d65ca7ab38980ae604c5d8fd2a8de03",
-  "effective_dictionary_sha256": "e20e213034ae2693bf3758db00ef4f518afd475844157ef815637117db35104d",
+  "effective_dictionary_sha256": "e3cf7b07941136cc3fb4c5bb1b10777fc5987bebf9038566b2e6e2963cf27e49",
   "checked_entries": 317,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately. All 21 FAQ question/answer pairs were additionally checked with independent back-translation and cross-language semantic comparison, with targeted revisions. The full localized text was screened for packaging, clothing, measurement and commercial terminology.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -225,6 +225,12 @@
       "source_sha256": "5b834045dc919c6464069e52e2140285117ff6e987acefb762ebf90156996be2",
       "raw_target_sha256": "2f05a8bf39fc725c0294369d4177b78170e6a50e79264edbf4c9ca8d42ea70e8",
       "translation": "Hoe leg ik de gegevens van een vervangend artikel vast?"
+    },
+    {
+      "source": "Specify the purpose. A neckline size label shows the marked size; a care label may provide composition or care instructions. Ask for a full view in context and a close-up with legible text.",
+      "source_sha256": "9fd339ea163be9a23fc63aa66ac318f34f3576f42dc0e0422c207d9a5fed3ef4",
+      "raw_target_sha256": "c8b31bc3ca21fbb293591704efa63491c905003119c4d229b17e935e095c323b",
+      "translation": "Geef aan wat u wilt weten. Het label bij de nek kan de aangegeven kledingmaat tonen. Het waslabel kan informatie over de vezelsamenstelling en het onderhoud geven. Vraag zowel een overzicht waarop het label aan het kledingstuk te zien is als een scherpe foto van de tekst."
     }
   ]
 }

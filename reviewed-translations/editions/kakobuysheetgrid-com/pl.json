@@ -3,9 +3,9 @@
   "locale": "pl",
   "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
   "raw_dictionary_sha256": "ff4ccdaf4c9418df3cb402d1cc325c2f5cd03c96bf4ff543e0c3fa34bc47436a",
-  "effective_dictionary_sha256": "68928cdc3b85f83c6a482ab327218c9938757469f8417aedc0c87e11dbbcf218",
+  "effective_dictionary_sha256": "0e371b352b00f8eddd72372249d16c6cad5c215f132a4fd125b76a4a728245c9",
   "checked_entries": 317,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately. All 21 FAQ question/answer pairs were additionally checked with independent back-translation and cross-language semantic comparison, with targeted revisions. The full localized text was screened for packaging, clothing, measurement and commercial terminology.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -201,6 +201,12 @@
       "source_sha256": "5b834045dc919c6464069e52e2140285117ff6e987acefb762ebf90156996be2",
       "raw_target_sha256": "57c26d6ef7022cde6b8a922b7b558d05ff887213fad925e4e2fb19e7c5566bb2",
       "translation": "Jak zapisać dane produktu otrzymanego na wymianę?"
+    },
+    {
+      "source": "Specify the purpose. A neckline size label shows the marked size; a care label may provide composition or care instructions. Ask for a full view in context and a close-up with legible text.",
+      "source_sha256": "9fd339ea163be9a23fc63aa66ac318f34f3576f42dc0e0422c207d9a5fed3ef4",
+      "raw_target_sha256": "4ab6ac61eb98b53a1fda9f055bed1db3edd52e0e1d72eeba7bf8733ad027ebb8",
+      "translation": "Wyjaśnij, co chcesz sprawdzić. Metka przy karku może wskazywać rozmiar ubrania, a metka pielęgnacyjna — skład i zalecenia dotyczące prania. Poproś o zdjęcie pokazujące miejsce wszycia metki oraz zbliżenie z czytelnym tekstem."
     }
   ]
 }

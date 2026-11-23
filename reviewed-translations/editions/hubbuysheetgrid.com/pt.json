@@ -3,9 +3,9 @@
   "locale": "pt",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "4a14c03d78048b87349fd31f853ca76a310b041226f50f5b0e73d1d46fe2fa5e",
-  "effective_dictionary_sha256": "e375614c1fdedf682584cb291c554ff40fc7b39f29e220dd296497522c2606e3",
+  "effective_dictionary_sha256": "d2b217bf65f1e6d3ee3cab2286fdc551d66a542eeec38a931faeb51d03bbd673",
   "checked_entries": 326,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately. All 21 FAQ question/answer pairs were additionally checked with independent back-translation and cross-language semantic comparison, with targeted revisions. The full localized text was screened for packaging, clothing, measurement and commercial terminology. All passages containing numeric examples were independently back-translated and screened; discrepancies in amounts, units, merchandise, charge scope and price quotations were checked in the actual source and target.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -333,6 +333,36 @@
       "source_sha256": "536b8b79fc83da8498e787cdf8d8ed4a9f798a2b9e0105b754be105d333bddd8",
       "raw_target_sha256": "ff4dca2922c15ecbbd74f9f5fee55f501a52aaacbb640ad8350efb5c0670458e",
       "translation": "Apenas se os três artigos forem realmente dispostos em fila, ponta a ponta no sentido do comprimento. Meça as dimensões exteriores do conjunto, reserve espaço para proteção e confirme depois de embalar."
+    },
+    {
+      "source": "Where does a seller discount belong in the budget?",
+      "source_sha256": "cebe05093314ad346885d87aaa8471de6b705272e99a1571a0fc5590ed123408",
+      "raw_target_sha256": "6c7221f00ea89ee6037805e053acb9ce973bf311d361500b4e1e451fd16dd826",
+      "translation": "Onde registar no orçamento um desconto do vendedor?"
+    },
+    {
+      "source": "Record it beside the purchase to which it applies. Keep any outbound parcel discount separate, and check the conditions before subtracting a promotion from a planning estimate.",
+      "source_sha256": "c9d01427f5a1f5d28088f5b73e5bd94f83db45067c85ed48370f39a497afb212",
+      "raw_target_sha256": "c3c4ef7d0e77c1f41fa9d58d370851859e7ed0d1d96268aaea67e8ab7d1b374e",
+      "translation": "Registe-o junto da compra a que se aplica. Separe qualquer desconto no posterior envio da encomenda a partir do armazém. Verifique as condições da promoção antes de a deduzir de uma estimativa."
+    },
+    {
+      "source": "If the cap is cancelled, avoid immediately subtracting 42 from the old total and treating the result as settled. Check the refund statement for the product amount and any domestic adjustment. The original allocation may now describe goods that never travelled together. Keep the original order and add a dated credit row, then calculate the remaining cost from the surviving items. Ask for clarification with the purchase reference if the domestic charge has no corresponding adjustment explanation.",
+      "source_sha256": "c3a8b7ab92509d5424e46381383e6e99391ff4e40466eb6b974124c35b573907",
+      "raw_target_sha256": "313188b5351c131198b3e1b309863e42d012b5844442c7a42cd6b205163a3a23",
+      "translation": "Se o boné for cancelado, não dê a conta por encerrada apenas por subtrair 42 ao total anterior. Verifique no comprovativo do reembolso o valor do artigo e qualquer ajuste da entrega nacional. A repartição inicial pode abranger artigos que acabaram por viajar em separado. Guarde a encomenda original, registe o crédito numa linha com data e recalcule o custo dos artigos restantes. Se o valor do transporte não estiver explicado, peça esclarecimentos com a referência da compra."
+    },
+    {
+      "source": "For example, assume the selected medium shirt costs 72 yuan, the large costs 76 and the two-piece set costs 130. Selecting two medium shirts and one set costs 274 before delivery. Accidentally using the 72-yuan shirt price for the set gives 216. The 58-yuan difference comes from selecting the wrong unit, not from a hidden freight charge. Keeping pack type, option, unit price and quantity in separate columns makes the error visible.",
+      "source_sha256": "e693a04247cb69da69145d2095f6229501229efe4c4a154929e716ea691d8378",
+      "raw_target_sha256": "f87aa8a3d3b25e4780c4b9becd60a713353eced9981a3906f487c6d59a251570",
+      "translation": "Neste exemplo, a camisa M custa 72 yuan, a L custa 76 e o conjunto de duas peças custa 130. Duas camisas M e um conjunto totalizam 274 antes da entrega. Atribuir ao conjunto o preço de 72 da camisa dá 216. A diferença de 58 resulta da unidade de venda errada. Separe o tipo de embalagem, a opção, o preço unitário e a quantidade em colunas."
+    },
+    {
+      "source": "Take the example of two medium shirts and a set. If the seller confirms only one medium shirt, the original 274 no longer describes the goods available. One shirt at 72 plus the set at 130 gives a merchandise total of 202. Check whether a quantity threshold, domestic delivery condition or discount has changed as well. A cancellation can affect more than the removed unit if the promotion depended on the original basket.",
+      "source_sha256": "3494235e91bdc6cd07e43652ea5d572b4d6a899a65c0773c1026ba361e7c36b0",
+      "raw_target_sha256": "d2ee76ee17a1e2f0b15a9e44e6ad93d31c586d2929289c3f0255c404ff8e4dc5",
+      "translation": "Se o vendedor confirmar apenas uma das duas camisas M, os 274 iniciais já não representam a mercadoria disponível. Uma camisa por 72 e o conjunto por 130 dão um total de mercadoria de 202. Verifique também os limites de quantidade, a entrega nacional e o desconto. O cancelamento pode afetar uma promoção dependente do cesto original."
     }
   ]
 }

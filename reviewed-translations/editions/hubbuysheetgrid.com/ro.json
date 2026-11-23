@@ -3,9 +3,9 @@
   "locale": "ro",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "b7cfe2293745853bcdd469ecd7dfaf347263125a1128b55c0e58c6e4aaf2358e",
-  "effective_dictionary_sha256": "04f59fbce6690dc38c18bec38c48c3db8f33f83b605b4d12fc44bb8037672769",
+  "effective_dictionary_sha256": "a90b38612ce8a0524f9b79e6f7c5d45cd61454b1f14338ccaff7e3df9b6cf7fe",
   "checked_entries": 326,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately. All 21 FAQ question/answer pairs were additionally checked with independent back-translation and cross-language semantic comparison, with targeted revisions. The full localized text was screened for packaging, clothing, measurement and commercial terminology. All passages containing numeric examples were independently back-translated and screened; discrepancies in amounts, units, merchandise, charge scope and price quotations were checked in the actual source and target.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -231,6 +231,36 @@
       "source_sha256": "536b8b79fc83da8498e787cdf8d8ed4a9f798a2b9e0105b754be105d333bddd8",
       "raw_target_sha256": "a284935e88a76d22d8022ef1d13f60ad39f2ed5565900ead848077f648651937",
       "translation": "Numai dacă cele trei articole sunt așezate efectiv în șir, unul după altul, pe lungime. Măsurați dimensiunile exterioare ale ansamblului, lăsați spațiu pentru protecție și confirmați după ambalare."
+    },
+    {
+      "source": "Where does a seller discount belong in the budget?",
+      "source_sha256": "cebe05093314ad346885d87aaa8471de6b705272e99a1571a0fc5590ed123408",
+      "raw_target_sha256": "510ea85dc3849fa586fc3baf06b2cc702f71b53ede570eb49248689c51666b1f",
+      "translation": "Unde trec în buget reducerea oferită de vânzător?"
+    },
+    {
+      "source": "Record it beside the purchase to which it applies. Keep any outbound parcel discount separate, and check the conditions before subtracting a promotion from a planning estimate.",
+      "source_sha256": "c9d01427f5a1f5d28088f5b73e5bd94f83db45067c85ed48370f39a497afb212",
+      "raw_target_sha256": "7f169889ef335097e710a9a5baf36ab6d0051aaa661b663970a50a76d7a484fb",
+      "translation": "Înregistrați-o lângă achiziția la care se aplică. Țineți separat orice reducere pentru expedierea ulterioară a coletului din depozit. Verificați condițiile promoției înainte de a o scădea dintr-o estimare."
+    },
+    {
+      "source": "If the cap is cancelled, avoid immediately subtracting 42 from the old total and treating the result as settled. Check the refund statement for the product amount and any domestic adjustment. The original allocation may now describe goods that never travelled together. Keep the original order and add a dated credit row, then calculate the remaining cost from the surviving items. Ask for clarification with the purchase reference if the domestic charge has no corresponding adjustment explanation.",
+      "source_sha256": "c3a8b7ab92509d5424e46381383e6e99391ff4e40466eb6b974124c35b573907",
+      "raw_target_sha256": "7fafef7da633278065eeb97fa5f38549cd62e4b705b78e876af7082e34e5254d",
+      "translation": "Dacă se anulează șapca, nu închideți calculul scăzând pur și simplu 42 din vechiul total. Verificați în documentul de rambursare suma articolului și orice ajustare a livrării interne. Repartizarea inițială poate include produse care nu au fost transportate împreună. Păstrați comanda inițială, adăugați creditarea pe un rând cu dată și recalculați costul produselor rămase. Dacă taxa de livrare nu este explicată, cereți lămuriri cu referința achiziției."
+    },
+    {
+      "source": "For example, assume the selected medium shirt costs 72 yuan, the large costs 76 and the two-piece set costs 130. Selecting two medium shirts and one set costs 274 before delivery. Accidentally using the 72-yuan shirt price for the set gives 216. The 58-yuan difference comes from selecting the wrong unit, not from a hidden freight charge. Keeping pack type, option, unit price and quantity in separate columns makes the error visible.",
+      "source_sha256": "e693a04247cb69da69145d2095f6229501229efe4c4a154929e716ea691d8378",
+      "raw_target_sha256": "b842698b05c13392e8a21fb92e5a2f914447686e740e8505f8409703329f1829",
+      "translation": "În exemplu, cămașa M costă 72 de yuani, cea L costă 76, iar setul de două piese costă 130. Două cămăși M și un set costă 274 înainte de livrare. Dacă treceți din greșeală prețul de 72 al cămășii și pentru set, obțineți 216. Diferența de 58 vine din unitatea de vânzare greșită. Folosiți coloane separate pentru ambalaj, variantă, preț unitar și cantitate."
+    },
+    {
+      "source": "Take the example of two medium shirts and a set. If the seller confirms only one medium shirt, the original 274 no longer describes the goods available. One shirt at 72 plus the set at 130 gives a merchandise total of 202. Check whether a quantity threshold, domestic delivery condition or discount has changed as well. A cancellation can affect more than the removed unit if the promotion depended on the original basket.",
+      "source_sha256": "3494235e91bdc6cd07e43652ea5d572b4d6a899a65c0773c1026ba361e7c36b0",
+      "raw_target_sha256": "f607355f289dbcd0c4d5a4485e46fee3c21f56b87c484a91df958cb6f7e202fb",
+      "translation": "Dacă vânzătorul confirmă doar una dintre cele două cămăși M, suma inițială de 274 nu mai reflectă marfa disponibilă. O cămașă de 72 și setul de 130 dau un total al mărfii de 202. Verificați pragul de cantitate, condițiile livrării interne și reducerea. Anularea unei bucăți poate afecta oferta pentru întregul coș inițial."
     }
   ]
 }

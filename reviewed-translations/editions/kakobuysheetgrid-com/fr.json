@@ -3,9 +3,9 @@
   "locale": "fr",
   "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
   "raw_dictionary_sha256": "84d49a8270f8cf593550560a30061fca7598301f1ec3789ae6c8ad15afeda10a",
-  "effective_dictionary_sha256": "6241e6ab6515183b888ab5130f0e221ba5d29095204ab32aa3de86ed3cd51441",
+  "effective_dictionary_sha256": "9ed505b17759689b53f5fec43f90e72738ef839dd362f3a58780a49b1ac229a6",
   "checked_entries": 317,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately. All 21 FAQ question/answer pairs were additionally checked with independent back-translation and cross-language semantic comparison, with targeted revisions. The full localized text was screened for packaging, clothing, measurement and commercial terminology.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -201,6 +201,12 @@
       "source_sha256": "5b834045dc919c6464069e52e2140285117ff6e987acefb762ebf90156996be2",
       "raw_target_sha256": "12dddb3b3306a774bbb2f8e4754fb08759a34508c4b43fee03ead8e015b2f720",
       "translation": "Comment consigner un article reçu en remplacement ?"
+    },
+    {
+      "source": "Specify the purpose. A neckline size label shows the marked size; a care label may provide composition or care instructions. Ask for a full view in context and a close-up with legible text.",
+      "source_sha256": "9fd339ea163be9a23fc63aa66ac318f34f3576f42dc0e0422c207d9a5fed3ef4",
+      "raw_target_sha256": "876dc564555f307b0fc0c9353a8a53b8d2f6e1ce63a87e2d4f346e72fd5d6087",
+      "translation": "Précisez ce que vous souhaitez vérifier. L’étiquette à la nuque peut indiquer la taille du vêtement. L’étiquette d’entretien peut préciser la composition et les consignes de lavage. Demandez une vue d’ensemble situant l’étiquette et un gros plan où le texte est lisible."
     }
   ]
 }

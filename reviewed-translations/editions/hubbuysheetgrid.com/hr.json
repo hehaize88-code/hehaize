@@ -3,9 +3,9 @@
   "locale": "hr",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "cd7e2b7417f4e05adc20f6ff1af5521e51f78f8b5fca1ca5325ae10dd76cec1b",
-  "effective_dictionary_sha256": "e3dc9f432412a4055c218fd83c047f4afd483059ba59ac996698b34bc848d87f",
+  "effective_dictionary_sha256": "2259f71f4a81bca44e3ed7953edea28d1d0d2a0929192e8bf8449e80e8b784a0",
   "checked_entries": 326,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately. All 21 FAQ question/answer pairs were additionally checked with independent back-translation and cross-language semantic comparison, with targeted revisions. The full localized text was screened for packaging, clothing, measurement and commercial terminology. All passages containing numeric examples were independently back-translated and screened; discrepancies in amounts, units, merchandise, charge scope and price quotations were checked in the actual source and target.",
   "reviewed_flags": [
     {
       "issue": "example number omitted or reformatted",
@@ -471,6 +471,36 @@
       "source_sha256": "cdc8a1c8dde506ba039e6ec7567ea877aa6f81f9c35b4304d4cc9493062879c8",
       "raw_target_sha256": "7640477d019f05b3dd0c796cdc6665741fe0b1a66a39801273a5381712d925d5",
       "translation": "Kad znate masu zapakiranog paketa, upotrijebite je za procjenu međunarodne dostave. Obuhvaća kutiju i zaštitni materijal, dok prodavatelj možda navodi masu samog proizvoda."
+    },
+    {
+      "source": "Where does a seller discount belong in the budget?",
+      "source_sha256": "cebe05093314ad346885d87aaa8471de6b705272e99a1571a0fc5590ed123408",
+      "raw_target_sha256": "d0d58291cdabece45a8e0f6fbbf9fc2ae1f2400acf8313c8589b5d1ffe70b5e7",
+      "translation": "Gdje u proračunu evidentirati popust prodavatelja?"
+    },
+    {
+      "source": "Record it beside the purchase to which it applies. Keep any outbound parcel discount separate, and check the conditions before subtracting a promotion from a planning estimate.",
+      "source_sha256": "c9d01427f5a1f5d28088f5b73e5bd94f83db45067c85ed48370f39a497afb212",
+      "raw_target_sha256": "b5d8c73151b0ae92a23c146702cbd4941aa547bdbc649cc32e49b51f0b895267",
+      "translation": "Upišite ga uz kupnju na koju se odnosi. Popust na naknadno slanje paketa iz skladišta vodite zasebno. Provjerite uvjete promocije prije nego što popust oduzmete od procjene troška."
+    },
+    {
+      "source": "If the cap is cancelled, avoid immediately subtracting 42 from the old total and treating the result as settled. Check the refund statement for the product amount and any domestic adjustment. The original allocation may now describe goods that never travelled together. Keep the original order and add a dated credit row, then calculate the remaining cost from the surviving items. Ask for clarification with the purchase reference if the domestic charge has no corresponding adjustment explanation.",
+      "source_sha256": "c3a8b7ab92509d5424e46381383e6e99391ff4e40466eb6b974124c35b573907",
+      "raw_target_sha256": "8655f0bbab3d71ef4b98fefe5c3bebbe87db3fe530a6a4a5c2be549b5aae48cc",
+      "translation": "Ako je kupnja kape otkazana, nemojte odmah oduzeti 42 od starog iznosa i zaključiti obračun. U potvrdi povrata provjerite iznos za artikl i eventualni ispravak domaće dostave. Prvotna raspodjela možda obuhvaća robu koja na kraju nije poslana zajedno. Zadržite izvornu narudžbu, upišite povrat u zaseban redak s datumom i izračunajte trošak preostalih artikala. Ako dostava nije objašnjena, pitajte uz oznaku kupnje."
+    },
+    {
+      "source": "For example, assume the selected medium shirt costs 72 yuan, the large costs 76 and the two-piece set costs 130. Selecting two medium shirts and one set costs 274 before delivery. Accidentally using the 72-yuan shirt price for the set gives 216. The 58-yuan difference comes from selecting the wrong unit, not from a hidden freight charge. Keeping pack type, option, unit price and quantity in separate columns makes the error visible.",
+      "source_sha256": "e693a04247cb69da69145d2095f6229501229efe4c4a154929e716ea691d8378",
+      "raw_target_sha256": "3fd0b9c4fac4fc3fff270b992b3506b9ef8d526ba082f144d9cd1ed74d546f88",
+      "translation": "U primjeru košulja veličine M stoji 72 juana, veličine L 76, a dvodijelni komplet 130. Dvije košulje M i jedan komplet stoje 274 prije dostave. Ako kompletu pogrešno pripišete cijenu košulje od 72, dobit ćete 216. Razlika od 58 posljedica je pogrešne prodajne jedinice. Odvojeni stupci za pakiranje, varijantu, jediničnu cijenu i količinu otkrivaju pogrešku."
+    },
+    {
+      "source": "Take the example of two medium shirts and a set. If the seller confirms only one medium shirt, the original 274 no longer describes the goods available. One shirt at 72 plus the set at 130 gives a merchandise total of 202. Check whether a quantity threshold, domestic delivery condition or discount has changed as well. A cancellation can affect more than the removed unit if the promotion depended on the original basket.",
+      "source_sha256": "3494235e91bdc6cd07e43652ea5d572b4d6a899a65c0773c1026ba361e7c36b0",
+      "raw_target_sha256": "7733a008e99e4c76e24be22c573e85a6be7a7d36d146fb51160c7c9c90091acf",
+      "translation": "Ako prodavatelj potvrdi samo jednu od dviju košulja M, prvotnih 274 više ne opisuje dostupnu robu. Jedna košulja za 72 i komplet za 130 ukupno stoje 202. Provjerite količinski prag, uvjete domaće dostave i popust. Otkazivanje jedne jedinice može promijeniti pogodnost koja je vrijedila za prvotnu košaricu."
     }
   ]
 }

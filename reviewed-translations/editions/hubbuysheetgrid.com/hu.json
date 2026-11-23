@@ -3,9 +3,9 @@
   "locale": "hu",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "c436e2f5efefc3142a756f55557c99681570a9fadf908adaeb8be690535bf15a",
-  "effective_dictionary_sha256": "40311540826a30ee8ce7e6d43a721db6f19eb0c80fd10c169eb260695d8af438",
+  "effective_dictionary_sha256": "30296a5534354b3b438ce1dc3b1db21a377814056ff28ba5cdf58a6c1c6a258a",
   "checked_entries": 326,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately. All 21 FAQ question/answer pairs were additionally checked with independent back-translation and cross-language semantic comparison, with targeted revisions. The full localized text was screened for packaging, clothing, measurement and commercial terminology. All passages containing numeric examples were independently back-translated and screened; discrepancies in amounts, units, merchandise, charge scope and price quotations were checked in the actual source and target.",
   "reviewed_flags": [
     {
       "issue": "quantity unit or currency changed",
@@ -47,7 +47,7 @@
       "issue": "quantity unit or currency changed",
       "source_sha256": "e693a04247cb69da69145d2095f6229501229efe4c4a154929e716ea691d8378",
       "raw_target_sha256": "b1e6229a360253312b61668e626e4c41b290469947873a3d66375ccea6635baf",
-      "resolution": "The 72/76/130 variant prices correctly yield 274 versus 216, and the 58-yuan error is attributed to the wrong selling unit."
+      "resolution": "corrected translation"
     },
     {
       "issue": "quantity unit or currency changed",
@@ -429,6 +429,36 @@
       "source_sha256": "536b8b79fc83da8498e787cdf8d8ed4a9f798a2b9e0105b754be105d333bddd8",
       "raw_target_sha256": "97fabbcb5a398567a9d23c43c1a54a27996d74f2c0d9baa50ba33712fc543cde",
       "translation": "Csak akkor, ha mindhárom terméket hosszában, egymás után helyezik el. Mérje meg az elrendezés külső méreteit, hagyjon helyet a védelemnek, majd csomagolás után ellenőrizze az eredményt."
+    },
+    {
+      "source": "Where does a seller discount belong in the budget?",
+      "source_sha256": "cebe05093314ad346885d87aaa8471de6b705272e99a1571a0fc5590ed123408",
+      "raw_target_sha256": "95f20ff6e72808d450517dcfaed3c65dfc3a94f9c6cc7c31b0b4fbe971afaec3",
+      "translation": "A költségvetésben hová kerüljön az eladói kedvezmény?"
+    },
+    {
+      "source": "Record it beside the purchase to which it applies. Keep any outbound parcel discount separate, and check the conditions before subtracting a promotion from a planning estimate.",
+      "source_sha256": "c9d01427f5a1f5d28088f5b73e5bd94f83db45067c85ed48370f39a497afb212",
+      "raw_target_sha256": "dbd91cdbb8426e10d67241201503f3afe2d63f05f598c7514bf0310444c33e49",
+      "translation": "Ahhoz a vásárláshoz rögzítse, amelyre vonatkozik. A csomag későbbi, raktárból történő feladására járó kedvezményt külön kezelje. A tervezett költségből csak az akció feltételeinek ellenőrzése után vonja le."
+    },
+    {
+      "source": "If the cap is cancelled, avoid immediately subtracting 42 from the old total and treating the result as settled. Check the refund statement for the product amount and any domestic adjustment. The original allocation may now describe goods that never travelled together. Keep the original order and add a dated credit row, then calculate the remaining cost from the surviving items. Ask for clarification with the purchase reference if the domestic charge has no corresponding adjustment explanation.",
+      "source_sha256": "c3a8b7ab92509d5424e46381383e6e99391ff4e40466eb6b974124c35b573907",
+      "raw_target_sha256": "da80399f03bd2ef1a4a27c7f77f72aca895910bbc6165bf2762c8916acba9325",
+      "translation": "Ha a sapka rendelését törlik, ne tekintse lezártnak az ügyet azzal, hogy 42-t levon a régi végösszegből. A visszatérítés bizonylatán ellenőrizze a termék árát és a belföldi szállítás esetleges módosítását. A korábbi felosztás olyan tételekre vonatkozhatott, amelyek végül nem együtt utaztak. Tartsa meg az eredeti rendelést, a jóváírást külön dátumozott soron rögzítse, majd számolja újra a megmaradt termékek költségét. Ha a szállítási díj nem világos, a vásárlás azonosítójával kérjen felvilágosítást."
+    },
+    {
+      "source": "For example, assume the selected medium shirt costs 72 yuan, the large costs 76 and the two-piece set costs 130. Selecting two medium shirts and one set costs 274 before delivery. Accidentally using the 72-yuan shirt price for the set gives 216. The 58-yuan difference comes from selecting the wrong unit, not from a hidden freight charge. Keeping pack type, option, unit price and quantity in separate columns makes the error visible.",
+      "source_sha256": "e693a04247cb69da69145d2095f6229501229efe4c4a154929e716ea691d8378",
+      "raw_target_sha256": "b1e6229a360253312b61668e626e4c41b290469947873a3d66375ccea6635baf",
+      "translation": "A példában az M-es ing 72 jüan, az L-es 76, a kétrészes szett pedig 130. Két M-es ing és egy szett szállítás nélkül 274. Ha tévedésből a szettre is a 72-es ingárat írja, 216 jön ki. Az 58-as eltérés oka az eltévesztett értékesítési egység. Külön oszlopban szerepeljen a kiszerelés, a változat, az egységár és a mennyiség."
+    },
+    {
+      "source": "Take the example of two medium shirts and a set. If the seller confirms only one medium shirt, the original 274 no longer describes the goods available. One shirt at 72 plus the set at 130 gives a merchandise total of 202. Check whether a quantity threshold, domestic delivery condition or discount has changed as well. A cancellation can affect more than the removed unit if the promotion depended on the original basket.",
+      "source_sha256": "3494235e91bdc6cd07e43652ea5d572b4d6a899a65c0773c1026ba361e7c36b0",
+      "raw_target_sha256": "71fd02c4b48620b8c9696c9be657661f79793cacfc0ea60f5da30af7cd4b9add",
+      "translation": "Ha a két M-es ingből az eladó csak egyet igazol vissza, az eredeti 274 már nem a rendelkezésre álló áru ára. Egy ing 72 és a szett 130, a termékek összege tehát 202. Ellenőrizze a mennyiségi küszöböt, a belföldi szállítás feltételeit és a kedvezményt. Egy darab kiesése az egész eredeti kosárra vonatkozó akciót is érintheti."
     }
   ]
 }

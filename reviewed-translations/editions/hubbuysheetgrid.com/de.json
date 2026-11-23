@@ -3,9 +3,9 @@
   "locale": "de",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "35a14551d5bf9f139c4e937bfcbb9f3f1cc06d10d3b632f2fb501c022c14f100",
-  "effective_dictionary_sha256": "867460eb282db5b98dff683aae884bace6ae105dc9428609680248938e784127",
+  "effective_dictionary_sha256": "4b24d3228283f6709c696cbf2043934e0ad41a8eac3d6729f13257d89ad491e0",
   "checked_entries": 326,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately. All 21 FAQ question/answer pairs were additionally checked with independent back-translation and cross-language semantic comparison, with targeted revisions. The full localized text was screened for packaging, clothing, measurement and commercial terminology. All passages containing numeric examples were independently back-translated and screened; discrepancies in amounts, units, merchandise, charge scope and price quotations were checked in the actual source and target.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -243,6 +243,36 @@
       "source_sha256": "baa564c8afd6b6f139c54ca948290d096026e69c37baa603560efd436cf90c7c",
       "raw_target_sha256": "993b649a21a992e64b3b26f268103e2299c816c745c12b478a1b53e16f54221f",
       "translation": "Speichern Sie die Versandreferenzen beider Pakete, ihre jeweiligen Artikellisten und die endgültigen Kostenaufstellungen. Markieren Sie auf beiden Belegen die verglichene Position, damit die Rückfrage dem richtigen Paket zugeordnet wird."
+    },
+    {
+      "source": "Where does a seller discount belong in the budget?",
+      "source_sha256": "cebe05093314ad346885d87aaa8471de6b705272e99a1571a0fc5590ed123408",
+      "raw_target_sha256": "d5e66c0d73120e3a0fb81a65eec2528896ca7efdae59b06fc9a01ee5f032b4b1",
+      "translation": "Wo trage ich einen Verkäuferrabatt im Budget ein?"
+    },
+    {
+      "source": "Record it beside the purchase to which it applies. Keep any outbound parcel discount separate, and check the conditions before subtracting a promotion from a planning estimate.",
+      "source_sha256": "c9d01427f5a1f5d28088f5b73e5bd94f83db45067c85ed48370f39a497afb212",
+      "raw_target_sha256": "e96a23db7bf5ae1a760e609f3a94e473339b40d14c8299d90e8764802df8a47b",
+      "translation": "Vermerken Sie ihn bei dem Kauf, für den er gilt. Einen Rabatt auf den späteren Paketversand ab Lager erfassen Sie getrennt. Prüfen Sie die Aktionsbedingungen, bevor Sie den Rabatt von einer Kostenschätzung abziehen."
+    },
+    {
+      "source": "If the cap is cancelled, avoid immediately subtracting 42 from the old total and treating the result as settled. Check the refund statement for the product amount and any domestic adjustment. The original allocation may now describe goods that never travelled together. Keep the original order and add a dated credit row, then calculate the remaining cost from the surviving items. Ask for clarification with the purchase reference if the domestic charge has no corresponding adjustment explanation.",
+      "source_sha256": "c3a8b7ab92509d5424e46381383e6e99391ff4e40466eb6b974124c35b573907",
+      "raw_target_sha256": "8f18b1953f55d38e895966954e691c0d3275a2060c9468567f63c7b354818735",
+      "translation": "Wird die Kappe storniert, ziehen Sie nicht einfach 42 von der alten Summe ab. Prüfen Sie auf dem Erstattungsbeleg den Warenbetrag und eine mögliche Anpassung des Inlandsversands. Die ursprüngliche Aufteilung kann Artikel betreffen, die am Ende nicht zusammen versandt wurden. Behalten Sie die ursprüngliche Bestellung, ergänzen Sie die Gutschrift mit Datum und berechnen Sie die verbleibenden Artikel neu. Fragen Sie bei unklaren Versandkosten unter Angabe der Kaufreferenz nach."
+    },
+    {
+      "source": "For example, assume the selected medium shirt costs 72 yuan, the large costs 76 and the two-piece set costs 130. Selecting two medium shirts and one set costs 274 before delivery. Accidentally using the 72-yuan shirt price for the set gives 216. The 58-yuan difference comes from selecting the wrong unit, not from a hidden freight charge. Keeping pack type, option, unit price and quantity in separate columns makes the error visible.",
+      "source_sha256": "e693a04247cb69da69145d2095f6229501229efe4c4a154929e716ea691d8378",
+      "raw_target_sha256": "829d780eadafb730fe5e2875d4e6c8123541169c541faf7f613974e8578ef103",
+      "translation": "Das Hemd in M kostet im Beispiel 72 Yuan, in L 76 und das zweiteilige Set 130. Zwei Hemden in M und ein Set kosten vor Versand 274. Wer dem Set versehentlich den Hemdenpreis von 72 zuordnet, erhält 216. Die Differenz von 58 entsteht durch die falsche Verkaufseinheit. Eigene Spalten für Packungsart, Variante, Stückpreis und Menge machen den Fehler sichtbar."
+    },
+    {
+      "source": "Take the example of two medium shirts and a set. If the seller confirms only one medium shirt, the original 274 no longer describes the goods available. One shirt at 72 plus the set at 130 gives a merchandise total of 202. Check whether a quantity threshold, domestic delivery condition or discount has changed as well. A cancellation can affect more than the removed unit if the promotion depended on the original basket.",
+      "source_sha256": "3494235e91bdc6cd07e43652ea5d572b4d6a899a65c0773c1026ba361e7c36b0",
+      "raw_target_sha256": "1e0b569780458d6bab4d464a6e710d976d8915a289f5d4faee00330310fcd3d1",
+      "translation": "Bestätigt der Verkäufer nur eines der beiden Hemden in M, passen die ursprünglichen 274 nicht mehr zur lieferbaren Ware. Ein Hemd für 72 und das Set für 130 ergeben einen Warenwert von 202. Prüfen Sie auch Mindestmengen, Inlandsversand und Rabatte. Fällt ein Teil weg, kann sich eine Aktion ändern, die den gesamten ursprünglichen Warenkorb voraussetzte."
     }
   ]
 }

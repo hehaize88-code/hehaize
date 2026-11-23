@@ -3,9 +3,9 @@
   "locale": "fr",
   "source_set_sha256": "1a57e35751202bc8722bffcd3d5a604d9b7ad9d180228c298103c9c8fded0947",
   "raw_dictionary_sha256": "7cbf1fb900827afffacbc3812063b7e79ffeea3f18be2d767908e647941dd69e",
-  "effective_dictionary_sha256": "c500b42993963f3dcd1a41775cd4dbd73edff7e1805f03827eecd3ee5bb9eede",
+  "effective_dictionary_sha256": "0dde271fab76dc6ba3c2e5adfc8b29959b2a51d835bb9de81b7d1e33052e5a66",
   "checked_entries": 295,
-  "review_scope": "Checked exact source keys and candidate pairs with full-corpus digit/unit, identity, length, copied-language and domain-term checks; inspected FAQs, titles, numeric examples and flagged buying, garment, tracking and packaging paragraphs. Replaced lexical errors including test packing, width/measurement tape, cap and belt, packaging wrap, shipment and carrier events.",
+  "review_scope": "Checked exact source keys and candidate pairs with full-corpus digit/unit, identity, length, copied-language and domain-term checks; inspected FAQs, titles, numeric examples and flagged buying, garment, tracking and packaging paragraphs. Replaced lexical errors including test packing, width/measurement tape, cap and belt, packaging wrap, shipment and carrier events. Checked contextual parcel, quote and paper-stationery terms.",
   "reviewed_flags": [],
   "unresolved_material": [],
   "corrections": [
@@ -266,6 +266,12 @@
       "source_sha256": "fee2252fc1cee3a6fd8dfed859587706e9baf2ce4f69626d0d26e541873ddfec",
       "raw_target_sha256": "abbabe1a2aa0df831abf3ef05c63e6d8552ccecc78dcede9dadc04ebff5dd188",
       "translation": "Un insert ajusté peut garder un objet fragile à l'écart des côtés d'un carton. Un fourreau décoratif de l’emballage peut améliorer la présentation tout en ajoutant peu de protection structurelle. Une étiquette imprimée peut identifier la version ou les ingrédients d'un article même si le contenant lui-même est mince. Écrivez une courte note pour chaque pièce: protège une pièce en saillie, tient les petits accessoires ensemble, identifie la version achetée, ou importe au destinataire. Cela donne à l’entrepôt une description plus claire de ce qui doit être conservé plutôt que de demander de conserver les « emballages importants »."
+    },
+    {
+      "source": "Compare the combined shipment with a separate parcel for the fragile piece. Separation can simplify protection, but another parcel may carry its own minimum charges and packing costs. The combined parcel may be larger or have fewer eligible routes. Price and protection are different columns in this decision. Compare eligible options for the same destination and real contents. Check carrier and platform conditions for that type of item. A route appearing for general merchandise does not settle whether a particular fragile object is accepted or covered for breakage.",
+      "source_sha256": "cf224e0736190d240ecfeae1b511e500fdfd7f2bc9fbb43c9fe2237d7f03077b",
+      "raw_target_sha256": "cd3d75371e1c30777893a416e3999b1b745f65ab1efd4902468b5c299333d84b",
+      "translation": "Comparez l'envoi combiné avec un colis séparé pour la pièce fragile. La séparation peut simplifier la protection, mais un autre colis peut avoir ses propres frais minimums et frais d'emballage. Le colis groupé peut être plus grande ou avoir moins de routes admissibles. Le prix et la protection sont des colonnes différentes dans cette décision. Comparez les options admissibles pour la même destination et le même contenu réel. Vérifiez les conditions du transporteur et de la plateforme pour ce type d'article. Un itinéraire apparaissant pour des marchandises générales ne détermine pas si un objet fragile particulier est accepté ou couvert en cas de casse."
     }
   ]
 }

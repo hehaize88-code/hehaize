@@ -3,9 +3,9 @@
   "locale": "nl",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "bb23011382d89fe15b93eef5fbad1e760df0af2408b55e822459a79f0836c2a8",
-  "effective_dictionary_sha256": "2ee9c305198a80ae43d6168e3ea53d2e6bc2d07cc2e47189d173d77b46261eb3",
+  "effective_dictionary_sha256": "024bbcfe8ad0858c26f2d4b9f51520961314aaf075c5c6bcdb7517c6063ec76c",
   "checked_entries": 326,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately. All 21 FAQ question/answer pairs were additionally checked with independent back-translation and cross-language semantic comparison, with targeted revisions. The full localized text was screened for packaging, clothing, measurement and commercial terminology. All passages containing numeric examples were independently back-translated and screened; discrepancies in amounts, units, merchandise, charge scope and price quotations were checked in the actual source and target.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -279,6 +279,36 @@
       "source_sha256": "a898c44c234e769560f09826ac1e7852c13dc1bf7815455cafdc081c0a7df50b",
       "raw_target_sha256": "1119594c569e9a10f2afafd953df0631069abd91f4334e9881df1f5a0a617bff",
       "translation": "Voor een onregelmatig object, noteer de lengte, breedte en hoogte van de omhullende verpakking in plaats van rondingen rond het object te tekenen. Een meetlint die de boog van een handvat volgt, produceert een afstand langs een bocht. Het laat niet zien hoe breed het afgewerkte pakket is. Wanneer de langste projectie moeilijk te identificeren is, vraag dan om een breed beeld van het voltooide pakket en de gemeten overspanningen. Label elke schatting op basis van een uitgepakt object als voorlopig totdat de buitenafmetingen bekend zijn."
+    },
+    {
+      "source": "Where does a seller discount belong in the budget?",
+      "source_sha256": "cebe05093314ad346885d87aaa8471de6b705272e99a1571a0fc5590ed123408",
+      "raw_target_sha256": "af589b28a3ed666b55e7f5fefaa62295924546e4f2a193bc808207457ba71783",
+      "translation": "Waar zet ik een korting van de verkoper in mijn begroting?"
+    },
+    {
+      "source": "Record it beside the purchase to which it applies. Keep any outbound parcel discount separate, and check the conditions before subtracting a promotion from a planning estimate.",
+      "source_sha256": "c9d01427f5a1f5d28088f5b73e5bd94f83db45067c85ed48370f39a497afb212",
+      "raw_target_sha256": "a37f2b53078386479e8a79e18bcfc2e786610cbe69b4bb0ad3d044ef7a50518f",
+      "translation": "Noteer de korting bij de aankoop waarvoor ze geldt. Houd korting op de latere verzending van het pakket uit het magazijn apart. Controleer de actievoorwaarden voordat u de korting van een kostenraming aftrekt."
+    },
+    {
+      "source": "If the cap is cancelled, avoid immediately subtracting 42 from the old total and treating the result as settled. Check the refund statement for the product amount and any domestic adjustment. The original allocation may now describe goods that never travelled together. Keep the original order and add a dated credit row, then calculate the remaining cost from the surviving items. Ask for clarification with the purchase reference if the domestic charge has no corresponding adjustment explanation.",
+      "source_sha256": "c3a8b7ab92509d5424e46381383e6e99391ff4e40466eb6b974124c35b573907",
+      "raw_target_sha256": "15144ca07eedba898a47701c52b71bd4e03316222fca6b930dbca89e333a75f0",
+      "translation": "Wordt de pet geannuleerd, trek dan niet zonder meer 42 van het oude totaal af. Controleer op het terugbetalingsoverzicht het artikelbedrag en een eventuele correctie voor de binnenlandse levering. De eerdere verdeling kan artikelen bevatten die uiteindelijk niet samen zijn verzonden. Bewaar de oorspronkelijke bestelling, boek de terugbetaling op een eigen regel met datum en bereken de kosten van de overgebleven artikelen. Vraag bij onduidelijke verzendkosten om uitleg met de aankoopreferentie."
+    },
+    {
+      "source": "For example, assume the selected medium shirt costs 72 yuan, the large costs 76 and the two-piece set costs 130. Selecting two medium shirts and one set costs 274 before delivery. Accidentally using the 72-yuan shirt price for the set gives 216. The 58-yuan difference comes from selecting the wrong unit, not from a hidden freight charge. Keeping pack type, option, unit price and quantity in separate columns makes the error visible.",
+      "source_sha256": "e693a04247cb69da69145d2095f6229501229efe4c4a154929e716ea691d8378",
+      "raw_target_sha256": "607c63251afe8bc5aa7d3b0bc772b575ca9a6dbd74814ae99da689afa4a97532",
+      "translation": "In dit voorbeeld kost het overhemd in M 72 yuan, in L 76 en de tweedelige set 130. Twee overhemden in M en één set kosten vóór verzending 274. Wie voor de set per ongeluk de overhemdprijs van 72 gebruikt, komt uit op 216. Het verschil van 58 komt door de verkeerde verkoopeenheid. Gebruik aparte kolommen voor verpakking, variant, stukprijs en aantal."
+    },
+    {
+      "source": "Take the example of two medium shirts and a set. If the seller confirms only one medium shirt, the original 274 no longer describes the goods available. One shirt at 72 plus the set at 130 gives a merchandise total of 202. Check whether a quantity threshold, domestic delivery condition or discount has changed as well. A cancellation can affect more than the removed unit if the promotion depended on the original basket.",
+      "source_sha256": "3494235e91bdc6cd07e43652ea5d572b4d6a899a65c0773c1026ba361e7c36b0",
+      "raw_target_sha256": "90ec2172f60bfb3aba7b208b264a35ce968b1a83b1215a90f30c2839f789e319",
+      "translation": "Bevestigt de verkoper slechts één van de twee overhemden in M, dan past het oude bedrag van 274 niet meer bij de beschikbare artikelen. Eén overhemd van 72 en de set van 130 kosten samen 202. Controleer ook de aantaldrempel, de binnenlandse levering en de korting. Het vervallen van één artikel kan een actie voor de oorspronkelijke winkelmand beïnvloeden."
     }
   ]
 }

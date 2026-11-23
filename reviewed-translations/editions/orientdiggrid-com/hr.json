@@ -3,9 +3,9 @@
   "locale": "hr",
   "source_set_sha256": "1a57e35751202bc8722bffcd3d5a604d9b7ad9d180228c298103c9c8fded0947",
   "raw_dictionary_sha256": "c5dd4e19da988e7a19c81c6bbda3a67f0ce4e24e724487790d78d0f868305ee0",
-  "effective_dictionary_sha256": "13fd33da6e6a75e9e19147c6681735beeb7211b1d8a1bc4d890f859261341300",
+  "effective_dictionary_sha256": "da15f944851b53f5e23c86d3460afa569165970558b5392910daca89631971cb",
   "checked_entries": 295,
-  "review_scope": "Compared exact full source coverage and screened every pair for numeric/measurement, entity identity, copy-through, and key shopping senses. Checked revised article titles, storage, references, worked packing examples, retail sleeves, and apparel width/length. Localized source navigation labels and corrected erroneous packaging or garment terms.",
+  "review_scope": "Compared exact full source coverage and screened every pair for numeric/measurement, entity identity, copy-through, and key shopping senses. Checked revised article titles, storage, references, worked packing examples, retail sleeves, and apparel width/length. Localized source navigation labels and corrected erroneous packaging or garment terms. Checked contextual parcel, quote and paper-stationery terms. Checked contextual parcel, quote and paper-stationery terms.",
   "reviewed_flags": [
     {
       "issue": "language uncertain",
@@ -195,6 +195,48 @@
       "source_sha256": "c80d4175b84b1f08b982e67d62c84db0ae8bd7f8785225762735ce4fc8597760",
       "raw_target_sha256": "306242e39acd706eba85f2399cc1ae0a7b9e0c66fbe620c482ba1924748e49af",
       "translation": "Dodatna vanjska zaštita, ojačanja i čvršća kutija mogu istodobno promijeniti težinu i dimenzije. Tanjem pakiranju možda treba veći zaštitni razmak pa konačna veličina ostane slična. Zbijen, ali težak paket može prijeći granicu stvarne težine premda stane unutar dopuštenih dimenzija. Uz svaku ponudu sačuvajte konkretne upute za pakiranje. Mjere zapakiranog i zaštićenog paketa pouzdanije su od mjera samoga proizvoda, ali vrijede samo za izmjereni sadržaj i primijenjenu zaštitu."
+    },
+    {
+      "source": "Compare the combined shipment with a separate parcel for the fragile piece. Separation can simplify protection, but another parcel may carry its own minimum charges and packing costs. The combined parcel may be larger or have fewer eligible routes. Price and protection are different columns in this decision. Compare eligible options for the same destination and real contents. Check carrier and platform conditions for that type of item. A route appearing for general merchandise does not settle whether a particular fragile object is accepted or covered for breakage.",
+      "source_sha256": "cf224e0736190d240ecfeae1b511e500fdfd7f2bc9fbb43c9fe2237d7f03077b",
+      "raw_target_sha256": "04b2f638e7030216086fe7a57fd27a9d2b9551014ebb8e244b7438cae88a5893",
+      "translation": "Usporedite kombiniranu pošiljku s zasebnim paketom za krhki komad. Odvajanje može pojednostaviti zaštitu, ali drugi paket može imati svoje minimalne naknade i troškove pakiranja. Zajednički paket može biti veća ili imati manje prihvatljivih ruta. Cijena i zaštita su različiti stupci u ovoj odluci. Usporedite kvalificirane opcije za isto odredište i stvarni sadržaj. Provjerite uvjete prijevoznika i platforme za tu vrstu pošiljke. Put koji se pojavljuje za opću robu ne određuje je li određeni lomljivi predmet prihvaćen ili pokriven za lomljenje."
+    },
+    {
+      "source": "Before payment, check that the selected route, contents and final packed dimensions match the conditions you assessed. If an excluded piece was removed, verify it remains correctly recorded in storage and review its own options. If packaging changed, revisit the physical limits. Save the final route name, quote and reason for selection with the outbound reference. Later, if the service changes or a shipment query arises, you will be able to explain which restrictions you checked, what evidence you used and what the platform confirmed for your particular parcel.",
+      "source_sha256": "4060f39cafac0331f903c46ae897eac7b09bc4ed74310889160de83ce73be435",
+      "raw_target_sha256": "039637ab06db1fc7079bb0b3313d20a2635a8bee79e179beea3cc924f854b358",
+      "translation": "Prije plaćanja provjerite odgovaraju li odabrana ruta, sadržaj i konačne dimenzije pakiranja uvjetima koje ste procijenili. Ako je isključeni komad uklonjen, provjerite ostaje li ispravno zabilježen u skladištu i pregledajte njegove vlastite mogućnosti. Ako se pakiranje promijenilo, ponovno provjerite fizička ograničenja. Spremite konačni naziv rute, ponudu i razlog za odabir s odlaznom referencom. Kasnije, ako se usluga promijeni ili se pojavi upit o pošiljci, moći ćete objasniti koja ste ograničenja provjerili, koje dokaze koristili i što je platforma potvrdila za vaš paket."
+    },
+    {
+      "source": "Evaluate the trade in concrete terms. Suppose preserving a box keeps a gift ready to present, while removing it might allow a smaller outer carton. If neither the final dimensions nor the route charge is known, the gift value is established and the freight saving is uncertain. You can investigate the uncertainty with a quote, choose to retain the box, or decide that the box has no value to the recipient. The right choice depends on the purchase. General statements such as “always remove shoe boxes” ignore the reason somebody bought that particular item.",
+      "source_sha256": "49b39f48669a239be89219175e2ccfbe42d46b11c22b189d50e71e0fa8e49701",
+      "raw_target_sha256": "40209342abc5cb269365c32d85c2ad0beddc066647b344ac0d91a2901600623e",
+      "translation": "Procijenite trgovinu u konkretnim uvjetima. Pretpostavimo da očuvanje kutije drži poklon spreman za prezentiranje, dok bi ga uklanjanje moglo omogućiti manju vanjsku kutiju. Ako nisu poznate ni konačne dimenzije niti cijena rute, utvrđuje se vrijednost poklona i ušteda tereta je neizvjesna. Možete istražiti nesigurnost uz ponudu cijene, odlučiti zadržati okvir ili odlučiti da okvir nema vrijednost za primatelja. Pravi izbor ovisi o kupnji. Opće izjave poput \"uvijek uklonite kutije za cipele\" ignoriraju razlog zašto je netko kupio tu određenu stavku."
+    },
+    {
+      "source": "Compare scenarios for the entire parcel",
+      "source_sha256": "e22c456801da60e152334fc86f5321d25308ed568bbab989152ba4a1172ff427",
+      "raw_target_sha256": "7433b83e615b9fe8a8933837a84284f352163d076b226a22739d68da34ce9df4",
+      "translation": "Usporedite scenarije za cijeli paket"
+    },
+    {
+      "source": "Imagine a hypothetical retail carton measuring 18 by 15 by 14 centimetres. An outer shipment box needs to be larger if space is used to protect the original carton. Entering the retail dimensions into a route comparison would understate that scenario. There is no need to invent a standard allowance for every parcel. Mark the figure as unknown until you have a plausible outer size, and test several clearly labelled possibilities if you need an early budget. Use the actual billing rules shown for each route rather than assuming a single volume formula applies everywhere.",
+      "source_sha256": "049adff8756716fd8294a2f5e8b27fe34b2d1e24dd5d592eb819e854cf1b7214",
+      "raw_target_sha256": "6622c63775ba909c1f1b608cee0ce790f46e9409083c0645e248c4d551c290a6",
+      "translation": "Zamislite hipotetsku maloprodajnu kutiju dimenzija 18 x 15 x 14 centimetara. Vanjska kutija za otpremu mora biti veća ako se prostor koristi za zaštitu originalnog kartona. Unos maloprodajnih dimenzija u usporedbu ruta umanjio bi taj scenarij. Nema potrebe izmišljati standardnu naknadu za svaki paket. Označite sliku kao nepoznatu dok ne dobijete vjerodostojnu vanjsku veličinu i isprobajte nekoliko jasno označenih mogućnosti ako vam je potreban rani proračun. Koristite stvarna pravila naplate prikazana za svaku rutu umjesto da pretpostavljate da se jedna formula za volumen primjenjuje svugdje."
+    },
+    {
+      "source": "Before authorizing disposal of any original packing, ask what the components do. A fitted insert might keep the cup from moving, while a decorative sleeve merely improves presentation. A retail carton might be part of a gift you intend to give. Another carton might be damaged already or unsuitable for the next journey. Photograph the item and existing packaging together, then decide whether you need protection, presentation, a record for an after-sales inquiry or all three. Removing a piece is much easier than restoring it.",
+      "source_sha256": "05f0d202ae626391b253db32bb40908b84dd64c4d5ba1ef2cc21724a52737ce3",
+      "raw_target_sha256": "dafe9dc8d76a0c647d829b6b7230ae2efcefd97bcc545aeb63ca98fba9929dae",
+      "translation": "Prije nego što odobrite odlaganje bilo kojeg originalnog pakiranja, pitajte što komponente rade. Prilagođeni umetak može spriječiti pomicanje šalice, dok ukrasni vanjski omot samo poboljšava prezentaciju. Maloprodajna kutija može biti dio poklona koji namjeravate dati. Druga kutija možda je već oštećena ili neprikladna za sljedeće putovanje. Fotografirajte stavku i postojeće pakiranje zajedno, a zatim odlučite trebate li zaštitu, prezentaciju, zapis za upit nakon prodaje ili sve tri. Ukloniti komad je mnogo lakše nego ga obnoviti."
+    },
+    {
+      "source": "A request to “remove all boxes and pack safely” can contain conflicting intentions. If the fitted insert is the only feature that supports a fragile handle, stripping it out solely to reduce volume may work against your priority. Describe the functional requirement instead. For example: “Please confirm whether the cup can remain supported in its fitted insert and whether the outer retail sleeve can be omitted without exposing the handle.” Ask about available services and any return implications before authorizing the change. The warehouse can respond more usefully to a concrete arrangement than a general request for maximum safety.",
+      "source_sha256": "34ff00dee9e5eec43115c2865dd44e602f0bfe21df8fa8289cb2550882ead402",
+      "raw_target_sha256": "e4f9291c005fb4938f85ef4819bc9e34372fd0554239a21c6cb9e60b2cbfb3ca",
+      "translation": "Zahtjev za \"uklanjanjem svih kutija i sigurnim pakiranjem\" može sadržavati proturječne namjere. Ako je ugrađeni umetak jedina značajka koja podržava krhku ručku, skidanje samo radi smanjenja volumena može raditi protiv vašeg prioriteta. Umjesto toga, opišite funkcionalni zahtjev. Na primjer: „Potvrdite može li šalica ostati podržana u ugrađenom umetku i može li se vanjski omot prodajne ambalaže izostaviti bez izlaganja drške.“ Pitajte o dostupnim uslugama i svim posljedicama povrata prije odobrenja promjene. Skladište može korisnije odgovoriti na konkretan aranžman nego na opći zahtjev za maksimalnom sigurnošću."
     }
   ]
 }

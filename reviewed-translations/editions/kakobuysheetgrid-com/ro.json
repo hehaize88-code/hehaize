@@ -3,9 +3,9 @@
   "locale": "ro",
   "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
   "raw_dictionary_sha256": "b5361c0fc6907433e67a5ab4e53730b69184115925511a8011a0aee7a265a5ee",
-  "effective_dictionary_sha256": "82da516516d6984d3988f0f59f838c23646295760f76cd23b7060cb013cb56e2",
+  "effective_dictionary_sha256": "7225ce5be9277e0629f8da45915cd967a06fa5ff4e15595d9f18f81bff0fcbee",
   "checked_entries": 317,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately. All 21 FAQ question/answer pairs were additionally checked with independent back-translation and cross-language semantic comparison, with targeted revisions. The full localized text was screened for packaging, clothing, measurement and commercial terminology.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -201,6 +201,12 @@
       "source_sha256": "5b834045dc919c6464069e52e2140285117ff6e987acefb762ebf90156996be2",
       "raw_target_sha256": "d527a809e50552987b472c420a56dbb3e43ec96572752b754308c4087e2f04c0",
       "translation": "Cum înregistrez un produs primit la schimb?"
+    },
+    {
+      "source": "Specify the purpose. A neckline size label shows the marked size; a care label may provide composition or care instructions. Ask for a full view in context and a close-up with legible text.",
+      "source_sha256": "9fd339ea163be9a23fc63aa66ac318f34f3576f42dc0e0422c207d9a5fed3ef4",
+      "raw_target_sha256": "d44daf992d3f4ba435f3f588d6c03d050b7ad1b2e48334d0a515cdbf8c55d6c7",
+      "translation": "Precizați ce doriți să verificați. Eticheta de la ceafă poate arăta mărimea declarată a hainei, iar eticheta de întreținere poate indica materialele și instrucțiunile de spălare. Cereți o imagine de ansamblu care arată poziția etichetei și un prim-plan cu text lizibil."
     }
   ]
 }

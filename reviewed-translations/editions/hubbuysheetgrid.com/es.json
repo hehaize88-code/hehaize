@@ -3,9 +3,9 @@
   "locale": "es",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "f5f813b72eb3cff901b881de12163301e68cbf523e07d7074183fa9a39d58590",
-  "effective_dictionary_sha256": "7cd1cae2572a1d037e15f230bfdf115b27d1d5d4a5e6fb05874631af17ed62c4",
+  "effective_dictionary_sha256": "653b2887aa1d3ee5b461f8de5423fb62720e19cf114f2ac1680cf44e509f2614",
   "checked_entries": 326,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately. All 21 FAQ question/answer pairs were additionally checked with independent back-translation and cross-language semantic comparison, with targeted revisions. The full localized text was screened for packaging, clothing, measurement and commercial terminology. All passages containing numeric examples were independently back-translated and screened; discrepancies in amounts, units, merchandise, charge scope and price quotations were checked in the actual source and target.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -279,6 +279,36 @@
       "source_sha256": "536b8b79fc83da8498e787cdf8d8ed4a9f798a2b9e0105b754be105d333bddd8",
       "raw_target_sha256": "cd9d6587b5ad14d1c85707b810198aeb61eab481d3f949157c1b1702a8642e62",
       "translation": "Solo si se colocan los tres artículos en fila, uno a continuación de otro en sentido longitudinal. Mida el conjunto por fuera, deje espacio para protegerlo y confirme las medidas una vez embalado."
+    },
+    {
+      "source": "Where does a seller discount belong in the budget?",
+      "source_sha256": "cebe05093314ad346885d87aaa8471de6b705272e99a1571a0fc5590ed123408",
+      "raw_target_sha256": "b637b1db7283ef96efdd5d728578c08fae2f1e4cca9178e1eaa5791d09b19c78",
+      "translation": "¿En qué partida del presupuesto anoto un descuento del vendedor?"
+    },
+    {
+      "source": "Record it beside the purchase to which it applies. Keep any outbound parcel discount separate, and check the conditions before subtracting a promotion from a planning estimate.",
+      "source_sha256": "c9d01427f5a1f5d28088f5b73e5bd94f83db45067c85ed48370f39a497afb212",
+      "raw_target_sha256": "7fcdd914d42ab29a3527d8bd82ead122b88a0097e1730a52ebcfb200bd16baea",
+      "translation": "Anótelo junto a la compra a la que se aplica. Registre por separado cualquier descuento del envío del paquete desde el almacén. Compruebe los requisitos de la promoción antes de restarla de una estimación."
+    },
+    {
+      "source": "If the cap is cancelled, avoid immediately subtracting 42 from the old total and treating the result as settled. Check the refund statement for the product amount and any domestic adjustment. The original allocation may now describe goods that never travelled together. Keep the original order and add a dated credit row, then calculate the remaining cost from the surviving items. Ask for clarification with the purchase reference if the domestic charge has no corresponding adjustment explanation.",
+      "source_sha256": "c3a8b7ab92509d5424e46381383e6e99391ff4e40466eb6b974124c35b573907",
+      "raw_target_sha256": "523e957bed02a64105d0673f5d8fb907e68bb811a116f8b208f2821efa3a3101",
+      "translation": "Si se cancela la gorra, no dé la cuenta por cerrada con solo restar 42 del total anterior. Revise en el comprobante de reembolso el importe del artículo y cualquier ajuste del envío nacional. El reparto inicial puede incluir productos que finalmente no viajaron juntos. Conserve la orden original, añada el abono en una línea con su fecha y calcule el coste de los artículos restantes. Si el porte no está explicado, consulte con la referencia de compra."
+    },
+    {
+      "source": "For example, assume the selected medium shirt costs 72 yuan, the large costs 76 and the two-piece set costs 130. Selecting two medium shirts and one set costs 274 before delivery. Accidentally using the 72-yuan shirt price for the set gives 216. The 58-yuan difference comes from selecting the wrong unit, not from a hidden freight charge. Keeping pack type, option, unit price and quantity in separate columns makes the error visible.",
+      "source_sha256": "e693a04247cb69da69145d2095f6229501229efe4c4a154929e716ea691d8378",
+      "raw_target_sha256": "d974f177ccef3c2e78f86548eda00325e23794b9c6f508a71f2ff0f97365603d",
+      "translation": "En el ejemplo, la camisa M cuesta 72 yuanes, la L cuesta 76 y el conjunto de dos piezas cuesta 130. Dos camisas M y un conjunto suman 274 antes del transporte. Si atribuye al conjunto los 72 de la camisa, obtendrá 216. La diferencia de 58 se debe a la unidad de venta equivocada. Separe tipo de paquete, variante, precio unitario y cantidad en columnas."
+    },
+    {
+      "source": "Take the example of two medium shirts and a set. If the seller confirms only one medium shirt, the original 274 no longer describes the goods available. One shirt at 72 plus the set at 130 gives a merchandise total of 202. Check whether a quantity threshold, domestic delivery condition or discount has changed as well. A cancellation can affect more than the removed unit if the promotion depended on the original basket.",
+      "source_sha256": "3494235e91bdc6cd07e43652ea5d572b4d6a899a65c0773c1026ba361e7c36b0",
+      "raw_target_sha256": "54e321cb973fd849f1209986e899fa2e6ea7fc4eb0cc6a963b4add6b46d0e283",
+      "translation": "Si el vendedor confirma solo una de las dos camisas M, el importe inicial de 274 ya no representa la mercancía disponible. Una camisa de 72 más el conjunto de 130 suman 202. Revise los umbrales de cantidad, las condiciones del envío nacional y el descuento: al cancelar una unidad puede cambiar una promoción que dependía de toda la cesta."
     }
   ]
 }

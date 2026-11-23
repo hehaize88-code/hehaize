@@ -3,9 +3,9 @@
   "locale": "el",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "e595a800f1694bca78304b24327ffc5c868d28e649a73c44ee6a83f7bd8eb038",
-  "effective_dictionary_sha256": "0b6c92b30e6da87e0f431a4d326592feb0c884313537e26ad8bd60e0b98c3dc3",
+  "effective_dictionary_sha256": "45b9271ce41827e636a1edd8615ebf1b10b5a3aca3f8b22107dd202b94f19f89",
   "checked_entries": 326,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately. All 21 FAQ question/answer pairs were additionally checked with independent back-translation and cross-language semantic comparison, with targeted revisions. The full localized text was screened for packaging, clothing, measurement and commercial terminology. All passages containing numeric examples were independently back-translated and screened; discrepancies in amounts, units, merchandise, charge scope and price quotations were checked in the actual source and target.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -131,7 +131,7 @@
       "issue": "quantity unit or currency changed",
       "source_sha256": "e693a04247cb69da69145d2095f6229501229efe4c4a154929e716ea691d8378",
       "raw_target_sha256": "1c7ba254d76c5d6a5f6be2a58d2b111f21a4b4e455ac1f48df25f4e00e1f1e92",
-      "resolution": "The M/L and two-piece options preserve 72, 76 and 130, giving 274 or 216 and the 58-yuan difference."
+      "resolution": "corrected translation"
     },
     {
       "issue": "quantity unit or currency changed",
@@ -663,6 +663,78 @@
       "source_sha256": "536b8b79fc83da8498e787cdf8d8ed4a9f798a2b9e0105b754be105d333bddd8",
       "raw_target_sha256": "b116e06d3368b209ffbefbfe9d0fffd08385adf3ab8269e32f25525ab6498cec",
       "translation": "Μόνο αν τα τρία αντικείμενα τοποθετηθούν στη σειρά κατά μήκος. Μετρήστε τις συνολικές εξωτερικές διαστάσεις της διάταξης, αφήστε χώρο για προστασία και επιβεβαιώστε τις τελικές μετρήσεις μετά τη συσκευασία."
+    },
+    {
+      "source": "Where does a seller discount belong in the budget?",
+      "source_sha256": "cebe05093314ad346885d87aaa8471de6b705272e99a1571a0fc5590ed123408",
+      "raw_target_sha256": "0b88025c015fc5851569e69c930eb38b1b05c8bd0fb2822f0cbf7c9890adfae7",
+      "translation": "Πού καταχωρώ στον προϋπολογισμό την έκπτωση του πωλητή;"
+    },
+    {
+      "source": "Record it beside the purchase to which it applies. Keep any outbound parcel discount separate, and check the conditions before subtracting a promotion from a planning estimate.",
+      "source_sha256": "c9d01427f5a1f5d28088f5b73e5bd94f83db45067c85ed48370f39a497afb212",
+      "raw_target_sha256": "010ec9009798e3e930d3ee2e2fa875132630eafdff6c2b748d99bd3d74befb50",
+      "translation": "Καταχωρίστε τη δίπλα στην αγορά την οποία αφορά. Κρατήστε χωριστά τυχόν έκπτωση στην αποστολή του δέματος από την αποθήκη. Ελέγξτε τους όρους πριν αφαιρέσετε μια προωθητική έκπτωση από την εκτίμηση κόστους."
+    },
+    {
+      "source": "If the cap is cancelled, avoid immediately subtracting 42 from the old total and treating the result as settled. Check the refund statement for the product amount and any domestic adjustment. The original allocation may now describe goods that never travelled together. Keep the original order and add a dated credit row, then calculate the remaining cost from the surviving items. Ask for clarification with the purchase reference if the domestic charge has no corresponding adjustment explanation.",
+      "source_sha256": "c3a8b7ab92509d5424e46381383e6e99391ff4e40466eb6b974124c35b573907",
+      "raw_target_sha256": "dc96e0d44d534c66ca8b921f94d01808565d1ff94a807bb956351b6e036c492a",
+      "translation": "Αν ακυρωθεί το καπέλο, μην αφαιρέσετε απλώς 42 από το παλιό σύνολο. Ελέγξτε στο παραστατικό επιστροφής το ποσό του προϊόντος και τυχόν προσαρμογή των εγχώριων μεταφορικών. Ο αρχικός επιμερισμός μπορεί να αφορά είδη που δεν ταξίδεψαν τελικά μαζί. Κρατήστε την αρχική παραγγελία, προσθέστε χωριστή χρονολογημένη πίστωση και υπολογίστε το κόστος των ειδών που απέμειναν. Αν η χρέωση μεταφοράς δεν εξηγείται, ρωτήστε δίνοντας τον αριθμό αγοράς."
+    },
+    {
+      "source": "Read an adjustment without erasing the original quote",
+      "source_sha256": "e0936a2d0afd23a83899a9b5f9612d756693ae1c1ddbda43aea31d5385bab116",
+      "raw_target_sha256": "92097bba259a16c80c3d5a1bd01e503e4ada788cef3803d6310e728a98496e01",
+      "translation": "Πώς καταχωρίζετε μια προσαρμογή χωρίς να σβήσετε την αρχική προσφορά"
+    },
+    {
+      "source": "Keep the old quote and add a revised quote under it. If the larger amount was already paid, track the credit process separately from the recalculated cost. Do not enter 202 as the only payment when the account shows 274 collected and a credit still pending. The two records answer different questions: what the retained merchandise should cost, and which funds have actually moved. Keep the same line names so that a friend reviewing the change can tell which item became unavailable.",
+      "source_sha256": "d934b1be832ea7a829823f1f235cb216308d04f4d58e293696e5f10aa1b5a6b9",
+      "raw_target_sha256": "4068de1d4d91d61d673c98294c04dd7a7c4b977d79c3adcab3c9a30b33ac615a",
+      "translation": "Κρατήστε την παλιά προσφορά και γράψτε από κάτω τη νέα. Αν έχει ήδη πληρωθεί το μεγαλύτερο ποσό, παρακολουθήστε χωριστά την πίστωση. Μην εμφανίσετε τα 202 ως μοναδική πληρωμή όταν ο λογαριασμός δείχνει ότι εισπράχθηκαν 274 και η επιστροφή εκκρεμεί. Το κόστος των ειδών που κρατάτε διαφέρει από τα χρήματα που έχουν ήδη κινηθεί. Διατηρήστε τις ίδιες ονομασίες στις γραμμές ώστε να φαίνεται ποιο είδος έπαψε να είναι διαθέσιμο."
+    },
+    {
+      "source": "A catalogue conversion helps with browsing. A merchant quotation shows an amount offered in a particular currency. A card statement shows what was actually posted. Write which of those three you have beside every number. Do not replace the source currency when you translate a quote into your home currency. Keep the original information available so you can recalculate later without relying on a rounded display.",
+      "source_sha256": "db352828918454dfdaef6d19fe36e7227f04f4c8d896efbdd387c93fd87b9c0e",
+      "raw_target_sha256": "b01f903cc439e12430482a5b537092c01d6b37951786f69cbfa36fea80d4db73",
+      "translation": "Η ενδεικτική μετατροπή στον κατάλογο βοηθά κατά την αναζήτηση. Η προσφορά του πωλητή δίνει μια τιμή σε συγκεκριμένο νόμισμα, ενώ η κίνηση της κάρτας δείχνει τι χρεώθηκε τελικά. Σημειώστε δίπλα σε κάθε ποσό από πού προέρχεται. Κρατήστε το αρχικό νόμισμα και το ποσό όταν υπολογίζετε την ισοδυναμία στο δικό σας νόμισμα, για να μπορείτε να επαναλάβετε τον υπολογισμό χωρίς τη στρογγυλοποίηση της οθόνης."
+    },
+    {
+      "source": "Suppose quote A covers the same merchandise and domestic delivery as quote B, but only A includes protective packing. Compare the contents before worrying about exchange-rate rounding. Either add the confirmed packing amount to B or label the quotes as different offers. If a missing charge has no confirmed amount, leave a gap instead of filling it with an attractive guess. A conversion cannot repair two quotes that describe different services.",
+      "source_sha256": "33bb436a69ded2e9ee3771159ed02b69551edba9744747c51ac8ee084fcc54fa",
+      "raw_target_sha256": "23168a60a7eaaacbdb343478c5d46803748bd59ba7dbfc3eb3d64b49772c8f3d",
+      "translation": "Σκεφτείτε δύο προσφορές Α και Β για τα ίδια προϊόντα και την ίδια εγχώρια μεταφορά. Μόνο η Α περιλαμβάνει προστατευτική συσκευασία. Συγκρίνετε πρώτα τις υπηρεσίες και μετά τη στρογγυλοποίηση της ισοτιμίας. Προσθέστε στη Β την επιβεβαιωμένη χρέωση συσκευασίας ή σημειώστε ότι πρόκειται για διαφορετικές προσφορές. Αν το ποσό λείπει, αφήστε το κενό. Η μετατροπή συναλλάγματος δεν εξισώνει ανόμοιες υπηρεσίες."
+    },
+    {
+      "source": "Take another fictional quote with a combined option at 214. The smaller boxes cost 112 and 94, for a total of 206, and their protective needs are already included. This time the arithmetic favours splitting by eight. Before deciding, verify whether there are additional services charged separately per parcel or any destination-specific conditions that were absent from the recorded totals. Two boxes can produce two delivery events and two references to monitor.",
+      "source_sha256": "239058dbeb8f1615ded6fedec96d428f4b199ca25a6647a2ec624d5e2cf05558",
+      "raw_target_sha256": "ae1de1a3fee85ff442da73be4d925f4b33706937964fe77d33be7c04496df527",
+      "translation": "Σε άλλο υποθετικό παράδειγμα, η κοινή αποστολή κοστίζει 214. Τα δύο μικρότερα δέματα κοστίζουν 112 και 94, δηλαδή 206 συνολικά, με την αναγκαία προστασία ήδη μέσα στην τιμή. Εδώ η χωριστή αποστολή είναι φθηνότερη κατά οκτώ. Ελέγξτε τυχόν πρόσθετες υπηρεσίες που χρεώνονται ανά δέμα και ειδικούς όρους προορισμού. Δύο δέματα μπορεί να σημαίνουν δύο παραδόσεις και δύο αριθμούς για παρακολούθηση."
+    },
+    {
+      "source": "Suppose each smaller box also needs an explicitly quoted service costing five, while the combined option already includes it. The separate total becomes 216, two more than the combined quote. Such a narrow difference may be less important than arrival timing or how easily a recipient can receive two packages. Record the non-price reason for any choice so that a later invoice comparison is not mistaken for proof that the earlier decision was irrational.",
+      "source_sha256": "2667bb99764137d2dd5c056559d7b304dd88b253c59df6a378cdbf8725616d50",
+      "raw_target_sha256": "6a4118507382571cc749317bfc135e657d6445440eb4189e9a22b4b0420370f2",
+      "translation": "Αν κάθε μικρό δέμα χρειάζεται επιπλέον υπηρεσία με επιβεβαιωμένη χρέωση πέντε, ενώ η κοινή λύση την περιλαμβάνει, η χωριστή αποστολή φτάνει τα 216, δύο παραπάνω από την κοινή προσφορά. Μια τόσο μικρή διαφορά μπορεί να μετρά λιγότερο από τον χρόνο παράδοσης ή την ευκολία παραλαβής δύο δεμάτων. Καταγράψτε και το κριτήριο εκτός τιμής για να μπορείτε αργότερα να εξηγήσετε την απόφαση."
+    },
+    {
+      "source": "Turn one unknown into one support question. Instead of asking whether the whole estimate is correct, specify that you entered a named destination and measured parcel, received a quote for a particular route, and need to know whether the selected packing service is already inside the displayed total. Save the answer with the date and the quote version. Avoid applying a reply about one route to a different service with different terms.",
+      "source_sha256": "741207c84e0bd3ef447ae75a2145fd7d36c817a82eb76cf43eb36c8e464ad48a",
+      "raw_target_sha256": "17916c02fb4fc3d51369088a7a8e7f0eb51df79c45a080404dce9933c3d9305a",
+      "translation": "Μετατρέψτε το άγνωστο στοιχείο σε συγκεκριμένη ερώτηση υποστήριξης. Αναφέρετε τον προορισμό, τις μετρημένες διαστάσεις του δέματος και τη διαδρομή της προσφοράς. Ρωτήστε αν η επιλεγμένη υπηρεσία συσκευασίας περιλαμβάνεται στο συνολικό ποσό. Κρατήστε την απάντηση μαζί με την ημερομηνία και την έκδοση της προσφοράς. Μην εφαρμόσετε μια απάντηση για συγκεκριμένη διαδρομή σε άλλη υπηρεσία με διαφορετικούς όρους."
+    },
+    {
+      "source": "For example, assume the selected medium shirt costs 72 yuan, the large costs 76 and the two-piece set costs 130. Selecting two medium shirts and one set costs 274 before delivery. Accidentally using the 72-yuan shirt price for the set gives 216. The 58-yuan difference comes from selecting the wrong unit, not from a hidden freight charge. Keeping pack type, option, unit price and quantity in separate columns makes the error visible.",
+      "source_sha256": "e693a04247cb69da69145d2095f6229501229efe4c4a154929e716ea691d8378",
+      "raw_target_sha256": "1c7ba254d76c5d6a5f6be2a58d2b111f21a4b4e455ac1f48df25f4e00e1f1e92",
+      "translation": "Στο παράδειγμα το πουκάμισο σε M κοστίζει 72 γιουάν, σε L 76 και το σετ δύο τεμαχίων 130. Δύο πουκάμισα M και ένα σετ κοστίζουν 274 πριν από τα μεταφορικά. Αν χρεώσετε κατά λάθος το σετ με την τιμή 72 του πουκαμίσου, βγαίνουν 216. Η διαφορά των 58 οφείλεται στη λάθος μονάδα πώλησης. Καταχωρίστε χωριστά είδος πακέτου, παραλλαγή, τιμή μονάδας και ποσότητα."
+    },
+    {
+      "source": "Take the example of two medium shirts and a set. If the seller confirms only one medium shirt, the original 274 no longer describes the goods available. One shirt at 72 plus the set at 130 gives a merchandise total of 202. Check whether a quantity threshold, domestic delivery condition or discount has changed as well. A cancellation can affect more than the removed unit if the promotion depended on the original basket.",
+      "source_sha256": "3494235e91bdc6cd07e43652ea5d572b4d6a899a65c0773c1026ba361e7c36b0",
+      "raw_target_sha256": "3c47d1f7e2c0e51bb1fa040c22477efc97bbf95b0ae8e2e65134e01f4a1f7b45",
+      "translation": "Αν ο πωλητής επιβεβαιώσει μόνο ένα από τα δύο πουκάμισα M, το αρχικό ποσό 274 δεν αντιστοιχεί πια στα διαθέσιμα είδη. Ένα πουκάμισο στα 72 και το σετ στα 130 δίνουν σύνολο προϊόντων 202. Ελέγξτε αν άλλαξαν το όριο ποσότητας, η εγχώρια παράδοση ή η έκπτωση. Η ακύρωση μπορεί να επηρεάζει και την προσφορά για το αρχικό καλάθι."
     }
   ]
 }

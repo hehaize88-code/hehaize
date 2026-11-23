@@ -3,9 +3,9 @@
   "locale": "es",
   "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
   "raw_dictionary_sha256": "f6db19896919b90edb57a1dd85a2e249ecbbde609963654ab3f9f3c5734cc490",
-  "effective_dictionary_sha256": "607882300d9a4c0719b4579d78c253029fd5bc7a19e8d3b2658047b49ff4edbc",
+  "effective_dictionary_sha256": "bfb2cd3f571c5474b188c3ab238923731ddc1239ef49d6d77f61639511011332",
   "checked_entries": 317,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately. All 21 FAQ question/answer pairs were additionally checked with independent back-translation and cross-language semantic comparison, with targeted revisions. The full localized text was screened for packaging, clothing, measurement and commercial terminology.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -207,6 +207,12 @@
       "source_sha256": "5b834045dc919c6464069e52e2140285117ff6e987acefb762ebf90156996be2",
       "raw_target_sha256": "7f6f1cc89c477b8aa06deccd571feb10ab93f9680f64473b67f92cc587bab61e",
       "translation": "¿Cómo registro el artículo que recibo como reemplazo?"
+    },
+    {
+      "source": "Specify the purpose. A neckline size label shows the marked size; a care label may provide composition or care instructions. Ask for a full view in context and a close-up with legible text.",
+      "source_sha256": "9fd339ea163be9a23fc63aa66ac318f34f3576f42dc0e0422c207d9a5fed3ef4",
+      "raw_target_sha256": "82245d1b0f953ecc8c897f33d19515060b207dd9cdda6634ed8af4edf6d3561f",
+      "translation": "Explique qué necesita comprobar. La etiqueta en la nuca puede indicar la talla de la prenda, mientras que la de cuidado puede indicar la composición y las instrucciones de lavado. Pida una foto general que muestre su ubicación y un primer plano con el texto legible."
     }
   ]
 }

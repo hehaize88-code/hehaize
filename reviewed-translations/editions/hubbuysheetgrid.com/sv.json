@@ -3,9 +3,9 @@
   "locale": "sv",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "a728ab33cfe973246e20720cd8738790fd17eb62b1964b97f63a0b6a7ef0d35d",
-  "effective_dictionary_sha256": "3f566c509924446085ae3d19922ef3ea4f39a89164fb2547a1bf519c0a0019ac",
+  "effective_dictionary_sha256": "4e16c9f1a9a550c74c94bbd298b84e4414cbd5226f4d7fbf1285a73e9cbbcfe1",
   "checked_entries": 326,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately. All 21 FAQ question/answer pairs were additionally checked with independent back-translation and cross-language semantic comparison, with targeted revisions. The full localized text was screened for packaging, clothing, measurement and commercial terminology. All passages containing numeric examples were independently back-translated and screened; discrepancies in amounts, units, merchandise, charge scope and price quotations were checked in the actual source and target.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -249,6 +249,36 @@
       "source_sha256": "baa564c8afd6b6f139c54ca948290d096026e69c37baa603560efd436cf90c7c",
       "raw_target_sha256": "9dc10039d727a2e9926def291b1fd0ecd40aebace2d2dc0ce667c2c9008a3ca6",
       "translation": "Spara referenserna för båda utgående paketen, deras respektive varulistor och de slutliga kostnadsspecifikationerna. Markera den rad du jämför på varje underlag så att frågan kan kopplas till rätt paket."
+    },
+    {
+      "source": "Where does a seller discount belong in the budget?",
+      "source_sha256": "cebe05093314ad346885d87aaa8471de6b705272e99a1571a0fc5590ed123408",
+      "raw_target_sha256": "79426831d9fc42ae0793bc953152026e8dd59513ad8781d5dedb6f9b583c0cf3",
+      "translation": "Var i budgeten ska jag lägga in säljarens rabatt?"
+    },
+    {
+      "source": "Record it beside the purchase to which it applies. Keep any outbound parcel discount separate, and check the conditions before subtracting a promotion from a planning estimate.",
+      "source_sha256": "c9d01427f5a1f5d28088f5b73e5bd94f83db45067c85ed48370f39a497afb212",
+      "raw_target_sha256": "d435d293ae936a35ca39024d3cb9d9ea63472b05d6b0afba28ef9a290c5756f9",
+      "translation": "Registrera den vid det köp den gäller. Håll eventuell rabatt på den senare frakten från lagret åtskild. Kontrollera kampanjvillkoren innan du drar av en rabatt från den beräknade kostnaden."
+    },
+    {
+      "source": "If the cap is cancelled, avoid immediately subtracting 42 from the old total and treating the result as settled. Check the refund statement for the product amount and any domestic adjustment. The original allocation may now describe goods that never travelled together. Keep the original order and add a dated credit row, then calculate the remaining cost from the surviving items. Ask for clarification with the purchase reference if the domestic charge has no corresponding adjustment explanation.",
+      "source_sha256": "c3a8b7ab92509d5424e46381383e6e99391ff4e40466eb6b974124c35b573907",
+      "raw_target_sha256": "74b97b0432244092cb557850ef2156a342bcc72de9ec03c8bc427bfbf75f7dbf",
+      "translation": "Om kepsen avbeställs ska du inte betrakta saken som slutreglerad bara genom att dra av 42 från det gamla totalbeloppet. Kontrollera varubeloppet och eventuell justering av inrikesfrakten på återbetalningsunderlaget. Den gamla fördelningen kan gälla varor som aldrig skickades tillsammans. Behåll den ursprungliga beställningen, lägg till en daterad krediteringsrad och räkna om kostnaden för de kvarvarande varorna. Be om ett förtydligande med köpreferensen om frakten inte förklaras."
+    },
+    {
+      "source": "For example, assume the selected medium shirt costs 72 yuan, the large costs 76 and the two-piece set costs 130. Selecting two medium shirts and one set costs 274 before delivery. Accidentally using the 72-yuan shirt price for the set gives 216. The 58-yuan difference comes from selecting the wrong unit, not from a hidden freight charge. Keeping pack type, option, unit price and quantity in separate columns makes the error visible.",
+      "source_sha256": "e693a04247cb69da69145d2095f6229501229efe4c4a154929e716ea691d8378",
+      "raw_target_sha256": "693e70aec5346c89fb0e0c94655f98b89e8bd491b7128e16402229b059f07eb3",
+      "translation": "I exemplet kostar skjortan i M 72 yuan, skjortan i L 76 och tvådelarssetet 130. Två skjortor i M och ett set kostar 274 före frakt. Om setet av misstag får skjortans pris 72 blir summan 216. Skillnaden på 58 beror på fel försäljningsenhet. Separata kolumner för förpackning, variant, styckpris och antal visar felet."
+    },
+    {
+      "source": "Take the example of two medium shirts and a set. If the seller confirms only one medium shirt, the original 274 no longer describes the goods available. One shirt at 72 plus the set at 130 gives a merchandise total of 202. Check whether a quantity threshold, domestic delivery condition or discount has changed as well. A cancellation can affect more than the removed unit if the promotion depended on the original basket.",
+      "source_sha256": "3494235e91bdc6cd07e43652ea5d572b4d6a899a65c0773c1026ba361e7c36b0",
+      "raw_target_sha256": "269d71ba719ee2e32a1cfff2ba95d523ff2a4b5ef677550b704fb05232cedf50",
+      "translation": "Om säljaren bara bekräftar en av de två skjortorna i M motsvarar ursprungliga 274 inte längre de tillgängliga varorna. En skjorta för 72 och setet för 130 ger ett varuvärde på 202. Kontrollera också mängdgränser, villkoren för inrikesleverans och rabatten. En avbokning kan påverka en kampanj som gällde hela den ursprungliga varukorgen."
     }
   ]
 }

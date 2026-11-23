@@ -3,9 +3,9 @@
   "locale": "pl",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "8a1ba23c059510886a7034f10bd338543d0af7d2d9b647876841fa0f03e5c004",
-  "effective_dictionary_sha256": "6e661f120511f76136abca87b7da01e770504f6f467f27a1bebbf9cef0b05684",
+  "effective_dictionary_sha256": "bf50ae34284799164d64fb36a9303db6ff59f7f0f9a8c9dc6500502239758755",
   "checked_entries": 326,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately. All 21 FAQ question/answer pairs were additionally checked with independent back-translation and cross-language semantic comparison, with targeted revisions. The full localized text was screened for packaging, clothing, measurement and commercial terminology. All passages containing numeric examples were independently back-translated and screened; discrepancies in amounts, units, merchandise, charge scope and price quotations were checked in the actual source and target.",
   "reviewed_flags": [
     {
       "issue": "quantity unit or currency changed",
@@ -369,6 +369,36 @@
       "source_sha256": "53c93344f28c0396927cd3c658239f85333cc3467522fe9d1ce5963f1c7c50fd",
       "raw_target_sha256": "61e77e466d6b3b0fb38b5f37edb6d4461e0f6088d8225c4826c444c5b54296ea",
       "translation": "Sprawdź, czy usługa obejmuje miejsce docelowe, czy paczka mieści się w limitach rozmiaru i czy przewoźnik przyjmie jej konkretną zawartość. Porównuj terminy i usługi w cenie wyłącznie dla tras dostępnych dla tej paczki."
+    },
+    {
+      "source": "Where does a seller discount belong in the budget?",
+      "source_sha256": "cebe05093314ad346885d87aaa8471de6b705272e99a1571a0fc5590ed123408",
+      "raw_target_sha256": "79cbffb2fead41fa58f3bd515a9a211294411a12c360b0436b45427b8c493674",
+      "translation": "Gdzie w budżecie zapisać rabat sprzedawcy?"
+    },
+    {
+      "source": "Record it beside the purchase to which it applies. Keep any outbound parcel discount separate, and check the conditions before subtracting a promotion from a planning estimate.",
+      "source_sha256": "c9d01427f5a1f5d28088f5b73e5bd94f83db45067c85ed48370f39a497afb212",
+      "raw_target_sha256": "c9e0a24dc6d1407eadac69bbb6d90d2da5c753dd5b1bddaae67fba7ac7044d14",
+      "translation": "Zapisz go przy zakupie, którego dotyczy. Osobno ujmij ewentualny rabat na późniejszą wysyłkę paczki z magazynu. Przed odjęciem promocji od szacowanego kosztu sprawdź jej warunki."
+    },
+    {
+      "source": "If the cap is cancelled, avoid immediately subtracting 42 from the old total and treating the result as settled. Check the refund statement for the product amount and any domestic adjustment. The original allocation may now describe goods that never travelled together. Keep the original order and add a dated credit row, then calculate the remaining cost from the surviving items. Ask for clarification with the purchase reference if the domestic charge has no corresponding adjustment explanation.",
+      "source_sha256": "c3a8b7ab92509d5424e46381383e6e99391ff4e40466eb6b974124c35b573907",
+      "raw_target_sha256": "f8be089ff81488329594d68d6963c0c290b166520869f3abb13152adc3354286",
+      "translation": "Jeśli anulowano zamówienie czapki, nie uznawaj rozliczenia za zamknięte po odjęciu 42 od starej sumy. Sprawdź na potwierdzeniu zwrotu wartość produktu i ewentualną korektę dostawy krajowej. Pierwotny podział mógł dotyczyć rzeczy, które ostatecznie nie jechały razem. Zachowaj pierwotne zamówienie, dopisz zwrot z datą w osobnym wierszu i przelicz koszt pozostałych artykułów. Jeśli opłata za dostawę jest niejasna, zapytaj, podając numer zakupu."
+    },
+    {
+      "source": "For example, assume the selected medium shirt costs 72 yuan, the large costs 76 and the two-piece set costs 130. Selecting two medium shirts and one set costs 274 before delivery. Accidentally using the 72-yuan shirt price for the set gives 216. The 58-yuan difference comes from selecting the wrong unit, not from a hidden freight charge. Keeping pack type, option, unit price and quantity in separate columns makes the error visible.",
+      "source_sha256": "e693a04247cb69da69145d2095f6229501229efe4c4a154929e716ea691d8378",
+      "raw_target_sha256": "9f158b9a0441401e4f862659d47d40a7788ed75e182bd81059fc27247f9b0f1a",
+      "translation": "W przykładzie koszula M kosztuje 72 juany, koszula L 76, a dwuczęściowy komplet 130. Dwie koszule M i jeden komplet kosztują 274 przed dostawą. Wpisanie przy komplecie ceny koszuli, czyli 72, daje 216. Różnica 58 wynika z błędnej jednostki sprzedaży. Osobne kolumny dla opakowania, wariantu, ceny jednostkowej i liczby sztuk ułatwiają wykrycie błędu."
+    },
+    {
+      "source": "Take the example of two medium shirts and a set. If the seller confirms only one medium shirt, the original 274 no longer describes the goods available. One shirt at 72 plus the set at 130 gives a merchandise total of 202. Check whether a quantity threshold, domestic delivery condition or discount has changed as well. A cancellation can affect more than the removed unit if the promotion depended on the original basket.",
+      "source_sha256": "3494235e91bdc6cd07e43652ea5d572b4d6a899a65c0773c1026ba361e7c36b0",
+      "raw_target_sha256": "2ada91c3d730b8dd9e1abbc3f5c220c8d0b3ec7e50bbbb04fbe439f7ac128713",
+      "translation": "Jeśli sprzedawca potwierdzi tylko jedną z dwóch koszul M, początkowe 274 nie odpowiada już dostępnemu towarowi. Koszula za 72 i komplet za 130 dają wartość towaru 202. Sprawdź próg ilościowy, warunki dostawy krajowej i rabat. Usunięcie jednej sztuki może zmienić promocję zależną od pierwotnej zawartości koszyka."
     }
   ]
 }

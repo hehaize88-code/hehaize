@@ -3,9 +3,9 @@
   "locale": "cs",
   "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
   "raw_dictionary_sha256": "0e3493181d40be48d018fb8706799ecdf407722caba552c9c1c3c7ac21e7369a",
-  "effective_dictionary_sha256": "31eb93972bffb73a7b9d7468f05ef20b835b1ea55bb1793a6d655687de63e087",
+  "effective_dictionary_sha256": "9088a97e6463f5c60009538d46cee97a45fbf1cffa90945ceb09ed00111357c1",
   "checked_entries": 317,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately. All 21 FAQ question/answer pairs were additionally checked with independent back-translation and cross-language semantic comparison, with targeted revisions. The full localized text was screened for packaging, clothing, measurement and commercial terminology.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -225,6 +225,12 @@
       "source_sha256": "5b834045dc919c6464069e52e2140285117ff6e987acefb762ebf90156996be2",
       "raw_target_sha256": "a2dbb861ad02a06d75c3fd91bbf9f0254f25fad704f63d805d7963e983cc903b",
       "translation": "Jak zaznamenat objednávku náhradního kusu?"
+    },
+    {
+      "source": "Specify the purpose. A neckline size label shows the marked size; a care label may provide composition or care instructions. Ask for a full view in context and a close-up with legible text.",
+      "source_sha256": "9fd339ea163be9a23fc63aa66ac318f34f3576f42dc0e0422c207d9a5fed3ef4",
+      "raw_target_sha256": "310e6f0a99f2fe550400598b3e7f93c2300d7d9fb959a768c70ed21bf694524a",
+      "translation": "Upřesněte, co potřebujete zjistit. Štítek u krku může uvádět velikost oděvu, zatímco štítek s pokyny k údržbě může obsahovat složení a návod k praní. Požádejte o celkový snímek umístění štítku i detail, na kterém lze přečíst text."
     }
   ]
 }

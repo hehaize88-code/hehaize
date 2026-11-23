@@ -3,9 +3,9 @@
   "locale": "it",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "e2fdd989c385b4aeac4d15da3b49b62722ae852fb2bce7e6ff0a093ee48222bd",
-  "effective_dictionary_sha256": "4ea015016e36d36963803c19e90fde94d8f04aa6860b1336025fc3736944080f",
+  "effective_dictionary_sha256": "3cc35345c3509f6f95454166149b87e306dceeebdcccee6bfa0bb0db38c0e495",
   "checked_entries": 326,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately. All 21 FAQ question/answer pairs were additionally checked with independent back-translation and cross-language semantic comparison, with targeted revisions. The full localized text was screened for packaging, clothing, measurement and commercial terminology. All passages containing numeric examples were independently back-translated and screened; discrepancies in amounts, units, merchandise, charge scope and price quotations were checked in the actual source and target.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -231,6 +231,36 @@
       "source_sha256": "baa564c8afd6b6f139c54ca948290d096026e69c37baa603560efd436cf90c7c",
       "raw_target_sha256": "daa26b4b42364bc8b02fbd6c151fa6fb1703da83c8d1d3c53bc00f25d0ec860d",
       "translation": "Conservate i riferimenti dei due colli in uscita, gli elenchi dei rispettivi articoli e i conteggi finali degli addebiti. Segnate su ciascun documento la voce confrontata, così la domanda resta associata al collo corretto."
+    },
+    {
+      "source": "Where does a seller discount belong in the budget?",
+      "source_sha256": "cebe05093314ad346885d87aaa8471de6b705272e99a1571a0fc5590ed123408",
+      "raw_target_sha256": "f32c48d379617b178b7378a3fa4cf13c79e6720864cd3ad2cc47bbb07e10d6ef",
+      "translation": "Dove registro nel budget lo sconto del venditore?"
+    },
+    {
+      "source": "Record it beside the purchase to which it applies. Keep any outbound parcel discount separate, and check the conditions before subtracting a promotion from a planning estimate.",
+      "source_sha256": "c9d01427f5a1f5d28088f5b73e5bd94f83db45067c85ed48370f39a497afb212",
+      "raw_target_sha256": "2eba6b6600d3b0ddb7124df38afb7b614881ff42cf8068c41f6300abf8168f3b",
+      "translation": "Registratelo accanto all’acquisto a cui si applica. Tenete distinto un eventuale sconto sulla successiva spedizione del collo dal magazzino. Verificate le condizioni della promozione prima di sottrarla da una stima."
+    },
+    {
+      "source": "If the cap is cancelled, avoid immediately subtracting 42 from the old total and treating the result as settled. Check the refund statement for the product amount and any domestic adjustment. The original allocation may now describe goods that never travelled together. Keep the original order and add a dated credit row, then calculate the remaining cost from the surviving items. Ask for clarification with the purchase reference if the domestic charge has no corresponding adjustment explanation.",
+      "source_sha256": "c3a8b7ab92509d5424e46381383e6e99391ff4e40466eb6b974124c35b573907",
+      "raw_target_sha256": "26841a0473a1938501163a792ca9fd68d96a391ddaacf618427aad3abbe494c6",
+      "translation": "Se il cappellino viene annullato, non considerate chiuso il conto sottraendo semplicemente 42 dal totale precedente. Verificate nel dettaglio del rimborso l’importo della merce e l’eventuale rettifica della consegna nazionale. La ripartizione iniziale può riguardare articoli che alla fine non hanno viaggiato insieme. Conservate l’ordine originale, registrate l’accredito su una riga datata e ricalcolate il costo degli articoli rimasti. Se la spesa di consegna non è spiegata, chiedete chiarimenti indicando il riferimento d’acquisto."
+    },
+    {
+      "source": "For example, assume the selected medium shirt costs 72 yuan, the large costs 76 and the two-piece set costs 130. Selecting two medium shirts and one set costs 274 before delivery. Accidentally using the 72-yuan shirt price for the set gives 216. The 58-yuan difference comes from selecting the wrong unit, not from a hidden freight charge. Keeping pack type, option, unit price and quantity in separate columns makes the error visible.",
+      "source_sha256": "e693a04247cb69da69145d2095f6229501229efe4c4a154929e716ea691d8378",
+      "raw_target_sha256": "e6dccb20f9f91e01a170247cf301f5e6657e8c416a9fc818aab6f96e6c3e4734",
+      "translation": "Nell’esempio la camicia in M costa 72 yuan, quella in L 76 e il completo da due pezzi 130. Due camicie in M e un completo costano 274 prima della consegna. Attribuendo per errore al completo il prezzo di 72 della camicia, si ottiene 216. Lo scarto di 58 deriva dall’unità di vendita errata. Distinguete confezione, variante, prezzo unitario e quantità in colonne separate."
+    },
+    {
+      "source": "Take the example of two medium shirts and a set. If the seller confirms only one medium shirt, the original 274 no longer describes the goods available. One shirt at 72 plus the set at 130 gives a merchandise total of 202. Check whether a quantity threshold, domestic delivery condition or discount has changed as well. A cancellation can affect more than the removed unit if the promotion depended on the original basket.",
+      "source_sha256": "3494235e91bdc6cd07e43652ea5d572b4d6a899a65c0773c1026ba361e7c36b0",
+      "raw_target_sha256": "bd3e4bb48892ae0f584aa7923e1456813a5757032120661c99a281c5ce2cc942",
+      "translation": "Se il venditore conferma solo una delle due camicie in M, i 274 iniziali non descrivono più la merce disponibile. La camicia da 72 e il completo da 130 danno un totale merce di 202. Verificate eventuali soglie di quantità, le condizioni della consegna nazionale e gli sconti. La cancellazione può far venire meno una promozione legata al carrello iniziale."
     }
   ]
 }

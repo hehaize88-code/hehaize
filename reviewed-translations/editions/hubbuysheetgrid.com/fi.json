@@ -3,9 +3,9 @@
   "locale": "fi",
   "source_set_sha256": "b56123461621ebe27f73a120481cdfea927195928e7856a00a0ff50ee380b9fb",
   "raw_dictionary_sha256": "295a0596657f023d2245966d1eeafa9a48be6adf06e6f45a1a947a7ef54ea633",
-  "effective_dictionary_sha256": "0b72cd0149d76239ae0ea11ea459b0bc94e9cb50efee05d8e3a9dddcfa90fb87",
+  "effective_dictionary_sha256": "9527dc93d684e4d5b936e4d7b2e89dd6f08fea59f92558dda68ef9ea880c078d",
   "checked_entries": 326,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately. All 21 FAQ question/answer pairs were additionally checked with independent back-translation and cross-language semantic comparison, with targeted revisions. The full localized text was screened for packaging, clothing, measurement and commercial terminology. All passages containing numeric examples were independently back-translated and screened; discrepancies in amounts, units, merchandise, charge scope and price quotations were checked in the actual source and target.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -201,6 +201,36 @@
       "source_sha256": "024b7205987dcc312bafa9989bc1696bcae0fc53fe2a72be75897b569b1b9b5d",
       "raw_target_sha256": "596eb02cf27d09c57c0e570cdbaccbee41f2288c0355f7bfd4e63c6ad07930a6",
       "translation": "Kulmasuojan lisääminen tai tuotteen siirtäminen toiseen laatikkoon voi muuttaa kokoa, vaikka kokonaispaino tuskin liikkuisi. Pidä yksi päivätty mittausrekisteri jokaista järjestelyä varten. Valokuva, jossa on mittanauha laatikon ympärillä, ei pysty yksin määrittämään kolmea erillistä sivupituutta. Jos jokin luku näyttää epätodennäköiseltä, pyydä näkemään mittaus alusta loppuun ennen kuin lähetät numerot laskuriin."
+    },
+    {
+      "source": "Where does a seller discount belong in the budget?",
+      "source_sha256": "cebe05093314ad346885d87aaa8471de6b705272e99a1571a0fc5590ed123408",
+      "raw_target_sha256": "eb0b9065390a99f6ff99c0ac3ec6df5f04047537ddee30be581c6abe02c25013",
+      "translation": "Mihin myyjän alennus merkitään budjetissa?"
+    },
+    {
+      "source": "Record it beside the purchase to which it applies. Keep any outbound parcel discount separate, and check the conditions before subtracting a promotion from a planning estimate.",
+      "source_sha256": "c9d01427f5a1f5d28088f5b73e5bd94f83db45067c85ed48370f39a497afb212",
+      "raw_target_sha256": "45f6341eca47d85d73acc068b9effdc79b57d5529b7548360111cdec31b954a7",
+      "translation": "Kirjaa se siihen ostokseen, johon se kuuluu. Pidä myöhempää varastolta lähtevää pakettia koskeva postitusalennus erillään. Tarkista kampanjan ehdot ennen alennuksen vähentämistä kustannusarviosta."
+    },
+    {
+      "source": "If the cap is cancelled, avoid immediately subtracting 42 from the old total and treating the result as settled. Check the refund statement for the product amount and any domestic adjustment. The original allocation may now describe goods that never travelled together. Keep the original order and add a dated credit row, then calculate the remaining cost from the surviving items. Ask for clarification with the purchase reference if the domestic charge has no corresponding adjustment explanation.",
+      "source_sha256": "c3a8b7ab92509d5424e46381383e6e99391ff4e40466eb6b974124c35b573907",
+      "raw_target_sha256": "45ff61be35892dbbc0586e3e355bbb5fce41ff5364a067486b43361fcd94fdfe",
+      "translation": "Jos lippis perutaan, älä päätä laskelmaa vähentämällä vanhasta summasta suoraan 42. Tarkista palautustositteesta tuotteen hyvitys ja mahdollinen muutos Kiinan sisäiseen toimituskuluun. Alkuperäinen jako saattoi koskea tavaroita, joita ei lopulta lähetetty yhdessä. Säilytä alkuperäinen tilaus, merkitse hyvitys omalle päivämäärälliselle rivilleen ja laske jäljelle jäävien tuotteiden kustannus. Pyydä selvennystä ostoviitteellä, jos toimitusmaksua ei ole selitetty."
+    },
+    {
+      "source": "For example, assume the selected medium shirt costs 72 yuan, the large costs 76 and the two-piece set costs 130. Selecting two medium shirts and one set costs 274 before delivery. Accidentally using the 72-yuan shirt price for the set gives 216. The 58-yuan difference comes from selecting the wrong unit, not from a hidden freight charge. Keeping pack type, option, unit price and quantity in separate columns makes the error visible.",
+      "source_sha256": "e693a04247cb69da69145d2095f6229501229efe4c4a154929e716ea691d8378",
+      "raw_target_sha256": "402d29e2564fcfa7e289ac08daa52b1cbd7fb724ab67f8f8441ba7438521eb84",
+      "translation": "Esimerkin M-kokoinen paita maksaa 72 juania, L-kokoinen 76 ja kaksiosainen setti 130. Kaksi M-koon paitaa ja yksi setti maksavat ennen toimitusta 274. Jos setille merkitään virheellisesti paidan hinta 72, tulos on 216. Erotus 58 syntyy väärästä myyntiyksiköstä. Merkitse pakkaustyyppi, vaihtoehto, yksikköhinta ja määrä omiin sarakkeisiinsa."
+    },
+    {
+      "source": "Take the example of two medium shirts and a set. If the seller confirms only one medium shirt, the original 274 no longer describes the goods available. One shirt at 72 plus the set at 130 gives a merchandise total of 202. Check whether a quantity threshold, domestic delivery condition or discount has changed as well. A cancellation can affect more than the removed unit if the promotion depended on the original basket.",
+      "source_sha256": "3494235e91bdc6cd07e43652ea5d572b4d6a899a65c0773c1026ba361e7c36b0",
+      "raw_target_sha256": "7a558aa8ba256588bc645075cf61c147745e42963f37012bec48b7e6a2d359d4",
+      "translation": "Jos myyjä vahvistaa vain yhden kahdesta M-koon paidasta, alkuperäinen 274 ei enää vastaa saatavia tuotteita. Paita maksaa 72 ja setti 130, joten tavaroiden yhteishinta on 202. Tarkista samalla määrärajat, Kiinan sisäisen toimituksen ehdot ja alennukset. Yhden paidan peruuntuminen voi muuttaa koko ostoskorin kampanjahintaa."
     }
   ]
 }

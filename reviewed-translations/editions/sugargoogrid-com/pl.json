@@ -3,9 +3,9 @@
   "locale": "pl",
   "source_set_sha256": "7b8bf397ce0bb7e1ebf77a03a07fac795fafadde6c651ecf497362774610be7b",
   "raw_dictionary_sha256": "cc5809a89b75fa73aeede919217dad35ccba002b0f8cee6b1e5e500a32400cad",
-  "effective_dictionary_sha256": "c0673ebb02f15cc542412175fcd306f0f45c2b770438e634ea839011c8caa3d6",
+  "effective_dictionary_sha256": "d3dcbfcc202b9065440a04d802d6676428d7da18dcfb79a6714e4ad286f418e1",
   "checked_entries": 297,
-  "review_scope": "Checked the 297 exact source entries for entity names, source links, untranslated prose, example numbers, money and parcel terminology; rewrote localized titles, reference names, variant/fee and shipping-cost worked examples, correcting paper notebook, cap and quotation senses as applicable.",
+  "review_scope": "Checked the 297 exact source entries for entity names, source links, untranslated prose, example numbers, money and parcel terminology; rewrote localized titles, reference names, variant/fee and shipping-cost worked examples, correcting paper notebook, cap and quotation senses as applicable. Checked contextual parcel, quote and paper-stationery terms.",
   "reviewed_flags": [
     {
       "issue": "quantity unit or currency changed",
@@ -315,6 +315,12 @@
       "source_sha256": "1a5b3674ae1d5f5b4bda2c548af0f8c608c6f8971280ab29d61413fd08c98152",
       "raw_target_sha256": "725c15859da7476dae1cecb16787201a3424768d47fc811b7515e2961ffc0e71",
       "translation": "Czarny wariant w rozmiarze M kosztuje w tym przykładzie 70 juanów, a w L kosztuje 72. Jeden M i jeden L mają kosztować 142 juany. Dwie sztuki M za 140 juanów wyglądają podobnie cenowo, lecz to niewłaściwe rozmiary. Sprawdź każdy wariant i cenę osobno, a wspólną dostawę krajową zapisz poza sumą cen towaru."
+    },
+    {
+      "source": "Sugargoo's estimator guide describes entering parcel characteristics and inspecting the conditions attached to individual results. Its package-simulation guide explains why weight and dimensions estimated before packing can differ from the result after consolidation. You can use that distinction without guessing a fixed packing allowance. At the shopping stage, build a range. At the warehouse stage, replace assumptions with observations. Once packed measurements are available, revisit the quote using the actual parcel you intend to submit and the current available route.",
+      "source_sha256": "702208f24bc2e2fe22f6ab4d03e702595420826134e968d8bdb4adeb9f4dbb76",
+      "raw_target_sha256": "85f8670c5b534c76a6af0504364e929df388db4f94a39e97c6c8176c2d063c3d",
+      "translation": "Przewodnik estimatora Sugargoo opisuje wprowadzanie cech paczki i sprawdzanie warunków dołączonych do poszczególnych wyników. Przewodnik symulacji opakowania wyjaśnia, dlaczego waga i wymiary oszacowane przed zapakowaniem mogą różnić się od wyniku po konsolidacji. Możesz użyć tego rozróżnienia bez zgadywania stałego limitu pakowania. Na etapie zakupów zbuduj zakres. Na etapie magazynowania zastąp założenia obserwacjami. Kiedy dostępne będą wymiary zapakowanych przesyłek, sprawdź ponownie wycenę, korzystając z rzeczywistej paczki, którą zamierzasz przesłać, i aktualnie dostępnej trasy."
     }
   ]
 }

@@ -3,9 +3,9 @@
   "locale": "da",
   "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
   "raw_dictionary_sha256": "3114827c66eed5b7ace195c7eecc7d193913757cadeff19c1af62583bbaae321",
-  "effective_dictionary_sha256": "638f29c2342f99f513c0b5c4283d9cd73c9e1fce679ea6342919fb4ded8cd104",
+  "effective_dictionary_sha256": "634bd0697808a4a6fb9420df90eb35c21664edb64b2c5275b53811ade4195977",
   "checked_entries": 317,
-  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
+  "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately. All 21 FAQ question/answer pairs were additionally checked with independent back-translation and cross-language semantic comparison, with targeted revisions. The full localized text was screened for packaging, clothing, measurement and commercial terminology.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -219,6 +219,12 @@
       "source_sha256": "5b834045dc919c6464069e52e2140285117ff6e987acefb762ebf90156996be2",
       "raw_target_sha256": "222d5e470ff9aefe3fe1ff26d230a69cf2042ad9d779a364a239348dfcd9c14c",
       "translation": "Hvordan registrerer jeg en vare, jeg får i bytte?"
+    },
+    {
+      "source": "Specify the purpose. A neckline size label shows the marked size; a care label may provide composition or care instructions. Ask for a full view in context and a close-up with legible text.",
+      "source_sha256": "9fd339ea163be9a23fc63aa66ac318f34f3576f42dc0e0422c207d9a5fed3ef4",
+      "raw_target_sha256": "1920ba7ad8097db6e647592654b801b702203b17296415b3531a807a5a1dc364",
+      "translation": "Forklar, hvad du vil kontrollere. Et størrelsesmærke ved nakken kan vise tøjets mærkede størrelse. Et vaskemærke kan angive fibersammensætning og pleje. Bed om et oversigtsfoto, der viser, hvor mærket sidder, og et nærbillede med læselig tekst."
     }
   ]
 }
