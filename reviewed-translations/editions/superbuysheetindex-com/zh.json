@@ -3,7 +3,7 @@
   "locale": "zh",
   "source_set_sha256": "22619851fe6c0c4d68d3e0eeae0044fc51f350ee67205e4e41855e55ae1a7029",
   "raw_dictionary_sha256": "99d52e947ba2756dd6a3a85ded2bb432aa5471434e0bd2870bf9a62ce397e3f6",
-  "effective_dictionary_sha256": "7d714277cec4b39415db3ac386ebe2e6c82581c639f6ae80c05f53bdf8c49774",
+  "effective_dictionary_sha256": "639ad78e9813fe5280051b5a60d2e42fe35ea4ec8cde28018e93d3329be9b124",
   "checked_entries": 313,
   "review_scope": "Targeted bilingual review of ten headlines, all flagged entries, reproducible samples, volume arithmetic, currencies and tracking identifiers.",
   "reviewed_flags": [
@@ -1527,6 +1527,372 @@
       "source_sha256": "161a635f8b3307cf78f36bec9f9696d50799e39753ade6355e1f81886cce5896",
       "raw_target_sha256": "9a12252403afd5a1b0f883ad3bf8d0b4ab15e686ebcdb5157532dc32c6ddc185",
       "translation": "最容易把自购物件和未来仓库条目对应起来的时机，是卖家打印面单之前。此时还能改地址、问清箱内物品、修正描述，不必再追踪已在路上的包裹。请结合 Superbuy 的转运指南和自己账户中的收货说明操作；先后顺序比某个按钮在屏幕的什么位置更重要。"
+    },
+    {
+      "source": "Open the original purchase confirmation. Write down the merchant, product name, chosen option, number of units and item type. Use words that distinguish the actual thing inside the box. “Case” could describe a suitcase, a phone cover or a protective box for a camera. “Fabric camera pouch, small, empty” communicates more to someone reviewing what is being sent. Be equally precise when equipment includes batteries, accessories or detachable components.",
+      "source_sha256": "0e28ae9392df3d4791914e964cb8cf09c8604aad6875013dba646113cec9485f",
+      "raw_target_sha256": "3b7646771b3b3e3788e65a8d50aa93db50868f9b179bc9ce78639d45d075bbfb",
+      "translation": "打开原购买确认，写清卖家、品名、所选规格、数量和物品类别。描述要让人知道箱里到底是什么。只写“套”可能是手机壳、相机保护盒或旅行箱；写“小号布面相机袋，空袋”就明确得多。设备如含电池、配件或可拆部件，也请同样具体说明。"
+    },
+    {
+      "source": "For a set, distinguish the unit sold from the number of physical pieces. One table-tennis set might contain two paddles and several balls. One seller order for two such sets is two ordered units with several components inside. Tell the warehouse how the seller describes the quantity and keep a separate components note if a missing piece would matter. A catalogue photograph of two paddles is insufficient on its own to establish what the selected option includes.",
+      "source_sha256": "3d7beaafbcca87bc76a0f3c13bb14ad7af87a621c2fc57ac2bb781f028a96065",
+      "raw_target_sha256": "28e9217cc80b9a4e3afb8503418e4f86aa3ff514cb043c5eb5ddb0ba649f4880",
+      "translation": "成套商品要区分购买单位和实物件数。一套乒乓球用品可能包括两支球拍和若干球，买两套是两个购买单位，不是只收两个实物。告诉仓库卖家如何计算数量；如果缺一个部件就会影响使用，另外列部件清单。商品图拍了两支球拍，不能单独证明所选规格确实包含两支。"
+    },
+    {
+      "source": "Superbuy describes forwarding submissions for an already prepared parcel and for products associated with an online listing. Follow the option that fits what you actually have. If a relative is sending a used item, do not paste a different retailer's link simply to make the fields look complete. Describe the physical item and consult the account form or support about required information.",
+      "source_sha256": "4444d62d69ca490a385dbde7344bd57459cec5ff20d5273cdb96c38a06d897f1",
+      "raw_target_sha256": "042dd9e5d9fde1798b369862a6da25b881309573b6656510b60b717c51a6003b",
+      "translation": "Superbuy 提供的转运登记方式既包括已备好的包裹，也包括可对应商品链接的物品。按实际情况选择。亲友寄来一件旧物，不要为填满字段而借用另一个零售商的链接。描述真实物品，按账户表单或客服说明确认必填信息。"
+    },
+    {
+      "source": "A listing link is helpful when it matches the item. Save the option as well as the general address. A seller can edit a listing after your purchase, or one listing can combine a base model with a more elaborate option. The person reviewing a forwarding request may see the current page; your original confirmation records what you bought. Keep the two together and indicate any difference that affects what should arrive.",
+      "source_sha256": "f7743552726771989f92fcbf0cedd10d41a825df0577d0e14c05f75a3823d119",
+      "raw_target_sha256": "be0740bf5e5a4000becc9ff07652cc02a5159c9e579615b0ad26e04d41cb67f3",
+      "translation": "商品链接要与实物一致才有用。除网址外，也保存具体选项。卖家可能在你购买后改过页面，同一链接也可能同时出售基础款和高配款。审核人员看到的可能是当前页面，而原订单才证明当时买了什么。保留两者，注明影响到货预期的差别。"
+    },
+    {
+      "source": "Use the warehouse shown for your request and the complete receiving instructions associated with your account. A warehouse photograph on a forum, an address from a previous order and a friend's saved checkout address are poor substitutes. Superbuy's guide explains that a unique identifier at the end of a user's address can help identify a parcel. Treat it as part of the address when preparing the seller's delivery details.",
+      "source_sha256": "d533192e8fa54b78b7e241010eaa757bfd80aeed706a914cb8c8f4e680f37004",
+      "raw_target_sha256": "8e769201d8d882922521085745960c28820611d5f7d81904612134210e5733ef",
+      "translation": "以这次申请显示的仓库和自己账户的完整收货指引为准。论坛截图、上次订单地址、朋友结账时保存的地址都不能代替它。Superbuy 指南说明，个人收货地址末尾的专属标识可帮助识别包裹。发给卖家时，把它当成地址的一部分一起填写。"
+    },
+    {
+      "source": "Consider a marketplace form that splits the address into region, city, district, street and extra details. Copying a whole address into the street field can duplicate the district while omitting the final identifier. After saving, read the address the way it will print on the label. Compare each part with the Superbuy address from top to bottom. If the seller must enter the address manually, ask them to confirm the completed destination before handing the box to a carrier.",
+      "source_sha256": "e60d589ecefd1036300ecbaaf679447c7b716f597ed5ebadaa94f06877fdb80e",
+      "raw_target_sha256": "14c30255a4a8d63fbfda6c85971e7462511de645612b9d63228d955f7729649f",
+      "translation": "有的平台把地址拆成地区、城市、区县、街道和补充说明。把整段都粘到街道栏可能重复区县，却漏了末尾识别码。保存后按打印在面单上的顺序，与 Superbuy 地址从头到尾逐栏核对。如果卖家手工填单，交给快递前请对方确认最终地址。"
+    },
+    {
+      "source": "The official forwarding process puts review before sending the parcel. Wait for the result attached to the actual request and follow the current instructions or deadline shown there. A product of a similar type having passed previously does not establish whether this shipment is acceptable. The item, origin, warehouse and planned service can differ. If the review requests more information, answer the question as asked.",
+      "source_sha256": "40e3d0b1621d038906a4685bd1bb18e9222adda84f47b593477051692f9d2f4e",
+      "raw_target_sha256": "4fd5bf1cb4e704cc74f422afa29d2585fbb05b689d8851dff144f40cdc58e536",
+      "translation": "官方转运流程把审核放在发货前。等待这笔具体申请的结果，并按当前显示的说明或期限办理。以前有类似商品通过，不代表这票也一定可以；商品、来源、仓库和拟用服务都可能不同。如果审核要求补充资料，就针对具体问题作答。"
+    },
+    {
+      "source": "This is important if a merchant offers rapid dispatch. Tell the seller when you expect to provide the approved destination instead of guessing an address to satisfy a checkout countdown. If the seller has already dispatched the goods, do not describe them as still awaiting shipment. Record the time, address used and waybill; ask Superbuy which steps apply to an inbound parcel that has already left. A second submission cannot physically redirect it.",
+      "source_sha256": "1b9f507cebc4e47d86d810d72df776cb740b7bfc2eefe7b28281bac4fd359f84",
+      "raw_target_sha256": "f1104a9502cd995c13c838d6cfec9c6323def93ece700bb68a565cfb2d1edc75",
+      "translation": "卖家准备很快发货时，这一步尤其重要。与其为赶结账倒计时猜个地址，不如告诉卖家何时能提供审核通过的收货资料。如果已经交寄，就如实记录交寄时间、实际地址和运单号，问 Superbuy 已在途的货该走什么步骤。再填一遍申请，不能改变实物的运输方向。"
+    },
+    {
+      "source": "When the merchant issues the shipping notice, copy the carrier name and its waybill. Keep the original string of characters, including leading zeroes. A marketplace purchase number can appear near the carrier number and look equally plausible. Test your interpretation by opening the tracking detail associated with that particular shipping notice. The number should correspond to that delivery leg.",
+      "source_sha256": "cc5a3315292227a3bce89e81f4b7618ce07886b33d0f891c3d9ccd14e38e8554",
+      "raw_target_sha256": "a8c248a4f77afee69d427355a4317b5fbed08b8364d13dfbddb44e23e247c255",
+      "translation": "收到发货通知后，抄下承运商名称和对应运单号，保留完整字符，包括开头的零。电商购买订单号可能就显示在运单号旁，外观也一样像有效编号。打开这条发货通知所附的物流详情核对，确认该号码对应的正是本段运送。"
+    },
+    {
+      "source": "If a shop first creates one label and later replaces it, keep both notices but mark which label was actually used. Ask the seller which carrier collected the box. An old label may remain on an invoice even when no parcel moved under it. Update the forwarding logistics information as the account permits; if a field is locked, provide the corrected reference through official support.",
+      "source_sha256": "f2608f92acc9e8d07e2511fee693f7f8b2deb4ca46acf313134900b0df9312dc",
+      "raw_target_sha256": "0f37144c708f982f41cbe1901d5147f8315614c9b506d0614280919c5df2e553",
+      "translation": "商家先开旧面单后换新单时，两次通知都留着，注明真正使用的是哪一个。问清是哪家承运商揽了箱子。有时发票还留着旧号，实际并未按旧号运输。账户允许时更新转运物流字段；字段锁定时，通过官方客服提供正确的编号。"
+    },
+    {
+      "source": "A request describing three units does not guarantee one carton. A merchant may send what is available first and dispatch the remainder separately. Ask for a list matching pieces to carrier numbers. If there are two boxes, label them in your notes by their actual waybills. Avoid calling one “the second parcel” without a number, because the second box sent can arrive first.",
+      "source_sha256": "085dee30bc1089ad7da8d0dfd930ff3638d2c17c500804c9652d991db22ffcb3",
+      "raw_target_sha256": "e6b333cc1eaa5eec67c69b2cecedeb4c329d9ab096d25f69e2ab18c8a6e542d3",
+      "translation": "申请里写三件，不等于卖家会装一箱。卖家可能先发有货的，剩下另寄。请对方列出实物与运单号的对应关系。两箱货各用真实运单号记，不要只叫其中一箱“第二个包裹”：后发的一箱也可能先到。"
+    },
+    {
+      "source": "Look at the warehouse record after the domestic carrier reports delivery. The delivery scan identifies a carrier event. A stocked entry identifies goods entered in the warehouse system. Compare the reference, name, quantity and any available photographs. If the incoming parcel contained two items, check both. A photograph of an opened carton can establish that something arrived without settling whether the full order is present.",
+      "source_sha256": "24be93d352ab6bd3e8e7b1e3a52d9660d31ccad062cbe58c416925cc566e8a3e",
+      "raw_target_sha256": "0a5ec5d586114594178a26278349fa6824ca2228ec7fda5ebc672f352548e550",
+      "translation": "国内承运商显示送达后，再看仓库记录。签收扫描说明的是快递事件，入库条目说明仓库系统登记了哪些物品。比对编号、品名、数量和已有照片。如果来件应有两样，就逐件核实。打开的纸箱照片能证明有东西到了，却不能单独证明整单齐全。"
+    },
+    {
+      "source": "If the entry differs from your forwarding description, preserve the original request and ask about the specific mismatch. For example, “The second waybill was expected to contain one white shade; the warehouse entry shows a metal base. Can you match the received contents to these two waybills?” is more actionable than “My parcel is wrong.” Include enough context to locate the box without sharing private address details in a public forum.",
+      "source_sha256": "172efaa831244099feb33714398daf7833d75712a63635d62aaababd1d9cab08",
+      "raw_target_sha256": "8828b93776a692af4b158a274a6e02c362f38bc76d8a29c26f88b1397cc4bf3d",
+      "translation": "实收条目与转运描述不符时，保留原申请，直接指出差异。例如：“按第二张运单应收到一个白色灯罩，仓库条目却显示金属底座，能否按这两张运单核对实际收货？”这比“我的包裹不对”便于执行。给足定位箱子的上下文，但不要在公开论坛披露私人收货地址。"
+    },
+    {
+      "source": "Once the expected units are accounted for, record their warehouse references beside the seller order. Keep any unresolved discrepancy visible before selecting items for international shipment. If an item needs a photo, an identifying label read or an answer from the merchant, complete that check while the warehouse can still inspect it. Only the confirmed goods should enter your outbound packing plan.",
+      "source_sha256": "199cbf48cdc5d812da73e716a074fbfb558922d7dccef45e17e57e80db4331db",
+      "raw_target_sha256": "d675eb72de50ac6dd3ddb47adeae4163c025bdb6e43e40d112959494d0d3a5d3",
+      "translation": "预期件数核清后，将各仓库编号写在卖家订单旁。选择国际发货前，所有未解差异都应保持可见。需要补照片、看清标签或等卖家答复的，在仓库仍可检查时办好，只把已确认的物品加入出库计划。"
+    },
+    {
+      "source": "Your final record should let you answer a simple question without reopening five websites: what arrived, under which domestic waybill, for which approved request, and what will happen to it next? Keep the outgoing parcel number in a new field when one exists. The forwarding request, incoming carton and international parcel represent different stages. Preserving the links between them makes later tracking and customer-service questions considerably easier.",
+      "source_sha256": "fb98d42d703e17dec8bcb40ade78de4fa150cbfe68f4ba7adc2af3503941fad4",
+      "raw_target_sha256": "ea3d88b7d6a7602688da40a1bfaab86c5c3953e1b8e1888894526f44545f5118",
+      "translation": "记录整理好后，不必重开五个网站，也能回答：什么物品到了、按哪张国内运单寄、对应哪笔已通过的申请、下一步如何处理。取得国际包裹号后另开字段。转运申请、进仓纸箱和国际包裹属于不同环节，保留之间的关联，便于日后追踪和咨询。"
+    },
+    {
+      "source": "If the seller ships a replacement later, treat the new waybill as another incoming shipment in your records and ask what the current forwarding procedure requires. Labelling the new entry as a replacement explains its relationship to the purchase without falsely implying that both units arrived in the first box.",
+      "source_sha256": "8ae6e188c514a7113dea884c762aa2e0b4ef5e6b655cd8f991efe7c51655d666",
+      "raw_target_sha256": "de7437e041eb162ab19e6886ac7f7888e86aba175d532b699339545d9999df70",
+      "translation": "卖家之后再寄替换件，把新单号当成另一票进仓货来记录，并查询当前转运流程需要怎样登记。注明它是原购买的替换件，既能说明关联，也不会误写成原箱已经收到两件。"
+    },
+    {
+      "source": "A pre-packing measurement is useful when it resolves a particular uncertainty. It may tell you whether a long item fits a route limit, how large a box becomes when fragile pieces are protected, or which goods can reasonably travel together. “Find the cheapest shipping” leaves the packer guessing which requirements are negotiable. Tell them what has to survive the journey and what information you need to decide.",
+      "source_sha256": "cccf483bceeb673464b239b22a1d270296814c2c24d61e95d7e885729f7c3de7",
+      "raw_target_sha256": "b768c1d728ce7dccb49f5869cc434a7b46ee471462d4908048e1a73b219fc710",
+      "translation": "预打包测量最好能解决一个具体问题，例如长件能否满足线路限长、易碎部件保护好后外箱会有多大、哪些物品适合一起寄。只说“找最便宜的运费”，打包员无法知道哪些要求可以让步。说明哪些东西必须完好抵达，以及你要根据什么数据作决定。"
+    },
+    {
+      "source": "Write one question before choosing a service. For example, “Can the poster tube and two folded shirts travel together within the length allowed by the route I am considering?” or “How large is the carton when the retail presentation box and corner protection are retained?” Both questions specify a physical arrangement and an outcome you can act on.",
+      "source_sha256": "7389912cd56f5a4412409bba1b1b7f0f5371e98a4cdf6bd8b098e68959a86099",
+      "raw_target_sha256": "fb5ad9c607d8c82a09484b5dbf99cdd79070171ed94def17071e345e90d13b00",
+      "translation": "选服务前先写一个问题，例如“海报筒和两件折好的衬衫合装，能否满足我考虑的线路限长？”或者“保留展示盒并加护角后，外箱尺寸是多少？”这样既说清了具体装法，也明确了收到结果后要据此做什么。"
+    },
+    {
+      "source": "Open the service options actually offered for your parcel. Names, charges and the actions authorized by a service can vary. Check whether you are requesting measurements, asking for a shipping recommendation or authorizing dispatch. If you want a result before choosing a route, say that plainly and confirm that the selected service provides it. A measurement request and consent to ship answer different questions.",
+      "source_sha256": "8ce2aae5ae25982e36cb3ffb3b7212c5eb7cc245949794c981fdb95bd65c2f5f",
+      "raw_target_sha256": "253760e43639f9aa49274598f5de126d20c8e1c241806dd641f1f0c6a89c76ec",
+      "translation": "打开当前这票包裹实际提供的服务选项。名称、费用和勾选后授权的操作可能不同。确认自己是在请求测量、请对方推荐线路，还是授权实际发货。如果希望先得到测量结果再选线路，应写明并核实所选服务确实支持。请求测量与同意发运是两件事。"
+    },
+    {
+      "source": "Record every warehouse reference and quantity to include. Remove entries still awaiting a size check, exchange or decision. If you need two scenarios, give each a short descriptive name. “Shirts only” and “shirts plus framed print” remain clear even if someone reads the request tomorrow without your spreadsheet open.",
+      "source_sha256": "778eea2bd564c40deafa5cbe04ced8c4806377fb714628a2eb430507120ba0e5",
+      "raw_target_sha256": "8a9ff1a390cccc5160118ecee450134a06f390bcd928ccdaec9ae280b0420937",
+      "translation": "将要装进包裹的仓库编号和数量逐一列出，排除仍待量尺、换货或决定去留的条目。要比较两种方案时，分别取明确的名字，如“仅两件衬衫”和“衬衫加装框画”。这样即使明天看不到你的表格，打包员仍懂每个名字指什么。"
+    },
+    {
+      "source": "Suppose you estimate two shirts, then add a rigid poster tube after receiving the dimensions. The old result is still a valid observation about the two-shirt parcel, but it tells you little about the new parcel's longest side. Conversely, taking a small item out of a parcel can leave the outside dimensions unchanged if another piece determines the box size. Never adjust a prior packed measurement by subtracting an item's catalogue length.",
+      "source_sha256": "d6d37dead260c8da2294728a906257c885ec4c1dc5086e621b2e383aff867fef",
+      "raw_target_sha256": "db278c17bb92bf4503a2b1631c7c4fd3206d440f63984b2fa731fc521151d8ff",
+      "translation": "例如，先测了两件衬衫的包裹，随后又放入硬质海报筒。原来的测量对只装两件衬衫的方案仍然有效，却不能说明新包裹最长边有多长。反过来，如果外箱大小由另一件货决定，拿掉小件后外尺寸也可能不变。不要从原实包尺寸直接减去某件商品的目录长度来推算新尺寸。"
+    },
+    {
+      "source": "Use three groups: materials that must stay, materials that may be removed and materials whose treatment requires your approval. Apply the labels to recognizable pieces. “Keep the illustrated retail sleeve on the book; discard the plain domestic shipping carton if safe; ask before removing the hard inner case” is more precise than “remove unnecessary packaging.”",
+      "source_sha256": "346fbea64fae8d7cce23b78e893e96942c276938109c487c9e3cc6657aa90637",
+      "raw_target_sha256": "b955b9a6151131ad71ea58da408a07de23051da5c0f704d72aeaca372c517a56",
+      "translation": "将包装分为“必须保留”“允许拆除”“拆前先问”三组，每组写清所指部件。例如：“书上的插画外套请保留；普通国内运输纸箱在确认安全时可拆；拆硬质内盒前先问我。”这比“去掉没必要的包装”更便于执行。"
+    },
+    {
+      "source": "Describe the vulnerable surface rather than simply calling an object fragile. For a book, corners and the spine might be the critical points. For a mug, the handle joint deserves attention. A rolled print could be harmed by a crushed tube or by loading a hard item against the end cap. Ask how the service can separate, immobilize or support the relevant component.",
+      "source_sha256": "f8adda8c8a23fa421742cdbd8c8d3c049ffdff4e4f166ccd253fe80df5a4f54e",
+      "raw_target_sha256": "09be71712c22994437454937492f0537f51bc585c61d06cda9c914e9b37063fe",
+      "translation": "说明容易损坏的具体位置。书常要保护书角和书脊，马克杯要留意杯柄连接处，卷画则可能因筒身被压或硬物顶住端盖而受损。问清可采用什么方式，让这些位置保持分隔、固定或得到支撑。"
+    },
+    {
+      "source": "Imagine packing a mug, a sweatshirt and a hardback book. It might seem that the sweatshirt can protect everything. If the book can slide against the handle, however, adding soft fabric somewhere else in the box does not resolve that contact. State the desired result: keep the hard book away from the handle, protect the book corners and retain sufficient cushioning around the mug. Leave the exact packing method to the available service unless you need a particular material.",
+      "source_sha256": "f3a4af199550f4f88ebd5638d24d64328dd88e70992e17ae7fe25409204926e7",
+      "raw_target_sha256": "fc6fddb94e9a2c15e5a4d2d3f4e69b4794584fc48dbd4c0d51060491777db8da",
+      "translation": "同箱装马克杯、卫衣和硬壳书时，看上去软卫衣可以充当缓冲，但如果书在箱内滑动撞到杯柄，就不足以保护。直接说出目标：硬书不能碰杯柄，书角要护好，杯子周围留足缓冲。除非确实需要特定材质，具体装法可交由能提供的服务决定。"
+    },
+    {
+      "source": "Ask for the actual packed weight and the three outer dimensions of the closed parcel, with units. If the shape is irregular, ask which outermost points were used. A tube's length or a protruding protector can determine a critical dimension. Photographs showing the measuring tape can help resolve a question about orientation, but they do not replace a clearly stated set of figures.",
+      "source_sha256": "5def42df95fc547103d9947190e502a2fbff3d90e88f06d8e0815aa457dcdddf",
+      "raw_target_sha256": "f0fa081643b0f575e2f8013a699015d69c85c922ee603a1860828c83bd6a0e0a",
+      "translation": "请仓库给出封箱后的实称重量、三条外尺寸和各自单位。如果包裹不规则，问清量的是哪些最外侧端点。筒身长度或突出的护具都可能决定关键尺寸。能读到卷尺的照片有助确认量尺方向，但不能代替一组明确写出的数据。"
+    },
+    {
+      "source": "Read your instructions once from the packer's point of view. “Keep all retail packaging” conflicts with “remove shoeboxes” unless you identify which box the exception covers. “Keep flat” conflicts with rolling the same print. “Repack into the smallest possible box” may conflict with the space required around a fragile joint. Resolve these before paying for preparation.",
+      "source_sha256": "00968dd43409c297882a631b34a001634a564f646d1d918ace3a2eef1805ba96",
+      "raw_target_sha256": "1c94e5095cea5d50665617e65c79310690caab2491ea075913624ceb71177005",
+      "translation": "站在打包员的角度重读一遍指令。“全部零售包装保留”和“拆鞋盒”会冲突，除非说明哪只鞋盒是例外。同一幅画不能既要求平放又让人卷起；要求“尽量小箱”也可能与易碎连接处必须留下的缓冲空间相抵触。付款准备包装前先解决矛盾。"
+    },
+    {
+      "source": "A useful order of priorities is physical constraints first, preferences second and a request for advice if both cannot be met. For instance: “The book must stay flat with its sleeve. If a smaller carton would require bending the cover, keep the larger carton and return its measurements.” This gives the packer permission to preserve the important requirement while still helping you compare the result.",
+      "source_sha256": "103948008faacb903f32058dc9655a8fbbb9bb9344a7a153dbc10574b3fd1e55",
+      "raw_target_sha256": "5d7a8487530b5d1ef17ea4e6ac5b1f1a387349bdbc215a4b6f8014b9df4e1366",
+      "translation": "可把优先级写成：先满足实物保护的硬条件，再考虑偏好，两者无法同时满足就请对方反馈。例如：“书要连书套保持平整。如果换小箱必须折弯书封，请保留大箱并告知实测尺寸。”这样打包员知道不能为省空间牺牲最重要的要求，你也仍能比较实际结果。"
+    },
+    {
+      "source": "When the measurement comes back, attach it to the exact item list and packing description. Write down the date, measured values and any optional charge. If you ask for a different arrangement later, label it as a new scenario. Keeping both makes it possible to explain why a route shown for the first version may disappear for the second.",
+      "source_sha256": "aba21e5616c1e480446bdf5f2d51eb499367b2a054e09ff015f56e531b114497",
+      "raw_target_sha256": "175c76541d55786b41403859ec767da4f5e3c640e4974c3cd3009ddf35fdbb49",
+      "translation": "收到测量后，把数据贴到对应的物品清单和包装说明旁。记录日期、实测值和可选费用。如果后来改用另一种摆放方式，就另存为新方案。保留两版记录，才能解释为什么第一版可选的线路在第二版不再出现。"
+    },
+    {
+      "source": "Before submitting for overseas delivery, compare the final selection with the measured one. Did another item arrive? Did you ask staff to keep a box that the first estimate removed? Did the destination change? Each is a reason to revisit the quote. The benefit of a rehearsal is knowing what was measured and being able to use that observation. A precise request gives you a decision you can make confidently even when the cheapest eligible route is different from the one you originally expected.",
+      "source_sha256": "7e7fcee8b1057545d596dc1fc19e5382d0a775fe3f970b80aa9ab4168fe87f8e",
+      "raw_target_sha256": "890cc2caf393e214b236eaeb5fd789635e28657aab31a0c362ab175b670666af",
+      "translation": "提交国际发货前，对照实测时的清单查最终选择：有没有新到一件货？第一次估算拆的盒子现在要求保留吗？目的地有无变化？只要改变一项，都值得重新核价。预打包的价值在于知道测的是什么、怎样应用结果。即使最便宜的可用线路不是最初看中的那条，也能据实作决定。"
+    },
+    {
+      "source": "For future orders, preserve only useful comparisons. A record saying “foam corners increased the longest side by four centimetres on this framed piece” can guide a question next time. A record saying “this route is always cheaper” loses the conditions that made the earlier result relevant.",
+      "source_sha256": "244e45d38728b590f7ef7ea15c514d46ccc475cf50bba58845ffe82543a6973b",
+      "raw_target_sha256": "569fe97aad1ff24381f5d2382024ae0cbb90da62d73bfb368103d07d43d718c3",
+      "translation": "只留对未来有意义的比较。例如“这幅装框画加泡棉护角后，最长边多了四厘米”，下次还可据此提出问题；仅写“这条线一直最便宜”，却丢掉了当初决定结果的条件。"
+    },
+    {
+      "source": "When the most important outcome is a strict limit, make that visible in the request. Record the route and the limit you read, then ask for the actual outer measurement. A response saying that the parcel is compact may be accurate as a description but still leave you unable to decide whether that route is available.",
+      "source_sha256": "d83d4e938f26e2c0793587c0094275e2ac9cba7f3fb761fd6ae81facacd8e24c",
+      "raw_target_sha256": "fb701fabcce8ed033bc3b347d04cb654b2bafa5d9a7f24eb96a30f0e82ea5243",
+      "translation": "最在意的是一条不能超的限值，就把它写在要求里。注明线路、查到的限制，再请仓库反馈实际外部尺寸。“包裹很紧凑”可能形容得没错，但没有准确测量，你仍无法判断能不能用那条线。"
+    },
+    {
+      "source": "A shop link in a spreadsheet tells you where an item is listed. It does not tell you who will buy it. On Superbuy, the answer to that question determines whether you need a shopping order or a forwarding request. Choose before money changes hands: the same pair of shoes can travel through the same warehouse under either arrangement, but the person responsible for the purchase and the record that identifies the shipment are different.",
+      "source_sha256": "c6b8e7be0ef1e8963c2d5102d3a7c6b822e225e043173d523471161d336b66de",
+      "raw_target_sha256": "f6dd244bf637929647ceb41afe5155247e6e633417dc535b99d1bc1ec7053480",
+      "translation": "表格里的商家链接说明商品在哪里出售，却没说明谁来付款。在 Superbuy，付款方决定应建代购订单还是转运申请。同一双鞋，两种方式都可能经过同一仓库；但应在向卖家支付前选对流程，否则可能再买一双，或让仓库无法识别已购货物。"
+    },
+    {
+      "source": "Start by asking who is going to pay the marketplace seller. If you have picked a listing and want Superbuy to buy it for you, use the shopping agent process. Superbuy's app guide describes choosing the product options and quantity, paying for the purchase and any applicable domestic delivery, and then letting the agent contact the seller. Your first useful reference is the shopping order.",
+      "source_sha256": "cfc366513602794fd496dc2e960663ddd2a5c294f51b95ee9a3f4ea423848139",
+      "raw_target_sha256": "a6fb9ed50ea6ed0bd9d9c44a7db1c382cf7f0701b69395a737f7094c5908c9d7",
+      "translation": "先问谁来付电商卖家货款。如果你只选好了商品，想委托 Superbuy 去买，就走代购流程。其应用指南介绍了选择规格和数量、支付商品货款及适用的国内运费，再交由代购处理购买等步骤。记录哪一笔委托对应哪家店、哪项规格。"
+    },
+    {
+      "source": "If you have already bought the shoes from the seller, you have a purchase record somewhere else. Paying for another shopping order in Superbuy could commission a second pair. The forwarding process is designed to register goods that someone else will send to the warehouse. Locate the seller's confirmation, check the receiving instructions and register the parcel under the applicable forwarding procedure. If the seller has already dispatched it, tell support the true status when asking what can still be matched.",
+      "source_sha256": "17028b6f779c603b6c084e5bd2a620bad13ed8adfbe3602ff2102cf68aa13f79",
+      "raw_target_sha256": "6e4dc4b7bd98af8dd9f37709c6480cd2dd653ccb6c7787dc85d77f4188abbfcc",
+      "translation": "如果鞋子已经向卖家买下，购买凭据就在另一个平台。在 Superbuy 再付一笔代购订单，可能变成委托购买第二双。转运流程用于登记由他人寄到仓库的已有商品。找出卖家确认，查看收货要求，按相应转运流程登记。卖家已发货时，请如实告知客服当前状态，询问还能怎样匹配。"
+    },
+    {
+      "source": "A product link can identify the intended purchase in a shopping order. It can also help describe the contents of a forwarding request. Its presence on a form does not turn forwarding into a purchase. Look at what the service will do next. Will someone contact the merchant and buy the item? Or are you supplying information for a parcel that you or your seller will send?",
+      "source_sha256": "8e2b7955836ea5d2417159ccd9c906bcd065b537119245d4e286d008664aea6d",
+      "raw_target_sha256": "4daefa50547e71c0d580d47114ec082bdefedb8a6949adb9c925f2e3826b4b98",
+      "translation": "代购单可用商品链接确认想买什么，转运申请也可借它说明箱里是什么。表单上有链接，不代表转运就变成代购。看下一步具体做什么：是由人联系商家买货，还是为别人已经准备寄来的货提供识别资料？"
+    },
+    {
+      "source": "Consider an illustrative case. You find a small stationery set on a marketplace and save its link. Nobody has paid. You want the agent to select the navy cover and purchase one set. Your instructions should identify the cover, quantity, exact seller option and anything you need clarified. Contrast a second case: the seller has already accepted your payment for a navy set and asks for a local delivery address. You now need the correct warehouse destination and a way to identify the resulting package. A new instruction to purchase stationery does not solve that problem.",
+      "source_sha256": "a8f2951b5919aac764578ef49fa25e8e25a9b726f933ef2f94c6ed6a00f8d15b",
+      "raw_target_sha256": "cef31c317771bd8d8dd0f5cb9170cc6d03f1f7c831db3dd84a80fd17b0eceefa",
+      "translation": "例如，收藏了一套文具的链接，还没人付款，你要代购选深蓝封面并买一套。说明里应写清封面、数量、卖家准确选项，以及需要确认的内容。换一种情形：卖家已经收了你买深蓝文具套装的钱，正等一个国内地址。这时需要的是仓库收货地址和识别进仓包裹的方法，再委托买一套文具并不能解决问题。"
+    },
+    {
+      "source": "For an agent purchase, communicate order questions through the agent order. If the retailer changes the available colour after you pay, ask about that order before accepting a substitution. Keep the original option text and confirm whether the proposed replacement still meets your needs. The relevant question at this stage concerns the purchase from the merchant.",
+      "source_sha256": "f24f09a050003177802213415c8c97c2fb8a88068e4029e53380125e13dc97b4",
+      "raw_target_sha256": "f801b58b909b20b2ac22b8ea40b2bf6f66ccf6e664eca85d292e8a38e4a5301a",
+      "translation": "代购买来的商品，购买环节的问题应通过对应代购单处理。付款后卖家说原颜色没货，先在原单上问清，再决定是否接受替代。保留最初的规格文字，确认提议的新款是否仍符合需要。这个阶段要解决的是“买哪件”，不是“怎么寄”。"
+    },
+    {
+      "source": "With forwarding, the seller relationship may be your own. If the merchant has not dispatched the goods, ask that merchant for dispatch information. If a carrier has delivered a package to the Superbuy address but you cannot find its warehouse entry, gather the waybill and forwarding reference for the warehouse. Sending a refund question to a warehouse that did not buy the item can waste time while the seller's return conditions continue to apply.",
+      "source_sha256": "238fe08c1c354382be7b9b318203d235e864e1590c8f449e6223f572757e410b",
+      "raw_target_sha256": "7df322417c9522a98e3d031bc4d0f2ca5666c6ebfffd2e7517eaf5b81772ee3c",
+      "translation": "自购转运时，买卖关系可能直接在你和卖家之间。商家未发货，向商家问发货情况；承运商已送到 Superbuy 地址但找不到入库条目，把运单和转运申请编号交仓库核对。把所有问题都发到同一处，不如让负责当前环节的人查其能看到的记录。"
+    },
+    {
+      "source": "Write down what has already been paid before comparing prices. For an agent purchase, separate the item subtotal and domestic delivery from the eventual overseas parcel. For a self-purchase, the marketplace receipt already represents the goods. Keep that receipt as an item cost even if the forwarding form asks you to record the item's value. Recording its value does not mean you should count a second purchase in your budget.",
+      "source_sha256": "a9f6ebe8366d631f46f4c7094226e272ef9ffc79d3429a61930f34c8f398aec0",
+      "raw_target_sha256": "f02d09894a60c81190875b655d89e97db4fa3c65c6dc182596e7da9b5599f8a1",
+      "translation": "比价前先写清哪些钱已经付过。代购要把商品小计、国内配送和后来的国际运费分开；自购的商品货款以电商收据为准。即使转运表单要求填写商品价值，也要保留原收据，并区分重新登记价值与真正发生的第二笔付款。"
+    },
+    {
+      "source": "Superbuy's forwarding guide explains that an account-specific identifier helps distinguish incoming parcels. Read the full warehouse address shown in your own account. Compare it to the selected warehouse and to the address the seller has accepted. Pay attention to the final part of the receiving details when copying them into a marketplace form with separate fields.",
+      "source_sha256": "cce343827c75e2d85c95701696c5a99ca0c78c46bcba498fdf51f061439070f9",
+      "raw_target_sha256": "1acb49225cf5f44b16216ef845922bc818c860ad0bf12a2ee6b1d6177cf2650c",
+      "translation": "Superbuy 转运指南说明，账户专属标识可帮助仓库区分来件。查看自己账户显示的完整收货地址，与这次选择的仓库以及卖家接受的地址核对。复制时特别注意最后的收件说明：街道和城市正确，不代表账户识别信息也完整。"
+    },
+    {
+      "source": "If a seller truncates a field, compare the saved order address after checkout. Ask the seller whether the complete receiving information will appear on the physical label. If something is missing, keep the carrier reference and tell Superbuy which address the seller actually used. An edited address in your profile does not retroactively alter a label already attached to a parcel.",
+      "source_sha256": "bc877c9ed7235dc5440eb3187c90b6f42559b31809bb9fe54b3dc879d319d4cb",
+      "raw_target_sha256": "1c54016c791d25e4835ba35dd991630853c66bafbac9d6399142c7d5741f2772",
+      "translation": "某个字段似乎被截断，就检查结账后实际保存的地址，问卖家是否会把全部收货信息打印在面单上。若有遗漏，保留承运商编号，告诉 Superbuy 卖家实际使用了什么地址。现在编辑个人资料，不会倒过来改变已贴在包裹上的面单。"
+    },
+    {
+      "source": "A useful shopping note contains a product reference, option, quantity, amount paid and merchant. A forwarding note needs the receiving warehouse, forwarding request, carrier and actual waybill. One purchase can produce several waybills. Several purchases can travel together in one box. Add a link between records instead of treating the shopping number, inbound waybill and outbound tracking number as interchangeable.",
+      "source_sha256": "59bb4f4d3d2edce4eef0334972529c68ff37587490ad9cceca744882eb2453d3",
+      "raw_target_sha256": "2400f6fb9a8aa33a949cdcaa51a96a69550cd87e05b3c1b2d15e3423219b3beb",
+      "translation": "代购记录应有商品标识、规格、数量、已付金额和卖家；转运记录则需要收货仓库、转运申请、承运商和真实运单。一次购买可拆多票，多次购买也可同箱。通过关联字段连接它们，不要把购物订单号、进仓运单和国际出库追踪号互相替用。"
+    },
+    {
+      "source": "After intake, the warehouse stage has more in common. The official Superbuy guides direct customers to My Warehouse to review stocked items before choosing what to ship. At that point your decision concerns the physical units in the warehouse. Confirm the relevant options and quantities, resolve any problem you need to address locally, and select the correct units for the international parcel.",
+      "source_sha256": "68e64d426e46cdde64a1718e510880dafc4bc484e07bd14dbd3ab298e4dcaad9",
+      "raw_target_sha256": "5e41b6ea0ad7e0566a583a8ed27c5f10ff4e20335a323e398122699b81831baf",
+      "translation": "入库以后，两条流程更相似。Superbuy 官方指南都指向 My Warehouse，先查已入库商品，再选要发哪些。此时决定的是仓库里的实际物品：核对相应规格和数量，在本地还能处理时解决问题，再把正确的实物选进国际包裹。"
+    },
+    {
+      "source": "Keep the original relationship visible even after consolidation. If two shirts came through agent purchases and a bag came from a shop you paid directly, one outbound parcel may eventually contain all three. A problem with international delivery can concern the entire parcel. A wrong colour on the bag may still lead you back to your direct seller order. A simple list stating who bought each item prevents the combined parcel from erasing that distinction.",
+      "source_sha256": "45aa138c9662b0b9fca2c83d483fd0bef2116d26c7ea8e773c5a04e2e77203d7",
+      "raw_target_sha256": "0e2b11fba93c428e04f5738fad8141b975837c82ebf7c6cf461e15f6b139c756",
+      "translation": "合包后也保留每件货的来源。两件衬衫由代购买，一只包由你直接向店家买，最后三件可以同箱寄出。国际投递异常可能涉及整箱，包的颜色发错却可能要回到直接向卖家下的那笔订单。给每件记清谁买的，合包便不会抹去这种区别。"
+    },
+    {
+      "source": "If you cannot remember whether an order was completed, check the seller account, your payment record and Superbuy's order list before submitting a new request. A saved product or cart entry is not evidence that the seller was paid. A posted payment may also need investigation if its order reference cannot be identified. Record what each system actually shows and ask a specific question about the unmatched record.",
+      "source_sha256": "756cc13945db10abe97ce17a30cfabe03cd456ab876e54ab7e91bfccb37834ae",
+      "raw_target_sha256": "1f963baa71b046a927f1deccc0058998c6fed58c6709f01f0cdc6584678dfce3",
+      "translation": "记不清某笔订单是否真的买成时，先对照卖家账户、付款记录和 Superbuy 历史，再提交新请求。询问客服时提供实际编号，说明自己要确认的是付款、卖家发货、仓库签收还是国际出库。不要因某个页面没有显示结果就重复付款或重复登记。"
+    },
+    {
+      "source": "Before proceeding, complete this sentence in your own notes: “The seller will be paid by ___, the parcel will be sent by ___, and I will identify it to Superbuy with ___.” If the first blank is the agent, start from your shopping order. If you already paid the merchant, consult the forwarding guide and its review procedure. If any blank is still uncertain, resolve that one point first. It is much easier to clarify a missing reference before dispatch than to distinguish two identical purchases after both arrive. Keep the answer with the original receipt or order confirmation.",
+      "source_sha256": "0b12e490a180f695b4861c0d83c5376b0d7381f0c6342b4e9471a3597e06506e",
+      "raw_target_sha256": "848e77a72afc8b61d7b27a7cf63959c26d7009a3442729fc092e43ff0fff2323",
+      "translation": "下一步前先补完整一句话：“卖家由谁付款，包裹由谁寄出？”委托 Superbuy 购买，就从代购订单开始；已经向商家付款，就查转运指南及审核要求。任何一处还不确定，先解决那一处。在发货前弄清缺失的编号，总比两件相同商品都到仓后再辨认容易。把答案与原收据或订单确认一起保存。"
+    },
+    {
+      "source": "A note asking for a measurement, a purchased service and a photograph in your account are three different records. They may refer to the same need, but the note alone does not prove that a service was accepted or that the item was inspected as requested. Connect each optional service with the object it concerns and the result you expect to receive.",
+      "source_sha256": "8e42edfe1c09c787daca4394b0cac2101d97529b3d583d2fc396f9cc9daf6251",
+      "raw_target_sha256": "79f6ec21ac5ecc7d699132720b55132cc659f3bedf6479ba9fafe53493d1c7a9",
+      "translation": "请人量尺的备注、已购买的服务和账户中返回的照片，是三类记录。它们可能为了解决同一个问题，但单有一句备注，不能证明仓库已经接受请求或完成检查。把每项可选服务关联到具体物品或包裹，并说明期望收到什么结果。"
+    },
+    {
+      "source": "Begin with the thing someone needs to handle. If you want a precise view of a shirt's collar, that is an item request. If you want two goods separated inside a carton, that is a packing request involving a parcel. Reinforcing an outer box and asking for a close-up of a retail label may involve different services, charges and stages.",
+      "source_sha256": "80743a20e43ddf170058997babee20fdc1c3d153ed9b8fe44f0f9446262e0230",
+      "raw_target_sha256": "5fda330b5acf93bb626da1480014ae4a506dbcd6b6d8f46669dfa22da05cd708",
+      "translation": "从工作人员要操作的对象写起。想看清衬衫衣领，针对的是单件；想把两样东西在纸箱内隔开，针对的是整包。外箱加固与零售标签特写，可能对应不同服务、费用和操作环节。"
+    },
+    {
+      "source": "Superbuy's shopping and forwarding guides describe optional treatments such as removing packaging or reinforcing a parcel. The service offered for a particular item and its applicable terms should be checked in your account. A suggestion on an independent site is a reason to ask about an option, not evidence that any particular service has been selected, paid for or performed.",
+      "source_sha256": "e05f80dd8a0489d36062e965da16d536dee95fb1775272ca58b2e672a8287f17",
+      "raw_target_sha256": "328c99deed71d247fa91ff39bfbb89c678712fa4a989408a3c697f3d025f0696",
+      "translation": "Superbuy 的代购与转运指南提到可选的拆包装、加固等服务。具体哪件货能做什么、适用哪些条款，要在自己的账户查看。独立网站上的建议可以提醒你去问，不是该服务已经选购、付款或完成的证明。"
+    },
+    {
+      "source": "A useful instruction states the object, the action and the evidence needed. “Please check the shoes carefully” tells a person little about the decision you are trying to make. “Please show the size labels on both shoes from warehouse entry A in one readable photograph” describes a specific view. If the concern is colour under neutral lighting, ask for that instead of a generic collection of close-ups.",
+      "source_sha256": "97cd22f09dfae912449340ec06b371f7e758071d7d84e8d60db76c4b0d49d05a",
+      "raw_target_sha256": "79dc40eed95826f9c9afe7171a9d1359de6142461334bba811045c185d8da48b",
+      "translation": "写明对象、动作和所需证据。“请仔细检查鞋子”没有告诉对方你在判断什么；“请把仓库条目 A 的左右鞋尺码标放在同一张清晰照片里”就便于执行。如果疑问是中性光下的颜色，就具体请对方展示这一点，不必笼统要一堆细节图。"
+    },
+    {
+      "source": "A note can include a preference and a condition. “Remove the plain delivery carton” is an instruction. “Only if the illustrated retail sleeve can stay intact” is a condition. If the condition cannot be met, tell the service what result you want: retain the original packaging, pause and contact you, or offer an alternative before making changes. Asking for clarification is especially valuable when packaging disposal cannot be undone.",
+      "source_sha256": "177e16533ef264c968eedb78023fda503eccf40ce31a0a1f62e4b944726c2b49",
+      "raw_target_sha256": "7cbd4be13276168f45be80d31235adc620197e125a8d66d32bd0deb48ec5b545",
+      "translation": "备注可以同时写动作和前提。“拆掉普通运输外箱”是动作，“仅在带插画的零售外套可完整保留时进行”是前提。条件不满足时，明确希望对方保留原包装、暂停联系你，还是先提出替代方案。包装拆掉可能无法复原，事先问清尤其重要。"
+    },
+    {
+      "source": "For example, you might want to ship two books together. One is an ordinary reading copy; the other is a gift with an illustrated slipcase. A single instruction to reduce packaging could affect both. Identify the warehouse entry for each book. Explain that the plain outer wrapper may be removed from the reading copy while the slipcase for the gift must remain. Ask whether the proposed arrangement changes the box size or service charge before authorizing it.",
+      "source_sha256": "8a952434dbb775a237e5d7832a96fbf434ca16b3a02444458310242c75c3b2de",
+      "raw_target_sha256": "28021c7ce2daa4692f5dfbc39c5b1fd534da33502f6f76f7cea5b5ec096cc699",
+      "translation": "例如一起寄两本书，一本自读，一本是附有插画书套的礼物。同一句“精简包装”可能影响两本。分别列书的仓库编号，说明自读本的普通外包可拆，礼品本的书套必须保留。授权前问清这种装法会不会改变外箱尺寸或服务费。"
+    },
+    {
+      "source": "Keep a short line for each request with the warehouse or parcel reference, date, requested action, service selected, amount and expected result. If you asked a question but have not accepted an option, record the status as awaiting an answer. If a service was accepted, save the confirmation that identifies it. These notes help when several items are almost identical or when a support conversation covers more than one service.",
+      "source_sha256": "2a9ae6971dd614f96040d9687257345e417573bc88fa7791d08caf5378bc7016",
+      "raw_target_sha256": "b9db9d59493fa5082be46e7507ebf4a026187545b8643d5ff30b3734fbac0d8c",
+      "translation": "每项请求单列一行，记仓库或包裹编号、日期、请求动作、所选服务、金额和预期结果。已经询价但还没接受，就记“等答复”；已接受的服务则保存对应确认。让记录反映实际进度，别把书面意向误当付款或完成。"
+    },
+    {
+      "source": "A useful ledger might show “entry A, two size-label photographs requested, quoted amount recorded, awaiting confirmation” and “parcel P, outer reinforcement accepted, completion pending.” Neither line should say completed merely because the request was sent. Likewise, a charge appearing on a payment record tells you something about billing; it does not by itself establish that the correct item was photographed or that a packaging instruction was followed.",
+      "source_sha256": "521674ff9eb4f1de2f4ece9253457058918cf5770f4e1914fdc30edfa657ed03",
+      "raw_target_sha256": "cf78948350f589523441d556433d670a8f29faf85bd6160c140bf0949f5f282f",
+      "translation": "例如：“条目 A，请求两张尺码标签照片，报价已记，待确认”；“包裹 P，已接受外箱加固，待完成”。发送请求不等于完成，付款记录里出现一笔费用也只说明资金状态。是否交付所需结果，要另看返回的照片或包装记录。"
+    },
+    {
+      "source": "When an image or packing update arrives, reopen the request before deciding whether it meets your need. Ask whether it shows the correct object, resolves the specified feature and contains enough context to interpret it. A close-up of a label can be perfectly sharp while coming from the wrong item. A ruler can be readable while the zero mark is hidden. Describe the remaining gap precisely.",
+      "source_sha256": "7566d56fb5c57425a0a8b490e5042c7249f89ea39f4219a09d70ec566bf61c67",
+      "raw_target_sha256": "c0c65f1714cf9bfc61dceeec1cfe4f87d30b2eea4b92580155963660d09173ce",
+      "translation": "收到照片或包装更新后，重新打开原请求核对：拍的是不是正确物品？能否看清问的特征？画面有没有足够上下文？一张非常清楚的标签特写可能来自别件货，一把读数清晰的尺也可能没拍到起点。先把证据和要求对应，再决定能否接受。"
+    },
+    {
+      "source": "A packing request can alter the weight, outer dimensions or route eligibility of the proposed parcel. Write down which measurements correspond to which treatment. A quote based on keeping retail boxes and one based on removing them belong to different scenarios. If reinforcement was added later, the packed package can change again. Do not overwrite the earlier figures; label them with the treatment they describe.",
+      "source_sha256": "92cd62d74a8493f94e5c5f10f28d2af361f07e2cf729ae898bcb91623ddd6f60",
+      "raw_target_sha256": "72682b0207902b1701482d2736dcd9691d486d7a45b6a4f80c9f36aabd8a9157",
+      "translation": "包装要求可能改变包裹重量、外尺寸和线路适用性。给每组数据标明具体装法。保留零售盒与拆掉它们，是两套方案；后来加固还可能引起下一次变化。不要把不同包装条件下测出的长宽高、重量和报价拼成一次结果。"
+    },
+    {
+      "source": "When comparing the costs, separate the optional service from freight. An extra packing charge may accompany a larger carton, smaller carton or no measurable change in size. If the total increased, check both service line and freight line before attributing the whole difference to packaging. The relevant decision can include protection and gift presentation as well as price. State which requirement justified the choice so you can evaluate the result once the parcel arrives.",
+      "source_sha256": "012e71adcea7bc14a867c7fdf4b5a227ad42d3613ab05f09e9ff54a0a97ddd5b",
+      "raw_target_sha256": "f4adc51024241d0170ba854d1ede97c3052c91d6ba12523cf73a42a7c616c607",
+      "translation": "比较成本时，将可选服务费和运费拆开。多一项包装服务，外箱可能变大、变小，也可能尺寸不变。总额上涨时，两条费用都要看，不能把全部差额直接归给包装。最终的选择还可能涉及商品保护程度，以及该线路能否使用。"
+    },
+    {
+      "source": "Review open requests before adding another one. Two instructions for the same item may duplicate a service or send opposite messages. If an earlier request is incomplete, continue the same inquiry when possible, identifying what is still missing. If you changed your mind, mark which earlier instruction the new one replaces and ask whether work has already begun.",
+      "source_sha256": "da2eeb06dade9e20fcd6623cc50a8c8ce3d3f5386b4c962e076b31620180814c",
+      "raw_target_sha256": "cd7cc19aec4fd4a81eff555c2e76f2f63e96cbdb53fa0d4178bfbaac4ed38ead",
+      "translation": "新增请求前查有没有未结事项。同一件货两条指令可能重复收费，也可能方向相反。如果旧请求未完成，尽可能接着同一问询补充缺少什么；如果改变主意，注明新指令取代的是哪条旧要求。"
+    },
+    {
+      "source": "Imagine initially asking to remove a shoebox, then discovering that you may need it for an exchange. Contact support promptly with the entry and request reference. Ask whether removal has occurred and whether it can be stopped at the current stage. A new instruction to keep the box cannot restore material already discarded. The time and sequence of the two requests therefore matter as much as their wording.",
+      "source_sha256": "e5d25b98e26fbb08e0cddd14d5b8c087d8c08f0067d0aa655058db39b63e98fe",
+      "raw_target_sha256": "8c72b51e630b26aee10b352aac762d1153b50c8b912c511fa1b961c539ddc810",
+      "translation": "例如先要求拆鞋盒，后来发现换货可能需要盒子。尽快带仓库编号和请求编号联系支持，查是否已拆以及当前还能不能停止操作。新的“请保留”不能让已丢弃的材料恢复原状。保留客服答复，再决定下一步怎么做。"
+    },
+    {
+      "source": "At the end, keep the request, confirmation, returned result and your decision together. A short closure line might say, “Photo matches entry A and confirms both labels; accepted for shipment.” A parcel line might say, “Reinforcement confirmed; packed dimensions recorded; shipping route reviewed against the revised box.” Keep an issue open if the evidence remains incomplete.",
+      "source_sha256": "8be60090411d0e2e55ba6de2608fbb67791d85e960c7bdbfe948927748d6e902",
+      "raw_target_sha256": "0074d22ff5b0dc4cd42cef9526a8eb46eedd2e13b4582e420caa02dff0c545b8",
+      "translation": "最后把请求、确认、返回结果和自己的决定保存在一起。单件可写“照片匹配条目 A，两张标签都已确认，同意发货”；整包可写“已确认加固，实包尺寸已记，已按新箱体重新核对线路”。以后回看时，能直接知道哪些事实已经确认、哪些操作获准执行。"
+    },
+    {
+      "source": "If a service is declined, save the reason alongside the request and mark it closed as unavailable. That prevents a later reader from mistaking a written preference for an accepted instruction. Choose a different packing or inspection option on its own merits rather than assuming the declined treatment will happen during ordinary dispatch. This matters most when several warehouse entries will be packed together.",
+      "source_sha256": "9ee881039e52c8c2458270a3c698ae8701cea161cab48fd503ebe94a91a3e1f3",
+      "raw_target_sha256": "1e95c443be3221ec99c0ac44fd95193a898522115327a92a5b8a2d655b9aed89",
+      "translation": "服务被拒绝时，将理由写在原请求旁，标为“无法提供，已结案”。这样之后看记录的人不会把一条偏好误认为已接受的指令。重新评估其他可选包装或检查服务，不要预期被拒绝的要求会在常规处理时自动完成。"
     }
   ]
 }

@@ -3,9 +3,9 @@
   "locale": "vi",
   "source_set_sha256": "22619851fe6c0c4d68d3e0eeae0044fc51f350ee67205e4e41855e55ae1a7029",
   "raw_dictionary_sha256": "f2f47e6f98697de26003372dc65fc9c1de214e3b197effd595f119bd4c3a11e0",
-  "effective_dictionary_sha256": "4d5df6802b2b306ff2b7c5bbae8355dbae60e57bf48b7450146cc5502397993e",
+  "effective_dictionary_sha256": "cb5087e147275c1ed52a5318a58d04d974044d0fcf879bcd97fb2ced5b5a1529",
   "checked_entries": 313,
-  "review_scope": "Targeted bilingual review of ten headlines, all flagged entries, reproducible samples, volume arithmetic, currencies and tracking identifiers.",
+  "review_scope": "Targeted bilingual review of ten headlines, all flagged entries, reproducible samples, volume arithmetic, currencies and tracking identifiers. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [
     {
       "issue": "new digit or localized conversion",
@@ -303,6 +303,24 @@
       "source_sha256": "c6adfa570690526a2be8aa75c41563c327ccee812b907d1bac93568ceaae4667",
       "raw_target_sha256": "26120a4d7214ec61290dfae0b48d5eff02781c120cc55a90b637deb47469f047",
       "translation": "Kiểm tra vị trí lưu trữ phù hợp và các tùy chọn gói sống cho các mục nhập thực tế. So sánh như giả định. Một chuyến vận chuyển một phần hôm nay và một chuyến vận chuyển phụ kiện sau đó có thể gây ra hai khoản phí đi ra riêng biệt. Một gói kết hợp sau đó có thể có kích thước khác nhau, nhu cầu đóng gói và khả năng di chuyển. Xử lý mỗi giá như một báo giá cho một tập hợp nội dung có tên. Không có gì về lựa chọn số hộp của người bán nội địa đảm bảo việc sắp xếp đóng gói ra ngoài sẽ phù hợp với bạn."
+    },
+    {
+      "source": "Suppose you ordered two identical table lamps. The merchant confirms that each lamp comprises a base, shade and fittings packet. Your purchase record therefore describes two units and six expected components. It still tells you nothing about how many boxes the merchant will use. The seller might send each complete lamp separately, group the bases together or place both sets in one outer carton. You need a packing statement to connect those counts.",
+      "source_sha256": "489bd19df82929f177709783ca85eefb1e6ee2a65a6a13dffa6bbd9bcef6beca",
+      "raw_target_sha256": "aa6b9dcd9a0406de7ce2e6c1a88e3ae8cd198ee7e3af63a233422c2953bfda05",
+      "translation": "Giả sử anh đặt 2 chiếc đèn bàn giống nhau. Nhà buôn xác nhận rằng mỗi đèn bao gồm một đế đèn, một chụp đèn và một túi phụ kiện lắp ráp. Do đó, hồ sơ mua của anh mô tả hai đơn vị và sáu thành phần dự kiến. Nó vẫn không nói gì về số hộp mà người buôn sẽ dùng. Người bán có thể gửi mỗi đèn hoàn chỉnh riêng biệt, nhóm các cơ sở cùng nhau hoặc đặt cả hai bộ trong một hộp bên ngoài. Anh cần một bản báo cáo để kết nối những con số đó."
+    },
+    {
+      "source": "In the lamp example, the box expected to hold the two bases has a delivery scan, while the box containing shades and fittings is still in transit. A warehouse record with two bases is consistent with those facts. Mark the bases as accounted for and the other four components as pending. Do not report two missing lamps simply because the original order quantity was two. The meaningful outstanding question is whether the second carton has been delivered and identified.",
+      "source_sha256": "34bd3a6274d361c24821ae50f312414040193ae596a688c0100bc5b92079f7e7",
+      "raw_target_sha256": "644254a6053685314419bfda66010a7fa604ced5651dd60f06cc87d1dbf3e2f9",
+      "translation": "Trong ví dụ về đèn, hộp được dự kiến sẽ chứa hai đế đèn có một bản scan giao hàng, trong khi hộp chứa chụp đèn và phụ kiện vẫn đang được vận chuyển. Một hồ sơ kho với hai đế đèn phù hợp với những thực tế đó. Đánh dấu các cơ sở như đã tính toán và bốn thành phần còn lại như đang chờ. Đừng báo cáo hai chụp đèn thiếu đơn giản vì số lượng đơn đặt hàng ban đầu là hai. Câu hỏi còn lại là liệu hộp thứ hai có được giao và nhận dạng hay không."
+    },
+    {
+      "source": "Before submission, transfer only the instructions that apply to the chosen parcel. A note to retain a collector's sleeve belongs with the specific book. Reinforcement of an outer carton concerns the entire parcel. Describe the object and action together so that one instruction does not inadvertently override another, particularly when removing some packaging while keeping other pieces intact.",
+      "source_sha256": "53a8080527881a45fd3325417e60a753b90cf4d7eb7a8c8927a42d898b889331",
+      "raw_target_sha256": "f951b98ab92645e4d96e652da7d50bef96fa21c03f093b568ef1cd6dc61778ae",
+      "translation": "Trước khi xác nhận, chỉ chuyển những hướng dẫn áp dụng cho kiện đã chọn. Việc giữ bao bảo vệ của bản sách sưu tầm gắn với đúng cuốn sách, còn việc gia cố thùng ngoài áp dụng cho cả kiện. Nêu rõ vật cần xử lý và thao tác tương ứng, nhất là khi muốn bỏ một số vật liệu đóng gói nhưng giữ nguyên những phần còn lại."
     }
   ]
 }

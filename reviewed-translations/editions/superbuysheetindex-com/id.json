@@ -3,7 +3,7 @@
   "locale": "id",
   "source_set_sha256": "22619851fe6c0c4d68d3e0eeae0044fc51f350ee67205e4e41855e55ae1a7029",
   "raw_dictionary_sha256": "ec6ed2be3bcce792902bb027ef5962e09d393bb0c6fe4a4e6ceb55f56327d929",
-  "effective_dictionary_sha256": "0fd8a843f8d22779733161bb6d4da0d69b2403f253ab9f6d1681f43c09d15966",
+  "effective_dictionary_sha256": "b2daa3b2e68f4d51f446731bb6e27c49a9c21eebaa23629f5eb67ea369b554b8",
   "checked_entries": 313,
   "review_scope": "Targeted bilingual review of ten headlines, all flagged entries, reproducible samples, volume arithmetic, currencies and tracking identifiers. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [
@@ -351,6 +351,24 @@
       "source_sha256": "53a8080527881a45fd3325417e60a753b90cf4d7eb7a8c8927a42d898b889331",
       "raw_target_sha256": "8e9bd3c1050c06a2968555ee9db7a0ecee64872245ff6e27a623919de6f94add",
       "translation": "Sebelum mengirimkan, kirimkan hanya instruksi yang berlaku untuk paket yang dipilih. Sebuah catatan untuk mempertahankan selubung buku edisi kolektor yang berhubungan dengan buku tertentu. Perkuat karton luar yang berhubungan dengan seluruh paket. Deskripsikan objek dan aksi bersama-sama sehingga satu instruksi tidak secara tidak sengaja mengabaikan yang lain, terutama ketika membuang beberapa kemasan sementara menjaga bagian lain utuh."
+    },
+    {
+      "source": "Suppose you ordered two identical table lamps. The merchant confirms that each lamp comprises a base, shade and fittings packet. Your purchase record therefore describes two units and six expected components. It still tells you nothing about how many boxes the merchant will use. The seller might send each complete lamp separately, group the bases together or place both sets in one outer carton. You need a packing statement to connect those counts.",
+      "source_sha256": "489bd19df82929f177709783ca85eefb1e6ee2a65a6a13dffa6bbd9bcef6beca",
+      "raw_target_sha256": "b516c6f962abea298bcce0860ff72d605f2f97535b80b89ee0f5cf8069cc5576",
+      "translation": "Anggap saja kau memesan dua lampu meja yang sama. Pedagang mengkonfirmasi bahwa setiap lampu terdiri dari dasar, tudung lampu dan komponen pemasangan paket. Catatan pembelian Anda oleh karena itu menggambarkan dua unit dan enam komponen yang diharapkan. Itu masih tidak memberitahu Anda apa-apa tentang berapa banyak kotak pedagang akan menggunakan. Penjual dapat mengirimkan setiap lampu lengkap secara terpisah, mengelompokkan basis bersama-sama atau menempatkan kedua set dalam satu karton luar. Kau butuh pernyataan pengiriman untuk menghubungkan penghitungan itu."
+    },
+    {
+      "source": "In the lamp example, the box expected to hold the two bases has a delivery scan, while the box containing shades and fittings is still in transit. A warehouse record with two bases is consistent with those facts. Mark the bases as accounted for and the other four components as pending. Do not report two missing lamps simply because the original order quantity was two. The meaningful outstanding question is whether the second carton has been delivered and identified.",
+      "source_sha256": "34bd3a6274d361c24821ae50f312414040193ae596a688c0100bc5b92079f7e7",
+      "raw_target_sha256": "49d6eaa6c923242ec03e466741204d22161da219d371ccadd9867e26c78dcabe",
+      "translation": "Dalam contoh lampu, kotak yang diharapkan untuk memegang dua basis memiliki pemindaian pengiriman, sementara kotak yang berisi tudung lampu dan komponen pemasangan masih dalam perjalanan. Rekaman gudang dengan dua basis yang konsisten dengan fakta-fakta itu. Tandai basis sebagai tercatat dan empat komponen lainnya sebagai menunggu. Jangan melaporkan dua lampu yang hilang hanya karena kuantitas pesanan asli adalah dua. Pertanyaan yang masih tersisa adalah apakah kotak kedua telah dikirim dan diidentifikasi."
+    },
+    {
+      "source": "Suppose the merchant reports that the fittings packets were sent by a different carrier. The original second carton is now expected to contain shades only. If the warehouse confirms two shades, that carton can be marked complete even though the overall purchase is still incomplete. Record the third waybill and its expected two fittings packets. This simple distinction matters if the first two cartons are ready to dispatch and the third is delayed.",
+      "source_sha256": "9f0990dc8f7aa4870abe0681a99196bc777c180228a3f40fd05b2523eae60a69",
+      "raw_target_sha256": "df32e3a2f67cb4854642c37bcb8c41bbbcc12d689c4edeefa68b1046afd517ad",
+      "translation": "Asumsikan pedagang melaporkan bahwa paket komponen pemasangan dikirim oleh pengangkut yang berbeda. Karton kedua asli sekarang diharapkan hanya berisi tudung lampu. Jika gudang mengkonfirmasi dua tudung lampu, karton itu dapat ditandai lengkap meskipun pembelian keseluruhan masih tidak lengkap. Catatkan bill of lading ketiga dan dua paket perlengkapan yang diharapkan. Perbedaan sederhana ini penting jika dua karton pertama siap untuk dikirim dan yang ketiga tertunda."
     }
   ]
 }

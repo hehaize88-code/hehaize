@@ -3,7 +3,7 @@
   "locale": "ro",
   "source_set_sha256": "22619851fe6c0c4d68d3e0eeae0044fc51f350ee67205e4e41855e55ae1a7029",
   "raw_dictionary_sha256": "21adf54334a68db029161b2f7c3601abb79138f89dd20c34e3166d7df41b7897",
-  "effective_dictionary_sha256": "73b6a4aeb621488f626f8d0a37e32e74750262d5c80d5b45b27a54a02dcd8d1d",
+  "effective_dictionary_sha256": "5f5fd49412983caab3b78785a2bc41976cc22c456b35cade1bdd3320178b8bc3",
   "checked_entries": 313,
   "review_scope": "Targeted bilingual review of ten headlines, all flagged entries, reproducible samples, volume arithmetic, currencies and tracking identifiers. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [
@@ -201,6 +201,18 @@
       "source_sha256": "103948008faacb903f32058dc9655a8fbbb9bb9344a7a153dbc10574b3fd1e55",
       "raw_target_sha256": "33487eb3dee90ee9f201c5ae784bc9ea4cbc3035004278048cfb7dcfbaa29fec",
       "translation": "Precizează mai întâi restricțiile fizice, apoi preferințele. Cere sfatul personalului dacă cele două nu se împacă. De exemplu: „Cartea trebuie să rămână dreaptă în etui. Dacă o cutie mai mică ar impune îndoirea copertei, păstrați cutia mai mare și comunicați-mi dimensiunile.” Astfel ambalatorul știe ce condiție e obligatorie, iar tu poți compara rezultatul."
+    },
+    {
+      "source": "In the lamp example, the box expected to hold the two bases has a delivery scan, while the box containing shades and fittings is still in transit. A warehouse record with two bases is consistent with those facts. Mark the bases as accounted for and the other four components as pending. Do not report two missing lamps simply because the original order quantity was two. The meaningful outstanding question is whether the second carton has been delivered and identified.",
+      "source_sha256": "34bd3a6274d361c24821ae50f312414040193ae596a688c0100bc5b92079f7e7",
+      "raw_target_sha256": "4f15757213193834abd39b1c7d9db20c17f431349732eb565c53084248455b6d",
+      "translation": "În exemplul lămpii, cutia care ar trebui să conțină cele două baze are o scanare de livrare, în timp ce cutia care conține abajururile și accesoriile este încă în tranzit. O înregistrare de depozit cu două baze este în concordanță cu aceste fapte. Marcați bazele ca fiind contabilizate și celelalte patru componente ca fiind în așteptare. Nu raportaţi lipsa a două lămpi doar pentru că cantitatea iniţială comandată era de două. Întrebarea semnificativă rămasă este dacă a doua cutie a fost livrată și identificată."
+    },
+    {
+      "source": "Suppose the merchant reports that the fittings packets were sent by a different carrier. The original second carton is now expected to contain shades only. If the warehouse confirms two shades, that carton can be marked complete even though the overall purchase is still incomplete. Record the third waybill and its expected two fittings packets. This simple distinction matters if the first two cartons are ready to dispatch and the third is delayed.",
+      "source_sha256": "9f0990dc8f7aa4870abe0681a99196bc777c180228a3f40fd05b2523eae60a69",
+      "raw_target_sha256": "68328ee60cf07b3d5b8911777b19b80315bf9d8f21b54770f7dd9c3fe1925880",
+      "translation": "Să presupunem că comerciantul raportează că pachetele de piese de montaj au fost trimise de un alt transportator. A doua cutie originală este acum de așteptat să conțină numai abajururi. Dacă depozitul confirmă două abajururi, acea cutie poate fi marcată ca fiind completă, chiar dacă achiziția generală este încă incompletă. Înregistrați a treia scrisoare de transport și cele două pachete de piese de montaj așteptate. Această distincţie simplă contează dacă primele două cutii sunt gata de expediere, iar cea de-a treia este întârziată."
     }
   ]
 }

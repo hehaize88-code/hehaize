@@ -3,9 +3,9 @@
   "locale": "th",
   "source_set_sha256": "22619851fe6c0c4d68d3e0eeae0044fc51f350ee67205e4e41855e55ae1a7029",
   "raw_dictionary_sha256": "5431f6673279bfc8680b6132d2cc2c2a0fa60a6f6119d81b2e22d43c68cc6322",
-  "effective_dictionary_sha256": "4f62041fe51c7e402854f2bcc6f1311e5bfc01cac06bb2d9429155fe3a12c3b0",
+  "effective_dictionary_sha256": "e678d42aafb3d1215695fe54f7307b1c45e8e2027696522301dbb778960089ca",
   "checked_entries": 313,
-  "review_scope": "Targeted bilingual review of ten headlines, all flagged entries, reproducible samples, volume arithmetic, currencies and tracking identifiers.",
+  "review_scope": "Targeted bilingual review of ten headlines, all flagged entries, reproducible samples, volume arithmetic, currencies and tracking identifiers. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [
     {
       "issue": "platform spelling or transliteration",
@@ -662,7 +662,7 @@
       "source": "In the lamp example, the box expected to hold the two bases has a delivery scan, while the box containing shades and fittings is still in transit. A warehouse record with two bases is consistent with those facts. Mark the bases as accounted for and the other four components as pending. Do not report two missing lamps simply because the original order quantity was two. The meaningful outstanding question is whether the second carton has been delivered and identified.",
       "source_sha256": "34bd3a6274d361c24821ae50f312414040193ae596a688c0100bc5b92079f7e7",
       "raw_target_sha256": "54088863997d49898c4d2c76c5dbc87772e275454dae69c54af11719adbb7db3",
-      "translation": "ในตัวอย่างของโคมไฟ กล่องที่คาดว่าจะเก็บฐานสอง มีการสแกนการจัดส่ง ในขณะที่กล่องที่มีแสงและอุปกรณ์ ยังคงอยู่ในระหว่างการขนส่ง บันทึกในโกดังที่มีฐานข้อมูลสองฐาน ตรงกับข้อเท็จจริงเหล่านั้น ทำเครื่องหมายฐานที่ถูกบันทึกไว้ และส่วนประกอบอีก4ส่วนที่รอการตรวจสอบ อย่ารายงานว่าขาดหลอดไฟสองดวง เพียงเพราะว่า ปริมาณของคำสั่งเดิมคือสองดวง คำถามที่สำคัญคือ กล่องกระดาษที่2ได้ถูกส่งมาแล้วหรือยัง"
+      "translation": "ในตัวอย่างของโคมไฟ กล่องที่คาดว่าจะเก็บฐานสอง มีการสแกนการจัดส่ง ในขณะที่กล่องที่มีโป๊ะโคมและอุปกรณ์ติดตั้ง ยังคงอยู่ในระหว่างการขนส่ง บันทึกในโกดังที่มีฐานข้อมูลสองฐาน ตรงกับข้อเท็จจริงเหล่านั้น ทำเครื่องหมายฐานที่ถูกบันทึกไว้ และส่วนประกอบอีก4ส่วนที่รอการตรวจสอบ อย่ารายงานว่าขาดหลอดไฟสองดวง เพียงเพราะว่า ปริมาณของคำสั่งเดิมคือสองดวง คำถามที่สำคัญคือ กล่องกระดาษที่2ได้ถูกส่งมาแล้วหรือยัง"
     },
     {
       "source": "Handle an unexpected third carton",
@@ -674,7 +674,7 @@
       "source": "Suppose the merchant reports that the fittings packets were sent by a different carrier. The original second carton is now expected to contain shades only. If the warehouse confirms two shades, that carton can be marked complete even though the overall purchase is still incomplete. Record the third waybill and its expected two fittings packets. This simple distinction matters if the first two cartons are ready to dispatch and the third is delayed.",
       "source_sha256": "9f0990dc8f7aa4870abe0681a99196bc777c180228a3f40fd05b2523eae60a69",
       "raw_target_sha256": "5a4605c0de88dbd7760d13803abd9f743b57268589e02c7c71f2d885977f2593",
-      "translation": "สมมติว่าพ่อค้ารายงานว่า แพ็คเกจของอุปกรณ์ถูกส่งโดยผู้ส่งที่แตกต่างกัน กล่องกระดาษที่2เดิมคาดว่าจะมีแค่สีเดียว ถ้าโกดังยืนยันว่ามี2สี กล่องนั้นจะถูกทำเครื่องหมายว่าเสร็จสมบูรณ์ แม้ว่าการซื้อทั้งหมดยังคงไม่เสร็จสมบูรณ์ บันทึกใบส่งสินค้าเล่มที่สาม และคาดการณ์ว่า แพ็คเกจอุปกรณ์สองใบ การแยกแยะง่ายๆนี้สำคัญ ถ้าสองกล่องแรกพร้อมที่จะส่ง และกล่องที่สามล่าช้า"
+      "translation": "สมมติว่าผู้ขายแจ้งว่าส่งถุงอุปกรณ์ติดตั้งกับผู้ขนส่งอีกราย ดังนั้นกล่องที่สองตามรายการเดิมควรมีเฉพาะโป๊ะโคมไฟ หากคลังยืนยันว่าได้รับโป๊ะทั้งสองชิ้นแล้ว ให้ทำเครื่องหมายว่ากล่องนี้ครบ แม้ของทั้งคำสั่งซื้อจะยังไม่ครบ บันทึกเลขติดตามของพัสดุที่สามพร้อมระบุว่าควรมีถุงอุปกรณ์สองถุง ข้อมูลนี้สำคัญเมื่อสองกล่องแรกพร้อมส่งต่อแต่กล่องที่สามล่าช้า"
     },
     {
       "source": "The easiest time to connect a self-purchased item with its warehouse record is before the seller prints a label. You can still change an address, ask what the box will contain and correct a description without having to trace a parcel in transit. Use Superbuy's forwarding guide alongside the instructions in your own account. The sequence matters more than the position of any individual button.",
@@ -789,6 +789,12 @@
       "source_sha256": "a8f2951b5919aac764578ef49fa25e8e25a9b726f933ef2f94c6ed6a00f8d15b",
       "raw_target_sha256": "410e350665938194e30af59b940d59b68cff6d7a41e56da0092b59a021e60629",
       "translation": "สมมติว่าคุณพบชุดเครื่องเขียนและบันทึกลิงก์ไว้ ยังไม่มีใครจ่ายเงิน หากต้องการให้ตัวแทนซื้อหนึ่งชุดที่มีปกสีกรมท่า ให้ระบุสี จำนวน ตัวเลือกตามหน้าร้าน และสิ่งที่ต้องถามผู้ขาย แต่ถ้าผู้ขายรับเงินของคุณสำหรับชุดสีกรมท่าแล้วและขอที่อยู่จัดส่งในประเทศ คุณต้องหาที่อยู่คลังที่ถูกต้องและระบุได้ว่าพัสดุไหนเป็นของคุณ การสั่งซื้อชุดเดิมอีกครั้งไม่ช่วยแก้ปัญหา"
+    },
+    {
+      "source": "Suppose you ordered two identical table lamps. The merchant confirms that each lamp comprises a base, shade and fittings packet. Your purchase record therefore describes two units and six expected components. It still tells you nothing about how many boxes the merchant will use. The seller might send each complete lamp separately, group the bases together or place both sets in one outer carton. You need a packing statement to connect those counts.",
+      "source_sha256": "489bd19df82929f177709783ca85eefb1e6ee2a65a6a13dffa6bbd9bcef6beca",
+      "raw_target_sha256": "1362055a830360533b01f7afafc804ecbcbba01cecd0f19609400dac823641d6",
+      "translation": "สมมติว่าคุณสั่งโคมไฟโต๊ะสองอันเหมือนกัน พ่อค้ายืนยันว่า โคมไฟแต่ละอันประกอบด้วย ฐาน โป๊ะโคมและถุงอุปกรณ์ติดตั้ง ดังนั้นบันทึกการซื้อของนายจึงอธิบาย2หน่วย และ6ส่วนที่คาดหวัง มันยังบอกอะไรคุณไม่ได้เลย เกี่ยวกับจำนวนกล่องที่พ่อค้าจะใช้ ผู้ขายอาจจะส่งตะเกียงแต่ละชิ้นแยกกัน จัดกลุ่มฐานไว้ด้วยกัน หรือวางทั้งสองชุดไว้ในกล่องด้านนอก คุณต้องการรายงานการจัดเก็บ เพื่อเชื่อมโยงตัวเลขเหล่านั้น"
     }
   ]
 }
