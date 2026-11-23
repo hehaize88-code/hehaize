@@ -3,9 +3,9 @@
   "locale": "cs",
   "source_set_sha256": "d3fa9f46b8822e6121c5f5032ff51cfdb56efdc052db0b6c6c720b54b6f2d6ef",
   "raw_dictionary_sha256": "0f67e19550bbaa8ff7899169243461a38c1972e3e1269a9ff80b83c1580c992f",
-  "effective_dictionary_sha256": "13875ece1fd0a7fbf8a0f86bfa4887c62d264fed67eea3afc7c7a4397ef1ead0",
+  "effective_dictionary_sha256": "1955b33a8de4de0ec3aa7413ae3a69eaf667d7ddfcac8464fcac5a16dc1745f9",
   "checked_entries": 281,
-  "review_scope": "English/locale edition review including all 281 original keys, ten headings, all audit flags, domestic and international freight, quantity, photo and return wording, garment dimensions and cubic centimetres.",
+  "review_scope": "English/locale edition review including all 281 original keys, ten headings, all audit flags, domestic and international freight, quantity, photo and return wording, garment dimensions and cubic centimetres. Follow-up review of parcel and quote polysemy.",
   "reviewed_flags": [
     {
       "issue": "quantity unit or currency changed",
@@ -339,6 +339,30 @@
       "source_sha256": "cf38e7e1819c955877e07856967d0292cdf7b4a7fc3b142abc89944d7f21d97f",
       "raw_target_sha256": "35fb4265309d6306ed18861257c7789fbae1e2b27260012328a5d112e8e51f8b",
       "translation": "Po převzetí balíku porovnejte jeho štítek s označením odchozí zásilky a obsah se seznamem položek, které k ní patří. Pokud balík dorazil, ale chybí jeden oděv, uzavřete dotaz na doručení a otevřete dotaz na obsah s doklady o balení a výrobku. Potvrdí-li podpora jiný výsledek, uschovejte písemné vyřízení a označte, které zásilky se týká. Ze záznamu má být jasné, co bylo doručeno, co se prošetřovalo a zda je jiný samostatný nákup stále na cestě."
+    },
+    {
+      "source": "If you would accept an alternative, define the limit in the same message. “Silver or grey fittings are acceptable; please ask before substituting the black bag” is a different instruction from “any similar colour is fine.” Check how the agent actually records the note and selection before paying. Save a copy of the confirmed option. The note and the selected line should agree; a note asking for olive beside a paid line for black creates avoidable uncertainty.",
+      "source_sha256": "c7ff32dd562936323cc70181502368fb6a57e83ed9d93756c065bc4cc47fd321",
+      "raw_target_sha256": "7cea2be10f9eaffd39db5cc4a32d86f0fdf715de87c5572e485da452b1e63a1b",
+      "translation": "Pokud by vám vyhovovala i jiná varianta, vymezte ji v téže zprávě. „Stříbrné nebo šedé kování je v pořádku. Než pošlete místo vybrané tašky černou, zeptejte se mě“ je přesnější pokyn než „jakákoli podobná barva je v pořádku“. Před platbou ověřte, jak zprostředkovatel zapsal poznámku i vybranou variantu. Potvrzenou volbu si uložte. Jestliže poznámka žádá olivovou tašku a na hrazené položce je černá, vyjasněte tento rozpor."
+    },
+    {
+      "source": "Build a minimum option record",
+      "source_sha256": "25a9a740f3ac789ada44b1374d52b7b200c67cc0097c14a22ec2cdb0786ba3d0",
+      "raw_target_sha256": "f0d1f0aae805b96135da998624cc8097cf588a9a0957841b97cc2e849694fa6d",
+      "translation": "Co si nejméně poznamenat o vybrané variantě"
+    },
+    {
+      "source": "Check the price after reproducing the selection. Imagine a sweatshirt page that also offers a drawstring accessory. A link opening to the accessory may show a dramatically lower starting figure than the amount attached to the sweatshirt. Record the selected unit price with its currency, and say when you saw it. A recipient can then tell whether the apparent discrepancy comes from a default option or a change in the offer. Use the live checkout amount when paying.",
+      "source_sha256": "d679a11bb3db6fd0fdfaaabe13ee1de0d907a08bbb2facddf2d865b6b6d83be2",
+      "raw_target_sha256": "0f4fdcd30223f275ba532c5714fb2bbaaf0eb1b3e6506df4416c66d959562a82",
+      "translation": "Znovu zvolte stejnou variantu a zkontrolujte cenu. Představte si nabídku mikiny, u níž lze samostatně koupit i doplněk se šňůrkou. Odkaz, který se otevře s vybraným doplňkem, může ukazovat mnohem nižší výchozí cenu než samotná mikina. Zapište si jednotkovou cenu vybrané položky, měnu a čas kontroly. Příjemce pak pozná, zda rozdíl způsobila předvolená varianta, nebo změna nabídky. K platbě použijte částku zobrazenou při dokončení objednávky."
+    },
+    {
+      "source": "Imagine an order containing a jacket and scarf. On Monday the jacket's seller reference ends with a domestic delivery scan. On Thursday the jacket and scarf appear together in one international parcel record with another reference. Later a destination operator reports that it has received electronic information about that parcel. These events describe three different observations. The first supports checking warehouse receipt of the jacket, the second identifies your requested outbound contents, and the third records a message in the destination carrier's network.",
+      "source_sha256": "140336625f8c82ed37a68f14ec133f24cf0c03c9ee0b3a6f36a98951d655b5b2",
+      "raw_target_sha256": "8383e127fc79fca0012c42606dcb8c9a6e0625c15edda7f01b5d0a46e9e9b80f",
+      "translation": "Představte si objednávku bundy a šály. V pondělí se pod číslem vnitrostátní zásilky od prodejce bundy objeví záznam o doručení. Ve čtvrtek jsou bunda a šála uvedeny společně u mezinárodní zásilky s jiným číslem. Dopravce v cílové zemi později oznámí, že o zásilce obdržel elektronické údaje. Každý záznam dokládá něco jiného. Podle prvního můžete ověřit převzetí bundy ve skladu. Druhý uvádí, které věci jste požádali odeslat společně. Třetí potvrzuje přijetí zprávy v síti cílového dopravce."
     }
   ]
 }

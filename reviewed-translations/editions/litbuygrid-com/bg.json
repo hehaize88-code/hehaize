@@ -3,7 +3,7 @@
   "locale": "bg",
   "source_set_sha256": "50911bbaf8cb4e95c0ffaba18561fc7cfb1d06446f37b6a6715ee18e99d8182e",
   "raw_dictionary_sha256": "f4754f62d67c0a26d3978371a4c96bd06f4c1f8f9735d014556ef5d32724a33e",
-  "effective_dictionary_sha256": "4542ca9845d515588a711f2a599ce8563a81ace078bfdc6751fa0f80bed315a5",
+  "effective_dictionary_sha256": "7207b59c4432b32bce3b4e6a37fdd9f1d18f187fd0975ac5f8dc656b7b9cfb64",
   "checked_entries": 254,
   "review_scope": "Checked all exact input keys and output structure with the project auditor. Compared actual localized price/quantity calculations, physical item and option identifiers, garment-measurement examples, warehouse and shipping stages, seller/return wording, and sampled FAQ/body passages with the English source. Personally edited all ten article titles and replaced risk passages as recorded. This coverage is an audit plus targeted bilingual review.",
   "reviewed_flags": [
@@ -501,6 +501,12 @@
       "source_sha256": "3d9ef99bc04e5547673208282a6a52a1c3285eb18f7b528e808c8ddd590f2585",
       "raw_target_sha256": "29a3b1664618117583da8853173ad140eda3fb3b5a27334e092372894b4fcee1",
       "translation": "Направете всяка линия за сравнение, за да опишете желания физически резултат. Пример: „две сиви ризи размер M, вариант B с джоб, доставени от продавача до склада.“ Проверете дали и двамата продавачи предлагат еднакъв брой, модел, размер и включени компоненти. Ако един продавач включва подвижна облицовка или резервна каишка, запишете разликата и решете дали купувачът я оценява. Два продукта, стилизирани така, че да приличат един на друг на снимки, могат да имат различна конструкция. Евтината оферта, в която липсва функцията, която е задвижила търсенето, е алтернативен продукт, а не отстъпка за същия."
+    },
+    {
+      "source": "Read the verbs carefully. “We can send another,” “we will send another,” and “we sent another under tracking number B” represent different stages. In the first case the buyer might need to accept the offer. In the second the seller has stated an intention. In the third there is a specific dispatch event that can be checked. None by itself establishes that the replacement has reached the warehouse or matches the agreed option. Record the current stage and the next event you expect rather than marking the case resolved at the first reassuring message.",
+      "source_sha256": "7f5f023c77d9d0f8cfb5c1a50ebd03db66bcfdcb924d1533c15da3b6757a1fae",
+      "raw_target_sha256": "1f0fddac1dfb373c16dfbc26e404e97edf67a4df0d6ef3b7cf06481aa09a8465",
+      "translation": "Обърнете внимание на глаголите. „Можем да изпратим замяна“ е предложение, което купувачът може да трябва да приеме. „Ще изпратим замяна“ изразява намерение, а „изпратихме замяната с номер за проследяване B“ сочи конкретна пратка, която може да се провери. Никое от тези съобщения не доказва само по себе си, че артикулът е пристигнал в склада или отговаря на уговорената версия. Запишете етапа и следващото очаквано събитие, преди да отбележите случая като приключен."
     }
   ]
 }

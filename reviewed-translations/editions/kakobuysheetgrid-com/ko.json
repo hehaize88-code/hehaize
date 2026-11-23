@@ -3,7 +3,7 @@
   "locale": "ko",
   "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
   "raw_dictionary_sha256": "3d2e7d027a4e70636e329e3cca5b88a94648ace88348eea5aeccbf9e7d473a72",
-  "effective_dictionary_sha256": "c8c8d6536e0f5f4c64acbb5328059eb776a97432178c98f6c9a07339131dfb0e",
+  "effective_dictionary_sha256": "8e318ad0426545987696c7ba9755d58b84b23d8cc1fffd269fb4bf02f8867311",
   "checked_entries": 317,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -380,13 +380,13 @@
       "source": "Some labels show multiple size systems or a combination of a letter and numbers. Copy the full line before translating it. Compare the seller's selected option and size chart with that line. A reference photo marked XL from an earlier order tells you what was printed on that photographed unit only. It does not establish the fit of the medium currently assigned to your order.",
       "source_sha256": "260903139f45fd0a296d01748e86219154a60780a60c4dff6976ce2f77b71a56",
       "raw_target_sha256": "725c2deb359d38daf25c551eeebf149f2c712458d9550acb2f638715c61427d9",
-      "translation": "라벨 하나에 여러 국가의 크기 표기나 영문자와 숫자가 같이 적히기도 합니다. 번역 전에 한 줄 전체를 옮겨 적고 판매자의 선택 옵션 및 사이즈표와 대조하세요. 이전 주문의 창고 사진에 XL이라고 적혀 있다면 그때 촬영한 제품의 표기를 확인한 것입니다. 이번에 주문한 M 사이즈의 착용감까지 알려 주지는 않습니다."
+      "translation": "라벨에 여러 지역 사이즈나 영문자와 숫자가 나란히 있다면 한 줄 전체를 옮긴 뒤 옵션 및 사이즈표와 대조하세요. 과거 입고 사진의 XL은 촬영된 옷의 표기일 뿐 이번에 주문한 M의 실측이나 착용감을 말해 주지 않습니다."
     },
     {
       "source": "A useful clothing-label note can be just a few sentences. Identify the garment and selected option, state the visible wording, identify the unresolved question and specify whether it affects your decision. For example, the paid order says navy jacket, size medium. The label appears to read medium. A number at the bottom is cut off, but you only needed to confirm size. In that case the missing number need not generate another photo request or delay your decision.",
       "source_sha256": "1a5015376685ea91644f7e226199f7de47a199e340f2a6ab210e022f106ad80c",
       "raw_target_sha256": "ccaff4060fc4906f9287ad750ad27bbf719c1456ae21a55ff0e76390a73bf834",
-      "translation": "라벨에 대한 메모는 몇 문장이면 충분합니다. 상품과 선택 옵션, 실제로 읽히는 글자, 남은 의문점과 그것이 결정에 미치는 영향을 적으세요. 예를 들어 결제한 상품이 남색 재킷 M이고 라벨에도 M이라고 보이는데 아래쪽 숫자만 잘렸다면, 확인 목적이 사이즈였을 때는 그 숫자 때문에 사진을 다시 요청하거나 결정을 미룰 필요가 없습니다."
+      "translation": "‘남색 재킷 M 주문. 라벨도 M으로 보임. 아래 숫자는 잘렸지만 확인할 것은 사이즈뿐’처럼 상품, 옵션, 읽힌 표시, 남은 질문과 중요도를 적으세요. 중요하지 않은 숫자 하나 때문에 추가 촬영이나 결정을 미룰 필요는 없습니다."
     },
     {
       "source": "Sources",
@@ -1005,6 +1005,462 @@
       "source_sha256": "8b5a71ad600b3ad3ce0f43bbb5ab447f72765388f28118b63266d91ef3f987e3",
       "raw_target_sha256": "58454b170b821e7d00e62a5e32b445318d85fdc3a19f64977e41d5327fbaf344",
       "translation": "하나를 구매했다면 해당 판매자 기록 아래에 실물을 적으세요. 가방을 열어 내용물이 보이는 사진은 내가 받은 상품에 관한 근거이며 다른 매장의 구성을 소급해 확인하지 않습니다. 날짜와 옵션을 모아 두면 확인한 특징과 남은 비교를 구분할 수 있습니다."
+    },
+    {
+      "source": "A label can answer the question printed on it. Separate marked size, garment measurements and care information so a single tiny picture does not have to carry three different conclusions.",
+      "source_sha256": "524344e2f8aa7a7e8c8339de508f0af55390d4378692d4fe7436e4261a50d608",
+      "raw_target_sha256": "82122a0b4617d7a379b5e8ee9fce979b683b0707890e52dda8ef6ec5adf4edd5",
+      "translation": "라벨에 적힌 표기와 실제 치수, 관리법은 다른 정보입니다. 작은 사진 한 장에 세 가지 답을 기대하지 말고 목적별로 확인하세요."
+    },
+    {
+      "source": "Identify which label you need",
+      "source_sha256": "a88afa5ad8135536f9f41ad6ac115d344b265ed5ddbcca669779026b250de95c",
+      "raw_target_sha256": "302043298d20613a9790e8bae502c4d86ba234c640bec20e7e3ad1e6e39d2d69",
+      "translation": "필요한 라벨 고르기"
+    },
+    {
+      "source": "For a marked size, request the neckline, waistband or other label showing the garment's size. For care instructions or a stated fibre composition, ask for the relevant sewn-in information label, including the reverse if text continues there. A paper hangtag may contain the shop's stock number but can become detached. A label photographed alone is harder to associate with a specific piece than a view that also shows its position on the garment.",
+      "source_sha256": "935d9169ebccda6d03653c539b145beadc613ecec7b28c84460e51259aadc3db",
+      "raw_target_sha256": "523fa8cf99a997169ffa4184c336583f354faa62eab1fd22d8b0d3cc5675bc1b",
+      "translation": "표기 사이즈는 목이나 허리의 치수 라벨, 소재와 세탁법은 봉제된 품질 표시를 보세요. 글이 뒤까지 이어지면 양면을 확인합니다. 종이 행택은 매장 코드가 있어도 분리될 수 있으므로 상품과의 관계를 확인하세요."
+    },
+    {
+      "source": "Ask for readable evidence",
+      "source_sha256": "d495077dedff84f7f80583b679862d09dfe0dfc17a1861d9d39333cb754fe7d0",
+      "raw_target_sha256": "e6f9feeecf7a158ba307add7a0f0987a47c9c108d2ff75c5a1a0192e94d385bf",
+      "translation": "읽을 수 있는 사진 요청하기"
+    },
+    {
+      "source": "Describe what must be legible. A photograph taken square to the label under even lighting can reveal more than a high-resolution picture taken at a steep angle. Ask that folds are opened without tearing stitching. If the print is tiny, request a contextual photograph and one close view. Make sure both belong to the same warehouse entry, especially when your order includes two nearly identical colours.",
+      "source_sha256": "c5f1b0a383f57bb3f177df557fc7038ae2df179efc17aec051939af40baa55ea",
+      "raw_target_sha256": "4bebe8e38e2169467ac032e0bfcf045e9f7a9f31281d9e96782197229f4d534b",
+      "translation": "필요한 글자를 지정하고 균일한 빛에서 라벨에 정면으로 찍어 달라고 하세요. 봉제를 해치지 않고 접힌 곳을 펼치며, 작은 글씨는 위치가 보이는 전체 사진과 근접 사진을 함께 받습니다. 비슷한 색 두 벌을 주문했다면 같은 입고 건인지 확인하세요."
+    },
+    {
+      "source": "Read size systems carefully",
+      "source_sha256": "42717f9e5ebaa0946f180dee5b3ccc1e0fcb4d06e1ac154c8d32e16a6fb0644d",
+      "raw_target_sha256": "f0866268eac1fb56cdc79f9c11fee62ce73d8ae63dfb15397b915bd20985601d",
+      "translation": "사이즈 체계 구분하기"
+    },
+    {
+      "source": "Check fit independently",
+      "source_sha256": "166e2b25a8922b7e088ee11f5b3a06dd962ae65b66a372dc57d4c33761123e15",
+      "raw_target_sha256": "6ba05e995f4a1dc053e0eabad2895c8ce2d4c6f0921b84c3e19235057bcd2341",
+      "translation": "맞음새는 실측으로 따로 확인하기"
+    },
+    {
+      "source": "Use a garment you already own as a physical comparison. For a shirt laid flat, you might measure underarm to underarm and back length from a named seam. Record the units and the way the garment was laid out. If the warehouse measurement uses a different endpoint or stretches a knit, repeat the measurement consistently before judging a discrepancy. Do not expect matching letters on two labels to eliminate pattern differences.",
+      "source_sha256": "2351285ce45be59412cd3217a6739659917518757d99ac707d55b61289220689",
+      "raw_target_sha256": "c5d8b211865f1320baaa4f62f04bb7010a615c96def6caaab33fa37a4a0b5f57",
+      "translation": "잘 맞는 옷을 같은 방법으로 재세요. 셔츠는 평평하게 두고 양 겨드랑이 사이와 정해 둔 솔기부터 뒷기장을 재어 단위와 함께 기록합니다. 창고가 다른 끝점을 썼거나 니트를 늘렸다면 조건을 맞춰 다시 잽니다. 같은 글자 사이즈여도 패턴은 다릅니다."
+    },
+    {
+      "source": "Present a clear mismatch",
+      "source_sha256": "56aafd20d1f8742d30d70b13a3cfe95fb8b43d718b260caa6da7c3bc908a9965",
+      "raw_target_sha256": "07f2744fc3ad30b1305e8d7b2f2e0ab486009755d543f07d646981621c017a25",
+      "translation": "표기 불일치를 구체적으로 알리기"
+    },
+    {
+      "source": "If you ordered a particular size and a photograph seems to show a different one, send the selected option and the image together. Explain exactly which marking is unexpected and ask the agent to check the actual unit. A label image cannot establish authenticity, the truth of a composition claim or the durability of a seam by itself. Report the observable difference and retain the response with the item record.",
+      "source_sha256": "0f8b1287cd9178cd7ab84bc3032c3b9024fc2749e72ad62fa4fed43deb61cd70",
+      "raw_target_sha256": "179c558393ab622a3f893f46a5324ea246bff92109efc0e8326853e27a113ebd",
+      "translation": "다른 사이즈처럼 보이면 주문 옵션과 사진을 함께 보내 어느 표시가 예상과 다른지 말하고 실물을 확인해 달라고 하세요. 라벨 사진 하나로 정품 여부, 실제 혼용률, 봉제 내구성을 증명할 수는 없습니다. 보이는 차이와 답변을 입고 기록에 남기세요."
+    },
+    {
+      "source": "Identify the label that answers your question",
+      "source_sha256": "8c6d49da353e0e7a1a4383152c05941e8fb4f0a6c4029d6e9163a63392064366",
+      "raw_target_sha256": "f44b59f385cd3acb9d5ce86bbe98aefd153bcfb134e4df0faea1cd4eaad3197c",
+      "translation": "질문에 답할 수 있는 라벨 선택하기"
+    },
+    {
+      "source": "A garment can carry several labels. A neck label can show a brand or a letter size. A sewn-in side label may carry composition and care information. A removable hangtag may show a merchant's stock code, price or barcode. Start by identifying the question and where its answer might actually appear. If your concern is whether a jacket is the ordered size, a clear photograph of a promotional hangtag may be less useful than a readable view of the size marking sewn into the received garment.",
+      "source_sha256": "5a090caa11867eeb15cbd72eec1737dadac13b999d85188571ec13e210862ba3",
+      "raw_target_sha256": "be829e6aef3549af560c972108c4750d780047b7958a3e14243f8a63057fa450",
+      "translation": "목 라벨에는 브랜드와 사이즈, 옆선 라벨에는 소재와 관리법, 떼는 행택에는 가격이나 재고 코드가 적힐 수 있습니다. 주문한 재킷 사이즈가 맞는지는 홍보용 행택보다 옷에 봉제된 사이즈 표시가 잘 보이는 사진이 유용합니다."
+    },
+    {
+      "source": "Labels can refer to different parts of one garment. A coat may have an outer shell, lining and padding identified on separate lines. If a photograph shows one percentage but crops out the part name, resist applying that figure to the entire coat. Request a view that includes both the part description and its composition line. Keep the seller's written specification beside the photo so a difference can be described precisely, for example a discrepancy affecting the lining rather than a general claim about the coat.",
+      "source_sha256": "e262127fce033d943a74312ad49ea2363de530367efbfbeb1994a3774854b858",
+      "raw_target_sha256": "0d18a3cbe069b95a73f4c74f8f565ff75354f2efe9a85018ede5d9bd4a3f5662",
+      "translation": "코트 라벨이 겉감, 안감, 충전재를 서로 다른 줄에 적을 수 있습니다. 비율만 보이고 부위가 잘렸다면 옷 전체의 수치로 쓰지 말고 부위와 혼용률이 함께 보이는 사진을 요청하세요."
+    },
+    {
+      "source": "Preserve characters that are easy to misread",
+      "source_sha256": "e85b9a9fe1c5c3c0c50769fd7aab40993b10363f91d7f1e03c243e54ad227ba2",
+      "raw_target_sha256": "6fdf621ffc6792ed2abe030a8c2c55f13f720afa2dac6f789e0562a35aefad74",
+      "translation": "헷갈리기 쉬운 문자 보존하기"
+    },
+    {
+      "source": "The difference between a small and a medium can be a single letter. The difference between two style numbers can be a leading zero, a dash or the final digit. Zoom in on the original file when possible. Upscaling an already blurred screenshot may make text look smoother without revealing the missing character. Transcribe only what you can actually read and mark an unclear position with a question mark. Someone checking later can then focus on that position in a replacement photograph.",
+      "source_sha256": "f58d4787529cc269dcdade2c1552d7cc1257b91b152ea2b453136faf1f8b717a",
+      "raw_target_sha256": "5e557f71113e05a8b94f89b0e54f90d28d247cffb7f5540cf431c8c498b7a03b",
+      "translation": "S와 M, 품번 맨 앞 0이나 하이픈, 끝자리 하나로 의미가 달라집니다. 원본 파일을 확대해 보고, 흐린 캡처를 키워도 사라진 문자는 복원되지 않는다는 점을 고려하세요. 읽히는 부분을 적고 모르는 글자는 표시해 두세요."
+    },
+    {
+      "source": "A folded label can bring two unrelated lines next to each other. For a useful second view, ask to see the label unfolded on a flat surface with the complete text visible, subject to what the warehouse can provide. If the garment has several language blocks, look for a complete block rather than assembling percentages from fragments of different ones. Save the original image alongside any personal translation or cropped reference. This keeps the source available if a later reader questions a character or interpretation.",
+      "source_sha256": "25bdc73d9d469d43a5358de960215f6925d4eaca6f4fdba9137e1139b8f80dbc",
+      "raw_target_sha256": "84722334945bddf5feaf0065bd704d020598e4a24415ea24a036f102d876cddd",
+      "translation": "접힌 라벨은 관련 없는 두 줄을 나란히 보이게 할 수 있습니다. 가능하면 평평하게 펼친 전체 사진을 요청하세요. 여러 언어가 있으면 한 언어 블록을 완전하게 읽고 서로 다른 줄에서 비율을 조합하지 마세요."
+    },
+    {
+      "source": "Use a size label together with a measurement",
+      "source_sha256": "32d1abf8806d85a2d20757d1be9c31a36418fe41cccfc1bec2c27664ddd8f88b",
+      "raw_target_sha256": "58d1d0dea23d2b70c0b9f8efce706b91d2eacb1e9cb4e01e6df21f19c235402a",
+      "translation": "사이즈 표기와 실측을 함께 보기"
+    },
+    {
+      "source": "Suppose your order says medium and the sewn-in label also reads medium. That resolves the label comparison. It does not yet answer whether the garment will fit over your usual sweater. Compare the seller's size chart with the measurement you need, observing whether the chart describes garment width laid flat or a body circumference. For a jacket, a tape photograph running straight between underarm points can answer a practical fit question that a perfectly legible size label leaves open.",
+      "source_sha256": "080e94108406a41dfed3c1671fe4d85d03936ef5a70e4e54e13ac9cd582d2a58",
+      "raw_target_sha256": "53708bed3929b43cec698d24a9da7c5b70132b2f950acb2ecbe93b3d57e9ef9c",
+      "translation": "주문과 봉제 라벨이 모두 M이면 표시가 맞는 것입니다. 평소 스웨터 위에 재킷을 입을 여유가 있는지는 별도로 봐야 합니다. 표가 평평하게 잰 가슴너비인지 신체 둘레인지 구분하고, 양 겨드랑이 솔기 사이를 줄자로 곧게 잰 사진을 비교하세요."
+    },
+    {
+      "source": "If the label says large while the order says medium, save both before deciding how to proceed. A seller may offer a written explanation or an order confirmation may show a different selected option from the one you recall. Record the explanation separately from your initial observation. Avoid overwriting the original selection in your notes simply because someone describes the items as fitting similarly. You may decide a measured garment works for you, but that is a separate decision from whether the label matches the order.",
+      "source_sha256": "88a459d7feac7af9421678fad17740cf855ff337f7fbeb50563e17ac9a440627",
+      "raw_target_sha256": "0ea9f5676d280799358cba126bad275cd2521bcebf3e3a1f939978706f14e5a9",
+      "translation": "주문은 M, 라벨은 L이면 둘 다 저장하세요. 판매자가 설명을 주거나 확인서에 기억과 다른 옵션이 남아 있을 수 있습니다. 처음 관찰한 내용을 덮어쓰지 말고 이후 설명을 따로 추가하세요."
+    },
+    {
+      "source": "Consider what a label can actually prove",
+      "source_sha256": "152c9b848f1ebeea3765381d7060ca39f7a1c8d7dd456fb3281a77f348bc12a2",
+      "raw_target_sha256": "8006833f132f9c39d446340be2951a9dce4bbfb052985ca5dc77d7a37761d7cd",
+      "translation": "라벨로 입증할 수 있는 범위"
+    },
+    {
+      "source": "A photo can establish what is printed or sewn onto the photographed item when the connection between image and garment is clear. It cannot independently verify a fibre blend, an origin claim or authenticity. For a purchase that depends on a particular material, record both the seller's written description and the wording on the garment. Where the two conflict, ask for clarification before treating either as a confirmed material test. A missing label also leaves the relevant claim unverified in the available photos.",
+      "source_sha256": "e596d1487e2c289bee185a1a5fe4c3ccdce14ebe05544ac219575bdf6c878a0c",
+      "raw_target_sha256": "59aa51256839f52ceba969d2a10b42e03017333f581903994ecc28585d8dd4ca",
+      "translation": "사진과 해당 옷이 확실히 연결되면 라벨에 인쇄된 문구는 확인할 수 있습니다. 실제 섬유 배합, 원산지나 진위를 독립적으로 검증하지는 못합니다. 특정 소재가 구매 조건이라면 판매 설명과 입고 라벨을 각각 기록하세요."
+    },
+    {
+      "source": "The context is particularly important with multipacks. One photo of a label on a black T-shirt cannot confirm the labels on two white T-shirts packed alongside it. Decide whether the same evidence is needed for each item. If the order contains mixed sizes, separate each garment by colour and ordered size in the request. A group overview plus a close view linked to each relevant garment can prevent a clear but isolated label image from being assigned to the wrong piece.",
+      "source_sha256": "e7cbe47afa9c49a54c0d2861927983bd880a70e0eee0d5a6cc9c3ef2529e2926",
+      "raw_target_sha256": "1f67cf23bc465b2298dea634594fd228397200517d7a1c22f94719826ec96363",
+      "translation": "검정 티 한 장의 라벨은 함께 포장된 흰 티 두 장의 라벨을 확인해 주지 않습니다. 혼합 사이즈 주문은 색상과 주문 사이즈로 각각 구분하고 어떤 옷에 별도 사진이 필요한지 정하세요."
+    },
+    {
+      "source": "Build a clean note for the next decision",
+      "source_sha256": "b06e75160874a871fb85610c308353f65d196b88a57ec289200be8f0e1c87e69",
+      "raw_target_sha256": "70642de478824c799d0828d953dd79e5d67f961bebe61e48656ec5dfdf852b1f",
+      "translation": "다음 결정을 위한 짧은 메모"
+    },
+    {
+      "source": "When the missing text does matter, keep the request narrow. Ask for the full composition label on the navy jacket, including the shell and lining headings, with the tag unfolded enough to read both sections. Check any available service terms or price before requesting a paid detail view. After the new image arrives, add it beside the original rather than deleting the first image. The pair documents what prompted your question and which detail eventually resolved it.",
+      "source_sha256": "c55089eb23f1d63f6a4246c9ba05474c755af72922c717032a192d42a793e7c6",
+      "raw_target_sha256": "4e4cdf49572a7d502427f3b02d03efc4aad8fe9310531aababce48ab6759628d",
+      "translation": "필요한 글자가 잘렸다면 남색 재킷의 소재 라벨을 펼쳐 겉감과 안감 제목 및 내용이 모두 보이게 해 달라고 하세요. 유료 촬영은 조건과 가격을 먼저 확인합니다. 새 사진을 예전 사진 옆에 둬 무엇을 확인하려 했고 어떻게 해결했는지 남기세요."
+    },
+    {
+      "source": "A picture of one well-presented shoe cannot establish what is in the other half of the box. A paired inspection starts with identity and finishes with the specific features that affect your decision.",
+      "source_sha256": "ad636437d270c7d002472e69099e18dfd0871446e46da94a7f2abcaa5eb8d3dd",
+      "raw_target_sha256": "d85f000a04b2aa3021b7ec9281c05fc6171b404d438bd7f9d0e55f3a73e7a9f9",
+      "translation": "한쪽만 잘 찍힌 사진으로는 상자 반대편 신발을 확인할 수 없습니다. 주문한 한 켤레를 먼저 식별한 뒤 구매에 중요한 특징을 양쪽에서 확인하세요."
+    },
+    {
+      "source": "Start with the pair you ordered",
+      "source_sha256": "834232940c40c7b7ed06de49d1ea80f4854eec5846207a220d0a1fe4f502b9d3",
+      "raw_target_sha256": "e6884e92018483ef2569b7167cf204e6f6246199fd62dbf5cce77ada72915143",
+      "translation": "주문한 한 켤레 식별하기"
+    },
+    {
+      "source": "Write down the seller's size system, colour option and quantity. Keep that information with the warehouse entry. The carton label can be a useful cross-check, but it describes the carton. Ask to see the actual left and right shoes together in a frame. If several pairs arrived in one order, do not infer that every image in a gallery belongs to the first row of the purchase summary.",
+      "source_sha256": "6b53d2a6129bcba2d1590a61965dc0432162458cc06e3cf16b7ccce0ac90647c",
+      "raw_target_sha256": "85ae4a24b3799fd944bd65c3c320c27335411da61387802d952a33c1df10360b",
+      "translation": "판매자의 사이즈 체계, 색상, 수량을 입고 번호와 함께 적으세요. 상자 라벨은 상자의 정보입니다. 왼쪽과 오른쪽 실물이 한 장에 나오게 하고 비슷한 여러 켤레가 있으면 어느 주문인지 구분하세요."
+    },
+    {
+      "source": "Use a paired view for symmetry",
+      "source_sha256": "76810a3748169f6e31a315c8000246e0aa4d47e7fbb714afda3dd257d3c2de08",
+      "raw_target_sha256": "afbc490a7b330634007c34dd218bc8caccee910de0e695a9bb77a33b2a6f2bc1",
+      "translation": "좌우를 나란히 놓고 모양 보기"
+    },
+    {
+      "source": "For a useful top view, ask for the shoes side by side on the same level surface, heels aligned and toes facing the same direction. Comparing a near shoe with a far shoe in an angled picture can exaggerate apparent size differences. A full back view gives a different comparison of heel height, seam position and colour. Decide which arrangement best displays the suspected issue before requesting more photographs.",
+      "source_sha256": "b802d0078e0b3b0ea3bb4207583568436a188e7d8011b93162f543d6c1bd603a",
+      "raw_target_sha256": "7f37a94cf3b77028c912aad5b8a87c63e1a5e63d75b70e33e3b75cb26f980b5d",
+      "translation": "같은 평면에 두 신발을 놓고 뒤꿈치를 맞춘 뒤 앞코를 같은 방향으로 향하게 해 위에서 찍어 달라고 하세요. 비스듬한 사진은 가까운 신발을 크게 보이게 합니다. 뒤꿈치 높이는 두 신발의 뒤쪽 전체 사진으로 비교하세요."
+    },
+    {
+      "source": "Check each label independently",
+      "source_sha256": "11bb5ce8454591005d09f7daf4d47b332a3190baa1955c64f353d167457adcc1",
+      "raw_target_sha256": "2dee8e5e62446e2ca304d1bd88f3bbc0090daa17002d9ed1c23fc8bba5eea2ce",
+      "translation": "양쪽 라벨을 따로 확인하기"
+    },
+    {
+      "source": "A single readable size label establishes a marking on one shoe. Ask for each label if size mismatch is the concern, and note the sizing system rather than comparing bare numbers. A US marking and a UK marking on the same label can be different without showing a mismatch. Compare the equivalent line on the left and right shoes against the option recorded in the order.",
+      "source_sha256": "797ebd88af1853f96f09a0d73b886a93fde1ad791041ff93905b6d674a3ac1ba",
+      "raw_target_sha256": "b56e573c1232bed5ec7c19075c7125567377563c03c427c0ad5e48341d5e47d4",
+      "translation": "라벨 하나는 한쪽 신발의 표기만 보여 줍니다. 짝이 맞는지가 걱정되면 양쪽 라벨에서 같은 체계의 행을 주문 옵션과 비교하세요. 같은 라벨 안의 US와 UK 숫자가 다르다고 불일치인 것은 아닙니다."
+    },
+    {
+      "source": "Define a length question precisely",
+      "source_sha256": "3f19a81c8c55a5bed9b6121fcd900586e6e13769bc7c9840c105510490348d1d",
+      "raw_target_sha256": "274ac8252426f2adae6ed524c1d2a6a5d4cc7c5e94d5a91f78b21d81fc619d56",
+      "translation": "필요한 길이를 정확히 말하기"
+    },
+    {
+      "source": "If internal length matters and the insole is removable, ask whether removal is appropriate before requesting a measurement. A tape laid along the outside sole measures another object. Specify the endpoints, units and which shoe is measured. An insole length provides a physical dimension, but not an assurance of comfort: usable space also depends on shape, thickness and your own foot.",
+      "source_sha256": "d2651105a8e3efde36c429207aedd22c1f312d38af7ea10450cd2417e7b6f8fd",
+      "raw_target_sha256": "585718a95b1cdf3b9c5a737dcd8c1a7c4bd32b2a7b576ff0a678f5aaf573ec90",
+      "translation": "내부 길이가 중요하고 깔창이 분리되는 제품이면 빼도 되는지 먼저 확인하세요. 바깥창을 따라 잰 값은 다른 측정입니다. 어느 신발인지, 양 끝점과 단위를 지정하세요. 깔창 길이는 치수 하나이며 편안함은 모양, 두께, 발에 따라서도 달라집니다."
+    },
+    {
+      "source": "Distinguish design from damage",
+      "source_sha256": "14a4b9bacbb71b27d746414c5747b599230461e3f75d578b9c7dcc3e423ac163",
+      "raw_target_sha256": "14b5a3b3c8033ce5edc12f3c40c47fc0ab4a937d71a99f3fefa599c0e291168f",
+      "translation": "디자인과 손상 구분하기"
+    },
+    {
+      "source": "Some shoes deliberately have asymmetrical panels or different markings on left and right. Compare the official seller option pictures for the specific design rather than assuming every colour patch should mirror its partner. If the concern is a split seam or a scuff, request a focused close-up plus a wider picture identifying its location. Save both beside the purchase record and check the applicable next steps before dispatch.",
+      "source_sha256": "394d1fa4aff7ba9c693d80423030ee7589c3253502e7d0a737ae68f2eca8cb03",
+      "raw_target_sha256": "c1ba003d728288f018495b4f2c55e425b4bfa6dfd388b35840a9838a03b91469",
+      "translation": "일부 디자인은 좌우 패널이나 표시가 일부러 다릅니다. 모든 색 조각이 대칭이어야 한다고 보지 말고 선택한 옵션의 판매 사진을 확인하세요. 봉제선 벌어짐이 걱정되면 위치를 지정해 디자인 차이와 실제 상태를 나눠 확인하세요."
+    },
+    {
+      "source": "Establish which shoe is which",
+      "source_sha256": "815629e4336f8aae8994eda55c27b7c08d08f3e6933fc0655fa8b517f8c070a4",
+      "raw_target_sha256": "fbd628d0cd735199cc2bffcb7f6c37beba808d383908567277f717129c0b6b85",
+      "translation": "사진 속 신발이 어느 쪽인지 확인하기"
+    },
+    {
+      "source": "Two pictures in a gallery do not necessarily show a pair. One could be the same shoe turned around. Begin with a view of both shoes together, with their toes pointing in the same direction. The inside and outside edges should then be easier to distinguish. If one shoe is partly inside the other or the heels are hidden behind packing paper, write down the missing view. A photograph of one excellent lateral profile gives little information about the second shoe.",
+      "source_sha256": "087b463b767898f764becfadd38a8461a4824ea40f9e483e165c5a378bfb012d",
+      "raw_target_sha256": "acc5691df4e94ff9deaad895927a2b9773bd0b817f1fa5b0d549119570053a57",
+      "translation": "사진 두 장이 같은 신발의 각도만 바꾼 것일 수 있습니다. 먼저 앞코를 같은 방향으로 둔 한 켤레 전체 사진을 보고 안쪽과 바깥쪽을 구분한 다음 상세 사진에 좌우를 표시하세요."
+    },
+    {
+      "source": "If the order contains two identical-looking pairs in different sizes, keep their warehouse records separate. A shoe box label can provide context if it is clearly tied to the pair in the picture, but boxes and shoes are distinct objects. For a size-sensitive order, ask for the visible size marking inside each shoe and connect the photographs to the correct pair. A combined image showing the two heel openings can help, provided both labels remain legible when viewed at their original resolution.",
+      "source_sha256": "bde96802de4576e838a835e31f4d5b8de20ad959c44bdd57cee67b859e56fb1c",
+      "raw_target_sha256": "4e28dae0afe4328ae1a07f93bca9e12db1cee1006e7668dec1698b202003cb45",
+      "translation": "겉모양은 같지만 사이즈가 다른 두 켤레는 입고 기록을 분리하세요. 상자와 실물은 다르므로 각 신발 내부 표기를 찍고 정확한 켤레에 연결합니다. 양쪽 뒤꿈치 안을 한 장에 찍었다면 원본에서 두 라벨 모두 읽혀야 합니다."
+    },
+    {
+      "source": "Choose matched views for comparison",
+      "source_sha256": "5fdacdfac70fdea18f6828000464f6aae7271f9d87e0638e0ef3b5543844878b",
+      "raw_target_sha256": "6e198f4065892138c1cbcd3b8a68f8a30c7954af980e783f6a108bac684c2bd9",
+      "translation": "같은 조건의 사진으로 비교하기"
+    },
+    {
+      "source": "A photograph taken very close to one toe can make it look larger than the other. When comparing toe or heel shape, a matched overhead view with the pair side by side is more informative than two unrelated close-ups. Check whether the shoes sit equally far from the camera and both rest on the same flat surface. Differences in stuffing, lacing and angle can change the outline. Describe the feature you observe before guessing at a manufacturing or handling cause.",
+      "source_sha256": "3b58edbffbdab573a6c807d5d724417a1832f02612fe662ecb1c01e6bd9978ad",
+      "raw_target_sha256": "76eae0156cf6335040f6f8c102be700a6ec20d5a767d945dcec1e7cf0a1907b9",
+      "translation": "한쪽 앞코만 가까이 찍으면 커 보입니다. 앞코와 뒤꿈치 모양은 별도 근접 사진보다 나란히 찍은 수직 사진이 좋습니다. 두 신발과 렌즈 사이 거리 및 놓인 방향이 같은지 확인하세요."
+    },
+    {
+      "source": "Use an overhead view for alignment, a rear view for heel height and a view of both outsoles for tread pattern. The same camera angle rarely answers all three questions. If the first images already show the tread and shape clearly, a request for another front view adds little. Request the single angle that could change your decision. For an apparent mismatch in heel colour, a view under the same light can be more helpful than a close-up taken in a different room.",
+      "source_sha256": "427ad55465f733f01dbcf0d060fb2c1ae9f5f17851b38ed21bd0f89c0e3fa158",
+      "raw_target_sha256": "88e692455b50366ede05d3bf71ea622e2a4bc085f9de683b6d154433782ba037",
+      "translation": "정렬은 위에서, 뒤축 높이는 뒤에서, 밑창 무늬는 양쪽 바닥을 함께 보세요. 한 각도로 전부 확인하기 어렵습니다. 기존 사진이 답했다면 같은 정면을 추가하지 마세요. 뒤꿈치 색 차이는 다른 방에서 따로 찍은 접사보다 같은 조명에서 나란히 찍은 사진이 낫습니다."
+    },
+    {
+      "source": "Read size markings without inventing conversions",
+      "source_sha256": "6257d0cd9e609a96778a1d630dfcc52d07b1c0c94c74b6311d31f4186b34ccb9",
+      "raw_target_sha256": "816360aedf034ce8f6381f520347da7117ad73947f53230dfdf413fb019350ac",
+      "translation": "임의 환산 없이 사이즈 읽기"
+    },
+    {
+      "source": "A shoe label may list several regional size systems on separate lines. Transcribe the whole relevant line with its unit or system. A numerical marking from one system and another marking from a different system can look unequal while describing the same paired product. Compare like with like across both shoes and against the seller's selected option. If a label is hidden by the tongue, ask for a view of the label face rather than guessing from the visible end of the number.",
+      "source_sha256": "c2a02c94adef2e4320f88f43099860932767845f0ce0648dd8ce6a605d5b836d",
+      "raw_target_sha256": "db1f61fc665d719346df318bfffa53b5627e71bc5e01b53a1efe4cf7bd609574",
+      "translation": "지역별 사이즈는 체계 이름을 포함해 한 줄 전체를 옮기세요. 같은 신발도 체계가 다르면 숫자가 다릅니다. 좌우는 같은 행을, 주문과는 판매자 기준의 같은 체계를 대조하세요."
+    },
+    {
+      "source": "For practical fit, compare a reference pair you own using the same measurement method the seller describes. A removable insole length and an outsole length are different measurements. A buyer who knows the insole of a comfortable shoe should ask for an equivalent measurement only if the item and service permit it. A photo where a ruler begins outside the heel or follows a visibly curved path can give a misleading comparison. Specify where the measurement should start and finish when the difference matters.",
+      "source_sha256": "9d290c3876ac1fd0c6b6116107dbd6b5d6a22b3239362852ebd9c97dff342a18",
+      "raw_target_sha256": "d72647a083f9b80d9dbc6d6fd483319f11a9b8990c105b60ae6b98faed4a386e",
+      "translation": "편한 신발과 판매자 설명에 맞춰 같은 방법으로 비교하세요. 분리형 깔창과 바깥창의 길이는 다릅니다. 상품과 서비스가 허용하면 알고 있는 깔창 길이와 같은 방식의 실측을 요청하세요. 뒤꿈치 밖에서 시작하거나 휘어 놓은 줄자는 결과를 바꾸므로 끝점을 지정합니다."
+    },
+    {
+      "source": "Distinguish presentation from a physical difference",
+      "source_sha256": "f43120f3a70c5f6c76fb47462a9929c270ab706235739ff9d5f96f4727d918d8",
+      "raw_target_sha256": "4ab6dbfd34f0c57c611fdd9ca8706f88bf28e03f824afa5686ed3f014964c8d3",
+      "translation": "연출 효과와 실물 차이 구분하기"
+    },
+    {
+      "source": "Packing paper can create an apparent bulge and a loose lace can make one opening look larger. For something you suspect to be a physical mismatch, note whether the feature persists across another angle. A shadow at the sidewall in a front view may disappear in a side image. A clearly different tread pattern visible across the whole outsole is a different kind of observation. State the visible feature and ask the person handling the order to check it directly if necessary.",
+      "source_sha256": "a863e7ca2d3986dfab7668f66b65124ecd4c77274081dea1a2c4860d26148b1a",
+      "raw_target_sha256": "848ede7d8d8150f42c2349080887c1657e198570937512519643ad7a0a67a095",
+      "translation": "포장지가 발등을 부풀게 하거나 느슨한 끈이 입구를 넓어 보이게 할 수 있습니다. 다른 각도에서도 차이가 남는지 보세요. 옆에서 사라지는 그림자와 밑창 전체 무늬의 차이는 다른 관찰입니다. 보이는 특징을 설명하고 필요하면 실물을 확인해 달라고 하세요."
+    },
+    {
+      "source": "Consider an example where one shoe has a dark mark near the heel. Record which shoe and whether the mark appears on the material or only on nearby wrapping. A second image with the wrapping moved away could resolve that ambiguity. It may not identify what the mark is or whether it can be removed. Avoid promising that brushing or washing will solve it. If surface condition affects your purchase, obtain a sufficiently clear view and ask what options are available for this order.",
+      "source_sha256": "aa3e8106b30d46dcc150cee50478cfea10bbfddb58d2494c291e4861dda8ec65",
+      "raw_target_sha256": "e12205baf229925ed9d4688662abf98c69980788cb04409b16b024b77abe5e5b",
+      "translation": "한쪽 뒤꿈치 가까이 어두운 흔적이 있다면 어느 신발인지, 신발 표면인지 포장지인지 적으세요. 포장을 치운 사진은 위치를 밝힐 수 있지만 성분이나 제거 가능성은 모를 수 있습니다. 세척하면 된다고 단정하지 말고 선명한 사진과 해당 주문의 처리 방법을 물으세요."
+    },
+    {
+      "source": "Keep pair condition and box condition separate",
+      "source_sha256": "d39f492ab5c088eee0a6959aa803826302e98353b4ee0570c181f20628534a6d",
+      "raw_target_sha256": "ff57aae3f2f3b68234f2601df550d0cc7bbb771b16b2d69452051ecfcf0b7f4e",
+      "translation": "신발 상태와 상자 상태 나눠 쓰기"
+    },
+    {
+      "source": "A crushed box lid can matter for gifting or storage even if the shoes appear intact. Torn wrapping can be visible without revealing whether either shoe is damaged. Record package condition and item condition separately. If the box is essential, check whether the exact option included the box and whether requested packing services address it before international dispatch. A retailer-style studio photo of a branded box is weaker evidence of inclusion than a written option description or the warehouse's record of what arrived.",
+      "source_sha256": "77cda47533e6bd202297e327aba87ead4bce8e9c1f541cc04694305b3fb43a16",
+      "raw_target_sha256": "bcc96b3078990432926ff8e62a056ca9452485c167c904092f196583d342c50d",
+      "translation": "뚜껑 찌그러짐은 신발이 멀쩡해도 선물이나 보관에 영향을 줍니다. 포장지 찢어짐만으로 신발 손상을 알 수는 없습니다. 따로 기록하고 상자가 필수라면 해외 발송 전 선택 옵션에 포함되는지와 포장 서비스가 보호하는지를 확인하세요. 홍보 사진보다 옵션 원문과 입고 내역이 분명한 근거입니다."
+    },
+    {
+      "source": "When all required views are available, close the inspection with a short statement about both shoes. For example, both labels display the ordered system and size, both outsoles show the same tread and the left heel has a visible mark that still needs clarification. This record is more useful than a single “QC passed” line because it explains the specific checks you completed. Keep the images with the order in case a later packing or exchange question refers to one shoe in particular.",
+      "source_sha256": "56536e87099f2bd797aa99b8ddf139a43539fc18d42d5ab1ff68b2aa113939e5",
+      "raw_target_sha256": "070bcc3f2f5e842db0d6e8448b441ff22cf24e34ee610fd72cedd563ebc0d05a",
+      "translation": "마지막에 ‘양쪽 라벨 기준과 사이즈가 주문과 일치하고 밑창 무늬도 같음. 왼쪽 뒤꿈치 흔적은 추가 확인 필요’처럼 적으세요. 단순 통과 표시보다 확인 범위가 명확합니다. 교환이나 포장 때 한쪽을 다시 찾도록 사진을 주문과 보관하세요."
+    },
+    {
+      "source": "An accessory can be missing from a photograph, omitted from a selected option, packed out of view or genuinely absent from the received order. Resolve those possibilities in sequence.",
+      "source_sha256": "62c6ce5663255e56ea93a72495bd41743daf7cd09417c0417f760d9c684ba414",
+      "raw_target_sha256": "8ff7f449a245efee5d95c36c29981eb30c69d86a0b932eb8a933f931b050aded",
+      "translation": "구성품이 안 보이는 이유는 옵션 미포함, 포장 안쪽에 가려짐, 실제 누락 등 다양합니다. 각각 차례로 확인하세요."
+    },
+    {
+      "source": "Establish what the option included",
+      "source_sha256": "687a11276a84edcdbd06c88adfc913d804c8077376483797d7ea52937cde9f45",
+      "raw_target_sha256": "9aaa4cb2c05230dbeda9d7e734087d714641c0e13fad0fddcfaf853636502ebd",
+      "translation": "구매 옵션에 포함된 내용 확인하기"
+    },
+    {
+      "source": "Find the order confirmation and the selected seller description. Highlight the wording that identifies the accessory, quantity and version. A shoulder bag worn with a decorative strap in a studio photograph might have separate options with and without that strap. A product title saying kit could describe more than one package. Start the inquiry with what the seller offered for the option you purchased.",
+      "source_sha256": "e2ea4b62a71ffb4a4717c930504539364de89a0bdec419f0207238afdf8189a8",
+      "raw_target_sha256": "a25256c05a9637b7512543145cc28906f0d9e7df9e65e079ff5a0f77597475c3",
+      "translation": "주문 확인서와 선택 옵션 설명에서 구성품 이름, 개수, 버전을 찾으세요. 장식 스트랩을 단 가방 사진이 있어도 스트랩 포함과 미포함을 나눠 팔 수 있습니다. ‘키트’라는 제목보다 선택한 옵션의 내용을 기준으로 삼으세요."
+    },
+    {
+      "source": "Inspect what the available photo actually shows",
+      "source_sha256": "9577c7f204bc2d15116f861eb309509d72ec8fb1f8409e73059969deed254ed8",
+      "raw_target_sha256": "da2dc0d740cca9adf0607af72c422dfd4c03823f897d2968a31d94b5b7a8a76b",
+      "translation": "사진에 보이는 범위 확인하기"
+    },
+    {
+      "source": "A closed box or zipped bag is an incomplete view of its contents. Note whether the packaging is open, which compartments are visible and whether an accessory could be wrapped separately. A small cable can sit under a cardboard insert; detachable clips can be inside an inner pocket. Avoid asking the warehouse to break seals or dismantle an item before you understand whether this affects its condition or return eligibility.",
+      "source_sha256": "4be52f8dea61e9007d2346053fd747a73761f6a04222692bbc07dddcd161331d",
+      "raw_target_sha256": "0f38211ac296e2e517b0f533262726000b6f7d909667384dd6381e10393e405e",
+      "translation": "닫힌 상자나 잠긴 가방은 내용물 전체를 보여 주지 않습니다. 열린 부분과 보이는 칸, 별도 포장 가능성을 적으세요. 작은 케이블은 종이 받침 아래, 클립은 다른 부품에 붙어 있을 수 있습니다."
+    },
+    {
+      "source": "Request an inventory view",
+      "source_sha256": "dfb025a756660ba154daac1f47a55630170119172f2b3c5444a1c5d44e75d878",
+      "raw_target_sha256": "135f2bbd56e04d16251274397db37e0c879556b5c4bafb3ebc75ce723712aef4",
+      "translation": "구성품 전체 사진 요청하기"
+    },
+    {
+      "source": "Name the missing piece and describe where it may be packed. Ask for an overview with the unit and all loose contents together, followed by a detail view if the shape or connector matters. Give the warehouse entry number so the inspection concerns the unit you actually bought. If another box from the same seller is still in transit, ask whether the accessory is supposed to travel separately.",
+      "source_sha256": "41a0cac2b5ca9165ed1eedb19b482cd324cb9414fdcc776e1338b049adde0716",
+      "raw_target_sha256": "c65d77e8c79c40f42019674acba428adb399e2139a76c6a8d15715de1c951fc6",
+      "translation": "안 보이는 부품과 들어 있을 만한 곳을 말하고 본체와 분리 부품을 함께 놓은 전체 사진을 요청하세요. 모양이나 연결부가 중요하면 근접 사진도 요청합니다. 정확한 실물을 보도록 창고 입고 번호를 주세요."
+    },
+    {
+      "source": "Write down an evidence-based conclusion",
+      "source_sha256": "89056d3675ab47f4d9e3435f4d2a6a288e078e652587e9f7424533c03804b42c",
+      "raw_target_sha256": "286f07a67412bb4d7542f89e88cf1ab5b61b31ae3606fe7692aeb7e68fc3a08f",
+      "translation": "근거에 맞게 결론 적기"
+    },
+    {
+      "source": "Suppose your order names a pouch and two clips. The overview shows one pouch, one loose clip and a second clip attached to the bag. That photograph supports a complete count even though only one clip appears loose. In another case a photograph might show unopened packaging and no clips, leaving the count unresolved. Describe what can be counted and what remains hidden.",
+      "source_sha256": "f2e8854fc3c84545df7401e0783bac99f0b23d9b2c7d224106a5c5bd5441a10a",
+      "raw_target_sha256": "8450aa0bfeac37d5882791e3528f829b9ed87238bf700d07241ef518d583f94b",
+      "translation": "파우치 하나와 클립 두 개를 주문했고 사진에 파우치, 떨어져 있는 클립 하나, 가방에 붙은 클립 하나가 보이면 수량이 맞습니다. 포장이 닫혀 일부만 보이면 ‘미확인’입니다. 증거에 맞게 상태를 기록하세요."
+    },
+    {
+      "source": "Keep the resolution tied to the original purchase",
+      "source_sha256": "cd78da943c82fe262f7c2536cef8ffd0a189dd5ce5fff34d4a8a1322a75fed1d",
+      "raw_target_sha256": "46dc52aafe4d52264852a893e41751f7a8ed1ef29c09e1407ae1c887e3f79047",
+      "translation": "해결 방법과 원래 구매 연결하기"
+    },
+    {
+      "source": "If the seller offers to send a missing piece, record its promised description and new domestic tracking number. If an exchange is offered, retain the original item reference and the replacement reference separately. Do not mark the case complete simply because a message promises a shipment. Close the record when the received accessory can be identified and checked against the original option.",
+      "source_sha256": "85bc1a95185c403de1788b0747fff198f6bca560369c80a7c038d7e25c344339",
+      "raw_target_sha256": "5742f1a5533e6c77340f6b786285f56d998d5ed75daff37ee3c6c5647129ef74",
+      "translation": "추가 발송을 제안하면 약속한 부품 설명과 새 중국 내 운송장 번호를 적고, 교환이면 기존 상품과 대체품 번호를 나누세요. 배송 약속만으로 종료하지 말고 받은 부품을 원래 옵션과 확인한 뒤 마무리합니다."
+    },
+    {
+      "source": "Establish whether the accessory was included",
+      "source_sha256": "968537e97f65ff7cb747387088431492fbde863c8fa3ad0f88db14e6b43ba6cf",
+      "raw_target_sha256": "50e222d46a8b75e81485a3afb80c8effa3b6f54ba66c88a8f053e7c67cf1b3a7",
+      "translation": "실제 구매 구성에 들어 있는지 판단하기"
+    },
+    {
+      "source": "A practical accessory check starts with the wording attached to your paid selection. Suppose a bag appears in a studio photograph beside a leather strap, a decorative charm and a dust cover. The actual option might describe only the bag and shoulder strap. Save the option text and any written seller confirmation you relied on. Treat the charm and dust cover separately unless you have evidence that the seller included them in that particular offer. This makes an inquiry clearer and avoids claiming that every photographed prop was purchased.",
+      "source_sha256": "405c2d6d2b5c1fda767ade8e44cb50d7ee80477d48a861ee5c18a5270d0c68b3",
+      "raw_target_sha256": "6744ac269f0de4efe6803d926868824f71e57bd78fa7b07eeae74227acef9a28",
+      "translation": "가방 홍보 사진에 가죽 끈, 장식, 더스트백이 함께 있어도 결제한 옵션은 가방과 어깨끈만 적을 수 있습니다. 명시된 구성품, 사진에만 나온 물건, 문의할 부분을 나눠 확인하세요."
+    },
+    {
+      "source": "Read the units carefully. A listing might offer a set of replacement clips, a strap sold without clips or a bundle containing both. The order quantity tells you how many units of the chosen offer you purchased. It does not by itself define the number of components inside each unit. Make a short expected-contents list in plain language. For example, one bag, one detachable shoulder strap and two clips already attached to the ends of that strap. Such a description gives the warehouse specific objects to look for.",
+      "source_sha256": "417c108ad2aee28e1a5661c72c05c311fc5d96c049945d4fa37490dd22a84d5d",
+      "raw_target_sha256": "b9f45159e631faad410a601bea0429257c0cf457f3988d63893ba664bbc4f56a",
+      "translation": "교체 클립 묶음, 클립 없는 끈, 두 가지 세트는 다른 판매 단위입니다. 주문 수량만으로 단위 안의 부품 수를 알 수 없습니다. ‘가방 한 개, 탈착식 어깨끈 한 개, 끈 양끝에 붙은 클립 한 개씩’처럼 써야 창고에서 점검할 수 있습니다."
+    },
+    {
+      "source": "Separate an unseen item from a confirmed shortage",
+      "source_sha256": "06f6b04af7edc5a9076194aaf75b37a1942c868abe9953b3e84ca25b8db6a99c",
+      "raw_target_sha256": "15c99fe238780c42a60a21b8645f478d558b8643addf0a87d8fe5d5877d46118",
+      "translation": "안 보이는 것과 실제 누락 구분하기"
+    },
+    {
+      "source": "In a first warehouse overview, a strap might be inside the bag, under tissue paper or attached behind the handle. A single photograph of the closed bag cannot establish a shortage. Ask whether the contents can be checked and, if permitted, request a view that shows the open bag and the loose components beside it. Avoid requesting removal of sealed packaging until you understand the implications for that order and have decided that opening it is appropriate.",
+      "source_sha256": "6378933c2d525fb40fc21250ada9b4e89305c812c00b44fafabec7118fe4f594",
+      "raw_target_sha256": "b33ff24c37d1fa70afcc7e6412a6c57f396ede89e3dd7ed1ff5effdb68994d15",
+      "translation": "첫 전체 사진에서 끈은 가방 안, 포장지 아래, 손잡이 뒤에 있을 수 있습니다. 닫힌 가방 사진만으로 누락이라 판단하지 마세요. 내용물 확인이 가능한지 묻고 허용되면 안쪽이 보이는 사진을 요청하세요."
+    },
+    {
+      "source": "If an accessory is visible but its identity is unclear, describe it by location and appearance. A narrow black strip seen behind a bag could be a handle, a shoulder strap or a piece of packaging. A photograph of its attachment clips or its full length might distinguish those possibilities. Where access or image quality still prevents confirmation, leave the status as unresolved. The accuracy of the record matters more than reaching a confident conclusion from an ambiguous view.",
+      "source_sha256": "d411e42244a610686777cb360dea17c75b372a71dfa312c710c0659155751470",
+      "raw_target_sha256": "f0be6ff51c9589908a383c92fc7288d9cc79726b89ada501a4aceb8bb6fa9ece",
+      "translation": "가방 뒤의 가는 검은 띠는 손잡이, 어깨끈, 포장재 중 무엇일지 모릅니다. 위치와 모양을 서술하고 연결 클립이나 전체 길이가 보이는 사진으로 식별하세요."
+    },
+    {
+      "source": "Handle accessories packed separately",
+      "source_sha256": "33a43bca281493b3f3266d8d6a32aff51930d2c618ce2c9cf187d1254ae725bc",
+      "raw_target_sha256": "3fc72d92139b33ea16b7e762c24a322c3f04f5a199f8e94dc0b014bc52e99e13",
+      "translation": "별도 포장된 구성품 추적하기"
+    },
+    {
+      "source": "A seller might send more than one parcel for a purchase. Before assuming a component has been omitted, check the records the order shows for expected domestic deliveries and warehouse intake. Distinguish a seller message saying an item will follow from a shipment reference or intake entry that actually identifies it. If a second package exists, record the reference and what it is expected to contain. Keep the purchase open for the outstanding component until you can evaluate the evidence relevant to your decision.",
+      "source_sha256": "8aee86224b3ea08e3cca1ba0fe5f9671add2f21f9f1d9c1f2de58e222a407a4f",
+      "raw_target_sha256": "fdf745661757e28b78a24983e07dff0be6d071a01a92363c6086f58c2929f07a",
+      "translation": "판매자가 한 주문을 여러 상자로 나눠 보낼 수 있습니다. 누락으로 판단하기 전 예상된 국내 배송과 입고를 확인하세요. ‘나중에 보내겠다’는 말과 해당 부품을 식별하는 운송장·입고 기록은 다릅니다. 두 번째 상자 번호와 예상 내용을 남겨 두세요."
+    },
+    {
+      "source": "A second domestic tracking event also does not prove the missing accessory is inside. The event identifies movement of a package. The received contents require a corresponding intake record or confirmation. For a bag with a detachable chain strap, you might note that the main bag arrived on one date and the seller described a separate parcel for the chain on another date. Link the second intake to the purchase only once the order record or support response gives you a basis to do so.",
+      "source_sha256": "d9c7693db4988fbf3ee22cd4cfcc3d0c731b863d34a26a2bd8b745bbe6f2c8bd",
+      "raw_target_sha256": "e5d221362287c9ac0a196a4969d05d41881f1d99b8955ff465e9e6ee4e7c3cf8",
+      "translation": "두 번째 운송장 갱신은 상자의 이동만 보여 줍니다. 탈착 체인 가방이라면 본체 입고일과 판매자가 체인을 따로 보낸다고 한 날짜를 나누고, 실제 입고나 상담 답변으로 확인한 뒤 원래 주문에 연결하세요."
+    },
+    {
+      "source": "Ask for a specific next action",
+      "source_sha256": "2015dfe68f32bbb5b2b0145ef7c625728a1939fb3ddfc760d88c99edf805cc5e",
+      "raw_target_sha256": "433f9aa6b1542d09d4386ab2639910da70f4114bff922bb972b8f96c9a7996bb",
+      "translation": "다음에 필요한 조치 하나 정하기"
+    },
+    {
+      "source": "A useful message includes the selected option, the privately supplied order reference, the component expected and the evidence currently available. You might write that the paid selection says bag with long strap, the overview shows the bag closed and the strap is not visible. Ask whether someone can check inside the bag and confirm the strap before dispatch. This describes a gap and requests a specific action without accusing the seller or warehouse of losing an item.",
+      "source_sha256": "a58c50efb856c16a85bf178d4607012c3f320e3a050bd67f1f57e4159aa9c2c9",
+      "raw_target_sha256": "e45320c98e6c9c8a7eda94c56d7337569434202e101bc0c8579c44b607280a5b",
+      "translation": "주문 번호는 개인 채널로 주고 옵션, 예상 부품, 현재 자료를 적으세요. ‘긴 끈 포함 옵션을 결제했는데 사진에는 닫힌 가방만 나옵니다. 안에 있는지 확인해 주세요’처럼 다음 행동을 분명히 하세요."
+    },
+    {
+      "source": "If support confirms the item was absent, ask which resolution options apply to this order and whether each one involves a deadline, charge or separate shipment. A replacement accessory, a seller inquiry and a return can have different consequences. Record what you actually request and any confirmation received. Avoid combining the missing-strap question with unrelated complaints about colour or packaging in one long paragraph. Separate observations make it easier to see which issues have been addressed and which remain open.",
+      "source_sha256": "f55bfe168aa994636066b6ed2679b53945d689779a896ab37de8a4d33f42c6fd",
+      "raw_target_sha256": "77521a1442af6d93ef8c569c77c859f94aec337ad67ff56861926c43ea1c5e9d",
+      "translation": "누락이 확인되면 이 주문에서 가능한 방법과 기한, 비용, 별도 배송 여부를 물으세요. 부품 재발송, 판매자 문의, 반품은 결과가 다릅니다. 실제 제안과 수락한 방법을 기록하세요."
+    },
+    {
+      "source": "Close the record with evidence of the outcome",
+      "source_sha256": "4171eb56adc854283f8a5d629e1db64c4d998fa9bf90375ae5ba93aa36ebcad4",
+      "raw_target_sha256": "16c258a0a5c99c93c0ef749d8ee10ceb115abda404b54977d084ba1118093d5f",
+      "translation": "결과를 확인한 뒤 기록 마무리하기"
+    },
+    {
+      "source": "A promise to send an accessory resolves the seller's intended next step. The actual shortage remains open until the promised item arrives or you accept another resolution. Keep the follow-up intake, photograph or adjustment alongside the original order. If an adjustment is offered, record the amount, currency and scope in the private order notes. A statement about one accessory does not automatically explain other charges or establish a general policy for future orders.",
+      "source_sha256": "5ce8734689a7ab853d15a80c1de76406b559ce7ea47b81849677a60d49d85c70",
+      "raw_target_sha256": "825291f3ebbc3a4e47a458d0988dcb87a74da3f181cb45f3220ffd70a15643c3",
+      "translation": "재발송 약속은 다음 계획입니다. 부품이 도착하거나 다른 해결책을 수락하기 전까지는 미해결입니다. 추가 입고, 사진, 금액 조정을 원래 주문에 연결하고 도착품이 약속과 다르면 차이를 남기세요."
+    },
+    {
+      "source": "At the packing stage, check that the final parcel request still includes every warehouse item needed for the complete set. If a replacement strap has a separate warehouse reference, attach or select it as the current interface requires. If support says it was already placed inside the bag, save that confirmation. A precise final note can be very short: the black long strap arrived separately, the clips are visible in the new image, and the bag and strap now belong to the same intended parcel.",
+      "source_sha256": "1ea9a43d1c9a2471ecdbeb6718389cad9068fd6676961a635139847a53efbdac",
+      "raw_target_sha256": "44c4d0be735a17d7886f1e3411cafddbe80708a71b05643e4a5a57f8c7bc1744",
+      "translation": "해외 배송을 신청할 때 전체 세트에 필요한 입고품이 모두 선택됐는지 확인하세요. 대체 어깨끈은 별도 입고 번호를 연결하거나 선택합니다. 본체에 이미 합쳤다는 답변이 있으면 보관해 중복이나 누락을 피하세요."
     }
   ]
 }

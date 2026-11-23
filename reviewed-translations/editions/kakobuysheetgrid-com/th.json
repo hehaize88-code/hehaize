@@ -3,7 +3,7 @@
   "locale": "th",
   "source_set_sha256": "2b44c06a68e584f3ade614d137c90dccffed1f766ad3e59a4de607efc4896e87",
   "raw_dictionary_sha256": "82e9344927ff51168bb2b8af1bd1d60cd6830bd41d8313511b7237b1ac7192c7",
-  "effective_dictionary_sha256": "096752f5b1756b313fcdb5c2f0a4a4b8311da90fe18ae7a3d33029fa6d59880c",
+  "effective_dictionary_sha256": "46e7fc4f5516095831147ba038f21925bb414761b88491538a352b357bcfbb51",
   "checked_entries": 317,
   "review_scope": "All translation keys checked by the content auditor; all ten English and localized titles, flagged source/target pairs, and two deterministic long-passage samples reviewed. Currency insertions in numeric examples and escaped markup checked separately.",
   "reviewed_flags": [
@@ -80,7 +80,7 @@
       "source": "A seller might send more than one parcel for a purchase. Before assuming a component has been omitted, check the records the order shows for expected domestic deliveries and warehouse intake. Distinguish a seller message saying an item will follow from a shipment reference or intake entry that actually identifies it. If a second package exists, record the reference and what it is expected to contain. Keep the purchase open for the outstanding component until you can evaluate the evidence relevant to your decision.",
       "source_sha256": "8aee86224b3ea08e3cca1ba0fe5f9671add2f21f9f1d9c1f2de58e222a407a4f",
       "raw_target_sha256": "4896a9f7124e6ba2d58dec1f94b4a304d7ddb1747cd0c3dbc3b535b319e23872",
-      "translation": "ร้านอาจแบ่งคำสั่งซื้อเดียวออกเป็นหลายกล่อง ก่อนสรุปว่าของในชุดขาด ให้ตรวจจำนวนพัสดุในจีนที่คาดไว้และประวัติรับเข้าคลัง แยกข้อความที่แจ้งว่าจะส่งตามมาจากเลขขนส่งหรือรายการรับเข้าที่ระบุชิ้นนั้นได้จริง หากมีกล่องที่สอง ให้จดเลขกับสิ่งที่คาดว่าจะอยู่ข้างใน และคงสถานะค้างของชิ้นนั้นจนได้หลักฐานพอสำหรับตัดสินใจ"
+      "translation": "ร้านอาจส่งคำสั่งซื้อเดียวหลายกล่อง ก่อนสรุปว่าขาดให้ตรวจเที่ยวขนส่งในจีนและบันทึกรับ แยกข้อความ “จะส่งตาม” จากเลขขนส่งหรือหลักฐานที่ชี้ชิ้นนั้นจริง ถ้ามีกล่องที่สอง จดเลขและของที่คาดว่าจะมี แล้วคงเรื่องไว้จนตรวจได้"
     },
     {
       "source": "An exchange creates a second physical unit. Keep the original promise, the original problem and the replacement evidence connected without mixing their identifiers.",
@@ -92,7 +92,7 @@
       "source": "If the seller offers to send a missing piece, record its promised description and new domestic tracking number. If an exchange is offered, retain the original item reference and the replacement reference separately. Do not mark the case complete simply because a message promises a shipment. Close the record when the received accessory can be identified and checked against the original option.",
       "source_sha256": "85bc1a95185c403de1788b0747fff198f6bca560369c80a7c038d7e25c344339",
       "raw_target_sha256": "207d736da934013942af0c751c1eddd815bc6aea3f1cbb2a853150aa8398352d",
-      "translation": "หากร้านจะส่งชิ้นส่วนที่ขาด ให้จดคำอธิบายของที่ตกลงส่งและเลขติดตามภายในจีนใหม่ หากเป็นการเปลี่ยนสินค้า ให้เก็บเลขอ้างอิงของชิ้นเดิมและชิ้นทดแทนแยกกัน คำสัญญาว่าจะจัดส่งอย่างเดียวยังไม่ถือว่าจบเรื่อง ปิดบันทึกเมื่อระบุชิ้นที่ได้รับและตรวจเทียบกับตัวเลือกเดิมแล้ว"
+      "translation": "หากร้านจะส่งตาม ให้จดชิ้นที่ตกลงและเลขติดตามในจีนใหม่ หากเปลี่ยนให้เก็บเลขของเดิมกับของใหม่แยก คำสัญญาจะส่งไม่ใช่ผลสำเร็จ ปิดเรื่องเมื่อระบุอุปกรณ์ที่ได้รับและเทียบตัวเลือกเดิมได้"
     },
     {
       "source": "For the storage box, keep the length, width, height and lid choice beside the link. If the seller uses a label such as “large with lid,” preserve that exact wording and add the dimensions separately. If the link later shows an amended size chart, the original observation remains traceable to a date. You can then decide whether the current offer still serves your purpose, without having to reconstruct why an earlier buyer associated a particular capacity or price with the shared address.",
@@ -1023,6 +1023,462 @@
       "source_sha256": "8b5a71ad600b3ad3ce0f43bbb5ab447f72765388f28118b63266d91ef3f987e3",
       "raw_target_sha256": "bb0b88a94f2b923c527b604a4b95f303ccbbe55ff3a5795b9ef0da6de95c530c",
       "translation": "หากซื้อรุ่นหนึ่ง ให้บันทึกผลจากของจริงใต้ร้านนั้น ภาพเปิดกระเป๋าเห็นของข้างในตอบเรื่องชิ้นที่ได้รับ แต่ไม่ยืนยันย้อนหลังให้อีกประกาศ เมื่อเก็บวันและตัวเลือกต่อเนื่อง คุณจะชี้ได้ว่าความเหมือนข้อใดพิสูจน์แล้วและข้อใดยังขาด"
+    },
+    {
+      "source": "A label can answer the question printed on it. Separate marked size, garment measurements and care information so a single tiny picture does not have to carry three different conclusions.",
+      "source_sha256": "524344e2f8aa7a7e8c8339de508f0af55390d4378692d4fe7436e4261a50d608",
+      "raw_target_sha256": "13c1e116a61c24e9d35b74f62b8f079df0e4b1cc896ff35e5c2544225380c9b1",
+      "translation": "แบ่งข้อมูลเป็นไซซ์บนป้าย ขนาดเสื้อที่วัดจริง และวิธีดูแล ป้ายบอกได้เฉพาะสิ่งที่พิมพ์ไว้ จึงต้องเลือกภาพให้ตรงคำถาม"
+    },
+    {
+      "source": "Identify which label you need",
+      "source_sha256": "a88afa5ad8135536f9f41ad6ac115d344b265ed5ddbcca669779026b250de95c",
+      "raw_target_sha256": "72e7261d13ab2ee9f47563914bf366aeb19f91bbe92f5b2c7a8ddb3a93fc198d",
+      "translation": "เลือกป้ายให้ตรงเรื่อง"
+    },
+    {
+      "source": "For a marked size, request the neckline, waistband or other label showing the garment's size. For care instructions or a stated fibre composition, ask for the relevant sewn-in information label, including the reverse if text continues there. A paper hangtag may contain the shop's stock number but can become detached. A label photographed alone is harder to associate with a specific piece than a view that also shows its position on the garment.",
+      "source_sha256": "935d9169ebccda6d03653c539b145beadc613ecec7b28c84460e51259aadc3db",
+      "raw_target_sha256": "4bc2596dd16cda3dc37b9f378626d2f56e1631f664f29c7716a8f24699fb0820",
+      "translation": "ไซซ์ให้ดูป้ายคอหรือเอว ส่วนส่วนประกอบและวิธีซักให้ดูป้ายข้อมูลที่เย็บติด หากข้อความต่อด้านหลังให้ขอทั้งสองด้าน ป้ายกระดาษอาจมีรหัสร้านแต่ถอดได้ จึงควรเห็นว่าเป็นของเสื้อตัวไหน"
+    },
+    {
+      "source": "Ask for readable evidence",
+      "source_sha256": "d495077dedff84f7f80583b679862d09dfe0dfc17a1861d9d39333cb754fe7d0",
+      "raw_target_sha256": "e15f97fd44eaa5a86a8bfa5d8561f6c68b48a4be1a21cfbb548293de0ff6e0d5",
+      "translation": "ขอภาพที่อ่านตัวอักษรได้"
+    },
+    {
+      "source": "Describe what must be legible. A photograph taken square to the label under even lighting can reveal more than a high-resolution picture taken at a steep angle. Ask that folds are opened without tearing stitching. If the print is tiny, request a contextual photograph and one close view. Make sure both belong to the same warehouse entry, especially when your order includes two nearly identical colours.",
+      "source_sha256": "c5f1b0a383f57bb3f177df557fc7038ae2df179efc17aec051939af40baa55ea",
+      "raw_target_sha256": "543c28f1152c95edcf5bea8c7b94fed3d204b0ad5f3f224ae40d1285c2c97b6a",
+      "translation": "บอกว่าต้องอ่านอักษรไหน ภาพตรงป้ายและแสงสม่ำเสมออาจชัดกว่าภาพความละเอียดสูงแต่มุมเอียง ขอให้กางรอยพับโดยไม่ทำลายตะเข็บ ถ้าอักษรเล็กให้ขอภาพรวมกับใกล้ และตรวจว่าเป็นรายการคลังเดียวกันเมื่อมีสองสีคล้ายกัน"
+    },
+    {
+      "source": "Read size systems carefully",
+      "source_sha256": "42717f9e5ebaa0946f180dee5b3ccc1e0fcb4d06e1ac154c8d32e16a6fb0644d",
+      "raw_target_sha256": "803013bc68592308e81249c14925943cb75167f98d1ea3dc679db0d855b4f611",
+      "translation": "อ่านระบบไซซ์ให้ถูก"
+    },
+    {
+      "source": "Some labels show multiple size systems or a combination of a letter and numbers. Copy the full line before translating it. Compare the seller's selected option and size chart with that line. A reference photo marked XL from an earlier order tells you what was printed on that photographed unit only. It does not establish the fit of the medium currently assigned to your order.",
+      "source_sha256": "260903139f45fd0a296d01748e86219154a60780a60c4dff6976ce2f77b71a56",
+      "raw_target_sha256": "c9a29040b267b711adb3c4e9d676534ce2248fc55910af1359b5b668d0d8212d",
+      "translation": "บางป้ายมีไซซ์หลายระบบหรือผสมตัวอักษรกับเลข คัดทั้งบรรทัดก่อนเทียบตัวเลือกและตาราง ภาพเก่าที่ติดป้าย XL บอกได้ว่าของที่ถ่ายเป็น XL แต่ใช้ยืนยันว่ารุ่น M ที่สั่งตอนนี้จะพอดีไม่ได้"
+    },
+    {
+      "source": "Check fit independently",
+      "source_sha256": "166e2b25a8922b7e088ee11f5b3a06dd962ae65b66a372dc57d4c33761123e15",
+      "raw_target_sha256": "437fb17d39e941f767dc532b0542e0bb76596c139330601ebdaaf116887243d7",
+      "translation": "ตรวจความพอดีด้วยการวัดแยก"
+    },
+    {
+      "source": "Use a garment you already own as a physical comparison. For a shirt laid flat, you might measure underarm to underarm and back length from a named seam. Record the units and the way the garment was laid out. If the warehouse measurement uses a different endpoint or stretches a knit, repeat the measurement consistently before judging a discrepancy. Do not expect matching letters on two labels to eliminate pattern differences.",
+      "source_sha256": "2351285ce45be59412cd3217a6739659917518757d99ac707d55b61289220689",
+      "raw_target_sha256": "0d181b2add04e6475ee858ba44114f7104d8091bafa4f2ca5035ab443773aecf",
+      "translation": "วัดเสื้อที่ใส่พอดีด้วยวิธีเดียวกัน เช่น วางราบ วัดจากรักแร้ถึงรักแร้ และความยาวหลังจากตะเข็บที่กำหนด จดหน่วยกับวิธีวาง หากคลังใช้คนละจุดหรือยืดผ้าถัก ให้แก้วิธีวัดก่อนตัดสิน เสื้อป้ายไซซ์เดียวกันอาจคนละแพตเทิร์น"
+    },
+    {
+      "source": "Present a clear mismatch",
+      "source_sha256": "56aafd20d1f8742d30d70b13a3cfe95fb8b43d718b260caa6da7c3bc908a9965",
+      "raw_target_sha256": "99b051b5f47d58df33f4d10a14f7859e9dce17172578dc5dc4b964fcec0de161",
+      "translation": "ชี้ความต่างบนป้ายให้ชัด"
+    },
+    {
+      "source": "If you ordered a particular size and a photograph seems to show a different one, send the selected option and the image together. Explain exactly which marking is unexpected and ask the agent to check the actual unit. A label image cannot establish authenticity, the truth of a composition claim or the durability of a seam by itself. Report the observable difference and retain the response with the item record.",
+      "source_sha256": "0f8b1287cd9178cd7ab84bc3032c3b9024fc2749e72ad62fa4fed43deb61cd70",
+      "raw_target_sha256": "3390c4d292fa7fc311499f08f222f464af35ef4eaf402fc969d058863153b7db",
+      "translation": "ถ้าป้ายดูเป็นคนละไซซ์ ให้ส่งตัวเลือกที่สั่งคู่ภาพ ชี้ว่าตรงไหนต่างแล้วขอให้ตรวจของจริง ภาพป้ายอย่างเดียวไม่รับรองของแท้ สัดส่วนเส้นใยจริง หรือความทนของตะเข็บ บันทึกสิ่งที่เห็นและคำตอบคู่รายการสินค้า"
+    },
+    {
+      "source": "Identify the label that answers your question",
+      "source_sha256": "8c6d49da353e0e7a1a4383152c05941e8fb4f0a6c4029d6e9163a63392064366",
+      "raw_target_sha256": "06344dd4605f7b07ef3d2c9e1f06beb100344a54d02850e52dadeadb7f5ce922",
+      "translation": "ป้ายใดมีคำตอบที่ต้องการ"
+    },
+    {
+      "source": "A garment can carry several labels. A neck label can show a brand or a letter size. A sewn-in side label may carry composition and care information. A removable hangtag may show a merchant's stock code, price or barcode. Start by identifying the question and where its answer might actually appear. If your concern is whether a jacket is the ordered size, a clear photograph of a promotional hangtag may be less useful than a readable view of the size marking sewn into the received garment.",
+      "source_sha256": "5a090caa11867eeb15cbd72eec1737dadac13b999d85188571ec13e210862ba3",
+      "raw_target_sha256": "2b5e6ea87aa34693cdc7ff22bce7297ab8ec056e4cb57835049fd46c1899b5fe",
+      "translation": "ป้ายคออาจบอกแบรนด์หรืออักษรไซซ์ ป้ายข้างบอกส่วนประกอบและวิธีดูแล ป้ายแขวนอาจมีรหัส ราคา หรือบาร์โค้ด ถ้าถามว่ารุ่นที่ได้รับตรงไซซ์สั่งหรือไม่ ภาพป้ายไซซ์ที่เย็บติดมีประโยชน์กว่าป้ายโฆษณาที่ถอดได้"
+    },
+    {
+      "source": "Labels can refer to different parts of one garment. A coat may have an outer shell, lining and padding identified on separate lines. If a photograph shows one percentage but crops out the part name, resist applying that figure to the entire coat. Request a view that includes both the part description and its composition line. Keep the seller's written specification beside the photo so a difference can be described precisely, for example a discrepancy affecting the lining rather than a general claim about the coat.",
+      "source_sha256": "e262127fce033d943a74312ad49ea2363de530367efbfbeb1994a3774854b858",
+      "raw_target_sha256": "f4a490e8da28540c1d3dd9fd71a54b55bbea30ecca2afb6306e65147a36ec477",
+      "translation": "ป้ายเสื้อโค้ตอาจแยกผ้าชั้นนอก ซับใน และวัสดุบุเป็นคนละบรรทัด หากภาพเห็นเปอร์เซ็นต์แต่ตัดชื่อส่วน อย่าใช้กับทั้งตัว ขอภาพที่เห็นทั้งส่วนของเสื้อและสัดส่วน"
+    },
+    {
+      "source": "Preserve characters that are easy to misread",
+      "source_sha256": "e85b9a9fe1c5c3c0c50769fd7aab40993b10363f91d7f1e03c243e54ad227ba2",
+      "raw_target_sha256": "5940d8b5d16343cfbc7429c77e1c2445179464ef578b13e230b02eaed46c8df5",
+      "translation": "จดอักษรที่อ่านผิดง่าย"
+    },
+    {
+      "source": "The difference between a small and a medium can be a single letter. The difference between two style numbers can be a leading zero, a dash or the final digit. Zoom in on the original file when possible. Upscaling an already blurred screenshot may make text look smoother without revealing the missing character. Transcribe only what you can actually read and mark an unclear position with a question mark. Someone checking later can then focus on that position in a replacement photograph.",
+      "source_sha256": "f58d4787529cc269dcdade2c1552d7cc1257b91b152ea2b453136faf1f8b717a",
+      "raw_target_sha256": "b285ad7694ddf76727bb3cdd0fe11581b2678ffa36895dc28cff74219c02939f",
+      "translation": "S กับ M ต่างเพียงอักษรเดียว รหัสรุ่นอาจต่างแค่ศูนย์หน้า ขีด หรือเลขท้าย ลองซูมไฟล์ต้นฉบับ การขยายภาพเบลออาจทำให้ดูเรียบแต่ไม่คืนตัวอักษรที่หาย คัดเฉพาะที่อ่านได้และทำเครื่องหมายจุดไม่ชัด"
+    },
+    {
+      "source": "A folded label can bring two unrelated lines next to each other. For a useful second view, ask to see the label unfolded on a flat surface with the complete text visible, subject to what the warehouse can provide. If the garment has several language blocks, look for a complete block rather than assembling percentages from fragments of different ones. Save the original image alongside any personal translation or cropped reference. This keeps the source available if a later reader questions a character or interpretation.",
+      "source_sha256": "25bdc73d9d469d43a5358de960215f6925d4eaca6f4fdba9137e1139b8f80dbc",
+      "raw_target_sha256": "705f97558d3bda677c999c8b1286ea66205278a0f3c7b918af0a823c90d0324a",
+      "translation": "รอยพับอาจทำให้สองบรรทัดที่ไม่เกี่ยวกันมาอยู่ติดกัน หากบริการทำได้ ขอให้คลี่ป้ายราบแล้วถ่ายข้อความเต็ม ถ้ามีหลายภาษาให้อ่านหนึ่งชุดภาษาให้ครบ อย่าต่อเปอร์เซ็นต์จากคนละส่วน"
+    },
+    {
+      "source": "Use a size label together with a measurement",
+      "source_sha256": "32d1abf8806d85a2d20757d1be9c31a36418fe41cccfc1bec2c27664ddd8f88b",
+      "raw_target_sha256": "79f0c4e18e5dcbe5e2e9d96b5f0bfd8a5b69d35fef72d21525424c2e232ef392",
+      "translation": "ดูป้ายประกอบการวัด"
+    },
+    {
+      "source": "Suppose your order says medium and the sewn-in label also reads medium. That resolves the label comparison. It does not yet answer whether the garment will fit over your usual sweater. Compare the seller's size chart with the measurement you need, observing whether the chart describes garment width laid flat or a body circumference. For a jacket, a tape photograph running straight between underarm points can answer a practical fit question that a perfectly legible size label leaves open.",
+      "source_sha256": "080e94108406a41dfed3c1671fe4d85d03936ef5a70e4e54e13ac9cd582d2a58",
+      "raw_target_sha256": "dfb3060b5fa600c3c226831dc1830b4b7cede46a21d7b5cc9399835f0214bbb6",
+      "translation": "ถ้าสั่ง M และป้ายเย็บก็เป็น M แปลว่าป้ายตรง แต่ยังไม่รู้ว่าใส่ทับเสื้อถักประจำได้ไหม ดูว่าตารางระบุความกว้างเสื้อราบหรือรอบตัวคน ภาพที่วัดตรงระหว่างตะเข็บรักแร้สองข้างตอบเรื่องความกว้างที่ป้ายบอกไม่ได้"
+    },
+    {
+      "source": "If the label says large while the order says medium, save both before deciding how to proceed. A seller may offer a written explanation or an order confirmation may show a different selected option from the one you recall. Record the explanation separately from your initial observation. Avoid overwriting the original selection in your notes simply because someone describes the items as fitting similarly. You may decide a measured garment works for you, but that is a separate decision from whether the label matches the order.",
+      "source_sha256": "88a459d7feac7af9421678fad17740cf855ff337f7fbeb50563e17ac9a440627",
+      "raw_target_sha256": "d9e7640c5bec33309876b204b172743b6e0517854a65668e588909a2ab2cbef4",
+      "translation": "หากคำสั่งซื้อ M แต่ป้าย L ให้เก็บหลักฐานทั้งสองก่อนตัดสิน ร้านอาจอธิบายหรือใบยืนยันอาจระบุต่างจากที่จำ จดคำอธิบายเพิ่มแยกจากข้อสังเกตเดิมโดยไม่เขียนทับ"
+    },
+    {
+      "source": "Consider what a label can actually prove",
+      "source_sha256": "152c9b848f1ebeea3765381d7060ca39f7a1c8d7dd456fb3281a77f348bc12a2",
+      "raw_target_sha256": "86988c9cf6d1b367a56f17ac51d59c78b51481b7c787d912d29dcdc02643c004",
+      "translation": "ป้ายพิสูจน์อะไรได้"
+    },
+    {
+      "source": "A photo can establish what is printed or sewn onto the photographed item when the connection between image and garment is clear. It cannot independently verify a fibre blend, an origin claim or authenticity. For a purchase that depends on a particular material, record both the seller's written description and the wording on the garment. Where the two conflict, ask for clarification before treating either as a confirmed material test. A missing label also leaves the relevant claim unverified in the available photos.",
+      "source_sha256": "e596d1487e2c289bee185a1a5fe4c3ccdce14ebe05544ac219575bdf6c878a0c",
+      "raw_target_sha256": "fc7de5844d7b89879a862104869391038c31c39608453b1d1686ae58a61627e7",
+      "translation": "ภาพที่เชื่อมกับเสื้อถูกตัวบอกว่าป้ายพิมพ์อะไร แต่ยืนยันส่วนผสมจริง แหล่งผลิต หรือความแท้ด้วยตัวเองไม่ได้ หากต้องการวัสดุเฉพาะ ให้เก็บทั้งข้อความร้านและข้อความบนป้ายพร้อมที่มา"
+    },
+    {
+      "source": "The context is particularly important with multipacks. One photo of a label on a black T-shirt cannot confirm the labels on two white T-shirts packed alongside it. Decide whether the same evidence is needed for each item. If the order contains mixed sizes, separate each garment by colour and ordered size in the request. A group overview plus a close view linked to each relevant garment can prevent a clear but isolated label image from being assigned to the wrong piece.",
+      "source_sha256": "e7cbe47afa9c49a54c0d2861927983bd880a70e0eee0d5a6cc9c3ef2529e2926",
+      "raw_target_sha256": "0ae5764b81f2ad4e39197cdd0c20a86c69656ddb005d2622301c600d7b2bf35c",
+      "translation": "ป้ายเสื้อดำหนึ่งตัวแทนป้ายเสื้อขาวอีกสองตัวในแพ็กไม่ได้ ตัดสินว่าต้องเห็นป้ายแยกทุกตัวไหม ถ้ามีหลายไซซ์ให้ระบุสีและไซซ์ที่สั่งของแต่ละตัวในคำขอ"
+    },
+    {
+      "source": "Build a clean note for the next decision",
+      "source_sha256": "b06e75160874a871fb85610c308353f65d196b88a57ec289200be8f0e1c87e69",
+      "raw_target_sha256": "b6d93a7f4ce736d9e4f266266f7702a6cd62c7d17bb55faae695daf2b222d0b8",
+      "translation": "ทำโน้ตเพื่อการตัดสินใจครั้งต่อไป"
+    },
+    {
+      "source": "A useful clothing-label note can be just a few sentences. Identify the garment and selected option, state the visible wording, identify the unresolved question and specify whether it affects your decision. For example, the paid order says navy jacket, size medium. The label appears to read medium. A number at the bottom is cut off, but you only needed to confirm size. In that case the missing number need not generate another photo request or delay your decision.",
+      "source_sha256": "1a5015376685ea91644f7e226199f7de47a199e340f2a6ab210e022f106ad80c",
+      "raw_target_sha256": "9f0c2ac51fa2f1322972ca246110808d996f3cf0f59a2914ac7097f1b4ab2734",
+      "translation": "ระบุของ รุ่น ข้อความที่เห็น คำถามค้าง และผลต่อการตัดสิน เช่น “สั่งแจ็กเก็ตกรมท่า M ป้ายดูเป็น M เลขข้างล่างถูกตัด แต่ต้องการยืนยันเพียงไซซ์” กรณีนี้ไม่ต้องขอภาพใหม่หรือรอเพราะเลขนั้น"
+    },
+    {
+      "source": "When the missing text does matter, keep the request narrow. Ask for the full composition label on the navy jacket, including the shell and lining headings, with the tag unfolded enough to read both sections. Check any available service terms or price before requesting a paid detail view. After the new image arrives, add it beside the original rather than deleting the first image. The pair documents what prompted your question and which detail eventually resolved it.",
+      "source_sha256": "c55089eb23f1d63f6a4246c9ba05474c755af72922c717032a192d42a793e7c6",
+      "raw_target_sha256": "8633ed4499e79a527ab6c2c5f63261addc7f3b0f9f4bdfb7b67f4ebe7d9e1054",
+      "translation": "ถ้าข้อความที่หายมีผลจริง ให้ขอเฉพาะจุด เช่น กางป้ายส่วนประกอบแจ็กเก็ตกรมท่าให้เห็นหัวข้อผ้านอกและซับในพร้อมข้อความ ตรวจค่าบริการก่อนสั่งภาพเสียเงิน เก็บภาพใหม่คู่ภาพเดิมเพื่อเห็นเหตุที่ถามและคำตอบ"
+    },
+    {
+      "source": "A picture of one well-presented shoe cannot establish what is in the other half of the box. A paired inspection starts with identity and finishes with the specific features that affect your decision.",
+      "source_sha256": "ad636437d270c7d002472e69099e18dfd0871446e46da94a7f2abcaa5eb8d3dd",
+      "raw_target_sha256": "e277a8d878a25b78d2dc7c53660374939ec2b2ce45025af6cb5999b60bfef8f9",
+      "translation": "ภาพรองเท้าข้างเดียวไม่ยืนยันอีกข้างในกล่อง เริ่มจากระบุคู่ที่สั่งให้ถูกแล้วตรวจจุดที่มีผลต่อการตัดสินใจทั้งคู่"
+    },
+    {
+      "source": "Start with the pair you ordered",
+      "source_sha256": "834232940c40c7b7ed06de49d1ea80f4854eec5846207a220d0a1fe4f502b9d3",
+      "raw_target_sha256": "2e72b6b8fe37daba153c3c79a5a2cbec104d282043d0a5c5ba066b655cc174df",
+      "translation": "ระบุคู่ที่สั่งให้ถูก"
+    },
+    {
+      "source": "Write down the seller's size system, colour option and quantity. Keep that information with the warehouse entry. The carton label can be a useful cross-check, but it describes the carton. Ask to see the actual left and right shoes together in a frame. If several pairs arrived in one order, do not infer that every image in a gallery belongs to the first row of the purchase summary.",
+      "source_sha256": "6b53d2a6129bcba2d1590a61965dc0432162458cc06e3cf16b7ccce0ac90647c",
+      "raw_target_sha256": "7d8ee6ba7c6c8e5c3f8c789ba10b457bf27cb312e7b53f5f85ab04ea01fb070e",
+      "translation": "จดระบบไซซ์ สี และจำนวนคู่กับบันทึกรับเข้าคลัง ป้ายกล่องใช้อ้างได้แต่บอกเรื่องกล่อง ขอภาพรองเท้าจริงซ้ายขวาในเฟรมเดียว และระบุคู่ให้ถูกหากสั่งหลายคู่ที่คล้ายกัน"
+    },
+    {
+      "source": "Use a paired view for symmetry",
+      "source_sha256": "76810a3748169f6e31a315c8000246e0aa4d47e7fbb714afda3dd257d3c2de08",
+      "raw_target_sha256": "427a517bd8b1960cefa0ab83292331a19818b0aed96d139540c735dbbefbfedf",
+      "translation": "จัดวางคู่กันเพื่อตรวจทรง"
+    },
+    {
+      "source": "For a useful top view, ask for the shoes side by side on the same level surface, heels aligned and toes facing the same direction. Comparing a near shoe with a far shoe in an angled picture can exaggerate apparent size differences. A full back view gives a different comparison of heel height, seam position and colour. Decide which arrangement best displays the suspected issue before requesting more photographs.",
+      "source_sha256": "b802d0078e0b3b0ea3bb4207583568436a188e7d8011b93162f543d6c1bd603a",
+      "raw_target_sha256": "a1cfc1c486580c1c5069f61859fada344eea9726ca4591de8537abbd28d6df59",
+      "translation": "ขอภาพจากด้านบนโดยวางบนพื้นระดับเดียวกัน ส้นเสมอและปลายเท้าไปทางเดียว ภาพเฉียงทำให้ข้างที่ใกล้กล้องดูใหญ่เกินจริง ส่วนความสูงส้นควรดูภาพด้านหลังเต็มทั้งคู่"
+    },
+    {
+      "source": "Check each label independently",
+      "source_sha256": "11bb5ce8454591005d09f7daf4d47b332a3190baa1955c64f353d167457adcc1",
+      "raw_target_sha256": "ed58c1226e8ec3cfee9b8888f01030c0661d04af5ccaf34d4c8b91d0dd7dd35a",
+      "translation": "ตรวจป้ายทีละข้าง"
+    },
+    {
+      "source": "A single readable size label establishes a marking on one shoe. Ask for each label if size mismatch is the concern, and note the sizing system rather than comparing bare numbers. A US marking and a UK marking on the same label can be different without showing a mismatch. Compare the equivalent line on the left and right shoes against the option recorded in the order.",
+      "source_sha256": "797ebd88af1853f96f09a0d73b886a93fde1ad791041ff93905b6d674a3ac1ba",
+      "raw_target_sha256": "369382751f9104d8979563e1010d32de3fd94a056df0dcbca3b46859b0c0dc14",
+      "translation": "ป้ายที่เห็นชัดหนึ่งป้ายยืนยันรองเท้าเพียงข้างหนึ่ง หากกังวลไซซ์ไม่ตรงให้ขอทั้งสองป้าย แล้วเทียบระบบเดียวกันกับใบสั่ง ตัวเลข US และ UK ที่ต่างกันบนป้ายเดียวไม่ใช่หลักฐานว่าผิดคู่"
+    },
+    {
+      "source": "Define a length question precisely",
+      "source_sha256": "3f19a81c8c55a5bed9b6121fcd900586e6e13769bc7c9840c105510490348d1d",
+      "raw_target_sha256": "2aaa30cc36cdbc2501715468bcb1b24d036c114573994827ac69c4a355193821",
+      "translation": "ระบุว่าต้องวัดความยาวส่วนไหน"
+    },
+    {
+      "source": "If internal length matters and the insole is removable, ask whether removal is appropriate before requesting a measurement. A tape laid along the outside sole measures another object. Specify the endpoints, units and which shoe is measured. An insole length provides a physical dimension, but not an assurance of comfort: usable space also depends on shape, thickness and your own foot.",
+      "source_sha256": "d2651105a8e3efde36c429207aedd22c1f312d38af7ea10450cd2417e7b6f8fd",
+      "raw_target_sha256": "e1c2dfeaceb559586bd27fbe6e2dfab39559eec907678b2631e64f6b7d616e76",
+      "translation": "ถ้าต้องรู้ความยาวด้านในและแผ่นรองถอดได้ ให้ถามว่าถอดมาวัดได้หรือไม่ก่อน การวัดพื้นนอกเป็นคนละอย่าง ระบุข้าง จุดเริ่ม จุดสิ้นสุด และหน่วย ความยาวแผ่นรองไม่รับรองความสบายเพราะยังขึ้นกับทรง ความหนา และรูปเท้า"
+    },
+    {
+      "source": "Distinguish design from damage",
+      "source_sha256": "14a4b9bacbb71b27d746414c5747b599230461e3f75d578b9c7dcc3e423ac163",
+      "raw_target_sha256": "7c3c36ebe6ba5e7afbc5716959e8511f870393e675ea82c2b0554ae34f9b0301",
+      "translation": "แยกดีไซน์ออกจากความเสียหาย"
+    },
+    {
+      "source": "Some shoes deliberately have asymmetrical panels or different markings on left and right. Compare the official seller option pictures for the specific design rather than assuming every colour patch should mirror its partner. If the concern is a split seam or a scuff, request a focused close-up plus a wider picture identifying its location. Save both beside the purchase record and check the applicable next steps before dispatch.",
+      "source_sha256": "394d1fa4aff7ba9c693d80423030ee7589c3253502e7d0a737ae68f2eca8cb03",
+      "raw_target_sha256": "557201228cc4c7d4660eb5c6d51f604a694709f8ec5e55f19ef187582827572f",
+      "translation": "บางรุ่นตั้งใจทำแผงหรือสัญลักษณ์ซ้ายขวาไม่เหมือนกัน เทียบภาพตัวเลือกจริงของร้านก่อนคิดว่าทุกสีต้องสะท้อนกัน หากกังวลตะเข็บแยก ให้ชี้จุดและแยกปัญหาสภาพออกจากรูปแบบที่ออกแบบไว้"
+    },
+    {
+      "source": "Establish which shoe is which",
+      "source_sha256": "815629e4336f8aae8994eda55c27b7c08d08f3e6933fc0655fa8b517f8c070a4",
+      "raw_target_sha256": "0e5da2f295afaa179e317b8f3f29a7abbadee60dd0f11332e8ef8731ab13ebd9",
+      "translation": "ระบุว่าภาพเป็นรองเท้าข้างไหน"
+    },
+    {
+      "source": "Two pictures in a gallery do not necessarily show a pair. One could be the same shoe turned around. Begin with a view of both shoes together, with their toes pointing in the same direction. The inside and outside edges should then be easier to distinguish. If one shoe is partly inside the other or the heels are hidden behind packing paper, write down the missing view. A photograph of one excellent lateral profile gives little information about the second shoe.",
+      "source_sha256": "087b463b767898f764becfadd38a8461a4824ea40f9e483e165c5a378bfb012d",
+      "raw_target_sha256": "2a9a802be3cdcc9a569761c93dbbc3058c9916f5cee13155ca5b37271fa56699",
+      "translation": "สองภาพอาจเป็นรองเท้าข้างเดียวที่หมุนไปอีกมุม เริ่มจากภาพคู่ที่ปลายเท้าหันทางเดียวกัน แล้วค่อยแยกขอบในและขอบนอกกับระบุภาพย่อยว่าเป็นซ้ายหรือขวา"
+    },
+    {
+      "source": "If the order contains two identical-looking pairs in different sizes, keep their warehouse records separate. A shoe box label can provide context if it is clearly tied to the pair in the picture, but boxes and shoes are distinct objects. For a size-sensitive order, ask for the visible size marking inside each shoe and connect the photographs to the correct pair. A combined image showing the two heel openings can help, provided both labels remain legible when viewed at their original resolution.",
+      "source_sha256": "bde96802de4576e838a835e31f4d5b8de20ad959c44bdd57cee67b859e56fb1c",
+      "raw_target_sha256": "61ac02d13eba42b137311dfd9e878cc141ab98dc35817fee88d9febff008f6f1",
+      "translation": "สองคู่ที่หน้าตาเหมือนแต่ต่างไซซ์ต้องแยกบันทึก ป้ายกล่องช่วยได้เมื่อแน่ใจว่าเป็นกล่องของคู่นั้นแต่ยังต้องดูป้ายบนรองเท้าจริง ขอภาพป้ายภายในทุกข้างแล้วผูกกับคู่ที่ถูก หากถ่ายปากส้นสองข้างพร้อมกัน ต้องยังอ่านทั้งสองป้ายได้ในไฟล์ต้นฉบับ"
+    },
+    {
+      "source": "Choose matched views for comparison",
+      "source_sha256": "5fdacdfac70fdea18f6828000464f6aae7271f9d87e0638e0ef3b5543844878b",
+      "raw_target_sha256": "a3b2af57220231d8769989cc4f638821f42621a5d6f279c50367bf0f26334402",
+      "translation": "ใช้มุมภาพที่เทียบกันได้"
+    },
+    {
+      "source": "A photograph taken very close to one toe can make it look larger than the other. When comparing toe or heel shape, a matched overhead view with the pair side by side is more informative than two unrelated close-ups. Check whether the shoes sit equally far from the camera and both rest on the same flat surface. Differences in stuffing, lacing and angle can change the outline. Describe the feature you observe before guessing at a manufacturing or handling cause.",
+      "source_sha256": "3b58edbffbdab573a6c807d5d724417a1832f02612fe662ecb1c01e6bd9978ad",
+      "raw_target_sha256": "e55684a6990106afaf6f430ce2be32b11cd5de70265e9088207effa7d24e5e05",
+      "translation": "การถ่ายใกล้ปลายเท้าข้างเดียวทำให้ดูใหญ่ เทียบทรงหัวหรือส้นด้วยภาพด้านบนที่วางคู่กันดีกว่าภาพใกล้คนละมุม ตรวจว่าทั้งสองข้างห่างกล้องเท่ากันและไม่เอียง"
+    },
+    {
+      "source": "Use an overhead view for alignment, a rear view for heel height and a view of both outsoles for tread pattern. The same camera angle rarely answers all three questions. If the first images already show the tread and shape clearly, a request for another front view adds little. Request the single angle that could change your decision. For an apparent mismatch in heel colour, a view under the same light can be more helpful than a close-up taken in a different room.",
+      "source_sha256": "427ad55465f733f01dbcf0d060fb2c1ae9f5f17851b38ed21bd0f89c0e3fa158",
+      "raw_target_sha256": "9b4103d80fb7b9b430c55bfabc612b03e3fac1b63fd5ec578a5776d71d81bb15",
+      "translation": "ภาพบนดูการเรียงแนว ด้านหลังดูความสูงส้น และรูปพื้นทั้งคู่ดูดอกยาง หากภาพเดิมเห็นทรงกับดอกชัดแล้ว การขอหน้าตรงซ้ำช่วยน้อย เลือกมุมที่เปลี่ยนการตัดสินได้จริง สีส้นที่ดูต่างกันควรดูในแสงเดียวแทนภาพใกล้คนละห้อง"
+    },
+    {
+      "source": "Read size markings without inventing conversions",
+      "source_sha256": "6257d0cd9e609a96778a1d630dfcc52d07b1c0c94c74b6311d31f4186b34ccb9",
+      "raw_target_sha256": "36fa3b62797373d2353a2facc45a4f79fff8dcf4ab282cf29c0fb10904516423",
+      "translation": "อ่านไซซ์โดยไม่สร้างสูตรเทียบเอง"
+    },
+    {
+      "source": "A shoe label may list several regional size systems on separate lines. Transcribe the whole relevant line with its unit or system. A numerical marking from one system and another marking from a different system can look unequal while describing the same paired product. Compare like with like across both shoes and against the seller's selected option. If a label is hidden by the tongue, ask for a view of the label face rather than guessing from the visible end of the number.",
+      "source_sha256": "c2a02c94adef2e4320f88f43099860932767845f0ce0648dd8ce6a605d5b836d",
+      "raw_target_sha256": "cc4014a7ba8303021a9d2175f727c17ddd04f0a771edfbff304a78607fbc92bc",
+      "translation": "ป้ายอาจเรียงขนาดหลายภูมิภาคคนละบรรทัด จดทั้งเลขและระบบ แม้เป็นคู่เดียวกันตัวเลขคนละระบบก็ไม่เท่ากัน เปรียบเทียบซ้ายขวาในระบบเดียวกับที่ร้านใช้ตอนสั่ง"
+    },
+    {
+      "source": "For practical fit, compare a reference pair you own using the same measurement method the seller describes. A removable insole length and an outsole length are different measurements. A buyer who knows the insole of a comfortable shoe should ask for an equivalent measurement only if the item and service permit it. A photo where a ruler begins outside the heel or follows a visibly curved path can give a misleading comparison. Specify where the measurement should start and finish when the difference matters.",
+      "source_sha256": "9d290c3876ac1fd0c6b6116107dbd6b5d6a22b3239362852ebd9c97dff342a18",
+      "raw_target_sha256": "7519c323103c408829ddf85dfd0b274729d26274e8474b1df26cd0beca4a5afd",
+      "translation": "วัดเทียบรองเท้าที่ใส่สบายด้วยวิธีเดียวกับร้าน ความยาวแผ่นรองถอดได้กับความยาวพื้นนอกต่างกัน หากบริการและตัวสินค้ายอมให้วัด ให้ขอวิธีเดียวกับที่มีค่าอ้างอิง ระบุจุดเริ่มและจบ เพราะไม้บรรทัดเริ่มนอกส้นหรือสายวัดตามโค้งทำให้เทียบคลาดเคลื่อน"
+    },
+    {
+      "source": "Distinguish presentation from a physical difference",
+      "source_sha256": "f43120f3a70c5f6c76fb47462a9929c270ab706235739ff9d5f96f4727d918d8",
+      "raw_target_sha256": "048646d25e7e85e84308d8c54c0e87d33c85cb6dcc79144180edde39d9bbcd09",
+      "translation": "แยกสิ่งที่ดูต่างจากความต่างจริง"
+    },
+    {
+      "source": "Packing paper can create an apparent bulge and a loose lace can make one opening look larger. For something you suspect to be a physical mismatch, note whether the feature persists across another angle. A shadow at the sidewall in a front view may disappear in a side image. A clearly different tread pattern visible across the whole outsole is a different kind of observation. State the visible feature and ask the person handling the order to check it directly if necessary.",
+      "source_sha256": "a863e7ca2d3986dfab7668f66b65124ecd4c77274081dea1a2c4860d26148b1a",
+      "raw_target_sha256": "b291a4e8274b819c61da7eadfaccbf2b51da34b8c04b5d7ac90c73a2768d2463",
+      "translation": "กระดาษยัดอาจทำให้หลังเท้านูน เชือกหลวมอาจทำให้ช่องสวมดูกว้าง ดูว่าความต่างยังอยู่ในมุมอื่นไหม เงาข้างรองเท้าในภาพหน้าอาจหายในภาพด้านข้าง แต่ดอกยางทั้งพื้นต่างกันเป็นข้อสังเกตอีกแบบ ระบุจุดที่เห็นแล้วขอคนถือของตรวจหากจำเป็น"
+    },
+    {
+      "source": "Consider an example where one shoe has a dark mark near the heel. Record which shoe and whether the mark appears on the material or only on nearby wrapping. A second image with the wrapping moved away could resolve that ambiguity. It may not identify what the mark is or whether it can be removed. Avoid promising that brushing or washing will solve it. If surface condition affects your purchase, obtain a sufficiently clear view and ask what options are available for this order.",
+      "source_sha256": "aa3e8106b30d46dcc150cee50478cfea10bbfddb58d2494c291e4861dda8ec65",
+      "raw_target_sha256": "14f8af310cc7ca672edcb47a6b1547b9e476214599e7734f6075109778134212",
+      "translation": "หากมีรอยเข้มใกล้ส้น ให้จดว่าอยู่ข้างไหนและอยู่บนรองเท้าหรือห่อ ขยับห่อแล้วถ่ายใหม่อาจบอกตำแหน่งแต่ยังไม่บอกชนิดรอยหรือเช็ดออกไหม อย่ารับปากว่าซักหรือแปรงแล้วหาย หากสภาพสำคัญ ขอภาพชัดและถามทางเลือกของคำสั่งซื้อนั้น"
+    },
+    {
+      "source": "Keep pair condition and box condition separate",
+      "source_sha256": "d39f492ab5c088eee0a6959aa803826302e98353b4ee0570c181f20628534a6d",
+      "raw_target_sha256": "7129a2bb83e658142c0911849d9c5e59b8b2c944979293ab94c202e3fbba687a",
+      "translation": "แยกสภาพคู่รองเท้ากับสภาพกล่อง"
+    },
+    {
+      "source": "A crushed box lid can matter for gifting or storage even if the shoes appear intact. Torn wrapping can be visible without revealing whether either shoe is damaged. Record package condition and item condition separately. If the box is essential, check whether the exact option included the box and whether requested packing services address it before international dispatch. A retailer-style studio photo of a branded box is weaker evidence of inclusion than a written option description or the warehouse's record of what arrived.",
+      "source_sha256": "77cda47533e6bd202297e327aba87ead4bce8e9c1f541cc04694305b3fb43a16",
+      "raw_target_sha256": "bba0f11575e7244580c3482349c2dc3198e5b7318420466d7d512ffff8b47631",
+      "translation": "ฝากล่องบุบส่งผลต่อการให้ของขวัญหรือเก็บของแม้รองเท้าดูปกติ กระดาษห่อขาดไม่ยืนยันว่ารองเท้าเสีย จดสองสภาพแยกกัน หากกล่องจำเป็น ให้ตรวจตัวเลือกที่ซื้อและบริการรักษากล่องก่อนส่งต่างประเทศ ภาพกล่องแบรนด์ในสตูดิโอมีน้ำหนักน้อยกว่าข้อความตัวเลือกหรือบันทึกรับจริง"
+    },
+    {
+      "source": "When all required views are available, close the inspection with a short statement about both shoes. For example, both labels display the ordered system and size, both outsoles show the same tread and the left heel has a visible mark that still needs clarification. This record is more useful than a single “QC passed” line because it explains the specific checks you completed. Keep the images with the order in case a later packing or exchange question refers to one shoe in particular.",
+      "source_sha256": "56536e87099f2bd797aa99b8ddf139a43539fc18d42d5ab1ff68b2aa113939e5",
+      "raw_target_sha256": "dd7e30290ddfc67c9e6c797eccfa86b54e5f2190741ef55e7bd5a175aa3f7b94",
+      "translation": "สรุปเมื่อได้ทุกมุม เช่น “ป้ายทั้งสองข้างตรงระบบและไซซ์ที่สั่ง ดอกยางตรงกัน ส่วนส้นซ้ายมีรอยรอยืนยัน” ข้อความนี้บอกสิ่งที่ตรวจจริงมากกว่าคำว่า QC ผ่าน เก็บภาพกับคำสั่งซื้อเผื่อต้องถามเรื่องรองเท้าข้างใดภายหลัง"
+    },
+    {
+      "source": "An accessory can be missing from a photograph, omitted from a selected option, packed out of view or genuinely absent from the received order. Resolve those possibilities in sequence.",
+      "source_sha256": "62c6ce5663255e56ea93a72495bd41743daf7cd09417c0417f760d9c684ba414",
+      "raw_target_sha256": "6f5d9a08bc5e9198d6e9af152d665cfb3be116cd690eaf61475cfb06d968ae9b",
+      "translation": "ของเสริมอาจไม่อยู่ในภาพ ไม่รวมในตัวเลือก ซ่อนในห่อ หรือขาดจริง ตรวจความเป็นไปได้ตามลำดับ"
+    },
+    {
+      "source": "Establish what the option included",
+      "source_sha256": "687a11276a84edcdbd06c88adfc913d804c8077376483797d7ea52937cde9f45",
+      "raw_target_sha256": "ca94e0b426f70050b3ea5926ab3fd7fd7d3b8fc5f5fb9a1b81aa1f5599663170",
+      "translation": "ยืนยันว่าในตัวเลือกรวมอะไร"
+    },
+    {
+      "source": "Find the order confirmation and the selected seller description. Highlight the wording that identifies the accessory, quantity and version. A shoulder bag worn with a decorative strap in a studio photograph might have separate options with and without that strap. A product title saying kit could describe more than one package. Start the inquiry with what the seller offered for the option you purchased.",
+      "source_sha256": "e2ea4b62a71ffb4a4717c930504539364de89a0bdec419f0207238afdf8189a8",
+      "raw_target_sha256": "cfe043bae1ce9c16d7c801adb46cfb131ff5c31e1dba9325477194b65722b649",
+      "translation": "อ่านใบยืนยันกับข้อความตัวเลือกที่ชำระ จดชื่ออุปกรณ์ จำนวน และรุ่น กระเป๋าในภาพสตูดิโออาจมีสายแต่งแต่ร้านแยกขายรุ่นมีและไม่มีสาย คำว่า “ชุด” ในชื่ออย่างเดียวไม่พอ ต้องอิงสิ่งที่ตัวเลือกนั้นระบุ"
+    },
+    {
+      "source": "Inspect what the available photo actually shows",
+      "source_sha256": "9577c7f204bc2d15116f861eb309509d72ec8fb1f8409e73059969deed254ed8",
+      "raw_target_sha256": "d8d908c90349f8064a82a06eda18c1690d027babd666a00560de86c4dbe59cec",
+      "translation": "ดูว่าภาพปัจจุบันแสดงส่วนใด"
+    },
+    {
+      "source": "A closed box or zipped bag is an incomplete view of its contents. Note whether the packaging is open, which compartments are visible and whether an accessory could be wrapped separately. A small cable can sit under a cardboard insert; detachable clips can be inside an inner pocket. Avoid asking the warehouse to break seals or dismantle an item before you understand whether this affects its condition or return eligibility.",
+      "source_sha256": "4be52f8dea61e9007d2346053fd747a73761f6a04222692bbc07dddcd161331d",
+      "raw_target_sha256": "eee854b0d38d7c91236bf21cd68056f9aca79d35e53a07723325ea15a568edee",
+      "translation": "กล่องปิดหรือกระเป๋ารูดซิปยังไม่แสดงของทั้งหมด จดว่าส่วนไหนเปิด เห็นช่องไหน และอาจห่อแยกไหม สายเส้นเล็กอาจอยู่ใต้แผ่นรอง ส่วนคลิปอาจติดอยู่กับอีกชิ้น"
+    },
+    {
+      "source": "Request an inventory view",
+      "source_sha256": "dfb025a756660ba154daac1f47a55630170119172f2b3c5444a1c5d44e75d878",
+      "raw_target_sha256": "7501450a7ec72c462a7627146e4ea2a10fa5dbc463415bb4b1cb80d5f25b4a96",
+      "translation": "ขอภาพวางของเพื่อนับ"
+    },
+    {
+      "source": "Name the missing piece and describe where it may be packed. Ask for an overview with the unit and all loose contents together, followed by a detail view if the shape or connector matters. Give the warehouse entry number so the inspection concerns the unit you actually bought. If another box from the same seller is still in transit, ask whether the accessory is supposed to travel separately.",
+      "source_sha256": "41a0cac2b5ca9165ed1eedb19b482cd324cb9414fdcc776e1338b049adde0716",
+      "raw_target_sha256": "083d3b47cba92f9a910e4fda4fa3a38ecefe6163b3fe4436671f8b4895cff4d0",
+      "translation": "ระบุชิ้นที่หาไม่เจอและตำแหน่งที่อาจอยู่ ขอภาพตัวสินค้าพร้อมของหลวมทั้งหมดในเฟรมเดียว หากรูปทรงหรือขั้วสำคัญให้เพิ่มภาพใกล้ แนบเลขรับเข้าคลังเพื่อให้ตรวจชิ้นของคุณ"
+    },
+    {
+      "source": "Write down an evidence-based conclusion",
+      "source_sha256": "89056d3675ab47f4d9e3435f4d2a6a288e078e652587e9f7424533c03804b42c",
+      "raw_target_sha256": "2502cb98cbfb9ae68959d6e3d956c2432724a55ea708c92947ccbb2062cb99e5",
+      "translation": "สรุปตามหลักฐาน"
+    },
+    {
+      "source": "Suppose your order names a pouch and two clips. The overview shows one pouch, one loose clip and a second clip attached to the bag. That photograph supports a complete count even though only one clip appears loose. In another case a photograph might show unopened packaging and no clips, leaving the count unresolved. Describe what can be counted and what remains hidden.",
+      "source_sha256": "f2e8854fc3c84545df7401e0783bac99f0b23d9b2c7d224106a5c5bd5441a10a",
+      "raw_target_sha256": "12134e310662aad2d6fff88a005fe56c1192fd645631f08ebc8855a383e963c8",
+      "translation": "หากสั่งซองหนึ่งกับคลิปสอง ภาพแสดงซอง คลิปหลวมหนึ่ง และอีกคลิปติดกระเป๋า ก็เห็นครบแม้คลิปที่วางหลวมมีเพียงหนึ่ง หากภาพยังมีส่วนปิดอยู่ให้จดว่าไม่ยืนยัน ไม่ใช่ของขาด"
+    },
+    {
+      "source": "Keep the resolution tied to the original purchase",
+      "source_sha256": "cd78da943c82fe262f7c2536cef8ffd0a189dd5ce5fff34d4a8a1322a75fed1d",
+      "raw_target_sha256": "c34cdd03e217fb5fa7c07f8aba992a63613262a5f8df1a3142731a4a75c51928",
+      "translation": "เชื่อมการแก้ไขกับคำสั่งซื้อเดิม"
+    },
+    {
+      "source": "Establish whether the accessory was included",
+      "source_sha256": "968537e97f65ff7cb747387088431492fbde863c8fa3ad0f88db14e6b43ba6cf",
+      "raw_target_sha256": "62f0a6130aaaca75cb2ef1cc858211421f97705c9842962a706fdef3173fec0f",
+      "translation": "ตรวจว่าอุปกรณ์เป็นของในชุดจริงไหม"
+    },
+    {
+      "source": "A practical accessory check starts with the wording attached to your paid selection. Suppose a bag appears in a studio photograph beside a leather strap, a decorative charm and a dust cover. The actual option might describe only the bag and shoulder strap. Save the option text and any written seller confirmation you relied on. Treat the charm and dust cover separately unless you have evidence that the seller included them in that particular offer. This makes an inquiry clearer and avoids claiming that every photographed prop was purchased.",
+      "source_sha256": "405c2d6d2b5c1fda767ade8e44cb50d7ee80477d48a861ee5c18a5270d0c68b3",
+      "raw_target_sha256": "4eaa8382c06ecda67bf4641fba7554b2f9adbbdbc3b06c223d110adf52f01475",
+      "translation": "ภาพอาจโชว์กระเป๋าข้างสายหนัง พวงประดับ และถุงกันฝุ่น แต่ตัวเลือกที่จ่ายอาจระบุแค่กระเป๋ากับสายสะพาย แยกของที่ระบุ ของที่เห็นเฉพาะในภาพ และสิ่งที่ต้องถาม"
+    },
+    {
+      "source": "Read the units carefully. A listing might offer a set of replacement clips, a strap sold without clips or a bundle containing both. The order quantity tells you how many units of the chosen offer you purchased. It does not by itself define the number of components inside each unit. Make a short expected-contents list in plain language. For example, one bag, one detachable shoulder strap and two clips already attached to the ends of that strap. Such a description gives the warehouse specific objects to look for.",
+      "source_sha256": "417c108ad2aee28e1a5661c72c05c311fc5d96c049945d4fa37490dd22a84d5d",
+      "raw_target_sha256": "92309a82a559bb08f67d32025f1d960e8b3b4cd80bb4342bfeb1df606959a38c",
+      "translation": "หนึ่งประกาศอาจขายชุดคลิปสำรอง สายไม่มีคลิป หรือชุดรวม จำนวนสั่งคือจำนวนหน่วยที่เลือก ไม่ใช่จำนวนชิ้นข้างใน เขียนรายการสั้น เช่น กระเป๋าหนึ่งใบ สายถอดได้หนึ่งเส้น และคลิปสองตัวที่ติดปลายสายอยู่แล้ว คลังจะนับตามได้"
+    },
+    {
+      "source": "Separate an unseen item from a confirmed shortage",
+      "source_sha256": "06f6b04af7edc5a9076194aaf75b37a1942c868abe9953b3e84ca25b8db6a99c",
+      "raw_target_sha256": "a5767526b066319a5ac1407d60b18499952aa5d4f8340977191633a14cec2ac1",
+      "translation": "แยกของที่ไม่เห็นจากของที่ยืนยันว่าขาด"
+    },
+    {
+      "source": "In a first warehouse overview, a strap might be inside the bag, under tissue paper or attached behind the handle. A single photograph of the closed bag cannot establish a shortage. Ask whether the contents can be checked and, if permitted, request a view that shows the open bag and the loose components beside it. Avoid requesting removal of sealed packaging until you understand the implications for that order and have decided that opening it is appropriate.",
+      "source_sha256": "6378933c2d525fb40fc21250ada9b4e89305c812c00b44fafabec7118fe4f594",
+      "raw_target_sha256": "a71513f74c02ed9fa433542c9d83a2ad16586ddce356e46d972fda82b413057b",
+      "translation": "ภาพรวมแรกอาจซ่อนสายไว้ในกระเป๋า ใต้กระดาษ หรือหลังหูจับ ภาพกระเป๋าที่ยังปิดไม่ยืนยันว่าขาด ถามว่าตรวจของด้านในได้ไหม หากทำได้ขอภาพที่เห็นบริเวณดังกล่าว"
+    },
+    {
+      "source": "If an accessory is visible but its identity is unclear, describe it by location and appearance. A narrow black strip seen behind a bag could be a handle, a shoulder strap or a piece of packaging. A photograph of its attachment clips or its full length might distinguish those possibilities. Where access or image quality still prevents confirmation, leave the status as unresolved. The accuracy of the record matters more than reaching a confident conclusion from an ambiguous view.",
+      "source_sha256": "d411e42244a610686777cb360dea17c75b372a71dfa312c710c0659155751470",
+      "raw_target_sha256": "2c3a7a7d1e51fb7ea62fb8f6efb1fa1cc45ada0bf1d3235d24485b0c120e18f3",
+      "translation": "แถบดำแคบหลังกระเป๋าอาจเป็นหู สายสะพาย หรือวัสดุห่อ บอกตำแหน่งและหน้าตาที่เห็น ขอภาพคลิปยึดหรือความยาวเต็มเพื่อระบุ ไม่ต้องเดาชื่อก่อนมีหลักฐาน"
+    },
+    {
+      "source": "Handle accessories packed separately",
+      "source_sha256": "33a43bca281493b3f3266d8d6a32aff51930d2c618ce2c9cf187d1254ae725bc",
+      "raw_target_sha256": "dda26138d0aa2fd0a2d9409c31a2de4375f8cd40b137e7c69bad41608c6ba5b7",
+      "translation": "ติดตามอุปกรณ์ที่ส่งแยกกล่อง"
+    },
+    {
+      "source": "A second domestic tracking event also does not prove the missing accessory is inside. The event identifies movement of a package. The received contents require a corresponding intake record or confirmation. For a bag with a detachable chain strap, you might note that the main bag arrived on one date and the seller described a separate parcel for the chain on another date. Link the second intake to the purchase only once the order record or support response gives you a basis to do so.",
+      "source_sha256": "d9c7693db4988fbf3ee22cd4cfcc3d0c731b863d34a26a2bd8b745bbe6f2c8bd",
+      "raw_target_sha256": "82bdbc926a1b6b92af92e561d4f60839ca5f262b23a2222ac8e5aa3f06906acb",
+      "translation": "การสแกนในจีนครั้งที่สองยืนยันการเคลื่อนพัสดุ ไม่ยืนยันว่ามีสายโซ่อยู่ข้างใน จดวันที่รับตัวกระเป๋าแยกจากวันที่ร้านบอกว่าสายส่งอีกกล่อง รอหลักฐานรับเข้าหรือคำตอบที่เชื่อมชิ้นส่วนก่อนผูกกับคำสั่งซื้อ"
+    },
+    {
+      "source": "Ask for a specific next action",
+      "source_sha256": "2015dfe68f32bbb5b2b0145ef7c625728a1939fb3ddfc760d88c99edf805cc5e",
+      "raw_target_sha256": "bb16058a9af1693fd23ac99c720281b71163c76c39dfe7a2481a972db121f551",
+      "translation": "ขอขั้นตอนถัดไปที่ชัดเจน"
+    },
+    {
+      "source": "A useful message includes the selected option, the privately supplied order reference, the component expected and the evidence currently available. You might write that the paid selection says bag with long strap, the overview shows the bag closed and the strap is not visible. Ask whether someone can check inside the bag and confirm the strap before dispatch. This describes a gap and requests a specific action without accusing the seller or warehouse of losing an item.",
+      "source_sha256": "a58c50efb856c16a85bf178d4607012c3f320e3a050bd67f1f57e4159aa9c2c9",
+      "raw_target_sha256": "4124752e8aa1696135f4aadd05d8adf8879edf51abc094f0410e3490dcf37b2c",
+      "translation": "ระบุเลขสั่งซื้อในช่องส่วนตัว รุ่นที่เลือก ของที่ควรมี และภาพที่เห็น เช่น “จ่ายรุ่นพร้อมสายยาว ภาพรวมเห็นกระเป๋าปิดอยู่ ช่วยเปิดตรวจสายข้างในได้ไหม” คนรับเรื่องจะรู้ว่าต้องทำอะไร"
+    },
+    {
+      "source": "If support confirms the item was absent, ask which resolution options apply to this order and whether each one involves a deadline, charge or separate shipment. A replacement accessory, a seller inquiry and a return can have different consequences. Record what you actually request and any confirmation received. Avoid combining the missing-strap question with unrelated complaints about colour or packaging in one long paragraph. Separate observations make it easier to see which issues have been addressed and which remain open.",
+      "source_sha256": "f55bfe168aa994636066b6ed2679b53945d689779a896ab37de8a4d33f42c6fd",
+      "raw_target_sha256": "dc2740f5e408a7e6bfaa73712d87558c536b7d1301b14b2703969da85c31a391",
+      "translation": "หากยืนยันว่าขาด ให้ถามทางเลือกของคำสั่งซื้อนี้ พร้อมกำหนด ค่าใช้จ่าย และการแยกส่ง การส่งชิ้นใหม่ การถามร้าน และการคืนมีผลต่างกัน จดข้อเสนอจริงและสิ่งที่ตกลง"
+    },
+    {
+      "source": "Close the record with evidence of the outcome",
+      "source_sha256": "4171eb56adc854283f8a5d629e1db64c4d998fa9bf90375ae5ba93aa36ebcad4",
+      "raw_target_sha256": "2c3caa7d8eca5711dfd3ec9d94c518f943972efd04b778ebd04db1f1ec5a0c1e",
+      "translation": "ปิดบันทึกด้วยหลักฐานผลลัพธ์"
+    },
+    {
+      "source": "A promise to send an accessory resolves the seller's intended next step. The actual shortage remains open until the promised item arrives or you accept another resolution. Keep the follow-up intake, photograph or adjustment alongside the original order. If an adjustment is offered, record the amount, currency and scope in the private order notes. A statement about one accessory does not automatically explain other charges or establish a general policy for future orders.",
+      "source_sha256": "5ce8734689a7ab853d15a80c1de76406b559ce7ea47b81849677a60d49d85c70",
+      "raw_target_sha256": "f10162045f45764e12bfc824e93bc3bae5e7a71ebe14f16855bdf1b771213dc7",
+      "translation": "คำสัญญาจะส่งระบุเพียงแผนของร้าน ปัญหายังคงค้างจนของมาถึงหรือคุณยอมรับวิธีอื่น เก็บบันทึกรับใหม่ ภาพ หรือการปรับเงินคู่คำสั่งซื้อเดิม ถ้าของใหม่ไม่ตรงให้จดความต่าง"
+    },
+    {
+      "source": "At the packing stage, check that the final parcel request still includes every warehouse item needed for the complete set. If a replacement strap has a separate warehouse reference, attach or select it as the current interface requires. If support says it was already placed inside the bag, save that confirmation. A precise final note can be very short: the black long strap arrived separately, the clips are visible in the new image, and the bag and strap now belong to the same intended parcel.",
+      "source_sha256": "1ea9a43d1c9a2471ecdbeb6718389cad9068fd6676961a635139847a53efbdac",
+      "raw_target_sha256": "bd20bf6dd494430653872759b738993545656bfc073d18ec5c8174938504eaf2",
+      "translation": "ตอนจัดส่งออก ตรวจว่ารายการพัสดุมีทุกชิ้นในชุด หากสายใหม่มีเลขรับเข้าแยกให้เลือกหรือเชื่อมตามหน้าจอ หากฝ่ายช่วยเหลือยืนยันว่าเอาไปรวมกับตัวกระเป๋าแล้ว ให้เก็บคำยืนยันเพื่อไม่เลือกซ้ำหรือปล่อยตกหล่น"
     }
   ]
 }
