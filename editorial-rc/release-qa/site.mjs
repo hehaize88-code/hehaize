@@ -84,7 +84,15 @@ try{
    const r=await get(url);const d=doc(r);const meta=schemas(d).find(s=>['Article','BlogPosting'].includes(s['@type']));
    const canonical=d.querySelector('link[rel="canonical"]')?.getAttribute('href');const title=txt(d,'h1');
    const body=d.querySelector('article.article-body, main article, article')||d.querySelector('main')||d.body;
-   const paragraphs=[...body.querySelectorAll('p,li')].map(p=>norm(p.textContent)).filter(p=>p.length>30);
+   const citationLinks=new Set(meta?.citation||[]);
+   const proseNodes=[...body.querySelectorAll('p,li')].filter(node=>{
+     const anchors=[...node.querySelectorAll('a[href]')];
+     if(!anchors.length||!anchors.every(anchor=>citationLinks.has(anchor.getAttribute('href'))))return true;
+     const remaining=node.cloneNode(true);
+     for(const anchor of remaining.querySelectorAll('a'))anchor.remove();
+     return norm(remaining.textContent).replace(/[·|,:;]/g,' ').trim().split(/\s+/).length>4;
+   });
+   const paragraphs=proseNodes.map(p=>norm(p.textContent)).filter(p=>p.length>30);
    const words=paragraphs.join(' ').split(/\s+/).length;
    const sources=[...new Set([...body.querySelectorAll('a[href^="https://"]')].map(a=>a.getAttribute('href')).filter(link=>new URL(link).host!==host))];
    check(r.status===200&&Boolean(meta),'article-status-schema',url);
@@ -124,7 +132,7 @@ try{
     check(can===url,'faq-canonical',{url,canonical:can});
     const linksToIndex=[...d.querySelectorAll('a[href]')].some(a=>{try{return new URL(a.getAttribute('href'),url).pathname.replace(/\/$/,'')===h.path.replace(/\/$/,'')}catch{return false}});
     if(!linksToIndex)warn('no-article-index-link-from-faq',url);
-    summary.faq={url,genuineEnglishQuestions:lang==='en'?pairs.filter(q=>norm(q.name).endsWith('?')).length:undefined,count:pairs.length,unique:new Set(pairs.map(q=>norm(q.name))).size,visible:pairs.filter(q=>bodyText.includes(norm(q.name))&&bodyText.includes(norm(q.acceptedAnswer?.text))).length};
+    summary.faq={url,sources:[...new Set([...d.querySelectorAll('details a[href^="https://"]')].map(a=>a.getAttribute('href')).filter(link=>new URL(link).host!==host))],genuineEnglishQuestions:lang==='en'?pairs.filter(q=>norm(q.name).endsWith('?')).length:undefined,count:pairs.length,unique:new Set(pairs.map(q=>norm(q.name))).size,visible:pairs.filter(q=>bodyText.includes(norm(q.name))&&bodyText.includes(norm(q.acceptedAnswer?.text))).length};
     check(r.status===200&&summary.faq.count>20&&summary.faq.unique===summary.faq.count,'faq-unique-count',{lang,...summary.faq});
     check(summary.faq.visible===summary.faq.count,'faq-schema-visible',{lang,...summary.faq});
     break;
