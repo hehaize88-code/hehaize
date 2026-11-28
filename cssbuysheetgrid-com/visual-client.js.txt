@@ -63,7 +63,15 @@ function launchVisualSearch() {
     }catch(error){if(!signal.aborted){status.textContent=words[decoded?8:10];retry.hidden=!decoded;}}
     finally{URL.revokeObjectURL(objectUrl);if(!signal.aborted)progress.hidden=true}
   }
-  el('file').onchange=e=>{const f=e.target.files[0];e.target.value='';search(f)};
+  const input=el('file');
+  function searchSelection(){
+    const file=input.files[0];
+    if(!file)return;
+    input.value='';
+    search(file);
+  }
+  input.addEventListener('change',searchSelection);
+  searchSelection();
   retry.onclick=()=>search(selected);
   const drop=el('drop');
   drop.ondragover=e=>{e.preventDefault();drop.classList.add('over')};
