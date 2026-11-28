@@ -48,6 +48,7 @@ function mainUrls(){
 const urlset=links=>xml('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+links.map(loc=>'<url><loc>'+escape(loc)+'</loc></url>').join('')+'</urlset>');
 export async function siteRoute(url,env={}){
  if(url.hostname==='www.'+baseHost||url.protocol==='http:'&&url.hostname===baseHost)return Response.redirect(siteOrigin+url.pathname+url.search,308);
+ if(url.pathname==='/googledec2538cb510c9a8.html')return new Response('google-site-verification: googledec2538cb510c9a8.html',{headers:{'Content-Type':'text/html; charset=utf-8'}});
  if(url.pathname==='/robots.txt')return new Response('User-agent: *\nAllow: /\nSitemap: '+siteOrigin+'/sitemap.xml\n',{headers:{'Content-Type':'text/plain; charset=utf-8'}});
  if(url.pathname==='/sitemap.xml'){
   const paths=['/sitemap-pages.xml',...languages.map(l=>'/sitemap-products-'+l+'.xml')];
