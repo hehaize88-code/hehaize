@@ -1,0 +1,39 @@
+.mobile-batches{min-width:0;padding:0;border:0;margin:0}
+.batch-radio,.batch-label{display:none}
+.batch-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px 16px}
+.batch-pane{display:contents}
+@media(max-width:740px){
+  header .mainnav{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin;gap:1rem}
+  header .mainnav a{flex:none;white-space:nowrap}
+  .landing{gap:16px;padding:18px 0 10px}
+  .landing .featured .frame{height:min(31vw,19svh);aspect-ratio:auto}
+  .sheet{padding-top:16px}
+  .sheet .bar,.sheet .bar h1{margin-bottom:.4rem}
+  .sheet .chips{margin:.7rem 0}
+  .sheet .paging{gap:.45rem;margin:10px 0}
+  .paging input{width:4.5rem;padding:.38rem .4rem}
+  .sheet .card .frame,.batch-cards .frame,.vis .card .frame,main>.grid .card .frame{
+    height:min(45vw,22svh);aspect-ratio:auto
+  }
+  .sheet .card .name,.vis .card .name,.landing .card .name,main>.grid .card .name{
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:anywhere
+  }
+  .batch-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 10px;margin-top:12px}
+  .batch-radio{display:block;position:absolute;width:1px;height:1px;opacity:0;clip-path:inset(50%);overflow:hidden}
+  .batch-label{display:inline-flex;justify-content:center;align-items:center;min-height:40px;padding:4px 9px;margin:2px 5px 2px 0;border:1px solid #b7c7c2;border-radius:8px;font-size:.88rem;line-height:1.2;cursor:pointer}
+  .batch-radio:checked + .batch-label{background:#165d53;border-color:#165d53;color:white}
+  .batch-radio:focus-visible + .batch-label{outline:3px solid #5180ff;outline-offset:2px}
+  .batch-pane{display:none}
+  .batch-radio-0:checked~.batch-cards>.batch-pane-0,
+  .batch-radio-1:checked~.batch-cards>.batch-pane-1,
+  .batch-radio-2:checked~.batch-cards>.batch-pane-2{display:contents}
+  .pd .pd-columns{grid-template-columns:1fr;gap:12px}
+  .pd .pd-main{height:min(82vw,37svh);aspect-ratio:auto}
+  .pd .pd-photos{max-height:min(43svh,300px);scrollbar-width:thin}
+  .pd .pd-field .pd-choices,.pd .pd-tiles>.pd-choices{max-height:min(24svh,152px)}
+  .pd .pd-options .pd-tiles{max-height:58svh;overflow-y:auto}
+  .pd .pd-purchase h1{overflow-wrap:anywhere}
+  .vis #visual-results{gap:14px 10px}
+  main>.vis{padding-top:16px}
+  footer{margin-top:20px;padding:14px 0}
+}
