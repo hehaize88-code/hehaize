@@ -1,0 +1,22 @@
+{
+  "name": "cssbuysheetgrid-com",
+  "main": "dist/server/index.js",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": false,
+  "keep_vars": true,
+  "routes": [
+    {
+      "pattern": "cssbuysheetgrid.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.cssbuysheetgrid.com",
+      "custom_domain": true
+    }
+  ],
+  "vars": {
+    "GA4_ID": "G-WGSGQQJJ4T",
+    "GSC_VERIFICATION": "JC3H7po3vmDaAKFcaAvILgPh3SsZWfPopb8Fmyk8YPQ",
+    "BING_VERIFICATION": "5C3F81E3632C3A1AB9E5CF1F80D171BD"
+  }
+}

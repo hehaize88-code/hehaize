@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12",
+    "wrangler": "4.92.0"
+  },
+  "name": "cssbuysheetgrid-com"
+}
