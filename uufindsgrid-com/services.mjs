@@ -1,3 +1,4 @@
+const patterns = new Map();
 const originFiles='https://raw.githubusercontent.com/hehaize88-code/hehaize/main/uufindsgrid-com/public';
 const base=lang=>'/'+lang;
 const htmlLocale=lang=>lang==='zh'?'zh-CN':lang;
