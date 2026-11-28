@@ -1,6 +1,7 @@
 function editorialView(lang,t){
  const edition=editions[lang]||editions.en;
  const language=editions[lang]?lang:'en';
+ const sourcesLabel={en:'Sources',zh:'参考来源',de:'Quellen',fr:'Sources',es:'Fuentes',it:'Fonti',nl:'Bronnen','pt-br':'Fontes',pl:'Źródła',ro:'Surse',sv:'Källor',da:'Kilder',fi:'Lähteet',el:'Πηγές',cs:'Zdroje',hu:'Források',bg:'Източници',sk:'Zdroje',hr:'Izvori',ja:'参考資料',ko:'참고 자료',vi:'Nguồn tham khảo',th:'แหล่งอ้างอิง',id:'Sumber'}[language];
  const root='/'+language+'/';
  const isZh=lang==='zh';
  const headings={faq:isZh?'最新常见问题':lang==='en'?'Latest FAQ':t('FAQ'),articles:isZh?'最新 SEO 文章':lang==='en'?'Latest articles':t('Articles')};
@@ -34,7 +35,7 @@ function editorialView(lang,t){
   const refs=a.sources.map(s=>'<li><a href="'+h(s.url)+'">'+h(s.title)+'</a></li>').join('');
   const body=a.sections.map(s=>'<section><h2>'+h(s.heading)+'</h2>'+s.paragraphs.map(p=>'<p>'+h(p)+'</p>').join('')+'</section>').join('');
   const schema={'@context':'https://schema.org','@type':'Article',headline:a.title,description:a.description,inLanguage:language,datePublished:a.published,mainEntityOfPage:siteOrigin+articleHref(a),author:{'@type':'Organization',name:'UUFinds Grid'},citation:a.sources.map(s=>s.url)};
-  return {heading:a.title,body:'<article class="reader longread" lang="'+language+'"><a href="'+root+'articles/">‹ '+t('Articles')+'</a><h1>'+h(a.title)+'</h1><p class="standfirst">'+h(a.description)+'</p>'+body+'<aside><h2>'+(language==='zh'?'参考来源':'Sources')+'</h2><ul>'+refs+'</ul></aside></article>'+jsonld(schema)};
+  return {heading:a.title,description:a.description,body:'<article class="reader longread" lang="'+language+'"><a href="'+root+'articles/">‹ '+t('Articles')+'</a><h1>'+h(a.title)+'</h1><p class="standfirst">'+h(a.description)+'</p>'+body+'<aside><h2>'+sourcesLabel+'</h2><ul>'+refs+'</ul></aside></article>'+jsonld(schema)};
  }
  return {latest,page};
 }

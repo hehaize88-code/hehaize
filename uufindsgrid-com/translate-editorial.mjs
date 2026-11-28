@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 const raw=await fs.readFile('editorial-data/en.json','utf8');
 const revision=createHash('sha256').update(raw).digest('hex').slice(0,16);
-const locales='de fr es it nl pt-br pl ro sv da fi el cs hu bg sk hr ja ko vi th id'.split(' ');
+const locales='ko vi th id de fr es it nl pt-br pl ro sv da fi el cs hu bg sk hr ja'.split(' ');
 const output='public/editorial/'+revision;
 await fs.mkdir(output,{recursive:true});
 const original=JSON.parse(raw);
@@ -19,12 +19,30 @@ function fields(copy){
 async function translate(parts,locale){
  const url=new URL('https://translate.googleapis.com/translate_a/single');
  url.search=new URLSearchParams({client:'gtx',sl:'en',tl:locale==='pt-br'?'pt':locale,dt:'t',q:parts.join('\n')});
- const response=await fetch(url,{signal:AbortSignal.timeout(15000)});
- if(!response.ok)throw Error('Translation service '+response.status+' ('+locale+')');
- const data=await response.json();
- const lines=data[0].map(row=>row[0]||'').join('').trim().split(/\s*\n\s*/);
- if(lines.length===parts.length&&lines.every(v=>v.trim()))return lines;
- if(parts.length===1)throw Error('Missing translation for '+locale);
+ let failure;
+ for(let attempt=0;attempt<3;attempt++){
+  try{
+   const response=await fetch(url,{signal:AbortSignal.timeout(18000)});
+   if(!response.ok){
+    if(response.status===429)await new Promise(r=>setTimeout(r,Math.max(15000,Number(response.headers.get('retry-after')||0)*1000)));
+    throw Error('Translation service '+response.status+' ('+locale+')');
+   }
+   const data=await response.json();
+   const lines=data[0].map(row=>row[0]||'').join('').trim().split(/\s*\n\s*/);
+   if(lines.length===parts.length&&lines.every(v=>v.trim()))return lines;
+   failure=Error('Translation boundary mismatch for '+locale);
+   break;
+  }catch(error){failure=error;await new Promise(r=>setTimeout(r,900*2**attempt));}
+ }
+ if(parts.length===1){
+  const sentences=parts[0].match(/[^.!?]+(?:[.!?]+(?=\s|$)|$)/g)?.map(s=>s.trim()).filter(Boolean)||[];
+  if(sentences.length>1 && sentences.join(' ')===parts[0]){
+   const translated=[];
+   for(const sentence of sentences)translated.push(...await translate([sentence],locale));
+   return [translated.join(' ')];
+  }
+  throw failure;
+ }
  const middle=Math.ceil(parts.length/2);
  return [...await translate(parts.slice(0,middle),locale),...await translate(parts.slice(middle),locale)];
 }
@@ -49,4 +67,4 @@ async function create(locale){
  await fs.writeFile(target,JSON.stringify(edition));console.log('Translated editorial:',locale);
 }
 let next=0;
-await Promise.all(Array.from({length:3},async()=>{while(next<locales.length)await create(locales[next++]);}));
+await Promise.all(Array.from({length:3},async()=>{while(next<locales.length){const lang=locales[next++];try{await create(lang);}catch(error){console.error('Incomplete edition:',lang,error.message);}}}));

@@ -4,10 +4,10 @@ const cats={'AllProducts':'All products','shoes':'Shoes','hoodies-sweaters':'Hoo
 const register='https://www.uufinds.com/register', qc='https://www.uufinds.com/qcfinds';
 const css=STYLE_CONTENT;
 const money=(v,l="en")=>v!==''&&Number.isFinite(Number(v))?new Intl.NumberFormat(l,{style:'currency',currency:'USD'}).format(Number(v)):'';
-function render(content,title,lang,u,t){
+function render(content,title,lang,u,t,description){
  const store=storefront(lang,t);
  const options=localeList.filter(x=>x[0]!=='en-gb').map(([code,name])=>{const v=new URL(u);v.pathname=v.pathname.replace(/^\/[\w-]+/,'/'+code);return '<option value="'+h(v.pathname+v.search)+'" '+(code===lang?'selected':'')+'>'+h(name)+'</option>'}).join('');
- return '<!doctype html><html lang="'+lang+'"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="canonical" href="'+h(canonical(u))+'">'+alternates(u)+'<script async src="https://www.googletagmanager.com/gtag/js?id=G-NB2CDN5HXM"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-NB2CDN5HXM");</script><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/catalog.css"><link rel="stylesheet" href="/assets/catalog.css"><script type="module" src="/assets/experience.js"></script><title>'+h(title)+' | UUFinds Grid</title><style>'+css+'</style></head><body><header><div class="wrap bar"><a class="brand" href="/'+lang+'/"><img src="/uufinds-official-logo.png" alt="UUFinds"></a><nav class="top-links">'+store.nav+'</nav><select class="lang" aria-label="'+t('Language')+'" onchange="location.assign(this.value)">'+options+'</select><select class="cc" data-currency-select aria-label="'+t("Currency")+'">'+CURRENCIES.map(v=>'<option value="'+v+'">'+v+'</option>').join('')+'</select><a class="register" href="'+register+'">'+t('Register')+'</a></div><div class="category-strip"><nav>'+store.categories+'</nav></div></header><main class="wrap catalog-main">'+content+'<footer>UUFinds Grid · <a href="'+qc+'">'+t('Open in UUFinds')+'</a></footer></main></body></html>'
+ return '<!doctype html><html lang="'+lang+'"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'+(description?'<meta name="description" content="'+h(description)+'">':'')+'<link rel="canonical" href="'+h(canonical(u))+'">'+alternates(u)+'<script async src="https://www.googletagmanager.com/gtag/js?id=G-NB2CDN5HXM"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-NB2CDN5HXM");</script><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/catalog.css"><link rel="stylesheet" href="/assets/catalog.css"><script type="module" src="/assets/experience.js"></script><title>'+h(title)+' | UUFinds Grid</title><style>'+css+'</style></head><body><header><div class="wrap bar"><a class="brand" href="/'+lang+'/"><img src="/uufinds-official-logo.png" alt="UUFinds"></a><nav class="top-links">'+store.nav+'</nav><select class="lang" aria-label="'+t('Language')+'" onchange="location.assign(this.value)">'+options+'</select><select class="cc" data-currency-select aria-label="'+t("Currency")+'">'+CURRENCIES.map(v=>'<option value="'+v+'">'+v+'</option>').join('')+'</select><a class="register" href="'+register+'">'+t('Register')+'</a></div><div class="category-strip"><nav>'+store.categories+'</nav></div></header><main class="wrap catalog-main">'+content+'<footer>UUFinds Grid · <a href="'+qc+'">'+t('Open in UUFinds')+'</a></footer></main></body></html>'
 }
 export default {async fetch(req,env){
  const u=new URL(req.url);if(u.hostname==='www.uufindsgrid.com'||u.protocol==='http:')return Response.redirect('https://uufindsgrid.com'+u.pathname+u.search,308);
@@ -18,12 +18,14 @@ export default {async fetch(req,env){
  if(u.pathname.startsWith('/api/'))return await experienceRoute(req)||new Response('',{status:404});
  const [,lang,...parts]=u.pathname.split('/');if(!localeList.some(x=>x[0]===lang))return new Response('Page not found',{status:404});
  const path=parts.join('/');
+ const moved={'articles/image-search/':'uufinds-image-search-from-a-screenshot','articles/qc-photos/':'uufinds-qc-photos','articles/styles-and-prices/':'uufinds-price-exchange-rate-shipping-estimate'};
+ if(Object.hasOwn(moved,path))return Response.redirect(u.origin+'/'+lang+'/articles/'+moved[path]+'/',308);
  if(!editions[lang]&&lang!=='en-gb'&&(!path||path==='faq/'||path.startsWith('articles/'))){
   const data=await env?.ASSETS?.fetch(new Request(u.origin+'/editorial/'+editorialRevision+'/'+lang+'.json'));
   if(data?.ok){const edition=await data.json();if(edition.locale===lang && edition.revision===editorialRevision)editions[lang]=edition;}
  }
  const titleMap=await titles(lang); const d=dictionaries[lang]||{},t=k=>h(d[k]||k),name=raw=>h(titleMap[raw]||d[raw]||translateProductTitle(raw,lang,productGlossaries)),home='/'+lang+'/',url=(params)=>home+'spreadsheet/?'+h(params.toString());
- const send=(body,title,status=200)=>new Response(render(body,title,lang,u,t),{status,headers:{'content-type':'text/html;charset=utf-8','cache-control':status===200?'public, max-age=45':'no-store','x-robots-tag':status===200?(u.searchParams.has('q')&&u.searchParams.get('q')?'noindex, follow':'index, follow'):'noindex'}});
+ const send=(body,title,status=200,description)=>new Response(render(body,title,lang,u,t,description),{status,headers:{'content-type':'text/html;charset=utf-8','cache-control':status===200?'public, max-age=45':'no-store','x-robots-tag':status===200?(u.searchParams.has('q')&&u.searchParams.get('q')?'noindex, follow':'index, follow'):'noindex'}});
  try{
  if(path==='image-titles'&&req.method==='POST'){const names=await req.json();if(!Array.isArray(names)||names.length>24)return new Response('',{status:400});return Response.json(Object.fromEntries(names.filter(x=>typeof x==='string'&&x.length<1000).map(x=>[x,titleMap[x]||translateProductTitle(x,lang,productGlossaries)])));}
  if(path==='image-search/'){
@@ -31,7 +33,7 @@ export default {async fetch(req,env){
   return send('<a class="back" href="'+home+'">'+t('All products')+'</a><h1>'+t('Search by image')+'</h1><label class="upload">'+t('Choose a photo')+'<input id="upload" type="file" accept="image/*"></label><p id="status" role="status">'+t('Free image search. Your photo stays on your device.')+'</p><div class="grid" id="matches"></div><script id="search-ui" type="application/json">'+JSON.stringify(cfg).replaceAll('<','&lt;')+'</script><script type="module" src="/assets/visual.js"></script>',t('Search by image'));
  }
  const store=storefront(lang,t),guide=store.guide(path);
- if(guide)return send(guide.body,guide.heading);
+ if(guide)return send(guide.body,guide.heading,200,guide.description);
  if(path&&path!=='spreadsheet/'){
   if(!/^[a-z-]+\/\d+\.html$/.test(path)||!Object.hasOwn(cats,parts[0]))return send('', '404',404);
   const p=parseDetail(await upstream('/'+path));if(!p.title)return send(t('Product unavailable'),'404',404);
