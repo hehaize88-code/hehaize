@@ -50,3 +50,8 @@
   .vis #visual-results .frame{width:clamp(52px,10svh,72px);height:clamp(52px,10svh,72px);flex:none}
   .vis #visual-results .name{margin:0}
 }
+@media(max-width:740px){
+  .portal-hero{grid-template-columns:minmax(0,1fr)}
+  .portal-hero>*{min-width:0}
+  .portal .querybox input[type=search]{width:0}
+}
