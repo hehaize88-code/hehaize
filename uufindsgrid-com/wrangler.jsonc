@@ -1,0 +1,8 @@
+{
+ "name":"uufindsgrid-com",
+ "main":"dist/server/index.js",
+ "compatibility_date":"2026-11-01",
+ "assets":{"directory":"public","binding":"ASSETS"},
+ "build":{"command":"node build.mjs"},
+ "routes":[{"pattern":"uufindsgrid.com","custom_domain":true},{"pattern":"www.uufindsgrid.com","custom_domain":true}]
+}
