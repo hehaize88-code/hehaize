@@ -101,3 +101,7 @@ async function show({data}){
 }
 picker.addEventListener('change',()=>{const file=picker.files[0];if(file)search(file);picker.value='';});
 retry.addEventListener('click',()=>{if(lastFile)search(lastFile);});
+document.addEventListener('paste',event=>{
+ const file=Array.from(event.clipboardData?.files||[]).find(item=>item.type.startsWith('image/'));
+ if(file){event.preventDefault();search(file);}
+});
