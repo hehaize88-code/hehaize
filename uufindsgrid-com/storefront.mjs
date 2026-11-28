@@ -7,19 +7,11 @@ function storefront(lang,t){
  const sections=[['spreadsheet/',sheet],['faq/',t('FAQ')],['articles/',articles],['how-to-buy/',buy]];
  const nav=sections.map(([path,label])=>'<a href="'+home+path+'">'+label+'</a>').join('');
  const categories=Object.entries(cats).map(([key,label])=>'<a href="'+catalog+(key==='AllProducts'?'':'?cat='+key)+'">'+t(label)+'</a>').join('');
- const topics=[
-  ['image-search',t('Search by image'),['Choose an image to find visually similar catalogue products. Images are compared on your device.','Use one clearly visible item. For a screenshot, try the center crop or crop the photo before choosing it.','Compare the photos and original product ID. Similar appearance does not confirm an identical item.'],home+'image-search/'],
-  ['qc-photos',t('QC photos'),['Product images from the source catalogue. Check the exact item, option and photo context before buying.','These are catalogue reference photos; they are not identified as warehouse QC.','Style photos are a reference. Confirm the selected style and size on the buying platform.'],qc],
-  ['styles-and-prices',t('Styles')+' · '+t('Reference price'),['Select a style and size to see its source price.','Estimated conversion. Shipping, taxes and platform fees are not included.','The original link opens the product. The copied style, size and SKU help you select the same option there.'],catalog]
- ];
- const articleLinks=topics.map(([slug,label])=>'<a href="'+home+'articles/'+slug+'/">'+label+' ›</a>').join('');
+ const editorial=editorialView(lang,t);
  function guide(path){
-  const article=topics.find(([slug])=>path==='articles/'+slug+'/');
   let heading,body;
-  if(path==='faq/'){heading=t('FAQ');body=topics.map(([,label,lines])=>'<details><summary>'+label+'</summary>'+lines.map(line=>'<p>'+t(line)+'</p>').join('')+'</details>').join('');}
-  else if(path==='articles/'){heading=articles;body='<div class="reading-list">'+articleLinks+'</div>';}
-  else if(article){heading=article[1];body=article[2].map(line=>'<p>'+t(line)+'</p>').join('')+'<a class="guide-link" href="'+article[3]+'">'+heading+' ›</a>';}
-  else if(path==='how-to-buy/'){heading=buy;body='<ol>'+[[sheet,'Search products or source ID',catalog],[t('Styles'),'Select a style and size to see its source price.',catalog],[t('QC photos'),'Style photos are a reference. Confirm the selected style and size on the buying platform.',qc],[t('Open in UUFinds'),'The original link opens the product. The copied style, size and SKU help you select the same option there.',register]].map(([label,line,href])=>'<li><a href="'+href+'">'+label+'</a><p>'+t(line)+'</p></li>').join('')+'</ol>';}
+  if(path!=='how-to-buy/')return editorial.page(path);
+  if(path==='how-to-buy/'){heading=buy;body='<ol>'+[[sheet,'Search products or source ID',catalog],[t('Styles'),'Select a style and size to see its source price.',catalog],[t('QC photos'),'Style photos are a reference. Confirm the selected style and size on the buying platform.',qc],[t('Open in UUFinds'),'The original link opens the product. The copied style, size and SKU help you select the same option there.',register]].map(([label,line,href])=>'<li><a href="'+href+'">'+label+'</a><p>'+t(line)+'</p></li>').join('')+'</ol>';}
   else return null;
   return {heading,body:'<article class="reader"><h1>'+heading+'</h1>'+body+'</article>'};
  }
@@ -27,5 +19,5 @@ function storefront(lang,t){
   const shortcuts=[['🔥',t('Popular'),catalog+'?sort=click'],['🛍️',sheet,catalog],['📸',t('QC photos'),qc],['✨',t('Latest'),catalog+'?sort=new'],['🔎',t('Search by image'),home+'image-search/'],['👟',t('Shoes'),catalog+'?cat=shoes'],['📚',articles,home+'articles/'],['🛒',buy,home+'how-to-buy/']];
   return '<section class="store-hero"><div class="hero-inner"><div><h1>'+headline+'</h1>'+search+'</div><aside><div><h2>'+t('Register on UUFinds')+'</h2><p>✓ '+t('Search products')+'</p><p>✓ '+t('QC photos')+'</p><a href="'+register+'">'+t('Register')+'</a></div><div class="hero-art" aria-hidden="true"><i></i><b>QC</b><em>✓</em></div></aside></div></section><nav class="shortcuts">'+shortcuts.map(([icon,label,href])=>'<a href="'+href+'"><span aria-hidden="true">'+icon+'</span>'+label+'</a>').join('')+'</nav>';
  }
- return {sheet,nav,categories,feed,hero,guide};
+ return {sheet,nav,categories,feed,hero,guide,latest:editorial.latest};
 }
