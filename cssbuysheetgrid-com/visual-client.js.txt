@@ -1,0 +1,74 @@
+function launchVisualSearch() {
+  const el=id=>document.getElementById('visual-'+id);
+  const words=JSON.parse(el('labels').textContent);
+  const lang=document.documentElement.lang;
+  let active,selected;
+  const status=el('status'),progress=el('progress'),results=el('results'),preview=el('preview'),retry=el('retry');
+  function imageURL(value) {
+    try {
+      const u=new URL(value,'https://cnbuycha.com');
+      if(u.protocol==='https:' && (u.hostname==='cnbuycha.com'||u.hostname==='www.cnbuycha.com'||u.hostname.endsWith('.geilicdn.com')))return u.href;
+    }catch{}
+    return '';
+  }
+  async function search(file) {
+    if(!file)return;
+    active?.abort();
+    const controller=new AbortController(), signal=controller.signal;
+    active=controller;selected=file;results.replaceChildren();retry.hidden=true;progress.hidden=true;
+    if(!acceptsImage(file)){status.textContent=words[7];return}
+    let objectUrl=URL.createObjectURL(file);let decoded=false;
+    try{
+      preview.src=objectUrl;preview.hidden=false;
+      await preview.decode();if(signal.aborted)return;
+      const q=fingerprint(preview);q.resize=resizeFingerprint(preview);decoded=true;
+      status.textContent=words[6];progress.hidden=false;progress.removeAttribute('value');
+      const get=async path=>{
+        let last;
+        for(let attempt=0;attempt<3;attempt++){
+          if(signal.aborted)throw signal.reason;
+          try{
+            const r=await fetch('/_visual'+path,{signal});
+            if(r.ok || (r.status!==429 && r.status<500))return r;
+            last=Error('Index '+r.status);
+          }catch(error){last=error}
+          if(attempt<2&&!signal.aborted)await new Promise(resolve=>setTimeout(resolve,400*(attempt+1)));
+        }
+        throw last;
+      };
+      const r=await get('/catalog-image-index.json');if(!r.ok)throw Error('Index');
+      const manifest=await r.json();
+      if(manifest.source!=='https://cnbuycha.com'||manifest.version!==3||!manifest.shards?.length||manifest.descriptorAlgorithm!=='compact-rgb-dhash')throw Error('Manifest');
+      const result=await compactSearch(manifest,q,get,(done,total)=>{
+        if(signal.aborted)return;
+        progress.max=total;progress.value=done;
+        status.textContent=words[6]+' '+done.toLocaleString(lang)+' / '+total.toLocaleString(lang);
+      },24);
+      if(signal.aborted)return;
+      status.textContent=(result.weak?words[9]+' ':'')+words[5]+' · '+result.imageCount.toLocaleString(lang);
+      const recognized=result.items.map(({p})=>p);
+      let titles=recognized.map(p=>p.title);
+      if(lang!=='en'&&titles.length){
+        const params=new URLSearchParams({lang});recognized.forEach(p=>params.append('path',p.path));
+        try{const tr=await fetch('/_visual/names?'+params,{signal});if(tr.ok){const names=await tr.json();if(names.length===titles.length)titles=names}}catch{}
+      }
+      if(signal.aborted)return;
+      recognized.forEach((p,index)=>{
+        const url=imageURL(p.image);if(!url || !/^\/[a-z0-9-]+\/\d+\.html$/i.test(p.path))return;
+        const a=document.createElement('a'),holder=document.createElement('div'),img=new Image(),name=document.createElement('div');
+        a.className='card';a.href='/'+lang+'/spreadsheet/?'+new URLSearchParams({item:p.path,match:url});
+        holder.className='frame';img.src=url;img.loading='lazy';img.alt='';holder.append(img);
+        name.className='name';name.textContent=titles[index];a.append(holder,name);results.append(a);
+      });
+    }catch(error){if(!signal.aborted){status.textContent=words[decoded?8:10];retry.hidden=!decoded;}}
+    finally{URL.revokeObjectURL(objectUrl);if(!signal.aborted)progress.hidden=true}
+  }
+  el('file').onchange=e=>{const f=e.target.files[0];e.target.value='';search(f)};
+  retry.onclick=()=>search(selected);
+  const drop=el('drop');
+  drop.ondragover=e=>{e.preventDefault();drop.classList.add('over')};
+  drop.ondragleave=()=>drop.classList.remove('over');
+  drop.ondrop=e=>{e.preventDefault();drop.classList.remove('over');search(e.dataTransfer.files[0])};
+  document.addEventListener('paste',e=>{const image=[...e.clipboardData.items].find(i=>i.type.startsWith('image/'));if(image)search(image.getAsFile())});
+}
+launchVisualSearch();

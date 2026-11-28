@@ -37,3 +37,16 @@
   main>.vis{padding-top:16px}
   footer{margin-top:20px;padding:14px 0}
 }
+@media(max-width:740px){
+  .sheet .grid{row-gap:14px}
+  .sheet .card .frame{height:min(46vw,25svh)}
+  .portal-lower .card .name{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .pd .pd-film{display:flex;flex-wrap:nowrap;overflow-x:auto}
+  .pd .pd-film button{flex:none}
+  .ed-story .ed-part[open]>p{overflow-wrap:anywhere}
+  .ed-story .ed-sources{overflow-wrap:anywhere}
+  .vis #visual-results{grid-template-columns:minmax(0,1fr);gap:0}
+  .vis #visual-results .card{display:flex;gap:12px;align-items:center;padding:6px 0;border-bottom:1px solid #e4e8e6}
+  .vis #visual-results .frame{width:clamp(52px,10svh,72px);height:clamp(52px,10svh,72px);flex:none}
+  .vis #visual-results .name{margin:0}
+}

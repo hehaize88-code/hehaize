@@ -31,11 +31,11 @@ async function renderSite(url,request,env) {
  const isSheet=!isHome&&!isVisual&&!item&&!['faq','articles'].includes(parts[1]);
  const explicitSize=params.get('size');
  const phoneRequest=/Mobile|Android|iPhone|iPod/i.test(request.headers.get('user-agent')||'');
- const pageSize=(explicitSize==='20'||(explicitSize!=='60'&&phoneRequest))?20:60;
+ const pageSize=['12','20','60'].includes(explicitSize)?Number(explicitSize):(phoneRequest?12:60);
  const sizeField=isSheet?'<input type="hidden" name="size" value="'+pageSize+'">':'';
  const displayParams=new URLSearchParams(params);
  if(isSheet)displayParams.set('size',pageSize);
- const detectViewport=isSheet&&!['20','60'].includes(explicitSize)?'<script>if(matchMedia("(max-width:740px)").matches && '+pageSize+'!==20){const u=new URL(location.href);u.searchParams.set("size","20");location.replace(u.href)}</script>':'';
+ const detectViewport=isSheet&&pageSize!==12?'<script>if(matchMedia("(max-width:740px)").matches){const u=new URL(location.href);u.searchParams.set("size","12");u.searchParams.set("page","'+(Math.floor((page-1)*pageSize/12)+1)+'");location.replace(u.href)}</script>':'';
  const words=names=>translateNames(names,lang,{remote:true});
  const imageLabel=imageSearchLabel(lang);
  const routeForLang=code=>url.pathname.replace(/^\/[a-z]{2}(?=\/|$)/,'/'+code)+(url.pathname==='/'?code+'/':'')+url.search;
