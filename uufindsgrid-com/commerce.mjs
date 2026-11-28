@@ -3,14 +3,16 @@ const htmlEntities = value => String(value || '').replace(/&(#x[\da-f]+|#\d+|quo
  return ({quot:'"',apos:"'",amp:'&',lt:'<',gt:'>'})[entity.toLowerCase()];
 });
 const secureImage = value => {
-  try { const u = new URL(value); return u.protocol === 'https:' && /(^|\.)geilicdn\.com$/.test(u.hostname) ? u.href : ''; } catch { return ''; }
+  try { const u = new URL(typeof value==='string'?value:value?.url||value?.img||value?.src); return u.protocol === 'https:' && /(^|\.)geilicdn\.com$/.test(u.hostname) ? u.href : ''; } catch { return ''; }
 };
 
 function parseWeidianOptions(html, expectedId) {
   const tag = html.match(/<script\b[^>]*\bid=["']__rocker-render-inject__["'][^>]*>/i)?.[0] || '';
   const raw = tag.match(/\bdata-obj=(['"])([\s\S]*?)\1/)?.[2];
   if (!raw) throw Error('Options unavailable');
-  const model = JSON.parse(htmlEntities(raw)).result?.default_model;
+  return optionsFromModel(JSON.parse(htmlEntities(raw)).result?.default_model,expectedId);
+}
+function optionsFromModel(model,expectedId){
   if (String(model?.item_info?.item_id) !== String(expectedId)) throw Error('Product identity mismatch');
   const properties = model.sku_properties || {};
   const groups = (properties.attr_list || []).slice(0, 8).map(group => ({
@@ -24,7 +26,7 @@ function parseWeidianOptions(html, expectedId) {
     price: Number(sku.price), available: Number(sku.stock) > 0,
   })).filter(sku => /^\d+$/.test(sku.id) && Number.isFinite(sku.price) && sku.price >= 0);
   return { sourceId: String(expectedId), groups, variants,
-    images: [...new Set((model.item_info.imgs || []).map(secureImage).filter(Boolean))].slice(0, 100),
+    images: [...new Set((typeof model.item_info.imgs==='string'?[model.item_info.imgs]:Object.values(model.item_info.imgs||{})).map(secureImage).filter(Boolean))].slice(0, 100),
     sourceUrl: `https://weidian.com/item.html?itemID=${expectedId}`,
   };
 }
@@ -50,13 +52,19 @@ async function experienceRoute(request) {
     if (url.pathname === '/api/product-options') {
       const id = url.searchParams.get('id') || '';
       if (!/^\d{5,20}$/.test(id)) return Response.json({ error: 'Invalid product ID' }, { status: 400 });
-      const response = await fetch(`https://weidian.com/item.html?itemID=${id}`, {
-        headers: { accept: 'text/html' }, signal: AbortSignal.timeout(14000), cf: { cacheTtl: 21600, cacheEverything: true },
-      });
-      if (!response.ok || (response.url && new URL(response.url).hostname !== 'weidian.com')) throw Error('Source unavailable');
-      const html = await response.text();
-      if (html.length > 3000000) throw Error('Source too large');
-      const options=parseWeidianOptions(html,id);
+      const api=new URL('https://thor.weidian.com/detail/getItemInfo/1.0');
+      api.searchParams.set('param',JSON.stringify({vitemId:id,from:'h5'}));
+      const cache={cacheEverything:true,cacheTtlByStatus:{'200-299':1800,'400-599':0}};
+      let options;
+      try{
+        const r=await fetch(api,{signal:AbortSignal.timeout(6000),cf:cache});
+        if(r.ok)options=optionsFromModel((await r.json()).result?.default_model,id);
+      }catch{}
+      if(!options){
+        const r=await fetch(`https://weidian.com/item.html?itemID=${id}`,{signal:AbortSignal.timeout(7000),cf:cache});
+        if(!r.ok)throw Error('Source unavailable');
+        options=parseWeidianOptions(await r.text(),id);
+      }
       const lang=url.searchParams.get('lang')||'en';
       const colors={'黑色':'black','白色':'white','蓝色':'blue','红色':'red','绿色':'green','灰色':'grey','粉色':'pink','棕色':'brown','黄色':'yellow','米色':'beige','紫色':'purple','橙色':'orange'};
       const dictionary=dictionaries[lang]||{};
