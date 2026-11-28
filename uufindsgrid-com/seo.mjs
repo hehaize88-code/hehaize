@@ -16,7 +16,7 @@ function sitemap(path){
  const index=path==='/sitemap.xml';
  const lang=path.match(/^\/sitemaps\/([a-z-]+)\.xml$/)?.[1];
  if(!index&&!siteLocales.includes(lang))return new Response('Not found',{status:404});
- const urls=index?siteLocales.map(l=>siteOrigin+'/sitemaps/'+l+'.xml'):['/','/image-search/',...productPaths].map(p=>siteOrigin+'/'+lang+p);
+ const urls=index?siteLocales.map(l=>siteOrigin+'/sitemaps/'+l+'.xml'):['/','/image-search/','/spreadsheet/','/faq/','/how-to-buy/','/articles/','/articles/image-search/','/articles/qc-photos/','/articles/styles-and-prices/',...productPaths].map(p=>siteOrigin+'/'+lang+p);
  const tag=index?'sitemap':'url', root=index?'sitemapindex':'urlset';
  return new Response('<?xml version="1.0" encoding="UTF-8"?><'+root+' xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+urls.map(u=>'<'+tag+'><loc>'+h(u)+'</loc></'+tag+'>').join('')+'</'+root+'>',{headers:{'content-type':'application/xml; charset=utf-8','cache-control':'public, max-age=900'}});
 }
