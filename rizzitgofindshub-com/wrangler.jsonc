@@ -1,7 +1,21 @@
 {
- "name":"rizzitgofindshub-com",
- "main":"dist/server/index.js",
- "compatibility_date":"2026-11-01",
- "workers_dev":false,
- "routes":[{"pattern":"rizzitgofindshub.com","custom_domain":true},{"pattern":"www.rizzitgofindshub.com","custom_domain":true}]
+  "name": "rizzitgofindshub-com",
+  "main": "dist/server/index.js",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": false,
+  "routes": [
+    {
+      "pattern": "rizzitgofindshub.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.rizzitgofindshub.com",
+      "custom_domain": true
+    }
+  ],
+  "assets": {
+    "directory": "./dist/visual-assets",
+    "binding": "VISUAL_ASSETS",
+    "run_worker_first": true
+  }
 }

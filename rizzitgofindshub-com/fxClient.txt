@@ -1,0 +1,49 @@
+function fxClient() {
+  const select = document.querySelector('[data-currency-picker]');
+  if (!select) return;
+  const seed = JSON.parse(document.querySelector('#finds-fx-seed').textContent);
+  let current = seed;
+  const get = key => {try {return localStorage.getItem(key);} catch {return null;}};
+  const put = (key, value) => {try {localStorage.setItem(key, value);} catch {}};
+  function valid(rateSet) {
+    return rateSet?.rates?.USD === 1 && [...select.options].every(opt => Number.isFinite(rateSet.rates[opt.value]) && rateSet.rates[opt.value] > 0) && Date.parse(rateSet.date) >= Date.parse(current.date);
+  }
+  try {
+    const cached = JSON.parse(get('finds-lookbook-fx'));
+    if (valid(cached)) current = cached;
+  } catch {}
+  const preferred = get('finds-lookbook-currency');
+  if ([...select.options].some(o => o.value === preferred)) select.value = preferred;
+  function render() {
+    const code = select.value;
+    const locale = document.documentElement.lang || 'en';
+    const format = new Intl.NumberFormat(locale, {style: 'currency', currency: code});
+    const effectiveDate = new Date(current.date).toLocaleDateString(locale);
+    for (const el of document.querySelectorAll('[data-usd],[data-sku-cny]')) {
+      const cny = el.hasAttribute('data-sku-cny');
+      const raw = cny ? el.dataset.skuCny : el.dataset.usd;
+      if (raw === '' || !Number.isFinite(Number(raw))) continue;
+      const usd = Number(raw) / (cny ? current.rates.CNY : 1);
+      el.textContent = format.format(usd * current.rates[code]);
+      el.title = (cny ? 'CNY' : 'USD') + ' → ' + code + ' · ' + effectiveDate;
+    }
+    select.title = 'ExchangeRate-API · ' + effectiveDate;
+    document.documentElement.dataset.currency = code;
+  }
+  select.addEventListener('change', () => {put('finds-lookbook-currency', select.value); render();});
+  window.addEventListener('currency-refresh', render);
+  render();
+  async function refresh() {
+    try {
+      const response = await fetch('/exchange-rates.json');
+      if (!response.ok) return;
+      const fresh = await response.json();
+      if (!valid(fresh)) return;
+      current = fresh;
+      put('finds-lookbook-fx', JSON.stringify(fresh));
+      render();
+    } catch {}
+  }
+  refresh();
+  setInterval(() => {if (!document.hidden) refresh();}, 3600000);
+}

@@ -1,3 +1,4 @@
+import fxClientSource from './fxClient.txt';
 import {brand} from './settings.mjs';
 export const brandIcon=brand.icon?'<link rel="icon" href="'+brand.icon+'">':'';
 export function brandLogo(lang){
@@ -38,55 +39,7 @@ async function fetchFxRates() {
   return fxPending;
 }
 
-function fxClient() {
-  const select = document.querySelector('[data-currency-picker]');
-  if (!select) return;
-  const seed = JSON.parse(document.querySelector('#finds-fx-seed').textContent);
-  let current = seed;
-  const get = key => {try {return localStorage.getItem(key);} catch {return null;}};
-  const put = (key, value) => {try {localStorage.setItem(key, value);} catch {}};
-  function valid(rateSet) {
-    return rateSet?.rates?.USD === 1 && [...select.options].every(opt => Number.isFinite(rateSet.rates[opt.value]) && rateSet.rates[opt.value] > 0) && Date.parse(rateSet.date) >= Date.parse(current.date);
-  }
-  try {
-    const cached = JSON.parse(get('finds-lookbook-fx'));
-    if (valid(cached)) current = cached;
-  } catch {}
-  const preferred = get('finds-lookbook-currency');
-  if ([...select.options].some(o => o.value === preferred)) select.value = preferred;
-  function render() {
-    const code = select.value;
-    const locale = document.documentElement.lang || 'en';
-    const format = new Intl.NumberFormat(locale, {style: 'currency', currency: code});
-    const effectiveDate = new Date(current.date).toLocaleDateString(locale);
-    for (const el of document.querySelectorAll('[data-usd],[data-sku-cny]')) {
-      const cny = el.hasAttribute('data-sku-cny');
-      const raw = cny ? el.dataset.skuCny : el.dataset.usd;
-      if (raw === '' || !Number.isFinite(Number(raw))) continue;
-      const usd = Number(raw) / (cny ? current.rates.CNY : 1);
-      el.textContent = format.format(usd * current.rates[code]);
-      el.title = (cny ? 'CNY' : 'USD') + ' → ' + code + ' · ' + effectiveDate;
-    }
-    select.title = 'ExchangeRate-API · ' + effectiveDate;
-    document.documentElement.dataset.currency = code;
-  }
-  select.addEventListener('change', () => {put('finds-lookbook-currency', select.value); render();});
-  window.addEventListener('currency-refresh', render);
-  render();
-  async function refresh() {
-    try {
-      const response = await fetch('/exchange-rates.json');
-      if (!response.ok) return;
-      const fresh = await response.json();
-      if (!valid(fresh)) return;
-      current = fresh;
-      put('finds-lookbook-fx', JSON.stringify(fresh));
-      render();
-    } catch {}
-  }
-  refresh();
-  setInterval(() => {if (!document.hidden) refresh();}, 3600000);
-}
+
 export function currencyPicker(lang) {
   const labels = {en:'Currency',zh:'货币',de:'Währung',es:'Moneda',fr:'Devise',it:'Valuta',pl:'Waluta',pt:'Moeda',ro:'Monedă',sv:'Valuta',nl:'Valuta',da:'Valuta',fi:'Valuutta',el:'Νόμισμα',cs:'Měna',hu:'Pénznem',bg:'Валута',sk:'Mena',hr:'Valuta',sl:'Valuta',lt:'Valiuta',lv:'Valūta',et:'Valuuta',ja:'通貨',ko:'통화',vi:'Tiền tệ',th:'สกุลเงิน',id:'Mata uang'};
   return '<select data-currency-picker aria-label="' + (labels[lang] || labels.en) + '">' + fxCurrencies.map(code => '<option value="' + code + '">' + code + '</option>').join('') + '</select>';
@@ -105,6 +58,6 @@ export async function fxRoute(pathname) {
     const result = await fetchFxRates();
     return Response.json(result, {headers:{'Cache-Control':'public,max-age=60'}});
   }
-  if (pathname === '/currency.js') return new Response('(' + fxClient.toString() + ')()', {headers:{'Content-Type':'application/javascript; charset=utf-8','Cache-Control':'public,max-age=300'}});
+  if (pathname === '/currency.js') return new Response('(' + fxClientSource + ')()', {headers:{'Content-Type':'application/javascript; charset=utf-8','Cache-Control':'public,max-age=300'}});
   return null;
 }

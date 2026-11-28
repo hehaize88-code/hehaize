@@ -1,3 +1,5 @@
+import {renderEditorial, editorialNav} from './editorial.mjs';
+import {mobileGrid} from './mobile.mjs';
 import {origin,machineRoute,seo} from './production.mjs';
 import {catalog,detail} from './catalog.mjs';
 import {dict,langs} from './locales.mjs';
@@ -38,16 +40,17 @@ async function renderSite(url,request) {
  const detectViewport=isSheet&&!['20','60'].includes(explicitSize)?'<script>if(matchMedia("(max-width:740px)").matches && '+pageSize+'!==20){const u=new URL(location.href);u.searchParams.set("size","20");location.replace(u.href)}</script>':'';
  const words=names=>translateNames(names,lang,{remote:remoteTranslation});
  const imageLabel=imageSearchLabel(lang);
- const routeForLang=code=>url.pathname.replace(/^\/[a-z]{2}(?=\/|$)/,'/'+code)+(url.pathname==='/'?code+'/':'')+url.search;
+ const routeForLang=code=>['faq','articles'].includes(parts[1])&&!['en','zh'].includes(code)?'/'+code+'/':url.pathname.replace(/^\/[a-z]{2}(?=\/|$)/,'/'+code)+(url.pathname==='/'?code+'/':'')+url.search;
  const languages=Object.entries(langs).map(([code,label])=>'<option value="'+escape(routeForLang(code))+'" '+(code===lang?'selected':'')+'>'+escape(label)+'</option>').join('');
  
- const head='<header>'+brandLogo(lang)+'<nav class="mainnav"><a href="'+sheet+'">'+escape(t.browse)+'</a><a href="'+visual+'">'+escape(imageLabel)+'</a></nav><div class="controls"><select aria-label="'+escape(t.language)+'" onchange="location.href=this.value">'+languages+'</select>'+currencyPicker(lang)+'</div></header>';
+ const head='<header>'+brandLogo(lang)+'<nav class="mainnav"><a href="'+sheet+'">'+escape(t.browse)+'</a><a href="'+visual+'">'+escape(imageLabel)+'</a>'+editorialNav(lang)+'</nav><div class="controls"><select aria-label="'+escape(t.language)+'" onchange="location.href=this.value">'+languages+'</select>'+currencyPicker(lang)+'</div></header>';
  const form=(hero=false)=>'<form class="querybox" action="'+sheet+'">'+sizeField+(cat?'<input type="hidden" name="cat" value="'+cat+'">':'')+'<input type="search" name="q" aria-label="'+escape(t.search)+'" placeholder="'+escape(t.search)+'" value="'+escape(q)+'"><a class="camera" href="'+visual+'" aria-label="'+escape(imageLabel)+'" title="'+escape(imageLabel)+'">'+camera+'</a>'+(hero?'':'<select name="sort" aria-label="'+escape(t.sort)+'" onchange="this.form.submit()">'+['latest','popular','price'].map(v=>'<option value="'+v+'" '+(v===sort?'selected':'')+'>'+escape(t[v==='price'?'low':v])+'</option>').join('')+'</select>')+'<button>'+escape(t.search)+'</button></form>';
  const browseTo=(changes={})=>escape(pageLink(sheet,displayParams,{item:'',match:'',...changes}));
  const chips='<nav class="chips" aria-label="'+escape(t.category)+'">'+['',...displayCategories].map(c=>'<a class="'+(c===cat?'on':'')+'" href="'+browseTo({cat:c,page:''})+'">'+escape(c?t[c]:t.all)+'</a>').join('')+'</nav>';
  let title=t.headline,body='',status=200;
  try {
-  if(isVisual){title=imageLabel;body=await imageSearchPage(lang)}
+  if(['faq','articles'].includes(parts[1])){const e=renderEditorial(parts,lang); if(!e)return new Response('Page not found',{status:404}); title=e.title;body=e.body;}
+  else if(isVisual){title=imageLabel;body=await imageSearchPage(lang)}
   else if(item) {
    const d=await detail(item);[title]=await words([d.title]);
    body=await renderProductDetail({detail:d,title,lang,backUrl:pageLink(sheet,params,{item:'',match:''}),priceHtml:fxPrice(d.price,lang),allowSeller,translateTerms:words,match:params.get('match')||''});
@@ -68,15 +71,15 @@ async function renderSite(url,request) {
    if(isHome){
     body='<section class="landing"><div><h1>'+escape(t.headline)+'</h1><p>'+escape(t.intro)+'</p>'+form(true)+'<a href="'+sheet+'">'+escape(t.browse)+' · '+total+'</a></div><div class="featured"><h2>'+escape(t.latest)+'</h2><div class="leadcards">'+cards.slice(0,3).join('')+'</div></div></section>'+chips+'<div class="grid">'+cards.slice(3).join('')+'</div>';
    }
-   else body='<section class="sheet"><div class="bar"><h1>'+escape(t.headline)+'</h1><strong>'+escape(t.items)+' · '+rangeText+'</strong></div>'+form()+chips+paging+(cards.length?'<div class="grid">'+cards.join('')+'</div>':'<p>'+escape(t.empty)+'</p>')+paging+'</section>';
+   else body='<section class="sheet"><div class="bar"><h1>'+escape(t.headline)+'</h1><strong>'+escape(t.items)+' · '+rangeText+'</strong></div>'+form()+chips+paging+(cards.length?mobileGrid(cards,t.items,offset):'<p>'+escape(t.empty)+'</p>')+paging+'</section>';
   }
  }catch(error){status=error.status===404?404:503;title=status===404?t.empty:t.unavailable;body='<section class="notice"><h1>'+escape(title)+'</h1><a href="'+escape(url.pathname+url.search)+'">'+t.retry+'</a> · <a href="'+sheet+'">'+t.back+'</a></section>'}
  const html='<!doctype html><html lang="'+lang+'"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">'+seo(lang,url.pathname)+'<title>'+escape(title)+'</title>'+brandIcon+detectViewport+'<style>'+baseCss+'\n'+productCss+mobileCss+'</style><body >'+head+'<main>'+body+'</main><footer>'+escape(t.headline)+' · '+fxCredit+'</footer>'+fxScripts()+'</body></html>';
  return new Response(html,{status,headers:{'Content-Type':'text/html;charset=UTF-8','Cache-Control':status===200?'public,max-age=30':'no-store','Vary':'User-Agent'}});
 }
-export default {async fetch(request){const url=new URL(request.url);if(url.origin!==origin)return Response.redirect(origin+url.pathname+url.search,308);
+export default {async fetch(request,env){const url=new URL(request.url);if(url.origin!==origin)return Response.redirect(origin+url.pathname+url.search,308);
  if(url.pathname==='/')return Response.redirect(origin+'/en/'+url.search,308);
  const machine=await machineRoute(url.pathname);if(machine)return machine;
  const legacy=url.searchParams.get('item');if(legacy&&/^\/[a-z0-9-]+\/\d+\.html$/.test(legacy)){const lang=url.pathname.split('/')[1];if(Object.hasOwn(langs,lang)){url.pathname='/'+lang+'/item'+legacy;url.searchParams.delete('item');return Response.redirect(url.href,308)}}
- if(!/^\/(?:_visual\/|currency\.js$|exchange-rates\.json$|favicon\.ico$)/.test(url.pathname)){const path=url.pathname.split('/');if(!Object.hasOwn(langs,path[1])||!/^\/[a-z]{2}\/(?:spreadsheet\/|image-search\/|item\/[a-z0-9-]+\/\d+\.html)?$/.test(url.pathname))return new Response('Page not found',{status:404})}
- if(url.pathname.startsWith('/_visual/'))return visualResponse(request);const fx=await fxRoute(url.pathname);if(fx)return fx;if(url.pathname==='/robots.txt')return new Response('User-agent: *\nDisallow: /');if(url.pathname==='/favicon.ico')return brand.icon?Response.redirect(brand.icon):new Response(null,{status:204});return renderSite(url,request)}};
+ if(!/^\/(?:_visual\/|currency\.js$|exchange-rates\.json$|favicon\.ico$)/.test(url.pathname)){const path=url.pathname.split('/');if(!Object.hasOwn(langs,path[1])||!/^\/[a-z]{2}\/(?:spreadsheet\/|image-search\/|faq\/|articles\/(?:[a-z0-9-]+\/)?|item\/[a-z0-9-]+\/\d+\.html)?$/.test(url.pathname))return new Response('Page not found',{status:404})}
+ if(url.pathname.startsWith('/_visual/'))return visualResponse(request,env);const fx=await fxRoute(url.pathname);if(fx)return fx;if(url.pathname==='/robots.txt')return new Response('User-agent: *\nDisallow: /');if(url.pathname==='/favicon.ico')return brand.icon?Response.redirect(brand.icon):new Response(null,{status:204});return renderSite(url,request)}};

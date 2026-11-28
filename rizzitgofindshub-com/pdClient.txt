@@ -1,0 +1,84 @@
+function pdClient(){
+  const root=document.querySelector('[data-product-view]'),model=JSON.parse(root.querySelector('.pd-model').textContent);
+  const main=root.querySelector('.pd-main'),copy=root.querySelector('[data-copy-item]'),status=root.querySelector('.pd-status'),fields=[...root.querySelectorAll('[data-option-field]')],selected=new Map();
+  let target=copy?.dataset.copyItem;
+  const pickPhoto=image=>{
+    if(!image||!main)return;
+    main.href=image;main.querySelector('img').src=image;
+    const pos=model.gallery.indexOf(image),count=main.querySelector('output');
+    count.hidden=pos<0;
+    if(pos>=0)count.textContent=(pos+1)+' / '+model.gallery.length;
+    for(const b of root.querySelectorAll('[data-gallery-photo]'))b.setAttribute('aria-pressed',String(b.dataset.galleryPhoto===image));
+  };
+  function refresh(){
+    const chosen=[...selected.values()];
+    const matches=chosen.length===fields.length?model.skus.filter(s=>s.attrs.length===chosen.length&&chosen.every(a=>s.attrs.includes(a))):[];
+    const exact=matches.length===1?matches[0]:null;
+    for(const [i,field] of fields.entries()){
+      const preceding=fields.slice(0,i).map(f=>selected.get(f)).filter(Boolean);
+      for(const button of field.querySelectorAll('[data-option]')){
+        const active=selected.get(field)===button.dataset.option;
+        button.setAttribute('aria-pressed',String(active));
+        button.disabled=model.skus.length>0&&!model.skus.some(s=>s.attrs.includes(button.dataset.option)&&preceding.every(v=>s.attrs.includes(v)));
+        if(active)field.querySelector('.pd-selected').textContent=button.title;
+      }
+      if(!selected.has(field))field.querySelector('.pd-selected').textContent='';
+    }
+    if(copy){
+      target=exact?.url||(chosen.length?'':copy.dataset.copyItem);
+      copy.disabled=!target;
+      copy.textContent=chosen.length?copy.dataset.styleText:copy.dataset.itemText;
+    }
+    status.textContent=chosen.length&&!exact?model.hint:'';
+    if(exact?.image)pickPhoto(exact.image);
+    const u=new URL(location.href);
+    if(chosen.length)u.searchParams.set('options',chosen.join(','));else u.searchParams.delete('options');
+    history.replaceState(null,'',u);
+    for(const opt of document.querySelector('header select[onchange]')?.options||[]){
+      if(!opt.value.startsWith('/')&&!opt.value.startsWith('https://'))continue;
+      const dest=new URL(opt.value,location.origin);
+      if(chosen.length)dest.searchParams.set('options',chosen.join(','));else dest.searchParams.delete('options');
+      opt.value=dest.href;
+    }
+  }
+  const saved=(new URLSearchParams(location.search).get('options')||'').split(',').filter(Boolean);
+  const matchingSku=model.photo?model.skus.filter(s=>s.image===model.photo):[];
+  for(const field of fields){
+    const choices=[...field.querySelectorAll('[data-option]')];
+    const matched=choices.filter(b=>b.dataset.picture&&b.dataset.picture===model.photo);
+    const restored=choices.find(b=>saved.includes(b.dataset.option))||(matchingSku.length===1?choices.find(b=>matchingSku[0].attrs.includes(b.dataset.option)):null);
+    const chosen=restored||(matched.length===1?matched[0]:null)||(choices.length===1?choices[0]:null);
+    if(chosen)selected.set(field,chosen.dataset.option);
+  }
+  if(fields.length)refresh();
+  root.addEventListener('click',async ev=>{
+    const b=ev.target.closest('button');
+    if(!b)return;
+    if(b.dataset.galleryPhoto){pickPhoto(b.dataset.galleryPhoto);return}
+    if(b.dataset.photo){
+      pickPhoto(b.dataset.photo);
+      for(const tile of root.querySelectorAll('[data-photo]'))tile.setAttribute('aria-pressed',String(tile===b));
+      if(copy){target=b.dataset.styleUrl;copy.disabled=!target;copy.textContent=copy.dataset.styleText;status.textContent=target?'':model.hint}
+    }
+    if(b.dataset.option){
+      const field=b.closest('[data-option-field]');selected.set(field,b.dataset.option);
+      for(const later of fields.slice(fields.indexOf(field)+1)){
+        const ids=fields.slice(0,fields.indexOf(later)+1).map(f=>selected.get(f)).filter(Boolean);
+        if(!model.skus.some(s=>ids.every(v=>s.attrs.includes(v))))selected.delete(later);
+      }
+      if(b.dataset.picture)pickPhoto(b.dataset.picture);
+      refresh();
+    }
+    if(b===copy&&target){
+      try{await navigator.clipboard.writeText(target);status.textContent=copy.dataset.success}
+      catch{const input=document.createElement('input');input.readOnly=true;input.value=target;status.replaceChildren(document.createTextNode(copy.dataset.manual+' '),input);input.select()}
+    }
+  });
+  for(const panel of root.querySelectorAll('.pd-choices')){
+    let drag;
+    panel.addEventListener('pointerdown',e=>{if(e.pointerType==='mouse'&&e.button===0&&panel.scrollHeight>panel.clientHeight)drag={y:e.clientY,top:panel.scrollTop,id:e.pointerId}});
+    panel.addEventListener('pointermove',e=>{if(!drag||drag.id!==e.pointerId||!(e.buttons&1)){drag=null;return}const dy=e.clientY-drag.y;if(Math.abs(dy)>5){panel.setPointerCapture(e.pointerId);panel.scrollTop=drag.top-dy;drag.moved=true;e.preventDefault()}});
+    panel.addEventListener('pointerup',()=>{if(drag?.moved)panel.addEventListener('click',e=>{e.preventDefault();e.stopPropagation()},{capture:true,once:true});drag=null});
+    panel.addEventListener('pointercancel',()=>{drag=null});
+  }
+}

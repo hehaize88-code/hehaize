@@ -1,0 +1,167 @@
+// area-v2: deterministic cell-area RGB means shared with the Python indexer.
+// No uploads, remote inference, new database or paid service.
+export const MAX_BYTES = 20 * 1024 * 1024;
+export function acceptsImage(file) {
+  if (!file || file.size <= 0 || file.size > MAX_BYTES) return false;
+  if (/^image\/(jpeg|png|webp|gif)$/.test(file.type)) return true;
+  return (!file.type || file.type === 'application/octet-stream') && /\.(jpe?g|png|webp|gif)$/i.test(file.name || '');
+}
+export function cropArea(width, height, mode) {
+  return mode === 'center' ? [width * .15, height * .15, width * .7, height * .7] : [0, 0, width, height];
+}
+export function meanRGB(pixels) {
+  let r=0,g=0,b=0;for(let i=0;i<pixels.length;i+=4){r+=pixels[i];g+=pixels[i+1];b+=pixels[i+2];}
+  const n=pixels.length/4;if(!n)throw Error('Empty image cell');
+  return [Math.floor(r/n+.5),Math.floor(g/n+.5),Math.floor(b/n+.5)];
+}
+export function fingerprint(image, mode = 'full', canvas = document.createElement('canvas')) {
+  const ctx=canvas.getContext('2d',{willReadFrequently:true});if(!ctx)throw Error('canvas');
+  const width=image.naturalWidth||image.width,height=image.naturalHeight||image.height;
+  const area=cropArea(width,height,mode),left=Math.floor(area[0]),top=Math.floor(area[1]);
+  const w=Math.max(1,Math.floor(area[0]+area[2])-left),h=Math.max(1,Math.floor(area[1]+area[3])-top);
+  // Read each cell at native resolution, without engine-dependent downsampling.
+  // This bounds canvas memory while matching the build-time area means.
+  function grid(cols,rows){const result=[];
+    for(let y=0;y<rows;y++)for(let x=0;x<cols;x++){
+      const sx=left+Math.floor(x*w/cols),sy=top+Math.floor(y*h/rows);
+      const sw=Math.max(1,Math.floor((x+1)*w/cols)-Math.floor(x*w/cols)),sh=Math.max(1,Math.floor((y+1)*h/rows)-Math.floor(y*h/rows));
+      canvas.width=sw;canvas.height=sh;ctx.fillStyle='#fff';ctx.fillRect(0,0,sw,sh);
+      ctx.drawImage(image,sx,sy,sw,sh,0,0,sw,sh);result.push(meanRGB(ctx.getImageData(0,0,sw,sh).data));
+    }return result;
+  }
+  const gray=grid(9,8).map(([r,g,b])=>.299*r+.587*g+.114*b);let hash='';
+  for(let y=0;y<8;y++)for(let x=0;x<8;x++)hash+=gray[y*9+x]>gray[y*9+x+1]?'1':'0';
+  const cells=grid(4,4).flat(),mean=gray.reduce((sum,n)=>sum+n,0)/gray.length;
+  const variation=Math.sqrt(gray.reduce((sum,n)=>sum+(n-mean)**2,0)/gray.length);
+  canvas.width=canvas.height=1;return {hash,cells,variation};
+}
+
+// Each image has a 64-bit horizontal difference hash and a 4×4 RGB signature.
+// Earlier signatures use native cell means, newer ones use resize filtering.
+const population = [0,1,1,2,1,2,2,3,1,2,2,3,2,3,3,4];
+
+export function resizeFingerprint(image) {
+  function pixels(width) {
+    const canvas = document.createElement('canvas');
+    canvas.width = width;
+    canvas.height = 8;
+    const context = canvas.getContext('2d', {willReadFrequently: true});
+    context.fillStyle = '#fff';
+    context.fillRect(0, 0, width, 8);
+    context.imageSmoothingQuality = 'high';
+    context.drawImage(image, 0, 0, width, 8);
+    return context.getImageData(0, 0, width, 8).data;
+  }
+  const samples = pixels(8);
+  const color = [];
+  for (let y = 0; y < 4; y++) for (let x = 0; x < 4; x++) {
+    for (let c = 0; c < 3; c++) {
+      const i = ((y * 2) * 8 + x * 2) * 4 + c;
+      const sum = [0, 4, 32, 36].reduce((n, offset) => n + (samples[i+offset] >> 3), 0);
+      color.push(Math.round(sum / 4));
+    }
+  }
+  const gray = pixels(9);
+  const lum = i => .299*gray[i] + .587*gray[i+1] + .114*gray[i+2];
+  let hash = '';
+  for (let y = 0; y < 8; y++) for (let x = 0; x < 8; x++) {
+    const i = (y*9+x)*4;
+    hash += lum(i+4) > lum(i) ? '1' : '0';
+  }
+  return {hash,color};
+}
+
+
+function launchVisualSearch() {
+  const el=id=>document.getElementById('visual-'+id);
+  const words=JSON.parse(el('labels').textContent);
+  const lang=document.documentElement.lang;
+  let active,selected;
+  const status=el('status'),progress=el('progress'),results=el('results'),preview=el('preview'),retry=el('retry');
+  function imageURL(value) {
+    try {
+      const u=new URL(value,'https://cnbuycha.com');
+      if(u.protocol==='https:' && (u.hostname==='cnbuycha.com'||u.hostname==='www.cnbuycha.com'||u.hostname.endsWith('.geilicdn.com')))return u.href;
+    }catch{}
+    return '';
+  }
+  async function search(file) {
+    if(!file)return;
+    active?.abort();
+    const controller=new AbortController(), signal=controller.signal;
+    active=controller;selected=file;results.replaceChildren();retry.hidden=true;progress.hidden=true;
+    if(!acceptsImage(file)){status.textContent=words[7];return}
+    let objectUrl=URL.createObjectURL(file);let decoded=false;
+    try{
+      preview.src=objectUrl;preview.hidden=false;
+      await preview.decode();if(signal.aborted)return;
+      const q=fingerprint(preview);q.resize=resizeFingerprint(preview);decoded=true;
+      status.textContent=words[6];progress.hidden=false;progress.removeAttribute('value');
+      const get=async path=>{
+        let last;
+        for(let attempt=0;attempt<3;attempt++){
+          if(signal.aborted)throw signal.reason;
+          try{
+            const r=await fetch('/_visual'+path,{signal});
+            if(r.ok || (r.status!==429 && r.status<500))return r;
+            last=Error('Index '+r.status);
+          }catch(error){last=error}
+          if(attempt<2&&!signal.aborted)await new Promise(resolve=>setTimeout(resolve,400*(attempt+1)));
+        }
+        throw last;
+      };
+      const hex=(bytes)=>Array.from(bytes,n=>n.toString(16).padStart(2,'0')).join('');
+      const descriptor=(hash,color)=>hex(hash.match(/.{8}/g).map(n=>parseInt(n,2)))+hex(color);
+      const params=new URLSearchParams({a:descriptor(q.hash,q.cells.map(n=>n>>3)),r:descriptor(q.resize.hash,q.resize.color)});
+      const r=await get('/lookup.json');if(!r.ok)throw Error('Index');
+      const manifest=await r.json(),matches=[];
+      if(!/^[a-f0-9]{16}$/.test(manifest.version)||!manifest.groups?.length)throw Error('Manifest');
+      let cursor=0,loaded=0,products=0;
+      async function lane(){
+        while(cursor<manifest.groups.length){
+          const group=manifest.groups[cursor++];
+          const response=await get('/match/'+manifest.version+'/'+group.id+'?'+params);
+          if(!response.ok)throw Error('Index');
+          const data=await response.json();
+          if(data.images!==group.images||data.products!==group.products)throw Error('Incomplete group');
+          loaded+=data.images;products+=data.products;matches.push(...data.items);
+          if(signal.aborted)return;
+          progress.max=manifest.images;progress.value=loaded;
+          status.textContent=words[6]+' '+loaded.toLocaleString(lang)+' / '+manifest.images.toLocaleString(lang);
+        }
+      }
+      await Promise.all(Array.from({length:4},lane));
+      if(loaded!==manifest.images||products!==manifest.products)throw Error('Incomplete search');
+      matches.sort((a,b)=>a.score-b.score||a.p.path.localeCompare(b.p.path));
+      const weak=!matches.length||matches[0].score>.24;
+      const result={weak,imageCount:loaded,items:weak?matches.slice(0,6):matches.filter(x=>x.score<=Math.min(.24,matches[0].score+.075)).slice(0,24)};
+      if(signal.aborted)return;
+      status.textContent=(result.weak?words[9]+' ':'')+words[5]+' · '+result.imageCount.toLocaleString(lang);
+      const recognized=result.items.map(({p})=>p);
+      let titles=recognized.map(p=>p.title);
+      if(signal.aborted)return;
+      recognized.forEach((p,index)=>{
+        const url=imageURL(p.image);if(!url || !/^\/[a-z0-9-]+\/\d+\.html$/i.test(p.path))return;
+        const a=document.createElement('a'),holder=document.createElement('div'),img=new Image(),name=document.createElement('div');
+        a.className='card';a.href='/'+lang+'/?'+new URLSearchParams({item:p.path,match:url});
+        holder.className='frame';img.src=url;img.loading='lazy';img.alt='';holder.append(img);
+        name.className='name';name.textContent=titles[index];a.append(holder,name);results.append(a);
+      });
+      if(lang!=='en'&&titles.length){
+        const params=new URLSearchParams({lang});recognized.forEach(p=>params.append('path',p.path));
+        try{const tr=await fetch('/_visual/names?'+params,{signal});if(tr.ok){const names=await tr.json();if(names.length===titles.length)results.querySelectorAll('.name').forEach((node,i)=>{if(!signal.aborted && names[i])node.textContent=names[i]})}}catch{}
+      }
+    }catch(error){if(!signal.aborted){status.textContent=words[decoded?8:10];retry.hidden=!decoded;}}
+    finally{URL.revokeObjectURL(objectUrl);if(!signal.aborted)progress.hidden=true}
+  }
+  el('file').onchange=e=>{const f=e.target.files[0];e.target.value='';search(f)};
+  retry.onclick=()=>search(selected);
+  const drop=el('drop');
+  drop.ondragover=e=>{e.preventDefault();drop.classList.add('over')};
+  drop.ondragleave=()=>drop.classList.remove('over');
+  drop.ondrop=e=>{e.preventDefault();drop.classList.remove('over');search(e.dataTransfer.files[0])};
+  document.addEventListener('paste',e=>{const image=[...e.clipboardData.items].find(i=>i.type.startsWith('image/'));if(image)search(image.getAsFile())});
+}
+
+
+launchVisualSearch();

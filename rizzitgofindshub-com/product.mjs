@@ -1,3 +1,4 @@
+import pdClientSource from './pdClient.txt';
 import {brand} from './settings.mjs';
 import {dict} from './locales.mjs';
 
@@ -111,90 +112,7 @@ export async function readProductAssets(d,allowSeller=false){
   const seller=allowSeller&&original?await pdFetchSeller(original,String(d.id)):{groups:[],skus:[]};
   return {...assets,...seller};
 }
-function pdClient(){
-  const root=document.querySelector('[data-product-view]'),model=JSON.parse(root.querySelector('.pd-model').textContent);
-  const main=root.querySelector('.pd-main'),copy=root.querySelector('[data-copy-item]'),status=root.querySelector('.pd-status'),fields=[...root.querySelectorAll('[data-option-field]')],selected=new Map();
-  let target=copy?.dataset.copyItem;
-  const pickPhoto=image=>{
-    if(!image||!main)return;
-    main.href=image;main.querySelector('img').src=image;
-    const pos=model.gallery.indexOf(image),count=main.querySelector('output');
-    count.hidden=pos<0;
-    if(pos>=0)count.textContent=(pos+1)+' / '+model.gallery.length;
-    for(const b of root.querySelectorAll('[data-gallery-photo]'))b.setAttribute('aria-pressed',String(b.dataset.galleryPhoto===image));
-  };
-  function refresh(){
-    const chosen=[...selected.values()];
-    const matches=chosen.length===fields.length?model.skus.filter(s=>s.attrs.length===chosen.length&&chosen.every(a=>s.attrs.includes(a))):[];
-    const exact=matches.length===1?matches[0]:null;
-    for(const [i,field] of fields.entries()){
-      const preceding=fields.slice(0,i).map(f=>selected.get(f)).filter(Boolean);
-      for(const button of field.querySelectorAll('[data-option]')){
-        const active=selected.get(field)===button.dataset.option;
-        button.setAttribute('aria-pressed',String(active));
-        button.disabled=model.skus.length>0&&!model.skus.some(s=>s.attrs.includes(button.dataset.option)&&preceding.every(v=>s.attrs.includes(v)));
-        if(active)field.querySelector('.pd-selected').textContent=button.title;
-      }
-      if(!selected.has(field))field.querySelector('.pd-selected').textContent='';
-    }
-    if(copy){
-      target=exact?.url||(chosen.length?'':copy.dataset.copyItem);
-      copy.disabled=!target;
-      copy.textContent=chosen.length?copy.dataset.styleText:copy.dataset.itemText;
-    }
-    status.textContent=chosen.length&&!exact?model.hint:'';
-    if(exact?.image)pickPhoto(exact.image);
-    const u=new URL(location.href);
-    if(chosen.length)u.searchParams.set('options',chosen.join(','));else u.searchParams.delete('options');
-    history.replaceState(null,'',u);
-    for(const opt of document.querySelector('header select[onchange]')?.options||[]){
-      if(!opt.value.startsWith('/')&&!opt.value.startsWith('https://'))continue;
-      const dest=new URL(opt.value,location.origin);
-      if(chosen.length)dest.searchParams.set('options',chosen.join(','));else dest.searchParams.delete('options');
-      opt.value=dest.href;
-    }
-  }
-  const saved=(new URLSearchParams(location.search).get('options')||'').split(',').filter(Boolean);
-  const matchingSku=model.photo?model.skus.filter(s=>s.image===model.photo):[];
-  for(const field of fields){
-    const choices=[...field.querySelectorAll('[data-option]')];
-    const matched=choices.filter(b=>b.dataset.picture&&b.dataset.picture===model.photo);
-    const restored=choices.find(b=>saved.includes(b.dataset.option))||(matchingSku.length===1?choices.find(b=>matchingSku[0].attrs.includes(b.dataset.option)):null);
-    const chosen=restored||(matched.length===1?matched[0]:null)||(choices.length===1?choices[0]:null);
-    if(chosen)selected.set(field,chosen.dataset.option);
-  }
-  if(fields.length)refresh();
-  root.addEventListener('click',async ev=>{
-    const b=ev.target.closest('button');
-    if(!b)return;
-    if(b.dataset.galleryPhoto){pickPhoto(b.dataset.galleryPhoto);return}
-    if(b.dataset.photo){
-      pickPhoto(b.dataset.photo);
-      for(const tile of root.querySelectorAll('[data-photo]'))tile.setAttribute('aria-pressed',String(tile===b));
-      if(copy){target=b.dataset.styleUrl;copy.disabled=!target;copy.textContent=copy.dataset.styleText;status.textContent=target?'':model.hint}
-    }
-    if(b.dataset.option){
-      const field=b.closest('[data-option-field]');selected.set(field,b.dataset.option);
-      for(const later of fields.slice(fields.indexOf(field)+1)){
-        const ids=fields.slice(0,fields.indexOf(later)+1).map(f=>selected.get(f)).filter(Boolean);
-        if(!model.skus.some(s=>ids.every(v=>s.attrs.includes(v))))selected.delete(later);
-      }
-      if(b.dataset.picture)pickPhoto(b.dataset.picture);
-      refresh();
-    }
-    if(b===copy&&target){
-      try{await navigator.clipboard.writeText(target);status.textContent=copy.dataset.success}
-      catch{const input=document.createElement('input');input.readOnly=true;input.value=target;status.replaceChildren(document.createTextNode(copy.dataset.manual+' '),input);input.select()}
-    }
-  });
-  for(const panel of root.querySelectorAll('.pd-choices')){
-    let drag;
-    panel.addEventListener('pointerdown',e=>{if(e.pointerType==='mouse'&&e.button===0&&panel.scrollHeight>panel.clientHeight)drag={y:e.clientY,top:panel.scrollTop,id:e.pointerId}});
-    panel.addEventListener('pointermove',e=>{if(!drag||drag.id!==e.pointerId||!(e.buttons&1)){drag=null;return}const dy=e.clientY-drag.y;if(Math.abs(dy)>5){panel.setPointerCapture(e.pointerId);panel.scrollTop=drag.top-dy;drag.moved=true;e.preventDefault()}});
-    panel.addEventListener('pointerup',()=>{if(drag?.moved)panel.addEventListener('click',e=>{e.preventDefault();e.stopPropagation()},{capture:true,once:true});drag=null});
-    panel.addEventListener('pointercancel',()=>{drag=null});
-  }
-}
+
 function pdAgentLinks(d){
   const idPattern=new RegExp('(^|\\D)'+String(d.id).replace(/\D/g,'')+'(\\D|$)');
   const names={'cssbuy':'CSSBuy','superbuy':'Superbuy','allchinabuy':'AllChinaBuy','acbuy':'ACBuy','ootdbuy':'OOTDBuy','bbdbuy':'BBDBuy','hubbuycn':'HubBuyCN','cnfans':'CNFans','usfans':'USFans','kakobuy':'Kakobuy','eastmallbuy':'EastMallBuy','panglobalbuy':'PanGlobalBuy','basetao':'Basetao','hipobuy':'Hipobuy','oopbuy':'Oopbuy','hoobuy':'Hoobuy','joyagoo':'Joyagoo','mulebuy':'Mulebuy','sugargoo':'Sugargoo','lovegobuy':'Lovegobuy','orientdig':'Orientdig'};
@@ -239,5 +157,5 @@ export async function renderProductDetail({detail:d,lang,title,backUrl,priceHtml
   const copy=original?'<button class="pd-copy" type="button" data-copy-item="'+e(original.href)+'" data-item-text="'+e(t.copy)+'" data-style-text="'+e(t.copyStyle)+'" data-success="'+e(t.copied)+'" data-manual="'+e(t.manual)+'">'+e(t.copy)+'</button>':'';
   const photoGrid=(caption,urls,empty)=>'<section class="pd-media"><h2>'+e(caption)+' <small>'+urls.length+'</small></h2>'+(urls.length?'<div class="pd-photos">'+urls.map((src,i)=>'<a href="'+e(src)+'" target="_blank" rel="noopener">'+image(src,caption+' '+(i+1))+'</a>').join('')+'</div>':'<p>'+e(empty)+'</p>')+'</section>';
   const model=JSON.stringify({gallery:assets.gallery,skus:assets.skus,hint:t.selectAll,photo:matched}).replace(/</g,'\\u003c');
-  return '<article class="pd" data-product-view><a class="pd-back" href="'+e(backUrl)+'">‹ '+e(t.back)+'</a><div class="pd-columns"><figure><figcaption>'+e(t.photos)+' <small>'+assets.gallery.length+'</small></figcaption>'+hero+film+'</figure><section class="pd-purchase"><h1>'+e(title)+'</h1><div class="pd-id">'+e(t.id)+' <b>'+e(d.id)+'</b></div><div class="pd-price">'+priceHtml+'</div>'+(buy?'<a class="action pd-buy" href="'+e(buy)+'" target="_blank" rel="noopener nofollow">'+e(brand.domain?t.buy:t.open)+'</a>':'')+'<div class="pd-actions">'+links+copy+'</div><div class="pd-status" role="status"></div><section class="pd-options"><h2>'+e(t.styles)+'</h2>'+variants+'</section></section></div>'+photoGrid(t.qc,assets.qc,t.noQc)+(assets.details.length?photoGrid(t.detailPhotos,assets.details,''):'')+'<script class="pd-model" type="application/json">'+model+'</script><script>('+pdClient.toString()+')()</script></article>';
+  return '<article class="pd" data-product-view><a class="pd-back" href="'+e(backUrl)+'">‹ '+e(t.back)+'</a><div class="pd-columns"><figure><figcaption>'+e(t.photos)+' <small>'+assets.gallery.length+'</small></figcaption>'+hero+film+'</figure><section class="pd-purchase"><h1>'+e(title)+'</h1><div class="pd-id">'+e(t.id)+' <b>'+e(d.id)+'</b></div><div class="pd-price">'+priceHtml+'</div>'+(buy?'<a class="action pd-buy" href="'+e(buy)+'" target="_blank" rel="noopener nofollow">'+e(brand.domain?t.buy:t.open)+'</a>':'')+'<div class="pd-actions">'+links+copy+'</div><div class="pd-status" role="status"></div><section class="pd-options"><h2>'+e(t.styles)+'</h2>'+variants+'</section></section></div>'+photoGrid(t.qc,assets.qc,t.noQc)+(assets.details.length?photoGrid(t.detailPhotos,assets.details,''):'')+'<script class="pd-model" type="application/json">'+model+'</script><script>('+pdClientSource+')()</script></article>';
 }

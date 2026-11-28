@@ -1,3 +1,4 @@
+import {editorialPaths} from './editorial.mjs';
 import { langs } from './locales.mjs';
 export const origin = 'https://rizzitgofindshub.com';
 const languages=Object.keys(langs);
@@ -15,10 +16,10 @@ export async function machineRoute(path){
   if(!r.ok)throw Error();
   const src=await r.text(),root='/'+m[1]+'/',paths=new Set(Array.from(src.matchAll(/<loc>https:\/\/(?:www\.)?cnbuycha\.com(\/[a-z0-9-]+\/\d+\.html)<\/loc>/gi),x=>x[1]));
   if(!paths.size)throw Error();
-  return xml('<urlset'+ns+'>'+['','spreadsheet/','image-search/',...Array.from(paths,p=>'item'+p)].map(p=>tag('url',root+p)).join('')+'</urlset>');
+  return xml('<urlset'+ns+'>'+['','spreadsheet/','image-search/',...(['en','zh'].includes(m[1])?editorialPaths:[]),...Array.from(paths,p=>'item'+p)].map(p=>tag('url',root+p)).join('')+'</urlset>');
  }catch{return new Response('Source sitemap temporarily unavailable',{status:503,headers:{'Retry-After':'60'}})}
 }
 export function seo(lang,path){
  const suffix=path.slice(('/'+lang+'/').length),url=code=>origin+'/'+code+'/'+suffix;
- return '<meta name="msvalidate.01" content="5C3F81E3632C3A1AB9E5CF1F80D171BD"><link rel="canonical" href="'+url(lang)+'">'+[...languages,'x-default'].map(code=>'<link rel="alternate" hreflang="'+code+'" href="'+url(code==='x-default'?'en':code)+'">').join('')+'<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3NFPKGQRY"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-Y3NFPKGQRY");</script>';
+ return '<meta name="msvalidate.01" content="5C3F81E3632C3A1AB9E5CF1F80D171BD"><link rel="canonical" href="'+url(lang)+'">'+[...(/\/(?:articles|faq)\//.test(path)?['en','zh']:languages),'x-default'].map(code=>'<link rel="alternate" hreflang="'+code+'" href="'+url(code==='x-default'?'en':code)+'">').join('')+'<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3NFPKGQRY"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-Y3NFPKGQRY");</script>';
 }

@@ -37,3 +37,14 @@
   main>.vis{padding-top:16px}
   footer{margin-top:20px;padding:14px 0}
 }
+@media(max-width:740px){
+header .mainnav{max-width:100%;min-width:0}
+.chips,.sheet .chips{flex-wrap:nowrap;overflow-x:auto;max-width:100%;scrollbar-width:thin}
+.chips a{flex:none;white-space:nowrap}
+.pd .pd-options{max-height:58svh;overflow:auto}
+.pd-film{max-height:18svh;overflow:auto}
+.vis #visual-results:not(:empty){max-height:240svh;overflow-y:auto;align-content:start}
+}
+.ed{max-width:780px;margin:2rem auto 3rem}.ed h1{font-size:clamp(1.9rem,4vw,3rem);line-height:1.1;letter-spacing:-.045em;margin:1.3rem 0}.ed h2{font:inherit;font-weight:700;display:inline;letter-spacing:normal}.ed-intro{font-size:1.12rem;color:#515955}.ed details,.ed-index a{border-bottom:1px solid #d8ddda}.ed summary,.ed-index a{padding:.85rem 0;cursor:pointer;font-weight:650}.ed details p{line-height:1.65}.ed-index a,.ed-sources a{display:block}.ed-index h2{font-size:1.15rem}.ed-index p{font-weight:400;margin:.24rem 0 0;color:#515955}.ed-sources{margin-top:1.4rem}.ed-sources a{text-decoration:underline;overflow-wrap:anywhere;margin:.3rem 0}
+@media(max-width:740px){.ed{margin:1.2rem auto}.ed summary{padding:.7rem 0}.ed h1{margin:1rem 0}.ed a,.ed summary{overflow-wrap:anywhere}}
+.ed-first{padding-top:.6rem;border-bottom:1px solid #d8ddda}.ed-first p{line-height:1.65}
