@@ -5,7 +5,7 @@ function sitemap(path){
  const root=path==='/sitemap.xml'?'sitemapindex':'urlset';
  const lang=path.match(/^\/sitemaps\/([A-Za-z-]+)\.xml$/)?.[1];
  if(root==='urlset'&&!langs.includes(lang))return new Response('404',{status:404});
- const rows=root==='sitemapindex'?langs.map(l=>entry('sitemap','/sitemaps/'+l+'.xml')):[...['','spreadsheet/','categories/','image-search/','guide/'],...productPaths.map(p=>'product'+p)].map(p=>entry('url','/'+lang+'/'+p));
+ const rows=root==='sitemapindex'?langs.map(l=>entry('sitemap','/sitemaps/'+l+'.xml')):[...['','spreadsheet/','categories/','image-search/','guide/','faq/','articles/',...editorialIndex[lang].articles.map(a=>'articles/'+a.slug+'/')],...productPaths.map(p=>'product'+p)].map(p=>entry('url','/'+lang+'/'+p));
  return new Response('<?xml version="1.0" encoding="UTF-8"?><'+root+' xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+rows.join('')+'</'+root+'>',{headers:{'Content-Type':'application/xml;charset=utf-8','Cache-Control':'public,max-age=600'}});
 }
 const origin='https://cnbuycha.com';
@@ -23,12 +23,12 @@ function money(v,l){
  if(v==null || v==='' || !Number.isFinite(Number(v))) return '';
  return '<span data-usd="'+e(v)+'">'+new Intl.NumberFormat(l,{style:'currency',currency:'USD'}).format(Number(v))+'</span>';
 }
-function layout(u,l,heading,body,status=200){
+function layout(u,l,heading,body,status=200,extraHead=''){
  const t=messages[l],base='/'+l+'/';
- const urls=[[t[0],''],[t[1],'spreadsheet/'],[t[2],'categories/'],[visualLabel(l),'image-search/']];
+ const urls=[[t[0],''],[t[1],'spreadsheet/'],[t[2],'categories/'],[visualLabel(l),'image-search/'],[editorialLabels[l][1],'faq/'],[editorialLabels[l][0],'articles/']];
  const nav=urls.map(([name,path])=>'<a '+(u.pathname===base+path?'aria-current="page"':'')+' href="'+base+path+'">'+e(name)+'</a>').join('');
  const options=Object.entries(locales).map(([k,v])=>'<option '+(k===l?'selected':'')+' value="'+e(u.pathname.replace(/^\/[^/]+/,'/'+k)+u.search)+'">'+e(v)+'</option>').join('');
- return new Response(`<!doctype html><html lang="${l}"><head><meta charset="utf-8"><meta name="msvalidate.01" content="5C3F81E3632C3A1AB9E5CF1F80D171BD"><script async src="https://www.googletagmanager.com/gtag/js?id=G-KND7DEC315"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-KND7DEC315');</script><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="${status===200&&!u.search ? 'index,follow':'noindex,follow'}"><link rel="canonical" href="${e(siteOrigin+u.pathname)}"><title>${e(heading)} · JoyaGoo</title><link rel="icon" type="image/svg+xml" href="/brand/favicon.svg"><link rel="stylesheet" href="/style.css"></head><body><header><a class="wordmark" href="${base}"><img width="136" height="40" src="/brand/logo.svg" alt="JoyaGoo"></a><nav>${nav}</nav><div class="right"><select aria-label="${e(locales[l])}" onchange="location.href=this.value">${options}</select><select id="currency" aria-label="ISO 4217">${currencies.map(c=>'<option>'+c+'</option>').join('')}</select><a class="btn" href="${register}">${e(t[4])}</a></div></header><main>${body}</main><footer><a href="${base}guide/">${e(t[3])}</a> · ${e(t[32])}</footer><script type="application/json" id="rate-seed">${JSON.stringify(seed)}</script><script src="/currency.js" defer></script></body></html>`,{status,headers:{'content-type':'text/html;charset=utf-8'}});
+ return new Response(`<!doctype html><html lang="${l}"><head><meta charset="utf-8"><meta name="msvalidate.01" content="5C3F81E3632C3A1AB9E5CF1F80D171BD"><script async src="https://www.googletagmanager.com/gtag/js?id=G-KND7DEC315"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-KND7DEC315');</script><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="${status===200&&!u.search ? 'index,follow':'noindex,follow'}"><link rel="canonical" href="${e(siteOrigin+u.pathname)}">${extraHead}<title>${e(heading)} · JoyaGoo</title><link rel="icon" type="image/svg+xml" href="/brand/favicon.svg"><link rel="stylesheet" href="/style.css"></head><body><header><a class="wordmark" href="${base}"><img width="136" height="40" src="/brand/logo.svg" alt="JoyaGoo"></a><nav>${nav}</nav><div class="right"><select aria-label="${e(locales[l])}" onchange="location.href=this.value">${options}</select><select id="currency" aria-label="ISO 4217">${currencies.map(c=>'<option>'+c+'</option>').join('')}</select><a class="btn" href="${register}">${e(t[4])}</a></div></header><main>${body}</main><footer><a href="${base}guide/">${e(t[3])}</a> · ${e(t[32])}</footer><script type="application/json" id="rate-seed">${JSON.stringify(seed)}</script><script src="/currency.js" defer></script></body></html>`,{status,headers:{'content-type':'text/html;charset=utf-8'}});
 }
 function search(l,q=''){
  const t=messages[l];
@@ -47,6 +47,7 @@ if(!l)return Response.redirect(siteOrigin+'/en/',308);
 if(l==='style.css')return new Response(css,{headers:{'Content-Type':'text/css'}});
 if(l==='robots.txt')return new Response('User-agent: *\nDisallow: /api/\nDisallow: /shards/\nSitemap: '+siteOrigin+'/sitemap.xml',{headers:{'Content-Type':'text/plain;charset=utf-8'}});
 if(!Object.hasOwn(locales,l)||!messages[l])return new Response('404',{status:404});const t=messages[l],base='/'+l+'/';try{
+if(route==='articles'||route==='faq')return await editorialPage(u,l,route,rest,env);
 if(!route){
  const html=await read('/AllProducts/'), items=cards(html);
  if(!items.length)throw Error('source');
@@ -56,7 +57,7 @@ if(!route){
  await prepareProductNames([...latestItems,...shelves.flatMap(s=>s.items)].map(p=>p.name),l);
  const latest=latestItems.map(p=>tile(p,l)).join('');
  const shelfHtml=shelves.map(s=>`<section class="shelf"><div class="shelf-title"><h2>${e(s.label)}</h2><a href="${base}spreadsheet/?category=${s.cat}">${e(t[12])}</a></div><div class="shelf-products">${s.items.map(p=>tile(p,l)).join('')}</div></section>`).join('');
- return layout(u,l,'JoyaGoo '+t[1],`<section class="home-top"><div class="home-search"><h1>JoyaGoo<br>${e(t[1])}</h1><p>${e(t[7])}</p>${search(l)}<a class="all-link" href="${base}spreadsheet/">${e(t[10])} ${total?'('+Number(total).toLocaleString(l)+')':''}</a></div><div><div class="home-caption"><h2>${e(t[11])}</h2><a href="${base}spreadsheet/">${e(t[12])}</a></div><div class="latest-grid">${latest}</div></div></section>${chipList(l,'AllProducts')}${shelfHtml}`);
+ return layout(u,l,'JoyaGoo '+t[1],`<section class="home-top"><div class="home-search"><h1>JoyaGoo<br>${e(t[1])}</h1><p>${e(t[7])}</p>${search(l)}<a class="all-link" href="${base}spreadsheet/">${e(t[10])} ${total?'('+Number(total).toLocaleString(l)+')':''}</a></div><div><div class="home-caption"><h2>${e(t[11])}</h2><a href="${base}spreadsheet/">${e(t[12])}</a></div><div class="latest-grid">${latest}</div></div></section>${chipList(l,'AllProducts')}${shelfHtml}${editorialHighlights(l)}`);
 }
 if(route==='categories'){return layout(u,l,t[2],'<section class=listing><h1>'+e(t[2])+'</h1>'+chipList(l,'')+'</section>')}
 if(route==='spreadsheet')return await catalogPage(u,l);
