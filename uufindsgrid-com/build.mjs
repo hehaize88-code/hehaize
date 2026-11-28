@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import './build-image-search.mjs';
 import {createHash} from 'node:crypto';
 const read=name=>fs.readFileSync(name,'utf8');
 const packedTitles=Object.fromEntries(fs.readdirSync('titles').filter(n=>n.endsWith('.b64')).map(n=>[n.split('.')[0],read('titles/'+n).trim()]));
